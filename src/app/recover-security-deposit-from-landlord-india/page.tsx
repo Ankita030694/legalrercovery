@@ -3,7 +3,7 @@ import LandlordDepositClient from "./LandlordDepositClient";
 
 export const metadata: Metadata = {
   title: "Landlord Not Returning Security Deposit? Recovery Steps",
-  description: "Landlord refusing rental deposit refund? Serve an advocate legal notice, stop illegal painting deductions, and recover your deposit with interest.",
+  description: "Landlord refusing rental deposit refund? Serve a fact-verified legal notice, stop illegal painting deductions, and recover your deposit with interest.",
   keywords: [
     "recover security deposit landlord india",
     "landlord refusing refund security deposit",

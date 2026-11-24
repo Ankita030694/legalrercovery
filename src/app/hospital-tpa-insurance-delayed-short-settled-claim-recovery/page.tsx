@@ -855,7 +855,7 @@ export default function HospitalTpaDelayedShortSettledClaimRecoveryPage() {
 
                 <div className="text-xs sm:text-sm text-slate-700 leading-relaxed space-y-2">
                   <p>
-                    <strong>Resolution Outcome:</strong> Following service of a formal 15-day joint Advocate Demand Notice impleading the TPA COO and the Insurer&apos;s Regional Claims Head under Contract Act s.73, the insurer scheduled an executive reconciliation meeting. The insurer reversed ₹8,60,000 of the arbitrary deductions and paid ₹75,000 in liquidated delay compensation, recovering 92% of the disputed balance without initiating a commercial court trial.
+                    <strong>Resolution Outcome:</strong> Following service of a formal 15-day joint Fact-Verified Demand Notice impleading the TPA COO and the Insurer&apos;s Regional Claims Head under Contract Act s.73, the insurer scheduled an executive reconciliation meeting. The insurer reversed ₹8,60,000 of the arbitrary deductions and paid ₹75,000 in liquidated delay compensation, recovering 92% of the disputed balance without initiating a commercial court trial.
                   </p>
                   <p>
                     For multi-hospital groups handling hundreds of delayed files, compare this outcome against our{" "}
@@ -1090,7 +1090,7 @@ export default function HospitalTpaDelayedShortSettledClaimRecoveryPage() {
 
                 <div className="mt-4 pt-4 border-t border-slate-100 flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-xs text-slate-500">
                   <span>
-                    Advocate Vetted by <strong>{LEGAL_REVIEWER.name}</strong>, {LEGAL_REVIEWER.role}
+                    Fact-Verified by <strong>{LEGAL_REVIEWER.name}</strong>, {LEGAL_REVIEWER.role}
                   </span>
                   <span>Published for Healthcare RCM Leaders &amp; Hospital CFOs</span>
                 </div>

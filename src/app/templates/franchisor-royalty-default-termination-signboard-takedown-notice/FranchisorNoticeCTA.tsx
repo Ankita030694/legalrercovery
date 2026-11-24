@@ -38,10 +38,10 @@ export default function FranchisorNoticeCTA({
                 Track 1 · Single Outlet / Dealer
               </div>
               <p className="text-base font-bold text-white">
-                Test 1 Live Overdue Case Now (₹{singleNoticePrice} · Advocate Drafted)
+                Test 1 Live Overdue Case Now (₹{singleNoticePrice} · Fact-Verified)
               </p>
               <p className="text-xs text-slate-300 leading-relaxed">
-                Issue an advocate-signed Stage 1 Cure Notice or Stage 2 Termination &amp; Signboard De-Branding Notice via Email, WhatsApp &amp; Speed Post RPAD with tracked delivery logs.
+                Issue a fact-verified Stage 1 Cure Notice or Stage 2 Termination &amp; Signboard De-Branding Notice via Email, WhatsApp &amp; Speed Post RPAD with tracked delivery logs.
               </p>
             </div>
             <Link

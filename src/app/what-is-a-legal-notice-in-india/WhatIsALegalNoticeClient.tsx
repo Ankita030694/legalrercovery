@@ -22,7 +22,7 @@ const faqs = [
   },
   {
     "question": "Can I send a legal notice myself without hiring an advocate?",
-    "answer": "While any individual can technically draft and send a legal notice on their own personal letterhead, it is highly advisable to hire a professional advocate to do so. A legal notice drafted by an advocate carries formal legal weight and clearly signals to the recipient that you are prepared to escalate the matter to court. Furthermore, advocates are trained to draft notices using precise legal terminology, cite the correct statutory provisions, and articulate the facts in a manner that avoids contradictions. Errors or misstatements in a self-drafted notice can be used against you in subsequent court proceedings."
+    "answer": "While any individual can technically draft and send a legal notice on their own personal letterhead, it is highly advisable to hire a professional advocate to do so. A legal notice prepared on verified facts carries formal legal weight and clearly signals to the recipient that you are prepared to escalate the matter to court. Furthermore, advocates are trained to draft notices using precise legal terminology, cite the correct statutory provisions, and articulate the facts in a manner that avoids contradictions. Errors or misstatements in a self-drafted notice can be used against you in subsequent court proceedings."
   },
   {
     "question": "What should I do if the recipient refuses to accept the legal notice?",
@@ -150,7 +150,7 @@ const faqSchema = {
       "name": "Can I send a legal notice myself without hiring an advocate?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "While any individual can technically draft and send a legal notice on their own personal letterhead, it is highly advisable to hire a professional advocate to do so. A legal notice drafted by an advocate carries formal legal weight and clearly signals to the recipient that you are prepared to escalate the matter to court. Furthermore, advocates are trained to draft notices using precise legal terminology, cite the correct statutory provisions, and articulate the facts in a manner that avoids contradictions. Errors or misstatements in a self-drafted notice can be used against you in subsequent court proceedings."
+        "text": "While any individual can technically draft and send a legal notice on their own personal letterhead, it is highly advisable to hire a professional advocate to do so. A legal notice prepared on verified facts carries formal legal weight and clearly signals to the recipient that you are prepared to escalate the matter to court. Furthermore, advocates are trained to draft notices using precise legal terminology, cite the correct statutory provisions, and articulate the facts in a manner that avoids contradictions. Errors or misstatements in a self-drafted notice can be used against you in subsequent court proceedings."
       }
     },
     {
@@ -380,7 +380,7 @@ export default function WhatIsALegalNoticeClient() {
                     A legal notice is a formal written statement sent by an individual or organization to another party, conveying a clear intention to initiate legal action. It represents a structured, legal warning that outlines the sender's grievances, alleges specific breaches of contract or civil wrongs, and specifies the exact remedy sought. In the vast majority of civil and commercial conflicts in India, serving this document is the standard pre-litigation step that defines the boundaries of the subsequent lawsuit.
                   </p>
                   <p className="text-sm md:text-base leading-relaxed">
-                    From a procedural perspective, the notice functions as a means of communication between the legal representatives of the parties involved. When drafted by an advocate on their professional letterhead, it carries a sense of urgency and seriousness that standard emails, messages, or phone calls cannot convey. It indicates that the sender has formally engaged legal counsel and is fully prepared to approach the courts if their demands are ignored or rejected.
+                    From a procedural perspective, the notice functions as a means of communication between the legal representatives of the parties involved. When prepared on verified facts on their professional letterhead, it carries a sense of urgency and seriousness that standard emails, messages, or phone calls cannot convey. It indicates that the sender has formally engaged legal counsel and is fully prepared to approach the courts if their demands are ignored or rejected.
                   </p>
                   
                   <h3 id="defining-the-instrument" className="text-lg md:text-xl font-bold text-slate-900 mt-8 mb-3 scroll-mt-32">
@@ -485,7 +485,7 @@ export default function WhatIsALegalNoticeClient() {
                         </tr>
                       </thead>
                       <tbody className="bg-white divide-y divide-slate-200 text-sm text-slate-650">
-                        {[["Timeline","Fast (requires a 15 to 30 days compliance window)","Slow (takes 2 to 5 years for final disposal in civil court)"],["Initial Cost","Low (limited to advocate drafting and dispatch fees)","High (involves ad-valorem court fees, printing, and trial costs)"],["Judicial Involvement","None (served privately between advocates representing the parties)","High (involves hearings, summons, arguments, and trial evidence)"],["Chance of Settlement","High (provides an easy opportunity to settle out of court)","Moderate (settlement remains possible but after significant delay)"],["Pre-requisite Status","Acts as a mandatory step in specific statutes (e.g. NI Act)","Can be dismissed if mandatory notice is not served beforehand"]].map((row, index) => (
+                        {[["Timeline","Fast (requires a 15 to 30 days compliance window)","Slow (takes 2 to 5 years for final disposal in civil court)"],["Initial Cost","Low (limited to notice drafting and dispatch fees)","High (involves ad-valorem court fees, printing, and trial costs)"],["Judicial Involvement","None (served privately between advocates representing the parties)","High (involves hearings, summons, arguments, and trial evidence)"],["Chance of Settlement","High (provides an easy opportunity to settle out of court)","Moderate (settlement remains possible but after significant delay)"],["Pre-requisite Status","Acts as a mandatory step in specific statutes (e.g. NI Act)","Can be dismissed if mandatory notice is not served beforehand"]].map((row, index) => (
                           <tr key={index}>
                             <td className="px-6 py-4 font-bold text-slate-900">{row[0]}</td>
                             <td className="px-6 py-4">{row[1]}</td>
@@ -663,7 +663,7 @@ export default function WhatIsALegalNoticeClient() {
                 <div className="absolute top-0 right-0 w-24 h-24 bg-red-600/10 rounded-full blur-xl pointer-events-none" />
                 <h3 className="text-lg font-bold mb-3 text-white">Need Legal Advice?</h3>
                 <p className="text-gray-400 mb-5 text-[11px] leading-relaxed">
-                  Discuss your money recovery case with legal experts. We draft and serve legally compliant notices tailored to your transaction.
+                  Discuss your money recovery case with our team. We draft and serve legally compliant notices tailored to your transaction.
                 </p>
                 <button 
                   onClick={() => setIsPaymentModalOpen(true)}

@@ -288,7 +288,7 @@ ${lawyerMode ? "Amitabh Sharma, Advocate\nCounsel for the Claimant" : formData.f
               Professional Practice Fee Recovery Notice Generator
             </h2>
             <p className="text-xs sm:text-sm text-slate-300 mt-1">
-              Select your practice archetype below to populate advocate-vetted statutory clauses, Form 26AS 194J debt admissions, and Council ethics intimations.
+              Select your practice archetype below to populate ready-to-use statutory clauses, Form 26AS 194J debt admissions, and Council ethics intimations.
             </p>
           </div>
 

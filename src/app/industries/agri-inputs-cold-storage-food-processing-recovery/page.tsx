@@ -233,7 +233,7 @@ const FAQS = [
   {
     question: "How do agrochemical and seed companies defeat false 'crop failure' payment excuses?",
     answer:
-      "Serve an advocate-drafted statutory demand notice enclosing your batch-wise Certificate of Analysis, signed bilty/e-Way Bill, and dealer ledger. Put the dealer on formal notice that under the Seeds Act, 1966 and Insecticides Act, 1968, oral post-harvest complaints without a contemporaneous Government Agriculture Officer panchnama and notified lab report are legally inadmissible, while initiating NI Act s.138 action on bounced seasonal PDCs.",
+      "Serve a fact-verified statutory demand notice enclosing your batch-wise Certificate of Analysis, signed bilty/e-Way Bill, and dealer ledger. Put the dealer on formal notice that under the Seeds Act, 1966 and Insecticides Act, 1968, oral post-harvest complaints without a contemporaneous Government Agriculture Officer panchnama and notified lab report are legally inadmissible, while initiating NI Act s.138 action on bounced seasonal PDCs.",
   },
   {
     question: "Can a cold storage sell abandoned potato or chilli bags if the trader stops paying rent?",
@@ -258,7 +258,7 @@ const FAQS = [
   {
     question: "How can an FPO or dairy plant force an APMC mandi trader or agri-tech buyer to pay?",
     answer:
-      "Send a formal advocate notice citing state APMC timely-payment rules (often 24–72 hours for agricultural produce) and mark a formal copy to the jurisdictional APMC Secretary requesting trading/commission-agent license action, alongside NI Act s.138 or Order XXXVII CPC proceedings.",
+      "Send a formal legal notice citing state APMC timely-payment rules (often 24–72 hours for agricultural produce) and mark a formal copy to the jurisdictional APMC Secretary requesting trading/commission-agent license action, alongside NI Act s.138 or Order XXXVII CPC proceedings.",
   },
   {
     question: "Can agro-input companies and cold storages send bulk seasonal notices via CSV upload?",
@@ -481,7 +481,7 @@ export default function AgriColdStorageFoodProcessingHubPage() {
                   Downstream in the cold-chain and milling belts—Agra, Farrukhabad, Hooghly, Guntur, Deesa, Karnal, Akola, Latur, and Naya Bazar—the credit risk is equally acute. Cold-storage owners face empty-pocket defaults when potato or red chilli prices crash below accrued chamber rent, leaving chambers choked with rotting stock that cannot be sold informally without risking Consumer Court damages. Meanwhile, rice, dal, flour, and edible-oil millers operating on razor-thin 1% net margins lose truckloads to outstation mandi &ldquo;bust-out&rdquo; buyers, while poultry/aqua-feed makers battle viral mortality blame and HoReCa suppliers face overnight restaurant shutdowns.
                 </p>
                 <p>
-                  Urban SaaS debt-collection tools and generic consumer portals fail this sector completely because they ignore rural Speed Post RPAD service, Hindi/vernacular mandi documentation, statutory Seed/Insecticide laboratory sampling rules, and State Cold Storage auction procedures. LegalRecovery.in bridges this exact institutional gap—combining advocate-drafted statutory notices with bilingual batch CSV execution.
+                  Urban SaaS debt-collection tools and generic consumer portals fail this sector completely because they ignore rural Speed Post RPAD service, Hindi/vernacular mandi documentation, statutory Seed/Insecticide laboratory sampling rules, and State Cold Storage auction procedures. LegalRecovery.in bridges this exact institutional gap—combining fact-verified statutory notices with bilingual batch CSV execution.
                 </p>
               </div>
             </section>
@@ -656,7 +656,7 @@ export default function AgriColdStorageFoodProcessingHubPage() {
                   <rect x="216" y="30" width="180" height="140" rx="14" fill="#1E293B" stroke="#475569" strokeWidth="1.5" />
                   <text x="306" y="60" textAnchor="middle" fill="#FBBF24" fontSize="11" fontWeight="bold">STAGE 2 &bull; DAY 2–3</text>
                   <text x="306" y="84" textAnchor="middle" fill="#FFFFFF" fontSize="13" fontWeight="bold">Bilingual RPAD Notice</text>
-                  <text x="306" y="106" textAnchor="middle" fill="#CBD5E1" fontSize="10.5">Advocate Demand +</text>
+                  <text x="306" y="106" textAnchor="middle" fill="#CBD5E1" fontSize="10.5">Legal Demand +</text>
                   <text x="306" y="122" textAnchor="middle" fill="#CBD5E1" fontSize="10.5">s.176 Pre-Auction or</text>
                   <text x="306" y="138" textAnchor="middle" fill="#CBD5E1" fontSize="10.5">APMC Secretary CC</text>
 
@@ -697,7 +697,7 @@ export default function AgriColdStorageFoodProcessingHubPage() {
                   {
                     stage: "Stage 2 • Day 2–3",
                     title: "Bilingual RPAD + WhatsApp Notice",
-                    detail: "Serve English/Hindi advocate notice with s.176 Pre-Auction or APMC Secretary CC.",
+                    detail: "Serve English/Hindi legal notice with s.176 Pre-Auction or APMC Secretary CC.",
                   },
                   {
                     stage: "Stage 3 • Day 15–30",
@@ -970,7 +970,7 @@ export default function AgriColdStorageFoodProcessingHubPage() {
                     Legal Notice Kaise Bheje (कानूनी नोटिस कैसे भेजें)
                   </p>
                   <p className="text-xs text-slate-600">
-                    Step-by-step Hindi guide for mandi traders, grain millers, and rural distributors sending advocate notices via Speed Post RPAD.
+                    Step-by-step Hindi guide for mandi traders, grain millers, and rural distributors sending legal notices via Speed Post RPAD.
                   </p>
                 </Link>
 

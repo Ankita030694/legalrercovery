@@ -23,7 +23,7 @@ const SCENARIOS: Scenario[] = [
       "Under Sections 41 and 42 of the Sale of Goods Act, 1930, a commercial buyer is afforded a reasonable opportunity to examine goods upon tender; once accepted and retained without immediate written intimation of rejection, the buyer is deemed to have accepted the goods in law. Furthermore, under Section 63 of Bharatiya Sakshya Adhiniyam, 2023 (BSA 2023), the distributor's continuous time-stamped USB data-logger readout—demonstrating uninterrupted holding between 3.6°C and 4.8°C up to the exact minute of hospital receiving dock signature—constitutes unassailable electronic evidence. The hospital's retrospective debit note is legally void, and shifting post-delivery storage losses onto the distributor violates Section 73 of the Indian Contract Act, 1872.",
     recoverySOP: [
       "Retrieve the cryptographic PDF readout and CSV audit trail from the NIST-traceable USB data-logger activated at dispatch.",
-      "Execute an Advocate-Vetted Section 63 BSA 2023 Certificate certifying the device calibration, serial number, and timestamp integrity.",
+      "Execute a Fact-Verified Section 63 BSA 2023 Certificate certifying the device calibration, serial number, and timestamp integrity.",
       "Serve an immediate Statutory Legal Demand Notice appending the signed Delivery Challan (acknowledging receiving temperature) and the unbroken data-logger temperature curve.",
       "Demand inspection of the hospital's internal 24x7 temperature loggers and maintenance logs under threat of State Drug Controller regulatory complaint for improper cold-chain storage under Drugs and Cosmetics Rules, 1945.",
     ],
@@ -56,7 +56,7 @@ const SCENARIOS: Scenario[] = [
     recoverySOP: [
       "Review the Purchase Order and Named-Patient Undertaking to confirm non-cancellable, non-returnable contractual terms.",
       "Formally notify the hospital pharmacy in writing that returned temperature-critical biologics cannot be re-stocked under Drug Controller General of India (DCGI) safety guidelines.",
-      "Dispatch an Advocate Demand Notice demanding immediate full invoice clearance under Order XXXVII of the Code of Civil Procedure, 1908 (Summary Suit for liquidated debt).",
+      "Dispatch a Fact-Verified Demand Notice demanding immediate full invoice clearance under Order XXXVII of the Code of Civil Procedure, 1908 (Summary Suit for liquidated debt).",
       "If the distributor is an MSME, initiate an MSEFC conciliation petition under Section 18 of the MSMED Act claiming 3 times RBI Bank Rate compound interest from the 16th day.",
     ],
     keyAuthority: "Sale of Goods Act 1930 ss. 18–20, DCGI Good Distribution Practices & CPC Order XXXVII",

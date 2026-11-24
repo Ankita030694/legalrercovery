@@ -24,7 +24,7 @@ const SCENARIOS: Scenario[] = [
     recoverySOP: [
       "Retrieve the OT consumption sticker log: Secure photograph/carbon copy of the outer implant carton barcode sticker pasted into the Patient OT Scrub Register or Cath-Lab Procedure Log.",
       "Issue a Formal Sale-Adoption Demand citing Sale of Goods Act s.24(a), notifying the Medical Superintendent and CFO that property passed on the surgical date.",
-      "Dispatch a 15-Day Statutory Advocate Demand Notice demanding immediate tax invoice acceptance, e-Way bill ledger reconciliation, and payment at agreed consignment rates.",
+      "Dispatch a 15-Day Statutory Fact-Verified Demand Notice demanding immediate tax invoice acceptance, e-Way bill ledger reconciliation, and payment at agreed consignment rates.",
       "Simultaneously initiate MSME Samadhaan petition or Commercial Summary Plaint under Order XXXVII CPC if the hospital fails to tender payment within 15 days.",
     ],
     keyAuthority: "Sale of Goods Act 1930 s.24(a), MSMED Act 2006 ss.15-16 & Commercial Courts Act 2015 s.2(1)(c)(xviii)",
@@ -40,7 +40,7 @@ const SCENARIOS: Scenario[] = [
     recoverySOP: [
       "Compile the Bailment Delivery Dossier: Signed loaner delivery challan detailing individual tray serial numbers, CSSD sterilizer logs, and distributor field technician sign-off.",
       "Issue an immediate 48-Hour Surgical Asset Repossession Notice stating the daily commercial demurrage charge running against the hospital administration.",
-      "Serve an Advocate Legal Notice citing Section 316 BNS Criminal Breach of Trust and demanding unconditional return of unconsumed implants and intact instrument trays.",
+      "Serve a Fact-Verified Legal Notice citing Section 316 BNS Criminal Breach of Trust and demanding unconditional return of unconsumed implants and intact instrument trays.",
       "Move an urgent pre-institution interim application before the Commercial Court under Section 9 of the Arbitration Act or Order XL Rule 1 CPC for an ex-parte Court Commissioner to seize and inventory the detained trays.",
     ],
     keyAuthority: "Bharatiya Nyaya Sanhita 2023 s.316 & s.318, Contract Act 1872 s.148 & CPC Order XL Rule 1",
@@ -72,7 +72,7 @@ const SCENARIOS: Scenario[] = [
     recoverySOP: [
       "Examine the purchase documentation: Prove the absence of any valid 'Pay-When-Paid' condition in the Delivery Challan or Master Consignment Agreement.",
       "Issue an Executive Notice clarifying that insurance risk lies exclusively with the treating institution, not the implant manufacturer or authorized distributor.",
-      "Serve a 15-Day Advocate Legal Notice citing MSMED Act s.15 (non-waivable 45-day payment limit) and Commercial Courts Act Section 2(1)(c)(xviii).",
+      "Serve a 15-Day Fact-Verified Legal Notice citing MSMED Act s.15 (non-waivable 45-day payment limit) and Commercial Courts Act Section 2(1)(c)(xviii).",
       "Attach the hospital's corporate bank accounts and receivables through an Order XXXVIII Rule 5 CPC interim application if formal litigation is initiated.",
     ],
     keyAuthority: "MSMED Act 2006 ss. 15, 16 & 24, Sale of Goods Act 1930 s.24 & CPC Order XXXVIII Rule 5",

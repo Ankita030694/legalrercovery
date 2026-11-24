@@ -12,7 +12,7 @@ const faqs = [
   {
     question: 'Can a victim send a legal notice to recover money lost in a Telegram stock trading or crypto scam in India?',
     answer:
-      'Yes, a defrauded victim can issue an advocate-drafted statutory legal notice under Section 318(4) of the Bharatiya Nyaya Sanhita, 2023 (BNS), Section 66D of the Information Technology Act, 2000, and Section 106 of the Bharatiya Nagarik Suraksha Sanhita, 2023 (BNSS) to beneficiary mule account holders, intermediary banks, and payment gateways. The legal notice serves as a formal demand for immediate restitution, demands immediate debit freezes on recipient bank accounts before funds are laundered, and creates an indispensable documentary foundation for subsequent judicial asset attachment and magistrate refund petitions under Section 503 of the BNSS. Serving this statutory demand establishes criminal culpability, eliminates the defense of bona fide receipt for mule account operators, and accelerates asset recovery through coordinated cybercrime enforcement.',
+      'Yes, a defrauded victim can issue a fact-verified statutory legal notice under Section 318(4) of the Bharatiya Nyaya Sanhita, 2023 (BNS), Section 66D of the Information Technology Act, 2000, and Section 106 of the Bharatiya Nagarik Suraksha Sanhita, 2023 (BNSS) to beneficiary mule account holders, intermediary banks, and payment gateways. The legal notice serves as a formal demand for immediate restitution, demands immediate debit freezes on recipient bank accounts before funds are laundered, and creates an indispensable documentary foundation for subsequent judicial asset attachment and magistrate refund petitions under Section 503 of the BNSS. Serving this statutory demand establishes criminal culpability, eliminates the defense of bona fide receipt for mule account operators, and accelerates asset recovery through coordinated cybercrime enforcement.',
   },
   {
     question: 'What is the role of beneficiary mule bank accounts in Telegram trading fraud and how can legal notices freeze them?',
@@ -163,7 +163,7 @@ const jsonLd = {
         {
           '@type': 'ListItem',
           position: 3,
-          name: 'Issue Urgent Advocate Statutory Demand Notice: Serve comprehensive legal notice under BNS 318(4), IT Act 66D, and BNSS 106 to beneficiary mule account holders, branch managers, and bank cyber nodal officers',
+          name: 'Issue Urgent Fact-Verified Statutory Demand Notice: Serve comprehensive legal notice under BNS 318(4), IT Act 66D, and BNSS 106 to beneficiary mule account holders, branch managers, and bank cyber nodal officers',
         },
         {
           '@type': 'ListItem',
@@ -183,7 +183,7 @@ const jsonLd = {
       '@type': 'Product',
       name: 'Legal Notice for Telegram Trading & Investment Scam Recovery',
       description:
-        'Advocate-drafted statutory legal notice and asset freezing service for victims of Telegram stock market fraud, institutional trading clones, fake IPO scams, and cryptocurrency investment traps across India.',
+        'Fact-verified statutory legal notice and asset freezing service for victims of Telegram stock market fraud, institutional trading clones, fake IPO scams, and cryptocurrency investment traps across India.',
       brand: {
         '@type': 'Organization',
         name: 'Legal Recovery',
@@ -261,7 +261,7 @@ export default function TradingScamTelegramClient() {
 
   const shareUrl = encodeURIComponent(pageUrl);
   const shareText = encodeURIComponent(
-    'Trapped in a Telegram trading scam, fake stock app, or crypto group? Send an advocate-drafted statutory legal notice under BNS 318(4), IT Act 66D & BNSS 106 to freeze accounts and recover stolen money! #CyberFraud #TelegramScam #LegalNotice #SEBI'
+    'Trapped in a Telegram trading scam, fake stock app, or crypto group? Send a fact-verified statutory legal notice under BNS 318(4), IT Act 66D & BNSS 106 to freeze accounts and recover stolen money! #CyberFraud #TelegramScam #LegalNotice #SEBI'
   );
 
   return (
@@ -290,7 +290,7 @@ export default function TradingScamTelegramClient() {
               <span className="text-[#DC2626]">Trading Scam on Telegram</span>
             </h1>
             <p className="text-sm md:text-xl mb-8 md:mb-12 max-w-3xl mx-auto text-slate-300 leading-relaxed font-medium">
-              Recover money lost to fake institutional stock trading groups, illicit IPO allocation schemes, clone APKs, and crypto traps on Telegram. Serve urgent advocate-drafted statutory notices to freeze mule bank accounts under BNS Section 318(4), IT Act Section 66D, and BNSS Section 106.
+              Recover money lost to fake institutional stock trading groups, illicit IPO allocation schemes, clone APKs, and crypto traps on Telegram. Serve urgent fact-verified statutory notices to freeze mule bank accounts under BNS Section 318(4), IT Act Section 66D, and BNSS Section 106.
             </p>
             <button
               onClick={() => setIsPaymentModalOpen(true)}
@@ -460,7 +460,7 @@ export default function TradingScamTelegramClient() {
                     <span>Quick Answer: Telegram Trading Scam Legal Recovery in India</span>
                   </div>
                   <p className="text-slate-800 text-sm md:text-base leading-relaxed font-medium">
-                    Victims of Telegram stock trading, fake institutional institutional placement, or cryptocurrency scams can legally recover misappropriated funds by serving an advocate-drafted statutory legal notice under Section 318(4) of the Bharatiya Nyaya Sanhita, 2023 (BNS), Section 66D of the Information Technology Act, 2000, and Section 106 of the Bharatiya Nagarik Suraksha Sanhita, 2023 (BNSS). Serving formal legal demand notices upon recipient mule account holders, intermediary banks, and payment aggregators mandates immediate debit freezes on tainted balances under Reserve Bank of India (RBI) anti-money laundering circulars. Victims can subsequently file a summary restitution application under Section 503 of the BNSS before the jurisdictional Chief Judicial Magistrate to obtain formal court orders releasing the frozen funds directly back to the depositor’s original bank account.
+                    Victims of Telegram stock trading, fake institutional institutional placement, or cryptocurrency scams can legally recover misappropriated funds by serving a fact-verified statutory legal notice under Section 318(4) of the Bharatiya Nyaya Sanhita, 2023 (BNS), Section 66D of the Information Technology Act, 2000, and Section 106 of the Bharatiya Nagarik Suraksha Sanhita, 2023 (BNSS). Serving formal legal demand notices upon recipient mule account holders, intermediary banks, and payment aggregators mandates immediate debit freezes on tainted balances under Reserve Bank of India (RBI) anti-money laundering circulars. Victims can subsequently file a summary restitution application under Section 503 of the BNSS before the jurisdictional Chief Judicial Magistrate to obtain formal court orders releasing the frozen funds directly back to the depositor’s original bank account.
                   </p>
                 </div>
 
@@ -1016,7 +1016,7 @@ export default function TradingScamTelegramClient() {
                     </div>
                   </div>
                   <p className="text-sm text-slate-650 leading-relaxed mb-6">
-                    Legal Recovery is India&apos;s premier tech-enabled legal notice and financial dispute resolution platform, connecting victims of digital financial crime, Telegram investment syndicates, corporate defaults, and contractual breaches with experienced panel advocates for swift, statutory legal notices and court-approved restitution at flat, transparent fees. Having facilitated ₹100 Crore+ in asset recoveries across 10,000+ cases throughout India, Legal Recovery combines procedural rigor with rapid digital execution.
+                    Legal Recovery is India&apos;s premier tech-enabled legal notice and financial dispute resolution platform, connecting victims of digital financial crime, Telegram investment syndicates, corporate defaults, and contractual breaches with our fact-verifying team for swift, statutory legal notices and court-approved restitution at flat, transparent fees. Having facilitated ₹100 Crore+ in asset recoveries across 10,000+ cases throughout India, Legal Recovery combines procedural rigor with rapid digital execution.
                   </p>
                   <div className="flex flex-wrap gap-3">
                     {[
@@ -1055,7 +1055,7 @@ export default function TradingScamTelegramClient() {
                   Trapped in a Telegram Trading Scam?
                 </h3>
                 <p className="text-slate-300 text-xs leading-relaxed mb-4">
-                  Act within the golden hour. Send an advocate-vetted statutory legal notice to freeze recipient mule bank accounts before funds are siphoned off.
+                  Act within the golden hour. Send a fact-verified statutory legal notice to freeze recipient mule bank accounts before funds are siphoned off.
                 </p>
                 <button
                   onClick={() => setIsPaymentModalOpen(true)}
@@ -1064,7 +1064,7 @@ export default function TradingScamTelegramClient() {
                   Draft &amp; Send Notice Now
                 </button>
                 <p className="text-center text-slate-400 text-[10px] mt-3">
-                  Flat fee • Advocate-drafted • Same-day dispatch
+                  Flat fee • Fact-verified • Same-day dispatch
                 </p>
               </div>
 
@@ -1119,7 +1119,7 @@ export default function TradingScamTelegramClient() {
                 {[
                   { stat: '84%', label: 'Of frozen accounts secured within first 48 hours' },
                   { stat: '₹100CR+', label: 'Total financial recovery facilitated across India' },
-                  { stat: 'Same Day', label: 'Advocate notice drafting and statutory dispatch' },
+                  { stat: 'Same Day', label: 'Notice preparation and statutory dispatch' },
                   { stat: 'Flat Fee', label: 'Transparent pricing with no hidden commissions' },
                 ].map((item, i) => (
                   <div key={i} className="flex items-center justify-between py-2 border-b border-slate-50 last:border-0">

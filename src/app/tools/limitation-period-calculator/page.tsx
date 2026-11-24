@@ -663,7 +663,7 @@ export default function LimitationPeriodCalculatorPage() {
                       Recommended Legal Action
                     </text>
                     <text x="235" y="475" fill="#94A3B8" fontSize="11" textAnchor="middle">
-                      Serve 15-Day Advocate Legal Notice • Summary Suit Order 37 CPC
+                      Serve 15-Day Fact-Verified Legal Notice • Summary Suit Order 37 CPC
                     </text>
 
                     <defs>
@@ -858,10 +858,10 @@ export default function LimitationPeriodCalculatorPage() {
                       1
                     </span>
                     <strong className="text-slate-900 font-bold block">
-                      Serve a Formal Statutory Advocate Legal Notice
+                      Serve a Formal Statutory Fact-Verified Legal Notice
                     </strong>
                     <p className="text-slate-600 leading-relaxed text-xs">
-                      Issuing an advocate demand notice via Speed Post and electronic mail puts the debtor on a strict 15-day timeline. Most debtors reply in writing, which often inadvertently constitutes a fresh <Link href="/send-legal-notice-online-india" className="text-[#DC2626] font-bold underline">Section 18 written acknowledgment</Link> that resets your 3-year window. Check our transparent <Link href="/legal-notice-charges" className="text-[#DC2626] font-bold underline">legal notice charges</Link> before proceeding.
+                      Issuing a fact-verified demand notice via Speed Post and electronic mail puts the debtor on a strict 15-day timeline. Most debtors reply in writing, which often inadvertently constitutes a fresh <Link href="/send-legal-notice-online-india" className="text-[#DC2626] font-bold underline">Section 18 written acknowledgment</Link> that resets your 3-year window. Check our transparent <Link href="/legal-notice-charges" className="text-[#DC2626] font-bold underline">legal notice charges</Link> before proceeding.
                     </p>
                   </div>
 

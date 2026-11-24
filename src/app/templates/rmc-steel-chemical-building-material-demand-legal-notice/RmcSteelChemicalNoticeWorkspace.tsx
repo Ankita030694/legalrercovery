@@ -643,7 +643,7 @@ export default function RmcSteelChemicalNoticeWorkspace() {
       <div className="bg-white border-2 border-slate-200 rounded-xl overflow-hidden shadow-xs">
         <div className="bg-slate-100 border-b border-slate-200 px-4 py-2.5 flex items-center justify-between">
           <span className="text-xs font-bold text-slate-700">
-            Live Advocate-Vetted Notice Preview (Updates Automatically)
+            Live Fact-Verified Notice Preview (Updates Automatically)
           </span>
           <span className="text-[11px] font-semibold text-emerald-700 bg-emerald-50 border border-emerald-200 px-2.5 py-0.5 rounded-full">
             BSA 2023 s.63 &amp; Order 37 Ready

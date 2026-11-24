@@ -170,7 +170,7 @@ const FAQS = [
   {
     question: "How does LegalRecovery assist commercial property owners and REITs with bulk TDS defaults?",
     answer:
-      "LegalRecovery provides a specialized institutional B2B recovery desk for Grade-A commercial developers, REITs, mall operators, and co-working chains. Through our Bulk CSV Desk, property managers can upload multi-tenant rent ledgers to instantly identify PAN mismatches and unpaid quarters. We issue automated High Court advocate demand notices across India via registered Speed Post RPAD and digital channels, file standardized Section 205 protective petitions before Assessing Officers, and draft collective CIT-TDS complaint dossiers.",
+      "LegalRecovery provides a specialized institutional B2B recovery desk for Grade-A commercial developers, REITs, mall operators, and co-working chains. Through our Bulk CSV Desk, property managers can upload multi-tenant rent ledgers to instantly identify PAN mismatches and unpaid quarters. We issue automated High Court fact-verified demand notices across India via registered Speed Post RPAD and digital channels, file standardized Section 205 protective petitions before Assessing Officers, and draft collective CIT-TDS complaint dossiers.",
   },
 ];
 
@@ -257,7 +257,7 @@ const HOWTO_SCHEMA = {
     {
       "@type": "HowToStep",
       position: 3,
-      name: "Issue 7-Day High Court Advocate Statutory Demand Notice",
+      name: "Issue 7-Day High Court Fact-Verified Statutory Demand Notice",
       text: "Serve formal legal notice on the tenant's Board of Directors warning of Section 201(1A) 1.5% interest, Section 271C 100% penalty, and Section 276B criminal prosecution.",
     },
     {
@@ -609,7 +609,7 @@ export default function CommercialTenantTdsRecoveryPage() {
                         Stage 3: Dispatch High Court Advocate 7-Day Statutory Demand Notice
                       </p>
                       <p className="text-xs sm:text-sm text-slate-600 mt-1">
-                        Issue a formal Advocate Notice via Speed Post RPAD, email, and WhatsApp to the tenant company and each individual director. Demand Challan ITNS 281 proof of deposit within 7 days. Give notice that non-compliance will trigger a Section 276B criminal prosecution complaint and a lease default cure notice under Section 106 of the Transfer of Property Act.
+                        Issue a formal Fact-Verified Notice via Speed Post RPAD, email, and WhatsApp to the tenant company and each individual director. Demand Challan ITNS 281 proof of deposit within 7 days. Give notice that non-compliance will trigger a Section 276B criminal prosecution complaint and a lease default cure notice under Section 106 of the Transfer of Property Act.
                       </p>
                     </div>
                   </div>
@@ -1001,7 +1001,7 @@ export default function CommercialTenantTdsRecoveryPage() {
                   </div>
 
                   <p className="text-xs text-slate-400 mt-4 leading-relaxed">
-                    By showing the tenant that a ₹6,00,000 working capital diversion escalates into a ₹14,34,000 financial liability plus Section 276B criminal imprisonment for directors, our Advocate Demand Notice creates overwhelming pressure to deposit Challan 281 immediately.
+                    By showing the tenant that a ₹6,00,000 working capital diversion escalates into a ₹14,34,000 financial liability plus Section 276B criminal imprisonment for directors, our team Demand Notice creates overwhelming pressure to deposit Challan 281 immediately.
                   </p>
                 </div>
               </div>
@@ -1117,7 +1117,7 @@ export default function CommercialTenantTdsRecoveryPage() {
 
               <div className="space-y-6 text-slate-700 text-sm sm:text-base leading-relaxed">
                 <p>
-                  These landmark judgments form the unshakeable foundation of our Advocate Demand Notices and Section 205 protective petitions before tax authorities.
+                  These landmark judgments form the unshakeable foundation of our team Demand Notices and Section 205 protective petitions before tax authorities.
                 </p>
 
                 <div className="space-y-5">

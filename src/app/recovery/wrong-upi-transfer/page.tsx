@@ -115,7 +115,7 @@ const FAQS = [
   },
   {
     q: "What if the wrong recipient refuses to return the money after being contacted?",
-    a: "If the unintended recipient refuses to refund the money, they commit Dishonest Misappropriation of Property under Section 314 and Criminal Breach of Trust under Section 316 of the Bharatiya Nyaya Sanhita, 2023 (formerly IPC Sections 403 and 406), and violate Section 72 of the Indian Contract Act, 1872. You should immediately send them an advocate-drafted Statutory Legal Notice demanding restitution within 15 days, followed by a police complaint and a Summary Suit under Order 37 CPC.",
+    a: "If the unintended recipient refuses to refund the money, they commit Dishonest Misappropriation of Property under Section 314 and Criminal Breach of Trust under Section 316 of the Bharatiya Nyaya Sanhita, 2023 (formerly IPC Sections 403 and 406), and violate Section 72 of the Indian Contract Act, 1872. You should immediately send them a fact-verified Statutory Legal Notice demanding restitution within 15 days, followed by a police complaint and a Summary Suit under Order 37 CPC.",
   },
   {
     q: "Does the RBI 3-day zero liability rule apply to wrong UPI transfers?",
@@ -288,7 +288,7 @@ export default function WrongUpiTransferPage() {
                   Can You Get Money Back After Sending to the Wrong UPI ID?
                 </h2>
                 <p className="text-sm sm:text-base text-slate-800 dark:text-slate-200 leading-relaxed font-medium">
-                  Yes. Under <strong>Section 72 of the Indian Contract Act, 1872</strong>, a person who receives money paid by mistake is legally bound to return it. First, immediately lodge an online dispute on the <strong>NPCI UPI Portal</strong> and notify your remitter bank with the 12-digit UTR. If the unintended recipient refuses debit consent, issue an <strong>advocate-drafted Statutory Legal Notice</strong> giving a 15-day deadline before prosecuting for Criminal Breach of Trust (BNS 316) and filing an Order 37 summary recovery suit.
+                  Yes. Under <strong>Section 72 of the Indian Contract Act, 1872</strong>, a person who receives money paid by mistake is legally bound to return it. First, immediately lodge an online dispute on the <strong>NPCI UPI Portal</strong> and notify your remitter bank with the 12-digit UTR. If the unintended recipient refuses debit consent, issue an <strong>fact-verified Statutory Legal Notice</strong> giving a 15-day deadline before prosecuting for Criminal Breach of Trust (BNS 316) and filing an Order 37 summary recovery suit.
                 </p>
               </section>
 
@@ -608,7 +608,7 @@ export default function WrongUpiTransferPage() {
                   </h2>
                 </div>
                 <p className="text-sm sm:text-base text-slate-700 dark:text-slate-300 leading-relaxed">
-                  When an unintended recipient refuses to refund the erroneously transferred funds, issuing a formal advocate-drafted Legal Notice is the single most powerful recovery instrument. Under Indian law, receiving money mistakenly creates an involuntary quasi-contract:
+                  When an unintended recipient refuses to refund the erroneously transferred funds, issuing a formal fact-verified Legal Notice is the single most powerful recovery instrument. Under Indian law, receiving money mistakenly creates an involuntary quasi-contract:
                 </p>
                 <div className="p-5 bg-slate-50 dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 space-y-3">
                   <h3 className="text-sm font-bold text-slate-900 dark:text-white">
@@ -754,7 +754,7 @@ export default function WrongUpiTransferPage() {
                       <strong>Initial Friction:</strong> Amit immediately submitted an in-app dispute and contacted Vinod via phone. Vinod initially promised to return the funds, but subsequently stopped answering calls, switched off WhatsApp, and withdrew ₹40,000 from an ATM. HDFC Bank informed Amit that they could not debit the remaining balance without Vinod&apos;s signed authorization.
                     </p>
                     <p>
-                      <strong>Legal Notice Intervention:</strong> On Day 4, Amit engaged LegalRecovery.in. An advocate drafted a formal Statutory Legal Notice addressed to Vinod K., invoking <strong>Section 72 of the Indian Contract Act</strong> and citing <strong>Section 316 of the Bharatiya Nyaya Sanhita (Criminal Breach of Trust)</strong>. The notice gave a strict 15-day period to return the ₹65,000 plus ₹1,499 drafting expenses, warning of immediate criminal prosecution and freezing of all linked accounts. A copy was formally marked to the HDFC Bank branch manager.
+                      <strong>Legal Notice Intervention:</strong> On Day 4, Amit engaged LegalRecovery.in. The team verified the facts and prepared a formal Statutory Legal Notice addressed to Vinod K., invoking <strong>Section 72 of the Indian Contract Act</strong> and citing <strong>Section 316 of the Bharatiya Nyaya Sanhita (Criminal Breach of Trust)</strong>. The notice gave a strict 15-day period to return the ₹65,000 plus ₹1,499 drafting expenses, warning of immediate criminal prosecution and freezing of all linked accounts. A copy was formally marked to the HDFC Bank branch manager.
                     </p>
                     <p>
                       <strong>The Outcome:</strong> Upon receipt of the registered legal notice and intimation of bank account lien scrutiny, Vinod contacted Amit&apos;s advocate on Day 9. A mutual settlement was recorded, and Vinod remitted the entire ₹65,000 back to Amit&apos;s verified bank account in two instalments via IMPS.
@@ -934,7 +934,7 @@ export default function WrongUpiTransferPage() {
                       </li>
                     ))}
                   </ul>
-                  {/* TODO(reviewer): Pending official advocate review assignment from src/data/reviewers.ts */}
+                  {/* TODO(reviewer): Pending official fact verification assignment from src/data/reviewers.ts */}
                   <div className="mt-4 pt-3 border-t border-slate-200 dark:border-slate-800 text-[11px] text-slate-500">
                     Editorial Standards: Researched and verified against primary statutory gazettes, Supreme Court of India precedents, and official Reserve Bank of India notifications.
                   </div>

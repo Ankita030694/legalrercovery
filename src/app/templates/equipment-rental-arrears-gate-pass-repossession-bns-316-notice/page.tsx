@@ -96,7 +96,7 @@ const FAQS = [
   },
   {
     q: "How does CC'ing the jurisdictional Police Station (SHO) work under BNS Section 316?",
-    a: "Once a lease or bailment period expires and the bailee refuses to return entrusted movable property despite written demand, dishonest retention triggers Criminal Breach of Trust under BNS Section 316. Using LegalRecovery's multi-recipient dispatch fields (policeStationName and policeStationEmail), your advocate notice formally endorses a copy with serial/chassis schedules to the local SHO—creating an official pre-FIR record that deters midnight shifting or scrapping of your assets.",
+    a: "Once a lease or bailment period expires and the bailee refuses to return entrusted movable property despite written demand, dishonest retention triggers Criminal Breach of Trust under BNS Section 316. Using LegalRecovery's multi-recipient dispatch fields (policeStationName and policeStationEmail), your fact-verified notice formally endorses a copy with serial/chassis schedules to the local SHO—creating an official pre-FIR record that deters midnight shifting or scrapping of your assets.",
   },
   {
     q: "What is a 'running daily hire meter' and why must it be quantified in the notice?",

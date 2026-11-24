@@ -118,7 +118,7 @@ const SCENARIO_CARDS = [
     situation:
       "You worked on an unfunded milestone, accepted a direct Slack/Wise/bank arrangement to save platform fees, or delivered extra scope on a 'will pay via bonus' promise, and the client disappeared.",
     route:
-      "Preserve Slack/WhatsApp/email approvals and Git/Figma logs under Section 63 BSA. Serve a 15-day Advocate Demand Notice invoking Trimex digital contract bindingness, Section 70 Quantum Meruit, and IP revocation.",
+      "Preserve Slack/WhatsApp/email approvals and Git/Figma logs under Section 63 BSA. Serve a 15-day Fact-Verified Demand Notice invoking Trimex digital contract bindingness, Section 70 Quantum Meruit, and IP revocation.",
     statutoryHook: "Sec 10, 70 & 73 Contract Act + Trimex International (SC)",
     jumpHref: "#heading-worked-example",
     jumpLabel: "Read $4,950 Off-Platform Case Study →",
@@ -250,7 +250,7 @@ const FAQS = [
   {
     question: "Upwork, Fiverr ya direct freelance client payment nahi de raha kya kare?",
     answer:
-      "Agar Upwork ya Fiverr par escrow milestone funded hai toh hamesha official 'Submit Work' button se delivery upload karein aur refund request ko 7 din ke andar reject karke platform mediation/arbitration use karein. Agar client ne off-platform kaam karwake ya direct invoice par payment rok liya hai, toh apne WhatsApp/Slack chats, email approvals aur source files (Section 63 BSA) sambhal kar rakhein. LegalRecovery.in ke jariye aap client ko 15-din ka Advocate Legal Notice aur Copyright Act Section 19 Notice bhej sakte hain, jisse client aapka code/design bina payment use nahi kar sakta.",
+      "Agar Upwork ya Fiverr par escrow milestone funded hai toh hamesha official 'Submit Work' button se delivery upload karein aur refund request ko 7 din ke andar reject karke platform mediation/arbitration use karein. Agar client ne off-platform kaam karwake ya direct invoice par payment rok liya hai, toh apne WhatsApp/Slack chats, email approvals aur source files (Section 63 BSA) sambhal kar rakhein. LegalRecovery.in ke jariye aap client ko 15-din ka Fact-Verified Legal Notice aur Copyright Act Section 19 Notice bhej sakte hain, jisse client aapka code/design bina payment use nahi kar sakta.",
   },
 ];
 
@@ -654,10 +654,10 @@ export default function UpworkFiverrClientNotPayingIndiaPage() {
                     </span>
                     <div className="space-y-1 sm:space-y-1.5">
                       <h3 className="text-sm sm:text-base md:text-lg font-bold text-slate-900">
-                        Serve a Formal Section 19 Copyright Revocation &amp; 15-Day Advocate Legal Demand Notice
+                        Serve a Formal Section 19 Copyright Revocation &amp; 15-Day Fact-Verified Legal Demand Notice
                       </h3>
                       <p className="text-xs sm:text-sm leading-relaxed">
-                        When work was done outside escrow, off-platform, or when a client cancels an order while keeping your files, engage an advocate to serve a formal <Link href="/how-freelancer-can-send-legal-notice-to-client-india" className="text-blue-700 underline font-semibold">Freelancer Legal Demand &amp; IP Revocation Notice</Link>. The notice formally puts the client, its founders/directors, and its legal department on notice that: (a) under Section 19 of the Copyright Act, 1957 and platform ToS, <strong>no copyright or license has transferred</strong> due to non-payment; (b) any commercial deployment of your code, design, or content is unlawful infringement; and (c) full invoice payment plus 18% interest must be remitted within 15 calendar days.
+                        When work was done outside escrow, off-platform, or when a client cancels an order while keeping your files, serve a formal <Link href="/how-freelancer-can-send-legal-notice-to-client-india" className="text-blue-700 underline font-semibold">Freelancer Legal Demand &amp; IP Revocation Notice</Link>. The notice formally puts the client, its founders/directors, and its legal department on notice that: (a) under Section 19 of the Copyright Act, 1957 and platform ToS, <strong>no copyright or license has transferred</strong> due to non-payment; (b) any commercial deployment of your code, design, or content is unlawful infringement; and (c) full invoice payment plus 18% interest must be remitted within 15 calendar days.
                       </p>
                     </div>
                   </li>
@@ -1019,7 +1019,7 @@ export default function UpworkFiverrClientNotPayingIndiaPage() {
                       <strong>The Deadlock:</strong> Siddharth pushed the completed production code to the client&apos;s GitHub repository on 12 September 2026. Within 48 hours, the client merged the pull request, deployed the dashboard to their live customer portal, and revoked Siddharth&apos;s GitHub and Slack access. For 28 days, the CTO ignored Siddharth&apos;s invoices and WhatsApp reminders, eventually sending a curt email claiming the code &ldquo;needed internal refactoring&rdquo; and refusing payment.
                     </p>
                     <p>
-                      <strong>The Statutory Action:</strong> Siddharth engaged LegalRecovery.in. Because reporting an off-platform deal to Upwork would risk Siddharth&apos;s Top Rated Plus account under Upwork&apos;s Non-Circumvention rule, our advocate bypassed Upwork entirely and served a formal 15-day <strong>Statutory Legal Demand &amp; Section 19 Copyright Revocation Notice</strong> to both the Mumbai subsidiary&apos;s registered office (via Registered Speed Post) and the Delaware founders&apos; corporate emails. The notice cited <em>Trimex International</em> (email SOW validity), Section 70 of the Indian Contract Act, Section 16 MSMED compound interest (via Siddharth&apos;s Udyam registration), and Section 19 of the Copyright Act—formally revoking all license to run the unpaid codebase and attaching a draft AWS/GitHub DMCA Takedown notice.
+                      <strong>The Statutory Action:</strong> Siddharth engaged LegalRecovery.in. Because reporting an off-platform deal to Upwork would risk Siddharth&apos;s Top Rated Plus account under Upwork&apos;s Non-Circumvention rule, our team bypassed Upwork entirely and served a formal 15-day <strong>Statutory Legal Demand &amp; Section 19 Copyright Revocation Notice</strong> to both the Mumbai subsidiary&apos;s registered office (via Registered Speed Post) and the Delaware founders&apos; corporate emails. The notice cited <em>Trimex International</em> (email SOW validity), Section 70 of the Indian Contract Act, Section 16 MSMED compound interest (via Siddharth&apos;s Udyam registration), and Section 19 of the Copyright Act—formally revoking all license to run the unpaid codebase and attaching a draft AWS/GitHub DMCA Takedown notice.
                     </p>
                     <div className="p-3.5 sm:p-4 bg-emerald-950/70 border border-emerald-700/60 rounded-xl text-emerald-200">
                       <strong className="block text-emerald-400 font-bold mb-1">The Outcome:</strong>
@@ -1101,7 +1101,7 @@ export default function UpworkFiverrClientNotPayingIndiaPage() {
                   Scope &amp; Boundaries: What LegalRecovery Can and Cannot Do
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
-                  Cross-border and platform freelance disputes require realistic legal triage. Before you spend money on a legal notice, review what our advocates can and cannot do:
+                  Cross-border and platform freelance disputes require realistic legal triage. Before you spend money on a legal notice, review what our team can and cannot do:
                 </p>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">

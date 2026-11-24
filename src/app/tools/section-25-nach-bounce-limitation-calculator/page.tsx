@@ -641,7 +641,7 @@ export default function Section25NachBounceLimitationCalculatorPage() {
                         Deploy Single &#8377;999 Test or Bulk e-NACH CSV Notice Desk
                       </h2>
                       <p className="text-xs font-semibold text-slate-500 mt-1">
-                        Advocate-signed PSS Act s.25 notices via Email, WhatsApp &amp; Speed Post RPAD
+                        Fact-verified PSS Act s.25 notices via Email, WhatsApp &amp; Speed Post RPAD
                       </p>
                     </div>
                   </div>

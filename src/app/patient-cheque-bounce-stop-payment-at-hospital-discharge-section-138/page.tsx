@@ -509,7 +509,7 @@ export default function PatientChequeBouncePage() {
                   <rect x="20" y="180" width="860" height="170" rx="14" fill="#0F172A" stroke="#1E293B" />
                   <text x="40" y="215" fill="#EF4444" fontSize="13" fontWeight="bold">CRITICAL HOSPITAL MILESTONE AUDIT:</text>
                   <text x="40" y="245" fill="#E2E8F0" fontSize="12">Day 01–03: Secure original bank dishonour memo citing Code 12 (Stop Payment) or Code 01 (Funds Insufficient).</text>
-                  <text x="40" y="270" fill="#E2E8F0" fontSize="12">Day 04–30: Issue advocate demand notice citing ICDS Ltd. v. Beena Shabeer (2002) 6 SCC 426 to destroy third-party plea.</text>
+                  <text x="40" y="270" fill="#E2E8F0" fontSize="12">Day 04–30: Issue fact-verified demand notice citing ICDS Ltd. v. Beena Shabeer (2002) 6 SCC 426 to destroy third-party plea.</text>
                   <text x="40" y="295" fill="#E2E8F0" fontSize="12">Day 31–45: 15-day statutory payment cure period expires; debtor fails to remit inpatient arrears.</text>
                   <text x="40" y="320" fill="#E2E8F0" fontSize="12">Day 46–75: File s.138 criminal complaint + s.143A interim relief petition before Judicial Magistrate First Class.</text>
                 </svg>
@@ -946,7 +946,7 @@ export default function PatientChequeBouncePage() {
                 Institutional Debt Recovery Rails for Multi-Specialty Hospitals
               </h2>
               <p className="text-xs sm:text-sm text-slate-600 mb-6 leading-relaxed">
-                Whether you need to prosecute an isolated ₹3.5 Lakh discharge cheque bounce or streamline recovery across hundreds of aged inpatient and TPA claims, LegalRecovery.in provides advocate-drafted solutions tailored for healthcare providers:
+                Whether you need to prosecute an isolated ₹3.5 Lakh discharge cheque bounce or streamline recovery across hundreds of aged inpatient and TPA claims, LegalRecovery.in provides fact-verified solutions tailored for healthcare providers:
               </p>
 
               <PatientChequeBounceCTA />

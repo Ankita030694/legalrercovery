@@ -27,7 +27,7 @@ export default function QCommerceNoticeCTA({ className = "" }: QCommerceNoticeCT
                 Test 1 Live Overdue Case Now (&rupee;{basePrice})
               </h3>
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-                Challenge arbitrary dark-store short-GRNs, fill-rate penalties, or aged Modern-Trade payout holds on a single batch or invoice. Advocate-drafted, statutory 15-day deemed acceptance demand served via verified Email, WhatsApp Business API, and Speed Post RPAD with Section 63 BSA electronic evidence compliance.
+                Challenge arbitrary dark-store short-GRNs, fill-rate penalties, or aged Modern-Trade payout holds on a single batch or invoice. Fact-verified, statutory 15-day deemed acceptance demand served via verified Email, WhatsApp Business API, and Speed Post RPAD with Section 63 BSA electronic evidence compliance.
               </p>
               <ul className="space-y-1.5 text-xs text-slate-200 mb-6">
                 <li>&check; MSMED Act Section 2(b) 15-day deemed acceptance invocation</li>

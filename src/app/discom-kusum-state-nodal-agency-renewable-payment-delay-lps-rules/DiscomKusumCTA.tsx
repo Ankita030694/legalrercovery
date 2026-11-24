@@ -24,10 +24,10 @@ export default function DiscomKusumCTA({ className = "" }: DiscomKusumCTAProps) 
                 Track 1 · Single DISCOM / SNA Arrear
               </span>
               <h3 className="text-lg sm:text-xl font-bold text-white mb-2">
-                Test 1 Live Overdue Case Now (&#8377;{basePrice} &middot; Advocate Drafted &middot; Email + WhatsApp + Speed Post RPAD)
+                Test 1 Live Overdue Case Now (&#8377;{basePrice} &middot; Fact-Verified &middot; Email + WhatsApp + Speed Post RPAD)
               </h3>
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-                Upload your overdue DISCOM tariff invoice, PRAAPTI log, PM-KUSUM LoA, or SNA commissioning certificate. Our advocates draft an LPS Rules Rule 7 Default Notice, Section 80 CPC notice, or SERC Section 86(1)(f) pre-petition demand.
+                Enter the details of your overdue DISCOM tariff invoice, PRAAPTI log, PM-KUSUM LoA, or SNA commissioning certificate. Our team verifies the facts and prepares an LPS Rules Rule 7 Default Notice, Section 80 CPC notice, or SERC Section 86(1)(f) pre-petition demand.
               </p>
             </div>
 

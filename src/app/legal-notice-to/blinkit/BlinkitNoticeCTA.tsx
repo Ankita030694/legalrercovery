@@ -31,7 +31,7 @@ export default function BlinkitNoticeCTA({
                 Recover Your Stuck Blinkit Refund or Settle Missing Items Legally
               </h3>
               <p className="text-slate-300 text-sm sm:text-base leading-relaxed mb-6">
-                Have an advocate draft and serve a formal statutory legal demand notice directly to Blink Commerce Private Limited (operating Blinkit) and the dark-store merchant. Served by email and WhatsApp under Section 63 BSA. Speed Post is optional at ₹450 per party.
+                Serve a formal statutory legal demand notice directly to Blink Commerce Private Limited (operating Blinkit) and the dark-store merchant. Served by email and WhatsApp under Section 63 BSA. Speed Post is optional at ₹450 per party.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button
@@ -42,7 +42,7 @@ export default function BlinkitNoticeCTA({
                   {buttonText} — ₹{basePrice}
                 </button>
                 <div className="text-xs text-slate-400 flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-3">
-                  <span>✓ 24-Hour Advocate Drafting</span>
+                  <span>✓ 24-Hour Notice Drafting</span>
                   <span className="hidden sm:inline">•</span>
                   <span>✓ Email + WhatsApp</span>
                   <span className="hidden sm:inline">•</span>

@@ -183,7 +183,7 @@ const FAQS = [
   {
     question: "How do I convert an airline credit shell or travel voucher back to cash in my bank account?",
     answer:
-      "To convert a forced credit shell into cash: (1) Do not use the voucher to book another flight, as utilizing it can be deemed acceptance; (2) Send an immediate written refusal to the airline's Nodal Grievance Officer and customer support invoking DGCA CAR Series M Part IV and the Supreme Court Pravasi Legal Cell judgment; (3) File a formal grievance on the Ministry of Civil Aviation's AirSewa portal (airsewa.gov.in); (4) If uncredited after 7 working days, serve a formal statutory advocate legal notice demanding bank remittance within 15 calendar days.",
+      "To convert a forced credit shell into cash: (1) Do not use the voucher to book another flight, as utilizing it can be deemed acceptance; (2) Send an immediate written refusal to the airline's Nodal Grievance Officer and customer support invoking DGCA CAR Series M Part IV and the Supreme Court Pravasi Legal Cell judgment; (3) File a formal grievance on the Ministry of Civil Aviation's AirSewa portal (airsewa.gov.in); (4) If uncredited after 7 working days, serve a formal statutory fact-verified legal notice demanding bank remittance within 15 calendar days.",
   },
   {
     question: "What are the DGCA flight voucher refund rules when an airline cancels or delays a flight?",
@@ -213,7 +213,7 @@ const FAQS = [
   {
     question: "Airline credit shell ya travel voucher dene par bank account mein cash refund kaise lein?",
     answer:
-      "Agar airline ya travel agent aapke mana karne ke bawajood credit shell ya wallet balance de de, toh aap use turant email par reject karein. Supreme Court ke Pravasi Legal Cell faisle aur DGCA CAR Series M Part IV ke tehat airline par cash refund dena bandhan-kari hai. AirSewa portal par complaint karein, aur agar 7 dino mein bank mein paise na aayein, toh LegalRecovery.in ke verified advocate se 15 din ka statutory legal notice bhejein.",
+      "Agar airline ya travel agent aapke mana karne ke bawajood credit shell ya wallet balance de de, toh aap use turant email par reject karein. Supreme Court ke Pravasi Legal Cell faisle aur DGCA CAR Series M Part IV ke tehat airline par cash refund dena bandhan-kari hai. AirSewa portal par complaint karein, aur agar 7 dino mein bank mein paise na aayein, toh LegalRecovery.in ke zariye (hamari team aapke facts verify karti hai) 15 din ka statutory legal notice bhejein.",
   },
 ];
 
@@ -737,13 +737,13 @@ export default function CreditShellVoucherLegalPage() {
                     </span>
                     <div className="space-y-1 sm:space-y-1.5">
                       <h3 className="text-sm sm:text-base md:text-lg font-bold text-slate-900">
-                        Serve a Formal Statutory Advocate Legal Demand Notice
+                        Serve a Formal Statutory Fact-Verified Legal Demand Notice
                       </h3>
                       <p className="text-xs sm:text-sm leading-relaxed">
-                        When administrative escalation yields only automated deflection, engage a verified advocate to issue a statutory demand notice to the airline corporate office and the booking OTA. Dispatched via Registered Speed Post and served electronically under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023, the notice gives the carrier a strict 15-day deadline to remit the cash refund with 18% penal interest and damages. Over 85% of forced credit shell disputes are resolved at this stage to avoid court exposure.
+                        When administrative escalation yields only automated deflection, have a fact-verified statutory demand notice issued to the airline corporate office and the booking OTA. Dispatched via Registered Speed Post and served electronically under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023, the notice gives the carrier a strict 15-day deadline to remit the cash refund with 18% penal interest and damages. Over 85% of forced credit shell disputes are resolved at this stage to avoid court exposure.
                       </p>
                       <p className="text-xs text-slate-500 font-medium">
-                        Check transparent advocate drafting fees on our <Link href="/legal-notice-charges" className="text-blue-700 underline">legal notice charges</Link> schedule.
+                        Check transparent notice drafting fees on our <Link href="/legal-notice-charges" className="text-blue-700 underline">legal notice charges</Link> schedule.
                       </p>
                     </div>
                   </li>
@@ -912,11 +912,11 @@ export default function CreditShellVoucherLegalPage() {
                       <strong>The Deadlock:</strong> Sunita repeatedly emailed the airline and OTA demanding cash remittance. For 9 months, customer support responded with canned deflection: <em>&quot;As per our commercial terms of carriage, disrupted bookings are processed as credit shells for future travel. Shells cannot be converted to bank cash.&quot;</em> When Sunita was unable to travel due to work commitments and the 1-year expiry approached, the airline warned that the balance would be forfeited.
                     </p>
                     <p>
-                      <strong>The Statutory Action:</strong> Sunita engaged LegalRecovery.in. An advocate drafted and served a joint statutory legal demand notice on the airline&apos;s Managing Director and the OTA&apos;s Grievance Officer. The notice invoked the Supreme Court judgment in <em>Pravasi Legal Cell (2020) 10 SCC 724</em>, DGCA CAR Series M Part IV (Clause 3.3.2), and CCPA Dark Patterns Guidelines, giving a strict 15-day demand for cash refund plus interest.
+                      <strong>The Statutory Action:</strong> Sunita engaged LegalRecovery.in. The team verified the facts and served a joint statutory legal demand notice on the airline&apos;s Managing Director and the OTA&apos;s Grievance Officer. The notice invoked the Supreme Court judgment in <em>Pravasi Legal Cell (2020) 10 SCC 724</em>, DGCA CAR Series M Part IV (Clause 3.3.2), and CCPA Dark Patterns Guidelines, giving a strict 15-day demand for cash refund plus interest.
                     </p>
                     <div className="p-3.5 sm:p-4 bg-emerald-950/70 border border-emerald-700/60 rounded-xl text-emerald-200">
                       <strong className="block text-emerald-400 font-bold mb-1">The Outcome:</strong>
-                      On Day 9 following receipt of the advocate legal notice, the airline&apos;s Legal &amp; Regulatory Compliance Cell dissolved the credit shell and instructed their acquiring bank to initiate a direct inward NEFT credit. The full fare of ₹38,400 was credited directly to Sunita&apos;s bank account, accompanied by an additional ₹20,000 ex-gratia compensation for the 9-month delay, closing the dispute without consumer court litigation.
+                      On Day 9 following receipt of the fact-verified legal notice, the airline&apos;s Legal &amp; Regulatory Compliance Cell dissolved the credit shell and instructed their acquiring bank to initiate a direct inward NEFT credit. The full fare of ₹38,400 was credited directly to Sunita&apos;s bank account, accompanied by an additional ₹20,000 ex-gratia compensation for the 9-month delay, closing the dispute without consumer court litigation.
                     </div>
                   </div>
                 </div>

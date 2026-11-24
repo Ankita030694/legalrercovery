@@ -77,7 +77,7 @@ const PROBLEMS: ProblemTab[] = [
     complianceRisk:
       "Deploying unregulated third-party collection agencies for credit card charge-offs frequently results in calls at unearthly hours, contacts to borrower relatives, and abusive intimidation—violating the RBI Master Direction on Credit Card Operations and triggering massive reputational damage.",
     legalRemedy:
-      "Third-party legal recovery treats card balances as formal liquidated debts. Licensed advocates serve 15-day pre-litigation legal notices with precise statements of principal dues, eliminating usurious interest contentions and initiating summary suits or institutional arbitration.",
+      "Third-party legal recovery treats card balances as formal liquidated debts. Fact-verified 15-day pre-litigation legal notices are served with precise statements of principal dues, eliminating usurious interest contentions and initiating summary suits or institutional arbitration.",
     steps: [
       {
         step: "Audit & Elimination of Disputed Penalties",
@@ -85,7 +85,7 @@ const PROBLEMS: ProblemTab[] = [
           "Recalibrating ledger statements to clearly delineate principal spend from finance charges in strict compliance with RBI usury caps.",
       },
       {
-        step: "Formal Advocate Demand Dispatch",
+        step: "Formal Demand Dispatch",
         description:
           "Dispatching formal legal notices demanding settlement within 15 calendar days, creating an unimpeachable legal foundation for judicial recovery.",
       },

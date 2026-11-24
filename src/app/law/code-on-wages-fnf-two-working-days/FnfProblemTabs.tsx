@@ -37,7 +37,7 @@ const PROBLEMS: FnfProblemTab[] = [
           "Inform HR and company directors that withholding wages past statutory timelines constitutes an offence punishable by statutory fines and personal liability of the Managing Director under Section 56 of the Code on Wages.",
       },
       {
-        step: "Serve Statutory Advocate Legal Notice",
+        step: "Serve Statutory Fact-Verified Legal Notice",
         description:
           "If the company fails to remit dues within 7 days, engage an advocate to dispatch an official statutory legal demand notice giving a final 15-day window before moving the Labour Authority under Section 45.",
       },
@@ -93,7 +93,7 @@ const PROBLEMS: FnfProblemTab[] = [
       {
         step: "File Section 45 Application Before Labour Authority",
         description:
-          "Serve a statutory advocate notice and simultaneously file a claim before the Authority under Section 45 of the Code on Wages seeking up to 10 times the unpaid amount as compensation.",
+          "Serve a statutory fact-verified notice and simultaneously file a claim before the Authority under Section 45 of the Code on Wages seeking up to 10 times the unpaid amount as compensation.",
       },
     ],
     statutoryRule: "Section 17(2)(i)-(ii) & Section 45 Code on Wages, 2019",
@@ -118,9 +118,9 @@ const PROBLEMS: FnfProblemTab[] = [
           "Remind HR that under Section 18(3) of the Code on Wages, total deductions from wages cannot exceed 50%, making negative FnF statements unlawful.",
       },
       {
-        step: "Send Advocate Notice for Notice Pay Arbitrariness",
+        step: "Send Fact-Verified Notice for Notice Pay Arbitrariness",
         description:
-          "Have an advocate issue a demand contesting the excessive calculation and demanding refund of the illegally retained salary components.",
+          "Issue a demand contesting the excessive calculation and demanding refund of the illegally retained salary components.",
       },
     ],
     statutoryRule: "Section 18(3) Code on Wages, 2019 & Section 74 Indian Contract Act, 1872",

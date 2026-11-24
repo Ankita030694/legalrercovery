@@ -24,10 +24,10 @@ export default function MspAmcCTA({ className = "" }: MspAmcCTAProps) {
                 Track 1 · Single MSP / FaaS Account
               </span>
               <h3 className="text-lg sm:text-xl font-bold text-white mb-2">
-                Test 1 Live Overdue Case Now (&#8377;{basePrice} &middot; Advocate Drafted &middot; Email + WhatsApp + Speed Post RPAD)
+                Test 1 Live Overdue Case Now (&#8377;{basePrice} &middot; Fact-Verified &middot; Email + WhatsApp + Speed Post RPAD)
               </h3>
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-                Upload a single defaulted MSA/AMC Statement of Work, Delivery Challan (with Firewall/Switch serial numbers), and unpaid GST ledger. Our advocates draft an IT Act s.43-safe handover-cum-demand notice invoking BNS s.316 hardware surrender and Order XXXVII CPC.
+                Upload a single defaulted MSA/AMC Statement of Work, Delivery Challan (with Firewall/Switch serial numbers), and unpaid GST ledger. Our team drafts an IT Act s.43-safe handover-cum-demand notice invoking BNS s.316 hardware surrender and Order XXXVII CPC.
               </p>
             </div>
 

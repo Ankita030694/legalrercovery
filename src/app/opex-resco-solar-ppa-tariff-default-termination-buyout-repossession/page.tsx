@@ -960,7 +960,7 @@ export default function OpexRescoSolarPpaDefaultPage() {
                     Notice Workspace (P1)
                   </span>
                   <span className="font-bold text-slate-900">
-                    Advocate-Vetted Commercial Notice &amp; Reply Workspace &rarr;
+                    Ready-to-Use Commercial Notice &amp; Reply Workspace &rarr;
                   </span>
                 </Link>
               </div>

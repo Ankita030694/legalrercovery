@@ -32,7 +32,7 @@ export default function SmaCureNoticeCTA({
                 Arrest SMA-2 Slippage Before Day-90 NPA Stamping
               </h3>
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
-                Deploy advocate-signed Soft Legal Cure Notices via Email, WhatsApp, and Speed Post RPAD across 61–85 DPD retail and SME cohorts.
+                Deploy fact-verified Soft Legal Cure Notices via Email, WhatsApp, and Speed Post RPAD across 61–85 DPD retail and SME cohorts.
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-3 shrink-0">
@@ -55,7 +55,7 @@ export default function SmaCureNoticeCTA({
         <PaymentModal
           isOpen={isModalOpen}
           onClose={() => setIsModalOpen(false)}
-          serviceName="Day-62 SMA-2 Advocate Cure Notice"
+          serviceName="Day-62 SMA-2 Fact-Verified Cure Notice"
           price={basePrice}
         />
       </>
@@ -83,7 +83,7 @@ export default function SmaCureNoticeCTA({
               Stop Paying 15% NPA Provisioning on Preventable SMA-2 Accounts
             </h3>
             <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed">
-              Once an SMA-2 account crosses 90 DPD at day-end, partial payments cannot restore Standard status. LegalRecovery.in equips bank CROs and Retail Early-Warning Heads with automated, advocate-signed cure notices delivered within 24 hours across Email, WhatsApp, and Speed Post RPAD.
+              Once an SMA-2 account crosses 90 DPD at day-end, partial payments cannot restore Standard status. LegalRecovery.in equips bank CROs and Retail Early-Warning Heads with automated, fact-verified cure notices delivered within 24 hours across Email, WhatsApp, and Speed Post RPAD.
             </p>
           </div>
 
@@ -103,7 +103,7 @@ export default function SmaCureNoticeCTA({
                   Test 1 Live Overdue Case Now
                 </h4>
                 <p className="text-xs text-slate-300 leading-relaxed">
-                  Advocate-drafted SMA-1/SMA-2 Cure Notice with exact FIFO arrears breakup and Day-90 NPA warning. Dispatched via Email, WhatsApp, and Speed Post RPAD.
+                  Fact-verified SMA-1/SMA-2 Cure Notice with exact FIFO arrears breakup and Day-90 NPA warning. Dispatched via Email, WhatsApp, and Speed Post RPAD.
                 </p>
               </div>
 
@@ -171,7 +171,7 @@ export default function SmaCureNoticeCTA({
       <PaymentModal
         isOpen={isModalOpen}
         onClose={() => setIsModalOpen(false)}
-        serviceName="Day-62 SMA-2 Advocate Cure Notice"
+        serviceName="Day-62 SMA-2 Fact-Verified Cure Notice"
         price={basePrice}
       />
     </>

@@ -84,7 +84,7 @@ const SCENARIOS: Scenario[] = [
     criminalRiskFlag:
       "Offshore clients frequently bluff using US/UK legal jargon to intimidate Indian IT founders into surrendering Git credentials without payment. In Indian courts, unpaid vendors maintain complete IP ownership.",
     lawfulActionPlan: [
-      "Issue an international Advocate Statutory Demand Notice asserting conditional IP vesting and reserving rights under the Berne Convention for the Protection of Literary and Artistic Works.",
+      "Issue an international Fact-Verified Statutory Demand Notice asserting conditional IP vesting and reserving rights under the Berne Convention for the Protection of Literary and Artistic Works.",
       "Notify the client that any deployment of the unassigned software code outside India constitutes willful international copyright piracy subject to extraterritorial statutory damages.",
       "Report unrealized export receivables to Authorized Dealer (AD) Banks to ensure FEMA EDPMS compliance and avoid regulatory scrutiny under RBI Master Directions on Export of Services.",
       "Institute proceedings under the Commercial Courts Act or international arbitration forum stipulated in the cross-border MSA.",
@@ -202,7 +202,7 @@ export default function SourceCodeWithholdingScenarioTabs() {
         {/* Lawful Action Plan */}
         <div>
           <p className="text-xs font-bold uppercase tracking-wider text-slate-300 mb-2.5">
-            100% Lawful Creditor Action Plan (Advocate-Vetted SOP):
+            100% Lawful Creditor Action Plan (Fact-Verified SOP):
           </p>
           <ul className="space-y-2">
             {currentScenario.lawfulActionPlan.map((step, idx) => (

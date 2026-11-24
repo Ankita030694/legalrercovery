@@ -29,7 +29,7 @@ export default function Section25NachCalculatorCTA({
                 Test 1 Live Overdue Case Now (&rupee;{basePrice})
               </h3>
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-                Lock your Section 25 PSS Act 30-day statutory demand window on one live NPCI e-NACH or UPI AutoPay bounce without annual SaaS procurement delays. Advocate-drafted and dispatched via Email, Business WhatsApp, and Speed Post RPAD with Section 63 BSA certification.
+                Lock your Section 25 PSS Act 30-day statutory demand window on one live NPCI e-NACH or UPI AutoPay bounce without annual SaaS procurement delays. Fact-verified and dispatched via Email, Business WhatsApp, and Speed Post RPAD with Section 63 BSA certification.
               </p>
               <ul className="space-y-1.5 text-xs text-slate-200 mb-6">
                 <li>&check; Exact UMRN, NPCI return reason &amp; 15-day cure demand drafted</li>

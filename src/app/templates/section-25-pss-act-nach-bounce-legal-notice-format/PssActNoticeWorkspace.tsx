@@ -539,10 +539,10 @@ For and on behalf of ${form.lenderName}`;
           <div className="flex flex-wrap items-center justify-between gap-2 pb-3 border-b border-slate-200">
             <div>
               <p className="text-xs font-extrabold uppercase tracking-wider text-slate-900">
-                Live Advocate-Vetted Section 25 Notice Preview
+                Live Fact-Verified Section 25 Notice Preview
               </p>
               <p className="text-[11px] text-slate-500">
-                Ready for Word (.doc) export, clipboard copy, or Bar Council advocate dispatch
+                Ready for Word (.doc) export, clipboard copy, or fact-verified notice dispatch
               </p>
             </div>
             <div className="flex flex-wrap gap-2">
@@ -576,7 +576,7 @@ For and on behalf of ${form.lenderName}`;
 
           <div className="bg-red-50 border border-red-200 rounded-xl p-4 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
             <div className="text-xs text-slate-800">
-              <strong className="text-slate-900 block">Need Panel Advocate Letterhead + Tri-Channel RPAD Proof?</strong>
+              <strong className="text-slate-900 block">Need Fact-Verified Dispatch + Tri-Channel RPAD Proof?</strong>
               <span className="text-slate-600">
                 Test 1 live e-NACH Section 25 notice or upload a monthly NPCI bounce CSV batch.
               </span>

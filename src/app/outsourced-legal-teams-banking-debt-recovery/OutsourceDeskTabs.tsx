@@ -29,7 +29,7 @@ const DESK_TABS: DeskTab[] = [
       {
         title: "Automated Data Validation & Notice Generation",
         description:
-          "Paralegals scrub loan origination files, audit interest computations against RBI guidelines, and issue advocate-signed statutory demands within 24 hours of bounce receipt.",
+          "Paralegals scrub loan origination files, audit interest computations against RBI guidelines, and issue fact-verified statutory demands within 24 hours of bounce receipt.",
       },
       {
         title: "Section 25 PSSA / Section 138 NI Act Batch Filings",
@@ -88,7 +88,7 @@ const DESK_TABS: DeskTab[] = [
       {
         title: "Section 13(3A) Objection Rebuttal Drafting",
         description:
-          "Rigorous, advocate-vetted reasoned replies to borrower representations served within the mandatory 15-day statutory window under the SARFAESI Act.",
+          "Rigorous, fact-verified reasoned replies to borrower representations served within the mandatory 15-day statutory window under the SARFAESI Act.",
       },
       {
         title: "Section 14 CMM / DM Physical Possession Applications",

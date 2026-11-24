@@ -232,8 +232,8 @@ const HOWTO_SCHEMA = {
     {
       "@type": "HowToStep",
       position: 4,
-      name: "Dispatch 15-Day Advocate Statutory Demand Notice",
-      text: "Serve an advocate-backed legal notice via registered Speed Post RPAD, email, and WhatsApp, invoking MSMED Act Section 15 & 16 compound penal interest, Contract Act s.73 damages, and warning of BNS s.316 criminal breach of trust prosecution.",
+      name: "Dispatch 15-Day Fact-Verified Statutory Demand Notice",
+      text: "Serve a fact-verified legal notice via registered Speed Post RPAD, email, and WhatsApp, invoking MSMED Act Section 15 & 16 compound penal interest, Contract Act s.73 damages, and warning of BNS s.316 criminal breach of trust prosecution.",
     },
     {
       "@type": "HowToStep",
@@ -619,7 +619,7 @@ export default function CardiacStentConsignmentRecoveryPage() {
                   </div>
                   <p className="text-sm font-bold text-white mb-1">Advocate Demand Notice (Speed Post + Digital Channels)</p>
                   <p className="text-xs text-red-200 leading-relaxed">
-                    Serve an advocate notice invoking MSMED Act Section 16 compound penal interest and Income Tax Section 43B(h) disallowance consequences.
+                    Serve a fact-verified notice invoking MSMED Act Section 16 compound penal interest and Income Tax Section 43B(h) disallowance consequences.
                   </p>
                 </div>
 
@@ -967,7 +967,7 @@ export default function CardiacStentConsignmentRecoveryPage() {
                   Commercial Outcome: Rapid Pre-Litigation Reconciliation
                 </p>
                 <p>
-                  Upon receiving the formal Advocate Demand Notice itemizing the OT barcode sticker evidence, notifying the Medical Superintendent of personal liability under BNS Section 316, and warning of Section 43B(h) tax disallowances, the hospital management released the detained loaner instrumentation trays within 48 hours and cleared the ₹32,00,000 principal plus agreed interest via RTGS within 14 business days to avoid Commercial Court proceedings.
+                  Upon receiving the formal Fact-Verified Demand Notice itemizing the OT barcode sticker evidence, notifying the Medical Superintendent of personal liability under BNS Section 316, and warning of Section 43B(h) tax disallowances, the hospital management released the detained loaner instrumentation trays within 48 hours and cleared the ₹32,00,000 principal plus agreed interest via RTGS within 14 business days to avoid Commercial Court proceedings.
                 </p>
               </div>
             </section>

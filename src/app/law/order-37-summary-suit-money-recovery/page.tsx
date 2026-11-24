@@ -644,7 +644,7 @@ export default function Order37SummarySuitPage() {
                     </span>
                     <div className="space-y-1 sm:space-y-1.5">
                       <h3 className="text-sm sm:text-base md:text-lg font-bold text-slate-900">
-                        Issue Formal Statutory Pre-Suit Advocate Demand Notice (15-Day Window)
+                        Issue Formal Statutory Pre-Suit Fact-Verified Demand Notice (15-Day Window)
                       </h3>
                       <p className="text-xs sm:text-sm leading-relaxed">
                         Engage an advocate to serve a statutory legal notice demanding payment of the principal sum plus contracted interest within 15 days. Dispatched via Registered Speed Post with postal tracking and email under Section 63 BSA 2023, the notice cites the promissory note, cheque return memo, or agreement. Failure to reply establishes unrebutted debtor default.
@@ -826,7 +826,7 @@ export default function Order37SummarySuitPage() {
                       <strong>The Deadlock:</strong> After 12 months, Ramesh defaulted. Over WhatsApp chats, Ramesh repeatedly acknowledged the debt, asking for monthly extensions, but made zero payments. When Vikram pressed for repayment, Ramesh stopped answering phone calls and alleged in casual conversations that the money was an unwritten equity investment, not a loan.
                     </p>
                     <p>
-                      <strong>The Statutory Action:</strong> Vikram engaged LegalRecovery.in. An advocate drafted and dispatched a formal 15-day statutory pre-suit demand notice via Registered Speed Post and WhatsApp, demanding ₹15,00,000 plus accrued interest of ₹1,35,000. When Ramesh failed to pay, Vikram instituted an Order XXXVII Summary Suit in the District Court. The plaint annexed the original Promissory Note, the bank RTGS confirmation, and a Section 63 BSA certificate for the WhatsApp chat acknowledgments.
+                      <strong>The Statutory Action:</strong> Vikram engaged LegalRecovery.in. The team verified the facts and dispatched a formal 15-day statutory pre-suit demand notice via Registered Speed Post and WhatsApp, demanding ₹15,00,000 plus accrued interest of ₹1,35,000. When Ramesh failed to pay, Vikram instituted an Order XXXVII Summary Suit in the District Court. The plaint annexed the original Promissory Note, the bank RTGS confirmation, and a Section 63 BSA certificate for the WhatsApp chat acknowledgments.
                     </p>
                     <p>
                       <strong>The Court Proceedings:</strong> The court issued Form 4 Summons. Ramesh entered an appearance on Day 9. Vikram promptly served Form 4A Summons for Judgment. Ramesh applied for leave to defend, claiming the pro-note was signed blank under coercion. Vikram&apos;s advocate cited <em>IDBI Trusteeship v. Hubtown</em> and <em>Mechelec Engineers</em>, pointing out that the RTGS debit and WhatsApp acknowledgments proved consideration beyond doubt, making Ramesh&apos;s coercion claim an illusory moonshine defense.

@@ -26,7 +26,7 @@ export default function GasCylinderCTA({ className = "" }: GasCylinderCTAProps) 
               Test 1 Live Overdue Case Now (&#8377;{basePrice})
             </h3>
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-              Advocate-drafted PESO Gas Cylinders Rules + BNS s.316 cylinder recall &amp; demurrage demand notice, dispatched via Email + WhatsApp + Speed Post RPAD.
+              Fact-verified PESO Gas Cylinders Rules + BNS s.316 cylinder recall &amp; demurrage demand notice, dispatched via Email + WhatsApp + Speed Post RPAD.
             </p>
           </div>
           <div className="space-y-3">
@@ -46,7 +46,7 @@ export default function GasCylinderCTA({ className = "" }: GasCylinderCTAProps) 
               </Link>
             </div>
             <p className="text-[11px] text-slate-400">
-              &#10003; Advocate Drafted &bull; &#10003; Email + WhatsApp + Speed Post RPAD
+              &#10003; Fact-Verified &bull; &#10003; Email + WhatsApp + Speed Post RPAD
             </p>
           </div>
         </div>

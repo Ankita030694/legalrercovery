@@ -86,7 +86,7 @@ const PACKAGING_SCENARIOS: PackagingScenario[] = [
       {
         step: "2. Reject Unilateral Debit Note Under Section 42",
         detail:
-          "Issue an advocate-drafted notice rejecting the belated debit note, enclosing your Udyam certificate and computing exact 43B(h) corporate tax add-back risk for the buyer's CFO.",
+          "Issue a fact-verified notice rejecting the belated debit note, enclosing your Udyam certificate and computing exact 43B(h) corporate tax add-back risk for the buyer's CFO.",
       },
       {
         step: "3. File MSEFC Samadhaan / Order XXXVII Summary Suit",
@@ -129,7 +129,7 @@ const PACKAGING_SCENARIOS: PackagingScenario[] = [
       {
         step: "2. Serve Formal Lien Intimation & Idle-Asset Storage Notice",
         detail:
-          "Before refusing truck pickup verbally, send an advocate-signed Lien Intimation Notice confirming safe custody pending full ledger clearance—preventing false BNS s.316 police complaints.",
+          "Before refusing truck pickup verbally, send a fact-verified Lien Intimation Notice confirming safe custody pending full ledger clearance—preventing false BNS s.316 police complaints.",
       },
       {
         step: "3. Link Release Strictly to RTGS Settlement & Full Reconciliation",

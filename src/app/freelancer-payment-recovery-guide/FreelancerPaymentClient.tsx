@@ -80,7 +80,7 @@ const reviews = [
     id: "rev-fl-5",
     name: "Vikram Roy (Creative Director)",
     rating: 5,
-    review: "A marketing agency went completely silent on my invoice of ₹1.2 Lakhs. LegalRecovery's notice warned them of Summary Suits under Order 37 CPC. The agency realized we were serious, called our legal panel, and processed a bank transfer in 5 days. Flat pricing is highly transparent."
+    review: "A marketing agency went completely silent on my invoice of ₹1.2 Lakhs. LegalRecovery's notice warned them of Summary Suits under Order 37 CPC. The agency realized we were serious, called our team, and processed a bank transfer in 5 days. Flat pricing is highly transparent."
   },
   {
     id: "rev-fl-6",
@@ -410,7 +410,7 @@ export default function FreelancerPaymentClient() {
                       <li><strong>Electronic Evidence Certificate (Section 63 BSA):</strong> When presenting digital screenshots or printed emails in court, you must attach a certificate under Section 63 of the BSA. This certificate is a signed declaration confirming that the device used was under your control, functioning properly, and that the data has not been tampered with.</li>
                     </ul>
                     <p className="text-sm md:text-base leading-relaxed">
-                      At LegalRecovery, our technology platform helps you compile this digital evidence file. We assist in preparing the necessary Section 63 BSA declarations, ensuring that your digital trail is legally sound and ready for advocate notice integration or court presentation.
+                      At LegalRecovery, our technology platform helps you compile this digital evidence file. We assist in preparing the necessary Section 63 BSA declarations, ensuring that your digital trail is legally sound and ready for fact-verified notice integration or court presentation.
                     </p>
                   </div>
                 </section>

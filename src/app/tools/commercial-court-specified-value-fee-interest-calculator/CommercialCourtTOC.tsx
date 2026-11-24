@@ -135,7 +135,7 @@ export default function CommercialCourtTOC() {
             Avoid Heavy Upfront Court Fees
           </p>
           <p className="text-[11px] text-slate-300 leading-relaxed mb-4">
-            Serve an advocate-drafted Commercial Demand Notice first. Most B2B debtors settle before you ever deposit ad-valorem court fees or trigger Section 12A mediation.
+            Serve a fact-verified Commercial Demand Notice first. Most B2B debtors settle before you ever deposit ad-valorem court fees or trigger Section 12A mediation.
           </p>
           <a
             href="#dual-track-cta"

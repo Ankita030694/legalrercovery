@@ -65,7 +65,7 @@ const SCENARIOS: ScenarioTab[] = [
       {
         step: "Rebut Unilateral Debit Notes Under Contract Act Section 74",
         description:
-          "Serve an advocate notice declaring any belated debit note void and unenforceable, while claiming full principal plus 3x RBI compound interest if Udyam-registered.",
+          "Serve a fact-verified notice declaring any belated debit note void and unenforceable, while claiming full principal plus 3x RBI compound interest if Udyam-registered.",
       },
     ],
     statutoryRule: "Sale of Goods Act s.42, IS 1786:2008 & Indian Contract Act s.74",
@@ -87,7 +87,7 @@ const SCENARIOS: ScenarioTab[] = [
       {
         step: "Dispatch Statutory 15-Day Demand Notice Within 30 Days",
         description:
-          "Send an advocate notice under Section 138(b) to the company and all executive directors (Section 141) via Speed Post RPAD, Email, and WhatsApp.",
+          "Send a fact-verified notice under Section 138(b) to the company and all executive directors (Section 141) via Speed Post RPAD, Email, and WhatsApp.",
       },
       {
         step: "File Parallel s.138 Criminal Complaint + Order XXXVII Summary Suit",

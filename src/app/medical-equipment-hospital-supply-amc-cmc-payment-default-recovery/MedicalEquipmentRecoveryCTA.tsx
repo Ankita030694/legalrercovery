@@ -23,10 +23,10 @@ export default function MedicalEquipmentRecoveryCTA({ className = "" }: MedicalE
               Track 1 &bull; Single Case Test
             </span>
             <p className="text-lg sm:text-xl font-extrabold text-white mb-2">
-              Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Advocate Drafted &middot; Email + WhatsApp + Speed Post RPAD)
+              Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Fact-Verified &middot; Email + WhatsApp + Speed Post RPAD)
             </p>
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-              Serve a high-impact Advocate Statutory Legal Notice on a defaulting hospital, diagnostic center, or nursing home. Formulates Sale of Goods Act Section 25 reservation of title, invokes deemed acceptance under Section 42, demands compound interest under MSMED Act Section 16, and establishes strict pre-litigation compliance before Commercial Court or MSEFC filings.
+              Serve a high-impact Fact-Verified Statutory Legal Notice on a defaulting hospital, diagnostic center, or nursing home. Formulates Sale of Goods Act Section 25 reservation of title, invokes deemed acceptance under Section 42, demands compound interest under MSMED Act Section 16, and establishes strict pre-litigation compliance before Commercial Court or MSEFC filings.
             </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-3">
@@ -56,7 +56,7 @@ export default function MedicalEquipmentRecoveryCTA({ className = "" }: MedicalE
               Have 10 to 10,000+ Defaulters? Upload CSV / Activate Dedicated Institutional Desk
             </p>
             <p className="text-xs sm:text-sm text-slate-600 leading-relaxed mb-5">
-              Engineered for Medical Device OEMs, Diagnostic Reagent Distributors, Ultrasound Importers, and Biomedical AMC Contractors. Ingest nationwide hospital overdue ledgers via batch CSV for automated milestone tracking, multi-state advocate dispatch, Commercial Court Order XL Court Receiver applications, and PCPNDT-compliant statutory repossession protocols.
+              Engineered for Medical Device OEMs, Diagnostic Reagent Distributors, Ultrasound Importers, and Biomedical AMC Contractors. Ingest nationwide hospital overdue ledgers via batch CSV for automated milestone tracking, multi-state dispatch, Commercial Court Order XL Court Receiver applications, and PCPNDT-compliant statutory repossession protocols.
             </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-3">

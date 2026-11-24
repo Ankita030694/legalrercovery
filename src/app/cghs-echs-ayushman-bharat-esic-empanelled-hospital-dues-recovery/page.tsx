@@ -221,7 +221,7 @@ const HOWTO_SCHEMA = {
       "@type": "HowToStep",
       position: 2,
       name: "Draft and Serve Section 80 CPC Statutory Notice",
-      text: "Issue a 60-day statutory Advocate Legal Notice to the concerned Ministry Secretary (MoHFW, MoD, or State Health Secretary) itemizing admitted dues, interest under the Interest Act 1978, and setting out the constitutional cause of action.",
+      text: "Issue a 60-day statutory Fact-Verified Legal Notice to the concerned Ministry Secretary (MoHFW, MoD, or State Health Secretary) itemizing admitted dues, interest under the Interest Act 1978, and setting out the constitutional cause of action.",
     },
     {
       "@type": "HowToStep",
@@ -554,7 +554,7 @@ export default function HospitalEmpanelledDuesRecoveryPage() {
                     <span className="text-amber-400 font-bold text-xs uppercase">Stage 3 &bull; Section 80 CPC Notice</span>
                     <p className="text-sm font-bold text-white mt-1">60-Day Mandatory Statutory Notice</p>
                     <p className="text-xs text-slate-300 mt-1">
-                      Serve Advocate Demand Notice on Ministry Secretary (MoHFW/MoD/MoLE/SHA) itemizing admitted principal plus commercial interest.
+                      Serve Fact-Verified Demand Notice on Ministry Secretary (MoHFW/MoD/MoLE/SHA) itemizing admitted principal plus commercial interest.
                     </p>
                   </div>
                   <div className="bg-slate-900 text-white p-4 rounded-xl border border-slate-800">

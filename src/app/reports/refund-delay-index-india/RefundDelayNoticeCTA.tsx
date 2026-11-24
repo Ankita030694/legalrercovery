@@ -11,7 +11,7 @@ interface RefundDelayNoticeCTAProps {
 }
 
 export default function RefundDelayNoticeCTA({
-  buttonText = "Draft Advocate Legal Notice for Delayed Refund",
+  buttonText = "Draft Fact-Verified Legal Notice for Delayed Refund",
   className = "",
   variant = "primary",
 }: RefundDelayNoticeCTAProps) {
@@ -31,7 +31,7 @@ export default function RefundDelayNoticeCTA({
                 Is a Company Illegally Holding Your Refund Beyond Statutory Deadlines?
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6">
-                Our quarterly empirical data confirms that while customer care tickets stall for a median of 47 days, serving an advocate legal notice yields full refund resolution in a median of 11 days with a 79.4% pre-litigation settlement rate. Served by email and WhatsApp under Section 63 of Bharatiya Sakshya Adhiniyam, 2023. Speed Post is optional at ₹450 per party.
+                Our quarterly empirical data confirms that while customer care tickets stall for a median of 47 days, serving a fact-verified legal notice yields full refund resolution in a median of 11 days with a 79.4% pre-litigation settlement rate. Served by email and WhatsApp under Section 63 of Bharatiya Sakshya Adhiniyam, 2023. Speed Post is optional at ₹450 per party.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button
@@ -42,7 +42,7 @@ export default function RefundDelayNoticeCTA({
                   {buttonText} — ₹{basePrice}
                 </button>
                 <div className="text-xs text-slate-300 flex flex-wrap sm:flex-nowrap items-center gap-2 sm:gap-3">
-                  <span>✓ 24h Advocate Drafting</span>
+                  <span>✓ 24h Notice Drafting</span>
                   <span>•</span>
                   <span>✓ Email + WhatsApp</span>
                   <span>•</span>

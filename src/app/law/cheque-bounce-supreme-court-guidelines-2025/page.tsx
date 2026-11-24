@@ -706,7 +706,7 @@ export default function ChequeBounceSupremeCourtGuidelinesPage() {
                   <div className="bg-amber-50 text-amber-950 p-4 rounded-xl border border-amber-300">
                     <span className="text-[10px] font-bold text-amber-800 uppercase tracking-wider block mb-1">Step 2</span>
                     <h3 className="font-bold text-sm">Serve 30-Day Statutory Notice</h3>
-                    <p className="text-xs text-amber-900 mt-1">Dispatch advocate demand notice within 30 days giving drawer 15 days to pay.</p>
+                    <p className="text-xs text-amber-900 mt-1">Dispatch fact-verified demand notice within 30 days giving drawer 15 days to pay.</p>
                   </div>
                   <div className="bg-slate-100 text-slate-900 p-4 rounded-xl border border-slate-300">
                     <span className="text-[10px] font-bold text-slate-600 uppercase tracking-wider block mb-1">Step 3</span>
@@ -845,10 +845,10 @@ export default function ChequeBounceSupremeCourtGuidelinesPage() {
                     </span>
                     <div className="space-y-1 sm:space-y-1.5">
                       <h3 className="text-sm sm:text-base md:text-lg font-bold text-slate-900">
-                        Serve a Statutory Advocate Legal Notice via Speed Post &amp; Electronic Channels
+                        Serve a Statutory Fact-Verified Legal Notice via Speed Post &amp; Electronic Channels
                       </h3>
                       <p className="text-xs sm:text-sm leading-relaxed">
-                        Have an advocate draft an official demand notice specifically invoking Section 138 of the Negotiable Instruments Act. Dispatch via Registered Speed Post with tracking and simultaneously transmit via Section 63 BSA compliant email and WhatsApp. Demand full payment within 15 days of receipt.
+                        Send an official demand notice specifically invoking Section 138 of the Negotiable Instruments Act. Dispatch via Registered Speed Post with tracking and simultaneously transmit via Section 63 BSA compliant email and WhatsApp. Demand full payment within 15 days of receipt.
                       </p>
                       <p className="text-xs text-slate-500 font-medium">
                         View our transparent drafting fees on the <Link href="/legal-notice-charges" className="text-blue-700 underline">legal notice charges</Link> schedule.
@@ -941,7 +941,7 @@ export default function ChequeBounceSupremeCourtGuidelinesPage() {
                       <strong>The Debtor&apos;s Initial Stand:</strong> The buyer avoided calls for two weeks, before sending an email asserting that the cheque had been given only as a &quot;blank security deposit&quot; before dispatch and threatening to claim the tooling was substandard. The buyer assumed that an interstate Section 138 trial in Pune would take years to summon them.
                     </p>
                     <p>
-                      <strong>The 2025 Statutory Notice:</strong> On Day 18 following dishonour, SunTech engaged LegalRecovery.in. An advocate drafted and dispatched an official statutory demand notice under Section 138 of the NI Act. The notice explicitly cited <em>Sanjabij Tari v. Kishore S. Borcar (2025)</em> and <em>Bir Singh (2019)</em>, explaining that: (1) Presumptions under Sections 118 &amp; 139 completely bar the blank-cheque evasion; (2) The Surat directors would be served via electronic summons under Section 63 BSA; and (3) Settling during the 15-day notice window incurred 0% compounding penalty, whereas trial conviction would trigger a 20% interim deposit under Section 143A and potential imprisonment up to 2 years.
+                      <strong>The 2025 Statutory Notice:</strong> On Day 18 following dishonour, SunTech engaged LegalRecovery.in. The team verified the facts and dispatched an official statutory demand notice under Section 138 of the NI Act. The notice explicitly cited <em>Sanjabij Tari v. Kishore S. Borcar (2025)</em> and <em>Bir Singh (2019)</em>, explaining that: (1) Presumptions under Sections 118 &amp; 139 completely bar the blank-cheque evasion; (2) The Surat directors would be served via electronic summons under Section 63 BSA; and (3) Settling during the 15-day notice window incurred 0% compounding penalty, whereas trial conviction would trigger a 20% interim deposit under Section 143A and potential imprisonment up to 2 years.
                     </p>
                     <div className="p-3.5 sm:p-4 bg-emerald-950/70 border border-emerald-700/60 rounded-xl text-emerald-200">
                       <strong className="block text-emerald-400 font-bold mb-1">The Resolution:</strong>

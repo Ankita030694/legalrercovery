@@ -37,7 +37,7 @@ const PROBLEMS: ProblemTab[] = [
           "Register a Level-1 institutional complaint on samadhan.ugc.ac.in (or AICTE Grievance Portal for engineering colleges) attaching proof of admission and the college's unlawful demand note.",
       },
       {
-        step: "Dispatch Advocate Statutory Legal Demand Notice",
+        step: "Dispatch Fact-Verified Statutory Legal Demand Notice",
         description:
           "If the institution refuses release within 7 days, issue a formal statutory advocate legal notice warning of High Court Mandamus proceedings under Article 226 and an e-Jagriti consumer complaint claiming career loss damages.",
       },
@@ -64,7 +64,7 @@ const PROBLEMS: ProblemTab[] = [
           "Mark a direct complaint to the Vice-Chancellor and Dean of College Development Council of the parent university to which the college is affiliated.",
       },
       {
-        step: "Issue Urgent Statutory Advocate Notice for 48-Hour Surrender",
+        step: "Issue Urgent Statutory Fact-Verified Notice for 48-Hour Surrender",
         description:
           "Serve an urgent 48-hour legal demand notice highlighting that the deliberate retention threatens the candidate's impending admission cut-off, exposing the management to personal damages.",
       },
@@ -120,7 +120,7 @@ const PROBLEMS: ProblemTab[] = [
       {
         step: "Serve Pre-Litigation Notice Prior to High Court Writ",
         description:
-          "Serve an advocate statutory notice citing High Court precedents. If the university fails to return documents within 15 days, file a Writ of Mandamus before the High Court.",
+          "Serve a fact-verified statutory notice citing High Court precedents. If the university fails to return documents within 15 days, file a Writ of Mandamus before the High Court.",
       },
     ],
     statutoryRule: "Section 23 Indian Contract Act, 1872 & UGC Deemed University Regulations",

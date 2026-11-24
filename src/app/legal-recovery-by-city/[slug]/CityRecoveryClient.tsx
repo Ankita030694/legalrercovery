@@ -11,11 +11,11 @@ import { PaymentModal } from "@/components/PaymentModal";
 const faqs = [
   {
     question: "What is the Legal Recovery notice platform?",
-    answer: "Legal Recovery is a professional digital platform that helps you recover unpaid salary, freelancer payments, rental deposits, or vendor invoices. We specialize in drafting and sending advocate legal notices, handling escalations, and providing police/criminal complaint drafts to resolve disputes for a flat fee of ₹999."
+    answer: "Legal Recovery is a professional digital platform that helps you recover unpaid salary, freelancer payments, rental deposits, or vendor invoices. We specialize in drafting and sending fact-verified legal notices, handling escalations, and providing police/criminal complaint drafts to resolve disputes for a flat fee of ₹999."
   },
   {
     question: "How does the 3-stage notice escalation process work?",
-    answer: "Our process creates continuous legal pressure. We start by drafting and sending a formal advocate demand notice. If ignored, we escalate with subsequent legal demands. Finally, if the debtor still fails to pay, we provide formal police and criminal complaint drafts (e.g., for cheating/breach of trust) to compel resolution."
+    answer: "Our process creates continuous legal pressure. We start by drafting and sending a formal fact-verified demand notice. If ignored, we escalate with subsequent legal demands. Finally, if the debtor still fails to pay, we provide formal police and criminal complaint drafts (e.g., for cheating/breach of trust) to compel resolution."
   },
   {
     question: "What documents do I need to start my notice flow?",
@@ -23,23 +23,23 @@ const faqs = [
   },
   {
     question: "Does the ₹999 notice flow work for personal loans?",
-    answer: "Yes. If you gave a personal loan to a friend, colleague, or relative and have written proof (chat history, bank transfer receipts, or a promissory note acknowledging the debt), our advocates can draft and send a recovery notice on your behalf."
+    answer: "Yes. If you gave a personal loan to a friend, colleague, or relative and have written proof (chat history, bank transfer receipts, or a promissory note acknowledging the debt), our team can draft and send a recovery notice on your behalf."
   },
   {
     question: "How does the platform handle unpaid salary and FNF recovery?",
-    answer: "Under Indian labor laws, employers are legally obligated to clear all FNF/salary dues. We send a formal advocate notice under the Payment of Wages Act. If the employer does not respond, we escalate the notice and provide drafts for labor/police complaints to secure payment."
+    answer: "Under Indian labor laws, employers are legally obligated to clear all FNF/salary dues. We send a formal fact-verified notice under the Payment of Wages Act. If the employer does not respond, we escalate the notice and provide drafts for labor/police complaints to secure payment."
   },
   {
     question: "How long does the recovery notice process take?",
-    answer: "Once you submit details on our platform, the first advocate-drafted notice is sent within 48 hours. The debtor is given 15 days to pay. If they ignore it, we proceed with notice escalations and complaint drafting over the next 2-3 weeks."
+    answer: "Once you submit details on our platform, the first fact-verified notice is sent within 48 hours. The debtor is given 15 days to pay. If they ignore it, we proceed with notice escalations and complaint drafting over the next 2-3 weeks."
   },
   {
     question: "Are there any hidden costs beyond the ₹999 flat rate?",
-    answer: "No, there are zero hidden fees. The ₹999 flat fee covers the complete 3-stage notice escalation flow, advocate review, digital copies (WhatsApp/email), and police complaint drafts. Speed Post for the 3 notices is optional at ₹450 per party, charged at cost."
+    answer: "No, there are zero hidden fees. The ₹999 flat fee covers the complete 3-stage notice escalation flow, fact verification, digital copies (WhatsApp/email), and police complaint drafts. Speed Post for the 3 notices is optional at ₹450 per party, charged at cost."
   },
   {
     question: "Can I recover my rental security deposit using the platform?",
-    answer: "Yes. Landlords cannot legally withhold security deposits without proof of damage. Our platform drafts and dispatches advocate demand notices demanding a refund, backed by the threat of criminal breach of trust complaints, which resolves most deposit disputes quickly."
+    answer: "Yes. Landlords cannot legally withhold security deposits without proof of damage. Our platform drafts and dispatches fact-verified demand notices demanding a refund, backed by the threat of criminal breach of trust complaints, which resolves most deposit disputes quickly."
   },
   {
     question: "Do you provide court representation or litigation services?",
@@ -47,7 +47,7 @@ const faqs = [
   },
   {
     question: "Is the entire recovery notice process online?",
-    answer: "Yes, the process is 100% digital. You submit details of your dispute, upload documents, track notice delivery, and download your escalated complaint drafts directly from your online dashboard without visiting any offices."
+    answer: "Yes, the process is 100% digital. You submit details of your dispute, track notice delivery, and download your escalated complaint drafts directly from your online dashboard without visiting any offices."
   }
 ];
 
@@ -189,7 +189,7 @@ export default function CityRecoveryClient({ location }: CityRecoveryClientProps
               {pageTitle}
             </h1>
             <p className="text-sm md:text-2xl mb-6 md:mb-10 max-w-3xl mx-auto text-gray-200">
-              Recover unpaid salary, freelancer fees, rental deposits, or business invoices in <strong>{locationName}</strong> using our 3-stage notice escalation platform. Send advocate-drafted demand notices and police complaint drafts starting at a flat rate of just ₹999.
+              Recover unpaid salary, freelancer fees, rental deposits, or business invoices in <strong>{locationName}</strong> using our 3-stage notice escalation platform. Send fact-verified demand notices and police complaint drafts starting at a flat rate of just ₹999.
             </p>
             <button 
               onClick={() => setIsPaymentModalOpen(true)}
@@ -237,11 +237,11 @@ export default function CityRecoveryClient({ location }: CityRecoveryClientProps
                   <h2 className="text-xl md:text-3xl font-bold text-gray-900 mb-4 md:mb-6">What is the Legal Recovery Platform?</h2>
                   <div className="bg-red-50 border-l-4 border-[#DC2626] p-4 md:p-6 mb-4 md:mb-8 rounded-r-lg">
                     <p className="text-sm md:text-lg text-red-900 italic">
-                      &quot;Legal Recovery is a professional unpaid dues notice platform that enables you to send advocate-drafted demand notices, track dispatch, and escalate to criminal/police complaint drafts for a flat fee of ₹999, resolving defaults without complex litigation.&quot;
+                      &quot;Legal Recovery is a professional unpaid dues notice platform that enables you to send fact-verified demand notices, track dispatch, and escalate to criminal/police complaint drafts for a flat fee of ₹999, resolving defaults without complex litigation.&quot;
                     </p>
                   </div>
                   <p className="text-sm md:text-lg leading-relaxed mb-3 md:mb-6 text-gray-700">
-                    Instead of academic legal battles and long-drawn-out suits, the platform focuses on notice-based pressure. When a party fails to pay your salary, invoices, or deposits in {locationName}, our platform drafts and dispatches a formal advocate notice giving the debtor a strict 15-day ultimatum. This establishes a legally binding demand and signals clear intent.
+                    Instead of academic legal battles and long-drawn-out suits, the platform focuses on notice-based pressure. When a party fails to pay your salary, invoices, or deposits in {locationName}, our platform drafts and dispatches a formal fact-verified notice giving the debtor a strict 15-day ultimatum. This establishes a legally binding demand and signals clear intent.
                   </p>
                   <p className="text-sm md:text-lg leading-relaxed mb-3 md:mb-6 text-gray-700">
                     If the debtor ignores the notice, our platform doesn&apos;t stop. We escalate the dispute through subsequent warnings and provide draft police/criminal complaints (under relevant sections for cheating or criminal breach of trust). Showing this level of readiness forces the defaulting party to take immediate action, resolving over 75% of claims without going to court.
@@ -304,9 +304,9 @@ export default function CityRecoveryClient({ location }: CityRecoveryClientProps
                         <tr className="border-b border-gray-100">
                           <td className="p-4 align-top">
                             <ul className="list-disc pl-4 space-y-2 text-gray-700 text-sm">
-                              <li><strong>High Resolution:</strong> Over 75% of cases are resolved post advocate-drafted notice.</li>
+                              <li><strong>High Resolution:</strong> Over 75% of cases are resolved post fact-verified notice.</li>
                               <li><strong>Official Stance:</strong> Establishes a legally binding demand, documenting the default.</li>
-                              <li><strong>No Direct Confrontation:</strong> Advocates handle communications with the debtor.</li>
+                              <li><strong>No Direct Confrontation:</strong> We handle communications with the debtor.</li>
                               <li><strong>Low Initial Cost:</strong> Starting at just ₹999 for complete notice drafting and dispatch.</li>
                             </ul>
                           </td>
@@ -333,7 +333,7 @@ export default function CityRecoveryClient({ location }: CityRecoveryClientProps
                   <div className="grid md:grid-cols-2 gap-4 md:gap-6 mb-6 md:mb-8">
                     <div className="bg-gray-50 p-4 md:p-6 rounded-xl border border-gray-200">
                       <h4 className="font-bold text-base md:text-lg mb-2 text-[#DC2626]">Advocate Demand Notices</h4>
-                      <p className="text-gray-600 text-sm">An official demand drafted by our advocate panel, detailing the contractual default and establishing the 15-day pre-litigation deadline.</p>
+                      <p className="text-gray-600 text-sm">An official demand prepared on verified facts panel, detailing the contractual default and establishing the 15-day pre-litigation deadline.</p>
                     </div>
                     <div className="bg-gray-50 p-4 md:p-6 rounded-xl border border-gray-200">
                       <h4 className="font-bold text-base md:text-lg mb-2 text-[#DC2626]">Escalation Warnings</h4>
@@ -362,16 +362,16 @@ export default function CityRecoveryClient({ location }: CityRecoveryClientProps
                       <div>
                         <h3 className="text-lg md:text-2xl font-bold text-gray-900 mb-2 md:mb-3">Start Notice Flow & Review</h3>
                         <p className="text-gray-700 leading-relaxed text-sm md:text-base">
-                          Submit your dispute details online and upload evidence (invoices, emails, WhatsApp logs, agreements). Our legal team reviews your materials to frame the notice.
+                          Submit your dispute details online (amounts, dates, parties, and what happened). Our team verifies those facts to frame the notice. Keep your invoices, emails, WhatsApp logs, and agreements ready for any later filing.
                         </p>
                       </div>
                     </div>
                     <div className="flex flex-col md:flex-row gap-4 md:gap-6 items-start">
                       <div className="flex-shrink-0 w-14 md:w-16 h-14 md:h-16 bg-[#DC2626] rounded-full flex items-center justify-center text-white text-xl md:text-2xl font-bold">2</div>
                       <div>
-                        <h3 className="text-lg md:text-2xl font-bold text-gray-900 mb-2 md:mb-3">Advocate Demand Notice Dispatch</h3>
+                        <h3 className="text-lg md:text-2xl font-bold text-gray-900 mb-2 md:mb-3">Demand Notice Dispatch</h3>
                         <p className="text-gray-700 leading-relaxed text-sm md:text-base">
-                          A certified panel advocate drafts the formal legal demand notice setting a 15-day payment deadline. We dispatch it digitally via verified email and WhatsApp.
+                          We prepare the formal legal demand notice setting a 15-day payment deadline. We dispatch it digitally via verified email and WhatsApp.
                         </p>
                       </div>
                     </div>
@@ -416,7 +416,7 @@ export default function CityRecoveryClient({ location }: CityRecoveryClientProps
                 <section id="types-of-recoveries" className="scroll-mt-32">
                   <h2 className="text-xl md:text-3xl font-bold text-gray-900 mb-4 md:mb-6">Recoveries We Support in {locationName}</h2>
                   <p className="text-sm md:text-lg leading-relaxed mb-4 md:mb-8 text-gray-700">
-                    Our panel advocates specialize in a wide range of debt recovery scenarios under civil and corporate laws:
+                    Our team specializes in a wide range of debt recovery scenarios under civil and corporate laws:
                   </p>
                   <div className="grid md:grid-cols-2 gap-4 md:gap-8">
                     <div className="bg-white border border-gray-200 rounded-xl p-4 md:p-6 shadow-sm hover:shadow-md transition-shadow">
@@ -453,7 +453,7 @@ export default function CityRecoveryClient({ location }: CityRecoveryClientProps
                     <div className="p-4 md:p-6 rounded-xl bg-gray-50 hover:bg-[#fff9e6] transition-colors">
                       <div className="text-3xl md:text-4xl mb-3 md:mb-4">🛡️</div>
                       <h3 className="font-bold text-lg md:text-xl mb-2">End-to-End Tracking</h3>
-                      <p className="text-gray-600 text-sm">Upload documentation and track notices, post dispatches, and notice escalation status in real time.</p>
+                      <p className="text-gray-600 text-sm">Track notices, post dispatches, and notice escalation status in real time.</p>
                     </div>
                     <div className="p-4 md:p-6 rounded-xl bg-gray-50 hover:bg-[#fff9e6] transition-colors">
                       <div className="text-3xl md:text-4xl mb-3 md:mb-4">🤝</div>

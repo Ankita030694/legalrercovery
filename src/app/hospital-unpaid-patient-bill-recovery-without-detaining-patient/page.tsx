@@ -179,7 +179,7 @@ const FAQS = [
   {
     question: "How can a hospital actually recover unpaid bills after releasing the patient?",
     answer:
-      "Recovery depends on the paperwork executed before and at discharge. If the hospital's admission and discharge desk obtains verified KYC, an itemized bill acknowledgment, an attendant co-guarantor undertaking under Section 128 of the Indian Contract Act, and a stamped Demand Promissory Note, a 15-day Advocate Legal Notice followed by an Order XXXVII CPC Summary Suit gives the hospital a fast-track money decree without a full trial.",
+      "Recovery depends on the paperwork executed before and at discharge. If the hospital's admission and discharge desk obtains verified KYC, an itemized bill acknowledgment, an attendant co-guarantor undertaking under Section 128 of the Indian Contract Act, and a stamped Demand Promissory Note, a 15-day Fact-Verified Legal Notice followed by an Order XXXVII CPC Summary Suit gives the hospital a fast-track money decree without a full trial.",
   },
   {
     question: "Is the patient's attendant or relative legally liable to pay if they signed the admission form?",
@@ -278,7 +278,7 @@ const HOWTO_SCHEMA = {
     {
       "@type": "HowToStep",
       position: 3,
-      name: "Serve 15-Day Advocate Legal Notice & File Order XXXVII Summary Suit",
+      name: "Serve 15-Day Fact-Verified Legal Notice & File Order XXXVII Summary Suit",
       text: "On default, dispatch a tri-channel Advocate Notice (Email + WhatsApp + Speed Post RPAD) jointly to patient and attendant, followed by an Order XXXVII CPC Summary Suit or Section 138 NI Act complaint if a cheque bounced.",
     },
   ],
@@ -445,7 +445,7 @@ export default function HospitalUnpaidPatientBillRecoveryPage() {
                     <strong className="text-[#DC2626] block mb-1">
                       The Operational Gap Courts Ignore:
                     </strong>
-                    High Court judgments repeatedly instruct hospitals: <em>&ldquo;Release the patient unconditionally and file a civil recovery suit.&rdquo;</em> Yet almost no hospital billing manual explains how to structure the admission form, itemized bill acknowledgment, and attendant co-guarantor promissory note so that a ₹999 post-discharge Advocate Legal Notice actually recovers the dues without a five-year trial.
+                    High Court judgments repeatedly instruct hospitals: <em>&ldquo;Release the patient unconditionally and file a civil recovery suit.&rdquo;</em> Yet almost no hospital billing manual explains how to structure the admission form, itemized bill acknowledgment, and attendant co-guarantor promissory note so that a ₹999 post-discharge Fact-Verified Legal Notice actually recovers the dues without a five-year trial.
                   </div>
                 </div>
               </section>
@@ -730,7 +730,7 @@ export default function HospitalUnpaidPatientBillRecoveryPage() {
                   </div>
                   <div className="pt-4 space-y-2 text-xs sm:text-sm text-slate-300">
                     <p>
-                      &bull; <strong>Pre-Litigation ROI:</strong> Serving a ₹999 tri-channel Advocate Legal Notice jointly on the discharged patient and the earning attendant co-guarantor creates immediate legal accountability at <strong>0.2% of principal value</strong>.
+                      &bull; <strong>Pre-Litigation ROI:</strong> Serving a ₹999 tri-channel Fact-Verified Legal Notice jointly on the discharged patient and the earning attendant co-guarantor creates immediate legal accountability at <strong>0.2% of principal value</strong>.
                     </p>
                     <p>
                       &bull; <strong>Cheque Bounce Track:</strong> If a ₹4,85,000 post-dated cheque was issued at discharge and stopped, verify exact filing windows with our{" "}

@@ -24,7 +24,7 @@ export default function BankLokAdalatCTA({ className = "" }: BankLokAdalatCTAPro
                 Track 1 &middot; Self-Serve Single NPA Pilot
               </span>
               <p className="text-lg sm:text-xl font-bold text-white mb-2">
-                Test 1 Live Overdue Case Now (&#8377;{basePrice} &middot; Advocate Drafted &middot; Email + WhatsApp + Speed Post RPAD)
+                Test 1 Live Overdue Case Now (&#8377;{basePrice} &middot; Fact-Verified &middot; Email + WhatsApp + Speed Post RPAD)
               </p>
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
                 Pilot our Pre-Lok-Adalat OTS Invitation-cum-Demand Notice on a single sticky retail, Mudra, or KCC NPA account. Delivered in English or regional vernacular with BSA 2023 s.63 dispatch proofs and India Post RPAD tracking.

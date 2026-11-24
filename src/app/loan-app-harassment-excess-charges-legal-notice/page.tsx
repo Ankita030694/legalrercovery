@@ -196,12 +196,12 @@ const FAQS = [
   {
     question: "How does a legal notice stop loan app recovery harassment?",
     answer:
-      "A formal statutory legal notice drafted by an advocate is served directly to the Chief Executive Officer and Principal Nodal Officer of the lending NBFC via Registered Speed Post and digital service under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023. It puts the institution on formal notice of vicarious criminal liability under Sections 351/308 BNS, cites RBI Digital Lending violations, demands immediate de-allocation of the recovery agency, and claims damages for mental agony.",
+      "A formal statutory legal notice prepared on verified facts is served directly to the Chief Executive Officer and Principal Nodal Officer of the lending NBFC via Registered Speed Post and digital service under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023. It puts the institution on formal notice of vicarious criminal liability under Sections 351/308 BNS, cites RBI Digital Lending violations, demands immediate de-allocation of the recovery agency, and claims damages for mental agony.",
   },
   {
     question: "Loan app wale gandi gaaliyan de rahe hain aur contacts ko call kar rahe hain, kya karein?",
     answer:
-      "Agar loan app ke recovery agents aapko ya aapke rishtedaaron ko call karke dhamka rahe hain ya morphed photos bhej rahe hain, toh yeh ek ghor cyber crime hai. Sabse pehle cybercrime.gov.in par 1930 helpline par complaint darj karein. Dusra, unhe koi naya payment na karein. Teesri aur sabse asardaar legal step hai ki lending NBFC aur unki recovery agency ko verified advocate dwara statutory legal notice bhejein jismein RBI Fair Practices Code aur Bharatiya Nyaya Sanhita ke tehat karwayi ki maang ki jati hai.",
+      "Agar loan app ke recovery agents aapko ya aapke rishtedaaron ko call karke dhamka rahe hain ya morphed photos bhej rahe hain, toh yeh ek ghor cyber crime hai. Sabse pehle cybercrime.gov.in par 1930 helpline par complaint darj karein. Dusra, unhe koi naya payment na karein. Teesri aur sabse asardaar legal step hai ki lending NBFC aur unki recovery agency ko fact-verified statutory legal notice bhejein jismein RBI Fair Practices Code aur Bharatiya Nyaya Sanhita ke tehat karwayi ki maang ki jati hai.",
   },
 ];
 
@@ -782,9 +782,9 @@ export default function LoanAppHarassmentLegalNoticePage() {
                       4
                     </span>
                     <div className="space-y-1">
-                      <h3 className="text-base font-bold text-slate-900">Serve a Statutory Advocate Legal Notice to the NBFC</h3>
+                      <h3 className="text-base font-bold text-slate-900">Serve a Statutory Fact-Verified Legal Notice to the NBFC</h3>
                       <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                        Have an advocate draft and serve a formal 15-day statutory demand notice addressed to the Principal Nodal Officer and Board of Directors of the lending NBFC. The notice cites vicarious criminal liability under Sections 351, 308, and 79 BNS, demands immediate termination of collection agency activities, requires full waiver of unapproved penal charges, and warns of RBI Ombudsman escalation.
+                        Serve a formal 15-day statutory demand notice addressed to the Principal Nodal Officer and Board of Directors of the lending NBFC. The notice cites vicarious criminal liability under Sections 351, 308, and 79 BNS, demands immediate termination of collection agency activities, requires full waiver of unapproved penal charges, and warns of RBI Ombudsman escalation.
                       </p>
                     </div>
                   </div>
@@ -944,7 +944,7 @@ export default function LoanAppHarassmentLegalNoticePage() {
                         <strong>Evidence Preservation:</strong> Mr. Verma immediately captured screenshots of the WhatsApp group participants, saved caller audio recordings, and downloaded bank account statements proving ₹18,200 in total outward UPI repayments.
                       </li>
                       <li>
-                        <strong>Statutory Advocate Legal Notice:</strong> LegalRecovery advocates drafted and dispatched a formal statutory legal notice via Registered Speed Post to the CEO and Grievance Redressal Officer of the lending NBFC, serving simultaneous digital copies under Section 63 BSA. The notice cited:
+                        <strong>Statutory Fact-Verified Legal Notice:</strong> LegalRecovery advocates drafted and dispatched a formal statutory legal notice via Registered Speed Post to the CEO and Grievance Redressal Officer of the lending NBFC, serving simultaneous digital copies under Section 63 BSA. The notice cited:
                         <ul className="list-disc pl-5 mt-1 text-slate-600">
                           <li>Direct breach of RBI Digital Lending Directions Para 6.2 (unauthorized contact book access).</li>
                           <li>Violation of Section 351 (Criminal Intimidation) and Section 352 BNS 2023.</li>
@@ -960,7 +960,7 @@ export default function LoanAppHarassmentLegalNoticePage() {
                   <div className="p-4 rounded-xl bg-emerald-50 border border-emerald-200 space-y-1">
                     <h4 className="font-bold text-emerald-950">The Final Outcome:</h4>
                     <p className="text-emerald-900">
-                      Within 72 hours of receiving the advocate legal notice, the NBFC&apos;s Principal Nodal Officer issued a formal written email confirmation: (1) The recovery agency was de-allocated and instructed to cease all contact immediately; (2) The outstanding balance was closed with ₹0 liability; (3) A formal No Objection Certificate (NOC) and Loan Closure Letter were issued; and (4) The NBFC submitted an expedited update to CIBIL and Experian confirming the loan was fully satisfied with zero adverse remarks.
+                      Within 72 hours of receiving the fact-verified legal notice, the NBFC&apos;s Principal Nodal Officer issued a formal written email confirmation: (1) The recovery agency was de-allocated and instructed to cease all contact immediately; (2) The outstanding balance was closed with ₹0 liability; (3) A formal No Objection Certificate (NOC) and Loan Closure Letter were issued; and (4) The NBFC submitted an expedited update to CIBIL and Experian confirming the loan was fully satisfied with zero adverse remarks.
                     </p>
                   </div>
                 </div>

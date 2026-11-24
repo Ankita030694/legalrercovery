@@ -151,7 +151,7 @@ const DECISION_STAGES = [
     stage: "Stage 2 · Day 16–30",
     title: "Multi-Party Broker Notice",
     detail:
-      "Serve advocate notice jointly on Outstation Buyer & Pakka Arhatiya via RPAD + Email + WhatsApp; invoke s.42 deemed acceptance.",
+      "Serve fact-verified notice jointly on Outstation Buyer & Pakka Arhatiya via RPAD + Email + WhatsApp; invoke s.42 deemed acceptance.",
   },
   {
     stage: "Stage 3 · Day 31–45",

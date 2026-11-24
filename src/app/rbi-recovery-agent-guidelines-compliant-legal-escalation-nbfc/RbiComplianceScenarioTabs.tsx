@@ -36,7 +36,7 @@ const SCENARIOS: ScenarioTab[] = [
           "Once an account crosses 30 DPD without payment, suppress automated voice-bots and field visits to prevent escalating borrower friction and Ombudsman filings.",
       },
       {
-        step: "Dispatch Advocate Legal Notice on Tri-Channel Rails",
+        step: "Dispatch Fact-Verified Legal Notice on Tri-Channel Rails",
         detail:
           "Transition the account to a formal Advocate Demand Notice delivered via Email, WhatsApp, and Speed Post RPAD—replacing 40 intrusive calls with a single legally admissible statutory demand.",
       },
@@ -60,7 +60,7 @@ const SCENARIOS: ScenarioTab[] = [
       {
         step: "Eliminate Unsecured Small-Ticket Field Visits",
         detail:
-          "For unsecured personal loans and BNPL under ₹2 Lakh, eliminate physical field visits entirely—deploying Advocate Legal Notices and Online Dispute Resolution (ODR) instead.",
+          "For unsecured personal loans and BNPL under ₹2 Lakh, eliminate physical field visits entirely—deploying Fact-Verified Legal Notices and Online Dispute Resolution (ODR) instead.",
       },
       {
         step: "Route Escalations Through Advocates Act, 1961 Counsel",
@@ -114,7 +114,7 @@ const SCENARIOS: ScenarioTab[] = [
       {
         step: "Issue Composite Recall + PSS s.25 Demand Notice",
         detail:
-          "Serve a formal Advocate Notice detailing exact Principal, Interest, and uncompounded Penal Charges per RBI Penal Charges norms, giving a 15-day statutory cure window.",
+          "Serve a formal Fact-Verified Notice detailing exact Principal, Interest, and uncompounded Penal Charges per RBI Penal Charges norms, giving a 15-day statutory cure window.",
       },
       {
         step: "Preserve BSA 2023 s.63 Hash & RPAD Proofs",

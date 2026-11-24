@@ -25,7 +25,7 @@ export default function ApiBulkDrugRecoveryCTA({
               Track 1 &bull; Single API Default Test Case
             </span>
             <p className="text-lg sm:text-xl font-extrabold text-white mb-2">
-              Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Advocate Drafted &middot; Email + WhatsApp + Speed Post RPAD)
+              Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Fact-Verified &middot; Email + WhatsApp + Speed Post RPAD)
             </p>
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
               Serve a rigorous, high-impact 10-day statutory demand notice on a defaulting formulation buyer, CDMO, or chemical merchant. Rebuts manufactured assay/impurity complaints, enforces Sale of Goods Act Section 42 deemed acceptance, puts the debtor on notice for IBC Section 8 (Form 3/4) insolvency escalation, and demands statutory compound interest under MSMED Act Section 16.

@@ -184,7 +184,7 @@ export default function SebiOdrTableOfContents({
             <div className="bg-slate-50 rounded-xl p-3 border border-slate-100">
               <p className="text-[11px] font-bold text-slate-800">Need Immediate Broker Escalation?</p>
               <p className="text-[10px] text-slate-500 mt-0.5 leading-relaxed">
-                Have a specialized advocate issue a formal legal demand notice to your stockbroker before escalating to SMART ODR.
+                Issue a formal legal demand notice to your stockbroker before escalating to SMART ODR.
               </p>
             </div>
           </div>

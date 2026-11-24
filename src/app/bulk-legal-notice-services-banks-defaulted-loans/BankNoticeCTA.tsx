@@ -31,7 +31,7 @@ export default function BankNoticeCTA({
                 Scale Your Demand Notice Dispatches Up to 50,000 Accounts Per Month
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6">
-                Equip your bank or NBFC recovery cell with industrial-scale legal dispatch. Every demand notice is vetted by Bar Council-enrolled advocates and transmitted concurrently via India Post Speed Post API, encrypted WhatsApp Business API, and registered email with tamper-proof Section 63 BSA electronic admissibility certificates.
+                Equip your bank or NBFC recovery cell with industrial-scale legal dispatch. Every demand notice is prepared on verified facts and transmitted concurrently via India Post Speed Post API, encrypted WhatsApp Business API, and registered email with tamper-proof Section 63 BSA electronic admissibility certificates.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button

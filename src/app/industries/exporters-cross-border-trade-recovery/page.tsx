@@ -162,7 +162,7 @@ const IND_15_SPOKES: IndustrySpoke[] = [
     archetype: "P1",
     archetypeLabel: "P1 Notice Workspace",
     track: "Cross-Border Enforcement & Notice Format",
-    title: "Advocate-Vetted International Export Legal Demand Notice (FEMA & ECGC Format)",
+    title: "Fact-Verified International Export Legal Demand Notice (FEMA & ECGC Format)",
     url: "/templates/international-export-buyer-legal-demand-notice-fema-ecgc-format",
     statute: "UN CISG / RBI EDPMS Para C.20 / ECGC Audit",
     summary:
@@ -211,9 +211,9 @@ const SPOKE_GROUPS: {
 const FAQS = [
   {
     question:
-      "How does an Advocate Legal Notice prevent RBI EDPMS Caution-Listing of our Importer-Exporter Code (IEC)?",
+      "How does a Fact-Verified Legal Notice prevent RBI EDPMS Caution-Listing of our Importer-Exporter Code (IEC)?",
     answer:
-      "Under the RBI Master Direction on Export of Goods and Services, export proceeds must ordinarily be realized within 9 months from the date of shipment. When an invoice remains open in EDPMS beyond 270 days, your AD Category-I Bank requires documented proof of 'bonafide recovery efforts' to process an extension or write-off under Para C.20/C.23. An Advocate-drafted Legal Demand Notice served on the overseas buyer—paired with international courier/email delivery receipts and, where applicable, a legal opinion on disproportionate foreign litigation costs—provides the exact audit trail AD Banks require to keep your IEC off the RBI Caution List.",
+      "Under the RBI Master Direction on Export of Goods and Services, export proceeds must ordinarily be realized within 9 months from the date of shipment. When an invoice remains open in EDPMS beyond 270 days, your AD Category-I Bank requires documented proof of 'bonafide recovery efforts' to process an extension or write-off under Para C.20/C.23. A Fact-verified Legal Demand Notice served on the overseas buyer—paired with international courier/email delivery receipts and, where applicable, a legal opinion on disproportionate foreign litigation costs—provides the exact audit trail AD Banks require to keep your IEC off the RBI Caution List.",
   },
   {
     question:
@@ -428,7 +428,7 @@ export default function ExportersCrossBorderTradeRecoveryPage() {
               <span className="block text-[10px] sm:text-xs uppercase tracking-widest text-red-400 font-bold mb-1.5">
                 Executive Creditor &amp; Treasury Summary
               </span>
-              When an overseas buyer defaults on DA, DP/CAD, or Open-Account bills, Indian exporters face three simultaneous threats: lost foreign exchange, rejected ECGC claims, and RBI EDPMS Caution-Listing that freezes your IEC and triggers Customs Duty Drawback/RoDTEP clawbacks. Serving an Advocate-vetted international demand notice creates the statutory proof required by AD Category-I Banks and ECGC.
+              When an overseas buyer defaults on DA, DP/CAD, or Open-Account bills, Indian exporters face three simultaneous threats: lost foreign exchange, rejected ECGC claims, and RBI EDPMS Caution-Listing that freezes your IEC and triggers Customs Duty Drawback/RoDTEP clawbacks. Serving a Fact-verified international demand notice creates the statutory proof required by AD Category-I Banks and ECGC.
             </div>
 
             {/* 4-Card Key Metrics Strip */}
@@ -589,7 +589,7 @@ export default function ExportersCrossBorderTradeRecoveryPage() {
                           FEMA Export Master Direction Para C.20/C.23 &amp; UN CISG
                         </td>
                         <td className="py-3.5 px-4 text-slate-700">
-                          Serve Advocate Demand Notice (Email + Courier) + ECGC Default Form + AD-Bank Disproportionate-Cost Opinion for EDPMS write-off.
+                          Serve Fact-Verified Demand Notice (Email + Courier) + ECGC Default Form + AD-Bank Disproportionate-Cost Opinion for EDPMS write-off.
                         </td>
                       </tr>
                       <tr className="bg-slate-50/70 hover:bg-slate-50">

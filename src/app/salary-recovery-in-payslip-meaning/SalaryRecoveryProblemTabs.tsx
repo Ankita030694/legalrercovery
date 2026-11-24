@@ -37,9 +37,9 @@ const PROBLEMS: ProblemTab[] = [
           "Submit a written protest citing Section 18(1) Code on Wages, 2019, stating that deducting perks and non-incurred allowances is an illegal clawback and demanding immediate recalculation.",
       },
       {
-        step: "Serve Advocate Statutory Legal Notice & Samadhan Docket",
+        step: "Serve Fact-Verified Statutory Legal Notice & Samadhan Docket",
         description:
-          "If HR refuses to refund the excess recovery within 7 days, engage a verified labour advocate to serve a statutory 15-day demand notice followed by a claim before the Labour Commissioner.",
+          "If HR refuses to refund the excess recovery within 7 days, have a fact-verified statutory 15-day demand notice served followed by a claim before the Labour Commissioner.",
       },
     ],
     statutoryRule: "Section 18(1) Code on Wages 2019 & Section 74 Indian Contract Act",
@@ -91,7 +91,7 @@ const PROBLEMS: ProblemTab[] = [
           "Point out in writing that no domestic show-cause notice was served under Section 19 of the Code on Wages, rendering the deduction legally null and void.",
       },
       {
-        step: "Serve Advocate Legal Notice for Misappropriation of Wages",
+        step: "Serve Fact-Verified Legal Notice for Misappropriation of Wages",
         description:
           "Serve a formal statutory notice putting the employer on notice that withholding wages for regular asset wear constitutes unlawful wage withholding under labour enactments.",
       },

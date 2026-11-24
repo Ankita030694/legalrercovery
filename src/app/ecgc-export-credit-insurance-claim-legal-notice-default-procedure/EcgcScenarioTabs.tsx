@@ -60,7 +60,7 @@ const SCENARIOS: ScenarioItem[] = [
       {
         step: "Rebut Sham Dispute via Advocate Legal Notice",
         detail:
-          "Issue a point-by-point Advocate Notice invoking deemed acceptance, citing zero contemporaneous rejection, and demanding full USD/EUR invoice settlement within 15 days.",
+          "Issue a point-by-point Fact-Verified Notice invoking deemed acceptance, citing zero contemporaneous rejection, and demanding full USD/EUR invoice settlement within 15 days.",
       },
       {
         step: "Submit Rebuttal Dossier to ECGC Claims Desk",
@@ -77,7 +77,7 @@ const SCENARIOS: ScenarioItem[] = [
     trigger:
       "Many exporters rely solely on emailing the Indian Embassy/High Commission Commercial Wing or sending informal WhatsApp reminders, only to be told by ECGC that 'all reasonable steps to minimize loss' were not taken.",
     legalBasis:
-      "ECGC policy mitigation clauses mandate that the insured exporter act as a prudent uninsured seller—meaning formal legal demand, collection agency/advocate escalation, and preservation of limitation periods in the buyer's jurisdiction. While Indian Mission trade complaints create diplomatic pressure, embassies have zero judicial enforcement power. An Advocate-drafted International Legal Notice served via Email + International Courier (DHL/FedEx POD) satisfies both ECGC's mitigation audit and AD Category-I Bank EDPMS proof.",
+      "ECGC policy mitigation clauses mandate that the insured exporter act as a prudent uninsured seller—meaning formal legal demand, collection agency/advocate escalation, and preservation of limitation periods in the buyer's jurisdiction. While Indian Mission trade complaints create diplomatic pressure, embassies have zero judicial enforcement power. A Fact-verified International Legal Notice served via Email + International Courier (DHL/FedEx POD) satisfies both ECGC's mitigation audit and AD Category-I Bank EDPMS proof.",
     steps: [
       {
         step: "Dual-Track Escalation (Legal + Diplomatic)",

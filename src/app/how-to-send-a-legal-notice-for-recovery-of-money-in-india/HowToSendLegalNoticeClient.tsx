@@ -15,7 +15,7 @@ const faqs = [
   },
   {
     question: "What is the cost of sending a legal notice for money recovery in India?",
-    answer: "The cost of sending a legal notice varies based on the advocate's experience, the complexity of the transaction, and the recovery amount. Typically, fees range from ₹1,000 to ₹5,000 for standard notices, while highly complex commercial or corporate notices may cost more. At LegalRecovery, we offer transparent, flat-rate notice drafting and dispatch services starting at ₹999 per opposing party, which includes advocate review and digital delivery."
+    answer: "The cost of sending a legal notice varies based on the advocate's experience, the complexity of the transaction, and the recovery amount. Typically, fees range from ₹1,000 to ₹5,000 for standard notices, while highly complex commercial or corporate notices may cost more. At LegalRecovery, we offer transparent, flat-rate notice drafting and dispatch services starting at ₹999 per opposing party, which includes fact verification and digital delivery."
   },
   {
     question: "How do I trace the address of a debtor who has changed their location?",
@@ -39,7 +39,7 @@ const faqs = [
   },
   {
     question: "What is the difference between a legal notice and a demand notice?",
-    answer: "While both are formal demands, a 'legal notice' is a broad term for any advocate-signed communication outlining a claim and threatening legal action. A 'demand notice' is a specific statutory notice required under particular laws. For example, under Section 138 of the NI Act (cheque bounce) or Section 8 of the Insolvency and Bankruptcy Code (IBC), serving a specific 'Statutory Demand Notice' is a mandatory prerequisite, and the format is strictly defined by those acts."
+    answer: "While both are formal demands, a 'legal notice' is a broad term for any fact-verified communication outlining a claim and threatening legal action. A 'demand notice' is a specific statutory notice required under particular laws. For example, under Section 138 of the NI Act (cheque bounce) or Section 8 of the Insolvency and Bankruptcy Code (IBC), serving a specific 'Statutory Demand Notice' is a mandatory prerequisite, and the format is strictly defined by those acts."
   },
   {
     question: "Can I claim interest on friendly loans in a legal notice?",
@@ -154,7 +154,7 @@ const reviewSchema = {
         "@type": "Person",
         "name": "Dinesh Khanna"
       },
-      "reviewBody": "Following the step-by-step guide here, I collected all my WhatsApp logs and bank receipts. LegalRecovery connected me with a lawyer who drafted the notice within 24 hours. The delivery tracking was updated on my dashboard, and the debtor settled in 10 days."
+      "reviewBody": "Following the step-by-step guide here, I collected all my WhatsApp logs and bank receipts. LegalRecovery prepared and sent the notice within 24 hours. The delivery tracking was updated on my dashboard, and the debtor settled in 10 days."
     },
     {
       "@type": "Review",
@@ -202,7 +202,7 @@ const reviewSchema = {
         "@type": "Person",
         "name": "Gaurav Sen"
       },
-      "reviewBody": "Professional service. Everything is handled digitally on their dashboard, from uploading bank PDFs to advocate verification. The digital dispatch tracking details were shared instantly. Recovered ₹3.5 Lakhs commercial dues."
+      "reviewBody": "Professional service. Everything is handled digitally on their dashboard, from entering case details to fact verification. The digital dispatch tracking details were shared instantly. Recovered ₹3.5 Lakhs commercial dues."
     },
     {
       "@type": "Review",
@@ -406,7 +406,7 @@ export default function HowToSendLegalNoticeClient() {
                         <strong>Statutory References:</strong> The draft must cite appropriate acts. For loans, it references Section 10 and 73 of the Indian Contract Act, 1872. For unpaid goods, it cites the Sale of Goods Act, 1930. For interest claims, it cites the Interest Act, 1978.
                       </li>
                       <li>
-                        <strong>Liquidated Claim Presentation:</strong> The draft must state the exact outstanding amount. This includes: the Principal Outstanding, the Interest Accrued (calculated at a specific rate, e.g., 18% p.a. for commercial, 9% p.a. for personal), and the Advocate drafting charges.
+                        <strong>Liquidated Claim Presentation:</strong> The draft must state the exact outstanding amount. This includes: the Principal Outstanding, the Interest Accrued (calculated at a specific rate, e.g., 18% p.a. for commercial, 9% p.a. for personal), and the Notice drafting charges.
                       </li>
                       <li>
                         <strong>Notice Period and Remedy:</strong> The notice must explicitly grant a <strong>15-day notice period</strong> from delivery for the debtor to clear the dues. It must state that failure to comply will result in civil lawsuits (Summary Suits under Order 37 CPC) and criminal actions (Section 138 NI Act for cheque bounce, or cheating/criminal breach of trust under BNS).
@@ -512,7 +512,7 @@ export default function HowToSendLegalNoticeClient() {
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      Sending a legal notice manually involves booking consultations, traveling to advocate offices, explaining facts repeatedly, tracking dispatch receipts, and coordinating follow-ups. The <strong>LegalRecovery</strong> platform automates and streamlines this entire workflow. By integrating technology with a handpicked panel of verified legal professionals, we offer an efficient, flat-price solution to draft and serve notices directly from your computer.
+                      Sending a legal notice manually involves booking consultations, traveling to advocate offices, explaining facts repeatedly, tracking dispatch receipts, and coordinating follow-ups. The <strong>LegalRecovery</strong> platform automates and streamlines this entire workflow. By integrating technology with a team that verifies your facts, we offer an efficient, flat-price solution to prepare and serve notices directly from your computer.
                     </p>
                     
                     <p className="text-sm md:text-base leading-relaxed font-semibold text-slate-800">
@@ -524,10 +524,10 @@ export default function HowToSendLegalNoticeClient() {
                         <div>
                           <div className="flex items-center space-x-3 mb-3">
                             <span className="w-8 h-8 rounded-full bg-[#DC2626] text-white flex items-center justify-center font-black text-sm">1</span>
-                            <h4 className="font-extrabold text-sm sm:text-base text-slate-900 m-0">Case Submission &amp; Document Upload</h4>
+                            <h4 className="font-extrabold text-sm sm:text-base text-slate-900 m-0">Case Submission &amp; Details</h4>
                           </div>
                           <p className="text-xs sm:text-sm text-slate-650 leading-relaxed">
-                            You start by filling out our intuitive questionnaire, detailing the nature of the dispute, outstanding amount, and debtor coordinates. You can securely upload all supporting documentation (agreements, invoices, bank statements, ledger PDFs, and digital communication logs) directly to your secure user dashboard.
+                            You start by filling out our intuitive questionnaire, detailing the nature of the dispute, outstanding amount, and debtor coordinates. You enter the key facts (amounts, dates, parties, and what happened) in the online form, and keep your supporting documents (agreements, invoices, bank statements, and communication logs) ready for any later court or forum filing.
                           </p>
                         </div>
                       </div>
@@ -548,10 +548,10 @@ export default function HowToSendLegalNoticeClient() {
                         <div>
                           <div className="flex items-center space-x-3 mb-3">
                             <span className="w-8 h-8 rounded-full bg-[#DC2626] text-white flex items-center justify-center font-black text-sm">3</span>
-                            <h4 className="font-extrabold text-sm sm:text-base text-slate-900 m-0">Advocate Drafting &amp; Review</h4>
+                            <h4 className="font-extrabold text-sm sm:text-base text-slate-900 m-0">Notice Drafting &amp; Review</h4>
                           </div>
                           <p className="text-xs sm:text-sm text-slate-650 leading-relaxed">
-                            Your case is assigned to a practicing advocate from our partner panel specializing in debt recovery. The advocate reviews your files, structures the chronology of events, drafts a professional notice on their official letterhead with appropriate statutory citations (e.g., Section 73 Contract Act, Interest Act), and shares the draft with you for review.
+                            Our team verifies the facts you submitted, structures the chronology of events, and prepares the notice from our structured templates with appropriate statutory citations (e.g., Section 73 Contract Act, Interest Act).
                           </p>
                         </div>
                       </div>
@@ -563,7 +563,7 @@ export default function HowToSendLegalNoticeClient() {
                             <h4 className="font-extrabold text-sm sm:text-base text-slate-900 m-0">Multi-Channel Service &amp; Dispatch</h4>
                           </div>
                           <p className="text-xs sm:text-sm text-slate-650 leading-relaxed">
-                            Once approved, the notice is served digitally via verified email and WhatsApp. We track delivery and provide a digital Section 63 BSA certificate to establish read receipt records for subsequent court filings.
+                            Once your case is submitted, the notice is served digitally via verified email and WhatsApp. We track delivery and provide a digital Section 63 BSA certificate to establish read receipt records for subsequent court filings.
                           </p>
                         </div>
                       </div>
@@ -577,7 +577,7 @@ export default function HowToSendLegalNoticeClient() {
                             <span className="text-[#DC2626]">✓</span> Flat, Transparent Fees
                           </p>
                           <p className="text-[11px] text-slate-600 leading-normal">
-                            No hourly consult charges or hidden typing fees. Get attorney drafting and digital delivery starting at ₹999.
+                            No hourly consult charges or hidden typing fees. Get notice drafting and digital delivery starting at ₹999.
                           </p>
                         </div>
                         <div className="space-y-1">
@@ -585,7 +585,7 @@ export default function HowToSendLegalNoticeClient() {
                             <span className="text-[#DC2626]">✓</span> 100% Digital Process
                           </p>
                           <p className="text-[11px] text-slate-600 leading-normal">
-                            No office visits required. Track status, read replies, and upload files completely online from our dashboard.
+                            No office visits required. Track status and read replies completely online from our dashboard.
                           </p>
                         </div>
                         <div className="space-y-1">
@@ -616,14 +616,14 @@ export default function HowToSendLegalNoticeClient() {
                         <span className="text-[#DC2626] text-xs font-black uppercase tracking-wider">Case 1: Friendly Loan Recovery</span>
                         <h4 className="font-extrabold text-sm text-slate-900 mt-2 mb-3">Recovered ₹4.2 Lakhs personal loan</h4>
                         <p className="text-xs text-slate-650 leading-relaxed">
-                          A client in Delhi NCR lent ₹4.2 Lakhs to a colleague via bank transfer. When the colleague stopped replying, the client used our platform to audit the evidence, compile the bank UTR logs, and serve a notice on our advocate&apos;s letterhead. The debtor responded within 12 days and repaid the amount via bank transfer.
+                          A client in Delhi NCR lent ₹4.2 Lakhs to a colleague via bank transfer. When the colleague stopped replying, the client used our platform to enter the case facts, have them verified, and serve a notice. The debtor responded within 12 days and repaid the amount via bank transfer.
                         </p>
                       </div>
                       <div className="bg-slate-50 p-6 rounded-2xl border border-slate-100">
                         <span className="text-[#DC2626] text-xs font-black uppercase tracking-wider">Case 2: B2B Supplier Trade Receivable</span>
                         <h4 className="font-extrabold text-sm text-slate-900 mt-2 mb-3">Recovered ₹8.5 Lakhs from corporate buyer</h4>
                         <p className="text-xs text-slate-650 leading-relaxed">
-                          A supplier in Chennai delivered raw materials to a logistics firm. The firm withheld the final payment of ₹8.5 Lakhs. The supplier audited the MCA directory, gathered the challans, and had our advocate serve a notice on the firm&apos;s registered address. The firm&apos;s legal team cleared the invoice to avoid IBC insolvency proceedings.
+                          A supplier in Chennai delivered raw materials to a logistics firm. The firm withheld the final payment of ₹8.5 Lakhs. The supplier audited the MCA directory, gathered the challans, and had our team serve a notice on the firm&apos;s registered address. The firm&apos;s legal team cleared the invoice to avoid IBC insolvency proceedings.
                         </p>
                       </div>
                       <div className="bg-slate-50 p-6 rounded-2xl border border-slate-100">
@@ -697,7 +697,7 @@ export default function HowToSendLegalNoticeClient() {
                 <div className="absolute top-0 right-0 w-24 h-24 bg-red-600/10 rounded-full blur-xl pointer-events-none" />
                 <h3 className="text-sm font-black mb-3">Need Legal Support?</h3>
                 <p className="text-gray-400 mb-5 text-[11px] leading-relaxed">
-                  We handle the entire recovery notice process for you, from evidence audit and advocate drafting to dispatching and tracking.
+                  We handle the entire recovery notice process for you, from evidence audit and notice drafting to dispatching and tracking.
                 </p>
                 <button 
                   onClick={() => setIsPaymentModalOpen(true)}

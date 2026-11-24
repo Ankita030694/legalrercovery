@@ -18,11 +18,11 @@ const faqs = [
   },
   {
     question: "Can I claim compensation for mental agony caused by deceptive marketing?",
-    answer: "Yes, you can absolutely claim compensation for mental agony, harassment, and financial loss caused by a company's deceptive practices. When drafting your legal notice for an unfair trade practice complaint, your advocate will quantify these damages along with the actual monetary loss incurred. Consumer courts frequently award punitive damages against corporations found guilty of deliberate deceptive behavior to deter future misconduct."
+    answer: "Yes, you can absolutely claim compensation for mental agony, harassment, and financial loss caused by a company's deceptive practices. When drafting your legal notice for an unfair trade practice complaint, the notice will quantify these damages along with the actual monetary loss incurred. Consumer courts frequently award punitive damages against corporations found guilty of deliberate deceptive behavior to deter future misconduct."
   },
   {
     question: "Is it mandatory to send a legal notice before filing a consumer court case?",
-    answer: "While the Consumer Protection Act does not explicitly mandate a legal notice in every scenario, courts highly prefer that you send a formal legal notice for an unfair trade practice complaint before initiating litigation. It demonstrates to the judge that you exhausted all amicable pre-litigation settlement options in good faith. Furthermore, nearly 60% of commercial disputes are settled out of court immediately after a strongly worded advocate notice is received."
+    answer: "While the Consumer Protection Act does not explicitly mandate a legal notice in every scenario, courts highly prefer that you send a formal legal notice for an unfair trade practice complaint before initiating litigation. It demonstrates to the judge that you exhausted all amicable pre-litigation settlement options in good faith. Furthermore, nearly 60% of commercial disputes are settled out of court immediately after a strongly worded legal notice is received."
   }
 ];
 
@@ -395,7 +395,7 @@ export default function UnfairTradePracticeClient() {
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      The Indian legal framework heavily favors the consumer when dealing with corporate deception. A well-drafted legal notice for an unfair trade practice complaint leverages these statutes to compel immediate corporate compliance, bypassing the necessity for a prolonged court battle. 
+                      The India legal framework heavily favors the consumer when dealing with corporate deception. A well-drafted legal notice for an unfair trade practice complaint leverages these statutes to compel immediate corporate compliance, bypassing the necessity for a prolonged court battle. 
                     </p>
                     <div className="bg-slate-50 p-6 rounded-2xl border border-slate-100">
                       <ul className="list-decimal list-inside text-sm md:text-base text-slate-650 space-y-4">
@@ -422,7 +422,7 @@ export default function UnfairTradePracticeClient() {
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      A critical component of a legal notice for an unfair trade practice complaint is the precise quantification of damages. Vague demands allow corporate legal teams to dismiss the notice as frivolous. Your advocate will strategically structure the demand clause to encompass multiple tiers of compensation.
+                      A critical component of a legal notice for an unfair trade practice complaint is the precise quantification of damages. Vague demands allow corporate legal teams to dismiss the notice as frivolous. The demand clause should be structured to encompass multiple tiers of compensation.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
                       Firstly, the notice demands the refund of the principal amount paid for the goods or services, augmented by an interest rate (typically 12% to 18% per annum) calculated from the date of the deceptive transaction. Secondly, it quantifies the damages for mental agony and harassment. While subjective, this amount should remain proportionate to the principal loss to maintain credibility before the <a href="http://ncdrc.nic.in/" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-800 hover:underline">National Consumer Disputes Redressal Commission (NCDRC)</a> or lower courts. Finally, the notice demands reimbursement for the legal costs incurred in drafting and dispatching the document itself.
@@ -457,7 +457,7 @@ export default function UnfairTradePracticeClient() {
                       <div className="flex items-start space-x-4">
                         <div className="bg-[#DC2626] text-white rounded-full w-8 h-8 flex items-center justify-center shrink-0 font-black text-sm">3</div>
                         <div>
-                          <h4 className="font-extrabold text-sm sm:text-base text-slate-900 mb-1">Advocate Drafting</h4>
+                          <h4 className="font-extrabold text-sm sm:text-base text-slate-900 mb-1">Notice Drafting</h4>
                           <p className="text-xs sm:text-sm text-slate-650 leading-relaxed">Engage an advocate to draft the notice on official letterhead, establishing the legal link between the company&apos;s actions and the statutory definitions of unfair trade practices.</p>
                         </div>
                       </div>
@@ -557,7 +557,7 @@ export default function UnfairTradePracticeClient() {
                 <div className="absolute top-0 right-0 w-24 h-24 bg-red-600/10 rounded-full blur-xl pointer-events-none" />
                 <h3 className="text-sm font-black mb-3">Send Legal Notice</h3>
                 <p className="text-gray-400 mb-5 text-[11px] leading-relaxed">
-                  We match you with a panel advocate, handle the custom drafting, physically post the notice, and track its delivery in real-time.
+                  We verify the facts you submit, prepare the notice, physically post the notice, and track its delivery in real-time.
                 </p>
                 <button
                   onClick={() => setIsPaymentModalOpen(true)}
@@ -624,7 +624,7 @@ export default function UnfairTradePracticeClient() {
                 <img src="/lrlogo.svg" alt="LegalRecovery" width={3236} height={601} className="h-8 sm:h-10 w-auto object-contain" />
               </div>
               <p className="text-sm md:text-base text-slate-600 leading-relaxed mb-10 max-w-3xl font-medium">
-                Legal Recovery is India&apos;s trusted consumer protection and legal tech platform. We specialize in holding corporations accountable for unfair trade practices, deceptive marketing, and commercial fraud. With over 15,000 customers counselled, our mission is to provide fast, out-of-court resolutions by connecting you with top-tier panel advocates for immediate legal action.
+                Legal Recovery is India&apos;s trusted consumer protection and legal tech platform. We specialize in holding corporations accountable for unfair trade practices, deceptive marketing, and commercial fraud. With over 15,000 customers counselled, our mission is to provide fast, out-of-court resolutions through fact-verified legal notices sent without delay.
               </p>
 
               <div className="border-t border-slate-100 pt-10">

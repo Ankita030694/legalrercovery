@@ -27,7 +27,7 @@ export default function EquipmentRentalHubCTA({ className = "" }: EquipmentRenta
                 Test 1 Live Overdue Case Now (&rupee;{basePrice})
               </h3>
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-                Advocate Drafted &bull; Email + WhatsApp + Speed Post RPAD. Serve one defaulting crane/scaffolding contractor, one obstructive project owner blocking a Gate-Pass, or one corporate IT/DG lessee today.
+                Fact-Verified &bull; Email + WhatsApp + Speed Post RPAD. Serve one defaulting crane/scaffolding contractor, one obstructive project owner blocking a Gate-Pass, or one corporate IT/DG lessee today.
               </p>
               <ul className="space-y-1.5 text-xs text-slate-200 mb-6">
                 <li>&check; BNS s.316 Bailee Return Notice with jurisdictional Police Station CC</li>

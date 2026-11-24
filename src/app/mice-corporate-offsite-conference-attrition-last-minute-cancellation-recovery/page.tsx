@@ -245,7 +245,7 @@ export default function MiceAttritionCancellationRecoveryPage() {
         "@type": "HowToStep",
         position: 3,
         name: "Issue BSA 2023 Section 63 Certified Demand Notice",
-        text: "Serve an Advocate-signed demand notice under Indian Contract Act s.74 and Order XXXVII CPC (or NI Act s.138 if a cheque was stopped) on the Corporate CFO and Directors.",
+        text: "Serve a Fact-verified demand notice under Indian Contract Act s.74 and Order XXXVII CPC (or NI Act s.138 if a cheque was stopped) on the Corporate CFO and Directors.",
       },
       {
         "@type": "HowToStep",

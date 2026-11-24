@@ -70,7 +70,7 @@ const FAQS = [
     question:
       "How should an MFI legally handle a ring-leader who instigates a mass village or centre default?",
     answer:
-      "Instead of confronting the entire centre in person, the MFI should segregate the 1–3 instigators from genuine distressed borrowers. Serve individualized Advocate Legal Notices via Speed Post RPAD on the ring-leaders, initiate Section 25 PSS Act or Section 138 NI Act proceedings where e-NACH/cheques bounced, or file targeted BNS Section 318 complaints if cash collected from centre members was misappropriated—while offering penalty-waiver Lok Adalat settlement to misled borrowers.",
+      "Instead of confronting the entire centre in person, the MFI should segregate the 1–3 instigators from genuine distressed borrowers. Serve individualized Fact-Verified Legal Notices via Speed Post RPAD on the ring-leaders, initiate Section 25 PSS Act or Section 138 NI Act proceedings where e-NACH/cheques bounced, or file targeted BNS Section 318 complaints if cash collected from centre members was misappropriated—while offering penalty-waiver Lok Adalat settlement to misled borrowers.",
   },
   {
     question:
@@ -181,7 +181,7 @@ const HOWTO_SCHEMA = {
       "@type": "HowToStep",
       position: 3,
       name: "Generate Bilingual Vernacular + English Advocate Demand Notices",
-      text: "Draft formal Advocate Demand Notices in the state vernacular and English citing exact principal, overdue EMIs, and e-NACH / PSS s.25 triggers where applicable.",
+      text: "Draft formal Fact-Verified Demand Notices in the state vernacular and English citing exact principal, overdue EMIs, and e-NACH / PSS s.25 triggers where applicable.",
     },
     {
       "@type": "HowToStep",
@@ -627,7 +627,7 @@ export default function MfiJlgCompliantRecoveryPage() {
                       Track B: ₹75K–₹3L Graduated MSME Loan
                     </p>
                     <p className="text-xs text-slate-700 mt-1">
-                      Serve bilingual vernacular Speed Post RPAD Advocate Notice + National Lok
+                      Serve bilingual vernacular Speed Post RPAD Fact-Verified Notice + National Lok
                       Adalat s.21 decree.
                     </p>
                   </div>
@@ -713,7 +713,7 @@ export default function MfiJlgCompliantRecoveryPage() {
                           30-day statutory notice deadline from NPCI return memo
                         </td>
                         <td className="p-3.5 text-slate-700">
-                          Serve 15-day Advocate Demand Notice via Email + RPAD within 30 days
+                          Serve 15-day Fact-Verified Demand Notice via Email + RPAD within 30 days
                         </td>
                       </tr>
                       <tr className="bg-slate-50/70">

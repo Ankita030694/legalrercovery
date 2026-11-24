@@ -37,7 +37,7 @@ const PROBLEMS: ProblemTab[] = [
           "Dispatch an email invoking Rule 3(2) of the IT (Intermediary Guidelines) Rules, demanding direct reversal of unutilised principal to the source bank account within 72 hours.",
       },
       {
-        step: "Serve Statutory Advocate Demand Notice",
+        step: "Serve Statutory Legal Demand Notice",
         description:
           "If the company fails to credit the funds, serve a formal 15-day statutory demand notice seeking refund with 18% annual interest for unlawful restraint of funds.",
       },
@@ -91,9 +91,9 @@ const PROBLEMS: ProblemTab[] = [
           "Record a timestamped video demonstrating that clear government ID PDFs are rejected with generic or automated error messages.",
       },
       {
-        step: "Lodge NCH & Statutory Advocate Escalation",
+        step: "Lodge NCH & Statutory Escalation",
         description:
-          "Register a complaint on the National Consumer Helpline (1915) and dispatch an advocate notice requiring manual KYC clearance within 7 days.",
+          "Register a complaint on the National Consumer Helpline (1915) and dispatch a legal notice requiring manual KYC clearance within 7 days.",
       },
     ],
     statutoryRule: "Consumer Protection Act 2019 s.2(11) & IT Intermediary Rules 2023",
@@ -210,13 +210,13 @@ export default function GamingWalletProblemTabs() {
 
         <div className="pt-2 flex flex-col sm:flex-row items-center justify-between gap-4 border-t border-slate-100">
           <p className="text-xs text-slate-500 text-center sm:text-left">
-            Need an advocate to draft your formal withdrawal demand notice?
+            Need a formal withdrawal demand notice prepared and sent?
           </p>
           <Link
             href="/legal-notice-charges"
             className="text-xs font-bold text-red-600 hover:text-red-700 underline flex items-center gap-1"
           >
-            View Advocate Notice Pricing &amp; Timeline →
+            View Legal Notice Pricing &amp; Timeline →
           </Link>
         </div>
       </div>

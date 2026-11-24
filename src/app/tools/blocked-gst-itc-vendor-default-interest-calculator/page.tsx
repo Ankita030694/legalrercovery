@@ -100,7 +100,7 @@ const FAQS = [
   {
     question: "What legal recourse exists if the defaulting vendor refuses to pay the indemnity?",
     answer:
-      "If the vendor fails to cure the default within 7 days of receiving a statutory Advocate Legal Notice, corporate creditors have three primary legal tracks: (1) Filing a Commercial Summary Suit under Order XXXVII CPC for a liquidated debt based on invoices and tax ledger admissions; (2) Invoking institutional arbitration under Section 21 of the Arbitration and Conciliation Act, 1996 if the PO contains an arbitration clause; or (3) Serving a Section 8 Demand Notice under the Insolvency and Bankruptcy Code (IBC) for operational debts exceeding ₹1 Crore if the vendor is a corporate entity.",
+      "If the vendor fails to cure the default within 7 days of receiving a statutory Fact-Verified Legal Notice, corporate creditors have three primary legal tracks: (1) Filing a Commercial Summary Suit under Order XXXVII CPC for a liquidated debt based on invoices and tax ledger admissions; (2) Invoking institutional arbitration under Section 21 of the Arbitration and Conciliation Act, 1996 if the PO contains an arbitration clause; or (3) Serving a Section 8 Demand Notice under the Insolvency and Bankruptcy Code (IBC) for operational debts exceeding ₹1 Crore if the vendor is a corporate entity.",
   },
 ];
 
@@ -693,10 +693,10 @@ export default function BlockedGstItcCalculatorPage() {
                   </span>
                   <div>
                     <p className="text-xs font-bold text-slate-900">
-                      Stage 1: Serve 7-Day Tri-Channel Advocate Demand Notice
+                      Stage 1: Serve 7-Day Tri-Channel Fact-Verified Demand Notice
                     </p>
                     <p className="text-xs text-slate-600 mt-1 leading-relaxed">
-                      Issue a formal legal notice drafted by an advocate citing Section 16(2)(c), Section 50(3), and Contract Act Section 124. Serve simultaneously via registered Speed Post RPAD, WhatsApp, and official email with electronic delivery tracking under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023. Demand payment or proof of GSTR-3B filing within 7 days.
+                      Issue a formal legal notice prepared on verified facts citing Section 16(2)(c), Section 50(3), and Contract Act Section 124. Serve simultaneously via registered Speed Post RPAD, WhatsApp, and official email with electronic delivery tracking under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023. Demand payment or proof of GSTR-3B filing within 7 days.
                     </p>
                   </div>
                 </div>

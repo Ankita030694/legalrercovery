@@ -46,7 +46,7 @@ const PRACTICE_SCENARIOS: PracticeScenario[] = [
           "Hand over client-owned records cleanly while placing exact unpaid undisputed audit fees formally on record in your written Clause (8) communication under ICAI Chapter VII.",
       },
       {
-        step: "3. Serve External Advocate Notice + NI s.138 / Order 37",
+        step: "3. Serve External Fact-Verified Notice + NI s.138 / Order 37",
         detail:
           "Let independent litigation counsel issue a dignified 15-day statutory demand notice citing admitted ledger balances, bounced-cheque criminal liability (s.138), and Order XXXVII summary suit.",
       },
@@ -86,7 +86,7 @@ const PRACTICE_SCENARIOS: PracticeScenario[] = [
       {
         step: "2. Issue Dual Copyright Cease-and-Desist + COA Intimation",
         detail:
-          "Serve an advocate notice revoking conditional construction license over unpaid GFC drawings, putting the developer and successor architect on notice under COA Reg. 2(1)(xii) and Copyright Act s.51.",
+          "Serve a fact-verified notice revoking conditional construction license over unpaid GFC drawings, putting the developer and successor architect on notice under COA Reg. 2(1)(xii) and Copyright Act s.51.",
       },
       {
         step: "3. File Commercial Suit / MSEFC Samadhaan & Interim Injunction",
@@ -129,7 +129,7 @@ const PRACTICE_SCENARIOS: PracticeScenario[] = [
       {
         step: "2. Serve Tail-Period Breach & Anti-Circumvention Notice",
         detail:
-          "Issue an urgent advocate notice invoking Mandate Survival/Tail Clauses, quantifying exact % success fee on sanctioned facility/deal value, and warning of Section 9 / Order XXXVIII asset-security proceedings.",
+          "Issue an urgent fact-verified notice invoking Mandate Survival/Tail Clauses, quantifying exact % success fee on sanctioned facility/deal value, and warning of Section 9 / Order XXXVIII asset-security proceedings.",
       },
       {
         step: "3. Move Commercial Court / Section 9 Before Proceeds Dissipate",

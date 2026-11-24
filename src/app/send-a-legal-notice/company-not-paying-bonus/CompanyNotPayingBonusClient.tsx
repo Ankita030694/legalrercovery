@@ -12,7 +12,7 @@ const faqs = [
   {
     question: 'Can an employee send a formal legal notice to a company for not paying an earned bonus in India?',
     answer:
-      'Yes, an employee whose statutory bonus, contractual performance bonus, variable pay, or retention incentive is unlawfully withheld has an absolute legal right to issue an advocate-drafted statutory legal notice under the Payment of Bonus Act, 1965 and Section 73 of the Indian Contract Act, 1872. The legal notice establishes an official record of the employer breach, demands immediate release of unpaid bonus dues with 18% commercial interest, and sets a strict 15-day peremptory timeline before escalating to the Labour Commissioner, filing an application under Section 21 of the Payment of Bonus Act, or instituting a summary civil suit under Order 37 of the CPC.',
+      'Yes, an employee whose statutory bonus, contractual performance bonus, variable pay, or retention incentive is unlawfully withheld has an absolute legal right to issue a fact-verified statutory legal notice under the Payment of Bonus Act, 1965 and Section 73 of the Indian Contract Act, 1872. The legal notice establishes an official record of the employer breach, demands immediate release of unpaid bonus dues with 18% commercial interest, and sets a strict 15-day peremptory timeline before escalating to the Labour Commissioner, filing an application under Section 21 of the Payment of Bonus Act, or instituting a summary civil suit under Order 37 of the CPC.',
   },
   {
     question: 'Can an employer withhold or forfeit a performance bonus if the employee resigns before the payout date?',
@@ -165,7 +165,7 @@ const jsonLd = {
         {
           '@type': 'ListItem',
           position: 3,
-          name: 'Advocate Legal Notice Drafting: Issue formal statutory demand notice invoking Section 8, 19, 21 Payment of Bonus Act, Section 73 Indian Contract Act, and 18% commercial interest.',
+          name: 'Fact-Verified Legal Notice Drafting: Issue formal statutory demand notice invoking Section 8, 19, 21 Payment of Bonus Act, Section 73 Indian Contract Act, and 18% commercial interest.',
         },
         {
           '@type': 'ListItem',
@@ -190,7 +190,7 @@ const jsonLd = {
       '@type': 'Product',
       name: 'Legal Notice to Company for Unpaid Bonus Recovery',
       description:
-        'Advocate-drafted statutory legal demand notice service for corporate employees, software professionals, sales executives, and managers to recover unpaid statutory bonus, contractual performance bonus, and variable pay from employers across India.',
+        'Fact-verified statutory legal demand notice service for corporate employees, software professionals, sales executives, and managers to recover unpaid statutory bonus, contractual performance bonus, and variable pay from employers across India.',
       brand: {
         '@type': 'Organization',
         name: 'Legal Recovery',
@@ -267,7 +267,7 @@ export default function CompanyNotPayingBonusClient() {
 
   const shareUrl = encodeURIComponent(pageUrl);
   const shareText = encodeURIComponent(
-    'Company or employer not paying your earned annual bonus, variable pay, or performance incentive? Send an advocate-drafted statutory legal notice under the Payment of Bonus Act & Indian Contract Act! #BonusRecovery #EmployeeRights #LegalNoticeIndia'
+    'Company or employer not paying your earned annual bonus, variable pay, or performance incentive? Send a fact-verified statutory legal notice under the Payment of Bonus Act & Indian Contract Act! #BonusRecovery #EmployeeRights #LegalNoticeIndia'
   );
 
   return (
@@ -450,7 +450,7 @@ export default function CompanyNotPayingBonusClient() {
                     <span className="font-semibold text-slate-800">
                       Section 73 of the Indian Contract Act, 1872
                     </span>
-                    , an employee who has worked the qualifying period or achieved established performance key performance indicators (KPIs) possesses an enforceable legal right to receive statutory bonus and contractual variable pay. When an employer arbitrarily withholds, delays, or forfeits bonus payments post-resignation or during annual disbursement cycles, serving an advocate-drafted statutory legal notice demands immediate release of the principal sum alongside 18% commercial interest within 15 days. If the employer fails to comply within the notice window, the employee can initiate certificate recovery before the{' '}
+                    , an employee who has worked the qualifying period or achieved established performance key performance indicators (KPIs) possesses an enforceable legal right to receive statutory bonus and contractual variable pay. When an employer arbitrarily withholds, delays, or forfeits bonus payments post-resignation or during annual disbursement cycles, serving a fact-verified statutory legal notice demands immediate release of the principal sum alongside 18% commercial interest within 15 days. If the employer fails to comply within the notice window, the employee can initiate certificate recovery before the{' '}
                     <span className="font-semibold text-slate-800">
                       Chief Labour Commissioner
                     </span>{' '}
@@ -551,7 +551,7 @@ export default function CompanyNotPayingBonusClient() {
                     2. Debunking Corporate Excuses: Forfeitures &amp; Payroll Rules
                   </h2>
                   <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                    Human Resource departments in IT services companies, startups, and consulting conglomerates routinely employ standard bureaucratic arguments to withhold earned bonuses from departing employees. These excuses collapse under judicial scrutiny when challenged through an advocate-drafted statutory notice:
+                    Human Resource departments in IT services companies, startups, and consulting conglomerates routinely employ standard bureaucratic arguments to withhold earned bonuses from departing employees. These excuses collapse under judicial scrutiny when challenged through a fact-verified statutory notice:
                   </p>
 
                   <div className="space-y-4">
@@ -829,7 +829,7 @@ export default function CompanyNotPayingBonusClient() {
                       {
                         step: 'Step 1',
                         title: 'Case Review & Contractual Analysis (Day 1)',
-                        desc: 'Our senior employment advocates review your appointment letter, compensation structure, performance appraisal rating, KPI achievement records, and company bonus policies to quantify your exact claim and establish statutory vs contractual liability.',
+                        desc: 'Our team verifies the appointment, compensation, performance appraisal, KPI and bonus policy details you enter in the form to quantify your exact claim and establish statutory vs contractual liability.',
                       },
                       {
                         step: 'Step 2',
@@ -854,7 +854,7 @@ export default function CompanyNotPayingBonusClient() {
                       {
                         step: 'Step 6',
                         title: 'Quasi-Judicial & Civil Enforcement (Day 16 Onward)',
-                        desc: 'If the employer fails to disburse the dues, our panel advocates immediately file a Section 21 recovery application before the Labour Commissioner, approach the Payment of Wages Authority, or institute an Order 37 summary suit in civil court.',
+                        desc: 'If the employer fails to disburse the dues, our team immediately file a Section 21 recovery application before the Labour Commissioner, approach the Payment of Wages Authority, or institute an Order 37 summary suit in civil court.',
                       },
                     ].map((item, idx) => (
                       <div key={idx} className="flex gap-4 p-5 rounded-2xl border border-slate-100 bg-slate-50/60">
@@ -1033,7 +1033,7 @@ export default function CompanyNotPayingBonusClient() {
                   </div>
                   <p className="text-sm text-slate-600 leading-relaxed mb-6">
                     Legal Recovery is India&apos;s trusted online legal notice and dispute resolution
-                    platform, connecting corporate employees, software professionals, managers, and executives with seasoned panel advocates for rapid, advocate-vetted statutory demand notices
+                    platform, connecting corporate employees, software professionals, managers, and executives with our team for rapid, fact-verified statutory demand notices
                     at transparent flat fees. With ₹100 Crore+ recovered and 10,000+ cases resolved across India,
                     Legal Recovery delivers verified legal impact without the delays and unpredictability of
                     traditional law firms.
@@ -1074,7 +1074,7 @@ export default function CompanyNotPayingBonusClient() {
                   Company Withholding Your Earned Bonus?
                 </h3>
                 <p className="text-slate-300 text-xs leading-relaxed mb-4">
-                  Send an advocate-vetted statutory notice today. Over 80% of companies disburse withheld bonuses and variable pay within 15 days of notice service.
+                  Send a fact-verified statutory notice today. Over 80% of companies disburse withheld bonuses and variable pay within 15 days of notice service.
                 </p>
                 <button
                   onClick={() => setIsPaymentModalOpen(true)}
@@ -1083,7 +1083,7 @@ export default function CompanyNotPayingBonusClient() {
                   Draft &amp; Send Notice Now
                 </button>
                 <p className="text-center text-slate-400 text-[10px] mt-3">
-                  Flat fee • Advocate-drafted • Sent same day
+                  Flat fee • Fact-verified • Sent same day
                 </p>
               </div>
 
@@ -1138,7 +1138,7 @@ export default function CompanyNotPayingBonusClient() {
                 {[
                   { stat: '80%', label: 'Companies settle bonus dues within 15 days of notice' },
                   { stat: '18% p.a.', label: 'Commercial interest claimed on delayed disbursements' },
-                  { stat: 'Same Day', label: 'Advocate notice drafted and dispatched' },
+                  { stat: 'Same Day', label: 'Notice prepared and dispatched' },
                   { stat: 'Flat Fee', label: 'Transparent pricing with zero hidden commissions' },
                 ].map((item, i) => (
                   <div key={i} className="flex items-center justify-between py-2 border-b border-slate-50 last:border-0">

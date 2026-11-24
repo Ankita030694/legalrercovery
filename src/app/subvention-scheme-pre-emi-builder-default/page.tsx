@@ -150,7 +150,7 @@ const FAQS = [
   {
     question: "Should I stop paying EMIs to the bank if the builder has abandoned the project and stopped paying Pre-EMIs?",
     answer:
-      "Never stop NACH/ECS payments silently without creating a formal legal paper trail first. If you simply let auto-debits bounce without putting the bank on notice, the bank will mechanically file a criminal complaint under Section 138 of the Negotiable Instruments Act or Section 25 of the Payment and Settlement Systems Act, 2007. Before halting payments, have an advocate serve a composite Legal Notice on both the Builder and the Bank documenting the RBI upfront-disbursal violation, revoking NACH for disputed subvented interest, and file a RERA Section 31/36 or Consumer Court petition seeking an interim stay on bank recovery.",
+      "Never stop NACH/ECS payments silently without creating a formal legal paper trail first. If you simply let auto-debits bounce without putting the bank on notice, the bank will mechanically file a criminal complaint under Section 138 of the Negotiable Instruments Act or Section 25 of the Payment and Settlement Systems Act, 2007. Before halting payments, serve a composite Legal Notice on both the Builder and the Bank documenting the RBI upfront-disbursal violation, revoking NACH for disputed subvented interest, and file a RERA Section 31/36 or Consumer Court petition seeking an interim stay on bank recovery.",
   },
   {
     question: "Can I cancel my flat booking under RERA Section 18 and force the builder to close the bank loan?",
@@ -165,7 +165,7 @@ const FAQS = [
   {
     question: "Subvention scheme mein builder Pre-EMI nahi bhar raha aur bank mujhe notice bhej raha hai, toh legal notice kaise bheje?",
     answer:
-      "Agar aapne 'No EMI till possession' (80:20 ya 75:25 subvention scheme) mein flat book kiya tha aur builder ne Pre-EMI dena band kar diya hai, toh turant Builder aur Bank dono ko ek formal Advocate Legal Notice bhejna zaroori hai. LegalRecovery.in par verified real-estate advocate Tripartite Agreement, RERA Section 18, aur RBI ke 03.09.2013 circular (upfront loan disbursal violation) ke tehat Builder se 100% refund + Pre-EMI harjana maangte hain aur Bank ko CIBIL kharab karne ya coercive action lene se rokte hain.",
+      "Agar aapne 'No EMI till possession' (80:20 ya 75:25 subvention scheme) mein flat book kiya tha aur builder ne Pre-EMI dena band kar diya hai, toh turant Builder aur Bank dono ko ek formal Fact-Verified Legal Notice bhejna zaroori hai. LegalRecovery.in par verified real-estate advocate Tripartite Agreement, RERA Section 18, aur RBI ke 03.09.2013 circular (upfront loan disbursal violation) ke tehat Builder se 100% refund + Pre-EMI harjana maangte hain aur Bank ko CIBIL kharab karne ya coercive action lene se rokte hain.",
   },
 ];
 
@@ -779,7 +779,7 @@ export default function SubventionSchemeBuilderDefaultPage() {
                         Serve a Joint Statutory Legal Notice on Both the Builder and the Lending Bank / HFC
                       </h3>
                       <p className="text-xs sm:text-sm leading-relaxed">
-                        Have an advocate dispatch a formal 15-day statutory notice via Registered Speed Post and email to: (a) the <strong>Builder&apos;s Directors and Registered Office</strong>, invoking the Tripartite Agreement and Section 18 of RERA 2016 to demand immediate clearance of all overdue Pre-EMIs plus penal interest, or a 100% booking cancellation refund with SBI MCLR + 2% interest; and (b) the <strong>Bank&apos;s Branch Manager and Principal Nodal Officer</strong>, putting them on notice of their illegal upfront disbursal, revoking consent for NACH auto-debits toward builder-subvented interest, and warning against CIBIL degradation under <em>Himanshu Singh v. UOI</em>. For flat cancellation rules, see our{" "}
+                        Dispatch a formal 15-day statutory notice via Registered Speed Post and email to: (a) the <strong>Builder&apos;s Directors and Registered Office</strong>, invoking the Tripartite Agreement and Section 18 of RERA 2016 to demand immediate clearance of all overdue Pre-EMIs plus penal interest, or a 100% booking cancellation refund with SBI MCLR + 2% interest; and (b) the <strong>Bank&apos;s Branch Manager and Principal Nodal Officer</strong>, putting them on notice of their illegal upfront disbursal, revoking consent for NACH auto-debits toward builder-subvented interest, and warning against CIBIL degradation under <em>Himanshu Singh v. UOI</em>. For flat cancellation rules, see our{" "}
                         <Link href="/builder-booking-cancellation-refund-legal-notice" className="text-blue-700 underline font-semibold">
                           builder booking cancellation refund legal notice guide
                         </Link>.
@@ -982,7 +982,7 @@ export default function SubventionSchemeBuilderDefaultPage() {
                       <strong>The Default &amp; Bank Harassment:</strong> The builder paid Pre-EMIs for 18 months and then abruptly stopped in October 2024 while the tower stood frozen at the 4th-floor slab. The HFC immediately began hitting Siddharth&apos;s salary account via NACH for ₹48,500/month. Siddharth paid for 9 months under fear of CIBIL damage (totalling ₹4,36,500 out of pocket) before realizing construction was completely dead.
                     </p>
                     <p>
-                      <strong>The Statutory Action:</strong> Siddharth engaged LegalRecovery.in. Our advocate first obtained the HFC&apos;s loan disbursement ledger and UP RERA QPR filings proving that 86.5% of the loan had been released upfront at 15% physical construction in violation of RBI Circular DBOD.BP.BC.No.51/08.12.015/2013-14 and NHB Circular No. 88. A dual statutory legal notice was served via Registered Speed Post and email to the Builder and the HFC&apos;s Principal Nodal Officer, demanding: (1) immediate cancellation of the allotment under Section 18(1) RERA, (2) refund of ₹14,16,500 (₹9,80,000 down payment + ₹4,36,500 forced EMIs) with SBI MCLR + 2% interest, and (3) a freeze on NACH presentation and CIBIL reporting citing <em>Himanshu Singh v. Union of India</em>.
+                      <strong>The Statutory Action:</strong> Siddharth engaged LegalRecovery.in. Our team first obtained the HFC&apos;s loan disbursement ledger and UP RERA QPR filings proving that 86.5% of the loan had been released upfront at 15% physical construction in violation of RBI Circular DBOD.BP.BC.No.51/08.12.015/2013-14 and NHB Circular No. 88. A dual statutory legal notice was served via Registered Speed Post and email to the Builder and the HFC&apos;s Principal Nodal Officer, demanding: (1) immediate cancellation of the allotment under Section 18(1) RERA, (2) refund of ₹14,16,500 (₹9,80,000 down payment + ₹4,36,500 forced EMIs) with SBI MCLR + 2% interest, and (3) a freeze on NACH presentation and CIBIL reporting citing <em>Himanshu Singh v. Union of India</em>.
                     </p>
                     <div className="p-3.5 sm:p-4 bg-emerald-950/70 border border-emerald-700/60 rounded-xl text-emerald-200">
                       <strong className="block text-emerald-400 font-bold mb-1">The Outcome:</strong>
@@ -1080,7 +1080,7 @@ export default function SubventionSchemeBuilderDefaultPage() {
                       <strong>RERA Section 18 Refund Is Unconditional:</strong> Once the agreement possession date passes, you can demand 100% refund of your down payment + paid EMIs with SBI MCLR + 2% interest AND a direction forcing the builder to close the bank loan.
                     </li>
                     <li>
-                      <strong>Honest Scope — What LegalRecovery Can &amp; Cannot Do:</strong> LegalRecovery.in drafts and dispatches advocate-verified statutory legal notices to both the defaulting builder and the lending bank/HFC, and prepares your pre-litigation RBI Ombudsman and RERA documentation. If a builder is already undergoing corporate insolvency (CIRP) before NCLT with zero attachable assets outside moratorium, a legal notice alone will not produce an instant cash payout—you must also file Form CA before the Resolution Professional while using our notice to contest the bank&apos;s coercive recovery.
+                      <strong>Honest Scope — What LegalRecovery Can &amp; Cannot Do:</strong> LegalRecovery.in drafts and dispatches fact-verified statutory legal notices to both the defaulting builder and the lending bank/HFC, and prepares your pre-litigation RBI Ombudsman and RERA documentation. If a builder is already undergoing corporate insolvency (CIRP) before NCLT with zero attachable assets outside moratorium, a legal notice alone will not produce an instant cash payout—you must also file Form CA before the Resolution Professional while using our notice to contest the bank&apos;s coercive recovery.
                     </li>
                   </ul>
                 </aside>

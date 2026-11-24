@@ -34,7 +34,7 @@ const PROBLEMS: ProblemTab[] = [
       {
         step: "Serve Formal Demand Notice to Principal Nodal Officer",
         description:
-          "Issue a formal advocate legal notice to the bank's Principal Nodal Officer (PNO) placing on record that statutory 30-day default has occurred under Clause 10(1) RB-IOS.",
+          "Issue a formal fact-verified legal notice to the bank's Principal Nodal Officer (PNO) placing on record that statutory 30-day default has occurred under Clause 10(1) RB-IOS.",
       },
       {
         step: "Lodge Online Complaint on RBI CMS Portal",
@@ -113,7 +113,7 @@ const PROBLEMS: ProblemTab[] = [
           "Formally demand the police requisition notice, FIR copy, or cyber cell email from the Branch Manager and GRO to identify the exact disputed amount.",
       },
       {
-        step: "Issue Advocate Notice to Restrict Lien to Disputed Amount",
+        step: "Issue Fact-Verified Notice to Restrict Lien to Disputed Amount",
         description:
           "Send a statutory legal notice demanding unfreezing of all unencumbered funds, holding the bank liable for financial damages and business disruption.",
       },

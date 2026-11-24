@@ -159,7 +159,7 @@ const COURT_PRECEDENTS = [
     holding:
       "The Supreme Court held that Section 12A pre-institution mediation is mandatory for all commercial suits not contemplating urgent interim relief, and non-compliance renders the plaint liable to outright rejection under Order VII Rule 11 CPC.",
     creditorTakeaway:
-      "When your corporate advisory, IP prosecution, or commercial retainer claim qualifies as a 'commercial dispute' of ₹3 Lakh or more, trigger DLSA/SLSA Section 12A mediation immediately after the 15-day Advocate Demand Notice—or plead documented asset-dissipation grounds if seeking urgent Order XXXVIII Rule 5 attachment.",
+      "When your corporate advisory, IP prosecution, or commercial retainer claim qualifies as a 'commercial dispute' of ₹3 Lakh or more, trigger DLSA/SLSA Section 12A mediation immediately after the 15-day Fact-Verified Demand Notice—or plead documented asset-dissipation grounds if seeking urgent Order XXXVIII Rule 5 attachment.",
   },
   {
     title: "Post-Dated or Security Cheques Trigger NI Act Section 138 Once Fee Debt Crystallizes",

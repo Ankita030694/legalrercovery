@@ -31,7 +31,7 @@ export default function CryptoNoticeCTA({
                 Exchange Holding Your Crypto or INR Withdrawals?
               </h3>
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-6 sm:mb-8 font-normal">
-                Virtual Asset Service Providers (VASPs) registered with FIU-IND cannot arbitrarily withhold user fiat balances or digital tokens. Have an experienced recovery advocate draft and serve a formal 15-day statutory legal notice under the Consumer Protection Act, 2019 and Contract Act.
+                Virtual Asset Service Providers (VASPs) registered with FIU-IND cannot arbitrarily withhold user fiat balances or digital tokens. Serve a formal 15-day statutory legal notice under the Consumer Protection Act, 2019 and Contract Act.
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-6 sm:mb-8 text-xs text-slate-300">
@@ -65,7 +65,7 @@ export default function CryptoNoticeCTA({
                 </button>
                 <div className="text-center sm:text-left">
                   <p className="text-xs font-semibold text-slate-200">
-                    Advocate Notice from ₹{basePrice}
+                    Fact-Verified Notice from ₹{basePrice}
                   </p>
                   <p className="text-[11px] text-slate-400">
                     Drafted &amp; dispatched within 24–48 working hours
@@ -84,7 +84,7 @@ export default function CryptoNoticeCTA({
                 Break the Support Ticket Loop with a Formal Legal Notice
               </h4>
               <p className="text-xs sm:text-sm text-slate-600 mt-1 max-w-xl">
-                Cryptocurrency platforms routinely ignore customer support tickets. An advocate demand notice places the exchange management on notice under the Consumer Protection Act and Bharatiya Nagarik Suraksha Sanhita.
+                Cryptocurrency platforms routinely ignore customer support tickets. A fact-verified demand notice places the exchange management on notice under the Consumer Protection Act and Bharatiya Nagarik Suraksha Sanhita.
               </p>
             </div>
             <button

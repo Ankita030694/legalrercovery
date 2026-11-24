@@ -37,7 +37,7 @@ const PROBLEMS: ProblemTab[] = [
           "Email a formal 'Notice of Rejection under Section 41 Sale of Goods Act' to the Dealership Principal and OEM nodal consumer care, citing the exact Vehicle Identification Number (VIN) and listing each inspected flaw.",
       },
       {
-        step: "Serve Advocate Legal Notice for 100% Refund with Interest",
+        step: "Serve Fact-Verified Legal Notice for 100% Refund with Interest",
         description:
           "If the dealer fails to re-allocate a fresh factory VIN within 7 days or refuses full deposit return, serve an advocate legal notice claiming the principal amount plus 18% p.a. penal interest and litigation costs.",
       },
@@ -228,7 +228,7 @@ export default function PdiDefectsProblemTabs() {
         {/* Action Link */}
         <div className="pt-2 flex flex-col sm:flex-row items-center justify-between gap-3 border-t border-slate-100">
           <p className="text-xs text-slate-500">
-            Need legal intervention? Our advocates draft statutory notices against dealers within 24 hours.
+            Need legal intervention? Our team drafts statutory notices against dealers within 24 hours.
           </p>
           <Link
             href="/legal-notice-to-car-dealer-delayed-delivery-defective-vehicle"

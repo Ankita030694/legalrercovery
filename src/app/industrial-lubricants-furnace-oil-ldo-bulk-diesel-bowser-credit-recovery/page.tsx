@@ -128,7 +128,7 @@ const FAQS = [
   },
   {
     q: "Can a petrol pump group or lubricant distributor send legal notices to 25–200 defaulting fleet accounts and contractors in one batch?",
-    a: "Yes. Through LegalRecovery.in's Bulk Institutional Desk, petroleum dealers, bowser startups, and lubricant distributors can upload a single CSV of overdue fleet ledgers to dispatch advocate-vetted Order 37, Contract Act s.237, and NI s.138 notices simultaneously via Email, WhatsApp, and Speed Post RPAD.",
+    a: "Yes. Through LegalRecovery.in's Bulk Institutional Desk, petroleum dealers, bowser startups, and lubricant distributors can upload a single CSV of overdue fleet ledgers to dispatch fact-verified Order 37, Contract Act s.237, and NI s.138 notices simultaneously via Email, WhatsApp, and Speed Post RPAD.",
   },
 ];
 
@@ -187,7 +187,7 @@ export default function IndustrialLubricantsFuelDieselRecoveryPage() {
             "@type": "HowToStep",
             position: 3,
             name: "Serve Order 37 / Contract Act s.237 / NI s.138 Demand Notice",
-            text: "Dispatch an advocate-drafted notice via Email, WhatsApp, and Speed Post RPAD invoking driver ostensible authority and Sale of Goods s.42 estoppel.",
+            text: "Dispatch a fact-verified notice via Email, WhatsApp, and Speed Post RPAD invoking driver ostensible authority and Sale of Goods s.42 estoppel.",
           },
           {
             "@type": "HowToStep",
@@ -940,7 +940,7 @@ export default function IndustrialLubricantsFuelDieselRecoveryPage() {
                     Security Cheque Presentation &amp; Ledger Demand Notice
                   </h3>
                   <p className="text-xs text-slate-600">
-                    Advocate-vetted intimation before depositing fleet or distributor security PDCs.
+                    Fact-verified intimation before depositing fleet or distributor security PDCs.
                   </p>
                 </Link>
 

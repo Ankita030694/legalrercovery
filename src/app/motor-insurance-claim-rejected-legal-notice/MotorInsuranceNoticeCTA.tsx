@@ -31,7 +31,7 @@ export default function MotorInsuranceNoticeCTA({
                 Overturn Unlawful Car or Bike Insurance Repudiation
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6">
-                Have a verified insurance advocate draft and serve an unassailable statutory demand notice citing Supreme Court rulings (Gurmel Singh on delay, Swaran Singh &amp; Lakhmi Chand on licence, and mandatory BAC proof for drunk driving allegations) to the insurer&apos;s grievance officer and claims head. Served by email and WhatsApp under Section 63 of Bharatiya Sakshya Adhiniyam, 2023. Speed Post is optional at ₹450 per party.
+                Serve an unassailable statutory demand notice citing Supreme Court rulings (Gurmel Singh on delay, Swaran Singh &amp; Lakhmi Chand on licence, and mandatory BAC proof for drunk driving allegations) to the insurer&apos;s grievance officer and claims head. Served by email and WhatsApp under Section 63 of Bharatiya Sakshya Adhiniyam, 2023. Speed Post is optional at ₹450 per party.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button
@@ -42,7 +42,7 @@ export default function MotorInsuranceNoticeCTA({
                   {buttonText} — ₹{basePrice}
                 </button>
                 <div className="text-xs text-slate-300 flex flex-wrap sm:flex-nowrap items-center gap-2 sm:gap-3">
-                  <span>✓ 24h Advocate Drafting</span>
+                  <span>✓ 24h Notice Drafting</span>
                   <span>•</span>
                   <span>✓ Email + WhatsApp</span>
                   <span>•</span>

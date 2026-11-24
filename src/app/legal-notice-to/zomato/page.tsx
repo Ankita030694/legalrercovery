@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Zomato Refund Not Received? How to Escalate to a Legal Notice",
     description:
-      "Stuck Zomato refund, undelivered food, or arbitrary cancellation charges? Discover statutory timelines, evidence rules, and how an advocate notice forces compensation.",
+      "Stuck Zomato refund, undelivered food, or arbitrary cancellation charges? Discover statutory timelines, evidence rules, and how a legal notice forces compensation.",
     url: `${SITE_URL}/legal-notice-to/zomato`,
     type: "article",
     siteName: "LegalRecovery.in",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Zomato Refund Not Received? How to Escalate to a Legal Notice",
     description:
-      "Stuck Zomato refund, undelivered food, or arbitrary cancellation charges? Discover statutory timelines, evidence rules, and how an advocate notice forces compensation.",
+      "Stuck Zomato refund, undelivered food, or arbitrary cancellation charges? Discover statutory timelines, evidence rules, and how a legal notice forces compensation.",
     site: "@legalrecoveryin",
     creator: "@legalrecoveryin",
     images: [`${SITE_URL}/blog_money_recovery.png`],
@@ -158,7 +158,7 @@ Phone: [INSERT CONTACT NUMBER]`;
           url: `${SITE_URL}/legal-notice-to/zomato`,
           name: "Zomato Refund Not Received? Complaint to Legal Notice",
         },
-        headline: "Zomato Refund Problems: From Chat Support to a Lawyer's Notice",
+        headline: "Zomato Refund Problems: From Chat Support to a Legal Notice",
         description:
           "Zomato refund not received or order never delivered? Timelines, evidence and the exact steps to escalate to a legal notice to Zomato.",
         inLanguage: "en-IN",
@@ -240,7 +240,7 @@ Phone: [INSERT CONTACT NUMBER]`;
             name: "What should I do if Zomato marks an order as 'delivered' but the food never arrived?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Take screenshots of the delivery status, chat history, and phone logs proving the rider never called. Email grievance@zomato.com to dispute the false delivery status. Ask for delivery verification. If they refuse to refund within 48 hours, file a complaint on the National Consumer Helpline (1915) and send an advocate legal notice.",
+              text: "Take screenshots of the delivery status, chat history, and phone logs proving the rider never called. Email grievance@zomato.com to dispute the false delivery status. Ask for delivery verification. If they refuse to refund within 48 hours, file a complaint on the National Consumer Helpline (1915) and send a legal notice.",
             },
           },
           {
@@ -264,7 +264,7 @@ Phone: [INSERT CONTACT NUMBER]`;
             name: "Zomato se khana deliver na hone ya refund na aane par legal notice kaise bheje?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Agar Zomato refund na de, to chat aur call logs ke screenshot lekar grievance@zomato.com par email karein. Agar 48 ghante me samasya hal na ho, to National Consumer Helpline (1915) par complaint karein. Iske baad advocate dwara Zomato ko legal notice bhejein, jisme 15 dino ke andar refund aur harjane ki maang ki ja sakti hai.",
+              text: "Agar Zomato refund na de, to chat aur call logs ke screenshot lekar grievance@zomato.com par email karein. Agar 48 ghante me samasya hal na ho, to National Consumer Helpline (1915) par complaint karein. Iske baad Zomato ko legal notice bhejein, jisme 15 dino ke andar refund aur harjane ki maang ki ja sakti hai.",
             },
           },
         ],
@@ -297,7 +297,7 @@ Phone: [INSERT CONTACT NUMBER]`;
             </div>
 
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-black text-slate-900 tracking-tight leading-tight mb-6">
-              Zomato Refund Problems: From Chat Support to a Lawyer's Notice
+              Zomato Refund Problems: From Chat Support to a Legal Notice
             </h1>
 
             {/* Answer Box directly under H1 (40–60 words) */}
@@ -309,7 +309,7 @@ Phone: [INSERT CONTACT NUMBER]`;
                 Statutory Summary (Quick Answer)
               </p>
               <p className="text-slate-800 text-sm sm:text-base leading-relaxed font-medium">
-                Under the Consumer Protection Act, 2019 and E-Commerce Rules, 2020, Zomato is legally liable for undelivered orders, delayed refunds, and unfair cancellation penalties. First report the issue in the app and email Zomato&apos;s Grievance Officer. If unresolved within 48 hours, send an advocate legal notice before filing on e-Jagriti.
+                Under the Consumer Protection Act, 2019 and E-Commerce Rules, 2020, Zomato is legally liable for undelivered orders, delayed refunds, and unfair cancellation penalties. First report the issue in the app and email Zomato&apos;s Grievance Officer. If unresolved within 48 hours, send a legal notice before filing on e-Jagriti.
               </p>
             </section>
 
@@ -414,7 +414,7 @@ Phone: [INSERT CONTACT NUMBER]`;
               Food Delivery Dispute Money &amp; Liability Flow Across Parties
             </h2>
             <p className="text-slate-700 text-sm sm:text-base leading-relaxed mb-6">
-              When an online food order fails, consumers frequently find themselves caught in a blame game between the platform, the restaurant kitchen, and the payment gateway. The diagram below illustrates how capital flows during a Zomato transaction, where funds typically become trapped, and how a statutory advocate notice cuts through intermediary disclaimers:
+              When an online food order fails, consumers frequently find themselves caught in a blame game between the platform, the restaurant kitchen, and the payment gateway. The diagram below illustrates how capital flows during a Zomato transaction, where funds typically become trapped, and how a statutory legal notice cuts through intermediary disclaimers:
             </p>
 
             {/* Hand-authored SVG Diagram */}
@@ -482,7 +482,7 @@ Phone: [INSERT CONTACT NUMBER]`;
                   {/* Pre-Litigation Legal Notice Intervention Bar */}
                   <rect x="30" y="325" width="740" height="70" rx="12" fill="#111827" stroke="#DC2626" strokeWidth="2" />
                   <text x="400" y="352" textAnchor="middle" fontWeight="bold" fontSize="13" fill="#FFFFFF">
-                    Statutory Legal Intervention: Advocate Demand Notice under CPA 2019 Section 35
+                    Statutory Legal Intervention: Legal Demand Notice under CPA 2019 Section 35
                   </text>
                   <text x="400" y="375" textAnchor="middle" fontSize="11" fill="#F87171">
                     Forces Grievance Escalation · Impleads Zomato &amp; Merchant Jointly · Initiates e-Jagriti Commission Claim
@@ -542,7 +542,7 @@ Phone: [INSERT CONTACT NUMBER]`;
                     </th>
                     <td className="p-3.5 sm:p-4">E-Commerce Rules, 2020, Rule 4(5)</td>
                     <td className="p-3.5 sm:p-4 font-mono font-medium text-red-600">30 Calendar Days</td>
-                    <td className="p-3.5 sm:p-4">Serve formal advocate legal demand notice.</td>
+                    <td className="p-3.5 sm:p-4">Serve formal legal demand notice.</td>
                   </tr>
                   <tr className="hover:bg-slate-50">
                     <th scope="row" className="p-3.5 sm:p-4 font-semibold text-slate-900">
@@ -574,7 +574,7 @@ Phone: [INSERT CONTACT NUMBER]`;
                     </th>
                     <td className="p-3.5 sm:p-4">LegalRecovery.in Fixed-Fee Standard</td>
                     <td className="p-3.5 sm:p-4 font-bold text-red-700">₹999 flat</td>
-                    <td className="p-3.5 sm:p-4">Advocate drafting, email &amp; WhatsApp dispatch included. Speed Post optional (₹450).</td>
+                    <td className="p-3.5 sm:p-4">Notice drafting, email &amp; WhatsApp dispatch included. Speed Post optional (₹450).</td>
                   </tr>
                 </tbody>
               </table>
@@ -648,14 +648,14 @@ Phone: [INSERT CONTACT NUMBER]`;
                 <div className="bg-slate-50 rounded-xl p-5 border border-slate-200">
                   <div className="flex flex-wrap items-center justify-between gap-2 mb-2">
                     <h3 className="text-base sm:text-lg font-bold text-slate-900">
-                      Day 15: Serve Advocate-Drafted Legal Demand Notice via Speed Post
+                      Day 15: Serve Fact-Verified Legal Demand Notice via Speed Post
                     </h3>
                     <time className="text-xs font-mono font-semibold text-red-600 bg-red-50 px-2 py-0.5 rounded border border-red-200">
                       15-Day Cure Window
                     </time>
                   </div>
                   <p className="text-xs sm:text-sm text-slate-650 leading-relaxed mb-3">
-                    Instruct a verified advocate to issue a formal statutory legal notice under Section 35 of the Consumer Protection Act, 2019. The notice is served via Registered Speed Post with postal tracking to Zomato Limited&apos;s New Delhi registered office and Gurugram operations headquarters, plus digital service under Section 63 BSA. It demands immediate refund with 18% p.a. interest and damages for mental distress.
+                    Send a formal statutory legal notice under Section 35 of the Consumer Protection Act, 2019. The notice is served via Registered Speed Post with postal tracking to Zomato Limited&apos;s New Delhi registered office and Gurugram operations headquarters, plus digital service under Section 63 BSA. It demands immediate refund with 18% p.a. interest and damages for mental distress.
                   </p>
                   <p className="text-xs text-slate-500 font-medium">
                     Success Rate: Over 70% of food aggregator claims settle during this 15-day statutory window.
@@ -953,7 +953,7 @@ Phone: [INSERT CONTACT NUMBER]`;
                 </div>
                 <div>
                   <strong className="text-slate-900 block mb-1">Legal Action &amp; Outcome:</strong>
-                  Ankit compiled call records, society security gate logs proving no rider entered, and served an advocate legal notice to Zomato Limited. Within 8 days of receipt, Zomato&apos;s legal escalation team reversed the ₹1,850 charge and credited ₹2,500 as an ex-gratia goodwill settlement.
+                  Ankit compiled call records, society security gate logs proving no rider entered, and served a legal notice to Zomato Limited. Within 8 days of receipt, Zomato&apos;s legal escalation team reversed the ₹1,850 charge and credited ₹2,500 as an ex-gratia goodwill settlement.
                 </div>
               </div>
             </div>
@@ -992,9 +992,9 @@ Phone: [INSERT CONTACT NUMBER]`;
 
             <div className="mt-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4 p-4 bg-red-50 rounded-xl border border-red-200">
               <span className="text-xs sm:text-sm text-red-900 font-medium">
-                Prefer an advocate to customize, verify, print on legal stationery, and dispatch via Speed Post?
+                Prefer to have our team verify the facts and dispatch the notice via Speed Post?
               </span>
-              <ZomatoNoticeCTA buttonText="Draft &amp; Send via Advocate" variant="secondary" />
+              <ZomatoNoticeCTA buttonText="Draft &amp; Send Notice" variant="secondary" />
             </div>
           </section>
 
@@ -1099,7 +1099,7 @@ Phone: [INSERT CONTACT NUMBER]`;
                   <span className="text-slate-400 group-open:rotate-180 transition-transform">▼</span>
                 </summary>
                 <div className="mt-3 text-xs sm:text-sm text-slate-650 leading-relaxed pl-2 border-l-2 border-red-500">
-                  Take screenshots of the delivery status, chat history, and phone logs proving the rider never called. Email grievance@zomato.com to dispute the false delivery status. Ask for delivery verification. If they refuse to refund within 48 hours, file a complaint on the National Consumer Helpline (1915) and send an advocate legal notice.
+                  Take screenshots of the delivery status, chat history, and phone logs proving the rider never called. Email grievance@zomato.com to dispute the false delivery status. Ask for delivery verification. If they refuse to refund within 48 hours, file a complaint on the National Consumer Helpline (1915) and send a legal notice.
                 </div>
               </details>
 
@@ -1129,7 +1129,7 @@ Phone: [INSERT CONTACT NUMBER]`;
                   <span className="text-slate-400 group-open:rotate-180 transition-transform">▼</span>
                 </summary>
                 <div className="mt-3 text-xs sm:text-sm text-slate-650 leading-relaxed pl-2 border-l-2 border-red-500">
-                  Agar Zomato refund na de, to chat aur call logs ke screenshot lekar grievance@zomato.com par email karein. Agar 48 ghante me samasya hal na ho, to National Consumer Helpline (1915) par complaint karein. Iske baad advocate dwara Zomato ko legal notice bhejein, jisme 15 dino ke andar refund aur harjane ki maang ki ja sakti hai.
+                  Agar Zomato refund na de, to chat aur call logs ke screenshot lekar grievance@zomato.com par email karein. Agar 48 ghante me samasya hal na ho, to National Consumer Helpline (1915) par complaint karein. Iske baad Zomato ko legal notice bhejein, jisme 15 dino ke andar refund aur harjane ki maang ki ja sakti hai.
                 </div>
               </details>
             </div>

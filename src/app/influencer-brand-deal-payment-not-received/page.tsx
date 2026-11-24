@@ -133,7 +133,7 @@ const FAQS = [
   {
     question: "What legal action can an influencer or content creator take if a brand or agency does not pay after the post goes live?",
     answer:
-      "You have three immediate statutory levers under Indian law: (1) Serve a formal 15-day Advocate Legal Demand Notice jointly on the Influencer Marketing Agency and the Sponsoring Brand's Marketing Head/Directors under Sections 70 and 73 of the Indian Contract Act, 1872; (2) Put both parties on notice of Copyright License Revocation under Section 19 and Section 51 of the Copyright Act, 1957, warning of formal DMCA/Copyright takedown strikes on Instagram/Meta and YouTube if they continue using or boosting your unpaid video; and (3) If you hold Udyam MSME registration, file an online claim on the MSME ODR Portal for 3× RBI Bank Rate compound interest (~20.25% p.a.) and invoke Section 43B(h) income-tax expense disallowance against the buyer.",
+      "You have three immediate statutory levers under Indian law: (1) Serve a formal 15-day Fact-Verified Legal Demand Notice jointly on the Influencer Marketing Agency and the Sponsoring Brand's Marketing Head/Directors under Sections 70 and 73 of the Indian Contract Act, 1872; (2) Put both parties on notice of Copyright License Revocation under Section 19 and Section 51 of the Copyright Act, 1957, warning of formal DMCA/Copyright takedown strikes on Instagram/Meta and YouTube if they continue using or boosting your unpaid video; and (3) If you hold Udyam MSME registration, file an online claim on the MSME ODR Portal for 3× RBI Bank Rate compound interest (~20.25% p.a.) and invoke Section 43B(h) income-tax expense disallowance against the buyer.",
   },
   {
     question: "Can an influencer marketing agency legally delay my payment for 90+ days saying 'the brand hasn't paid us yet'?",
@@ -148,7 +148,7 @@ const FAQS = [
   {
     question: "Should I delete the unpaid Reel or YouTube video immediately, or send a legal notice first?",
     answer:
-      "Do not silently delete the post before taking legal screenshots—sometimes agencies misuse sudden deletion to allege that you breached the campaign exclusivity window. Instead, first archive complete screenshots of the live post URL, insight metrics, comments, and any Meta Ad Library paid boosts. Next, turn off 'Allow Brand Partner to Boost' in Instagram settings and have an advocate serve a 15-day Legal Notice stating that due to non-payment of consideration, the conditional license under Section 19 of the Copyright Act stands revoked and the content will be taken down / struck for copyright infringement at the brand's risk and cost if dues remain unpaid.",
+      "Do not silently delete the post before taking legal screenshots—sometimes agencies misuse sudden deletion to allege that you breached the campaign exclusivity window. Instead, first archive complete screenshots of the live post URL, insight metrics, comments, and any Meta Ad Library paid boosts. Next, turn off 'Allow Brand Partner to Boost' in Instagram settings and serve a 15-day Legal Notice stating that due to non-payment of consideration, the conditional license under Section 19 of the Copyright Act stands revoked and the content will be taken down / struck for copyright infringement at the brand's risk and cost if dues remain unpaid.",
   },
   {
     question: "Does TDS deducted under Section 194J, 194C, or 194R in Form 26AS prove that the agency owes me the collaboration fee?",
@@ -163,7 +163,7 @@ const FAQS = [
   {
     question: "Brand ya influencer agency collab ke baad payment na de toh legal notice kaise bheje?",
     answer:
-      "Agar aapne Instagram Reel, YouTube video ya brand shoot pura kar diya hai aur agency 60–90 din baad bhi 'brand se payment nahi aaya' bolkar paisa rok rahi hai, toh aap Indian Contract Act ki Dhara 70 aur 73, Copyright Act ki Dhara 19, aur MSMED Act ke tehat ek joint Advocate Legal Notice bhej sakte hain. LegalRecovery.in par verified commercial advocates Agency ke Directors aur Brand ke Marketing Head dono ko Registered Speed Post, email aur WhatsApp se 15-din ka demand notice bhejte hain.",
+      "Agar aapne Instagram Reel, YouTube video ya brand shoot pura kar diya hai aur agency 60–90 din baad bhi 'brand se payment nahi aaya' bolkar paisa rok rahi hai, toh aap Indian Contract Act ki Dhara 70 aur 73, Copyright Act ki Dhara 19, aur MSMED Act ke tehat ek joint Fact-Verified Legal Notice bhej sakte hain. LegalRecovery.in par verified commercial advocates Agency ke Directors aur Brand ke Marketing Head dono ko Registered Speed Post, email aur WhatsApp se 15-din ka demand notice bhejte hain.",
   },
 ];
 
@@ -289,7 +289,7 @@ export default function InfluencerBrandDealPaymentRecoveryPage() {
                 Statutory Summary (Creator Payment Rights, Agency Liability &amp; Copyright Leverage)
               </p>
               <p>
-                When a brand or influencer marketing agency withholds collaboration fees after your content goes live, both the contracting agency and the sponsoring brand can be pursued under Sections 70, 73, and 226 of the Indian Contract Act, 1872. Until paid, commercial usage rights remain revocable under Section 19 of the Copyright Act, 1957. Serve a 15-day joint advocate demand notice before invoking MSME ODR (45-day rule) or civil recovery within 3 years.
+                When a brand or influencer marketing agency withholds collaboration fees after your content goes live, both the contracting agency and the sponsoring brand can be pursued under Sections 70, 73, and 226 of the Indian Contract Act, 1872. Until paid, commercial usage rights remain revocable under Section 19 of the Copyright Act, 1957. Serve a 15-day joint fact-verified demand notice before invoking MSME ODR (45-day rule) or civil recovery within 3 years.
               </p>
             </div>
 
@@ -378,7 +378,7 @@ export default function InfluencerBrandDealPaymentRecoveryPage() {
                       STEP 1 FOR ALL UNPAID CREATORS (DAY 1–15)
                     </text>
                     <text x="440" y="54" fill="#FFFFFF" fontWeight="bold" fontSize="12" textAnchor="middle">
-                      Serve Joint 15-Day Advocate Notice to Agency Directors + Brand CMO
+                      Serve Joint 15-Day Fact-Verified Notice to Agency Directors + Brand CMO
                     </text>
 
                     {/* Branch Lines from Root */}
@@ -955,10 +955,10 @@ export default function InfluencerBrandDealPaymentRecoveryPage() {
                     </span>
                     <div className="space-y-1 sm:space-y-1.5">
                       <h3 className="text-sm sm:text-base md:text-lg font-bold text-slate-900">
-                        Serve a Joint 15-Day Statutory Advocate Legal Demand Notice
+                        Serve a Joint 15-Day Statutory Fact-Verified Legal Demand Notice
                       </h3>
                       <p className="text-xs sm:text-sm leading-relaxed">
-                        Have an advocate serve a formal statutory notice via Registered Speed Post (RPAD) and Section 63 BSA electronic delivery to both the Agency (Party No. 1) and the Brand (Party No. 2). The notice demands 100% principal fee, 18%–20.25% interest, revokes conditional copyright usage under Section 19 of the Copyright Act, and puts their statutory auditors on notice of Section 43B(h) tax disallowance.
+                        Serve a formal statutory notice via Registered Speed Post (RPAD) and Section 63 BSA electronic delivery to both the Agency (Party No. 1) and the Brand (Party No. 2). The notice demands 100% principal fee, 18%–20.25% interest, revokes conditional copyright usage under Section 19 of the Copyright Act, and puts their statutory auditors on notice of Section 43B(h) tax disallowance.
                       </p>
                       <p className="text-xs text-slate-500 font-medium">
                         See how our <Link href="/how-freelancer-can-send-legal-notice-to-client-india" className="text-blue-700 underline">creator and freelancer legal notice dispatch process</Link> works across India.
@@ -1006,7 +1006,7 @@ export default function InfluencerBrandDealPaymentRecoveryPage() {
                       <strong>The Deadlock:</strong> Over 115 days passed after invoice submission. Meanwhile, the D2C skincare brand whitelisted Kritika&apos;s first Reel and ran Meta performance ads on it for 12 weeks. Whenever Kritika followed up, the agency&apos;s campaign manager claimed: <em>&quot;The brand finance team has held back the Q3 agency settlement; we will pay you as soon as the brand pays us.&quot;</em> However, Kritika checked her Form 26AS and discovered the agency had already deposited ₹35,000 TDS under Section 194J in January!
                     </p>
                     <p>
-                      <strong>The Statutory Action:</strong> Kritika engaged LegalRecovery.in. An advocate drafted and served a joint 15-day statutory legal notice on (1) the Gurugram Influencer Agency&apos;s Directors and (2) the D2C Skincare Brand&apos;s Chief Marketing Officer and Legal Head. The notice attached the Form 26AS TDS admission, invoked Sections 15–16 of the MSMED Act + Section 43B(h) tax disallowance, and formally revoked the copyright &amp; ad-whitelisting license under Section 19 of the Copyright Act, warning of a Meta Ad Library copyright strike within 15 days.
+                      <strong>The Statutory Action:</strong> Kritika engaged LegalRecovery.in. The team verified the facts and served a joint 15-day statutory legal notice on (1) the Gurugram Influencer Agency&apos;s Directors and (2) the D2C Skincare Brand&apos;s Chief Marketing Officer and Legal Head. The notice attached the Form 26AS TDS admission, invoked Sections 15–16 of the MSMED Act + Section 43B(h) tax disallowance, and formally revoked the copyright &amp; ad-whitelisting license under Section 19 of the Copyright Act, warning of a Meta Ad Library copyright strike within 15 days.
                     </p>
                     <div className="p-3.5 sm:p-4 bg-emerald-950/70 border border-emerald-700/60 rounded-xl text-emerald-200">
                       <strong className="block text-emerald-400 font-bold mb-1">The Outcome:</strong>

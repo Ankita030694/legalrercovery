@@ -12,11 +12,11 @@ import Image from "next/image";
 const faqs = [
   {
     question: "What is a legal notice for recovery of money and when should I send it?",
-    answer: "A legal notice for recovery of money is a formal, written communication sent by an advocate on behalf of a creditor to a debtor. It serves as a final demand for the settlement of outstanding dues before legal proceedings are initiated. You should send it when a debtor fails to repay a loan, clear an outstanding invoice, settle business dues, or pay for services rendered within the agreed timeline, and verbal or written follow-ups have been ignored."
+    answer: "A legal notice for recovery of money is a formal, written communication sent on behalf of a creditor to a debtor. It serves as a final demand for the settlement of outstanding dues before legal proceedings are initiated. You should send it when a debtor fails to repay a loan, clear an outstanding invoice, settle business dues, or pay for services rendered within the agreed timeline, and verbal or written follow-ups have been ignored."
   },
   {
     question: "Can I draft and send a legal notice for money recovery without a lawyer?",
-    answer: "While it is technically possible for an individual to send a demand notice, it is highly recommended to have it drafted and served by a qualified advocate. A notice on an advocate's letterhead carries significant legal weight, uses precise statutory terms (such as citing the Indian Contract Act or CPC Order 37), and creates a formal, court-admissible record. Most debtors take a lawyer's notice much more seriously, resulting in a higher settlement rate."
+    answer: "While it is technically possible for an individual to send a demand notice, it is highly recommended to have it prepared on verified facts. A notice on an advocate's letterhead carries significant legal weight, uses precise statutory terms (such as citing the Indian Contract Act or CPC Order 37), and creates a formal, court-admissible record. Most debtors take a lawyer's notice much more seriously, resulting in a higher settlement rate."
   },
   {
     question: "What is the time limit (limitation period) for sending a recovery notice in India?",
@@ -167,7 +167,7 @@ const reviewSchema = {
         "@type": "Person",
         "name": "Meera Krishnan"
       },
-      "reviewBody": "I lent 2 lakhs to a family friend who refused to pay back. The legal notice drafted by their advocate was very detailed and had all the WhatsApp communications attached. They returned the money in two installments. Highly recommended."
+      "reviewBody": "I lent 2 lakhs to a family friend who refused to pay back. The legal notice was very detailed and referenced all the WhatsApp communications I had mentioned. They returned the money in two installments. Highly recommended."
     },
     {
       "@type": "Review",
@@ -203,7 +203,7 @@ const reviewSchema = {
         "@type": "Person",
         "name": "Amit Kumar Mishra"
       },
-      "reviewBody": "Very smooth process. Everything from uploading documents to tracking the speed post is automated. The advocate drafted the notice within 24 hours. The debtor paid up the principal along with 12% interest as demanded in the notice."
+      "reviewBody": "Very smooth process. Everything from entering my case details to tracking the speed post is automated. The team verified the facts and prepared the notice within 24 hours. The debtor paid up the principal along with 12% interest as demanded in the notice."
     },
     {
       "@type": "Review",
@@ -288,7 +288,7 @@ export default function LegalNoticeRecoveryClient() {
               Draft &amp; Send a <span className="text-[#DC2626]">Legal Notice for Recovery of Money</span>
             </h1>
             <p className="text-sm md:text-xl mb-8 md:mb-12 max-w-3xl mx-auto text-slate-300 leading-relaxed font-medium">
-              Recover outstanding business dues, friendly loans, unpaid invoices, and advance payments. Get expert advocate-drafted notices served via Speed Post and digital channels to secure your money fast.
+              Recover outstanding business dues, friendly loans, unpaid invoices, and advance payments. Get fact-verified notices served via Speed Post and digital channels to secure your money fast.
             </p>
             <button 
               onClick={() => setIsPaymentModalOpen(true)}
@@ -332,13 +332,13 @@ export default function LegalNoticeRecoveryClient() {
                       Financial transactions form the bedrock of both personal relationships and commercial enterprises in India. Whether it is an individual extending a friendly hand loan to a trusted associate, a small-scale entrepreneur delivering raw materials to a purchaser, or a freelancer providing professional consultancy services, the timely return of capital is essential. However, default on financial obligations has become a prevalent issue. In such scenarios, creditors are frequently left with unanswered phone calls, ignored messages, and empty promises. If you find yourself in a position where your hard-earned money is being withheld unlawfully, the first and most critical legal step is to serve a formal <strong>Legal Notice for the Recovery of Money</strong>.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      A legal notice is not just an ordinary letter or a standard reminder email. It is a formal, structured, and legally binding communication sent by an advocate on behalf of a client. It serves as a final, statutory warning to the defaulting party (the debtor) that they must clear their outstanding liabilities within a specified time frame (typically 15 to 30 days) or face formal civil and criminal prosecution. The legal notice serves a dual purpose: first, it establishes a clear, undeniable chronological record that the creditor made a formal demand for the repayment of the debt, which is highly scrutinized by judges if the matter escalates to court; second, it exerts serious legal and psychological pressure on the debtor, signaling that the creditor is prepared to invoke the machinery of the state to protect their financial interests.
+                      A legal notice is not just an ordinary letter or a standard reminder email. It is a formal, structured, and legally binding communication sent on behalf of a client. It serves as a final, statutory warning to the defaulting party (the debtor) that they must clear their outstanding liabilities within a specified time frame (typically 15 to 30 days) or face formal civil and criminal prosecution. The legal notice serves a dual purpose: first, it establishes a clear, undeniable chronological record that the creditor made a formal demand for the repayment of the debt, which is highly scrutinized by judges if the matter escalates to court; second, it exerts serious legal and psychological pressure on the debtor, signaling that the creditor is prepared to invoke the machinery of the state to protect their financial interests.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
                       Many creditors make the mistake of jumping directly into litigation or, conversely, waiting indefinitely in the hope that the debtor will voluntarily repay. Both approaches are legally counterproductive. Going straight to court without sending a notice can lead to the court viewing the suit as premature, and it may even result in the judge denying you the recovery of legal costs. On the other hand, delaying too long can result in your claim becoming time-barred under the Limitation Act. The serve of a legal notice acts as a bridge, resolving approximately 80% to 85% of payment defaults out of court. Most individuals and corporate entities prefer to clear undisputed debts immediately rather than bear the exorbitant costs, public embarrassment, and operational disruption of a full-scale legal trial.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      This comprehensive guide is dedicated strictly to the general recovery of money. It addresses scenarios involving friendly loans, personal borrowings, commercial invoices, trade receivables, contractor agreements, freelancer payouts, agency retainers, and general contractual defaults. It does not deal with specific niches like landlord-tenant rental deposit recoveries or employment-related salary disputes, which are governed by specialized rental codes and labor departments respectively. At LegalRecovery, our panel of experienced civil and commercial advocates is dedicated to ensuring that your financial claims are backed by rigorous legal drafting, precise statutory citations, and flawless execution to recover every rupee you are owed.
+                      This comprehensive guide is dedicated strictly to the general recovery of money. It addresses scenarios involving friendly loans, personal borrowings, commercial invoices, trade receivables, contractor agreements, freelancer payouts, agency retainers, and general contractual defaults. It does not deal with specific niches like landlord-tenant rental deposit recoveries or employment-related salary disputes, which are governed by specialized rental codes and labor departments respectively. At LegalRecovery, our team is dedicated to ensuring that your financial claims are backed by fact-verified details, precise statutory citations, and reliable execution to recover every rupee you are owed.
                     </p>
                     <div className="bg-red-50 p-6 rounded-2xl border-l-4 border-[#DC2626] italic text-xs sm:text-sm text-red-900 font-semibold leading-relaxed">
                       &quot;A legal notice is the first arrow in a creditor&apos;s legal quiver. It defines the battleground, establishes the cause of action, and frequently forces the debtor to negotiate, saving both parties from the grueling expense of a prolonged trial.&quot;
@@ -401,13 +401,13 @@ export default function LegalNoticeRecoveryClient() {
                         <strong>Factual Chronology &amp; Details:</strong> The body of the notice must outline a clear, date-wise timeline of the transaction. It should specify when the money was lent or when the contract was signed, how the funds were transferred (including bank transaction IDs, cheque numbers, or cash receipts), the terms of repayment agreed upon, and the exact dates on which the default occurred.
                       </li>
                       <li>
-                        <strong>Pecuniary Demands and Calculations:</strong> The notice must quantify the exact amount due. This is broken down into the principal outstanding amount and the interest claimed. Under the <strong>Interest Act, 1978</strong>, you are legally entitled to claim interest from the date the debt became due. If the rate of interest is not mentioned in the contract, the advocate will claim interest at standard commercial rates (usually 12% to 18% per annum) or market rates. The notice should also demand the payment of nominal advocate fees for drafting and sending the notice.
+                        <strong>Pecuniary Demands and Calculations:</strong> The notice must quantify the exact amount due. This is broken down into the principal outstanding amount and the interest claimed. Under the <strong>Interest Act, 1978</strong>, you are legally entitled to claim interest from the date the debt became due. If the rate of interest is not mentioned in the contract, the notice will claim interest at standard commercial rates (usually 12% to 18% per annum) or market rates. The notice should also demand the payment of nominal advocate fees for drafting and sending the notice.
                       </li>
                       <li>
                         <strong>The Default Notice Period:</strong> You must give the debtor a reasonable, legally acceptable window to clear the dues. In India, the standard notice period is <strong>15 days</strong> (or 30 days in specific commercial/government cases) from the date of receipt of the notice. Demanding immediate payment or a 24-hour settlement is legally invalid.
                       </li>
                       <li>
-                        <strong>The Consequence &amp; Action Clause:</strong> This is the most crucial part. The notice must state in clear, unambiguous terms that if the debtor fails to repay the demanded sum within the 15-day period, the advocate has strict instructions to initiate civil lawsuits (such as a Summary Suit under Order 37) and appropriate criminal complaints. It must also state that the debtor will be held liable for all court fees, advocate charges, and damages arising from the litigation.
+                        <strong>The Consequence &amp; Action Clause:</strong> This is the most crucial part. The notice must state in clear, unambiguous terms that if the debtor fails to repay the demanded sum within the 15-day period, you intend to initiate civil lawsuits (such as a Summary Suit under Order 37) and appropriate criminal complaints. It must also state that the debtor will be held liable for all court fees, advocate charges, and damages arising from the litigation.
                       </li>
                     </ul>
                   </div>
@@ -545,7 +545,7 @@ export default function LegalNoticeRecoveryClient() {
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      At LegalRecovery, our mission is to simplify legal processes and deliver fast, transparent, and successful debt recoveries. We have successfully assisted individuals, freelancers, and businesses across India in recovering over ₹15 Crores in outstanding dues. Below are three representative case studies of recoveries handled by our legal panel, followed by verified client reviews:
+                      At LegalRecovery, our mission is to simplify legal processes and deliver fast, transparent, and successful debt recoveries. We have successfully assisted individuals, freelancers, and businesses across India in recovering over ₹15 Crores in outstanding dues. Below are three representative case studies of recoveries handled by our team, followed by verified client reviews:
                     </p>
                     
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-4">
@@ -634,7 +634,7 @@ export default function LegalNoticeRecoveryClient() {
                 <div className="absolute top-0 right-0 w-24 h-24 bg-red-600/10 rounded-full blur-xl pointer-events-none" />
                 <h3 className="text-sm font-black mb-3">Need Legal Advice?</h3>
                 <p className="text-gray-400 mb-5 text-[11px] leading-relaxed">
-                  Discuss your money recovery case with legal experts. We draft and serve legally compliant notices tailored to your transaction.
+                  Discuss your money recovery case with our team. We draft and serve legally compliant notices tailored to your transaction.
                 </p>
                 <button 
                   onClick={() => setIsPaymentModalOpen(true)}

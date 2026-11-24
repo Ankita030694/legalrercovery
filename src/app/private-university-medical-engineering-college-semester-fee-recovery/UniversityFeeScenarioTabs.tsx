@@ -42,7 +42,7 @@ const SCENARIOS: ScenarioItem[] = [
       "UGC Notification on Refund of Fees & Non-Retention of Original Certificates (Oct 2018 / 2024 Updates) + Indian Contract Act, 1872 s. 10 & s. 73 + CPC Order XXXVII (Summary Suit on Signed Admission Bond & Fee Ledger).",
     actionSteps: [
       "Release original academic certificates strictly against a written acknowledgement of receipt that records the exact admitted fee balance without waiver.",
-      "Issue an Advocate Civil Recovery Notice under Contract Act s. 43 jointly to the graduated student and earning parent/co-guarantor.",
+      "Issue a Fact-Verified Civil Recovery Notice under Contract Act s. 43 jointly to the graduated student and earning parent/co-guarantor.",
       "File an Order XXXVII CPC Summary Suit (or Commercial Court suit where trust commercial criteria apply) attaching the signed Admission Undertaking, Hostel Allotment Form, and BSA 2023 s. 63 certified ERP ledger.",
     ],
     outcome:

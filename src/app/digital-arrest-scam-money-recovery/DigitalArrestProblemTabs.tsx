@@ -108,7 +108,7 @@ const PROBLEMS: ProblemTab[] = [
       "Under the RBI Master Direction on Know Your Customer (KYC) Directions, 2016 (updated 2024/2026), banks bear strict regulatory responsibility to identify Ultimate Beneficial Owners (UBOs) and monitor atypical velocity. If a beneficiary bank failed in fundamental KYC verification or ignored internal AML red flags, and the victim's remitting bank delayed transacting recall alerts despite immediate notification, both institutions exhibit deficiency of service under Section 2(11) of the Consumer Protection Act, 2019.",
     steps: [
       {
-        step: "Issue Advocate Statutory Legal Notice to Both Banks",
+        step: "Issue Fact-Verified Statutory Legal Notice to Both Banks",
         description:
           "Serve a formal statutory legal notice detailing the chronology, transaction UTRs, 1930 ticket number, and specific KYC/AML failures of the beneficiary branch.",
       },

@@ -37,7 +37,7 @@ export default function LockInRecoveryCTA({
               Commercial Tenant Broke Lock-In? Recover Rent, Brokerage &amp; CapEx Now
             </h3>
             <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6 max-w-3xl">
-              Whether you are an HNI commercial property owner, Grade-A IT park asset manager, or co-working space operator dealing with an unexpired lock-in breach, choose between a single advocate-drafted notice or enterprise bulk ledger onboarding.
+              Whether you are an HNI commercial property owner, Grade-A IT park asset manager, or co-working space operator dealing with an unexpired lock-in breach, choose between a single fact-verified notice or enterprise bulk ledger onboarding.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
@@ -56,7 +56,7 @@ export default function LockInRecoveryCTA({
                     Test 1 Live Overdue Case Now (₹{basePrice})
                   </p>
                   <p className="text-xs text-slate-300 leading-relaxed mb-4">
-                    Advocate-drafted demand notice under Indian Contract Act Section 73/74, TPA Section 106, and Commercial Courts Act Section 2(1)(c)(vii). Simultaneous delivery via Email, WhatsApp &amp; Speed Post RPAD with BSA Section 63 certificate.
+                    Fact-verified demand notice under Indian Contract Act Section 73/74, TPA Section 106, and Commercial Courts Act Section 2(1)(c)(vii). Simultaneous delivery via Email, WhatsApp &amp; Speed Post RPAD with BSA Section 63 certificate.
                   </p>
                 </div>
 

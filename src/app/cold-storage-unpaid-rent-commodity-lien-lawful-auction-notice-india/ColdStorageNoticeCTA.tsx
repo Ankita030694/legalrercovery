@@ -25,7 +25,7 @@ export default function ColdStorageNoticeCTA({
               Track 1 &bull; Single Lot / Trader Test
             </span>
             <h3 className="text-xl sm:text-2xl font-bold text-white mb-2.5 leading-snug">
-              Test 1 Live Overdue Case Now (&#8377;{basePrice} &middot; Advocate Drafted &middot; Email + WhatsApp + Speed Post RPAD)
+              Test 1 Live Overdue Case Now (&#8377;{basePrice} &middot; Fact-Verified &middot; Email + WhatsApp + Speed Post RPAD)
             </h3>
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
               Serve a statutory 15-day Registered Pre-Auction &amp; Rent Demand Notice citing Contract Act ss.170/176 and your State Cold Storage Act before clearing chambers or filing a deficit suit.

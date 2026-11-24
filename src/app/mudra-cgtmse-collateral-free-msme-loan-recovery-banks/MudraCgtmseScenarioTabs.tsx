@@ -28,12 +28,12 @@ const MUDRA_CGTMSE_SCENARIOS: ScenarioItem[] = [
     failureMode:
       "Retail shopkeeper, kirana operator, or micro-artisan stops paying EMIs after 90+ DPD and tells branch recovery staff that PMMY Mudra loans are 'government subsidies' that will be waived before elections. Because there is zero mortgaged real estate, SARFAESI s.13(2) cannot be invoked and filing a regular civil suit costs more than the recoverable balance.",
     statutoryPosition:
-      "Mudra facilities are commercial bank credit governed by RBI Master Directions and the Indian Contract Act, 1872 — never non-repayable grants. Under CGFMU (NCGTC) portfolio guarantee guidelines, the Member Lending Institution (MLI) must absorb first-loss deductibles and maintain auditable recall/recovery trails. Pairing an advocate-signed statutory notice with Section 25 PSS Act (if e-NACH bounced) and Pre-Litigation Lok Adalat under Section 20(2) of the Legal Services Authorities Act, 1987 neutralizes the waiver myth at near-zero litigation cost.",
+      "Mudra facilities are commercial bank credit governed by RBI Master Directions and the Indian Contract Act, 1872 — never non-repayable grants. Under CGFMU (NCGTC) portfolio guarantee guidelines, the Member Lending Institution (MLI) must absorb first-loss deductibles and maintain auditable recall/recovery trails. Pairing a fact-verified statutory notice with Section 25 PSS Act (if e-NACH bounced) and Pre-Litigation Lok Adalat under Section 20(2) of the Legal Services Authorities Act, 1987 neutralizes the waiver myth at near-zero litigation cost.",
     actionSteps: [
       {
         step: "Multi-Channel Advocate Loan Recall Notice (Day 91–100)",
         detail:
-          "Dispatch an advocate-drafted notice via India Post Speed Post RPAD, WhatsApp, and Email explicitly citing CIBIL/CIC adverse reporting, contractual liability, and absence of any statutory government waiver.",
+          "Dispatch a fact-verified notice via India Post Speed Post RPAD, WhatsApp, and Email explicitly citing CIBIL/CIC adverse reporting, contractual liability, and absence of any statutory government waiver.",
       },
       {
         step: "Section 25 PSS Act / Section 138 NI Act Criminal Trigger",
@@ -81,7 +81,7 @@ const MUDRA_CGTMSE_SCENARIOS: ScenarioItem[] = [
     claimComplianceImpact:
       "Prevents CGTMSE claim rejection or queries on 'defective recall' and 'non-initiation of recovery proceedings', while locking in eligibility for the balance 25% second installment.",
     recommendedTrack:
-      "Itemized Advocate Recall Notice -> Commercial Court s.12A / Order 37 (₹10L–₹20L) or e-DRT OA (≥₹20L)",
+      "Itemized Fact-Verified Recall Notice -> Commercial Court s.12A / Order 37 (₹10L–₹20L) or e-DRT OA (≥₹20L)",
   },
   {
     id: "pmegp-subsidy-lockin",
@@ -97,7 +97,7 @@ const MUDRA_CGTMSE_SCENARIOS: ScenarioItem[] = [
       {
         step: "Joint Physical Verification & Subsidy Preservation Notice",
         detail:
-          "Serve a formal advocate notice putting the PMEGP borrower on record regarding unit closure, TDR subsidy forfeiture risk, and full unsubsidized principal liability.",
+          "Serve a formal fact-verified notice putting the PMEGP borrower on record regarding unit closure, TDR subsidy forfeiture risk, and full unsubsidized principal liability.",
       },
       {
         step: "District Collector RRC Application (Where State Act Applies)",

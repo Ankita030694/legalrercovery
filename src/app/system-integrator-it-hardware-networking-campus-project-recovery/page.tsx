@@ -118,7 +118,7 @@ const FAQS = [
   },
   {
     q: "What if we have 15 to 200+ overdue corporate AMC, structured cabling, or campus hardware holdback accounts across India?",
-    a: "Multi-site SIs and AV partners routinely batch-process aged 60-to-360+ DPD holdbacks via bulk CSV upload. Dispatching advocate-vetted Section 53/54 Deemed Commissioning and Section 43B(h) tax-alert notices across Registered Email, WhatsApp, and Speed Post RPAD establishes statutory limitation stops and drives pre-litigation settlements without paralysing internal project teams.",
+    a: "Multi-site SIs and AV partners routinely batch-process aged 60-to-360+ DPD holdbacks via bulk CSV upload. Dispatching fact-verified Section 53/54 Deemed Commissioning and Section 43B(h) tax-alert notices across Registered Email, WhatsApp, and Speed Post RPAD establishes statutory limitation stops and drives pre-litigation settlements without paralysing internal project teams.",
   },
 ];
 

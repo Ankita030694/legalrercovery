@@ -148,7 +148,7 @@ const COURT_PRECEDENTS = [
     holding:
       "Patil Automation made Section 12A mediation mandatory for covered Commercial Suits (failing which plaints face Order VII Rule 11 rejection), while Sripati Singh affirmed that post-dated or security cheques given against maturing commercial obligations squarely attract Section 138/143A NI Act liability.",
     creditorTakeaway:
-      "For PCS/Valuer claims above ₹3 Lakh, pair an External Advocate Notice with a Section 12A mediation filing (or Order XXXVII Civil Summary Suit where outside s.2(1)(c)), and prosecute bounced fee/reimbursement cheques within 30 days of the bank return memo.",
+      "For PCS/Valuer claims above ₹3 Lakh, pair an External Fact-Verified Notice with a Section 12A mediation filing (or Order XXXVII Civil Summary Suit where outside s.2(1)(c)), and prosecute bounced fee/reimbursement cheques within 30 days of the bank return memo.",
   },
 ];
 
@@ -256,7 +256,7 @@ const HOWTO_SCHEMA = {
     {
       "@type": "HowToStep",
       position: 4,
-      name: "Dispatch External Advocate Legal Notice (Order 37 CPC, CGST s.16(2) & s.43B(h))",
+      name: "Dispatch External Fact-Verified Legal Notice (Order 37 CPC, CGST s.16(2) & s.43B(h))",
       text: "Instruct independent litigation counsel to serve a formal 15-day demand notice via Email, WhatsApp, and Speed Post RPAD attaching SRN challans, Form 26AS 194J TDS credits, GSTR-2B ITC reversal exposure, and BSA 2023 s.63 electronic logs.",
     },
     {

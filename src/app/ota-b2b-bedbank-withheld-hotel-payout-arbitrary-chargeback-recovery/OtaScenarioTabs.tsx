@@ -46,7 +46,7 @@ const SCENARIOS: ScenarioTab[] = [
     actionSteps: [
       "Capture the exact POS terminal decline receipt, authorization error code, and timestamped Channel Manager booking confirmation.",
       "Raise an immediate automated dispute ticket on the OTA/bed-bank partner portal within 24 hours of checkout to defeat 'late-claim' waivers.",
-      "Issue an Advocate Demand Notice bundling all unpaid VCC booking IDs into a single quantified schedule with GSTR-1 invoice references.",
+      "Issue a Fact-Verified Demand Notice bundling all unpaid VCC booking IDs into a single quantified schedule with GSTR-1 invoice references.",
       "Escalate to Commercial Court / Order XXXVII Summary Suit or MSEFC if the B2B intermediary fails to re-issue valid settlement funds.",
     ],
     evidenceNeeded: [

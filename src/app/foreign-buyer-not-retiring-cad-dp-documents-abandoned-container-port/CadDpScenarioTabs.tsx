@@ -20,7 +20,7 @@ const SCENARIOS: Scenario[] = [
     portRisk: "High Demurrage & Re-Export Friction ($180–$320/day after 7 free days)",
     commodity: "Morbi Ceramic Tiles, Rice, Spices, Agro Commodities",
     defaultPattern: "Buyer ignores MT410 advice of arrival. As vessel discharges at Jebel Ali and free time expires, buyer emails claiming 'sudden domestic price crash' or 'cash liquidity crunch', offering to retire original B/L only if invoice is discounted by 35%–40%.",
-    tacticalCountermeasure: "Serve immediate 48-hour Advocate Demand Notice. Instruct Remitting Bank under URC 522 Article 26 to execute a formal Bank Protest. Simultaneously identify an alternate UAE/GCC buyer under RBI Master Direction on Export of Goods Para C.15 (permitting up to 25% discount through AD Bank).",
+    tacticalCountermeasure: "Serve immediate 48-hour Fact-Verified Demand Notice. Instruct Remitting Bank under URC 522 Article 26 to execute a formal Bank Protest. Simultaneously identify an alternate UAE/GCC buyer under RBI Master Direction on Export of Goods Para C.15 (permitting up to 25% discount through AD Bank).",
     statutoryRail: "URC 522 Art. 26 (Bank Protest) + RBI Master Direction No. 16/2015-16 Para C.15 + Dubai Commercial Transactions Law (Federal Decree-Law No. 50/2022).",
     timelineAction: "Day 3–5 of discharge: Freeze demurrage escalation by instructing shipping line to transfer container to off-dock bonded CFS.",
   },

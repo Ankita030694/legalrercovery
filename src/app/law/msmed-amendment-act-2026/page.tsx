@@ -157,7 +157,7 @@ const FAQS = [
   {
     question: "Are Medium Enterprises or traders eligible to file delayed payment claims under the MSMED Act?",
     answer:
-      "No. Chapter V of the MSMED Act (Sections 15 to 24) and Section 43B(h) of the Income Tax Act apply strictly to 'Suppliers' defined under Section 2(n)—namely Micro Enterprises (investment up to ₹1 crore and turnover up to ₹5 crore, as revised) and Small Enterprises (investment up to ₹10 crore and turnover up to ₹50 crore) engaged in manufacturing goods or rendering services with a valid Udyam Registration. Medium Enterprises and pure retail/wholesale traders (whose NIC codes are registered only for priority sector lending under the 2021 OMs) cannot file MSEFC references, though they can recover dues via an Advocate Legal Notice, Section 12A Commercial Courts mediation, or an Order XXXVII CPC Summary Suit.",
+      "No. Chapter V of the MSMED Act (Sections 15 to 24) and Section 43B(h) of the Income Tax Act apply strictly to 'Suppliers' defined under Section 2(n)—namely Micro Enterprises (investment up to ₹1 crore and turnover up to ₹5 crore, as revised) and Small Enterprises (investment up to ₹10 crore and turnover up to ₹50 crore) engaged in manufacturing goods or rendering services with a valid Udyam Registration. Medium Enterprises and pure retail/wholesale traders (whose NIC codes are registered only for priority sector lending under the 2021 OMs) cannot file MSEFC references, though they can recover dues via a Fact-Verified Legal Notice, Section 12A Commercial Courts mediation, or an Order XXXVII CPC Summary Suit.",
   },
   {
     question: "How does Section 43B(h) of the Income Tax Act force buyers to clear MSME invoices before March 31?",
@@ -475,7 +475,7 @@ export default function MsmedAmendmentAct2026Page() {
                   </table>
                 </div>
                 <p className="text-xs text-slate-500 italic">
-                  Note: Statutory provisions verified against Chapter V of the MSMED Act, 2006, Ministry of MSME ODR directives, and Supreme Court precedents as of November 2026. Compare how pre-litigation notices work alongside portal filings in our <Link href="/msme-delayed-payment-recovery-samadhan-vs-legal-notice" className="text-blue-700 underline font-semibold">MSME Samadhaan / ODR vs Advocate Legal Notice comparison guide</Link>.
+                  Note: Statutory provisions verified against Chapter V of the MSMED Act, 2006, Ministry of MSME ODR directives, and Supreme Court precedents as of November 2026. Compare how pre-litigation notices work alongside portal filings in our <Link href="/msme-delayed-payment-recovery-samadhan-vs-legal-notice" className="text-blue-700 underline font-semibold">MSME Samadhaan / ODR vs Fact-Verified Legal Notice comparison guide</Link>.
                 </p>
               </section>
 
@@ -883,10 +883,10 @@ export default function MsmedAmendmentAct2026Page() {
                     </span>
                     <div className="space-y-1 sm:space-y-1.5">
                       <h3 className="text-sm sm:text-base md:text-lg font-bold text-slate-900">
-                        Serve a 15-Day Statutory Advocate Notice on Directors, CFO &amp; Statutory Auditor
+                        Serve a 15-Day Statutory Fact-Verified Notice on Directors, CFO &amp; Statutory Auditor
                       </h3>
                       <p className="text-xs sm:text-sm leading-relaxed">
-                        Before filing on the portal, have an advocate dispatch a formal statutory demand notice via Registered Speed Post and Section 63 BSA email to the buyer&apos;s Board of Directors, Chief Financial Officer, and Company Secretary. The notice must explicitly put the company on notice of: (a) Principal + 20.25% monthly-compounded interest under Section 16; (b) Mandatory disallowance of the entire invoice value under <strong>Section 43B(h) of the Income Tax Act</strong> if unpaid across the financial year-end; and (c) Mandatory disclosure of unpaid MSME principal and interest in the company&apos;s audited financial statements under Section 22 and MCA Form MSME-1.
+                        Before filing on the portal, dispatch a formal statutory demand notice via Registered Speed Post and Section 63 BSA email to the buyer&apos;s Board of Directors, Chief Financial Officer, and Company Secretary. The notice must explicitly put the company on notice of: (a) Principal + 20.25% monthly-compounded interest under Section 16; (b) Mandatory disallowance of the entire invoice value under <strong>Section 43B(h) of the Income Tax Act</strong> if unpaid across the financial year-end; and (c) Mandatory disclosure of unpaid MSME principal and interest in the company&apos;s audited financial statements under Section 22 and MCA Form MSME-1.
                       </p>
                       <p className="text-xs text-slate-500 font-medium">
                         Check our transparent fee structure on the <Link href="/legal-notice-charges" className="text-blue-700 underline">legal notice charges</Link> page or explore our dedicated <Link href="/recovery-of-unpaid-dues-for-my-business" className="text-blue-700 underline">B2B unpaid invoice recovery hub</Link>.
@@ -965,7 +965,7 @@ export default function MsmedAmendmentAct2026Page() {
                       <strong>The Buyer&apos;s Stall Tactic:</strong> The buyer&apos;s Purchase Order printed a standard <em>&quot;90 Days Credit from GRN&quot;</em> clause, and even after 190 days had elapsed (over 4.5 months past the statutory 45-day cap), the buyer&apos;s accounts payable team kept replying that payment was &quot;queued for next quarter&apos;s cash-flow cycle.&quot;
                     </p>
                     <p>
-                      <strong>The Statutory Calculation &amp; Legal Notice:</strong> Precision Stamping Works engaged LegalRecovery.in in February (just before the March 31 fiscal year-end). Our advocate computed the statutory liability from Day 46 (3 October) across 5.5 months at <strong>3× RBI Bank Rate = 20.25% p.a. compounded monthly</strong>, which added <strong>₹1,86,400</strong> in accrued Section 16 compound interest, bringing the total demand to <strong>₹16,06,400</strong>. A formal 15-day statutory notice was served on the Pune company&apos;s Managing Director, CFO, and Statutory Auditors highlighting:
+                      <strong>The Statutory Calculation &amp; Legal Notice:</strong> Precision Stamping Works engaged LegalRecovery.in in February (just before the March 31 fiscal year-end). Our team computed the statutory liability from Day 46 (3 October) across 5.5 months at <strong>3× RBI Bank Rate = 20.25% p.a. compounded monthly</strong>, which added <strong>₹1,86,400</strong> in accrued Section 16 compound interest, bringing the total demand to <strong>₹16,06,400</strong>. A formal 15-day statutory notice was served on the Pune company&apos;s Managing Director, CFO, and Statutory Auditors highlighting:
                     </p>
                     <ul className="list-disc list-inside space-y-1 text-slate-200 pl-2">
                       <li>Voidness of the 90-day PO clause beyond Day 45 under Section 15 of the MSMED Act;</li>
@@ -974,7 +974,7 @@ export default function MsmedAmendmentAct2026Page() {
                     </ul>
                     <div className="p-3.5 sm:p-4 bg-emerald-950/70 border border-emerald-700/60 rounded-xl text-emerald-200">
                       <strong className="block text-emerald-400 font-bold mb-1">The Outcome:</strong>
-                      On Day 12 after delivery of the advocate notice, the buyer&apos;s CFO intervened to prevent a Section 43B(h) tax audit qualification in Form 3CD and Form MSME-1 exposure. The buyer remitted the entire ₹14,20,000 principal plus ₹1,86,400 statutory interest (total ₹16,06,400) via RTGS without requiring formal arbitration.
+                      On Day 12 after delivery of the fact-verified notice, the buyer&apos;s CFO intervened to prevent a Section 43B(h) tax audit qualification in Form 3CD and Form MSME-1 exposure. The buyer remitted the entire ₹14,20,000 principal plus ₹1,86,400 statutory interest (total ₹16,06,400) via RTGS without requiring formal arbitration.
                     </div>
                   </div>
                 </div>
@@ -1047,7 +1047,7 @@ export default function MsmedAmendmentAct2026Page() {
                   <strong className="text-slate-900 font-bold block mb-1">
                     Honest Scope — What LegalRecovery Does (and Does Not Do) for MSME Suppliers:
                   </strong>
-                  We calculate your exact Section 16 monthly-compounded interest, draft and dispatch an Advocate Statutory Demand Notice invoking the MSMED Act and Section 43B(h) Income Tax disallowance to the buyer&apos;s Directors and CFO, and prepare your evidentiary dossier for the MSME ODR Portal. We cannot force an MSEFC to entertain claims by Medium Enterprises or unverified entities that are statutorily excluded from Chapter V, though for those businesses we pursue fast-track recovery via Order XXXVII CPC Summary Suits and Commercial Court pre-institution mediation.
+                  We calculate your exact Section 16 monthly-compounded interest, draft and dispatch a Fact-Verified Statutory Demand Notice invoking the MSMED Act and Section 43B(h) Income Tax disallowance to the buyer&apos;s Directors and CFO, and prepare your evidentiary dossier for the MSME ODR Portal. We cannot force an MSEFC to entertain claims by Medium Enterprises or unverified entities that are statutorily excluded from Chapter V, though for those businesses we pursue fast-track recovery via Order XXXVII CPC Summary Suits and Commercial Court pre-institution mediation.
                 </div>
               </section>
 

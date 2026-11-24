@@ -32,7 +32,7 @@ const SCENARIOS: Scenario[] = [
       "Collate timestamped Jira/Azure DevOps tickets, email demand notices, and Steering Committee (SteerCo) minutes establishing repeated missed data submission deadlines by the client.",
       "Issue a formal Reciprocal Promise Notice under Section 53 of the Indian Contract Act establishing that client non-performance prevented Go-Live cutover.",
       "Submit an aggregated adjustment invoice billing for extended consultant bench hours under standard SOW Rate Cards and declaring deemed milestone maturity.",
-      "Serve a 15-Day Advocate Demand Notice initiating pre-institution commercial mediation under Section 12A of the Commercial Courts Act.",
+      "Serve a 15-Day Fact-Verified Demand Notice initiating pre-institution commercial mediation under Section 12A of the Commercial Courts Act.",
     ],
   },
   {

@@ -82,7 +82,7 @@ const FAQ_ITEMS = [
   },
   {
     q: "Can a scrap importer or yard recover multiple unpaid truckloads across 20+ mills at once?",
-    a: "Yes. Importers and regional yards can onboard as an institutional Representee on LegalRecovery.in, upload a single CSV of defaulting mills with E-Way Bill and weighbridge references, and dispatch synchronized Advocate Legal Notices via Email, WhatsApp, and Speed Post RPAD in one batch.",
+    a: "Yes. Importers and regional yards can onboard as an institutional Representee on LegalRecovery.in, upload a single CSV of defaulting mills with E-Way Bill and weighbridge references, and dispatch synchronized Fact-Verified Legal Notices via Email, WhatsApp, and Speed Post RPAD in one batch.",
   },
 ];
 
@@ -652,7 +652,7 @@ export default function MetalScrapRollingMillRecoveryPage() {
               </div>
 
               <p className="text-sm text-slate-600 mb-6">
-                Act within the critical pre-SARFAESI window: test our Advocate-drafted notice on one overdue rolling mill today, or upload your entire yard&apos;s overdue ledger via Representee CSV.
+                Act within the critical pre-SARFAESI window: test our Fact-verified notice on one overdue rolling mill today, or upload your entire yard&apos;s overdue ledger via Representee CSV.
               </p>
 
               <MetalScrapCTA />
@@ -726,7 +726,7 @@ export default function MetalScrapRollingMillRecoveryPage() {
                   className="p-4 rounded-xl border border-slate-200 hover:border-[#DC2626] bg-slate-50 transition-colors"
                 >
                   <p className="font-bold text-slate-900 mb-1">Steel &amp; Bulk Industrial Material Demand Notice &rarr;</p>
-                  <p className="text-slate-600">Advocate-vetted notice template with Sale of Goods s.42 &amp; weighbridge clauses.</p>
+                  <p className="text-slate-600">Ready-to-use notice template with Sale of Goods s.42 &amp; weighbridge clauses.</p>
                 </Link>
 
                 <Link

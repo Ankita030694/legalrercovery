@@ -31,7 +31,7 @@ export default function MeeshoNoticeCTA({
                 Recover Your Stuck Meesho Refund or Hold the Marketplace Liable
               </h3>
               <p className="text-slate-300 text-sm sm:text-base leading-relaxed mb-6">
-                Have a verified advocate draft and serve a formal 15-day statutory legal notice directly upon Meesho Limited (formerly Fashnear Technologies) and the registered seller. Served by email and WhatsApp under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023. Speed Post is optional at ₹450 per party.
+                Serve a formal 15-day statutory legal notice directly upon Meesho Limited (formerly Fashnear Technologies) and the registered seller. Served by email and WhatsApp under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023. Speed Post is optional at ₹450 per party.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button

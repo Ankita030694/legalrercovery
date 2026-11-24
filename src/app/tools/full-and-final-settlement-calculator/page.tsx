@@ -829,7 +829,7 @@ export default function FnfCalculatorPage() {
                       .
                     </li>
                     <li>
-                      <strong>Serve an Advocate Statutory Legal Demand Notice:</strong> If the email is ignored, engage a labor advocate to dispatch a formal 15-day statutory legal notice. Dispatched via Registered Speed Post with postal barcode tracking and served electronically under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023. Over 78% of corporate FnF disputes resolve within the 15-day notice window once executive management faces personal liability. See our transparent{" "}
+                      <strong>Serve a Fact-Verified Statutory Legal Demand Notice:</strong> If the email is ignored, engage a labor advocate to dispatch a formal 15-day statutory legal notice. Dispatched via Registered Speed Post with postal barcode tracking and served electronically under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023. Over 78% of corporate FnF disputes resolve within the 15-day notice window once executive management faces personal liability. See our transparent{" "}
                       <Link
                         href="/legal-notice-charges"
                         className="text-red-600 font-bold hover:underline"

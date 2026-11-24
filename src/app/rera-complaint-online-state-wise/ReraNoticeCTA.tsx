@@ -24,7 +24,7 @@ export default function ReraNoticeCTA({ variant = "primary" }: ReraNoticeCTAProp
               Builder Delaying Possession or Refusing Booking Refund?
             </h3>
             <p className="text-xs sm:text-sm text-gray-300 max-w-xl">
-              Before filing Form M or Form N on your state RERA portal, serve an advocate-drafted statutory demand notice invoking Section 18(1) RERA and SBI MCLR + 2% interest. Starts at ₹{noticePrice.toLocaleString("en-IN")}.
+              Before filing Form M or Form N on your state RERA portal, serve a fact-verified statutory demand notice invoking Section 18(1) RERA and SBI MCLR + 2% interest. Starts at ₹{noticePrice.toLocaleString("en-IN")}.
             </p>
           </div>
           <button
@@ -46,7 +46,7 @@ export default function ReraNoticeCTA({ variant = "primary" }: ReraNoticeCTAProp
       <div className="my-8 sm:my-10 rounded-2xl bg-gradient-to-br from-[#111827] via-[#1F2937] to-[#0F172A] text-white p-5 sm:p-8 md:p-10 border border-gray-800 shadow-xl relative overflow-hidden">
         <div className="relative z-10 max-w-3xl space-y-4">
           <div className="inline-flex flex-wrap items-center gap-2 px-3 py-1 rounded-full bg-red-500/15 border border-red-500/30 text-red-300 text-xs font-bold uppercase tracking-wider">
-            <span>Advocate-Drafted Statutory Notice</span>
+            <span>Fact-Verified Statutory Notice</span>
             <span>•</span>
             <span>Section 12, 13 &amp; 18 RERA 2016</span>
           </div>
@@ -56,7 +56,7 @@ export default function ReraNoticeCTA({ variant = "primary" }: ReraNoticeCTAProp
           </h3>
 
           <p className="text-gray-300 text-xs sm:text-sm md:text-base leading-relaxed">
-            Whether you are demanding a 100% unconditional refund with SBI MCLR + 2% interest for delayed possession under Section 18(1), challenging an arbitrary 10% booking forfeiture prior to agreement registration under Section 13, or putting the promoter&apos;s directors on formal notice prior to filing Form M on MahaRERA, UP RERA, HARERA, or K-RERA, a formal advocate legal notice establishes your chronological cause of action and forces senior developer management to the settlement table.
+            Whether you are demanding a 100% unconditional refund with SBI MCLR + 2% interest for delayed possession under Section 18(1), challenging an arbitrary 10% booking forfeiture prior to agreement registration under Section 13, or putting the promoter&apos;s directors on formal notice prior to filing Form M on MahaRERA, UP RERA, HARERA, or K-RERA, a formal fact-verified legal notice establishes your chronological cause of action and forces senior developer management to the settlement table.
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-2.5 sm:gap-3 pt-2 text-xs text-gray-200">
@@ -83,7 +83,7 @@ export default function ReraNoticeCTA({ variant = "primary" }: ReraNoticeCTAProp
               Send Builder Legal Notice Now (₹{noticePrice.toLocaleString("en-IN")})
             </button>
             <span className="text-xs text-gray-400 text-center sm:text-left">
-              Advocate review &amp; email + WhatsApp delivery included • Speed Post optional • No percentage cut
+              Fact verification &amp; email + WhatsApp delivery included • Speed Post optional • No percentage cut
             </span>
           </div>
         </div>

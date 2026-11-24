@@ -190,7 +190,7 @@ const HOWTO_SCHEMA = {
       "@type": "HowToStep",
       position: 4,
       name: "Serve Tri-Channel BNS s.316, s.138 & Vahan Delinking Notice",
-      text: "Issue an Advocate Notice combining criminal breach of trust (BNS s.316), 7-day pre-presentation cheque/e-NACH intimation (NI s.138 / PSS s.25), and dealership termination.",
+      text: "Issue a Legal Notice combining criminal breach of trust (BNS s.316), 7-day pre-presentation cheque/e-NACH intimation (NI s.138 / PSS s.25), and dealership termination.",
     },
     {
       "@type": "HowToStep",
@@ -1078,7 +1078,7 @@ export default function EvOemDealerCreditRecoveryPage() {
               </div>
               <p className="text-sm text-slate-600 mb-6">
                 Test a single defaulted dealership immediately or upload your
-                pan-India overdue dealer ledger for synchronized advocate
+                pan-India overdue dealer ledger for synchronized
                 dispatch.
               </p>
               <EvDealerCTA />

@@ -24,10 +24,10 @@ export default function IspLockInCTA({ className = "" }: IspLockInCTAProps) {
                 Track 1 · Single Circuit / Pilot Test
               </span>
               <h3 className="text-lg sm:text-xl font-bold text-white mb-2">
-                Test 1 Live Overdue Case Now (&#8377;{basePrice} &middot; Advocate Drafted &middot; Email + WhatsApp + Speed Post RPAD)
+                Test 1 Live Overdue Case Now (&#8377;{basePrice} &middot; Fact-Verified &middot; Email + WhatsApp + Speed Post RPAD)
               </h3>
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-                Upload a single defaulted Customer Application Form (CAF), Commissioning AT Report, and unpaid MRC ledger. Our advocates frame the waived OTC, unamortized last-mile fiber CapEx, and MUX CPE return demand under Contract Act s.74 and Order XXXVII CPC.
+                Upload a single defaulted Customer Application Form (CAF), Commissioning AT Report, and unpaid MRC ledger. Our team frames the waived OTC, unamortized last-mile fiber CapEx, and MUX CPE return demand under Contract Act s.74 and Order XXXVII CPC.
               </p>
             </div>
 

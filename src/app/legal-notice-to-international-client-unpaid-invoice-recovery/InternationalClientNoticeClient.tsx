@@ -241,7 +241,7 @@ export default function InternationalClientNoticeClient() {
                 </p>
 
                 <p className="text-sm md:text-base leading-relaxed">
-                  An advocate notice shatters the illusion of safety across borders. It forces foreign corporate officers to address an official commercial dispute immediately. Corporate boards hate unresolved liabilities and audit disclosures in their balance sheets. Our guide on a <Link href="/legal-notice-for-recovery-of-money" className="text-[#DC2626] hover:underline font-medium">legal notice for recovery of money</Link> explains these key principles.
+                  A fact-verified notice shatters the illusion of safety across borders. It forces foreign corporate officers to address an official commercial dispute immediately. Corporate boards hate unresolved liabilities and audit disclosures in their balance sheets. Our guide on a <Link href="/legal-notice-for-recovery-of-money" className="text-[#DC2626] hover:underline font-medium">legal notice for recovery of money</Link> explains these key principles.
                 </p>
               </div>
 

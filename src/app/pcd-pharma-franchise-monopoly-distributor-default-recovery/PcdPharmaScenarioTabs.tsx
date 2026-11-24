@@ -56,7 +56,7 @@ const SCENARIOS: Scenario[] = [
     recoverySOP: [
       "Collate bank return memo with exact dishonour reason code ('Payment Stopped by Drawer' / '01 Insufficient Funds').",
       "Correlate invoice numbers, LR bilties, and GST e-Way bills establishing that the cheque amount matches crystallized, undisputed consideration.",
-      "Issue 30-Day Statutory Advocate Notice citing *Sripati Singh* and *Sunil Todi*, putting the franchisee's managing partners or directors on criminal notice.",
+      "Issue 30-Day Statutory Fact-Verified Notice citing *Sripati Singh* and *Sunil Todi*, putting the franchisee's managing partners or directors on criminal notice.",
       "Combine Section 138 prosecution with an Order XXXVII CPC Summary Suit in Commercial Court for immediate pre-judgment decree.",
     ],
     keyAuthority: "Supreme Court in Sripati Singh (2021), Sunil Todi (2021) & NI Act 1881 ss.118, 138, 139",

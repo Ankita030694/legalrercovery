@@ -27,10 +27,10 @@ export default function ChemicalsRmcHubCTA({ className = "" }: ChemicalsRmcHubCT
                 Test 1 Live Overdue Case Now (&rupee;{basePrice})
               </h3>
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-                Start with one stalled RMC pour ledger, TMT steel truckload default, or chemical tanker invoice. Our advocates draft and serve a Sale of Goods Act s.42 + Order XXXVII CPC demand annexing your E-Way Bill, Dharamkanta slip, and MTC/COA batch proof via Email, WhatsApp &amp; Speed Post RPAD.
+                Start with one stalled RMC pour ledger, TMT steel truckload default, or chemical tanker invoice. Our team drafts and serves a Sale of Goods Act s.42 + Order XXXVII CPC demand annexing your E-Way Bill, Dharamkanta slip, and MTC/COA batch proof via Email, WhatsApp &amp; Speed Post RPAD.
               </p>
               <ul className="space-y-1.5 text-xs text-slate-200 mb-6">
-                <li>&check; Advocate-drafted demand locking s.42 acceptance &amp; rejecting sham quality excuses</li>
+                <li>&check; Fact-verified demand locking s.42 acceptance &amp; rejecting sham quality excuses</li>
                 <li>&check; Simultaneous Email + Business WhatsApp + Speed Post RPAD (BSA s.63)</li>
                 <li>&check; Direct escalation rail to NI Act s.138, Order 37 &amp; IBC Section 8 Form 3</li>
               </ul>

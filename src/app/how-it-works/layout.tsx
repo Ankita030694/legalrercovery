@@ -6,14 +6,14 @@ export const metadata: Metadata = {
       "How Legal Recovery Works | Recover Money in Simple Steps",
   },
   description:
-    "Upload proof, start your claim, and recover money legally through structured legal notices, claim escalation, and dispute resolution support in India.",
+    "Enter your case details online, get the facts verified, and recover money through structured legal notices and claim escalation in India.",
   alternates: {
     canonical: "https://www.legalrecovery.in/how-it-works",
   },
   openGraph: {
     title: "How Legal Recovery Works | Recover Money in Simple Steps",
     description:
-      "Upload proof, start your claim, and recover money legally through structured legal notices, claim escalation, and dispute resolution support in India.",
+      "Enter your case details online, get the facts verified, and recover money through structured legal notices and claim escalation in India.",
     url: "https://www.legalrecovery.in/how-it-works",
     siteName: "Legal Recovery India",
     locale: "en_IN",
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "How Legal Recovery Works | Recover Money in Simple Steps",
     description:
-      "Upload proof, start your claim, and recover money legally through structured legal notices, claim escalation, and dispute resolution support in India.",
+      "Enter your case details online, get the facts verified, and recover money through structured legal notices and claim escalation in India.",
     site: "@legalrecoveryin",
     creator: "@legalrecoveryin",
     images: ["https://www.legalrecovery.in/blog_money_recovery.png"],

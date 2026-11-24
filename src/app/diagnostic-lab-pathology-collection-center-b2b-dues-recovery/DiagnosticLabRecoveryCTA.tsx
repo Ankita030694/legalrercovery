@@ -23,7 +23,7 @@ export default function DiagnosticLabRecoveryCTA({ className = "" }: DiagnosticL
               Track 1 &bull; Single Case Test
             </span>
             <h3 className="text-lg sm:text-xl font-extrabold text-white mb-2">
-              Test 1 Overdue Franchisee or Clinic Notice (&rupee;{basePrice} &middot; Advocate Drafted &middot; Email + WhatsApp + Speed Post RPAD)
+              Test 1 Overdue Franchisee or Clinic Notice (&rupee;{basePrice} &middot; Fact-Verified &middot; Email + WhatsApp + Speed Post RPAD)
             </h3>
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
               Deploy our dual-track B2B Diagnostic Recovery Notice on one defaulting PCC collection center, nursing home, or imaging partner. Combines Commercial Courts Act s.2(1)(c)(ix) debt quantification with Trade Marks Act s.29 de-branding and Section 138 NI Act security cheque warnings.
@@ -56,7 +56,7 @@ export default function DiagnosticLabRecoveryCTA({ className = "" }: DiagnosticL
               Have 10 to 10,000+ Defaulters? Upload CSV / Activate Dedicated Institutional Desk
             </h3>
             <p className="text-xs sm:text-sm text-slate-600 leading-relaxed mb-5">
-              Engineered for National Reference Pathology Chains, Regional Imaging Networks, and Diagnostic CFOs. Batch-upload defaulting PCC centers, nursing homes, and corporate wellness aggregators via CSV with LIMS ledger reconciliation and automated tri-channel advocate dispatch.
+              Engineered for National Reference Pathology Chains, Regional Imaging Networks, and Diagnostic CFOs. Batch-upload defaulting PCC centers, nursing homes, and corporate wellness aggregators via CSV with LIMS ledger reconciliation and automated tri-channel dispatch.
             </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-3">

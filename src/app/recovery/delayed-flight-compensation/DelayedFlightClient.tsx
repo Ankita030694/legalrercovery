@@ -286,7 +286,7 @@ export default function DelayedFlightClient() {
                       </div>
                     </div>
                     <p className="text-sm md:text-base leading-relaxed">
-                      When we calculate your claim, we compile all three layers. For instance, a 10-hour delay that causes a passenger to spend ₹8,000 on a hotel, lose ₹15,000 on a wasted holiday booking, and suffer extreme stress due to lack of food will form a total claim of ₹23,000 (actuals) + ₹50,000 (mental agony) + ₹15,000 (litigation costs) = <strong>₹88,000</strong>. Our legal team uses this comprehensive calculation model to force airlines into realistic settlement discussions or win matching judgments in court.
+                      When we calculate your claim, we compile all three layers. For instance, a 10-hour delay that causes a passenger to spend ₹8,000 on a hotel, lose ₹15,000 on a wasted holiday booking, and suffer extreme stress due to lack of food will form a total claim of ₹23,000 (actuals) + ₹50,000 (mental agony) + ₹15,000 (litigation costs) = <strong>₹88,000</strong>. Our team uses this comprehensive calculation model to force airlines into realistic settlement discussions or win matching judgments in court.
                     </p>
                   </div>
                 </section>

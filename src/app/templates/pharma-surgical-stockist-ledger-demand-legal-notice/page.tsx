@@ -171,7 +171,7 @@ const FAQS = [
   {
     question: "What are the legal notice charges for recovering unpaid pharma stockist ledgers?",
     answer:
-      "On LegalRecovery.in, verified pharmaceutical litigation advocates review your invoices, transport bilties, Drug License details, and security cheque covenants, draft an Order XXXVII CPC and Section 20 NI Act compliant legal notice, and dispatch it via Email and WhatsApp under BSA Section 63 for a transparent flat fee of ₹999. Speed Post RPAD dispatch with real-time postal tracking manifests is available at ₹450 per recipient. Enterprise C&Fs and super-stockists managing 10 to 10,000+ accounts can access volume-tiered batch recovery via CSV upload.",
+      "On LegalRecovery.in, our team verifies the invoice, transport bilty, Drug License, and security cheque details you submit, prepares an Order XXXVII CPC and Section 20 NI Act compliant legal notice, and dispatches it via Email and WhatsApp under BSA Section 63 for a transparent flat fee of ₹999. Speed Post RPAD dispatch with real-time postal tracking manifests is available at ₹450 per recipient. Enterprise C&Fs and super-stockists managing 10 to 10,000+ accounts can access volume-tiered batch recovery via CSV upload.",
   },
 ];
 
@@ -211,7 +211,7 @@ const DIGITAL_DOCUMENT_SCHEMA = {
   name: "Pharma & Surgical Stockist Unpaid Ledger Legal Demand Notice Template",
   headline: EXACT_H1,
   description:
-    "Advocate-vetted statutory legal demand notice draft for pharmaceutical manufacturers, C&Fs, super-stockists, and surgical implant distributors under Order XXXVII CPC, Drugs and Cosmetics Rules 1945, and Section 20 NI Act.",
+    "Fact-verified statutory legal demand notice draft for pharmaceutical manufacturers, C&Fs, super-stockists, and surgical implant distributors under Order XXXVII CPC, Drugs and Cosmetics Rules 1945, and Section 20 NI Act.",
   encodingFormat: "text/html",
   hasDigitalDocumentPermission: {
     "@type": "DigitalDocumentPermission",
@@ -319,7 +319,7 @@ export default function PharmaSurgicalStockistNoticePage() {
                 Statutory Summary &bull; Creditor Legal Workspace
               </span>
               <p>
-                Pharma manufacturers, super-stockists, and surgical implant distributors facing defaulted ledgers can deploy this advocate-vetted demand notice. It incorporates Drug License numbers (Form 20B/21B), an Order XXXVII CPC batch invoice schedule, bars unilateral expired drug returns, and delivers mandatory Section 20 NI Act crystallization intimation before depositing blank security cheques. For institutional multi-account recovery, consult our specialized{" "}
+                Pharma manufacturers, super-stockists, and surgical implant distributors facing defaulted ledgers can deploy this fact-verified demand notice. It incorporates Drug License numbers (Form 20B/21B), an Order XXXVII CPC batch invoice schedule, bars unilateral expired drug returns, and delivers mandatory Section 20 NI Act crystallization intimation before depositing blank security cheques. For institutional multi-account recovery, consult our specialized{" "}
                 <Link
                   href="/industries/pharma-medical-devices-recovery"
                   className="text-red-300 font-bold underline hover:text-white transition-colors"
@@ -417,7 +417,7 @@ export default function PharmaSurgicalStockistNoticePage() {
                 className="scroll-mt-28 bg-white rounded-2xl border border-slate-200 p-5 sm:p-6 md:p-8 shadow-sm"
               >
                 <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider text-red-700 bg-red-50 border border-red-200 mb-4">
-                  <span>§2 Advocate-Vetted Generator</span>
+                  <span>§2 Fact-Verified Generator</span>
                   <span>•</span>
                   <span>Interactive Workspace</span>
                 </div>
@@ -688,7 +688,7 @@ export default function PharmaSurgicalStockistNoticePage() {
                         BSA 2023 Section 63 Certificate
                       </h3>
                       <p className="text-xs text-slate-600 leading-relaxed">
-                        Every electronic dispatch (Email SMTP logs, WhatsApp webhook transmission, and India Post tracking API) is accompanied by an advocate-signed Section 63 BSA certificate for direct admissibility in court without secondary witness proof.
+                        Every electronic dispatch (Email SMTP logs, WhatsApp webhook transmission, and India Post tracking API) is accompanied by a fact-verified Section 63 BSA certificate for direct admissibility in court without secondary witness proof.
                       </p>
                     </div>
                   </div>

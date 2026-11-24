@@ -144,7 +144,7 @@ const FAQS = [
   {
     question: "How do I claim compensation if Blue Dart loses an expensive consignment?",
     answer:
-      "First, gather the booking consignment note (AWB), purchase invoice, bank debit proof, and written tracking logs. Submit an official written claim to Blue Dart Customer Grievance and the Branch Manager within 180 days of booking, citing Section 10 of the Carriage by Road Act, 2007. If Blue Dart attempts to settle for ₹100 or partial freight, repudiate their offer in writing and serve an advocate legal notice before initiating consumer court proceedings on e-Jagriti.",
+      "First, gather the booking consignment note (AWB), purchase invoice, bank debit proof, and written tracking logs. Submit an official written claim to Blue Dart Customer Grievance and the Branch Manager within 180 days of booking, citing Section 10 of the Carriage by Road Act, 2007. If Blue Dart attempts to settle for ₹100 or partial freight, repudiate their offer in writing and serve a fact-verified legal notice before initiating consumer court proceedings on e-Jagriti.",
   },
   {
     question: "What are the DTDC lost parcel compensation rules and how to file a claim?",
@@ -169,7 +169,7 @@ const FAQS = [
   {
     question: "Courier ne parcel kho diya ya ₹100 ka token de raha hai, legal notice kaise bheje?",
     answer:
-      "Agar Delhivery, Blue Dart, DTDC ya koi logistics company aapka parcel kho de aur sirf ₹100 ya delivery fee wapas karne ki baat kare, toh aap Carriage by Road Act 2007 aur Consumer Protection Act 2019 ke tehat statutory legal demand notice bhej sakte hain. LegalRecovery.in par verified advocate carrier ko registered speed post aur corporate email se notice bhejte hain jismein 15 din ke andar 100% item value aur compensation ki maang ki jaati hai.",
+      "Agar Delhivery, Blue Dart, DTDC ya koi logistics company aapka parcel kho de aur sirf ₹100 ya delivery fee wapas karne ki baat kare, toh aap Carriage by Road Act 2007 aur Consumer Protection Act 2019 ke tehat statutory legal demand notice bhej sakte hain. LegalRecovery.in par fact-verified notice carrier ko registered speed post aur corporate email se bheja jata hai jismein 15 din ke andar 100% item value aur compensation ki maang ki jaati hai.",
   },
 ];
 
@@ -289,7 +289,7 @@ export default function CourierLostParcelPage() {
                 Statutory Summary (Courier Liability &amp; Compensation Mandate)
               </p>
               <p>
-                Under Section 2(11) of the Consumer Protection Act, 2019 and the Carriage by Road Act, 2007, courier companies are classified as common carriers and cannot enforce unilateral ₹100 liability caps printed on booking dockets. When Delhivery, Blue Dart, DTDC, or India Post lose or damage your parcel, you can demand full invoice reimbursement, statutory interest, and mental distress damages by serving a formal 15-day advocate legal notice before initiating consumer court proceedings on e-Jagriti.
+                Under Section 2(11) of the Consumer Protection Act, 2019 and the Carriage by Road Act, 2007, courier companies are classified as common carriers and cannot enforce unilateral ₹100 liability caps printed on booking dockets. When Delhivery, Blue Dart, DTDC, or India Post lose or damage your parcel, you can demand full invoice reimbursement, statutory interest, and mental distress damages by serving a formal 15-day fact-verified legal notice before initiating consumer court proceedings on e-Jagriti.
               </p>
             </div>
 
@@ -622,10 +622,10 @@ export default function CourierLostParcelPage() {
                     </span>
                     <div className="space-y-1.5 text-xs sm:text-sm text-slate-700">
                       <h3 className="text-base font-bold text-slate-900">
-                        Serve a Statutory Advocate Legal Demand Notice (15-Day Cure Period)
+                        Serve a Statutory Fact-Verified Legal Demand Notice (15-Day Cure Period)
                       </h3>
                       <p className="leading-relaxed">
-                        If the logistics provider ignores written grievances or refuses full reimbursement, have a verified advocate serve a formal statutory legal notice. The notice is served via Registered Speed Post with tracking and emailed to the Managing Director and Grievance Officer. It sets out the strict statutory liability, quotes binding consumer commission precedents, and gives the carrier a strict 15-day window to settle the full claim with interest.
+                        If the logistics provider ignores written grievances or refuses full reimbursement, serve a formal statutory legal notice. The notice is served via Registered Speed Post with tracking and emailed to the Managing Director and Grievance Officer. It sets out the strict statutory liability, quotes binding consumer commission precedents, and gives the carrier a strict 15-day window to settle the full claim with interest.
                       </p>
                     </div>
                   </div>
@@ -701,7 +701,7 @@ export default function CourierLostParcelPage() {
                       </tr>
                       <tr className="hover:bg-slate-50 transition-colors">
                         <td className="p-3.5 sm:p-4 font-bold text-slate-900">Legal Notice Drafting Cost</td>
-                        <td className="p-3.5 sm:p-4 text-slate-700 font-bold text-slate-900">Flat ₹1,499 (Advocate drafting + Speed Post + Email)</td>
+                        <td className="p-3.5 sm:p-4 text-slate-700 font-bold text-slate-900">Flat ₹1,499 (Notice drafting + Speed Post + Email)</td>
                         <td className="p-3.5 sm:p-4 text-slate-600 font-mono text-xs">
                           <Link href="/legal-notice-charges" className="text-[#DC2626] hover:underline font-bold">
                             LegalRecovery Fixed Pricing
@@ -733,7 +733,7 @@ export default function CourierLostParcelPage() {
                   Worked Recovery Example: ₹54,000 Smartphone Lost by Logistics Carrier
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
-                  The following real-world illustrative case study shows how an aggrieved sender turned an arbitrary ₹100 liability offer into a full ₹82,860 court award by serving an advocate legal notice and filing an e-Jagriti complaint:
+                  The following real-world illustrative case study shows how an aggrieved sender turned an arbitrary ₹100 liability offer into a full ₹82,860 court award by serving a fact-verified legal notice and filing an e-Jagriti complaint:
                 </p>
 
                 <div className="bg-white rounded-2xl border border-slate-200 p-5 sm:p-7 shadow-xs space-y-5">
@@ -912,7 +912,7 @@ export default function CourierLostParcelPage() {
                 </h2>
                 <div className="p-5 sm:p-6 bg-slate-100 rounded-2xl border border-slate-200 space-y-3 text-xs sm:text-sm text-slate-700">
                   <p className="leading-relaxed">
-                    <strong>What We Do:</strong> Our verified advocates draft and serve an official statutory legal demand notice on the logistics company&apos;s corporate management and registered office. We challenge arbitrary ₹100 liability caps, invoke Section 10 and Section 12 of the Carriage by Road Act, 2007, demand full invoice reimbursement plus interest and damages, and build the formal evidentiary foundation for consumer court proceedings on e-Jagriti.
+                    <strong>What We Do:</strong> Our We draft and serve an official statutory legal demand notice on the logistics company&apos;s corporate management and registered office. We challenge arbitrary ₹100 liability caps, invoke Section 10 and Section 12 of the Carriage by Road Act, 2007, demand full invoice reimbursement plus interest and damages, and build the formal evidentiary foundation for consumer court proceedings on e-Jagriti.
                   </p>
                   <p className="leading-relaxed">
                     <strong>What We Cannot Do:</strong> We cannot physically search logistics sorting warehouses or force delivery of contraband, prohibited items, or unbooked packages sent without an official booking waybill. Furthermore, for parcels lost through criminal theft by unauthorized delivery personnel, we initiate civil and consumer recovery against the carrier; criminal complaints must be registered independently with local police authorities.

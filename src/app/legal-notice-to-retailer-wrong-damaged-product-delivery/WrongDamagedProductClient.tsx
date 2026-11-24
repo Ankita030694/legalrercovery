@@ -369,7 +369,7 @@ export default function WrongDamagedProductClient() {
                     When dealing with a wrong or damaged delivery, you have two primary legal options: serving a formal legal notice or filing a complaint with the Consumer Forum (DCDRC).
                   </p>
                   <p className="text-sm md:text-base leading-relaxed">
-                    A formal legal notice is a demand drafted by an advocate and served to the seller and the marketplace, giving them 15 days to resolve the claim. This is the fastest route, as portals want to avoid being listed in Consumer Forum filings. If the notice is ignored, the consumer can file a complaint in the Consumer Forum using the online e-Daakhil portal, or file a <Link href="/civil-suit-for-recovery-of-money-india" className="text-[#DC2626] hover:underline font-medium">civil suit for recovery of money India</Link>.
+                    A formal legal notice is a demand prepared on verified facts and served to the seller and the marketplace, giving them 15 days to resolve the claim. This is the fastest route, as portals want to avoid being listed in Consumer Forum filings. If the notice is ignored, the consumer can file a complaint in the Consumer Forum using the online e-Daakhil portal, or file a <Link href="/civil-suit-for-recovery-of-money-india" className="text-[#DC2626] hover:underline font-medium">civil suit for recovery of money India</Link>.
                   </p>
 
                   {/* Comparison Table */}
@@ -624,7 +624,7 @@ export default function WrongDamagedProductClient() {
                 <div className="absolute top-0 right-0 w-24 h-24 bg-red-600/10 rounded-full blur-xl pointer-events-none" />
                 <h3 className="text-lg font-bold mb-3 text-white">Need Legal Advice?</h3>
                 <p className="text-gray-400 mb-5 text-[11px] leading-relaxed">
-                  Discuss your money recovery case with legal experts. We draft and serve legally compliant notices tailored to your transaction.
+                  Discuss your money recovery case with our team. We draft and serve legally compliant notices tailored to your transaction.
                 </p>
                 <button 
                   onClick={() => setIsPaymentModalOpen(true)}

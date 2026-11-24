@@ -278,7 +278,7 @@ export default function MotorInsuranceClaimRejectedPage() {
                 Statutory Summary (Anti-Repudiation Legal Rules)
               </p>
               <p>
-                Insurers cannot reject car or bike claims on hyper-technical grounds. Under Supreme Court rulings in <em>Gurmel Singh (2022)</em> and <em>Lakhmi Chand (2016)</em>, intimation delay does not extinguish genuine loss, and licence defects require direct accident causation. Alcohols allegations demand blood test proof under Section 185 MV Act. Challenge arbitrary repudiations via an advocate legal notice before moving the Insurance Ombudsman (up to ₹50 Lakh) or Consumer Commission.
+                Insurers cannot reject car or bike claims on hyper-technical grounds. Under Supreme Court rulings in <em>Gurmel Singh (2022)</em> and <em>Lakhmi Chand (2016)</em>, intimation delay does not extinguish genuine loss, and licence defects require direct accident causation. Alcohols allegations demand blood test proof under Section 185 MV Act. Challenge arbitrary repudiations via a fact-verified legal notice before moving the Insurance Ombudsman (up to ₹50 Lakh) or Consumer Commission.
               </p>
             </div>
 
@@ -350,7 +350,7 @@ export default function MotorInsuranceClaimRejectedPage() {
 
                 <div className="bg-amber-50 border-l-4 border-amber-500 p-4 rounded-r-xl">
                   <p className="text-xs sm:text-sm text-amber-900 font-medium">
-                    <strong>Honest Platform Scope:</strong> LegalRecovery drafts and serves enforceable statutory advocate demand notices and assists in preparing complaints before the Insurance Ombudsman and Consumer Commissions. We do not provide physical surveyor inspections, nor do we represent fraudulent staging of motor accidents.
+                    <strong>Honest Platform Scope:</strong> LegalRecovery drafts and serves enforceable statutory fact-verified demand notices and assists in preparing complaints before the Insurance Ombudsman and Consumer Commissions. We do not provide physical surveyor inspections, nor do we represent fraudulent staging of motor accidents.
                   </p>
                 </div>
               </section>
@@ -768,7 +768,7 @@ export default function MotorInsuranceClaimRejectedPage() {
                       <strong>The Rejection:</strong> On 12 October 2025, Mr. Rohit Sharma suffered a collision on the Jaipur-Delhi highway after a tyre blowout caused the vehicle to hit the central divider. Rohit sustained severe concussion and arm fractures, remaining hospitalised for 10 days. On Day 12, his brother filed the digital claim on the insurer&apos;s portal. The insurer appointed a surveyor who assessed repair liability at ₹3,85,000. However, 25 days later, the claims department repudiated the claim in toto citing: (1) Condition 1 intimation breach (&gt;48 hours delay); and (2) Driver&apos;s licence expired on 24 September 2025.
                     </p>
                     <p>
-                      <strong>The Statutory Action:</strong> Rohit engaged LegalRecovery.in. An advocate drafted and dispatched a comprehensive statutory legal notice to the insurer&apos;s Grievance Redressal Officer and Head of Motor Claims:
+                      <strong>The Statutory Action:</strong> Rohit engaged LegalRecovery.in. The team verified the facts and dispatched a comprehensive statutory legal notice to the insurer&apos;s Grievance Redressal Officer and Head of Motor Claims:
                     </p>
                     <ul className="list-disc pl-5 space-y-1.5 text-slate-800">
                       <li>
@@ -782,7 +782,7 @@ export default function MotorInsuranceClaimRejectedPage() {
                       </li>
                     </ul>
                     <p>
-                      <strong>The Outcome:</strong> Upon receiving the advocate legal notice with notice of impending Bima Bharosa and Insurance Ombudsman filing, the insurer&apos;s central claims committee recalled the repudiation letter within 14 working days. The insurer released the full repair settlement of <strong>₹3,85,000</strong> directly to the authorised Hyundai workshop and paid <strong>₹15,000</strong> towards garage storage charges.
+                      <strong>The Outcome:</strong> Upon receiving the fact-verified legal notice with notice of impending Bima Bharosa and Insurance Ombudsman filing, the insurer&apos;s central claims committee recalled the repudiation letter within 14 working days. The insurer released the full repair settlement of <strong>₹3,85,000</strong> directly to the authorised Hyundai workshop and paid <strong>₹15,000</strong> towards garage storage charges.
                     </p>
                   </div>
 

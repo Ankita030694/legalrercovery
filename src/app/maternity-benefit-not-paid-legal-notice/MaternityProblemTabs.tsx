@@ -37,9 +37,9 @@ const PROBLEMS: ProblemTab[] = [
           "Do not sign any mutual separation agreement or resign. Send a formal written protest citing Section 12 of the Act and demanding immediate withdrawal of the termination letter.",
       },
       {
-        step: "Serve Advocate Statutory Legal Notice",
+        step: "Serve Fact-Verified Statutory Legal Notice",
         description:
-          "Issue a formal advocate legal demand notice demanding reinstatement with full back-wages, 26 weeks maternity benefit, and compensation for mental harassment under penal Section 21.",
+          "Issue a formal fact-verified legal demand notice demanding reinstatement with full back-wages, 26 weeks maternity benefit, and compensation for mental harassment under penal Section 21.",
       },
     ],
     statutoryRule: "Section 12 & 21, Maternity Benefit Act, 1961 & Section 65, Code on Social Security, 2020",
@@ -91,9 +91,9 @@ const PROBLEMS: ProblemTab[] = [
           "Preserve contract agreements, work email logs, attendance records, TDS certificates (Form 16/16A), and bank credits demonstrating regular employment continuity.",
       },
       {
-        step: "Dispatch Advocate Legal Notice Citing SC Precedents",
+        step: "Dispatch Fact-Verified Legal Notice Citing SC Precedents",
         description:
-          "Serve an advocate demand notice citing Dr. Kavita Yadav (2024 SC) and MCD v. Female Workers (2000 SC), demanding full 26 weeks salary with 18% penal interest.",
+          "Serve a fact-verified demand notice citing Dr. Kavita Yadav (2024 SC) and MCD v. Female Workers (2000 SC), demanding full 26 weeks salary with 18% penal interest.",
       },
     ],
     statutoryRule: "Supreme Court Rulings (Dr. Kavita Yadav 2024 & MCD 2000) & Section 5(2) MBA 1961",
@@ -120,7 +120,7 @@ const PROBLEMS: ProblemTab[] = [
       {
         step: "Initiate Legal Notice with Labour Commissioner Copy",
         description:
-          "Serve a formal statutory advocate legal notice to company directors with a copy marked to the State Labour Welfare Commissioner.",
+          "Serve a formal statutory fact-verified legal notice to company directors with a copy marked to the State Labour Welfare Commissioner.",
       },
     ],
     statutoryRule: "Section 27 (Overriding Effect) & Section 2(1) (Coverage), Maternity Benefit Act, 1961",

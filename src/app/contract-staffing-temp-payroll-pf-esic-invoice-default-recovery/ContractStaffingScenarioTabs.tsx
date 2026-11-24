@@ -33,7 +33,7 @@ const SCENARIOS: ScenarioTab[] = [
       {
         step: "Issuance of Pre-Emptive Rebuttal Notice",
         description:
-          "Serve an advocate notice establishing that disputed service markup penalties cannot be applied to wipe out statutory pass-through wage and statutory compliance reimbursements.",
+          "Serve a fact-verified notice establishing that disputed service markup penalties cannot be applied to wipe out statutory pass-through wage and statutory compliance reimbursements.",
       },
       {
         step: "Statutory Segregation & Demand",

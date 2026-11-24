@@ -27,10 +27,10 @@ export default function BanksHubCTA({ className = "" }: BanksHubCTAProps) {
                 Test 1 Live Overdue Case Now (&rupee;{basePrice})
               </h3>
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-                Skip multi-month enterprise procurement committees just to verify notice quality. Submit one live delinquent loan or credit-card account for advocate-drafted statutory dispatch via verified Email, Business WhatsApp, and India Post Speed Post RPAD with Section 63 BSA certification.
+                Skip multi-month enterprise procurement committees just to verify notice quality. Submit one live delinquent loan or credit-card account for fact-verified statutory dispatch via verified Email, Business WhatsApp, and India Post Speed Post RPAD with Section 63 BSA certification.
               </p>
               <ul className="space-y-1.5 text-xs text-slate-200 mb-6">
-                <li>&check; Advocate-signed Loan Recall / Section 25 / Section 138 draft</li>
+                <li>&check; Fact-verified Loan Recall / Section 25 / Section 138 draft</li>
                 <li>&check; Simultaneous Email + WhatsApp + Speed Post RPAD manifest</li>
                 <li>&check; &lt;24-hour branch-level turnaround from submission</li>
               </ul>

@@ -329,7 +329,7 @@ export default function AssuredReturnBuilderDefaultPage() {
                   {NOTICE_PRICE_FORMATTED}
                 </div>
                 <div className="text-xs text-slate-300 font-medium leading-snug">
-                  Flat advocate legal notice fee with email + WhatsApp service (Speed Post optional, ₹450)
+                  Flat fact-verified legal notice fee with email + WhatsApp service (Speed Post optional, ₹450)
                   dispatch to builder &amp; directors
                 </div>
               </div>
@@ -1466,7 +1466,7 @@ export default function AssuredReturnBuilderDefaultPage() {
                   allottees
                 </strong>{" "}
                 (whichever is less) with a combined default of{" "}
-                <strong>₹1 Crore or more</strong>. Our legal team helps buyer
+                <strong>₹1 Crore or more</strong>. Our team helps buyer
                 associations coordinate joint Section 7 demand notices.
               </p>
 

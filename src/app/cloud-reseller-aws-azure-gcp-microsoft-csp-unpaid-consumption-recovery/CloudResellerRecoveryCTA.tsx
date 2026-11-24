@@ -25,7 +25,7 @@ export default function CloudResellerRecoveryCTA({
               Track 1 &bull; Single Cloud Default Test Notice
             </span>
             <p className="text-lg sm:text-xl font-extrabold text-white mb-2">
-              Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Advocate Drafted &middot; Email + WhatsApp + Speed Post RPAD)
+              Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Fact-Verified &middot; Email + WhatsApp + Speed Post RPAD)
             </p>
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
               Serve a high-impact 7-day statutory legal notice on a defaulting startup or enterprise client. Crystallizes Order XXXVII CPC liquidated debt from AWS/Azure/GCP billing APIs, asserts personal director liability under signed guarantee deeds, sets a 48-hour root console suspension deadline, and demands 3x RBI compound penal interest under MSMED Act Section 16.

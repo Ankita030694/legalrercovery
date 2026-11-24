@@ -298,7 +298,7 @@ export default function RefundDelayIndexReportPage() {
                   Every week, hundreds of thousands of Indian consumers cancel train tickets, return defective apparel, drop out of commercial coaching courses, or experience failed UPI debits where money vanishes into intermediate corporate accounts. Despite clear advertising promising &quot;instant refunds&quot; or &quot;5 to 7 business day reversal,&quot; real-world fulfillment is plagued by deliberate frictional barriers.
                 </p>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
-                  Our quarterly benchmark data indicates that informal consumer grievances—lodged via customer care emails, in-app chatbots, and social media mentions—fail to trigger corporate settlement mechanisms. Lacking legal consequences, corporate customer support desks are structured around cost-minimization scripts. However, once an aggrieved consumer transitions from an informal complaint to a formal advocate legal notice served under the{" "}
+                  Our quarterly benchmark data indicates that informal consumer grievances—lodged via customer care emails, in-app chatbots, and social media mentions—fail to trigger corporate settlement mechanisms. Lacking legal consequences, corporate customer support desks are structured around cost-minimization scripts. However, once an aggrieved consumer transitions from an informal complaint to a formal fact-verified legal notice served under the{" "}
                   <Link
                     href="/send-legal-notice-online-india"
                     className="font-bold text-[#DC2626] hover:underline"
@@ -543,7 +543,7 @@ export default function RefundDelayIndexReportPage() {
 
                   <div className="pt-4 border-t border-slate-100">
                     <p className="text-xs text-slate-500 mb-3">
-                      Have a delayed refund with an Indian merchant or platform? Serve a statutory advocate legal notice today.
+                      Have a delayed refund with an Indian merchant or platform? Serve a statutory fact-verified legal notice today.
                     </p>
                     <Link
                       href="/send-legal-notice-online-india"
@@ -796,7 +796,7 @@ export default function RefundDelayIndexReportPage() {
                       15-Day Statutory Notice via Speed Post &amp; Email
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Have a verified advocate draft a demand notice citing deficiency in service under Section 2(11) CPA 2019, demand 12% interest, and outline imminent e-Jagriti filing. This statutory step transfers the matter directly to corporate legal counsel, compelling resolution within the 15-day statutory window.
+                      Send a demand notice citing deficiency in service under Section 2(11) CPA 2019, demand 12% interest, and outline imminent e-Jagriti filing. This statutory step transfers the matter directly to corporate legal counsel, compelling resolution within the 15-day statutory window.
                     </p>
                   </div>
 

@@ -139,7 +139,7 @@ const FAQS = [
   {
     question: "Does outsourcing legal debt recovery comply with RBI Outsourcing and Fair Practice Codes?",
     answer:
-      "Yes. Outsourcing legal demand notices and pre-litigation proceedings is 100% compliant with the RBI Master Direction on Managing Risks and Code of Conduct in Outsourcing of Financial Services. Unlike tele-calling collection agencies that trigger conduct complaints, outsourced legal operations operate strictly within the formal judicial framework. All notices are drafted and issued by Bar Council verified advocates, dispatched via government postal channels and Section 63 BSA compliant electronic logs, and adhere to statutory settlement timelines.",
+      "Yes. Outsourcing legal demand notices and pre-litigation proceedings is 100% compliant with the RBI Master Direction on Managing Risks and Code of Conduct in Outsourcing of Financial Services. Unlike tele-calling collection agencies that trigger conduct complaints, outsourced legal operations operate strictly within the formal judicial framework. All notices are fact-verified by our team and prepared from structured templates, dispatched via government postal channels and Section 63 BSA compliant electronic logs, and adhere to statutory settlement timelines.",
   },
   {
     question: "Why are traditional advocate retainers so expensive for high-volume retail loan books?",
@@ -149,7 +149,7 @@ const FAQS = [
   {
     question: "How does legal notice automation work for Section 25 PSSA and Section 138 NI Act?",
     answer:
-      "The bank securely transmits its delinquent loan ledger (DPD 60–90) via SFTP or encrypted API. The legal tech platform algorithmically ingests account data, validates NACH return memos or cheque bounce memos, and generates advocate-vetted statutory demand notices. Notices are printed, speed-posted with automated barcode tracking, and simultaneously served via authenticated email and messaging under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023. Real-time delivery acknowledgments are pushed back into the bank's core system.",
+      "The bank securely transmits its delinquent loan ledger (DPD 60–90) via SFTP or encrypted API. The legal tech platform algorithmically ingests account data, validates NACH return memos or cheque bounce memos, and generates fact-verified statutory demand notices. Notices are printed, speed-posted with automated barcode tracking, and simultaneously served via authenticated email and messaging under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023. Real-time delivery acknowledgments are pushed back into the bank's core system.",
   },
   {
     question: "What is the typical pre-litigation settlement yield achieved through legal outsourcing?",
@@ -577,7 +577,7 @@ export default function BankRecoveryCostReductionPage() {
                     {/* Step 2 */}
                     <rect x="180" y="20" width="140" height="90" rx="10" fill="#FEF3C7" stroke="#F59E0B" strokeWidth="1.5" />
                     <text x="250" y="45" fill="#B45309" fontWeight="bold" textAnchor="middle">STAGE 2</text>
-                    <text x="250" y="65" fill="#92400E" fontWeight="bold" textAnchor="middle">Advocate Drafting</text>
+                    <text x="250" y="65" fill="#92400E" fontWeight="bold" textAnchor="middle">Notice Drafting</text>
                     <text x="250" y="82" fill="#78350F" fontSize="10" textAnchor="middle">S.25 PSSA / S.138</text>
                     <text x="250" y="98" fill="#78350F" fontSize="9" textAnchor="middle">Flat-Rate Batching</text>
 
@@ -657,7 +657,7 @@ export default function BankRecoveryCostReductionPage() {
                         Standardized Advocate Notice Ingestion via Secure SFTP
                       </h3>
                       <p className="text-xs sm:text-sm leading-relaxed">
-                        Establish an automated data bridge between core banking servers and the outsourced legal ops platform. Borrower data, NACH bounce records, and loan account statements are auto-mapped into vetted advocate templates invoking Section 25 PSSA, Section 138 NI Act, or SARFAESI Section 13(2), eliminating manual lawyer drafting errors.
+                        Establish an automated data bridge between core banking servers and the outsourced legal ops platform. Borrower data, NACH bounce records, and loan account statements are auto-mapped into vetted advocate templates invoking Section 25 PSSA, Section 138 NI Act, or SARFAESI Section 13(2), eliminating manual notice drafting errors.
                       </p>
                     </div>
                   </li>
@@ -827,7 +827,7 @@ export default function BankRecoveryCostReductionPage() {
                       <strong>The Financial Problem:</strong> A mid-sized scheduled commercial bank carried 1,200 delinquent retail personal loan and micro-enterprise overdraft accounts across five northern states, representing ₹14.5 Crore in overdue principal. The bank&apos;s internal legal department relied on 18 local law firm retainers, where advocates quoted an average drafting and filing fee of ₹4,200 per account (projected OpEx of ₹50.4 Lakhs for notices alone) plus anticipated court expenses of ₹85 Lakhs. With potential legal outlays touching ₹1.35 Crore against an aging retail book, the bank&apos;s Cost Audit Committee was considering selling the portfolio to an Asset Reconstruction Company (ARC) at a steep 75% haircut.
                     </p>
                     <p>
-                      <strong>The Outsourced Solution:</strong> The bank engaged LegalRecovery.in to execute an institutional legal recovery pilot. Over 10 business days, the complete 1,200-account ledger was ingested via encrypted SFTP. Standardized advocate legal demand notices invoking Section 25 PSSA and Section 138 NI Act were algorithmically drafted, vetted by senior bank empanelled counsel, and dispatched concurrently via India Post Speed Post and Section 63 BSA compliant electronic delivery at a flat institutional fee of ₹750 per case (total notice cost: ₹9.0 Lakhs).
+                      <strong>The Outsourced Solution:</strong> The bank engaged LegalRecovery.in to execute an institutional legal recovery pilot. Over 10 business days, the complete 1,200-account ledger was ingested via encrypted SFTP. Standardized fact-verified legal demand notices invoking Section 25 PSSA and Section 138 NI Act were algorithmically drafted, reviewed by the bank&apos;s own empanelled counsel, and dispatched concurrently via India Post Speed Post and Section 63 BSA compliant electronic delivery at a flat institutional fee of ₹750 per case (total notice cost: ₹9.0 Lakhs).
                     </p>
                     <p>
                       <strong>The Pre-Court Resolution:</strong> Within the 15-day statutory response window, 384 borrowers (32%) settled their full outstanding dues or entered immediate restructuring agreements, yielding ₹4.64 Crore in cash recoveries. An additional 528 accounts were batched into regional Pre-Litigation Lok Adalats, recovering another ₹5.80 Crore under formal compromise awards with zero court fee expenditure.

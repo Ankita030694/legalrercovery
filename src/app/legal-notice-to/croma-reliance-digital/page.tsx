@@ -311,7 +311,7 @@ export default function CromaRelianceDigitalPage() {
                 <path d="M 270 277 L 315 277" stroke="#64748B" strokeWidth="2" markerEnd="url(#arrowhead)" />
 
                 <rect x="320" y="240" width="230" height="75" rx="8" fill="#1E293B" stroke="#DC2626" strokeWidth="1.5" />
-                <text x="435" y="265" textAnchor="middle" fill="#FCA5A5" fontSize="12" fontWeight="bold">2. Advocate Legal Notice</text>
+                <text x="435" y="265" textAnchor="middle" fill="#FCA5A5" fontSize="12" fontWeight="bold">2. Legal Notice</text>
                 <text x="435" y="283" textAnchor="middle" fill="#E2E8F0" fontSize="10">Privity under Section 86 CPA</text>
                 <text x="435" y="300" textAnchor="middle" fill="#F87171" fontSize="10" fontWeight="600">15-day statutory demand period</text>
 
@@ -638,10 +638,10 @@ export default function CromaRelianceDigitalPage() {
                 id="heading-serve-legal-notice"
                 className="text-lg sm:text-xl font-bold text-slate-900 mb-3"
               >
-                Serving an Advocate Legal Notice to Electronics Retailers
+                Serving a Legal Notice to Electronics Retailers
               </h2>
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed mb-3">
-                You should serve an Advocate Legal Notice as soon as the store manager or customer support refuses a replacement in writing, or when 7 days elapse without a concrete resolution from the brand service center. The notice should be served jointly on the retailer's registered corporate office and the brand's legal desk, giving them 15 statutory days to rectify the deficiency.
+                You should serve a Legal Notice as soon as the store manager or customer support refuses a replacement in writing, or when 7 days elapse without a concrete resolution from the brand service center. The notice should be served jointly on the retailer's registered corporate office and the brand's legal desk, giving them 15 statutory days to rectify the deficiency.
               </p>
               <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                 A formal notice establishes privity of contract under Section 86 of CPA 2019 and creates electronic documentary evidence under Section 63 of Bharatiya Sakshya Adhiniyam, 2023 (BSA). Corporate legal desks routinely authorize replacements at this stage to avoid recorded commission orders.
@@ -687,7 +687,7 @@ export default function CromaRelianceDigitalPage() {
                 <div className="p-4 rounded-xl bg-emerald-50/70 border border-emerald-200">
                   <div className="font-bold text-emerald-950 text-sm mb-2">What LegalRecovery Does</div>
                   <ul className="space-y-1.5 text-emerald-900">
-                    <li>• Drafts an advocate legal notice citing Section 86 CPA 2019 and verified commission precedents.</li>
+                    <li>• Drafts a legal notice citing Section 86 CPA 2019 and verified commission precedents.</li>
                     <li>• Impleads both the retail chain (Infiniti / Reliance) and device manufacturer for joint liability.</li>
                     <li>• Delivers via Speed Post and registered corporate email directly to the resident Grievance Officer.</li>
                     <li>• Prepares an evidence dossier compliant with Section 63 of BSA 2023.</li>
@@ -725,7 +725,7 @@ export default function CromaRelianceDigitalPage() {
               </div>
               <div className="p-3.5 rounded-xl bg-slate-50 border border-slate-200">
                 <span className="font-bold text-slate-900 block mb-0.5">3. The Notice: Joint Demand Served</span>
-                <p>An Advocate Legal Notice was served jointly on Infiniti Retail Limited and Samsung, establishing privity under Section 86 CPA 2019, attaching inspection job sheets, and demanding a sealed replacement or full refund within 15 days.</p>
+                <p>A Legal Notice was served jointly on Infiniti Retail Limited and Samsung, establishing privity under Section 86 CPA 2019, attaching inspection job sheets, and demanding a sealed replacement or full refund within 15 days.</p>
               </div>
               <div className="p-3.5 rounded-xl bg-emerald-50/60 border border-emerald-200 text-emerald-950 font-medium">
                 <span className="font-bold text-emerald-900 block mb-0.5">4. The Resolution: Fresh Unit Replacement</span>

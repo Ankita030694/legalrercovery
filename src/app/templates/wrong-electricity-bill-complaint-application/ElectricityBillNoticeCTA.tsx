@@ -31,7 +31,7 @@ export default function ElectricityBillNoticeCTA({
                 DISCOM Threatening Disconnection Over an Inflated or Defective Bill?
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6">
-                Under Section 56(1) of the Electricity Act, 2003, a distribution licensee cannot disconnect your power supply if a bona fide billing dispute has been lodged and average dues are deposited under protest. Have an experienced advocate issue a formal 15-day statutory legal notice to the Chief Engineer and Executive Engineer (Commercial) before moving the Consumer Grievance Redressal Forum (CGRF) or District Consumer Commission on e-Jagriti.
+                Under Section 56(1) of the Electricity Act, 2003, a distribution licensee cannot disconnect your power supply if a bona fide billing dispute has been lodged and average dues are deposited under protest. Issue a formal 15-day statutory legal notice to the Chief Engineer and Executive Engineer (Commercial) before moving the Consumer Grievance Redressal Forum (CGRF) or District Consumer Commission on e-Jagriti.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button
@@ -42,7 +42,7 @@ export default function ElectricityBillNoticeCTA({
                   {buttonText} — ₹{basePrice}
                 </button>
                 <div className="text-xs text-slate-300 flex flex-wrap sm:flex-nowrap items-center gap-2 sm:gap-3">
-                  <span>✓ 24h Advocate Drafting</span>
+                  <span>✓ 24h Notice Drafting</span>
                   <span>•</span>
                   <span>✓ Email + WhatsApp</span>
                   <span>•</span>

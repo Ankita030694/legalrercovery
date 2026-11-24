@@ -135,7 +135,7 @@ const FAQS = [
   },
   {
     q: "Can ECGC cover losses arising from a Business Email Compromise or hacker invoice diversion?",
-    a: "Standard ECGC Export Credit Insurance policies cover commercial risks (buyer insolvency or protracted default) and political risks, but typically exclude cyber fraud or third-party theft. However, if the buyer accepts the goods but refuses to remit genuine payment to the seller claiming discharge, this can be legally classified as 'protracted default'. Serving an Advocate-vetted statutory demand notice is mandatory to trigger and preserve formal claim filing under ECGC Policy Clause C.24.",
+    a: "Standard ECGC Export Credit Insurance policies cover commercial risks (buyer insolvency or protracted default) and political risks, but typically exclude cyber fraud or third-party theft. However, if the buyer accepts the goods but refuses to remit genuine payment to the seller claiming discharge, this can be legally classified as 'protracted default'. Serving a Fact-verified statutory demand notice is mandatory to trigger and preserve formal claim filing under ECGC Policy Clause C.24.",
   },
   {
     q: "How does Bharatiya Sakshya Adhiniyam, 2023 (BSA Section 63) apply to BEC digital evidence?",
@@ -197,7 +197,7 @@ export default function BusinessEmailCompromisePage() {
       {
         "@type": "HowToStep",
         name: "Stage 3: Formal Legal Notice for Contractual Debt Discharge",
-        text: "Serve an Advocate-drafted cross-border statutory demand notice rejecting discharge and requiring payment to legitimate nominated bank accounts within 15 days.",
+        text: "Serve a Fact-verified cross-border statutory demand notice rejecting discharge and requiring payment to legitimate nominated bank accounts within 15 days.",
       },
       {
         "@type": "HowToStep",
@@ -472,7 +472,7 @@ export default function BusinessEmailCompromisePage() {
                     {/* Split Node Left: Statutory Demand */}
                     <rect x="60" y="170" width="310" height="110" rx="8" fill="#0F172A" stroke="#DC2626" strokeWidth="2" />
                     <text x="215" y="200" fill="#EF4444" textAnchor="middle" fontWeight="bold" fontSize="12">TRACK A: COMMERCIAL RECOVERY</text>
-                    <text x="215" y="222" fill="#E2E8F0" textAnchor="middle" fontSize="10">Serve 15-Day Advocate Demand Notice</text>
+                    <text x="215" y="222" fill="#E2E8F0" textAnchor="middle" fontSize="10">Serve 15-Day Fact-Verified Demand Notice</text>
                     <text x="215" y="238" fill="#94A3B8" textAnchor="middle" fontSize="9">Reject Debt Discharge under Contract Act s.37</text>
                     <text x="215" y="254" fill="#94A3B8" textAnchor="middle" fontSize="9">Preserve ECGC Clause C.24 Protracted Default Window</text>
 

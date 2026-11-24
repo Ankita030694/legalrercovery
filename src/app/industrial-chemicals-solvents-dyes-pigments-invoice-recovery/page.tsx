@@ -224,7 +224,7 @@ export default function IndustrialChemicalsRecoveryPage() {
         "@type": "HowToStep",
         position: 2,
         name: "Invoke Sealed Retention Sample & Section 42 Commingling Estoppel",
-        text: "Serve an advocate-drafted notice citing Sale of Goods Act s.42 irrevocable acceptance upon commingling and demanding joint NABL re-testing of the unopened dispatch retention sample.",
+        text: "Serve a fact-verified notice citing Sale of Goods Act s.42 irrevocable acceptance upon commingling and demanding joint NABL re-testing of the unopened dispatch retention sample.",
       },
       {
         "@type": "HowToStep",

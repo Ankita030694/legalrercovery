@@ -24,7 +24,7 @@ export default function ItSoftwareNoticeCTA({ className = "" }: ItSoftwareNotice
                 Track 1 &bull; Self-Serve Single Tech Case Test
               </span>
               <h3 className="text-lg sm:text-xl md:text-2xl font-extrabold tracking-tight text-white mb-2.5">
-                Issue 1 Advocate Notice Now (&rupee;{basePrice})
+                Issue 1 Fact-Verified Notice Now (&rupee;{basePrice})
               </h3>
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
                 Have an empanelled technology litigator audit your MSA, SOW milestone logs, Git commit history, and server hosting telemetry, then issue an enforceable notice with Copyright s.51 IP license revocation and 7-day tenant suspension within 24 hours.
@@ -42,7 +42,7 @@ export default function ItSoftwareNoticeCTA({ className = "" }: ItSoftwareNotice
                 onClick={() => setIsModalOpen(true)}
                 className="flex-1 inline-flex items-center justify-center px-5 py-3.5 rounded-xl font-bold text-white bg-[#DC2626] hover:bg-[#B91C1C] transition-colors shadow-lg shadow-red-900/30 text-xs sm:text-sm cursor-pointer text-center"
               >
-                Dispatch 1 Advocate Notice (&rupee;{basePrice}) &rarr;
+                Dispatch 1 Fact-Verified Notice (&rupee;{basePrice}) &rarr;
               </button>
               <Link
                 href="/user/new-recovery"

@@ -173,7 +173,7 @@ const HOWTO_SCHEMA = {
     {
       "@type": "HowToStep",
       position: 3,
-      name: "Serve Advocate-Drafted MSMED s.15 / Order XXXVII Demand Notice",
+      name: "Serve Fact-Verified MSMED s.15 / Order XXXVII Demand Notice",
       text: "Dispatch a multi-channel legal notice (Email + WhatsApp + Speed Post RPAD) demanding principal, retention money, and 3x RBI Bank Rate compound interest.",
     },
     {

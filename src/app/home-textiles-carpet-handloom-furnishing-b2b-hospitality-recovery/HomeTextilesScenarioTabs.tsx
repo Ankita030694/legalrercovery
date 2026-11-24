@@ -25,7 +25,7 @@ const SCENARIOS: Scenario[] = [
     statutoryCounter:
       "Under MSMED Act Section 15, payment cannot be deferred beyond 45 days from deemed acceptance—irrespective of the buyer's internal bank funding or project cashflow. Under Sale of Goods Act Section 42, once the hotel takes possession, installs the furnishings, and commences commercial guest operations, the goods are deemed unconditionally accepted. Any belated snag excuse raised after 15 days is legally barred.",
     remedyAction:
-      "Serve a joint Advocate Demand Notice on the Hotel SPV and its Directors invoking Section 43B(h) Income Tax disallowance (threatening loss of tax deduction on the entire CapEx/OpEx invoice) and MSMED Act s.16 3x RBI compound interest, followed by MSEFC Samadhaan or Order XXXVII CPC Summary Suit.",
+      "Serve a joint Fact-Verified Demand Notice on the Hotel SPV and its Directors invoking Section 43B(h) Income Tax disallowance (threatening loss of tax deduction on the entire CapEx/OpEx invoice) and MSMED Act s.16 3x RBI compound interest, followed by MSEFC Samadhaan or Order XXXVII CPC Summary Suit.",
     evidenceDocs: [
       "Approved Strike-Off / Swatch sign-off and GST Tax Invoices with E-Way Bills",
       "Site Gate-Entry Register and signed Room-by-Room Handover / Installation Checklist",

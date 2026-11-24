@@ -12,7 +12,7 @@ const faqs = [
   {
     question: 'Can a vendor send a formal statutory legal notice to a company for unpaid invoices or pending commercial payments in India?',
     answer:
-      'Yes, a commercial vendor, raw material supplier, service contractor, or manufacturer has the absolute statutory right to issue an advocate-drafted legal demand notice under Section 15 of the MSMED Act, 2006, Section 70 and Section 73 of the Indian Contract Act, 1872, and Section 55 of the Sale of Goods Act, 1930. The legal notice establishes an unassailable evidentiary record of default, computes statutory compound interest or contractual damages, and provides a strict 15-day peremptory deadline before escalating to the Micro and Small Enterprises Facilitation Council (MSEFC), initiating Pre-Institution Mediation under Section 12A of the Commercial Courts Act, 2015, or filing an Order 37 summary suit in civil court.',
+      'Yes, a commercial vendor, raw material supplier, service contractor, or manufacturer has the absolute statutory right to issue a fact-verified legal demand notice under Section 15 of the MSMED Act, 2006, Section 70 and Section 73 of the Indian Contract Act, 1872, and Section 55 of the Sale of Goods Act, 1930. The legal notice establishes an unassailable evidentiary record of default, computes statutory compound interest or contractual damages, and provides a strict 15-day peremptory deadline before escalating to the Micro and Small Enterprises Facilitation Council (MSEFC), initiating Pre-Institution Mediation under Section 12A of the Commercial Courts Act, 2015, or filing an Order 37 summary suit in civil court.',
   },
   {
     question: 'Can a buyer legally withhold vendor payments by raising post-facto quality defects or issuing unilateral debit notes?',
@@ -165,7 +165,7 @@ const jsonLd = {
         {
           '@type': 'ListItem',
           position: 3,
-          name: 'Advocate Legal Notice Drafting: Issue formal statutory demand notice itemizing invoices, delivery proofs, contractual interest, and multi-forum litigation warnings.',
+          name: 'Fact-Verified Legal Notice Drafting: Issue formal statutory demand notice itemizing invoices, delivery proofs, contractual interest, and multi-forum litigation warnings.',
         },
         {
           '@type': 'ListItem',
@@ -175,7 +175,7 @@ const jsonLd = {
         {
           '@type': 'ListItem',
           position: 5,
-          name: 'Peremptory 15-Day Cure Window & Settlement: Facilitate advocate-led negotiations, ledger sign-offs, or legally binding structured settlement agreements.',
+          name: 'Peremptory 15-Day Cure Window & Settlement: Facilitate fact-verified negotiations, ledger sign-offs, or legally binding structured settlement agreements.',
         },
         {
           '@type': 'ListItem',
@@ -190,7 +190,7 @@ const jsonLd = {
       '@type': 'Product',
       name: 'Legal Notice for Vendor Pending Payment & Commercial Invoice Recovery',
       description:
-        'Advocate-drafted statutory legal demand notice service for vendors, suppliers, manufacturers, and B2B service contractors to recover overdue commercial invoices, unpaid supply dues, and advance refunds with statutory interest across India.',
+        'Fact-verified statutory legal demand notice service for vendors, suppliers, manufacturers, and B2B service contractors to recover overdue commercial invoices, unpaid supply dues, and advance refunds with statutory interest across India.',
       brand: {
         '@type': 'Organization',
         name: 'Legal Recovery',
@@ -267,7 +267,7 @@ export default function VendorNotPayingPendingPaymentClient() {
 
   const shareUrl = encodeURIComponent(pageUrl);
   const shareText = encodeURIComponent(
-    'Corporate client, buyer, or contractor withholding vendor payments or commercial invoice dues? Send an advocate-drafted statutory legal notice under MSMED Act, Contract Act & Commercial Courts Act! #VendorRecovery #CommercialDebt #MSMEIndia #LegalNoticeIndia'
+    'Corporate client, buyer, or contractor withholding vendor payments or commercial invoice dues? Send a fact-verified statutory legal notice under MSMED Act, Contract Act & Commercial Courts Act! #VendorRecovery #CommercialDebt #MSMEIndia #LegalNoticeIndia'
   );
 
   return (
@@ -460,7 +460,7 @@ export default function VendorNotPayingPendingPaymentClient() {
                     Quick Answer
                   </h2>
                   <p className="text-sm text-slate-700 font-medium leading-relaxed">
-                    Under <strong className="text-slate-900 font-semibold">Section 15 and Section 16 of the Micro, Small and Medium Enterprises Development (MSMED) Act, 2006</strong>, <strong className="text-slate-900 font-semibold">Section 70 and Section 73 of the Indian Contract Act, 1872</strong>, and <strong className="text-slate-900 font-semibold">Section 55 of the Sale of Goods Act, 1930</strong>, a vendor or supplier has the statutory right to issue an advocate-drafted legal notice demanding immediate settlement of overdue commercial invoices with compound interest at three times the RBI benchmark rate. The legal notice establishes a mandatory 15-day peremptory demand, formalizes documentary proof of debt (Purchase Orders, Delivery Challans, and GST E-Invoices), and serves as an indispensable prerequisite before filing an MSEFC claim on the MSME Samadhaan portal, initiating Pre-Institution Mediation under Section 12A of the Commercial Courts Act, 2015, or filing an Order 37 summary suit in civil court.
+                    Under <strong className="text-slate-900 font-semibold">Section 15 and Section 16 of the Micro, Small and Medium Enterprises Development (MSMED) Act, 2006</strong>, <strong className="text-slate-900 font-semibold">Section 70 and Section 73 of the Indian Contract Act, 1872</strong>, and <strong className="text-slate-900 font-semibold">Section 55 of the Sale of Goods Act, 1930</strong>, a vendor or supplier has the statutory right to issue a fact-verified legal notice demanding immediate settlement of overdue commercial invoices with compound interest at three times the RBI benchmark rate. The legal notice establishes a mandatory 15-day peremptory demand, formalizes documentary proof of debt (Purchase Orders, Delivery Challans, and GST E-Invoices), and serves as an indispensable prerequisite before filing an MSEFC claim on the MSME Samadhaan portal, initiating Pre-Institution Mediation under Section 12A of the Commercial Courts Act, 2015, or filing an Order 37 summary suit in civil court.
                   </p>
                 </div>
 
@@ -804,7 +804,7 @@ export default function VendorNotPayingPendingPaymentClient() {
                     5. Critical Clauses in a Vendor Statutory Legal Notice
                   </h2>
                   <p className="text-sm md:text-base text-slate-600 leading-relaxed">
-                    A boilerplate legal notice drafted without domain knowledge fails to exert adequate pressure on corporate buyers. An advocate-drafted statutory demand notice for vendor debt recovery incorporates seven indispensable legal clauses:
+                    A boilerplate legal notice drafted without domain knowledge fails to exert adequate pressure on corporate buyers. A fact-verified statutory demand notice for vendor debt recovery incorporates seven indispensable legal clauses:
                   </p>
 
                   <div className="space-y-4">
@@ -1024,8 +1024,8 @@ export default function VendorNotPayingPendingPaymentClient() {
                       },
                       {
                         step: 'Step 3',
-                        title: 'Advocate Legal Notice Drafting',
-                        desc: 'Engage specialized commercial recovery advocates on Legal Recovery to draft a watertight statutory legal notice itemizing invoices, delivery acknowledgments, interest schedules, and multi-forum litigation warnings.',
+                        title: 'Legal Notice Preparation',
+                        desc: 'Submit your case on Legal Recovery and our team verifies the facts and prepares a watertight statutory legal notice itemizing invoices, delivery acknowledgments, interest schedules, and multi-forum litigation warnings.',
                       },
                       {
                         step: 'Step 4',
@@ -1035,7 +1035,7 @@ export default function VendorNotPayingPendingPaymentClient() {
                       {
                         step: 'Step 5',
                         title: '15-Day Peremptory Cure & Negotiation Phase',
-                        desc: 'During the 15-day notice window, Legal Recovery panel advocates lead commercial negotiations, review counter-proposals, and execute legally binding settlement deeds or structured payment escrow schedules.',
+                        desc: 'During the 15-day notice window, you can negotiate commercially, review counter-proposals, and execute legally binding settlement deeds or structured payment escrow schedules.',
                       },
                       {
                         step: 'Step 6',
@@ -1236,7 +1236,7 @@ export default function VendorNotPayingPendingPaymentClient() {
                   </div>
                   <p className="text-sm text-slate-600 leading-relaxed mb-6">
                     Legal Recovery is India&apos;s trusted online legal notice and commercial debt dispute resolution
-                    platform, connecting manufacturers, MSME vendors, suppliers, contractors, and corporate enterprises with seasoned commercial panel advocates for rapid, advocate-vetted statutory demand notices
+                    platform, connecting manufacturers, MSME vendors, suppliers, contractors, and corporate enterprises with our fact-verification team for rapid, fact-verified statutory demand notices
                     at transparent flat fees. With ₹100 Crore+ recovered and 10,000+ commercial cases resolved across India,
                     Legal Recovery delivers verified legal impact without the delays and unpredictability of
                     traditional law firms.
@@ -1277,7 +1277,7 @@ export default function VendorNotPayingPendingPaymentClient() {
                   Buyer Withholding Vendor Payment?
                 </h3>
                 <p className="text-slate-300 text-xs leading-relaxed mb-4">
-                  Send an advocate-vetted statutory demand notice today. Over 82% of commercial debtors settle overdue vendor invoices within 15 days of notice delivery.
+                  Send a fact-verified statutory demand notice today. Over 82% of commercial debtors settle overdue vendor invoices within 15 days of notice delivery.
                 </p>
                 <button
                   onClick={() => setIsPaymentModalOpen(true)}
@@ -1286,7 +1286,7 @@ export default function VendorNotPayingPendingPaymentClient() {
                   Draft &amp; Send Notice Now
                 </button>
                 <p className="text-center text-slate-400 text-[10px] mt-3">
-                  Flat fee • Advocate-drafted • Sent same day
+                  Flat fee • Fact-verified • Sent same day
                 </p>
               </div>
 
@@ -1341,7 +1341,7 @@ export default function VendorNotPayingPendingPaymentClient() {
                 {[
                   { stat: '82%', label: 'Commercial debtors settle vendor dues within 15 days' },
                   { stat: '3x RBI Rate', label: 'Mandatory compound interest under MSMED Act, 2006' },
-                  { stat: 'Same Day', label: 'Advocate demand notice drafted and served' },
+                  { stat: 'Same Day', label: 'Demand notice prepared and served' },
                   { stat: 'Flat Fee', label: 'Transparent pricing with zero hidden commissions' },
                 ].map((item, i) => (
                   <div key={i} className="flex items-center justify-between py-2 border-b border-slate-50 last:border-0">

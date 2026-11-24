@@ -112,7 +112,7 @@ const INDUSTRY_SPOKES = [
   {
     code: "B2B-167",
     title: "Textile Buyer & Broker Joint Demand Notice Template",
-    desc: "Advocate-vetted statutory legal notice format holding both the principal buyer and commission agent jointly liable.",
+    desc: "Ready-to-use statutory legal notice format holding both the principal buyer and commission agent jointly liable.",
     href: "/templates/textile-garment-buyer-and-broker-joint-demand-legal-notice",
     badge: "Notice Workspace",
   },
@@ -875,7 +875,7 @@ export default function TextileApparelGarmentRecoveryPage() {
                 IND-13 Sector Directory: 10 Specialized Textile Recovery Guides & Tools
               </h2>
               <p className="text-sm text-slate-600 mb-6">
-                Explore in-depth operational SOPs, precedent analyses, and advocate-vetted notice workspaces across specific sub-segments of the textile economy.
+                Explore in-depth operational SOPs, precedent analyses, and ready-to-use notice workspaces across specific sub-segments of the textile economy.
               </p>
 
               {/* Grid of 10 Spokes */}

@@ -43,7 +43,7 @@ const DISPUTE_SCENARIOS: Scenario[] = [
       {
         step: "2. Issue Section 2(b) 15-Day Statutory Deemed Acceptance Notice",
         detail:
-          "Serve an advocate legal notice establishing that because no written discrepancy was lodged within 15 days of physical delivery, the consignment is deemed accepted by operation of statute, rendering subsequent unilateral debit notes void.",
+          "Serve a fact-verified legal notice establishing that because no written discrepancy was lodged within 15 days of physical delivery, the consignment is deemed accepted by operation of statute, rendering subsequent unilateral debit notes void.",
       },
       {
         step: "3. MSEFC Samadhaan Filing & Commercial Summary Suit",
@@ -125,7 +125,7 @@ const DISPUTE_SCENARIOS: Scenario[] = [
       {
         step: "2. Issue Section 42 Sale of Goods Rejection Bar Notice",
         detail:
-          "Serve an advocate notice documenting the lapse of reasonable inspection time, showing that title and risk of loss passed to the buyer under Section 26 of the Sale of Goods Act upon initial clean delivery.",
+          "Serve a fact-verified notice documenting the lapse of reasonable inspection time, showing that title and risk of loss passed to the buyer under Section 26 of the Sale of Goods Act upon initial clean delivery.",
       },
       {
         step: "3. File Order 37 Summary Suit for Recovery of Contract Price",
@@ -164,7 +164,7 @@ const DISPUTE_SCENARIOS: Scenario[] = [
       {
         step: "2. Serve Section 43B(h) Audit & Legal Demand Notice",
         detail:
-          "Dispatch an advocate notice to the buyer's Board of Directors and Statutory Auditors putting them on notice of taxable profit disallowance and MSME compound interest exposure.",
+          "Dispatch a fact-verified notice to the buyer's Board of Directors and Statutory Auditors putting them on notice of taxable profit disallowance and MSME compound interest exposure.",
       },
       {
         step: "3. Direct Bank Account Attachment via Order 38 Rule 5",

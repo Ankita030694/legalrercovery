@@ -23,7 +23,7 @@ export default function MetalScrapCTA({ className = "" }: MetalScrapCTAProps) {
               Track 1 &bull; Single Mill / Foundry Pilot Notice
             </span>
             <h3 className="text-lg sm:text-xl font-bold text-white mb-2">
-              Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Advocate Drafted)
+              Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Fact-Verified)
             </h3>
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
               Dispatch a formal Sale of Goods s.42 Furnace-Melting Estoppel, Dharamkanta Proof &amp; Order 38 Rule 5 Warning Notice via Email + WhatsApp + Speed Post RPAD before banks seize the plant.

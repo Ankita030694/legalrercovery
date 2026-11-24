@@ -196,7 +196,7 @@ export default function GamingWalletTableOfContents({
         <div className="bg-gradient-to-br from-slate-900 to-slate-800 text-white rounded-2xl p-4 shadow-sm border border-slate-700">
           <div className="flex items-center gap-2 mb-2">
             <span className="px-2 py-0.5 bg-red-600/90 text-white text-[10px] font-bold rounded uppercase">
-              Advocate Drafting
+              Notice Drafting
             </span>
           </div>
           <p className="text-xs font-bold text-white mb-1.5 leading-snug">

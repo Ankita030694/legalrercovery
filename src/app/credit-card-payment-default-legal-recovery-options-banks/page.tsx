@@ -12,7 +12,7 @@ export const revalidate = 86400;
 export const metadata: Metadata = {
   title: "Credit Card Default: Legal Recovery Options for Banks (53 chars)",
   description:
-    "Explore legal recovery options for banks dealing with credit card payment defaults in India. From advocate notices to digital arbitration and court decrees. (156 chars)",
+    "Explore legal recovery options for banks dealing with credit card payment defaults in India. From legal notices to digital arbitration and court decrees. (156 chars)",
   alternates: {
     canonical: `${SITE_URL}/credit-card-payment-default-legal-recovery-options-banks`,
   },
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Credit Card Default: Legal Recovery Options for Banks",
     description:
-      "Explore legal recovery options for banks dealing with credit card payment defaults in India. From advocate notices to digital arbitration and court decrees.",
+      "Explore legal recovery options for banks dealing with credit card payment defaults in India. From legal notices to digital arbitration and court decrees.",
     site: "@legalrecoveryin",
     creator: "@legalrecoveryin",
     images: [`${SITE_URL}/blog_money_recovery.png`],
@@ -138,7 +138,7 @@ const FAQS = [
   {
     question: "What are the primary legal recovery options available to banks for credit card payment defaults in India?",
     answer:
-      "Because credit cards are unsecured revolving credit facilities, banks cannot invoke the SARFAESI Act, 2002 (which requires secured immovable or hypothecated collateral). Instead, banks deploy a multi-track statutory recovery strategy comprising: (1) Formal advocate demand notices under the Indian Contract Act, 1872, (2) Pre-litigation National Lok Adalat or Permanent Lok Adalat settlements under the Legal Services Authorities Act, 1987, (3) Fast-track institutional digital arbitration under Section 29B of the Arbitration and Conciliation Act, 1996, (4) Summary suits for liquidated contractual demands under Order XXXVII of the Code of Civil Procedure, 1908, and (5) Criminal prosecution under Section 25 of the Payment and Settlement Systems Act, 2007 for bounced NACH auto-debit mandates.",
+      "Because credit cards are unsecured revolving credit facilities, banks cannot invoke the SARFAESI Act, 2002 (which requires secured immovable or hypothecated collateral). Instead, banks deploy a multi-track statutory recovery strategy comprising: (1) Formal legal demand notices under the Indian Contract Act, 1872, (2) Pre-litigation National Lok Adalat or Permanent Lok Adalat settlements under the Legal Services Authorities Act, 1987, (3) Fast-track institutional digital arbitration under Section 29B of the Arbitration and Conciliation Act, 1996, (4) Summary suits for liquidated contractual demands under Order XXXVII of the Code of Civil Procedure, 1908, and (5) Criminal prosecution under Section 25 of the Payment and Settlement Systems Act, 2007 for bounced NACH auto-debit mandates.",
   },
   {
     question: "Why is National Lok Adalat highly favored by bank collections directors for credit card write-offs?",
@@ -168,7 +168,7 @@ const FAQS = [
   {
     question: "How can banks partner with LegalRecovery.in to establish an institutional card recovery escalation pipeline?",
     answer:
-      "Collections Risk Directors and Card Product Managers can partner with LegalRecovery.in to execute end-to-end statutory escalation at institutional scale. Our platform handles bulk advocate notice drafting dispatched via Registered Speed Post and BSA-compliant digital delivery, automated Lok Adalat batch filing across State Legal Services Authorities, fast-track institutional digital arbitration, and execution enforcement under Order XXI CPC, maintaining strict compliance with RBI Fair Practices Codes.",
+      "Collections Risk Directors and Card Product Managers can partner with LegalRecovery.in to execute end-to-end statutory escalation at institutional scale. Our platform handles bulk legal notice drafting dispatched via Registered Speed Post and BSA-compliant digital delivery, automated Lok Adalat batch filing across State Legal Services Authorities, fast-track institutional digital arbitration, and execution enforcement under Order XXI CPC, maintaining strict compliance with RBI Fair Practices Codes.",
   },
 ];
 
@@ -177,7 +177,7 @@ const ARTICLE_SCHEMA = {
   "@type": "Article",
   headline: "Credit Card Payment Default: Legal Recovery Options Available to Banks",
   description:
-    "Explore legal recovery options for banks dealing with credit card payment defaults in India. From advocate notices to digital arbitration and court decrees.",
+    "Explore legal recovery options for banks dealing with credit card payment defaults in India. From legal notices to digital arbitration and court decrees.",
   datePublished: "2026-11-13T14:40:00+05:30",
   dateModified: "2026-11-13T14:40:00+05:30",
   mainEntityOfPage: `${SITE_URL}/credit-card-payment-default-legal-recovery-options-banks`,
@@ -296,7 +296,7 @@ export default function CreditCardDefaultLegalRecoveryBanksPage() {
                 Statutory Summary (Institutional Recovery Strategy for Card Issuers)
               </p>
               <p>
-                When credit card cardholders default on unsecured balances past 90 DPD, card-issuing banks cannot invoke SARFAESI. Instead, banks utilize a multi-track statutory recovery framework: serving advocate demand notices, pursuing zero-cost National Lok Adalat consent decrees under Section 21 of the Legal Services Authorities Act, fast-track digital arbitration under Section 29B, Order XXXVII CPC summary money decrees, and Section 25 PSS Act prosecution for bounced auto-debits.
+                When credit card cardholders default on unsecured balances past 90 DPD, card-issuing banks cannot invoke SARFAESI. Instead, banks utilize a multi-track statutory recovery framework: serving legal demand notices, pursuing zero-cost National Lok Adalat consent decrees under Section 21 of the Legal Services Authorities Act, fast-track digital arbitration under Section 29B, Order XXXVII CPC summary money decrees, and Section 25 PSS Act prosecution for bounced auto-debits.
               </p>
             </div>
 
@@ -483,9 +483,9 @@ export default function CreditCardDefaultLegalRecoveryBanksPage() {
                       ✓
                     </span>
                     <div>
-                      <strong className="text-sm sm:text-base text-slate-900 font-bold">Statutory Advocate Demand Notice Dispatched Via Registered Post &amp; Electronic Mail:</strong>
+                      <strong className="text-sm sm:text-base text-slate-900 font-bold">Statutory Legal Demand Notice Dispatched Via Registered Post &amp; Electronic Mail:</strong>
                       <p className="text-xs sm:text-sm mt-0.5 leading-relaxed">
-                        Serving a formal legal demand notice drafted by an advocate via Indian Postal Speed Post (with postal tracking delivery certificate) and registered email provides indisputable proof of pre-litigation demand, establishing default under Section 55 of the Indian Contract Act.
+                        Serving a formal legal demand notice prepared on verified facts via Indian Postal Speed Post (with postal tracking delivery certificate) and registered email provides indisputable proof of pre-litigation demand, establishing default under Section 55 of the Indian Contract Act.
                       </p>
                     </div>
                   </li>
@@ -525,7 +525,7 @@ export default function CreditCardDefaultLegalRecoveryBanksPage() {
                   </div>
                   <div className="bg-amber-50 text-amber-950 p-4 rounded-xl border border-amber-300">
                     <span className="text-[10px] font-bold text-amber-800 uppercase tracking-wider block mb-1">Step 2</span>
-                    <h3 className="font-bold text-sm">Advocate Legal Demand Notice</h3>
+                    <h3 className="font-bold text-sm">Legal Demand Notice</h3>
                     <p className="text-xs text-amber-900 mt-1">15-day formal statutory demand dispatched via Registered Speed Post and BSA §63 email.</p>
                   </div>
                   <div className="bg-slate-100 text-slate-900 p-4 rounded-xl border border-slate-300">
@@ -585,7 +585,7 @@ export default function CreditCardDefaultLegalRecoveryBanksPage() {
                     {/* Step 2 */}
                     <rect x="180" y="20" width="140" height="90" rx="10" fill="#FEF3C7" stroke="#F59E0B" strokeWidth="1.5" />
                     <text x="250" y="45" fill="#B45309" fontWeight="bold" textAnchor="middle">STAGE 2</text>
-                    <text x="250" y="65" fill="#92400E" fontWeight="bold" textAnchor="middle">Advocate Notice</text>
+                    <text x="250" y="65" fill="#92400E" fontWeight="bold" textAnchor="middle">Legal Notice</text>
                     <text x="250" y="82" fill="#78350F" fontSize="10" textAnchor="middle">15-Day Demand</text>
                     <text x="250" y="98" fill="#78350F" fontSize="9" textAnchor="middle">Speed Post + Email</text>
 
@@ -662,10 +662,10 @@ export default function CreditCardDefaultLegalRecoveryBanksPage() {
                     </span>
                     <div className="space-y-1 sm:space-y-1.5">
                       <h3 className="text-sm sm:text-base md:text-lg font-bold text-slate-900">
-                        Dispatch Formal Advocate Demand Notices via Speed Post &amp; Electronic Mail
+                        Dispatch Formal Legal Demand Notices via Speed Post &amp; Electronic Mail
                       </h3>
                       <p className="text-xs sm:text-sm leading-relaxed">
-                        Issue a statutory legal notice drafted by an empaneled advocate detailing the cardholder agreement, total balance breakdown (principal, finance charges, GST), transaction ledger extracts, and a strict 15-day cure window. Dispatched via Indian Post Speed Post with barcode tracking and email certified under Section 63 BSA, demonstrating formal legal demand before court proceedings.
+                        Issue a fact-verified statutory legal notice detailing the cardholder agreement, total balance breakdown (principal, finance charges, GST), transaction ledger extracts, and a strict 15-day cure window. Dispatched via Indian Post Speed Post with barcode tracking and email certified under Section 63 BSA, demonstrating formal legal demand before court proceedings.
                       </p>
                       <p className="text-xs text-slate-500 font-medium">
                         Review our transparent enterprise pricing on our <Link href="/legal-notice-charges" className="text-blue-700 underline">legal notice charges</Link> schedule.
@@ -837,7 +837,7 @@ export default function CreditCardDefaultLegalRecoveryBanksPage() {
                     </p>
                     <ul className="list-disc list-inside space-y-1.5 pl-2 text-slate-300 text-xs sm:text-sm">
                       <li>
-                        <strong>Phase 1 (Advocate Notice Blitz):</strong> Automated dispatch of 320 customized statutory advocate legal notices via Registered Speed Post and BSA §63 certified digital delivery within 7 business days.
+                        <strong>Phase 1 (Legal Notice Blitz):</strong> Automated dispatch of 320 customized statutory legal notices via Registered Speed Post and BSA §63 certified digital delivery within 7 business days.
                       </li>
                       <li>
                         <strong>Phase 2 (Pre-Litigation Lok Adalat Batching):</strong> 210 responsive cardholders were scheduled across two consecutive National Lok Adalat sittings with pre-structured One-Time Settlement (OTS) concessions waiving 40% of accumulated penal fees upon prompt single-installment payment.

@@ -120,7 +120,7 @@ const CASE_CITATIONS = [
       "The Supreme Court formulated authoritative guidelines on discharge vouchers: when a party signs an unqualified discharge voucher under financial distress, coercion, or undue influence, the discharge is voidable under Section 19 of the Contract Act. The Chief Justice or arbitral tribunal must examine whether accord and satisfaction was genuine or coerced.",
     amount: "Standard 3-Illustration Test for Duress & Economic Coercion Formulated",
     takeaway:
-      "Never accept final bill payments in silence. A prompt advocate-settled letter of protest removes the barrier of accord and satisfaction under Section 11 of the Arbitration Act.",
+      "Never accept final bill payments in silence. A prompt fact-verified letter of protest removes the barrier of accord and satisfaction under Section 11 of the Arbitration Act.",
   },
   {
     title: "Section 21 Notice is the Exclusive Statutory Trigger Freezing Limitation for Arbitration",
@@ -328,7 +328,7 @@ export default function ConstructionNoticePage() {
             {/* Hero Eyebrow Badge */}
             <div className="inline-flex flex-wrap items-center gap-1.5 sm:gap-2 px-3 sm:px-3.5 py-1.5 rounded-full text-[10px] sm:text-xs font-bold uppercase tracking-wider text-red-400 bg-red-950/60 border border-red-800/60 mb-4 sm:mb-5">
               <Scale className="w-3.5 h-3.5 text-red-400 shrink-0" />
-              <span>Advocate-Vetted Construction Recovery Template &bull; Archetype P1</span>
+              <span>Ready-to-Use Construction Recovery Template &bull; Archetype P1</span>
             </div>
 
             {/* Single Page H1 */}
@@ -467,7 +467,7 @@ export default function ConstructionNoticePage() {
                   >
                     works contract exclusion from MSME Samadhaan
                   </Link>
-                  , composite EPC and civil contracts are regularly dismissed by councils. Serving an advocate-settled Section 21 notice or filing a Commercial Suit under Section 2(1)(c)(vi) is the proven legal rail.
+                  , composite EPC and civil contracts are regularly dismissed by councils. Serving a fact-verified Section 21 notice or filing a Commercial Suit under Section 2(1)(c)(vi) is the proven legal rail.
                 </div>
               </section>
 

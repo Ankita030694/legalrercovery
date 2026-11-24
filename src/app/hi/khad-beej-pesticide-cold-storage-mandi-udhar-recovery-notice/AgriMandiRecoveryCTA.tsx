@@ -52,7 +52,7 @@ export default function AgriMandiRecoveryCTA({
                       1 डीलर, मंडी बायर या स्टोरेज पार्टी को वकील नोटिस भेजें
                     </h4>
                     <p className="text-xs text-slate-300 mb-4 leading-relaxed">
-                      Test 1 Live Overdue Case Now — मात्र ₹{basePrice} में Advocate-Drafted लीगल नोटिस (Email + WhatsApp + Speed Post RPAD + इंडिया पोस्ट ट्रैकिंग स्लिप) 24 घंटे में डिस्पैच।
+                      Test 1 Live Overdue Case Now — मात्र ₹{basePrice} में Fact-Verified लीगल नोटिस (Email + WhatsApp + Speed Post RPAD + इंडिया पोस्ट ट्रैकिंग स्लिप) 24 घंटे में डिस्पैच।
                     </p>
                   </div>
                   <div className="space-y-2">

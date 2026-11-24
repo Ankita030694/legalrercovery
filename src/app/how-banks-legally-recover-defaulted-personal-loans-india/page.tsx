@@ -299,7 +299,7 @@ export default function BankPersonalLoanRecoveryPage() {
                 Statutory Summary (Unsecured Loan Recovery Framework)
               </p>
               <p>
-                Under Indian law, banks recover defaulted unsecured personal loans without collateral by issuing advocate-drafted loan recall notices, prosecuting dishonoured e-NACH mandates under Section 25 of the Payment and Settlement Systems Act, 2007, filing cheque bounce complaints under Section 138 of the Negotiable Instruments Act, 1881, instituting Commercial Summary Suits under Order XXXVII of the CPC, and referring retail accounts to National Lok Adalat for non-appealable civil court execution decrees.
+                Under Indian law, banks recover defaulted unsecured personal loans without collateral by issuing fact-verified loan recall notices, prosecuting dishonoured e-NACH mandates under Section 25 of the Payment and Settlement Systems Act, 2007, filing cheque bounce complaints under Section 138 of the Negotiable Instruments Act, 1881, instituting Commercial Summary Suits under Order XXXVII of the CPC, and referring retail accounts to National Lok Adalat for non-appealable civil court execution decrees.
               </p>
             </div>
 
@@ -656,7 +656,7 @@ export default function BankPersonalLoanRecoveryPage() {
                         Issue Formal Loan Recall Notice &amp; Statutory Demand
                       </h3>
                       <p className="text-xs sm:text-sm leading-relaxed">
-                        Dispatch an advocate legal demand notice terminating the loan facility, accelerating the full outstanding balance (principal, contractual interest, and penal charges), and granting a strict 15-day cure window. Dispatched via Registered Speed Post with tracking and sent to verified borrower email addresses.
+                        Dispatch a fact-verified legal demand notice terminating the loan facility, accelerating the full outstanding balance (principal, contractual interest, and penal charges), and granting a strict 15-day cure window. Dispatched via Registered Speed Post with tracking and sent to verified borrower email addresses.
                       </p>
                       <p className="text-xs text-slate-500 font-medium">
                         Read more about institutional fee schedules on our <Link href="/legal-notice-charges" className="text-blue-700 underline">legal notice charges</Link> page.
@@ -830,7 +830,7 @@ export default function BankPersonalLoanRecoveryPage() {
                       <strong>The Situation:</strong> Apex Commercial Bank disbursed an unsecured personal loan of ₹6,50,000 to an IT executive at 12.5% per annum repayable across 48 EMIs via an e-NACH mandate. The borrower serviced the first 14 EMIs satisfactorily, after which 4 consecutive e-NACH debits bounced due to &quot;Insufficient Funds&quot;. The borrower ceased responding to automated SMS reminders and telephone calls from retail loan operations.
                     </p>
                     <p>
-                      <strong>The Legal Action:</strong> Upon the account reaching NPA status with an outstanding principal balance of ₹5,20,000 plus interest (total claim: ₹5,80,450), the bank engaged our legal recovery panel. An advocate drafted and dispatched a dual-statutory demand notice:
+                      <strong>The Legal Action:</strong> Upon the account reaching NPA status with an outstanding principal balance of ₹5,20,000 plus interest (total claim: ₹5,80,450), the bank engaged our legal recovery panel. The team verified the facts and dispatched a dual-statutory demand notice:
                     </p>
                     <ul className="list-disc list-inside space-y-1 text-slate-300 pl-2">
                       <li>Notice under Section 25(1)(b) of the Payment and Settlement Systems Act, 2007 for dishonour of recurring electronic funds clearing.</li>

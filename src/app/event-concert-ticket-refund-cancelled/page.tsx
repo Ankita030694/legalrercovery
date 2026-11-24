@@ -151,7 +151,7 @@ const FAQS = [
   {
     question: "Concert cancel ho gaya par BookMyShow ya organiser refund nahi de rahe toh legal notice kaise bheje?",
     answer:
-      "Agar concert ya live show cancel hone ke baad ticketing platform ya organiser aapka paisa wapas na kare ya convenience fee kaat le, toh aap LegalRecovery.in ke verified advocate ke dwara statutory legal notice bhej sakte hain. Notice mein Consumer Protection Act 2019 aur E-Commerce Rules 2020 ke tehat 15 din ka strict repayment demand diya jata hai, jise Speed Post aur official email se deliver kiya jata hai.",
+      "Agar concert ya live show cancel hone ke baad ticketing platform ya organiser aapka paisa wapas na kare ya convenience fee kaat le, toh aap LegalRecovery.in ke zariye fact-verified statutory legal notice bhej sakte hain. Notice mein Consumer Protection Act 2019 aur E-Commerce Rules 2020 ke tehat 15 din ka strict repayment demand diya jata hai, jise Speed Post aur official email se deliver kiya jata hai.",
   },
 ];
 
@@ -386,7 +386,7 @@ export default function EventConcertTicketRefundPage() {
                       <tr className="hover:bg-slate-50">
                         <td className="p-3 font-semibold text-slate-900">Legal Notice Pricing</td>
                         <td className="p-3 text-rose-700 font-medium">Transparent Flat Fee Model</td>
-                        <td className="p-3">₹999 flat advocate drafting, legal verification, and email and WhatsApp service. Speed Post optional at ₹450.</td>
+                        <td className="p-3">₹999 flat notice drafting, legal verification, and email and WhatsApp service. Speed Post optional at ₹450.</td>
                       </tr>
                     </tbody>
                   </table>
@@ -759,10 +759,10 @@ export default function EventConcertTicketRefundPage() {
                     </span>
                     <div>
                       <h3 className="text-base font-bold text-slate-900 mb-1">
-                        Serve a 15-Day Advocate Statutory Legal Demand Notice
+                        Serve a 15-Day Fact-Verified Statutory Legal Demand Notice
                       </h3>
                       <p className="text-sm text-slate-600 leading-relaxed">
-                        This is the decisive step that resolves over 85% of ticketing disputes without going to court. An advocate issues a formal legal demand notice citing Section 2(11) &amp; 2(47) CPA 2019, Section 56 &amp; 65 Indian Contract Act, and E-Commerce Rules. The notice is dispatched by Registered Speed Post with postal tracking to corporate headquarters and served electronically under Section 63 BSA 2023, granting a strict 15-day cure window.
+                        This is the decisive step that resolves over 85% of ticketing disputes without going to court. We issue a formal legal demand notice citing Section 2(11) &amp; 2(47) CPA 2019, Section 56 &amp; 65 Indian Contract Act, and E-Commerce Rules. The notice is dispatched by Registered Speed Post with postal tracking to corporate headquarters and served electronically under Section 63 BSA 2023, granting a strict 15-day cure window.
                       </p>
                     </div>
                   </div>
@@ -896,7 +896,7 @@ export default function EventConcertTicketRefundPage() {
                   <div className="bg-emerald-50 border border-emerald-200 rounded-lg p-3 text-emerald-950 text-xs">
                     <p className="font-bold mb-1">Outcome Within 11 Days of Notice Service:</p>
                     <p>
-                      Upon receiving the advocate legal notice sent by Speed Post to BookMyShow&apos;s corporate office in Mumbai and the promoter entity in Bengaluru, the ticketing platform released the full ₹26,880 (including 100% convenience fees) directly to Rohan&apos;s bank account, accompanied by an additional ₹5,000 goodwill settlement voucher to avert e-Jagriti litigation.
+                      Upon receiving the fact-verified legal notice sent by Speed Post to BookMyShow&apos;s corporate office in Mumbai and the promoter entity in Bengaluru, the ticketing platform released the full ₹26,880 (including 100% convenience fees) directly to Rohan&apos;s bank account, accompanied by an additional ₹5,000 goodwill settlement voucher to avert e-Jagriti litigation.
                     </p>
                   </div>
                 </div>

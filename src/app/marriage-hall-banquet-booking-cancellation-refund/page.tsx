@@ -164,7 +164,7 @@ const FAQS = [
   {
     question: "Marriage hall booking advance wapas lene ke liye legal notice kaise bheje? (Hinglish)",
     answer:
-      "Agar banquet hall ya marriage garden management aapka booking advance lautaane se mana kar de aur 'No Refund' ka bahana banaye, toh aap ek statutory advocate legal notice bhej sakte hain. LegalRecovery.in par verified advocate Indian Contract Act Section 74 aur Consumer Protection Act 2019 ke Section 2(46) ke tehat venue ke registered address par Speed Post aur email se notice bhejte hain, jismein 15 din ke andar 100% advance aur interest wapas karne ki chetavni di jaati hai.",
+      "Agar banquet hall ya marriage garden management aapka booking advance lautaane se mana kar de aur 'No Refund' ka bahana banaye, toh aap ek statutory fact-verified legal notice bhej sakte hain. LegalRecovery.in par hamari team Indian Contract Act Section 74 aur Consumer Protection Act 2019 ke Section 2(46) ke tehat venue ke registered address par Speed Post aur email se fact-verified notice bhejti hai, jismein 15 din ke andar 100% advance aur interest wapas karne ki chetavni di jaati hai.",
   },
 ];
 
@@ -379,7 +379,7 @@ export default function MarriageHallBanquetRefundPage() {
                     </div>
                     <div className="mt-4 pt-3 border-t border-slate-100">
                       <a href="#heading-notice-template" className="text-xs font-bold text-red-600 hover:text-red-700 flex items-center justify-between">
-                        <span>Serve Statutory Advocate Demand Notice</span>
+                        <span>Serve Statutory Fact-Verified Demand Notice</span>
                         <span>&rarr;</span>
                       </a>
                     </div>
@@ -491,7 +491,7 @@ export default function MarriageHallBanquetRefundPage() {
                     </div>
                     <div className="mt-4 pt-3 border-t border-slate-100">
                       <a href="#heading-notice-template" className="text-xs font-bold text-red-600 hover:text-red-700 flex items-center justify-between">
-                        <span>Draft Advocate Legal Notice for Coercive Trade</span>
+                        <span>Draft Fact-Verified Legal Notice for Coercive Trade</span>
                         <span>&rarr;</span>
                       </a>
                     </div>
@@ -845,7 +845,7 @@ export default function MarriageHallBanquetRefundPage() {
                     </span>
                     <div className="space-y-1.5 flex-1">
                       <h3 className="text-base font-bold text-slate-900">
-                        Serve a 15-Day Statutory Advocate Demand Notice
+                        Serve a 15-Day Statutory Fact-Verified Demand Notice
                       </h3>
                       <p className="text-slate-600 leading-relaxed">
                         If the venue fails to refund within 7 to 10 days of your cancellation letter, engage an advocate to issue a formal statutory notice. The notice explicitly cites Section 74 (prohibition of penalties), Section 73 (mitigation requirement), and Section 2(46) of Consumer Protection Act 2019. It gives management a strict 15-day window to credit your bank account, warning of consumer court proceedings with 12% interest and exemplary compensation. Over 75% of banquet disputes resolve at this stage because venue owners avoid public court filings that expose their accounting books and booking registers to judicial scrutiny.
@@ -1112,7 +1112,7 @@ export default function MarriageHallBanquetRefundPage() {
                       <span className="text-emerald-600 font-extrabold text-base">✓</span> What We Do
                     </p>
                     <ul className="text-emerald-950 space-y-2 list-disc pl-4">
-                      <li>Draft an authoritative, verified advocate statutory demand notice citing Section 74 Indian Contract Act and Section 2(46) Consumer Protection Act within 24 hours.</li>
+                      <li>Prepare an authoritative, fact-verified statutory demand notice citing Section 74 Indian Contract Act and Section 2(46) Consumer Protection Act within 24 hours.</li>
                       <li>Dispatch via Registered Speed Post with national postal tracking number and digital service over email/WhatsApp under Section 63 BSA 2023.</li>
                       <li>Handle venue negotiations, management replies, and structured pre-litigation settlement agreements.</li>
                       <li>Provide end-to-end guidance and petition drafting for filing consumer claims on the e-Jagriti portal if the venue does not pay.</li>

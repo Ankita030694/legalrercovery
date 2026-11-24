@@ -31,7 +31,7 @@ export default function BulkRecoveryNoticeCTA({
                 Accelerate Nationwide Bulk Debt Recovery Across 10,000+ Default Portfolios
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6">
-                Appoint our institutional banking law firm to handle nationwide bulk debt recovery matters under strict SLA guarantees. We execute high-volume advocate statutory notices, Section 138 NI Act &amp; Section 25 PSS Act criminal filings, SARFAESI Section 13(2)/14 actions, and Debts Recovery Tribunal (DRT) Original Applications across all 28 states and 8 union territories with real-time MIS reporting and 100% RBI regulatory compliance.
+                Appoint our institutional banking law firm to handle nationwide bulk debt recovery matters under strict SLA guarantees. We execute high-volume fact-verified statutory notices, Section 138 NI Act &amp; Section 25 PSS Act criminal filings, SARFAESI Section 13(2)/14 actions, and Debts Recovery Tribunal (DRT) Original Applications across all 28 states and 8 union territories with real-time MIS reporting and 100% RBI regulatory compliance.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button

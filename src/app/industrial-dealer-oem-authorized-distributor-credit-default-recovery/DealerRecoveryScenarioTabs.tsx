@@ -32,7 +32,7 @@ const SCENARIOS: Scenario[] = [
       "Instantly lock the dealer's account on ERP/SAP to suspend outward dispatches, dispatch holds, and pending sales orders.",
       "Reconcile outstanding balance ledgers, bilties (consignment notes), and signed transporter Delivery Challans with GST e-Way bills.",
       "Present rolling security cheques or undated PDCs held against the dealer credit limit for banking clearance.",
-      "Issue a composite 15-Day Advocate Legal Demand Notice asserting immediate debt maturity, contract termination warning, and Section 138 penal consequences upon cheque dishonour.",
+      "Issue a composite 15-Day Fact-Verified Legal Demand Notice asserting immediate debt maturity, contract termination warning, and Section 138 penal consequences upon cheque dishonour.",
     ],
   },
   {

@@ -33,7 +33,7 @@ const SCENARIOS: ScenarioTab[] = [
       {
         step: "Serve Statutory Nemo Dat Demand Notice on the Buyer",
         detail:
-          "Send an Advocate-drafted notice via Speed Post RPAD & WhatsApp to the third-party buyer attaching the original purchase invoice, e-Way bill, and Lease Agreement, putting them on formal notice that their possession is void ab initio.",
+          "Send a Fact-verified notice via Speed Post RPAD & WhatsApp to the third-party buyer attaching the original purchase invoice, e-Way bill, and Lease Agreement, putting them on formal notice that their possession is void ab initio.",
       },
       {
         step: "Move Magistrate for BNSS s.497 / s.503 Superdari Release",

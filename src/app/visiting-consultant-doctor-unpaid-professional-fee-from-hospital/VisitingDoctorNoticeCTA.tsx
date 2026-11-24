@@ -23,10 +23,10 @@ export default function VisitingDoctorNoticeCTA({ className = "" }: VisitingDoct
               Track 1 &bull; Single Doctor Recovery Notice
             </span>
             <p className="text-lg sm:text-xl font-extrabold text-white mb-2">
-              Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Advocate Drafted &middot; Email + WhatsApp + Speed Post RPAD)
+              Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Fact-Verified &middot; Email + WhatsApp + Speed Post RPAD)
             </p>
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-              Issue an advocate-signed legal demand notice on the defaulting hospital or diagnostic chain. Itemizes unpaid retainership dues, Form 26AS Section 194J TDS admissions, surgical OT share ledgers, and formal 18% commercial interest demand under the Interest Act, 1978.
+              Issue a fact-verified legal demand notice on the defaulting hospital or diagnostic chain. Itemizes unpaid retainership dues, Form 26AS Section 194J TDS admissions, surgical OT share ledgers, and formal 18% commercial interest demand under the Interest Act, 1978.
             </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-3">

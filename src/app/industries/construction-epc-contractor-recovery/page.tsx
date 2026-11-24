@@ -184,7 +184,7 @@ const IND_07_SPOKES: IndustrySpoke[] = [
     url: "/templates/construction-ra-bill-retention-money-arbitration-notice",
     statute: "Commercial Courts s.2(1)(c)(vi) & Arb s.21",
     summary:
-      "Advocate-vetted notice formats featuring MB schedules, PBG non-encashment warnings, Section 21 invocation, and NDC protest letters.",
+      "Ready-to-use notice formats featuring MB schedules, PBG non-encashment warnings, Section 21 invocation, and NDC protest letters.",
   },
 ];
 
@@ -227,12 +227,12 @@ const FAQS = [
   {
     question: "Can a contractor recover an unpaid RA bill if the developer or PMC refuses to sign the Measurement Book?",
     answer:
-      "Yes. In Indian construction contracts, private developers and Project Management Consultants (PMCs) frequently stonewall joint measurement sign-offs to defer payment liabilities. However, contractors can establish deemed certification by compiling contemporaneous electronic site records certified under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023 (BSA 2023)—including Daily Progress Reports (DPRs), concrete pour cards, joint level sheets, material gate-entry passes, and third-party laboratory test cubes. Serving an advocate-drafted deemed-certification notice puts the employer on 15-day notice under Section 55/70 of the Indian Contract Act, laying the mandatory evidentiary foundation for Section 21 arbitration or summary judgment under Order XIII-A of the Commercial Courts Act, 2015.",
+      "Yes. In Indian construction contracts, private developers and Project Management Consultants (PMCs) frequently stonewall joint measurement sign-offs to defer payment liabilities. However, contractors can establish deemed certification by compiling contemporaneous electronic site records certified under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023 (BSA 2023)—including Daily Progress Reports (DPRs), concrete pour cards, joint level sheets, material gate-entry passes, and third-party laboratory test cubes. Serving a fact-verified deemed-certification notice puts the employer on 15-day notice under Section 55/70 of the Indian Contract Act, laying the mandatory evidentiary foundation for Section 21 arbitration or summary judgment under Order XIII-A of the Commercial Courts Act, 2015.",
   },
   {
     question: "If we signed a 'No-Claim Certificate' under pressure to get 60% of our Final Bill, are our remaining claims dead?",
     answer:
-      "No. The Supreme Court of India in landmark rulings including National Insurance Co. Ltd. v. Boghara Polyfab Pvt. Ltd., Ambica Construction v. Union of India, and R.L. Kalathia & Co. v. State of Gujarat (2011) 2 SCC 400 has definitively held that a 'No-Dues' or 'No-Claim' Certificate issued under financial duress or economic coercion does not extinguish genuine contractor claims. If an employer conditioned the release of admitted running bills on executing a blanket waiver, our advocates serve a formal 'Without Prejudice — Signed Under Financial Duress' revocation notice. This contemporaneous protest preserves your right to pursue uncertified quantities, price escalation, prolongation overheads, and retention balances before an arbitral tribunal.",
+      "No. The Supreme Court of India in landmark rulings including National Insurance Co. Ltd. v. Boghara Polyfab Pvt. Ltd., Ambica Construction v. Union of India, and R.L. Kalathia & Co. v. State of Gujarat (2011) 2 SCC 400 has definitively held that a 'No-Dues' or 'No-Claim' Certificate issued under financial duress or economic coercion does not extinguish genuine contractor claims. If an employer conditioned the release of admitted running bills on executing a blanket waiver, our team serves a formal 'Without Prejudice — Signed Under Financial Duress' revocation notice. This contemporaneous protest preserves your right to pursue uncertified quantities, price escalation, prolongation overheads, and retention balances before an arbitral tribunal.",
   },
   {
     question: "Why do High Courts quash MSME Samadhaan awards on EPC and construction 'Works Contracts'?",
@@ -890,7 +890,7 @@ export default function ConstructionEpcContractorRecoveryPage() {
                 </div>
 
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
-                  Whether you need an immediate advocate-drafted epc turnkey contractor unpaid bill legal notice for a single critical dispute or require an enterprise infrastructure to manage receivables across 50 SPVs, joint ventures, and municipal packages, LegalRecovery.in operates two synchronized engagement tracks. You can test a single case at ₹999 via our <Link href="/user/new-recovery" className="font-semibold text-[#DC2626] hover:underline">New Recovery Case Portal</Link>, manage multi-entity project sites via our <Link href="/user/representees" className="font-semibold text-[#DC2626] hover:underline">Representees Workspace</Link>, or upload high-volume arrears portfolios via our <Link href="/bulk-recovery-cases-all-in-one-affordable-solutions" className="font-semibold text-[#DC2626] hover:underline">Bulk Recovery Cases Solutions</Link>.
+                  Whether you need an immediate fact-verified epc turnkey contractor unpaid bill legal notice for a single critical dispute or require an enterprise infrastructure to manage receivables across 50 SPVs, joint ventures, and municipal packages, LegalRecovery.in operates two synchronized engagement tracks. You can test a single case at ₹999 via our <Link href="/user/new-recovery" className="font-semibold text-[#DC2626] hover:underline">New Recovery Case Portal</Link>, manage multi-entity project sites via our <Link href="/user/representees" className="font-semibold text-[#DC2626] hover:underline">Representees Workspace</Link>, or upload high-volume arrears portfolios via our <Link href="/bulk-recovery-cases-all-in-one-affordable-solutions" className="font-semibold text-[#DC2626] hover:underline">Bulk Recovery Cases Solutions</Link>.
                 </p>
 
                 <ConstructionHubCTA />
@@ -911,7 +911,7 @@ export default function ConstructionEpcContractorRecoveryPage() {
                 </div>
 
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
-                  Indian construction recovery is anchored in powerful Supreme Court precedents that strip employers and PSUs of unfair contractual leverage. Our advocate panel leverages these verified holdings to defeat debtor defences at the pre-litigation notice stage:
+                  Indian construction recovery is anchored in powerful Supreme Court precedents that strip employers and PSUs of unfair contractual leverage. Our team leverages these verified holdings to defeat debtor defences at the pre-litigation notice stage:
                 </p>
 
                 <div className="space-y-4">
@@ -1250,7 +1250,7 @@ export default function ConstructionEpcContractorRecoveryPage() {
 
                 <div className="pt-4 border-t border-slate-200 text-[11px] text-slate-500 leading-relaxed">
                   <p>
-                    <strong>Editorial &amp; Review Attribution:</strong> Reviewed by Advocate Anuj Anand Malik, Founder &amp; Managing Partner, AMA Legal Solutions. Content formulated strictly from institutional creditor perspectives for EPC directors, civil contractors, and infrastructure promoters across India.
+                    <strong>Editorial &amp; Review Attribution:</strong> Prepared on verified facts Anuj Anand Malik, Founder &amp; Managing Partner, AMA Legal Solutions. Content formulated strictly from institutional creditor perspectives for EPC directors, civil contractors, and infrastructure promoters across India.
                   </p>
                 </div>
               </section>

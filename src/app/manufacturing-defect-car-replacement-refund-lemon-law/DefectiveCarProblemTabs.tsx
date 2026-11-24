@@ -64,7 +64,7 @@ const PROBLEMS: ProblemTab[] = [
           "Ensure every day the EV remains stationed at the workshop is documented via physical or electronic gate passes and unclosed job cards to compute workshop custody days.",
       },
       {
-        step: "Issue Advocate Notice for Battery Replacement or Complete Vehicle Repurchase",
+        step: "Issue Fact-Verified Notice for Battery Replacement or Complete Vehicle Repurchase",
         description:
           "Invoke the 8-year OEM battery warranty and CPA 2019 product liability provisions to demand a brand new sealed battery pack or full vehicle buyback plus loan interest indemnification.",
       },

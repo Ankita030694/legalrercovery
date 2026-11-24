@@ -27,7 +27,7 @@ export default function ExportersHubCTA({ className = "" }: ExportersHubCTAProps
                 Test 1 Live Overdue Export Case Now (&rupee;{basePrice})
               </h3>
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-                Start with one stalled DA/DP/Open-Account export invoice, port-abandoned CAD container, or unfulfilled foreign supplier advance. Our advocates draft and serve a FEMA/ECGC audit-ready demand notice via Email, Business WhatsApp &amp; Courier/RPAD.
+                Start with one stalled DA/DP/Open-Account export invoice, port-abandoned CAD container, or unfulfilled foreign supplier advance. Our team drafts and serves a FEMA/ECGC audit-ready demand notice via Email, Business WhatsApp &amp; Courier/RPAD.
               </p>
               <ul className="space-y-1.5 text-xs text-slate-200 mb-6">
                 <li>&check; Compliant with AD Category-I Bank EDPMS &amp; ECGC legal-action proof norms</li>

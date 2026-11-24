@@ -29,7 +29,7 @@ export default function SoftexFemaCalculatorCTA({
                 Test 1 Live Overdue Case Now (&rupee;{basePrice})
               </h3>
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-                Serve a formal advocate-vetted cross-border legal demand on an overdue foreign client (US Delaware LLC, UK Ltd, UAE Mainland, Singapore Pte Ltd, or EU entity). Dispatched via electronic channels and international courier, locking statutory recovery proof required for AD-Bank FEMA write-off and EDPMS closure.
+                Serve a formal fact-verified cross-border legal demand on an overdue foreign client (US Delaware LLC, UK Ltd, UAE Mainland, Singapore Pte Ltd, or EU entity). Dispatched via electronic channels and international courier, locking statutory recovery proof required for AD-Bank FEMA write-off and EDPMS closure.
               </p>
               <ul className="space-y-1.5 text-xs text-slate-200 mb-6">
                 <li>&check; Multi-jurisdictional legal demand citing SOW, milestone deliverables &amp; SOFTEX</li>

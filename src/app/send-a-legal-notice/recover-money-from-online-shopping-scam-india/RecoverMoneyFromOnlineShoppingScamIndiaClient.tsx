@@ -12,7 +12,7 @@ const faqs = [
   {
     question: 'How can a victim recover money lost to an online shopping scam in India?',
     answer:
-      'Victims of online shopping scams in India can recover defrauded funds by immediately reporting the financial cyber fraud to the National Cybercrime Reporting Portal via helpline 1930 within the "golden hour" to initiate an inter-bank account freeze under the CFCFRMS mechanism. Concurrently, serving an advocate-vetted statutory legal notice to the fraudulent seller, the hosting marketplace, and the payment gateway intermediary creates legal exposure under the Consumer Protection (E-Commerce) Rules, 2020 and Section 318 of the Bharatiya Nyaya Sanhita, 2023. If the merchant refuses voluntary restitution within 15 days, the victim can file a statutory compensation claim on the E-Daakhil consumer commission portal and pursue a formal bank chargeback under RBI guidelines.',
+      'Victims of online shopping scams in India can recover defrauded funds by immediately reporting the financial cyber fraud to the National Cybercrime Reporting Portal via helpline 1930 within the "golden hour" to initiate an inter-bank account freeze under the CFCFRMS mechanism. Concurrently, serving a fact-verified statutory legal notice to the fraudulent seller, the hosting marketplace, and the payment gateway intermediary creates legal exposure under the Consumer Protection (E-Commerce) Rules, 2020 and Section 318 of the Bharatiya Nyaya Sanhita, 2023. If the merchant refuses voluntary restitution within 15 days, the victim can file a statutory compensation claim on the E-Daakhil consumer commission portal and pursue a formal bank chargeback under RBI guidelines.',
   },
   {
     question: 'What is the RBI mandate on bank chargebacks and zero liability for fraudulent online shopping transactions?',
@@ -37,7 +37,7 @@ const faqs = [
   {
     question: 'How does serving a formal legal notice differ from merely lodging a complaint on the National Consumer Helpline (NCH)?',
     answer:
-      'The National Consumer Helpline (NCH) operates primarily as an administrative grievance facilitation mechanism with no statutory powers to issue binding recovery decrees or impose criminal liability on fraudulent operators. In contrast, an advocate-drafted statutory legal demand notice establishes formal pre-litigation liability, provides a binding 15-day compliance window, and puts company directors and payment gateways on notice for civil summary recovery under Order 37 CPC and criminal prosecution under the BNS. If the fraudster ignores the legal notice, the sender possesses an unassailable evidentiary record that enables fast-track injunctions, attachment of bank accounts, and substantial punitive costs in court.',
+      'The National Consumer Helpline (NCH) operates primarily as an administrative grievance facilitation mechanism with no statutory powers to issue binding recovery decrees or impose criminal liability on fraudulent operators. In contrast, a fact-verified statutory legal demand notice establishes formal pre-litigation liability, provides a binding 15-day compliance window, and puts company directors and payment gateways on notice for civil summary recovery under Order 37 CPC and criminal prosecution under the BNS. If the fraudster ignores the legal notice, the sender possesses an unassailable evidentiary record that enables fast-track injunctions, attachment of bank accounts, and substantial punitive costs in court.',
   },
 ];
 
@@ -48,7 +48,7 @@ const ogImage =
   'https://legalrecovery.in/images/og/recover-money-from-online-shopping-scam-india.jpg';
 
 const reviewBodyText =
-  'I was defrauded of ₹48,500 after purchasing high-end photography gear from a sophisticated Instagram electronics storefront that turned out to be a fraudulent shell operation. The seller delivered a parcel containing broken ceramic tiles and immediately blocked my phone number and social media profile. Legal Recovery drafted and served an aggressive statutory legal notice citing the Consumer Protection (E-Commerce) Rules, Section 318 of the BNS, and Section 66D of the IT Act to both the fraudulent seller and the payment gateway intermediary. Within 11 days of receiving the advocate notice, the payment aggregator froze the merchant\'s nodal settlement account and processed a full ₹48,500 reimbursement back to my bank account. Exceptional, swift legal support for cyber commerce recovery.';
+  'I was defrauded of ₹48,500 after purchasing high-end photography gear from a sophisticated Instagram electronics storefront that turned out to be a fraudulent shell operation. The seller delivered a parcel containing broken ceramic tiles and immediately blocked my phone number and social media profile. Legal Recovery prepared and served an aggressive statutory legal notice citing the Consumer Protection (E-Commerce) Rules, Section 318 of the BNS, and Section 66D of the IT Act to both the fraudulent seller and the payment gateway intermediary. Within 11 days of receiving the legal notice, the payment aggregator froze the merchant\'s nodal settlement account and processed a full ₹48,500 reimbursement back to my bank account. Exceptional, swift legal support for cyber commerce recovery.';
 
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -158,7 +158,7 @@ const jsonLd = {
         {
           '@type': 'ListItem',
           position: 2,
-          name: 'Serve Advocate-Drafted Statutory Legal Demand Notice: Dispatch a formal 15-day statutory notice to the seller and payment aggregator citing CPA 2019, IT Act 2000, and BNS 2023.',
+          name: 'Serve Fact-Verified Statutory Legal Demand Notice: Dispatch a formal 15-day statutory notice to the seller and payment aggregator citing CPA 2019, IT Act 2000, and BNS 2023.',
         },
         {
           '@type': 'ListItem',
@@ -178,7 +178,7 @@ const jsonLd = {
       '@type': 'Product',
       name: 'Legal Notice & Recovery Service for Online Shopping Scams and E-Commerce Fraud',
       description:
-        'Advocate-crafted statutory legal demand notice and cyber fraud recovery service for Indian consumers to retrieve defrauded funds from fake shopping websites, fraudulent social media merchants, and deceptive ecommerce platforms.',
+        'Fact-verified statutory legal demand notice and cyber fraud recovery service for Indian consumers to retrieve defrauded funds from fake shopping websites, fraudulent social media merchants, and deceptive ecommerce platforms.',
       brand: {
         '@type': 'Organization',
         name: 'Legal Recovery',
@@ -254,7 +254,7 @@ export default function RecoverMoneyFromOnlineShoppingScamIndiaClient() {
 
   const shareUrl = encodeURIComponent(pageUrl);
   const shareText = encodeURIComponent(
-    'Scammed by a fake shopping website or fraudulent online seller in India? Discover how to recover your money through advocate legal notice, cybercrime freeze, and bank chargebacks! #OnlineScam #LegalRecovery #ConsumerRights'
+    'Scammed by a fake shopping website or fraudulent online seller in India? Discover how to recover your money through fact-verified legal notice, cybercrime freeze, and bank chargebacks! #OnlineScam #LegalRecovery #ConsumerRights'
   );
 
   return (
@@ -283,7 +283,7 @@ export default function RecoverMoneyFromOnlineShoppingScamIndiaClient() {
               <span className="text-[#DC2626]">Online Shopping Scam India</span>
             </h1>
             <p className="text-sm md:text-xl mb-8 md:mb-12 max-w-3xl mx-auto text-slate-300 leading-relaxed font-medium">
-              Defrauded by a fake ecommerce portal, fraudulent social media seller, or deceptive online merchant? Send an advocate-vetted statutory legal notice, trigger bank chargebacks, and enforce refund recovery under the Consumer Protection Act, IT Act, and BNS 2023.
+              Defrauded by a fake ecommerce portal, fraudulent social media seller, or deceptive online merchant? Send a fact-verified statutory legal notice, trigger bank chargebacks, and enforce refund recovery under the Consumer Protection Act, IT Act, and BNS 2023.
             </p>
             <button
               onClick={() => setIsPaymentModalOpen(true)}
@@ -447,7 +447,7 @@ export default function RecoverMoneyFromOnlineShoppingScamIndiaClient() {
                     Quick Answer
                   </h2>
                   <p className="text-sm text-slate-700 font-medium leading-relaxed">
-                    Consumers in India can recover money lost to online shopping scams by immediately dialing the 1930 National Cybercrime helpline within 2 to 24 hours to freeze suspicious fund transfers under the Citizen Financial Cyber Fraud Reporting and Management System. Simultaneously, serving an advocate-vetted statutory legal notice upon the fraudulent merchant and the payment aggregator enforces mandatory refund obligations under the{' '}
+                    Consumers in India can recover money lost to online shopping scams by immediately dialing the 1930 National Cybercrime helpline within 2 to 24 hours to freeze suspicious fund transfers under the Citizen Financial Cyber Fraud Reporting and Management System. Simultaneously, serving a fact-verified statutory legal notice upon the fraudulent merchant and the payment aggregator enforces mandatory refund obligations under the{' '}
                     <strong className="text-slate-900 font-semibold">
                       Consumer Protection (E-Commerce) Rules, 2020
                     </strong>{' '}
@@ -667,7 +667,7 @@ export default function RecoverMoneyFromOnlineShoppingScamIndiaClient() {
                         </span>
                         <div>
                           <h3 className="font-extrabold text-slate-900 text-sm md:text-base mb-1.5">
-                            Advocate-Drafted Statutory Demand Notice to Merchant &amp; Payment Gateway
+                            Fact-Verified Statutory Demand Notice to Merchant &amp; Payment Gateway
                           </h3>
                           <p className="text-xs sm:text-sm text-slate-650 leading-relaxed mb-2">
                             A formal legal notice is drafted on an advocate’s official letterhead, establishing conclusive evidence of fraud, breach of contract, and unfair trade practices. The notice demands complete reimbursement of the defrauded sum with 18% annual interest within 15 days, warning of criminal FIR filings under BNS Section 318 and civil summary claims.
@@ -1034,7 +1034,7 @@ export default function RecoverMoneyFromOnlineShoppingScamIndiaClient() {
                   <p className="text-sm text-slate-650 leading-relaxed mb-6">
                     Legal Recovery is India&apos;s trusted online legal notice and dispute resolution
                     platform, connecting defrauded online shoppers, consumers, businesses, and
-                    professionals with seasoned panel advocates for rapid, advocate-vetted statutory
+                    professionals with our team for rapid, fact-verified statutory
                     demand notices at transparent flat fees. With ₹100 Crore+ recovered and 10,000+
                     cases resolved across India, Legal Recovery delivers verified legal impact
                     without the delays and unpredictability of traditional law firms.
@@ -1075,7 +1075,7 @@ export default function RecoverMoneyFromOnlineShoppingScamIndiaClient() {
                   Scammed by an Online Seller?
                 </h3>
                 <p className="text-slate-300 text-xs leading-relaxed mb-4">
-                  Send an advocate-vetted statutory notice today. 76% of fraudulent ecommerce operators and payment intermediaries settle and refund within 15 days of formal notice.
+                  Send a fact-verified statutory notice today. 76% of fraudulent ecommerce operators and payment intermediaries settle and refund within 15 days of formal notice.
                 </p>
                 <button
                   onClick={() => setIsPaymentModalOpen(true)}
@@ -1084,7 +1084,7 @@ export default function RecoverMoneyFromOnlineShoppingScamIndiaClient() {
                   Draft &amp; Send Notice Now
                 </button>
                 <p className="text-center text-slate-400 text-[10px] mt-3">
-                  Flat fee • Advocate-drafted • Sent same day
+                  Flat fee • Fact-verified • Sent same day
                 </p>
               </div>
 
@@ -1139,7 +1139,7 @@ export default function RecoverMoneyFromOnlineShoppingScamIndiaClient() {
                 {[
                   { stat: '76%', label: 'Disputes resolved prior to consumer commission filing' },
                   { stat: '₹100CR+', label: 'Total fraudulent & unpaid amount recovered' },
-                  { stat: 'Same Day', label: 'Advocate notice drafted and dispatched' },
+                  { stat: 'Same Day', label: 'Notice prepared and dispatched' },
                   { stat: 'Flat Fee', label: 'Transparent pricing with no hidden charges' },
                 ].map((item, i) => (
                   <div key={i} className="flex items-center justify-between py-2 border-b border-slate-50 last:border-0">

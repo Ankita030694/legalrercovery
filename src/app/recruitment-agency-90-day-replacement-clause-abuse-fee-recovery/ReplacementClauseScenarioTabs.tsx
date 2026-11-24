@@ -32,7 +32,7 @@ const SCENARIOS: Scenario[] = [
       "Issue a formal Notice of Condition Precedent Breach citing Sections 51-54, putting HR on notice that withholding fee forfeits the replacement guarantee.",
       "Inform the client that invoice aging beyond contractual credit terms triggers statutory compound interest under MSMED Act Section 16 at 3 times RBI Bank Rate.",
       "Warn CFO and Accounts Payable that delayed vendor payments to registered MSME search firms trigger Section 43B(h) income tax disallowances.",
-      "Escalate to an advocate-drafted 15-day statutory demand notice prior to filing an Order XXXVII CPC Summary Suit or MSME Samadhaan reference.",
+      "Escalate to a fact-verified 15-day statutory demand notice prior to filing an Order XXXVII CPC Summary Suit or MSME Samadhaan reference.",
     ],
   },
   {

@@ -24,7 +24,7 @@ const SCENARIOS: Scenario[] = [
     recoverySOP: [
       "Audit the digital service file: Extract the digitally countersigned master service agreement, sponsor passport/OCI KYC, overseas address proof, and verified IP/timestamp delivery logs.",
       "Issue an Executive Pre-Discontinuation Notice via verified electronic channels (WhatsApp Business API and registered email), putting the sponsor on 7-day notice of planned transition to alternative eldercare arrangements.",
-      "Serve a formal Advocate Demand Notice directly on the sponsor's domestic family address as well as their overseas employer/residential address via DHL/FedEx courier with international delivery receipt tracking.",
+      "Serve a formal Fact-Verified Demand Notice directly on the sponsor's domestic family address as well as their overseas employer/residential address via DHL/FedEx courier with international delivery receipt tracking.",
       "Simultaneously copy the local District Magistrate / Senior Citizens Maintenance Tribunal, establishing that the agency is maintaining human care standards while the adult child is committing statutory abandonment and commercial breach.",
     ],
     keyAuthority: "Indian Contract Act 1872 s.73, Maintenance of Parents Act 2007 s.4 & CPC Order V Rule 25",
@@ -40,7 +40,7 @@ const SCENARIOS: Scenario[] = [
     recoverySOP: [
       "Compile the Asset Deployment Dossier: Signed equipment delivery challan with device serial numbers, calibrated hour-meter readings, condition reports, and signed equipment bailment clauses.",
       "Issue an immediate 48-Hour Biomedical Equipment Repossession Demand Notice, stating the daily demurrage hire rate (₹2,500–₹5,000/day) running against the family.",
-      "Serve an Advocate Notice warning of immediate invocation of Section 316 BNS (Criminal Breach of Trust) before the jurisdictional Chief Judicial Magistrate (CJM) / Police Commissioner.",
+      "Serve a Fact-Verified Notice warning of immediate invocation of Section 316 BNS (Criminal Breach of Trust) before the jurisdictional Chief Judicial Magistrate (CJM) / Police Commissioner.",
       "File an urgent pre-institution interim application under Order XL Rule 1 CPC seeking appointment of a Court Receiver or local commissioner with police protection to enter premises and retrieve life-critical assets.",
     ],
     keyAuthority: "Bharatiya Nyaya Sanhita 2023 s.316 & s.318, Contract Act s.73 & CPC Order XL Rule 1",
@@ -72,7 +72,7 @@ const SCENARIOS: Scenario[] = [
     recoverySOP: [
       "Gather admission dossiers: Signed Resident Admission Agreement, Nominated Guardian Undertaking, Identity Proof of Guarantor, and monthly itemized care ledgers.",
       "Issue an Executive Care Governance & Arrears Reconciliation Memorandum to the primary guarantor and secondary nominated next-of-kin.",
-      "Serve a 15-day Advocate Legal Notice demanding payment of all accrued maintenance and pharmacy dues with interest, stating that default will result in civil recovery plaints and regulatory notification.",
+      "Serve a 15-day Fact-Verified Legal Notice demanding payment of all accrued maintenance and pharmacy dues with interest, stating that default will result in civil recovery plaints and regulatory notification.",
       "Initiate statutory proceedings before the Maintenance Tribunal under Section 5 & 6 of the Senior Citizens Act or institute an Order XXXVII summary suit for liquidated residential dues.",
     ],
     keyAuthority: "Indian Contract Act 1872 ss. 126 & 128, Senior Citizens Act 2007 & Mental Healthcare Act 2017",

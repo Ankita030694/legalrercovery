@@ -173,7 +173,7 @@ const IND_10_SPOKES: IndustrySpoke[] = [
     url: "/templates/security-cheque-presentation-intimation-cum-ledger-notice",
     statute: "NI Act s.20 & s.138 Pre-Bounce Protocol",
     summary:
-      "Advocate-vetted pre-deposit notice quantifying exact dealer arrears before filling and banking undated security cheques.",
+      "Fact-verified pre-deposit notice quantifying exact dealer arrears before filling and banking undated security cheques.",
   },
 ];
 
@@ -249,7 +249,7 @@ const FAQS = [
   {
     question: "How do companies recover blocked GST ITC when a vendor fails to file GSTR-3B?",
     answer:
-      "When GSTR-3B non-filing causes ITC reversal under CGST Section 16(2)(c) and DRC-01 demands, buyers can serve an advocate tax-indemnity notice highlighting CGST Section 76 (mandatory remittance of tax collected) alongside Section 50 interest to compel immediate GSTR-3B compliance or cash indemnity.",
+      "When GSTR-3B non-filing causes ITC reversal under CGST Section 16(2)(c) and DRC-01 demands, buyers can serve a tax-indemnity notice highlighting CGST Section 76 (mandatory remittance of tax collected) alongside Section 50 interest to compel immediate GSTR-3B compliance or cash indemnity.",
   },
   {
     question: "Why do police stations refuse salesman cash-embezzlement complaints, and how do we fix it?",
@@ -259,12 +259,12 @@ const FAQS = [
   {
     question: "What if an electronics dealer claims oral 'price-drop support' and liquidates showroom stock?",
     answer:
-      "Serve an advocate notice enforcing written-credit-note-only contract terms and rejecting unauthorized oral commitments by exited territory managers. If stock diversion is underway, file an urgent commercial suit seeking Attachment Before Judgment under CPC Order XXXVIII Rule 5 alongside Section 138 cheque proceedings.",
+      "Serve a legal notice enforcing written-credit-note-only contract terms and rejecting unauthorized oral commitments by exited territory managers. If stock diversion is underway, file an urgent commercial suit seeking Attachment Before Judgment under CPC Order XXXVIII Rule 5 alongside Section 138 cheque proceedings.",
   },
   {
     question: "Can an FMCG credit controller test one overdue dealer ledger before bulk CSV onboarding?",
     answer:
-      "Yes. Regional credit teams can submit 1 live overdue account at ₹999 (advocate-drafted multi-invoice demand or 7-day s.20 pre-deposit notice) via Email, WhatsApp, and Speed Post RPAD before scaling to 10–10,000+ monthly CSV dispatches.",
+      "Yes. Regional credit teams can submit 1 live overdue account at ₹999 (fact-verified multi-invoice demand or 7-day s.20 pre-deposit notice) via Email, WhatsApp, and Speed Post RPAD before scaling to 10–10,000+ monthly CSV dispatches.",
   },
 ];
 
@@ -1056,7 +1056,7 @@ export default function FmcgSuperStockistRecoveryHubPage() {
                     <ul className="text-xs sm:text-sm text-slate-700 space-y-1.5 list-disc list-inside">
                       <li>Brand paid &rupee;1,00,00,000 + <strong>&rupee;18,00,000</strong> (18% GST) to a packaging/co-packing supplier who failed to file GSTR-3B.</li>
                       <li>GST Department reverses &rupee;18,00,000 ITC under CGST s.16(2)(c) + <strong>18% p.a. interest</strong> under s.50(3) (approx. &rupee;3,24,000/yr) + DRC-01 penalty exposure.</li>
-                      <li>Serving an advocate indemnity notice citing <strong>CGST s.76</strong> (mandatory deposit of tax collected) turns tax audit liability back onto the defaulting vendor.</li>
+                      <li>Serving an indemnity notice citing <strong>CGST s.76</strong> (mandatory deposit of tax collected) turns tax audit liability back onto the defaulting vendor.</li>
                     </ul>
                   </div>
                 </div>
@@ -1199,7 +1199,7 @@ export default function FmcgSuperStockistRecoveryHubPage() {
                       title: "Bulk Recovery Cases: All-in-One Institutional Solutions",
                       href: "/bulk-recovery-cases-all-in-one-affordable-solutions",
                       tag: "CSV Batch Desk",
-                      desc: "Upload 10 to 10,000+ overdue dealer and retailer accounts for simultaneous advocate dispatch.",
+                      desc: "Upload 10 to 10,000+ overdue dealer and retailer accounts for simultaneous dispatch.",
                     },
                     {
                       title: "Bulk Notice via Email, WhatsApp & Speed Post RPAD",

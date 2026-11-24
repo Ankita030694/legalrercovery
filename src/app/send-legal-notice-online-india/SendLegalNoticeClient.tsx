@@ -35,15 +35,15 @@ const faqs = [
   },
   {
     question: "What is a rejoinder notice, and when is it required?",
-    answer: "A rejoinder (or reply to a reply) notice is issued when the recipient responds to your initial legal notice with false allegations, counterclaims, or an incorrect statement of facts. If the recipient's reply contains statements that could harm your legal position if left unchallenged, your advocate will draft a rejoinder. The rejoinder formally refutes their claims, clarifies the factual inaccuracies in their reply, and re-establishes your original demands. It ensures that the record is clear before you file a formal lawsuit."
+    answer: "A rejoinder (or reply to a reply) notice is issued when the recipient responds to your initial legal notice with false allegations, counterclaims, or an incorrect statement of facts. If the recipient's reply contains statements that could harm your legal position if left unchallenged, you can send a rejoinder. The rejoinder formally refutes their claims, clarifies the factual inaccuracies in their reply, and re-establishes your original demands. It ensures that the record is clear before you file a formal lawsuit."
   },
   {
     question: "Can I send a legal notice to an employer who is withholding my relieving documents?",
-    answer: "Yes. Experience certificates, relieving letters, and salary statements are the personal professional property of the employee. An employer cannot legally hold these documents hostage to coerce you into settling financial disputes or dropping labor claims. A well-drafted legal notice from an advocate can demand the immediate release of these documents, highlighting that withholding them violates your fundamental right to livelihood under Article 21 of the Constitution and can make the employer liable for professional damages."
+    answer: "Yes. Experience certificates, relieving letters, and salary statements are the personal professional property of the employee. An employer cannot legally hold these documents hostage to coerce you into settling financial disputes or dropping labor claims. A well-drafted legal notice can demand the immediate release of these documents, highlighting that withholding them violates your fundamental right to livelihood under Article 21 of the Constitution and can make the employer liable for professional damages."
   },
   {
     question: "How much does it cost to send a legal notice online in India?",
-    answer: "At LegalRecovery, we follow a transparent, flat-pricing model for online legal notices. Unlike traditional law firms that charge hourly consultation rates, our online process includes advocate consultation, drafting of the notice, legal vetting, digital dispatch via email and WhatsApp, and real-time tracking updates, all for a single, upfront flat fee. Speed Post is optional and charged separately per party. The full price breakdown is on our legal notice charges page. This makes professional legal notices accessible to individuals, startups, and small businesses alike."
+    answer: "At LegalRecovery, we follow a transparent, flat-pricing model for online legal notices. Unlike traditional law firms that charge hourly consultation rates, our online process includes fact verification by our team, preparation of the notice, digital dispatch via email and WhatsApp, and real-time tracking updates, all for a single, upfront flat fee. Speed Post is optional and charged separately per party. The full price breakdown is on our legal notice charges page. This makes professional legal notices accessible to individuals, startups, and small businesses alike."
   },
   {
     question: "How can I check or track a legal notice online in India?",
@@ -72,7 +72,7 @@ const reviews = [
     id: "rev-ln-1",
     name: "Dr. Alok Sen (Senior Consultant)",
     rating: 5,
-    review: "I had a flat booking refund dispute of ₹4.5 Lakhs with a builder who kept ignoring my calls. I used LegalRecovery's online service. An advocate drafted a comprehensive notice citing RERA rules and served it to the builder's office. Within 10 days of receiving the digital notice, the builder's legal team contacted me and processed my full refund. Saving the hassle of physical lawyer visits was a huge relief!"
+    review: "I had a flat booking refund dispute of ₹4.5 Lakhs with a builder who kept ignoring my calls. I used LegalRecovery's online service. The team verified the facts and prepared a comprehensive notice citing RERA rules and served it to the builder's office. Within 10 days of receiving the digital notice, the builder's legal team contacted me and processed my full refund. Saving the hassle of physical lawyer visits was a huge relief!"
   },
   {
     id: "rev-ln-2",
@@ -135,7 +135,7 @@ const articleSchema = {
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "Send Legal Notice Online in India: Legal Validity, Drafting & Dispatch Procedure",
-  "description": "Exhaustive legal guide on drafting and sending legal notices online in India. Learn about electronic delivery validity under BSA 2023, physical Speed Post tracking, and advocate notice requirements.",
+  "description": "Exhaustive legal guide on drafting and sending legal notices online in India. Learn about electronic delivery validity under BSA 2023, physical Speed Post tracking, and legal notice requirements.",
   "image": "https://www.legalrecovery.in/og-send-legal-notice.png",
   "author": {
     "@type": "Person",
@@ -172,7 +172,7 @@ const reviewSchema = {
   "@type": "Product",
   "name": "Online Legal Notice Drafting & Dispatch Service",
   "image": "https://www.legalrecovery.in/og-send-legal-notice.png",
-  "description": "Professional assistance for drafting, vetting, and dispatching legal notices on advocate letterhead via Speed Post and digital channels in India.",
+  "description": "Professional assistance for preparing, fact-verifying, and dispatching legal notices via Speed Post and digital channels in India.",
   "brand": {
     "@type": "Brand",
     "name": "LegalRecovery"
@@ -315,13 +315,13 @@ export default function SendLegalNoticeClient() {
                       In the modern judicial landscape of India, technology has transformed traditional legal processes from slow, paper-bound workflows into fast, digitally validated procedures. One of the most frequent questions from individuals, entrepreneurs, and corporations alike is: <strong>&quot;Is a legal notice sent online legally valid under Indian law?&quot;</strong> The answer is an unequivocal yes. The legal validity of digital transmissions is anchored firmly in central legislation, and courts across India—including the Supreme Court—have actively recognized electronic service to bypass geographical delays.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      The primary statutory validation for online legal notices is provided by the <strong>Information Technology Act, 2000</strong>. Under <strong>Section 4</strong> of the IT Act, where any law provides that information or any other matter shall be in writing or in typewritten or printed form, then, notwithstanding anything contained in such law, such requirement shall be deemed to have been satisfied if such information or matter is rendered or made available in an electronic form. Furthermore, <strong>Section 5</strong> of the Act gives legal recognition to electronic signatures. This means that a legal notice drafted digitally, signed electronically by an advocate, and transmitted via electronic channels carries the exact same evidentiary weight as a physically typed paper.
+                      The primary statutory validation for online legal notices is provided by the <strong>Information Technology Act, 2000</strong>. Under <strong>Section 4</strong> of the IT Act, where any law provides that information or any other matter shall be in writing or in typewritten or printed form, then, notwithstanding anything contained in such law, such requirement shall be deemed to have been satisfied if such information or matter is rendered or made available in an electronic form. Furthermore, <strong>Section 5</strong> of the Act gives legal recognition to electronic signatures. This means that a legal notice prepared digitally and transmitted via electronic channels carries the exact same evidentiary weight as a physically typed paper.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
                       However, digital validity does not mean that a simple email draft is sufficient. For an online legal notice to be legally robust, it must follow strict guidelines. It must clearly state the facts of the dispute, detail the specific legal violations, specify the exact compensation or relief demanded, and provide a clear timeline for compliance. Additionally, you must maintain a secure record of the transmission logs. Under the <strong>Bharatiya Nyaya Sanhita, 2023 (BNS)</strong> and the <strong>Bharatiya Sakshya Adhiniyam, 2023 (BSA)</strong>, which replaced the old Indian Penal Code and Evidence Act, electronic documents are fully recognized as primary evidence. When presenting an online notice in court, providing the digital receipt accompanied by a statutory electronic certificate ensures that the court accepts the notice as indisputable evidence.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      At LegalRecovery, we combine the legal validity of the digital medium with our efficient delivery engine. We draft the notice digitally, have it verified and signed by a registered advocate from our legal panel, and serve it via email and WhatsApp for immediate receipt. This digital approach ensures that the recipient cannot evade the notice, providing you with absolute proof of service in a court of law.
+                      At LegalRecovery, we combine the legal validity of the digital medium with our efficient delivery engine. We draft the notice digitally, have it prepared on verified facts from our team, and serve it via email and WhatsApp for immediate receipt. This digital approach ensures that the recipient cannot evade the notice, providing you with absolute proof of service in a court of law.
                     </p>
                     <div className="bg-red-50 p-6 rounded-2xl border-l-4 border-[#DC2626] italic text-xs sm:text-sm text-red-900 font-semibold leading-relaxed">
                       &quot;Electronic service of legal notices is not just a modern convenience; it is a legally recognized, court-admissible method of dispute resolution under the IT Act, 2000 and the Bharatiya Sakshya Adhiniyam, 2023.&quot;
@@ -382,19 +382,19 @@ export default function SendLegalNoticeClient() {
                       <div className="border-t border-slate-200 pt-4">
                         <span className="font-extrabold text-xs text-[#DC2626] uppercase">Step 2: Submitting Details Online</span>
                         <p className="leading-relaxed mt-1.5">
-                          Enter the details of the dispute on our secure online portal. You will provide the recipient&apos;s correct name and address, a chronological timeline of the events, the total amount claimed, and any supporting files. Our system structures this information for review.
+                          Enter the details of the dispute on our secure online portal. You will provide the recipient&apos;s correct name and address, a chronological timeline of the events, and the total amount claimed. Our system structures this information for review.
                         </p>
                       </div>
                       <div className="border-t border-slate-200 pt-4">
-                        <span className="font-extrabold text-xs text-[#DC2626] uppercase">Step 3: Advocate Drafting and Vetting</span>
+                        <span className="font-extrabold text-xs text-[#DC2626] uppercase">Step 3: Fact Verification and Notice Preparation</span>
                         <p className="leading-relaxed mt-1.5">
-                          A registered advocate from our legal panel is assigned to your case. The advocate reviews your documents, drafts the notice on their official letterhead, and integrates the correct legal provisions. A draft copy is shared with you online for verification of dates and facts.
+                          Our team verifies the facts you submitted and prepares the notice from structured templates, integrating the correct legal provisions. A draft copy is shared with you online for verification of dates and facts.
                         </p>
                       </div>
                       <div className="border-t border-slate-200 pt-4">
-                        <span className="font-extrabold text-xs text-[#DC2626] uppercase">Step 4: Final Sign-off and Dispatch</span>
+                        <span className="font-extrabold text-xs text-[#DC2626] uppercase">Step 4: Final Approval and Dispatch</span>
                         <p className="leading-relaxed mt-1.5">
-                          Once you approve the draft, the advocate signs the physical notice. It is printed on the advocate&apos;s letterhead and prepared for immediate physical and digital dispatch.
+                          Once you approve the draft, the notice is prepared for immediate digital dispatch by Email and WhatsApp, with optional Speed Post.
                         </p>
                       </div>
                     </div>
@@ -421,7 +421,7 @@ export default function SendLegalNoticeClient() {
                       <li><strong>Acknowledgment Due (AD) Cards:</strong> For Registered Post, a pink AD card is attached to the envelope. Upon delivery, the recipient must sign this card, which is then mailed back to the sender. This physical signature is absolute proof of direct receipt.</li>
                     </ul>
                     <p className="text-sm md:text-base leading-relaxed">
-                      If you choose the optional Speed Post (₹450 per party), our automated dispatch system handles this entire process. Once the notice is signed by the advocate, it is physically printed, packaged, and sent via Speed Post. The tracking consignment number is instantly uploaded to your client dashboard, and our system polls the India Post portal to provide you with real-time delivery status updates.
+                      If you choose the optional Speed Post (₹450 per party), our automated dispatch system handles this entire process. Once the notice is prepared on verified facts, it is physically printed, packaged, and sent via Speed Post. The tracking consignment number is instantly uploaded to your client dashboard, and our system polls the India Post portal to provide you with real-time delivery status updates.
                     </p>
                   </div>
                 </section>
@@ -442,7 +442,7 @@ export default function SendLegalNoticeClient() {
                       <li><strong>Immediate Compliance Clock:</strong> While a speed post can take 3 to 5 days to reach, a WhatsApp notice is delivered instantly. The double blue ticks on WhatsApp serve as immediate proof that the recipient has read the notice, starting the 15-day compliance clock without delay.</li>
                     </ul>
                     <p className="text-sm md:text-base leading-relaxed">
-                      When you send a notice through LegalRecovery, we execute an electronic service protocol. We send the official PDF notice signed by our advocate to the recipient&apos;s verified email ID and WhatsApp number, and compile a certified electronic evidence report to protect your case.
+                      When you send a notice through LegalRecovery, we execute an electronic service protocol. We send the official PDF notice prepared on verified facts to the recipient&apos;s verified email ID and WhatsApp number, and compile a certified electronic evidence report to protect your case.
                     </p>
                   </div>
                 </section>
@@ -452,7 +452,7 @@ export default function SendLegalNoticeClient() {
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">6. Online vs. Offline Lawyer: Fees &amp; Proof of Delivery</h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      Hiring a lawyer online to send your legal notice gives you the same advocate-signed notice as a visit to a lawyer&apos;s chamber. The difference is in how you pay, how long it takes and what proof of delivery you end up with:
+                      Sending your legal notice online gives you the same fact-verified notice as a visit to a lawyer&apos;s chamber. The difference is in how you pay, how long it takes and what proof of delivery you end up with:
                     </p>
                     <div className="overflow-x-auto">
                       <table className="w-full text-left border-collapse text-xs md:text-sm">
@@ -466,7 +466,7 @@ export default function SendLegalNoticeClient() {
                         <tbody className="divide-y divide-slate-100 text-slate-650">
                           <tr>
                             <td className="p-3 font-bold text-slate-900">Fees</td>
-                            <td className="p-3">One flat fee for drafting, advocate signature and WhatsApp/email dispatch. Speed Post is optional, charged per party.</td>
+                            <td className="p-3">One flat fee for drafting, fact verification and WhatsApp/email dispatch. Speed Post is optional, charged per party.</td>
                             <td className="p-3">Often ₹3,000 to ₹10,000, sometimes billed per consultation, with typing and postage on top.</td>
                           </tr>
                           <tr>
@@ -516,7 +516,7 @@ export default function SendLegalNoticeClient() {
                       <div>
                         <h3 className="text-base md:text-lg font-black text-slate-900 mb-2">Scenario C: The Recipient Seeks a Settlement</h3>
                         <p className="text-sm text-slate-650 leading-relaxed">
-                          This is the most common outcome. Faced with a professional notice on advocate letterhead and the prospect of court litigation, the recipient will contact you or our legal panel to settle. We help structure a formal <strong>Settlement Agreement</strong> to ensure the payment is received securely and all disputes are closed with mutual releases.
+                          This is the most common outcome. Faced with a professional notice on advocate letterhead and the prospect of court litigation, the recipient will contact you or our team to settle. We help structure a formal <strong>Settlement Agreement</strong> to ensure the payment is received securely and all disputes are closed with mutual releases.
                         </p>
                       </div>
                     </div>
@@ -612,7 +612,7 @@ export default function SendLegalNoticeClient() {
                 <div className="absolute top-0 right-0 w-24 h-24 bg-red-600/10 rounded-full blur-xl pointer-events-none" />
                 <h3 className="text-sm font-black mb-3">Need to Send a Notice?</h3>
                 <p className="text-gray-400 mb-5 text-[11px] leading-relaxed">
-                  Get your legal notice drafted and vetted by registered advocates on official letterhead with complete tracking support.
+                  Get your legal notice prepared on verified facts on official letterhead with complete tracking support.
                 </p>
                 <button
                   onClick={() => setIsPaymentModalOpen(true)}

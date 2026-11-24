@@ -318,8 +318,8 @@ export default function RetentionMoneyRecoveryPage() {
       {
         "@type": "HowToStep",
         position: 4,
-        name: "Dispatch 15-Day Advocate Statutory Demand Notice",
-        text: "Serve an advocate-drafted statutory demand under Order XXXVII CPC claiming principal retention plus 18% p.a. commercial interest under the Interest Act, 1978, with Indian Postal Speed Post RPAD tracking.",
+        name: "Dispatch 15-Day Fact-Verified Statutory Demand Notice",
+        text: "Serve a fact-verified statutory demand under Order XXXVII CPC claiming principal retention plus 18% p.a. commercial interest under the Interest Act, 1978, with Indian Postal Speed Post RPAD tracking.",
       },
       {
         "@type": "HowToStep",
@@ -733,7 +733,7 @@ export default function RetentionMoneyRecoveryPage() {
                   <p className="text-xs font-bold text-emerald-400 uppercase">Stage 3: Demand & Advocate Notice</p>
                   <p className="text-sm font-bold text-white mt-1">Serve 15-Day Statutory Notice</p>
                   <p className="text-xs text-slate-300 mt-1">
-                    Issue advocate-drafted demand claiming 100% retention principal plus 18% p.a. commercial interest under the Interest Act, 1978.
+                    Issue fact-verified demand claiming 100% retention principal plus 18% p.a. commercial interest under the Interest Act, 1978.
                   </p>
                 </div>
 
@@ -1033,7 +1033,7 @@ export default function RetentionMoneyRecoveryPage() {
                   Fast-Track Retention Recovery: Self-Serve & Institutional Desks
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-600">
-                  Select your recovery route: test an individual overdue retention account through our instant advocate notice service, or deploy our institutional recovery desk for multiple stalled developer ledgers.
+                  Select your recovery route: test an individual overdue retention account through our instant fact-verified notice service, or deploy our institutional recovery desk for multiple stalled developer ledgers.
                 </p>
               </div>
 

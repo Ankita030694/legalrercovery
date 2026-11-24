@@ -684,10 +684,10 @@ export default function WebDevelopmentClientNotPayingPage() {
                       Days 4 – 5 • Formal Legal Demand Phase
                     </time>
                     <h3 className="text-base sm:text-lg font-bold text-slate-900 mb-1">
-                      Advocate Statutory Legal Notice Dispatch
+                      Fact-Verified Statutory Legal Notice Dispatch
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Have a verified advocate draft and serve an unassailable statutory demand notice. The notice asserts copyright reservation under Section 19 of the Copyright Act, demands principal invoice payment within 15 calendar days, calculates 3× RBI compound interest under the MSMED Act, and explicitly notifies the client that continued deployment constitutes criminal copyright infringement under Section 63. Served via Speed Post with postal tracking and digitally via WhatsApp and email.
+                      Serve an unassailable statutory demand notice. The notice asserts copyright reservation under Section 19 of the Copyright Act, demands principal invoice payment within 15 calendar days, calculates 3× RBI compound interest under the MSMED Act, and explicitly notifies the client that continued deployment constitutes criminal copyright infringement under Section 63. Served via Speed Post with postal tracking and digitally via WhatsApp and email.
                     </p>
                   </li>
 

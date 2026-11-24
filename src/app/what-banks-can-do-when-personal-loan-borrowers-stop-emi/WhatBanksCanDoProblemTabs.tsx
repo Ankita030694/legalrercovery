@@ -34,7 +34,7 @@ const SCENARIOS: ScenarioTab[] = [
           "Download the digitally signed NACH dishonour return memo and bank statement showing the debit presentation and return code. Ensure the NPCI Mandate Reference Number (UMRN) is fully logged.",
       },
       {
-        step: "Dispatch Statutory Advocate Demand Notice Within 30 Days",
+        step: "Dispatch Statutory Fact-Verified Demand Notice Within 30 Days",
         description:
           "Serve a formal legal demand notice under Section 25 PSS Act via Speed Post and registered digital channels giving the borrower 15 mandatory statutory days to cure the default.",
       },
@@ -57,7 +57,7 @@ const SCENARIOS: ScenarioTab[] = [
       "Under the contractual terms of the loan agreement and the Indian Contract Act, 1872, the bank is legally entitled to terminate the repayment schedule, declare an Event of Default, and accelerate the entire outstanding loan principal, accumulated interest, and penal charges through a formal Loan Recall Notice.",
     remedialActions: [
       {
-        step: "Issue Formal Advocate Loan Recall Notice",
+        step: "Issue Formal Fact-Verified Loan Recall Notice",
         description:
           "Terminate the EMI facility and demand repayment of the aggregate outstanding balance within 7 to 15 days, citing breach of loan covenants and asset classification as NPA.",
       },

@@ -23,7 +23,7 @@ const SCENARIOS: Scenario[] = [
       "Veterinary formulations and animal health products delivered against signed transport lorry receipts (LRs) and valid GST e-Way bills constitute unconditional commercial sales under Section 42 of the Sale of Goods Act, 1930. Farm-level climatic variations, dairy cooperative procurement rate revisions, or disease culls are external downstream risks strictly borne by the distributor, creating zero legal defense against the manufacturing creditor. Unilateral payment withholding triggers mandatory compound interest at 3 times the RBI Bank Rate with monthly rests under Section 16 of the MSMED Act, 2006. Furthermore, where post-dated cheques are dishonoured with memos such as 'Funds Insufficient' or 'Payment Stopped', the distributor's partners or directors incur immediate criminal exposure under Section 138 & Section 141 of the Negotiable Instruments Act, 1881, enforceable at the manufacturer's home bank branch under Section 142(2)(a).",
     recoverySOP: [
       "Compile Uncontested Delivery Dossier: Collate GST e-Way bills, motor transport lorry receipts (LRs), and godown delivery acknowledgments verifying physical receipt at rural depot.",
-      "Issue 15-Day Advocate Statutory Demand Notice: Demanding full invoice clearance with MSMED Section 16 compound penal interest and warning of Section 43B(h) corporate tax disallowance.",
+      "Issue 15-Day Fact-Verified Statutory Demand Notice: Demanding full invoice clearance with MSMED Section 16 compound penal interest and warning of Section 43B(h) corporate tax disallowance.",
       "Deposit Security Cheques & Trigger NI Act Section 138: Upon cheque return, dispatch statutory 30-day demand notice and file criminal complaint under NI Act Section 142(2) at the manufacturer's home bank court.",
       "Simultaneous MSME Samadhaan Filing & Order XXXVII Plaint: Escalate to State MSEFC for statutory recovery while initiating an Order XXXVII CPC Summary Suit with Order XXXVIII Rule 5 pre-judgment bank account attachment.",
     ],
@@ -39,7 +39,7 @@ const SCENARIOS: Scenario[] = [
     statutoryExposure:
       "Exclusive distribution agreements establish reciprocal contractual duties under Section 39 and Section 51 of the Indian Contract Act, 1872. A stockist in chronic credit default forfeits territory exclusivity, enabling the brand to immediately terminate the distributorship without legal liability. Regarding expired stock dumps, under Section 34 of the CGST Act, 2017, commercial credit notes for sales returns cannot be issued post-November 30 following the financial year. Furthermore, arbitrary deductions violating the manufacturer's standard credit-note SOP are invalid under CBIC Circular No. 72/46/2018-GST. Stockist resistance to new dealer appointments constitutes an anti-competitive market allocation agreement under Section 3(3)(b) of the Competition Act, 2002.",
     recoverySOP: [
-      "Formally Terminate Distributorship & Revoke Monopoly: Issue an advocate-vetted termination notice under Contract Act s.39 revoking all exclusive marketing and territorial covenants.",
+      "Formally Terminate Distributorship & Revoke Monopoly: Issue a fact-verified termination notice under Contract Act s.39 revoking all exclusive marketing and territorial covenants.",
       "Reject Arbitrary Expired Goods Dumps: Enforce contractual 1.5% return caps and statutory CGST Section 34 cut-offs, issuing formal rejection memos for unauthorized return consignments.",
       "Serve Statutory Tri-Channel Demand Notice: Dispatched via Speed Post RPAD, email, and WhatsApp, claiming the full reconciled invoice balance plus MSMED compound interest.",
       "Appoint Alternate Stockists & Secure Injunction: Onboard replacement district stockists immediately; if the defaulting dealer attempts an illegal trade boycott, serve cease-and-desist notices under the Competition Act and initiate recovery through the Commercial Court.",
@@ -58,7 +58,7 @@ const SCENARIOS: Scenario[] = [
     recoverySOP: [
       "Dispatch Certificate of Analysis (CoA) & Notice of Completion: Provide written evidence of batch completion, quality compliance, and stability data under FSSAI regulations.",
       "Tender Formal Delivery & Issue 7-Day Batch Lifting Notice: Place buyer on formal notice that warehousing, storage demurrage, and shelf-life decay risks have shifted entirely to the buyer under Sale of Goods Act s.44.",
-      "Serve Advocate Statutory Demand Notice: Demanding immediate clearance of the full contract balance plus storage demurrage and MSMED statutory compound interest.",
+      "Serve Fact-Verified Statutory Demand Notice: Demanding immediate clearance of the full contract balance plus storage demurrage and MSMED statutory compound interest.",
       "File MSME Facilitation Council Petition & Section 9 Commercial Injunction: Initiate expedited MSME recovery and, if the brand owner is a corporate entity with assets, file an Order XXXVII Summary Suit or IBC Section 8 Demand Notice.",
     ],
     keyAuthority:
@@ -75,7 +75,7 @@ const SCENARIOS: Scenario[] = [
     recoverySOP: [
       "Audit Deduction Ledger: Dissect payment remittance advices, flagging all unauthorized debit notes, NSO charges, and unsubstantiated shelf-space fees.",
       "Issue Rebuttal Notice under Contract Act s.73: Formally rejecting unilateral debits and demanding credit reversal within 7 days.",
-      "Serve Advocate Legal Demand Notice: Invoking Section 15 & 16 of the MSMED Act for full principal recovery plus compound interest at 3x the RBI Bank Rate.",
+      "Serve Fact-Verified Legal Demand Notice: Invoking Section 15 & 16 of the MSMED Act for full principal recovery plus compound interest at 3x the RBI Bank Rate.",
       "Escalate to MSME Samadhaan & Corporate Statutory Audit Alerts: Notify the retail entity's Chief Financial Officer and Statutory Auditors regarding Section 43B(h) non-compliance and MSEFC proceedings.",
     ],
     keyAuthority:

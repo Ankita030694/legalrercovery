@@ -713,14 +713,14 @@ export default function BlinkitLegalNoticePage() {
                 </span>
                 <div className="flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-3 mb-1">
                   <h3 className="text-base sm:text-lg font-bold text-slate-900">
-                    Day 10: Serve a Formal Advocate Legal Notice (15-Day Statutory Window)
+                    Day 10: Serve a Formal Fact-Verified Legal Notice (15-Day Statutory Window)
                   </h3>
                   <span className="text-xs font-semibold text-slate-500 bg-slate-100 px-2 py-0.5 rounded">
                     Decisive Legal Step
                   </span>
                 </div>
                 <p className="text-sm text-slate-600 leading-relaxed mb-3">
-                  When informal customer care and grievance emails fail to deliver a refund, having an advocate issue a formal legal notice changes the equation entirely. The notice is digitally transmitted by email and WhatsApp to Blink Commerce Private Limited&apos;s legal escalation desk, with optional Registered Speed Post (₹450 per party) to its registered corporate headquarters in Gurugram and New Delhi.
+                  When informal customer care and grievance emails fail to deliver a refund, sending a formal legal notice changes the equation entirely. The notice is digitally transmitted by email and WhatsApp to Blink Commerce Private Limited&apos;s legal escalation desk, with optional Registered Speed Post (₹450 per party) to its registered corporate headquarters in Gurugram and New Delhi.
                 </p>
                 <div className="p-3 bg-red-50/70 border border-red-200/80 rounded-xl text-xs text-red-950">
                   <strong>Notice Mandate:</strong> The notice specifies a 15-day cure period under Section 35 of the CPA 2019, quantifying your claim for the refund amount, statutory interest at 9% to 18%, mental agony compensation (₹5,000 to ₹25,000), and advocate costs. Over 85% of quick-commerce disputes settle at this stage.
@@ -887,7 +887,7 @@ export default function BlinkitLegalNoticePage() {
                       Standardized Pre-Litigation Protocol
                     </td>
                     <td className="px-5 py-4 text-xs text-slate-600">
-                      Includes 24h advocate drafting and email + WhatsApp delivery. Speed Post optional (₹450).
+                      Includes 24h notice drafting and email + WhatsApp delivery. Speed Post optional (₹450).
                     </td>
                   </tr>
                 </tbody>
@@ -1206,7 +1206,7 @@ export default function BlinkitLegalNoticePage() {
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-green-600 font-bold">✓</span>
-                    <span>Draft and serve a formal, advocate-signed pre-litigation legal demand notice delivered by email and WhatsApp, with optional Speed Post.</span>
+                    <span>Draft and serve a formal, fact-verified pre-litigation legal demand notice delivered by email and WhatsApp, with optional Speed Post.</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-green-600 font-bold">✓</span>

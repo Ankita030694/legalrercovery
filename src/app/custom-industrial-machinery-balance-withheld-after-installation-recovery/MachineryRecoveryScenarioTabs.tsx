@@ -32,7 +32,7 @@ const SCENARIOS: Scenario[] = [
       "Extract timestamped PLC cycle counts, SCADA production logs, and industrial power utility load profiles establishing continuous factory operation.",
       "Track buyer's outward GST e-Way bills and GSTR-1 filings demonstrating commercial sale of goods produced on the subject machinery line.",
       "Serve a formal statutory Section 42 Deemed Acceptance Notice notifying the buyer that commercial production legally confirms acceptance and matures the withheld balance.",
-      "Issue a 15-Day Advocate Demand Notice initiating MSMED Act Section 18 proceedings or Commercial Summary Suit under Order XXXVII CPC.",
+      "Issue a 15-Day Fact-Verified Demand Notice initiating MSMED Act Section 18 proceedings or Commercial Summary Suit under Order XXXVII CPC.",
     ],
   },
   {

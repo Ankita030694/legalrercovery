@@ -42,7 +42,7 @@ const reviews = [
   {
     author: "Rajesh K. Singhal",
     rating: "5",
-    text: "Calculating the exact service date was giving me sleepless nights after a business partner's cheque bounced. This guide helped me track the exact 15-day grace period. Our lawyer followed this precise timeline, and the debtor settled the full amount of 12 Lakhs at the first summons."
+    text: "Calculating the exact service date was giving me sleepless nights after a business partner's cheque bounced. This guide helped me track the exact 15-day grace period. Our team followed this precise timeline, and the debtor settled the full amount of 12 Lakhs at the first summons."
   },
   {
     author: "Meera Deshmukh",
@@ -628,7 +628,7 @@ export default function ChequeBounceTimelineClient() {
                 <div className="absolute top-0 right-0 w-24 h-24 bg-red-600/10 rounded-full blur-xl pointer-events-none" />
                 <h3 className="text-sm font-black mb-3">Need Legal Advice?</h3>
                 <p className="text-gray-400 mb-5 text-[11px] leading-relaxed">
-                  Discuss your money recovery case with legal experts. We draft and serve legally compliant notices tailored to your transaction.
+                  Discuss your money recovery case with our team. We draft and serve legally compliant notices tailored to your transaction.
                 </p>
                 <button 
                   onClick={() => setIsPaymentModalOpen(true)}

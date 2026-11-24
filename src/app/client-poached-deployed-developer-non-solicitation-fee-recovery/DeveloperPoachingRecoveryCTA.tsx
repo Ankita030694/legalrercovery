@@ -25,10 +25,10 @@ export default function DeveloperPoachingRecoveryCTA({
               Track 1 &bull; Single Poached Engineer Dispute
             </span>
             <p className="text-lg sm:text-xl font-extrabold text-white mb-2">
-              Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Advocate Drafted &middot; Email + WhatsApp + Speed Post RPAD)
+              Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Fact-Verified &middot; Email + WhatsApp + Speed Post RPAD)
             </p>
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-              Issue an advocate-drafted statutory demand notice directly to the client company enforcing the MSA Resource Buyout / Conversion Clause under Section 74 of the Indian Contract Act. Rebuts spurious Section 27 employee defense bluffs, substantiates talent replacement costs under the Supreme Court Kailash Nath doctrine, and demands immediate settlement before formal Commercial Court or Arbitration proceedings.
+              Issue a fact-verified statutory demand notice directly to the client company enforcing the MSA Resource Buyout / Conversion Clause under Section 74 of the Indian Contract Act. Rebuts spurious Section 27 employee defense bluffs, substantiates talent replacement costs under the Supreme Court Kailash Nath doctrine, and demands immediate settlement before formal Commercial Court or Arbitration proceedings.
             </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-3">

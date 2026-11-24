@@ -31,7 +31,7 @@ export default function EcommerceNoticeCTA({
                 Enforce E-Commerce Rules & Recover Withheld Refunds Legally
               </h3>
               <p className="text-slate-300 text-sm sm:text-base leading-relaxed mb-6">
-                When an e-commerce platform breaches its 48-hour acknowledgment or 30-day resolution duties under Rule 4(5), serve a formal advocate legal demand notice. Establish joint statutory liability between the marketplace and merchant before initiating proceedings on e-Jagriti.
+                When an e-commerce platform breaches its 48-hour acknowledgment or 30-day resolution duties under Rule 4(5), serve a formal fact-verified legal demand notice. Establish joint statutory liability between the marketplace and merchant before initiating proceedings on e-Jagriti.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button
@@ -42,7 +42,7 @@ export default function EcommerceNoticeCTA({
                   {buttonText} — ₹{basePrice}
                 </button>
                 <div className="text-xs text-slate-400 flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-3">
-                  <span>✓ Advocate-Drafted Notice</span>
+                  <span>✓ Fact-Verified Notice</span>
                   <span className="hidden sm:inline">•</span>
                   <span>✓ Email + WhatsApp</span>
                   <span className="hidden sm:inline">•</span>

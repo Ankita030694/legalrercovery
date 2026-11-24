@@ -168,7 +168,7 @@ const IND_22_SPOKES: PackagingSpoke[] = [
     url: "/templates/packaging-unlifted-custom-stock-and-invoice-legal-notice",
     statute: "Sale of Goods Act s.44 (Storage/Care Charges) + s.55 + MSMED s.16 & s.43B(h)",
     summary:
-      "Interactive advocate-vetted notice pack bundling Invoice & e-Way schedules, Custom-Printed WIP/FG tables, Section 44 monthly godown rent, Cylinder Lien intimation, and Section 43B(h) tax warning.",
+      "Interactive fact-verified notice pack bundling Invoice & e-Way schedules, Custom-Printed WIP/FG tables, Section 44 monthly godown rent, Cylinder Lien intimation, and Section 43B(h) tax warning.",
   },
 ];
 
@@ -238,7 +238,7 @@ const FAQS = [
   {
     question: "How do corrugated box manufacturers defeat 10–15% unilateral deductions for 'low Bursting Factor (BF), GSM, or monsoon moisture'?",
     answer:
-      "Invoke Section 42 of the Sale of Goods Act. Once an FMCG, garment, pharma, or e-commerce buyer consumes your corrugated cartons to pack and ship outward goods without raising a written pre-use rejection supported by a joint laboratory test within 48–72 hours of delivery, statutory acceptance is complete. Serve an advocate-drafted notice enclosing your dispatch QC slip, e-Way Bill, and Udyam certificate citing MSMED s.15–18 and Income Tax s.43B(h).",
+      "Invoke Section 42 of the Sale of Goods Act. Once an FMCG, garment, pharma, or e-commerce buyer consumes your corrugated cartons to pack and ship outward goods without raising a written pre-use rejection supported by a joint laboratory test within 48–72 hours of delivery, statutory acceptance is complete. Serve a fact-verified notice enclosing your dispatch QC slip, e-Way Bill, and Udyam certificate citing MSMED s.15–18 and Income Tax s.43B(h).",
   },
   {
     question: "Can a packaging converter or PET/HDPE bottle maker legally hold rotogravure cylinders or blow-moulds until overdue bills are paid?",
@@ -268,7 +268,7 @@ const FAQS = [
   {
     question: "Can packaging trade associations (like FCBM chapters) or paper mills run bulk March 31 Section 43B(h) recovery drives?",
     answer:
-      "Yes. Individual plants can test a single overdue FMCG, pharma, or dealer account for ₹999 (Advocate Drafted + Email, WhatsApp & Speed Post RPAD), while paper mills, multi-plant converters, and regional packaging associations can upload 10 to 10,000+ overdue ledgers via CSV in our Bulk Institutional Desk for coordinated CFO and Statutory Auditor Section 43B(h) intimation waves.",
+      "Yes. Individual plants can test a single overdue FMCG, pharma, or dealer account for ₹999 (Fact-Verified + Email, WhatsApp & Speed Post RPAD), while paper mills, multi-plant converters, and regional packaging associations can upload 10 to 10,000+ overdue ledgers via CSV in our Bulk Institutional Desk for coordinated CFO and Statutory Auditor Section 43B(h) intimation waves.",
   },
 ];
 
@@ -709,7 +709,7 @@ export default function PackagingPrintingPaperMillHubPage() {
                   {
                     stage: "Stage 2 • Day 2–3",
                     title: "s.55/44, 43B(h) & Lien Notice",
-                    detail: "Serve Email + WhatsApp + RPAD advocate notice demanding invoice payout, 15-day stock lift, godown rent, and tooling lien.",
+                    detail: "Serve Email + WhatsApp + RPAD fact-verified notice demanding invoice payout, 15-day stock lift, godown rent, and tooling lien.",
                   },
                   {
                     stage: "Stage 3 • Day 15",
@@ -767,7 +767,7 @@ export default function PackagingPrintingPaperMillHubPage() {
               </div>
 
               <p className="text-sm text-slate-600 mb-6">
-                Validate our advocate-drafted recovery workflow on one stubborn FMCG brand, unlifted stock ledger, or defaulting paper dealer for &#8377;999—or onboard your entire regional plant or paper-mill receivable book via CSV ahead of financial year-end audits.
+                Validate our fact-verified recovery workflow on one stubborn FMCG brand, unlifted stock ledger, or defaulting paper dealer for &#8377;999—or onboard your entire regional plant or paper-mill receivable book via CSV ahead of financial year-end audits.
               </p>
 
               <PackagingPrintingHubCTA />
@@ -983,7 +983,7 @@ export default function PackagingPrintingPaperMillHubPage() {
                     MSME Delayed Payment Demand Notice Template (s.15–18 &amp; 43B(h))
                   </p>
                   <p className="text-xs text-slate-600">
-                    Advocate-vetted Udyam demand format ready for corrugated box plants, flexible converters, offset printers, and pallet makers.
+                    Ready-to-use Udyam demand format ready for corrugated box plants, flexible converters, offset printers, and pallet makers.
                   </p>
                 </Link>
 

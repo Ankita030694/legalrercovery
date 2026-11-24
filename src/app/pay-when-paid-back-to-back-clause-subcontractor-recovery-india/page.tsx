@@ -1093,7 +1093,7 @@ export default function PayWhenPaidSubcontractorRecoveryPage() {
                 <div className="bg-slate-50 border border-slate-200 rounded-xl p-4 text-xs sm:text-sm text-slate-700 leading-relaxed">
                   <p className="font-semibold text-slate-900 mb-1">Standard Notice Drafting Format:</p>
                   <p>
-                    Deploy our advocate-vetted commercial template to draft your formal statutory demand:{" "}
+                    Deploy our ready-to-use commercial template to draft your formal statutory demand:{" "}
                     <Link
                       href="/templates/construction-ra-bill-retention-money-arbitration-notice"
                       className="text-[#DC2626] font-bold hover:underline"

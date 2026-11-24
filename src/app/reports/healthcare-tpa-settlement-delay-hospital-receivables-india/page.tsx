@@ -808,7 +808,7 @@ export default function HealthcareTpaDsoReportPage() {
                   The Compliant Solution: Legally Enforceable Discharge Paperwork
                 </p>
                 <p>
-                  To convert unsecured patient balances into litigation-grade receivables without violating Article 21, hospitals must execute our advocate-vetted{" "}
+                  To convert unsecured patient balances into litigation-grade receivables without violating Article 21, hospitals must execute our fact-verified{" "}
                   <Link
                     href="/templates/hospital-discharge-pending-bill-undertaking-and-legal-notice"
                     className="text-red-700 font-bold hover:underline"
@@ -941,7 +941,7 @@ export default function HealthcareTpaDsoReportPage() {
                 </div>
 
                 <div className="text-[11px] text-slate-400 leading-relaxed pt-2">
-                  <strong>The CFO Takeaway:</strong> By serving a formal Advocate Statutory Notice invoking IRDAI Master Circular penal interest and PNA contractual terms, the hospital establishes an unassailable financial claim for ₹24.73 Lakh across deductions and interest. In over 80% of cases, TPAs settle the principal deductions immediately to avert formal regulatory reporting to the IRDAI Grievance Cell.
+                  <strong>The CFO Takeaway:</strong> By serving a formal Fact-Verified Statutory Notice invoking IRDAI Master Circular penal interest and PNA contractual terms, the hospital establishes an unassailable financial claim for ₹24.73 Lakh across deductions and interest. In over 80% of cases, TPAs settle the principal deductions immediately to avert formal regulatory reporting to the IRDAI Grievance Cell.
                 </div>
               </div>
             </section>
@@ -999,7 +999,7 @@ export default function HealthcareTpaDsoReportPage() {
                       </span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Dispatch of formal advocate-signed statutory legal demand via Email + WhatsApp + India Post Speed Post RPAD (establishing statutory presumption of delivery under Section 27 of General Clauses Act). Demands statutory penal interest at Bank Rate + 2% for TPAs, and serves 60-day Section 80 CPC notice for CGHS/ECHS.
+                      Dispatch of formal fact-verified statutory legal demand via Email + WhatsApp + India Post Speed Post RPAD (establishing statutory presumption of delivery under Section 27 of General Clauses Act). Demands statutory penal interest at Bank Rate + 2% for TPAs, and serves 60-day Section 80 CPC notice for CGHS/ECHS.
                     </p>
                   </div>
                 </div>
@@ -1123,7 +1123,7 @@ export default function HealthcareTpaDsoReportPage() {
                   Deploy Hospital RCM Legal Desk: Test Single Case or Batch CSV
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-600">
-                  Whether recovering a single ₹45,000 discharge undertaking or reconciling ₹5 Crore across 500 aged TPA/CGHS claims, activate advocate-drafted statutory recovery in minutes.
+                  Whether recovering a single ₹45,000 discharge undertaking or reconciling ₹5 Crore across 500 aged TPA/CGHS claims, activate fact-verified statutory recovery in minutes.
                 </p>
               </div>
 

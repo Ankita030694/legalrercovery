@@ -115,7 +115,7 @@ const FAQS = [
   {
     question: "How does Section 63 of Bharatiya Sakshya Adhiniyam, 2023 (BSA) prove unbroken cold chain?",
     answer:
-      "Section 63 of BSA 2023 governs the admissibility of electronic records in Indian courts (replacing Section 65B of the Indian Evidence Act, 1872). When a biologics distributor deploys an autonomous NIST-calibrated digital USB data-logger, the device records time-stamped temperature readings at 5-to-15 minute intervals. By generating an immutable PDF/CSV report directly from the logger and executing an advocate-vetted Section 63 electronic record certificate detailing device serial numbers, cryptographic hash (SHA-256), and server custody, the distributor establishes court-ready, unimpeachable evidence that the vials remained continuously at 2–8°C up to the hospital receiving dock.",
+      "Section 63 of BSA 2023 governs the admissibility of electronic records in Indian courts (replacing Section 65B of the Indian Evidence Act, 1872). When a biologics distributor deploys an autonomous NIST-calibrated digital USB data-logger, the device records time-stamped temperature readings at 5-to-15 minute intervals. By generating an immutable PDF/CSV report directly from the logger and executing a fact-verified Section 63 electronic record certificate detailing device serial numbers, cryptographic hash (SHA-256), and server custody, the distributor establishes court-ready, unimpeachable evidence that the vials remained continuously at 2–8°C up to the hospital receiving dock.",
   },
   {
     question: "What should a distributor do if the hospital receiving clerk signs the POD but leaves the temperature blank?",
@@ -228,7 +228,7 @@ export default function ColdChainVaccineBiologicsRecoveryPage() {
         "@type": "HowToStep",
         position: 4,
         name: "Service of 15-Day Advocate Statutory Demand Notice",
-        text: "Dispatch an advocate-vetted demand notice demanding immediate invoice clearance, appending certified logger curves, and invoking MSMED Act Section 16 penal interest.",
+        text: "Dispatch a fact-verified demand notice demanding immediate invoice clearance, appending certified logger curves, and invoking MSMED Act Section 16 penal interest.",
       },
       {
         "@type": "HowToStep",
@@ -884,7 +884,7 @@ export default function ColdChainVaccineBiologicsRecoveryPage() {
 
                 <div className="mt-4 pt-4 border-t border-slate-800 text-xs text-slate-300 leading-relaxed">
                   <p>
-                    <strong>Resolution Outcome:</strong> Upon receipt of the Advocate Legal Demand Notice appending the BSA s.63 electronic certificate and citing Income Tax Section 43B(h) disallowance risks, the hospital management conducted an internal inquiry. The audit revealed that on August 24, the hospital&apos;s backup generator circuit breaker tripped during pharmacy maintenance, causing the walk-in cooler to warm to 16°C. Realizing their internal fault was fully exposed, the hospital withdrew the debit note, released ₹42,50,000 principal in full, and paid ₹1,50,000 in negotiated interest charges.
+                    <strong>Resolution Outcome:</strong> Upon receipt of the Fact-Verified Legal Demand Notice appending the BSA s.63 electronic certificate and citing Income Tax Section 43B(h) disallowance risks, the hospital management conducted an internal inquiry. The audit revealed that on August 24, the hospital&apos;s backup generator circuit breaker tripped during pharmacy maintenance, causing the walk-in cooler to warm to 16°C. Realizing their internal fault was fully exposed, the hospital withdrew the debit note, released ₹42,50,000 principal in full, and paid ₹1,50,000 in negotiated interest charges.
                   </p>
                 </div>
               </div>
@@ -1020,7 +1020,7 @@ export default function ColdChainVaccineBiologicsRecoveryPage() {
                 Deploy Biologics Legal Recovery: Single Case Test or Bulk CSV Desk
               </h2>
               <p className="text-xs sm:text-sm text-slate-700 leading-relaxed mb-6">
-                Whether you need to recover a single high-value oncology invoice or streamline institutional recoveries across hundreds of defaulted hospital ledgers, LegalRecovery.in provides specialized advocate-backed legal solutions:
+                Whether you need to recover a single high-value oncology invoice or streamline institutional recoveries across hundreds of defaulted hospital ledgers, LegalRecovery.in provides specialized fact-verified legal solutions:
               </p>
 
               {/* Client Component: Dual B2B CTAs */}

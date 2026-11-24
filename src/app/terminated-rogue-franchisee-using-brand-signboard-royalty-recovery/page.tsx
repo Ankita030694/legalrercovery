@@ -191,7 +191,7 @@ const HOWTO_SCHEMA = {
       "@type": "HowToStep",
       position: 2,
       name: "Serve Combined De-Identification & Royalty Demand Notice",
-      text: "Dispatch an Advocate-signed Final Termination, De-Identification (72-hour signboard removal), and Royalty Arrears Notice via Speed Post RPAD, Email, and WhatsApp.",
+      text: "Dispatch a Fact-verified Final Termination, De-Identification (72-hour signboard removal), and Royalty Arrears Notice via Speed Post RPAD, Email, and WhatsApp.",
     },
     {
       "@type": "HowToStep",
@@ -576,7 +576,7 @@ export default function RogueHoldoverFranchiseePage() {
                     },
                     {
                       stage: "2. Day 3: 72-Hour De-Identification & Arrears Notice",
-                      text: "Serve Advocate-signed final notice via RPAD, Email, and WhatsApp demanding signboard removal and royalty ledger payment.",
+                      text: "Serve Fact-verified final notice via RPAD, Email, and WhatsApp demanding signboard removal and royalty ledger payment.",
                     },
                     {
                       stage: "3. Day 4–6: Swiggy, Zomato & Google Maps IP Delisting",

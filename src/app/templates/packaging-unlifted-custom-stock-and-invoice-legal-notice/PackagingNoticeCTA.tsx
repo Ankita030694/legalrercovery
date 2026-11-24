@@ -21,10 +21,10 @@ export default function PackagingNoticeCTA({ className = "" }: PackagingNoticeCT
           <div className="bg-gradient-to-br from-[#111827] via-[#1F2937] to-[#111827] text-white rounded-2xl p-6 sm:p-7 border border-slate-800 shadow-xl flex flex-col justify-between">
             <div>
               <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold uppercase tracking-wider bg-red-950/70 text-red-400 border border-red-800/60 mb-3">
-                Track 1 &middot; Advocate-Signed Packaging Dispatch
+                Track 1 &middot; Fact-Verified Packaging Dispatch
               </span>
               <h3 className="text-lg sm:text-xl font-bold text-white mb-2">
-                Test 1 Live Overdue Case Now (&#8377;{basePrice} &middot; Advocate Drafted &middot; Email + WhatsApp + Speed Post RPAD)
+                Test 1 Live Overdue Case Now (&#8377;{basePrice} &middot; Fact-Verified &middot; Email + WhatsApp + Speed Post RPAD)
               </h3>
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
                 Upload your GST Invoices, E-Way Bills, Artwork Sign-Off email, Ready-for-Dispatch intimation, and Cylinder/Mould ledger. Our commercial advocates serve a formal <strong className="text-white">Sale of Goods Act s.44 &amp; s.55 + Section 43B(h)</strong> demand notice directly to the buyer&apos;s Directors, CFO, and Procurement Head.
@@ -37,7 +37,7 @@ export default function PackagingNoticeCTA({ className = "" }: PackagingNoticeCT
                 onClick={() => setIsModalOpen(true)}
                 className="flex-1 inline-flex items-center justify-center px-5 py-3 rounded-xl text-xs sm:text-sm font-bold text-white bg-[#DC2626] hover:bg-[#B91C1C] transition-colors shadow-lg shadow-red-900/30 cursor-pointer text-center"
               >
-                Start &#8377;{basePrice} Advocate Notice
+                Start &#8377;{basePrice} Fact-Verified Notice
               </button>
               <Link
                 href="/user/new-recovery"

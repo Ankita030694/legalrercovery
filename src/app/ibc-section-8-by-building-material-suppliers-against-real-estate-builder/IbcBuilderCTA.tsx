@@ -25,10 +25,10 @@ export default function IbcBuilderCTA({
               Track 1 &bull; Single Builder Default Test
             </span>
             <p className="text-lg sm:text-xl font-extrabold text-white mb-2">
-              Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Advocate Drafted &middot; Email + WhatsApp + Speed Post RPAD)
+              Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Fact-Verified &middot; Email + WhatsApp + Speed Post RPAD)
             </p>
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-              Initiate an advocate-vetted statutory demand notice or Form 3/4 pre-IBC escalation dossier against a defaulting real estate developer. Locks in invoice principal plus contractual interest under <span className="italic">Prashat Agarwal</span>, annexes E-Way Bills &amp; weighbridge slips to pre-empt <span className="italic">Mobilox</span> sham disputes, and triggers the 10-day settlement clock.
+              Initiate a fact-verified statutory demand notice or Form 3/4 pre-IBC escalation dossier against a defaulting real estate developer. Locks in invoice principal plus contractual interest under <span className="italic">Prashat Agarwal</span>, annexes E-Way Bills &amp; weighbridge slips to pre-empt <span className="italic">Mobilox</span> sham disputes, and triggers the 10-day settlement clock.
             </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-3">

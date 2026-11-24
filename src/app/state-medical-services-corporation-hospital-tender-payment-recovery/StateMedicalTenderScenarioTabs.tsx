@@ -33,7 +33,7 @@ const TENDER_SCENARIOS: TenderScenario[] = [
       {
         step: "Dissect & Nullify Tender 'No-Interest' Adhesion Clause",
         detail:
-          "Serve an Advocate Legal Demand citing Supreme Court law (Silpi Industries) establishing that Section 16 MSMED compound interest (3x RBI Bank Rate) statutorily overrides any restrictive non-interest clause in government tender rate contracts.",
+          "Serve a Legal Demand citing Supreme Court law (Silpi Industries) establishing that Section 16 MSMED compound interest (3x RBI Bank Rate) statutorily overrides any restrictive non-interest clause in government tender rate contracts.",
       },
       {
         step: "Reconcile Central Drug Warehouse Good Received Notes (GRN)",
@@ -69,7 +69,7 @@ const TENDER_SCENARIOS: TenderScenario[] = [
       {
         step: "Lodge Formal Escalation on GeM Portal & Serve DoE OM Penal Notice",
         detail:
-          "Initiate formal incident logging on GeM Samadhaan ticketing rail. Issue an Advocate Demand to the Hospital Director and DDO asserting 1% per month penal interest under DoE guidelines and 3x RBI rate under MSMED Act.",
+          "Initiate formal incident logging on GeM Samadhaan ticketing rail. Issue a Legal Demand to the Hospital Director and DDO asserting 1% per month penal interest under DoE guidelines and 3x RBI rate under MSMED Act.",
       },
       {
         step: "Invoke Central Public Grievance CPGRAMS & MSME Samadhaan Dual Rail",
@@ -117,7 +117,7 @@ const TENDER_SCENARIOS: TenderScenario[] = [
     ticketBand: "₹50L – ₹10 Cr Institutional Procurement Portfolios",
     title: "Corporation Threatens Blacklisting / Debarment & PBG Forfeiture in Retaliation for Filing MSME Samadhaan",
     failureMechanism:
-      "When a medical supplier files an MSEFC claim or serves an Advocate Legal Demand for overdue bills, tender officials react vindictively by issuing a Show-Cause Notice for debarment/blacklisting, citing vague 'breach of tender conditions' or 'uncooperative conduct'. Concurrently, the Corporation threatens to encash the supplier's Performance Bank Guarantee (PBG) or forfeit their Earnest Money Deposit (EMD), which would trigger automated debarment across all Central and State government tenders.",
+      "When a medical supplier files an MSEFC claim or serves a Legal Demand for overdue bills, tender officials react vindictively by issuing a Show-Cause Notice for debarment/blacklisting, citing vague 'breach of tender conditions' or 'uncooperative conduct'. Concurrently, the Corporation threatens to encash the supplier's Performance Bank Guarantee (PBG) or forfeit their Earnest Money Deposit (EMD), which would trigger automated debarment across all Central and State government tenders.",
     lawfulProtocol:
       "Article 226 High Court Writ Petition + Patel Engineering & Erusian Equipment Natural Justice Doctrine + Injunction on PBG Encashment",
     statutoryHooks:

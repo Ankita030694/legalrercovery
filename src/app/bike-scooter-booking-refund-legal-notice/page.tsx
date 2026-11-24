@@ -164,7 +164,7 @@ const FAQS = [
   {
     question: "Bike booking cancel karne ke baad dealer refund na de toh legal notice kaise bheje?",
     answer:
-      "Agar do-pahiya showroom ya EV company booking cancel karne ke baad aapka advance wapas na kare ya bina wajah cancellation charges kaat le, toh aap ek advocate legal notice bhej sakte hain. LegalRecovery.in par verified advocate Sale of Goods Act 1930 aur Consumer Protection Act 2019 ke antargat dealership aur brand corporate office par Registered Speed Post aur digital notice bhejte hain, jismein 15 din ka strict payment demand diya jata hai.",
+      "Agar do-pahiya showroom ya EV company booking cancel karne ke baad aapka advance wapas na kare ya bina wajah cancellation charges kaat le, toh aap ek fact-verified legal notice bhej sakte hain. LegalRecovery.in par fact-verified notice Sale of Goods Act 1930 aur Consumer Protection Act 2019 ke antargat dealership aur brand corporate office par Registered Speed Post aur digital channels se bheja jata hai, jismein 15 din ka strict payment demand diya jata hai.",
   },
 ];
 
@@ -756,10 +756,10 @@ export default function BikeScooterBookingRefundPage() {
                     </span>
                     <div>
                       <h3 className="font-bold text-slate-900 text-sm sm:text-base mb-1">
-                        Dispatch a Statutory Advocate Legal Notice (15-Day Demand)
+                        Dispatch a Statutory Fact-Verified Legal Notice (15-Day Demand)
                       </h3>
                       <p className="leading-relaxed">
-                        If 14 days elapse without payment, have a verified advocate issue a formal legal notice to both the showroom proprietor and the automotive manufacturer's registered headquarters. The notice sets out the full transaction timeline, invokes the Sale of Goods Act and Consumer Protection Act, 2019, and gives a peremptory 15-day window to remit the principal plus 12% annual interest and drafting costs.
+                        If 14 days elapse without payment, issue a formal legal notice to both the showroom proprietor and the automotive manufacturer's registered headquarters. The notice sets out the full transaction timeline, invokes the Sale of Goods Act and Consumer Protection Act, 2019, and gives a peremptory 15-day window to remit the principal plus 12% annual interest and drafting costs.
                       </p>
                     </div>
                   </li>
@@ -773,7 +773,7 @@ export default function BikeScooterBookingRefundPage() {
                         File e-Jagriti Consumer Complaint for Restitution &amp; Damages
                       </h3>
                       <p className="leading-relaxed">
-                        If the 15-day notice window expires without settlement, file an online consumer complaint before the District Consumer Disputes Redressal Commission (DCDRC) via <strong>e-jagriti.gov.in</strong>. Attach the booking docket, payment proof, cancellation email, advocate notice, and postal tracking receipts. Consumer commissions routinely award the full refund, 9%–12% interest, and ₹10,000 to ₹25,000 in harassment damages.
+                        If the 15-day notice window expires without settlement, file an online consumer complaint before the District Consumer Disputes Redressal Commission (DCDRC) via <strong>e-jagriti.gov.in</strong>. Attach the booking docket, payment proof, cancellation email, fact-verified notice, and postal tracking receipts. Consumer commissions routinely award the full refund, 9%–12% interest, and ₹10,000 to ₹25,000 in harassment damages.
                       </p>
                     </div>
                   </li>
@@ -965,7 +965,7 @@ export default function BikeScooterBookingRefundPage() {
                       <strong>The Dispute:</strong> Arun booked an electric scooter online on 15 August 2023 with a promised delivery window of 30 days. By November 2023 (90 days later), no vehicle chassis was assigned. Arun cancelled through the mobile application. The app indicated "Refund Processed", but no credit appeared in his HDFC account. Customer care closed three support tickets with robotic apologies.
                     </p>
                     <p>
-                      <strong>The Legal Action:</strong> On 10 December 2023, Arun engaged an advocate on LegalRecovery.in to serve a formal 15-day statutory demand notice addressed to the EV OEM's corporate headquarters and executive directors under Section 2(47) CPA 2019 and RBI TAT norms.
+                      <strong>The Legal Action:</strong> On 10 December 2023, Arun used LegalRecovery.in to serve a formal 15-day statutory demand notice addressed to the EV OEM's corporate headquarters and executive directors under Section 2(47) CPA 2019 and RBI TAT norms.
                     </p>
                     <p>
                       <strong>The Outcome:</strong> Within 9 days of receiving the Speed Post notice, the OEM's legal compliance team contacted Arun, confirmed a technical batch failure in their payment aggregator settlement, transferred the full ₹15,000 advance directly via IMPS, and paid ₹5,000 towards legal costs to avert a consumer forum petition.

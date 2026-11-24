@@ -157,7 +157,7 @@ const FAQS = [
   {
     question: "Can I send a DMCA or copyright takedown notice to Instagram, YouTube, Shopify, or Google if a client hasn't paid?",
     answer:
-      "Yes, provided you are the statutory copyright owner (no unconditional written assignment was signed transferring title prior to payment). Under Section 51 of the Copyright Act read with Section 79(3)(b) of the Information Technology Act, 2000 and Rule 3(1)(d) of the IT (Intermediary Guidelines) Rules, 2021, digital platforms, web hosts, and app stores are required to disable access to infringing content upon receiving a formal infringement notice. In practice, serving the client with an advocate Cease-and-Desist & Payment Demand Notice attaching a ready-to-file takedown draft compels rapid settlement because businesses cannot afford to have their live website or ad account suspended.",
+      "Yes, provided you are the statutory copyright owner (no unconditional written assignment was signed transferring title prior to payment). Under Section 51 of the Copyright Act read with Section 79(3)(b) of the Information Technology Act, 2000 and Rule 3(1)(d) of the IT (Intermediary Guidelines) Rules, 2021, digital platforms, web hosts, and app stores are required to disable access to infringing content upon receiving a formal infringement notice. In practice, serving the client with a Cease-and-Desist & Payment Demand Notice attaching a ready-to-file takedown draft compels rapid settlement because businesses cannot afford to have their live website or ad account suspended.",
   },
   {
     question: "What if my freelance contract has a 'work-for-hire' or IP assignment clause, but the client didn't pay?",
@@ -167,12 +167,12 @@ const FAQS = [
   {
     question: "Is copyright infringement by an unpaid client a criminal offence in India?",
     answer:
-      "Yes. Under Section 63 of the Copyright Act, 1957, any person who knowingly infringes or abets the infringement of the copyright in a work commits a cognizable, non-bailable offence punishable with imprisonment for 6 months to 3 years and a fine between ₹50,000 and ₹2,00,000. Once a formal advocate Cease-and-Desist Notice informs the client that their licence is revoked for non-payment and that copyright vests in you under Sections 17 and 19, any continued commercial exploitation becomes 'knowing infringement.'",
+      "Yes. Under Section 63 of the Copyright Act, 1957, any person who knowingly infringes or abets the infringement of the copyright in a work commits a cognizable, non-bailable offence punishable with imprisonment for 6 months to 3 years and a fine between ₹50,000 and ₹2,00,000. Once a formal Cease-and-Desist Notice informs the client that their licence is revoked for non-payment and that copyright vests in you under Sections 17 and 19, any continued commercial exploitation becomes 'knowing infringement.'",
   },
   {
     question: "Client bina payment kiye mera freelance design ya video use kar raha hai toh legal notice kaise bheje?",
     answer:
-      "Agar client aapka final payment roke hue hai aur aapka banaya logo, website code, graphic design ya video social media/website par use kar raha hai, toh Copyright Act 1957 ki Section 17 aur 19 ke tehat us kaam ka malikana haq (copyright) aapke paas hi rehta hai. LegalRecovery.in ke madhyam se verified advocate client ko 'Cease-and-Desist cum Payment Demand Notice' Speed Post, Email aur WhatsApp par bhejte hain—jismein 7 se 15 din mein payment na karne par copyright infringement (Section 51/63) aur platform takedown ki kanooni chetawani di jati hai.",
+      "Agar client aapka final payment roke hue hai aur aapka banaya logo, website code, graphic design ya video social media/website par use kar raha hai, toh Copyright Act 1957 ki Section 17 aur 19 ke tehat us kaam ka malikana haq (copyright) aapke paas hi rehta hai. LegalRecovery.in ke madhyam se hum client ko 'Cease-and-Desist cum Payment Demand Notice' Speed Post, Email aur WhatsApp par bhejte hain—jismein 7 se 15 din mein payment na karne par copyright infringement (Section 51/63) aur platform takedown ki kanooni chetawani di jati hai.",
   },
 ];
 
@@ -485,7 +485,7 @@ export default function CopyrightNotTransferredFreelancerPage() {
                   </div>
                   <div className="bg-red-50 text-red-950 p-4 rounded-xl border border-red-200">
                     <span className="text-[10px] font-bold text-red-700 uppercase tracking-wider block mb-1">Stage 3</span>
-                    <h3 className="font-bold text-sm">Advocate Cease-and-Desist + Demand</h3>
+                    <h3 className="font-bold text-sm">Cease-and-Desist + Demand</h3>
                     <p className="text-xs text-red-900 mt-1">Revoke implied licence; give 7–15 days to pay invoice or face Sec 51/63 infringement action.</p>
                   </div>
                   <div className="bg-slate-100 text-slate-900 p-4 rounded-xl border border-slate-300">
@@ -717,10 +717,10 @@ export default function CopyrightNotTransferredFreelancerPage() {
                     </span>
                     <div className="space-y-1 sm:space-y-1.5">
                       <h3 className="text-sm sm:text-base md:text-lg font-bold text-slate-900">
-                        Serve an Advocate Cease-and-Desist cum Payment Demand Notice
+                        Serve a Cease-and-Desist cum Payment Demand Notice
                       </h3>
                       <p className="text-xs sm:text-sm leading-relaxed">
-                        Have an advocate serve a formal statutory notice via Registered Speed Post, official email, and WhatsApp. The notice performs three legal acts simultaneously: (a) <strong>revokes any implied licence</strong> to use the delivered files; (b) puts the client and its directors on notice of civil and criminal copyright infringement under <strong>Sections 51, 55, and 63 of the Copyright Act</strong>; and (c) grants a strict 7-to-15-day cure window to pay the full invoice amount (plus 18% commercial interest or 3x RBI compound interest if Udyam-registered) in exchange for a formal Section 19 release. Read our step-by-step guide on{" "}
+                        Serve a formal statutory notice via Registered Speed Post, official email, and WhatsApp. The notice performs three legal acts simultaneously: (a) <strong>revokes any implied licence</strong> to use the delivered files; (b) puts the client and its directors on notice of civil and criminal copyright infringement under <strong>Sections 51, 55, and 63 of the Copyright Act</strong>; and (c) grants a strict 7-to-15-day cure window to pay the full invoice amount (plus 18% commercial interest or 3x RBI compound interest if Udyam-registered) in exchange for a formal Section 19 release. Read our step-by-step guide on{" "}
                         <Link href="/how-freelancer-can-send-legal-notice-to-client-india" className="text-blue-700 underline font-semibold">
                           how a freelancer can send a legal notice to a client in India
                         </Link>.
@@ -786,7 +786,7 @@ export default function CopyrightNotTransferredFreelancerPage() {
                       <tbody className="divide-y divide-slate-200">
                         <tr className="hover:bg-slate-50/80">
                           <th scope="row" className="py-3 px-3.5 sm:py-3.5 sm:px-4 font-semibold text-slate-900">
-                            Advocate Cease-and-Desist + Payment Demand Notice
+                            Cease-and-Desist + Payment Demand Notice
                           </th>
                           <td className="py-3 px-3.5 sm:py-3.5 sm:px-4 text-xs">Secs 17, 19, 51 Copyright Act + Sec 73 Contract Act</td>
                           <td className="py-3 px-3.5 sm:py-3.5 sm:px-4 text-emerald-700 font-bold">Pan-India &amp; Overseas (Speed Post + Email)</td>
@@ -863,14 +863,14 @@ export default function CopyrightNotTransferredFreelancerPage() {
                       <strong>The Project &amp; Default:</strong> Aarav Kulkarni, an independent product designer based in Pune, was engaged by a Bengaluru-based FinTech startup (KredVance Technologies Pvt. Ltd.) to redesign their 42-screen mobile app UI, custom icon set, and onboarding illustrations for a total fee of ₹4,80,000. The startup paid an initial ₹1,40,000 advance via NEFT based on an email scope proposal, without executing a formal signed copyright assignment deed. After Aarav shared the final Figma design system and exported SVG assets for developer handoff, the startup stopped replying to his final invoice of ₹3,40,000. Three weeks later, KredVance launched the redesigned app on the Google Play Store and Apple App Store and ran paid LinkedIn and Instagram ads featuring Aarav&apos;s illustrations.
                     </p>
                     <p>
-                      <strong>The Statutory Strategy:</strong> Instead of sending another polite invoice reminder, Aarav initiated action through LegalRecovery.in. A verified advocate audited the email chain, preserved Section 63 BSA-compliant screenshots of the live Play Store listing and Figma version history, and drafted a composite <strong>Copyright Cease-and-Desist cum Statutory Payment Demand Notice</strong> addressed to KredVance Technologies Pvt. Ltd. and its two co-founder directors.
+                      <strong>The Statutory Strategy:</strong> Instead of sending another polite invoice reminder, Aarav initiated action through LegalRecovery.in. Our team verified the facts Aarav entered (the email chain, the live Play Store listing and the Figma version history) and prepared a composite <strong>Copyright Cease-and-Desist cum Statutory Payment Demand Notice</strong> addressed to KredVance Technologies Pvt. Ltd. and its two co-founder directors.
                     </p>
                     <p>
                       <strong>The Legal Leverage Applied:</strong> The notice cited: (1) <strong>Section 17 of the Copyright Act, 1957</strong> and <em>Pine Labs v. Gemalto</em> (2011 Del HC), establishing that Aarav was the statutory first owner of all artistic works and UI layouts; (2) <strong>Section 19(1) &amp; 19(3)</strong>, proving that zero copyright had transferred due to the absence of a signed assignment and non-payment of ₹3,40,000 consideration; (3) immediate revocation of any implied licence; (4) warning of a <strong>Section 62(2)</strong> infringement suit in Pune District Court alongside a <strong>Google Play Store &amp; Apple App Store copyright takedown</strong> if dues were not cleared within 7 calendar days.
                     </p>
                     <div className="p-3.5 sm:p-4 bg-emerald-950/70 border border-emerald-700/60 rounded-xl text-emerald-200">
                       <strong className="block text-emerald-400 font-bold mb-1">The Outcome (Settled in 6 Days):</strong>
-                      Because the startup was in the middle of a seed-funding due diligence round and could not afford an IP infringement cloud or an App Store takedown of its flagship product, KredVance&apos;s legal counsel contacted Aarav&apos;s advocate on Day 4. On Day 6, the startup wired the entire ₹3,40,000 principal plus ₹15,000 towards legal notice and delay costs via RTGS, upon which Aarav executed a formal Section 19 copyright assignment deed.
+                      Because the startup was in the middle of a seed-funding due diligence round and could not afford an IP infringement cloud or an App Store takedown of its flagship product, KredVance&apos;s legal counsel contacted Aarav on Day 4. On Day 6, the startup wired the entire ₹3,40,000 principal plus ₹15,000 towards legal notice and delay costs via RTGS, upon which Aarav executed a formal Section 19 copyright assignment deed.
                     </div>
                   </div>
                 </div>
@@ -959,7 +959,7 @@ export default function CopyrightNotTransferredFreelancerPage() {
                       <strong>2. Add a one-line IP retention clause on every invoice &amp; proposal:</strong> Include this exact sentence on all quotes and invoices: <em>&quot;Pursuant to Sections 17 and 19 of the Copyright Act, 1957, all copyright and intellectual property rights in deliverables remain the exclusive property of the Creator until 100% of all invoices are paid in full.&quot;</em>
                     </li>
                     <li>
-                      <strong>3. Revoke implied licence in writing before filing takedowns:</strong> Serving a formal advocate Cease-and-Desist Notice revokes any implied review permission and turns the client&apos;s continued usage into <strong>knowing infringement under Sections 51 and 63</strong>.
+                      <strong>3. Revoke implied licence in writing before filing takedowns:</strong> Serving a formal Cease-and-Desist Notice revokes any implied review permission and turns the client&apos;s continued usage into <strong>knowing infringement under Sections 51 and 63</strong>.
                     </li>
                     <li>
                       <strong>4. Use Section 62(2) hometown jurisdiction:</strong> Unlike ordinary debt suits, copyright infringement suits can be filed in the District Court where <em>you</em> reside or work.
@@ -977,7 +977,7 @@ export default function CopyrightNotTransferredFreelancerPage() {
                       ✓ What LegalRecovery.in Can Do for You
                     </h3>
                     <ul className="text-xs sm:text-sm text-emerald-900 space-y-1.5 leading-relaxed">
-                      <li>• Draft and serve a dual-statutory Advocate Cease-and-Desist &amp; Payment Demand Notice under the Copyright Act, Contract Act, and MSMED Act.</li>
+                      <li>• Draft and serve a dual-statutory Cease-and-Desist &amp; Payment Demand Notice under the Copyright Act, Contract Act, and MSMED Act.</li>
                       <li>• Formally revoke the client&apos;s implied licence and put both the agency and the end-client brand on copyright infringement notice.</li>
                       <li>• Prepare compliant platform takedown notices (IT Rules 2021 Rule 3(1)(d) / DMCA) and negotiate full invoice settlement plus formal Section 19 IP release upon payment.</li>
                     </ul>

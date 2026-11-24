@@ -11,7 +11,7 @@ interface PgLockInNoticeCTAProps {
 }
 
 export default function PgLockInNoticeCTA({
-  buttonText = "Send Advocate Legal Notice to PG / Co-Living Operator",
+  buttonText = "Send Fact-Verified Legal Notice to PG / Co-Living Operator",
   className = "",
   variant = "primary",
 }: PgLockInNoticeCTAProps) {
@@ -31,7 +31,7 @@ export default function PgLockInNoticeCTA({
                 PG Owner or Co-Living Brand Withholding Your Deposit Over Lock-In or Notice Rules?
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6">
-                Have a verified advocate draft and serve a formal statutory demand notice to your PG owner, hostel management, or co-living operator (Stanza Living, Zolo, Colive, Your-Space, or local PG). We challenge illegal lock-in forfeitures under Section 74 of the Indian Contract Act and arbitrary painting or electricity deductions, served by email and WhatsApp under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023. Speed Post is optional at ₹450 per party.
+                Serve a formal statutory demand notice to your PG owner, hostel management, or co-living operator (Stanza Living, Zolo, Colive, Your-Space, or local PG). We challenge illegal lock-in forfeitures under Section 74 of the Indian Contract Act and arbitrary painting or electricity deductions, served by email and WhatsApp under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023. Speed Post is optional at ₹450 per party.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button
@@ -42,7 +42,7 @@ export default function PgLockInNoticeCTA({
                   {buttonText} — ₹{basePrice}
                 </button>
                 <div className="text-xs text-slate-300 flex flex-wrap sm:flex-nowrap items-center gap-2 sm:gap-3">
-                  <span>✓ 24h Advocate Drafting</span>
+                  <span>✓ 24h Notice Drafting</span>
                   <span>•</span>
                   <span>✓ Email + WhatsApp</span>
                   <span>•</span>

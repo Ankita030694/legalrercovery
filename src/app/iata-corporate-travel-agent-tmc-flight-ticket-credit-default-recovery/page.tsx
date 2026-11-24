@@ -110,7 +110,7 @@ const FAQS = [
     question:
       "My IATA BSP auto-debit hits in 7 days, and the client has not paid—what should I do on Day 1?",
     answer:
-      "Immediately revoke the client's self-booking tool and corporate desk credit access, cancel any unflown refundable future itineraries per your SLA to cap net exposure, extract the complete GDS 'Flown' coupon report and email approval trail, and dispatch a 7-day Advocate Statutory Demand Notice via Speed Post RPAD, email, and WhatsApp. Simultaneously put any Personal Guarantee signatory or security PDC on formal notice.",
+      "Immediately revoke the client's self-booking tool and corporate desk credit access, cancel any unflown refundable future itineraries per your SLA to cap net exposure, extract the complete GDS 'Flown' coupon report and email approval trail, and dispatch a 7-day Fact-Verified Statutory Demand Notice via Speed Post RPAD, email, and WhatsApp. Simultaneously put any Personal Guarantee signatory or security PDC on formal notice.",
   },
   {
     question:
@@ -184,7 +184,7 @@ const HOWTO_SCHEMA = {
     {
       "@type": "HowToStep",
       position: 3,
-      name: "Dispatch Multi-Channel Advocate Statutory Demand Notice (Day 2)",
+      name: "Dispatch Multi-Channel Fact-Verified Statutory Demand Notice (Day 2)",
       text: "Serve a formal demand notice to the corporate MD, CFO, and Personal Guarantee signatories via Speed Post RPAD, email, and WhatsApp citing Order XXXVII CPC and MSMED s.16.",
     },
     {

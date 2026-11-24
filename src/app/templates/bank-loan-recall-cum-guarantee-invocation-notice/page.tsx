@@ -18,7 +18,7 @@ const PAGE_DESCRIPTION =
   "Downloadable bank loan recall & explicit guarantee invocation template compliant with RBI Penal Charges Directions (no compounding of penal interest).";
 // PDF Exact H1 (116ch) — kept strictly identical to ARTICLE_SCHEMA.headline
 const H1_TEXT =
-  "Advocate-Vetted Loan Recall cum Personal/Corporate Guarantee Invocation Notice Template (RBI Penal-Charge Compliant)";
+  "Fact-Verified Loan Recall cum Personal/Corporate Guarantee Invocation Notice Template (RBI Penal-Charge Compliant)";
 
 // TODO(reviewer): src/data/reviewers.ts is absent in this repository — wire named Bar Council-enrolled banking panel advocate reviewer once created.
 
@@ -393,7 +393,7 @@ export default function BankLoanRecallGuaranteeTemplatePage() {
                 <Link href="/industries/banks-loan-recovery" className="text-red-300 underline font-bold hover:text-white">
                   Banks Loan &amp; NPA Legal Recovery Hub
                 </Link>
-                , this advocate-vetted recall template pairs an uncompounded RBI Penal-Charges Schedule A with explicit Section 126/128 invocation of Personal and Corporate Guarantees—eliminating borrower DRT accounting objections.
+                , this ready-to-use recall template pairs an uncompounded RBI Penal-Charges Schedule A with explicit Section 126/128 invocation of Personal and Corporate Guarantees—eliminating borrower DRT accounting objections.
               </p>
             </div>
 
@@ -814,7 +814,7 @@ export default function BankLoanRecallGuaranteeTemplatePage() {
               >
                 <div className="bg-white rounded-2xl border border-slate-200 p-5 sm:p-6 shadow-sm">
                   <span className="text-[11px] font-black uppercase tracking-widest text-[#DC2626] block mb-1">
-                    Empanelled Advocate Dispatch &amp; CSV Batch Engine
+                    Empanelled Dispatch &amp; CSV Batch Engine
                   </span>
                   <h2
                     id="heading-institutional-cta-title"

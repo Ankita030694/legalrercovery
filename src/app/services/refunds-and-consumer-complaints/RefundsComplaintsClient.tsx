@@ -98,7 +98,7 @@ export default function RefundsComplaintsClient() {
     {
       id: "faq-2",
       question: "Is it legally mandatory to send a legal notice to a company before filing a consumer complaint?",
-      answer: "A pre-litigation legal notice is not mandatory under the Act, but it is highly effective. It proves to the Consumer Commission that you tried to resolve the dispute in good faith. A formal advocate notice creates urgent pressure. It resolves nearly 80% of disputes without going to court."
+      answer: "A pre-litigation legal notice is not mandatory under the Act, but it is highly effective. It proves to the Consumer Commission that you tried to resolve the dispute in good faith. A formal legal notice creates urgent pressure. It resolves nearly 80% of disputes without going to court."
     },
     {
       id: "faq-3",
@@ -154,7 +154,7 @@ export default function RefundsComplaintsClient() {
       id: "rev-2",
       name: "Priyanka Nair (Consultant, Mumbai)",
       rating: 5,
-      review: "A leading travel portal refused to issue a refund of ₹48,000 for a flight cancelled due to national lockdowns, offering only useless credit shells. LegalRecovery drafted an advocate notice outlining the Supreme Court directives and state consumer acts. The portal processed a complete cash refund to my credit card in 72 hours."
+      review: "A leading travel portal refused to issue a refund of ₹48,000 for a flight cancelled due to national lockdowns, offering only useless credit shells. LegalRecovery drafted a legal notice outlining the Supreme Court directives and state consumer acts. The portal processed a complete cash refund to my credit card in 72 hours."
     },
     {
       id: "rev-3",
@@ -186,7 +186,7 @@ export default function RefundsComplaintsClient() {
           "@id": "https://www.legalrecovery.in/services/refunds-and-consumer-complaints"
         },
         "headline": "Recover Stuck Refunds & File Consumer Complaints Legally in India",
-        "description": "Reclaim stuck refunds, report defective products, fight deficient services, and handle warranty defaults legally in India under the Consumer Protection Act, 2019. 3 progressive notices, 1 police complaint draft, attorney-verified.",
+        "description": "Reclaim stuck refunds, report defective products, fight deficient services, and handle warranty defaults legally in India under the Consumer Protection Act, 2019. 3 progressive notices, 1 police complaint draft, fact-verified.",
         "image": "https://www.legalrecovery.in/blog_money_recovery.png",
         "datePublished": "2026-05-27T00:00:00Z",
         "dateModified": "2026-05-27T00:00:00Z",
@@ -245,7 +245,7 @@ export default function RefundsComplaintsClient() {
         "@type": "Product",
         "@id": "https://www.legalrecovery.in/services/refunds-and-consumer-complaints#service",
         "name": "Refunds and Consumer Complaints Recovery Service",
-        "description": "Professional money recovery for e-commerce refund delays, defective consumer goods, deficient services, warranty disputes, insurance rejections, and travel overcharges using advocate-signed notices.",
+        "description": "Professional money recovery for e-commerce refund delays, defective consumer goods, deficient services, warranty disputes, insurance rejections, and travel overcharges using fact-verified notices.",
         "brand": {
           "@type": "Organization",
           "name": "LegalRecovery",
@@ -309,7 +309,7 @@ export default function RefundsComplaintsClient() {
               <span className="text-[#DC2626]">Fight Back Legally.</span>
             </h1>
             <p className="text-[15px] md:text-[17px] text-[#4B5563] font-medium leading-[1.6] mb-6 max-w-xl select-text">
-              Reclaim stuck e-commerce refunds, dispute defective electronics, appeal insurance rejections, and penalize deficient services. We deploy 3 practicing advocate legal notices and 1 formal police complaint draft to force corporate compliance.
+              Reclaim stuck e-commerce refunds, dispute defective electronics, appeal insurance rejections, and penalize deficient services. We deploy 3 practicing legal notices and 1 formal police complaint draft to force corporate compliance.
             </p>
 
             {/* High-Trust Tagline Banner */}
@@ -445,7 +445,7 @@ export default function RefundsComplaintsClient() {
                   Consumers often face frustrating customer support when products fail. Automated chatbots and canned emails lead to endless delays. When sellers deliver broken items or refuse refunds, buyers feel powerless.
                 </p>
                 <p>
-                  LegalRecovery levels the playing field. Companies delay refunds because they assume you will give up. We replace endless follow-ups with a structured, advocate-backed legal notice process. Our notices reach company directors and legal teams directly, compelling them to act.
+                  LegalRecovery levels the playing field. Companies delay refunds because they assume you will give up. We replace endless follow-ups with a structured, fact-verified legal notice process. Our notices reach company directors and legal teams directly, compelling them to act.
                 </p>
                 <blockquote>
                   <strong>Our Service Promise:</strong> We offer full consumer recovery support for a flat fee. We take <strong>zero commission</strong> on your recovered money. We draft and serve authoritative legal notices to resolve your claims fast.
@@ -493,13 +493,13 @@ export default function RefundsComplaintsClient() {
                 {/* 3. Our 3+1 Notice Strategy */}
                 <h2 id="notice-strategy">3. Our 3+1 Notice Strategy: Engineered for Maximum Pressure</h2>
                 <p>
-                  Filing a lawsuit takes time, while basic complaint emails are easily ignored. LegalRecovery deploys a <strong className="font-extrabold text-[#111827]">3-stage advocate notice pipeline with a criminal complaint draft</strong>:
+                  Filing a lawsuit takes time, while basic complaint emails are easily ignored. LegalRecovery deploys a <strong className="font-extrabold text-[#111827]">3-stage legal notice pipeline with a criminal complaint draft</strong>:
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
                   <div className="bg-[#F9FAFB] p-5 rounded-2xl border border-[#E5E7EB]">
                     <div className="flex items-center gap-3 mb-3">
                       <div className="w-8 h-8 rounded-full bg-[#DC2626] text-white flex items-center justify-center font-black text-xs">1</div>
-                      <h4 className="font-extrabold text-[#111827] text-sm">Stage 1: Advocate Demand Notice</h4>
+                      <h4 className="font-extrabold text-[#111827] text-sm">Stage 1: Legal Demand Notice</h4>
                     </div>
                     <p className="text-xs text-[#4B5563] leading-relaxed">
                       We serve a formal legal notice on an advocate&apos;s letterhead via tracked email and WhatsApp (Speed Post optional), giving the seller 15 days to settle.
@@ -595,12 +595,12 @@ export default function RefundsComplaintsClient() {
                   Many consumers download free complaint templates from blogs. These generic letters rarely get results:
                 </p>
                 <ul>
-                  <li><strong>No Lawyer Seal:</strong> Companies have in-house legal teams. A casual email without an advocate&apos;s seal is treated as low risk and ignored.</li>
+                  <li><strong>No Formal Notice:</strong> Companies have in-house legal teams. A casual email without a formal statutory notice is treated as low risk and ignored.</li>
                   <li><strong>Outdated Acts Cited:</strong> Free templates often cite the repealed 1986 Act or omit the E-Commerce Rules, 2020. This makes the notice legally toothless.</li>
                   <li><strong>No Direct Board Access:</strong> Standard templates get buried in general support inboxes rather than reaching decision-makers.</li>
                 </ul>
                 <p>
-                  LegalRecovery delivers advocate-signed, customized consumer notices. We track digital delivery so corporate teams cannot deny receiving your claim.
+                  LegalRecovery delivers fact-verified, customized consumer notices. We track digital delivery so corporate teams cannot deny receiving your claim.
                 </p>
 
                 {/* 6. Transparent Flat Pricing */}
@@ -625,7 +625,7 @@ export default function RefundsComplaintsClient() {
                           </span>
                           <h3 className="text-2xl font-black text-[#111827] mb-4">Complete Consumer Recovery</h3>
                           <p className="text-[14px] text-[#4B5563] font-medium leading-[1.6] mb-8">
-                            Get full-suite support from expert attorneys. Standardized flat pricing with absolutely zero commission on your recovered amount.
+                            Get full-suite support from our fact-verified notice service. Standardized flat pricing with absolutely zero commission on your recovered amount.
                           </p>
                         </div>
                         
@@ -663,8 +663,8 @@ export default function RefundsComplaintsClient() {
                             <div className="flex items-start gap-3">
                               <Check className="w-4 h-4 sm:w-5 sm:h-5 text-[#10B981] stroke-[3.5] shrink-0 mt-0.5" />
                               <div className="flex flex-col">
-                                <span className="text-[11.5px] sm:text-[13.5px] font-bold text-[#111827] leading-snug">Attorney Validation</span>
-                                <span className="text-[9.5px] sm:text-[11.5px] text-[#6B7280] font-medium leading-tight">Verified by top legal experts</span>
+                                <span className="text-[11.5px] sm:text-[13.5px] font-bold text-[#111827] leading-snug">Fact Verification</span>
+                                <span className="text-[9.5px] sm:text-[11.5px] text-[#6B7280] font-medium leading-tight">Facts verified by our team</span>
                               </div>
                             </div>
                             <div className="flex items-start gap-3">
@@ -700,7 +700,7 @@ export default function RefundsComplaintsClient() {
                 {/* 7. Evidentiary Checklist */}
                 <h2 id="documentation-needed">7. The Evidentiary Checklist for Consumer Claims</h2>
                 <p>
-                  To build an airtight case against a corporate merchant or service provider, you must collect standard transaction records. Our advocate panel utilizes these records to back every claim in the notices:
+                  To build an airtight case against a corporate merchant or service provider, you must collect standard transaction records. Our team utilizes these records to back every claim in the notices:
                 </p>
                 <ul>
                   <li><strong>Tax Invoice / Purchase Bill:</strong> Establishes the transaction date, item description, consideration paid, and merchant's GST details.</li>
@@ -875,7 +875,7 @@ export default function RefundsComplaintsClient() {
               <div className="absolute top-0 right-0 w-24 h-24 bg-red-600/10 rounded-full blur-xl pointer-events-none" />
               <h3 className="text-base font-extrabold mb-3 tracking-tight">Need Urgent Refund Recovery?</h3>
               <p className="text-gray-400 mb-5 text-[11px] leading-relaxed">
-                Get an advocate-drafted 3-stage notice pipeline and a customized police complaint draft for a flat fee of ₹999.
+                Get a fact-verified 3-stage notice pipeline and a customized police complaint draft for a flat fee of ₹999.
               </p>
               <Link 
                 href="/contact" 

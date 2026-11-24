@@ -29,7 +29,7 @@ const SCENARIOS: Scenario[] = [
     statutorySolution:
       "Under the Delhi High Court principles in Tower Vision India and Deepak Chopra, while unexpired rent cannot be a pure windfall, unamortized capital expenditure specifically tailored for the tenant constitutes direct, actual damage proven under Section 73. Because the remaining 26/36ths of the fit-out cannot be re-used by a generic replacement tenant without substantial demolition, the landlord is entitled to recover ₹34.66 Lakhs of unamortized CapEx plus initial rent-free period clawback.",
     actionableSteps: [
-      "Issue an immediate Advocate Legal Notice disputing unilateral surrender and invoking the custom fit-out amortization schedule.",
+      "Issue an immediate Fact-Verified Legal Notice disputing unilateral surrender and invoking the custom fit-out amortization schedule.",
       "Conduct a BSA 2023 s.63 compliant videographic inventory showing specialized alterations that render the space non-fungible for standard tenants.",
       "Claw back 100% of the initial 3-month rent-free fit-out concession as contractually linked to lock-in performance.",
       "Forfeit the 6-month security deposit specifically against unamortized CapEx and physical reinstatement, not generic liquidated rent.",

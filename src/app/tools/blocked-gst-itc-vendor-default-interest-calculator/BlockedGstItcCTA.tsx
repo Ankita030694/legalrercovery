@@ -27,10 +27,10 @@ export default function BlockedGstItcCTA({
               Track 1 &bull; Single Defaulter Vendor Test
             </span>
             <p className="text-lg sm:text-xl font-extrabold text-white mb-2">
-              Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Advocate Drafted &middot; Email + WhatsApp + Speed Post RPAD)
+              Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Fact-Verified &middot; Email + WhatsApp + Speed Post RPAD)
             </p>
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-              Serve a high-impact, advocate-vetted statutory demand notice on the defaulting supplier. Demands immediate restitution of blocked ITC under CGST Act Section 16(2)(c), 18% Section 50(3) interest, departmental penalty indemnity under Contract Act Section 73/124, and sets a strict 7-day cure window before civil attachment and summary court proceedings.
+              Serve a high-impact, fact-verified statutory demand notice on the defaulting supplier. Demands immediate restitution of blocked ITC under CGST Act Section 16(2)(c), 18% Section 50(3) interest, departmental penalty indemnity under Contract Act Section 73/124, and sets a strict 7-day cure window before civil attachment and summary court proceedings.
             </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-3">

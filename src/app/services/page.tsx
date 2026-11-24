@@ -36,7 +36,7 @@ export default function ServicesPage() {
   const servicesFaqs: FAQItem[] = [
     {
       question: "How to draft and send legal notice online in India?",
-      answer: "To know how to send legal notice online, you can use our online legal notice drafting service. Simply upload your dispute details, and our advocate for legal notice will prepare a professional notice following the correct legal notice format. We provide the most reliable online legal notice India drafting service and dispatch."
+      answer: "To know how to send legal notice online, you can use our online legal notice drafting service. Simply enter your dispute details in our online form, and our team for legal notice will prepare a professional notice following the correct legal notice format. We provide the most reliable online legal notice India drafting service and dispatch."
     },
     {
       question: "How to reply to a legal notice online?",
@@ -44,7 +44,7 @@ export default function ServicesPage() {
     },
     {
       question: "What are the legal notice drafting charges in India?",
-      answer: "The cost of legal notice drafting starts at a flat fee of ₹999 on our platform. Our transparent legal notice drafting charges cover advocate review, professional drafting, dispatch by email and WhatsApp, and digital tracking, with zero hidden commissions or extra retainer fees. Speed Post is optional at ₹450 per party."
+      answer: "The cost of legal notice drafting starts at a flat fee of ₹999 on our platform. Our transparent legal notice drafting charges cover fact verification, professional drafting, dispatch by email and WhatsApp, and digital tracking, with zero hidden commissions or extra retainer fees. Speed Post is optional at ₹450 per party."
     },
     {
       question: "Can I send legal notice online for unpaid money?",
@@ -56,7 +56,7 @@ export default function ServicesPage() {
     },
     {
       question: "Is LegalRecovery the best legal recovery company in India?",
-      answer: "Yes, LegalRecovery is widely recognized as the best legal recovery company and legal recovery company India. We offer a 100% online legal notice drafting service where you can send legal notice online, draft legal notice online, and receive legal notice assistance from a qualified advocate for legal notice."
+      answer: "Yes, LegalRecovery is widely recognized as the best legal recovery company and legal recovery company India. We offer a 100% online legal notice drafting service where you can send legal notice online, draft legal notice online, and receive fact-verified legal notice assistance from our team."
     },
     {
       question: "Can I send a legal notice for salary recovery and employment disputes?",
@@ -420,9 +420,9 @@ export default function ServicesPage() {
             {/* Step 2 */}
             <div className="bg-white border border-[#E5E7EB] rounded-3xl p-6 shadow-[0_6px_25px_rgba(0,0,0,0.01)] flex flex-col text-left">
               <span className="text-3xl font-black text-[#DC2626] mb-4">02</span>
-              <h3 className="text-[16px] font-bold text-[#111827] mb-2">Advocate Review</h3>
+              <h3 className="text-[16px] font-bold text-[#111827] mb-2">Fact Verification</h3>
               <p className="text-[12.5px] sm:text-[13.5px] text-[#4B5563] leading-relaxed font-semibold">
-                Qualified advocates verify the details, choose the appropriate legal provisions, and draft a customized document tailored to your dispute.
+                Our team verifies the details you submit, chooses the appropriate legal provisions, and prepares a customized document tailored to your dispute.
               </p>
             </div>
 
@@ -587,7 +587,7 @@ export default function ServicesPage() {
                 </div>
                 <h3 className="text-[13px] sm:text-[15px] font-extrabold text-[#111827] mb-2 leading-none">Affordable Pricing</h3>
                 <p className="text-[11px] sm:text-[13px] text-[#4B5563] font-medium leading-[1.6] max-w-[210px] mx-auto">
-                  Get high-quality attorney verification for a single flat fee of ₹999.
+                  Get high-quality fact verification for a single flat fee of ₹999.
                 </p>
               </div>
 
@@ -621,7 +621,7 @@ export default function ServicesPage() {
                 Not sure which category fits your legal recovery case?
               </h3>
               <p className="text-xs sm:text-[13px] text-gray-400 font-semibold leading-normal mt-1 md:mt-2">
-                Talk to our legal experts and get absolute clarity.
+                Talk to our team and get absolute clarity.
               </p>
             </div>
 

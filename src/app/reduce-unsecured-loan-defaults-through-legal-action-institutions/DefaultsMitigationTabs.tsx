@@ -32,9 +32,9 @@ const STRATEGIES: StrategyTab[] = [
           "Integrate loan management systems (LMS) to flag accounts reaching 31 DPD with consecutive mandate failures, instantly compiling loan ledger extracts and communication logs.",
       },
       {
-        step: "Statutory Advocate Legal Demand Notice Dispatch",
+        step: "Statutory Fact-Verified Legal Demand Notice Dispatch",
         description:
-          "Issue a high-impact advocate legal notice via speed post and Section 63 BSA electronic channels, giving a 15-day cure window while enumerating interest and legal escalation liabilities.",
+          "Issue a high-impact fact-verified legal notice via speed post and Section 63 BSA electronic channels, giving a 15-day cure window while enumerating interest and legal escalation liabilities.",
       },
       {
         step: "Structured Restructuring or Accelerated Settlement",
@@ -61,7 +61,7 @@ const STRATEGIES: StrategyTab[] = [
       {
         step: "Serve Section 25 Statutory Demand Notice Within 30 Days",
         description:
-          "Dispatch an advocate demand notice strictly within 30 days of receiving the debit failure confirmation, demanding settlement of the dishonoured amount within 15 days.",
+          "Dispatch a fact-verified demand notice strictly within 30 days of receiving the debit failure confirmation, demanding settlement of the dishonoured amount within 15 days.",
       },
       {
         step: "File Section 25 PSS Criminal Complaint or Lok Adalat Summons",
@@ -110,7 +110,7 @@ const STRATEGIES: StrategyTab[] = [
       {
         step: "API-Triggered Bulk Legal Notice Generation",
         description:
-          "Connect risk infrastructure to LegalRecovery.in's institutional pipeline to generate advocate-vetted notices with individualized loan data and QR code payment rails.",
+          "Connect risk infrastructure to LegalRecovery.in's institutional pipeline to generate fact-verified notices with individualized loan data and QR code payment rails.",
       },
       {
         step: "Multi-Channel Statutory Electronic Service",

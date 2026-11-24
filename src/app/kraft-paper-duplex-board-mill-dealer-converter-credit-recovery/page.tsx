@@ -564,7 +564,7 @@ export default function KraftPaperDuplexMillRecoveryPage() {
                   },
                   {
                     stage: "Stage 2 (Day 45–55)",
-                    title: "Serve Composite Statutory Advocate Notice",
+                    title: "Serve Composite Statutory Fact-Verified Notice",
                     desc: "Cite Indian paper trade custom, Sale of Goods Act s.42, contractual 18%–24% interest, and Section 43B(h) via Email + WhatsApp + Speed Post RPAD.",
                   },
                   {
@@ -1110,7 +1110,7 @@ export default function KraftPaperDuplexMillRecoveryPage() {
                     tag: "P1 Notice Format",
                     title: "MSME Delayed Payment Demand Notice Format",
                     href: "/templates/msme-delayed-payment-demand-notice",
-                    desc: "Advocate-vetted notice invoking MSMED ss.15–18 and Income Tax Section 43B(h) disallowance.",
+                    desc: "Fact-verified notice invoking MSMED ss.15–18 and Income Tax Section 43B(h) disallowance.",
                   },
                   {
                     tag: "Statute Guide",

@@ -164,7 +164,7 @@ const FAQS = [
   {
     question: "EPF claim bar-bar reject ho raha hai ya employer exit mark nahi kar raha toh legal notice kaise bheje?",
     answer:
-      "Agar EPFO bar-bar clerical ya technical grounds par aapka Form 19, 10C ya 31 reject kar raha hai, ya purana employer Joint Declaration verify nahi kar raha, toh aap LegalRecovery.in ke verified advocate ke dwara statutory legal notice bhej sakte hain. Notice employer ke Board of Directors aur Regional Provident Fund Commissioner (RPFC) ko Registered Speed Post aur electronic mail se bheja jata hai. Ismein EPF Scheme 2026 aur Code on Social Security ke tehat 15 din ke andar corpus release karne aur statutory delay interest pay karne ka binding demand diya jata hai.",
+      "Agar EPFO bar-bar clerical ya technical grounds par aapka Form 19, 10C ya 31 reject kar raha hai, ya purana employer Joint Declaration verify nahi kar raha, toh aap LegalRecovery.in ke zariye fact-verified statutory legal notice bhej sakte hain. Notice employer ke Board of Directors aur Regional Provident Fund Commissioner (RPFC) ko Registered Speed Post aur electronic mail se bheja jata hai. Ismein EPF Scheme 2026 aur Code on Social Security ke tehat 15 din ke andar corpus release karne aur statutory delay interest pay karne ka binding demand diya jata hai.",
   },
 ];
 
@@ -688,7 +688,7 @@ export default function EpfSchemeClaimRejectionPage() {
                     </span>
                     <div className="space-y-1 sm:space-y-1.5">
                       <h3 className="text-sm sm:text-base md:text-lg font-bold text-slate-900">
-                        Serve a Formal Statutory Advocate Legal Demand Notice
+                        Serve a Formal Statutory Fact-Verified Legal Demand Notice
                       </h3>
                       <p className="text-xs sm:text-sm leading-relaxed">
                         When administrative escalation yields no disbursement within 30 days, or where an employer refuses to approve your Joint Declaration or has deducted PF without depositing it, engage an advocate to issue a statutory demand notice. Served on both the employer&apos;s Board of Directors and the Regional Provident Fund Commissioner via Registered Speed Post and Section 63 BSA electronic mail, the notice demands 100% corpus release, 12% penal interest under Section 7Q, and damages within 15 calendar days.
@@ -836,11 +836,11 @@ export default function EpfSchemeClaimRejectionPage() {
                       <strong>The Deadlock:</strong> Over the subsequent 5 months, EPFO field officers repudiated his claim 3 consecutive times with varying automated remarks: (1) &quot;Father name differs by one letter from UAN Master&quot;, (2) &quot;Cheque leaf blurred&quot;, and (3) &quot;Previous employer service overlapping by 2 days&quot;. While Anupam submitted an online Joint Declaration, his ex-employer failed to approve it on their employer portal, citing administrative reshuffles.
                     </p>
                     <p>
-                      <strong>The Statutory Action:</strong> Anupam engaged LegalRecovery.in. An advocate drafted and dispatched a comprehensive statutory legal demand notice to both the Board of Directors of the tech company and the Regional Provident Fund Commissioner, Whitefield. The notice invoked Para 26B and Para 72(7) of the EPF Scheme, Section 142 of the Code on Social Security 2020, and the Supreme Court&apos;s judgment in <em>RPFC v. Shiv Kumar Joshi</em>, demanding immediate digital approval, record rectification, and fund disbursement within 15 days under threat of consumer damages and Section 7A inquiry.
+                      <strong>The Statutory Action:</strong> Anupam engaged LegalRecovery.in. The team verified the facts and dispatched a comprehensive statutory legal demand notice to both the Board of Directors of the tech company and the Regional Provident Fund Commissioner, Whitefield. The notice invoked Para 26B and Para 72(7) of the EPF Scheme, Section 142 of the Code on Social Security 2020, and the Supreme Court&apos;s judgment in <em>RPFC v. Shiv Kumar Joshi</em>, demanding immediate digital approval, record rectification, and fund disbursement within 15 days under threat of consumer damages and Section 7A inquiry.
                     </p>
                     <div className="p-3.5 sm:p-4 bg-emerald-950/70 border border-emerald-700/60 rounded-xl text-emerald-200">
                       <strong className="block text-emerald-400 font-bold mb-1">The Outcome:</strong>
-                      Within 9 days of receiving the advocate legal demand notice, corporate HR digitally signed the pending Joint Declaration using their company DSC. Simultaneously, the RPFC nodal grievance officer manually cleared the pending algorithmic flag. The full corpus of ₹5,40,280 along with statutory accrued interest was credited directly to Anupam&apos;s HDFC Bank account without requiring a physical visit to the regional office.
+                      Within 9 days of receiving the fact-verified legal demand notice, corporate HR digitally signed the pending Joint Declaration using their company DSC. Simultaneously, the RPFC nodal grievance officer manually cleared the pending algorithmic flag. The full corpus of ₹5,40,280 along with statutory accrued interest was credited directly to Anupam&apos;s HDFC Bank account without requiring a physical visit to the regional office.
                     </div>
                   </div>
                 </div>

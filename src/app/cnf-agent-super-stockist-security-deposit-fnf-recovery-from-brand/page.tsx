@@ -173,7 +173,7 @@ const FAQS = [
   {
     question: "Why should a C&F agent send an advocate legal notice before initiating litigation?",
     answer:
-      "Over 72% of corporate FMCG and beverage agency disputes settle within 15 to 30 days of receiving a formal, advocate-drafted statutory demand notice. Corporate legal and compliance teams prioritize cases where the creditor presents a watertight BSA 2023 Section 63 electronic dossier, invokes Contract Act Section 222 personal indemnity, and threatens Commercial Court asset attachment under Order XXXVIII Rule 5. It establishes a firm evidentiary paper trail and stops brand finance from passing the buck between regional and corporate offices.",
+      "Over 72% of corporate FMCG and beverage agency disputes settle within 15 to 30 days of receiving a formal, fact-verified statutory demand notice. Corporate legal and compliance teams prioritize cases where the creditor presents a watertight BSA 2023 Section 63 electronic dossier, invokes Contract Act Section 222 personal indemnity, and threatens Commercial Court asset attachment under Order XXXVIII Rule 5. It establishes a firm evidentiary paper trail and stops brand finance from passing the buck between regional and corporate offices.",
   },
 ];
 
@@ -281,7 +281,7 @@ export default function CnfAgentSecurityDepositRecoveryPage() {
       {
         "@type": "HowToStep",
         position: 5,
-        name: "Issue 15-Day Advocate Statutory Demand Notice",
+        name: "Issue 15-Day Fact-Verified Statutory Demand Notice",
         text: "Serve a comprehensive legal notice via Speed Post RPAD, WhatsApp, and Email under Contract Act Sections 73, 217, 221, and 222 with 18% commercial interest.",
       },
       {
@@ -1084,7 +1084,7 @@ export default function CnfAgentSecurityDepositRecoveryPage() {
                   </span>
                   <div>
                     <h3 className="text-sm font-bold text-slate-900 mb-1">
-                      Serve 15-Day Advocate Statutory Demand Notice
+                      Serve 15-Day Fact-Verified Statutory Demand Notice
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
                       Dispatch a Bar Council-compliant legal demand notice via Speed Post RPAD, WhatsApp, and official corporate email under Contract Act ss. 73/222, invoking the Raman Iron Foundry bar against unilateral set-offs.

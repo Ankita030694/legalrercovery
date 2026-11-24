@@ -224,7 +224,7 @@ export default function FinishingMaterialRecoveryPage() {
       {
         "@type": "HowToStep",
         position: 3,
-        name: "Serve Tri-Channel Advocate Demand Notice (MSMED s.15–18 & s.43B(h))",
+        name: "Serve Tri-Channel Fact-Verified Demand Notice (MSMED s.15–18 & s.43B(h))",
         text: "Dispatch a formal legal notice via Email, WhatsApp, and Speed Post RPAD rejecting encumbered barter offers and claiming 3x RBI compound interest.",
       },
       {

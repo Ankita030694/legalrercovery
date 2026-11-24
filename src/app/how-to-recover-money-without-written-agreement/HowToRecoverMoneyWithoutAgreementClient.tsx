@@ -25,7 +25,7 @@ const faqs = [
   },
   {
     question: "How much does it cost to send a legal notice for a verbal loan?",
-    answer: "Sending a legal notice through a professional service typically ranges from 1,500 to 5,000 Rupees, depending on the complexity of the facts and the seniority of the advocate drafting the notice."
+    answer: "Sending a legal notice through a professional service typically ranges from 1,500 to 5,000 Rupees, depending on the complexity of the facts and the seniority of the notice drafting the notice."
   },
   {
     question: "Do I need witnesses to prove an oral agreement?",

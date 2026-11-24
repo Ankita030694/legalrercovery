@@ -24,10 +24,10 @@ export default function FuelDieselCTA({ className = "" }: FuelDieselCTAProps) {
                 Track 1 · Single Fleet / Contractor / Mill Default
               </span>
               <h3 className="text-lg sm:text-xl font-bold text-white mb-2">
-                Test 1 Live Overdue Case Now (&#8377;{basePrice} &middot; Advocate Drafted &middot; Email + WhatsApp + Speed Post RPAD)
+                Test 1 Live Overdue Case Now (&#8377;{basePrice} &middot; Fact-Verified &middot; Email + WhatsApp + Speed Post RPAD)
               </h3>
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-                Upload signed fuel indent slips, digital RFID bowser flow-meter receipts, FO/LDO tanker COAs, lubricant GST invoices, or bounced PDC memos. Our advocates dispatch an Order 37 CPC / NI s.138 demand notice within 24 hours.
+                Enter your fuel indent, RFID bowser flow-meter, FO/LDO tanker COA, lubricant GST invoice, or bounced PDC details in our online form. Our team verifies the facts and dispatches an Order 37 CPC / NI s.138 demand notice within 24 hours.
               </p>
             </div>
 

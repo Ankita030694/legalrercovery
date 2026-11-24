@@ -1041,7 +1041,7 @@ export default function TaxInvoiceEwayBillGrnProofPage() {
               {/* Bottom Dual-Track CTA Component */}
               <GstProofCTA />
 
-              {/* Advocate Review & Verification Byline */}
+              {/* Fact Verification & Verification Byline */}
               <div className="p-4 bg-slate-100 rounded-xl border border-slate-200 text-xs text-slate-600 flex flex-col sm:flex-row items-center justify-between gap-2">
                 <p>
                   <strong>Statutory Editorial Review: </strong>

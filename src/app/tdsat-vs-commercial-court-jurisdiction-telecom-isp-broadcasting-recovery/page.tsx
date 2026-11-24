@@ -217,7 +217,7 @@ const FAQS = [
   },
   {
     q: "How can a telecom operator, ISP, or MSO handle 50 to 5,000+ overdue accounts split across TDSAT and Commercial Courts?",
-    a: "Institutional telecom and broadband creditors use an automated pre-litigation triage workflow: every account is tagged by counterparty status (DoT/MIB Licensee vs. Enterprise/Retail Subscriber), ticket size (above or below ₹3 Lakh Commercial Court threshold), and arbitration clause presence. Advocate-drafted notices (21-day TRAI Disconnection Notices for LCOs; 15-day Order XXXVII / Contract Act s.74 notices for enterprise clients) can be dispatched in bulk via CSV upload through a dedicated Representees desk.",
+    a: "Institutional telecom and broadband creditors use an automated pre-litigation triage workflow: every account is tagged by counterparty status (DoT/MIB Licensee vs. Enterprise/Retail Subscriber), ticket size (above or below ₹3 Lakh Commercial Court threshold), and arbitration clause presence. Fact-verified notices (21-day TRAI Disconnection Notices for LCOs; 15-day Order XXXVII / Contract Act s.74 notices for enterprise clients) can be dispatched in bulk via CSV upload through a dedicated Representees desk.",
   },
 ];
 
@@ -666,7 +666,7 @@ export default function TdsatVsCommercialCourtJurisdictionPage() {
                   </p>
                   <p className="text-xs text-slate-300">
                     TDSAT lacks jurisdiction over subscriber or non-licensee vendor debt. Serve
-                    15-day Advocate Notice, clear Section 12A mediation (for &#8377;3L+), and file
+                    15-day Fact-Verified Notice, clear Section 12A mediation (for &#8377;3L+), and file
                     Order XXXVII Summary Suit.
                   </p>
                 </div>

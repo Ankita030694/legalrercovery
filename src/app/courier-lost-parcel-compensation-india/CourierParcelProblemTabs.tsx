@@ -37,7 +37,7 @@ const PROBLEMS: ProblemTab[] = [
           "Email Delhivery Grievance Officer and customer support (customer.support@delhivery.com) formally demanding the GPS geo-stamp of delivery and recipient signature/OTP. Simultaneously lodge a National Consumer Helpline (NCH) docket.",
       },
       {
-        step: "Serve Advocate Legal Notice Demanding Invoice Value",
+        step: "Serve Fact-Verified Legal Notice Demanding Invoice Value",
         description:
           "When Delhivery fails to deliver or offer full reimbursement within 7 days, serve a formal 15-day statutory legal notice demanding the full commercial invoice value of the contents plus 12% interest and compensation.",
       },
@@ -66,7 +66,7 @@ const PROBLEMS: ProblemTab[] = [
       {
         step: "Issue Pre-Litigation Legal Demand Notice",
         description:
-          "Serve an advocate statutory demand notice citing NCDRC precedent and Section 10 Carriage by Road Act. Demand payment of full item cost plus damages for harassment within 15 days.",
+          "Serve a fact-verified statutory demand notice citing NCDRC precedent and Section 10 Carriage by Road Act. Demand payment of full item cost plus damages for harassment within 15 days.",
       },
     ],
     statutoryRule: "Section 2(46) CPA 2019 (Unfair Contract) & NCDRC Precedents",
@@ -120,7 +120,7 @@ const PROBLEMS: ProblemTab[] = [
       {
         step: "Legal Notice to Superintendent of Post Offices & Consumer Forum",
         description:
-          "Issue a statutory advocate demand notice to the Senior Superintendent of Post Offices (SSPO) challenging unreasonable immunity and claiming full compensation on e-Jagriti.",
+          "Issue a statutory fact-verified demand notice to the Senior Superintendent of Post Offices (SSPO) challenging unreasonable immunity and claiming full compensation on e-Jagriti.",
       },
     ],
     statutoryRule: "Post Office Regulations & Consumer Forum Precedents Overcoming Section 6",
@@ -147,7 +147,7 @@ const PROBLEMS: ProblemTab[] = [
       {
         step: "Statutory Demand for Full Replacement Cost & Compensation",
         description:
-          "Serve advocate legal notice to courier directors demanding compensation for proven market replacement value and initiating consumer proceedings.",
+          "Serve fact-verified legal notice to courier directors demanding compensation for proven market replacement value and initiating consumer proceedings.",
       },
     ],
     statutoryRule: "Section 12 Carriage by Road Act 2007 (Burden of Proof on Carrier)",
@@ -253,7 +253,7 @@ export default function CourierParcelProblemTabs() {
 
         <div className="pt-3 border-t border-slate-100 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
           <div className="text-xs text-slate-500">
-            Carrier refusing to pay more than ₹100 or ₹2,000? Serve a statutory advocate legal notice before initiating consumer court proceedings.
+            Carrier refusing to pay more than ₹100 or ₹2,000? Serve a statutory fact-verified legal notice before initiating consumer court proceedings.
           </div>
           <Link
             href="/legal-notice-charges"

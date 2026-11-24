@@ -224,7 +224,7 @@ export default function ElectronicsDealerCreditRecoveryPage() {
         "@type": "HowToStep",
         position: 2,
         name: "Serve Formal Written-Credit-Note Rebuttal Demand Notice",
-        text: "Issue an advocate-settled legal notice invoking the parol evidence rule under BSA 2023 Sections 94–95, rejecting unauthenticated oral price-drop or sell-out support claims promised by former sales executives and demanding certified ledger discharge within 7 to 15 days.",
+        text: "Issue a fact-verified legal notice invoking the parol evidence rule under BSA 2023 Sections 94–95, rejecting unauthenticated oral price-drop or sell-out support claims promised by former sales executives and demanding certified ledger discharge within 7 to 15 days.",
       },
       {
         "@type": "HowToStep",
@@ -304,7 +304,7 @@ export default function ElectronicsDealerCreditRecoveryPage() {
         name: "How does LegalRecovery assist regional electronics distributors managing 50 to 500+ dealer accounts?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "LegalRecovery provides an automated institutional recovery desk. Distributors upload ERP/Tally ledger exports and IMEI billing schedules via CSV. The platform reconciles outstanding balances, disallows unsubstantiated oral discount claims, dispatches advocate-settled legal notices via Speed Post RPAD and email/WhatsApp with BSA Section 63 certificates, and coordinates nationwide Order XXXVII summary suits and Section 138 NI Act criminal proceedings across district commercial courts.",
+          text: "LegalRecovery provides an automated institutional recovery desk. Distributors upload ERP/Tally ledger exports and IMEI billing schedules via CSV. The platform reconciles outstanding balances, disallows unsubstantiated oral discount claims, dispatches fact-verified legal notices via Speed Post RPAD and email/WhatsApp with BSA Section 63 certificates, and coordinates nationwide Order XXXVII summary suits and Section 138 NI Act criminal proceedings across district commercial courts.",
         },
       },
     ],
@@ -1027,7 +1027,7 @@ export default function ElectronicsDealerCreditRecoveryPage() {
               </div>
 
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed mb-6">
-                When defaulting dealers receive an advocate-drafted statutory notice citing binding Supreme Court holdings, informal stalling tactics collapse. Every legal demand issued by LegalRecovery integrates verified precedents that foreclose common retail defenses:
+                When defaulting dealers receive a fact-verified statutory notice citing binding Supreme Court holdings, informal stalling tactics collapse. Every legal demand issued by LegalRecovery integrates verified precedents that foreclose common retail defenses:
               </p>
 
               <div className="space-y-6">
@@ -1420,7 +1420,7 @@ export default function ElectronicsDealerCreditRecoveryPage() {
                     </svg>
                   </summary>
                   <p className="mt-3 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-200 pt-3">
-                    LegalRecovery provides an automated institutional recovery desk. Distributors upload ERP/Tally ledger exports and IMEI billing schedules via CSV. The platform reconciles outstanding balances, disallows unsubstantiated oral discount claims, dispatches advocate-settled legal notices via Speed Post RPAD and email/WhatsApp with BSA Section 63 certificates, and coordinates nationwide Order XXXVII summary suits and Section 138 NI Act criminal proceedings across district commercial courts.
+                    LegalRecovery provides an automated institutional recovery desk. Distributors upload ERP/Tally ledger exports and IMEI billing schedules via CSV. The platform reconciles outstanding balances, disallows unsubstantiated oral discount claims, dispatches fact-verified legal notices via Speed Post RPAD and email/WhatsApp with BSA Section 63 certificates, and coordinates nationwide Order XXXVII summary suits and Section 138 NI Act criminal proceedings across district commercial courts.
                   </p>
                 </details>
               </div>

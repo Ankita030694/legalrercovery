@@ -27,7 +27,7 @@ export default function PackagingPrintingHubCTA({ className = "" }: PackagingPri
                 Test 1 Live Overdue Case Now (&#8377;{basePrice})
               </h3>
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-                Advocate Drafted &bull; Email + WhatsApp + Speed Post RPAD. Serve one defaulting FMCG/D2C brand sitting on unlifted pouches, one carton buyer raising bogus BF/GSM deductions, or one overdue kraft-reel merchant today.
+                Fact-Verified &bull; Email + WhatsApp + Speed Post RPAD. Serve one defaulting FMCG/D2C brand sitting on unlifted pouches, one carton buyer raising bogus BF/GSM deductions, or one overdue kraft-reel merchant today.
               </p>
               <ul className="space-y-1.5 text-xs text-slate-200 mb-6">
                 <li>&check; Sale of Goods Act s.55 Full-Price + s.44 Godown Rent Demand for Unlifted Stock</li>

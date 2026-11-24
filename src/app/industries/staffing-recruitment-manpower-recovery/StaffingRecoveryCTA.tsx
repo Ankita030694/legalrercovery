@@ -21,13 +21,13 @@ export default function StaffingRecoveryCTA({ className = "" }: StaffingRecovery
           <div className="bg-gradient-to-br from-[#0F172A] via-[#1E293B] to-[#0F172A] text-white rounded-2xl p-6 sm:p-7 border border-slate-800 shadow-xl flex flex-col justify-between">
             <div>
               <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold uppercase tracking-wider bg-red-950/70 text-red-300 border border-red-800/60 mb-3">
-                Track 1 &bull; Single Case Test (Instant Advocate Notice)
+                Track 1 &bull; Single Case Test (Instant Fact-Verified Notice)
               </span>
               <h3 className="text-lg sm:text-xl md:text-2xl font-extrabold tracking-tight text-white mb-2.5">
                 Test 1 Live Overdue Case Now (&rupee;{basePrice})
               </h3>
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-                Serve one defaulting corporate client, startup founder, or factory principal with our advocate-drafted statutory notice combining unpaid 8.33%–16% placement fee or monthly payroll/PF arrears with Section 70/73 Contract Act, CLRA Section 21(4), and Section 43B(h) disallowance warnings.
+                Serve one defaulting corporate client, startup founder, or factory principal with our fact-verified statutory notice combining unpaid 8.33%–16% placement fee or monthly payroll/PF arrears with Section 70/73 Contract Act, CLRA Section 21(4), and Section 43B(h) disallowance warnings.
               </p>
               <ul className="space-y-2 text-xs text-slate-200 mb-6">
                 <li className="flex items-start gap-2">

@@ -22,7 +22,7 @@ const faqs = [
   },
   {
     question: "Can I initiate insolvency proceedings under the IBC if a corporate client ignores my legal notice?",
-    answer: "An operational creditor can initiate corporate insolvency resolution against a defaulting private or public limited corporate debtor under Section 9 of the Insolvency and Bankruptcy Code, 2016, provided the aggregate operational debt equals or exceeds ₹1 Crore and remains undisputed. The process requires serving a mandatory 10-day statutory demand notice in Form 3 or Form 4 under Section 8 of the Code before approaching the National Company Law Tribunal. Demonstrating pre-existing bona fide disputes prevents an IBC petition, making a meticulously drafted advocate legal notice indispensable to pre-empt fabricated defenses."
+    answer: "An operational creditor can initiate corporate insolvency resolution against a defaulting private or public limited corporate debtor under Section 9 of the Insolvency and Bankruptcy Code, 2016, provided the aggregate operational debt equals or exceeds ₹1 Crore and remains undisputed. The process requires serving a mandatory 10-day statutory demand notice in Form 3 or Form 4 under Section 8 of the Code before approaching the National Company Law Tribunal. Demonstrating pre-existing bona fide disputes prevents an IBC petition, making a meticulously drafted fact-verified legal notice indispensable to pre-empt fabricated defenses."
   },
   {
     question: "Is pre-institution mediation mandatory before filing a commercial suit for business dues?",
@@ -128,7 +128,7 @@ const jsonLd = {
         {
           "@type": "ListItem",
           "position": 2,
-          "name": "Issue an Advocate Legal Notice with Statutory Demand and Strict 15-Day Ultimatum"
+          "name": "Issue a Fact-Verified Legal Notice with Statutory Demand and Strict 15-Day Ultimatum"
         },
         {
           "@type": "ListItem",
@@ -150,7 +150,7 @@ const jsonLd = {
     {
       "@type": "Product",
       "name": "Commercial Debt Recovery Legal Notice",
-      "description": "Professional advocate legal notice drafting and multi-channel statutory dispatch for commercial business debt recovery and unpaid B2B invoice collection in India.",
+      "description": "Fact-verified legal notice preparation and multi-channel statutory dispatch for commercial business debt recovery and unpaid B2B invoice collection in India.",
       "brand": {
         "@type": "Organization",
         "name": "Legal Recovery"
@@ -181,7 +181,7 @@ const jsonLd = {
             "@type": "Person",
             "name": "Vikramaditya Singhania"
           },
-          "reviewBody": "We recovered ₹18.4 Lakhs in pending B2B dues within 14 days of serving the advocate legal notice to a defaulting corporate vendor. The statutory precision and MSME interest calculation left them no room to delay payment."
+          "reviewBody": "We recovered ₹18.4 Lakhs in pending B2B dues within 14 days of serving the fact-verified legal notice to a defaulting corporate vendor. The statutory precision and MSME interest calculation left them no room to delay payment."
         }
       ]
     }
@@ -498,9 +498,9 @@ export default function RecoveryOfUnpaidDuesClient() {
                       <div className="flex items-start space-x-4">
                         <div className="bg-[#DC2626] text-white rounded-full w-8 h-8 flex items-center justify-center shrink-0 font-black text-sm">2</div>
                         <div>
-                          <h4 className="font-extrabold text-sm sm:text-base text-slate-900 mb-1">Dispatch Advocate Legal Notice on Formal Letterhead</h4>
+                          <h4 className="font-extrabold text-sm sm:text-base text-slate-900 mb-1">Dispatch Fact-Verified Legal Notice on Formal Letterhead</h4>
                           <p className="text-xs sm:text-sm text-slate-650 leading-relaxed">
-                            Engage a panel commercial advocate to draft and dispatch a formal legal notice under advocate seal. The notice details invoice numbers, delivery dates, penal interest calculations, and provides a strict 15-day ultimatum for complete payment.
+                            Have a formal legal notice prepared and dispatched through LegalRecovery.in after our team verifies the facts. The notice details invoice numbers, delivery dates, penal interest calculations, and provides a strict 15-day ultimatum for complete payment.
                           </p>
                         </div>
                       </div>
@@ -684,11 +684,11 @@ export default function RecoveryOfUnpaidDuesClient() {
               <div className="bg-[#111827] p-6 rounded-2xl shadow-sm text-white border border-slate-800 relative overflow-hidden">
                 <div className="absolute top-0 right-0 w-24 h-24 bg-red-600/10 rounded-full blur-xl pointer-events-none" />
                 <span className="inline-block text-[#DC2626] text-[10px] font-black uppercase tracking-widest mb-2 bg-red-950/40 px-2.5 py-1 rounded-full border border-[#DC2626]/30">
-                  Panel Advocates
+                  Fact-Verified Notices
                 </span>
                 <h3 className="text-sm font-black mb-2">Send Legal Notice</h3>
                 <p className="text-gray-400 mb-5 text-[11px] leading-relaxed">
-                  We match your business with experienced commercial advocates, draft airtight statutory demand notices, physically dispatch via RPAD, and provide real-time postal tracking.
+                  Our team verifies the facts you submit, prepares statutory demand notices, physically dispatches via RPAD, and provide real-time postal tracking.
                 </p>
                 <button
                   onClick={() => setIsPaymentModalOpen(true)}
@@ -698,7 +698,7 @@ export default function RecoveryOfUnpaidDuesClient() {
                 </button>
                 <div className="flex items-center justify-center gap-2 text-[10px] text-gray-400">
                   <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
-                  Advocate drafted within 24-48 hours
+                  Fact-verified within 24-48 hours
                 </div>
               </div>
 
@@ -723,7 +723,7 @@ export default function RecoveryOfUnpaidDuesClient() {
                     </div>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed italic">
-                    &quot;We recovered ₹18.4 Lakhs in pending B2B dues within 14 days of serving the advocate legal notice to a defaulting corporate vendor. The statutory precision and MSME interest calculation left them no room to delay payment.&quot;
+                    &quot;We recovered ₹18.4 Lakhs in pending B2B dues within 14 days of serving the fact-verified legal notice to a defaulting corporate vendor. The statutory precision and MSME interest calculation left them no room to delay payment.&quot;
                   </p>
                 </div>
               </div>
@@ -745,7 +745,7 @@ export default function RecoveryOfUnpaidDuesClient() {
                   MSME Samadhaan vs. Legal Notice
                 </h3>
                 <p className="text-xs text-slate-500 line-clamp-2">
-                  Compare statutory MSME delayed payment portals against immediate advocate legal notice drafting for B2B invoice collection.
+                  Compare statutory MSME delayed payment portals against immediate legal notice preparation for B2B invoice collection.
                 </p>
               </Link>
               <Link
@@ -800,7 +800,7 @@ export default function RecoveryOfUnpaidDuesClient() {
                   All Legal Notice Services
                 </h3>
                 <p className="text-xs text-slate-500 line-clamp-2">
-                  Discover our complete spectrum of advocate notice drafting services covering commercial, consumer, and financial claims.
+                  Discover our complete spectrum of legal notice services covering commercial, consumer, and financial claims.
                 </p>
               </Link>
             </div>
@@ -813,7 +813,7 @@ export default function RecoveryOfUnpaidDuesClient() {
                 <img src="/lrlogo.svg" alt="Legal Recovery" width={3236} height={601} className="h-8 sm:h-10 w-auto object-contain" />
               </div>
               <p className="text-sm md:text-base text-slate-600 leading-relaxed mb-10 max-w-3xl font-medium">
-                Legal Recovery is India&apos;s trusted commercial debt resolution and legal tech platform. Founded in 2022 and headquartered in New Delhi, Legal Recovery has counselled 15,000+ businesses and entrepreneurs on B2B unpaid dues, delayed vendor invoices, MSME claims, and commercial contract enforcement. Legal Recovery prioritizes rapid pre-litigation settlements and connects enterprises directly with vetted commercial panel advocates.
+                Legal Recovery is India&apos;s trusted commercial debt resolution and legal tech platform. Founded in 2022 and headquartered in New Delhi, Legal Recovery has counselled 15,000+ businesses and entrepreneurs on B2B unpaid dues, delayed vendor invoices, MSME claims, and commercial contract enforcement. Legal Recovery prioritizes rapid pre-litigation settlements and helps enterprises send fact-verified legal notices directly.
               </p>
 
               <div className="border-t border-slate-100 pt-10">

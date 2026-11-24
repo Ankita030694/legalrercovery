@@ -87,7 +87,7 @@ const CASE_CITATIONS = [
       "The Supreme Court of India categorically condemned coercive debt recovery and held that commercial banks and card issuers are strictly bound by the rule of law and RBI Fair Practice Codes. The Apex Court affirmed that formal advocate statutory legal notices, summary civil suits (Order 37 CPC), and pre-litigation conciliation forums (Lok Adalats) are the sole legally permissible remedies for recovering credit card defaults.",
     amount: "Punitive Damages & Strict Injunction against Coercive Recovery Practices",
     takeaway:
-      "Institutional card recovery teams must rely strictly on verifiable advocate-drafted statutory demand notices served through official postal and electronic channels rather than unverified field pressure, safeguarding the creditor against tortious liability.",
+      "Institutional card recovery teams must rely strictly on verifiable fact-verified statutory demand notices served through official postal and electronic channels rather than unverified field pressure, safeguarding the creditor against tortious liability.",
   },
   {
     title: "Supreme Court Benchmark on 3-Year Statutory Limitation for Credit Card Dues",
@@ -134,7 +134,7 @@ const FAQS = [
   {
     question: "What is a legal notice for credit card payment default and why is it mandatory?",
     answer:
-      "A legal notice for credit card payment default is a formal statutory communication drafted by an advocate and served upon a defaulting cardholder under the Indian Contract Act, 1872 and Section 63 of the Bharatiya Sakshya Adhiniyam, 2023. It formally establishes the cardholder's contractual breach, details the exact itemized balance (principal vs. finance charges), provides a mandatory 15-day cure period, and warns of civil litigation under Order XXXVII CPC, pre-litigation Lok Adalat summons, and adverse credit bureau reporting.",
+      "A legal notice for credit card payment default is a formal statutory communication prepared on verified facts and served upon a defaulting cardholder under the Indian Contract Act, 1872 and Section 63 of the Bharatiya Sakshya Adhiniyam, 2023. It formally establishes the cardholder's contractual breach, details the exact itemized balance (principal vs. finance charges), provides a mandatory 15-day cure period, and warns of civil litigation under Order XXXVII CPC, pre-litigation Lok Adalat summons, and adverse credit bureau reporting.",
   },
   {
     question: "What is the statutory limitation period for a bank to recover credit card dues in India?",
@@ -164,7 +164,7 @@ const FAQS = [
   {
     question: "Credit card payment default par bank se legal notice aane par kya karein aur kaise reply dein?",
     answer:
-      "Agar credit card payment default ke liye advocate legal notice mila hai, toh turant 15 din ke andar written legal reply bhejna chahiye. Aap billing statement audit karke anuchit compound interest ya hidden charges ko contest kar sakte hain, ya Indian Contract Act ke tehat bank ke legal cell se one-time settlement (OTS) ya waiver offer demand kar sakte hain. LegalRecovery.in par verified advocates se formal counter-reply draft karwaya ja sakta hai.",
+      "Agar credit card payment default ke liye fact-verified legal notice mila hai, toh turant 15 din ke andar written legal reply bhejna chahiye. Aap billing statement audit karke anuchit compound interest ya hidden charges ko contest kar sakte hain, ya Indian Contract Act ke tehat bank ke legal cell se one-time settlement (OTS) ya waiver offer demand kar sakte hain. LegalRecovery.in par hamari team se formal counter-reply tayyar karwaya ja sakta hai.",
   },
 ];
 
@@ -343,7 +343,7 @@ export default function CreditCardDefaultLegalNoticePage() {
                   In India, credit card lending operates as an unsecured revolving credit line governed primarily by the <span className="font-semibold text-slate-900">Indian Contract Act, 1872</span> and regulatory circulars issued by the <span className="font-semibold text-slate-900">Reserve Bank of India (RBI)</span>. When a cardholder ignores repeated monthly billing statements, exceeds 90 days past due (DPD), or transitions into Non-Performing Asset (NPA) classification, the lending institution must transition from administrative recovery to formal legal recourse.
                 </p>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
-                  Serving an advocate-drafted statutory demand notice is not a mere formality—it is an indispensable evidentiary foundation. Under the Supreme Court directives in <em>ICICI Bank Ltd. v. Shanti Devi Sharma</em>, extrajudicial intimidation or harassment is strictly prohibited. The creditor must establish a clear audit trail proving that the debtor was formally notified of the total debt, provided an itemized breakdown of principal versus contractual finance charges under the signed Most Important Terms and Conditions (MITC), and afforded a reasonable 15-day window to cure the default before civil proceedings are initiated under Order XXXVII of the Code of Civil Procedure, 1908.
+                  Serving a fact-verified statutory demand notice is not a mere formality—it is an indispensable evidentiary foundation. Under the Supreme Court directives in <em>ICICI Bank Ltd. v. Shanti Devi Sharma</em>, extrajudicial intimidation or harassment is strictly prohibited. The creditor must establish a clear audit trail proving that the debtor was formally notified of the total debt, provided an itemized breakdown of principal versus contractual finance charges under the signed Most Important Terms and Conditions (MITC), and afforded a reasonable 15-day window to cure the default before civil proceedings are initiated under Order XXXVII of the Code of Civil Procedure, 1908.
                 </p>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Furthermore, under modern evidence laws in India—specifically <span className="font-semibold text-slate-900">Section 63 of the Bharatiya Sakshya Adhiniyam, 2023 (BSA)</span> and the <span className="font-semibold text-slate-900">Information Technology Act, 2000</span>—banks and recovery operations teams must generate legally certified dispatch and delivery proofs for both physical postal dispatch and electronic transmissions (Email and WhatsApp) to preempt any defense of non-receipt. For institutional guidance, explore our analysis on <Link href="/credit-card-payment-default-legal-recovery-options-banks" className="text-blue-700 underline font-semibold">legal recovery options available to banks for credit card default</Link>.
@@ -529,7 +529,7 @@ export default function CreditCardDefaultLegalNoticePage() {
                   </div>
                   <div className="bg-red-50 text-red-950 p-4 rounded-xl border border-red-200">
                     <span className="text-[10px] font-bold text-red-700 uppercase tracking-wider block mb-1">Step 3</span>
-                    <h3 className="font-bold text-sm">Serve Advocate Legal Notice</h3>
+                    <h3 className="font-bold text-sm">Serve Fact-Verified Legal Notice</h3>
                     <p className="text-xs text-red-900 mt-1">15-day statutory demand served via Registered Speed Post + Email + WhatsApp.</p>
                   </div>
                   <div className="bg-slate-100 text-slate-900 p-4 rounded-xl border border-slate-300">
@@ -675,7 +675,7 @@ export default function CreditCardDefaultLegalNoticePage() {
                     </span>
                     <div className="space-y-1 sm:space-y-1.5">
                       <h3 className="text-sm sm:text-base md:text-lg font-bold text-slate-900">
-                        Draft Advocate Statutory Demand Notice with Transparent 15-Day Cure
+                        Draft Fact-Verified Statutory Demand Notice with Transparent 15-Day Cure
                       </h3>
                       <p className="text-xs sm:text-sm leading-relaxed">
                         Draft a formal demand on advocate letterhead citing Sections 73 and 74 of the Indian Contract Act, 1872. The notice must clearly specify: (1) 16-digit Card Account Reference, (2) Itemized balance breakdown, (3) Exact 15-calendar-day cure timeline, (4) Statutory reservation of rights to initiate Summary Suit under Order XXXVII CPC, and (5) Imminent reporting of default to credit rating bureaus. For standardized templates, review our <Link href="/legal-notice-format-india" className="text-blue-700 underline font-semibold">legal notice format guide</Link>.
@@ -837,7 +837,7 @@ export default function CreditCardDefaultLegalNoticePage() {
                       <strong>The Recovery Deadlock:</strong> With compounding finance charges at 3.6% per month (43.2% APR) and late payment fees, the ledger balance escalated to ₹3,42,000. Internal bank tele-calling agents were blocked, and field visits were met with threats of police complaints alleging recovery harassment. The account was approaching the 2-year mark, creating severe limitation risks under the Limitation Act, 1963.
                     </p>
                     <p>
-                      <strong>The Statutory Action:</strong> The bank engaged LegalRecovery.in to execute structured legal notices. An advocate audited the account, bifurcated the debt into: (1) Principal ₹2,18,500, (2) Contractual finance charges ₹98,200, and (3) Late fees + GST ₹25,300. An advocate demand notice was drafted citing Section 73 of the Indian Contract Act and dispatched simultaneously via India Post Registered Speed Post and verified electronic channels (WhatsApp + Email) with a Section 63 BSA certificate. The notice extended a 15-day cure opportunity to enter into an amicable One-Time Settlement (OTS) before referral to the District Legal Services Authority (DLSA) Lok Adalat.
+                      <strong>The Statutory Action:</strong> The bank engaged LegalRecovery.in to execute structured legal notices. Our team verified the account facts submitted and bifurcated the debt into: (1) Principal ₹2,18,500, (2) Contractual finance charges ₹98,200, and (3) Late fees + GST ₹25,300. A demand notice was prepared citing Section 73 of the Indian Contract Act and dispatched simultaneously via India Post Registered Speed Post and verified electronic channels (WhatsApp + Email) with a Section 63 BSA certificate. The notice extended a 15-day cure opportunity to enter into an amicable One-Time Settlement (OTS) before referral to the District Legal Services Authority (DLSA) Lok Adalat.
                     </p>
                     <div className="p-3.5 sm:p-4 bg-emerald-950/70 border border-emerald-700/60 rounded-xl text-emerald-200">
                       <strong className="block text-emerald-400 font-bold mb-1">The Outcome:</strong>

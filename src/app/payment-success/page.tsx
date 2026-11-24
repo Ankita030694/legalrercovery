@@ -142,7 +142,7 @@ export default async function PaymentSuccessPage(props: {
           <ul className="flex flex-col gap-3">
             <li className="flex items-start gap-2 text-sm text-[#4B5563]">
               <div className="w-5 h-5 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center shrink-0 mt-0.5 text-[10px] font-bold">1</div>
-              <span>Our legal team is reviewing the case details you submitted.</span>
+              <span>Our team is reviewing the case details you submitted.</span>
             </li>
             <li className="flex items-start gap-2 text-sm text-[#4B5563]">
               <div className="w-5 h-5 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center shrink-0 mt-0.5 text-[10px] font-bold">2</div>

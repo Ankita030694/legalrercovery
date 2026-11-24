@@ -61,7 +61,7 @@ const YARN_MILL_SCENARIOS: ScenarioTab[] = [
       {
         phase: "Pre-Litigation Demand",
         action:
-          "Serve a comprehensive advocate legal demand notice under Section 43B(h) of the Income Tax Act and Section 15 of the MSMED Act, warning of IT expense disallowance.",
+          "Serve a comprehensive fact-verified legal demand notice under Section 43B(h) of the Income Tax Act and Section 15 of the MSMED Act, warning of IT expense disallowance.",
       },
       {
         phase: "Commercial Action",

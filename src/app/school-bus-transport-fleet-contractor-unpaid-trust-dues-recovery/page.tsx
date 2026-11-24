@@ -165,8 +165,8 @@ const HOWTO_SCHEMA = {
     {
       "@type": "HowToStep",
       position: 3,
-      name: "Serve Composite Advocate Demand Notice (Fiduciary + MSMED s.15–18)",
-      text: "Dispatch an advocate-vetted notice via Email, WhatsApp, and Speed Post RPAD demanding principal arrears, 12-month standing charges, and 3x RBI bank rate compound interest.",
+      name: "Serve Composite Fact-Verified Demand Notice (Fiduciary + MSMED s.15–18)",
+      text: "Dispatch a fact-verified notice via Email, WhatsApp, and Speed Post RPAD demanding principal arrears, 12-month standing charges, and 3x RBI bank rate compound interest.",
     },
     {
       "@type": "HowToStep",

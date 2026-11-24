@@ -26,7 +26,7 @@ const SCENARIOS: ScenarioItem[] = [
     steps: [
       "Retrieve your signed Delivery Challan, e-Way Bill, GRN (Goods Receipt Note), or service completion email proving the exact delivery date.",
       "Verify that no written quality defect email or rejection note was sent by the buyer within 15 calendar days of that delivery timestamp.",
-      "Serve an Advocate Statutory Notice citing Section 2(b) Explanation (Deemed Acceptance) and demanding 100% principal plus 3× RBI Bank Rate monthly-compounded interest.",
+      "Serve a Fact-Verified Statutory Notice citing Section 2(b) Explanation (Deemed Acceptance) and demanding 100% principal plus 3× RBI Bank Rate monthly-compounded interest.",
     ],
   },
   {

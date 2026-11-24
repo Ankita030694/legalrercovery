@@ -27,7 +27,7 @@ export default function TdsatJurisdictionCTA({ className = "" }: TdsatJurisdicti
                 Test 1 Live Overdue Case Now (&#8377;{basePrice})
               </h3>
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-                Advocate-drafted Pre-TDSAT Disconnection Notice or Commercial Court Order XXXVII
+                Fact-verified Pre-TDSAT Disconnection Notice or Commercial Court Order XXXVII
                 Demand Notice dispatched via Email + WhatsApp + Speed Post RPAD with BSA 2023 s.63
                 delivery proof.
               </p>
@@ -38,7 +38,7 @@ export default function TdsatJurisdictionCTA({ className = "" }: TdsatJurisdicti
                 onClick={() => setIsModalOpen(true)}
                 className="w-full inline-flex items-center justify-center px-5 py-3 rounded-xl font-bold text-white bg-[#DC2626] hover:bg-[#B91C1C] transition-colors shadow-lg shadow-red-900/30 text-sm cursor-pointer"
               >
-                Dispatch Advocate Notice &mdash; &#8377;{basePrice}
+                Dispatch Fact-Verified Notice &mdash; &#8377;{basePrice}
               </button>
               <Link
                 href="/user/new-recovery"

@@ -80,7 +80,7 @@ const CHARTER_SCENARIOS: CharterScenario[] = [
     evidentiaryAnchor:
       "Signed Yacht Charter Party / Booking Terms + Port Trust / Coast Guard Departure Clearance + Marine Fuel Bunker Receipts + Guest Embarkation Manifest.",
     recommendedAction:
-      "Issue a 15-Day Commercial Advocate Demand Notice enforcing the liquidated cancellation/overtime slab and GSTR-2B B2B invoice acceptance estoppel.",
+      "Issue a 15-Day Commercial Fact-Verified Demand Notice enforcing the liquidated cancellation/overtime slab and GSTR-2B B2B invoice acceptance estoppel.",
     governingLaw:
       "Commercial Courts Act s.2(1)(c)(iii) (Admiralty / Maritime & Carriage Disputes) + Indian Contract Act s.74 + CGST Act s.16(2)(b).",
   },

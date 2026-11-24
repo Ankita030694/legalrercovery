@@ -27,7 +27,7 @@ const ODR_SCENARIOS: ScenarioItem[] = [
       "Do NOT invoke unilateral arbitration. Issue a Section 21 Notice proposing an independent ODR Institution or seek mutual written consent to a neutral roster; if the borrower refuses within 30 days, approach the High Court under Section 11(6) or run parallel Section 25 PSS Act / Order 37 CPC.",
     steps: [
       "Audit the defaulted sanction template before issuing any Section 21 notice to flag unilateral appointment language.",
-      "Serve an Advocate-drafted Loan Recall + Section 21 Notice proposing 3 independent institutional ODR providers or requesting mutual waiver/consent in writing under the proviso to s.12(5).",
+      "Serve a Fact-verified Loan Recall + Section 21 Notice proposing 3 independent institutional ODR providers or requesting mutual waiver/consent in writing under the proviso to s.12(5).",
       "If e-NACH or cheque bounce occurred within 30 days, simultaneously trigger Section 25 PSS Act / Section 138 NI Act criminal demand notices for immediate leverage.",
       "For high-value NPAs where the borrower ignores s.21, file a Section 11(6) petition before the jurisdictional High Court to secure a court-appointed neutral arbitrator.",
     ],

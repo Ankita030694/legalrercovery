@@ -119,7 +119,7 @@ const FAQS = [
   {
     question: "Builder possession delay kare ya refund na de toh RERA complaint online kaise file kare?",
     answer:
-      "Agar builder ne Builder-Buyer Agreement (BBA) ki possession date nikal jane ke baad bhi Occupancy Certificate (OC) ke sath flat handover nahi kiya hai, toh sabse pehle builder ko Section 18(1) RERA ke tahat 15 din ka advocate legal notice bhejkar 100% principal refund aur SBI MCLR + 2% byaj (interest) ki maang karein. Agar builder paise wapas nahi karta, toh apne rajya ke official RERA portal (jaise up-rera.in, maharera.maharashtra.gov.in, ya haryanarera.gov.in) par Citizen Login banayein, Form M chunein, apne payment receipts, BBA aur legal notice ki PDF upload karein, aur ₹1,000 (Maharashtra mein ₹5,000) online fee jama karke complaint darj karein.",
+      "Agar builder ne Builder-Buyer Agreement (BBA) ki possession date nikal jane ke baad bhi Occupancy Certificate (OC) ke sath flat handover nahi kiya hai, toh sabse pehle builder ko Section 18(1) RERA ke tahat 15 din ka fact-verified legal notice bhejkar 100% principal refund aur SBI MCLR + 2% byaj (interest) ki maang karein. Agar builder paise wapas nahi karta, toh apne rajya ke official RERA portal (jaise up-rera.in, maharera.maharashtra.gov.in, ya haryanarera.gov.in) par Citizen Login banayein, Form M chunein, apne payment receipts, BBA aur legal notice ki PDF upload karein, aur ₹1,000 (Maharashtra mein ₹5,000) online fee jama karke complaint darj karein.",
   },
 ];
 
@@ -356,7 +356,7 @@ export default function ReraComplaintOnlineStateWisePage() {
                   ₹{noticePrice.toLocaleString("en-IN")}
                 </div>
                 <div className="text-[11px] text-slate-300 mt-0.5">
-                  Advocate drafted + Speed Post
+                  Fact-verified + Speed Post
                 </div>
               </div>
             </div>
@@ -1583,7 +1583,7 @@ COMPLAINT NO. __________ OF 2026 (UNDER SECTION 31 READ WITH SECTION 18 OF RERA 
                         Compute your exact statutory refund and simple interest claim at your state&apos;s prescribed SBI Highest MCLR + 2% (or +1%) rate from each date of payment.
                       </li>
                       <li>
-                        Draft and dispatch an advocate-signed statutory legal demand notice via Registered Speed Post and email to the builder&apos;s registered office and directors—ready to attach as your pre-litigation annexure in online Form M or Form N.
+                        Draft and dispatch a fact-verified statutory legal demand notice via Registered Speed Post and email to the builder&apos;s registered office and directors—ready to attach as your pre-litigation annexure in online Form M or Form N.
                       </li>
                     </ul>
                   </div>
@@ -1600,7 +1600,7 @@ COMPLAINT NO. __________ OF 2026 (UNDER SECTION 31 READ WITH SECTION 18 OF RERA 
                         If a corporate builder has already been admitted into Corporate Insolvency Resolution Process (CIRP) under Section 7 or 9 of the IBC before the NCLT and a Section 14 moratorium is active, new RERA execution warrants are stayed—you must file a financial creditor claim in <strong>Form CA</strong> before the Interim Resolution Professional (IRP).
                       </li>
                       <li>
-                        Our ₹{noticePrice.toLocaleString("en-IN")} fee covers the pre-litigation advocate legal notice and dispatch; full bench appearance across multiple RERA hearings is engaged separately if required.
+                        Our ₹{noticePrice.toLocaleString("en-IN")} fee covers the pre-litigation fact-verified legal notice and dispatch; full bench appearance across multiple RERA hearings is engaged separately if required.
                       </li>
                     </ul>
                   </div>

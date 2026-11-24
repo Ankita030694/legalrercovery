@@ -1132,7 +1132,7 @@ export default function RigidPlasticMouldRecoveryPage() {
                   className="group block bg-slate-50 rounded-xl p-4 sm:p-5 border border-slate-200 hover:border-[#DC2626] transition-colors"
                 >
                   <span className="text-[10px] font-extrabold uppercase tracking-wider text-[#DC2626]">
-                    Advocate-Vetted Notice Template
+                    Ready-to-Use Notice Template
                   </span>
                   <h3 className="text-sm sm:text-base font-bold text-slate-900 group-hover:text-[#DC2626] mt-1 mb-1.5">
                     MSME Delayed Payment &amp; Section 43B(h) Demand Notice Format

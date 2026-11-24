@@ -482,13 +482,13 @@ export default function UnpaidSalaryClient() {
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">Legal Notice</h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      A Legal Notice is a formal, advocate-signed communication that acts as the mandatory prelude to litigation. It is designed to establish a clear cause of action, demand the payment of outstanding dues within a strict window (typically 15 days), and lay down the evidentiary foundation for future court proceedings. Serving a legal notice is not just a procedural formality; it is a critical strategic move that notifies the employer of impending civil and criminal actions.
+                      A Legal Notice is a formal, fact-verified communication that acts as the mandatory prelude to litigation. It is designed to establish a clear cause of action, demand the payment of outstanding dues within a strict window (typically 15 days), and lay down the evidentiary foundation for future court proceedings. Serving a legal notice is not just a procedural formality; it is a critical strategic move that notifies the employer of impending civil and criminal actions.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
                       At LegalRecovery, our panel of experienced labor attorneys drafts custom notices tailored to the specific violations in your case. We do not use generic templates. Instead, we cite precise statutes—such as the relevant state&apos;s Shops and Establishments Act, the Payment of Wages Act, 1936, and the Indian Contract Act, 1872. The notice is digitally dispatched via verified email and WhatsApp to the company’s registered office and is copied to the personal residential addresses of all active directors to establish personal liability.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      Statistics show that approximately 85% of employer wage disputes are resolved successfully within 15 days of serving a professional legal notice. Most corporate entities prefer to settle the undisputed FNF dues immediately rather than risk facing public litigation, labor inspector audits, or damage to their corporate reputation. A formal notice on our legal panel&apos;s letterhead signals that you are fully prepared to enforce your rights.
+                      Statistics show that approximately 85% of employer wage disputes are resolved successfully within 15 days of serving a professional legal notice. Most corporate entities prefer to settle the undisputed FNF dues immediately rather than risk facing public litigation, labor inspector audits, or damage to their corporate reputation. A formal notice on our team&apos;s letterhead signals that you are fully prepared to enforce your rights.
                     </p>
                   </div>
                 </section>
@@ -695,7 +695,7 @@ export default function UnpaidSalaryClient() {
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">Success Stories</h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      Over the years, we have successfully resolved hundreds of complex salary recovery and employment dues disputes across India. Our data-driven legal notice strategy and structured escalation flow have proven effective against startups, mid-sized firms, and large multinational corporations alike. Below are representative examples of recoveries handled by our legal panel:
+                      Over the years, we have successfully resolved hundreds of complex salary recovery and employment dues disputes across India. Our data-driven legal notice strategy and structured escalation flow have proven effective against startups, mid-sized firms, and large multinational corporations alike. Below are representative examples of recoveries handled by our team:
                     </p>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">
                       <div className="bg-slate-50 p-6 rounded-2xl border border-slate-100">
@@ -743,7 +743,7 @@ export default function UnpaidSalaryClient() {
                       LegalRecovery is India&apos;s leading tech-enabled recovery platform. We combine the legal authority of veteran labor advocates with advanced workflow automation to deliver unmatched speed, transparency, and resolution rates. Here is what sets us apart:
                     </p>
                     <ul className="list-disc pl-6 space-y-3 text-sm text-slate-650">
-                      <li><strong>Attorney-Drafted Quality:</strong> Your notice is individually reviewed and drafted by a qualified legal professional, ensuring precise statutory citations tailored to your specific case facts.</li>
+                      <li><strong>Fact-Verified Quality:</strong> Your notice is individually reviewed and drafted by a qualified legal professional, ensuring precise statutory citations tailored to your specific case facts.</li>
                       <li><strong>VC/Director Escalation:</strong> We do not just email HR. We dispatch physical registered letters to the registered company office and personal residences of all active directors, maximizing pressure.</li>
                       <li><strong>Digital Dashboard:</strong> Track the drafting progress, post dispatch tracking, and delivery status of your legal notices in real-time from your secure client dashboard.</li>
                       <li><strong>Transparent Flat Pricing:</strong> No hourly bills, no retention fee surprises. You pay a single transparent flat fee for the entire notice pipeline.</li>
@@ -794,7 +794,7 @@ export default function UnpaidSalaryClient() {
                 <div className="absolute top-0 right-0 w-24 h-24 bg-red-600/10 rounded-full blur-xl pointer-events-none" />
                 <h3 className="text-sm font-black mb-3">Need Legal Advice?</h3>
                 <p className="text-gray-400 mb-5 text-[11px] leading-relaxed">
-                  Discuss your unpaid salary case with legal experts. We serve verified notices with full compliance support.
+                  Discuss your unpaid salary case with our team. We serve verified notices with full compliance support.
                 </p>
                 <button 
                   onClick={() => setIsPaymentModalOpen(true)}

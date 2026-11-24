@@ -112,7 +112,7 @@ const FAQS = [
     question:
       "What if site security demands a 'No-Dues Certificate' or 'Indemnity Waiver' before letting our piling rig exit?",
     answer:
-      "Refuse to sign any unconditional waiver. Withholding capital machinery worth ₹2–5 Crore to coerce a rental vendor into waiving earned hire charges is unlawful economic duress under Sections 15 and 16 of the Indian Contract Act, 1872. Issue an immediate 'Without Prejudice' protest and serve an Advocate Notice warning of Tortious Conversion damages and BNS Section 316 criminal proceedings.",
+      "Refuse to sign any unconditional waiver. Withholding capital machinery worth ₹2–5 Crore to coerce a rental vendor into waiving earned hire charges is unlawful economic duress under Sections 15 and 16 of the Indian Contract Act, 1872. Issue an immediate 'Without Prejudice' protest and serve a Fact-Verified Notice warning of Tortious Conversion damages and BNS Section 316 criminal proceedings.",
   },
   {
     question:
@@ -976,7 +976,7 @@ export default function CraneGatePassDemobilizationPage() {
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed mb-6">
                   Every 24 hours your crane or piling rig sits trapped behind a
                   builder&rsquo;s gate costs you EMI, depreciation, and lost
-                  deployment revenue. Dispatch an Advocate-drafted notice via
+                  deployment revenue. Dispatch a Fact-verified notice via
                   Email, WhatsApp, and Speed Post RPAD—or onboard multiple
                   defaulting sites through our{" "}
                   <Link
@@ -1016,7 +1016,7 @@ export default function CraneGatePassDemobilizationPage() {
                       tag: "Notice Template (P1)",
                       title: "Equipment Rental Arrears & Gate-Pass BNS s.316 Notice",
                       href: "/templates/equipment-rental-arrears-gate-pass-repossession-bns-316-notice",
-                      desc: "Editable advocate-vetted notice format demanding immediate gate-pass release and daily idle-rent.",
+                      desc: "Editable ready-to-use notice format demanding immediate gate-pass release and daily idle-rent.",
                     },
                     {
                       tag: "Sibling Spoke",

@@ -667,7 +667,7 @@ export default function LabourCommissionerSalaryPage() {
                     </span>
                     <div className="space-y-1 sm:space-y-1.5">
                       <h3 className="text-sm sm:text-base md:text-lg font-bold text-slate-900">
-                        Serve a Formal Statutory Advocate Legal Demand Notice
+                        Serve a Formal Statutory Fact-Verified Legal Demand Notice
                       </h3>
                       <p className="text-xs sm:text-sm leading-relaxed">
                         If the 7-day email fails, engage an advocate to draft and serve an official legal demand notice invoking Section 17 of the Code on Wages, 2019, and the relevant State Shops and Establishments Act. Served via Registered Speed Post with tracking and Section 63 BSA electronic mail, the notice demands full settlement within 15 calendar days and puts directors on notice of personal liability. See our <Link href="/legal-notice-for-full-and-final-settlement-delay" className="text-blue-700 underline font-semibold">FnF settlement legal notice guide</Link> and <Link href="/legal-notice-charges" className="text-blue-700 underline font-semibold">transparent legal notice fees</Link>.
@@ -840,7 +840,7 @@ export default function LabourCommissionerSalaryPage() {
                       <strong>The Deadlock:</strong> Under company policy, HR claimed that FnF would be disbursed &quot;within 60 to 90 days after internal client billing reconciliation&quot;. 75 days passed with zero payment. In April, HR sent an arbitrary computation deducting ₹1,50,000 alleging &quot;loss of code productivity during notice period&quot; and refused to release Vikram&apos;s relieving letter or experience certificate unless he accepted the slashed amount.
                     </p>
                     <p>
-                      <strong>The Statutory Action:</strong> Vikram engaged LegalRecovery.in. An advocate drafted and dispatched an official statutory demand notice to the company&apos;s Managing Director and VP-HR. The notice invoked Section 17(2) of the Code on Wages, 2019, Section 21 of the Karnataka Shops and Commercial Establishments Act, and Section 63 BSA electronic evidence rules, setting a strict 15-day cure window. On Day 16, a formal complaint was lodged on Karnataka&apos;s e-Karmika portal before the Assistant Labour Commissioner (ALC, Bengaluru Division 2).
+                      <strong>The Statutory Action:</strong> Vikram engaged LegalRecovery.in. The team verified the facts and dispatched an official statutory demand notice to the company&apos;s Managing Director and VP-HR. The notice invoked Section 17(2) of the Code on Wages, 2019, Section 21 of the Karnataka Shops and Commercial Establishments Act, and Section 63 BSA electronic evidence rules, setting a strict 15-day cure window. On Day 16, a formal complaint was lodged on Karnataka&apos;s e-Karmika portal before the Assistant Labour Commissioner (ALC, Bengaluru Division 2).
                     </p>
                     <div className="p-3.5 sm:p-4 bg-emerald-950/70 border border-emerald-700/60 rounded-xl text-emerald-200">
                       <strong className="block text-emerald-400 font-bold mb-1">The Outcome:</strong>

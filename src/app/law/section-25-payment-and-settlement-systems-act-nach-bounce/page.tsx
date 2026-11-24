@@ -804,7 +804,7 @@ export default function Section25PSSActPage() {
                   Integrating Section 25 Notices with RBI-Safe Collections &amp; ODR
                 </h3>
                 <p className="text-xs sm:text-sm text-emerald-900 leading-relaxed">
-                  For high-volume retail and BNPL portfolios, tri-channel Advocate Legal Notices under Section 25 PSS Act replace coercive telecalling while preserving full audit compliance under RBI Digital Lending Directions. Pair this statute playbook with our{" "}
+                  For high-volume retail and BNPL portfolios, tri-channel Fact-Verified Legal Notices under Section 25 PSS Act replace coercive telecalling while preserving full audit compliance under RBI Digital Lending Directions. Pair this statute playbook with our{" "}
                   <Link
                     href="/rbi-recovery-agent-guidelines-compliant-legal-escalation-nbfc"
                     className="font-bold underline"

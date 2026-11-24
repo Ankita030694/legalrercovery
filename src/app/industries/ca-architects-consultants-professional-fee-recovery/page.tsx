@@ -243,7 +243,7 @@ const FAQS = [
   {
     question: "A developer took our municipal sanction and GFC drawings, fired our architecture studio, and hired a draftsman to build. What can we do?",
     answer:
-      "Serve an advocate-drafted combined Copyright Infringement & Stage-Fee Demand Notice immediately. Under Sections 13(1)(a), 17, and 51 of the Copyright Act, copyright in CAD/BIM and GFC drawings remains with your studio unless assigned in writing, and any implied construction license stands revoked upon fee default. Simultaneously notify any incoming registered architect under COA Professional Conduct Regulation 2(1)(xii) and escalate to Commercial Court (s.2(1)(c)(xvii)) for interim restraint and full stage-fee recovery.",
+      "Serve a fact-verified combined Copyright Infringement & Stage-Fee Demand Notice immediately. Under Sections 13(1)(a), 17, and 51 of the Copyright Act, copyright in CAD/BIM and GFC drawings remains with your studio unless assigned in writing, and any implied construction license stands revoked upon fee default. Simultaneously notify any incoming registered architect under COA Professional Conduct Regulation 2(1)(xii) and escalate to Commercial Court (s.2(1)(c)(xvii)) for interim restraint and full stage-fee recovery.",
   },
   {
     question: "A promoter got a bank loan sanction or VC term sheet through our CMA/IM and closed directly 60 days later to avoid our 2% mandate fee. Can we recover?",
@@ -268,7 +268,7 @@ const FAQS = [
   {
     question: "Can multi-partner CA, PCS, architectural, or engineering consultancies run bulk overdue fee recovery without harming firm reputation?",
     answer:
-      "Yes. Delegating collection to external independent litigation counsel insulates your partners from awkward client friction and disciplinary counter-allegations. Start by testing one overdue corporate account for ₹999 (Advocate Drafted + Email, WhatsApp & Speed Post RPAD), or upload 10 to 10,000+ aged audit, retainer, PMC, or testing-lab ledgers via CSV in our Bulk Institutional Representee Desk for dignified, council-ethics-verified recovery.",
+      "Yes. Delegating collection to external independent litigation counsel insulates your partners from awkward client friction and disciplinary counter-allegations. Start by testing one overdue corporate account for ₹999 (Fact-Verified + Email, WhatsApp & Speed Post RPAD), or upload 10 to 10,000+ aged audit, retainer, PMC, or testing-lab ledgers via CSV in our Bulk Institutional Representee Desk for dignified, council-ethics-verified recovery.",
   },
 ];
 
@@ -401,7 +401,7 @@ export default function CaArchitectsConsultantsHubPage() {
             <span className="block text-[10px] sm:text-xs uppercase tracking-widest text-red-400 font-bold mb-1.5">
               Executive Creditor Answer (ICAI Clause 8, COA IP, Contract Act Tail Clauses &amp; Order XXXVII CPC)
             </span>
-            Licensed Indian practitioners—CAs, Architects, Advocates, PCS, and IBBI Valuers—cannot hold client books or files hostage without risking license suspension. LegalRecovery.in deploys external litigation counsel to enforce <strong>ICAI Chapter VII undisputed audit fees</strong>, <strong>Form 26AS 194J admissions</strong>, <strong>COA architectural drawing copyright</strong>, and <strong>12–24 month debt/M&amp;A mandate tail clauses</strong> with full disciplinary safety.
+            Licensed Indian practitioners—CAs, Architects, Advocates, PCS, and IBBI Valuers—cannot hold client books or files hostage without risking license suspension. LegalRecovery.in prepares and sends notices to enforce <strong>ICAI Chapter VII undisputed audit fees</strong>, <strong>Form 26AS 194J admissions</strong>, <strong>COA architectural drawing copyright</strong>, and <strong>12–24 month debt/M&amp;A mandate tail clauses</strong> with full disciplinary safety.
           </div>
 
           {/* 4-Card Key Metrics Strip */}
@@ -493,7 +493,7 @@ export default function CaArchitectsConsultantsHubPage() {
                   >
                     consultancy fee recovery
                   </Link>
-                  , LegalRecovery.in separates your professional practice from hostile collection friction. External litigation counsel drafts dignified, regulator-audited statutory notices activating <strong>ICAI Chapter VII undisputed audit-fee protocols</strong>, <strong>Form 26AS Section 194J written debt acknowledgments</strong>, <strong>Copyright Act s.51 architectural drawing injunctions</strong>, <strong>Contract Act s.51–52 reciprocal sign-off holds</strong>, and{" "}
+                  , LegalRecovery.in separates your professional practice from hostile collection friction. We prepare dignified, fact-verified statutory notices activating <strong>ICAI Chapter VII undisputed audit-fee protocols</strong>, <strong>Form 26AS Section 194J written debt acknowledgments</strong>, <strong>Copyright Act s.51 architectural drawing injunctions</strong>, <strong>Contract Act s.51–52 reciprocal sign-off holds</strong>, and{" "}
                   <Link
                     href="/law/order-37-summary-suit-money-recovery"
                     className="text-[#DC2626] font-bold underline hover:text-[#B91C1C]"

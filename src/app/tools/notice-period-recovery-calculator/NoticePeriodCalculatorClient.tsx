@@ -446,7 +446,7 @@ Generated via LegalRecovery.in Notice Period Recovery Calculator.`;
               </div>
 
               <div className="flex flex-wrap items-center justify-between text-[11px] text-slate-500 pt-1">
-                <span>Verified by Employment Advocates</span>
+                <span>Facts verified by our team</span>
                 <Link
                   href="/legal-notice-for-full-and-final-settlement-delay"
                   className="text-blue-700 hover:underline font-semibold"

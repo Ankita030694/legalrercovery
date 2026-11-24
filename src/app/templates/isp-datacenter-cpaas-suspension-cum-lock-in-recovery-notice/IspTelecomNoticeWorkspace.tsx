@@ -477,7 +477,7 @@ ${form.advocateOffice}
           <div className="flex flex-wrap items-center justify-between gap-3 px-4 sm:px-5 py-3.5 bg-slate-950 border-b border-slate-800">
             <div>
               <span className="text-[11px] font-bold uppercase tracking-wider text-red-400 block">
-                Advocate-Vetted Notice Draft
+                Fact-Verified Notice Draft
               </span>
               <span className="text-xs text-slate-300 font-medium">Ref: {form.noticeRef}</span>
             </div>

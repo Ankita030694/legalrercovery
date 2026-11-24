@@ -4,7 +4,7 @@ import RecoverMoneyFromTenantWhoDamagedPropertyClient from './RecoverMoneyFromTe
 const slug = 'send-a-legal-notice/recover-money-from-tenant-who-damaged-property';
 const title = 'Legal Notice to Tenant for Property Damage Recovery';
 const description =
-  'Tenant damaged your property? Send an advocate-vetted legal notice under the Transfer of Property Act to recover repair costs and damages.';
+  'Tenant damaged your property? Send a fact-verified legal notice under the Transfer of Property Act to recover repair costs and damages.';
 const url = `https://www.legalrecovery.in/${slug}`;
 const ogImage = `/images/og/recover-money-from-tenant-who-damaged-property.jpg`;
 

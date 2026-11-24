@@ -132,7 +132,7 @@ const FAQS = [
     a: "Under Section 43B(h) of the Income Tax Act, 1961, any corporate or audited buyer that fails to pay an Udyam-registered Micro or Small corrugated box manufacturer within 45 days (or 15 days without written credit terms) loses the right to claim the entire packaging purchase as a deductible business expense in that financial year. On a ₹18.5 lakh unpaid packaging ledger, a company paying 25.17% corporate tax faces an immediate ₹4.65 lakh extra income tax outflow plus statutory audit qualification in Form 3CD Clause 22.",
   },
   {
-    q: "What if the buyer threatens to stop future carton orders or hold our printing stereos/cutting dies if we send an Advocate Legal Notice?",
+    q: "What if the buyer threatens to stop future carton orders or hold our printing stereos/cutting dies if we send a Fact-Verified Legal Notice?",
     a: "Corrugated factories often fear losing a buyer whose margins are already destroyed by 120-day credit and 15% fake debit notes. In practice, a calibrated, statute-backed Advocate Demand Notice addressed to the buyer's CFO and Finance Controller—highlighting Section 43B(h) tax disallowance, Form 3CD audit disclosure, and MSEFC 3x RBI compound interest—resolves 60%–70% of corporate packaging disputes at the pre-litigation stage because procurement cannot justify an illegal debit note to internal statutory auditors.",
   },
 ];
@@ -193,8 +193,8 @@ const HOWTO_SCHEMA = {
     {
       "@type": "HowToStep",
       position: 3,
-      name: "Serve an Advocate Statutory Notice Triggering Section 43B(h) & Form 3CD Audit Alert",
-      text: "Dispatch a formal 15-day Advocate Demand Notice via Email, WhatsApp, and Speed Post RPAD copying the buyer's CFO and Statutory Auditor on Income Tax s.43B(h) disallowance and CGST s.16(2) 180-day ITC reversal risk.",
+      name: "Serve a Fact-Verified Statutory Notice Triggering Section 43B(h) & Form 3CD Audit Alert",
+      text: "Dispatch a formal 15-day Fact-Verified Demand Notice via Email, WhatsApp, and Speed Post RPAD copying the buyer's CFO and Statutory Auditor on Income Tax s.43B(h) disallowance and CGST s.16(2) 180-day ITC reversal risk.",
     },
     {
       "@type": "HowToStep",
@@ -552,7 +552,7 @@ export default function CorrugatedBoxBurstingStrengthRecoveryPage() {
                   },
                   {
                     stage: "Stage 03 — CFO & Auditor Statutory Notice",
-                    desc: "Serve a 15-day Advocate Demand Notice via Email, WhatsApp, and Speed Post RPAD copying the buyer's CFO and Statutory Auditor on Income Tax s.43B(h) disallowance and CGST s.16(2) 180-day ITC reversal.",
+                    desc: "Serve a 15-day Fact-Verified Demand Notice via Email, WhatsApp, and Speed Post RPAD copying the buyer's CFO and Statutory Auditor on Income Tax s.43B(h) disallowance and CGST s.16(2) 180-day ITC reversal.",
                   },
                   {
                     stage: "Stage 04 — MSEFC Samadhaan Filing",

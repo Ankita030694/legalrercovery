@@ -109,7 +109,7 @@ const SCENARIOS: ScenarioTab[] = [
       {
         step: "Urgent Cease-and-Desist Notice to Employer & Bank",
         description:
-          "Dispatch an immediate advocate notice putting the bank on record regarding the fraudulent and premature invocation for unliquidated, disputed penal damages contrary to guarantee terms.",
+          "Dispatch an immediate fact-verified notice putting the bank on record regarding the fraudulent and premature invocation for unliquidated, disputed penal damages contrary to guarantee terms.",
       },
       {
         step: "Commercial Court Section 9 Injunction Petition",

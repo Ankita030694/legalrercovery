@@ -3,7 +3,7 @@ import DefectiveProductRefundClient from './DefectiveProductRefundClient';
 
 export const metadata: Metadata = {
   title: 'Legal Notice for Defective Product Refund | Send Notice',
-  description: 'Received a defective product? Send an advocate-vetted legal notice to demand a replacement or refund under the Consumer Protection Act.',
+  description: 'Received a defective product? Send a fact-verified legal notice to demand a replacement or refund under the Consumer Protection Act.',
   alternates: {
     canonical: 'https://www.legalrecovery.in/send-a-legal-notice/defective-product-refund',
   },

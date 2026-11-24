@@ -232,7 +232,7 @@ const FAQS = [
   {
     question: "When should I send a formal legal notice for an unwanted UPI AutoPay subscription debit?",
     answer:
-      "You should send an advocate legal notice when the debited sum is significant (such as an annual renewal of ₹2,000 to ₹50,000+), and both the merchant and payment gateway have rejected or ignored your refund tickets. A formal legal notice issued under Section 2(11) and 2(47) of the Consumer Protection Act gives the merchant 15 days to refund before facing consumer court litigation, which typically triggers an immediate pre-litigation settlement.",
+      "You should send a fact-verified legal notice when the debited sum is significant (such as an annual renewal of ₹2,000 to ₹50,000+), and both the merchant and payment gateway have rejected or ignored your refund tickets. A formal legal notice issued under Section 2(11) and 2(47) of the Consumer Protection Act gives the merchant 15 days to refund before facing consumer court litigation, which typically triggers an immediate pre-litigation settlement.",
   },
 ];
 
@@ -624,7 +624,7 @@ export default function UpiAutopaySubscriptionRefundPage() {
                     <div className="mt-4 pt-4 border-t border-slate-100">
                       <span className="text-xs font-bold text-red-600 block mb-1">Recommended Strategy:</span>
                       <p className="text-xs text-slate-800 font-medium leading-normal">
-                        Issue an advocate-drafted statutory legal demand notice to the merchant&apos;s Indian entity and acquiring aggregator. If unresolved within 15 days, file directly on e-Jagriti and RBI CMS Ombudsman.
+                        Issue a fact-verified statutory legal demand notice to the merchant&apos;s Indian entity and acquiring aggregator. If unresolved within 15 days, file directly on e-Jagriti and RBI CMS Ombudsman.
                       </p>
                     </div>
                   </div>
@@ -828,7 +828,7 @@ export default function UpiAutopaySubscriptionRefundPage() {
                   id="heading-route-legal-notice-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Route 4: When and How to Serve an Advocate Legal Demand Notice
+                  Route 4: When and How to Serve a Fact-Verified Legal Demand Notice
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   While informal app support chats often bounce you between automated bots and canned responses, a formal <strong>Statutory Advocate Legal Demand Notice</strong> carries binding legal weight. A legal notice shifts the dispute from customer support scripts to the company&apos;s corporate legal counsel and compliance directors.
@@ -985,10 +985,10 @@ export default function UpiAutopaySubscriptionRefundPage() {
                     </div>
                     <div className="space-y-1">
                       <h3 className="text-base font-bold text-slate-900">
-                        Step 5: Serve Advocate Statutory Demand Notice &amp; Consumer Commission Filing
+                        Step 5: Serve Fact-Verified Statutory Demand Notice &amp; Consumer Commission Filing
                       </h3>
                       <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                        For amounts above ₹2,000, have a qualified advocate serve a 15-day legal demand notice to the merchant and payment gateway. If unresolved, file an electronic consumer complaint on e-Jagriti seeking full refund, interest, and ₹10,000+ compensation for deficiency of service.
+                        For amounts above ₹2,000, serve a 15-day legal demand notice to the merchant and payment gateway. If unresolved, file an electronic consumer complaint on e-Jagriti seeking full refund, interest, and ₹10,000+ compensation for deficiency of service.
                       </p>
                     </div>
                   </div>
@@ -1034,7 +1034,7 @@ export default function UpiAutopaySubscriptionRefundPage() {
                   <div className="p-4 bg-slate-900 text-white rounded-xl space-y-2">
                     <p className="text-xs font-bold text-emerald-400 uppercase tracking-wider">Outcome &amp; Financial Recovery:</p>
                     <p className="text-xs sm:text-sm text-slate-200 leading-relaxed">
-                      Within 6 days of receiving the advocate legal notice, the company&apos;s Indian legal operations team contacted Rohan, cancelled the subscription, and initiated a 100% refund of <strong>₹8,999</strong> directly to his bank account via Razorpay settlement rail, confirming no further debits would occur.
+                      Within 6 days of receiving the fact-verified legal notice, the company&apos;s Indian legal operations team contacted Rohan, cancelled the subscription, and initiated a 100% refund of <strong>₹8,999</strong> directly to his bank account via Razorpay settlement rail, confirming no further debits would occur.
                     </p>
                   </div>
                 </div>

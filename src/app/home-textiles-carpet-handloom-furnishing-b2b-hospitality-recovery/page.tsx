@@ -149,7 +149,7 @@ export default function HomeTextilesHospitalityRecoveryPage() {
       {
         "@type": "HowToStep",
         position: 3,
-        name: "Serve Dual-Addressee Advocate Demand Notice",
+        name: "Serve Dual-Addressee Fact-Verified Demand Notice",
         text: "Dispatch a tri-channel notice (Email + WhatsApp + Speed Post RPAD) to both the Turnkey Interior Contractor and Hotel Promoter/CFO invoking MSMED s.15–18 and Contract Act s.70.",
       },
       {
@@ -247,7 +247,7 @@ export default function HomeTextilesHospitalityRecoveryPage() {
             <span className="block text-[10px] sm:text-xs uppercase tracking-widest text-red-400 font-bold mb-1.5">
               Executive Creditor Answer &amp; Statutory Summary
             </span>
-            Under Sections 15–18 of the MSMED Act, 2006 and Income Tax Act Section 43B(h), hotel promoters and turnkey interior contractors cannot defer payment for custom carpets, blackout curtains, mattresses, or 300-TC hospitality linen beyond 45 days from deemed acceptance—regardless of hotel pre-opening CapEx overruns or back-to-back PO clauses. Pair an Advocate Demand Notice with Order XXXVII CPC Summary Suits via our{" "}
+            Under Sections 15–18 of the MSMED Act, 2006 and Income Tax Act Section 43B(h), hotel promoters and turnkey interior contractors cannot defer payment for custom carpets, blackout curtains, mattresses, or 300-TC hospitality linen beyond 45 days from deemed acceptance—regardless of hotel pre-opening CapEx overruns or back-to-back PO clauses. Pair a Fact-Verified Demand Notice with Order XXXVII CPC Summary Suits via our{" "}
             <Link
               href="/industries/textiles-apparel-garment-recovery"
               className="text-red-400 hover:text-red-300 underline font-bold"
@@ -527,7 +527,7 @@ export default function HomeTextilesHospitalityRecoveryPage() {
               <div className="md:hidden space-y-3">
                 <div className="p-4 rounded-xl bg-slate-900 text-white border-l-4 border-[#DC2626]">
                   <p className="text-[11px] font-bold text-red-400 uppercase">Stage 1 &bull; Day 46+</p>
-                  <p className="font-bold text-sm mt-0.5">Serve Dual-Addressee Advocate Demand Notice</p>
+                  <p className="font-bold text-sm mt-0.5">Serve Dual-Addressee Fact-Verified Demand Notice</p>
                   <p className="text-xs text-slate-300 mt-1">
                     Invoke MSMED s.15–18 &amp; s.43B(h) via Email + WhatsApp + Speed Post RPAD.
                   </p>

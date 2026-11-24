@@ -10,7 +10,7 @@ import { PaymentModal } from "@/components/PaymentModal";
 const faqs = [
   {
     question: "How long should I wait before sending a legal notice to Swiggy for an uncredited refund?",
-    answer: "Consumers should allow 3 to 7 business days for initial payment gateway processing following an order cancellation or refund request on the Swiggy platform. If Swiggy customer care denies the refund, closes support tickets unilaterally, or fails to credit the funds within this statutory window, consumers can immediately issue a formal advocate-drafted legal notice. Prompt legal action prevents corporate evasiveness and formally records the service deficiency under the Consumer Protection Act, 2019."
+    answer: "Consumers should allow 3 to 7 business days for initial payment gateway processing following an order cancellation or refund request on the Swiggy platform. If Swiggy customer care denies the refund, closes support tickets unilaterally, or fails to credit the funds within this statutory window, consumers can immediately issue a formal fact-verified legal notice. Prompt legal action prevents corporate evasiveness and formally records the service deficiency under the Consumer Protection Act, 2019."
   },
   {
     question: "Can Swiggy deduct 100% cancellation fees if an order is canceled immediately after placing?",
@@ -22,7 +22,7 @@ const faqs = [
   },
   {
     question: "What compensation can be claimed in a Swiggy refund legal notice?",
-    answer: "A legal notice against Swiggy can demand the full principal refund amount alongside statutory interest calculated at 18% per annum from the transaction date until final settlement. Furthermore, consumers are entitled to claim quantifiable damages for mental agony, harassment, lost time, and reasonable advocate drafting fees incurred during dispute escalation. These additional claims create substantial commercial pressure on Swiggy's corporate legal team to settle the dispute swiftly out of court."
+    answer: "A legal notice against Swiggy can demand the full principal refund amount alongside statutory interest calculated at 18% per annum from the transaction date until final settlement. Furthermore, consumers are entitled to claim quantifiable damages for mental agony, harassment, lost time, and reasonable notice drafting fees incurred during dispute escalation. These additional claims create substantial commercial pressure on Swiggy's corporate legal team to settle the dispute swiftly out of court."
   },
   {
     question: "What is the next legal step if Swiggy ignores the 15-day notice ultimatum?",
@@ -150,7 +150,7 @@ const jsonLd = {
     {
       "@type": "Product",
       "name": "Legal Notice for Swiggy Refund Not Received",
-      "description": "Professional advocate drafting and statutory notice dispatch service to recover pending, blocked, or unfairly withheld refunds from Swiggy (Bundl Technologies Pvt Ltd / Swiggy Limited).",
+      "description": "Professional notice drafting and statutory notice dispatch service to recover pending, blocked, or unfairly withheld refunds from Swiggy (Bundl Technologies Pvt Ltd / Swiggy Limited).",
       "brand": {
         "@type": "Organization",
         "name": "Legal Recovery"
@@ -247,7 +247,7 @@ export default function SwiggyRefundNotRecievedClient() {
               Legal Notice for <span className="text-[#DC2626]">Swiggy Refund Not Received</span>
             </h1>
             <p className="text-sm md:text-xl mb-8 md:mb-12 max-w-3xl mx-auto text-slate-300 leading-relaxed font-medium">
-              Did Swiggy unfairly refuse your refund, charge a 100% cancellation penalty, or deliver missing or spoiled items? Serve a formal, advocate-drafted legal notice under the Consumer Protection Act, 2019 to recover your money with interest and statutory compensation.
+              Did Swiggy unfairly refuse your refund, charge a 100% cancellation penalty, or deliver missing or spoiled items? Serve a formal, fact-verified legal notice under the Consumer Protection Act, 2019 to recover your money with interest and statutory compensation.
             </p>
             <button
               onClick={() => setIsPaymentModalOpen(true)}
@@ -643,7 +643,7 @@ export default function SwiggyRefundNotRecievedClient() {
                         <div>
                           <h4 className="font-extrabold text-sm sm:text-base text-slate-900 mb-1">Calculate Full Financial Claims, Statutory Interest &amp; Damages</h4>
                           <p className="text-xs sm:text-sm text-slate-650 leading-relaxed">
-                            Compute the principal order amount, compound interest at 18% per annum from the payment debit date, punitive damages for mental agony (typically ₹10,000 to ₹25,000), and advocate drafting expenses.
+                            Compute the principal order amount, compound interest at 18% per annum from the payment debit date, punitive damages for mental agony (typically ₹10,000 to ₹25,000), and notice drafting expenses.
                           </p>
                         </div>
                       </div>
@@ -686,7 +686,7 @@ export default function SwiggyRefundNotRecievedClient() {
 
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      A poorly structured legal notice will be dismissed by corporate legal departments as an idle threat. To establish enforceable legal weight, an advocate-drafted notice must embody the following five foundational clauses:
+                      A poorly structured legal notice will be dismissed by corporate legal departments as an idle threat. To establish enforceable legal weight, a fact-verified notice must embody the following five foundational clauses:
                     </p>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -732,7 +732,7 @@ export default function SwiggyRefundNotRecievedClient() {
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      In over 85% of cases handled by Legal Recovery, serving an advocate-backed legal notice results in prompt out-of-court settlement. Food aggregators recognize that defending a consumer court lawsuit costs significantly more in advocate appearance fees and travel costs than the contested order amount.
+                      In over 85% of cases handled by Legal Recovery, serving a fact-verified legal notice results in prompt out-of-court settlement. Food aggregators recognize that defending a consumer court lawsuit costs significantly more in advocate appearance fees and travel costs than the contested order amount.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
                       However, if the 15-day statutory notice period lapses without resolution or if Swiggy issues a frivolous denial, the consumer gains the unassailable right to initiate formal litigation. Through the central government&rsquo;s <span className="font-semibold text-slate-800">e-Daakhil portal</span>, a complaint can be filed digitally before the competent District Consumer Disputes Redressal Commission without requiring physical court presence.
@@ -805,7 +805,7 @@ export default function SwiggyRefundNotRecievedClient() {
                 <div className="absolute top-0 right-0 w-24 h-24 bg-red-600/10 rounded-full blur-xl pointer-events-none" />
                 <h3 className="text-sm font-black mb-3">Recover Your Swiggy Refund</h3>
                 <p className="text-gray-400 mb-5 text-[11px] leading-relaxed">
-                  We assign a specialized consumer panel advocate to custom draft your legal notice, dispatch it by email and WhatsApp to Swiggy&rsquo;s headquarters (India Post Speed Post optional), and track delivery in real time.
+                  Our team verifies your facts, prepares your legal notice, dispatches it by email and WhatsApp to Swiggy&rsquo;s headquarters (India Post Speed Post optional), and track delivery in real time.
                 </p>
                 <button
                   onClick={() => setIsPaymentModalOpen(true)}
@@ -865,7 +865,7 @@ export default function SwiggyRefundNotRecievedClient() {
               </Link>
               <Link href="/send-a-legal-notice" className="group block p-6 rounded-2xl bg-white border border-slate-200 hover:border-[#DC2626] hover:shadow-md transition-all">
                 <h3 className="text-sm font-bold text-slate-900 group-hover:text-[#DC2626] mb-2">All Legal Notice Services</h3>
-                <p className="text-xs text-slate-500 line-clamp-2">Browse the full repository of advocate-drafted statutory legal notice solutions for money recovery.</p>
+                <p className="text-xs text-slate-500 line-clamp-2">Browse the full repository of fact-verified statutory legal notice solutions for money recovery.</p>
               </Link>
               <Link href="/services/refunds-and-consumer-complaints" className="group block p-6 rounded-2xl bg-white border border-slate-200 hover:border-[#DC2626] hover:shadow-md transition-all">
                 <h3 className="text-sm font-bold text-slate-900 group-hover:text-[#DC2626] mb-2">Consumer Dispute Services</h3>
@@ -881,7 +881,7 @@ export default function SwiggyRefundNotRecievedClient() {
                 <img src="/lrlogo.svg" alt="Legal Recovery" width={3236} height={601} className="h-8 sm:h-10 w-auto object-contain" />
               </div>
               <p className="text-sm md:text-base text-slate-600 leading-relaxed mb-10 max-w-3xl font-medium">
-                Legal Recovery is India&rsquo;s trusted tech-legal platform empowering consumers and businesses to resolve disputes, recover pending dues, and send legally vetted notices with speed and authority. Our network of seasoned advocates ensures your voice is heard and your rights are protected across all judicial forums.
+                Legal Recovery is India&rsquo;s trusted tech-legal platform empowering consumers and businesses to resolve disputes, recover pending dues, and send fact-verified notices with speed and authority. Our team ensures your voice is heard and your rights are protected across all judicial forums.
               </p>
 
               <div className="border-t border-slate-100 pt-10">

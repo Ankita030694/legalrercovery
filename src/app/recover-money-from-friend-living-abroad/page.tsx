@@ -168,7 +168,7 @@ const FAQS = [
   {
     question: "Agar dost videsh (abroad) chala gaya aur paise nahi de raha toh legal notice kaise bheje?",
     answer:
-      "Agar aapke dost ne India se paise udhar liye aur UK, Canada, Dubai ya America shift ho gaya, toh aap Section 20 CPC ke tehat India mein hi advocate ke madhyam se statutory legal notice bhej sakte hain. LegalRecovery.in par verified advocate unke videshi address par International Speed Post, WhatsApp aur email par official demand notice bhejte hain, aur unke Indian parivaarik pate par bhi notice deliver karwaya jata hai jismein 15 din ka payment time diya jata hai.",
+      "Agar aapke dost ne India se paise udhar liye aur UK, Canada, Dubai ya America shift ho gaya, toh aap Section 20 CPC ke tehat India mein hi statutory legal notice bhej sakte hain. LegalRecovery.in par hamari team unke videshi address par International Speed Post, WhatsApp aur email par fact-verified demand notice bhejti hai, aur unke Indian parivaarik pate par bhi notice deliver karwaya jata hai jismein 15 din ka payment time diya jata hai.",
   },
 ];
 
@@ -807,7 +807,7 @@ export default function RecoverMoneyFromFriendAbroadPage() {
                       <strong>The Deadlock:</strong> 18 months passed. Aniket secured a lucrative cloud consultancy position in Canary Wharf, London, but stopped taking calls. He blocked Ramanathan on WhatsApp and told mutual friends that <em>&quot;British courts will never bother with informal Indian loans, and Indian courts have zero jurisdiction over UK residents.&quot;</em> Ramanathan was left with only bank statements and exported WhatsApp transcripts.
                     </p>
                     <p>
-                      <strong>The Statutory Action:</strong> Ramanathan engaged LegalRecovery.in. An advocate drafted an authoritative dual-jurisdiction statutory legal demand notice. Dispatched via DHL Express to Aniket&apos;s London residential flat and corporate email, and simultaneously served via Registered Speed Post to his parents&apos; residence in Pune. The notice invoked Section 20(c) CPC, Section 15(5) of the Limitation Act, and warned that failure to settle within 15 days would trigger an Order XXXVII Summary Suit in Bengaluru Commercial Court, followed by direct decree execution in the UK under Section 44A CPC and attachment of his co-owned flat in Pune under Order XXI CPC.
+                      <strong>The Statutory Action:</strong> Ramanathan engaged LegalRecovery.in. The team verified the facts and prepared an authoritative dual-jurisdiction statutory legal demand notice. Dispatched via DHL Express to Aniket&apos;s London residential flat and corporate email, and simultaneously served via Registered Speed Post to his parents&apos; residence in Pune. The notice invoked Section 20(c) CPC, Section 15(5) of the Limitation Act, and warned that failure to settle within 15 days would trigger an Order XXXVII Summary Suit in Bengaluru Commercial Court, followed by direct decree execution in the UK under Section 44A CPC and attachment of his co-owned flat in Pune under Order XXI CPC.
                     </p>
                     <div className="p-3.5 sm:p-4 bg-emerald-950/70 border border-emerald-700/60 rounded-xl text-emerald-200">
                       <strong className="block text-emerald-400 font-bold mb-1">The Resolution &amp; Outcome:</strong>

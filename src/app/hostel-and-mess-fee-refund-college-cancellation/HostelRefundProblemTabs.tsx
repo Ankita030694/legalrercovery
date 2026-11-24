@@ -37,7 +37,7 @@ const PROBLEMS: ProblemTab[] = [
           "Segregate academic tuition from hostel room rent, mess advance, and refundable security deposit on your fee payment vouchers to prevent bundled forfeiture arguments.",
       },
       {
-        step: "Serve an Advocate Legal Notice Citing UGC Mandates & CPA Section 2(47)",
+        step: "Serve a Fact-Verified Legal Notice Citing UGC Mandates & CPA Section 2(47)",
         description:
           "If the university accounts department delays disbursement past 15 days, issue a formal statutory notice demanding immediate electronic transfer alongside 12% statutory interest.",
       },

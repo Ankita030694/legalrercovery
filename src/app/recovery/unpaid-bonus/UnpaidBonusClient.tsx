@@ -692,7 +692,7 @@ export default function UnpaidBonusClient() {
                     <ol className="list-decimal pl-6 space-y-4 text-sm text-slate-650">
                       <li><strong>Day 1-7 (Formal Written Demand):</strong> Send a detailed email to HR and your reporting manager, attaching your performance logs and requesting the payout.</li>
                       <li><strong>Day 8-15 (Follow-Up & Final Reminder):</strong> If ignored, send a formal follow-up, requesting a timeline for the payout and noting the contractual or statutory due dates.</li>
-                      <li><strong>Day 16-30 (Legal Notice):</strong> Serve a formal legal notice through our advocate panel. This notice demands the payment of the bonus within 15 days, warning of statutory labor claims and civil litigation.</li>
+                      <li><strong>Day 16-30 (Legal Notice):</strong> Serve a formal legal notice through our team. This notice demands the payment of the bonus within 15 days, warning of statutory labor claims and civil litigation.</li>
                       <li><strong>Day 30+ (Mediation/Litigation):</strong> If the company fails to comply, initiate the recovery suit under Order 37 of the CPC or file an application with the Labor Commissioner.</li>
                     </ol>
                   </div>
@@ -776,10 +776,10 @@ export default function UnpaidBonusClient() {
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#D2A02A] pb-2 inline-block">Why LegalRecovery?</h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      LegalRecovery is India&apos;s leading platform for resolving employment-related disputes. We combine the legal authority of veteran employment advocates with advanced workflow automation to deliver speed, transparency, and resolution rates that traditional law firms cannot match. Here is what sets us apart:
+                      LegalRecovery is India&apos;s leading platform for resolving employment-related disputes. We combine fact verification by our team with advanced workflow automation to deliver speed, transparency, and resolution rates that traditional law firms cannot match. Here is what sets us apart:
                     </p>
                     <ul className="list-disc pl-6 space-y-3 text-sm text-slate-650">
-                      <li><strong>Expert Panel Advocates:</strong> Your notices are drafted and reviewed by experienced employment and contract attorneys, ensuring precise statutory citations.</li>
+                      <li><strong>Fact-Verified Notices:</strong> Our team verifies the facts you submit, and your notice is prepared with precise statutory citations.</li>
                       <li><strong>Multi-Channel Escalations:</strong> We do not just email employers. We dispatch physical registered letters to their registered address and local residences to maximize pressure.</li>
                       <li><strong>Real-Time Tracking:</strong> Track the drafting progress, post office dispatch status, and delivery of your legal notices in real-time from your secure client dashboard.</li>
                       <li><strong>Transparent Flat Pricing:</strong> No hourly bills, no hidden surprises. You pay a single transparent flat fee for the entire notice pipeline.</li>
@@ -830,7 +830,7 @@ export default function UnpaidBonusClient() {
                 <div className="absolute top-0 right-0 w-24 h-24 bg-yellow-600/10 rounded-full blur-xl pointer-events-none" />
                 <h3 className="text-sm font-black mb-3">Need Legal Advice?</h3>
                 <p className="text-gray-400 mb-5 text-[11px] leading-relaxed">
-                  Discuss your unpaid statutory or contractual performance bonus recovery case with legal experts. We serve verified notices with full compliance support.
+                  Discuss your unpaid statutory or contractual performance bonus recovery case with our team. We serve verified notices with full compliance support.
                 </p>
                 <button 
                   onClick={() => setIsPaymentModalOpen(true)}

@@ -82,7 +82,7 @@ const FAQ_ITEMS = [
   },
   {
     q: "How quickly can a QSR or cloud-kitchen brand freeze aggregator listings and recover commissary arrears?",
-    a: "An Advocate-drafted Cure-or-Suspension Notice backed by cold-chain PODs, GST e-Way bills, and a 7-day FSSAI audit warning typically compels wallet top-up or partial settlement within 7–10 days. If the outlet continues unauthorized local sourcing, the franchisor can invoke Section 9 of the Arbitration and Conciliation Act, 1996 (or Commercial Court s.2(1)(c)(ix)) for urgent interim restraint and aggregator delisting.",
+    a: "A Fact-verified Cure-or-Suspension Notice backed by cold-chain PODs, GST e-Way bills, and a 7-day FSSAI audit warning typically compels wallet top-up or partial settlement within 7–10 days. If the outlet continues unauthorized local sourcing, the franchisor can invoke Section 9 of the Arbitration and Conciliation Act, 1996 (or Commercial Court s.2(1)(c)(ix)) for urgent interim restraint and aggregator delisting.",
   },
 ];
 
@@ -496,7 +496,7 @@ export default function CentralKitchenCommissaryRecoveryPage() {
                   {
                     step: "Stage 5 (7-Day Cure + Set-Off)",
                     title: "Cure-or-Suspension, PSS s.25 & Deposit Appropriation",
-                    desc: "Serve Advocate notice, adjust security deposit, and escalate net deficit.",
+                    desc: "Serve Fact-verified notice, adjust security deposit, and escalate net deficit.",
                   },
                 ].map((card, i) => (
                   <div key={i} className="bg-slate-900 text-white rounded-xl p-4 border border-slate-800">
@@ -774,7 +774,7 @@ export default function CentralKitchenCommissaryRecoveryPage() {
                 </h2>
               </div>
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed mb-6">
-                Protect your brand&apos;s FSSAI license and recover overdue central-kitchen receivables immediately. Test one defaulting outlet with an Advocate-drafted notice or onboard your entire franchise network via CSV.
+                Protect your brand&apos;s FSSAI license and recover overdue central-kitchen receivables immediately. Test one defaulting outlet with a Fact-verified notice or onboard your entire franchise network via CSV.
               </p>
               <CommissaryCTA />
             </section>

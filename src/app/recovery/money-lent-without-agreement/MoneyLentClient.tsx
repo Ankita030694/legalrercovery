@@ -35,7 +35,7 @@ const faqs = [
   },
   {
     question: "How does a legal notice help in recovering money lent without an agreement?",
-    answer: "A formal legal notice drafted by an advocate is a powerful tool. It acts as a final warning, officially documenting your claim and warning the borrower of potential civil and criminal litigation. It details the transaction history, the outstanding amount, and sets a deadline (usually 15 days) to clear the dues. In roughly 80-85% of cases, borrowers settle the dispute at this stage to avoid public litigation, court expenses, and the risk of criminal records."
+    answer: "A formal legal notice prepared on verified facts is a powerful tool. It acts as a final warning, officially documenting your claim and warning the borrower of potential civil and criminal litigation. It details the transaction history, the outstanding amount, and sets a deadline (usually 15 days) to clear the dues. In roughly 80-85% of cases, borrowers settle the dispute at this stage to avoid public litigation, court expenses, and the risk of criminal records."
   },
   {
     question: "Can I claim interest on a loan given to a friend or relative without an agreement?",
@@ -402,13 +402,13 @@ export default function MoneyLentClient() {
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      Many lenders jump straight to filing a lawsuit, which can be expensive and time-consuming. At LegalRecovery, we believe in a phased, strategic approach. The single most cost-effective and powerful step you can take is serving a formal <strong>Advocate-Signed Legal Notice</strong>. 
+                      Many lenders jump straight to filing a lawsuit, which can be expensive and time-consuming. At LegalRecovery, we believe in a phased, strategic approach. The single most cost-effective and powerful step you can take is serving a formal <strong>Fact-Verified Legal Notice</strong>. 
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
                       A legal notice is not just a letter; it is a formal, statutory warning that creates a permanent legal record. It notifies the borrower that their failure to repay the loan constitutes a civil breach and potentially a criminal offense, and gives them a strict deadline (typically 15 days) to clear the outstanding amount.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      A well-drafted legal notice from our legal panel performs several critical functions:
+                      A well-drafted legal notice from our team performs several critical functions:
                     </p>
                     <ul className="list-disc pl-6 space-y-2 text-sm text-slate-650">
                       <li><strong>Establishes the Cause of Action:</strong> It documents the history of the friendly loan, the exact dates of transfer, the verbal terms, and the borrower&apos;s default. This timeline is crucial if the case eventually goes to court.</li>
@@ -582,7 +582,7 @@ export default function MoneyLentClient() {
                       LegalRecovery is India&apos;s leading tech-enabled legal assistance platform. We combine the expertise of veteran recovery advocates with advanced tracking systems to provide a stress-free, transparent, and highly effective recovery experience. 
                     </p>
                     <ul className="list-disc pl-6 space-y-3 text-sm text-slate-650">
-                      <li><strong>Custom Legal Notice:</strong> We do not send generic letters. Our legal panel carefully reviews your UPI transactions, bank records, and chat logs to draft a notice that cites precise legal provisions tailored to your case.</li>
+                      <li><strong>Custom Legal Notice:</strong> We do not send generic letters. Our team carefully reviews your UPI transactions, bank records, and chat logs to draft a notice that cites precise legal provisions tailored to your case.</li>
                       <li><strong>Digital Evidence Certification:</strong> We handle the complex drafting of electronic certificates (under BSA Section 63) to ensure your WhatsApp messages and emails are ready for court.</li>
                       <li><strong>Director & Personal Trackers:</strong> If you lent to a business or if the borrower has a corporate standing, we dispatch notices digitally to their personal emails and registered offices, maximizing reach and pressure.</li>
                       <li><strong>End-to-End Legal Support:</strong> From sending the first legal notice to representing you in Summary Suits, cheque bounce cases, and filing criminal complaints, our panel of labor and civil advocates handles it all.</li>

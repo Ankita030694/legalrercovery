@@ -849,7 +849,7 @@ export default function Section43bhNoticePage() {
                 </h2>
               </div>
               <p className="text-xs sm:text-sm text-slate-600">
-                Choose between issuing a single advocate-drafted demand notice or deploying our bulk CSV recovery desk for enterprise ledgers.
+                Choose between issuing a single fact-verified demand notice or deploying our bulk CSV recovery desk for enterprise ledgers.
               </p>
 
               {/* Dedicated B2B Dual CTA Component */}

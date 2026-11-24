@@ -11,7 +11,7 @@ interface MsmeDemandNoticeCTAProps {
 }
 
 export default function MsmeDemandNoticeCTA({
-  buttonText = "Send Advocate MSME Demand Notice",
+  buttonText = "Send MSME Demand Notice",
   className = "",
   variant = "primary",
 }: MsmeDemandNoticeCTAProps) {
@@ -25,13 +25,13 @@ export default function MsmeDemandNoticeCTA({
           <div className="bg-gradient-to-br from-[#111827] via-[#1F2937] to-[#111827] text-white rounded-2xl p-5 sm:p-8 md:p-10 border border-slate-800 shadow-2xl w-full">
             <div className="max-w-3xl">
               <span className="inline-block px-3 py-1 rounded-full text-[11px] sm:text-xs font-semibold tracking-wide uppercase bg-slate-800 text-red-400 border border-slate-700 mb-3 sm:mb-4">
-                Sections 15–16 MSMED Act &amp; Section 43B(h) • Advocate Notice Service
+                Sections 15–16 MSMED Act &amp; Section 43B(h) • Legal Notice Service
               </span>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-bold tracking-tight text-white mb-3">
-                Buyer Ignoring Your Payment Reminders? Serve an Official Advocate MSME Legal Notice
+                Buyer Ignoring Your Payment Reminders? Serve an Official MSME Legal Notice
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6">
-                Have a verified commercial recovery advocate compute your exact Section 16 monthly compound interest schedule (3× RBI Bank Rate), cite Section 43B(h) Income-tax disallowance, and serve a formal 15-day statutory demand notice on the buyer&apos;s Managing Director and CFO by email and WhatsApp under Section 63 BSA. Speed Post is optional at ₹450 per party.
+                Our team verifies the facts and computes your exact Section 16 monthly compound interest schedule (3× RBI Bank Rate), cite Section 43B(h) Income-tax disallowance, and serve a formal 15-day statutory demand notice on the buyer&apos;s Managing Director and CFO by email and WhatsApp under Section 63 BSA. Speed Post is optional at ₹450 per party.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button

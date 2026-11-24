@@ -125,7 +125,7 @@ const reviewSchema = {
   "@type": "Product",
   "name": "Legal Notice Drafting Assistant",
   "image": "https://www.legalrecovery.in/og-how-to-draft-notice.png",
-  "description": "Professional advocate-verified legal notice drafting assistance and template structures for debt recovery under Indian law.",
+  "description": "Professional fact-verified legal notice drafting assistance and template structures for debt recovery under Indian law.",
   "brand": {
     "@type": "Brand",
     "name": "LegalRecovery"
@@ -400,7 +400,7 @@ export default function HowToDraftLegalNoticeClient() {
                       <div>
                         <h4 className="font-extrabold text-sm text-slate-900 mb-1">Module 6: Signature and Confirmed Sign-off</h4>
                         <p className="text-xs text-slate-650 leading-relaxed">
-                          The notice must be signed by the advocate. Additionally, we strongly recommend including a <strong>Client Sign-off Block</strong> at the bottom of the last page, stating: <em>&quot;The contents of this legal notice have been read by me/explained to me, and I confirm the same to be true and correct.&quot;</em> followed by the client&apos;s signature. This prevents the debtor from claiming in court that the advocate drafted unauthorized claims.
+                          The notice must be prepared on verified facts. Additionally, we strongly recommend including a <strong>Client Sign-off Block</strong> at the bottom of the last page, stating: <em>&quot;The contents of this legal notice have been read by me/explained to me, and I confirm the same to be true and correct.&quot;</em> followed by the client&apos;s signature. This prevents the debtor from claiming in court that the fact-verified unauthorized claims.
                         </p>
                       </div>
                     </div>
@@ -571,7 +571,7 @@ export default function HowToDraftLegalNoticeClient() {
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      Drafting a legally sound notice requires precision and an understanding of statutory details. Our <strong>LegalRecovery</strong> engine simplifies this process, connecting you with verified legal professionals and automating the drafting workflow:
+                      Drafting a legally sound notice requires precision and an understanding of statutory details. Our <strong>LegalRecovery</strong> engine simplifies this process, verifying the facts you submit and automating the notice preparation workflow:
                     </p>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
@@ -581,17 +581,17 @@ export default function HowToDraftLegalNoticeClient() {
                           <h4 className="font-extrabold text-sm sm:text-base text-slate-900 m-0">Secure Information Submission</h4>
                         </div>
                         <p className="text-xs sm:text-sm text-slate-650 leading-relaxed">
-                          Fill out our structured questionnaire, detailing the transaction dates, default amount, and debtor coordinates. Upload your invoices, agreements, bank receipts, and digital records (WhatsApp/email logs) to our secure, encrypted dashboard.
+                          Fill out our structured questionnaire, detailing the transaction dates, default amount, and debtor coordinates. Keep your invoices, agreements, bank receipts, and digital records (WhatsApp/email logs) ready for later use if the matter proceeds to court.
                         </p>
                       </div>
 
                       <div className="bg-slate-50 p-6 rounded-2xl border border-slate-100">
                         <div className="flex items-center space-x-3 mb-3">
                           <span className="w-8 h-8 rounded-full bg-[#DC2626] text-white flex items-center justify-center font-black text-sm">2</span>
-                          <h4 className="font-extrabold text-sm sm:text-base text-slate-900 m-0">Advocate Assignment &amp; Vetting</h4>
+                          <h4 className="font-extrabold text-sm sm:text-base text-slate-900 m-0">Fact Verification</h4>
                         </div>
                         <p className="text-xs sm:text-sm text-slate-650 leading-relaxed">
-                          Your case is assigned to a practicing advocate from our partner panel who specializes in money recovery. They vet your evidence, structure the chronology of facts, calculate interest, and draft a notice on their official letterhead.
+                          Our team verifies the facts you submit, structures the chronology, calculates interest, and prepares the notice.
                         </p>
                       </div>
 
@@ -611,7 +611,7 @@ export default function HowToDraftLegalNoticeClient() {
                           <h4 className="font-extrabold text-sm sm:text-base text-slate-900 m-0">Dispatch &amp; Digital Tracking</h4>
                         </div>
                         <p className="text-xs sm:text-sm text-slate-650 leading-relaxed">
-                          Once approved, the notice is signed by the advocate and served digitally via verified email and WhatsApp. You receive real-time updates and tracking details directly on your dashboard.
+                          Once approved, the notice is prepared on verified facts and served digitally via verified email and WhatsApp. You receive real-time updates and tracking details directly on your dashboard.
                         </p>
                       </div>
                     </div>
@@ -625,7 +625,7 @@ export default function HowToDraftLegalNoticeClient() {
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      Using a professional, advocate-drafted notice has helped hundreds of clients recover outstanding money without resorting to expensive lawsuits. Below are three representative case studies:
+                      Using a professional, fact-verified notice has helped hundreds of clients recover outstanding money without resorting to expensive lawsuits. Below are three representative case studies:
                     </p>
                     
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-4">
@@ -714,7 +714,7 @@ export default function HowToDraftLegalNoticeClient() {
                 <div className="absolute top-0 right-0 w-24 h-24 bg-red-600/10 rounded-full blur-xl pointer-events-none" />
                 <h3 className="text-sm font-black mb-3">Need Legal Support?</h3>
                 <p className="text-gray-400 mb-5 text-[11px] leading-relaxed">
-                  We handle the entire recovery notice process for you, from evidence audit and advocate drafting to dispatching and tracking.
+                  We handle the entire recovery notice process for you, from evidence audit and notice drafting to dispatching and tracking.
                 </p>
                 <button 
                   onClick={() => setIsPaymentModalOpen(true)}

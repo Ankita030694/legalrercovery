@@ -159,7 +159,7 @@ const FAQS = [
   {
     question: "What should I do if the foreign startup founder has ghosted me on Slack and email?",
     answer:
-      "Save all evidence right away: contracts, timesheets, Git logs, and bank remittance certificates (FIRCs). Next, find the firm's registered agent on Delaware Division of Corporations or UK Companies House. Have an Indian advocate send a formal legal demand to the registered agent and founders demanding salary with interest.",
+      "Save all evidence right away: contracts, timesheets, Git logs, and bank remittance certificates (FIRCs). Next, find the firm's registered agent on Delaware Division of Corporations or UK Companies House. Send a formal legal demand to the registered agent and founders demanding salary with interest.",
   },
   {
     question: "Can an Indian contractor file a complaint under the MSME Samadhaan portal against a foreign client?",
@@ -169,7 +169,7 @@ const FAQS = [
   {
     question: "Foreign company salary nahi de rahi aur remote work contract tha, toh India se legal notice kaise bheje?",
     answer:
-      "Agar aap India se kisi foreign company ke liye remote work kar rahe the aur unhone salary ya invoice payment rok di hai, toh aap India se formal statutory advocate legal notice bhej sakte hain. LegalRecovery.in par verified advocates Section 20(c) CPC aur Indian Contract Act ke tehat foreign corporate headquarters aur registered agent ko International Registered Speed Post aur email se notice bhejte hain. Ismein Section 73 ke tehat 18% commercial interest aur breach of contract ke damages demand kiye jaate hain, jisse adhiktar foreign employers court action se pehle settlement kar lete hain.",
+      "Agar aap India se kisi foreign company ke liye remote work kar rahe the aur unhone salary ya invoice payment rok di hai, toh aap India se formal statutory fact-verified legal notice bhej sakte hain. LegalRecovery.in par hamari team facts verify karke Section 20(c) CPC aur Indian Contract Act ke tehat foreign corporate headquarters aur registered agent ko International Registered Speed Post aur email se notice bhejti hai. Ismein Section 73 ke tehat 18% commercial interest aur breach of contract ke damages demand kiye jaate hain, jisse adhiktar foreign employers court action se pehle settlement kar lete hain.",
   },
 ];
 
@@ -643,7 +643,7 @@ export default function ForeignEmployerUnpaidSalaryPage() {
                       </h3>
                     </div>
                     <p className="text-xs sm:text-sm text-slate-700 leading-relaxed pl-10">
-                      Have a verified Indian advocate draft and serve an official cross-border legal demand notice under Section 20(c) CPC and Section 73 of the Indian Contract Act, 1872. Demand full settlement within 15 days alongside 18% annual commercial interest. The notice is served via International Registered Airmail / DHL to the registered agent and electronically with certified delivery receipts under Section 63 BSA. Check our <Link href="/legal-notice-charges" className="text-red-600 underline font-semibold hover:text-red-700">legal notice charges</Link> for transparent pricing.
+                      Serve an official cross-border legal demand notice under Section 20(c) CPC and Section 73 of the Indian Contract Act, 1872. Demand full settlement within 15 days alongside 18% annual commercial interest. The notice is served via International Registered Airmail / DHL to the registered agent and electronically with certified delivery receipts under Section 63 BSA. Check our <Link href="/legal-notice-charges" className="text-red-600 underline font-semibold hover:text-red-700">legal notice charges</Link> for transparent pricing.
                     </p>
                   </div>
 
@@ -811,7 +811,7 @@ export default function ForeignEmployerUnpaidSalaryPage() {
                     </p>
                     <strong className="text-slate-900 font-bold block pt-2">The Legal Strategy:</strong>
                     <p className="leading-relaxed">
-                      LegalRecovery advocates performed corporate discovery on the Delaware Division of Corporations, identifying the startup&apos;s statutory registered agent in Wilmington, Delaware and cross-referencing SEC Form D filings to reveal two prominent Silicon Valley venture capital partners on the board of directors. A formal advocate statutory notice was served simultaneously via International Registered Post to the Delaware registered agent and certified electronic transmission under Section 63 BSA to the founders and board partners, establishing competent Indian jurisdiction under Section 20(c) CPC and demanding 18% statutory commercial interest.
+                      LegalRecovery advocates performed corporate discovery on the Delaware Division of Corporations, identifying the startup&apos;s statutory registered agent in Wilmington, Delaware and cross-referencing SEC Form D filings to reveal two prominent Silicon Valley venture capital partners on the board of directors. A formal fact-verified statutory notice was served simultaneously via International Registered Post to the Delaware registered agent and certified electronic transmission under Section 63 BSA to the founders and board partners, establishing competent Indian jurisdiction under Section 20(c) CPC and demanding 18% statutory commercial interest.
                     </p>
                     <div className="bg-emerald-50 border border-emerald-200 p-3.5 rounded-xl text-emerald-900 font-medium">
                       <strong>Result:</strong> Within 12 business days of notice receipt, the venture capital board representative directed the startup&apos;s finance director to initiate full wire transfer of the $19,500 principal along with $1,200 towards legal expenses, avoiding public litigation and board reputational exposure.

@@ -164,7 +164,7 @@ const FAQS = [
   {
     question: "Builder flat booking cancel karne ke baad paisa wapas nahi de raha toh kya kare?",
     answer:
-      "Agar aapne flat ya plot booking cancel karne ka written letter bhej diya hai lekin builder 15 se 45 din ke andar refund nahi de raha ya 'non-refundable token' bolkar paisa kaat raha hai, toh LegalRecovery.in ke madhyam se builder ke Managing Director ko 15-day Statutory Advocate Legal Notice (Registered Speed Post aur Email se) bhejein. Notice ke baad bhi payment na aane par aap apne state ke RERA portal par Section 31/18 complaint ya e-Jagriti consumer court case file karke 100% refund aur byaj (interest) le sakte hain.",
+      "Agar aapne flat ya plot booking cancel karne ka written letter bhej diya hai lekin builder 15 se 45 din ke andar refund nahi de raha ya 'non-refundable token' bolkar paisa kaat raha hai, toh LegalRecovery.in ke madhyam se builder ke Managing Director ko 15-day Statutory Fact-Verified Legal Notice (Registered Speed Post aur Email se) bhejein. Notice ke baad bhi payment na aane par aap apne state ke RERA portal par Section 31/18 complaint ya e-Jagriti consumer court case file karke 100% refund aur byaj (interest) le sakte hain.",
   },
 ];
 
@@ -1083,7 +1083,7 @@ export default function FlatBookingCancellationLetterPage() {
                     </h3>
                     <ul className="space-y-1.5 text-xs sm:text-sm text-emerald-950 leading-relaxed list-disc pl-4">
                       <li>
-                        Draft and serve a formal 15-day <strong>Advocate Statutory Legal Notice</strong> on the builder&apos;s Managing Director, Directors, and RERA compliance officer via Registered Speed Post (RPAD) and electronic mail (see our transparent{" "}
+                        Draft and serve a formal 15-day <strong>Fact-Verified Statutory Legal Notice</strong> on the builder&apos;s Managing Director, Directors, and RERA compliance officer via Registered Speed Post (RPAD) and electronic mail (see our transparent{" "}
                         <Link
                           href="/legal-notice-charges"
                           className="text-emerald-900 underline font-bold hover:text-[#DC2626]"

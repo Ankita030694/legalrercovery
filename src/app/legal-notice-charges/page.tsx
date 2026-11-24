@@ -80,7 +80,7 @@ const FAQS = [
   {
     question: "How much does a lawyer typically charge to send a legal notice in India?",
     answer:
-      "In India, private advocate charges for drafting and issuing a legal notice range widely from ₹3,500 to ₹15,000 for standard disputes (such as salary delay, security deposit refund, or consumer defects) and can exceed ₹25,000 to ₹50,000 in high-stakes commercial or property disputes. Legal fees depend on the advocate's years of practice, city tier (Delhi and Mumbai command higher rates than Tier-2 cities), complexity of factual annexures, and chamber overheads. On LegalRecovery.in, verified high court advocates draft and dispatch notices by email and WhatsApp for a transparent flat fee of ₹999. Speed Post is optional at ₹450 per party.",
+      "In India, private advocate charges for drafting and issuing a legal notice range widely from ₹3,500 to ₹15,000 for standard disputes (such as salary delay, security deposit refund, or consumer defects) and can exceed ₹25,000 to ₹50,000 in high-stakes commercial or property disputes. Legal fees depend on the advocate's years of practice, city tier (Delhi and Mumbai command higher rates than Tier-2 cities), complexity of factual annexures, and chamber overheads. On LegalRecovery.in, our team verifies your facts and prepares and dispatches fact-verified notices by email and WhatsApp for a transparent flat fee of ₹999. Speed Post is optional at ₹450 per party.",
   },
   {
     question: "What are the legal notice charges for recovery of money?",
@@ -100,7 +100,7 @@ const FAQS = [
   {
     question: "Why do legal notice charges in Delhi and Mumbai differ from Tier-2 cities?",
     answer:
-      "Legal notice fees in metropolitan centers like Delhi NCR, Mumbai, and Bengaluru are driven by higher chamber operating overheads, proximity to High Courts, and commercial dispute volume, where independent advocates routinely quote ₹5,000 to ₹20,000. In Tier-2 cities such as Lucknow, Jaipur, or Indore, district court lawyers often draft notices between ₹2,000 and ₹6,000. Online platforms like LegalRecovery eliminate geographic pricing disparities by providing pan-India advocate drafting at a uniform ₹999 price point.",
+      "Legal notice fees in metropolitan centers like Delhi NCR, Mumbai, and Bengaluru are driven by higher chamber operating overheads, proximity to High Courts, and commercial dispute volume, where independent advocates routinely quote ₹5,000 to ₹20,000. In Tier-2 cities such as Lucknow, Jaipur, or Indore, district court lawyers often draft notices between ₹2,000 and ₹6,000. Online platforms like LegalRecovery eliminate geographic pricing disparities by providing pan-India notice drafting at a uniform ₹999 price point.",
   },
   {
     question: "Is it legally valid to send a legal notice without hiring an expensive lawyer?",
@@ -110,7 +110,7 @@ const FAQS = [
   {
     question: "Legal notice bhejne ka kitna kharcha aata hai aur advocate ki fees kitni hoti hai?",
     answer:
-      "Bharat mein aam taur par district court ya high court ke private vakil legal notice draft karne aur bhejne ke liye ₹3,000 se ₹15,000 tak fees lete hain, jismein typing aur speed post ka kharcha alag se joda jata hai. Cheque bounce ya commercial money recovery ke mamlon mein fees aur zyada ho sakti hai. LegalRecovery.in par verified advocate dwara complete legal notice drafting, Email aur WhatsApp dispatch aur tracking report sirf flat ₹999 mein uplabdh karwaya jata hai. Speed Post optional hai, ₹450 per party.",
+      "Bharat mein aam taur par district court ya high court ke private vakil legal notice draft karne aur bhejne ke liye ₹3,000 se ₹15,000 tak fees lete hain, jismein typing aur speed post ka kharcha alag se joda jata hai. Cheque bounce ya commercial money recovery ke mamlon mein fees aur zyada ho sakti hai. LegalRecovery.in par hamari team dwara fact-verified legal notice tayyar karna, Email aur WhatsApp dispatch aur tracking report sirf flat ₹999 mein uplabdh karwaya jata hai. Speed Post optional hai, ₹450 per party.",
   },
 ];
 
@@ -229,7 +229,7 @@ export default function LegalNoticeChargesPage() {
                 Statutory Summary (Legal Notice Cost &amp; Fee Standard)
               </p>
               <p>
-                In India, hiring an independent advocate to draft and serve a legal notice typically costs between ₹3,500 and ₹15,000, depending on the dispute type, claim value, and city chambers. India Post Speed Post dispatch adds ₹45 to ₹90. On LegalRecovery.in, verified high court advocates draft, review, and dispatch formal notices by email and WhatsApp for a transparent flat fee of ₹{basePrice}, with zero hidden clerkage or consultation costs. Speed Post is optional at ₹450 per party.
+                In India, hiring an independent advocate to draft and serve a legal notice typically costs between ₹3,500 and ₹15,000, depending on the dispute type, claim value, and city chambers. India Post Speed Post dispatch adds ₹45 to ₹90. On LegalRecovery.in, our team verifies your facts and prepares and dispatches formal notices by email and WhatsApp for a transparent flat fee of ₹{basePrice}, with zero hidden clerkage or consultation costs. Speed Post is optional at ₹450 per party.
               </p>
             </div>
 
@@ -308,7 +308,7 @@ export default function LegalNoticeChargesPage() {
                     <tbody className="divide-y divide-slate-100">
                       <tr className="bg-red-50/40 hover:bg-red-50/70 transition-colors">
                         <th scope="row" className="p-3 sm:p-4 font-bold text-slate-900">
-                          LegalRecovery Advocate Notice
+                          LegalRecovery Fact-Verified Notice
                         </th>
                         <td className="p-3 sm:p-4 font-bold text-[#DC2626]">
                           Flat ₹{basePrice} (Speed Post optional, ₹450)
@@ -403,7 +403,7 @@ export default function LegalNoticeChargesPage() {
                         Consumers, Employees &amp; Tenants
                       </h3>
                       <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                        If an employer has withheld your Full and Final (F&amp;F) settlement, a landlord refuses to refund your security deposit, or an e-commerce brand cancelled an order without refunding your money, paying a private lawyer ₹5,000 to ₹10,000 makes little economic sense. A flat ₹{basePrice} advocate legal notice establishes your formal demand, satisfies the mandatory pre-action protocol, and triggers rapid compliance without eroding your claim.
+                        If an employer has withheld your Full and Final (F&amp;F) settlement, a landlord refuses to refund your security deposit, or an e-commerce brand cancelled an order without refunding your money, paying a private lawyer ₹5,000 to ₹10,000 makes little economic sense. A flat ₹{basePrice} fact-verified legal notice establishes your formal demand, satisfies the mandatory pre-action protocol, and triggers rapid compliance without eroding your claim.
                       </p>
                     </div>
                     <div className="mt-4 pt-3 border-t border-slate-100">
@@ -688,7 +688,7 @@ export default function LegalNoticeChargesPage() {
                 </div>
 
                 <div className="p-4 rounded-xl bg-amber-50 border border-amber-200 text-xs sm:text-sm text-amber-900 leading-relaxed">
-                  <span className="font-bold">Important Statutory Note:</span> Under Section 12A of the Commercial Courts Act, 2015, filing a commercial money recovery suit without exhausting Pre-Institution Mediation is barred unless urgent interim relief is prayed for. A well-documented advocate legal notice serves as the prima facie evidence of dispute crystallization when initiating mediation. For detailed money recovery timelines in Hindi, refer to our comprehensive guide on{" "}
+                  <span className="font-bold">Important Statutory Note:</span> Under Section 12A of the Commercial Courts Act, 2015, filing a commercial money recovery suit without exhausting Pre-Institution Mediation is barred unless urgent interim relief is prayed for. A well-documented fact-verified legal notice serves as the prima facie evidence of dispute crystallization when initiating mediation. For detailed money recovery timelines in Hindi, refer to our comprehensive guide on{" "}
                   <Link href="/hi/money-recovery-case-kitna-time-lagta-hai" className="font-bold text-[#DC2626] underline">
                     Court Mein Paisa Wapas Milne Mein Kitna Time Lagta Hai
                   </Link>.
@@ -882,8 +882,8 @@ export default function LegalNoticeChargesPage() {
                       Included in LegalRecovery Flat ₹{basePrice}
                     </h3>
                     <ul className="text-xs sm:text-sm text-slate-700 space-y-2">
-                      <li>• Case evaluation &amp; evidentiary review by verified advocates</li>
-                      <li>• Formal statutory drafting on official High Court advocate letterhead</li>
+                      <li>• Fact verification of the case details you submit by our team</li>
+                      <li>• Formal statutory notice prepared from structured templates</li>
                       <li>• Specific legal provisions cited (CPA 2019, NI Act, Contract Act, BSA 2023)</li>
                       <li>• Delivery by email and WhatsApp (Speed Post optional at ₹450 per party)</li>
                       <li>• Real-time digital tracking dashboard until confirmed delivery</li>
@@ -899,7 +899,7 @@ export default function LegalNoticeChargesPage() {
                     </h3>
                     <ul className="text-xs sm:text-sm text-slate-700 space-y-2">
                       <li>• Initial chamber consultation fee: ₹1,500 – ₹5,000</li>
-                      <li>• Advocate drafting fee: ₹3,500 – ₹15,000</li>
+                      <li>• Notice drafting fee: ₹3,500 – ₹15,000</li>
                       <li>• Typist &amp; legal paper stationery charges: ₹500 – ₹1,200</li>
                       <li>• Clerkage fee for India Post filing: ₹500 – ₹1,000</li>
                       <li>• Re-drafting or amendment fees if facts need updates: ₹1,500+</li>
@@ -940,7 +940,7 @@ export default function LegalNoticeChargesPage() {
                       2. Section 38(1) &amp; Section 39 Consumer Protection Act, 2019
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 mt-1 leading-relaxed">
-                      District Consumer Commissions across India routinely award ₹5,000 to ₹15,000 towards litigation costs and legal notice expenses whenever a corporation forces a consumer into litigation by ignoring an advocate legal notice. For instance, in consumer complaint proceedings on{" "}
+                      District Consumer Commissions across India routinely award ₹5,000 to ₹15,000 towards litigation costs and legal notice expenses whenever a corporation forces a consumer into litigation by ignoring a fact-verified legal notice. For instance, in consumer complaint proceedings on{" "}
                       <Link href="/e-jagriti-consumer-complaint-guide" className="font-bold text-[#DC2626] underline">
                         e-Jagriti Online Consumer Forum
                       </Link>, producing the original legal notice and India Post receipt enables the commission to grant direct cost reimbursement.
@@ -950,7 +950,7 @@ export default function LegalNoticeChargesPage() {
 
                 <div className="p-4 rounded-xl bg-slate-100 border border-slate-200 text-xs sm:text-sm text-slate-700 font-mono">
                   <p className="font-bold text-slate-900 mb-1 font-sans">
-                    Standard Notice Prayer Clause Drafted by Our Advocates:
+                    Standard Notice Prayer Clause Prepared on verified facts:
                   </p>
                   <p className="italic text-slate-800">
                     &quot;You the Noticee are hereby called upon to pay the principal sum of ₹[Amount] along with statutory interest @ 18% per annum, together with a sum of ₹5,000 towards the charges of this legal notice, within a period of 15 days from the receipt hereof, failing which my client shall initiate appropriate civil and criminal proceedings entirely at your risk, cost and consequence.&quot;
@@ -1049,7 +1049,7 @@ export default function LegalNoticeChargesPage() {
                         Bengaluru IT Professional vs Unreasonable Landlord Deductions
                       </h3>
                       <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                        Upon vacating a flat in HSR Layout, the landlord arbitrarily deducted ₹70,000 citing routine wear-and-tear painting charges and refused to refund the remaining ₹50,000. An advocate legal notice was served citing Section 11 of the Model Tenancy Act principles and Indian Contract Act Section 73. Faced with impending litigation and interest penalties, the landlord refunded ₹1,12,000 within 14 days.
+                        Upon vacating a flat in HSR Layout, the landlord arbitrarily deducted ₹70,000 citing routine wear-and-tear painting charges and refused to refund the remaining ₹50,000. A fact-verified legal notice was served citing Section 11 of the Model Tenancy Act principles and Indian Contract Act Section 73. Faced with impending litigation and interest penalties, the landlord refunded ₹1,12,000 within 14 days.
                       </p>
                       <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 pt-2 text-xs">
                         <div className="bg-slate-50 p-2.5 rounded-lg border border-slate-100">
@@ -1088,7 +1088,7 @@ export default function LegalNoticeChargesPage() {
                     Checklist: Information Needed Before Sending an Advocate Notice
                   </h2>
                   <p className="text-xs sm:text-sm text-slate-600 mt-1">
-                    Assemble these electronic and documentary records to ensure zero delay in advocate drafting.
+                    Assemble these electronic and documentary records to ensure zero delay in notice drafting.
                   </p>
                 </div>
 
@@ -1145,10 +1145,10 @@ export default function LegalNoticeChargesPage() {
                 </h3>
                 <div className="text-xs sm:text-sm text-slate-300 space-y-2 leading-relaxed">
                   <p>
-                    <strong className="text-white">What It Does:</strong> A formal legal notice drafted by an enrolled advocate establishes a legally binding pre-litigation record, crystallizes contractual defaults, creates proof of demand under the Limitation Act 1963, and initiates the statutory 15-day window required before approaching consumer commissions, labour courts, or cheque bounce magistrates. Over 80% of corporate entities settle immediately to avoid public litigation.
+                    <strong className="text-white">What It Does:</strong> A formal legal notice prepared on verified facts establishes a legally binding pre-litigation record, crystallizes contractual defaults, creates proof of demand under the Limitation Act 1963, and initiates the statutory 15-day window required before approaching consumer commissions, labour courts, or cheque bounce magistrates. Over 80% of corporate entities settle immediately to avoid public litigation.
                   </p>
                   <p>
-                    <strong className="text-white">What It Cannot Do:</strong> An advocate notice is a formal pre-trial legal demand, not a court warrant or judicial attachment order. If an opposing party is insolvent, untraceable, or stubbornly ignores the demand, court filing (such as an e-Jagriti consumer complaint, Summary Suit, or Section 138 criminal complaint) becomes necessary. LegalRecovery provides all delivery proofs required to transition seamlessly into court.
+                    <strong className="text-white">What It Cannot Do:</strong> A fact-verified notice is a formal pre-trial legal demand, not a court warrant or judicial attachment order. If an opposing party is insolvent, untraceable, or stubbornly ignores the demand, court filing (such as an e-Jagriti consumer complaint, Summary Suit, or Section 138 criminal complaint) becomes necessary. LegalRecovery provides all delivery proofs required to transition seamlessly into court.
                   </p>
                 </div>
               </div>

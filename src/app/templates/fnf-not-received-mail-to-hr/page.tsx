@@ -89,7 +89,7 @@ const FAQS = [
   {
     question: "How do I format a delay in full and final settlement mail format in Word?",
     answer:
-      "A legally binding FnF delay mail in Word should feature: (1) Precise employment particulars including Staff ID, designation, and Last Working Day, (2) Confirmation that all company assets, laptops, and handovers were accepted, (3) An itemized financial table listing unpaid salary, leave encashment, gratuity, and expense claims, (4) Statutory citations to Section 17(2) of the Code on Wages and Section 7(3A) of the Gratuity Act, (5) Bank NEFT/RTGS account coordinates, and (6) A definitive 7-day deadline before escalating to an advocate legal notice. Use our free Word export button above to generate a pre-formatted .doc file.",
+      "A legally binding FnF delay mail in Word should feature: (1) Precise employment particulars including Staff ID, designation, and Last Working Day, (2) Confirmation that all company assets, laptops, and handovers were accepted, (3) An itemized financial table listing unpaid salary, leave encashment, gratuity, and expense claims, (4) Statutory citations to Section 17(2) of the Code on Wages and Section 7(3A) of the Gratuity Act, (5) Bank NEFT/RTGS account coordinates, and (6) A definitive 7-day deadline before escalating to a fact-verified legal notice. Use our free Word export button above to generate a pre-formatted .doc file.",
   },
   {
     question: "Can my employer deduct notice period buyout money from my FnF settlement?",
@@ -114,7 +114,7 @@ const FAQS = [
   {
     question: "Company FnF settlement nahi de rahi toh legal notice kaise bheje?",
     answer:
-      "Agar company 30–45 din beet jane par bhi aapka full and final settlement roke hue hai ya notice period ke naam par galat deduction kar rahi hai, toh aap verified advocate ke madhyam se statutory legal notice bhej sakte hain. LegalRecovery.in par advocate Section 17(2) Code on Wages, Section 7(3A) Gratuity Act aur 18% penal interest ke sath company ke Registered Office aur Directors ko 15-day demand notice bhejte hain.",
+      "Agar company 30–45 din beet jane par bhi aapka full and final settlement roke hue hai ya notice period ke naam par galat deduction kar rahi hai, toh aap statutory legal notice bhej sakte hain. LegalRecovery.in par hamari team Section 17(2) Code on Wages, Section 7(3A) Gratuity Act aur 18% penal interest ke sath company ke Registered Office aur Directors ko fact-verified 15-day demand notice bhejti hai.",
   },
 ];
 
@@ -580,7 +580,7 @@ export default function FnfEmailTemplatePage() {
                     </span>
                     <div className="space-y-1 sm:space-y-1.5">
                       <h3 className="text-sm sm:text-base md:text-lg font-bold text-slate-900">
-                        Serve a Formal Statutory Advocate Legal Demand Notice
+                        Serve a Formal Statutory Fact-Verified Legal Demand Notice
                       </h3>
                       <p className="text-xs sm:text-sm leading-relaxed">
                         Instruct a verified labour recovery advocate to issue a 15-day statutory demand notice. Dispatched via Registered Speed Post with postal acknowledgment and served electronically under Section 63 BSA, the notice demands 100% of the dues plus 18% penal interest and immediate release of your relieving letter. Read our detailed guide on <Link href="/legal-notice-for-full-and-final-settlement-delay" className="text-blue-700 underline font-semibold">legal notice for FnF settlement delay</Link> and view transparent <Link href="/legal-notice-charges" className="text-blue-700 underline font-semibold">legal notice charges</Link>.
@@ -873,7 +873,7 @@ export default function FnfEmailTemplatePage() {
               {/* Section 11: Primary CTA Block */}
               <section id="heading-cta-block" aria-labelledby="heading-cta-block-title" className="w-full">
                 <h2 id="heading-cta-block-title" className="sr-only">
-                  Serve a Statutory Advocate Legal Notice for Delayed FnF
+                  Serve a Statutory Fact-Verified Legal Notice for Delayed FnF
                 </h2>
                 <FnfNoticeCTA variant="primary" />
               </section>

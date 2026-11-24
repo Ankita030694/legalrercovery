@@ -37,7 +37,7 @@ const PROBLEMS: ProblemTab[] = [
           "When the brand technician inspects the TV, refuse to sign any job card stating 'Customer Induced Damage' or 'Liquid Ingress'. Insist on an explicit observation recording normal external condition and electrical display failure.",
       },
       {
-        step: "Serve Formal Advocate Notice for Replacement",
+        step: "Serve Formal Fact-Verified Notice for Replacement",
         description:
           "If the manufacturer refuses panel replacement or delays parts beyond 14 days, dispatch a formal statutory advocate legal notice demanding immediate unit replacement or 100% invoice refund plus interest within 15 days.",
       },
@@ -118,7 +118,7 @@ const PROBLEMS: ProblemTab[] = [
           "Retain proof of voltage stabilizer installation and brand-authorized technician commissioning to defeat frivolous allegations of power fluctuation damage.",
       },
       {
-        step: "Serve Advocate Legal Notice for Unit Replacement",
+        step: "Serve Fact-Verified Legal Notice for Unit Replacement",
         description:
           "Dispatch a statutory notice demanding complete outdoor unit (ODU) or indoor unit (IDU) replacement under Section 39(1)(b) of CPA 2019 before filing on e-Jagriti.",
       },

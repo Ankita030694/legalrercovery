@@ -22,7 +22,7 @@ export default function CoalGcvCTA() {
               Test 1 Live Overdue Coal or Petcoke Claim Now
             </h3>
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-              &ldquo;Test 1 Live Overdue Case Now (&#8377;{basePrice} &middot; Advocate Drafted
+              &ldquo;Test 1 Live Overdue Case Now (&#8377;{basePrice} &middot; Fact-Verified
               &middot; Email + WhatsApp + Speed Post RPAD)&rdquo; &mdash; repudiate unilateral GCV
               debit notes under Sale of Goods s.42 and enforce SGS/NABL finality.
             </p>
@@ -33,7 +33,7 @@ export default function CoalGcvCTA() {
               onClick={() => setIsModalOpen(true)}
               className="w-full inline-flex items-center justify-center px-5 py-3.5 rounded-xl font-bold text-white bg-[#DC2626] hover:bg-[#B91C1C] transition-colors shadow-lg shadow-red-900/30 text-sm cursor-pointer text-center"
             >
-              Launch &#8377;{basePrice} Advocate Demand Notice
+              Launch &#8377;{basePrice} Fact-Verified Demand Notice
             </button>
             <Link
               href="/user/new-recovery"

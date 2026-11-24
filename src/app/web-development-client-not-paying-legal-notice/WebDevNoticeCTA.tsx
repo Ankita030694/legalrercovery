@@ -31,7 +31,7 @@ export default function WebDevNoticeCTA({
                 Recover Unpaid Web &amp; Software Development Dues with Legal IP Levers
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6">
-                Have an advocate draft and serve a high-impact statutory demand notice directly to your non-paying client. Enforce copyright reservation under Section 19 of the Copyright Act, demand immediate milestone clearance plus 3× RBI compound interest under the MSMED Act, and preserve the right to initiate host-level DMCA takedowns and summary recovery proceedings.
+                Serve a high-impact statutory demand notice directly to your non-paying client. Enforce copyright reservation under Section 19 of the Copyright Act, demand immediate milestone clearance plus 3× RBI compound interest under the MSMED Act, and preserve the right to initiate host-level DMCA takedowns and summary recovery proceedings.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button
@@ -42,7 +42,7 @@ export default function WebDevNoticeCTA({
                   {buttonText} — ₹{basePrice}
                 </button>
                 <div className="text-xs text-slate-300 flex flex-wrap sm:flex-nowrap items-center gap-2 sm:gap-3">
-                  <span>✓ 24h Advocate Drafting</span>
+                  <span>✓ 24h Notice Drafting</span>
                   <span>•</span>
                   <span>✓ Email + WhatsApp</span>
                   <span>•</span>

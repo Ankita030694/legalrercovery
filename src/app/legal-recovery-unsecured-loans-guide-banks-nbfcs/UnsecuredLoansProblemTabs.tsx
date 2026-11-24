@@ -59,7 +59,7 @@ const SCENARIOS: PortfolioScenario[] = [
           "Generate a Section 63 BSA certificate capturing loan application logs, Aadhaar e-Sign audit trail, IP timestamp, mobile OTP verification, and bank credit UTR.",
       },
       {
-        step: "Recall Loan & Dispatch Advocate Notice",
+        step: "Recall Loan & Dispatch Fact-Verified Notice",
         description:
           "Issue a formal loan recall notice demanding immediate repayment of entire accelerated principal, contractual interest, and overdue penalties.",
       },
@@ -86,7 +86,7 @@ const SCENARIOS: PortfolioScenario[] = [
           "Prepare a clean certified statement of accounts under the Bankers' Books Evidence Act proving exact liquidated outstanding amount.",
       },
       {
-        step: "Issue Final Pre-Litigation Advocate Notice",
+        step: "Issue Final Pre-Litigation Fact-Verified Notice",
         description:
           "Serve a 15-day statutory demand detailing intention to initiate summary civil trial and reporting to credit bureaus (CIBIL/Experian).",
       },
@@ -269,7 +269,7 @@ export default function UnsecuredLoansProblemTabs() {
         {/* Quick Institutional Action Link */}
         <div className="p-3 bg-amber-50 border border-amber-200 rounded-xl flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs text-amber-950">
           <span>
-            <strong>Managing bulk unsecured non-performing loans?</strong> We automate advocate demand notices, Section 25 PSS filing pipelines, and arbitration triggers.
+            <strong>Managing bulk unsecured non-performing loans?</strong> We automate fact-verified demand notices, Section 25 PSS filing pipelines, and arbitration triggers.
           </span>
           <Link
             href="/bulk-recovery-cases-all-in-one-affordable-solutions"

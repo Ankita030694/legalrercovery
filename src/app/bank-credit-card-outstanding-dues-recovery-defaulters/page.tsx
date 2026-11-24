@@ -163,7 +163,7 @@ const FAQS = [
   {
     question: "What restrictions do the RBI Master Directions 2022 impose on bank recovery agents for credit card collections?",
     answer:
-      "The RBI Master Directions on Credit Card Operations (April 2022) strictly prohibit recovery agents from resorting to verbal harassment, intimidation, public humilation, or contacting cardholders before 8:00 AM or after 7:00 PM. Banks are held vicariously liable for any agent misconduct. Therefore, institutional lenders must transition recovery operations toward formal advocate-drafted statutory notices, digital audit trails, and judicial conciliation platforms.",
+      "The RBI Master Directions on Credit Card Operations (April 2022) strictly prohibit recovery agents from resorting to verbal harassment, intimidation, public humilation, or contacting cardholders before 8:00 AM or after 7:00 PM. Banks are held vicariously liable for any agent misconduct. Therefore, institutional lenders must transition recovery operations toward formal fact-verified statutory notices, digital audit trails, and judicial conciliation platforms.",
   },
   {
     question: "Agar credit card bill pay nahi kiya toh bank kya legal notice bhej sakti hai aur court case kar sakti hai?",
@@ -655,7 +655,7 @@ export default function BankCreditCardOutstandingRecoveryPage() {
                     {
                       stage: "Stage 2",
                       title: "Formal Advocate Statutory Demand Notice (90 DPD NPA Threshold)",
-                      desc: "Immediately upon account classification as a Non-Performing Asset, issue a formal statutory legal demand notice drafted by accredited banking advocates. Dispatched via India Post Registered Speed Post and tracked email, giving a strict 15-day cure window.",
+                      desc: "Immediately upon account classification as a Non-Performing Asset, issue a formal statutory legal demand notice prepared from fact-verified account details. Dispatched via India Post Registered Speed Post and tracked email, giving a strict 15-day cure window.",
                     },
                     {
                       stage: "Stage 3",
@@ -791,7 +791,7 @@ export default function BankCreditCardOutstandingRecoveryPage() {
                       <strong>The Delinquency Scenario:</strong> An executive cardholder in Gurugram accumulated ₹8,42,160 in luxury e-commerce and international travel charges. The cardholder ceased repayments, ignored tele-calling, and cancelled their NACH autopay mandate. At 90 DPD, the account was provisioned as NPA under RBI prudential norms.
                     </p>
                     <p>
-                      <strong>Legal Strategy Implemented:</strong> The bank retained our advocate panel. We served a comprehensive 15-day statutory demand notice accompanied by itemized electronic statements and a Section 63 BSA electronic evidence certificate. When the cardholder failed to cure the default, our counsel filed an Order XXXVII Summary Suit in the Commercial Court.
+                      <strong>Legal Strategy Implemented:</strong> The bank retained our team. We served a comprehensive 15-day statutory demand notice accompanied by itemized electronic statements and a Section 63 BSA electronic evidence certificate. When the cardholder failed to cure the default, our team filed an Order XXXVII Summary Suit in the Commercial Court.
                     </p>
                     <p>
                       <strong>Judicial Outcome:</strong> Upon receipt of the court summons in Form 4, the defendant attempted to plead financial hardship and alleged billing discrepancies. The Commercial Judge noted that the cardholder had received 6 monthly statements without raising disputes within the 60-day contractual period, holding that the defendant failed to show a substantial defense. Leave to Defend was denied, resulting in an immediate Summary Decree for ₹8,42,160 plus 12% pendente lite interest and ₹35,000 legal costs, successfully realized via salary garnishment under Order XXI CPC.

@@ -61,7 +61,7 @@ const PROBLEMS: ProblemTab[] = [
       {
         step: "Serve Formal Legal Notice on Head of Grievance Redressal",
         description:
-          "Have an advocate dispatch a legal notice establishing the statutory 30-day default and putting the insurer on notice for penal interest at Bank Rate + 2%.",
+          "Dispatch a legal notice establishing the statutory 30-day default and putting the insurer on notice for penal interest at Bank Rate + 2%.",
       },
       {
         step: "Lodge Complaint with Territorial Insurance Ombudsman",
@@ -113,7 +113,7 @@ const PROBLEMS: ProblemTab[] = [
           "Verify the exact policy inception and renewal dates. If 3 years have elapsed, invoke Section 45(1) statutory bar which extinguishes all insurer repudiation rights.",
       },
       {
-        step: "Issue Advocate Notice Demanding Full Sum Assured + Interest",
+        step: "Issue Fact-Verified Notice Demanding Full Sum Assured + Interest",
         description:
           "Serve legal notice to the insurer's corporate board demanding immediate disbursement of Sum Assured plus 9% to 12% statutory delayed interest.",
       },

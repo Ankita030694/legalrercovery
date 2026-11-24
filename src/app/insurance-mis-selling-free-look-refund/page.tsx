@@ -838,7 +838,7 @@ export default function InsuranceMisSellingRefundPage() {
                     </span>
                     <div className="space-y-1 sm:space-y-1.5">
                       <h3 className="text-sm sm:text-base md:text-lg font-bold text-slate-900">
-                        Serve a Formal Statutory Advocate Legal Demand Notice
+                        Serve a Formal Statutory Fact-Verified Legal Demand Notice
                       </h3>
                       <p className="text-xs sm:text-sm leading-relaxed">
                         Engage a recovery advocate to issue a 15-day statutory demand notice addressed to the insurer&apos;s Principal Officer and the corporate bank partner. The notice cites Section 2(47) Consumer Protection Act, Section 19 Contract Act, and IRDAI circulars, demanding immediate reversal of all debited premiums plus penal interest under threat of joint prosecution and regulatory sanctions.
@@ -992,14 +992,14 @@ export default function InsuranceMisSellingRefundPage() {
                       <strong>The Deadlock:</strong> 45 days later, Prabhakar received an SMS acknowledging his enrolment in a 12-year regular premium Unit Linked Insurance Plan (ULIP) requiring an annual commitment of ₹2,50,000 every year until 2036. When he visited the branch, the relationship manager claimed that the 30-day free-look period had already expired and that cancelling would result in 100% surrender forfeiture under policy terms. Prabhakar&apos;s written grievance to the insurer was dismissed with a canned response citing his signed proposal form.
                     </p>
                     <p>
-                      <strong>The Statutory Action:</strong> Prabhakar engaged LegalRecovery.in. An advocate conducted an audit and discovered three fatal flaws: (1) India Post tracking showed the physical policy document was delivered only 18 days prior, keeping the free-look window active; (2) The mandatory IRDAI 4% &amp; 8% Benefit Illustration was missing Prabhakar&apos;s signature; and (3) The relationship manager had falsified Prabhakar&apos;s annual income on the proposal form to bypass senior citizen underwriting checks.
+                      <strong>The Statutory Action:</strong> Prabhakar engaged LegalRecovery.in. Our team verified the facts Prabhakar submitted and identified three fatal flaws: (1) India Post tracking showed the physical policy document was delivered only 18 days prior, keeping the free-look window active; (2) The mandatory IRDAI 4% &amp; 8% Benefit Illustration was missing Prabhakar&apos;s signature; and (3) The relationship manager had falsified Prabhakar&apos;s annual income on the proposal form to bypass senior citizen underwriting checks.
                     </p>
                     <p>
-                      The advocate served a formal statutory demand notice to both the Bank Chairman and the Insurer&apos;s Managing Director, invoking Section 2(47) Consumer Protection Act, 2019, and IRDAI Mis-Selling Directives.
+                      LegalRecovery.in served a formal statutory demand notice to both the Bank Chairman and the Insurer&apos;s Managing Director, invoking Section 2(47) Consumer Protection Act, 2019, and IRDAI Mis-Selling Directives.
                     </p>
                     <div className="p-3.5 sm:p-4 bg-emerald-950/70 border border-emerald-700/60 rounded-xl text-emerald-200">
                       <strong className="block text-emerald-400 font-bold mb-1">The Resolution &amp; Outcome:</strong>
-                      On Day 9 following delivery of the advocate legal notice, the insurer&apos;s Head of Legal contacted Prabhakar to tender an unconditional apology. The policy was cancelled ab initio under Regulation 10. The entire premium of ₹2,50,000 was credited back to his savings account along with 9% statutory interest (₹5,547) and an ex-gratia compensation of ₹20,000 for distress.
+                      On Day 9 following delivery of the fact-verified legal notice, the insurer&apos;s Head of Legal contacted Prabhakar to tender an unconditional apology. The policy was cancelled ab initio under Regulation 10. The entire premium of ₹2,50,000 was credited back to his savings account along with 9% statutory interest (₹5,547) and an ex-gratia compensation of ₹20,000 for distress.
                     </div>
                   </div>
                 </div>
@@ -1069,12 +1069,12 @@ Date: [CURRENT DATE]`}
                   </pre>
 
                   <div className="flex flex-wrap items-center justify-between gap-3 pt-2 text-xs text-slate-400">
-                    <span>Need our advocates to customize, verify, and dispatch this notice by email and WhatsApp?</span>
+                    <span>Need our team to customize, verify, and dispatch this notice by email and WhatsApp?</span>
                     <a
                       href="#heading-cta-block"
                       className="text-red-400 hover:text-red-300 font-bold underline"
                     >
-                      Draft Lawyer Notice — ₹1,499 →
+                      Draft Fact-Verified Notice — ₹1,499 →
                     </a>
                   </div>
                 </div>

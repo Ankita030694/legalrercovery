@@ -31,7 +31,7 @@ export default function CreditCardRecoveryCTA({
                 Recover Delinquent Credit Card Dues Across Non-Performing Card Pools
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6">
-                Retain our banking law firm for compliant, tech-enabled legal notice dispatch across non-performing credit card pools. Whether recovering revolving retail balances at 90+ DPD, enforcing Section 25 PSS Act criminal remedies for failed NACH auto-debits, or instituting fast-track Order XXXVII Summary Suits with Section 63 BSA-certified digital statements, our pan-India advocate panel ensures statutory compliance under RBI Master Directions 2022.
+                Engage our team for compliant, tech-enabled legal notice dispatch across non-performing credit card pools. Whether recovering revolving retail balances at 90+ DPD, enforcing Section 25 PSS Act criminal remedies for failed NACH auto-debits, or instituting fast-track Order XXXVII Summary Suits with Section 63 BSA-certified digital statements, our team prepares and dispatches every notice with statutory compliance under RBI Master Directions 2022.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button
@@ -46,7 +46,7 @@ export default function CreditCardRecoveryCTA({
                   <span>•</span>
                   <span>✓ RBI Master Directions Compliant</span>
                   <span>•</span>
-                  <span>✓ Pan-India Recovery Panelling</span>
+                  <span>✓ Pan-India Recovery Coverage</span>
                 </div>
               </div>
             </div>

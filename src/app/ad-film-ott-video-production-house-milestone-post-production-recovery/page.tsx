@@ -166,7 +166,7 @@ export default function FilmProducerRecoveryPage() {
         "@type": "HowToStep",
         position: 3,
         name: "Issue 24-Hour Statutory Cease-and-Desist Notice",
-        text: "Serve an advocate-vetted Cease & Desist and Demand Notice under Copyright Act 1957 Section 51, warning the brand and agency that broadcasting unassigned cinematograph works constitutes copyright infringement.",
+        text: "Serve a fact-verified Cease & Desist and Demand Notice under Copyright Act 1957 Section 51, warning the brand and agency that broadcasting unassigned cinematograph works constitutes copyright infringement.",
         url: `${SITE_URL}/ad-film-ott-video-production-house-milestone-post-production-recovery#decision-tree-flow`,
       },
       {
@@ -634,7 +634,7 @@ export default function FilmProducerRecoveryPage() {
             {/* Mid-Article Dual CTA */}
             <FilmProducerNoticeCTA
               heading="Commercial Aired Without Paying Your Final Milestone?"
-              subheading="Stop unauthorized broadcast within 24–48 hours. Issue an advocate-vetted statutory notice under Section 17 & 51 of the Copyright Act and recover 100% of shoot overruns with compounding interest."
+              subheading="Stop unauthorized broadcast within 24–48 hours. Issue a fact-verified statutory notice under Section 17 & 51 of the Copyright Act and recover 100% of shoot overruns with compounding interest."
               sourceLocation="film_producer_mid_article_cta"
             />
 
@@ -1287,7 +1287,7 @@ export default function FilmProducerRecoveryPage() {
             {/* Bottom Closing CTA */}
             <FilmProducerNoticeCTA
               heading="Initiate Your Production House Recovery Docket Today"
-              subheading="Join hundreds of Indian film producers, VFX studios, and line producers recovering unassigned broadcast assets and unpaid shoot milestones with advocate-backed legal notices."
+              subheading="Join hundreds of Indian film producers, VFX studios, and line producers recovering unassigned broadcast assets and unpaid shoot milestones with fact-verified legal notices."
               sourceLocation="film_producer_bottom_cta"
             />
           </div>

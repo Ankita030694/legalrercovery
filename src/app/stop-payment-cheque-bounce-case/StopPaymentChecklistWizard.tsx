@@ -40,7 +40,7 @@ const CHECKLIST_ITEMS: ChecklistItem[] = [
     title: "Advocate Legal Demand Notice Copy (Dispatched ≤ 30 Days)",
     description:
       "Formal statutory notice demanding cheque amount within 15 days of receipt under Section 138(b) NI Act. Must specify cheque number, date, amount, and dishonour memo details.",
-    source: "Drafted by advocate / LegalRecovery.in",
+    source: "Prepared on verified facts / LegalRecovery.in",
     essential: true,
   },
   {

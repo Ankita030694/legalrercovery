@@ -71,7 +71,7 @@ const SCENARIOS: ScenarioItem[] = [
     ],
     actionSteps: [
       "Reconcile biometric/LMS attendance logs to separate 'earned tuition & delivered study-kit cost' from any unearned future quarters.",
-      "Issue a MoE-2024 compliant Advocate Recovery Notice strictly demanding the pro-rata earned balance + GST, explicitly waiving any unearned post-withdrawal quarters.",
+      "Issue a MoE-2024 compliant Fact-Verified Recovery Notice strictly demanding the pro-rata earned balance + GST, explicitly waiving any unearned post-withdrawal quarters.",
       "For bounced e-NACH mandates or PDCs matching earned dues, dispatch a 30-day NI Act s.138 / PSS Act s.25 notice and run bulk CSV batches for 100+ defaulting enrollments.",
     ],
     timeline: "30-Day Statutory Demand + 15-Day Cure",

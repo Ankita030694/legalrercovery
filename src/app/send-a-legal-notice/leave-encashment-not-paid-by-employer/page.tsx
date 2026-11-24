@@ -5,7 +5,7 @@ const slug = 'send-a-legal-notice/leave-encashment-not-paid-by-employer';
 const title =
   'Legal Notice to Company for Unpaid Leave Encashment';
 const description =
-  'Company withholding earned leave encashment? Send an advocate-vetted legal notice under the Factories & Wages Act for immediate recovery.';
+  'Company withholding earned leave encashment? Send a fact-verified legal notice under the Factories & Wages Act for immediate recovery.';
 const url = `https://www.legalrecovery.in/${slug}`;
 const ogImage = `/images/og/leave-encashment-not-paid-by-employer.jpg`;
 

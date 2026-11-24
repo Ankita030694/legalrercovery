@@ -11,7 +11,7 @@ interface WhatBanksCanDoCTAProps {
 }
 
 export default function WhatBanksCanDoCTA({
-  buttonText = "Issue Statutory Advocate Demand Notice to Defaulting Borrower",
+  buttonText = "Issue Statutory Fact-Verified Demand Notice to Defaulting Borrower",
   className = "",
   variant = "primary",
 }: WhatBanksCanDoCTAProps) {
@@ -31,7 +31,7 @@ export default function WhatBanksCanDoCTA({
                 Recover Defaulted Personal Loans &amp; Stop Consecutive EMI Leakage
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6">
-                Enforce immediate statutory pressure through advocate notices within 15 days of consecutive EMI default. 
+                Enforce immediate statutory pressure through fact-verified notices within 15 days of consecutive EMI default. 
                 Serve formal Section 25 PSS Act (NACH dishonour) and loan recall notices dispatched directly under advocate letterhead 
                 via Speed Post, registered email, and WhatsApp with Section 63 BSA compliance.
               </p>

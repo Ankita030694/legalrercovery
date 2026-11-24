@@ -310,7 +310,7 @@ export default function ColdChainReeferFreightRecoveryPage() {
         "@type": "HowToStep",
         position: 5,
         name: "Issue Formal Rebuttal & Strike Down Unilateral Debit Notes",
-        text: "Serve an advocate demand notice citing the Supreme Court's Raman Iron Foundry ruling, rendering unilateral freight set-offs illegal.",
+        text: "Serve a fact-verified demand notice citing the Supreme Court's Raman Iron Foundry ruling, rendering unilateral freight set-offs illegal.",
       },
       {
         "@type": "HowToStep",
@@ -1008,8 +1008,8 @@ export default function ColdChainReeferFreightRecoveryPage() {
                   },
                   {
                     step: "05",
-                    title: "Serve Advocate Legal Notice Dismantling Unilateral Debit Notes",
-                    desc: "Dispatch an advocate legal demand notice citing Raman Iron Foundry and Gangotri Enterprises. Formally reject the unilateral debit note, demand payment of all clean freight bills within 15 days, and notify them of 3x RBI compound interest liability under the MSMED Act, 2006.",
+                    title: "Serve Fact-Verified Legal Notice Dismantling Unilateral Debit Notes",
+                    desc: "Dispatch a fact-verified legal demand notice citing Raman Iron Foundry and Gangotri Enterprises. Formally reject the unilateral debit note, demand payment of all clean freight bills within 15 days, and notify them of 3x RBI compound interest liability under the MSMED Act, 2006.",
                   },
                   {
                     step: "06",
@@ -1111,7 +1111,7 @@ export default function ColdChainReeferFreightRecoveryPage() {
                 </div>
 
                 <p className="text-xs text-slate-600">
-                  Need an advocate-drafted statutory notice format? Review our{" "}
+                  Need a ready-to-use statutory notice format? Review our{" "}
                   <Link
                     href="/templates/legal-notice-reply-format"
                     className="text-red-600 hover:text-red-700 font-bold underline decoration-[#DC2626] underline-offset-2"

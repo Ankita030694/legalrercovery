@@ -143,7 +143,7 @@ const FAQS = [
   {
     question: "How do bulk legal notices ensure 100% compliance with RBI Fair Practices and Outsourcing Guidelines?",
     answer:
-      "Under the Reserve Bank of India (RBI) Master Directions on Managing Risks and Code of Conduct in Outsourcing of Financial Services and the RBI Fair Practices Code for Lenders, commercial lenders face severe regulatory fines and reputational audits if recovery communications involve coercive tactics or unverified agents. Our institutional law firm retainership replaces rogue call-center harassment with advocate-signed statutory legal demand notices dispatched under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023 via speed post and certified electronic channels. Every communication is strictly documented, auditable, and legally defensible before banking ombudsmen.",
+      "Under the Reserve Bank of India (RBI) Master Directions on Managing Risks and Code of Conduct in Outsourcing of Financial Services and the RBI Fair Practices Code for Lenders, commercial lenders face severe regulatory fines and reputational audits if recovery communications involve coercive tactics or unverified agents. Our institutional law firm retainership replaces rogue call-center harassment with fact-verified statutory legal demand notices dispatched under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023 via speed post and certified electronic channels. Every communication is strictly documented, auditable, and legally defensible before banking ombudsmen.",
   },
   {
     question: "Can banks file Section 138 or Section 25 PSS cases in bulk without physical presence in every district?",
@@ -163,7 +163,7 @@ const FAQS = [
   {
     question: "What SLA guarantees does LegalRecovery provide to Chief Legal Officers and General Managers?",
     answer:
-      "We operate under enterprise-grade institutional Service Level Agreements (SLAs). Core SLA benchmarks include: (1) Ingestion and automated data hygiene scrubbing of 10,000+ delinquent files within 24 hours; (2) Advocate drafting, digital delivery via Section 63 BSA-certified email/WhatsApp, and India Post Speed Post AD tracking within 48 to 72 hours; (3) Mandatory statutory 15-day and 60-day tracking with automated reconciliation of borrower payments; and (4) Turnkey drafting of Section 138 complaints, Section 14 DM petitions, and DRT applications within 7 days of cure period expiry.",
+      "We operate under enterprise-grade institutional Service Level Agreements (SLAs). Core SLA benchmarks include: (1) Ingestion and automated data hygiene scrubbing of 10,000+ delinquent files within 24 hours; (2) Notice drafting, digital delivery via Section 63 BSA-certified email/WhatsApp, and India Post Speed Post AD tracking within 48 to 72 hours; (3) Mandatory statutory 15-day and 60-day tracking with automated reconciliation of borrower payments; and (4) Turnkey drafting of Section 138 complaints, Section 14 DM petitions, and DRT applications within 7 days of cure period expiry.",
   },
   {
     question: "How does pre-litigation conciliation via National Lok Adalat reduce bank legal expenditure?",
@@ -491,7 +491,7 @@ export default function BulkDebtRecoveryServicesForBanksIndiaPage() {
                       Severe Penal Exposure Under RBI Outsourcing Norms
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      The Reserve Bank of India has repeatedly penalised scheduled commercial banks and NBFCs for coercive recovery tactics employed by contracted collection agencies. By shifting high-volume delinquent borrower communication to formal advocate-signed statutory demand notices, institutional banks insulate their leadership against regulatory reprimand and banking ombudsman penalties.
+                      The Reserve Bank of India has repeatedly penalised scheduled commercial banks and NBFCs for coercive recovery tactics employed by contracted collection agencies. By shifting high-volume delinquent borrower communication to formal fact-verified statutory demand notices, institutional banks insulate their leadership against regulatory reprimand and banking ombudsman penalties.
                     </p>
                   </div>
 
@@ -759,11 +759,11 @@ export default function BulkDebtRecoveryServicesForBanksIndiaPage() {
                         2
                       </span>
                       <h3 className="font-bold text-slate-900 text-base">
-                        Step 2: Advocate Drafting &amp; Multi-Channel Statutory Demand Dispatch (48-Hour SLA)
+                        Step 2: Notice Drafting &amp; Multi-Channel Statutory Demand Dispatch (48-Hour SLA)
                       </h3>
                     </div>
                     <p className="text-xs sm:text-sm text-slate-700 leading-relaxed pl-8">
-                      Our advocate panel drafts customized statutory notices tailored to the statutory framework: Section 13(2) SARFAESI notices for secured debt, Section 138 NI Act notices for dishonoured cheques, and Section 25 PSS Act notices for failed NACH debits. Every notice is dispatched concurrently via India Post Registered Speed Post with Acknowledgment Due (AD) and digitally through verifiable WhatsApp and Registered Email with instant cryptographic delivery timestamps.
+                      Our team drafts customized statutory notices tailored to the statutory framework: Section 13(2) SARFAESI notices for secured debt, Section 138 NI Act notices for dishonoured cheques, and Section 25 PSS Act notices for failed NACH debits. Every notice is dispatched concurrently via India Post Registered Speed Post with Acknowledgment Due (AD) and digitally through verifiable WhatsApp and Registered Email with instant cryptographic delivery timestamps.
                     </p>
                   </div>
 

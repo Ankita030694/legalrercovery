@@ -272,7 +272,7 @@ export default function CyberFraudClient() {
           
           <div className="relative z-20 mx-auto px-4 max-w-8xl text-center">
             <span className="inline-block text-[#DC2626] text-xs md:text-sm font-black uppercase tracking-widest mb-4 bg-red-950/30 px-4 py-1.5 rounded-full border border-[#DC2626]/20">
-              National Cybercrime Recovery legal Panel
+              National Cybercrime Recovery Desk
             </span>
             <h1 className="text-3xl md:text-6xl font-black mb-6 leading-tight tracking-tight">
               Recover <span className="text-[#DC2626]">Cyber Fraud</span> Money
@@ -408,7 +408,7 @@ export default function CyberFraudClient() {
                       <li><strong>Section 63 BSA Certificate:</strong> This is a mandatory digital declaration. You must certify that the computer or smartphone used to print the documents was functioning properly, that you had lawful control over it, and that the contents were not altered. Without this certificate, the court will dismiss the electronic evidence.</li>
                     </ul>
                     <p className="text-sm md:text-base leading-relaxed">
-                      At LegalRecovery, our legal panel assists in drafting and executing the Section 63 BSA certificates, ensuring your digital files are ready for scrutiny by cyber cells, banks, and Magistrates.
+                      At LegalRecovery, our team assists in drafting and executing the Section 63 BSA certificates, ensuring your digital files are ready for scrutiny by cyber cells, banks, and Magistrates.
                     </p>
                   </div>
                 </section>
@@ -471,9 +471,9 @@ export default function CyberFraudClient() {
                     </p>
                     <ul className="list-disc pl-6 space-y-3 text-sm text-slate-650">
                       <li><strong>Instant Golden Hour Support:</strong> We guide you through the process of calling 1930 and logging complaints to freeze mule accounts immediately.</li>
-                      <li><strong>Expert Court Filings:</strong> Our panel of cyber advocates handles the drafting, filing, and representing of Section 503 BNSS petitions in court.</li>
+                      <li><strong>Expert Court Filings:</strong> For Section 503 BNSS petitions in court, you will need to engage an advocate separately.</li>
                       <li><strong>Gateway Engagement:</strong> We serve direct legal notices to payment gateways, e-wallets, and beneficiary banks to track and hold scammed funds.</li>
-                      <li><strong>BSA Admissibility Checks:</strong> We compile your electronic evidence and draft Section 63 BSA certificates to ensure your digital proofs are court-ready.</li>
+                      <li><strong>BSA Admissibility Checks:</strong> We guide you on preserving your electronic evidence and the Section 63 BSA certificate so your digital proofs are court-ready.</li>
                     </ul>
                   </div>
                 </section>

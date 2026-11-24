@@ -12,7 +12,7 @@ const faqs = [
   {
     question: 'Can an employee send a formal legal notice to a company for not paying earned gratuity in India?',
     answer:
-      'Yes, an employee who has completed continuous qualifying service (or their nominee in case of death or disablement) has an absolute statutory right under Section 4 and Section 7 of the Payment of Gratuity Act, 1972 to issue an advocate-drafted statutory legal notice demanding immediate disbursement of unpaid gratuity along with 10% statutory interest per annum. The notice establishes conclusive documentary evidence of employer default, holds corporate directors personally liable, and provides a strict 15-day compliance window before initiating quasi-judicial recovery under Form N before the Controlling Authority or seeking bank attachment through the District Collector under Section 8.',
+      'Yes, an employee who has completed continuous qualifying service (or their nominee in case of death or disablement) has an absolute statutory right under Section 4 and Section 7 of the Payment of Gratuity Act, 1972 to issue a fact-verified statutory legal notice demanding immediate disbursement of unpaid gratuity along with 10% statutory interest per annum. The notice establishes conclusive documentary evidence of employer default, holds corporate directors personally liable, and provides a strict 15-day compliance window before initiating quasi-judicial recovery under Form N before the Controlling Authority or seeking bank attachment through the District Collector under Section 8.',
   },
   {
     question: 'What is the mandatory statutory timeframe for a company to calculate and disburse gratuity after resignation or termination?',
@@ -168,7 +168,7 @@ const jsonLd = {
         {
           '@type': 'ListItem',
           position: 3,
-          name: 'Draft Advocate Statutory Legal Notice: Issue formal demand under Section 4, 7(3A) and Section 8 demanding 10% statutory interest and establishing personal director liability.',
+          name: 'Draft Statutory Legal Notice: Issue formal demand under Section 4, 7(3A) and Section 8 demanding 10% statutory interest and establishing personal director liability.',
         },
         {
           '@type': 'ListItem',
@@ -193,7 +193,7 @@ const jsonLd = {
       '@type': 'Product',
       name: 'Legal Notice to Company for Unpaid Gratuity Recovery',
       description:
-        'Advocate-drafted statutory demand notice service for corporate employees, managers, and executives to recover unpaid gratuity dues and 10% statutory interest from employers across India under the Payment of Gratuity Act, 1972.',
+        'Fact-verified statutory demand notice service for corporate employees, managers, and executives to recover unpaid gratuity dues and 10% statutory interest from employers across India under the Payment of Gratuity Act, 1972.',
       brand: {
         '@type': 'Organization',
         name: 'Legal Recovery',
@@ -270,7 +270,7 @@ export default function CompanyNotPayingGratuityClient() {
 
   const shareUrl = encodeURIComponent(pageUrl);
   const shareText = encodeURIComponent(
-    'Company or employer not paying your earned gratuity after resignation or retirement? Send an advocate-vetted legal notice under Section 4, 7(3A) & 8 of the Payment of Gratuity Act, 1972 with 10% statutory interest! #GratuityRecovery #EmployeeRights #LegalNoticeIndia'
+    'Company or employer not paying your earned gratuity after resignation or retirement? Send a fact-verified legal notice under Section 4, 7(3A) & 8 of the Payment of Gratuity Act, 1972 with 10% statutory interest! #GratuityRecovery #EmployeeRights #LegalNoticeIndia'
   );
 
   return (
@@ -449,7 +449,7 @@ export default function CompanyNotPayingGratuityClient() {
                     <span className="font-semibold text-slate-800">
                       Section 4 and Section 7(3) of the Payment of Gratuity Act, 1972
                     </span>
-                    , an employee who has completed five years of continuous service (or 4 years and 240 days) is legally entitled to full gratuity payment within 30 days of resignation, retirement, or termination. If an employer withholds or delays gratuity, serving an advocate-drafted statutory legal notice under{' '}
+                    , an employee who has completed five years of continuous service (or 4 years and 240 days) is legally entitled to full gratuity payment within 30 days of resignation, retirement, or termination. If an employer withholds or delays gratuity, serving a fact-verified statutory legal notice under{' '}
                     <span className="font-semibold text-slate-800">
                       Section 7(3A)
                     </span>{' '}
@@ -766,7 +766,7 @@ export default function CompanyNotPayingGratuityClient() {
                     5. Critical Clauses in a Legal Notice to Company for Gratuity
                   </h2>
                   <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                    A generic demand letter drafted without statutory rigor will often be ignored by corporate legal counsel. A formidable advocate-drafted statutory legal notice under the Payment of Gratuity Act, 1972 must incorporate precise legal assertions that pin liability directly upon the company and its board of directors:
+                    A generic demand letter drafted without statutory rigor will often be ignored by corporate legal counsel. A formidable fact-verified statutory legal notice under the Payment of Gratuity Act, 1972 must incorporate precise legal assertions that pin liability directly upon the company and its board of directors:
                   </p>
 
                   <div className="space-y-4">
@@ -823,7 +823,7 @@ export default function CompanyNotPayingGratuityClient() {
                     6. Controlling Authority (Form N), Section 8 &amp; Criminal Sanctions
                   </h2>
                   <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                    Serving an advocate-vetted statutory legal notice resolves the vast majority of gratuity disputes out of court because corporate management understands that statutory non-compliance exposes them to administrative enforcement and personal liability. If a recalcitrant employer fails to comply within the 15-day notice period, the law provides robust multi-tiered remedies:
+                    Serving a fact-verified statutory legal notice resolves the vast majority of gratuity disputes out of court because corporate management understands that statutory non-compliance exposes them to administrative enforcement and personal liability. If a recalcitrant employer fails to comply within the 15-day notice period, the law provides robust multi-tiered remedies:
                   </p>
 
                   <div className="space-y-6">
@@ -898,8 +898,8 @@ export default function CompanyNotPayingGratuityClient() {
                         desc: 'Serve a formal application under Form I to the employer pursuant to Rule 7 of the Payment of Gratuity Rules. This formally triggers the statutory 30-day employer settlement window.',
                       },
                       {
-                        step: 'Step 3: Issue Advocate-Drafted Statutory Legal Notice',
-                        desc: 'Engage panel advocates to draft a comprehensive statutory demand notice citing Section 4, 7(3A), 8, and 14 of the Payment of Gratuity Act, holding company directors personally liable.',
+                        step: 'Step 3: Issue Fact-Verified Statutory Legal Notice',
+                        desc: 'Our team prepares a comprehensive statutory demand notice citing Section 4, 7(3A), 8, and 14 of the Payment of Gratuity Act, holding company directors personally liable.',
                       },
                       {
                         step: 'Step 4: Simultaneous Dispatch via Speed Post AD, Registered Email & WhatsApp',
@@ -1082,7 +1082,7 @@ export default function CompanyNotPayingGratuityClient() {
                   </div>
                   <p className="text-sm text-slate-650 leading-relaxed mb-6">
                     Legal Recovery is India&apos;s trusted online legal notice and dispute resolution
-                    platform, connecting corporate employees, managers, professionals, and gig workers with seasoned panel advocates for rapid, advocate-vetted statutory demand notices
+                    platform, helping corporate employees, managers, professionals, and gig workers get rapid, fact-verified statutory demand notices
                     at transparent flat fees. With ₹100 Crore+ recovered and 10,000+ cases resolved across India,
                     Legal Recovery delivers verified legal impact without the delays and unpredictability of
                     traditional law firms.
@@ -1123,7 +1123,7 @@ export default function CompanyNotPayingGratuityClient() {
                   Company Withholding Your Earned Gratuity?
                 </h3>
                 <p className="text-slate-300 text-xs leading-relaxed mb-4">
-                  Send an advocate-vetted statutory notice today. Over 82% of companies disburse withheld gratuity and FnF dues within 15 days of notice service.
+                  Send a fact-verified statutory notice today. Over 82% of companies disburse withheld gratuity and FnF dues within 15 days of notice service.
                 </p>
                 <button
                   onClick={() => setIsPaymentModalOpen(true)}
@@ -1132,7 +1132,7 @@ export default function CompanyNotPayingGratuityClient() {
                   Draft &amp; Send Notice Now
                 </button>
                 <p className="text-center text-slate-400 text-[10px] mt-3">
-                  Flat fee • Advocate-drafted • Sent same day
+                  Flat fee • Fact-verified • Sent same day
                 </p>
               </div>
 
@@ -1187,7 +1187,7 @@ export default function CompanyNotPayingGratuityClient() {
                 {[
                   { stat: '82%', label: 'Companies settle gratuity dues within 15 days of notice' },
                   { stat: '10% p.a.', label: 'Mandatory statutory interest claimed under Section 7(3A)' },
-                  { stat: 'Same Day', label: 'Advocate notice drafted and dispatched' },
+                  { stat: 'Same Day', label: 'Legal notice drafted and dispatched' },
                   { stat: 'Flat Fee', label: 'Transparent pricing with no hidden commissions' },
                 ].map((item, i) => (
                   <div key={i} className="flex items-center justify-between py-2 border-b border-slate-50 last:border-0">

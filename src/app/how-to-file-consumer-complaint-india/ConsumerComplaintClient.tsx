@@ -356,14 +356,14 @@ export default function ConsumerComplaintClient() {
                     A deficiency in service is defined as any fault, imperfection, shortcoming, or inadequacy in the quality, nature, or manner of performance that is required to be maintained by or under any law. When a seller delivers a defective product or fails to provide a service, you must notify them of the defect and request a resolution. If you file a case directly without giving the seller an opportunity to correct the issue, the seller can claim they were unaware of the problem and would have resolved it voluntarily, potentially weakening your claim.
                   </p>
                   <p className="text-sm md:text-base leading-relaxed">
-                    By sending a formal, lawyer-backed legal notice, you:
+                    By sending a formal, fact-verified legal notice, you:
                   </p>
                   <ol className="list-decimal pl-6 space-y-2 text-sm md:text-base leading-relaxed">
                     <li>
                       <strong>Establish the Deficiency:</strong> The notice acts as clear evidence that you notified the opposite party of the issue and gave them a specific timeframe (usually 15 days) to resolve it. If they fail to reply or resolve the issue, it proves their deficiency in service.
                     </li>
                     <li>
-                      <strong>Provide a Resolution Window:</strong> Many companies, especially e-commerce portals and manufacturers, prefer to avoid formal litigation. A lawyer-backed notice bypasses automated support systems and reaches the corporate legal team, which often leads to a voluntary settlement.
+                      <strong>Provide a Resolution Window:</strong> Many companies, especially e-commerce portals and manufacturers, prefer to avoid formal litigation. A fact-verified notice bypasses automated support systems and reaches the corporate legal team, which often leads to a voluntary settlement.
                     </li>
                     <li>
                       <strong>Create a Written Record:</strong> The notice documents the facts of the transaction, the payments made, the defects identified, and the communications exchanged. This provides a clear framework for your subsequent consumer petition.
@@ -810,7 +810,7 @@ export default function ConsumerComplaintClient() {
                 <div className="absolute top-0 right-0 w-24 h-24 bg-red-600/10 rounded-full blur-xl pointer-events-none" />
                 <h3 className="text-lg font-bold mb-3 text-white">Need Legal Advice?</h3>
                 <p className="text-gray-400 mb-5 text-[11px] leading-relaxed">
-                  Discuss your money recovery case with legal experts. We draft and serve legally compliant notices tailored to your transaction.
+                  Discuss your money recovery case with our team. We draft and serve legally compliant notices tailored to your transaction.
                 </p>
                 <button 
                   onClick={() => setIsPaymentModalOpen(true)}

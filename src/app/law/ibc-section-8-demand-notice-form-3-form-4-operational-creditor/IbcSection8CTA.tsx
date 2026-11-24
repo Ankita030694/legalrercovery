@@ -29,7 +29,7 @@ export default function IbcSection8CTA({ className = "" }: IbcSection8CTAProps) 
               Test 1 Live Overdue Case Now (&rupee;{basePrice})
             </h3>
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-              Advocate-drafted IBC Section 8 Demand Notice (Form 3 or Form 4) with Rule 5 annexure audit, Mobilox email-trail screening, and tri-channel dispatch via Email + WhatsApp + Speed Post RPAD with BSA 2023 s.63 electronic certificate.
+              Fact-verified IBC Section 8 Demand Notice (Form 3 or Form 4) with Rule 5 annexure audit, Mobilox email-trail screening, and tri-channel dispatch via Email + WhatsApp + Speed Post RPAD with BSA 2023 s.63 electronic certificate.
             </p>
           </div>
           <div className="flex flex-col sm:flex-row sm:items-center gap-3">

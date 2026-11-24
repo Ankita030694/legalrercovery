@@ -88,7 +88,7 @@ const CASE_CITATIONS = [
     facts:
       "A national lending bank assigned non-performing consumer portfolios to informal collection agencies who utilized aggressive extra-judicial coercion. The borrowers suffered unlawful harassment, sparking widespread regulatory intervention and severe reputational damage.",
     holding:
-      "The Supreme Court ruled that banks and financial institutions are strictly bound to enforce debt recovery only through recognized legal mechanisms, advocate-supervised statutory notices, and lawful judicial forums. The bench prohibited unmonitored muscle recovery and established that institutional lenders must execute portfolio workouts under the rule of law.",
+      "The Supreme Court ruled that banks and financial institutions are strictly bound to enforce debt recovery only through recognized legal mechanisms, fact-verified statutory notices, and lawful judicial forums. The bench prohibited unmonitored muscle recovery and established that institutional lenders must execute portfolio workouts under the rule of law.",
     amount: "Strict Regulatory Code + Reaffirmation of Lawful Institutional Recovery Frameworks",
     takeaway:
       "Banks and NBFCs cannot rely on unregulated collection agencies. Institutional legal recovery partnerships protect banks against penal RBI sanctions, police complaints, and consumer litigation while delivering court-enforceable outcomes.",
@@ -138,7 +138,7 @@ const FAQS = [
   {
     question: "What does an institutional legal recovery partner do for scheduled banks and NBFCs?",
     answer:
-      "A legal recovery partner acts as an outsourced, advocate-managed operational desk that handles delinquent loan portfolios at industrial scale. Unlike traditional non-judicial collection agencies, a legal recovery partner audits loan files, algorithmically segments non-performing asset (NPA) accounts by legal enforceability, issues advocate-signed statutory demand notices (under SARFAESI, Section 25 PSSA, and Section 138 NI Act), mobilizes batch Pre-Litigation Lok Adalats through DLSAs, files commercial summary suits (Order 37 CPC), and manages pan-India Debt Recovery Tribunal (DRT) and Chief Metropolitan Magistrate (CMM Section 14) court appearances.",
+      "A legal recovery partner acts as an outsourced, advocate-managed operational desk that handles delinquent loan portfolios at industrial scale. Unlike traditional non-judicial collection agencies, a legal recovery partner audits loan files, algorithmically segments non-performing asset (NPA) accounts by legal enforceability, issues fact-verified statutory demand notices (under SARFAESI, Section 25 PSSA, and Section 138 NI Act), mobilizes batch Pre-Litigation Lok Adalats through DLSAs, files commercial summary suits (Order 37 CPC), and manages pan-India Debt Recovery Tribunal (DRT) and Chief Metropolitan Magistrate (CMM Section 14) court appearances.",
   },
   {
     question: "How does data-driven portfolio segmentation optimize bank recovery yield?",
@@ -542,7 +542,7 @@ export default function LegalRecoveryPartnersBanksPage() {
                     <span className="absolute -left-6 sm:-left-8 top-0.5 w-4 h-4 rounded-full bg-red-600 border-2 border-white shadow-sm" />
                     <h3 className="font-bold text-slate-900 text-sm sm:text-base">Stage 2: Programmatic Statutory Notice Dispatch</h3>
                     <p className="text-xs sm:text-sm text-slate-600 mt-1">
-                      Advocate-drafted statutory demands (Section 13(2) SARFAESI, Section 25 PSSA, or Section 138 NI Act) are automatically formatted and dispatched via India Post EDI speed post and certified WhatsApp/Email rails, generating instantaneous proof-of-delivery receipts.
+                      Fact-verified statutory demands (Section 13(2) SARFAESI, Section 25 PSSA, or Section 138 NI Act) are automatically formatted and dispatched via India Post EDI speed post and certified WhatsApp/Email rails, generating instantaneous proof-of-delivery receipts.
                     </p>
                   </div>
 
@@ -558,7 +558,7 @@ export default function LegalRecoveryPartnersBanksPage() {
                     <span className="absolute -left-6 sm:-left-8 top-0.5 w-4 h-4 rounded-full bg-red-600 border-2 border-white shadow-sm" />
                     <h3 className="font-bold text-slate-900 text-sm sm:text-base">Stage 4: Nationwide Court Filings &amp; Enforcement</h3>
                     <p className="text-xs sm:text-sm text-slate-600 mt-1">
-                      For contested or non-compliant accounts, local panel advocates file pre-assembled dockets across DRTs, CMMs, Commercial Courts, and JMFC Magistrates. All hearing dates, order sheets, and advocate appearances are tracked in our centralized dashboard.
+                      For contested or non-compliant accounts, your own panel advocates can file dockets across DRTs, CMMs, Commercial Courts, and JMFC Magistrates using our fact-verified notice records and delivery proofs.
                     </p>
                   </div>
 

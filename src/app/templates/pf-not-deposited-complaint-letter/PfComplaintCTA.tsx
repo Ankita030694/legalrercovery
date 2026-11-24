@@ -11,7 +11,7 @@ interface PfComplaintCTAProps {
 }
 
 export default function PfComplaintCTA({
-  buttonText = "Send an Advocate Legal Notice to Employer",
+  buttonText = "Send a Fact-Verified Legal Notice to Employer",
   className = "",
   variant = "primary",
 }: PfComplaintCTAProps) {
@@ -25,13 +25,13 @@ export default function PfComplaintCTA({
           <div className="bg-gradient-to-br from-[#111827] via-[#1F2937] to-[#111827] text-white rounded-2xl p-5 sm:p-8 md:p-10 border border-slate-800 shadow-2xl w-full">
             <div className="max-w-3xl">
               <span className="inline-block px-3 py-1 rounded-full text-[11px] sm:text-xs font-semibold tracking-wide uppercase bg-slate-800 text-red-400 border border-slate-700 mb-3 sm:mb-4">
-                EPF Act 1952 • Section 14 &amp; Section 316 BNS • Advocate Demand Notice
+                EPF Act 1952 • Section 14 &amp; Section 316 BNS • Fact-Verified Demand Notice
               </span>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-bold tracking-tight text-white mb-3">
                 Has Your Employer Deducted PF from Salary but Failed to Deposit It?
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6">
-                Deducting PF from your monthly wages without depositing it to the EPFO is a cognizable criminal offense under Section 316 of the Bharatiya Nyaya Sanhita, 2023 (Criminal Breach of Trust) and punishable with up to 3 years imprisonment under Section 14 of the EPF Act. Have an experienced labour advocate issue a formal 15-day statutory demand notice directly to your employer, Managing Director, and Board of Directors by email and WhatsApp under BSA Section 63. Speed Post is optional at ₹450 per party.
+                Deducting PF from your monthly wages without depositing it to the EPFO is a cognizable criminal offense under Section 316 of the Bharatiya Nyaya Sanhita, 2023 (Criminal Breach of Trust) and punishable with up to 3 years imprisonment under Section 14 of the EPF Act. Issue a formal 15-day statutory demand notice directly to your employer, Managing Director, and Board of Directors by email and WhatsApp under BSA Section 63. Speed Post is optional at ₹450 per party.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button
@@ -42,7 +42,7 @@ export default function PfComplaintCTA({
                   {buttonText} — ₹{basePrice}
                 </button>
                 <div className="text-xs text-slate-300 flex flex-wrap sm:flex-nowrap items-center gap-2 sm:gap-3">
-                  <span>✓ 24h Advocate Drafting</span>
+                  <span>✓ 24h Notice Drafting</span>
                   <span>•</span>
                   <span>✓ Email + WhatsApp</span>
                   <span>•</span>

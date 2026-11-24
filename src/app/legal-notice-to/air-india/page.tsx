@@ -162,7 +162,7 @@ const FAQS = [
   {
     question: "Air India ticket refund nahi mila ya delay ho raha hai toh advocate legal notice kaise bheje?",
     answer:
-      "Agar Air India flight cancellation ke baad aapka refund statutory 7 din ke andar bank account mein credit na kare ya booking agent ke saath blame game kare, toh aap ek formal advocate statutory legal notice bhej sakte hain. LegalRecovery.in ke verified aviation advocates DGCA CAR aur Supreme Court rules ke tehat Air India Limited ke New Delhi registered office par Speed Post aur email dwara demand notice bhejte hain, jismein 15 din ka strict payment deadline hota hai.",
+      "Agar Air India flight cancellation ke baad aapka refund statutory 7 din ke andar bank account mein credit na kare ya booking agent ke saath blame game kare, toh aap ek formal fact-verified statutory legal notice bhej sakte hain. LegalRecovery.in ke verified aviation advocates DGCA CAR aur Supreme Court rules ke tehat Air India Limited ke New Delhi registered office par Speed Post aur email dwara demand notice bhejte hain, jismein 15 din ka strict payment deadline hota hai.",
   },
 ];
 
@@ -458,10 +458,10 @@ export default function AirIndiaLegalNoticePage() {
                     <span className="text-xs text-red-600 font-bold">Recommended Legal Weapon</span>
                   </div>
                   <h3 className="text-lg font-bold text-slate-900 mb-2">
-                    Serve Statutory Advocate Legal Notice to Air India Limited Registered Office
+                    Serve Statutory Fact-Verified Legal Notice to Air India Limited Registered Office
                   </h3>
                   <p className="text-slate-600 text-sm leading-relaxed mb-3">
-                    When AirSewa complaints trigger generic bureaucratic responses or your booking portal and Air India blame each other, engage a verified advocate to dispatch a formal legal notice. The notice is served via Registered Speed Post with legal tracking to Air India Limited&apos;s Registered Office at Airlines House, New Delhi and Gurugram HQ, alongside electronic delivery under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023.
+                    When AirSewa complaints trigger generic bureaucratic responses or your booking portal and Air India blame each other, dispatch a formal legal notice through LegalRecovery.in. The notice is served via Registered Speed Post with legal tracking to Air India Limited&apos;s Registered Office at Airlines House, New Delhi and Gurugram HQ, alongside electronic delivery under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023.
                   </p>
                   <div className="text-xs text-slate-700 bg-red-50/60 p-3 rounded border border-red-100 mb-2">
                     <strong>Mandatory Notice Contents:</strong>
@@ -929,7 +929,7 @@ export default function AirIndiaLegalNoticePage() {
               <div>
                 <h3 className="font-bold text-sky-400 mb-1">The Legal Escalation:</h3>
                 <p className="text-slate-300 leading-relaxed">
-                  Refusing to accept a restrictive credit shell, Sanjeev instructed an advocate through LegalRecovery.in. The advocate drafted a comprehensive statutory legal notice citing DGCA CAR Section 3, Series M, Part II, Clause 3.3 (which holds airlines explicitly liable for agent refunds) and the Supreme Court mandate in <em>Pravasi Legal Cell</em>. The notice named both Air India Limited (at Airlines House, New Delhi) and the travel aggregator as joint respondents, demanding an immediate refund of ₹64,200 plus 18% statutory interest within 15 days, failing which an e-Jagriti consumer complaint would be registered.
+                  Refusing to accept a restrictive credit shell, Sanjeev instructed an advocate through LegalRecovery.in. The team verified the facts and prepared a comprehensive statutory legal notice citing DGCA CAR Section 3, Series M, Part II, Clause 3.3 (which holds airlines explicitly liable for agent refunds) and the Supreme Court mandate in <em>Pravasi Legal Cell</em>. The notice named both Air India Limited (at Airlines House, New Delhi) and the travel aggregator as joint respondents, demanding an immediate refund of ₹64,200 plus 18% statutory interest within 15 days, failing which an e-Jagriti consumer complaint would be registered.
                 </p>
               </div>
 
@@ -966,7 +966,7 @@ export default function AirIndiaLegalNoticePage() {
                 <ul className="space-y-2.5 text-sm text-emerald-900">
                   <li className="flex items-start gap-2">
                     <span className="text-emerald-600 font-bold">•</span>
-                    <span>Assign a verified advocate specializing in aviation and consumer protection law.</span>
+                    <span>Verify your booking and refund facts, then prepare the notice for dispatch.</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-emerald-600 font-bold">•</span>

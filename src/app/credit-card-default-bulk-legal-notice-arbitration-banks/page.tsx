@@ -116,7 +116,7 @@ const FAQS = [
     question:
       "How does explaining 'Settled' versus 'Written Off' CICRA status improve credit card notice conversion?",
     answer:
-      "Salaried and self-employed cardholders often underestimate the multi-year credit lock created by a 'Written Off' or 'Settled' remark reported to CICs under CICRA 2005. When an advocate-vetted notice objectively sets out the difference between 'Closed' (full repayment), 'Settled' (partial OTS compromise), and 'Written Off' (post-180 DPD prudential write-off that impairs home loans, auto finance, and corporate credit for years), responsive cardholders prioritize full cure or structured closure before charge-off.",
+      "Salaried and self-employed cardholders often underestimate the multi-year credit lock created by a 'Written Off' or 'Settled' remark reported to CICs under CICRA 2005. When a fact-verified notice objectively sets out the difference between 'Closed' (full repayment), 'Settled' (partial OTS compromise), and 'Written Off' (post-180 DPD prudential write-off that impairs home loans, auto finance, and corporate credit for years), responsive cardholders prioritize full cure or structured closure before charge-off.",
   },
   {
     question:
@@ -186,7 +186,7 @@ const HOWTO_SCHEMA = {
       "@type": "HowToStep",
       position: 2,
       name: "90–120 DPD Multi-Wave Omnichannel Advocate Legal Notice",
-      text: "Serve advocate-vetted recall and Contract Act s.73 demand notices via Email, WATI WhatsApp, and India Post Speed Post RPAD strictly within 8 AM–7 PM RBI safe-harbor norms with BSA s.63 delivery logs.",
+      text: "Serve fact-verified recall and Contract Act s.73 demand notices via Email, WATI WhatsApp, and India Post Speed Post RPAD strictly within 8 AM–7 PM RBI safe-harbor norms with BSA s.63 delivery logs.",
     },
     {
       "@type": "HowToStep",
@@ -996,7 +996,7 @@ export default function CreditCardDefaultRecoveryBanksPage() {
                 Unsecured credit cards attract the highest volume of customer
                 grievances before the RBI Integrated Ombudsman. Shifting
                 collection pressure from third-party telecallers to formal,
-                advocate-vetted legal notices protects the issuer&apos;s license
+                fact-verified legal notices protects the issuer&apos;s license
                 and brand while sharply raising voluntary cure rates—provided
                 every notice respects three regulatory pillars:
               </p>

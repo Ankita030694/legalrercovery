@@ -860,7 +860,7 @@ export default function MsmeDelayedPaymentInterestCalculatorPage() {
                     ✓ What LegalRecovery Can Do For Your MSME Claim
                   </h3>
                   <ul className="space-y-1.5 text-xs text-emerald-950">
-                    <li>• Draft and serve a formal advocate legal demand notice attaching your Section 16 month-by-month compound interest schedule.</li>
+                    <li>• Draft and serve a formal fact-verified legal demand notice attaching your Section 16 month-by-month compound interest schedule.</li>
                     <li>• Put the buyer&apos;s Directors, CFO, and Company Secretary on formal notice of Section 43B(h) corporate tax disallowance and Section 22 audit disclosure obligations.</li>
                     <li>• Provide postal barcode tracking (Registered Speed Post) and Section 63 BSA electronic service records required as pre-filing proof on the MSME ODR / Samadhaan portal.</li>
                   </ul>
@@ -974,9 +974,9 @@ export default function MsmeDelayedPaymentInterestCalculatorPage() {
                 </li>
                 <li className="bg-slate-50 border border-slate-200 rounded-xl p-4">
                   <strong className="text-slate-900 block mb-1">
-                    Step 2: Serve a 15-Day Advocate Legal Notice on the Buyer &amp; CFO
+                    Step 2: Serve a 15-Day Fact-Verified Legal Notice on the Buyer &amp; CFO
                   </strong>
-                  Before lodging a formal MSEFC case, serve an advocate demand notice on the buyer company&apos;s Registered Office, Managing Director, and CFO. Explicitly cite <strong>Section 16 (20.25% monthly compound interest)</strong>, <strong>Section 22 (mandatory statutory auditor disclosure in financial statements)</strong>, and <strong>Section 43B(h) of the Income-tax Act</strong>. Read our detailed comparison in{" "}
+                  Before lodging a formal MSEFC case, serve a fact-verified demand notice on the buyer company&apos;s Registered Office, Managing Director, and CFO. Explicitly cite <strong>Section 16 (20.25% monthly compound interest)</strong>, <strong>Section 22 (mandatory statutory auditor disclosure in financial statements)</strong>, and <strong>Section 43B(h) of the Income-tax Act</strong>. Read our detailed comparison in{" "}
                   <Link
                     href="/msme-delayed-payment-recovery-samadhan-vs-legal-notice"
                     className="text-[#DC2626] font-semibold hover:underline"
@@ -1038,7 +1038,7 @@ export default function MsmeDelayedPaymentInterestCalculatorPage() {
                     href="/send-legal-notice-online-india"
                     className="flex items-center justify-between p-2.5 rounded-lg bg-white border border-slate-200 hover:border-[#DC2626] text-slate-800 font-semibold transition-colors"
                   >
-                    <span>Send an Advocate Legal Notice Online in India</span>
+                    <span>Send a Fact-Verified Legal Notice Online in India</span>
                     <span className="text-[#DC2626]">→</span>
                   </Link>
                 </div>

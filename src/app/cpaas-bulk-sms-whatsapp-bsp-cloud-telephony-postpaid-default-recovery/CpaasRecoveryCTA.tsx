@@ -24,10 +24,10 @@ export default function CpaasRecoveryCTA({ className = "" }: CpaasRecoveryCTAPro
                 Track 1 · Single Enterprise Postpaid Default
               </span>
               <h3 className="text-lg sm:text-xl font-bold text-white mb-2">
-                Test 1 Live Overdue Case Now (&#8377;{basePrice} &middot; Advocate Drafted &middot; Email + WhatsApp + Speed Post RPAD)
+                Test 1 Live Overdue Case Now (&#8377;{basePrice} &middot; Fact-Verified &middot; Email + WhatsApp + Speed Post RPAD)
               </h3>
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-                Upload a single defaulted WhatsApp WABA / Bulk SMS / Cloud Telephony Insertion Order, CDR/Webhook summary, and GST tax invoice. Our advocates frame the BSA 2023 s.63 evidentiary notice, API-key custody rebuttal, and Order XXXVII CPC / MSMED interest demand.
+                Enter the details of a single defaulted WhatsApp WABA / Bulk SMS / Cloud Telephony Insertion Order, CDR/Webhook summary, and GST tax invoice. Our team verifies the facts and frames the BSA 2023 s.63 evidentiary notice, API-key custody rebuttal, and Order XXXVII CPC / MSMED interest demand.
               </p>
             </div>
 

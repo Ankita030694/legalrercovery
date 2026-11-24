@@ -34,7 +34,7 @@ const PROBLEMS: ProblemTab[] = [
       {
         step: "Serve Statutory 15-Day Termination Notice Under Section 106",
         description:
-          "Dispatch an advocate legal notice formally terminating the month-to-month tenancy, demanding complete arrears clearance within 15 days, and requiring handover of vacant possession.",
+          "Dispatch a fact-verified legal notice formally terminating the month-to-month tenancy, demanding complete arrears clearance within 15 days, and requiring handover of vacant possession.",
       },
       {
         step: "File Suit for Possession & Arrears Upon Expiry of 15 Days",
@@ -118,7 +118,7 @@ const PROBLEMS: ProblemTab[] = [
           "Obtain society maintenance ledger balances, electricity meter bills, and inspection photographs to prove that the security deposit is insufficient to cover all liabilities.",
       },
       {
-        step: "Serve Advocate Demand Notice for Arrears + Immediate Eviction",
+        step: "Serve Fact-Verified Demand Notice for Arrears + Immediate Eviction",
         description:
           "Dispatch a statutory notice treating the unpaid rent as a non-curable breach, demanding clearance of arrears within 15 days failing which eviction and recovery suits will be initiated.",
       },

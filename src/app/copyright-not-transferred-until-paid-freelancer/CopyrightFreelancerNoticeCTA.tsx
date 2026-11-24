@@ -31,7 +31,7 @@ export default function CopyrightFreelancerNoticeCTA({
                 Client Using Your Work Without Paying? Revoke Their Licence &amp; Recover Your Invoice
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6">
-                Have a verified advocate serve a dual-statutory Cease-and-Desist &amp; Payment Demand Notice under Sections 17, 19, and 51 of the Copyright Act, 1957 alongside Section 73 of the Indian Contract Act. Put the client on formal notice that commercial usage of unpaid designs, code, copy, or video constitutes copyright infringement—triggering platform takedowns and civil/criminal liability unless your invoice is settled within 7 to 15 days.
+                Serve a dual-statutory Cease-and-Desist &amp; Payment Demand Notice under Sections 17, 19, and 51 of the Copyright Act, 1957 alongside Section 73 of the Indian Contract Act. Put the client on formal notice that commercial usage of unpaid designs, code, copy, or video constitutes copyright infringement—triggering platform takedowns and civil/criminal liability unless your invoice is settled within 7 to 15 days.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button
@@ -42,7 +42,7 @@ export default function CopyrightFreelancerNoticeCTA({
                   {buttonText} — ₹{basePrice}
                 </button>
                 <div className="text-xs text-slate-300 flex flex-wrap sm:flex-nowrap items-center gap-2 sm:gap-3">
-                  <span>✓ 24h Advocate Drafting</span>
+                  <span>✓ 24h Notice Drafting</span>
                   <span>•</span>
                   <span>✓ Email + WhatsApp</span>
                   <span>•</span>

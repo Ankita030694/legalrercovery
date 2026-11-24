@@ -172,7 +172,7 @@ const FAQS = [
   {
     question: "Company ne maternity leave ki salary nahi di ya pregnant hone par nikal diya toh legal notice kaise bheje?",
     answer:
-      "Agar company aapki maternity salary rok leti hai ya pregnancy ke dauran aapko nikal deti hai, toh yeh Maternity Benefit Act 1961 ke Section 12 aur Section 21 ke tehat gair-kanooni aur dandaniya jurm hai. LegalRecovery.in par verified labour advocates aapke employer aur company directors par Registered Speed Post aur email se statutory legal demand notice bhejte hain, jismein 15 din ke andar puri 26 hafte ki salary, medical bonus aur compensation mangi jaati hai.",
+      "Agar company aapki maternity salary rok leti hai ya pregnancy ke dauran aapko nikal deti hai, toh yeh Maternity Benefit Act 1961 ke Section 12 aur Section 21 ke tehat gair-kanooni aur dandaniya jurm hai. LegalRecovery.in par hamari team aapke employer aur company directors par Registered Speed Post aur email se statutory legal demand notice bhejti hai, jismein 15 din ke andar puri 26 hafte ki salary, medical bonus aur compensation mangi jaati hai.",
   },
 ];
 
@@ -689,10 +689,10 @@ export default function MaternityBenefitLegalNoticePage() {
                     </span>
                     <div className="space-y-1 sm:space-y-1.5">
                       <h3 className="text-sm sm:text-base md:text-lg font-bold text-slate-900">
-                        Serve a Formal Statutory Advocate Legal Demand Notice
+                        Serve a Formal Statutory Fact-Verified Legal Demand Notice
                       </h3>
                       <p className="text-xs sm:text-sm leading-relaxed">
-                        Engage a labour advocate to draft and serve a comprehensive legal demand notice to the company and individual directors. Dispatched via Registered Speed Post with tracking and email, the notice cites Section 12 (prohibition of dismissal), Section 21 (penal imprisonment), and demands full 26 weeks salary plus 18% penal interest within a mandatory 15-day window.
+                        Have a comprehensive legal demand notice prepared and served through LegalRecovery.in to the company and individual directors. Dispatched via Registered Speed Post with tracking and email, the notice cites Section 12 (prohibition of dismissal), Section 21 (penal imprisonment), and demands full 26 weeks salary plus 18% penal interest within a mandatory 15-day window.
                       </p>
                       <p className="text-xs text-slate-500 font-medium">
                         See transparent notice pricing on our <Link href="/legal-notice-charges" className="text-blue-700 underline">legal notice charges</Link> schedule.
@@ -837,11 +837,11 @@ export default function MaternityBenefitLegalNoticePage() {
                       <strong>The Deadlock:</strong> When Priya followed up for her unpaid salary on Month 2 and Month 3, HR proposed a &quot;mutual separation agreement&quot; offering a one-month severance package, claiming that her role was being eliminated due to team restructuring. HR warned that if she did not accept, she would be marked as absent without leave (AWOL).
                     </p>
                     <p>
-                      <strong>The Statutory Action:</strong> Priya engaged LegalRecovery.in. An employment advocate drafted a comprehensive statutory legal notice to the CEO, Managing Director, and Head of People. The notice cited Section 5 (statutory 26-week wage entitlement), Section 12 (absolute prohibition of dismissal during pregnancy), Section 21 (penal imprisonment up to 1 year), and the Supreme Court&apos;s judgment in Dr. Kavita Yadav (2024 SC). The notice demanded immediate disbursement of ₹6,60,000 (26 weeks wages) plus the ₹3,500 statutory medical bonus within a 15-day window.
+                      <strong>The Statutory Action:</strong> Priya engaged LegalRecovery.in. The team verified the facts and prepared a comprehensive statutory legal notice to the CEO, Managing Director, and Head of People. The notice cited Section 5 (statutory 26-week wage entitlement), Section 12 (absolute prohibition of dismissal during pregnancy), Section 21 (penal imprisonment up to 1 year), and the Supreme Court&apos;s judgment in Dr. Kavita Yadav (2024 SC). The notice demanded immediate disbursement of ₹6,60,000 (26 weeks wages) plus the ₹3,500 statutory medical bonus within a 15-day window.
                     </p>
                     <div className="p-3.5 sm:p-4 bg-emerald-950/70 border border-emerald-700/60 rounded-xl text-emerald-200">
                       <strong className="block text-emerald-400 font-bold mb-1">The Outcome:</strong>
-                      On Day 9 following receipt of the advocate legal notice, the company&apos;s external legal counsel advised immediate compliance. The employer retracted the separation notice, deposited ₹6,63,500 in full to Priya&apos;s salary account with zero deductions, restored her active employment status, and issued a formal written letter confirming her role upon return from maternity leave.
+                      On Day 9 following receipt of the fact-verified legal notice, the company&apos;s external legal counsel advised immediate compliance. The employer retracted the separation notice, deposited ₹6,63,500 in full to Priya&apos;s salary account with zero deductions, restored her active employment status, and issued a formal written letter confirming her role upon return from maternity leave.
                     </div>
                   </div>
                 </div>

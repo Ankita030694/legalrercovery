@@ -28,7 +28,7 @@ const SCENARIOS: ScenarioTab[] = [
       {
         step: "Serve Formal License Revocation & COA Reg. 2(1)(xii) Intimation",
         detail:
-          "Issue an Advocate Notice revoking any implied construction license over unpaid GFC/Sanction drawings, copying the incoming architect (if identified) on professional misconduct exposure under Architects Act, 1972 and Regulation 2(1)(xii).",
+          "Issue a Fact-Verified Notice revoking any implied construction license over unpaid GFC/Sanction drawings, copying the incoming architect (if identified) on professional misconduct exposure under Architects Act, 1972 and Regulation 2(1)(xii).",
       },
       {
         step: "Withdraw Statutory Supervision & Notify Municipal / RERA Authority",
@@ -58,7 +58,7 @@ const SCENARIOS: ScenarioTab[] = [
           "Freeze release of editable .dwg/.rvt/.skp files and compile dated email transmittals, WhatsApp drawing sign-offs, and site photographs showing the contractor executing your exact millwork, ceiling, and facade layouts.",
       },
       {
-        step: "Dispatch Advocate Demand Notice to Both Client & Executing Contractor",
+        step: "Dispatch Fact-Verified Demand Notice to Both Client & Executing Contractor",
         detail:
           "Serve a joint Copyright Infringement & Stage-Fee Demand Notice on both the HNI homeowner and the turnkey contractor under Section 51 & Section 55—putting the contractor on personal liability notice for unauthorized commercial reproduction.",
       },

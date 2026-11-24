@@ -29,10 +29,10 @@ export default function DmcNoticeCTA({
                   Track 1 &bull; Single Travel Agent / FTO Defaulter
                 </span>
                 <h3 className="text-lg sm:text-xl font-bold text-white mb-2">
-                  Test 1 Live Overdue Case Now (&rupee;{basePrice} &bull; Advocate Drafted)
+                  Test 1 Live Overdue Case Now (&rupee;{basePrice} &bull; Fact-Verified)
                 </h3>
                 <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-                  Send an Advocate-drafted statutory &amp; criminal-forgery demand notice via Email, WhatsApp, and Speed Post RPAD citing BNS 2023 s.318 &amp; s.336/340, NI Act s.138, and Order XXXVII CPC.
+                  Send a Fact-verified statutory &amp; criminal-forgery demand notice via Email, WhatsApp, and Speed Post RPAD citing BNS 2023 s.318 &amp; s.336/340, NI Act s.138, and Order XXXVII CPC.
                 </p>
               </div>
               <div className="flex flex-col sm:flex-row gap-3">
@@ -41,7 +41,7 @@ export default function DmcNoticeCTA({
                   onClick={() => setIsModalOpen(true)}
                   className="flex-1 inline-flex items-center justify-center px-5 py-3 rounded-xl font-bold text-white bg-[#DC2626] hover:bg-[#B91C1C] transition-colors text-xs sm:text-sm cursor-pointer shadow-lg shadow-red-950/40"
                 >
-                  Start &rupee;{basePrice} Advocate Notice &rarr;
+                  Start &rupee;{basePrice} Fact-Verified Notice &rarr;
                 </button>
                 <Link
                   href="/user/new-recovery"
@@ -62,7 +62,7 @@ export default function DmcNoticeCTA({
                   Have 10 to 10,000+ Defaulters? Upload CSV / Activate Institutional Desk
                 </h3>
                 <p className="text-xs sm:text-sm text-slate-600 leading-relaxed mb-5">
-                  Closing peak-season ledgers across Goa, Kerala, Rajasthan, Kashmir, Dubai, or Thailand? Upload your overdue sub-agent and FTO ledger in bulk and trigger automated multi-channel advocate notices.
+                  Closing peak-season ledgers across Goa, Kerala, Rajasthan, Kashmir, Dubai, or Thailand? Upload your overdue sub-agent and FTO ledger in bulk and trigger automated multi-channel fact-verified notices.
                 </p>
               </div>
               <div className="flex flex-col sm:flex-row gap-3">

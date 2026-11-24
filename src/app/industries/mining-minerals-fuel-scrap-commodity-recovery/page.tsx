@@ -305,7 +305,7 @@ const FAQS = [
     question:
       "How does LegalRecovery handle both a single ₹999 test case and 100+ defaulting factory ledgers?",
     answer:
-      "Track 1 lets you test one live overdue coal, scrap, fuel, or cylinder claim for ₹999—advocate-drafted and served simultaneously via Email, WhatsApp, and Speed Post RPAD. Track 2 lets port yards, fuel distributors, and gas plants upload 10 to 10,000+ defaulting accounts via CSV inside the Representees workspace for segregated GSTIN dispatch and escalation.",
+      "Track 1 lets you test one live overdue coal, scrap, fuel, or cylinder claim for ₹999—fact-verified and served simultaneously via Email, WhatsApp, and Speed Post RPAD. Track 2 lets port yards, fuel distributors, and gas plants upload 10 to 10,000+ defaulting accounts via CSV inside the Representees workspace for segregated GSTIN dispatch and escalation.",
   },
 ];
 

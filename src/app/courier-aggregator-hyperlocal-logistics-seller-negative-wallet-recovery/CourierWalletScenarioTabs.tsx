@@ -38,7 +38,7 @@ const SCENARIOS: ScenarioItem[] = [
       {
         step: "Trigger Synchronized 15-Day Batch Legal Notice",
         detail:
-          "Dispatch advocate-signed demand notices via registered Email, WhatsApp, and Speed Post RPAD demanding wallet regularization within 15 days.",
+          "Dispatch fact-verified demand notices via registered Email, WhatsApp, and Speed Post RPAD demanding wallet regularization within 15 days.",
       },
     ],
     statutoryAnchor: "IT Act s.10A • Contract Act s.73 • BSA 2023 s.63 • Order XXXVII CPC",

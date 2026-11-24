@@ -40,7 +40,7 @@ const HOSPITAL_SCENARIOS: HospitalScenario[] = [
           "Hand over the discharge summary and patient without delay. Obtain signature on the final itemized bill acknowledgment and a stamped Discharge Undertaking / Demand Promissory Note specifying the 15-day or EMI repayment schedule.",
       },
       {
-        step: "Day 16 Post-Default: Dispatch Tri-Channel Advocate Notice",
+        step: "Day 16 Post-Default: Dispatch Tri-Channel Fact-Verified Notice",
         detail:
           "Serve a formal 15-day civil recovery notice jointly on the patient and attendant co-guarantor via Email, WhatsApp, and Speed Post RPAD, warning of Order XXXVII Summary Suit and CIBIL/legal cost recovery.",
       },
@@ -98,7 +98,7 @@ const HOSPITAL_SCENARIOS: HospitalScenario[] = [
           "Because the admission contract was co-signed by a living attendant/relative as a primary co-obligor and surety under Section 128, the hospital does not have to wait for probate or estate administration.",
       },
       {
-        step: "Serve Dignified 15-Day Advocate Notice After Bereavement Window",
+        step: "Serve Dignified 15-Day Fact-Verified Notice After Bereavement Window",
         detail:
           "Wait 10–14 days post-cremation before serving a respectful, factual 15-day demand notice enclosing the itemized ICU ledger, consumable invoices, and signed admission guarantee.",
       },

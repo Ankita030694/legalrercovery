@@ -43,7 +43,7 @@ const HOTELS_TRAVEL_SCENARIOS: HotelsTravelScenario[] = [
       {
         step: "2. Serve CFO-Targeted BTC / Extranet Demand Notice",
         detail:
-          "Issue an advocate-vetted 15-day notice directly to the corporate Finance Controller, Directors, or OTA Nodal Desk estopping post-checkout F&B denials where GSTR-2B ITC has already been availed.",
+          "Issue a fact-verified 15-day notice directly to the corporate Finance Controller, Directors, or OTA Nodal Desk estopping post-checkout F&B denials where GSTR-2B ITC has already been availed.",
       },
       {
         step: "3. File Order XXXVII Summary Suit or MSEFC Reference",
@@ -172,7 +172,7 @@ const HOTELS_TRAVEL_SCENARIOS: HotelsTravelScenario[] = [
       {
         step: "2. Serve s.43B(h) Tax Notice or Pre-FIR BNS Forgery Notice",
         detail:
-          "Dispatch advocate notices warning factory/college CFOs of Form 3CD disallowance, or putting defaulting retail agents and SHO/EOW on notice for BNS s.336/340 electronic forgery.",
+          "Dispatch fact-verified notices warning factory/college CFOs of Form 3CD disallowance, or putting defaulting retail agents and SHO/EOW on notice for BNS s.336/340 electronic forgery.",
       },
       {
         step: "3. File MSEFC Claim or Criminal-Cum-Civil Recovery Suit",

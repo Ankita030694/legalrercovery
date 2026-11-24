@@ -26,7 +26,7 @@ export default function Section43bhNoticeCTA({ variant = 'primary' }: Section43b
               Buyer Holding Your MSE Invoice Past 15 / 45 Days?
             </p>
             <p className="text-xs text-slate-300 max-w-xl leading-relaxed">
-              Serve an advocate-signed statutory notice citing Income-tax Act Section 43B(h) (100% expense disallowance), Form 3CD Clause 22 disclosure, and MSMED Act Section 16 (3× RBI Bank Rate compound interest) to the buyer&apos;s Directors and CFO.
+              Serve a fact-verified statutory notice citing Income-tax Act Section 43B(h) (100% expense disallowance), Form 3CD Clause 22 disclosure, and MSMED Act Section 16 (3× RBI Bank Rate compound interest) to the buyer&apos;s Directors and CFO.
             </p>
           </div>
           <button
@@ -100,7 +100,7 @@ export default function Section43bhNoticeCTA({ variant = 'primary' }: Section43b
             </button>
             <div className="text-xs text-slate-400 space-y-0.5">
               <div className="font-semibold text-slate-200">
-                ✓ Advocate Review &amp; Approval Before Dispatch
+                ✓ Fact Verification &amp; Approval Before Dispatch
               </div>
               <div>
                 ✓ Email &amp; WhatsApp Service Proof

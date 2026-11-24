@@ -117,7 +117,7 @@ const SCENARIOS: ScenarioTab[] = [
       {
         step: "2. Serve Comprehensive Pre-Litigation Legal Demand Notice",
         description:
-          "Deliver an advocate-drafted statutory demand notice detailing pending invoices, illegally seized security deposits, and wrongful penalty debit notes, requiring payment within 15 days.",
+          "Deliver a fact-verified statutory demand notice detailing pending invoices, illegally seized security deposits, and wrongful penalty debit notes, requiring payment within 15 days.",
       },
       {
         step: "3. Multi-Pronged Escalation via MSEFC & Section 43B(h) Audit Alert",

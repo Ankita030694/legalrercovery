@@ -33,7 +33,7 @@ const SCENARIOS: ScenarioTab[] = [
       {
         step: "2. 15-Day Registered Speed Post (RPAD) + Digital Service",
         description:
-          "Dispatch an Advocate-drafted Pre-Auction Notice under Contract Act s.176 & State Cold Storage Act to the trader's registered address, WhatsApp, and email demanding lifting within 15 days.",
+          "Dispatch a Fact-verified Pre-Auction Notice under Contract Act s.176 & State Cold Storage Act to the trader's registered address, WhatsApp, and email demanding lifting within 15 days.",
       },
       {
         step: "3. Newspaper Public Auction Notice & 3-Bid Panchnama",

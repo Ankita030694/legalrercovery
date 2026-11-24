@@ -645,7 +645,7 @@ export default function B2bDebtRecoveryLegalForumSelectorPage() {
                   Execution Desk
                 </span>
                 <h2 className="text-xl sm:text-2xl font-extrabold text-slate-900">
-                  Convert Your Selected Track Into an Advocate-Drafted Notice
+                  Convert Your Selected Track Into a Fact-Verified Notice
                 </h2>
               </div>
               <B2bForumSelectorCTA />

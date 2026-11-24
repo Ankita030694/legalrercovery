@@ -24,7 +24,7 @@ const SCENARIOS: Scenario[] = [
     recoverySOP: [
       "Issue an immediate physical rejection memo: CFA gatekeeper refuses delivery or accepts only under protest ('Received for Inspection Only — Not Accepted as Commercial Credit').",
       "Perform a joint physical audit: Categorize dumped stock by manufacturing date, batch number, original invoice date, and expiry date to prove stock originated outside the permitted return window.",
-      "Dispatch an Advocate Legal Demand Notice rebutting the unilateral debit note, enforcing the 1.5% contractual cap, and demanding payment of the unadjusted balance within 15 days.",
+      "Dispatch a Fact-Verified Legal Demand Notice rebutting the unilateral debit note, enforcing the 1.5% contractual cap, and demanding payment of the unadjusted balance within 15 days.",
       "Initiate MSME Samadhaan petition or Commercial Summary Suit under Order XXXVII CPC for the full invoiced principal plus 3x RBI compound penal interest under Section 16 of the MSMED Act.",
     ],
     keyAuthority: "Indian Contract Act 1872 s.73, Drugs & Cosmetics Rules 1945 r.65(17) & MSMED Act 2006 s.16",
@@ -71,7 +71,7 @@ const SCENARIOS: Scenario[] = [
       "The Competition Commission of India (CCI) has repeatedly held (e.g., in Suo Moto Case No. 05/2013 and subsequent pharmaceutical cartelization rulings) that trade associations like AIOCD and state druggist bodies cannot impose mandatory NOCs, dictate commercial discounts, or enforce anti-competitive return practices on manufacturers under Section 3 of the Competition Act, 2002. Express bilateral distributor agreements strictly prevail over association circulars. Coercive boycotts or unauthorized ledger deductions constitute actionable commercial defaults subject to immediate civil recovery and Competition Commission complaints.",
     recoverySOP: [
       "Notify the stockist in writing that bilateral distributor terms signed by both parties govern the dealership, and association circulars possess zero legal force to modify contract terms.",
-      "Serve an Advocate Legal Notice citing Competition Act 2002 Section 3 and Indian Contract Act Section 73, warning that association-backed boycotts will trigger CCI filings and damages claims.",
+      "Serve a Fact-Verified Legal Notice citing Competition Act 2002 Section 3 and Indian Contract Act Section 73, warning that association-backed boycotts will trigger CCI filings and damages claims.",
       "Establish a strict 7-day window for physical verification of permitted capped returns at the manufacturer's designated warehouse.",
       "Simultaneously file an MSME Samadhaan petition or Commercial Summary Suit (Order XXXVII CPC) to attach the stockist's bank accounts and freeze receivables.",
     ],

@@ -182,7 +182,7 @@ export default function AutoAncillaryRecoveryTableOfContents({
                 Facing Arbitrary OEM Deductions?
               </p>
               <p className="text-[10px] text-red-700 leading-relaxed mb-2.5">
-                Issue an advocate demand notice or enforce Section 170 die liens.
+                Issue a fact-verified demand notice or enforce Section 170 die liens.
               </p>
               <a
                 href="#heading-cta"

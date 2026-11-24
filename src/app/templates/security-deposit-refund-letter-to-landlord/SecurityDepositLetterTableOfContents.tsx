@@ -199,7 +199,7 @@ export default function SecurityDepositLetterTableOfContents({
             onClick={(e) => scrollToSection(e, "heading-cta-block")}
             className="inline-flex items-center gap-1 text-xs font-bold text-red-600 hover:text-red-700 mt-1.5"
           >
-            <span>Send Advocate Legal Notice</span>
+            <span>Send Fact-Verified Legal Notice</span>
             <span>→</span>
           </a>
         </div>

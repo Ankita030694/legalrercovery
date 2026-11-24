@@ -27,7 +27,7 @@ export default function LogisticsHubCTA({ className = "" }: LogisticsHubCTAProps
                 Test 1 Live Overdue Case Now (&rupee;{basePrice})
               </h3>
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-                Test one stuck FTL/PTL freight bill, factory halting ledger, CHA ICEGATE reimbursement, or 48-hour Carrier Lien notice with zero monthly retainer. Advocate-drafted and served via verified Email, Business WhatsApp, and Speed Post RPAD with Section 63 BSA certification.
+                Test one stuck FTL/PTL freight bill, factory halting ledger, CHA ICEGATE reimbursement, or 48-hour Carrier Lien notice with zero monthly retainer. Fact-verified and served via verified Email, Business WhatsApp, and Speed Post RPAD with Section 63 BSA certification.
               </p>
               <ul className="space-y-1.5 text-xs text-slate-200 mb-6">
                 <li>&check; Itemized Bilty / GR / E-Way Bill / POD schedule drafting</li>

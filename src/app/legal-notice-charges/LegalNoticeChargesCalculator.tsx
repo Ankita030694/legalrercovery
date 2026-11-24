@@ -60,7 +60,7 @@ export default function LegalNoticeChargesCalculator() {
             </span>
           </div>
           <h3 className="text-lg sm:text-xl font-black text-slate-900 mt-2">
-            Estimate Advocate Notice Charges vs LegalRecovery Flat Price
+            Estimate Fact-Verified Notice Charges vs LegalRecovery Flat Price
           </h3>
           <p className="text-xs sm:text-sm text-slate-600 mt-1">
             Calculate what independent advocates typically charge in your city based on your dispute nature and claim value.
@@ -172,7 +172,7 @@ export default function LegalNoticeChargesCalculator() {
                 ₹{basePrice}
               </p>
               <ul className="text-xs text-slate-700 mt-3 space-y-1.5 font-medium">
-                <li>✓ High Court Advocate verified drafting</li>
+                <li>✓ Fact-verified drafting</li>
                 <li>✓ Email + WhatsApp delivery (Speed Post optional, ₹450)</li>
                 <li>✓ Electronic dispatch under Section 63 BSA 2023</li>
                 <li>✓ Fast 24–48 hour drafting turnaround</li>

@@ -32,7 +32,7 @@ export default function AgriKccNoticeCTA({
                 Break Waiver Rumours &amp; False Section 31(i) Defenses Before NPA Ageing
               </h3>
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
-                Dispatch advocate-signed bilingual KCC recall notices, Blue Coast commercial-use SARFAESI triggers, and State RRC / Lok Adalat pre-litigation dockets with BSA 2023 s.63 delivery certificates.
+                Dispatch fact-verified bilingual KCC recall notices, Blue Coast commercial-use SARFAESI triggers, and State RRC / Lok Adalat pre-litigation dockets with BSA 2023 s.63 delivery certificates.
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-3 shrink-0">
@@ -100,10 +100,10 @@ export default function AgriKccNoticeCTA({
                   </span>
                 </div>
                 <p className="text-sm sm:text-base font-bold text-white">
-                  Test 1 Live Overdue Case Now (₹{basePrice} &middot; Advocate Drafted)
+                  Test 1 Live Overdue Case Now (₹{basePrice} &middot; Fact-Verified)
                 </p>
                 <p className="text-xs text-slate-300 leading-relaxed">
-                  Advocate-drafted Agriculture / KCC Recall Notice, tractor hypothecation surrender notice, or pre-RRC demand served via Email + WhatsApp + Speed Post RPAD with BSA 2023 s.63 admissibility proof.
+                  Fact-verified Agriculture / KCC Recall Notice, tractor hypothecation surrender notice, or pre-RRC demand served via Email + WhatsApp + Speed Post RPAD with BSA 2023 s.63 admissibility proof.
                 </p>
               </div>
 

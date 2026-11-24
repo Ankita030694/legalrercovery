@@ -25,7 +25,7 @@ export default function SoftwareUatRecoveryCTA({
               Track 1 &bull; Single Software Milestone Default Test Case
             </span>
             <p className="text-lg sm:text-xl font-extrabold text-white mb-2">
-              Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Advocate Drafted &middot; Email + WhatsApp + Speed Post RPAD)
+              Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Fact-Verified &middot; Email + WhatsApp + Speed Post RPAD)
             </p>
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
               Serve a high-impact 10-day statutory demand notice on a delinquent enterprise client or venture-funded startup. Formally establishes Deemed UAT Acceptance via live production traffic logs, asserts an unassigned IP lien under Copyright Act Section 19, segregates scope creep from core SOW acceptance, and demands 3x RBI compound penal interest under MSMED Act Section 16.

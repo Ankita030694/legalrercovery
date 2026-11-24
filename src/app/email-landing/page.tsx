@@ -114,8 +114,8 @@ export default function EmailLandingPage() {
 
   const whatYouGet = [
     {
-      title: "Advocate-Drafted Formal Legal Notice",
-      description: "Custom-drafted by verified Supreme Court & High Court practicing advocates citing exact legal sections (BNS, Contract Act, Section 138 NI Act, Labour laws).",
+      title: "Fact-Verified Formal Legal Notice",
+      description: "Prepared from your fact-verified details, citing exact legal sections (BNS, Contract Act, Section 138 NI Act, Labour laws).",
       icon: <FileText className="w-6 h-6 text-[#DC2626]" />,
       points: [
         "Formatted on official Advocate letterhead with Bar Council credentials",
@@ -134,12 +134,12 @@ export default function EmailLandingPage() {
       ]
     },
     {
-      title: "Real-Time Tracking Dashboard & Document Vault",
+      title: "Real-Time Tracking Dashboard",
       description: "A centralized digital portal to monitor notice dispatch, track delivery, log debtor communications, and download digitally signed PDFs.",
       icon: <Zap className="w-6 h-6 text-[#DC2626]" />,
       points: [
         "Real-time status updates on notice delivery & opens",
-        "Secure encrypted vault for agreements, chats, and bank statements",
+        "Case details you entered stored securely for tracking",
         "Instant alerts when the debtor views or replies to notices"
       ]
     },
@@ -411,7 +411,7 @@ export default function EmailLandingPage() {
   const emailFaqs: FAQItem[] = [
     {
       question: "How does the 7-Day Interval Notice Escalation process work?",
-      answer: "When you start a claim, our advocate drafts and sends the 1st Formal Legal Notice on Day 1. If the opposing party does not settle within 7 days, our system automatically prepares and dispatches the 2nd Legal Notice on Day 7, followed by the 3rd Final Warning Notice on Day 14. If still unresolved, on Day 21 you receive a formal Police Complaint / Authority Grievance draft ready to file."
+      answer: "When you start a claim, our team drafts and sends the 1st Formal Legal Notice on Day 1. If the opposing party does not settle within 7 days, our system automatically prepares and dispatches the 2nd Legal Notice on Day 7, followed by the 3rd Final Warning Notice on Day 14. If still unresolved, on Day 21 you receive a formal Police Complaint / Authority Grievance draft ready to file."
     },
     {
       question: "Can I stop the notices if the debtor pays early?",
@@ -419,7 +419,7 @@ export default function EmailLandingPage() {
     },
     {
       question: "Is this legal notice legally valid in Indian courts?",
-      answer: "Yes, 100%. Every notice is drafted and vetted by qualified Indian advocates registered with the State Bar Council. It is issued on official advocate letterhead with statutory legal citations under the Bharatiya Nyaya Sanhita, Indian Contract Act, Negotiable Instruments Act, or Labour laws."
+      answer: "Yes, 100%. Every notice is prepared from facts verified by our team. It is issued on official advocate letterhead with statutory legal citations under the Bharatiya Nyaya Sanhita, Indian Contract Act, Negotiable Instruments Act, or Labour laws."
     },
     {
       question: "Why is the price only ₹999? Are there any hidden charges or commission?",
@@ -427,7 +427,7 @@ export default function EmailLandingPage() {
     },
     {
       question: "What documents or details do I need to submit my case?",
-      answer: "You only need the opposing party's (accused) email address, phone number, due date, and the amount to be recovered. Rest everything is taken care of by our legal advocates and automated recovery system."
+      answer: "You only need the opposing party's (accused) email address, phone number, due date, and the amount to be recovered. Our team verifies these facts and the rest is taken care of by our automated recovery system."
     },
     {
       question: "Can I send a legal notice to someone in a different city or state in India?",
@@ -548,7 +548,7 @@ export default function EmailLandingPage() {
             {/* Core Bullet Guarantees (Compact 2x2) */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-2.5 mb-4">
               {[
-                { title: "Advocate Letterhead Notice", desc: "Drafted by Supreme Court & HC Bar advocates" },
+                { title: "Advocate Letterhead Notice", desc: "Prepared from fact-verified details" },
                 { title: "7-Day Interval Notice Escalation", desc: "3 Legal Notices sent week-by-week" },
                 { title: "Police Complaint Draft Included", desc: "Ready-to-file criminal complaint draft" },
                 { title: "0% Commission Forever", desc: "Flat ₹999 fee. Keep 100% of your money" }
@@ -794,7 +794,7 @@ export default function EmailLandingPage() {
               Included in the <span className="text-[#DC2626]">₹999 Flat Recovery Plan</span>
             </h2>
             <p className="text-sm text-[#4B5563] font-normal leading-relaxed">
-              Standardized legal notice drafting and escalation backed by verified legal advocates.
+              Standardized legal notice drafting and escalation verified by our team.
             </p>
           </div>
 
@@ -915,7 +915,7 @@ export default function EmailLandingPage() {
             </h2>
             
             <p className="text-xs sm:text-sm text-[#4B5563] leading-relaxed mb-6 font-medium max-w-2xl mx-auto lg:mx-0">
-              To guarantee absolute statutory validity and the highest resolution rates, our online legal recovery platform is backed by <strong>AMA Legal Solutions</strong> — a premier legal firm. Every notice and police complaint draft is audited by qualified advocates.
+              To guarantee absolute statutory validity and the highest resolution rates, our online legal recovery platform is backed by <strong>AMA Legal Solutions</strong> — a premier legal firm. Every notice and police complaint draft is prepared from facts verified by our team.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 max-w-xl mx-auto lg:mx-0">
@@ -924,8 +924,8 @@ export default function EmailLandingPage() {
                   <Shield className="w-4 h-4" />
                 </div>
                 <div>
-                  <p className="text-xs font-bold text-[#111827]">Advocate-Vetted Notices</p>
-                  <p className="text-[11px] text-[#6B7280] leading-tight mt-0.5">Audited by registered Bar Council advocates.</p>
+                  <p className="text-xs font-bold text-[#111827]">Fact-Verified Notices</p>
+                  <p className="text-[11px] text-[#6B7280] leading-tight mt-0.5">Facts verified by our team.</p>
                 </div>
               </div>
 
@@ -1201,7 +1201,7 @@ export default function EmailLandingPage() {
           </h2>
 
           <p className="text-sm sm:text-base text-slate-300 font-normal leading-relaxed mb-8 max-w-2xl mx-auto">
-            Every day of delay weakens your claim. Initiate your advocate legal notice escalation now for just <strong className="text-white font-extrabold">₹999 flat</strong>.
+            Every day of delay weakens your claim. Initiate your legal notice escalation now for just <strong className="text-white font-extrabold">₹999 flat</strong>.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -1268,7 +1268,7 @@ export default function EmailLandingPage() {
               "priceCurrency": "INR",
               "availability": "https://schema.org/InStock"
             },
-            "description": "Professional advocate-drafted legal notices sent at 7-day intervals (3 legal notices + 1 police complaint draft) to recover unpaid dues."
+            "description": "Professional fact-verified legal notices sent at 7-day intervals (3 legal notices + 1 police complaint draft) to recover unpaid dues."
           })
         }}
       />

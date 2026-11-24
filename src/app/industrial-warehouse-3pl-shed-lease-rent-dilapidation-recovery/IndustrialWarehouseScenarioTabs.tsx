@@ -31,7 +31,7 @@ const SCENARIOS: Scenario[] = [
     actionableSteps: [
       "Refuse unconditional handover of the warehouse keys; issue a 48-hour formal notice for joint dilapidation inspection.",
       "Empanel an independent certified structural engineer to conduct a TR-34 laser-screed floor survey and BSA 2023 s.63 video audit.",
-      "Dispatch an advocate demand notice quantifying floor core-drilling, bolt removal, epoxy pressure grouting, and re-polishing costs.",
+      "Dispatch a fact-verified demand notice quantifying floor core-drilling, bolt removal, epoxy pressure grouting, and re-polishing costs.",
       "Appropriate security deposit against quantified reinstatement damage before any rental adjustments.",
     ],
     estimatedRecovery: "100% Floor Reinstatement Cost + Gap Period Holding Rent",
@@ -70,7 +70,7 @@ const SCENARIOS: Scenario[] = [
       "Electricity arrears do not automatically wipe out upon tenant departure; they represent a de facto operational freeze on the asset. The landlord must immediately invoke bank guarantees or corporate guarantees provided under the lease, dispatch a Section 106 TPA termination notice, and file an interim application under Order 39 Rules 1 & 2 CPC or Section 9 of the Arbitration Act to restrain the tenant from removing movable plant and machinery until the DISCOM NOC is deposited.",
     actionableSteps: [
       "Obtain official statement of dues, meter reading logs, and disconnection notices from the local DISCOM executive engineer.",
-      "Issue urgent advocate legal notice under lease indemnity covenants giving 7 days to clear DISCOM dues or face asset seizure.",
+      "Issue urgent fact-verified legal notice under lease indemnity covenants giving 7 days to clear DISCOM dues or face asset seizure.",
       "Apply to the Commercial Court for attachment before judgment (Order 38 Rule 5) over tenant machinery located on the shed.",
       "Initiate summary suit / arbitration seeking immediate escrow deposit of the full DISCOM demand sum.",
     ],

@@ -56,7 +56,7 @@ export default function DedicatedFleetNoticeCTA({
                     Test 1 Live Overdue Case Now (₹{basePrice})
                   </p>
                   <p className="text-xs text-slate-300 leading-relaxed mb-4">
-                    Advocate-drafted 15-Day Statutory Demand Notice claiming Minimum-Km Shortfall, Fixed Standing Vehicle Hire Charges, and Unamortized CapEx under Sections 73 &amp; 74 Indian Contract Act. Dispatched simultaneously via Speed Post RPAD, WhatsApp &amp; Email with cryptographic BSA 2023 Section 63 delivery certificates.
+                    Fact-verified 15-Day Statutory Demand Notice claiming Minimum-Km Shortfall, Fixed Standing Vehicle Hire Charges, and Unamortized CapEx under Sections 73 &amp; 74 Indian Contract Act. Dispatched simultaneously via Speed Post RPAD, WhatsApp &amp; Email with cryptographic BSA 2023 Section 63 delivery certificates.
                   </p>
                 </div>
                 <div className="space-y-2 mt-2">

@@ -85,7 +85,7 @@ const CATEGORIES: StrategyCategoryTab[] = [
     recommendedPlaybook: [
       {
         stage: "Delinquency Inception",
-        action: "Issue advocate statutory loan recall notice invoking personal guarantees and demanding inspection of hypothecated inventory and debtor book debts.",
+        action: "Issue fact-verified statutory loan recall notice invoking personal guarantees and demanding inspection of hypothecated inventory and debtor book debts.",
         statutoryRef: "Indian Contract Act 1872 Sections 126–128",
       },
       {

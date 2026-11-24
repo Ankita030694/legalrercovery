@@ -231,7 +231,7 @@ export default function FlightDelayCancellationCompensationPage() {
                 Statutory Answer Box · DGCA Civil Aviation Requirements
               </div>
               <p className="text-sm sm:text-base text-slate-200 leading-relaxed font-medium">
-                Under DGCA CAR Section 3 Series M Part IV, airlines must pay statutory cash compensation of ₹5,000 to ₹10,000 for short-notice cancellations, up to ₹20,000 for involuntary denied boarding, and mandatory complimentary hotel stays and meals during prolonged delays. This compensation is strictly separate from your full ticket refund. If the airline dodges payment under vague &quot;operational reasons,&quot; passengers can enforce recovery via AirSewa, a 15-day advocate legal notice, and e-Jagriti consumer forums within 2 years.
+                Under DGCA CAR Section 3 Series M Part IV, airlines must pay statutory cash compensation of ₹5,000 to ₹10,000 for short-notice cancellations, up to ₹20,000 for involuntary denied boarding, and mandatory complimentary hotel stays and meals during prolonged delays. This compensation is strictly separate from your full ticket refund. If the airline dodges payment under vague &quot;operational reasons,&quot; passengers can enforce recovery via AirSewa, a 15-day legal notice, and e-Jagriti consumer forums within 2 years.
               </p>
             </div>
 
@@ -546,7 +546,7 @@ export default function FlightDelayCancellationCompensationPage() {
                   <div className="bg-slate-50 p-3 rounded-lg border border-slate-100 text-xs space-y-1 mb-4">
                     <div>
                       <strong className="text-slate-800">Statutory Remedy: </strong>
-                      Demand certified flight maintenance release (FMR) and airport weather logs via advocate legal notice. Failure to substantiate statutory exemption triggers liability for full compensation plus mental agony damages under CPA 2019 Section 2(11).
+                      Demand certified flight maintenance release (FMR) and airport weather logs via legal notice. Failure to substantiate statutory exemption triggers liability for full compensation plus mental agony damages under CPA 2019 Section 2(11).
                     </div>
                   </div>
                 </div>
@@ -667,7 +667,7 @@ export default function FlightDelayCancellationCompensationPage() {
                   <rect x="560" y="30" width="210" height="110" rx="10" fill="#FFFFFF" stroke="#CBD5E1" strokeWidth="2" />
                   <text x="580" y="65" fill="#DC2626" fontSize="12" fontWeight="bold" fontFamily="sans-serif">STAGE 3: AIRSEWA PORTAL</text>
                   <text x="580" y="90" fill="#0F172A" fontSize="14" fontWeight="bold" fontFamily="sans-serif">MoCA / DGCA Docketing</text>
-                  <text x="580" y="112" fill="#64748B" fontSize="11" fontFamily="sans-serif">Upload ticket + denial proof</text>
+                  <text x="580" y="112" fill="#64748B" fontSize="11" fontFamily="sans-serif">Enter ticket + denial details</text>
                   <text x="580" y="127" fill="#64748B" fontSize="11" fontFamily="sans-serif">30-day statutory resolution</text>
 
                   {/* Branching downwards */}
@@ -685,9 +685,9 @@ export default function FlightDelayCancellationCompensationPage() {
 
                   {/* Stage 5: Legal Notice */}
                   <rect x="180" y="320" width="280" height="120" rx="10" fill="#0F172A" stroke="#DC2626" strokeWidth="2" />
-                  <text x="200" y="350" fill="#EF4444" fontSize="12" fontWeight="bold" fontFamily="sans-serif">STAGE 4: ADVOCATE LEGAL NOTICE</text>
+                  <text x="200" y="350" fill="#EF4444" fontSize="12" fontWeight="bold" fontFamily="sans-serif">STAGE 4: LEGAL NOTICE</text>
                   <text x="200" y="375" fill="#FFFFFF" fontSize="14" fontWeight="bold" fontFamily="sans-serif">15-Day Statutory Demand Notice</text>
-                  <text x="200" y="398" fill="#94A3B8" fontSize="11" fontFamily="sans-serif">Drafted by Bar Council Advocate</text>
+                  <text x="200" y="398" fill="#94A3B8" fontSize="11" fontFamily="sans-serif">Fact-verified by our team</text>
                   <text x="200" y="415" fill="#94A3B8" fontSize="11" fontFamily="sans-serif">Dispatched via Speed Post + Email</text>
                   <text x="200" y="430" fill="#34D399" fontSize="11" fontWeight="bold" fontFamily="sans-serif">82% resolved before consumer filing</text>
 
@@ -777,10 +777,10 @@ export default function FlightDelayCancellationCompensationPage() {
                   </span>
                   <div>
                     <h3 className="font-bold text-slate-900 text-base mb-1">
-                      Serve a 15-Day Advocate Legal Notice Under Consumer Protection Act, 2019
+                      Serve a 15-Day Legal Notice Under Consumer Protection Act, 2019
                     </h3>
                     <p className="leading-relaxed text-slate-600">
-                      If AirSewa escalation results in a generic &quot;regret operational delay&quot; auto-response, instruct a qualified advocate to serve a formal pre-litigation Legal Notice. The notice puts the carrier&apos;s managing directors on formal notice for deficiency of service (CPA 2019 s.2(11)) and unfair trade practice (s.2(47)), demanding payment of the DGCA slab plus interest and incurred out-of-pocket expenses within 15 calendar days, failing which consumer court litigation will ensue.
+                      If AirSewa escalation results in a generic &quot;regret operational delay&quot; auto-response, serve a formal pre-litigation Legal Notice. The notice puts the carrier&apos;s managing directors on formal notice for deficiency of service (CPA 2019 s.2(11)) and unfair trade practice (s.2(47)), demanding payment of the DGCA slab plus interest and incurred out-of-pocket expenses within 15 calendar days, failing which consumer court litigation will ensue.
                     </p>
                   </div>
                 </li>
@@ -867,7 +867,7 @@ export default function FlightDelayCancellationCompensationPage() {
                   </div>
 
                   <p>
-                    <strong>Resolution Trajectory:</strong> When customer care offered only a ₹2,000 voucher, Rajesh refused to accept it. His advocate issued a 15-day statutory Legal Notice citing Paragraph 3.2.2(b) of DGCA CAR Series M Part IV and Section 2(11) of the Consumer Protection Act, 2019. Within 9 business days of receiving the Speed Post legal notice, the airline&apos;s legal department processed a direct NEFT bank transfer of <strong>₹33,600</strong> to Rajesh&apos;s bank account to avoid consumer court litigation and penal sanctions.
+                    <strong>Resolution Trajectory:</strong> When customer care offered only a ₹2,000 voucher, Rajesh refused to accept it. A 15-day statutory Legal Notice was issued citing Paragraph 3.2.2(b) of DGCA CAR Series M Part IV and Section 2(11) of the Consumer Protection Act, 2019. Within 9 business days of receiving the Speed Post legal notice, the airline&apos;s legal department processed a direct NEFT bank transfer of <strong>₹33,600</strong> to Rajesh&apos;s bank account to avoid consumer court litigation and penal sanctions.
                   </p>
                 </div>
               </div>
@@ -961,7 +961,7 @@ export default function FlightDelayCancellationCompensationPage() {
                 Evidence Checklist: Proving Flight Delay or Service Deficiency
               </h2>
               <p className="text-sm sm:text-base text-slate-600 leading-relaxed mb-6">
-                When drafting an advocate legal notice or filing before the Consumer Commission, compile the following documentary evidence to build an ironclad case:
+                When drafting a legal notice or filing before the Consumer Commission, compile the following documentary evidence to build an ironclad case:
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -1155,7 +1155,7 @@ export default function FlightDelayCancellationCompensationPage() {
                   </h3>
                   <ul className="space-y-2 text-emerald-950">
                     <li>• Computes exact DGCA CAR Series M Part IV statutory slabs based on your flight block time and fare breakdown.</li>
-                    <li>• Assigns a licensed Bar Council advocate to draft a customized, legally binding statutory demand notice.</li>
+                    <li>• Verifies the facts you submit and prepares a customized statutory demand notice.</li>
                     <li>• Dispatches the notice by official email and WhatsApp to carrier nodal desks, with optional Speed Post (₹450 per party).</li>
                     <li>• Prepares an ironclad dispute dossier formatted for subsequent e-Jagriti consumer commission filing if the airline defaults.</li>
                     <li>• Enforces transparency under CPA 2019 Section 2(11) deficiency in service provisions for a flat fee of ₹{BASE_PRICE}.</li>
@@ -1170,7 +1170,7 @@ export default function FlightDelayCancellationCompensationPage() {
                     <li>• We cannot override genuine, verified meteorological force majeure (e.g. dense runway fog with zero visibility certified by IMD/DGCA).</li>
                     <li>• We cannot force an airline to pay cash on the spot at the airport check-in counter; pre-litigation notice requires 15 days compliance.</li>
                     <li>• We cannot recover compensation if you missed the flight due to arriving after the mandatory 60-minute gate closure deadline.</li>
-                    <li>• We do not represent you in personal court appearances; we provide pre-litigation advocate notices and advisory for self-filing on e-Jagriti.</li>
+                    <li>• We do not represent you in personal court appearances; we provide pre-litigation legal notices and advisory for self-filing on e-Jagriti.</li>
                   </ul>
                 </div>
               </div>

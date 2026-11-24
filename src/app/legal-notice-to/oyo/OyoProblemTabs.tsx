@@ -42,9 +42,9 @@ const OYO_PROBLEMS: ProblemTab[] = [
           "If forced to book an emergency room at another hotel, preserve the tax invoice and payment slip. This forms the basis of your legal claim for financial restitution against OYO.",
       },
       {
-        step: "Serve Advocate Legal Notice to Oravel Stays Ltd",
+        step: "Serve Fact-Verified Legal Notice to Oravel Stays Ltd",
         description:
-          "Issue a formal advocate legal demand notice claiming full refund of the original OYO payment, reimbursement of alternative hotel bills, and damages for harassment before approaching e-Jagriti.",
+          "Issue a formal fact-verified legal demand notice claiming full refund of the original OYO payment, reimbursement of alternative hotel bills, and damages for harassment before approaching e-Jagriti.",
       },
     ],
     statutoryRule: "Sections 2(11), 2(47) & 86 Consumer Protection Act, 2019",
@@ -74,7 +74,7 @@ const OYO_PROBLEMS: ProblemTab[] = [
           "Register a complaint on consumerhelpline.gov.in (NCH) citing unfair trade practice and forced wallet retention against Oravel Stays Ltd.",
       },
       {
-        step: "Dispatch Statutory Advocate Demand Notice",
+        step: "Dispatch Statutory Fact-Verified Demand Notice",
         description:
           "If bank transfer is withheld past 7 days, issue an advocate legal notice requiring bank settlement with statutory interest under Section 2(47) of CPA 2019.",
       },
@@ -103,7 +103,7 @@ const OYO_PROBLEMS: ProblemTab[] = [
       {
         step: "Formal Legal Notice with Interest Demand",
         description:
-          "Have an advocate dispatch a legal notice requiring release of the stuck refund along with 18% penal interest from the date of cancellation.",
+          "Dispatch a legal notice requiring release of the stuck refund along with 18% penal interest from the date of cancellation.",
       },
     ],
     statutoryRule: "Section 2(11) CPA 2019 & Section 70 Indian Contract Act, 1872",
@@ -130,7 +130,7 @@ const OYO_PROBLEMS: ProblemTab[] = [
       {
         step: "File RBI Ombudsman and Legal Notice Claim",
         description:
-          "If the amount is not reversed within 5 days, serve an advocate legal demand notice claiming ₹100/day penal compensation under RBI guidelines alongside full refund.",
+          "If the amount is not reversed within 5 days, serve a fact-verified legal demand notice claiming ₹100/day penal compensation under RBI guidelines alongside full refund.",
       },
     ],
     statutoryRule: "RBI Circular RBI/2019-20/67 on Failed Transaction TAT",
@@ -155,7 +155,7 @@ const OYO_PROBLEMS: ProblemTab[] = [
           "Demand written confirmation of early departure from the hotel counter or send a timestamped email to OYO support within 60 minutes of arrival stating room was rejected.",
       },
       {
-        step: "Serve Advocate Legal Notice for Full Restitution",
+        step: "Serve Fact-Verified Legal Notice for Full Restitution",
         description:
           "Issue a statutory legal notice demanding full refund plus compensation for distress, lodging alternative costs, and travel inconvenience.",
       },

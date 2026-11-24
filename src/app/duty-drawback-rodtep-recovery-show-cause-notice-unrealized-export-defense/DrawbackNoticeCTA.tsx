@@ -41,11 +41,11 @@ export default function DrawbackNoticeCTA({
               International Legal Notice to Defaulting Buyer
             </h4>
             <p className="text-xs text-slate-300 leading-relaxed mb-4">
-              Issue an advocate-drafted cross-border demand letter to the foreign defaulter. Establishing legal recovery action is the mandatory foundation required by AD Banks and Customs for Rule 18(2) drawback protection.
+              Issue a fact-verified cross-border demand letter to the foreign defaulter. Establishing legal recovery action is the mandatory foundation required by AD Banks and Customs for Rule 18(2) drawback protection.
             </p>
             <ul className="text-[11px] text-slate-400 space-y-1.5 mb-5">
               <li className="flex items-center gap-1.5">
-                <span className="text-emerald-400">✓</span> Advocate vetted on High Court Bar letterhead
+                <span className="text-emerald-400">✓</span> Fact-verified on High Court Bar letterhead
               </li>
               <li className="flex items-center gap-1.5">
                 <span className="text-emerald-400">✓</span> Service via International Speed Post + Email Tracking

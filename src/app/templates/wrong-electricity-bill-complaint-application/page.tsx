@@ -911,7 +911,7 @@ export default function WrongElectricityBillComplaintPage() {
                       </span>
                       <ul className="space-y-1.5 text-slate-300">
                         <li>• Provide battle-tested, statutory complaint application templates for SDO and CGRF filings.</li>
-                        <li>• Have verified advocates draft and serve formal statutory legal notices to DISCOM Chief Engineers under Section 56(1).</li>
+                        <li>• Have We draft and serve formal statutory legal notices to DISCOM Chief Engineers under Section 56(1).</li>
                         <li>• Invoke binding precedent to challenge unlawful disconnections and arbitrary late fee surcharges.</li>
                         <li>• File consumer litigation claims on the National Consumer Disputes Redressal Portal (e-Jagriti).</li>
                       </ul>

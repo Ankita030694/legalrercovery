@@ -33,7 +33,7 @@ const SCENARIOS: Scenario[] = [
       "Statutory demand for release of crystallized payout within 7 days, failing which interest at 18% p.a. accrues under MSMED Act / commercial law",
     ],
     recommendedAction:
-      "Issue an immediate Advocate Legal Notice to the marketplace's grievance officer and legal team enclosing certified supply invoices and video packing logs, demanding immediate human review and unfreezing of undisputed disbursements.",
+      "Issue an immediate Fact-Verified Legal Notice to the marketplace's grievance officer and legal team enclosing certified supply invoices and video packing logs, demanding immediate human review and unfreezing of undisputed disbursements.",
   },
   {
     id: "spf-return-fraud-rejection",
@@ -93,7 +93,7 @@ const SCENARIOS: Scenario[] = [
       "Notice of invocation of institutional arbitration (e.g., BIMACC, DIAC, or MCIA) under the agreement's dispute resolution clause",
     ],
     recommendedAction:
-      "Do not wait for 180 days. Serve an advocate notice at Day 35 post-suspension to fix liability, initiate arbitration under Section 21 of the Arbitration Act, and claim commercial interest.",
+      "Do not wait for 180 days. Serve a fact-verified notice at Day 35 post-suspension to fix liability, initiate arbitration under Section 21 of the Arbitration Act, and claim commercial interest.",
   },
 ];
 

@@ -25,10 +25,10 @@ export default function GstProofCTA({
               Track 1 &bull; Single Disputed Delivery Notice
             </span>
             <p className="text-lg sm:text-xl font-extrabold text-white mb-2">
-              Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Advocate Drafted &middot; Email + WhatsApp + Speed Post RPAD)
+              Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Fact-Verified &middot; Email + WhatsApp + Speed Post RPAD)
             </p>
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-              Serve a high-impact, advocate-vetted 15-day statutory demand notice confronting the buyer with their own GSTR-2B acceptance, GSTR-3B ITC offset, and E-Way Bill Part-B RFID logs. Enforces CGST Act Section 16(2)(b) statutory estoppel, BSA 2023 Section 63 electronic evidence admissibility, and pre-empts bogus &ldquo;goods never received&rdquo; defenses before Summary Suit or MSEFC filing.
+              Serve a high-impact, fact-verified 15-day statutory demand notice confronting the buyer with their own GSTR-2B acceptance, GSTR-3B ITC offset, and E-Way Bill Part-B RFID logs. Enforces CGST Act Section 16(2)(b) statutory estoppel, BSA 2023 Section 63 electronic evidence admissibility, and pre-empts bogus &ldquo;goods never received&rdquo; defenses before Summary Suit or MSEFC filing.
             </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-3">

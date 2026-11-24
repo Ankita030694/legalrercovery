@@ -28,7 +28,7 @@ export default function CommercialVehicleCTA({
               Test 1 Live Overdue CV / CE Case Now
             </h3>
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-              &#8377;{basePrice} &middot; Advocate Drafted Recall, Section 9 Pre-Filing Demand, or Post-Sale Loss-on-Sale Notice dispatched via Email + WhatsApp + Speed Post RPAD.
+              &#8377;{basePrice} &middot; Fact-Verified Recall, Section 9 Pre-Filing Demand, or Post-Sale Loss-on-Sale Notice dispatched via Email + WhatsApp + Speed Post RPAD.
             </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-2.5">

@@ -31,7 +31,7 @@ const SCENARIOS: ScenarioTab[] = [
       {
         step: "Day-62 Advocate Cure Notice with Exact Arrears Ledger",
         description:
-          "Dispatch an advocate-signed Soft Legal Cure Notice via Email, WhatsApp, and Speed Post RPAD explicitly warning that partial payments will not halt Day-90 NPA stamping or CICRA bureau reporting.",
+          "Dispatch a fact-verified Soft Legal Cure Notice via Email, WhatsApp, and Speed Post RPAD explicitly warning that partial payments will not halt Day-90 NPA stamping or CICRA bureau reporting.",
       },
       {
         step: "Parallel e-NACH Dishonour Intimation (PSS Act s.25)",
@@ -61,7 +61,7 @@ const SCENARIOS: ScenarioTab[] = [
       {
         step: "Day-62 Pre-SARFAESI Consequence Intimation",
         description:
-          "Serve an advocate-signed Cure Notice to the primary borrower and co-applicant/guarantor explaining that Day-90 NPA classification immediately triggers statutory SARFAESI Section 13(2) demand proceedings and CERSAI enforcement.",
+          "Serve a fact-verified Cure Notice to the primary borrower and co-applicant/guarantor explaining that Day-90 NPA classification immediately triggers statutory SARFAESI Section 13(2) demand proceedings and CERSAI enforcement.",
       },
       {
         step: "Co-Borrower & Guarantor Parallel Service",
@@ -91,7 +91,7 @@ const SCENARIOS: ScenarioTab[] = [
       {
         step: "Day-62 Drawing Power & Interest Shortfall Notice",
         description:
-          "Issue a formal Advocate Cure Notice specifying the exact interest-coverage shortfall and missing stock statement / Drawing Power (DP) deficit required to restore Standard status.",
+          "Issue a formal Fact-Verified Cure Notice specifying the exact interest-coverage shortfall and missing stock statement / Drawing Power (DP) deficit required to restore Standard status.",
       },
       {
         step: "Sales-Routing & Non-Consortium Warning",
@@ -126,7 +126,7 @@ const SCENARIOS: ScenarioTab[] = [
       {
         step: "Day-62 Vernacular Multi-Channel Dispatch",
         description:
-          "Generate advocate-signed notices in English + regional vernacular languages and dispatch within 24 hours via Email, verified WhatsApp Business, and India Post Speed Post RPAD.",
+          "Generate fact-verified notices in English + regional vernacular languages and dispatch within 24 hours via Email, verified WhatsApp Business, and India Post Speed Post RPAD.",
       },
       {
         step: "Centralized Reply Triage & Dispute Tagging",

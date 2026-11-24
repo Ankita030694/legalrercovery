@@ -24,10 +24,10 @@ export default function GrainMillCTA({ className = "" }: GrainMillCTAProps) {
                 Track 1 · Single Truckload / Mandi Default
               </span>
               <h3 className="text-lg sm:text-xl font-bold text-white mb-2">
-                Test 1 Live Overdue Case Now (&#8377;{basePrice} &middot; Advocate Drafted &middot; Email + WhatsApp + Speed Post RPAD)
+                Test 1 Live Overdue Case Now (&#8377;{basePrice} &middot; Fact-Verified &middot; Email + WhatsApp + Speed Post RPAD)
               </h3>
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-                Upload your GST E-Invoice, E-Way Bill, Bilty, Kanta Weighbridge Slip, and Sauda Chitthi. Our advocates dispatch a Multi-Party Demand Notice to the buyer &amp; Pakka Arhatiya citing MSMED s.15–18, s.43B(h), and NI s.138.
+                Enter your invoice, E-Way Bill, bilty, weighbridge slip, and Sauda Chitthi details in the online form. Our team verifies the facts and dispatches a Multi-Party Demand Notice to the buyer &amp; Pakka Arhatiya citing MSMED s.15–18, s.43B(h), and NI s.138.
               </p>
             </div>
 

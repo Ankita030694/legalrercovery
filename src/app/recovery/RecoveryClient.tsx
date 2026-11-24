@@ -76,7 +76,7 @@ const queryLinks: Record<string, string> = {
 const recoveryFaqs: FAQItem[] = [
   {
     question: "What is a legal notice for money recovery?",
-    answer: "A legal notice for money recovery is a formal written demand. An advocate issues it on behalf of a creditor to a debtor. It outlines the debt amount, transaction dates, and underlying contractual terms. The notice provides a strict fifteen-day deadline to clear outstanding dues. Serving a notice creates documented proof before filing a court suit. It gives the debtor a final opportunity to settle out of court."
+    answer: "A legal notice for money recovery is a formal written demand. We issue it on behalf of a creditor to a debtor. It outlines the debt amount, transaction dates, and underlying contractual terms. The notice provides a strict fifteen-day deadline to clear outstanding dues. Serving a notice creates documented proof before filing a court suit. It gives the debtor a final opportunity to settle out of court."
   },
   {
     question: "How long does a debtor have to reply to a legal recovery notice?",

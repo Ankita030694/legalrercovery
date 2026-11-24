@@ -749,7 +749,7 @@ export default function InsuranceOmbudsmanTemplatePage() {
                 </h2>
                 <div className="p-5 sm:p-6 rounded-2xl bg-slate-100 border border-slate-200 text-xs sm:text-sm text-slate-800 leading-relaxed space-y-3">
                   <p>
-                    <strong>What LegalRecovery Provides:</strong> We provide comprehensive pre-litigation assistance. A verified advocate will draft and serve an official 15-day statutory legal notice to the insurer&apos;s Grievance Redressal Officer (GRO) and Appointed Actuary via Registered Speed Post and email, satisfying the mandatory 30-day prerequisite under Rule 14(3)(a). We also help compile your Annexure VI-A dossier and evidentiary annexures.
+                    <strong>What LegalRecovery Provides:</strong> We provide comprehensive pre-litigation assistance. Our team verifies your facts and serves a fact-verified 15-day statutory legal notice to the insurer&apos;s Grievance Redressal Officer (GRO) and Appointed Actuary via Registered Speed Post and email, satisfying the mandatory 30-day prerequisite under Rule 14(3)(a). You should compile your Annexure VI-A dossier and evidentiary annexures yourself.
                   </p>
                   <p>
                     <strong>What LegalRecovery Cannot Do:</strong> Under Rule 14(2) of the Insurance Ombudsman Rules, 2017, no advocate or commercial legal representative is permitted to argue or appear before the Insurance Ombudsman during hearings. You (or a personal non-lawyer representative authorized in writing) must attend the virtual video hearing or physical session personally. We ensure your documentation is legally flawless beforehand.

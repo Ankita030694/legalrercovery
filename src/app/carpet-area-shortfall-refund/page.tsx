@@ -150,7 +150,7 @@ const SCENARIO_CARDS = [
     situation:
       "Your project received its Completion/Occupancy Certificate before RERA came into force, or involves a smaller redevelopment building where the developer delivered 12% less floor area than promised in the registered Agreement for Sale.",
     route:
-      "File a pre-litigation 15-day Advocate Demand Notice under Section 2(11) (Deficiency in Service) and Section 2(47) (Unfair Trade Practice) of the Consumer Protection Act, 2019, read with Section 55 of the Transfer of Property Act, followed by an online consumer complaint on the government e-Jagriti portal (District Commission up to ₹50 lakh; State Commission ₹50L–₹2 Cr).",
+      "File a pre-litigation 15-day Fact-Verified Demand Notice under Section 2(11) (Deficiency in Service) and Section 2(47) (Unfair Trade Practice) of the Consumer Protection Act, 2019, read with Section 55 of the Transfer of Property Act, followed by an online consumer complaint on the government e-Jagriti portal (District Commission up to ₹50 lakh; State Commission ₹50L–₹2 Cr).",
     statutoryHook: "Sections 2(11), 2(47) & 35 CPA 2019 + e-Jagriti Portal",
     jumpHref: "#heading-escalation-flow",
     jumpLabel: "View RERA vs Consumer Court Flow →",
@@ -246,7 +246,7 @@ const FAQS = [
   {
     question: "Builder ne agreement se chhota flat (kam carpet area) diya hai toh refund kaise milega?",
     answer:
-      "Agar builder ne Builder-Buyer Agreement (BBA) ya brochure mein vaada kiye gaye Carpet Area se chhota flat diya hai, toh sabse pehle kisi licensed Architect ya Civil Engineer se RERA Section 2(k) ke hisab se flat ka laser measurement karwayein aur signed Architect Certificate lein. Uske baad LegalRecovery.in ke madhyam se builder aur uske directors ko 15-din ka Advocate Legal Notice bhejein, jismein ghate hue sq. ft. ka proportionate paisa aur SBI MCLR + 2% byaj (interest) 45 din mein wapas karne ya final possession demand mein adjust karne ki mang ki jati hai.",
+      "Agar builder ne Builder-Buyer Agreement (BBA) ya brochure mein vaada kiye gaye Carpet Area se chhota flat diya hai, toh sabse pehle kisi licensed Architect ya Civil Engineer se RERA Section 2(k) ke hisab se flat ka laser measurement karwayein aur signed Architect Certificate lein. Uske baad LegalRecovery.in ke madhyam se builder aur uske directors ko 15-din ka Fact-Verified Legal Notice bhejein, jismein ghate hue sq. ft. ka proportionate paisa aur SBI MCLR + 2% byaj (interest) 45 din mein wapas karne ya final possession demand mein adjust karne ki mang ki jati hai.",
   },
 ];
 
@@ -633,7 +633,7 @@ export default function CarpetAreaShortfallRefundPage() {
                           Pre-Litigation Advocate Notice Fee
                         </th>
                         <td className="py-3 px-3.5 sm:py-3.5 sm:px-4 text-xs font-mono">LegalRecovery.in Statutory Dispatch</td>
-                        <td className="py-3 px-3.5 sm:py-3.5 sm:px-4 text-xs">Flat <strong>₹{basePrice}</strong> for Advocate drafting + Email/WhatsApp service with 15-day demand window. Speed Post optional at ₹450 per party.</td>
+                        <td className="py-3 px-3.5 sm:py-3.5 sm:px-4 text-xs">Flat <strong>₹{basePrice}</strong> for Notice drafting + Email/WhatsApp service with 15-day demand window. Speed Post optional at ₹450 per party.</td>
                       </tr>
                     </tbody>
                   </table>
@@ -715,10 +715,10 @@ export default function CarpetAreaShortfallRefundPage() {
                     </span>
                     <div className="space-y-1 sm:space-y-1.5">
                       <h3 className="text-sm sm:text-base md:text-lg font-bold text-slate-900">
-                        Serve a 15-Day Statutory Advocate Legal Demand Notice to the Promoter &amp; Directors
+                        Serve a 15-Day Statutory Fact-Verified Legal Demand Notice to the Promoter &amp; Directors
                       </h3>
                       <p className="text-xs sm:text-sm leading-relaxed">
-                        Before initiating litigation, have an advocate dispatch a formal Legal Demand Notice to the builder company&apos;s Registered Office and its active Directors (via Registered Speed Post + official email/WhatsApp). The notice annexes your Architect&apos;s Section 2(k) Certificate, invokes Clause 1.7 of the Model Agreement for Sale, Section 12, and Section 14 of RERA, and gives a strict 15-day ultimatum to either conduct a joint laser re-measurement and credit the refund + interest or face statutory adjudication. Check our transparent <Link href="/legal-notice-charges" className="text-blue-700 underline font-semibold">legal notice charges</Link>.
+                        Before initiating litigation, dispatch a formal Legal Demand Notice to the builder company&apos;s Registered Office and its active Directors (via Registered Speed Post + official email/WhatsApp). The notice annexes your Architect&apos;s Section 2(k) Certificate, invokes Clause 1.7 of the Model Agreement for Sale, Section 12, and Section 14 of RERA, and gives a strict 15-day ultimatum to either conduct a joint laser re-measurement and credit the refund + interest or face statutory adjudication. Check our transparent <Link href="/legal-notice-charges" className="text-blue-700 underline font-semibold">legal notice charges</Link>.
                       </p>
                     </div>
                   </li>
@@ -817,7 +817,7 @@ export default function CarpetAreaShortfallRefundPage() {
                         Letting the 2-Year Consumer Court or 5-Year RERA Section 14(3) Limitation Window Expire:
                       </strong>
                       <p className="text-xs sm:text-sm mt-0.5 leading-relaxed">
-                        Verbal assurances by the builder&apos;s CRM team do not pause statutory limitation periods. Under Section 69 of the Consumer Protection Act, 2019, a consumer complaint must be filed within 2 years of the cause of action, and under Section 14(3) of RERA, the promoter&apos;s defect and obligation liability runs for 5 years from possession handover. Serve a formal Advocate Demand Notice immediately upon discovering the shortfall.
+                        Verbal assurances by the builder&apos;s CRM team do not pause statutory limitation periods. Under Section 69 of the Consumer Protection Act, 2019, a consumer complaint must be filed within 2 years of the cause of action, and under Section 14(3) of RERA, the promoter&apos;s defect and obligation liability runs for 5 years from possession handover. Serve a formal Fact-Verified Demand Notice immediately upon discovering the shortfall.
                       </p>
                     </div>
                   </li>
@@ -1127,7 +1127,7 @@ export default function CarpetAreaShortfallRefundPage() {
                     </div>
 
                     <p>
-                      <strong>The Statutory Action:</strong> When the builder&apos;s CRM refused to adjust the shortfall citing a &ldquo;±5% tolerance clause&rdquo;, Siddharth engaged LegalRecovery.in. An advocate served a 15-day statutory demand notice to the developer&apos;s Managing Director and Chief Architect, attaching the COA Architect Certificate and invoking Clause 1.7 of the Haryana RERA Model Agreement for Sale, Section 2(k), and Section 14 of RERA.
+                      <strong>The Statutory Action:</strong> When the builder&apos;s CRM refused to adjust the shortfall citing a &ldquo;±5% tolerance clause&rdquo;, Siddharth engaged LegalRecovery.in. LegalRecovery.in served a 15-day statutory demand notice to the developer&apos;s Managing Director and Chief Architect, attaching the COA Architect Certificate and invoking Clause 1.7 of the Haryana RERA Model Agreement for Sale, Section 2(k), and Section 14 of RERA.
                     </p>
                     <div className="p-3.5 sm:p-4 bg-emerald-950/70 border border-emerald-700/60 rounded-xl text-emerald-200">
                       <strong className="block text-emerald-400 font-bold mb-1">The Outcome (Day 14 Settlement):</strong>
@@ -1216,7 +1216,7 @@ export default function CarpetAreaShortfallRefundPage() {
                     <ul className="space-y-2 text-xs sm:text-sm text-slate-700 leading-relaxed list-disc list-inside">
                       <li>Verify your Builder-Buyer Agreement (BBA) and architect survey against RERA Section 2(k) and Clause 1.7 rules.</li>
                       <li>Compute your exact proportionate principal refund, GST/Stamp Duty excess, and SBI MCLR + 2% interest schedule.</li>
-                      <li>Draft and dispatch a formal 15-day Advocate Legal Demand Notice to the promoter and active directors via Email/WhatsApp for a flat <strong>₹{basePrice}</strong> (Speed Post optional at ₹450 per party).</li>
+                      <li>Draft and dispatch a formal 15-day Fact-Verified Legal Demand Notice to the promoter and active directors via Email/WhatsApp for a flat <strong>₹{basePrice}</strong> (Speed Post optional at ₹450 per party).</li>
                       <li>Prepare complaint pleadings for State RERA (Form M / Form N) or e-Jagriti Consumer Commission if the builder fails to settle within 15 days.</li>
                     </ul>
                   </div>

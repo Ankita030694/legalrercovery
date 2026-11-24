@@ -32,7 +32,7 @@ export default function VehicleRepossessionCTA({
                 Eliminate Theft FIRs &amp; Consumer Penalties Before Field Seizure
               </h3>
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
-                Dispatch advocate-signed Pre-Seizure Recall, SHO Police
+                Dispatch fact-verified Pre-Seizure Recall, SHO Police
                 Intimation CC, Pre-Sale Valuation &amp; Post-Auction Deficit
                 Notices via Email, WhatsApp, and Speed Post RPAD.
               </p>
@@ -89,7 +89,7 @@ export default function VehicleRepossessionCTA({
             <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed">
               Pilot a single delinquent auto, tractor, or retail CV loan in
               under 24 hours—or upload 10 to 10,000+ overdue hypothecation
-              accounts via CSV. Every notice is advocate-drafted with built-in{" "}
+              accounts via CSV. Every notice is fact-verified with built-in{" "}
               <code className="text-red-300 bg-slate-800 px-1.5 py-0.5 rounded text-[11px]">
                 policeStationEmail
               </code>{" "}
@@ -115,7 +115,7 @@ export default function VehicleRepossessionCTA({
                   Test 1 Live Overdue Case Now
                 </h4>
                 <p className="text-xs text-slate-300 leading-relaxed">
-                  Advocate-drafted Pre-Seizure Loan Recall, Pre-Sale Valuation
+                  Fact-verified Pre-Seizure Loan Recall, Pre-Sale Valuation
                   Redemption Notice, or Post-Auction Deficit Recovery Notice
                   served simultaneously via Email, WhatsApp &amp; Speed Post
                   RPAD.
@@ -131,7 +131,7 @@ export default function VehicleRepossessionCTA({
                   Dispatch 1 Test Notice (₹{basePrice})
                 </button>
                 <div className="flex items-center justify-between text-[11px] text-slate-400 pt-1">
-                  <span>&check; 24h Advocate Draft + RPAD</span>
+                  <span>&check; 24h Notice Prep + RPAD</span>
                   <Link
                     href="/user/new-recovery"
                     className="text-red-400 hover:text-red-300 underline font-semibold"

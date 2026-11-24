@@ -14,7 +14,7 @@ const EXACT_H1 =
   "Industrial Commodity Legal Notice Pack: (1) Coal/Scrap/Mineral Invoice & Sampling-Cut Rebuttal Notice + (2) PESO Gas-Cylinder Return (BNS s.316) Notice";
 const META_TITLE = "Coal, Metal Scrap & Gas-Cylinder Legal Notice [Word]";
 const META_DESCRIPTION =
-  "Advocate-vetted notice formats featuring SGS/NABL COA finality, Dharamkanta/E-Way logs, PESO cylinder serial tables & Pre-IBC / Order 38 warnings.";
+  "Ready-to-use notice formats featuring SGS/NABL COA finality, Dharamkanta/E-Way logs, PESO cylinder serial tables & Pre-IBC / Order 38 warnings.";
 
 export const metadata: Metadata = {
   title: META_TITLE,
@@ -167,7 +167,7 @@ const FAQS = [
   {
     question: "Can LegalRecovery.in dispatch notices for 20+ defaulting mills or cylinder customers at once?",
     answer:
-      "Yes. You can test a single advocate-drafted notice for ₹999 via Email, WhatsApp, and optional Speed Post RPAD, or upload a CSV of 10 to 10,000+ defaulting plants and cylinder accounts through our Bulk Institutional Recovery Desk.",
+      "Yes. You can test a single fact-verified notice for ₹999 via Email, WhatsApp, and optional Speed Post RPAD, or upload a CSV of 10 to 10,000+ defaulting plants and cylinder accounts through our Bulk Institutional Recovery Desk.",
   },
 ];
 
@@ -397,7 +397,7 @@ export default function CoalScrapAndGasCylinderNoticePage() {
                   Order XXXVII CPC Summary Suit
                 </Link>{" "}
                 and stalls NCLT proceedings under Section 8 of the IBC. By contrast, an
-                advocate-vetted notice structured around{" "}
+                fact-verified notice structured around{" "}
                 <strong>Section 42 of the Sale of Goods Act, 1930</strong>,{" "}
                 <strong>Load-Port SGS/NABL COA finality</strong>,{" "}
                 <strong>BSA 2023 Section 63</strong> Dharamkanta/E-Way logs, and{" "}
@@ -557,12 +557,12 @@ export default function CoalScrapAndGasCylinderNoticePage() {
                   5
                 </span>
                 <h2 className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight">
-                  Advocate Review &amp; Bulk Commodity Defaulter Dispatch Desk
+                  Fact Verification &amp; Bulk Commodity Defaulter Dispatch Desk
                 </h2>
               </div>
 
               <p className="text-sm text-slate-600 leading-relaxed">
-                Have an advocate verify your SGS/NABL COA clauses, Order 38 Rule 5 attachment
+                Have your SGS/NABL COA clauses verified, Order 38 Rule 5 attachment
                 warnings, or PESO cylinder serial schedules before service—or onboard your entire
                 receivables aging sheet for automated multi-plant recovery.
               </p>

@@ -25,7 +25,7 @@ export default function GovernmentContractorCTA({
               Track 1 &bull; Single Government Contractor Bill Notice
             </span>
             <p className="text-lg sm:text-xl font-extrabold text-white mb-2">
-              Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Advocate Drafted &middot; Email + WhatsApp + Speed Post RPAD)
+              Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Fact-Verified &middot; Email + WhatsApp + Speed Post RPAD)
             </p>
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
               Serve a high-impact Section 80 CPC / Pre-Writ statutory demand notice on the Executive Engineer, Chief Engineer, and Departmental Principal Secretary. Quantifies certified Measurement Book (MB) values, demolishes the &quot;budget not received&quot; defense under Supreme Court <em>Surya Constructions</em>, and demands release within the statutory window with 18% commercial penal interest.

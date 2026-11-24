@@ -570,7 +570,7 @@ export default function CommodityNoticeWorkspace() {
         <div className="lg:col-span-7 bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
           <div className="bg-slate-900 text-white px-4 sm:px-6 py-3 border-b border-slate-800 flex items-center justify-between">
             <span className="text-xs font-extrabold uppercase tracking-wider text-slate-300">
-              Advocate-Vetted Statutory Draft Preview
+              Fact-Verified Statutory Draft Preview
             </span>
             <span className="text-[10px] bg-red-950 text-red-400 font-bold px-2 py-0.5 rounded-md border border-red-800">
               Annotated Clauses ①–⑥

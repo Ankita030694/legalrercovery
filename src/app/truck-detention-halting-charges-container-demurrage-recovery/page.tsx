@@ -139,7 +139,7 @@ const HOWTO_SCHEMA = {
       "@type": "HowToStep",
       position: 4,
       name: "15-Day Advocate Statutory Demand Notice Under Contract Act s.73",
-      text: "Serve an advocate demand notice backed by a Section 63 BSA 2023 electronic certificate, demanding full settlement of halting charges plus 18% commercial interest or MSMED Act Section 16 interest.",
+      text: "Serve a fact-verified demand notice backed by a Section 63 BSA 2023 electronic certificate, demanding full settlement of halting charges plus 18% commercial interest or MSMED Act Section 16 interest.",
     },
     {
       "@type": "HowToStep",
@@ -215,7 +215,7 @@ const FAQ_SCHEMA = {
       name: "How can fleet operators recover cumulative halting deductions across dozens of corporate shippers?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Fleet operators can utilize LegalRecovery.in's institutional batch desk to upload disputed Bilty and halting deduction ledgers via CSV. Our legal recovery infrastructure automates multi-channel advocate demand notices, synchronizes Section 63 BSA telematics evidence, and coordinates pan-India Order XXXVII Summary Suits or MSEFC filings without crippling operational cash flow.",
+        text: "Fleet operators can utilize LegalRecovery.in's institutional batch desk to upload disputed Bilty and halting deduction ledgers via CSV. Our legal recovery infrastructure automates multi-channel fact-verified demand notices, synchronizes Section 63 BSA telematics evidence, and coordinates pan-India Order XXXVII Summary Suits or MSEFC filings without crippling operational cash flow.",
       },
     },
   ],
@@ -859,7 +859,7 @@ export default function TruckDetentionRecoveryPage() {
                   </div>
 
                   <p className="text-xs text-slate-400 leading-relaxed italic">
-                    Legal Outcome: Upon receiving an advocate notice backed by AIS-140 GPS heatmaps and GST E-Way Bill extension timestamps under BSA 2023 Section 63, the corporate debtor’s legal counsel advised immediate release of the ₹3.76L principal plus negotiated interest to prevent an Order XXXVII summary decree and disclosure in their Form 3CD tax audit under Section 43B(h).
+                    Legal Outcome: Upon receiving a fact-verified notice backed by AIS-140 GPS heatmaps and GST E-Way Bill extension timestamps under BSA 2023 Section 63, the corporate debtor’s legal counsel advised immediate release of the ₹3.76L principal plus negotiated interest to prevent an Order XXXVII summary decree and disclosure in their Form 3CD tax audit under Section 43B(h).
                   </p>
                 </div>
               </div>

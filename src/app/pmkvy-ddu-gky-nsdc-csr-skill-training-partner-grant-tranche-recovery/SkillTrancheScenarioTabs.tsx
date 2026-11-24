@@ -87,7 +87,7 @@ const SCENARIOS: ScenarioTab[] = [
       {
         step: "Issue Commercial Demand Notice + s.12A Mediation / Order 37 Suit",
         description:
-          "Serve an Advocate Demand Notice on the CSR Foundation and its parent corporate sponsor (where co-signatory) claiming principal tranche + 18% contractual/commercial interest under the Interest Act, 1978.",
+          "Serve a Fact-Verified Demand Notice on the CSR Foundation and its parent corporate sponsor (where co-signatory) claiming principal tranche + 18% contractual/commercial interest under the Interest Act, 1978.",
       },
       {
         step: "Prosecute Dishonoured Milestone Cheques Under NI Act s.138",

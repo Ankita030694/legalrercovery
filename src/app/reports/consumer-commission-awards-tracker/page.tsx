@@ -677,7 +677,7 @@ export default function ConsumerCommissionAwardsTrackerPage() {
                         Verified 15-Day Pre-Litigation Advocate Legal Notice:
                       </strong>
                       <p className="text-xs sm:text-sm mt-0.5 leading-relaxed">
-                        Serving an advocate notice via Registered Speed Post and Section 63 BSA electronic mail established willful corporate defiance under Section 2(47) CPA 2019, consistently resulting in higher mental agony damages (₹15,000–₹50,000) and legal costs. Check our transparent <Link href="/legal-notice-charges" className="text-blue-700 underline font-semibold">legal notice charges</Link> schedule.
+                        Serving a fact-verified notice via Registered Speed Post and Section 63 BSA electronic mail established willful corporate defiance under Section 2(47) CPA 2019, consistently resulting in higher mental agony damages (₹15,000–₹50,000) and legal costs. Check our transparent <Link href="/legal-notice-charges" className="text-blue-700 underline font-semibold">legal notice charges</Link> schedule.
                       </p>
                     </div>
                   </li>
@@ -972,7 +972,7 @@ export default function ConsumerCommissionAwardsTrackerPage() {
                       <li>• Base Refund Granted: <strong>₹38,000</strong></li>
                       <li>• 9% Annual Interest for 14 Months Delay: <strong>₹3,990</strong></li>
                       <li>• Mental Harassment &amp; Physical Agony Damages: <strong>₹20,000</strong></li>
-                      <li>• Advocate Notice &amp; Court Litigation Expenses: <strong>₹6,500</strong></li>
+                      <li>• Fact-Verified Notice &amp; Court Litigation Expenses: <strong>₹6,500</strong></li>
                       <li className="pt-1.5 border-t border-emerald-300 font-black text-sm text-emerald-950">
                         Total Recovery Paid by Corporation: <strong>₹68,490</strong>
                       </li>

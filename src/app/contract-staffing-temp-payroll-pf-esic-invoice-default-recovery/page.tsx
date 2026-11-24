@@ -263,7 +263,7 @@ const HOWTO_SCHEMA = {
   "@type": "HowTo",
   name: "7-Step Operational Recovery SOP for Contract Staffing & Payroll Invoices",
   description:
-    "Advocate-backed standard operating procedure to recover overdue contract staffing bills, out-of-pocket payroll disbursements, EPF, ESIC, and 18% GST.",
+    "Fact-verified standard operating procedure to recover overdue contract staffing bills, out-of-pocket payroll disbursements, EPF, ESIC, and 18% GST.",
   step: [
     {
       "@type": "HowToStep",

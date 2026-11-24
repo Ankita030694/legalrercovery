@@ -627,7 +627,7 @@ export default function AutoAncillaryRecoveryPage() {
                   },
                   {
                     step: "04",
-                    title: "Serve 15-Day Advocate Notice",
+                    title: "Serve 15-Day Fact-Verified Notice",
                     desc: "Deliver statutory tri-channel demand notice invoking MSMED Act 3x RBI interest and Section 43B(h) tax disallowances.",
                     badge: "Tri-Channel Service",
                   },
@@ -963,7 +963,7 @@ export default function AutoAncillaryRecoveryPage() {
               </h2>
               <div className="space-y-4 text-xs sm:text-sm text-slate-600 leading-relaxed mb-6">
                 <p>
-                  Informal commercial emails and polite accounting follow-ups are routinely ignored by OEM supply-chain executives. Escalation requires serving a formal, advocate-vetted 15-Day Statutory Legal Demand Notice signed by institutional counsel.
+                  Informal commercial emails and polite accounting follow-ups are routinely ignored by OEM supply-chain executives. Escalation requires serving a formal, fact-verified 15-Day Statutory Legal Demand Notice signed by institutional counsel.
                 </p>
                 <p>
                   To maximize legal efficacy, the demand notice must be dispatched via a verified <strong>Tri-Channel Protocol</strong>:
@@ -995,7 +995,7 @@ export default function AutoAncillaryRecoveryPage() {
                   </div>
                 </div>
                 <p>
-                  For an in-depth comparison of MSEFC statutory conciliation versus direct advocate demand notices, review our detailed guide on{" "}
+                  For an in-depth comparison of MSEFC statutory conciliation versus direct fact-verified demand notices, review our detailed guide on{" "}
                   <Link
                     href="/msme-delayed-payment-recovery-samadhan-vs-legal-notice"
                     className="text-[#DC2626] font-bold hover:underline"

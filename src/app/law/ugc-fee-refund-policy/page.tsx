@@ -168,7 +168,7 @@ const FAQS = [
   {
     question: "College fees refund na kare toh UGC complaint aur legal notice kaise bheje?",
     answer:
-      "Agar college fees wapas na kare, toh sabse pehle UGC e-Samadhan portal par online complaint darj karein. Phir LegalRecovery.in ke verified advocates ke zariye college Registrar ko UGC rules ke tahat 15 din ka legal demand notice bhejein. Iske baad aap e-Jagriti par case file kar sakte hain.",
+      "Agar college fees wapas na kare, toh sabse pehle UGC e-Samadhan portal par online complaint darj karein. Phir LegalRecovery.in ke zariye (hamari team aapke facts verify karti hai) college Registrar ko UGC rules ke tahat 15 din ka legal demand notice bhejein. Iske baad aap e-Jagriti par case file kar sakte hain.",
   },
 ];
 
@@ -799,7 +799,7 @@ export default function UgcFeeRefundPolicyPage() {
                     </span>
                     <div className="space-y-1 sm:space-y-1.5">
                       <h3 className="text-sm sm:text-base md:text-lg font-bold text-slate-900">
-                        Serve a Formal Statutory Advocate Legal Demand Notice
+                        Serve a Formal Statutory Fact-Verified Legal Demand Notice
                       </h3>
                       <p className="text-xs sm:text-sm leading-relaxed">
                         When administrative escalation yields no reversal within 30 days, engage an advocate to issue a statutory demand notice to the College Principal, Registrar, and Governing Educational Trust. Dispatched via Registered Speed Post and Section 63 BSA electronic mail, the notice demands 100% fee reimbursement, 18% penal interest, return of certificates, and legal damages within a strict 15-day cure window.

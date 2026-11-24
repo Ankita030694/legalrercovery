@@ -34,7 +34,7 @@ const OOH_SCENARIOS: ScenarioTab[] = [
       {
         phase: "Step 2: Dual Formal Demand Notice",
         description:
-          "Issue a formal advocate demand notice simultaneously to both the Media Buying Agency (as contracting debtor under Order 37 CPC) and copy the Brand Chairman/CMO (putting them on notice regarding non-remittance and potential joint liability for conversion/unjust enrichment under ICA s.70).",
+          "Issue a formal fact-verified demand notice simultaneously to both the Media Buying Agency (as contracting debtor under Order 37 CPC) and copy the Brand Chairman/CMO (putting them on notice regarding non-remittance and potential joint liability for conversion/unjust enrichment under ICA s.70).",
       },
       {
         phase: "Step 3: Summary Suit Filing",

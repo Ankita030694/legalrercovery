@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Wrong CIBIL Report? RBI Delay Penalty & Legal Notice",
     description:
-      "Statutory guide on disputing erroneous credit reports under CICRA 2005, enforcing RBI's ₹100/day compensation rule for delayed rectification, and serving an advocate legal notice.",
+      "Statutory guide on disputing erroneous credit reports under CICRA 2005, enforcing RBI's ₹100/day compensation rule for delayed rectification, and serving a fact-verified legal notice.",
     url: `${SITE_URL}/cibil-wrong-reporting-dispute-compensation-legal-notice`,
     type: "article",
     siteName: "LegalRecovery.in",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Wrong CIBIL Report? RBI Delay Penalty & Legal Notice",
     description:
-      "Statutory guide on disputing erroneous credit reports under CICRA 2005, enforcing RBI's ₹100/day compensation rule for delayed rectification, and serving an advocate legal notice.",
+      "Statutory guide on disputing erroneous credit reports under CICRA 2005, enforcing RBI's ₹100/day compensation rule for delayed rectification, and serving a fact-verified legal notice.",
     site: "@legalrecoveryin",
     creator: "@legalrecoveryin",
     images: [`${SITE_URL}/blog_money_recovery.png`],
@@ -140,7 +140,7 @@ const FAQS = [
   {
     question: "How do I remove an unknown loan or fraudulent account from my CIBIL report?",
     answer:
-      "To purge an unknown loan or identity theft tradeline: (1) Download your official Credit Information Report (CIR) and note the Account Number and Member Name; (2) File an immediate complaint on the National Cyber Crime Portal (cybercrime.gov.in) or at your local police cyber cell for PAN impersonation; (3) Raise an official online dispute on the CIBIL / Experian Consumer Dispute Portal selecting 'Account Does Not Belong to Me'; (4) Send a formal written grievance to the Principal Nodal Officer (PNO) of the reporting bank enclosing the cyber complaint acknowledgement; and (5) If unresolved after 21 days, serve an advocate legal demand notice demanding deletion of the tradeline under Section 21 of CICRA 2005 alongside statutory delay compensation.",
+      "To purge an unknown loan or identity theft tradeline: (1) Download your official Credit Information Report (CIR) and note the Account Number and Member Name; (2) File an immediate complaint on the National Cyber Crime Portal (cybercrime.gov.in) or at your local police cyber cell for PAN impersonation; (3) Raise an official online dispute on the CIBIL / Experian Consumer Dispute Portal selecting 'Account Does Not Belong to Me'; (4) Send a formal written grievance to the Principal Nodal Officer (PNO) of the reporting bank enclosing the cyber complaint acknowledgement; and (5) If unresolved after 21 days, serve a fact-verified legal demand notice demanding deletion of the tradeline under Section 21 of CICRA 2005 alongside statutory delay compensation.",
   },
   {
     question: "Why does my closed loan still show as active or overdue on CIBIL?",
@@ -160,7 +160,7 @@ const FAQS = [
   {
     question: "What should I do if a bank rejects my home loan or credit card because of wrong CIBIL data?",
     answer:
-      "If an erroneous CIBIL entry leads to a loan or credit card rejection: (1) Obtain the official Loan Rejection Letter or Sanction Declination Memo from the prospective lender specifying low CIBIL score as the rejection ground; (2) Collect your proof showing the derogatory remark is false (e.g., bank statement, NOC, cyber complaint); (3) Serve a formal advocate statutory legal notice on the delinquent bank demanding immediate score rectification, a formal apology, and compensation for lost commercial opportunity; and (4) If unresolved within 30 days, file a complaint on the RBI CMS portal (cms.rbi.org.in) or initiate a consumer complaint under Section 35 CPA 2019 claiming compensation up to ₹5,00,000 for financial injury.",
+      "If an erroneous CIBIL entry leads to a loan or credit card rejection: (1) Obtain the official Loan Rejection Letter or Sanction Declination Memo from the prospective lender specifying low CIBIL score as the rejection ground; (2) Collect your proof showing the derogatory remark is false (e.g., bank statement, NOC, cyber complaint); (3) Serve a formal fact-verified statutory legal notice on the delinquent bank demanding immediate score rectification, a formal apology, and compensation for lost commercial opportunity; and (4) If unresolved within 30 days, file a complaint on the RBI CMS portal (cms.rbi.org.in) or initiate a consumer complaint under Section 35 CPA 2019 claiming compensation up to ₹5,00,000 for financial injury.",
   },
   {
     question: "Do credit repair agencies or CIBIL fixers have legal power to remove authentic default records?",
@@ -375,7 +375,7 @@ export default function CibilDisputeCompensationPage() {
                       <tr>
                         <th className="py-2.5 pr-4 font-bold text-slate-700">Legal Notice Drafting Cost</th>
                         <td className="py-2.5 text-slate-800 font-semibold text-red-600">
-                          Flat ₹999 (Advocate drafted, served by Email + WhatsApp; Speed Post optional at ₹450)
+                          Flat ₹999 (Fact-verified, served by Email + WhatsApp; Speed Post optional at ₹450)
                         </td>
                       </tr>
                     </tbody>
@@ -549,7 +549,7 @@ export default function CibilDisputeCompensationPage() {
                     </span>
                     <div className="space-y-1.5 flex-1">
                       <h4 className="text-sm sm:text-base font-bold text-red-950">
-                        Step 3: Serve Advocate Statutory Legal Demand Notice
+                        Step 3: Serve Fact-Verified Statutory Legal Demand Notice
                       </h4>
                       <p className="text-xs sm:text-sm text-slate-800 leading-relaxed">
                         If the bank fails to purge the wrongful data or closes your ticket with generic automated templates within 15–21 days, instruct an advocate to draft and serve an official <strong>Statutory Demand Notice</strong>. The notice calls upon the Bank Managing Director, Head of Retail Operations, and TransUnion CIBIL to expunge the tradeline within 15 days, put them on notice regarding accrued ₹100/day penalties under RBI Circular DoR.FIN.REC.48, and reserve rights to claim ₹5 lakh in damages. Served via Registered Speed Post and digitally delivered under Section 63 BSA 2023.
@@ -659,7 +659,7 @@ export default function CibilDisputeCompensationPage() {
                     <rect x="30" y="160" width="780" height="90" rx="8" fill="#111827" stroke="#4B5563" strokeWidth="1.5" />
                     <text x="50" y="185" fill="#FBBF24" fontSize="12" fontWeight="bold">LEGAL ESCALATION RAIL (IF UNRESOLVED AT DAY 30)</text>
                     <text x="50" y="210" fill="#E5E7EB" fontSize="11">
-                      1. Serve Advocate Legal Notice (15-Day Cure) → 2. File Complaint at RBI Ombudsman (cms.rbi.org.in)
+                      1. Serve Fact-Verified Legal Notice (15-Day Cure) → 2. File Complaint at RBI Ombudsman (cms.rbi.org.in)
                     </text>
                     <text x="50" y="230" fill="#9CA3AF" fontSize="11">
                       3. Consumer Court (e-Jagriti): Claim damages for mortgage rejection, loss of reputation &amp; legal fees.
@@ -1027,7 +1027,7 @@ export default function CibilDisputeCompensationPage() {
                     className="p-3.5 rounded-xl border border-slate-200 hover:border-red-300 hover:bg-red-50/30 transition-all flex items-center justify-between group"
                   >
                     <span className="font-semibold text-slate-800 group-hover:text-red-700">
-                      Legal Notice Costs &amp; Lawyer Drafting Fees in India
+                      Legal Notice Costs &amp; Notice Drafting Fees in India
                     </span>
                     <span className="text-slate-400 group-hover:text-red-600">→</span>
                   </Link>

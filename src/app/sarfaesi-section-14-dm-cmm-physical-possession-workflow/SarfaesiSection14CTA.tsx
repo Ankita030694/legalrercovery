@@ -47,7 +47,7 @@ export default function SarfaesiSection14CTA({
                       Test 1 Live Overdue Case Now
                     </h4>
                     <p className="text-xs text-slate-300 mb-4 leading-relaxed">
-                      Draft a statutory demand notice or Section 13/14 compliance review. Includes Advocate vetting, Speed Post RPAD dispatch, and BSA 2023 s.63 electronic proof.
+                      Draft a statutory demand notice or Section 13/14 compliance review. Includes Fact verification, Speed Post RPAD dispatch, and BSA 2023 s.63 electronic proof.
                     </p>
                   </div>
                   <div className="space-y-3">
@@ -59,7 +59,7 @@ export default function SarfaesiSection14CTA({
                       {buttonText} &mdash; &#8377;{basePrice}
                     </button>
                     <div className="text-[11px] text-slate-400 text-center flex items-center justify-center gap-2">
-                      <span>&check; 24h Advocate Review</span>
+                      <span>&check; 24h Fact Verification</span>
                       <span>&bull;</span>
                       <span>&check; Tri-Channel Notice</span>
                     </div>
@@ -76,7 +76,7 @@ export default function SarfaesiSection14CTA({
                       Bulk CSV Portfolio Escalation (10 to 10,000+ Defaulters)
                     </h4>
                     <p className="text-xs text-slate-300 mb-4 leading-relaxed">
-                      Upload your NPA / SMA-2 portfolio spreadsheet. Batch generate Section 13(2) notices, Section 14 affidavit packs, and automated CERSAI charge audits with dedicated legal panel representation.
+                      Upload your NPA / SMA-2 portfolio spreadsheet. Batch generate Section 13(2) notices, Section 14 affidavit packs, and automated CERSAI charge audits with dedicated recovery support.
                     </p>
                   </div>
                   <div className="space-y-3">
@@ -94,7 +94,7 @@ export default function SarfaesiSection14CTA({
                         Manage Bank Representees
                       </Link>
                       <span>&bull;</span>
-                      <span>Pan-India Panel Advocates</span>
+                      <span>Pan-India Dispatch Network</span>
                     </div>
                   </div>
                 </div>

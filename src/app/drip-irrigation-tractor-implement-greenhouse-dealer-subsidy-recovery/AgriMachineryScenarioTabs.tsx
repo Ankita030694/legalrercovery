@@ -55,7 +55,7 @@ const SCENARIOS: ScenarioTab[] = [
       {
         step: "Lock In Signed Commissioning & JIR Acceptance",
         detail:
-          "Serve an Advocate Demand Notice confronting the beneficiary with their own signed MIDH Joint Inspection & Satisfaction Certificate submitted to the Horticulture Department.",
+          "Serve a Fact-Verified Demand Notice confronting the beneficiary with their own signed MIDH Joint Inspection & Satisfaction Certificate submitted to the Horticulture Department.",
       },
       {
         step: "Present Margin PDCs & Issue 15-Day s.138 Notice",
@@ -114,7 +114,7 @@ const SCENARIOS: ScenarioTab[] = [
       {
         step: "Dispatch Bilingual English + Hindi/Regional Notices",
         detail:
-          "Serve simultaneous Advocate notices via RPAD, Email, and WhatsApp across Rajkot, Jalgaon, Pune, Ludhiana, and Coimbatore dealer belts.",
+          "Serve simultaneous Fact-verified notices via RPAD, Email, and WhatsApp across Rajkot, Jalgaon, Pune, Ludhiana, and Coimbatore dealer belts.",
       },
       {
         step: "Convert Unpaid Accounts to MSEFC / Order XXXVII",

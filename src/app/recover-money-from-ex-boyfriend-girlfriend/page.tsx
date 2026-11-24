@@ -139,7 +139,7 @@ const SCENARIO_CARDS = [
     description:
       "You transferred funds directly to your ex-partner via UPI, Google Pay, PhonePe, or IMPS/NEFT, and you possess chat messages where they requested the loan or promised repayment.",
     keyProof: "Bank passbook statement with UTR numbers + exported WhatsApp chat history with Section 63 BSA certificate.",
-    nextStep: "Serve an Advocate 15-Day Statutory Legal Demand Notice demanding principal + interest.",
+    nextStep: "Serve a 15-Day Statutory Legal Demand Notice demanding principal + interest.",
     href: "#heading-playbook",
   },
   {
@@ -221,9 +221,9 @@ const FAQS = [
       "Only if dishonest intention existed at the very inception of taking the money. As held by the Supreme Court in ARCI v. Nimra Cerglass and S.W. Palanitkar, a mere failure to repay money after a breakup is a civil dispute, not criminal cheating. However, if your ex used a fake identity, fabricated a medical emergency, took money under false marriage promises while already married, or cheated multiple people, an FIR under Section 318 (Cheating) and Section 316 (Criminal Breach of Trust) of the Bharatiya Nyaya Sanhita, 2023 is maintainable.",
   },
   {
-    question: "How does serving an advocate legal notice help recover money from an ex-partner?",
+    question: "How does serving a legal notice help recover money from an ex-partner?",
     answer:
-      "A formal statutory legal notice drafted by an advocate and served via Registered Speed Post and email creates an undeniable public record. It officially demands repayment within 15 days, dismantles their ability to claim it was an unconditional gift, and notifies them of impending civil summary proceedings under Order XXXVII CPC (where their bank accounts and salary can be attached) and interest claims. In over 70% of personal loan disputes, a formal notice compels a negotiated settlement without entering a courtroom.",
+      "A formal statutory legal notice prepared on verified facts and served via Registered Speed Post and email creates an undeniable public record. It officially demands repayment within 15 days, dismantles their ability to claim it was an unconditional gift, and notifies them of impending civil summary proceedings under Order XXXVII CPC (where their bank accounts and salary can be attached) and interest claims. In over 70% of personal loan disputes, a formal notice compels a negotiated settlement without entering a courtroom.",
   },
   {
     question: "What should I do if my ex has blocked my phone number and social media?",
@@ -233,7 +233,7 @@ const FAQS = [
   {
     question: "Boyfriend ya girlfriend breakup ke baad udhar diya hua paisa wapas na kare toh kya karein?",
     answer:
-      "Agar aapke partner ne relationship ke dauran liya hua loan breakup ke baad lautane se mana kar diya hai, toh sabse pehle apne saare bank account statement, UPI UTR numbers aur WhatsApp chat backups ko surakshit karein. Bhartiya Anubandh Adhiniyam 1872 ke Section 10 ke tehat oral agreement bhi valid loan hota hai. Aap ek advocate ke madhyam se 15 din ka formal statutory Legal Notice Speed Post aur email dwara bhej sakte hain. Yadi fir bhi payment na aaye, toh Civil Court mein Order 37 CPC ke tehat Summary Suit daayil karke apna paisa byaj samet vasool kiya ja sakta hai.",
+      "Agar aapke partner ne relationship ke dauran liya hua loan breakup ke baad lautane se mana kar diya hai, toh sabse pehle apne saare bank account statement, UPI UTR numbers aur WhatsApp chat backups ko surakshit karein. Bhartiya Anubandh Adhiniyam 1872 ke Section 10 ke tehat oral agreement bhi valid loan hota hai. Aap 15 din ka formal statutory Legal Notice Speed Post aur email dwara bhej sakte hain. Yadi fir bhi payment na aaye, toh Civil Court mein Order 37 CPC ke tehat Summary Suit daayil karke apna paisa byaj samet vasool kiya ja sakta hai.",
   },
 ];
 
@@ -360,7 +360,7 @@ export default function RecoverMoneyFromExPartnerPage() {
                 Statutory Summary (Recovering Money Lent to an Ex-Boyfriend or Girlfriend)
               </p>
               <p>
-                Under Section 10 and Section 70 of the Indian Contract Act, 1872, loans given to romantic partners are legally recoverable debts. Bank statements, UPI UTR numbers, and WhatsApp chats are primary admissible evidence under Section 63 of Bharatiya Sakshya Adhiniyam, 2023. If your ex refuses repayment, claims it was a gift, or blocks you, serving a formal 15-day statutory advocate legal notice stops limitation expiry and paves the way for a summary recovery suit under Order XXXVII CPC.
+                Under Section 10 and Section 70 of the Indian Contract Act, 1872, loans given to romantic partners are legally recoverable debts. Bank statements, UPI UTR numbers, and WhatsApp chats are primary admissible evidence under Section 63 of Bharatiya Sakshya Adhiniyam, 2023. If your ex refuses repayment, claims it was a gift, or blocks you, serving a formal 15-day statutory legal notice stops limitation expiry and paves the way for a summary recovery suit under Order XXXVII CPC.
               </p>
             </div>
 
@@ -617,11 +617,11 @@ export default function RecoverMoneyFromExPartnerPage() {
                         3
                       </span>
                       <h3 className="text-base sm:text-lg font-bold text-slate-900">
-                        Step 3: Issue a Formal Advocate Statutory Legal Demand Notice
+                        Step 3: Issue a Formal Statutory Legal Demand Notice
                       </h3>
                     </div>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed pl-10">
-                      If informal requests are ignored or rejected, engage an advocate to dispatch an official statutory demand notice. The notice is served via Registered Speed Post with tracking and email. It details the transactional chronology, rejects sham &quot;gift&quot; claims, cites Sections 10 and 70 of the Contract Act, and grants a strict 15-day window to settle the principal with commercial interest before court action.
+                      If informal requests are ignored or rejected, send an official statutory demand notice. The notice is served via Registered Speed Post with tracking and email. It details the transactional chronology, rejects sham &quot;gift&quot; claims, cites Sections 10 and 70 of the Contract Act, and grants a strict 15-day window to settle the principal with commercial interest before court action.
                     </p>
                   </li>
 
@@ -762,7 +762,7 @@ export default function RecoverMoneyFromExPartnerPage() {
                       <g>
                         <circle cx="380" cy="70" r="30" fill="#DBEAFE" stroke="#2563EB" strokeWidth="2.5" />
                         <text x="380" y="75" textAnchor="middle" fill="#1E40AF" fontSize="14" fontWeight="bold">03</text>
-                        <text x="380" y="125" textAnchor="middle" fill="#0F172A" fontSize="11" fontWeight="bold">Advocate Legal Notice</text>
+                        <text x="380" y="125" textAnchor="middle" fill="#0F172A" fontSize="11" fontWeight="bold">Legal Notice</text>
                         <text x="380" y="142" textAnchor="middle" fill="#64748B" fontSize="9">15-Day Speed Post + AD</text>
                       </g>
 
@@ -800,7 +800,7 @@ export default function RecoverMoneyFromExPartnerPage() {
                   Case Study: Recovering ₹4.80L Personal Loan Lent to Ex-Partner
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
-                  The following real-world illustrative case demonstrates how evidence compilation and an advocate demand notice resolved an acrimonious debt dispute without a drawn-out civil trial:
+                  The following real-world illustrative case demonstrates how evidence compilation and a legal demand notice resolved an acrimonious debt dispute without a drawn-out civil trial:
                 </p>
 
                 <div className="bg-[#111827] text-white rounded-2xl p-5 sm:p-8 border border-slate-800 space-y-5">
@@ -829,7 +829,7 @@ export default function RecoverMoneyFromExPartnerPage() {
                     <div className="space-y-1.5 p-3.5 bg-slate-800/60 rounded-xl border border-slate-700/60">
                       <span className="text-slate-400 font-bold block">The Legal Action Taken:</span>
                       <p className="text-slate-300 leading-relaxed">
-                        The claimant compiled bank statements showing 12-digit UTR credits, retrieved archived WhatsApp threads where the partner texted &quot;will return ₹2L from my joining bonus&quot;, and certified them under Section 63 BSA 2023. An advocate served an official 15-day statutory legal notice to her residential and corporate employer address.
+                        The claimant compiled bank statements showing 12-digit UTR credits, retrieved archived WhatsApp threads where the partner texted &quot;will return ₹2L from my joining bonus&quot;, and certified them under Section 63 BSA 2023. Our team verified the facts and served an official 15-day statutory legal notice to her residential and corporate employer address.
                       </p>
                     </div>
                   </div>
@@ -948,7 +948,7 @@ export default function RecoverMoneyFromExPartnerPage() {
                     <div>
                       <strong className="text-slate-900 font-bold block">2. Posting on Social Media or Contacting Their Employer Informally</strong>
                       <p className="text-slate-600 leading-relaxed">
-                        Publicly naming and shaming your ex on Instagram, LinkedIn, or Twitter or sending informal vitriolic emails to their corporate HR creates civil and criminal defamation liability. A formal statutory legal notice dispatched by an advocate is a privileged legal communication; a social media smear is not.
+                        Publicly naming and shaming your ex on Instagram, LinkedIn, or Twitter or sending informal vitriolic emails to their corporate HR creates civil and criminal defamation liability. A formal statutory legal notice is a privileged legal communication; a social media smear is not.
                       </p>
                     </div>
                   </li>

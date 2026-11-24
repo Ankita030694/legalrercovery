@@ -37,7 +37,7 @@ const PROBLEMS: ProblemTab[] = [
           "Explicitly decline store credit notes, voucher codes, or wallet balance. Demand direct credit to your bank account / card within 7 business days under CPA E-Commerce Rules.",
       },
       {
-        step: "Serve an Advocate Legal Demand Notice",
+        step: "Serve a Fact-Verified Legal Demand Notice",
         description:
           "If the merchant fails to refund within 7 days, dispatch a formal statutory legal notice demanding the principal sum plus 18% annual commercial interest and compensation for physical disruption.",
       },

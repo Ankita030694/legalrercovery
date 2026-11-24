@@ -63,7 +63,7 @@ const SCENARIOS: ScenarioItem[] = [
       "File a parallel MSEFC Samadhaan reference (or Order XXXVII CPC summary recovery notice) and explicitly offer to deposit the dies/plates upon full payment or court-ordered bank guarantee—neutralizing any police or Magistrate coercion.",
     ],
     outcomeMetric:
-      "Police stations routinely close commercial die/plate complaints as 'civil disputes' once an advocate-certified ledger, PO lien clause, and BSA s.63 correspondence pack are placed on record.",
+      "Police stations routinely close commercial die/plate complaints as 'civil disputes' once a fact-verified ledger, PO lien clause, and BSA s.63 correspondence pack are placed on record.",
   },
   {
     id: "idle-cylinders-dechroming",

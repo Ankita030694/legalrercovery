@@ -149,7 +149,7 @@ const FAQS = [
   {
     question: "What should I write in a bonus not received mail to HR?",
     answer:
-      "Your bonus reminder email to HR must contain: (1) Full employee particulars including Employee ID and designation, (2) The exact accounting quarter or financial year under review, (3) Documented achievement of targets (e.g., CRM closure records, KPI metrics, manager appraisal rating), (4) Net calculated bonus/incentive sum claimed in INR, (5) Statutory references to Section 17(2) / Section 26 of Code on Wages and Section 73 of Indian Contract Act, (6) Your bank account coordinates, and (7) A clear 7-day payment deadline before initiating advocate legal notice escalation. Use our interactive template island above to draft this in 60 seconds.",
+      "Your bonus reminder email to HR must contain: (1) Full employee particulars including Employee ID and designation, (2) The exact accounting quarter or financial year under review, (3) Documented achievement of targets (e.g., CRM closure records, KPI metrics, manager appraisal rating), (4) Net calculated bonus/incentive sum claimed in INR, (5) Statutory references to Section 17(2) / Section 26 of Code on Wages and Section 73 of Indian Contract Act, (6) Your bank account coordinates, and (7) A clear 7-day payment deadline before initiating legal notice escalation. Use our interactive template island above to draft this in 60 seconds.",
   },
   {
     question: "Can HR claim that performance bonus is 100% discretionary and refuse to pay it?",
@@ -159,17 +159,17 @@ const FAQS = [
   {
     question: "What legal action can I take if HR ignores my bonus follow-up email?",
     answer:
-      "If HR fails to credit your earned bonus within 7 days of receiving your email: (1) Re-forward the mail to the Managing Director, CFO, and Board of Directors, (2) Issue a formal 15-day statutory advocate legal demand notice under Section 63 BSA via Registered Speed Post and legal email claiming 18% penal interest, and (3) File a formal wage recovery claim before the jurisdictional Labour Commissioner on the central Samadhan portal or an application under Section 33C(2) of the Industrial Disputes Act.",
+      "If HR fails to credit your earned bonus within 7 days of receiving your email: (1) Re-forward the mail to the Managing Director, CFO, and Board of Directors, (2) Issue a formal 15-day statutory legal demand notice under Section 63 BSA via Registered Speed Post and legal email claiming 18% penal interest, and (3) File a formal wage recovery claim before the jurisdictional Labour Commissioner on the central Samadhan portal or an application under Section 33C(2) of the Industrial Disputes Act.",
   },
   {
     question: "Can I claim sales commission and quarterly incentives after receiving my relieving letter?",
     answer:
-      "Yes. Receiving your relieving letter or signing a standard boilerplate 'no-dues' declaration does not extinguish your legal right to claim uncredited commissions. Courts recognize that exit clearances are frequently executed under economic duress. You have up to 3 years from the date the payment fell due under the Limitation Act, 1963 to initiate recovery proceedings through advocate notice and civil or labour recovery forums.",
+      "Yes. Receiving your relieving letter or signing a standard boilerplate 'no-dues' declaration does not extinguish your legal right to claim uncredited commissions. Courts recognize that exit clearances are frequently executed under economic duress. You have up to 3 years from the date the payment fell due under the Limitation Act, 1963 to initiate recovery proceedings through legal notice and civil or labour recovery forums.",
   },
   {
     question: "Company incentive ya bonus nahi de rahi toh legal notice kaise bheje?",
     answer:
-      "Agar company targets poore hone ke baad ya resignation ke baad aapka earned bonus, quarterly sales incentive ya variable pay rok leti hai, toh aap verified advocate ke madhyam se 15-day statutory legal notice bhej sakte hain. LegalRecovery.in par advocate Code on Wages 2019, Payment of Bonus Act aur Indian Contract Act ke tehat company ke Registered Office aur Directors par Registered Speed Post aur email se demand notice bhejte hain jismein 18% interest ka claim rehta hai.",
+      "Agar company targets poore hone ke baad ya resignation ke baad aapka earned bonus, quarterly sales incentive ya variable pay rok leti hai, toh aap 15-day statutory legal notice bhej sakte hain. LegalRecovery.in par hum Code on Wages 2019, Payment of Bonus Act aur Indian Contract Act ke tehat company ke Registered Office aur Directors par Registered Speed Post aur email se demand notice bhejte hain jismein 18% interest ka claim rehta hai.",
   },
 ];
 
@@ -320,7 +320,7 @@ export default function BonusIncentiveNotReceivedMailPage() {
                 Statutory Summary (Bonus &amp; Incentive Non-Disbursement Mandate)
               </p>
               <p>
-                Under Section 26 of the Code on Wages, 2019 and the Payment of Bonus Act, employers must disburse statutory bonus within 8 months of the financial year close. Contractual sales commissions and performance incentives vest upon target achievement under Section 73 of the Indian Contract Act. Resigning does not forfeit earned dues; employees can issue a 7-day demand email followed by a statutory advocate legal notice and Labour Commissioner recovery.
+                Under Section 26 of the Code on Wages, 2019 and the Payment of Bonus Act, employers must disburse statutory bonus within 8 months of the financial year close. Contractual sales commissions and performance incentives vest upon target achievement under Section 73 of the Indian Contract Act. Resigning does not forfeit earned dues; employees can issue a 7-day demand email followed by a statutory legal notice and Labour Commissioner recovery.
               </p>
             </div>
 
@@ -585,7 +585,7 @@ export default function BonusIncentiveNotReceivedMailPage() {
                     <span className="text-[10px] font-bold text-red-700 uppercase tracking-wider block mb-1">
                       Step 4
                     </span>
-                    <h3 className="font-bold text-sm">Advocate Statutory Legal Notice</h3>
+                    <h3 className="font-bold text-sm">Statutory Legal Notice</h3>
                     <p className="text-xs text-red-900 mt-1">
                       15-day statutory demand served via Registered Speed Post + Section 63 BSA Email.
                     </p>
@@ -661,7 +661,7 @@ export default function BonusIncentiveNotReceivedMailPage() {
                     {/* Step 4 */}
                     <rect x="520" y="20" width="140" height="90" rx="10" fill="url(#bonusAlert)" />
                     <text x="590" y="45" fill="#FCA5A5" fontWeight="bold" textAnchor="middle">STEP 4</text>
-                    <text x="590" y="65" fill="#FFFFFF" fontWeight="bold" textAnchor="middle">Advocate Notice</text>
+                    <text x="590" y="65" fill="#FFFFFF" fontWeight="bold" textAnchor="middle">Legal Notice</text>
                     <text x="590" y="82" fill="#FEE2E2" fontSize="10" textAnchor="middle">15-Day Demand</text>
                     <text x="590" y="98" fill="#FECACA" fontSize="9" textAnchor="middle">Speed Post + Email</text>
 
@@ -765,10 +765,10 @@ export default function BonusIncentiveNotReceivedMailPage() {
                     </span>
                     <div className="space-y-1 sm:space-y-1.5">
                       <h3 className="text-sm sm:text-base md:text-lg font-bold text-slate-900">
-                        Serve a Formal Statutory Advocate Legal Notice
+                        Serve a Formal Statutory Legal Notice
                       </h3>
                       <p className="text-xs sm:text-sm leading-relaxed">
-                        When HR ignores the 7-day email, engage an advocate to issue a 15-day statutory demand notice addressed to the company, HR Director, and Managing Director. Dispatched via Registered Speed Post and BSA Section 63 compliant electronic mail, the notice demands immediate payout alongside 18% penal interest. Review our transparent{" "}
+                        When HR ignores the 7-day email, send a 15-day statutory demand notice addressed to the company, HR Director, and Managing Director. Dispatched via Registered Speed Post and BSA Section 63 compliant electronic mail, the notice demands immediate payout alongside 18% penal interest. Review our transparent{" "}
                         <Link href="/legal-notice-charges" className="text-blue-700 underline font-semibold">
                           legal notice charges
                         </Link>
@@ -864,7 +864,7 @@ export default function BonusIncentiveNotReceivedMailPage() {
                       </tr>
                       <tr className="hover:bg-slate-50/80">
                         <th scope="row" className="py-3 px-3.5 sm:py-3.5 sm:px-4 font-semibold text-slate-900">
-                          Pre-Litigation Advocate Notice Window
+                          Pre-Litigation Legal Notice Window
                         </th>
                         <td className="py-3 px-3.5 sm:py-3.5 sm:px-4 text-red-700 font-bold">15 Calendar Days</td>
                         <td className="py-3 px-3.5 sm:py-3.5 sm:px-4 text-xs">Section 63 Bharatiya Sakshya Adhiniyam</td>
@@ -934,11 +934,11 @@ export default function BonusIncentiveNotReceivedMailPage() {
                       <strong>The Deadlock:</strong> Three weeks after closing the deals, Priya received an attractive leadership offer from a competitor and tendered her resignation, serving her full 60-day contractual notice period. Upon her relieving, HR released her base salary but completely omitted the ₹3,20,000 incentive from her FnF worksheet. HR argued that under clause 14.2 of the employee handbook, &quot;incentives are payable only to employees active on payroll at the time of incentive disbursement.&quot;
                     </p>
                     <p>
-                      <strong>The Statutory Action:</strong> Priya engaged LegalRecovery.in. An advocate drafted and served a statutory legal demand notice on the Managing Director and HR Vice President. The notice established that: (1) Target milestones were fully achieved prior to resignation and verified in Salesforce, (2) The employer received full revenue from clients, (3) Clause 14.2 was void under Section 23 and 27 of the Indian Contract Act as an unlawful restraint on career mobility, and (4) Section 17(2) of the Code on Wages mandates clearance of all terminal wages within 2 working days.
+                      <strong>The Statutory Action:</strong> Priya engaged LegalRecovery.in. The team verified the facts and served a statutory legal demand notice on the Managing Director and HR Vice President. The notice established that: (1) Target milestones were fully achieved prior to resignation and verified in Salesforce, (2) The employer received full revenue from clients, (3) Clause 14.2 was void under Section 23 and 27 of the Indian Contract Act as an unlawful restraint on career mobility, and (4) Section 17(2) of the Code on Wages mandates clearance of all terminal wages within 2 working days.
                     </p>
                     <div className="p-3.5 sm:p-4 bg-emerald-950/70 border border-emerald-700/60 rounded-xl text-emerald-200">
                       <strong className="block text-emerald-400 font-bold mb-1">The Outcome:</strong>
-                      Within 9 days of receiving the advocate legal notice via Speed Post and legal email, the company&apos;s legal counsel contacted Priya to settle. The company credited the full ₹3,20,000 along with ₹25,000 towards legal costs directly to her ICICI Bank account, issuing an amended Form 16 Part B and an unblemished relieving certificate.
+                      Within 9 days of receiving the legal notice via Speed Post and legal email, the company&apos;s legal counsel contacted Priya to settle. The company credited the full ₹3,20,000 along with ₹25,000 towards legal costs directly to her ICICI Bank account, issuing an amended Form 16 Part B and an unblemished relieving certificate.
                     </div>
                   </div>
                 </div>

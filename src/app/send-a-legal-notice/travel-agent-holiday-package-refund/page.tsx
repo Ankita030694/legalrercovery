@@ -4,7 +4,7 @@ import TravelAgentHolidayPackageRefundClient from './TravelAgentHolidayPackageRe
 const slug = 'send-a-legal-notice/travel-agent-holiday-package-refund';
 const title = 'Legal Notice to Travel Agency for Holiday Package Refund';
 const description =
-  'Travel agent refusing a holiday refund? Send an advocate-vetted legal notice under the Consumer Protection Act for quick refund recovery.';
+  'Travel agent refusing a holiday refund? Send a fact-verified legal notice under the Consumer Protection Act for quick refund recovery.';
 const url = `https://www.legalrecovery.in/${slug}`;
 const ogImage = `/images/og/travel-agent-holiday-package-refund.jpg`;
 

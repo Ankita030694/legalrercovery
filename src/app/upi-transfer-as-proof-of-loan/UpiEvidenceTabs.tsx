@@ -37,7 +37,7 @@ const SCENARIOS: EvidenceScenarioTab[] = [
           "Send a calm, specific text message asking for a repayment schedule for the specific amount transferred on that date. Even an apology, request for more time, or silent acknowledgment creates written electronic evidence.",
       },
       {
-        step: "Serve Formal Advocate Notice Under Section 70 Contract Act",
+        step: "Serve Formal Fact-Verified Notice Under Section 70 Contract Act",
         description:
           "An advocate legal notice invokes non-gratuitous delivery and Section 106 BSA (facts especially within knowledge of borrower), requiring them to repay within 15 days or face civil recovery proceedings.",
       },
@@ -91,7 +91,7 @@ const SCENARIOS: EvidenceScenarioTab[] = [
           "Demonstrate in the legal demand that the transfer was made as temporary bridge assistance, not an unconditional gift, making retention of funds unjust enrichment.",
       },
       {
-        step: "Serve Advocate Notice Demanding Proof of Gift or Past Debt",
+        step: "Serve Fact-Verified Notice Demanding Proof of Gift or Past Debt",
         description:
           "The legal notice formally calls upon the debtor to produce proof of the alleged earlier debt or gift declaration within 15 days, demolishing their fabricated defense before court filing.",
       },
@@ -118,7 +118,7 @@ const SCENARIOS: EvidenceScenarioTab[] = [
           "The 36-month limitation countdown does not run from the original lending date; under Section 19, it restarts entirely from the timestamp of the partial repayment transaction.",
       },
       {
-        step: "Issue Advocate Notice for Balance Principal & Statutory Interest",
+        step: "Issue Fact-Verified Notice for Balance Principal & Statutory Interest",
         description:
           "Serve a demand notice demanding the outstanding balance plus 6% to 18% interest under the Interest Act, 1978, citing the Section 19 limitation revival.",
       },

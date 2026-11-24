@@ -42,7 +42,7 @@ const CHECKLIST_ITEMS: ChecklistItem[] = [
   },
   {
     id: "step-6",
-    title: "6. Draft Advocate Legal Notice or File on e-Jagriti",
+    title: "6. Draft Fact-Verified Legal Notice or File on e-Jagriti",
     detail: "If the agency refuses refund, serve a statutory advocate legal notice or file a consumer petition on e-Jagriti for full refund with interest.",
     category: "Legal Escalation",
   },

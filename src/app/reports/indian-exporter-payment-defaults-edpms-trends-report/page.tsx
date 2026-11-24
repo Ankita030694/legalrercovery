@@ -93,7 +93,7 @@ const FAQS = [
     question:
       "What is the cost difference between a LegalRecovery.in international demand notice and foreign commercial litigation?",
     answer:
-      "An advocate-drafted international demand notice on LegalRecovery.in costs ₹999 flat via verified Email + WhatsApp under BSA 2023 s.63 (or ₹1,449 with Speed Post RPAD), with bulk CSV pricing for export houses managing 10 to 10,000+ open Shipping Bills. By contrast, retaining local counsel in the US, EU, or GCC for a single commercial suit typically requires ₹4,00,000 to ₹15,00,000+ upfront—making pre-litigation demand notices essential for both settlement leverage and RBI Para C.24 write-off compliance.",
+      "A fact-verified international demand notice on LegalRecovery.in costs ₹999 flat via verified Email + WhatsApp under BSA 2023 s.63 (or ₹1,449 with Speed Post RPAD), with bulk CSV pricing for export houses managing 10 to 10,000+ open Shipping Bills. By contrast, retaining local counsel in the US, EU, or GCC for a single commercial suit typically requires ₹4,00,000 to ₹15,00,000+ upfront—making pre-litigation demand notices essential for both settlement leverage and RBI Para C.24 write-off compliance.",
   },
   {
     question:
@@ -729,7 +729,7 @@ export default function ExporterDefaultsEdpmsReportPage() {
                     href="/templates/international-export-buyer-legal-demand-notice-fema-ecgc-format"
                     className="font-bold text-[#DC2626] underline"
                   >
-                    Advocate-Vetted International Export Default Legal Notice Format (FEMA &amp; ECGC Ready)
+                    Fact-Verified International Export Default Legal Notice Format (FEMA &amp; ECGC Ready)
                   </Link>
                   , and explore{" "}
                   <Link
@@ -898,7 +898,7 @@ export default function ExporterDefaultsEdpmsReportPage() {
                 </div>
 
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
-                  For cross-border invoices between USD 2,500 and USD 50,000, retaining foreign commercial litigators in New York, London, Frankfurt, or Dubai costs ₹4,00,000 to ₹15,00,000+ in upfront retainers—often exceeding 50%–100% of the disputed principal. Pre-litigation advocate demand notices reverse this asymmetry at a flat ₹999 entry cost, while creating the exact disproportionate-cost evidence required for RBI Para C.24 EDPMS write-offs.
+                  For cross-border invoices between USD 2,500 and USD 50,000, retaining foreign commercial litigators in New York, London, Frankfurt, or Dubai costs ₹4,00,000 to ₹15,00,000+ in upfront retainers—often exceeding 50%–100% of the disputed principal. Pre-litigation fact-verified demand notices reverse this asymmetry at a flat ₹999 entry cost, while creating the exact disproportionate-cost evidence required for RBI Para C.24 EDPMS write-offs.
                 </p>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -908,7 +908,7 @@ export default function ExporterDefaultsEdpmsReportPage() {
                     </span>
                     <p className="text-2xl font-black">₹999 Flat / Case</p>
                     <p className="text-xs text-slate-300 leading-relaxed">
-                      Advocate-drafted cross-border notice citing Shipping Bill No., IEC, UN CISG / Governing Law, and ECGC/EDPMS audit trails via verified Email + WhatsApp (BSA s.63). Optional RPAD (+₹450) or bulk CSV institutional desk.
+                      Fact-verified cross-border notice citing Shipping Bill No., IEC, UN CISG / Governing Law, and ECGC/EDPMS audit trails via verified Email + WhatsApp (BSA s.63). Optional RPAD (+₹450) or bulk CSV institutional desk.
                     </p>
                   </div>
                   <div className="p-5 rounded-2xl bg-slate-50 text-slate-900 space-y-2 border border-slate-200">
@@ -923,7 +923,7 @@ export default function ExporterDefaultsEdpmsReportPage() {
                 </div>
 
                 <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                  When evaluating the <strong>average recovery rate cross border legal demand india</strong> achieves across commercial trade lanes, the decisive factor is speed: serving an advocate-vetted notice within 15 to 45 days of invoice maturity prevents the overseas buyer from dissipating inventory or closing seasonal SPVs. Compare service workflows on our{" "}
+                  When evaluating the <strong>average recovery rate cross border legal demand india</strong> achieves across commercial trade lanes, the decisive factor is speed: serving a fact-verified notice within 15 to 45 days of invoice maturity prevents the overseas buyer from dissipating inventory or closing seasonal SPVs. Compare service workflows on our{" "}
                   <Link
                     href="/legal-notice-to-international-client-unpaid-invoice-recovery"
                     className="font-bold text-[#DC2626] underline"

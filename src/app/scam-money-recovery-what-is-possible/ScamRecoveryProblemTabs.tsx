@@ -146,7 +146,7 @@ const SCAM_SCENARIOS: ScamScenarioTab[] = [
           "Download complete transaction receipts, bank debit statements, UPI UTR numbers, and wallet balance screenshots before platform servers become inaccessible.",
       },
       {
-        step: "Issue Advocate Demand Notice for Refund of Principal",
+        step: "Issue Fact-Verified Demand Notice for Refund of Principal",
         description:
           "Serve a formal statutory notice under Section 2(11) of the Consumer Protection Act demanding the return of pure deposited principal within 15 calendar days.",
       },

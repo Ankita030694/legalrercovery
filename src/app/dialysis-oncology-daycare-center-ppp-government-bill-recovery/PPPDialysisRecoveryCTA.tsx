@@ -23,7 +23,7 @@ export default function PPPDialysisRecoveryCTA({ className = "" }: PPPDialysisRe
               Track 1 &bull; Single Case Test
             </span>
             <p className="text-lg sm:text-xl font-extrabold text-white mb-2">
-              Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Advocate Drafted &middot; Email + WhatsApp + Speed Post RPAD)
+              Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Fact-Verified &middot; Email + WhatsApp + Speed Post RPAD)
             </p>
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
               Serve a rigorous Section 80 CPC statutory notice on an aged District Health Society, NHM State Directorate, or CMO billing freeze. Includes statutory 60-day limitation computation, PMNDP portal session reconciliations, and demand for 3x RBI Bank Rate compound interest under MSMED Act Section 16.

@@ -11,11 +11,11 @@ import { PaymentModal } from "@/components/PaymentModal";
 const faqs = [
   {
     question: "What is a legal notice and why is it important?",
-    answer: "A legal notice is a formal written communication drafted by an advocate and sent to an individual or entity who has failed to fulfill a legal obligation. It serves as a pre-litigation step, informing the recipient of their default and giving them a deadline (usually 15-30 days) to comply. Under Indian law, sending a legal notice is often a mandatory requirement before initiating a civil suit or criminal proceeding."
+    answer: "A legal notice is a formal written communication prepared on verified facts and sent to an individual or entity who has failed to fulfill a legal obligation. It serves as a pre-litigation step, informing the recipient of their default and giving them a deadline (usually 15-30 days) to comply. Under Indian law, sending a legal notice is often a mandatory requirement before initiating a civil suit or criminal proceeding."
   },
   {
     question: "How does the Legal Recovery legal notice service work?",
-    answer: "Simply submit your dispute details and supporting documents on our platform. Our panel advocate reviews your case, drafts a professionally worded legal notice citing the applicable laws and statutory provisions, and dispatches it via Registered Post and digital channels (email/WhatsApp). You receive tracking details and a digital copy of the notice within 48 hours of submission."
+    answer: "Simply enter your dispute details in our online form. Our team verifies the facts you submit, prepares a professionally worded legal notice citing the applicable laws and statutory provisions, and dispatches it via Registered Post and digital channels (email/WhatsApp). You receive tracking details and a digital copy of the notice within 48 hours of submission."
   },
   {
     question: "What types of disputes can I send a legal notice for?",
@@ -27,19 +27,19 @@ const faqs = [
   },
   {
     question: "What is the cost of sending a legal notice through your platform?",
-    answer: "Our legal notice service starts at a flat fee of ₹999. This covers advocate review, professional drafting with relevant legal sections, delivery by email and WhatsApp, and a soft copy of the notice for your records. Speed Post is optional at ₹450 per party, charged at cost. There are no other fees."
+    answer: "Our legal notice service starts at a flat fee of ₹999. This covers fact verification, professional drafting with relevant legal sections, delivery by email and WhatsApp, and a soft copy of the notice for your records. Speed Post is optional at ₹450 per party, charged at cost. There are no other fees."
   },
   {
     question: "How long does it take for the recipient to receive the legal notice?",
-    answer: "The advocate-drafted notice is dispatched within 48 hours of your submission. It is delivered by email and WhatsApp for immediate awareness, and you receive delivery tracking details. If you add the optional Speed Post (₹450 per party), postal delivery typically takes 5-7 business days depending on the destination city."
+    answer: "The fact-verified notice is dispatched within 48 hours of your submission. It is delivered by email and WhatsApp for immediate awareness, and you receive delivery tracking details. If you add the optional Speed Post (₹450 per party), postal delivery typically takes 5-7 business days depending on the destination city."
   },
   {
-    question: "What documents do I need to provide for drafting a legal notice?",
-    answer: "You need basic proof of the dispute such as agreements, invoices, employment letters, bank statements, rent agreements, bounced cheque copies, email or WhatsApp communications, and any other documentary evidence supporting your claim. Our team will guide you on specific documents based on your dispute type."
+    question: "What information and documents should I keep ready for a legal notice?",
+    answer: "You enter the case details in our online form (you do not upload files). Keep basic proof of the dispute such as agreements, invoices, employment letters, bank statements, rent agreements, bounced cheque copies, email or WhatsApp communications, and any other documentary evidence ready, as you will need it if the matter goes to court or a consumer forum. Our team verifies the facts you submit."
   },
   {
     question: "Can I send a legal notice for a personal loan not returned by a friend?",
-    answer: "Yes, absolutely. If you have proof of the loan transaction such as bank transfer receipts, UPI transaction records, WhatsApp or text messages acknowledging the debt, or a signed promissory note, our advocates can draft a formal legal notice demanding repayment with a deadline."
+    answer: "Yes, absolutely. If you have proof of the loan transaction such as bank transfer receipts, UPI transaction records, WhatsApp or text messages acknowledging the debt, or a signed promissory note, our team can draft a formal legal notice demanding repayment with a deadline."
   },
   {
     question: "What happens if the recipient ignores the legal notice?",
@@ -47,7 +47,7 @@ const faqs = [
   },
   {
     question: "Is the entire legal notice process handled online?",
-    answer: "Yes, the entire process is 100% digital and paperless from your end. You submit details and documents online, our advocates review and draft the notice, we handle dispatch by email and WhatsApp (Speed Post optional), and you can track delivery status from your dashboard. No office visits or in-person meetings are required."
+    answer: "Yes, the entire process is 100% digital and paperless from your end. You submit your case details online, our team verifies the facts and prepares the notice, we handle dispatch by email and WhatsApp (Speed Post optional), and you can track delivery status from your dashboard. No office visits or in-person meetings are required."
   }
 ];
 
@@ -188,7 +188,7 @@ export default function LegalNoticeClient({ location }: LegalNoticeClientProps) 
               {pageTitle}
             </h1>
             <p className="text-sm md:text-2xl mb-6 md:mb-10 max-w-3xl mx-auto text-gray-200">
-              Get a professional advocate-drafted legal notice sent in <strong>{locationName}</strong> for unpaid dues, breach of contract, property disputes, or any legal demand. Fast, affordable, and fully online — starting at just ₹999.
+              Get a professional fact-verified legal notice sent in <strong>{locationName}</strong> for unpaid dues, breach of contract, property disputes, or any legal demand. Fast, affordable, and fully online — starting at just ₹999.
             </p>
             <button 
               onClick={() => setIsPaymentModalOpen(true)}
@@ -224,7 +224,7 @@ export default function LegalNoticeClient({ location }: LegalNoticeClientProps) 
                     Need to send a legal notice in <strong>{locationName}</strong>? Whether you are dealing with an employer who has withheld your salary, a landlord refusing to return your security deposit, a client who hasn&apos;t paid your invoice, or a party that has breached a contract — a formal legal notice is the most effective first step toward resolution.
                   </p>
                   <p className="text-sm md:text-lg leading-relaxed mb-3 md:mb-6 text-gray-700">
-                    <strong>Legal Recovery</strong> offers professional legal notice drafting and dispatch services in <strong>{locationName}</strong>. Our experienced advocate panel drafts notices that are legally precise, cite the relevant statutory provisions, and create maximum pressure on the defaulting party to comply — all for a flat fee of just ₹999.
+                    <strong>Legal Recovery</strong> offers professional legal notice drafting and dispatch services in <strong>{locationName}</strong>. Our team drafts notices that are legally precise, cite the relevant statutory provisions, and create maximum pressure on the defaulting party to comply — all for a flat fee of just ₹999.
                   </p>
                   <p className="text-sm md:text-lg leading-relaxed text-gray-700">
                     Unlike traditional methods that require multiple advocate consultations and office visits, our platform is entirely digital. Submit your dispute details online, and our team handles everything from drafting to email and WhatsApp dispatch, ensuring your legal notice reaches the recipient promptly. Speed Post with postal acknowledgment is optional.
@@ -243,7 +243,7 @@ export default function LegalNoticeClient({ location }: LegalNoticeClientProps) 
                     Under Indian law, a legal notice serves as a formal demand to the opposing party, putting them on notice that failure to comply may result in civil or criminal proceedings. Section 80 of the Code of Civil Procedure (CPC) mandates that a two-month notice be served before filing a suit against the government or public officials. Similarly, Section 138 of the Negotiable Instruments Act requires a mandatory notice within 30 days of a cheque being dishonored.
                   </p>
                   <p className="text-sm md:text-lg leading-relaxed mb-3 md:mb-6 text-gray-700">
-                    Beyond statutory requirements, a legal notice demonstrates seriousness of intent, creates a documented paper trail, and often compels the recipient to settle the matter without the expense and time of a full court trial. In {locationName}, our advocate panel drafts notices that are tailored to local jurisdictional requirements, ensuring maximum legal efficacy.
+                    Beyond statutory requirements, a legal notice demonstrates seriousness of intent, creates a documented paper trail, and often compels the recipient to settle the matter without the expense and time of a full court trial. In {locationName}, our team drafts notices that are tailored to local jurisdictional requirements, ensuring maximum legal efficacy.
                   </p>
                 </section>
 
@@ -303,7 +303,7 @@ export default function LegalNoticeClient({ location }: LegalNoticeClientProps) 
                 <section id="types-of-notices" className="scroll-mt-32">
                   <h2 className="text-xl md:text-3xl font-bold text-gray-900 mb-4 md:mb-6">Types of Legal Notices We Draft in {locationName}</h2>
                   <p className="text-sm md:text-lg leading-relaxed mb-4 md:mb-8 text-gray-700">
-                    Our advocate panel specializes in drafting a comprehensive range of legal notices tailored to the specific nature of your dispute:
+                    Our team specializes in drafting a comprehensive range of legal notices tailored to the specific nature of your dispute:
                   </p>
                   <div className="grid md:grid-cols-2 gap-4 md:gap-8">
                     <div className="bg-white border border-gray-200 rounded-xl p-4 md:p-6 shadow-sm hover:shadow-md transition-shadow">
@@ -380,16 +380,16 @@ export default function LegalNoticeClient({ location }: LegalNoticeClientProps) 
                       <div>
                         <h3 className="text-lg md:text-2xl font-bold text-gray-900 mb-2 md:mb-3">Submit Your Dispute Details</h3>
                         <p className="text-gray-700 leading-relaxed text-sm md:text-base">
-                          Fill out our simple online form with the details of your dispute, the opposing party&apos;s information, and the demand you wish to make. Upload supporting documents such as invoices, agreements, communications, and bank statements.
+                          Fill out our simple online form with the details of your dispute, the opposing party&apos;s information, and the demand you wish to make. Keep supporting documents such as invoices, agreements, communications, and bank statements ready for later use.
                         </p>
                       </div>
                     </div>
                     <div className="flex flex-col md:flex-row gap-4 md:gap-6 items-start">
                       <div className="flex-shrink-0 w-14 md:w-16 h-14 md:h-16 bg-[#DC2626] rounded-full flex items-center justify-center text-white text-xl md:text-2xl font-bold">2</div>
                       <div>
-                        <h3 className="text-lg md:text-2xl font-bold text-gray-900 mb-2 md:mb-3">Advocate Review & Drafting</h3>
+                        <h3 className="text-lg md:text-2xl font-bold text-gray-900 mb-2 md:mb-3">Fact Verification & Drafting</h3>
                         <p className="text-gray-700 leading-relaxed text-sm md:text-base">
-                          Our panel advocate reviews your submission, identifies the applicable legal provisions, and drafts a professionally worded legal notice. The notice clearly states the facts, the legal obligation, the demand, and the deadline for compliance.
+                          Our team reviews your submission, identifies the applicable legal provisions, and drafts a professionally worded legal notice. The notice clearly states the facts, the legal obligation, the demand, and the deadline for compliance.
                         </p>
                       </div>
                     </div>
@@ -418,7 +418,7 @@ export default function LegalNoticeClient({ location }: LegalNoticeClientProps) 
                 <section id="documents" className="scroll-mt-32">
                   <h2 className="text-xl md:text-3xl font-bold text-gray-900 mb-4 md:mb-6">Documents Required for Sending a Legal Notice from {locationName}</h2>
                   <p className="text-sm md:text-lg leading-relaxed mb-4 md:mb-6 text-gray-700">
-                    To draft an effective and legally sound notice, we typically require the following documentation:
+                    To prepare an effective and legally sound notice, we typically need the following details (keep these documents ready; you enter the facts in our form, you do not upload them):
                   </p>
                   <ul className="grid md:grid-cols-2 gap-4">
                     <li className="flex items-center bg-gray-50 p-4 rounded-lg"><span className="text-[#DC2626] mr-3">✓</span> Identity Proof (Aadhaar / PAN / Passport)</li>
@@ -441,8 +441,8 @@ export default function LegalNoticeClient({ location }: LegalNoticeClientProps) 
                   <div className="grid md:grid-cols-3 gap-4 md:gap-6 text-center">
                     <div className="p-4 md:p-6 rounded-xl bg-gray-50 hover:bg-[#fff9e6] transition-colors">
                       <div className="text-3xl md:text-4xl mb-3 md:mb-4">📝</div>
-                      <h3 className="font-bold text-lg md:text-xl mb-2">Expert Advocate Drafting</h3>
-                      <p className="text-gray-600 text-sm">Every notice is drafted by experienced advocates who specialize in the specific area of law relevant to your dispute, ensuring legal precision and maximum impact.</p>
+                      <h3 className="font-bold text-lg md:text-xl mb-2">Notice Drafting</h3>
+                      <p className="text-gray-600 text-sm">Every notice is prepared on facts verified by our team, ensuring legal precision and maximum impact.</p>
                     </div>
                     <div className="p-4 md:p-6 rounded-xl bg-gray-50 hover:bg-[#fff9e6] transition-colors">
                       <div className="text-3xl md:text-4xl mb-3 md:mb-4">🚀</div>
@@ -452,7 +452,7 @@ export default function LegalNoticeClient({ location }: LegalNoticeClientProps) 
                     <div className="p-4 md:p-6 rounded-xl bg-gray-50 hover:bg-[#fff9e6] transition-colors">
                       <div className="text-3xl md:text-4xl mb-3 md:mb-4">💵</div>
                       <h3 className="font-bold text-lg md:text-xl mb-2">Flat ₹999 Fee</h3>
-                      <p className="text-gray-600 text-sm">No hourly billing, no retainers, no hidden charges. One transparent flat fee covers advocate drafting and delivery by email and WhatsApp. Speed Post is optional at ₹450 per party.</p>
+                      <p className="text-gray-600 text-sm">No hourly billing, no retainers, no hidden charges. One transparent flat fee covers notice drafting and delivery by email and WhatsApp. Speed Post is optional at ₹450 per party.</p>
                     </div>
                   </div>
                 </section>
@@ -477,7 +477,7 @@ export default function LegalNoticeClient({ location }: LegalNoticeClientProps) 
                     <div className="bg-gray-50 p-4 md:p-8 rounded-xl border border-gray-100 relative">
                       <div className="text-4xl text-[#DC2626] absolute top-4 left-4 opacity-20">&quot;</div>
                       <p className="text-gray-700 italic mb-4 relative z-10 text-sm md:text-base">
-                        &quot;My landlord in Bangalore refused to return my ₹2 lakh security deposit. I used Legal Recovery to send a legal notice. The advocate drafted it perfectly, citing the right provisions. My landlord agreed to refund the deposit within a week of receiving the notice.&quot;
+                        &quot;My landlord in Bangalore refused to return my ₹2 lakh security deposit. I used Legal Recovery to send a legal notice. The team verified the facts and prepared it perfectly, citing the right provisions. My landlord agreed to refund the deposit within a week of receiving the notice.&quot;
                       </p>
                       <div className="flex items-center">
                         <div className="w-10 h-10 bg-gray-300 rounded-full flex items-center justify-center text-gray-600 font-bold mr-3">M</div>
@@ -524,7 +524,7 @@ export default function LegalNoticeClient({ location }: LegalNoticeClientProps) 
                       </button>
                     </div>
                     <p className="mt-4 md:mt-8 text-xs md:text-sm opacity-70">
-                      Advocate Drafted • Email + WhatsApp • 48-Hour Dispatch
+                      Fact-Verified • Email + WhatsApp • 48-Hour Dispatch
                     </p>
                   </div>
                 </section>
@@ -538,7 +538,7 @@ export default function LegalNoticeClient({ location }: LegalNoticeClientProps) 
               <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
                 <h3 className="text-xl font-bold text-gray-900 mb-4">Send a Legal Notice</h3>
                 <p className="text-gray-600 mb-6 text-sm">
-                  Get an expert advocate-drafted legal notice dispatched from {locationName} within 48 hours.
+                  Get a fact-verified legal notice dispatched from {locationName} within 48 hours.
                 </p>
                 <button
                   onClick={() => setIsPaymentModalOpen(true)}

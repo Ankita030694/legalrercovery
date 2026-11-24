@@ -263,7 +263,7 @@ export default function IspDataCenterNoticeTemplatePage() {
             <span>&bull;</span>
             <span>ISP, Data Center, CPaaS &amp; MSP</span>
             <span>&bull;</span>
-            <span>Advocate-Vetted</span>
+            <span>Fact-Verified</span>
           </div>
 
           <h1 className="text-2xl sm:text-3xl md:text-5xl font-black tracking-tight text-white leading-tight mb-4 sm:mb-6 break-words">
@@ -679,7 +679,7 @@ export default function IspDataCenterNoticeTemplatePage() {
                   9
                 </span>
                 <h2 className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight">
-                  Dispatch One Advocate Notice or Upload Postpaid CSV Batch
+                  Dispatch One Fact-Verified Notice or Upload Postpaid CSV Batch
                 </h2>
               </div>
               <IspTelecomNoticeCTA />

@@ -183,7 +183,7 @@ const FAQS = [
   {
     question: "How does LegalRecovery assist MEA-registered Recruiting Agents with cross-border invoice recovery?",
     answer:
-      "LegalRecovery provides a specialized cross-border recovery desk for MEA-registered Recruiting Agents. We analyze the eMigrate Demand Letters, airline manifests, trade-test sign-offs, and email correspondence to draft advocate-vetted international demand notices in English and Arabic. Notices are served simultaneously via international registered courier, certified email, and WhatsApp, while copies are dispatched to the Labor Attache at the relevant Indian Embassy. For persistent defaults, our legal panel drafts administrative petitions for eMigrate foreign employer blacklisting before the Protector General of Emigrants (PGE) and institutes Commercial Summary Suits under Order XXXVII CPC or Section 44A reciprocating decree executions in the UAE.",
+      "LegalRecovery provides a specialized cross-border recovery desk for MEA-registered Recruiting Agents. We analyze the eMigrate Demand Letters, airline manifests, trade-test sign-offs, and email correspondence to draft fact-verified international demand notices in English and Arabic. Notices are served simultaneously via international registered courier, certified email, and WhatsApp, while copies are dispatched to the Labor Attache at the relevant Indian Embassy. For persistent defaults, our team drafts administrative petitions for eMigrate foreign employer blacklisting before the Protector General of Emigrants (PGE) and institutes Commercial Summary Suits under Order XXXVII CPC or Section 44A reciprocating decree executions in the UAE.",
   },
 ];
 
@@ -251,7 +251,7 @@ export default function OverseasRecruitingAgentFeeRecoveryPage() {
       {
         "@type": "HowToStep",
         position: 3,
-        name: "Serve International Advocate Legal Notice with MEA Intimation",
+        name: "Serve International Fact-Verified Legal Notice with MEA Intimation",
         text: "Dispatch a formal bilingual legal notice to the foreign employer's headquarters and Indian liaison desk via international registered post and certified email, copying the Labor Attache at the Indian Embassy.",
       },
       {
@@ -735,7 +735,7 @@ export default function OverseasRecruitingAgentFeeRecoveryPage() {
                       <span className="block text-[10px] font-bold uppercase tracking-wider text-red-400 mb-1">
                         Stage 2 &bull; Day 16–30
                       </span>
-                      <p className="text-sm font-bold text-white mb-1">International Advocate Notice Dispatch</p>
+                      <p className="text-sm font-bold text-white mb-1">International Fact-Verified Notice Dispatch</p>
                       <p className="text-xs text-slate-300">
                         Serve bilingual statutory demand invoking Indian Contract Act s.70/73, FEMA services export rules, and 15-day settlement deadline.
                       </p>
@@ -770,7 +770,7 @@ export default function OverseasRecruitingAgentFeeRecoveryPage() {
                   </div>
 
                   <p>
-                    Need an advocate-drafted statutory notice template for staffing or placement fee disputes? Consult our vetted{" "}
+                    Need a ready-to-use statutory notice template for staffing or placement fee disputes? Consult our vetted{" "}
                     <Link
                       href="/templates/recruitment-backdoor-hiring-and-staffing-invoice-legal-notice"
                       className="text-red-700 font-bold underline hover:text-red-800"

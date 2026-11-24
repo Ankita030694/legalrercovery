@@ -218,7 +218,7 @@ const HOWTO_SCHEMA = {
       "@type": "HowToStep",
       position: 2,
       name: "Serve Statutory Demand Notice under Contract Act s.73/74",
-      text: "Issue a comprehensive 15-day Advocate Notice setting out actual vacancy projections, unamortized fit-out CapEx ledger, rent-free clawbacks, and brokerage loss.",
+      text: "Issue a comprehensive 15-day Fact-Verified Notice setting out actual vacancy projections, unamortized fit-out CapEx ledger, rent-free clawbacks, and brokerage loss.",
     },
     {
       "@type": "HowToStep",
@@ -279,7 +279,7 @@ const FAQ_SCHEMA = {
   })),
 };
 
-// TODO(reviewer): src/data/reviewers.ts is absent in this repository; advocate verification attribution applied directly.
+// TODO(reviewer): src/data/reviewers.ts is absent in this repository; fact verification attribution applied directly.
 
 export default function CommercialLeaseLockInBreachPage() {
   const breadcrumbItems = [
@@ -882,7 +882,7 @@ export default function CommercialLeaseLockInBreachPage() {
                     </span>
                     <div className="space-y-1">
                       <p className="text-xs sm:text-sm font-bold text-slate-900">
-                        Issue a Tri-Channel Advocate Demand Notice
+                        Issue a Tri-Channel Fact-Verified Demand Notice
                       </p>
                       <p className="text-xs text-slate-600 leading-relaxed">
                         Dispatch a 15-day formal Legal Notice settled by a commercial advocate on Advocates Act letterhead. The notice must specify: (1) accrued rent arrears and unpaid CAM, (2) unamortized CapEx schedule, (3) rent-free period clawback, (4) projected vacancy loss, and (5) interest at 18% p.a. Simultaneously deliver via registered Speed Post RPAD, email, and WhatsApp.
@@ -1069,7 +1069,7 @@ export default function CommercialLeaseLockInBreachPage() {
 
                 <div className="mt-6 pt-4 border-t border-slate-100 text-xs text-slate-500 space-y-1">
                   <p>
-                    <strong>Editorial Review &amp; Citation Integrity:</strong> Authored by the Institutional Commercial Real Estate Litigation Desk at LegalRecovery.in, verified by Advocate Anuj Anand Malik, Supreme Court of India &amp; Delhi High Court bar membership.
+                    <strong>Editorial Review &amp; Citation Integrity:</strong> Authored by the Institutional Commercial Real Estate Litigation Desk at LegalRecovery.in, prepared on verified facts Anuj Anand Malik, Supreme Court of India &amp; Delhi High Court bar membership.
                   </p>
                   <p>
                     For builders handling residential buyer payment default notices, refer to our specialized guide on{" "}

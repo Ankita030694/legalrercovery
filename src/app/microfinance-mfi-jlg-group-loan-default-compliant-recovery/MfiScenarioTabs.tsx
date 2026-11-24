@@ -33,7 +33,7 @@ const SCENARIOS: MfiScenario[] = [
       {
         step: "Serve Individualized Vernacular Speed Post RPAD Notices",
         detail:
-          "Dispatch formal Advocate Legal Notices in the local vernacular (Hindi, Marathi, Tamil, Bengali, Kannada, etc.) + English via Speed Post RPAD and WhatsApp to the ring-leaders, citing exact principal, accrued interest, and Lok Adalat referral.",
+          "Dispatch formal Fact-Verified Legal Notices in the local vernacular (Hindi, Marathi, Tamil, Bengali, Kannada, etc.) + English via Speed Post RPAD and WhatsApp to the ring-leaders, citing exact principal, accrued interest, and Lok Adalat referral.",
       },
       {
         step: "File Selective Criminal / PSS s.25 & Lok Adalat Reference",

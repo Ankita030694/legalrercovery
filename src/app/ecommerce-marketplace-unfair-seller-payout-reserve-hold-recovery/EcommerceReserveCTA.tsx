@@ -25,10 +25,10 @@ export default function EcommerceReserveCTA({
               Track 1 &bull; Single Marketplace Dispute Recovery Test
             </span>
             <p className="text-lg sm:text-xl font-extrabold text-white mb-2">
-              Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Advocate Drafted &middot; Email + WhatsApp + Speed Post RPAD)
+              Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Fact-Verified &middot; Email + WhatsApp + Speed Post RPAD)
             </p>
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-              Serve a defect-free, advocate-settled Legal Demand Notice to Amazon India, Flipkart, Meesho, or Myntra legal and grievance cells. Challenge unlawful 90–180 day reserve freezes under Section 74 Indian Contract Act, demand unfreezing of crystallized seller proceeds, and present BSA 2023 Section 63 electronic packing and unboxing video certifications.
+              Serve a defect-free, fact-verified Legal Demand Notice to Amazon India, Flipkart, Meesho, or Myntra legal and grievance cells. Challenge unlawful 90–180 day reserve freezes under Section 74 Indian Contract Act, demand unfreezing of crystallized seller proceeds, and present BSA 2023 Section 63 electronic packing and unboxing video certifications.
             </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-3">

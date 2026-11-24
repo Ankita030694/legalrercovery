@@ -130,7 +130,7 @@ const FAQS = [
     question:
       "Should I scrap or shred abandoned brand-printed pouches immediately to free godown space?",
     answer:
-      "Never scrap unlifted printed stock without creating a court-admissible audit trail first. Destroying goods prematurely lets the buyer allege in court that you never manufactured the balance 3.5 tons. Always serve a formal 15-day Final Lifting & Pre-Scrap Notice via Advocate Speed Post RPAD + Email + WhatsApp, record weighbridge slips, rack photographs, and two independent recycler scrap quotes (₹8–₹14/kg), and execute witnessed shredding/baling only after the notice window expires.",
+      "Never scrap unlifted printed stock without creating a court-admissible audit trail first. Destroying goods prematurely lets the buyer allege in court that you never manufactured the balance 3.5 tons. Always serve a formal 15-day Final Lifting & Pre-Scrap Notice via Speed Post RPAD + Email + WhatsApp, record weighbridge slips, rack photographs, and two independent recycler scrap quotes (₹8–₹14/kg), and execute witnessed shredding/baling only after the notice window expires.",
   },
   {
     question:
@@ -192,7 +192,7 @@ const HOWTO_SCHEMA = {
       "@type": "HowToStep",
       position: 2,
       name: "Serve Ready-for-Dispatch & 15-Day Final Lifting Notice (Sale of Goods s.44)",
-      text: "Dispatch a formal Advocate Legal Notice via Email, WhatsApp, and Speed Post RPAD fixing a 15-day deadline to lift remaining printed rolls/cartons and triggering monthly Section 44 godown storage rent.",
+      text: "Dispatch a formal Fact-Verified Legal Notice via Email, WhatsApp, and Speed Post RPAD fixing a 15-day deadline to lift remaining printed rolls/cartons and triggering monthly Section 44 godown storage rent.",
     },
     {
       "@type": "HowToStep",
@@ -753,7 +753,7 @@ export default function CustomPrintedPackagingUnliftedStockRecoveryPage() {
                   },
                   {
                     stage: "Stage 2 · 15-Day Lifting & s.44 Rent Notice",
-                    text: "Serve a formal Ready-for-Dispatch Advocate Notice via Email, WhatsApp, and Speed Post RPAD setting a 15-day final lifting window and activating monthly godown storage charges.",
+                    text: "Serve a formal Ready-for-Dispatch Fact-Verified Notice via Email, WhatsApp, and Speed Post RPAD setting a 15-day final lifting window and activating monthly godown storage charges.",
                   },
                   {
                     stage: "Stage 3 · Cylinder Lien & s.43B(h) Pressure",
@@ -1259,7 +1259,7 @@ export default function CustomPrintedPackagingUnliftedStockRecoveryPage() {
                     tag: "Live Notice Template",
                     title: "MSME Delayed Payment Demand Notice Format (s.15–18 & 43B(h))",
                     href: "/templates/msme-delayed-payment-demand-notice",
-                    desc: "Advocate-vetted MSME statutory demand notice template with 15/45-day credit cap and tax disallowance warning.",
+                    desc: "Ready-to-use MSME statutory demand notice template with 15/45-day credit cap and tax disallowance warning.",
                   },
                   {
                     tag: "Live Statutory Guide",

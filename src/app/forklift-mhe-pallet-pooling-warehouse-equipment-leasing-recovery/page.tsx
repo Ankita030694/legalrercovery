@@ -219,7 +219,7 @@ export default function ForkliftMhePalletPoolingRecoveryPage() {
         "@type": "HowToStep",
         position: 3,
         name: "Serve Dual Statutory Notice (s.152 + s.160 + BNS s.316)",
-        text: "Dispatch an advocate demand notice via Email, WhatsApp, and Speed Post RPAD claiming overdue rent, OEM repair bills, lost pallet buyout fees, and lock-in damages.",
+        text: "Dispatch a fact-verified demand notice via Email, WhatsApp, and Speed Post RPAD claiming overdue rent, OEM repair bills, lost pallet buyout fees, and lock-in damages.",
       },
       {
         "@type": "HowToStep",

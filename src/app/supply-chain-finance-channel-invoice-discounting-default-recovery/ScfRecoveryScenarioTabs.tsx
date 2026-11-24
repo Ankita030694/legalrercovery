@@ -124,7 +124,7 @@ const SCF_SCENARIOS: ScfScenario[] = [
       {
         step: "Step 2: Urgent Criminal-Civil Composite Notice (BNS s.318 / s.336)",
         detail:
-          "Serve an urgent Advocate Notice on the vendor's promoters/directors detailing the dual-financing fraud, warning of EOW/police complaint under BNS s.318 (replacing IPC s.420) and s.336, and demanding 48-hour restitution.",
+          "Serve an urgent Fact-Verified Notice on the vendor's promoters/directors detailing the dual-financing fraud, warning of EOW/police complaint under BNS s.318 (replacing IPC s.420) and s.336, and demanding 48-hour restitution.",
       },
       {
         step: "Step 3: Criminal Complaint + Order 38 Rule 5 Attachment",

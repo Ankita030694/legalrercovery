@@ -25,10 +25,10 @@ export default function AutoAncillaryRecoveryCTA({
               Track 1 &bull; Single Stalled OEM Debit Note / Tooling Notice
             </span>
             <p className="text-lg sm:text-xl font-extrabold text-white mb-2">
-              Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Advocate Drafted &middot; Email + WhatsApp + Speed Post RPAD)
+              Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Fact-Verified &middot; Email + WhatsApp + Speed Post RPAD)
             </p>
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-              Serve a high-impact, advocate-vetted 15-day statutory demand notice on a Tier-1 OEM or vehicle manufacturer for arbitrary line-stoppage debit notes, retrospective price cuts, or stuck tooling capital. Enforces Bailee Particular Lien under Section 170 Indian Contract Act, Section 42 Sale of Goods Act deemed acceptance, MSMED Act 3x RBI compound penal interest, and Section 43B(h) buyer tax disallowance warnings.
+              Serve a high-impact, fact-verified 15-day statutory demand notice on a Tier-1 OEM or vehicle manufacturer for arbitrary line-stoppage debit notes, retrospective price cuts, or stuck tooling capital. Enforces Bailee Particular Lien under Section 170 Indian Contract Act, Section 42 Sale of Goods Act deemed acceptance, MSMED Act 3x RBI compound penal interest, and Section 43B(h) buyer tax disallowance warnings.
             </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-3">

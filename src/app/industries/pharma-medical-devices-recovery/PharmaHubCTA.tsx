@@ -27,10 +27,10 @@ export default function PharmaHubCTA({ className = "" }: PharmaHubCTAProps) {
                 Test 1 Live Overdue Case Now (&rupee;{basePrice})
               </h3>
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-                Audit advocate notice precision on one stuck chemist ledger, unbilled hospital implant consignment, or overdue CDMO invoice before committing portfolio volume. Served via verified Email, Business WhatsApp, and Speed Post RPAD with Section 63 BSA certification.
+                Audit legal notice precision on one stuck chemist ledger, unbilled hospital implant consignment, or overdue CDMO invoice before committing portfolio volume. Served via verified Email, Business WhatsApp, and Speed Post RPAD with Section 63 BSA certification.
               </p>
               <ul className="space-y-1.5 text-xs text-slate-200 mb-6">
-                <li>&check; Advocate-drafted Order 37 / s.43B(h) / s.138 demand notice</li>
+                <li>&check; Fact-verified Order 37 / s.43B(h) / s.138 demand notice</li>
                 <li>&check; Multi-invoice batch &amp; Drug License (Form 20B/21B) schedule</li>
                 <li>&check; Simultaneous Email + WhatsApp + Speed Post RPAD tracking</li>
               </ul>

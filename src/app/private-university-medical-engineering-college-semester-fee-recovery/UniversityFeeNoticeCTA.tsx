@@ -34,7 +34,7 @@ export default function UniversityFeeNoticeCTA() {
                 <span className="text-xl font-black text-white">₹999</span>
               </div>
               <h4 className="text-base font-bold text-white mb-2">
-                Test 1 Live Overdue Case Now (₹999 · Advocate Drafted · Email + WhatsApp + Speed Post RPAD)
+                Test 1 Live Overdue Case Now (₹999 · Fact-Verified · Email + WhatsApp + Speed Post RPAD)
               </h4>
               <p className="text-xs text-slate-300 leading-relaxed mb-4">
                 Test our UGC-compliant University Demand Notice on one high-value final-year, hostel, or education-loan-diversion defaulter. Advocates annex your admission bond and ERP fee ledger into a 15-day statutory demand.

@@ -28,10 +28,10 @@ export default function MsmeInterestCTA({
                 Statutory B2B Recovery • Section 16 MSMED Act &amp; Section 43B(h) Income-tax Act
               </span>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-bold tracking-tight text-white mb-3">
-                Turn Your Compound Interest Schedule Into an Enforceable Advocate Demand Notice
+                Turn Your Compound Interest Schedule Into an Enforceable Fact-Verified Demand Notice
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6">
-                Corporate buyers and CFOs rarely release held-up invoice payments on informal reminders alone. Have a verified commercial recovery advocate serve a formal statutory notice on the buyer&apos;s Directors and Company Secretary by email and WhatsApp under Section 63 BSA (Speed Post optional at ₹450 per party)—putting them on notice of mandatory <strong>20.25% monthly-compounded interest under Section 16</strong>, non-deductibility of interest under <strong>Section 23</strong>, and full invoice disallowance under <strong>Section 43B(h) of the Income-tax Act</strong> prior to MSEFC / MSME ODR filing.
+                Corporate buyers and CFOs rarely release held-up invoice payments on informal reminders alone. Serve a formal statutory notice on the buyer&apos;s Directors and Company Secretary by email and WhatsApp under Section 63 BSA (Speed Post optional at ₹450 per party)—putting them on notice of mandatory <strong>20.25% monthly-compounded interest under Section 16</strong>, non-deductibility of interest under <strong>Section 23</strong>, and full invoice disallowance under <strong>Section 43B(h) of the Income-tax Act</strong> prior to MSEFC / MSME ODR filing.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button

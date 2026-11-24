@@ -5,13 +5,13 @@ export const metadata: Metadata = {
     absolute: "Recover Stuck Money Legally | Notice ₹999 | LegalRecovery",
   },
   description:
-    "Recover unpaid salary, freelancer dues, deposits, and invoices legally. Advocate-drafted legal notice dispatched by Email and WhatsApp in 24 hours. Flat ₹999, optional Speed Post ₹450.",
+    "Recover unpaid salary, freelancer dues, deposits, and invoices legally. Fact-verified legal notice dispatched by Email and WhatsApp in 24 hours. Flat ₹999, optional Speed Post ₹450.",
   alternates: {
     canonical: "/email-landing",
   },
   openGraph: {
     title: "Recover Your Stuck Money Legally in India | LegalRecovery.in",
-    description: "Get an advocate-drafted formal legal notice dispatched by Email and WhatsApp in 24 hours. Flat ₹999 fee, optional Speed Post ₹450. Zero percentage cut. 100% online.",
+    description: "Get a fact-verified formal legal notice dispatched by Email and WhatsApp in 24 hours. Flat ₹999 fee, optional Speed Post ₹450. Zero percentage cut. 100% online.",
     url: "https://www.legalrecovery.in/email-landing",
     siteName: "LegalRecovery.in",
     locale: "en_IN",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Recover Your Stuck Money Legally in India | LegalRecovery.in",
-    description: "Get an advocate-drafted formal legal notice dispatched by Email and WhatsApp in 24 hours. Flat ₹999 fee, optional Speed Post ₹450. Zero percentage cut. 100% online.",
+    description: "Get a fact-verified formal legal notice dispatched by Email and WhatsApp in 24 hours. Flat ₹999 fee, optional Speed Post ₹450. Zero percentage cut. 100% online.",
     site: "@legalrecoveryin",
     creator: "@legalrecoveryin",
     images: ["https://www.legalrecovery.in/blog_money_recovery.png"],

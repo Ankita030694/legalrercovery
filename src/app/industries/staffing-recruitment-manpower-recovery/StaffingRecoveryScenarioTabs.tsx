@@ -48,7 +48,7 @@ const STAFFING_SCENARIOS: StaffingScenario[] = [
       {
         step: "3. Issue Statutory Backdoor-Hire Notice & Forum Escalation",
         detail:
-          "Serve an advocate demand notice calculating contractual placement fees (or penal 25% circumvention damages) with interest under Section 80/Order XXXVII CPC, followed by an MSME Samadhaan claim or summary suit.",
+          "Serve a fact-verified demand notice calculating contractual placement fees (or penal 25% circumvention damages) with interest under Section 80/Order XXXVII CPC, followed by an MSME Samadhaan claim or summary suit.",
       },
     ],
     recommendedLinks: [
@@ -86,7 +86,7 @@ const STAFFING_SCENARIOS: StaffingScenario[] = [
       {
         step: "2. Serve 15-Day Statutory Wage Reimbursement Demand",
         detail:
-          "Dispatch an institutional advocate demand notice invoking CLRA Section 21(4) joint liability, Income Tax Section 43B(h) buyer expense disallowance, and compound penal interest.",
+          "Dispatch an institutional fact-verified demand notice invoking CLRA Section 21(4) joint liability, Income Tax Section 43B(h) buyer expense disallowance, and compound penal interest.",
       },
       {
         step: "3. Deploy Staff Withdrawal Notice & Insolvency Escalation",
@@ -132,7 +132,7 @@ const STAFFING_SCENARIOS: StaffingScenario[] = [
           "Issue a formal legal communication stating that the replacement guarantee is legally voided if the 30-day invoice remains unsettled, and that internal role elimination or constructive discharge does not qualify for replacement.",
       },
       {
-        step: "3. Serve Advocate Notice for Unconditional Fee Clearance",
+        step: "3. Serve Fact-Verified Notice for Unconditional Fee Clearance",
         detail:
           "Demand immediate wire transfer of principal placement fees plus 18% p.a. commercial interest under Order XXXVII CPC, precluding bad-faith claims of candidate dissatisfaction.",
       },

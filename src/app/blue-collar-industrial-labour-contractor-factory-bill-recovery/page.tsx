@@ -287,7 +287,7 @@ const HOWTO_SCHEMA = {
       "@type": "HowToStep",
       position: 4,
       name: "Pre-Litigation Statutory Demand Notice",
-      text: "Serve an advocate legal notice under MSMED Act Section 15, CLRA Section 21(4), and Section 43B(h) of the Income Tax Act granting 15 peremptory days for clearance.",
+      text: "Serve a fact-verified legal notice under MSMED Act Section 15, CLRA Section 21(4), and Section 43B(h) of the Income Tax Act granting 15 peremptory days for clearance.",
     },
     {
       "@type": "HowToStep",
@@ -849,7 +849,7 @@ export default function BlueCollarLabourContractorRecoveryPage() {
                     </span>
                   </div>
                   <p className="text-xs text-slate-300">
-                    Serve advocate demand notice invoking Tarapore &amp; Co., Minimum Wages Act s.12, and MSMED Section 16 interest penalty.
+                    Serve fact-verified demand notice invoking Tarapore &amp; Co., Minimum Wages Act s.12, and MSMED Section 16 interest penalty.
                   </p>
                 </div>
                 <div className="bg-slate-900 text-white p-4 rounded-xl border border-slate-800">
@@ -1192,7 +1192,7 @@ export default function BlueCollarLabourContractorRecoveryPage() {
                       Peremptory 15-Day Advocate Statutory Demand Notice
                     </h3>
                     <p className="text-xs text-slate-600 mt-1">
-                      Issue a formal advocate-drafted demand notice to the Managing Director, Plant Head, and Chief Financial Officer. Cite Tarapore &amp; Co., Section 21(4) of CLRA Act, Section 15 of MSMED Act, and Section 43B(h) tax disallowance.
+                      Issue a formal fact-verified demand notice to the Managing Director, Plant Head, and Chief Financial Officer. Cite Tarapore &amp; Co., Section 21(4) of CLRA Act, Section 15 of MSMED Act, and Section 43B(h) tax disallowance.
                     </p>
                   </div>
                 </div>

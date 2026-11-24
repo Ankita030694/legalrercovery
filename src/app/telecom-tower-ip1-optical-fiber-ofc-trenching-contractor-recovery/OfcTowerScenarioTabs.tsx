@@ -33,7 +33,7 @@ const SCENARIOS: ScenarioTab[] = [
       {
         step: "Serve Deemed-Acceptance & Section 15 Notice",
         description:
-          "Issue an advocate notice recording the date of link handover, citing 15-day deemed acceptance under MSMED Act s.2(b) and demanding RA bill certification within 7 days.",
+          "Issue a fact-verified notice recording the date of link handover, citing 15-day deemed acceptance under MSMED Act s.2(b) and demanding RA bill certification within 7 days.",
       },
       {
         step: "File MSEFC Samadhaan or Order XXXVII Suit",

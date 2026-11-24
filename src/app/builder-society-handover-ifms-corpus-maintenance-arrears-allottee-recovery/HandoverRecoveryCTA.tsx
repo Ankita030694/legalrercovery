@@ -32,7 +32,7 @@ export default function HandoverRecoveryCTA({ className = "" }: HandoverRecovery
           Test 1 Overdue Allottee Case Now (₹{testPrice}) or Batch Process 10 to 1,000+ Defaulting Units via CSV
         </p>
         <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-6 max-w-3xl">
-          Whether you are a developer CRM head recovering post-OC holding charges and maintenance arrears before society handover, or an RWA managing committee chasing speculative flat owners refusing IFMS corpus, deploy court-tested RERA Section 19(10) advocate notices today.
+          Whether you are a developer CRM head recovering post-OC holding charges and maintenance arrears before society handover, or an RWA managing committee chasing speculative flat owners refusing IFMS corpus, deploy court-tested RERA Section 19(10) fact-verified notices today.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
@@ -48,10 +48,10 @@ export default function HandoverRecoveryCTA({ className = "" }: HandoverRecovery
                 </span>
               </div>
               <p className="text-base font-bold text-white mb-2">
-                Test 1 Live Overdue Case Now (Advocate Drafted)
+                Test 1 Live Overdue Case Now (Fact-Verified)
               </p>
               <p className="text-xs text-slate-300 leading-relaxed mb-4">
-                Submit details of one defaulting allottee stalling possession. Receive a bespoke advocate-drafted legal notice under RERA Section 19(10) &amp; 19(6) with holding charges, CAM arrears, SBI MCLR + 2% penal interest, delivered via Speed Post RPAD, WhatsApp, and registered email.
+                Submit details of one defaulting allottee stalling possession. Receive a bespoke fact-verified legal notice under RERA Section 19(10) &amp; 19(6) with holding charges, CAM arrears, SBI MCLR + 2% penal interest, delivered via Speed Post RPAD, WhatsApp, and registered email.
               </p>
             </div>
 
@@ -87,7 +87,7 @@ export default function HandoverRecoveryCTA({ className = "" }: HandoverRecovery
                 Bulk CSV Dispatch &amp; Multi-Tower Defaulter Desk
               </p>
               <p className="text-xs text-slate-300 leading-relaxed mb-4">
-                Engineered for multi-tower developer SPVs and large condominium associations preparing for handover. Upload your Excel/CSV ledger of defaulting allottees to generate batch advocate notices, tracked India Post consignment barcodes, and court-ready Section 19 execution packets.
+                Engineered for multi-tower developer SPVs and large condominium associations preparing for handover. Upload your Excel/CSV ledger of defaulting allottees to generate batch fact-verified notices, tracked India Post consignment barcodes, and court-ready Section 19 execution packets.
               </p>
             </div>
 

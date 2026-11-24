@@ -851,7 +851,7 @@ export default function DefectiveCarReplacementPage() {
                         3
                       </span>
                       <h3 className="text-base sm:text-lg font-bold text-slate-900">
-                        Serve a Joint 15-Day Advocate Statutory Demand Notice
+                        Serve a Joint 15-Day Fact-Verified Statutory Demand Notice
                       </h3>
                     </div>
                     <p className="text-xs sm:text-sm text-slate-700 leading-relaxed pl-9">
@@ -986,7 +986,7 @@ export default function DefectiveCarReplacementPage() {
                       <strong>Dealership Evasion:</strong> Over the subsequent 6 months, the SUV was towed to the authorised dealership workshop 5 times. The service centre performed 2 TCU software flashes, replaced the dual-clutch assembly twice, and retained the vehicle in workshop custody for a cumulative 42 days. Despite these interventions, the transmission stalled on the Bengaluru-Mysuru Expressway, nearly triggering a multi-vehicle pile-up. The dealer refused vehicle replacement, offering only a third clutch replacement.
                     </p>
                     <p>
-                      <strong>Legal Escalation:</strong> Sh. Sharma engaged LegalRecovery.in to serve a formal statutory advocate legal notice directly to the OEM&apos;s Managing Director at their Gurgaon headquarters and the local dealership. The notice invoked Chapter VI Product Liability under CPA 2019, compiled all 5 job cards and gate passes proving 42 days of loss of use, cited NCDRC rulings in <em>Maruti Suzuki v. Rajiv Kumar Mittal</em> and <em>Tata Motors v. Rajesh Tyagi</em>, and demanded either a brand new vehicle or full invoice reimbursement within 15 days.
+                      <strong>Legal Escalation:</strong> Sh. Sharma engaged LegalRecovery.in to serve a formal statutory fact-verified legal notice directly to the OEM&apos;s Managing Director at their Gurgaon headquarters and the local dealership. The notice invoked Chapter VI Product Liability under CPA 2019, compiled all 5 job cards and gate passes proving 42 days of loss of use, cited NCDRC rulings in <em>Maruti Suzuki v. Rajiv Kumar Mittal</em> and <em>Tata Motors v. Rajesh Tyagi</em>, and demanded either a brand new vehicle or full invoice reimbursement within 15 days.
                     </p>
                     <p>
                       <strong>The Resolution:</strong> Facing an airtight paper trail and potential regulatory scrutiny under Section 110A of the Motor Vehicles Act, the carmaker&apos;s Corporate Legal Counsel intervened within 11 days of receiving the notice. The OEM agreed to an out-of-court buyback: the manufacturer refunded the full invoice amount of ₹18,45,000, reimbursed ₹45,000 incurred on alternate vehicle rentals, and cleared the outstanding auto loan directly with the financing bank.

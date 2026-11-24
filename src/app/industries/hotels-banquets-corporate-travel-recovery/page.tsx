@@ -162,7 +162,7 @@ const IND_16_SPOKES: IndustrySpoke[] = [
     url: "/templates/hotel-btc-and-iata-travel-agent-corporate-credit-legal-notice",
     statute: "Order XXXVII CPC + MSMED s.16 + NI Act s.138",
     summary:
-      "Advocate-drafted commercial notice formats embedding Guest Folio, BTC Voucher, GDS PNR, and 13-digit Ticket Schedules.",
+      "Ready-to-use commercial notice formats embedding Guest Folio, BTC Voucher, GDS PNR, and 13-digit Ticket Schedules.",
   },
 ];
 
@@ -268,7 +268,7 @@ const FAQS = [
     question:
       "Can our hotel chain, banquet group, or travel agency test LegalRecovery.in on one overdue corporate account before uploading our City Ledger CSV?",
     answer:
-      "Yes. Hotels, TMCs, venues, and caterers can run one live overdue invoice, bounced banquet cheque, or defaulted BTC ledger for ₹999 (advocate-drafted and dispatched via Email, Business WhatsApp, and Speed Post RPAD) and then scale to 10–10,000+ overdue accounts inside our bulk CSV and multi-property Representees workspace.",
+      "Yes. Hotels, TMCs, venues, and caterers can run one live overdue invoice, bounced banquet cheque, or defaulted BTC ledger for ₹999 (fact-verified and dispatched via Email, Business WhatsApp, and Speed Post RPAD) and then scale to 10–10,000+ overdue accounts inside our bulk CSV and multi-property Representees workspace.",
   },
 ];
 
@@ -1240,7 +1240,7 @@ export default function HotelsBanquetsCorporateTravelRecoveryHubPage() {
                       title: "Send Legal Notice for Business to Recover Unpaid Dues",
                       href: "/send-a-legal-notice/for-business-to-recover-their-unpaid-dues",
                       tag: "B2B Notice Portal",
-                      desc: "Dispatch advocate-vetted corporate demand notices directly to Finance Controllers, CFOs, and Managing Directors.",
+                      desc: "Dispatch fact-verified corporate demand notices directly to Finance Controllers, CFOs, and Managing Directors.",
                     },
                   ].map((item) => (
                     <Link

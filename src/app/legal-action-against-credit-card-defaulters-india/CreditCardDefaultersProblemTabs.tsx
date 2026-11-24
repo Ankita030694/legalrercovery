@@ -61,7 +61,7 @@ const SCENARIOS: ProblemTab[] = [
       {
         step: "Serve Dual Digital Notice under BSA Section 63",
         description:
-          "Dispatch advocate notices simultaneously via registered email and verified messaging channels with delivery reports certified under Bharatiya Sakshya Adhiniyam standards.",
+          "Dispatch fact-verified notices simultaneously via registered email and verified messaging channels with delivery reports certified under Bharatiya Sakshya Adhiniyam standards.",
       },
       {
         step: "Obtain Court Order for Substituted Service",

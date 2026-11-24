@@ -182,14 +182,14 @@ export default function SocietyMaintenanceTOC({
                 Need Advocate Escalation?
               </p>
               <p className="text-[11px] text-slate-300 leading-relaxed">
-                For chronic defaulters owing ₹25,000+, an advocate-signed pre-litigation notice sets up your Section 101 Recovery Certificate.
+                For chronic defaulters owing ₹25,000+, a fact-verified pre-litigation notice sets up your Section 101 Recovery Certificate.
               </p>
               <a
                 href="#heading-cta-bottom"
                 onClick={(e) => scrollToSection(e, "heading-cta-bottom")}
                 className="block w-full text-center py-2 px-3 rounded-lg bg-[#DC2626] hover:bg-[#B91C1C] text-white text-xs font-bold transition-colors"
               >
-                Send Advocate Notice →
+                Send Fact-Verified Notice →
               </a>
             </div>
           </div>

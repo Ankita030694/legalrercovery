@@ -23,10 +23,10 @@ export default function TruckDetentionCTA({ className = "" }: TruckDetentionCTAP
               Track 1 &bull; Single Overdue Halting Claim Test
             </span>
             <p className="text-lg sm:text-xl font-extrabold text-white mb-2">
-              Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Advocate Drafted &middot; Email + WhatsApp + Speed Post RPAD)
+              Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Fact-Verified &middot; Email + WhatsApp + Speed Post RPAD)
             </p>
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-              Serve a high-impact, advocate-vetted 15-day statutory demand notice on a defaulting consignee, corporate shipper, or factory operator. Pre-empts bogus &quot;unstamped POD&quot; excuses using AIS-140 GPS telematics, FASTag logs, and E-Way Bill extension timestamps under Section 63 of Bharatiya Sakshya Adhiniyam, 2023. Demands contractually agreed daily halting dues plus 18% commercial interest under Indian Contract Act Section 73 or MSMED Act Section 16.
+              Serve a high-impact, fact-verified 15-day statutory demand notice on a defaulting consignee, corporate shipper, or factory operator. Pre-empts bogus &quot;unstamped POD&quot; excuses using AIS-140 GPS telematics, FASTag logs, and E-Way Bill extension timestamps under Section 63 of Bharatiya Sakshya Adhiniyam, 2023. Demands contractually agreed daily halting dues plus 18% commercial interest under Indian Contract Act Section 73 or MSMED Act Section 16.
             </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-3">

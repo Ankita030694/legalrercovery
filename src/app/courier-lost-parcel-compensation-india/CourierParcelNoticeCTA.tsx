@@ -31,7 +31,7 @@ export default function CourierParcelNoticeCTA({
                 Recover Full Value for Lost, Damaged, or Stolen Parcels
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6">
-                Have a verified advocate draft and serve an official statutory legal demand notice directly to Delhivery, Blue Dart, DTDC, India Post, or other logistics carriers. Overturn arbitrary ₹100 liability caps, demand full invoice reimbursement, statutory interest, and physical parcel delivery or loss compensation under the Carriage by Road Act, 2007 and Section 2(11) of the Consumer Protection Act, 2019.
+                Serve an official statutory legal demand notice directly to Delhivery, Blue Dart, DTDC, India Post, or other logistics carriers. Overturn arbitrary ₹100 liability caps, demand full invoice reimbursement, statutory interest, and physical parcel delivery or loss compensation under the Carriage by Road Act, 2007 and Section 2(11) of the Consumer Protection Act, 2019.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button
@@ -42,7 +42,7 @@ export default function CourierParcelNoticeCTA({
                   {buttonText} — ₹{basePrice}
                 </button>
                 <div className="text-xs text-slate-300 flex flex-wrap sm:flex-nowrap items-center gap-2 sm:gap-3">
-                  <span>✓ 24h Advocate Drafting</span>
+                  <span>✓ 24h Notice Drafting</span>
                   <span>•</span>
                   <span>✓ Email + WhatsApp</span>
                   <span>•</span>

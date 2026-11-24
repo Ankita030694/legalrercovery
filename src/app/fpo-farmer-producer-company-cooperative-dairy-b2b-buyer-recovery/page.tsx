@@ -128,7 +128,7 @@ const FAQS = [
     question:
       "Our FPO was promoted under the SFAC / NABARD 10,000 FPO Scheme—can the Board recover dues without a full-time legal team?",
     answer:
-      "Yes. An FPO Board of Directors can pass a simple Board Resolution authorizing the CEO or Chairman to initiate recovery. Using an online advocate-drafted notice workflow with BSA 2023 Section 63 digital evidence certificates, even a rural FPO can serve formal legal notices via Email, WhatsApp, and Speed Post RPAD—and escalate to Order XXXVII Summary Suits or MSEFC Samadhaan at minimal upfront cost.",
+      "Yes. An FPO Board of Directors can pass a simple Board Resolution authorizing the CEO or Chairman to initiate recovery. Using an online fact-verified notice workflow with BSA 2023 Section 63 digital evidence certificates, even a rural FPO can serve formal legal notices via Email, WhatsApp, and Speed Post RPAD—and escalate to Order XXXVII Summary Suits or MSEFC Samadhaan at minimal upfront cost.",
   },
   {
     question:
@@ -155,7 +155,7 @@ const DECISION_STAGES = [
     stage: "Stage 2 · Day 4–10",
     title: "Serve Notice + APMC Secretary CC",
     detail:
-      "Dispatch an Advocate Legal Notice giving 7–15 days to pay. Copy (CC) the APMC Secretary for mandi traders or CFO/Board for corporate offtakers.",
+      "Dispatch a Fact-Verified Legal Notice giving 7–15 days to pay. Copy (CC) the APMC Secretary for mandi traders or CFO/Board for corporate offtakers.",
   },
   {
     stage: "Stage 3 · Day 15–30",

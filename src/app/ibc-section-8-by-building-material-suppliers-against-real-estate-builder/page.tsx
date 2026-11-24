@@ -133,7 +133,7 @@ const COURT_PRECEDENTS = [
     citation: "(2018) 2 SCC 674, Supreme Court of India",
     date: "Judgment Dated 15 December 2017",
     facts:
-      "The NCLAT had dismissed a Section 9 petition on the hyper-technical ground that the Section 8 Demand Notice was signed by an advocate rather than the creditor's director, and that a Section 9(3)(c) bank certificate was not annexed.",
+      "The NCLAT had dismissed a Section 9 petition on the hyper-technical ground that the Section 8 Demand Notice was prepared on verified facts rather than the creditor's director, and that a Section 9(3)(c) bank certificate was not annexed.",
     holding:
       "The Supreme Court reversed the NCLAT, holding that an authorized advocate or legal counsel is fully competent to issue a Section 8 Demand Notice on behalf of an Operational Creditor under Form 3/Form 4. Further, the bank certificate under Section 9(3)(c) is directory and not a mandatory condition precedent where alternative proof of non-payment exists.",
     principle: "Advocate-Issued Form 3 Valid; Bank Certificate Directory",

@@ -43,7 +43,7 @@ const AGENCY_MEDIA_SCENARIOS: AgencyMediaScenario[] = [
       {
         step: "2. Serve Dual Monetary + 7-Day Copyright Takedown Notice",
         detail:
-          "Send an advocate-vetted notice demanding overdue retainers + notice-period fees while revoking provisional license to run unpaid assets across Meta, Google, YouTube, and Shopify in 7 days.",
+          "Send a fact-verified notice demanding overdue retainers + notice-period fees while revoking provisional license to run unpaid assets across Meta, Google, YouTube, and Shopify in 7 days.",
       },
       {
         step: "3. Escalate via MSMED s.43B(h) / Order 37 Summary Suit",
@@ -86,7 +86,7 @@ const AGENCY_MEDIA_SCENARIOS: AgencyMediaScenario[] = [
       {
         step: "2. Trigger s.222 Indemnity + INS/Industry Credit-Embargo Notice",
         detail:
-          "Serve an urgent advocate notice to the brand CFO, directors, and media head citing Contract Act s.222 indemnity, strict INS/AAA-I credit-embargo exposure, and Order XXXVIII Rule 5 bank attachment.",
+          "Serve an urgent fact-verified notice to the brand CFO, directors, and media head citing Contract Act s.222 indemnity, strict INS/AAA-I credit-embargo exposure, and Order XXXVIII Rule 5 bank attachment.",
       },
       {
         step: "3. File Order XXXVII Summary Suit or s.138 PDC Action",

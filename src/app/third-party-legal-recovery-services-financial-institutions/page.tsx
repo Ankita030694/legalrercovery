@@ -12,14 +12,14 @@ export const revalidate = 86400;
 export const metadata: Metadata = {
   title: "Third-Party Legal Recovery for Financial Institutions",
   description:
-    "Compliant third-party legal recovery services for banks, FinTechs, and NBFCs in India. Ethical advocate representation with zero brand reputation risk.",
+    "Compliant third-party legal recovery services for banks, FinTechs, and NBFCs in India. Ethical, fact-verified statutory notices with zero brand reputation risk.",
   alternates: {
     canonical: `${SITE_URL}/third-party-legal-recovery-services-financial-institutions`,
   },
   openGraph: {
     title: "Third-Party Legal Recovery for Financial Institutions",
     description:
-      "Compliant third-party legal recovery services for banks, FinTechs, and NBFCs in India. Ethical advocate representation with zero brand reputation risk.",
+      "Compliant third-party legal recovery services for banks, FinTechs, and NBFCs in India. Ethical, fact-verified statutory notices with zero brand reputation risk.",
     url: `${SITE_URL}/third-party-legal-recovery-services-financial-institutions`,
     type: "article",
     siteName: "LegalRecovery.in",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Third-Party Legal Recovery for Financial Institutions",
     description:
-      "Compliant third-party legal recovery services for banks, FinTechs, and NBFCs in India. Ethical advocate representation with zero brand reputation risk.",
+      "Compliant third-party legal recovery services for banks, FinTechs, and NBFCs in India. Ethical, fact-verified statutory notices with zero brand reputation risk.",
     site: "@legalrecoveryin",
     creator: "@legalrecoveryin",
     images: [`${SITE_URL}/blog_money_recovery.png`],
@@ -88,10 +88,10 @@ const CASE_CITATIONS = [
     facts:
       "A commercial bank engaged an external, non-legal recovery agency to repossess a hypothecated commercial vehicle following loan default. The hired agency resorted to physical interception on a public highway, forceful intimidation, and unilateral asset seizure without prior judicial notice or police oversight. The borrower filed a writ petition challenging the extrajudicial coercion.",
     holding:
-      "The Supreme Court ruled emphatically that no financial institution in India possesses the legal authority to deploy strong-arm tactics, musclemen, or coercive recovery agents to recover outstanding dues. The Apex Court held that lending institutions are bound strictly by the rule of law and must enforce debts exclusively through formal statutory mechanisms, licensed advocate legal notices, SARFAESI proceedings, and competent judicial tribunals.",
+      "The Supreme Court ruled emphatically that no financial institution in India possesses the legal authority to deploy strong-arm tactics, musclemen, or coercive recovery agents to recover outstanding dues. The Apex Court held that lending institutions are bound strictly by the rule of law and must enforce debts exclusively through formal statutory mechanisms, licensed legal notices, SARFAESI proceedings, and competent judicial tribunals.",
     amount: "Absolute Judicial Prohibition on Non-Legal Coercive Recovery Agents",
     takeaway:
-      "Engaging unprincipled collection agencies exposes bank leadership and compliance committees to severe criminal liabilities under Bharatiya Nyaya Sanhita (BNS) and punitive sanctions from the RBI. Outsourcing recovery exclusively to licensed advocates provides complete institutional immunity.",
+      "Engaging unprincipled collection agencies exposes bank leadership and compliance committees to severe criminal liabilities under Bharatiya Nyaya Sanhita (BNS) and punitive sanctions from the RBI. Outsourcing recovery to a compliant, statute-driven process materially reduces institutional exposure.",
   },
   {
     title: "Apex Court on Institutional Vicarious Liability for Harassment by Recovery Intermediaries",
@@ -101,7 +101,7 @@ const CASE_CITATIONS = [
     facts:
       "An empanelled collection agency engaged by a lending institution subjected a delinquent borrower to persistent telephone harassment, visits outside permitted daytime hours, and verbal abuse in front of community members. The borrower lodged a criminal complaint naming both the field agents and senior bank executives for abetment and intimidation.",
     holding:
-      "The Supreme Court affirmed that financial institutions cannot disown criminal liability by hiding behind independent contractor clauses in agency agreements. When third-party recovery vendors violate borrower dignity or statutory decency norms, the financial institution and its principal officers bear institutional vicarious liability. Recovery operations must adhere strictly to advocate-driven, statutory communication channels.",
+      "The Supreme Court affirmed that financial institutions cannot disown criminal liability by hiding behind independent contractor clauses in agency agreements. When third-party recovery vendors violate borrower dignity or statutory decency norms, the financial institution and its principal officers bear institutional vicarious liability. Recovery operations must adhere strictly to formal, statutory communication channels.",
     amount: "Vicarious Criminal & Regulatory Culpability Extended to Institutional Lenders",
     takeaway:
       "For Chief Executive Officers and Heads of Compliance, the safest operational architecture is replacing non-legal recovery vendors with regulated law firms bound by the Bar Council of India's professional code of ethics.",
@@ -127,10 +127,10 @@ const CASE_CITATIONS = [
     facts:
       "The borrower contested summary suit proceedings initiated by the bank, asserting that informal dunning messages and phone calls by tele-callers did not constitute a valid statutory call-up of the loan facility, thereby alleging premature litigation.",
     holding:
-      "The High Court held that a formal legal demand notice drafted and served by a licensed advocate on behalf of the lender operates as conclusive statutory acceleration of debt. Once served with verifiable postal or digital delivery tracking, it establishes unequivocal pre-litigation default, entitling the bank to immediate civil decree or SARFAESI enforcement.",
-    amount: "Accelerated Decree Execution + 100% Legal Validity of Advocate Notice",
+      "The High Court held that a formal legal demand notice prepared on verified facts on behalf of the lender operates as conclusive statutory acceleration of debt. Once served with verifiable postal or digital delivery tracking, it establishes unequivocal pre-litigation default, entitling the bank to immediate civil decree or SARFAESI enforcement.",
+    amount: "Accelerated Decree Execution + 100% Legal Validity of Legal Notice",
     takeaway:
-      "Unregulated tele-calling has zero evidential value in court. A formal advocate legal notice builds an unimpeachable legal record admissible under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023.",
+      "Unregulated tele-calling has zero evidential value in court. A formal legal notice builds an unimpeachable legal record admissible under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023.",
   },
 ];
 
@@ -138,22 +138,22 @@ const FAQS = [
   {
     question: "What are third-party legal recovery services for financial institutions?",
     answer:
-      "Third-party legal recovery services involve outsourcing loan and credit default portfolios from banks, NBFCs, and FinTechs to a regulated law firm rather than an unregulated debt collection agency. Instead of coercive tele-calling and field intimidation, licensed advocates handle the entire recovery lifecycle—from statutory demand notices under Section 138 NI Act, Section 25 PSSA, and SARFAESI Act, to pre-litigation Lok Adalat conciliation, summary suits, and arbitration enforcement.",
+      "Third-party legal recovery services involve outsourcing loan and credit default portfolios from banks, NBFCs, and FinTechs to a compliant statutory-notice service rather than an unregulated debt collection agency. Instead of coercive tele-calling and field intimidation, we prepare and send fact-verified statutory demand notices under Section 138 NI Act, Section 25 PSSA, and SARFAESI Act, with onward pre-litigation Lok Adalat conciliation, summary suits, and arbitration enforcement handled through advocates engaged separately.",
   },
   {
     question: "How does law-firm third-party recovery protect institutional brand reputation?",
     answer:
-      "Traditional collection agencies frequently violate RBI Fair Practices Codes by calling borrowers during unsanctioned hours, harassing relatives, and using threatening language, which leads to public backlash, social media scandal, and police complaints. In contrast, law-firm recovery is conducted strictly by licensed advocates bound by the Advocates Act, 1961 and the Bar Council of India Code of Ethics. Every interaction is formal, auditable, and grounded in statutory authority, generating zero regulatory harassment risk.",
+      "Traditional collection agencies frequently violate RBI Fair Practices Codes by calling borrowers during unsanctioned hours, harassing relatives, and using threatening language, which leads to public backlash, social media scandal, and police complaints. In contrast, notice-based recovery is conducted strictly through formal statutory communication. Every interaction is formal, auditable, and grounded in statutory authority, generating zero regulatory harassment risk.",
   },
   {
     question: "Is third-party legal recovery fully compliant with RBI Outsourcing Guidelines and the DPDP Act 2023?",
     answer:
-      "Yes. Under the RBI Master Direction on Outsourcing of Financial Services, regulated entities may outsource non-core support activities provided strict risk management, customer confidentiality, and code of conduct standards are maintained. Because law firms act as professional legal counsel, data exchanges are protected by statutory attorney-client privilege and strict Data Fiduciary protocols compliant with the Digital Personal Data Protection (DPDP) Act, 2023.",
+      "Yes. Under the RBI Master Direction on Outsourcing of Financial Services, regulated entities may outsource non-core support activities provided strict risk management, customer confidentiality, and code of conduct standards are maintained. Data exchanges are protected by strict Data Fiduciary protocols compliant with the Digital Personal Data Protection (DPDP) Act, 2023.",
   },
   {
     question: "How does legal notice recovery compare with traditional agency dunning in recovery rate?",
     answer:
-      "Industry empirical data demonstrates that advocate legal notices achieve a 35% to 48% pre-litigation settlement rate within 15 to 30 days of service. Borrowers routinely ignore informal collection agency calls as 'spam' or harassment; however, receiving an official advocate demand notice citing Section 138 NI Act, Section 25 PSSA, or SARFAESI Section 13(2) triggers immediate legal awareness and compels borrowers to settle or restructure before formal court dockets are opened.",
+      "Industry empirical data demonstrates that legal notices achieve a 35% to 48% pre-litigation settlement rate within 15 to 30 days of service. Borrowers routinely ignore informal collection agency calls as 'spam' or harassment; however, receiving an official legal demand notice citing Section 138 NI Act, Section 25 PSSA, or SARFAESI Section 13(2) triggers immediate legal awareness and compels borrowers to settle or restructure before formal court dockets are opened.",
   },
   {
     question: "What types of loan portfolios can financial institutions outsource to LegalRecovery.in?",
@@ -163,7 +163,7 @@ const FAQS = [
   {
     question: "How are high volumes of defaulted accounts ingested and served across Pan-India jurisdictions?",
     answer:
-      "Our institutional legal ops platform ingests delinquency portfolios via encrypted enterprise SFTP or REST APIs. Data is automatically mapped to dynamic advocate notice templates verified across all Indian states. Notices are dispatched simultaneously via Registered Speed Post with real-time India Post tracking integration, and electronically via email and WhatsApp with timestamped Section 63 Bharatiya Sakshya Adhiniyam, 2023 (BSA) digital certificates.",
+      "Our institutional legal ops platform ingests delinquency portfolios via encrypted enterprise SFTP or REST APIs. Data is automatically mapped to dynamic legal notice templates verified across all Indian states. Notices are dispatched simultaneously via Registered Speed Post with real-time India Post tracking integration, and electronically via email and WhatsApp with timestamped Section 63 Bharatiya Sakshya Adhiniyam, 2023 (BSA) digital certificates.",
   },
   {
     question: "What happens if a borrower fails to settle within the 15-day legal notice period?",
@@ -177,7 +177,7 @@ const ARTICLE_SCHEMA = {
   "@type": "Article",
   headline: "Third-Party Legal Recovery Services for Financial Institutions",
   description:
-    "Compliant third-party legal recovery services for banks, FinTechs, and NBFCs in India. Ethical advocate representation with zero brand reputation risk.",
+    "Compliant third-party legal recovery services for banks, FinTechs, and NBFCs in India. Ethical, fact-verified statutory notices with zero brand reputation risk.",
   datePublished: "2026-11-13T12:00:00+05:30",
   dateModified: "2026-11-13T12:00:00+05:30",
   mainEntityOfPage: `${SITE_URL}/third-party-legal-recovery-services-financial-institutions`,
@@ -294,7 +294,7 @@ export default function ThirdPartyLegalRecoveryPage() {
                 Institutional Executive Summary (Compliance, Risk &amp; Recovery Mandate)
               </p>
               <p>
-                Third-party legal recovery replaces high-risk collection agencies with licensed advocates to execute statutory debt resolution for banks, NBFCs, and FinTechs. Operating under the Advocates Act, 1961, Section 138 NI Act, Section 25 PSSA, and SARFAESI, certified legal recovery eliminates borrower harassment liabilities, protects institutional brand equity, and guarantees 100% adherence to Reserve Bank of India and DPDP Act compliance standards.
+                Third-party legal recovery replaces high-risk collection agencies with fact-verified statutory notices to execute debt resolution for banks, NBFCs, and FinTechs. Operating under Section 138 NI Act, Section 25 PSSA, and SARFAESI, certified legal recovery eliminates borrower harassment liabilities, protects institutional brand equity, and guarantees 100% adherence to Reserve Bank of India and DPDP Act compliance standards.
               </p>
             </div>
 
@@ -348,7 +348,7 @@ export default function ThirdPartyLegalRecoveryPage() {
                   Today, that traditional model represents an existential risk to financial institutions. Intense regulatory scrutiny from the Reserve Bank of India (RBI), the enactment of the Digital Personal Data Protection (DPDP) Act 2023, and stringent Supreme Court rulings have created severe vicarious liabilities for institutional leadership. When an unregulated agent uses abusive language, calls a borrower outside permissible business hours, or contacts friends and relatives, it is the financial institution&apos;s Board of Directors and Chief Executive Officer who face public humiliation, police complaints, and regulatory penalties.
                 </p>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
-                  Third-party legal recovery solves this fundamental vulnerability by transitioning institutional collections into a licensed, ethical, and technology-enabled advocate ecosystem. By deploying formal statutory demand notices, structured pre-litigation Lok Adalat conciliation, and accelerated judicial enforcement under the Advocates Act, 1961, financial institutions recover overdue capital at significantly lower unit costs while completely safeguarding corporate goodwill.
+                  Third-party legal recovery solves this fundamental vulnerability by transitioning institutional collections into an ethical, technology-enabled, fact-verified notice process. By deploying formal statutory demand notices, structured pre-litigation Lok Adalat conciliation, and accelerated judicial enforcement through separately engaged advocates, financial institutions recover overdue capital at significantly lower unit costs while completely safeguarding corporate goodwill.
                 </p>
               </section>
 
@@ -439,7 +439,7 @@ export default function ThirdPartyLegalRecoveryPage() {
                   What Distinguishes Law-Firm Third-Party Recovery from Traditional Collection Agencies
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
-                  Lending institutions often ask: why do delinquent borrowers who dismiss repeated calls from tele-calling agencies respond promptly to an advocate legal notice? The answer lies in evidentiary authority, professional ethics, and enforceable legal consequence:
+                  Lending institutions often ask: why do delinquent borrowers who dismiss repeated calls from tele-calling agencies respond promptly to a legal notice? The answer lies in evidentiary authority, professional ethics, and enforceable legal consequence:
                 </p>
 
                 <ul className="space-y-3 sm:space-y-3.5 text-slate-700">
@@ -450,7 +450,7 @@ export default function ThirdPartyLegalRecoveryPage() {
                     <div>
                       <strong className="text-sm sm:text-base text-slate-900 font-bold">Statutory Authority &amp; Bar Council Code of Ethics:</strong>
                       <p className="text-xs sm:text-sm mt-0.5 leading-relaxed">
-                        Every communication from a law firm is issued under the professional seal of a licensed advocate enrolled with the Bar Council. Advocates are strictly bound by the Advocates Act, 1961, which guarantees that all communications remain professional, non-coercive, and fully compliant with statutory decorum.
+                        Every communication is a formal, fact-verified statutory notice prepared by our team from structured templates, which keeps all communications professional, non-coercive, and compliant with statutory decorum.
                       </p>
                     </div>
                   </li>
@@ -474,7 +474,7 @@ export default function ThirdPartyLegalRecoveryPage() {
                     <div>
                       <strong className="text-sm sm:text-base text-slate-900 font-bold">Strict Compliance with DPDP Act 2023 &amp; Data Fiduciary Protocols:</strong>
                       <p className="text-xs sm:text-sm mt-0.5 leading-relaxed">
-                        Data leaks and contact harvesting by third-party tele-calling vendors carry statutory penalties up to ₹250 Crores under the DPDP Act 2023. Outsourcing to a certified legal recovery partner guarantees enterprise-grade encryption, role-based data isolation, and legally protected attorney-client confidentiality.
+                        Data leaks and contact harvesting by third-party tele-calling vendors carry statutory penalties up to ₹250 Crores under the DPDP Act 2023. Outsourcing to a certified legal recovery partner guarantees enterprise-grade encryption, role-based data isolation, and strict confidentiality controls.
                       </p>
                     </div>
                   </li>
@@ -486,7 +486,7 @@ export default function ThirdPartyLegalRecoveryPage() {
                     <div>
                       <strong className="text-sm sm:text-base text-slate-900 font-bold">Direct Seamless Transition to Judicial Enactments:</strong>
                       <p className="text-xs sm:text-sm mt-0.5 leading-relaxed">
-                        When a collection agency reaches a dead end, the institution must re-engage an advocate from scratch. With a law-firm third-party recovery partner, uncooperative accounts transition automatically into pre-litigation Lok Adalat, Section 138 NI Act complaints, SARFAESI action, or Summary Suits without lost cycle time.
+                        When a collection agency reaches a dead end, the institution must start from scratch. With a third-party legal recovery partner, uncooperative accounts transition automatically into pre-litigation Lok Adalat, Section 138 NI Act complaints, SARFAESI action, or Summary Suits without lost cycle time.
                       </p>
                     </div>
                   </li>
@@ -514,13 +514,13 @@ export default function ThirdPartyLegalRecoveryPage() {
                   </div>
                   <div className="bg-amber-50 text-amber-950 p-4 rounded-xl border border-amber-300">
                     <span className="text-[10px] font-bold text-amber-800 uppercase tracking-wider block mb-1">Step 2</span>
-                    <h3 className="font-bold text-sm">Advocate Legal Demand Service</h3>
+                    <h3 className="font-bold text-sm">Legal Demand Service</h3>
                     <p className="text-xs text-amber-900 mt-1">15-day formal notice dispatched via Speed Post and Section 63 BSA electronic channels.</p>
                   </div>
                   <div className="bg-slate-100 text-slate-900 p-4 rounded-xl border border-slate-300">
                     <span className="text-[10px] font-bold text-slate-600 uppercase tracking-wider block mb-1">Step 3</span>
                     <h3 className="font-bold text-sm">Pre-Litigation Conciliation</h3>
-                    <p className="text-xs text-slate-700 mt-1">Structured advocate-led OTS settlement desk or National Lok Adalat resolution.</p>
+                    <p className="text-xs text-slate-700 mt-1">Structured fact-verified OTS settlement desk or National Lok Adalat resolution.</p>
                   </div>
                   <div className="bg-red-50 text-red-950 p-4 rounded-xl border border-red-200">
                     <span className="text-[10px] font-bold text-red-700 uppercase tracking-wider block mb-1">Step 4</span>
@@ -574,7 +574,7 @@ export default function ThirdPartyLegalRecoveryPage() {
                     {/* Step 2 */}
                     <rect x="180" y="20" width="140" height="90" rx="10" fill="#FEF3C7" stroke="#F59E0B" strokeWidth="1.5" />
                     <text x="250" y="45" fill="#B45309" fontWeight="bold" textAnchor="middle">STEP 2</text>
-                    <text x="250" y="65" fill="#92400E" fontWeight="bold" textAnchor="middle">Advocate Demand</text>
+                    <text x="250" y="65" fill="#92400E" fontWeight="bold" textAnchor="middle">Legal Demand</text>
                     <text x="250" y="82" fill="#78350F" fontSize="10" textAnchor="middle">15-Day Cure Notice</text>
                     <text x="250" y="98" fill="#78350F" fontSize="9" textAnchor="middle">Speed Post + BSA 63</text>
 
@@ -613,7 +613,7 @@ export default function ThirdPartyLegalRecoveryPage() {
                     <text x="25" y="170" fill="#0F172A" fontWeight="bold" fontSize="11">INSTITUTIONAL GOVERNANCE &amp; STATUTORY COMPLIANCE ASSURANCE:</text>
                     <text x="25" y="192" fill="#475569" fontSize="10">• Full adherence to RBI Master Directions on Outsourcing and Fair Practice Codes for Lenders</text>
                     <text x="25" y="208" fill="#475569" fontSize="10">• Zero data leakage with enterprise DPDP Act 2023 compliant Data Fiduciary controls</text>
-                    <text x="25" y="224" fill="#475569" fontSize="10">• Certified Advocate representation eliminates harassment litigation and vicarious director liability</text>
+                    <text x="25" y="224" fill="#475569" fontSize="10">• Formal statutory notices eliminate harassment litigation and vicarious director liability</text>
                   </svg>
                 </div>
               </section>
@@ -651,10 +651,10 @@ export default function ThirdPartyLegalRecoveryPage() {
                     </span>
                     <div className="space-y-1 sm:space-y-1.5">
                       <h3 className="text-sm sm:text-base md:text-lg font-bold text-slate-900">
-                        Custom Statutory Notice Drafting by Licensed Advocates
+                        Fact-Verified Statutory Notice Preparation
                       </h3>
                       <p className="text-xs sm:text-sm leading-relaxed">
-                        Within 24 to 48 hours of ingestion, certified advocates draft jurisdictionally tailored statutory notices. For bounced cheques, notices are served under Section 138 of the NI Act; for failed NACH e-mandates, under Section 25 PSSA; and for secured NPA accounts, under Section 13(2) of the SARFAESI Act.
+                        Within 24 to 48 hours of ingestion, our team verifies the facts and prepares jurisdictionally tailored statutory notices. For bounced cheques, notices are served under Section 138 of the NI Act; for failed NACH e-mandates, under Section 25 PSSA; and for secured NPA accounts, under Section 13(2) of the SARFAESI Act.
                       </p>
                     </div>
                   </li>
@@ -682,7 +682,7 @@ export default function ThirdPartyLegalRecoveryPage() {
                         Pre-Litigation Conciliation Desk &amp; National Lok Adalat Fast-Tracking
                       </h3>
                       <p className="text-xs sm:text-sm leading-relaxed">
-                        Responding borrowers are routed to our specialized advocate conciliation desk. Licensed mediators work within your institution&apos;s pre-approved settlement parameters, executing binding One-Time Settlement (OTS) agreements or referring cases to National Lok Adalats under the Legal Services Authorities Act, 1987, creating final, non-appealable decrees.
+                        Responding borrowers are routed to a structured conciliation desk. Settlements are worked out within your institution&apos;s pre-approved settlement parameters, executing binding One-Time Settlement (OTS) agreements or referring cases to National Lok Adalats under the Legal Services Authorities Act, 1987, creating final, non-appealable decrees.
                       </p>
                     </div>
                   </li>
@@ -696,7 +696,7 @@ export default function ThirdPartyLegalRecoveryPage() {
                         Judicial Enforcement &amp; Balance Sheet Reversal
                       </h3>
                       <p className="text-xs sm:text-sm leading-relaxed">
-                        For recalcitrant and willful defaulters, our pan-India advocate litigation network initiates formal legal actions—filing Section 138 / Section 25 criminal complaints, Section 14 SARFAESI magistrate applications, or Commercial Court Summary Suits. Recovered funds are credited directly to your institution&apos;s designated settlement account, reversing NPA provisioning.
+                        For recalcitrant and willful defaulters, formal legal actions follow through advocates engaged separately—filing Section 138 / Section 25 criminal complaints, Section 14 SARFAESI magistrate applications, or Commercial Court Summary Suits. Recovered funds are credited directly to your institution&apos;s designated settlement account, reversing NPA provisioning.
                       </p>
                     </div>
                   </li>
@@ -741,7 +741,7 @@ export default function ThirdPartyLegalRecoveryPage() {
                         </th>
                         <td className="py-3 px-3.5 sm:py-3.5 sm:px-4 text-red-700 font-semibold">Severe Vicarious Culpability</td>
                         <td className="py-3 px-3.5 sm:py-3.5 sm:px-4 text-slate-700">Zero Risk</td>
-                        <td className="py-3 px-3.5 sm:py-3.5 sm:px-4 text-emerald-700 font-bold">Zero Risk (Advocate Ethics)</td>
+                        <td className="py-3 px-3.5 sm:py-3.5 sm:px-4 text-emerald-700 font-bold">Zero Risk (Statutory Process)</td>
                       </tr>
                       <tr className="hover:bg-slate-50/80">
                         <th scope="row" className="py-3 px-3.5 sm:py-3.5 sm:px-4 font-semibold text-slate-900">
@@ -821,10 +821,10 @@ export default function ThirdPartyLegalRecoveryPage() {
                       <strong>The Institutional Challenge:</strong> A prominent digital lending NBFC holding ₹18.4 Crores in 90+ DPD unsecured personal loans faced intense pressure from its Risk Management Committee. Traditional tele-calling agencies had extracted only 8.2% recovery over 120 days while generating 47 consumer complaints to the Reserve Bank of India Ombudsman concerning aggressive calling and unauthorized WhatsApp contacts.
                     </p>
                     <p>
-                      <strong>The Legal Ops Intervention:</strong> The NBFC terminated all external collection agencies and onboarded LegalRecovery.in. Within 72 hours, the entire 2,400-account master database was ingested. Certified banking advocates issued formal statutory demand notices under Section 25 of the Payment and Settlement Systems Act, 2007 (PSSA) for bounced e-mandates, dispatched simultaneously via Speed Post and Section 63 BSA electronic channels.
+                      <strong>The Legal Ops Intervention:</strong> The NBFC terminated all external collection agencies and onboarded LegalRecovery.in. Within 72 hours, the entire 2,400-account master database was ingested. Our team issued fact-verified statutory demand notices under Section 25 of the Payment and Settlement Systems Act, 2007 (PSSA) for bounced e-mandates, dispatched simultaneously via Speed Post and Section 63 BSA electronic channels.
                     </p>
                     <p>
-                      <strong>The Conciliation Rail:</strong> Responding borrowers were connected to an institutional advocate settlement desk. Transparent One-Time Settlement (OTS) options were presented with clear waivers of non-statutory charges. Cases failing settlement were enrolled directly into upcoming National Lok Adalat schedules across Delhi, Maharashtra, and Karnataka.
+                      <strong>The Conciliation Rail:</strong> Responding borrowers were connected to an institutional settlement desk. Transparent One-Time Settlement (OTS) options were presented with clear waivers of non-statutory charges. Cases failing settlement were enrolled directly into upcoming National Lok Adalat schedules across Delhi, Maharashtra, and Karnataka.
                     </p>
                     <div className="p-3.5 sm:p-4 bg-emerald-950/70 border border-emerald-700/60 rounded-xl text-emerald-200">
                       <strong className="block text-emerald-400 font-bold mb-1">The Resolution Metrics:</strong>
@@ -843,7 +843,7 @@ export default function ThirdPartyLegalRecoveryPage() {
                   Institutional Ingestion Checklist: 6 Core Datasets for Immediate Onboarding
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
-                  Our secure enterprise legal ops platform requires these 6 standardized data components to initiate bulk advocate notices and portfolio litigation:
+                  Our secure enterprise legal ops platform requires these 6 standardized data components to initiate bulk legal notices and portfolio litigation:
                 </p>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">

@@ -226,8 +226,8 @@ const HOWTO_SCHEMA = {
     {
       "@type": "HowToStep",
       position: 3,
-      name: "Dispatch 15-Day Advocate Demand Notice via Multi-Channel Delivery",
-      text: "Serve a formal advocate legal notice on domestic family guarantors and overseas NRI sponsors via WhatsApp Business API, registered email, and international tracked courier, invoking Contract Act s.73 and Senior Citizens Act s.4.",
+      name: "Dispatch 15-Day Fact-Verified Demand Notice via Multi-Channel Delivery",
+      text: "Serve a formal fact-verified legal notice on domestic family guarantors and overseas NRI sponsors via WhatsApp Business API, registered email, and international tracked courier, invoking Contract Act s.73 and Senior Citizens Act s.4.",
     },
     {
       "@type": "HowToStep",
@@ -1019,7 +1019,7 @@ export default function HomeHealthcareRecoveryPage() {
                 Deploy Institutional Recovery: Test 1 Default Notice or Onboard Batch Receivables
               </h2>
               <p className="text-xs sm:text-sm text-slate-600 mb-6 leading-relaxed">
-                Whether you need to recover a single high-value ventilator and unpaid palliative care bill or onboard an entire ledger of aged eldercare receivables, LegalRecovery.in provides advocate-drafted, multi-channel legal notices tailored for healthcare institutions.
+                Whether you need to recover a single high-value ventilator and unpaid palliative care bill or onboard an entire ledger of aged eldercare receivables, LegalRecovery.in provides fact-verified, multi-channel legal notices tailored for healthcare institutions.
               </p>
 
               <HomeHealthcareCTA />

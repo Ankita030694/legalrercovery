@@ -10,7 +10,7 @@ import { PaymentModal } from "@/components/PaymentModal";
 const faqs = [
   {
     question: "Can commercial and scheduled banks send a legal notice to recover unpaid loan dues and NPA accounts?",
-    answer: "Yes, public sector, private commercial, and cooperative banks in India can issue an advocate-drafted statutory legal notice to recover defaulted loans, overdue Cash Credit (CC) limits, and Non-Performing Asset (NPA) accounts under the SARFAESI Act, 2002, the Recovery of Debts and Bankruptcy Act, 1993, and the Negotiable Instruments Act, 1881. The formal legal demand notice gives defaulting borrowers, corporate directors, and personal guarantors a mandatory statutory window to clear the outstanding principal, contractual interest, and penal charges. If the borrower fails to discharge the liability or submit a valid objection, the bank is legally authorized to attach mortgaged collateral without civil court intervention, initiate Debt Recovery Tribunal (DRT) proceedings, or prosecute signatories for cheque and NACH mandate dishonor."
+    answer: "Yes, public sector, private commercial, and cooperative banks in India can issue a fact-verified statutory legal notice to recover defaulted loans, overdue Cash Credit (CC) limits, and Non-Performing Asset (NPA) accounts under the SARFAESI Act, 2002, the Recovery of Debts and Bankruptcy Act, 1993, and the Negotiable Instruments Act, 1881. The formal legal demand notice gives defaulting borrowers, corporate directors, and personal guarantors a mandatory statutory window to clear the outstanding principal, contractual interest, and penal charges. If the borrower fails to discharge the liability or submit a valid objection, the bank is legally authorized to attach mortgaged collateral without civil court intervention, initiate Debt Recovery Tribunal (DRT) proceedings, or prosecute signatories for cheque and NACH mandate dishonor."
   },
   {
     question: "What is the mandatory notice period under Section 13(2) of the SARFAESI Act for bank recovery?",
@@ -22,7 +22,7 @@ const faqs = [
   },
   {
     question: "What legal actions can a bank take if an unsecured commercial loan or business line defaults?",
-    answer: "For unsecured business credit lines, personal loans, or working capital facilities where no immovable property is mortgaged, the bank can issue an advocate-drafted demand notice and initiate fast-track arbitration under the Arbitration and Conciliation Act, 1996 if contemplated in the loan contract. The bank can concurrently institute a Commercial Summary Suit under Order XXXVII of the Code of Civil Procedure, 1908 in the competent Commercial Court to obtain an expedited decree without protracted trial delays. For corporate debtors with defaulted credit facilities exceeding one crore rupees, the bank can also file an insolvency petition under Section 7 of the Insolvency and Bankruptcy Code, 2016 before the National Company Law Tribunal (NCLT)."
+    answer: "For unsecured business credit lines, personal loans, or working capital facilities where no immovable property is mortgaged, the bank can issue a fact-verified demand notice and initiate fast-track arbitration under the Arbitration and Conciliation Act, 1996 if contemplated in the loan contract. The bank can concurrently institute a Commercial Summary Suit under Order XXXVII of the Code of Civil Procedure, 1908 in the competent Commercial Court to obtain an expedited decree without protracted trial delays. For corporate debtors with defaulted credit facilities exceeding one crore rupees, the bank can also file an insolvency petition under Section 7 of the Insolvency and Bankruptcy Code, 2016 before the National Company Law Tribunal (NCLT)."
   }
 ];
 
@@ -129,7 +129,7 @@ const jsonLd = {
         {
           "@type": "ListItem",
           "position": 3,
-          "name": "Draft an advocate-vetted statutory legal notice under SARFAESI, NI Act, or RDB Act"
+          "name": "Draft a fact-verified statutory legal notice under SARFAESI, NI Act, or RDB Act"
         },
         {
           "@type": "ListItem",
@@ -177,7 +177,7 @@ const jsonLd = {
             "@type": "Person",
             "name": "Rajeshwar Sengupta"
           },
-          "reviewBody": "Managing NPA recovery for commercial credit lines and defaulted SME term loans required bulletproof pre-litigation documentation. Legal Recovery handled our statutory demand notices under SARFAESI Section 13(2) and Section 138 NI Act with meticulous precision. Within the 60-day cure window, over 64% of our persistent defaulters approached the bank for restructuring or One-Time Settlement (OTS). Their advocate drafting speed, electronic proof of service, and compliance adherence are unmatched."
+          "reviewBody": "Managing NPA recovery for commercial credit lines and defaulted SME term loans required bulletproof pre-litigation documentation. Legal Recovery handled our statutory demand notices under SARFAESI Section 13(2) and Section 138 NI Act with meticulous precision. Within the 60-day cure window, over 64% of our persistent defaulters approached the bank for restructuring or One-Time Settlement (OTS). Their notice drafting speed, electronic proof of service, and compliance adherence are unmatched."
         }
       ]
     }
@@ -241,7 +241,7 @@ export default function ForBanksToRecoverTheirUnpaidDuesClient() {
               Legal Notice for Banks to <span className="text-[#DC2626]">Recover Their Unpaid Dues</span>
             </h1>
             <p className="text-sm md:text-xl mb-8 md:mb-12 max-w-3xl mx-auto text-slate-300 leading-relaxed font-medium">
-              Recover defaulted commercial loans, CC/OD limits, project debt, LAP, and bounced EMIs with an advocate-drafted statutory legal notice backed by SARFAESI, DRT, and Section 138 NI Act provisions.
+              Recover defaulted commercial loans, CC/OD limits, project debt, LAP, and bounced EMIs with a fact-verified statutory legal notice backed by SARFAESI, DRT, and Section 138 NI Act provisions.
             </p>
             <button
               onClick={() => setIsPaymentModalOpen(true)}
@@ -346,7 +346,7 @@ export default function ForBanksToRecoverTheirUnpaidDuesClient() {
                 <div id="quick-answer" className="bg-slate-50 border-l-4 border-[#DC2626] p-6 rounded-r-2xl">
                   <h2 className="text-sm font-extrabold text-slate-900 mb-2 uppercase tracking-wide">Quick Answer</h2>
                   <p className="text-sm text-slate-700 font-medium leading-relaxed">
-                    Commercial banks and financial institutions in India issue an advocate-drafted statutory legal notice to recover defaulted loans, overdue Cash Credit lines, and Non-Performing Assets from defaulting borrowers, corporate entities, and personal guarantors. The legal notice serves as an enforceable pre-litigation demand granting the debtor a mandatory statutory cure window—typically 15 days for general contractual defaults or 60 days under SARFAESI Section 13(2)—to remit outstanding dues in full. Failure to discharge the debt empowers the bank to take physical possession of mortgaged collateral without civil court intervention, initiate criminal prosecution under Section 138 of the Negotiable Instruments Act or Section 25 of the Payment and Settlement Systems Act, and file recovery proceedings before the Debt Recovery Tribunal.
+                    Commercial banks and financial institutions in India issue a fact-verified statutory legal notice to recover defaulted loans, overdue Cash Credit lines, and Non-Performing Assets from defaulting borrowers, corporate entities, and personal guarantors. The legal notice serves as an enforceable pre-litigation demand granting the debtor a mandatory statutory cure window—typically 15 days for general contractual defaults or 60 days under SARFAESI Section 13(2)—to remit outstanding dues in full. Failure to discharge the debt empowers the bank to take physical possession of mortgaged collateral without civil court intervention, initiate criminal prosecution under Section 138 of the Negotiable Instruments Act or Section 25 of the Payment and Settlement Systems Act, and file recovery proceedings before the Debt Recovery Tribunal.
                   </p>
                 </div>
 
@@ -365,7 +365,7 @@ export default function ForBanksToRecoverTheirUnpaidDuesClient() {
                       For high-value credit claims of ₹20 Lakhs and above, banks possess statutory recourse to the <span className="font-semibold text-slate-800">Debt Recovery Tribunal (DRT)</span> established under the Recovery of Debts and Bankruptcy Act, 1993 (RDB Act). An Original Application (OA) filed under Section 19 of the RDB Act enables the bank to obtain immediate interim attachment of the debtor&apos;s unpledged properties, bank accounts, and receivables pending the issuance of an executable Recovery Certificate.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      In parallel, banks enforce strict criminal consequences for instrument dishonor. Section 138 of the <span className="font-semibold text-slate-800">Negotiable Instruments Act, 1881</span> imposes criminal liability for bounced repayment or security cheques, while Section 25 of the <span className="font-semibold text-slate-800">Payment and Settlement Systems Act, 2007 (PSSA)</span> applies identical criminal penalties to failed electronic NACH mandates. For corporate defaults exceeding ₹1 Crore, banks as financial creditors can trigger Corporate Insolvency Resolution Processes (CIRP) under Section 7 of the <span className="font-semibold text-slate-800">Insolvency and Bankruptcy Code, 2016 (IBC)</span>. Serving a formal advocate demand notice is the mandatory pre-condition establishing the uncontroverted record of default.
+                      In parallel, banks enforce strict criminal consequences for instrument dishonor. Section 138 of the <span className="font-semibold text-slate-800">Negotiable Instruments Act, 1881</span> imposes criminal liability for bounced repayment or security cheques, while Section 25 of the <span className="font-semibold text-slate-800">Payment and Settlement Systems Act, 2007 (PSSA)</span> applies identical criminal penalties to failed electronic NACH mandates. For corporate defaults exceeding ₹1 Crore, banks as financial creditors can trigger Corporate Insolvency Resolution Processes (CIRP) under Section 7 of the <span className="font-semibold text-slate-800">Insolvency and Bankruptcy Code, 2016 (IBC)</span>. Serving a formal fact-verified demand notice is the mandatory pre-condition establishing the uncontroverted record of default.
                     </p>
                   </div>
                 </section>
@@ -593,9 +593,9 @@ export default function ForBanksToRecoverTheirUnpaidDuesClient() {
                       <div className="flex items-start space-x-4">
                         <div className="bg-[#DC2626] text-white rounded-full w-8 h-8 flex items-center justify-center shrink-0 font-black text-sm">3</div>
                         <div>
-                          <h4 className="font-extrabold text-sm sm:text-base text-slate-900 mb-1">Advocate Drafting on Formal Letterhead</h4>
+                          <h4 className="font-extrabold text-sm sm:text-base text-slate-900 mb-1">Notice Drafting on Formal Letterhead</h4>
                           <p className="text-xs sm:text-sm text-slate-650 leading-relaxed">
-                            Engage a senior debt recovery advocate to draft the statutory notice on official letterhead, reciting the credit sanction history, specific facility clauses breached, dishonor particulars, and explicit statutory enforcement provisions under SARFAESI, DRT, and the NI Act.
+                            Have the statutory notice prepared through LegalRecovery.in after our team verifies the facts, reciting the credit sanction history, specific facility clauses breached, dishonor particulars, and explicit statutory enforcement provisions under SARFAESI, DRT, and the NI Act.
                           </p>
                         </div>
                       </div>
@@ -749,7 +749,7 @@ export default function ForBanksToRecoverTheirUnpaidDuesClient() {
                     <span className="text-xs font-bold text-slate-800">Rajeshwar Sengupta</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed italic">
-                    &quot;Managing NPA recovery for commercial credit lines and defaulted SME term loans required bulletproof pre-litigation documentation. Legal Recovery handled our statutory demand notices under SARFAESI Section 13(2) and Section 138 NI Act with meticulous precision. Within the 60-day cure window, over 64% of our persistent defaulters approached the bank for restructuring or One-Time Settlement (OTS). Their advocate drafting speed, electronic proof of service, and compliance adherence are unmatched.&quot;
+                    &quot;Managing NPA recovery for commercial credit lines and defaulted SME term loans required bulletproof pre-litigation documentation. Legal Recovery handled our statutory demand notices under SARFAESI Section 13(2) and Section 138 NI Act with meticulous precision. Within the 60-day cure window, over 64% of our persistent defaulters approached the bank for restructuring or One-Time Settlement (OTS). Their notice drafting speed, electronic proof of service, and compliance adherence are unmatched.&quot;
                   </p>
                 </div>
               </div>
@@ -783,7 +783,7 @@ export default function ForBanksToRecoverTheirUnpaidDuesClient() {
                 <img src="/lrlogo.svg" alt="LegalRecovery" width={3236} height={601} className="h-8 sm:h-10 w-auto object-contain" />
               </div>
               <p className="text-sm md:text-base text-slate-600 leading-relaxed mb-10 max-w-3xl font-medium">
-                Legal Recovery is India&apos;s trusted consumer protection and commercial debt resolution platform. Founded in 2022 and headquartered in New Delhi, Legal Recovery has counselled 15,000+ businesses, financial institutions, and consumers on debt recovery, commercial contract breaches, and loan defaults. Legal Recovery accelerates out-of-court settlements and connects you with top verified panel advocates.
+                Legal Recovery is India&apos;s trusted consumer protection and commercial debt resolution platform. Founded in 2022 and headquartered in New Delhi, Legal Recovery has counselled 15,000+ businesses, financial institutions, and consumers on debt recovery, commercial contract breaches, and loan defaults. Legal Recovery accelerates out-of-court settlements through fact-verified legal notices.
               </p>
 
               <div className="border-t border-slate-100 pt-10">

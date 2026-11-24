@@ -151,7 +151,7 @@ const IND_04_SPOKES: IndustrySpoke[] = [
     url: "/templates/pharma-surgical-stockist-ledger-demand-legal-notice",
     statute: "Order XXXVII CPC & NI Act s.20 Notice",
     summary:
-      "Advocate-vetted demand notice featuring Form 20B/21B Drug License schedule, expiry-deduction bar, and s.20 security-cheque fill-up intimation.",
+      "Fact-verified demand notice featuring Form 20B/21B Drug License schedule, expiry-deduction bar, and s.20 security-cheque fill-up intimation.",
   },
   {
     id: "B2B-056",
@@ -832,7 +832,7 @@ export default function PharmaMedicalDevicesRecoveryHubPage() {
                     <text x="224" y="134" fill="#CBD5E1" fontSize="10.5">Implant: Sale Goods s.24</text>
                     <text x="224" y="152" fill="#CBD5E1" fontSize="10.5">PDC: NI s.20 Notice</text>
                     <rect x="224" y="176" width="132" height="54" rx="6" fill="#0F172A" stroke="#334155" />
-                    <text x="232" y="196" fill="#FBBF24" fontSize="10" fontWeight="700">Advocate Sign-Off</text>
+                    <text x="232" y="196" fill="#FBBF24" fontSize="10" fontWeight="700">Fact Verification</text>
                     <text x="232" y="213" fill="#94A3B8" fontSize="9.5">Division Representee</text>
 
                     <path d="M368 152 L390 152" stroke="#DC2626" strokeWidth="2.5" />
@@ -896,7 +896,7 @@ export default function PharmaMedicalDevicesRecoveryHubPage() {
                     },
                     {
                       num: "02",
-                      title: "Vertical Statutory Tagging & Advocate Sign-Off",
+                      title: "Vertical Statutory Tagging & Fact Verification",
                       desc: "Select Order 37, s.43B(h)/MSMED s.16, Sale of Goods s.24/25, or NI Act s.20 PDC crystallization.",
                     },
                     {
@@ -1126,7 +1126,7 @@ export default function PharmaMedicalDevicesRecoveryHubPage() {
                     </p>
                     <ul className="text-xs text-slate-700 space-y-1.5 list-disc list-inside pt-1">
                       <li><strong>Note:</strong> Pure distributors cannot invoke s.43B(h) or MSEFC.</li>
-                      <li><strong>Action:</strong> Advocate notice under <strong>Sale of Goods Act s.24</strong> (attaching UDI peel-off stickers) + <strong>BNS s.316</strong> audit demand for ₹5.60L shelf kits.</li>
+                      <li><strong>Action:</strong> Fact-verified notice under <strong>Sale of Goods Act s.24</strong> (attaching UDI peel-off stickers) + <strong>BNS s.316</strong> audit demand for ₹5.60L shelf kits.</li>
                       <li><strong>Forum Lever:</strong> Commercial Court s.12A / Order XXXVII CPC + Order XXXVIII Rule 5 urgency plea.</li>
                     </ul>
                   </div>

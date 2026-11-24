@@ -30,7 +30,7 @@ const SCENARIOS: Scenario[] = [
       "US Uniform Commercial Code (UCC) + Copyright Act 1957 s.19 + Berne Convention extraterritorial IP lien + FEMA 9-Month EDPMS clock",
     actionProtocol: [
       "Compile cryptographically verified Git commit logs, deployment approvals, and Slack/email acceptance trails under BSA 2023 Section 63.",
-      "Serve an advocate-drafted Cross-Border Statutory Demand Notice directly on the US entity's Registered Agent in Delaware/California and executive directors.",
+      "Serve a fact-verified Cross-Border Statutory Demand Notice directly on the US entity's Registered Agent in Delaware/California and executive directors.",
       "Issue a formal Notice of IP Revocation under Section 19 of the Copyright Act, putting the client on notice of imminent DMCA takedown against their cloud infrastructure.",
       "File an extension application with your Indian Authorized Dealer (AD) Bank enclosing the formal legal notice copy to prevent automatic EDPMS caution-listing.",
     ],

@@ -144,7 +144,7 @@ const FAQS = [
   {
     question: "What is the difference between a consumer complaint and a statutory legal notice?",
     answer:
-      "A statutory legal notice is a formal demand prepared by an advocate giving the manufacturer 15 days to resolve your issue. Most EV service disputes are settled during this period because manufacturers prefer resolving claims rather than facing consumer court penalties.",
+      "A statutory legal notice is a formal demand prepared on verified facts giving the manufacturer 15 days to resolve your issue. Most EV service disputes are settled during this period because manufacturers prefer resolving claims rather than facing consumer court penalties.",
   },
 ];
 
@@ -1070,7 +1070,7 @@ export default function EvServiceDelayBatteryWarrantyPage() {
                     Our Legal Scope &amp; Connected Automotive Dispute Guides
                   </h4>
                   <p>
-                    LegalRecovery provides advocate-drafted statutory pre-litigation notices and dispute management. We assist EV owners in enforcing manufacturer warranty obligations, recovering alternative conveyance costs, and establishing evidence for e-Jagriti consumer filings. We do not provide physical mechanical towing or roadside battery extraction services.
+                    LegalRecovery provides fact-verified statutory pre-litigation notices and dispute management. We assist EV owners in enforcing manufacturer warranty obligations, recovering alternative conveyance costs, and establishing evidence for e-Jagriti consumer filings. We do not provide physical mechanical towing or roadside battery extraction services.
                   </p>
                   <div className="flex flex-wrap gap-2 pt-2">
                     <Link
@@ -1107,7 +1107,7 @@ export default function EvServiceDelayBatteryWarrantyPage() {
                 </div>
 
                 {/* Reviewer Note / TODO(reviewer) comment per rules */}
-                {/* TODO(reviewer): Pending formal advocate review assignment from src/data/reviewers.ts once populated */}
+                {/* TODO(reviewer): Pending formal fact verification assignment from src/data/reviewers.ts once populated */}
               </section>
 
               {/* Notice CTA Banner */}

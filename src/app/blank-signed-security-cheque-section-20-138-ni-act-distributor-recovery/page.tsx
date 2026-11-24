@@ -246,7 +246,7 @@ const FAQS = [
   {
     question: "How does LegalRecovery assist FMCG, durables, and manufacturing brands managing hundreds of dealer defaults?",
     answer:
-      "LegalRecovery provides a dual-track recovery infrastructure: Corporate credit teams can test an overdue dealer file for ₹999 to serve an advocate-settled 7-day pre-deposit intimation notice and Section 138 demand notice. For enterprise portfolios with 10 to 10,000+ defaulting distributors, our Dedicated Institutional Desk ingests ERP/Tally ledger exports, automates Section 20 filling protocols, issues automated Speed Post RPAD dispatches with real-time tracking, and manages nationwide Section 138 and Section 143A court filings across India.",
+      "LegalRecovery provides a dual-track recovery infrastructure: Corporate credit teams can test an overdue dealer file for ₹999 to serve a fact-verified 7-day pre-deposit intimation notice and Section 138 demand notice. For enterprise portfolios with 10 to 10,000+ defaulting distributors, our Dedicated Institutional Desk ingests ERP/Tally ledger exports, automates Section 20 filling protocols, issues automated Speed Post RPAD dispatches with real-time tracking, and manages nationwide Section 138 and Section 143A court filings across India.",
   },
 ];
 
@@ -371,7 +371,7 @@ export default function BlankSignedSecurityChequePage() {
             >
               FMCG, Consumer Durables &amp; Super-Stockist channel recovery playbook
             </Link>
-            , serving an advocate-settled <strong>7-Day Pre-Deposit Intimation Notice</strong> with certified running ledgers
+            , serving a fact-verified <strong>7-Day Pre-Deposit Intimation Notice</strong> with certified running ledgers
             conclusively eliminates the defense of &ldquo;cheque misuse&rdquo; or unauthorized alteration, transforming an
             onboarding security deposit into a lethal Section 138 criminal recovery rail.
           </div>
@@ -681,7 +681,7 @@ export default function BlankSignedSecurityChequePage() {
                         Issue 7-Day Pre-Deposit Intimation Notice
                       </strong>
                       <p className="text-xs text-slate-600 mt-0.5">
-                        Draft an advocate-vetted intimation notice citing: (a) Dealership agreement date; (b) Cheque No.,
+                        Draft a fact-verified intimation notice citing: (a) Dealership agreement date; (b) Cheque No.,
                         bank name, and drawer details; (c) Exact crystallized ledger debt of ₹X,XX,XXX; and (d) Intimation that
                         under Section 20 NI Act and <em>Bir Singh v. Mukesh Kumar</em>, the company will fill and present Cheque
                         No. XXXXXX on Date DD/MM/YYYY unless the full sum is cleared within 7 calendar days.

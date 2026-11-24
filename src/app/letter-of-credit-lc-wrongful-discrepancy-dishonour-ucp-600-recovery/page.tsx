@@ -904,10 +904,10 @@ export default function LetterOfCreditDishonourUCP600Page() {
                   </span>
                   <div>
                     <h3 className="font-bold text-slate-900 text-sm sm:text-base">
-                      Issue Formal Cross-Border Advocate Legal Notice
+                      Issue Formal Cross-Border Fact-Verified Legal Notice
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 mt-1">
-                      Serve a comprehensive advocate legal notice to the issuing bank&apos;s Board of Directors, Head of Trade Operations, and primary correspondent clearing bank in New York or London, warning of tortious conversion and international blacklisting.
+                      Serve a comprehensive fact-verified legal notice to the issuing bank&apos;s Board of Directors, Head of Trade Operations, and primary correspondent clearing bank in New York or London, warning of tortious conversion and international blacklisting.
                     </p>
                   </div>
                 </div>

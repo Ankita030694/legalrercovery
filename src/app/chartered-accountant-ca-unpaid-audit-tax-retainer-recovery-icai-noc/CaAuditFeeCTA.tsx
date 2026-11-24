@@ -24,10 +24,10 @@ export default function CaAuditFeeCTA({ className = "" }: CaAuditFeeCTAProps) {
                 Track 1 &middot; Single Defaulting Client Claim
               </span>
               <h3 className="text-lg sm:text-xl font-bold text-white mb-2">
-                Test 1 Live Overdue Case Now (&#8377;{basePrice} &middot; Advocate Drafted &middot; Email + WhatsApp + Speed Post RPAD)
+                Test 1 Live Overdue Case Now (&#8377;{basePrice} &middot; Fact-Verified &middot; Email + WhatsApp + Speed Post RPAD)
               </h3>
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-                Upload your unpaid SAC 998221/998231 invoices, signed Balance Sheet audit-fee schedule, Form 26AS 194J entry, UDIN log, or bounced cheque memo. External litigation advocates draft and serve an ICAI-ethics-safe Order XXXVII CPC / NI Act s.138 / CGST s.16(2) demand notice—keeping your COP and dignity completely protected.
+                Enter your unpaid SAC 998221/998231 invoice details, audit-fee schedule, Form 26AS 194J entry, UDIN log, or bounced cheque details in our online form. Our team verifies the facts and prepares and sends an ICAI-ethics-safe Order XXXVII CPC / NI Act s.138 / CGST s.16(2) demand notice—keeping your COP and dignity completely protected.
               </p>
             </div>
 
@@ -58,7 +58,7 @@ export default function CaAuditFeeCTA({ className = "" }: CaAuditFeeCTAProps) {
                 Have 10 to 10,000+ Defaulters? Upload CSV / Activate Dedicated Institutional Desk
               </h3>
               <p className="text-xs sm:text-sm text-slate-600 leading-relaxed mb-5">
-                Clear your CA firm&rsquo;s entire aged debtor ledger (audit, tax, ROC &amp; Virtual-CFO arrears) in one structured batch—and onboard your MSME &amp; corporate audit clients&rsquo; overdue receivables via a dedicated representee workspace with centralized advocate tracking.
+                Clear your CA firm&rsquo;s entire aged debtor ledger (audit, tax, ROC &amp; Virtual-CFO arrears) in one structured batch—and onboard your MSME &amp; corporate audit clients&rsquo; overdue receivables via a dedicated representee workspace with centralized tracking.
               </p>
             </div>
 

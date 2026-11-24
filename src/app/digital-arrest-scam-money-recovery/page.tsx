@@ -802,7 +802,7 @@ export default function DigitalArrestScamRecoveryPage() {
                 </div>
 
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
-                  Under the RBI Master Directions on KYC, commercial banks are statutorily required to maintain robust transaction monitoring mechanisms to identify mule accounts. When banks operate lax customer identification systems, victims can challenge the bank through a formal advocate legal notice followed by an application under the <Link href="/law/rbi-ombudsman-complaint-guide" className="text-red-600 font-bold hover:underline">RBI Integrated Ombudsman Scheme (RB-IOS, 2021)</Link>. Also consider exploring our guide on <Link href="/credit-card-chargeback-wrong-charge-india" className="text-red-600 font-bold hover:underline">credit card chargeback mechanisms in India</Link> if any portion involved card payments.
+                  Under the RBI Master Directions on KYC, commercial banks are statutorily required to maintain robust transaction monitoring mechanisms to identify mule accounts. When banks operate lax customer identification systems, victims can challenge the bank through a formal fact-verified legal notice followed by an application under the <Link href="/law/rbi-ombudsman-complaint-guide" className="text-red-600 font-bold hover:underline">RBI Integrated Ombudsman Scheme (RB-IOS, 2021)</Link>. Also consider exploring our guide on <Link href="/credit-card-chargeback-wrong-charge-india" className="text-red-600 font-bold hover:underline">credit card chargeback mechanisms in India</Link> if any portion involved card payments.
                 </p>
               </section>
 

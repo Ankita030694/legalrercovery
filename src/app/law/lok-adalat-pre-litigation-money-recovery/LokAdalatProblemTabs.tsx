@@ -32,7 +32,7 @@ const DISPUTES: DisputeTab[] = [
           "Gather signed purchase orders, delivery challans, GST invoices, and WhatsApp / email payment acknowledgments confirming undisputed debt liability.",
       },
       {
-        step: "Issue Advocate Pre-Litigation Notice with DLSA Option",
+        step: "Issue Fact-Verified Pre-Litigation Notice with DLSA Option",
         description:
           "Serve a formal statutory demand notice giving 15 days to clear the dues or submit to pre-litigation conciliation before the DLSA Lok Adalat panel.",
       },

@@ -22,7 +22,7 @@ const faqs = [
   },
   {
     question: "How does a legal notice help in recovering suspended seller funds?",
-    answer: "Serving a formal legal notice is highly effective because it bypasses the automated support bots and seller support desks. It escalates the dispute directly to the marketplace's in-house legal and compliance teams. Marketplaces want to avoid formal litigation and arbitration due to the administrative costs involved. In many cases, receiving a lawyer-backed notice prompts the legal team to review the account and release the frozen payouts to resolve the dispute before it escalates to an expensive tribunal."
+    answer: "Serving a formal legal notice is highly effective because it bypasses the automated support bots and seller support desks. It escalates the dispute directly to the marketplace's in-house legal and compliance teams. Marketplaces want to avoid formal litigation and arbitration due to the administrative costs involved. In many cases, receiving a fact-verified notice prompts the legal team to review the account and release the frozen payouts to resolve the dispute before it escalates to an expensive tribunal."
   },
   {
     question: "Can I invoke arbitration against an e-commerce platform?",
@@ -607,7 +607,7 @@ export default function EcommerceSellerRecoveryClient() {
                 <div className="absolute top-0 right-0 w-24 h-24 bg-red-600/10 rounded-full blur-xl pointer-events-none" />
                 <h3 className="text-lg font-bold mb-3 text-white">Need Legal Advice?</h3>
                 <p className="text-gray-400 mb-5 text-[11px] leading-relaxed">
-                  Discuss your money recovery case with legal experts. We draft and serve legally compliant notices tailored to your transaction.
+                  Discuss your money recovery case with our team. We draft and serve legally compliant notices tailored to your transaction.
                 </p>
                 <button 
                   onClick={() => setIsPaymentModalOpen(true)}

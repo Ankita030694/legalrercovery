@@ -25,7 +25,7 @@ export default function BespokeGoodsRecoveryCTA({
               Track 1 &bull; Single Cancelled PO / Bespoke WIP Recovery Notice
             </span>
             <p className="text-lg sm:text-xl font-extrabold text-white mb-2">
-              Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Advocate Drafted &middot; Email + WhatsApp + Speed Post RPAD)
+              Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Fact-Verified &middot; Email + WhatsApp + Speed Post RPAD)
             </p>
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
               Serve an immediate, high-impact statutory demand notice drafted by seasoned commercial recovery advocates. Quantifies Work-in-Progress (WIP), special metallurgy plate procurement, and shopfloor cutting costs under Indian Contract Act Section 39 anticipatory repudiation, plus 15% loss-of-profit claim under Supreme Court <em>A.T. Brij Paul Singh</em> rule, MSMED Act 3x RBI compound penal interest, and Section 43B(h) buyer tax disallowance warnings.
@@ -58,7 +58,7 @@ export default function BespokeGoodsRecoveryCTA({
               Have 10 to 10,000+ Defaulters? Upload CSV / Activate Dedicated Institutional Desk
             </p>
             <p className="text-xs sm:text-sm text-slate-600 leading-relaxed mb-5">
-              Designed for Managing Directors, CFOs, and Commercial Directors of heavy engineering, boiler, pressure vessel, transformer, conveyor, and industrial machinery manufacturing plants across Vadodara, Pune, Hazira, Coimbatore, Tiruchirappalli, Ghaziabad, and Faridabad. Ingest multiple stuck customer accounts, cancelled EPC packages, unamortized tooling claims, and stalled commissioning milestones. Includes multi-jurisdiction advocate dispatch, BSA Section 63 electronic evidence dossiers, and Commercial Court litigation management.
+              Designed for Managing Directors, CFOs, and Commercial Directors of heavy engineering, boiler, pressure vessel, transformer, conveyor, and industrial machinery manufacturing plants across Vadodara, Pune, Hazira, Coimbatore, Tiruchirappalli, Ghaziabad, and Faridabad. Ingest multiple stuck customer accounts, cancelled EPC packages, unamortized tooling claims, and stalled commissioning milestones. Includes multi-jurisdiction dispatch, BSA Section 63 electronic evidence dossiers, and Commercial Court litigation management.
             </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-3">

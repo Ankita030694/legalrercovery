@@ -41,7 +41,7 @@ const SCHOOLS_EDTECH_SCENARIOS: SchoolsEdTechScenario[] = [
           "Never detain the student or withhold the TC/marksheet. Export the signed Admission Form, Fee Undertaking, ERP ledger statement, and prior fee reminders under BSA Section 63.",
       },
       {
-        step: "2. Serve RTE-Safe Advocate Notice Strictly to Parents",
+        step: "2. Serve RTE-Safe Fact-Verified Notice Strictly to Parents",
         detail:
           "Dispatch batch civil demand notices addressed solely to the earning Parent/Guardian containing an explicit RTE s.5(3) & NCPCR child-protection disclaimer.",
       },

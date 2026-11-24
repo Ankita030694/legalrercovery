@@ -176,8 +176,8 @@ const HOWTO_SCHEMA = {
     {
       "@type": "HowToStep",
       position: 2,
-      name: "Serve 15-Day Advocate Notice Invoking MSMED s.16 & Income Tax s.43B(h)",
-      text: "Issue an Advocate Legal Notice demanding the 70% balance plus custom foil/carton sunk costs, warning of 3x RBI compound interest and Form 3CD Clause 22 Section 43B(h) tax disallowance.",
+      name: "Serve 15-Day Fact-Verified Notice Invoking MSMED s.16 & Income Tax s.43B(h)",
+      text: "Issue a Fact-Verified Legal Notice demanding the 70% balance plus custom foil/carton sunk costs, warning of 3x RBI compound interest and Form 3CD Clause 22 Section 43B(h) tax disallowance.",
     },
     {
       "@type": "HowToStep",
@@ -840,7 +840,7 @@ export default function PharmaCdmoBatchRecoveryPage() {
                   of Goods Act s.44 quarantine storage charges.
                 </li>
                 <li>
-                  <strong>Day 8–15:</strong> Dispatch Advocate Legal Notice citing MSMED s.16 (3x RBI
+                  <strong>Day 8–15:</strong> Dispatch Fact-Verified Legal Notice citing MSMED s.16 (3x RBI
                   compound interest) and Income Tax s.43B(h) disallowance.
                 </li>
                 <li>

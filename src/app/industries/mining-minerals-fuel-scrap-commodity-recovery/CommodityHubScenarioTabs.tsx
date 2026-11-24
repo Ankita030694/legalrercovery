@@ -39,7 +39,7 @@ const COMMODITY_SCENARIOS: CommodityScenario[] = [
       {
         step: "2. Invoke Section 42 Irreversible Consumption Estoppel",
         detail:
-          "Serve an Advocate Demand Notice recording that zero joint re-sampling was requested within the 48-hour unloading window and the entire consignment was consumed in the buyer's boiler.",
+          "Serve a Fact-Verified Demand Notice recording that zero joint re-sampling was requested within the 48-hour unloading window and the entire consignment was consumed in the buyer's boiler.",
       },
       {
         step: "3. Escalate via Order 37 Summary Suit or IBC Section 8 (>= ₹1 Cr)",

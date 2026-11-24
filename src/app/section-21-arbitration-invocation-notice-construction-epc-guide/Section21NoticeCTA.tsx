@@ -25,10 +25,10 @@ export default function Section21NoticeCTA({
               Track 1 &bull; Single EPC Contract Section 21 Invocation
             </span>
             <p className="text-lg sm:text-xl font-extrabold text-white mb-2">
-              Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Advocate Drafted &middot; Email + WhatsApp + Speed Post RPAD)
+              Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Fact-Verified &middot; Email + WhatsApp + Speed Post RPAD)
             </p>
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-              Serve a defect-free, advocate-settled Section 21 Arbitration Invocation Notice that legally freezes the 3-year limitation clock under <em>BSNL v. Nortel Networks</em>. Formulates specific heads of claim (stalled RA bills, retention, extra-item variations, idling charges, interest), recites multi-tier dispute escalation compliance, proposes a neutral sole arbitrator panel compliant with <em>Perkins Eastman</em> and the 2024 <em>CORE</em> 5-Judge ruling, and starts the 30-day countdown for Section 11(6) High Court appointment.
+              Serve a defect-free, fact-verified Section 21 Arbitration Invocation Notice that legally freezes the 3-year limitation clock under <em>BSNL v. Nortel Networks</em>. Formulates specific heads of claim (stalled RA bills, retention, extra-item variations, idling charges, interest), recites multi-tier dispute escalation compliance, proposes a neutral sole arbitrator panel compliant with <em>Perkins Eastman</em> and the 2024 <em>CORE</em> 5-Judge ruling, and starts the 30-day countdown for Section 11(6) High Court appointment.
             </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-3">

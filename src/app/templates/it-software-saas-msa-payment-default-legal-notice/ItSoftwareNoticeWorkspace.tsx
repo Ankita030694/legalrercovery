@@ -379,7 +379,7 @@ Counsel for ${d.creditorName}`;
               Step 2 &bull; Customize Contract, Telemetry &amp; Financial Particulars
             </span>
             <p className="text-sm font-bold text-slate-900">
-              Live Input Form (Updates the Advocate-Vetted Notice Document Real-Time)
+              Live Input Form (Updates the Fact-Verified Notice Document Real-Time)
             </p>
           </div>
           <div className="flex items-center gap-2">
@@ -703,7 +703,7 @@ Counsel for ${d.creditorName}`;
               Step 3 &bull; Generated Statutory Notice Draft
             </span>
             <p className="text-sm font-bold text-white">
-              Advocate-Drafted Legal Demand Notice (Ready for Execution)
+              Fact-Verified Legal Demand Notice (Ready for Execution)
             </p>
           </div>
 

@@ -19,7 +19,7 @@ export default function CanteenNoticeCTA() {
         </h3>
 
         <p className="text-sm sm:text-base text-slate-300 leading-relaxed mb-8 max-w-3xl">
-          Plant HR and institutional accounts departments delay canteen contractor payouts because kitchen supervisors only send polite WhatsApp reminders. An Advocate-signed Statutory Demand Notice citing <strong>MSMED Act s.15–18 (3x RBI Interest)</strong>, <strong>Income Tax Section 43B(h)</strong>, and <strong>Contract Act s.74 Rebuttal of Un-Sampled Hygiene Fines</strong> forces immediate priority clearance.
+          Plant HR and institutional accounts departments delay canteen contractor payouts because kitchen supervisors only send polite WhatsApp reminders. A Fact-verified Statutory Demand Notice citing <strong>MSMED Act s.15–18 (3x RBI Interest)</strong>, <strong>Income Tax Section 43B(h)</strong>, and <strong>Contract Act s.74 Rebuttal of Un-Sampled Hygiene Fines</strong> forces immediate priority clearance.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
@@ -33,10 +33,10 @@ export default function CanteenNoticeCTA() {
                 <span className="text-xl font-black text-white">₹999</span>
               </div>
               <h4 className="text-base font-bold text-white mb-2">
-                Test 1 Live Overdue Case Now (₹999 · Advocate Drafted · Email + WhatsApp + Speed Post RPAD)
+                Test 1 Live Overdue Case Now (₹999 · Fact-Verified · Email + WhatsApp + Speed Post RPAD)
               </h4>
               <p className="text-xs text-slate-300 leading-relaxed mb-4">
-                Upload one overdue factory canteen, corporate cafeteria, hospital mess, or university hostel ledger. Our B2B recovery advocates annex your monthly tax invoices, biometric meal counts, and Udyam certificate into a 15-day statutory demand notice.
+                Enter the details of one overdue factory canteen, corporate cafeteria, hospital mess, or university hostel ledger. Our team verifies the facts, including your monthly tax invoices, biometric meal counts, and Udyam details, and prepares a 15-day statutory demand notice.
               </p>
               <ul className="space-y-1.5 text-xs text-slate-300 mb-6">
                 <li className="flex items-center gap-2">
@@ -109,7 +109,7 @@ export default function CanteenNoticeCTA() {
         </div>
 
         <p className="text-[11px] text-slate-400 text-center">
-          Strictly Creditor-Side Institutional Recovery Desk · All notices drafted and verified by Empaneled Commercial Advocates · BSA 2023 s.63 Compliant Dispatch
+          Strictly Creditor-Side Institutional Recovery Desk · All notices fact-verified by our team · BSA 2023 s.63 Compliant Dispatch
         </p>
       </div>
     </div>

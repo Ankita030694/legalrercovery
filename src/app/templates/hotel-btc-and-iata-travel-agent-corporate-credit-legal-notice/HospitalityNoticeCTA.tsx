@@ -10,7 +10,7 @@ interface HospitalityNoticeCTAProps {
 
 export default function HospitalityNoticeCTA({
   title = "Dispatch Your Hospitality or IATA Credit Legal Notice Today",
-  subtitle = "Do not let aged 90+ day City-Ledger BTC bills or weekly IATA BSP ticket defaults drain working capital. Serve an advocate-vetted notice with Folio, PNR, GSTR-2B estoppel, and Order XXXVII CPC enforcement.",
+  subtitle = "Do not let aged 90+ day City-Ledger BTC bills or weekly IATA BSP ticket defaults drain working capital. Serve a fact-verified notice with Folio, PNR, GSTR-2B estoppel, and Order XXXVII CPC enforcement.",
 }: HospitalityNoticeCTAProps) {
   const singleCaseFee = DEFAULT_FUNNEL_SETTINGS.basePricePerOpposition;
 
@@ -42,7 +42,7 @@ export default function HospitalityNoticeCTA({
                 Test 1 Live Overdue Case Now
               </h3>
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
-                ₹{singleCaseFee} · Advocate Drafted · Email + WhatsApp + Speed Post RPAD Dispatch with Guest Folio, Airline PNR, GSTR-2B estoppel &amp; Section 138 / Order 37 clauses.
+                ₹{singleCaseFee} · Fact-Verified · Email + WhatsApp + Speed Post RPAD Dispatch with Guest Folio, Airline PNR, GSTR-2B estoppel &amp; Section 138 / Order 37 clauses.
               </p>
             </div>
             <Link

@@ -30,7 +30,7 @@ const faqs = [
   },
   {
     question: "Can I send a legal notice to my landlord for refusing to refund the security deposit?",
-    answer: "Yes, sending a formal legal notice is the standard and most effective first step. A legal notice drafted by an advocate outlines the illegal deductions, demands the immediate release of the remaining deposit, and threatens civil litigation or filing a police complaint for criminal breach of trust if they fail to comply."
+    answer: "Yes, sending a formal legal notice is the standard and most effective first step. A legal notice prepared on verified facts outlines the illegal deductions, demands the immediate release of the remaining deposit, and threatens civil litigation or filing a police complaint for criminal breach of trust if they fail to comply."
   },
   {
     question: "Where do I file a case if the landlord ignores the legal notice?",
@@ -378,7 +378,7 @@ export default function LandlordDeductionsNoticeClient() {
                 <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                   
                   <p className="text-sm md:text-base leading-relaxed">
-                    A legal notice is a formal demand drafted by an advocate, warning the landlord of impending civil and criminal litigation if the withheld deposit is not refunded. It must be precise, legally sound, and devoid of emotional language.
+                    A legal notice is a formal demand prepared on verified facts, warning the landlord of impending civil and criminal litigation if the withheld deposit is not refunded. It must be precise, legally sound, and devoid of emotional language.
                   </p>
                   
                   <p className="text-sm md:text-base leading-relaxed">
@@ -514,7 +514,7 @@ export default function LandlordDeductionsNoticeClient() {
                 <div className="absolute top-0 right-0 w-24 h-24 bg-red-600/10 rounded-full blur-xl pointer-events-none" />
                 <h3 className="text-sm font-black mb-3">Need Legal Advice?</h3>
                 <p className="text-gray-400 mb-5 text-[11px] leading-relaxed">
-                  Discuss your deposit recovery case with legal experts. We draft and serve legally compliant notices to force your landlord to pay.
+                  Discuss your deposit recovery case with our team. We draft and serve legally compliant notices to force your landlord to pay.
                 </p>
                 <button 
                   onClick={() => setIsPaymentModalOpen(true)}

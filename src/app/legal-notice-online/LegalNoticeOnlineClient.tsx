@@ -11,11 +11,11 @@ import { PaymentModal } from "@/components/PaymentModal";
 const faqs = [
   {
     question: "What is an online legal notice portal and how does it operate in India?",
-    answer: "An online legal notice portal is a digital workspace that connects clients with legal professionals to draft and serve notices. The process is completely online: you submit case details through an intake questionnaire, upload files to an encrypted document vault, review drafts on a digital dashboard, and sign documents electronically. The platform manages advocate assignment and email/WhatsApp dispatch tracking."
+    answer: "An online legal notice portal is a digital workspace that connects clients with a team that prepares and serves notices. The process is completely online: you enter your case details through an intake questionnaire, our team verifies the facts you submit, and you confirm the notice electronically. The platform manages email/WhatsApp dispatch tracking."
   },
   {
     question: "Is digital signing of a legal notice legally valid under Indian law?",
-    answer: "Yes, digital signatures are legally recognized under Section 5 of the Information Technology Act, 2000. When an advocate electronically signs a legal notice PDF using their registered digital signature, it carries the same legal validity and weight as a physically signed and stamped paper in a court of law."
+    answer: "Yes, digital signatures are legally recognized under Section 5 of the Information Technology Act, 2000. A notice confirmed and authorised electronically carries the same legal recognition as a physically signed paper, and its electronic delivery can be proved in court with a Section 63 BSA certificate."
   },
   {
     question: "How does the portal verify the correct legal name and address of a debtor?",
@@ -34,20 +34,20 @@ const faqs = [
     answer: "If the 15-day compliance window expires and the debtor ignores the notice, the portal organizes the case files, delivery reports, and Section 63 BSA certificates into a litigation-ready package. We then assist you with the next legal steps, such as e-filing a Summary Suit (Order 37 CPC) or a Cheque Bounce complaint (Section 138 NI Act) through the e-Courts portal."
   },
   {
-    question: "What supporting documents do I need to upload to the online vault?",
-    answer: "You should upload all documents that establish the transaction and default: signed contracts or promissory notes, invoices, bank statements showing the transfer of funds, ledger books, and screenshots of WhatsApp/email communications where the debtor acknowledged the liability or promised to pay."
+    question: "What supporting documents should I keep ready?",
+    answer: "You enter your case details in our online form (amounts, dates, parties, and what happened). Keep all documents that establish the transaction and default ready for later court use: signed contracts or promissory notes, invoices, bank statements showing the transfer of funds, ledger books, and screenshots of WhatsApp/email communications where the debtor acknowledged the liability or promised to pay."
   },
   {
-    question: "Are my documents secure in the portal's cloud vault?",
-    answer: "Yes, all documents uploaded to the portal are encrypted in transit and at rest using enterprise-grade SSL/TLS protocols. Access is strictly restricted to the assigned panel advocate and the client. The information is protected under advocate-client privilege guidelines, ensuring complete privacy."
+    question: "Is my case information secure on the portal?",
+    answer: "Yes, all case details submitted through the portal are encrypted in transit and at rest using enterprise-grade SSL/TLS protocols. Access is strictly restricted to our team and the client, ensuring complete privacy."
   },
   {
     question: "What is the flat pricing for sending a notice through the portal?",
-    answer: "We offer flat-fee pricing starting at ₹999 per opposing party. This transparent rate covers advocate consultation, customized drafting, legal review, and digital delivery via email and WhatsApp. There are no hourly consultation rates."
+    answer: "We offer flat-fee pricing starting at ₹999 per opposing party. This transparent rate covers fact verification by our team, notice preparation, and digital delivery via email and WhatsApp. There are no hourly consultation rates."
   },
   {
-    question: "How long does it take for a panel advocate to draft the notice?",
-    answer: "Once you submit your case details and complete the payment, the information is reviewed by our legal team. The assigned panel advocate typically drafts the customized notice and uploads it to your dashboard for review within 24 to 48 hours."
+    question: "How long does it take to prepare the notice?",
+    answer: "Once you submit your case details and complete the payment, the information is reviewed by our team. Our team typically prepares the customized notice and makes it available on your dashboard within 24 to 48 hours."
   },
   {
     question: "What is a multi-stage reminder notice and how does it work?",
@@ -55,7 +55,7 @@ const faqs = [
   },
   {
     question: "How is electronic service of a notice proved in court?",
-    answer: "To prove email or WhatsApp service in court, you must present the delivery receipt or screenshot showing read status, accompanied by a signed certificate under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023. Our portal automatically packages these digital receipts and drafts the Section 63 BSA certificate for your advocate to submit."
+    answer: "To prove email or WhatsApp service in court, you must present the delivery receipt or screenshot showing read status, accompanied by a signed certificate under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023. Our portal automatically packages these digital receipts and drafts the Section 63 BSA certificate for you to submit."
   }
 ];
 
@@ -88,7 +88,7 @@ const articleSchema = {
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "Legal Notice Online Portal: Digital Workflows, ODR, and e-Courts in India",
-  "description": "Discover how technology-enabled legal notice portals simplify case submission, advocate drafting, e-signing, and ODR integrations under modern Indian laws.",
+  "description": "Discover how technology-enabled legal notice portals simplify case submission, notice drafting, e-signing, and ODR integrations under modern Indian laws.",
   "image": "https://www.legalrecovery.in/og-legal-notice-online.png",
   "author": {
     "@type": "Person",
@@ -154,7 +154,7 @@ const reviewSchema = {
         "@type": "Person",
         "name": "Balakrishnan Iyer"
       },
-      "reviewBody": "Using this online portal was seamless. I uploaded my invoices and outstanding ledger details to the secure vault. The platform verified the debtor's company registration, and a panel lawyer drafted the notice within 24 hours. The real-time digital tracking showed delivery, and the company settled the ₹3.8L dues."
+      "reviewBody": "Using this online portal was seamless. I entered my invoice and outstanding ledger details in the secure form. The platform verified the debtor's company registration, and the team verified the facts and prepared the notice within 24 hours. The real-time digital tracking showed delivery, and the company settled the ₹3.8L dues."
     },
     {
       "@type": "Review",
@@ -166,7 +166,7 @@ const reviewSchema = {
         "@type": "Person",
         "name": "Nidhi Aggarwal"
       },
-      "reviewBody": "The e-signing process under the IT Act made everything fast and convenient. I didn't have to visit any offices or print files manually. The advocate digitally signed the notice, and the platform handled the digital dispatch. Extremely efficient legal tech service."
+      "reviewBody": "The e-signing process under the IT Act made everything fast and convenient. I didn't have to visit any offices or print files manually. The platform handled the notice confirmation and digital dispatch. Extremely efficient legal tech service."
     },
     {
       "@type": "Review",
@@ -178,7 +178,7 @@ const reviewSchema = {
         "@type": "Person",
         "name": "Ranjeet Deshmukh"
       },
-      "reviewBody": "Highly transparent pricing. The ₹999 flat rate covered lawyer review through to email and WhatsApp dispatch. I tracked the delivery status directly on my dashboard. When the debtor signed the online settlement deed, the payment was resolved out of court."
+      "reviewBody": "Highly transparent pricing. The ₹999 flat rate covered fact verification through to email and WhatsApp dispatch. I tracked the delivery status directly on my dashboard. When the debtor signed the online settlement deed, the payment was resolved out of court."
     },
     {
       "@type": "Review",
@@ -202,7 +202,7 @@ const reviewSchema = {
         "@type": "Person",
         "name": "Tanmay Ghosh"
       },
-      "reviewBody": "As a freelancer, recovering unpaid retainer fees is stressful. The online notice system allowed me to upload all my work files and email agreements to the cloud vault. The panel advocate reviewed everything, sent the notice, and the client settled."
+      "reviewBody": "As a freelancer, recovering unpaid retainer fees is stressful. The online notice system let me enter all my work and agreement details in the form. The team fact-verified everything, sent the notice, and the client settled."
     },
     {
       "@type": "Review",
@@ -328,7 +328,7 @@ export default function LegalNoticeOnlineClient() {
                       The Indian legal system is undergoing a massive digital overhaul. Through government-led initiatives like the <strong>e-Courts Mission Mode Project</strong>, court registries are shifting from physical, paper-heavy systems to modern e-filing infrastructures. This modernization has paved the way for technology-enabled legal notice portals to streamline pre-litigation workflows. In this new digital environment, a legal notice is no longer just a letter; it is the entry point of a digital case file.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      By integrating technology with a panel of practicing advocates, online legal notice portals bridge the gap between traditional legal procedures and technology. These portals connect directly with <strong>Online Dispute Resolution (ODR)</strong> platforms and e-filing systems in India. They create a secure digital workspace where client onboarding, document vetting, advocate assignment, and delivery tracking are handled through a single dashboard, removing the need for physical office visits.
+                      By integrating technology with fact verification by a dedicated team, online legal notice portals bridge the gap between traditional legal procedures and technology. These portals connect directly with <strong>Online Dispute Resolution (ODR)</strong> platforms and e-filing systems in India. They create a secure digital workspace where client onboarding, fact verification and delivery tracking are handled through a single dashboard, removing the need for physical office visits.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
                       This digital shift has significantly changed how disputes are handled. When you submit a case through an online portal, the document is structured using validated templates and legal databases. If the debtor chooses to settle, the portal provides online mediation rooms and digital settlement deed templates. If they ignore the notice, the digital records are exported in a format ready for immediate e-filing on the e-Courts portal. This system makes pre-litigation and recovery faster, more transparent, and highly accessible.
@@ -354,7 +354,7 @@ export default function LegalNoticeOnlineClient() {
                       <div className="bg-slate-50 p-6 rounded-2xl border border-slate-100">
                         <h4 className="font-extrabold text-sm sm:text-base text-slate-900 mb-2">A. Flat-Fee Pricing and Financial Transparency</h4>
                         <p className="text-xs sm:text-sm text-slate-650 leading-relaxed">
-                          Unlike traditional advocate chambers that charge hourly consultation rates or variable fees for typing and postage, online portals operate on a flat-fee pricing model. On LegalRecovery, services start at a transparent rate of ₹999 per opposing party. This rate covers advocate review, customized drafting, and delivery by email and WhatsApp. Speed Post is optional at ₹450 per party.
+                          Unlike traditional advocate chambers that charge hourly consultation rates or variable fees for typing and postage, online portals operate on a flat-fee pricing model. On LegalRecovery, services start at a transparent rate of ₹999 per opposing party. This rate covers fact verification, customized drafting, and delivery by email and WhatsApp. Speed Post is optional at ₹450 per party.
                         </p>
                       </div>
 
@@ -389,7 +389,7 @@ export default function LegalNoticeOnlineClient() {
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      The drafting of an online legal notice combines software-assisted verification with professional review by a practicing advocate. By structuring the onboarding process, the portal ensures that all necessary facts are compiled before the advocate begins drafting the notice.
+                      The drafting of an online legal notice combines software-assisted verification with fact verification by our team. By structuring the onboarding process, the portal ensures that all necessary facts are compiled before the notice is prepared.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed font-semibold text-slate-800">
                       The drafting and validation workflow follows a structured digital pipeline:
@@ -397,21 +397,21 @@ export default function LegalNoticeOnlineClient() {
                     
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">
                       <div className="bg-slate-50 p-6 rounded-2xl border border-slate-100">
-                        <h4 className="font-extrabold text-sm text-slate-900 mb-2">1. Secure Document Vault Upload</h4>
+                        <h4 className="font-extrabold text-sm text-slate-900 mb-2">1. Online Case Details Form</h4>
                         <p className="text-xs text-slate-650 leading-relaxed">
-                          The client uploads supporting files (contracts, invoices, bank receipts, ledger statements, and chat logs) to our secure, encrypted cloud vault. The database indexes these documents, allowing the advocate to quickly verify the transaction history and default dates.
+                          The client enters the case details (amounts, dates, parties, and what happened) in our secure, encrypted online form. Contracts, invoices, bank receipts, ledger statements, and chat logs should be kept ready for later use. Our team verifies the transaction history and default dates you submit.
                         </p>
                       </div>
                       <div className="bg-slate-50 p-6 rounded-2xl border border-slate-100">
-                        <h4 className="font-extrabold text-sm text-slate-900 mb-2">2. Advocate Assignment &amp; Draft Preview</h4>
+                        <h4 className="font-extrabold text-sm text-slate-900 mb-2">2. Fact Verification &amp; Draft Preview</h4>
                         <p className="text-xs text-slate-650 leading-relaxed">
-                          The system routes the case file to a practicing advocate on our panel specializing in debt recovery. The advocate drafts the notice on their official letterhead, including all relevant statutory citations (e.g. Section 73 Contract Act, Interest Act). The draft is uploaded to the client&apos;s dashboard for review and approval.
+                          Our team verifies the submitted facts and prepares the notice from structured templates, including all relevant statutory citations (e.g. Section 73 Contract Act, Interest Act). The draft is made available on the client&apos;s dashboard for review and approval.
                         </p>
                       </div>
                       <div className="bg-slate-50 p-6 rounded-2xl border border-slate-100">
                         <h4 className="font-extrabold text-sm text-slate-900 mb-2">3. E-Signing under Section 5 of the IT Act, 2000</h4>
                         <p className="text-xs text-slate-650 leading-relaxed">
-                          Under Section 5 of the Information Technology Act, 2000, digital signatures carry the same legal recognition as physical signatures. The advocate electronically signs the finalized notice PDF using their registered digital signature certificate. The client also signs an online confirmation statement, ensuring that the notice is fully authorized.
+                          Under Section 5 of the Information Technology Act, 2000, digital signatures carry the same legal recognition as physical signatures. The client signs an online confirmation statement, ensuring that the notice is fully authorized.
                         </p>
                       </div>
                       <div className="bg-slate-50 p-6 rounded-2xl border border-slate-100">
@@ -441,7 +441,7 @@ export default function LegalNoticeOnlineClient() {
                       <div>
                         <h4 className="text-base font-black text-slate-900 mb-2">2. Section 63 BSA 2023 Digital Evidence Certificates</h4>
                         <p className="text-sm text-slate-650 leading-relaxed">
-                          For electronic delivery (via WhatsApp read receipts or email delivery logs), the evidentiary rules are governed by the <strong>Bharatiya Sakshya Adhiniyam, 2023 (BSA)</strong>, which replaced the Indian Evidence Act. Section 63 of the BSA (previously Section 65B) requires all digital evidence introduced in court to be accompanied by a signed device certificate. This certificate validates that the computer or phone used to send the notice was functioning properly and that the screenshots of WhatsApp delivery or email headers have not been tampered with. Our portal automatically packages these digital receipts and drafts the Section 63 BSA certificate for your advocate to submit.
+                          For electronic delivery (via WhatsApp read receipts or email delivery logs), the evidentiary rules are governed by the <strong>Bharatiya Sakshya Adhiniyam, 2023 (BSA)</strong>, which replaced the Indian Evidence Act. Section 63 of the BSA (previously Section 65B) requires all digital evidence introduced in court to be accompanied by a signed device certificate. This certificate validates that the computer or phone used to send the notice was functioning properly and that the screenshots of WhatsApp delivery or email headers have not been tampered with. Our portal automatically packages these digital receipts and drafts the Section 63 BSA certificate for you to submit.
                         </p>
                       </div>
                     </div>
@@ -493,7 +493,7 @@ export default function LegalNoticeOnlineClient() {
                           <span className="text-[#DC2626] text-xs font-black uppercase tracking-wider">Case 1: Friendly Loan Dispute</span>
                           <h4 className="font-extrabold text-sm text-slate-900 mt-2 mb-3">Recovered ₹3.5 Lakhs personal loan</h4>
                           <p className="text-xs text-slate-650 leading-relaxed">
-                            A lender in Pune had given a ₹3.5L friendly loan. The borrower went silent, evading physical service. We drafted a notice on advocate letterhead, uploaded it to the dashboard, and served it via WhatsApp. The read status (double blue ticks) was certified under Section 63 BSA. The debtor settled the loan within 10 days of delivery.
+                            A lender in Pune had given a ₹3.5L friendly loan. The borrower went silent, evading physical service. We prepared the notice, made it available on the dashboard, and served it via WhatsApp. The read status (double blue ticks) was certified under Section 63 BSA. The debtor settled the loan within 10 days of delivery.
                           </p>
                         </div>
                       </div>
@@ -579,7 +579,7 @@ export default function LegalNoticeOnlineClient() {
                 <div className="absolute top-0 right-0 w-24 h-24 bg-red-600/10 rounded-full blur-xl pointer-events-none" />
                 <h3 className="text-sm font-black mb-3">Need Legal Support?</h3>
                 <p className="text-gray-400 mb-5 text-[11px] leading-relaxed">
-                  We handle the entire recovery notice process for you, from evidence audit and advocate drafting to dispatching and tracking.
+                  We handle the entire recovery notice process for you, from evidence audit and notice drafting to dispatching and tracking.
                 </p>
                 <button 
                   onClick={() => setIsPaymentModalOpen(true)}

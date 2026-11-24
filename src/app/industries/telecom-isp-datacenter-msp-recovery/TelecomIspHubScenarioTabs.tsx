@@ -81,7 +81,7 @@ const TELECOM_ISP_SCENARIOS: TelecomIspScenario[] = [
       {
         step: "1. Issue DPDP-Safe 7-Day Data-Export Suspension Notice",
         detail:
-          "Serve an advocate-vetted cure notice granting a 7-day read-only SFTP/snapshot retrieval window while preserving power/cooling logs and MSA cross-connect schedules.",
+          "Serve a fact-verified cure notice granting a 7-day read-only SFTP/snapshot retrieval window while preserving power/cooling logs and MSA cross-connect schedules.",
       },
       {
         step: "2. Freeze Gate-Pass Removal of Co-Located Rack Hardware",

@@ -282,7 +282,7 @@ const FAQS = [
   {
     question: "How do I claim a failed transaction refund and ₹100/day penalty from SBI, HDFC, ICICI, or Axis Bank?",
     answer:
-      "First, note the exact transaction date (T), debited amount, and 12-digit RRN/UTR from your SMS or account statement. Second, lodge a formal written complaint on the bank's grievance portal (for example, SBI CRC / cms.onlinesbi.com, HDFC Grievance Redressal, or ICICI Nodal Officer) explicitly citing RBI Circular DPSS.CO.PD No.629/02.01.014/2019-20 and stating the exact ₹100/day calculation from Day T+2 or Day T+6. If the bank closes the ticket without paying the penalty or delays beyond 15–30 days, serve an Advocate Legal Notice and escalate to the RBI Integrated Ombudsman (cms.rbi.org.in).",
+      "First, note the exact transaction date (T), debited amount, and 12-digit RRN/UTR from your SMS or account statement. Second, lodge a formal written complaint on the bank's grievance portal (for example, SBI CRC / cms.onlinesbi.com, HDFC Grievance Redressal, or ICICI Nodal Officer) explicitly citing RBI Circular DPSS.CO.PD No.629/02.01.014/2019-20 and stating the exact ₹100/day calculation from Day T+2 or Day T+6. If the bank closes the ticket without paying the penalty or delays beyond 15–30 days, serve a Fact-Verified Legal Notice and escalate to the RBI Integrated Ombudsman (cms.rbi.org.in).",
   },
   {
     question: "What should I do if ATM cash was not dispensed but money was debited and the bank rejected my complaint?",
@@ -297,7 +297,7 @@ const FAQS = [
   {
     question: "UPI ya ATM failed transaction ka paisa bank wapas na kare toh ₹100 rozana muavza aur legal notice kaise bheje?",
     answer:
-      "Agar UPI, IMPS, ATM ya online shopping karte waqt aapke bank account se paisa kat gaya (debit ho gaya) par transaction fail ho gaya, toh RBI Circular DPSS.CO.PD No.629 ke tehat bank ko UPI P2P/IMPS mein T+1 din aur ATM/Merchant payment mein T+5 din ke andar paisa khud (suo-moto) wapas karna anivarya hai. Is samay-seema ke baad har din ki deri par bank ko ₹100 prati din (₹100/day) penalty customer ke khate mein deni hoti hai. Agar bank शिकायत band kar de ya penalty na de, toh LegalRecovery.in ke madhyam se Bank Nodal Officer ko 15 din ka Advocate Legal Notice bhejein.",
+      "Agar UPI, IMPS, ATM ya online shopping karte waqt aapke bank account se paisa kat gaya (debit ho gaya) par transaction fail ho gaya, toh RBI Circular DPSS.CO.PD No.629 ke tehat bank ko UPI P2P/IMPS mein T+1 din aur ATM/Merchant payment mein T+5 din ke andar paisa khud (suo-moto) wapas karna anivarya hai. Is samay-seema ke baad har din ki deri par bank ko ₹100 prati din (₹100/day) penalty customer ke khate mein deni hoti hai. Agar bank शिकायत band kar de ya penalty na de, toh LegalRecovery.in ke madhyam se Bank Nodal Officer ko 15 din ka Fact-Verified Legal Notice bhejein.",
   },
 ];
 
@@ -425,7 +425,7 @@ export default function RbiFailedTransactionTatCompensationPage() {
                 Statutory Summary (RBI Harmonisation of TAT &amp; ₹100/Day Penalty Mandate)
               </p>
               <p>
-                Under RBI Circular <strong>DPSS.CO.PD No.629/02.01.014/2019-20</strong> (issued under Section 18 of the Payment and Settlement Systems Act, 2007), your bank must proactively auto-reverse failed <strong>UPI P2P, IMPS, and NACH debits within T+1 day</strong> and failed <strong>ATM, PoS, E-Commerce, and UPI merchant debits within T+5 days</strong>—or pay <strong>₹100 per day</strong> of delay suo moto. Enforce unpaid claims via Nodal escalation, a 15-day advocate notice, and the RBI Ombudsman.
+                Under RBI Circular <strong>DPSS.CO.PD No.629/02.01.014/2019-20</strong> (issued under Section 18 of the Payment and Settlement Systems Act, 2007), your bank must proactively auto-reverse failed <strong>UPI P2P, IMPS, and NACH debits within T+1 day</strong> and failed <strong>ATM, PoS, E-Commerce, and UPI merchant debits within T+5 days</strong>—or pay <strong>₹100 per day</strong> of delay suo moto. Enforce unpaid claims via Nodal escalation, a 15-day fact-verified notice, and the RBI Ombudsman.
               </p>
             </div>
 
@@ -1116,10 +1116,10 @@ export default function RbiFailedTransactionTatCompensationPage() {
                     </span>
                     <div className="space-y-1 sm:space-y-1.5">
                       <h3 className="text-sm sm:text-base md:text-lg font-bold text-slate-900">
-                        Serve a 15-Day Statutory Advocate Legal Notice on the Bank (and Merchant/Acquirer if Applicable)
+                        Serve a 15-Day Statutory Fact-Verified Legal Notice on the Bank (and Merchant/Acquirer if Applicable)
                       </h3>
                       <p className="text-xs sm:text-sm leading-relaxed">
-                        For high-value stuck debits, rejected ATM/PoS claims, or accumulated ₹100/day penalties that the bank refuses to honour, serve a formal 15-day statutory demand notice drafted by an advocate via Registered Speed Post and official email. Impleading both the Bank&apos;s Principal Nodal Officer / Regional Manager and the Merchant Grievance Officer (in P2M/gateway cases) under Section 18 of the PSS Act, 2007 and Section 2(11) of the Consumer Protection Act, 2019 escalates the file directly to the bank&apos;s legal compliance desk.
+                        For high-value stuck debits, rejected ATM/PoS claims, or accumulated ₹100/day penalties that the bank refuses to honour, serve a formal 15-day statutory demand notice prepared on verified facts via Registered Speed Post and official email. Impleading both the Bank&apos;s Principal Nodal Officer / Regional Manager and the Merchant Grievance Officer (in P2M/gateway cases) under Section 18 of the PSS Act, 2007 and Section 2(11) of the Consumer Protection Act, 2019 escalates the file directly to the bank&apos;s legal compliance desk.
                       </p>
                     </div>
                   </li>
@@ -1195,11 +1195,11 @@ export default function RbiFailedTransactionTatCompensationPage() {
                       </div>
                     </div>
                     <p>
-                      <strong>The Legal Escalation:</strong> On Day 22, Siddharth engaged LegalRecovery.in. A verified advocate served a 15-day statutory demand notice via Registered Speed Post and email on the bank&apos;s Principal Nodal Officer and Regional Office, tabulating the ₹45,000 principal, the accrued ₹100/day penalty under Clause 4(c) of Circular DPSS.CO.PD No.629, and warning of an immediate RBI Integrated Ombudsman and e-Jagriti filing.
+                      <strong>The Legal Escalation:</strong> On Day 22, Siddharth engaged LegalRecovery.in. LegalRecovery.in served a 15-day statutory demand notice via Registered Speed Post and email on the bank&apos;s Principal Nodal Officer and Regional Office, tabulating the ₹45,000 principal, the accrued ₹100/day penalty under Clause 4(c) of Circular DPSS.CO.PD No.629, and warning of an immediate RBI Integrated Ombudsman and e-Jagriti filing.
                     </p>
                     <div className="p-3.5 sm:p-4 bg-emerald-950/70 border border-emerald-700/60 rounded-xl text-emerald-200">
                       <strong className="block text-emerald-400 font-bold mb-1">The Resolution:</strong>
-                      Within 11 days of receiving the advocate notice, the bank&apos;s Nodal Cell reconciled the NPCI switch entry, credited the full <strong>₹45,000 principal</strong> along with <strong>₹3,700 as statutory TAT delay compensation</strong> (for the 37 delayed days), and issued a written compliance confirmation—resolving the dispute without needing a formal hearing.
+                      Within 11 days of receiving the fact-verified notice, the bank&apos;s Nodal Cell reconciled the NPCI switch entry, credited the full <strong>₹45,000 principal</strong> along with <strong>₹3,700 as statutory TAT delay compensation</strong> (for the 37 delayed days), and issued a written compliance confirmation—resolving the dispute without needing a formal hearing.
                     </div>
                   </div>
                 </div>
@@ -1319,7 +1319,7 @@ export default function RbiFailedTransactionTatCompensationPage() {
                     </span>
                     <ul className="space-y-2 text-xs sm:text-sm text-emerald-950 list-disc list-inside leading-relaxed">
                       <li>
-                        Draft and dispatch formal 15-day Advocate Statutory Legal Notices to your bank&apos;s Principal Nodal Officer, MD, and acquiring merchant for unreversed failed transactions + ₹100/day penalty.
+                        Draft and dispatch formal 15-day Fact-Verified Statutory Legal Notices to your bank&apos;s Principal Nodal Officer, MD, and acquiring merchant for unreversed failed transactions + ₹100/day penalty.
                       </li>
                       <li>
                         Enforce ATM non-dispensation refunds by formally demanding CCTV preservation and physical cash verification reports under NCDRC precedents.

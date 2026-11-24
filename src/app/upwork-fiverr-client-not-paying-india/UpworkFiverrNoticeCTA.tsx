@@ -31,7 +31,7 @@ export default function UpworkFiverrNoticeCTA({
                 Client Ghosted After Delivery or Refusing to Pay Your Milestone?
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6">
-                Have an enrolled advocate draft and serve a formal 15-day Statutory Demand &amp; Copyright Revocation Notice on your defaulting Indian or international client. We invoke Section 70/73 of the Indian Contract Act, Section 19 of the Copyright Act (revoking all IP license until paid in full), and Section 16 MSMED 3× compound interest (for Udyam-registered freelancers)—dispatched via Registered Speed Post, Official Email, and WhatsApp under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023.
+                Serve a formal 15-day Statutory Demand &amp; Copyright Revocation Notice on your defaulting Indian or international client. We invoke Section 70/73 of the Indian Contract Act, Section 19 of the Copyright Act (revoking all IP license until paid in full), and Section 16 MSMED 3× compound interest (for Udyam-registered freelancers)—dispatched via Registered Speed Post, Official Email, and WhatsApp under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button
@@ -42,7 +42,7 @@ export default function UpworkFiverrNoticeCTA({
                   {buttonText} — ₹{basePrice}
                 </button>
                 <div className="text-xs text-slate-300 flex flex-wrap sm:flex-nowrap items-center gap-2 sm:gap-3">
-                  <span>✓ 24h Advocate Drafting</span>
+                  <span>✓ 24h Notice Drafting</span>
                   <span>•</span>
                   <span>✓ IP Revocation + Demand</span>
                   <span>•</span>

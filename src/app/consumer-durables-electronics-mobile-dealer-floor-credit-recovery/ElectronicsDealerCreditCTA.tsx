@@ -25,10 +25,10 @@ export default function ElectronicsDealerCreditCTA({
               Track 1 &bull; Single Defaulting Dealer Recovery Test
             </span>
             <p className="text-lg sm:text-xl font-extrabold text-white mb-2">
-              Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Advocate Drafted &middot; Email + WhatsApp + Speed Post RPAD)
+              Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Fact-Verified &middot; Email + WhatsApp + Speed Post RPAD)
             </p>
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-              Serve a defect-free, advocate-settled Legal Demand Notice that demolishes oral &ldquo;price-drop support&rdquo; excuses and fast-tracks recovery under Order XXXVII CPC, Order XXXVIII Rule 5 (Urgent Showroom Attachment Before Judgment), and Section 138 NI Act. Complete with IMEI/Serial-number audit reconciliations, GST e-way bill verification, and BSA 2023 Section 63 electronic delivery certificates.
+              Serve a defect-free, fact-verified Legal Demand Notice that demolishes oral &ldquo;price-drop support&rdquo; excuses and fast-tracks recovery under Order XXXVII CPC, Order XXXVIII Rule 5 (Urgent Showroom Attachment Before Judgment), and Section 138 NI Act. Complete with IMEI/Serial-number audit reconciliations, GST e-way bill verification, and BSA 2023 Section 63 electronic delivery certificates.
             </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-3">

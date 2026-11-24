@@ -37,7 +37,7 @@ const PROBLEMS: ProblemTab[] = [
           "Save the platform inspection report, purchase invoice, delivery handover memo, and web listing snapshot showing the advertised mileage reading as conclusive documentary evidence.",
       },
       {
-        step: "Serve Advocate Legal Notice for Fraud & Refund",
+        step: "Serve Fact-Verified Legal Notice for Fraud & Refund",
         description:
           "Serve a formal statutory legal demand notice on the platform and dealership alleging cheating under BNS 318 and unfair trade practice under CPA 2019, demanding full refund within 15 days or facing prosecution and consumer forum filing.",
       },
@@ -93,7 +93,7 @@ const PROBLEMS: ProblemTab[] = [
       {
         step: "Serve Legal Notice Demanding Free Overhaul or Full Repurchase",
         description:
-          "Serve a 15-day statutory advocate notice demanding either a complete free-of-cost OEM powertrain replacement or total repurchase/refund of the vehicle alongside taxi reimbursement expenses.",
+          "Serve a 15-day statutory fact-verified notice demanding either a complete free-of-cost OEM powertrain replacement or total repurchase/refund of the vehicle alongside taxi reimbursement expenses.",
       },
     ],
     statutoryRule: "Section 2(46) & Chapter VI Consumer Protection Act 2019",
@@ -118,7 +118,7 @@ const PROBLEMS: ProblemTab[] = [
           "Send a written demand to the platform's RTO transfer operations team demanding immediate clearance of all pre-purchase challans, bank NOC submission, and expedited RC smart card dispatch within 14 days.",
       },
       {
-        step: "Serve Advocate Legal Notice for Contract Cancellation",
+        step: "Serve Fact-Verified Legal Notice for Contract Cancellation",
         description:
           "If the platform cannot provide clear title or transfer RC within statutory timelines, serve a legal notice seeking total vehicle return, loan cancellation, refund of RC charges, and compensation for illegal driving risk.",
       },

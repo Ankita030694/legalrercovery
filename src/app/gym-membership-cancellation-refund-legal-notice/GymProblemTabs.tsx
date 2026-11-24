@@ -37,7 +37,7 @@ const PROBLEMS: ProblemTab[] = [
           "Explicitly email management stating that the alternate branch is commercially and geographically unfeasible, rejecting unilateral transfer and demanding pro-rata refund within 7 days.",
       },
       {
-        step: "Serve Advocate Legal Notice & File on e-Jagriti",
+        step: "Serve Fact-Verified Legal Notice & File on e-Jagriti",
         description:
           "If the fitness chain delays beyond 7 days, dispatch an advocate legal notice citing Section 2(11) CPA 2019. Follow with an e-Jagriti consumer complaint for refund, 9-12% interest, and litigation costs.",
       },
@@ -66,7 +66,7 @@ const PROBLEMS: ProblemTab[] = [
       {
         step: "Invoke Section 2(46) CPA in Advocate Demand Notice",
         description:
-          "Serve an advocate notice asserting that 'No Refund on Medical Grounds' is an unenforceable unfair contract clause. Demand pro-rata reimbursement within 15 days.",
+          "Serve a fact-verified notice asserting that 'No Refund on Medical Grounds' is an unenforceable unfair contract clause. Demand pro-rata reimbursement within 15 days.",
       },
     ],
     statutoryRule: "Section 2(46) Unfair Contract, CPA 2019 & Section 56 Indian Contract Act 1872",
@@ -93,7 +93,7 @@ const PROBLEMS: ProblemTab[] = [
       {
         step: "Trigger Legal Demand Notice for Contract Rescission",
         description:
-          "Issue a statutory advocate notice demanding rescission of membership contract, full reimbursement of unused fees, and compensation for deficiency in service.",
+          "Issue a statutory fact-verified notice demanding rescission of membership contract, full reimbursement of unused fees, and compensation for deficiency in service.",
       },
     ],
     statutoryRule: "Section 2(11) Deficiency & Section 2(28) Misleading Advertisement, CPA 2019",
@@ -120,7 +120,7 @@ const PROBLEMS: ProblemTab[] = [
       {
         step: "Escalate CCPA Dark Pattern Violation via Legal Notice",
         description:
-          "Send an advocate demand notice citing the CCPA Dark Patterns Guidelines 2023 and CPA 2019, seeking immediate reversal and regulatory reporting to the CCPA.",
+          "Send a fact-verified demand notice citing the CCPA Dark Patterns Guidelines 2023 and CPA 2019, seeking immediate reversal and regulatory reporting to the CCPA.",
       },
     ],
     statutoryRule: "CCPA Dark Patterns Guidelines 2023 & RBI E-Mandate Framework",

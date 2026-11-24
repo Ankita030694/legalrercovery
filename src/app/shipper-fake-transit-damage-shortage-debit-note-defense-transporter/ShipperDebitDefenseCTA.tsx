@@ -27,10 +27,10 @@ export default function ShipperDebitDefenseCTA({
               Track 1 &bull; Single Stalled Freight Voucher / Debit Rejection
             </span>
             <p className="text-lg sm:text-xl font-extrabold text-white mb-2">
-              Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Advocate Drafted &middot; Email + WhatsApp + Speed Post RPAD)
+              Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Fact-Verified &middot; Email + WhatsApp + Speed Post RPAD)
             </p>
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-              Serve an advocate-vetted 15-day statutory demand notice on an abusive corporate shipper or consignee. Nullify arbitrary transit damage debit notes using Clean POD estoppel under BSA Section 121, Supreme Court <em>Raman Iron Foundry</em> bar on unliquidated set-offs, Section 16 Carriage by Road Act 180-day limitation shield, and Section 43B(h) buyer tax disallowance warnings.
+              Serve a fact-verified 15-day statutory demand notice on an abusive corporate shipper or consignee. Nullify arbitrary transit damage debit notes using Clean POD estoppel under BSA Section 121, Supreme Court <em>Raman Iron Foundry</em> bar on unliquidated set-offs, Section 16 Carriage by Road Act 180-day limitation shield, and Section 43B(h) buyer tax disallowance warnings.
             </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-3">

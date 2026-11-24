@@ -100,7 +100,7 @@ export default function AboutPage() {
     },
     {
       question: "How do your legal recovery experts handle money disputes?",
-      answer: "Our technology driven platform connects you with experienced recovery lawyers across India. Our dedicated legal recovery support team guides you through transparent resolution procedures. We manage demand notices and online dispute resolution to recover dues swiftly."
+      answer: "Our technology driven platform lets you submit your case details online, and our team verifies the facts before a legal notice is sent. Our dedicated recovery support team guides you through transparent resolution procedures. We manage demand notices and online dispute resolution to recover dues swiftly."
     },
     {
       question: "How is LegalRecovery different from a traditional law firm?",
@@ -112,7 +112,7 @@ export default function AboutPage() {
     },
     {
       question: "Is my case handled by a secure legal recovery platform?",
-      answer: "Our platform employs bank-grade data encryption to safeguard your private case files. Our legal notice experts and recovery advocates handle all consultations with confidentiality. We store your financial evidence securely while managing your online dispute resolution."
+      answer: "Our platform employs bank-grade data encryption to safeguard your private case files. Our team handles your case details with strict confidentiality. We do not ask you to upload documents or evidence; only the case details you enter are stored securely while managing your online dispute resolution."
     }
   ];
 
@@ -149,13 +149,13 @@ export default function AboutPage() {
 
             {/* Paragraph */}
             <p className="text-[13px] sm:text-[14px] lg:text-[15px] text-[#4B5563] leading-[1.75] max-w-[600px] mb-8 sm:mb-10 select-text">
-              Legal Recovery is a secure platform committed to providing professional legal services India. Our technology driven system connects clients with experienced advocates and money recovery specialists. We deliver transparent legal support and hassle-free recovery solutions for everyday people.
+              Legal Recovery is a secure platform committed to providing professional legal services India. Our technology driven system verifies the facts of each case and sends structured legal notices on the client's behalf. We deliver transparent legal support and hassle-free recovery solutions for everyday people.
             </p>
 
             <div className="relative w-full h-[220px] sm:h-[280px] overflow-hidden rounded-2xl mb-8 lg:hidden">
               <Image
                 src="/edited.png"
-                alt="LegalRecovery expert legal team"
+                alt="LegalRecovery team"
                 width={3200}
                 height={3200}
                 priority
@@ -199,7 +199,7 @@ export default function AboutPage() {
                             overflow-hidden rounded-2xl lg:rounded-none">
               <Image
                 src="/edited.png"
-                alt="LegalRecovery expert legal team"
+                alt="LegalRecovery team"
                 width={3200}
                 height={3200}
                 priority
@@ -368,7 +368,7 @@ export default function AboutPage() {
                 {
                   title: "The Tenant Deposit Dispute",
                   scenario: "Landlords withholding security deposits after tenants complete an agreed rental lease.",
-                  deception: "Property owners delay move-out refunds. Our advocates assist with tenant deposit recovery.",
+                  deception: "Property owners delay move-out refunds. Our team assists with tenant deposit recovery.",
                   icon: <Scale className="w-5 h-5 text-[#DC2626]" />,
                   color: "border-t-4 border-t-blue-500"
                 },
@@ -456,7 +456,7 @@ export default function AboutPage() {
                 <ul className="space-y-4">
                   {[
                     { title: "Affordable Legal Solutions", desc: "We offer transparent pricing without unexpected fees through our secure recovery platform." },
-                    { title: "Fast Legal Recovery Services", desc: "Our platform generates advocate-approved legal notices within twenty-four hours of submission." },
+                    { title: "Fast Legal Recovery Services", desc: "Our platform generates fact-verified legal notices within twenty-four hours of submission." },
                     { title: "Live Case Dashboard", desc: "Track notice delivery, recipient replies, and case milestones directly on your screen." },
                     { title: "Debt Resolution Services", desc: "Initiate claims in five minutes while we manage dispatch, follow-ups, and negotiations." }
                   ].map((item, idx) => (
@@ -509,9 +509,9 @@ export default function AboutPage() {
             <div className="lg:flex-1 grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
               {[
                 { icon: <Clock       className="w-4 h-4 text-[#DC2626]" />, title: "Recovery Support Team", desc: "Our dedicated legal recovery support team keeps you updated at every stage." },
-                { icon: <IndianRupee className="w-4 h-4 text-[#DC2626]" />, title: "Legal Notice Experts",  desc: "Experienced advocates draft and verify every notice to ensure complete statutory compliance." },
+                { icon: <IndianRupee className="w-4 h-4 text-[#DC2626]" />, title: "Fact-Verified Notices",  desc: "Our team verifies the facts of every case before the notice is generated and sent." },
                 { icon: <Shield      className="w-4 h-4 text-[#DC2626]" />, title: "Reliable Platform",     desc: "Our reliable legal recovery platform safeguards client records with bank-grade encryption protocols." },
-                { icon: <Users       className="w-4 h-4 text-[#DC2626]" />, title: "Experienced Professionals", desc: "We connect claimants with skilled advocates specializing in financial disputes across India." },
+                { icon: <Users       className="w-4 h-4 text-[#DC2626]" />, title: "Experienced Professionals", desc: "A dedicated recovery team that verifies case facts and tracks every notice across India." },
                 { icon: <TrendingUp  className="w-4 h-4 text-[#DC2626]" />, title: "Legal Consultation Online", desc: "Access legal consultation online and track case milestones through your secure dashboard." },
                 { icon: <Award       className="w-4 h-4 text-[#DC2626]" />, title: "Award Winning Team",         desc: "Recognized as a leading legal recovery company India for technology-driven dispute resolution." }
               ].map((feat, i) => (

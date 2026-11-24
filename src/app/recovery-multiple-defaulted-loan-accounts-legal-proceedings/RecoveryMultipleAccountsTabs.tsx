@@ -57,7 +57,7 @@ const LOAN_SEGMENTS: LoanSegment[] = [
     operationalBottleneck:
       "Cardholders exploit the 3-year limitation window by disputing interest calculations or alleging harassment. Fragmented collections lead to time-barred debts written off at steep portfolio discounts.",
     centralizedSolution:
-      "Issue centralized statutory advocate demand notices with itemized monthly account statements. Capture balance acknowledgment via transaction auth logs or partial EMI payments to reset the Section 18 limitation period, followed by grouped summary suits under Order 37 CPC.",
+      "Issue centralized statutory fact-verified demand notices with itemized monthly account statements. Capture balance acknowledgment via transaction auth logs or partial EMI payments to reset the Section 18 limitation period, followed by grouped summary suits under Order 37 CPC.",
     recommendedForum: "Commercial Court (Summary Suit) / Pre-Litigation Conciliation",
     typicalSettlementRate: "48% – 68% Recovery Realisation",
     actionGuideLink: "/bulk-legal-notice-services-credit-card-recovery",

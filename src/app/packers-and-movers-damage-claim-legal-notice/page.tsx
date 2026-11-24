@@ -694,10 +694,10 @@ export default function PackersMoversDamageClaimPage() {
                     </span>
                     <div className="space-y-1 sm:space-y-1.5">
                       <h3 className="text-sm sm:text-base md:text-lg font-bold text-slate-900">
-                        Serve a Formal Statutory Advocate Legal Demand Notice
+                        Serve a Formal Statutory Fact-Verified Legal Demand Notice
                       </h3>
                       <p className="text-xs sm:text-sm leading-relaxed">
-                        When customer support stalls or offers a derisory compensation token (like ₹1,000 for a ₹70,000 television), instruct a verified advocate to draft and dispatch a statutory legal notice. Served on the registered corporate office and directors via Registered Speed Post and electronic mail under Section 63 BSA, the notice establishes strict carrier liability under Sections 12 &amp; 13 Carriage by Road Act, invalidates printed liability caps, and demands full replacement value with 18% interest within 15 days.
+                        When customer support stalls or offers a derisory compensation token (like ₹1,000 for a ₹70,000 television), send a fact-verified statutory legal notice. Served on the registered corporate office and directors via Registered Speed Post and electronic mail under Section 63 BSA, the notice establishes strict carrier liability under Sections 12 &amp; 13 Carriage by Road Act, invalidates printed liability caps, and demands full replacement value with 18% interest within 15 days.
                       </p>
                       <p className="text-xs text-slate-500 font-medium">
                         For disputes involving uncompleted home services, compare our guide on <Link href="/legal-notice-to-interior-designer-contractor-refund" className="text-blue-700 underline">legal notices to interior contractors</Link> or understand the overall <Link href="/how-to-send-a-legal-notice-for-recovery-of-money-in-india" className="text-blue-700 underline">money recovery notice process</Link>.
@@ -842,7 +842,7 @@ export default function PackersMoversDamageClaimPage() {
                       <strong>The Deadlock:</strong> Vikram endorsed the delivery slip with damage notes and filed an immediate claim. The moving company&apos;s escalation manager repudiated the claim after 3 weeks, stating: <em>&quot;As per Clause 14 of our Consignment Note, our liability is restricted to ₹1,000 for electronic goods. The insurance was transit risk only, which does not cover glass or internal panel cracking.&quot;</em> The mover refused to provide an IRDAI insurance policy number or claim surveyor.
                     </p>
                     <p>
-                      <strong>The Statutory Action:</strong> Vikram engaged LegalRecovery.in. An advocate drafted and served a comprehensive statutory demand notice on the moving agency&apos;s managing director and regional head office. The notice invoked Sections 10, 12, and 13 of the Carriage by Road Act, 2007, cited the Supreme Court rulings in <em>Nath Bros.</em> and <em>VRL Logistics</em> invalidating liability caps, and pleaded Unfair Trade Practice under Section 2(47) CPA for pocket insurance fraud. The notice attached an authorized LG service estimate of ₹84,000 and a carpentry appraisal of ₹45,000, demanding ₹1,29,000 plus ₹50,000 compensation within 15 calendar days.
+                      <strong>The Statutory Action:</strong> Vikram engaged LegalRecovery.in. The team verified the facts and served a comprehensive statutory demand notice on the moving agency&apos;s managing director and regional head office. The notice invoked Sections 10, 12, and 13 of the Carriage by Road Act, 2007, cited the Supreme Court rulings in <em>Nath Bros.</em> and <em>VRL Logistics</em> invalidating liability caps, and pleaded Unfair Trade Practice under Section 2(47) CPA for pocket insurance fraud. The notice attached an authorized LG service estimate of ₹84,000 and a carpentry appraisal of ₹45,000, demanding ₹1,29,000 plus ₹50,000 compensation within 15 calendar days.
                     </p>
                     <div className="p-3.5 sm:p-4 bg-emerald-950/70 border border-emerald-700/60 rounded-xl text-emerald-200">
                       <strong className="block text-emerald-400 font-bold mb-1">The Outcome:</strong>

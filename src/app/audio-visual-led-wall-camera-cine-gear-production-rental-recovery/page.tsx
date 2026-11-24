@@ -185,7 +185,7 @@ const HOWTO_SCHEMA = {
       "@type": "HowToStep",
       position: 3,
       name: "Serve Combined Bailee Liability, NI s.138 & s.43B(h) Notice",
-      text: "Dispatch an Advocate Demand Notice via Speed Post RPAD, Email, and WhatsApp claiming unpaid hire, OEM damage replacement, repair downtime, and 3x RBI MSMED interest.",
+      text: "Dispatch a Fact-Verified Demand Notice via Speed Post RPAD, Email, and WhatsApp claiming unpaid hire, OEM damage replacement, repair downtime, and 3x RBI MSMED interest.",
     },
     {
       "@type": "HowToStep",

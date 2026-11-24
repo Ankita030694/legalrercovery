@@ -671,7 +671,7 @@ export default function LimitationCalculatorClient() {
                 onClick={() => setIsModalOpen(true)}
                 className="w-full inline-flex items-center justify-center px-4 py-3 rounded-xl font-bold text-white bg-[#DC2626] hover:bg-[#B91C1C] transition-colors shadow-lg shadow-red-900/30 text-xs sm:text-sm cursor-pointer text-center"
               >
-                Send Advocate Legal Demand Notice — ₹{basePrice}
+                Send Fact-Verified Legal Demand Notice — ₹{basePrice}
               </button>
               <p className="text-[10px] text-slate-400 text-center mt-2">
                 Statutory legal notice dispatched within 24h via BSA Section 63 Email + WhatsApp. Speed Post optional.

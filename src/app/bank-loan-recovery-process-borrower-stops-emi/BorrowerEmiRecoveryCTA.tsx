@@ -31,7 +31,7 @@ export default function BorrowerEmiRecoveryCTA({
                 Arrest NPA Slippage When Borrowers Stop Paying EMIs
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6">
-                Equip your remedial management unit with advocate-drafted statutory cure notices under Section 25 of the Payment and Settlement Systems Act, 2007 and immediate contractual loan acceleration. We serve institutional demand notices to defaulting borrowers, co-borrowers, and personal guarantors via Registered Speed Post with tracking and Section 63 BSA-compliant digital dispatch before the 90-day NPA threshold.
+                Equip your remedial management unit with fact-verified statutory cure notices under Section 25 of the Payment and Settlement Systems Act, 2007 and immediate contractual loan acceleration. We serve institutional demand notices to defaulting borrowers, co-borrowers, and personal guarantors via Registered Speed Post with tracking and Section 63 BSA-compliant digital dispatch before the 90-day NPA threshold.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button

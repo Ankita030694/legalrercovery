@@ -148,7 +148,7 @@ const FAQS = [
   {
     question: "What legal difference exists between an ordinary bank recovery notice and a statutory advocate demand notice?",
     answer:
-      "An internal bank recovery notice or call-center collection letter is merely an administrative reminder with zero statutory penal effect. In contrast, an advocate-drafted statutory legal notice under Section 138 NI Act or Section 25 PSS Act triggers a mandatory 15-day statutory cure clock. Failure of the borrower to remit payment within 15 days of verified receipt creates a complete statutory cause of action for quasi-criminal prosecution and summary decree proceedings under Order 37 CPC. Furthermore, serving it via Registered Speed Post and WhatsApp/Email with BSA 2023 Section 63 electronic certification establishes an unshakeable evidentiary record in court.",
+      "An internal bank recovery notice or call-center collection letter is merely an administrative reminder with zero statutory penal effect. In contrast, a fact-verified statutory legal notice under Section 138 NI Act or Section 25 PSS Act triggers a mandatory 15-day statutory cure clock. Failure of the borrower to remit payment within 15 days of verified receipt creates a complete statutory cause of action for quasi-criminal prosecution and summary decree proceedings under Order 37 CPC. Furthermore, serving it via Registered Speed Post and WhatsApp/Email with BSA 2023 Section 63 electronic certification establishes an unshakeable evidentiary record in court.",
   },
   {
     question: "How does SARFAESI Act Section 13 operate concurrently with DRT Original Applications?",
@@ -300,7 +300,7 @@ export default function EffectiveLegalStrategiesPage() {
                 Executive Legal Summary (Institutional Banking Recovery Mandate)
               </p>
               <p>
-                Under Indian banking law, recovery of defaulted loans requires a structured multi-track legal framework: issuing 15-day statutory advocate demand notices under Section 25 PSS Act or Section 138 NI Act, resolving retail and MSME delinquencies via Pre-Litigation Lok Adalat (LSAA 1987 Section 21) with zero court fees, enforcing secured collateral under SARFAESI Act Section 13, and escalating claims above ₹20 Lakhs to the Debt Recovery Tribunal (DRT).
+                Under Indian banking law, recovery of defaulted loans requires a structured multi-track legal framework: issuing 15-day statutory fact-verified demand notices under Section 25 PSS Act or Section 138 NI Act, resolving retail and MSME delinquencies via Pre-Litigation Lok Adalat (LSAA 1987 Section 21) with zero court fees, enforcing secured collateral under SARFAESI Act Section 13, and escalating claims above ₹20 Lakhs to the Debt Recovery Tribunal (DRT).
               </p>
             </div>
 
@@ -654,7 +654,7 @@ export default function EffectiveLegalStrategiesPage() {
                     <strong>Stage 01 — SMA Inception &amp; Soft Early Triggers:</strong> Delinquent accounts entering Special Mention Account status (SMA-0 for 1–30 days overdue, SMA-1 for 31–60 days overdue) receive coordinated multi-channel telephonic and automated digital reminders. During this phase, core-banking ledgers are audited for certificate compliance under the Banker&apos;s Books Evidence Act, 1891, and Section 63 of the Bharatiya Sakshya Adhiniyam, 2023.
                   </p>
                   <p>
-                    <strong>Stage 02 — Formal Advocate Legal Notice Deployment:</strong> As loans enter the SMA-2 bucket (61–90 days overdue), the institution issues an advocate-drafted statutory demand notice setting an unextendable 15-day cure window. Dispatched via India Post Registered Speed Post with electronic tracking alongside cryptographically logged digital copies (Email and WhatsApp), this notice establishes conclusive legal proof of demand and creates a statutory foundation under Section 25 PSS Act and Section 138 NI Act.
+                    <strong>Stage 02 — Formal Advocate Legal Notice Deployment:</strong> As loans enter the SMA-2 bucket (61–90 days overdue), the institution issues a fact-verified statutory demand notice setting an unextendable 15-day cure window. Dispatched via India Post Registered Speed Post with electronic tracking alongside cryptographically logged digital copies (Email and WhatsApp), this notice establishes conclusive legal proof of demand and creates a statutory foundation under Section 25 PSS Act and Section 138 NI Act.
                   </p>
                   <p>
                     <strong>Stage 03 — Pre-Litigation Lok Adalat &amp; ODR Conciliation:</strong> Instead of waiting for prolonged judicial trials, delinquent accounts are batched and referred to the upcoming National Lok Adalat via District Legal Services Authorities (DLSA) or accredited Online Dispute Resolution (ODR) conciliation panels. With zero court fees, borrowers are offered structured One-Time Settlement (OTS) options or restructured EMI schedules. The resulting settlement award has the immediate, non-appealable status of a Civil Court Decree under Section 21 of the Legal Services Authorities Act, 1987.
@@ -935,7 +935,7 @@ export default function EffectiveLegalStrategiesPage() {
                           <strong>Court Fees:</strong> ₹0 under Section 21 of the Legal Services Authorities Act, 1987.
                         </li>
                         <li>
-                          <strong>Automated Notice Operations:</strong> Standardized advocate drafting &amp; Speed Post/Email service at ₹899/notice = ₹5,39,400.
+                          <strong>Automated Notice Operations:</strong> Standardized notice drafting &amp; Speed Post/Email service at ₹899/notice = ₹5,39,400.
                         </li>
                         <li>
                           <strong>Lok Adalat Docketing:</strong> Mass docketing via DLSA; 265 accounts (44.1%) settle in National Lok Adalat within 60 days.

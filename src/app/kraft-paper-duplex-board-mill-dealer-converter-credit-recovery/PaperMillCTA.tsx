@@ -24,10 +24,10 @@ export default function PaperMillCTA({ className = "" }: PaperMillCTAProps) {
                 Track 1 &middot; Single Converter / Merchant File
               </span>
               <h3 className="text-lg sm:text-xl font-bold text-white mb-2">
-                Test 1 Live Overdue Case Now (&#8377;{basePrice} &middot; Advocate Drafted &middot; Email + WhatsApp + Speed Post RPAD)
+                Test 1 Live Overdue Case Now (&#8377;{basePrice} &middot; Fact-Verified &middot; Email + WhatsApp + Speed Post RPAD)
               </h3>
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-                Upload your GST tax invoices, Reel-Wise Packing List, Mill QC Lab Report (GSM/BF/Cobb60), Weighbridge Slip, E-Way Bill, and bounced cheque memo. Our advocates draft and serve a Sale of Goods Act s.42 + NI Act s.138 / IBC s.8 / MSMED s.15&ndash;18 statutory notice within 24 hours.
+                Enter the details of your GST tax invoices, Reel-Wise Packing List, Mill QC Lab Report (GSM/BF/Cobb60), Weighbridge Slip, E-Way Bill, and bounced cheque memo. Our team verifies the facts, then prepares and serves a Sale of Goods Act s.42 + NI Act s.138 / IBC s.8 / MSMED s.15&ndash;18 statutory notice within 24 hours.
               </p>
             </div>
 

@@ -31,7 +31,7 @@ export default function UnsecuredLoanRecoveryCTA({
                 Recover Defaulted Unsecured Loans Without Collateral Bottlenecks
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6">
-                Deploy advocate-drafted statutory loan recovery notices under Order 37 of the CPC and Section 25 of the Payment and Settlement Systems Act, 2007. Established for scheduled commercial banks, small finance institutions, and FinTech NBFCs dealing with chronic non-paying retail borrowers and unsecured business debt.
+                Deploy fact-verified statutory loan recovery notices under Order 37 of the CPC and Section 25 of the Payment and Settlement Systems Act, 2007. Established for scheduled commercial banks, small finance institutions, and FinTech NBFCs dealing with chronic non-paying retail borrowers and unsecured business debt.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button
@@ -42,7 +42,7 @@ export default function UnsecuredLoanRecoveryCTA({
                   {buttonText} — ₹{basePrice}
                 </button>
                 <div className="text-xs text-slate-300 flex flex-wrap sm:flex-nowrap items-center gap-2 sm:gap-3">
-                  <span>✓ Advocate Verification</span>
+                  <span>✓ Fact Verification</span>
                   <span>•</span>
                   <span>✓ Registered Post &amp; E-Delivery</span>
                   <span>•</span>

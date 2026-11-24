@@ -68,7 +68,7 @@ const WOVEN_SACK_SCENARIOS: ScenarioItem[] = [
       "Reconciled running ledger, bounced PDCs (if any), and GST GSTR-1 / GSTR-2B matching trail",
     ],
     actionPlan:
-      "Deploy a dual-track strike: serve an Advocate Demand Notice triggering Income Tax s.43B(h) (or IBC s.8 Form 3 for ≥₹1 Cr non-MSME defaults) alongside parallel NI Act s.138/141 prosecution on any dishonoured security/post-dated cheques.",
+      "Deploy a dual-track strike: serve a Fact-Verified Demand Notice triggering Income Tax s.43B(h) (or IBC s.8 Form 3 for ≥₹1 Cr non-MSME defaults) alongside parallel NI Act s.138/141 prosecution on any dishonoured security/post-dated cheques.",
     recoveryLeverage:
       "Exporters depend on clean banking lines and statutory audit sign-offs—s.43B(h) disallowance or an IBC Form 3 notice disrupts export packing credit limits immediately.",
   },

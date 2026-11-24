@@ -297,7 +297,7 @@ export default function ReimbursementClaimsClient() {
               Recover Unpaid <span className="text-[#DC2626]">Employee Reimbursements</span>
             </h1>
             <p className="text-sm md:text-xl mb-8 md:mb-12 max-w-3xl mx-auto text-slate-300 leading-relaxed font-medium">
-              Did you spend personal funds on company travel, client acquisition, WFH setup, or relocation? Get advocate-backed representation to serve legal notices and recover your outstanding reimbursement dues.
+              Did you spend personal funds on company travel, client acquisition, WFH setup, or relocation? Get fact-verified representation to serve legal notices and recover your outstanding reimbursement dues.
             </p>
             <button 
               onClick={() => setIsPaymentModalOpen(true)}
@@ -342,7 +342,7 @@ export default function ReimbursementClaimsClient() {
                       Unfortunately, employee expense reimbursement defaults have become a widespread issue in startups, medium enterprises, and multinational corporations alike. Companies facing cash flow shortages or entering layoffs frequently look for ways to trim expenses, and withholding employee reimbursements is a common tactic. Since these funds are out-of-pocket expenses, withholding them directly depletes the employee&apos;s personal savings. Employers often exploit internal policies, claim lost receipts, or cite resignation as grounds to deny these claims, leaving employees frustrated and unpaid.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      At LegalRecovery, we specialize in corporate labor rights and debt recovery. We guide professionals through the process of compiling digital audit trails, executing pre-litigation demands, serving formal advocate notices to corporate boards, and pursuing recovery actions before Labour Commissioners and Civil Courts. This guide provides an exhaustive review of your legal rights and remedies to recover unpaid employee reimbursement claims.
+                      At LegalRecovery, we specialize in corporate labor rights and debt recovery. We guide professionals through the process of compiling digital audit trails, executing pre-litigation demands, serving formal fact-verified notices to corporate boards, and pursuing recovery actions before Labour Commissioners and Civil Courts. This guide provides an exhaustive review of your legal rights and remedies to recover unpaid employee reimbursement claims.
                     </p>
                     <div className="bg-red-50 p-6 rounded-2xl border-l-4 border-[#DC2626] italic text-xs sm:text-sm text-red-900 font-semibold leading-relaxed">
                       &quot;A company cannot use corporate policies or employee resignation to permanently retain personal funds spent by an employee on corporate operations. Withholding verified business reimbursements is a breach of contract and constitutes unjust enrichment.&quot;
@@ -414,7 +414,7 @@ export default function ReimbursementClaimsClient() {
                       <li><strong>Infinite Audit Loop:</strong> Keeping claims in a perpetual state of audit, asking for repetitive proofs or justifications to delay payouts indefinitely.</li>
                     </ul>
                     <p className="text-sm md:text-base leading-relaxed">
-                      Our legal team identifies these tactics and compiles evidence to counter each corporate excuse, demonstrating that company policies cannot override statutory recovery rights.
+                      Our team identifies these tactics and compiles evidence to counter each corporate excuse, demonstrating that company policies cannot override statutory recovery rights.
                     </p>
                   </div>
                 </section>
@@ -551,10 +551,10 @@ export default function ReimbursementClaimsClient() {
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">Serving a Strategic Legal Notice</h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      When internal follow-ups and escalation emails fail to yield results, serving a formal <strong>Legal Notice</strong> is the next logical step. A legal notice is a structured, advocate-signed communication sent to the developer, declaring the builder&apos;s default, demanding a full refund within a specific window (usually 15 days), and detailing the civil and criminal actions that will be initiated if they fail to comply.
+                      When internal follow-ups and escalation emails fail to yield results, serving a formal <strong>Legal Notice</strong> is the next logical step. A legal notice is a structured, fact-verified communication sent to the developer, declaring the builder&apos;s default, demanding a full refund within a specific window (usually 15 days), and detailing the civil and criminal actions that will be initiated if they fail to comply.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      At LegalRecovery, our legal panel drafts custom notices tailored to the facts of your case. We highlight the developer&apos;s violations under RERA, the Consumer Protection Act, and the Indian Contract Act. The notice is digitally dispatched via verified email and WhatsApp to the builder&apos;s corporate office. Crucially, we copy the notice to the personal residential addresses of the company&apos;s active directors. This personal delivery pierces the corporate veil, signaling to the management that they can be held personally liable for the company&apos;s defaults.
+                      At LegalRecovery, our team drafts custom notices tailored to the facts of your case. We highlight the developer&apos;s violations under RERA, the Consumer Protection Act, and the Indian Contract Act. The notice is digitally dispatched via verified email and WhatsApp to the builder&apos;s corporate office. Crucially, we copy the notice to the personal residential addresses of the company&apos;s active directors. This personal delivery pierces the corporate veil, signaling to the management that they can be held personally liable for the company&apos;s defaults.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
                       Serving a legal notice is highly effective. Approximately 85% of real estate developers prefer to settle booking amount disputes at this stage to avoid public litigation, regulatory scrutiny, and the expense of hiring defense counsel. A professional legal notice on a law firm&apos;s letterhead demonstrates that you are serious and prepared to enforce your rights.

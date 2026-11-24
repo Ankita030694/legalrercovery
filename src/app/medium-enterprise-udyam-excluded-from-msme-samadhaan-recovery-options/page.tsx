@@ -73,7 +73,7 @@ const STATUTORY_TIMELINE_STOPS = [
     statute: "Sale of Goods Act, 1930 (s. 55) & Interest Act, 1978 (s. 3)",
     trigger: "Commercial buyer ignores formal accounts payable reminders and vendor reconciliation statements",
     action:
-      "Serve a formal 15-Day Advocate Demand Notice via Speed Post RPAD and registered corporate email. Establish undisputed liquidated debt, quantify 18% p.a. commercial interest, and assert deemed acceptance under Sale of Goods Act Section 42.",
+      "Serve a formal 15-Day Fact-Verified Demand Notice via Speed Post RPAD and registered corporate email. Establish undisputed liquidated debt, quantify 18% p.a. commercial interest, and assert deemed acceptance under Sale of Goods Act Section 42.",
     risk: "Relying on informal email reminders forfeits the evidentiary basis required to prove clean demand under Section 63 of Bharatiya Sakshya Adhiniyam, 2023 (BSA).",
     tone: "emerald",
   },

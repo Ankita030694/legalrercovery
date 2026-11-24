@@ -24,10 +24,10 @@ export default function OfcTowerCTA({ className = "" }: OfcTowerCTAProps) {
                 Track 1 · Single PO / Site Pilot Test
               </span>
               <h3 className="text-lg sm:text-xl font-bold text-white mb-2">
-                Test 1 Live Overdue Case Now (&#8377;{basePrice} &middot; Advocate Drafted &middot; Email + WhatsApp + Speed Post RPAD)
+                Test 1 Live Overdue Case Now (&#8377;{basePrice} &middot; Fact-Verified &middot; Email + WhatsApp + Speed Post RPAD)
               </h3>
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-                Upload a single withheld RA bill, OTDR Acceptance Testing trace, or Tower O&amp;M diesel ledger. Our advocates frame your statutory demand under MSMED Act s.15–18, Contract Act s.74 (against wrongful ROW deductions), and Order XXXVII CPC.
+                Upload a single withheld RA bill, OTDR Acceptance Testing trace, or Tower O&amp;M diesel ledger. Our team frames your statutory demand under MSMED Act s.15–18, Contract Act s.74 (against wrongful ROW deductions), and Order XXXVII CPC.
               </p>
             </div>
 

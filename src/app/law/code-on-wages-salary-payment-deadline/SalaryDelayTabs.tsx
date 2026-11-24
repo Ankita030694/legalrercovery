@@ -37,7 +37,7 @@ const SCENARIOS: ScenarioTab[] = [
           "Submit a written protest citing Section 17(1) Code on Wages, rejecting deferred or phased payouts, and specifying an immediate 48-hour deadline for bank transfer.",
       },
       {
-        step: "Serve Advocate Statutory Demand Notice",
+        step: "Serve Fact-Verified Statutory Demand Notice",
         description:
           "If unpaid by Day 10, dispatch an advocate demand notice to all directors and founders demanding full payment with 18% p.a. commercial interest before initiating labour authority proceedings.",
       },

@@ -39,7 +39,7 @@ const LOGISTICS_SCENARIOS: LogisticsScenario[] = [
       {
         step: "2. 48-Hour Carrier Lien Intimation or Set-Off Rebuttal",
         detail:
-          "Serve an advocate-signed Lien Intimation Notice before off-loading cargo to prevent criminal conversion allegations, or issue a Raman Iron Foundry rebuttal demanding marine-insurance claim disclosures.",
+          "Serve a fact-verified Lien Intimation Notice before off-loading cargo to prevent criminal conversion allegations, or issue a Raman Iron Foundry rebuttal demanding marine-insurance claim disclosures.",
       },
       {
         step: "3. Order XXXVII Summary Suit / MSME 3x Interest",
@@ -137,7 +137,7 @@ const LOGISTICS_SCENARIOS: LogisticsScenario[] = [
       {
         step: "3. Execute Tri-Channel Bulk Notices & ODR Settlements",
         detail:
-          "Dispatch advocate notices with 15-day payment links, escalating non-payers into neutral institutional ODR or Commercial Court summary proceedings.",
+          "Dispatch fact-verified notices with 15-day payment links, escalating non-payers into neutral institutional ODR or Commercial Court summary proceedings.",
       },
     ],
     primaryRoute: {

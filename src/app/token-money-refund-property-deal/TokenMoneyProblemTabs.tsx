@@ -37,7 +37,7 @@ const PROBLEMS: ProblemTab[] = [
           "Send a dated cancellation notice before the Agreement to Sell (ATS) deadline expires, placing on record that performance became impossible or was frustrated by property defects.",
       },
       {
-        step: "Dispatch 15-Day Statutory Advocate Demand Notice",
+        step: "Dispatch 15-Day Statutory Fact-Verified Demand Notice",
         description:
           "If the seller refuses to refund, serve an advocate notice invoking Section 74 Contract Act and Section 55(6)(b) Transfer of Property Act to create a statutory charge on the flat.",
       },
@@ -86,7 +86,7 @@ const PROBLEMS: ProblemTab[] = [
           "Keep your bank statement, home loan sanction letter, or demand draft ready on the agreed registration date, and record your presence at the Sub-Registrar Office (SRO) if required.",
       },
       {
-        step: "Serve Advocate Notice Freezing Third-Party Sale",
+        step: "Serve Fact-Verified Notice Freezing Third-Party Sale",
         description:
           "Issue an immediate legal notice demanding either execution of the Sale Deed or refund with contractual double-bayana damages within 15 days.",
       },

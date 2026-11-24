@@ -50,7 +50,7 @@ const SCENARIOS: Scenario[] = [
       "Failure to provide valid IMO container vessel booking reference or master airway bill (MAWB)",
     ],
     immediateSteps: [
-      "Issue formal advocate-vetted Cross-Border Legal Demand Notice via international registered mail and legal email",
+      "Issue formal fact-verified Cross-Border Legal Demand Notice via international registered mail and legal email",
       "Instruct AD Bank to dispatch MT199 / MT299 SWIFT tracer to foreign beneficiary bank to freeze accounts",
       "Lodge complaint with Embassy Commercial Wing / Consulate Trade Commissioner in the supplier's country",
       "File online grievance on National Cyber Crime Reporting Portal (cybercrime.gov.in) for cross-border financial fraud",

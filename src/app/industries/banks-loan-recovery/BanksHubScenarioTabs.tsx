@@ -60,12 +60,12 @@ const BANK_SCENARIOS: BankScenario[] = [
     bottleneck:
       "Because the DRT pecuniary floor sits at ₹20 Lakh under RDB Act s.1(4), millions of retail, personal, Mudra/CGTMSE, and credit-card NPAs fall outside DRT jurisdiction. Meanwhile, unilateral bank panel arbitrator appointments face automatic annulment under Perkins Eastman and the 5-Judge CORE Constitution Bench ruling.",
     legalMechanism:
-      "Banks bridge the sub-₹20 Lakh gap by pairing multi-wave advocate recall notices with Section 25 PSS Act e-NACH/UPI AutoPay notices (30-day return-memo window), Commercial Court Section 12A mediation for ≥ ₹3 Lakh business loans, Order XXXVII summary suits on liquid ledgers, and neutral institutional ODR arbitration compliant with Section 12(5).",
+      "Banks bridge the sub-₹20 Lakh gap by pairing multi-wave fact-verified recall notices with Section 25 PSS Act e-NACH/UPI AutoPay notices (30-day return-memo window), Commercial Court Section 12A mediation for ≥ ₹3 Lakh business loans, Order XXXVII summary suits on liquid ledgers, and neutral institutional ODR arbitration compliant with Section 12(5).",
     operationalSteps: [
       {
         step: "1. Day-62 SMA-2 Advocate Cure Intervention",
         detail:
-          "Deploy advocate-signed cure notices before Day 90 daily day-end NPA stamping, preventing provisioning lock-in where partial payments can no longer upgrade an account.",
+          "Deploy fact-verified cure notices before Day 90 daily day-end NPA stamping, preventing provisioning lock-in where partial payments can no longer upgrade an account.",
       },
       {
         step: "2. Section 25 PSS Act & Section 138 Cheque Triage",

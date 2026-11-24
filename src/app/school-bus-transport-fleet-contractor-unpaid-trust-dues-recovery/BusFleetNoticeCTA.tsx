@@ -27,7 +27,7 @@ export default function BusFleetNoticeCTA({ className = "" }: BusFleetNoticeCTAP
                 Test 1 Live Overdue Fleet Bill Now
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm leading-relaxed mb-5">
-                &rupee;{basePrice} &middot; Advocate Drafted against the Registered Society, Public Trust, or Section 8 Company (with Fiduciary Parent-Fee &amp; MSMED s.15–18 hooks) &middot; Dispatched via Email + WhatsApp + Speed Post RPAD.
+                &rupee;{basePrice} &middot; Fact-Verified against the Registered Society, Public Trust, or Section 8 Company (with Fiduciary Parent-Fee &amp; MSMED s.15–18 hooks) &middot; Dispatched via Email + WhatsApp + Speed Post RPAD.
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-3">

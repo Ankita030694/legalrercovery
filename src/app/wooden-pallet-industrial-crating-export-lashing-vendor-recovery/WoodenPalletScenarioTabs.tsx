@@ -30,7 +30,7 @@ const PALLET_SCENARIOS: ScenarioItem[] = [
       "Signed factory gate-in challan, E-Way bill, and pre-stuffing photographs showing the IPPC stamp on the crated machine",
     ],
     actionPlan:
-      "Issue an Advocate Statutory Demand Notice directly to the exporter's CFO and Statutory Auditor flagging Income Tax Section 43B(h) disallowance, Form 3CD Clause 22 disclosure, and MSEFC 3x RBI monthly compounded interest. Simultaneously notify that future ISPM-15 compliance certificates will require 100% advance clearance.",
+      "Issue a Fact-Verified Statutory Demand Notice directly to the exporter's CFO and Statutory Auditor flagging Income Tax Section 43B(h) disallowance, Form 3CD Clause 22 disclosure, and MSEFC 3x RBI monthly compounded interest. Simultaneously notify that future ISPM-15 compliance certificates will require 100% advance clearance.",
     recoveryLeverage:
       "High pre-litigation settlement leverage: exporters cannot deny receipt once your unique IPPC/ISPM-15 certificate number is embedded in their customs clearance dossier.",
   },
@@ -68,7 +68,7 @@ const PALLET_SCENARIOS: ScenarioItem[] = [
       "Material consumption tally (timber dunnage, VCI film, desiccant bags, heavy lashing belts) and GSTR-1 filed tax invoice",
     ],
     actionPlan:
-      "Serve a joint Advocate Notice on both the contracting CHA/Freight Forwarder (principal obligor) and copy the Exporter's Logistics Head (beneficiary under Section 70) putting them on notice of GSTR-2B ITC reversal risk under CGST Section 16(2) if the invoice crosses 180 days unpaid.",
+      "Serve a joint Fact-Verified Notice on both the contracting CHA/Freight Forwarder (principal obligor) and copy the Exporter's Logistics Head (beneficiary under Section 70) putting them on notice of GSTR-2B ITC reversal risk under CGST Section 16(2) if the invoice crosses 180 days unpaid.",
     recoveryLeverage:
       "Copying the end-exporter breaks CHA stonewalling immediately—exporters rarely tolerate forwarders pocketing already-reimbursed port lashing bills.",
   },

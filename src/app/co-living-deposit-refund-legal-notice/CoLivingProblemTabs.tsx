@@ -28,7 +28,7 @@ const SCENARIOS: OperatorScenario[] = [
       "Calculate the exact calendar date on which the promised refund window expired from your room vacate date.",
       "Send a final written demand to the operator's Grievance Officer demanding the 12-digit NEFT/IMPS/UPI UTR number within 72 hours.",
       "Lodge a docket on the National Consumer Helpline (1915 / consumerhelpline.gov.in) attaching your move-out clearance.",
-      "Serve a 15-day Advocate Legal Notice to the corporate entity's registered office demanding principal deposit + 18% p.a. interest.",
+      "Serve a 15-day Fact-Verified Legal Notice to the corporate entity's registered office demanding principal deposit + 18% p.a. interest.",
     ],
     keyTip:
       "A screenshot showing 'Refund Processed' inside the co-living app is not legal proof of payment unless accompanied by a verifiable bank UTR credited to your account.",

@@ -31,7 +31,7 @@ const SCENARIOS: Scenario[] = [
     actionProtocol: [
       "Issue a formal legal communication rejecting the unilateral termination email and confirming that the 36-month lock-in remains binding and irrevocable.",
       "Calculate total outstanding seat dues, unamortized fit-out CapEx, and unexpired lock-in fees, setting off the security deposit only against accrued mature arrears.",
-      "Serve an advocate-drafted 15-day statutory demand notice threatening pre-institution commercial mediation under Section 12A of the Commercial Courts Act.",
+      "Serve a fact-verified 15-day statutory demand notice threatening pre-institution commercial mediation under Section 12A of the Commercial Courts Act.",
       "If the defaulting startup is a private limited entity with cumulative dues exceeding ₹1.00 Crore, serve a formal IBC Section 8 Form 3 Demand Notice on its directors.",
     ],
   },

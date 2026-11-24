@@ -23,7 +23,7 @@ export default function StateMedicalTenderCTA({ className = "" }: StateMedicalTe
               Track 1 &bull; Single Tender Invoice Test
             </span>
             <h3 className="text-lg sm:text-xl font-extrabold text-white mb-2">
-              Test 1 Live Overdue Tender Case Now (&rupee;{basePrice} &middot; Advocate Drafted &middot; Email + WhatsApp + Speed Post RPAD)
+              Test 1 Live Overdue Tender Case Now (&rupee;{basePrice} &middot; Fact-Verified &middot; Email + WhatsApp + Speed Post RPAD)
             </h3>
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
               Serve a high-leverage statutory demand on defaulting State Medical Corporations (UPMSCL, BMSICL, RMSCL, TNMSC, KMSCL) or Govt Hospital DDOs. Enforces MSMED Act Section 16 compound interest (overriding tender 'no-interest' clauses under Silpi Industries), demands immediate release of treasury tokens, and establishes an airtight paper trail.

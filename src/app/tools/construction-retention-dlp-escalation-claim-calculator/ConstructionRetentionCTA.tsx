@@ -27,10 +27,10 @@ export default function ConstructionRetentionCTA({
               Track 1 &bull; Single Site / Single Contractor Demand
             </span>
             <p className="text-lg sm:text-xl font-extrabold text-white mb-2">
-              Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Advocate Drafted &middot; Email + WhatsApp + Speed Post RPAD)
+              Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Fact-Verified &middot; Email + WhatsApp + Speed Post RPAD)
             </p>
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-              Serve a high-impact, advocate-vetted statutory demand notice on the defaulting developer, PSU, or EPC main contractor. Enforces Limitation Act Art. 113 post-DLP retention release, demands 18% commercial interest under Section 31(7) Arbitration Act and Interest Act 1978, sets a 15-day pre-arbitration deadline, and pre-empts retaliatory Bank Guarantee encashment.
+              Serve a high-impact, fact-verified statutory demand notice on the defaulting developer, PSU, or EPC main contractor. Enforces Limitation Act Art. 113 post-DLP retention release, demands 18% commercial interest under Section 31(7) Arbitration Act and Interest Act 1978, sets a 15-day pre-arbitration deadline, and pre-empts retaliatory Bank Guarantee encashment.
             </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-3">

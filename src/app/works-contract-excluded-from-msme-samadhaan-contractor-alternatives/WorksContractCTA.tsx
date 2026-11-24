@@ -23,7 +23,7 @@ export default function WorksContractCTA({ className = "" }: WorksContractCTAPro
               Track 1 &bull; Single Overdue Contract Recovery Test
             </span>
             <p className="text-lg sm:text-xl font-extrabold text-white mb-2">
-              Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Advocate Drafted &middot; Email + WhatsApp + Speed Post RPAD)
+              Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Fact-Verified &middot; Email + WhatsApp + Speed Post RPAD)
             </p>
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
               Serve a rigorous, high-impact 15-day statutory demand notice on a defaulting real estate developer, EPC main contractor, or infrastructure employer. Pre-empts bogus &apos;works contract&apos; MSEFC jurisdictional objections, puts the employer on notice for Commercial Court summary action or Section 11 neutral arbitration, and demands 18% statutory interest with electronic delivery audit under Section 63 of Bharatiya Sakshya Adhiniyam, 2023.

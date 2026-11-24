@@ -154,7 +154,7 @@ const CREATIVE_WORK_SCHEMA = {
   "@type": "CreativeWork",
   name: "Section 18 Balance Confirmation, Section 19 Part-Payment Receipt & Section 25(3) Time-Barred Debt Promise Templates",
   description:
-    "Advocate-vetted corporate AR templates for extending the 3-year limitation period under Sections 18 and 19 of the Limitation Act, 1963 and reviving time-barred debts under Section 25(3) of the Indian Contract Act, 1872.",
+    "Ready-to-use corporate AR templates for extending the 3-year limitation period under Sections 18 and 19 of the Limitation Act, 1963 and reviving time-barred debts under Section 25(3) of the Indian Contract Act, 1872.",
   url: PAGE_URL,
   inLanguage: "en-IN",
   isAccessibleForFree: true,
@@ -351,7 +351,7 @@ export default function BalanceConfirmationLimitationPage() {
                 >
                   how limitation is extended by acknowledgment and part-payment
                 </Link>{" "}
-                by giving credit controllers four advocate-vetted, downloadable Word formats: a
+                by giving credit controllers four fact-verified, downloadable Word formats: a
                 March 31 / quarterly <strong>Section 18 Balance Confirmation Letter</strong>, an{" "}
                 <strong>Email &amp; WhatsApp acknowledgment prompt</strong>, a{" "}
                 <strong>Section 19 Part-Payment Receipt</strong>, and the rarely used{" "}
@@ -851,7 +851,7 @@ export default function BalanceConfirmationLimitationPage() {
                   8
                 </span>
                 <h2 className="text-xl sm:text-2xl font-extrabold text-slate-900 tracking-tight">
-                  Get Advocate Review on 1 Case or Run Bulk AR Confirmations
+                  Get Fact Verification on 1 Case or Run Bulk AR Confirmations
                 </h2>
               </div>
 

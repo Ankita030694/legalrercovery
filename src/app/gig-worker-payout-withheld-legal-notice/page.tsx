@@ -135,7 +135,7 @@ const FAQS = [
   {
     question: "What should I do if Zomato, Swiggy, or Zepto blocked my delivery partner ID with pending earnings?",
     answer:
-      "Immediately take screenshots and screen recordings of your weekly passbook, pending payout balance, completed order logs, and the deactivation screen before logging out. Submit a formal dispute ticket via in-app partner support and email the platform Grievance Officer quoting your registered partner ID and phone number. If the platform does not release your earnings within 7 days, engage a verified advocate to serve a 15-day statutory legal notice demanding immediate disbursement plus 18% interest under the Contract Act and Code on Social Security.",
+      "Immediately take screenshots and screen recordings of your weekly passbook, pending payout balance, completed order logs, and the deactivation screen before logging out. Submit a formal dispute ticket via in-app partner support and email the platform Grievance Officer quoting your registered partner ID and phone number. If the platform does not release your earnings within 7 days, send a fact-verified 15-day statutory legal notice demanding immediate disbursement plus 18% interest under the Contract Act and Code on Social Security.",
   },
   {
     question: "How can Uber or Ola drivers challenge bogus negative wallet balances and cancellation penalties?",
@@ -160,7 +160,7 @@ const FAQS = [
   {
     question: "Delivery partner payment nahi aayi ya app ID block ho gayi toh legal notice kaise bheje?",
     answer:
-      "Agar Zomato, Swiggy, Uber ya Zepto ne aapki ID block karke kamai hui weekly payout rok li hai, toh aap ek formal statutory legal notice bhej sakte hain. LegalRecovery.in par verified advocate Indian Contract Act 1872 aur Code on Social Security ke tehat aggregator ke registered corporate office par Speed Post aur registered email se notice dispatch karte hain. Ismein 15 din ka strict payment deadline aur 18% byaaj ka demand hota hai, jiske baad platform ko paise release karne padte hain.",
+      "Agar Zomato, Swiggy, Uber ya Zepto ne aapki ID block karke kamai hui weekly payout rok li hai, toh aap ek formal statutory legal notice bhej sakte hain. LegalRecovery.in par hamari team aapke facts verify karke Indian Contract Act 1872 aur Code on Social Security ke tehat aggregator ke registered corporate office par email, WhatsApp (aur optional Speed Post) se notice dispatch karti hai. Ismein 15 din ka strict payment deadline aur 18% byaaj ka demand hota hai, jiske baad platform ko paise release karne padte hain.",
   },
 ];
 
@@ -656,7 +656,7 @@ export default function GigWorkerPayoutWithheldPage() {
                     </span>
                     <div className="space-y-1 sm:space-y-1.5">
                       <h3 className="text-sm sm:text-base md:text-lg font-bold text-slate-900">
-                        Serve a Formal Statutory Advocate Legal Demand Notice
+                        Serve a Formal Statutory Fact-Verified Legal Demand Notice
                       </h3>
                       <p className="text-xs sm:text-sm leading-relaxed">
                         When administrative escalation yields no reversal within 7 to 10 days, engage an advocate to issue a statutory demand notice to the aggregator&apos;s registered corporate headquarters. Dispatched via Registered Speed Post and Section 63 BSA electronic mail, the notice demands 100% payout release, 18% penal interest, and compensation within a strict 15-day window. Learn more about transparent pricing on our <Link href="/legal-notice-charges" className="text-blue-700 underline font-semibold">legal notice charges</Link> schedule.
@@ -836,7 +836,7 @@ export default function GigWorkerPayoutWithheldPage() {
                       ✕
                     </span>
                     <div>
-                      <strong className="text-sm sm:text-base text-slate-900 font-bold">Failing to Issue a Formal Pre-Litigation Advocate Notice:</strong>
+                      <strong className="text-sm sm:text-base text-slate-900 font-bold">Failing to Issue a Formal Pre-Litigation Fact-Verified Notice:</strong>
                       <p className="text-xs sm:text-sm mt-0.5 leading-relaxed">
                         Corporate legal departments take claims seriously only when dispatched on advocate letterhead via Registered Speed Post. A formal notice creates immediate liability for corporate directors.
                       </p>
@@ -886,11 +886,11 @@ export default function GigWorkerPayoutWithheldPage() {
                       <strong>The Deadlock:</strong> When Ramesh visited the regional hub, staff advised him to lodge an in-app dispute. Over the next 3 weeks, automated support tickets were repeatedly resolved with boilerplate text stating that company policy allows forfeiture of dues in case of system security alerts. Ramesh was left without funds to pay vehicle EMIs or fuel expenses.
                     </p>
                     <p>
-                      <strong>The Statutory Action:</strong> Ramesh contacted LegalRecovery.in. A verified advocate drafted and served an official statutory demand notice to the corporate registered office of the aggregator under Section 73 of the Indian Contract Act, 1872, Section 114 of the Code on Social Security, 2020, and Section 316 of the Bharatiya Nyaya Sanhita, 2023. The notice demanded immediate bank disbursement with 18% penal interest within 15 calendar days.
+                      <strong>The Statutory Action:</strong> Ramesh contacted LegalRecovery.in. The team verified the facts and served an official statutory demand notice to the corporate registered office of the aggregator under Section 73 of the Indian Contract Act, 1872, Section 114 of the Code on Social Security, 2020, and Section 316 of the Bharatiya Nyaya Sanhita, 2023. The notice demanded immediate bank disbursement with 18% penal interest within 15 calendar days.
                     </p>
                     <div className="p-3.5 sm:p-4 bg-emerald-950/70 border border-emerald-700/60 rounded-xl text-emerald-200">
                       <strong className="block text-emerald-400 font-bold mb-1">The Outcome:</strong>
-                      On Day 9 following service of the advocate notice, the aggregator&apos;s legal and compliance team initiated a manual review of Ramesh&apos;s deliveries, confirmed that all order drop-offs were successfully verified by customer OTPs, and cleared the full ₹28,450 to Ramesh&apos;s bank account. Additionally, the company paid ₹15,000 as compensation for mental agony and fully reactivated Ramesh&apos;s partner account.
+                      On Day 9 following service of the fact-verified notice, the aggregator&apos;s legal and compliance team initiated a manual review of Ramesh&apos;s deliveries, confirmed that all order drop-offs were successfully verified by customer OTPs, and cleared the full ₹28,450 to Ramesh&apos;s bank account. Additionally, the company paid ₹15,000 as compensation for mental agony and fully reactivated Ramesh&apos;s partner account.
                     </div>
                   </div>
                 </div>

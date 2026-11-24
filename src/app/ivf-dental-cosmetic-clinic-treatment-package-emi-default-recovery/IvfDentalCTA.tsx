@@ -23,10 +23,10 @@ export default function IvfDentalCTA({ className = "" }: IvfDentalCTAProps) {
               Track 1 &bull; Single Default Test Notice
             </span>
             <h3 className="text-lg sm:text-xl font-extrabold text-white mb-2">
-              Test 1 Overdue Package Case Now (&rupee;{basePrice} &middot; Advocate Drafted &middot; Tri-Channel Dispatch)
+              Test 1 Overdue Package Case Now (&rupee;{basePrice} &middot; Fact-Verified &middot; Tri-Channel Dispatch)
             </h3>
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-              Serve an NMC-compliant, advocate-vetted 15-day demand notice on an unpaid IVF milestone, defaulted dental aligner/implant EMI, or patient threatening extortionate 1-star reviews. Dispatched via Email, WhatsApp, and Speed Post RPAD.
+              Serve an NMC-compliant, fact-verified 15-day demand notice on an unpaid IVF milestone, defaulted dental aligner/implant EMI, or patient threatening extortionate 1-star reviews. Dispatched via Email, WhatsApp, and Speed Post RPAD.
             </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-3">

@@ -31,7 +31,7 @@ export default function LabourContractorRecoveryCTA({
                 Test 1 Defaulted Factory or Plant Labour Bill
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm leading-relaxed mb-5">
-                Issue an advocate-vetted statutory demand notice citing Tarapore &amp; Co. wage pass-through doctrine, CLRA Section 21(4) principal employer wage liability, MSMED Section 16 (3x RBI compound interest), and Section 43B(h) tax disallowance.
+                Issue a fact-verified statutory demand notice citing Tarapore &amp; Co. wage pass-through doctrine, CLRA Section 21(4) principal employer wage liability, MSMED Section 16 (3x RBI compound interest), and Section 43B(h) tax disallowance.
               </p>
             </div>
 
@@ -52,7 +52,7 @@ export default function LabourContractorRecoveryCTA({
                 </Link>
               </div>
               <div className="flex flex-wrap items-center gap-2 text-[11px] text-slate-400">
-                <span>&#10003; Advocate Drafted</span>
+                <span>&#10003; Fact-Verified</span>
                 <span>&bull;</span>
                 <span>&#10003; Speed Post RPAD &amp; WhatsApp</span>
                 <span>&bull;</span>

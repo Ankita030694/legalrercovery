@@ -28,10 +28,10 @@ export default function CoLivingNoticeCTA({
                 Consumer Protection Act 2019 • Section 74 Contract Act • E-Commerce Rules
               </span>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-bold tracking-tight text-white mb-3">
-                Co-Living Operator Holding Back Your Deposit? Serve a 15-Day Advocate Legal Notice
+                Co-Living Operator Holding Back Your Deposit? Serve a 15-Day Fact-Verified Legal Notice
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6">
-                Whether Stanza Living, Zolostays, Colive, Housr, Your-Space, or a local managed PG operator has crossed the 30–45 day refund window or slapped unfair painting and lock-in deductions, our advocates draft and serve a formal statutory demand notice to their corporate headquarters by email and WhatsApp under Section 63 BSA. Speed Post is optional at ₹450 per party.
+                Whether Stanza Living, Zolostays, Colive, Housr, Your-Space, or a local managed PG operator has crossed the 30–45 day refund window or slapped unfair painting and lock-in deductions, our team drafts and serves a formal statutory demand notice to their corporate headquarters by email and WhatsApp under Section 63 BSA. Speed Post is optional at ₹450 per party.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button
@@ -42,7 +42,7 @@ export default function CoLivingNoticeCTA({
                   {buttonText} — ₹{basePrice}
                 </button>
                 <div className="text-xs text-slate-300 flex flex-wrap sm:flex-nowrap items-center gap-2 sm:gap-3">
-                  <span>✓ 24h Advocate Drafting</span>
+                  <span>✓ 24h Notice Drafting</span>
                   <span>•</span>
                   <span>✓ Email + WhatsApp</span>
                   <span>•</span>

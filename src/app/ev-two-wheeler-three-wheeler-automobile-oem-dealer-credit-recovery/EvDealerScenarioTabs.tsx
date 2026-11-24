@@ -92,7 +92,7 @@ const SCENARIOS: ScenarioTab[] = [
       {
         step: "3. Statutory Indemnity Demand & ODR / Summary Suit",
         description:
-          "Issue an Advocate Demand Notice for the net subsidy clawback principal plus 18% contractual interest, escalating to institutional ODR arbitration or Order XXXVII CPC.",
+          "Issue a Fact-Verified Demand Notice for the net subsidy clawback principal plus 18% contractual interest, escalating to institutional ODR arbitration or Order XXXVII CPC.",
       },
     ],
     statutoryRule: "Indian Contract Act ss.73, 124–125 • Order XXXVII CPC • BSA s.63",

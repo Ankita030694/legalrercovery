@@ -131,13 +131,13 @@ const faqData = [
     question:
       "How long does Swiggy's Grievance Officer legally have to resolve an escalated refund dispute?",
     answer:
-      "Under E-Commerce Rules, 2020, Swiggy's Grievance Officer must acknowledge your complaint within 48 hours. They must resolve the dispute within 30 days. If they fail to do so, you can send an advocate legal notice and file a complaint on e-Jagriti.",
+      "Under E-Commerce Rules, 2020, Swiggy's Grievance Officer must acknowledge your complaint within 48 hours. They must resolve the dispute within 30 days. If they fail to do so, you can send a legal notice and file a complaint on e-Jagriti.",
   },
   {
     question:
-      "Can I send an advocate legal notice to Swiggy and Instamart if customer support chatbot closes my ticket?",
+      "Can I send a legal notice to Swiggy and Instamart if customer support chatbot closes my ticket?",
     answer:
-      "Yes. Automated chatbot ticket closures do not cancel your legal rights. An advocate can send a formal legal notice to Swiggy's corporate office in Bengaluru under Section 35 of the Consumer Protection Act, 2019. Aggregators often settle valid claims within the 15-day window to avoid court.",
+      "Yes. Automated chatbot ticket closures do not cancel your legal rights. You can send a formal legal notice to Swiggy's corporate office in Bengaluru under Section 35 of the Consumer Protection Act, 2019. Aggregators often settle valid claims within the 15-day window to avoid court.",
   },
 ];
 
@@ -212,7 +212,7 @@ export default function SwiggyRefundNoticePage() {
                   Statutory Summary &amp; Immediate Legal Recourse
                 </p>
                 <p className="text-slate-800 text-sm sm:text-base leading-relaxed font-medium">
-                  Under E-Commerce Rules, 2020 and the Consumer Protection Act, 2019, Swiggy shares direct legal liability for refund defaults. When chatbot support denies your claim, email Swiggy's Grievance Officer. If unresolved, send an advocate legal notice giving 15 days to refund before filing on e-Jagriti.
+                  Under E-Commerce Rules, 2020 and the Consumer Protection Act, 2019, Swiggy shares direct legal liability for refund defaults. When chatbot support denies your claim, email Swiggy's Grievance Officer. If unresolved, send a legal notice giving 15 days to refund before filing on e-Jagriti.
                 </p>
               </section>
 
@@ -587,7 +587,7 @@ export default function SwiggyRefundNoticePage() {
                           <span className="font-bold text-slate-900">Swiggy Limited</span> (Unfair trade practice s.2(47))
                         </td>
                         <td className="p-3.5 sm:p-4">Immediate refund on pre-dispatch cancellation</td>
-                        <td className="p-3.5 sm:p-4">Lodge NCH 1915 docket; serve advocate demand notice</td>
+                        <td className="p-3.5 sm:p-4">Lodge NCH 1915 docket; serve legal demand notice</td>
                       </tr>
                       <tr className="hover:bg-slate-50/80">
                         <th scope="row" className="p-3.5 sm:p-4 font-semibold text-slate-900">
@@ -674,11 +674,11 @@ export default function SwiggyRefundNoticePage() {
                         3
                       </span>
                       <h3 className="text-base font-bold text-slate-900">
-                        Tier 3: Formal Advocate Legal Notice (Day 8–15)
+                        Tier 3: Formal Legal Notice (Day 8–15)
                       </h3>
                     </div>
                     <p className="text-slate-600 text-sm leading-relaxed mb-3">
-                      When support and grievance tickets fail, an advocate legal notice must be served upon Swiggy Limited. Drafted on an advocate&apos;s letterhead, it sets out the chronological facts, cites Section 2(47) CPA 2019 and Rule 5(3)(b) violations, and provides a 15-day cure notice. It is served via Registered Speed Post to Swiggy’s corporate headquarters in Bengaluru and delivered simultaneously via email.
+                      When support and grievance tickets fail, a legal notice must be served upon Swiggy Limited. Drafted on an advocate&apos;s letterhead, it sets out the chronological facts, cites Section 2(47) CPA 2019 and Rule 5(3)(b) violations, and provides a 15-day cure notice. It is served via Registered Speed Post to Swiggy’s corporate headquarters in Bengaluru and delivered simultaneously via email.
                     </p>
                     <p className="text-xs font-semibold text-[#DC2626]">
                       Resolution Rate: Delivery aggregators resolve over 78% of valid claims during this 15-day cure window to avoid court penalties.
@@ -842,7 +842,7 @@ export default function SwiggyRefundNoticePage() {
                       <strong>The Algorithmic Denial:</strong> Rohit uploaded photos to in-app chat support. The automated assistant responded: &ldquo;Our warehouse logs confirm all items were packed and sealed. We regret that we cannot offer a refund as per policy.&rdquo;
                     </p>
                     <p>
-                      <strong>The Escalation:</strong> Rohit emailed Swiggy&apos;s Grievance Officer (<code className="text-slate-900 bg-slate-200 px-1 py-0.5 rounded font-mono">grievances@swiggy.in</code>) with delivery photos and phone logs. When 48 hours passed without substantive redressal, an advocate legal notice was served to Swiggy Limited in Bengaluru.
+                      <strong>The Escalation:</strong> Rohit emailed Swiggy&apos;s Grievance Officer (<code className="text-slate-900 bg-slate-200 px-1 py-0.5 rounded font-mono">grievances@swiggy.in</code>) with delivery photos and phone logs. When 48 hours passed without substantive redressal, a legal notice was served to Swiggy Limited in Bengaluru.
                     </p>
                     <p>
                       <strong>The Outcome:</strong> On Day 11 after Speed Post delivery, Swiggy’s legal operations desk reversed the full ₹3,490 to Rohit&apos;s UPI account and credited ₹3,000 in goodwill damages to avoid consumer court proceedings.
@@ -943,7 +943,7 @@ export default function SwiggyRefundNoticePage() {
                     <ul className="space-y-2.5 text-xs sm:text-sm text-emerald-900">
                       <li className="flex items-start gap-2">
                         <span className="text-emerald-600 font-bold">•</span>
-                        <span>Draft a formal legal notice on an enrolled advocate’s letterhead citing CPA 2019 and E-Commerce Rules.</span>
+                        <span>Send a formal legal notice citing CPA 2019 and E-Commerce Rules.</span>
                       </li>
                       <li className="flex items-start gap-2">
                         <span className="text-emerald-600 font-bold">•</span>
@@ -1161,7 +1161,7 @@ export default function SwiggyRefundNoticePage() {
                   Regulatory Compliance
                 </span>
                 <p className="leading-relaxed">
-                  Notice drafted under Section 35 of the Consumer Protection Act, 2019 and served by an enrolled High Court advocate. Valid for e-Jagriti filing.
+                  Notice drafted under Section 35 of the Consumer Protection Act, 2019 and fact-verified and served by our team. Valid for e-Jagriti filing.
                 </p>
                 <div className="pt-2 border-t border-slate-200 text-[11px] font-semibold text-slate-700">
                   <p>Related Consumer Hubs:</p>

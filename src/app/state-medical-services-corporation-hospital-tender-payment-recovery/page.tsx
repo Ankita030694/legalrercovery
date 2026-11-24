@@ -256,7 +256,7 @@ const HOWTO_SCHEMA = {
       "@type": "HowToStep",
       position: 2,
       name: "Serve Statutory Demand Overriding Tender Clauses",
-      text: "Issue an Advocate Demand Notice invoking MSMED Act Section 16 compound interest, establishing that under Silpi Industries, tender no-interest clauses are void.",
+      text: "Issue a Fact-Verified Demand Notice invoking MSMED Act Section 16 compound interest, establishing that under Silpi Industries, tender no-interest clauses are void.",
     },
     {
       "@type": "HowToStep",
@@ -526,7 +526,7 @@ export default function StateMedicalTenderRecoveryPage() {
                     </span>
                     <h3 className="font-bold text-sm text-white mb-1">Invoke Silpi Industries Doctrine</h3>
                     <p className="text-xs text-slate-300">
-                      Issue an Advocate Notice declaring tender &apos;no-interest&apos; clauses null and void under Section 24 read with Section 16 MSMED Act.
+                      Issue a Fact-Verified Notice declaring tender &apos;no-interest&apos; clauses null and void under Section 24 read with Section 16 MSMED Act.
                     </p>
                   </div>
                   <div className="p-4 rounded-xl bg-slate-900 text-white border border-slate-800">
@@ -1020,7 +1020,7 @@ export default function StateMedicalTenderRecoveryPage() {
                   </div>
 
                   <p>
-                    If a State Medical Corporation issues a retaliatory show-cause notice, our legal team moves the High Court under <strong>Article 226 of the Constitution of India</strong>. High Courts consistently grant immediate ad-interim stays on debarment proceedings and restrain the encashment of Performance Bank Guarantees (PBGs), protecting the vendor&apos;s bidding eligibility nationwide while dues are recovered.
+                    If a State Medical Corporation issues a retaliatory show-cause notice, our team moves the High Court under <strong>Article 226 of the Constitution of India</strong>. High Courts consistently grant immediate ad-interim stays on debarment proceedings and restrain the encashment of Performance Bank Guarantees (PBGs), protecting the vendor&apos;s bidding eligibility nationwide while dues are recovered.
                   </p>
                 </div>
               </section>
@@ -1039,7 +1039,7 @@ export default function StateMedicalTenderRecoveryPage() {
                     Deploy Dedicated Tender Legal Recovery: Single Case or Bulk CSV Desk
                   </h2>
                   <p className="text-xs font-semibold text-slate-500 mt-1">
-                    Select Self-Serve Advocate Notice (₹999) or Dedicated Multi-State Enterprise Portfolio Desk
+                    Select Self-Serve Fact-Verified Notice (₹999) or Dedicated Multi-State Enterprise Portfolio Desk
                   </p>
                 </div>
 

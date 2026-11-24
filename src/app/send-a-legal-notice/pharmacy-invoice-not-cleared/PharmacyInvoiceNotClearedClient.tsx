@@ -10,7 +10,7 @@ import { PaymentModal } from "@/components/PaymentModal";
 const faqs = [
   {
     question: "Can I send a legal notice for an unpaid pharmacy invoice or medical supply bill?",
-    answer: "Yes, pharmaceutical distributors, manufacturers, and stockists can issue a formal advocate-vetted legal notice to recover unpaid pharmacy invoices under the Indian Contract Act, 1872 and the MSMED Act, 2006. The statutory legal notice serves as an enforceable pre-litigation demand granting the defaulting retail chemist, pharmacy chain, or hospital a strict 15-day deadline to clear outstanding dues along with statutory interest. If the debtor fails to settle the dues within the notice period, the supplier can initiate summary recovery proceedings in commercial courts or file an application before the Micro and Small Enterprise Facilitation Council."
+    answer: "Yes, pharmaceutical distributors, manufacturers, and stockists can issue a formal fact-verified legal notice to recover unpaid pharmacy invoices under the Indian Contract Act, 1872 and the MSMED Act, 2006. The statutory legal notice serves as an enforceable pre-litigation demand granting the defaulting retail chemist, pharmacy chain, or hospital a strict 15-day deadline to clear outstanding dues along with statutory interest. If the debtor fails to settle the dues within the notice period, the supplier can initiate summary recovery proceedings in commercial courts or file an application before the Micro and Small Enterprise Facilitation Council."
   },
   {
     question: "What interest rate can be claimed on overdue pharmacy invoices under Indian law?",
@@ -129,7 +129,7 @@ const jsonLd = {
         {
           "@type": "ListItem",
           "position": 3,
-          "name": "Draft an advocate-vetted demand notice citing the MSMED Act and Commercial Courts Act"
+          "name": "Draft a fact-verified demand notice citing the MSMED Act and Commercial Courts Act"
         },
         {
           "@type": "ListItem",
@@ -241,7 +241,7 @@ export default function PharmacyInvoiceNotClearedClient() {
               Legal Notice for <span className="text-[#DC2626]">Pharmacy Invoice Not Cleared</span>
             </h1>
             <p className="text-sm md:text-xl mb-8 md:mb-12 max-w-3xl mx-auto text-slate-300 leading-relaxed font-medium">
-              Recover unpaid pharmaceutical supplies, overdue chemist invoices, and hospital credit balances with an advocate-drafted statutory demand notice backed by MSMED Act 3x compound interest.
+              Recover unpaid pharmaceutical supplies, overdue chemist invoices, and hospital credit balances with a fact-verified statutory demand notice backed by MSMED Act 3x compound interest.
             </p>
             <button
               onClick={() => setIsPaymentModalOpen(true)}
@@ -331,7 +331,7 @@ export default function PharmacyInvoiceNotClearedClient() {
                 <div id="quick-answer" className="bg-slate-50 border-l-4 border-[#DC2626] p-6 rounded-r-2xl">
                   <h2 className="text-sm font-extrabold text-slate-900 mb-2 uppercase tracking-wide">Quick Answer</h2>
                   <p className="text-sm text-slate-700 font-medium leading-relaxed">
-                    Pharmaceutical distributors, wholesalers, and manufacturers can issue a formal advocate-vetted legal notice to recover unpaid pharmacy invoices from defaulting retail chemists, pharmacy chains, or hospitals. The legal notice establishes an enforceable 15-day pre-litigation ultimatum demanding the principal invoice amount along with statutory compound interest under the Micro, Small and Medium Enterprises Development (MSMED) Act, 2006 or commercial contractual terms. Non-compliance empowers the supplier to initiate expedited summary recovery proceedings in commercial courts or file an insolvency petition for operational debt.
+                    Pharmaceutical distributors, wholesalers, and manufacturers can issue a formal fact-verified legal notice to recover unpaid pharmacy invoices from defaulting retail chemists, pharmacy chains, or hospitals. The legal notice establishes an enforceable 15-day pre-litigation ultimatum demanding the principal invoice amount along with statutory compound interest under the Micro, Small and Medium Enterprises Development (MSMED) Act, 2006 or commercial contractual terms. Non-compliance empowers the supplier to initiate expedited summary recovery proceedings in commercial courts or file an insolvency petition for operational debt.
                   </p>
                 </div>
 
@@ -350,7 +350,7 @@ export default function PharmacyInvoiceNotClearedClient() {
                       Where a pharmacy or hospital fails to settle the dues within the statutory period, Section 16 of the MSMED Act mandates that the buyer is unconditionally liable to pay compound interest with monthly rests on the outstanding amount at three times the bank rate notified by the Reserve Bank of India (RBI). Furthermore, under Section 73 of the <span className="font-semibold text-slate-800">Indian Contract Act, 1872</span>, the supplier is entitled to full compensation for any direct financial loss resulting from the breach of contract, while Section 12A of the <span className="font-semibold text-slate-800">Commercial Courts Act, 2015</span> governs pre-institution mediation and fast-track commercial suit procedures.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      Additionally, the <span className="font-semibold text-slate-800">Sale of Goods Act, 1930</span> (Sections 45 to 55) establishes the rights of an unpaid seller to exercise a lien over goods, stop consignments in transit, and sue the defaulting buyer for the price of goods delivered and accepted. Serving a formal advocate-drafted legal notice is the indispensable first legal step that creates conclusive documentary proof of commercial default before invoking judicial remedies.
+                      Additionally, the <span className="font-semibold text-slate-800">Sale of Goods Act, 1930</span> (Sections 45 to 55) establishes the rights of an unpaid seller to exercise a lien over goods, stop consignments in transit, and sue the defaulting buyer for the price of goods delivered and accepted. Serving a formal fact-verified legal notice is the indispensable first legal step that creates conclusive documentary proof of commercial default before invoking judicial remedies.
                     </p>
                   </div>
                 </section>
@@ -561,7 +561,7 @@ export default function PharmacyInvoiceNotClearedClient() {
                       <div className="flex items-start space-x-4">
                         <div className="bg-[#DC2626] text-white rounded-full w-8 h-8 flex items-center justify-center shrink-0 font-black text-sm">3</div>
                         <div>
-                          <h4 className="font-extrabold text-sm sm:text-base text-slate-900 mb-1">Advocate Drafting on Official Legal Letterhead</h4>
+                          <h4 className="font-extrabold text-sm sm:text-base text-slate-900 mb-1">Notice Drafting on Official Legal Letterhead</h4>
                           <p className="text-xs sm:text-sm text-slate-650 leading-relaxed">
                             Engage an advocate to structure the formal demand on their official letterhead with Bar Council enrollment details. The notice must chronologically articulate the transaction history, cite statutory MSMED Act compounding interest, and set out consequences under the Commercial Courts Act and NI Act.
                           </p>
@@ -691,7 +691,7 @@ export default function PharmacyInvoiceNotClearedClient() {
                 <div className="absolute top-0 right-0 w-24 h-24 bg-red-600/10 rounded-full blur-xl pointer-events-none" />
                 <h3 className="text-sm font-black mb-3">Recover Pharmacy Dues</h3>
                 <p className="text-gray-400 mb-5 text-[11px] leading-relaxed">
-                  Connect with experienced commercial recovery advocates. We draft customized statutory demand notices, calculate MSME compound interest, and execute verified email and WhatsApp dispatch, with optional Speed Post.
+                  Our team verifies your facts, prepares customized statutory demand notices, calculates MSME compound interest, and executes verified email and WhatsApp dispatch, with optional Speed Post.
                 </p>
                 <button
                   onClick={() => setIsPaymentModalOpen(true)}
@@ -751,7 +751,7 @@ export default function PharmacyInvoiceNotClearedClient() {
                 <img src="/lrlogo.svg" alt="LegalRecovery" width={3236} height={601} className="h-8 sm:h-10 w-auto object-contain" />
               </div>
               <p className="text-sm md:text-base text-slate-600 leading-relaxed mb-10 max-w-3xl font-medium">
-                Legal Recovery is India&apos;s trusted consumer protection and commercial debt resolution platform. Founded in 2022 and headquartered in New Delhi, Legal Recovery has counselled 15,000+ businesses and consumers on financial disputes, commercial contract breaches, and delayed invoices. Legal Recovery accelerates out-of-court settlements and connects you with top verified panel advocates.
+                Legal Recovery is India&apos;s trusted consumer protection and commercial debt resolution platform. Founded in 2022 and headquartered in New Delhi, Legal Recovery has counselled 15,000+ businesses and consumers on financial disputes, commercial contract breaches, and delayed invoices. Legal Recovery accelerates out-of-court settlements and prepares and sends fact-verified notices for you.
               </p>
 
               <div className="border-t border-slate-100 pt-10">

@@ -27,7 +27,7 @@ export default function IspTelecomNoticeCTA({ className = "" }: IspTelecomNotice
                 Test 1 Live Overdue Case Now (&rupee;{basePrice})
               </h3>
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-                Advocate-drafted demand notice auditing your signed CAF, Circuit/Rack ID, AT commissioning report, and CPE serial schedule—dispatched via Email, WhatsApp, and Speed Post RPAD within 24 hours.
+                Fact-verified demand notice auditing your signed CAF, Circuit/Rack ID, AT commissioning report, and CPE serial schedule—dispatched via Email, WhatsApp, and Speed Post RPAD within 24 hours.
               </p>
               <ul className="space-y-1.5 text-xs text-slate-200 mb-6">
                 <li>&check; DPDP-compliant 7-day data-export &amp; port-suspension safe harbor</li>
@@ -42,7 +42,7 @@ export default function IspTelecomNoticeCTA({ className = "" }: IspTelecomNotice
                 onClick={() => setIsModalOpen(true)}
                 className="flex-1 inline-flex items-center justify-center px-5 py-3.5 rounded-xl font-bold text-white bg-[#DC2626] hover:bg-[#B91C1C] transition-colors shadow-lg shadow-red-900/30 text-xs sm:text-sm cursor-pointer text-center"
               >
-                Dispatch 1 Advocate Notice (&rupee;{basePrice}) &rarr;
+                Dispatch 1 Fact-Verified Notice (&rupee;{basePrice}) &rarr;
               </button>
               <Link
                 href="/user/new-recovery"

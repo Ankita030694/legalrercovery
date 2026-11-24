@@ -771,10 +771,10 @@ export default function OutstandingDuesClient() {
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">Why LegalRecovery?</h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      LegalRecovery is India&apos;s leading legal tech recovery platform. We combine veteran advocate expertise with digital workflows for rapid, transparent recoveries. Here is why clients rely on our platform:
+                      LegalRecovery is India&apos;s leading legal tech recovery platform. We combine fact verification with digital workflows for rapid, transparent recoveries. Here is why clients rely on our platform:
                     </p>
                     <ul className="list-disc pl-6 space-y-3 text-sm text-slate-650">
-                      <li><strong>Senior Panel Advocates:</strong> Experienced labor and commercial lawyers draft notices with precise statutory citations.</li>
+                      <li><strong>Fact-Verified Notices:</strong> Our team verifies your facts and prepares notices with precise statutory citations.</li>
                       <li><strong>Multi-Channel Escalations:</strong> We deliver notices by email and WhatsApp to company officers and directors, with optional Speed Post (₹450 per party) to offices and homes for maximum impact.</li>
                       <li><strong>Live Tracking:</strong> Monitor notice drafting progress and delivery status directly on your client dashboard.</li>
                       <li><strong>Transparent Pricing:</strong> Transparent flat fees with zero hidden charges or unexpected hourly bills.</li>
@@ -825,7 +825,7 @@ export default function OutstandingDuesClient() {
                 <div className="absolute top-0 right-0 w-24 h-24 bg-red-600/10 rounded-full blur-xl pointer-events-none" />
                 <h3 className="text-sm font-black mb-3">Need Legal Advice?</h3>
                 <p className="text-gray-400 mb-5 text-[11px] leading-relaxed">
-                  Discuss your outstanding dues case with legal experts. We serve verified notices with full compliance support.
+                  Discuss your outstanding dues case with our team. We serve verified notices with full compliance support.
                 </p>
                 <button 
                   onClick={() => setIsPaymentModalOpen(true)}

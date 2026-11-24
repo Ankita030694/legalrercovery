@@ -31,7 +31,7 @@ export default function EpfNoticeCTA({
                 Compel EPFO or Defaulting Employer to Release Your Stuck PF &amp; Pension Corpus
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6">
-                Have an advocate draft and serve an official statutory legal demand notice directly to your previous employer (for unapproved Joint Declarations, missing Date of Exit, or unpaid PF deductions) and the concerned Regional Provident Fund Commissioner (RPFC). Served by email and WhatsApp under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023. Speed Post is optional at ₹450 per party.
+                Serve an official statutory legal demand notice directly to your previous employer (for unapproved Joint Declarations, missing Date of Exit, or unpaid PF deductions) and the concerned Regional Provident Fund Commissioner (RPFC). Served by email and WhatsApp under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023. Speed Post is optional at ₹450 per party.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button
@@ -42,7 +42,7 @@ export default function EpfNoticeCTA({
                   {buttonText} — ₹{basePrice}
                 </button>
                 <div className="text-xs text-slate-300 flex flex-wrap sm:flex-nowrap items-center gap-2 sm:gap-3">
-                  <span>✓ 24h Advocate Drafting</span>
+                  <span>✓ 24h Notice Drafting</span>
                   <span>•</span>
                   <span>✓ Email + WhatsApp</span>
                   <span>•</span>

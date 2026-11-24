@@ -53,7 +53,7 @@ const PANELS: ProblemPanel[] = [
         stepNumber: "Step 3",
         action: "Escalate to Myntra Grievance Desk & Legal Notice",
         detail:
-          "Email the bank's non-trace docket to grievance@myntra.com. If uncredited within 48 statutory hours, serve an advocate legal notice under Section 2(47) of the Consumer Protection Act, 2019 demanding immediate restitution with interest.",
+          "Email the bank's non-trace docket to grievance@myntra.com. If uncredited within 48 statutory hours, serve a legal notice under Section 2(47) of the Consumer Protection Act, 2019 demanding immediate restitution with interest.",
       },
     ],
     statutoryTimeline: "48 hours acknowledgment; 30 days maximum dispute resolution under E-Commerce Rules.",
@@ -89,7 +89,7 @@ const PANELS: ProblemPanel[] = [
         stepNumber: "Step 3",
         action: "Report to National Consumer Helpline (NCH 1915) & Legal Escalation",
         detail:
-          "If Myntra customer service rejects the return alleging 'product delivered in intact condition', dial 1915 or register an INGRAM portal grievance. Follow with a formal lawyer notice holding both Myntra and the registered third-party seller jointly liable.",
+          "If Myntra customer service rejects the return alleging 'product delivered in intact condition', dial 1915 or register an INGRAM portal grievance. Follow with a formal legal notice holding both Myntra and the registered third-party seller jointly liable.",
       },
     ],
     statutoryTimeline: "Replacement or full refund mandated immediately upon verification; 48 hours grievance response.",
@@ -125,7 +125,7 @@ const PANELS: ProblemPanel[] = [
         stepNumber: "Step 3",
         action: "Issue Statutory Demand Notice Against Arbitrary Rejection",
         detail:
-          "Issue a formal advocate demand notice putting Myntra Designs Private Limited on strict notice under the E-Commerce Amendment Rules 2026 for dark patterns in return denials, seeking full refund plus shipping reimbursement.",
+          "Issue a formal legal demand notice putting Myntra Designs Private Limited on strict notice under the E-Commerce Amendment Rules 2026 for dark patterns in return denials, seeking full refund plus shipping reimbursement.",
       },
     ],
     statutoryTimeline: "15-day pre-litigation demand cure period before instituting consumer forum complaint.",
@@ -161,7 +161,7 @@ const PANELS: ProblemPanel[] = [
         stepNumber: "Step 3",
         action: "Serve Joint Legal Demand & Prepare e-Jagriti Petition",
         detail:
-          "Serve an advocate legal notice holding both Myntra (marketplace operator) and the merchant jointly and severally liable. If ignored, file a formal complaint before the District Consumer Commission via e-Jagriti.",
+          "Serve a legal notice holding both Myntra (marketplace operator) and the merchant jointly and severally liable. If ignored, file a formal complaint before the District Consumer Commission via e-Jagriti.",
       },
     ],
     statutoryTimeline: "30-day statutory redressal; 2-year limitation period to institute consumer complaint.",

@@ -37,7 +37,7 @@ const PROBLEMS: ProblemTab[] = [
           "Email both the Ticketing Platform's designated Grievance Officer and the registered event organiser. Demand 100% refund of the ticket cost and convenience fees within 7 working days.",
       },
       {
-        step: "Serve Advocate Statutory Legal Demand Notice",
+        step: "Serve Fact-Verified Statutory Legal Demand Notice",
         description:
           "If the money is not returned within 7 days, serve a 15-day formal legal notice through an advocate arraigning both the platform and the promoter jointly before filing on e-Jagriti.",
       },
@@ -93,7 +93,7 @@ const PROBLEMS: ProblemTab[] = [
       {
         step: "Claim Withheld Fees & Damages via Statutory Notice",
         description:
-          "Issue a legal notice for the balance convenience fee plus interest and legal charges. Ticketing platforms routinely settle the balance upon receiving a formal advocate notice.",
+          "Issue a legal notice for the balance convenience fee plus interest and legal charges. Ticketing platforms routinely settle the balance upon receiving a formal fact-verified notice.",
       },
     ],
     statutoryRule: "Section 65 Indian Contract Act, 1872 & Section 2(47) CPA 2019",
@@ -120,7 +120,7 @@ const PROBLEMS: ProblemTab[] = [
       {
         step: "Escalate via Statutory Notice with Penal Interest Claim",
         description:
-          "Serve a 15-day statutory advocate notice demanding immediate release of funds plus 12% penal interest from the date of promised settlement.",
+          "Serve a 15-day statutory fact-verified notice demanding immediate release of funds plus 12% penal interest from the date of promised settlement.",
       },
     ],
     statutoryRule: "RBI TAT Circular DPSS.CO.PD No.629 & Section 2(11) CPA 2019",

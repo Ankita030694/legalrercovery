@@ -470,7 +470,7 @@ export default function DefectiveProductRefundClient() {
                       To ensure corporate legal departments take your grievance seriously and approve a settlement, your notice must contain these non-negotiable elements:
                     </p>
                     <ul className="list-disc list-inside text-sm md:text-base text-slate-650 space-y-2">
-                      <li><strong>Advocate Letterhead:</strong> The document must be drafted and signed by a practicing advocate.</li>
+                      <li><strong>Advocate Letterhead:</strong> The document must be prepared on verified facts.</li>
                       <li><strong>Chronology of Failure:</strong> A meticulous timeline of when the product was purchased, when the defect manifested, and every subsequent repair attempt.</li>
                       <li><strong>Explicit Legal Invocations:</strong> Direct references to the CPA 2019 and relevant NCDRC judgments.</li>
                       <li><strong>Quantified Demand Clause:</strong> A precise calculation of the refund amount, coupled with reasonable demands for mental agony compensation and legal expenses.</li>
@@ -543,7 +543,7 @@ export default function DefectiveProductRefundClient() {
                 <div className="absolute top-0 right-0 w-24 h-24 bg-red-600/10 rounded-full blur-xl pointer-events-none" />
                 <h3 className="text-sm font-black mb-3">Send Legal Notice</h3>
                 <p className="text-gray-400 mb-5 text-[11px] leading-relaxed">
-                  We match you with a panel advocate, handle the custom drafting, physically post the notice, and track its delivery in real-time.
+                  Our team verifies the facts you submit, prepares the notice, sends it (Speed Post optional), and tracks its delivery in real-time.
                 </p>
                 <button
                   onClick={() => setIsPaymentModalOpen(true)}
@@ -607,7 +607,7 @@ export default function DefectiveProductRefundClient() {
                 <img src="/lrlogo.svg" alt="LegalRecovery" width={3236} height={601} className="h-8 sm:h-10 w-auto object-contain" />
               </div>
               <p className="text-sm md:text-base text-slate-600 leading-relaxed mb-10 max-w-3xl font-medium">
-                Legal Recovery is India&apos;s trusted consumer protection and legal tech platform. Founded in 2022 and headquartered in New Delhi, Legal Recovery has counselled 15,000+ people on consumer disputes, defective products, and e-commerce frauds. Legal Recovery focuses on fast out-of-court settlements and connects you with top panel advocates.
+                Legal Recovery is India&apos;s trusted consumer protection and legal tech platform. Founded in 2022 and headquartered in New Delhi, Legal Recovery has counselled 15,000+ people on consumer disputes, defective products, and e-commerce frauds. Legal Recovery focuses on fast out-of-court settlements through fact-verified legal notices.
               </p>
 
               <div className="border-t border-slate-100 pt-10">

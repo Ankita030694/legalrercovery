@@ -19,10 +19,10 @@ export default function B2BReportCTA() {
               Track 1 &bull; Self-Serve Single Case Test
             </span>
             <p className="text-xl sm:text-2xl font-black text-white leading-snug">
-              Test 1 Live Overdue Case Now (₹{basePrice} &middot; Advocate Drafted)
+              Test 1 Live Overdue Case Now (₹{basePrice} &middot; Fact-Verified)
             </p>
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
-              Benchmark our pre-litigation cure workflow on a single stuck B2B invoice: enrolled advocate drafting within 24 hours, served via Email + WhatsApp + Speed Post RPAD with BSA 2023 s.63 logs.
+              Benchmark our pre-litigation cure workflow on a single stuck B2B invoice: notice drafting within 24 hours, served via Email + WhatsApp + Speed Post RPAD with BSA 2023 s.63 logs.
             </p>
           </div>
           <div className="flex flex-wrap items-center gap-3 pt-1">

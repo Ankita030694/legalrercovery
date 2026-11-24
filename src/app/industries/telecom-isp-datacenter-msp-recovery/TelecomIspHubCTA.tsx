@@ -27,7 +27,7 @@ export default function TelecomIspHubCTA({ className = "" }: TelecomIspHubCTAPro
                 Test 1 Live Overdue Case Now (&rupee;{basePrice})
               </h3>
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-                Advocate Drafted &bull; Email + WhatsApp + Speed Post RPAD. Serve one defaulting ILL/MPLS enterprise link, one colocation rack tenant (with DPDP-safe 7-day data-export notice), or one unreturned Cisco/Fortinet CPE account today.
+                Fact-Verified &bull; Email + WhatsApp + Speed Post RPAD. Serve one defaulting ILL/MPLS enterprise link, one colocation rack tenant (with DPDP-safe 7-day data-export notice), or one unreturned Cisco/Fortinet CPE account today.
               </p>
               <ul className="space-y-1.5 text-xs text-slate-200 mb-6">
                 <li>&check; CAF, Circuit ID &amp; Acceptance Test (AT) unamortized CapEx schedule</li>

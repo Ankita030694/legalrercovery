@@ -127,7 +127,7 @@ const FAQS = [
   },
   {
     q: "Should we send notices in English or Hindi/regional language to taluka-level Krishi Kendra dealers?",
-    a: "For taluka and mandi-level Krishi Seva Kendras across Madhya Pradesh, Maharashtra, Haryana, Punjab, Gujarat, and Telangana, serving an Advocate-drafted statutory notice in English paired with a clear Hindi summary cover demand ensures zero 'did not understand English' excuse while preserving full courtroom enforceability in Commercial Courts and Magistrate Courts.",
+    a: "For taluka and mandi-level Krishi Seva Kendras across Madhya Pradesh, Maharashtra, Haryana, Punjab, Gujarat, and Telangana, serving a Fact-verified statutory notice in English paired with a clear Hindi summary cover demand ensures zero 'did not understand English' excuse while preserving full courtroom enforceability in Commercial Courts and Magistrate Courts.",
   },
 ];
 
@@ -823,7 +823,7 @@ export default function AgrochemicalSeedDealerRecoveryPage() {
                     P1 Notice Workspace
                   </span>
                   <span className="font-bold text-slate-900">
-                    Advocate-Vetted Commercial Notice &amp; Reply Format &rarr;
+                    Ready-to-Use Commercial Notice &amp; Reply Format &rarr;
                   </span>
                 </Link>
               </div>

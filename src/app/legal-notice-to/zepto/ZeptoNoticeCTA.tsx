@@ -31,7 +31,7 @@ export default function ZeptoNoticeCTA({
                 Recover Your Withheld Zepto Refund or Claim Unfair Trade Damages
               </h3>
               <p className="text-slate-300 text-sm sm:text-base leading-relaxed mb-6">
-                Have an advocate draft and serve an enforceable legal demand notice to Zepto Marketplace Private Limited and Kiranakart Technologies Private Limited. Served by email and WhatsApp under Section 63 BSA. Speed Post is optional at ₹450 per party.
+                Serve an enforceable legal demand notice to Zepto Marketplace Private Limited and Kiranakart Technologies Private Limited. Served by email and WhatsApp under Section 63 BSA. Speed Post is optional at ₹450 per party.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button

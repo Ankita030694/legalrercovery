@@ -256,7 +256,7 @@ export default function OtsDefaultRevocationPage() {
         "@type": "HowToStep",
         position: 2,
         name: "Issue Formal OTS Revocation & Full Liability Revival Notice",
-        text: "Dispatch an advocate-vetted OTS Cancellation Notice via Speed Post RPAD, registered email, and WhatsApp citing SBI v. Arvindra Electronics (2023) 1 SCC 540 and formally revoking all concessions ab initio.",
+        text: "Dispatch a fact-verified OTS Cancellation Notice via Speed Post RPAD, registered email, and WhatsApp citing SBI v. Arvindra Electronics (2023) 1 SCC 540 and formally revoking all concessions ab initio.",
       },
       {
         "@type": "HowToStep",
@@ -1164,7 +1164,7 @@ export default function OtsDefaultRevocationPage() {
                     Send Legal Notice for Banks to Recover Unpaid Dues &rarr;
                   </h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Advocate-vetted institutional notices with tri-channel proof for NPA recall, OTS revocation, and guarantee invocation.
+                    Fact-verified institutional notices with tri-channel proof for NPA recall, OTS revocation, and guarantee invocation.
                   </p>
                 </Link>
 
@@ -1303,14 +1303,14 @@ export default function OtsDefaultRevocationPage() {
                 </ul>
               </div>
 
-              {/* Advocate Review & Institutional Disclaimer Box */}
+              {/* Fact Verification & Institutional Disclaimer Box */}
               <div className="bg-slate-900 text-slate-200 rounded-xl p-4 sm:p-5 text-xs leading-relaxed flex flex-col sm:flex-row sm:items-center justify-between gap-3">
                 <div>
                   <span className="font-bold text-white block mb-1">
                     Legal Editorial Attribution &mdash; Anuj Anand Malik, Advocate &amp; Founder (AMA Legal Solutions)
                   </span>
                   <p className="text-slate-400">
-                    Prepared for Scheduled Commercial Banks, Small Finance Banks, Cooperative Banks, and ARCs. Board-approved OTS scheme terms vary by institution under the RBI June 8, 2023 Compromise Framework; obtain case-specific panel advocate sign-off prior to DRT or High Court filing.
+                    Prepared for Scheduled Commercial Banks, Small Finance Banks, Cooperative Banks, and ARCs. Board-approved OTS scheme terms vary by institution under the RBI June 8, 2023 Compromise Framework; obtain case-specific fact verification prior to DRT or High Court filing.
                   </p>
                 </div>
                 <span className="text-[11px] font-mono text-slate-400 shrink-0">

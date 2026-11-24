@@ -111,7 +111,7 @@ const reviewSchema = {
   "@type": "Product",
   "name": "Legal Notice Drafting and Review Services",
   "image": "https://www.legalrecovery.in/og-enforceable-notice.png",
-  "description": "Expert attorney-drafted legal notices fully compliant with CPC, NI Act, and BSA 2023 for money recovery, contract breaches, and tenant disputes in India.",
+  "description": "Fact-verified legal notices fully compliant with CPC, NI Act, and BSA 2023 for money recovery, contract breaches, and tenant disputes in India.",
   "brand": {
     "@type": "Brand",
     "name": "LegalRecovery"
@@ -616,7 +616,7 @@ export default function EnforceableNoticeClient() {
                       &quot;Never use emotional, abusive, or threatening language in a legal notice. A notice must remain professional and objective. Using defamatory language can expose the sender to criminal defamation cases under Section 356 of the BNS, 2023, shifting the focus away from your recovery.&quot;
                     </div>
                     <p>
-                      To ensure your legal notice is enforceable and free from these pitfalls, it is highly recommended to use a professional legal-tech platform like LegalRecovery. Our panel of experienced labor and commercial attorneys reviews every case, extracts company details, calculates interest, drafts the notice with precise statutory citations, and dispatches it digitally via verified email and WhatsApp with verified tracking. This professional approach protects your rights and maximizes your chances of recovery.
+                      To ensure your legal notice is enforceable and free from these pitfalls, it is highly recommended to use a professional legal-tech platform like LegalRecovery. Our team verifies the facts you submit, extracts company details, calculates interest, prepares the notice with precise statutory citations, and dispatches it digitally via verified email and WhatsApp with verified tracking. This professional approach protects your rights and maximizes your chances of recovery.
                     </p>
                   </div>
                 </section>

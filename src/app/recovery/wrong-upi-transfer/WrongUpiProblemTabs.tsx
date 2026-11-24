@@ -27,7 +27,7 @@ const SCENARIOS: ScenarioTab[] = [
     legalBasis:
       "Section 72 of the Indian Contract Act, 1872 creates an involuntary quasi-contract obliging the recipient to restore money paid by mistake. Under RBI circulars, beneficiary banks must freeze or initiate consent-based debit reversal when alerted.",
     recoveryStep:
-      "Submit an official written dispute to your bank manager attaching the UTR. Remitter bank issues an inter-bank reversal message to the beneficiary bank. If the receiver refuses to give debit consent, have an advocate issue an unassailable statutory legal notice under Section 72 and Section 316 BNS.",
+      "Submit an official written dispute to your bank manager attaching the UTR. Remitter bank issues an inter-bank reversal message to the beneficiary bank. If the receiver refuses to give debit consent, issue an unassailable statutory legal notice under Section 72 and Section 316 BNS.",
     successRate: "High (82% resolved via NPCI / bank recall within 3–7 business days; remainder via legal notice).",
   },
   {
@@ -57,7 +57,7 @@ const SCENARIOS: ScenarioTab[] = [
     legalBasis:
       "Criminal Breach of Trust under Section 316 and Dishonest Misappropriation of Property under Section 314 of the Bharatiya Nyaya Sanhita, 2023 (formerly IPC Sections 403 & 406). Retention of mistakenly paid money is an actionable civil and criminal offence.",
     recoveryStep:
-      "Serve an advocate-drafted Statutory Legal Demand Notice giving a strict 15-day deadline to refund the amount with 18% statutory interest. If they fail to comply, lodge an e-FIR / police complaint for dishonest misappropriation and file a Summary Suit under Order 37 of the CPC.",
+      "Serve a fact-verified Statutory Legal Demand Notice giving a strict 15-day deadline to refund the amount with 18% statutory interest. If they fail to comply, lodge an e-FIR / police complaint for dishonest misappropriation and file a Summary Suit under Order 37 of the CPC.",
     successRate: "Very High (94% of defiant recipients settle and transfer the amount back once an advocate notice arrives).",
   },
   {

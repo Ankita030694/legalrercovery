@@ -142,7 +142,7 @@ const FAQS = [
   {
     question: "How do helicopter charter operators recover unpaid balances from political parties or election campaign agencies?",
     answer:
-      "Under Election Commission of India (ECI) candidate expenditure rules, aviation charter payments must be settled via transparent banking channels against GST invoices. Operators should immediately present any mobilization/balance PDCs for Section 138 NI Act enforcement, serve a 15-day Advocate Demand Notice on the contracting agency, candidate election agent, and corporate guarantor, and initiate Commercial Court Section 12A / Order XXXVIII Rule 5 attachment if the unpaid sum exceeds ₹3 Lakh.",
+      "Under Election Commission of India (ECI) candidate expenditure rules, aviation charter payments must be settled via transparent banking channels against GST invoices. Operators should immediately present any mobilization/balance PDCs for Section 138 NI Act enforcement, serve a 15-day Fact-Verified Demand Notice on the contracting agency, candidate election agent, and corporate guarantor, and initiate Commercial Court Section 12A / Order XXXVIII Rule 5 attachment if the unpaid sum exceeds ₹3 Lakh.",
   },
   {
     question: "What evidence proves a 10-bus luxury Volvo/Mercedes coach fleet completed a wedding or Chardham pilgrimage?",
@@ -216,7 +216,7 @@ const HOWTO_SCHEMA = {
       "@type": "HowToStep",
       position: 3,
       name: "Stage 3: Tri-Channel Advocate Legal Demand Notice (Day 31–45)",
-      text: "Serve a 15-day Advocate-signed statutory demand notice on the Corporate CFO, Wedding/Campaign Coordinator, and Directors via Email, Blue-Tick WhatsApp, and Speed Post RPAD.",
+      text: "Serve a 15-day Fact-verified statutory demand notice on the Corporate CFO, Wedding/Campaign Coordinator, and Directors via Email, Blue-Tick WhatsApp, and Speed Post RPAD.",
     },
     {
       "@type": "HowToStep",
@@ -890,7 +890,7 @@ export default function CharterFlightLuxuryCoachRecoveryPage() {
                 <div className="flex items-start gap-2.5">
                   <AlertTriangle className="w-5 h-5 text-amber-700 shrink-0 mt-0.5" />
                   <p className="text-xs sm:text-sm text-amber-900 leading-relaxed">
-                    Need ready-to-serve statutory notice formats for fleet detention, MSME interest, or bounced charter cheques? Access our advocate-vetted templates and{" "}
+                    Need ready-to-serve statutory notice formats for fleet detention, MSME interest, or bounced charter cheques? Access our ready-to-use templates and{" "}
                     <Link href="/cheque-bounce-notice-timeline-section-138" className="font-bold underline text-[#DC2626]">
                       Section 138 Cheque Bounce Timeline
                     </Link>
@@ -1036,7 +1036,7 @@ export default function CharterFlightLuxuryCoachRecoveryPage() {
                       Bulk Fleet &amp; Charter Receivables CSV Notice Dispatch Solution
                     </h3>
                     <p className="text-xs text-slate-600 mt-1.5 leading-relaxed">
-                      Upload aged Tally/ERP charter and coach fleet ledgers for simultaneous advocate-signed Email, WhatsApp &amp; Speed Post RPAD notices.
+                      Upload aged Tally/ERP charter and coach fleet ledgers for simultaneous fact-verified Email, WhatsApp &amp; Speed Post RPAD notices.
                     </p>
                   </div>
                   <span className="inline-flex items-center gap-1 text-xs font-bold text-[#DC2626] mt-3">

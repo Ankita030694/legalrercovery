@@ -588,7 +588,7 @@ export default function PlotBookingRefundLegalNoticePage() {
               </h2>
 
               <p className="text-slate-700 leading-relaxed mb-5">
-                When our real-estate advocates draft a plot booking refund legal notice or file a petition before State RERA / e-Jagriti, these seven documentary records establish an airtight claim under{" "}
+                When a plot booking refund legal notice is prepared or a petition is filed before State RERA / e-Jagriti, these seven documentary records establish an airtight claim under{" "}
                 <strong>Section 63 of the Bharatiya Sakshya Adhiniyam (BSA), 2023</strong>:
               </p>
 
@@ -1178,11 +1178,11 @@ export default function PlotBookingRefundLegalNoticePage() {
                       Day 15
                     </time>
                     <h3 className="text-base font-extrabold text-slate-900">
-                      Serve Statutory Advocate Legal Notice (15-Day Ultimatum)
+                      Serve Statutory Fact-Verified Legal Notice (15-Day Ultimatum)
                     </h3>
                   </div>
                   <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
-                    Have a real-estate advocate serve a formal Legal Notice on the company and its directors invoking{" "}
+                    Serve a formal Legal Notice on the company and its directors invoking{" "}
                     <strong>Section 12, 13(1) &amp; 18(1) of RERA</strong>,{" "}
                     <strong>Section 74 of the Contract Act</strong>, and{" "}
                     <strong>Section 55(6)(b) of the Transfer of Property Act</strong> (statutory land charge), alongside a Section 59 RERA penalty alert if the plotted layout is unregistered.
@@ -1284,7 +1284,7 @@ export default function PlotBookingRefundLegalNoticePage() {
               </h2>
 
               <p className="text-slate-700 leading-relaxed mb-4">
-                Before serving a formal Advocate Legal Notice, you should place a clear written cancellation and refund demand on record so the developer cannot claim you defaulted on future payment milestones. Copy or download our{" "}
+                Before serving a formal Fact-Verified Legal Notice, you should place a clear written cancellation and refund demand on record so the developer cannot claim you defaulted on future payment milestones. Copy or download our{" "}
                 <strong>plot booking cancellation letter format</strong> below (for apartment bookings, see our{" "}
                 <Link
                   href="/templates/flat-booking-cancellation-letter"
@@ -1442,7 +1442,7 @@ export default function PlotBookingRefundLegalNoticePage() {
             <section className="bg-gradient-to-br from-slate-900 via-slate-950 to-slate-900 text-white rounded-2xl p-6 sm:p-8 border border-slate-800 shadow-xl">
               <div className="max-w-2xl">
                 <span className="inline-block px-3 py-1 rounded-full bg-amber-500/20 text-amber-300 text-xs font-bold uppercase tracking-wider mb-3">
-                  Advocate-Drafted Statutory Demand
+                  Fact-Verified Statutory Demand
                 </span>
                 <h2 className="text-2xl sm:text-3xl font-black text-white mb-3">
                   Stop the Developer From Forfeiting Your Plot Advance

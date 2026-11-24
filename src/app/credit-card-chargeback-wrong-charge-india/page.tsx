@@ -647,7 +647,7 @@ export default function CreditCardChargebackPage() {
                     </div>
                     <h3 className="font-bold text-slate-900 text-sm mb-1">Advocate Demand Notice to Bank &amp; Merchant</h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Have an advocate serve a formal 15-day statutory legal notice. Dispatched via Registered Speed Post and legal email, establishing deficiency in service under Section 2(11) CPA 2019 and demanding refund with ₹100/day statutory penalty.
+                      Serve a formal 15-day statutory legal notice. Dispatched via Registered Speed Post and legal email, establishing deficiency in service under Section 2(11) CPA 2019 and demanding refund with ₹100/day statutory penalty.
                     </p>
                   </div>
 
@@ -751,7 +751,7 @@ export default function CreditCardChargebackPage() {
                   </div>
 
                   <p>
-                    <strong className="text-slate-900">Action &amp; Outcome:</strong> Rahul immediately emailed HDFC Bank Card Dispute Cell attaching both charge slips, merchant invoice, and card statement, invoking Visa Reason Code 12.6 (Duplicate Processing). The bank failed to issue shadow credit, leading Rahul to serve a formal Advocate Legal Notice. Within 7 days of notice service, the bank permanently reversed the duplicate debit of ₹14,500, credited statutory delay compensation of ₹2,700, and reimbursed legal notice drafting charges.
+                    <strong className="text-slate-900">Action &amp; Outcome:</strong> Rahul immediately emailed HDFC Bank Card Dispute Cell attaching both charge slips, merchant invoice, and card statement, invoking Visa Reason Code 12.6 (Duplicate Processing). The bank failed to issue shadow credit, leading Rahul to serve a formal Fact-Verified Legal Notice. Within 7 days of notice service, the bank permanently reversed the duplicate debit of ₹14,500, credited statutory delay compensation of ₹2,700, and reimbursed legal notice drafting charges.
                   </p>
                 </div>
               </section>

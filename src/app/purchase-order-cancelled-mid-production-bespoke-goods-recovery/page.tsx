@@ -379,7 +379,7 @@ export default function BespokeGoodsRecoveryPage() {
         "@type": "HowToStep",
         position: 5,
         name: "Initiate Dual-Track Legal Recovery",
-        text: "Serve an advocate demand notice followed by an MSME Samadhaan reference for 3x RBI compound interest, or file a Commercial Summary Suit with an Order 38 Rule 5 asset attachment application.",
+        text: "Serve a fact-verified demand notice followed by an MSME Samadhaan reference for 3x RBI compound interest, or file a Commercial Summary Suit with an Order 38 Rule 5 asset attachment application.",
       },
     ],
   };

@@ -24,10 +24,10 @@ export default function RescoSolarCTA({ className = "" }: RescoSolarCTAProps) {
                 Track 1 · Single C&amp;I Offtaker Default
               </span>
               <h3 className="text-lg sm:text-xl font-bold text-white mb-2">
-                Test 1 Live Overdue Case Now (&#8377;{basePrice} &middot; Advocate Drafted &middot; Email + WhatsApp + Speed Post RPAD)
+                Test 1 Live Overdue Case Now (&#8377;{basePrice} &middot; Fact-Verified &middot; Email + WhatsApp + Speed Post RPAD)
               </h3>
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-                Upload a defaulted OPEX / RESCO Solar PPA, Termination Buyout Schedule, JMR/SCADA generation log, and overdue tariff ledger. Our advocates draft an Arbitration Act s.9-ready Event of Default, Roof-Access &amp; Termination Buyout Notice.
+                Upload a defaulted OPEX / RESCO Solar PPA, Termination Buyout Schedule, JMR/SCADA generation log, and overdue tariff ledger. Our team drafts an Arbitration Act s.9-ready Event of Default, Roof-Access &amp; Termination Buyout Notice.
               </p>
             </div>
 

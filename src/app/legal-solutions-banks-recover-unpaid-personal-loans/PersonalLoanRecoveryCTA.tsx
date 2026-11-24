@@ -31,7 +31,7 @@ export default function PersonalLoanRecoveryCTA({
                 Recover Defaulted Personal Loans with Automated Statutory Demand Notices
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6">
-                Equip your retail credit recovery team with high-impact advocate demand notices under Section 25 of the Payment and Settlement Systems Act, Section 138 NI Act, and Order XXXVII CPC. Dispatched via Registered Speed Post with real-time postal tracking and digitally certified under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023.
+                Equip your retail credit recovery team with high-impact fact-verified demand notices under Section 25 of the Payment and Settlement Systems Act, Section 138 NI Act, and Order XXXVII CPC. Dispatched via Registered Speed Post with real-time postal tracking and digitally certified under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button
@@ -42,7 +42,7 @@ export default function PersonalLoanRecoveryCTA({
                   {buttonText} — ₹{basePrice}
                 </button>
                 <div className="text-xs text-slate-300 flex flex-wrap sm:flex-nowrap items-center gap-2 sm:gap-3">
-                  <span>✓ Advocate-Drafted</span>
+                  <span>✓ Fact-Verified</span>
                   <span>•</span>
                   <span>✓ Speed Post + Email Tracking</span>
                   <span>•</span>

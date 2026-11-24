@@ -869,7 +869,7 @@ export default function HowToVerifyLegalNoticeGenuinePage() {
                     <ul className="space-y-2 text-xs sm:text-sm text-emerald-900">
                       <li>• Formal legal review of notices received by WhatsApp, email, or Speed Post.</li>
                       <li>• Verification of advocate enrolment credentials against State Bar Council databases.</li>
-                      <li>• Drafting comprehensive, binding legal reply notices by verified High Court advocates.</li>
+                      <li>• Consulting a qualified advocate to draft a comprehensive, binding legal reply notice.</li>
                       <li>• Dispatch of reply notices via Registered Speed Post with India Post tracking and digital email service under Section 63 BSA 2023.</li>
                       <li>• Guidance on consumer forum filing on <Link href="/e-jagriti-consumer-complaint-guide" className="underline font-bold">e-Jagriti</Link> for recovery harassment.</li>
                     </ul>
@@ -900,7 +900,7 @@ export default function HowToVerifyLegalNoticeGenuinePage() {
                     Frequently Asked Questions on Checking &amp; Verifying Legal Notices
                   </h2>
                   <p className="text-xs sm:text-sm text-slate-600 mt-1">
-                    Clear, authoritative answers addressing GSC search queries, WhatsApp notice validity, and advocate verification.
+                    Clear, authoritative answers addressing GSC search queries, WhatsApp notice validity, and fact verification.
                   </p>
                 </div>
 

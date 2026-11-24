@@ -25,10 +25,10 @@ export default function ItStaffAugmentationNoticeCTA({
               Track 1 &bull; Single Defaulted IT Staffing Invoice
             </span>
             <p className="text-lg sm:text-xl font-extrabold text-white mb-2">
-              Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Advocate Drafted &middot; Email + WhatsApp + Speed Post RPAD)
+              Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Fact-Verified &middot; Email + WhatsApp + Speed Post RPAD)
             </p>
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-              Serve a high-impact, advocate-vetted 15-day statutory demand notice on a defaulting enterprise client or Tier-1 System Integrator. Dismantles invalid &ldquo;Pay-When-Paid&rdquo; clauses, binds Jira and Azure DevOps sprint hours as liquidated debt under BSA 2023 Section 63, enforces MSMED Act Section 16 compound interest at 3x RBI rate, and delivers a formal Section 43B(h) tax disallowance warning.
+              Serve a high-impact, fact-verified 15-day statutory demand notice on a defaulting enterprise client or Tier-1 System Integrator. Dismantles invalid &ldquo;Pay-When-Paid&rdquo; clauses, binds Jira and Azure DevOps sprint hours as liquidated debt under BSA 2023 Section 63, enforces MSMED Act Section 16 compound interest at 3x RBI rate, and delivers a formal Section 43B(h) tax disallowance warning.
             </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-3">

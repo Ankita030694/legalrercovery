@@ -137,7 +137,7 @@ const FAQS = [
   {
     question: "पार्टी माल लेकर जीएसटी बिल का भुगतान नहीं कर रही है, मुझे सबसे पहले क्या करना चाहिए?",
     answer:
-      "सबसे पहले अपने सभी बिल, ई-वे बिल (E-Way Bill), ट्रांसपोर्ट बिल्टी (L/R) और डिलीवरी रिसीविंग को एकत्रित करें। इसके बाद बिना समय गंवाए किसी अनुभवी कानूनी फर्म के जरिए ₹999 में एक आधिकारिक एडवोकेट लीगल नोटिस (Advocate Legal Notice) भेजें। इस नोटिस में MSMED एक्ट 2006 की धारा 15–16 के तहत 3 गुना बैंक ब्याज और इनकम टैक्स धारा 43B(h) के तहत टैक्स डिसअलाउंस का स्पष्ट उल्लेख करें। 80% मामलों में नोटिस मिलते ही कंपनी पेमेंट रिलीज कर देती है।",
+      "सबसे पहले अपने सभी बिल, ई-वे बिल (E-Way Bill), ट्रांसपोर्ट बिल्टी (L/R) और डिलीवरी रिसीविंग को एकत्रित करें। इसके बाद बिना समय गंवाए किसी अनुभवी कानूनी फर्म के जरिए ₹999 में एक आधिकारिक एडवोकेट लीगल नोटिस (Fact-Verified Legal Notice) भेजें। इस नोटिस में MSMED एक्ट 2006 की धारा 15–16 के तहत 3 गुना बैंक ब्याज और इनकम टैक्स धारा 43B(h) के तहत टैक्स डिसअलाउंस का स्पष्ट उल्लेख करें। 80% मामलों में नोटिस मिलते ही कंपनी पेमेंट रिलीज कर देती है।",
   },
   {
     question: "MSME में 45 दिन का पेमेंट नियम क्या है और क्या यह बिना एग्रीमेंट के भी लागू होता है?",
@@ -279,7 +279,7 @@ export default function FactoryMsmeRecoveryPage() {
             <span>&bull;</span>
             <span>Income Tax s.43B(h)</span>
             <span>&bull;</span>
-            <span>₹999 Advocate Legal Notice</span>
+            <span>₹999 Fact-Verified Legal Notice</span>
           </div>
 
           {/* Exact Verbatim H1 */}
@@ -561,7 +561,7 @@ export default function FactoryMsmeRecoveryPage() {
               </div>
             </section>
 
-            {/* Section 4: ₹999 Advocate Legal Notice Power */}
+            {/* Section 4: ₹999 Fact-Verified Legal Notice Power */}
             <section
               id="heading-legal-notice-power"
               className="scroll-mt-28 bg-white rounded-2xl border border-slate-200 p-5 sm:p-6 md:p-8 shadow-sm"

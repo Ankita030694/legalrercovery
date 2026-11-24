@@ -28,7 +28,7 @@ export default function RbiComplianceCTA() {
           Test 1 Live Overdue Case (₹{testPrice}) or Migrate 10–10,000+ Accounts via CSV
         </p>
         <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-6 max-w-3xl">
-          Replace high-risk telecalling agencies with Advocate-drafted statutory notices. Pilot a
+          Replace high-risk telecalling agencies with Fact-verified statutory notices. Pilot a
           single 30–90 DPD loan account today, or onboard your NBFC / LSP portfolio through our
           centralized CSV dispatch and Representee Mandate Vault.
         </p>
@@ -49,7 +49,7 @@ export default function RbiComplianceCTA() {
                 Test 1 Live Overdue Case Now
               </p>
               <p className="text-xs text-slate-300 leading-relaxed mb-4">
-                Advocate-drafted demand or PSS s.25 notice dispatched across Email + WhatsApp + Speed
+                Fact-verified demand or PSS s.25 notice dispatched across Email + WhatsApp + Speed
                 Post RPAD with BSA 2023 s.63 timestamped logs and zero harassment risk.
               </p>
             </div>

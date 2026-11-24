@@ -819,7 +819,7 @@ export default function Section25PssActNoticeTemplatePage() {
               >
                 <div className="bg-white rounded-2xl border border-slate-200 p-5 sm:p-6 shadow-sm">
                   <span className="text-[11px] font-black uppercase tracking-widest text-[#DC2626] block mb-1">
-                    Empanelled Advocate Dispatch &amp; CSV Batch Engine
+                    Empanelled Dispatch &amp; CSV Batch Engine
                   </span>
                   <h2
                     id="heading-institutional-cta-title"

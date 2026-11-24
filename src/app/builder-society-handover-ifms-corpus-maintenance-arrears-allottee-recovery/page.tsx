@@ -189,7 +189,7 @@ const FAQS = [
   {
     question: "How does LegalRecovery assist developers with high volumes of defaulting post-OC units?",
     answer:
-      "LegalRecovery provides a dedicated dual-track institutional recovery desk. Developers can test a single defaulting allottee for ₹999 or upload bulk CSV portfolios of 50 to 5,000+ units. Our legal team drafts advocate notices under Section 19(10) and 19(6), executes verified multi-channel dispatches (Speed Post RPAD, email, WhatsApp) under BSA 2023 Section 63, and prepares batch Section 19 recovery certificate petitions.",
+      "LegalRecovery provides a dedicated dual-track institutional recovery desk. Developers can test a single defaulting allottee for ₹999 or upload bulk CSV portfolios of 50 to 5,000+ units. Our team drafts fact-verified notices under Section 19(10) and 19(6), executes verified multi-channel dispatches (Speed Post RPAD, email, WhatsApp) under BSA 2023 Section 63, and prepares batch Section 19 recovery certificate petitions.",
   },
 ];
 
@@ -819,7 +819,7 @@ export default function BuilderSocietyHandoverRecoveryPage() {
                     </span>
                     <p className="font-bold text-sm mb-1">15-Day Advocate Demand Notice</p>
                     <p className="text-xs text-slate-300">
-                      Issue advocate notice via Speed Post RPAD, email, and WhatsApp with BSA Section 63 delivery
+                      Issue fact-verified notice via Speed Post RPAD, email, and WhatsApp with BSA Section 63 delivery
                       proof, warning of allotment cancellation under Section 11(5).
                     </p>
                   </div>

@@ -156,7 +156,7 @@ export default function PropertyDisputesClient() {
       id: "rev-2",
       name: "Priya Chandrashekar (Senior HR Manager, Bengaluru)",
       rating: 5,
-      review: "I booked a premium villa and paid a booking token of ₹5 Lakhs. Due to sudden approval delays, the builder changed the layout, shrinking the common green areas. When I withdrew, they cited a clause in the application to forfeit my entire token. LegalRecovery intervened immediately with an advocate demand notice detailing RERA Section 14 violations. The developer backed down and returned my entire token within 7 days!"
+      review: "I booked a premium villa and paid a booking token of ₹5 Lakhs. Due to sudden approval delays, the builder changed the layout, shrinking the common green areas. When I withdrew, they cited a clause in the application to forfeit my entire token. LegalRecovery intervened immediately with a legal demand notice detailing RERA Section 14 violations. The developer backed down and returned my entire token within 7 days!"
     },
     {
       id: "rev-3",
@@ -188,7 +188,7 @@ export default function PropertyDisputesClient() {
           "@id": "https://www.legalrecovery.in/services/property-and-builder-disputes"
         },
         "headline": "Professional Property & Builder Disputes Money Recovery in India",
-        "description": "Reclaim stuck property booking tokens, claim refunds for delayed possession, challenge illegal super area charges, and initiate RERA or Consumer Forum action legally in India. Flat-fee, attorney-verified.",
+        "description": "Reclaim stuck property booking tokens, claim refunds for delayed possession, challenge illegal super area charges, and initiate RERA or Consumer Forum action legally in India. Flat-fee, fact-verified.",
         "image": "https://www.legalrecovery.in/blog_money_recovery.png",
         "datePublished": "2026-05-27T00:00:00Z",
         "dateModified": "2026-05-27T00:00:00Z",
@@ -311,7 +311,7 @@ export default function PropertyDisputesClient() {
               <span className="text-[#DC2626]">Funds Legally.</span>
             </h1>
             <p className="text-[15px] md:text-[17px] text-[#4B5563] font-medium leading-[1.6] mb-6 max-w-xl select-text">
-              Reclaim forfeited booking tokens, delayed possession interest, and cancellation refunds. We deploy 3 progressive advocate notices and 1 criminal complaint draft.
+              Reclaim forfeited booking tokens, delayed possession interest, and cancellation refunds. We deploy 3 progressive legal notices and 1 criminal complaint draft.
             </p>
 
             {/* High-Trust Tagline Banner */}
@@ -447,7 +447,7 @@ export default function PropertyDisputesClient() {
                   Buying a home is one of life's largest financial investments. When a developer delays possession, forfeits booking tokens, or raises prices unfairly, they breach contractual commitments and statutory regulations.
                 </p>
                 <p>
-                  Our <strong className="font-extrabold text-[#111827]">Property and Builder Disputes Service</strong> balances this power dynamic. Builders often count on buyers remaining silent due to high litigation costs. We offer a structured, attorney-verified pre-litigation process to compel developers to settle quickly.
+                  Our <strong className="font-extrabold text-[#111827]">Property and Builder Disputes Service</strong> balances this power dynamic. Builders often count on buyers remaining silent due to high litigation costs. We offer a structured, fact-verified pre-litigation process to compel developers to settle quickly.
                 </p>
                 <blockquote>
                   <strong>Our Service Promise:</strong> We provide flat-fee recovery support for <strong>₹999</strong> with <strong>zero commission</strong> on recovered money. We draft, verify, and deliver firm legal notices directly to company directors and project lenders.
@@ -496,7 +496,7 @@ export default function PropertyDisputesClient() {
                   <div className="bg-[#F9FAFB] p-5 rounded-2xl border border-[#E5E7EB]">
                     <div className="flex items-center gap-3 mb-3">
                       <div className="w-8 h-8 rounded-full bg-[#DC2626] text-white flex items-center justify-center font-black text-xs">1</div>
-                      <h4 className="font-extrabold text-[#111827] text-sm">Stage 1: Advocate Demand Notice</h4>
+                      <h4 className="font-extrabold text-[#111827] text-sm">Stage 1: Legal Demand Notice</h4>
                     </div>
                     <p className="text-xs text-[#4B5563] leading-relaxed">
                       We serve a formal demand on a practicing advocate's letterhead. Delivered via email, WhatsApp, and speed post, it sets a firm 15-day deadline.
@@ -540,7 +540,7 @@ export default function PropertyDisputesClient() {
                 {/* 4. The Indian Statutory Shield */}
                 <h2 id="legal-framework">4. The Indian Statutory Shield: Know Your Rights</h2>
                 <p>
-                  Indian law provides extensive protections for property buyers. Our advocate panel leverages these statutes to recover your money:
+                  Indian law provides extensive protections for property buyers. Our team leverages these statutes to recover your money:
                 </p>
                 <ul>
                   <li><strong>The RERA Act, 2016 (Section 18):</strong> Gives buyers the right to withdraw with full refund and interest (SBI MCLR + 2%) or claim monthly delay interest.</li>
@@ -557,7 +557,7 @@ export default function PropertyDisputesClient() {
                   Many property buyers try using free legal notice formats found on forums. These generic letters rarely produce results:
                 </p>
                 <ul>
-                  <li><strong>No Advocate Standing:</strong> Free templates lack a registered advocate's seal and official letterhead. Developer legal teams easily disregard them.</li>
+                  <li><strong>No Fact Verification:</strong> Free templates lack fact verification and tracked multi-channel dispatch. Developer legal teams easily disregard them.</li>
                   <li><strong>Outdated Law Citations:</strong> Online templates often cite obsolete IPC sections instead of the current <strong className="font-extrabold text-[#111827]">BNS 2023</strong> or miss state-specific RERA rules.</li>
                   <li><strong>No Tracked Escalation:</strong> Generic letters sent to front desks get ignored. We send tracked notices directly to company directors and lending banks.</li>
                 </ul>
@@ -571,7 +571,7 @@ export default function PropertyDisputesClient() {
                   Traditional property lawyers charge steep fees and demand percentage commissions on recovered amounts. We do not do that.
                 </p>
                 <p>
-                  We offer a complete, attorney-verified property recovery package for a flat fee of <strong className="font-extrabold text-[#111827]">₹999</strong>. You pay no commissions and face zero hidden charges.
+                  We offer a complete, fact-verified property recovery package for a flat fee of <strong className="font-extrabold text-[#111827]">₹999</strong>. You pay no commissions and face zero hidden charges.
                 </p>
 
                 {/* Pixel-perfect reproduction of the home page unified pricing container */}
@@ -587,7 +587,7 @@ export default function PropertyDisputesClient() {
                           </span>
                           <h3 className="text-2xl font-black text-[#111827] mb-4">Complete Legal Recovery</h3>
                           <p className="text-[14px] text-[#4B5563] font-medium leading-[1.6] mb-8">
-                            Get full-suite support from expert property attorneys. Standardized flat pricing with absolutely zero commission on your recovered amount.
+                            Get full-suite support from our fact-verified notice service. Standardized flat pricing with absolutely zero commission on your recovered amount.
                           </p>
                         </div>
                         
@@ -625,8 +625,8 @@ export default function PropertyDisputesClient() {
                             <div className="flex items-start gap-3">
                               <Check className="w-4 h-4 sm:w-5 sm:h-5 text-[#10B981] stroke-[3.5] shrink-0 mt-0.5" />
                               <div className="flex flex-col">
-                                <span className="text-[11.5px] sm:text-[13.5px] font-bold text-[#111827] leading-snug">Attorney Validation</span>
-                                <span className="text-[9.5px] sm:text-[11.5px] text-[#6B7280] font-medium leading-tight">Verified by real estate legal experts</span>
+                                <span className="text-[11.5px] sm:text-[13.5px] font-bold text-[#111827] leading-snug">Fact Verification</span>
+                                <span className="text-[9.5px] sm:text-[11.5px] text-[#6B7280] font-medium leading-tight">Facts verified by our team</span>
                               </div>
                             </div>
                             <div className="flex items-start gap-3">
@@ -662,7 +662,7 @@ export default function PropertyDisputesClient() {
                 {/* 7. Evidentiary Checklist */}
                 <h2 id="documentation-needed">7. The Evidentiary Checklist for Property Recoveries</h2>
                 <p>
-                  To start your recovery, gather common property records. Our advocates will use these documents to build your claim:
+                  To start your recovery, gather common property records. Our team will use these documents to build your claim:
                 </p>
                 <ul>
                   <li><strong>Allotment Letter or Booking Form:</strong> Shows initial token payment and agreed possession dates.</li>
@@ -837,7 +837,7 @@ export default function PropertyDisputesClient() {
               <div className="absolute top-0 right-0 w-24 h-24 bg-red-600/10 rounded-full blur-xl pointer-events-none" />
               <h3 className="text-base font-extrabold mb-3 tracking-tight">Need Urgent Property Recovery?</h3>
               <p className="text-gray-400 mb-5 text-[11px] leading-relaxed">
-                Get an advocate-drafted 3-stage notice pipeline and a customized criminal complaint draft for a flat fee of ₹999.
+                Get a fact-verified 3-stage notice pipeline and a customized criminal complaint draft for a flat fee of ₹999.
               </p>
               <Link 
                 href="/contact" 

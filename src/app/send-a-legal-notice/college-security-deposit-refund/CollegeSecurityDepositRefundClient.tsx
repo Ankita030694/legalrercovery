@@ -13,7 +13,7 @@ const faqs = [
     question:
       'Can a student send a legal notice to a college or university for withholding caution money or hostel security deposits in India?',
     answer:
-      'Yes, a student or parent can issue an advocate-drafted statutory legal notice under the Consumer Protection Act, 2019, the Indian Contract Act, 1872, and binding UGC Fee Refund Norms demanding immediate restitution of withheld caution money and hostel deposits. The notice establishes the educational institution’s contractual default, cites the approved No-Dues Clearance certificate, and stipulates a strict 15-day peremptory deadline to disburse the funds with statutory interest. Serving this formal legal demand creates indispensable documentary proof of pre-litigation notice before initiating proceedings before the District Consumer Disputes Redressal Commission or the State University Grievance Redressal Cell.',
+      'Yes, a student or parent can issue a fact-verified statutory legal notice under the Consumer Protection Act, 2019, the Indian Contract Act, 1872, and binding UGC Fee Refund Norms demanding immediate restitution of withheld caution money and hostel deposits. The notice establishes the educational institution’s contractual default, cites the approved No-Dues Clearance certificate, and stipulates a strict 15-day peremptory deadline to disburse the funds with statutory interest. Serving this formal legal demand creates indispensable documentary proof of pre-litigation notice before initiating proceedings before the District Consumer Disputes Redressal Commission or the State University Grievance Redressal Cell.',
   },
   {
     question:
@@ -25,7 +25,7 @@ const faqs = [
     question:
       'What is the statutory interest rate claimable against an educational institute for delayed security deposit refunds?',
     answer:
-      'Under settled Supreme Court and NCDRC precedents, students subjected to unreasonable delays in security deposit disbursement are entitled to claim interest ranging between 9% and 18% per annum from the date of graduation or submission of the No-Dues clearance. The advocate-drafted statutory notice formally incorporates this statutory interest demand under Section 73 of the Indian Contract Act alongside compensation for mental harassment and administrative obstruction under Section 39 of the Consumer Protection Act, 2019. Claiming compound or commercial interest in the initial demand creates substantial financial and regulatory exposure for the institution, significantly expediting out-of-court clearance.',
+      'Under settled Supreme Court and NCDRC precedents, students subjected to unreasonable delays in security deposit disbursement are entitled to claim interest ranging between 9% and 18% per annum from the date of graduation or submission of the No-Dues clearance. The fact-verified statutory notice formally incorporates this statutory interest demand under Section 73 of the Indian Contract Act alongside compensation for mental harassment and administrative obstruction under Section 39 of the Consumer Protection Act, 2019. Claiming compound or commercial interest in the initial demand creates substantial financial and regulatory exposure for the institution, significantly expediting out-of-court clearance.',
   },
   {
     question:
@@ -37,7 +37,7 @@ const faqs = [
     question:
       'What is the statutory limitation period to initiate legal action against a college for non-refund of caution money?',
     answer:
-      'Under Article 22 and Article 113 of the Schedule to the Limitation Act, 1963, as well as Section 69 of the Consumer Protection Act, 2019, the statutory limitation period to institute a legal claim for recovery of money or deficiency in service is exactly two years from the date the cause of action arose (the date the refund fell due or was formally refused). Issuing an advocate-drafted legal notice within this statutory window formally crystallizes the cause of action and creates an unassailable evidentiary record for consumer or civil court proceedings. Furthermore, any subsequent email, SMS, or written acknowledgement of pending dues by college authorities resets the limitation period under Section 18 of the Limitation Act.',
+      'Under Article 22 and Article 113 of the Schedule to the Limitation Act, 1963, as well as Section 69 of the Consumer Protection Act, 2019, the statutory limitation period to institute a legal claim for recovery of money or deficiency in service is exactly two years from the date the cause of action arose (the date the refund fell due or was formally refused). Issuing a fact-verified legal notice within this statutory window formally crystallizes the cause of action and creates an unassailable evidentiary record for consumer or civil court proceedings. Furthermore, any subsequent email, SMS, or written acknowledgement of pending dues by college authorities resets the limitation period under Section 18 of the Limitation Act.',
   },
   {
     question:
@@ -195,7 +195,7 @@ const jsonLd = {
       '@type': 'Product',
       name: 'Legal Notice to College for Security Deposit and Caution Money Refund',
       description:
-        'Advocate-drafted statutory demand notice service for students, alumni, and parents to recover withheld college caution deposits, hostel security fees, laboratory deposits, and 18% statutory interest from universities and educational trusts across India.',
+        'Fact-verified statutory demand notice service for students, alumni, and parents to recover withheld college caution deposits, hostel security fees, laboratory deposits, and 18% statutory interest from universities and educational trusts across India.',
       brand: {
         '@type': 'Organization',
         name: 'Legal Recovery',
@@ -272,7 +272,7 @@ export default function CollegeSecurityDepositRefundClient() {
 
   const shareUrl = encodeURIComponent(pageUrl);
   const shareText = encodeURIComponent(
-    'College or university refusing to refund caution money, hostel deposit, or lab fees? Send an advocate-drafted statutory legal notice under UGC Guidelines & CPA 2019! #StudentRights #FeeRefund #LegalRecovery'
+    'College or university refusing to refund caution money, hostel deposit, or lab fees? Send a fact-verified statutory legal notice under UGC Guidelines & CPA 2019! #StudentRights #FeeRefund #LegalRecovery'
   );
 
   return (
@@ -447,7 +447,7 @@ export default function CollegeSecurityDepositRefundClient() {
                     Quick Answer
                   </h2>
                   <p className="text-sm text-slate-700 font-medium leading-relaxed">
-                    A student or parent can issue an advocate-drafted statutory legal notice to a college, private university, or educational institute under{' '}
+                    A student or parent can issue a fact-verified statutory legal notice to a college, private university, or educational institute under{' '}
                     <span className="font-semibold text-slate-800">
                       Section 70 and Section 73 of the Indian Contract Act, 1872
                     </span>
@@ -550,7 +550,7 @@ export default function CollegeSecurityDepositRefundClient() {
                   </div>
 
                   <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                    Despite these express regulatory provisions, hundreds of private universities and unaided professional colleges across Maharashtra, Karnataka, Delhi-NCR, Tamil Nadu, and Uttar Pradesh systematically stonewall refund applications, utilizing student security funds as unearned working capital. Serving an advocate-drafted statutory legal notice puts the governing trust on formal notice that continued non-compliance triggers direct regulatory reporting to the UGC Central Grievance Portal and the jurisdictional State Directorate of Higher Education.
+                    Despite these express regulatory provisions, hundreds of private universities and unaided professional colleges across Maharashtra, Karnataka, Delhi-NCR, Tamil Nadu, and Uttar Pradesh systematically stonewall refund applications, utilizing student security funds as unearned working capital. Serving a fact-verified statutory legal notice puts the governing trust on formal notice that continued non-compliance triggers direct regulatory reporting to the UGC Central Grievance Portal and the jurisdictional State Directorate of Higher Education.
                   </p>
                 </section>
 
@@ -755,7 +755,7 @@ export default function CollegeSecurityDepositRefundClient() {
                     5. Key Clauses in a Statutory Demand Notice to University/College
                   </h2>
                   <p className="text-slate-700 leading-relaxed text-sm md:text-base">
-                    An advocate-vetted statutory legal notice is not a casual reminder letter. It is a formal pre-litigation legal instrument executed under the signature and seal of an enrolled advocate of the High Court. When served on the Vice-Chancellor, Registrar, Principal, and Chairman of the governing trust, it establishes enforceable civil and criminal accountability. A robust notice must incorporate six indispensable legal elements:
+                    A fact-verified statutory legal notice is not a casual reminder letter. It is a formal pre-litigation legal instrument executed under the signature and seal of an enrolled advocate of the High Court. When served on the Vice-Chancellor, Registrar, Principal, and Chairman of the governing trust, it establishes enforceable civil and criminal accountability. A robust notice must incorporate six indispensable legal elements:
                   </p>
 
                   <div className="space-y-4">
@@ -919,8 +919,8 @@ export default function CollegeSecurityDepositRefundClient() {
                       },
                       {
                         step: 'Step 3',
-                        title: 'Engage Legal Recovery to Draft an Advocate Statutory Notice',
-                        desc: 'If the college fails to disburse the funds within 7 days, provide your case details to Legal Recovery. Our panel advocate drafts an airtight statutory legal demand notice itemizing the exact deposit heads, citing UGC/AICTE regulations, and invoking Section 70/73 of the Contract Act and Section 2(11) of CPA 2019.',
+                        title: 'Engage Legal Recovery to Draft a Fact-Verified Statutory Notice',
+                        desc: 'If the college fails to disburse the funds within 7 days, provide your case details to Legal Recovery. Our team drafts an airtight statutory legal demand notice itemizing the exact deposit heads, citing UGC/AICTE regulations, and invoking Section 70/73 of the Contract Act and Section 2(11) of CPA 2019.',
                       },
                       {
                         step: 'Step 4',
@@ -930,7 +930,7 @@ export default function CollegeSecurityDepositRefundClient() {
                       {
                         step: 'Step 5',
                         title: 'Execute Immediate Judicial Escalation upon 15-Day Expiry',
-                        desc: 'Over 82% of universities and private colleges settle the full caution deposit within 15 days of receiving our advocate notice. If the administration remains non-compliant, we file an instant consumer complaint on the National E-Daakhil Portal seeking full refund, 18% interest, and ₹50,000+ compensation for mental harassment.',
+                        desc: 'Over 82% of universities and private colleges settle the full caution deposit within 15 days of receiving our team notice. If the administration remains non-compliant, we file an instant consumer complaint on the National E-Daakhil Portal seeking full refund, 18% interest, and ₹50,000+ compensation for mental harassment.',
                       },
                     ].map((item, idx) => (
                       <div key={idx} className="flex gap-4 p-5 rounded-2xl bg-slate-50 border border-slate-200">
@@ -1092,7 +1092,7 @@ export default function CollegeSecurityDepositRefundClient() {
                   <p className="text-sm text-slate-650 leading-relaxed mb-6">
                     Legal Recovery is India&apos;s trusted online legal notice and dispute resolution
                     platform, connecting students, parents, alumni, and consumers with seasoned panel
-                    advocates for rapid, advocate-vetted statutory demand notices at transparent flat
+                    advocates for rapid, fact-verified statutory demand notices at transparent flat
                     fees. With ₹100 Crore+ recovered and 10,000+ cases resolved across India, Legal Recovery
                     delivers verified legal impact without the delays and unpredictability of traditional law firms.
                   </p>
@@ -1132,7 +1132,7 @@ export default function CollegeSecurityDepositRefundClient() {
                   College Withholding Your Caution Money?
                 </h3>
                 <p className="text-slate-300 text-xs leading-relaxed mb-4">
-                  Send an advocate-vetted statutory notice today. Over 82% of universities and colleges disburse withheld security deposits within 15 days of notice service.
+                  Send a fact-verified statutory notice today. Over 82% of universities and colleges disburse withheld security deposits within 15 days of notice service.
                 </p>
                 <button
                   onClick={() => setIsPaymentModalOpen(true)}
@@ -1141,7 +1141,7 @@ export default function CollegeSecurityDepositRefundClient() {
                   Draft &amp; Send Notice Now
                 </button>
                 <p className="text-center text-slate-400 text-[10px] mt-3">
-                  Flat fee • Advocate-drafted • Sent same day
+                  Flat fee • Fact-verified • Sent same day
                 </p>
               </div>
 

@@ -89,7 +89,7 @@ const FAQS = [
   {
     question: "How can CFOs and credit controllers test LegalRecovery.in before migrating an entire aging ledger?",
     answer:
-      "Finance teams can either launch a single ₹999 advocate-drafted notice test on one overdue invoice via /user/new-recovery to benchmark debtor response times, or upload 10 to 10,000+ overdue accounts via CSV through our institutional bulk recovery desk at /bulk-recovery-cases-all-in-one-affordable-solutions.",
+      "Finance teams can either launch a single ₹999 fact-verified notice test on one overdue invoice via /user/new-recovery to benchmark debtor response times, or upload 10 to 10,000+ overdue accounts via CSV through our institutional bulk recovery desk at /bulk-recovery-cases-all-in-one-affordable-solutions.",
   },
 ];
 
@@ -385,7 +385,7 @@ export default function StateOfB2BDelayedPaymentsReportPage() {
                       <Link href="/reports/legal-notice-outcomes-study" className="text-[#DC2626] font-bold hover:underline">
                         Legal Notice Outcomes Study
                       </Link>
-                      , shifting an overdue account from internal AR follow-up to an advocate-signed notice triggers boardroom legal review within 15 days.
+                      , shifting an overdue account from internal AR follow-up to a fact-verified notice triggers boardroom legal review within 15 days.
                     </p>
                   </div>
                 </div>
@@ -709,7 +709,7 @@ export default function StateOfB2BDelayedPaymentsReportPage() {
                 </div>
 
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
-                  Across all 25 industries, internal accounts-receivable (AR) reminders fail because corporate debtors route vendor emails to junior procurement desks. A formal advocate-signed notice bypasses procurement and lands directly on the Company Secretary, General Counsel, and Managing Director—creating statutory audit and personal liability exposure.
+                  Across all 25 industries, internal accounts-receivable (AR) reminders fail because corporate debtors route vendor emails to junior procurement desks. A formal fact-verified notice bypasses procurement and lands directly on the Company Secretary, General Counsel, and Managing Director—creating statutory audit and personal liability exposure.
                 </p>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -749,7 +749,7 @@ export default function StateOfB2BDelayedPaymentsReportPage() {
                         href="/templates/ibc-section-8-form-3-form-4-demand-notice-editable-pack"
                         className="text-[#DC2626] font-semibold hover:underline"
                       >
-                        advocate-vetted notice pack
+                        fact-verified notice pack
                       </Link>
                       .
                     </p>

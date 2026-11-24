@@ -195,7 +195,7 @@ export default function RedbusTableOfContents({
 
         {/* Quick Help Card */}
         <div className="mt-6 pt-4 border-t border-slate-100 text-[11px] text-slate-500 space-y-2">
-          <p className="font-semibold text-slate-700">Need advocate drafting?</p>
+          <p className="font-semibold text-slate-700">Need notice drafting?</p>
           <p>
             Serve a verified statutory legal demand notice to redBus and the bus operator.
           </p>

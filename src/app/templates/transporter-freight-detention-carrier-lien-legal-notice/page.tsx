@@ -12,14 +12,14 @@ export const revalidate = 86400;
 export const metadata: Metadata = {
   title: "Transporter Freight & Carrier-Lien Legal Notice Format",
   description:
-    "Advocate-drafted notice templates for transporters & 3PLs: Bilty/POD freight schedule, GPS halting annexure & lawful Section 171 carrier-lien notice.",
+    "Ready-to-use notice templates for transporters & 3PLs: Bilty/POD freight schedule, GPS halting annexure & lawful Section 171 carrier-lien notice.",
   alternates: {
     canonical: `${SITE_URL}/templates/transporter-freight-detention-carrier-lien-legal-notice`,
   },
   openGraph: {
     title: "Transporter Freight & Carrier-Lien Legal Notice Format",
     description:
-      "Advocate-drafted notice templates for transporters & 3PLs: Bilty/POD freight schedule, GPS halting annexure & lawful Section 171 carrier-lien notice.",
+      "Ready-to-use notice templates for transporters & 3PLs: Bilty/POD freight schedule, GPS halting annexure & lawful Section 171 carrier-lien notice.",
     url: `${SITE_URL}/templates/transporter-freight-detention-carrier-lien-legal-notice`,
     type: "article",
     siteName: "LegalRecovery.in",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Transporter Freight & Carrier-Lien Legal Notice Format",
     description:
-      "Advocate-drafted notice templates for transporters & 3PLs: Bilty/POD freight schedule, GPS halting annexure & lawful Section 171 carrier-lien notice.",
+      "Ready-to-use notice templates for transporters & 3PLs: Bilty/POD freight schedule, GPS halting annexure & lawful Section 171 carrier-lien notice.",
     site: "@legalrecoveryin",
     creator: "@legalrecoveryin",
     images: [`${SITE_URL}/blog_money_recovery.png`],
@@ -164,7 +164,7 @@ export default function TransporterFreightNoticePage() {
         headline:
           "Logistics & Freight Recovery Template Pack: (1) Overdue Bilty/POD Freight + Halting Demand Notice & (2) Lawful Carrier-Lien Intimation Notice",
         description:
-          "Advocate-drafted notice templates for transporters & 3PLs: Bilty/POD freight schedule, GPS halting annexure & lawful Section 171 carrier-lien notice.",
+          "Ready-to-use notice templates for transporters & 3PLs: Bilty/POD freight schedule, GPS halting annexure & lawful Section 171 carrier-lien notice.",
         url: `${SITE_URL}/templates/transporter-freight-detention-carrier-lien-legal-notice`,
         inLanguage: "en-IN",
         datePublished: "2026-11-16T12:00:00+05:30",
@@ -279,7 +279,7 @@ export default function TransporterFreightNoticePage() {
             >
               Logistics &amp; Freight Debt Recovery Hub
             </Link>{" "}
-            can enforce overdue bilty freight, GPS-proven vehicle detention, and Customs ICEGATE advances using this advocate-vetted workspace. Grounded in Carriage by Road Act Section 10, Contract Act Sections 170/171 possessory liens, and the Supreme Court&apos;s <em>Raman Iron Foundry</em> bar against unilateral debit deductions.
+            can enforce overdue bilty freight, GPS-proven vehicle detention, and Customs ICEGATE advances using this ready-to-use workspace. Grounded in Carriage by Road Act Section 10, Contract Act Sections 170/171 possessory liens, and the Supreme Court&apos;s <em>Raman Iron Foundry</em> bar against unilateral debit deductions.
           </div>
 
           {/* Hero 4-Card Key Metrics Strip */}
@@ -429,7 +429,7 @@ export default function TransporterFreightNoticePage() {
             >
               <div className="border-b border-slate-100 pb-4">
                 <div className="inline-flex items-center gap-2 px-2.5 py-1 rounded-md text-[11px] font-extrabold uppercase tracking-wider text-[#DC2626] bg-red-50 border border-red-200 mb-2">
-                  <span>Advocate-Vetted Commercial Workspace</span>
+                  <span>Ready-to-Use Commercial Workspace</span>
                 </div>
                 <h2 className="text-xl sm:text-2xl font-black text-slate-900">
                   Interactive Logistics Notice Workspace &amp; Schedule Generator
@@ -797,7 +797,7 @@ export default function TransporterFreightNoticePage() {
               </div>
 
               <div className="mt-4 pt-4 border-t border-slate-100 text-[11px] text-slate-500 leading-relaxed">
-                Reviewed and vetted by Advocate Anuj Anand Malik, Advocate &amp; Founder, AMA Legal Solutions. All external statute links redirect to official Government of India repositories (India Code and CBIC).
+                Prepared on verified facts Anuj Anand Malik, Advocate &amp; Founder, AMA Legal Solutions. All external statute links redirect to official Government of India repositories (India Code and CBIC).
               </div>
             </section>
 

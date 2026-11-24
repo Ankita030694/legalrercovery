@@ -23,7 +23,7 @@ export default function CommissaryCTA({ className = "" }: CommissaryCTAProps) {
               Track 1 &bull; Single Defaulting Outlet Test
             </span>
             <h3 className="text-lg sm:text-xl font-bold text-white mb-2">
-              Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Advocate Drafted)
+              Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Fact-Verified)
             </h3>
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
               Serve an Immediate Cure-or-Suspension &amp; Commissary Arrears Demand Notice (plus PSS Act s.25 notice if e-NACH bounced) via Email + WhatsApp + Speed Post RPAD.

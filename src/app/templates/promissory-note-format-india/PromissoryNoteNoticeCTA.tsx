@@ -31,7 +31,7 @@ export default function PromissoryNoteNoticeCTA({
                 Borrower Refusing to Repay Your Promissory Note or Hand Loan?
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6">
-                Have an advocate draft and serve an official statutory 15-day legal demand notice based on your executed promissory note, bank transfer receipts, and WhatsApp acknowledgments. Served by email and WhatsApp under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023. Speed Post is optional at ₹450 per party. Lay the statutory groundwork for a fast Summary Suit under Order XXXVII of the CPC.
+                Serve an official statutory 15-day legal demand notice based on your executed promissory note, bank transfer receipts, and WhatsApp acknowledgments. Served by email and WhatsApp under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023. Speed Post is optional at ₹450 per party. Lay the statutory groundwork for a fast Summary Suit under Order XXXVII of the CPC.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button
@@ -42,7 +42,7 @@ export default function PromissoryNoteNoticeCTA({
                   {buttonText} — ₹{basePrice}
                 </button>
                 <div className="text-xs text-slate-300 flex flex-wrap sm:flex-nowrap items-center gap-2 sm:gap-3">
-                  <span>✓ 24h Advocate Drafting</span>
+                  <span>✓ 24h Notice Drafting</span>
                   <span>•</span>
                   <span>✓ Email + WhatsApp</span>
                   <span>•</span>

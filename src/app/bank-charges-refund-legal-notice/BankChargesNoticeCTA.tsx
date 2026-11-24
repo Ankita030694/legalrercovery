@@ -31,7 +31,7 @@ export default function BankChargesNoticeCTA({
                 Recover Unfair Penal Charges, ECS Bounce Fees &amp; Minimum Balance Deductions
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6">
-                Have a verified advocate draft and serve an unassailable statutory legal notice directly to your bank&apos;s Branch Manager, Nodal Officer, and Principal Nodal Officer. Demand immediate credit reversal, waiver of cascading negative balance levies, and compensation under RBI Circulars and Section 2(11) / 2(47) of the Consumer Protection Act, 2019. Served by email and WhatsApp under Section 63 BSA 2023. Speed Post is optional at ₹450 per party.
+                Serve an unassailable statutory legal notice directly to your bank&apos;s Branch Manager, Nodal Officer, and Principal Nodal Officer. Demand immediate credit reversal, waiver of cascading negative balance levies, and compensation under RBI Circulars and Section 2(11) / 2(47) of the Consumer Protection Act, 2019. Served by email and WhatsApp under Section 63 BSA 2023. Speed Post is optional at ₹450 per party.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button
@@ -42,7 +42,7 @@ export default function BankChargesNoticeCTA({
                   {buttonText} — ₹{basePrice}
                 </button>
                 <div className="text-xs text-slate-300 flex flex-wrap sm:flex-nowrap items-center gap-2 sm:gap-3">
-                  <span>✓ 24h Advocate Drafting</span>
+                  <span>✓ 24h Notice Drafting</span>
                   <span>•</span>
                   <span>✓ Email + WhatsApp</span>
                   <span>•</span>

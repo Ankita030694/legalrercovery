@@ -135,7 +135,7 @@ const FAQS = [
   {
     question: "What if Urban Company rejects my damage cover claim citing their policy cap or 24-hour limit?",
     answer:
-      "Arbitrary claim denials and caps like ₹10,000 limits are unfair contracts under Section 2(46) CPA 2019. Courts have ruled that platform terms cannot deny actual repair costs caused by worker negligence. An advocate notice challenging the clause is the best way to get full payment.",
+      "Arbitrary claim denials and caps like ₹10,000 limits are unfair contracts under Section 2(46) CPA 2019. Courts have ruled that platform terms cannot deny actual repair costs caused by worker negligence. A fact-verified notice challenging the clause is the best way to get full payment.",
   },
   {
     question: "How do I file an official complaint with the Urban Company Grievance Officer?",
@@ -160,7 +160,7 @@ const FAQS = [
   {
     question: "Urban Company service mein nuksan ho gaya ya refund nahi mila toh legal notice kaise bheje?",
     answer:
-      "Agar Urban Company ke technician ne AC, plumbing ya cleaning ke dauran aapka nuksan kiya hai, ya company ne damage claim reject kar diya hai, toh aap ek formal statutory legal notice bhej sakte hain. LegalRecovery.in par verified advocate Consumer Protection Act 2019 aur E-Commerce Rules ke tehat Urban Company Limited (Gurugram HQ) aur service partner dono par Registered Speed Post aur email se notice bhejte hain, jismein 15 din ka property restoration aur compensation demand diya jata hai.",
+      "Agar Urban Company ke technician ne AC, plumbing ya cleaning ke dauran aapka nuksan kiya hai, ya company ne damage claim reject kar diya hai, toh aap ek formal statutory legal notice bhej sakte hain. LegalRecovery.in par hamari team Consumer Protection Act 2019 aur E-Commerce Rules ke tehat Urban Company Limited (Gurugram HQ) aur service partner dono par Registered Speed Post aur email se notice bhejti hai, jismein 15 din ka property restoration aur compensation demand diya jata hai.",
   },
 ];
 
@@ -680,7 +680,7 @@ export default function UrbanCompanyLegalNoticePage() {
                     </span>
                     <div className="space-y-1 sm:space-y-1.5">
                       <h3 className="text-sm sm:text-base md:text-lg font-bold text-slate-900">
-                        Serve a Formal Statutory Advocate Legal Demand Notice
+                        Serve a Formal Statutory Fact-Verified Legal Demand Notice
                       </h3>
                       <p className="text-xs sm:text-sm leading-relaxed">
                         When internal escalation yields no settlement within 14 days, engage an advocate to issue a statutory demand notice to Urban Company Limited (Registered Office: Gurugram, Haryana) and the assigned partner. Dispatched via Registered Speed Post with postal tracking and Section 63 BSA electronic mail, the notice demands 100% property restoration reimbursement, refund of fees, 18% penal interest, and harassment damages within a mandatory 15-day window.
@@ -828,11 +828,11 @@ export default function UrbanCompanyLegalNoticePage() {
                       <strong>The Deadlock:</strong> Within 36 hours, the AC stopped cooling completely, and water pooled under Karthik&apos;s custom engineered oak flooring, causing swelling and mold. Karthik raised a damage complaint via the Urban Company application. A customer support representative replied via chat stating that <em>&quot;drain pipe blockages are due to pre-existing dust&quot;</em> and closed the complaint ticket with a ₹350 promo coupon, citing the platform&apos;s terms that contractors operate independently.
                     </p>
                     <p>
-                      <strong>The Statutory Action:</strong> Karthik engaged LegalRecovery.in. First, he secured an authorized OEM service report from Daikin India certifying that the indoor drain tray was physically fractured by excessive external force during servicing. An advocate drafted and dispatched a formal statutory demand notice to Urban Company Limited (Gurugram) and the individual contractor. The notice cited Section 2(11), Section 86, and Section 2(46) of the Consumer Protection Act, 2019, giving a strict 15-day demand for replacement costs, floor restoration, and compensation.
+                      <strong>The Statutory Action:</strong> Karthik engaged LegalRecovery.in. First, he secured an authorized OEM service report from Daikin India certifying that the indoor drain tray was physically fractured by excessive external force during servicing. The team verified the facts and dispatched a formal statutory demand notice to Urban Company Limited (Gurugram) and the individual contractor. The notice cited Section 2(11), Section 86, and Section 2(46) of the Consumer Protection Act, 2019, giving a strict 15-day demand for replacement costs, floor restoration, and compensation.
                     </p>
                     <div className="p-3.5 sm:p-4 bg-emerald-950/70 border border-emerald-700/60 rounded-xl text-emerald-200">
                       <strong className="block text-emerald-400 font-bold mb-1">The Outcome:</strong>
-                      On Day 9 following service of the advocate legal notice via Registered Speed Post and email, Urban Company&apos;s Senior Legal Grievance Cell reached out to Karthik. To prevent an imminent consumer commission filing on e-Jagriti, Urban Company processed a full settlement of ₹38,500 directly into Karthik&apos;s HDFC bank account—covering ₹14,500 for Daikin replacement parts, ₹19,000 for wooden floor restoration, and ₹5,000 token compensation.
+                      On Day 9 following service of the fact-verified legal notice via Registered Speed Post and email, Urban Company&apos;s Senior Legal Grievance Cell reached out to Karthik. To prevent an imminent consumer commission filing on e-Jagriti, Urban Company processed a full settlement of ₹38,500 directly into Karthik&apos;s HDFC bank account—covering ₹14,500 for Daikin replacement parts, ₹19,000 for wooden floor restoration, and ₹5,000 token compensation.
                     </div>
                   </div>
                 </div>

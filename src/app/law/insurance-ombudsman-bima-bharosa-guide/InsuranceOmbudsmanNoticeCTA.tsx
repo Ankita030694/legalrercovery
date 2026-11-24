@@ -31,7 +31,7 @@ export default function InsuranceOmbudsmanNoticeCTA({
                 Insurance Claim Rejected, Delayed, or Slashed with Arbitrary Deductions?
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6">
-                Have an advocate draft and serve an airtight statutory legal notice to your insurer&apos;s Head of Claims and Grievance Redressal Officer (GRO). Trigger the mandatory 30-day statutory default under Rule 14(3) of the Insurance Ombudsman Rules, invoke the IRDAI 7-day ex-parte response rule, and build an unassailable evidentiary record before filing on the CIO Ombudsman portal or e-Jagriti Consumer Court.
+                Serve an airtight statutory legal notice to your insurer&apos;s Head of Claims and Grievance Redressal Officer (GRO). Trigger the mandatory 30-day statutory default under Rule 14(3) of the Insurance Ombudsman Rules, invoke the IRDAI 7-day ex-parte response rule, and build an unassailable evidentiary record before filing on the CIO Ombudsman portal or e-Jagriti Consumer Court.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button
@@ -42,7 +42,7 @@ export default function InsuranceOmbudsmanNoticeCTA({
                   {buttonText} — ₹{basePrice}
                 </button>
                 <div className="text-xs text-slate-300 flex flex-wrap sm:flex-nowrap items-center gap-2 sm:gap-3">
-                  <span>✓ 24h Advocate Drafting</span>
+                  <span>✓ 24h Notice Drafting</span>
                   <span>•</span>
                   <span>✓ Email + WhatsApp</span>
                   <span>•</span>

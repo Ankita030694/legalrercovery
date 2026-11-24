@@ -213,7 +213,7 @@ export default function NykaaDisputePage() {
                 <span>Quick Statutory Summary</span>
               </div>
               <p className="text-slate-800 text-sm sm:text-base leading-relaxed">
-                FSN E-Commerce Ventures Limited and marketplace sellers share statutory liability under Rule 5 and Rule 6 of the Consumer Protection (E-Commerce) Rules, 2020. Under Section 17C of the Drugs and Cosmetics Act, 1940, selling spurious cosmetics is strictly prohibited. Your first legal step is lodging an official grievance with Nykaa's Grievance Redressal Officer in Mumbai. If unresolved within 48 hours or uncredited after 30 days, serve a 15-day advocate legal notice before filing a claim up to ₹50 lakh on e-Jagriti.
+                FSN E-Commerce Ventures Limited and marketplace sellers share statutory liability under Rule 5 and Rule 6 of the Consumer Protection (E-Commerce) Rules, 2020. Under Section 17C of the Drugs and Cosmetics Act, 1940, selling spurious cosmetics is strictly prohibited. Your first legal step is lodging an official grievance with Nykaa's Grievance Redressal Officer in Mumbai. If unresolved within 48 hours or uncredited after 30 days, serve a 15-day fact-verified legal notice before filing a claim up to ₹50 lakh on e-Jagriti.
               </p>
             </section>
 
@@ -336,7 +336,7 @@ export default function NykaaDisputePage() {
                   Issue a Statutory Notice to FSN E-Commerce Ventures Limited
                 </h3>
                 <p className="text-slate-700 text-sm leading-relaxed mb-2">
-                  Have an enrolled advocate issue a formal legal notice to Nykaa’s Mumbai headquarters. The notice outlines breaches under Section 2(47) of CPA 2019, fallback liabilities under E-Commerce Rules, and offenses under the Drugs and Cosmetics Act. It demands a full refund and damages within 15 calendar days.
+                  Issue a formal legal notice to Nykaa’s Mumbai headquarters. The notice outlines breaches under Section 2(47) of CPA 2019, fallback liabilities under E-Commerce Rules, and offenses under the Drugs and Cosmetics Act. It demands a full refund and damages within 15 calendar days.
                 </p>
                 <div className="bg-red-50 p-2.5 rounded-lg border border-red-200 text-xs text-red-900">
                   <strong>Service Protocol:</strong> Served via India Post Registered Speed Post with tracking and sent electronically under Section 63 BSA.
@@ -561,7 +561,7 @@ export default function NykaaDisputePage() {
                       Pre-Litigation Notice Cost
                     </th>
                     <td className="px-5 py-3.5 text-slate-600">
-                      LegalRecovery Advocate Drafting & Service
+                      LegalRecovery Notice Drafting & Service
                     </td>
                     <td className="px-5 py-3.5 font-bold text-red-700">
                       Flat ₹{BASE_PRICE} (email + WhatsApp service; Speed Post optional)
@@ -655,7 +655,7 @@ export default function NykaaDisputePage() {
                   </h3>
                   <p className="text-xs text-slate-500 mb-3">Decided on: July 1, 2024</p>
                   <p className="text-slate-700 text-sm leading-relaxed mb-3">
-                    The complainant ordered skincare cosmetics worth ₹2,823.24 via Nykaa. The order was not delivered and tracking stalled for a month. Nykaa credited the refund only after receiving a formal advocate legal notice.
+                    The complainant ordered skincare cosmetics worth ₹2,823.24 via Nykaa. The order was not delivered and tracking stalled for a month. Nykaa credited the refund only after receiving a formal fact-verified legal notice.
                   </p>
                   <div className="bg-slate-50 p-2.5 rounded-lg border border-slate-100 text-xs text-slate-700 space-y-1 mb-3">
                     <p>
@@ -858,7 +858,7 @@ export default function NykaaDisputePage() {
                   <strong>The Evidence Dossier:</strong> Ananya preserved the carton, recorded video of the mismatched batch codes, and emailed the Grievance Redressal Officer in Mumbai. The ticket was closed after 48 hours with a boilerplate rejection.
                 </p>
                 <p>
-                  <strong>The Legal Notice:</strong> An advocate served a pre-litigation legal notice upon FSN E-Commerce Ventures Limited in Lower Parel, Mumbai. The notice cited Rule 5(3)(b) of the E-Commerce Rules, Section 17C of the Drugs and Cosmetics Act, and Section 2(47) of CPA 2019, demanding full refund and damages within 15 days.
+                  <strong>The Legal Notice:</strong> A fact-verified pre-litigation legal notice was served upon FSN E-Commerce Ventures Limited in Lower Parel, Mumbai. The notice cited Rule 5(3)(b) of the E-Commerce Rules, Section 17C of the Drugs and Cosmetics Act, and Section 2(47) of CPA 2019, demanding full refund and damages within 15 days.
                 </p>
                 <p className="text-emerald-300 font-medium">
                   <strong>The Settlement:</strong> On Day 9 post-service, Nykaa’s escalation team arranged reverse courier pickup and credited ₹7,499 to her bank account, alongside a ₹2,000 goodwill platform voucher.
@@ -890,7 +890,7 @@ export default function NykaaDisputePage() {
                 </h3>
                 <ul className="space-y-2 text-slate-700">
                   <li>
-                    <strong>Advocate Drafting:</strong> An advocate drafts a tailored notice citing E-Commerce Rules 2020 and CPA 2019.
+                    <strong>Notice Drafting:</strong> We draft a tailored notice citing E-Commerce Rules 2020 and CPA 2019.
                   </li>
                   <li>
                     <strong>Dual-Channel Service:</strong> Served upon FSN E-Commerce Ventures via Registered Speed Post with tracking plus certified email.

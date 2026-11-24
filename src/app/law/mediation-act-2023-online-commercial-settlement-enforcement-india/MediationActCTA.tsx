@@ -29,7 +29,7 @@ export default function MediationActCTA({ className = "" }: MediationActCTAProps
               Test 1 Live Overdue Case Now (&rupee;{basePrice})
             </h3>
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-              Advocate-drafted Statutory Demand Notice with Online Mediation offer under Section 30 of the Mediation Act, 2023, acceleration clause drafting, and tri-channel dispatch via Email + WhatsApp + Speed Post RPAD.
+              Fact-verified Statutory Demand Notice with Online Mediation offer under Section 30 of the Mediation Act, 2023, acceleration clause drafting, and tri-channel dispatch via Email + WhatsApp + Speed Post RPAD.
             </p>
           </div>
           <div className="flex flex-col sm:flex-row sm:items-center gap-3">

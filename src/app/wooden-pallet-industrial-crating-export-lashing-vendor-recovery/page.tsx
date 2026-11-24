@@ -126,7 +126,7 @@ const FAQS = [
   },
   {
     q: "A CHA or freight forwarder hired our container lashing and choking crew at Mundra/JNPA, collected funds from the exporter, and now blocks our bill. Who should receive the legal notice?",
-    a: "Serve the primary Advocate Demand Notice on the contracting CHA or Freight Forwarder as the principal debtor (enclosing CFS gate passes, container/seal numbers, geotagged lashing photos, and the Marine Surveyor Lashing Certificate), and mark a formal statutory copy to the end-Exporter's Logistics and Finance Head. Under Section 70 of the Contract Act and CGST Section 16(2) (180-day ITC reversal on unpaid supplier bills), copying the exporter breaks CHA stonewalling rapidly.",
+    a: "Serve the primary Fact-Verified Demand Notice on the contracting CHA or Freight Forwarder as the principal debtor (enclosing CFS gate passes, container/seal numbers, geotagged lashing photos, and the Marine Surveyor Lashing Certificate), and mark a formal statutory copy to the end-Exporter's Logistics and Finance Head. Under Section 70 of the Contract Act and CGST Section 16(2) (180-day ITC reversal on unpaid supplier bills), copying the exporter breaks CHA stonewalling rapidly.",
   },
   {
     q: "A factory took Euro pinewood pallets on a running ledger for months, then sent a retrospective debit note alleging fungus or high moisture after storing them outdoors in rain. Is that valid?",
@@ -138,7 +138,7 @@ const FAQS = [
   },
   {
     q: "Can we recover our wooden pallet or export crating dues without going straight to years of civil litigation?",
-    a: "Yes. Overwhelmingly, heavy-engineering OEMs, automotive plants, and export houses settle overdue pallet and crating ledgers at the pre-litigation stage once an Advocate Statutory Notice lands on the CFO's desk—because defending a documented ISPM-15 shipment before MSEFC costs them 3x RBI monthly compounded interest (roughly 18%–20.25% p.a. compounded monthly), Section 43B(h) income tax disallowance, and a 75% mandatory pre-deposit under Section 19 if they ever attempt to challenge an MSEFC award.",
+    a: "Yes. Overwhelmingly, heavy-engineering OEMs, automotive plants, and export houses settle overdue pallet and crating ledgers at the pre-litigation stage once a Fact-Verified Statutory Notice lands on the CFO's desk—because defending a documented ISPM-15 shipment before MSEFC costs them 3x RBI monthly compounded interest (roughly 18%–20.25% p.a. compounded monthly), Section 43B(h) income tax disallowance, and a 75% mandatory pre-deposit under Section 19 if they ever attempt to challenge an MSEFC award.",
   },
 ];
 
@@ -198,8 +198,8 @@ const HOWTO_SCHEMA = {
     {
       "@type": "HowToStep",
       position: 3,
-      name: "Serve CFO-Targeted Advocate Statutory Notice (MSMED + s.43B(h))",
-      text: "Dispatch a 15-day Advocate Demand Notice via Email, WhatsApp, and Speed Post RPAD copying the exporter's CFO/Statutory Auditor (and end-exporter for CHA lashing dues) detailing 3x RBI interest and s.43B(h) tax disallowance.",
+      name: "Serve CFO-Targeted Fact-Verified Statutory Notice (MSMED + s.43B(h))",
+      text: "Dispatch a 15-day Fact-Verified Demand Notice via Email, WhatsApp, and Speed Post RPAD copying the exporter's CFO/Statutory Auditor (and end-exporter for CHA lashing dues) detailing 3x RBI interest and s.43B(h) tax disallowance.",
     },
     {
       "@type": "HowToStep",
@@ -596,7 +596,7 @@ export default function WoodenPalletExportCratingRecoveryPage() {
                   },
                   {
                     step: "Stage 03 · Day 46+",
-                    title: "Serve CFO & Auditor Advocate Statutory Notice",
+                    title: "Serve CFO & Auditor Fact-Verified Statutory Notice",
                     desc: "Dispatch via Email, WhatsApp, and Speed Post RPAD triggering Income Tax s.43B(h) disallowance, Form 3CD Clause 22 warning, and 3x RBI compound interest.",
                   },
                   {
@@ -914,7 +914,7 @@ export default function WoodenPalletExportCratingRecoveryPage() {
                   08
                 </span>
                 <h2 className="text-xl sm:text-2xl font-extrabold text-slate-900 tracking-tight">
-                  Initiate a &#8377;999 Advocate Demand Notice or Bulk Factory CSV Desk
+                  Initiate a &#8377;999 Fact-Verified Demand Notice or Bulk Factory CSV Desk
                 </h2>
               </div>
 

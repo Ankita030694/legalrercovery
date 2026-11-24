@@ -226,7 +226,7 @@ const HOWTO_SCHEMA = {
       "@type": "HowToStep",
       position: 2,
       name: "Serve Arbitration s.21 / Gate-Pass Demobilization Notice",
-      text: "Dispatch a tri-channel Advocate Notice (RPAD, Email, WhatsApp) demanding release of certified RA bills, reversal of arbitrary HSD cuts, and immediate HEMM gate passes.",
+      text: "Dispatch a tri-channel Fact-Verified Notice (RPAD, Email, WhatsApp) demanding release of certified RA bills, reversal of arbitrary HSD cuts, and immediate HEMM gate passes.",
     },
     {
       "@type": "HowToStep",
@@ -845,7 +845,7 @@ export default function MiningOverburdenHEMMRecoveryPage() {
                     Notice Workspace (P1)
                   </p>
                   <p className="text-sm font-bold text-slate-900">
-                    Advocate-Vetted Commercial Notice &amp; Reply Template
+                    Ready-to-Use Commercial Notice &amp; Reply Template
                   </p>
                 </Link>
                 <Link

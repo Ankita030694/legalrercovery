@@ -802,7 +802,7 @@ export default function JioMartRecoveryPage() {
                     The Legal Resolution
                   </h3>
                   <p className="text-slate-600 leading-relaxed">
-                    An advocate legal notice was served on Reliance Retail Limited citing Rule 6(5) of the E-Commerce Rules and Section 2(47) CPA 2019. Within 8 days of Speed Post delivery, Reliance Retail’s senior escalation desk issued a full ₹9,450 IMPS refund plus ₹2,000 compensation.
+                    A fact-verified legal notice was served on Reliance Retail Limited citing Rule 6(5) of the E-Commerce Rules and Section 2(47) CPA 2019. Within 8 days of Speed Post delivery, Reliance Retail’s senior escalation desk issued a full ₹9,450 IMPS refund plus ₹2,000 compensation.
                   </p>
                 </div>
               </div>

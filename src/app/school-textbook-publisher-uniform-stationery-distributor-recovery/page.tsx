@@ -112,7 +112,7 @@ const FAQS = [
     question:
       "How can a K-12 textbook publisher stop a school or campus bookshop from switching publishers in January without clearing last March's dues?",
     answer:
-      "Do not wait until February or March when the new academic booklist is already printed. Launch a coordinated December–January Pre-Session Legal Notice Wave signed by a commercial advocate, addressed jointly to the School Trust Chairman, Principal, and Campus Bookshop Proprietor. Citing Order XXXVII CPC Summary Suit liability, MSMED Act s.15–18 (3x RBI compound interest), and Income Tax Section 43B(h) expense disallowance creates immediate pre-admission compliance pressure before the school commits to a rival publisher.",
+      "Do not wait until February or March when the new academic booklist is already printed. Launch a coordinated December–January Pre-Session Legal Notice Wave, addressed jointly to the School Trust Chairman, Principal, and Campus Bookshop Proprietor. Citing Order XXXVII CPC Summary Suit liability, MSMED Act s.15–18 (3x RBI compound interest), and Income Tax Section 43B(h) expense disallowance creates immediate pre-admission compliance pressure before the school commits to a rival publisher.",
   },
   {
     question:
@@ -130,7 +130,7 @@ const FAQS = [
     question:
       "What if the school book vendor gave us Post-Dated Cheques (PDCs) in October that bounced in December?",
     answer:
-      "A dishonoured PDC triggers parallel criminal liability under Section 138 of the Negotiable Instruments Act, 1881. You must dispatch an Advocate Statutory Demand Notice within 30 days of receiving the Bank Cheque Return Memo, giving the drawer 15 days to clear the cheque amount. If unpaid, you can file a criminal complaint against the proprietor, partners, or school society office-bearers (Section 141) and move for 20% interim compensation under Section 143A.",
+      "A dishonoured PDC triggers parallel criminal liability under Section 138 of the Negotiable Instruments Act, 1881. You must dispatch a Statutory Demand Notice within 30 days of receiving the Bank Cheque Return Memo, giving the drawer 15 days to clear the cheque amount. If unpaid, you can file a criminal complaint against the proprietor, partners, or school society office-bearers (Section 141) and move for 20% interim compensation under Section 143A.",
   },
   {
     question:
@@ -205,7 +205,7 @@ export default function SchoolPublisherRecoveryPage() {
         "@type": "HowToStep",
         position: 3,
         name: "Launch December–January Pre-Session Bulk Legal Notice Wave",
-        text: "Dispatch Advocate-signed statutory notices to School Trustees, Principals, and Bookshops before February–March new-session booklists are finalized.",
+        text: "Dispatch Fact-verified statutory notices to School Trustees, Principals, and Bookshops before February–March new-session booklists are finalized.",
       },
       {
         "@type": "HowToStep",
@@ -581,7 +581,7 @@ export default function SchoolPublisherRecoveryPage() {
                   {/* Stage 3 */}
                   <rect x="385" y="30" width="165" height="90" rx="12" fill="#DC2626" stroke="#F87171" strokeWidth="1.5" />
                   <text x="467" y="55" textAnchor="middle" fill="#FEE2E2" fontSize="11" fontWeight="bold">STAGE 3 (DEC–JAN WAVE)</text>
-                  <text x="467" y="75" textAnchor="middle" fill="#FFFFFF" fontSize="12" fontWeight="bold">Bulk Advocate Notice</text>
+                  <text x="467" y="75" textAnchor="middle" fill="#FFFFFF" fontSize="12" fontWeight="bold">Bulk Legal Notice</text>
                   <text x="467" y="93" textAnchor="middle" fill="#FEF2F2" fontSize="10">Trustees + Principal + Shop</text>
                   <text x="467" y="107" textAnchor="middle" fill="#FEF2F2" fontSize="10">Before New Booklist Lock</text>
 
@@ -910,7 +910,7 @@ export default function SchoolPublisherRecoveryPage() {
                   {
                     title: "Legal Notice Reply & Commercial Notice Format",
                     href: "/templates/legal-notice-reply-format",
-                    desc: "Inspect advocate-vetted statutory notice drafting structures and commercial rebuttal templates.",
+                    desc: "Inspect fact-verified statutory notice drafting structures and commercial rebuttal templates.",
                   },
                   {
                     title: "Section 80 CPC Notice to Government Bodies",

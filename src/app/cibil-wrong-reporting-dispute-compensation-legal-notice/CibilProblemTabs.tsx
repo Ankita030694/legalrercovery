@@ -41,9 +41,9 @@ const PROBLEMS: ProblemScenario[] = [
           "Raise an online dispute ticket on CIBIL Consumer Portal quoting the Account Number and select 'Account Does Not Belong to Me'. Simultaneously email the Principal Nodal Officer (PNO) of the reporting bank attaching the Cyber Complaint acknowledgement and stating that you never maintained an account with them.",
       },
       {
-        step: "Serve Advocate Statutory Demand Notice",
+        step: "Serve Fact-Verified Statutory Demand Notice",
         description:
-          "If the bank fails to purge the account within 21 days or requests endless physical branch visits, serve a formal advocate legal demand notice demanding deletion of the tradeline and statutory ₹100/day compensation under RBI Circular DoR.FIN.REC.48/20.16.003/2023-24.",
+          "If the bank fails to purge the account within 21 days or requests endless physical branch visits, serve a formal fact-verified legal demand notice demanding deletion of the tradeline and statutory ₹100/day compensation under RBI Circular DoR.FIN.REC.48/20.16.003/2023-24.",
       },
     ],
   },
@@ -101,7 +101,7 @@ const PROBLEMS: ProblemScenario[] = [
       {
         step: "Demand Score Restoration & Reversal Notice",
         description:
-          "Instruct counsel to dispatch an advocate legal notice requiring the bank to roll back the erroneous DPD flag, furnish an updated MDF to CIBIL, and compensate for wrongful credit impairment.",
+          "Dispatch a legal notice through LegalRecovery.in requiring the bank to roll back the erroneous DPD flag, furnish an updated MDF to CIBIL, and compensate for wrongful credit impairment.",
       },
     ],
   },

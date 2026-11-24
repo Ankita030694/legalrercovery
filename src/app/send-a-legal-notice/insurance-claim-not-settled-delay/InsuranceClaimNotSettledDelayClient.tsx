@@ -19,7 +19,7 @@ const faqs = [
     question:
       'Can a policyholder demand penal interest from the insurance company for delayed claim settlement?',
     answer:
-      'Yes, under the IRDAI Policyholders Protection Regulations, any unjustified delay beyond the statutory 30-day settlement window obligates the insurance company to pay penal interest on the admitted claim amount. The penal interest is calculated at a rate of 2% above the prevailing Reserve Bank of India (RBI) repo or bank lending rate from the date of submission of the last required document until the date of actual disbursement. Policyholders can formally demand this statutory penal interest alongside compensatory damages for mental agony and deficiency of service through an advocate-vetted legal notice.',
+      'Yes, under the IRDAI Policyholders Protection Regulations, any unjustified delay beyond the statutory 30-day settlement window obligates the insurance company to pay penal interest on the admitted claim amount. The penal interest is calculated at a rate of 2% above the prevailing Reserve Bank of India (RBI) repo or bank lending rate from the date of submission of the last required document until the date of actual disbursement. Policyholders can formally demand this statutory penal interest alongside compensatory damages for mental agony and deficiency of service through a fact-verified legal notice.',
   },
   {
     question:
@@ -54,7 +54,7 @@ const ogImage =
   'https://legalrecovery.in/images/og/insurance-claim-not-settled-delay.jpg';
 
 const reviewBodyText =
-  'My father had undergone an emergency coronary bypass surgery costing ₹18,45,000, and our cashless health insurance claim was stalled for more than 5 months by the private insurer under continuous, redundant queries about past medical history. Despite submitting complete hospital records, the insurer kept delaying the settlement without issuing an approval or formal repudiation. Legal Recovery drafted and served an exhaustive advocate-vetted statutory legal notice citing IRDAI Regulation 15, the 30-day settlement mandate, and Supreme Court precedents on penal interest. Within 11 days of receiving the notice, the insurance company contacted us, cleared the entire ₹18.45 Lakhs claim along with accrued interest, and waived all objections. Outstanding legal efficiency for policyholder recovery.';
+  'My father had undergone an emergency coronary bypass surgery costing ₹18,45,000, and our cashless health insurance claim was stalled for more than 5 months by the private insurer under continuous, redundant queries about past medical history. Despite submitting complete hospital records, the insurer kept delaying the settlement without issuing an approval or formal repudiation. Legal Recovery drafted and served an exhaustive fact-verified statutory legal notice citing IRDAI Regulation 15, the 30-day settlement mandate, and Supreme Court precedents on penal interest. Within 11 days of receiving the notice, the insurance company contacted us, cleared the entire ₹18.45 Lakhs claim along with accrued interest, and waived all objections. Outstanding legal efficiency for policyholder recovery.';
 
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -169,7 +169,7 @@ const jsonLd = {
         {
           '@type': 'ListItem',
           position: 3,
-          name: 'Draft an advocate-vetted statutory legal notice citing IRDAI Protection of Policyholders Regulations, Consumer Protection Act 2019 & Supreme Court rulings',
+          name: 'Draft a fact-verified statutory legal notice citing IRDAI Protection of Policyholders Regulations, Consumer Protection Act 2019 & Supreme Court rulings',
         },
         {
           '@type': 'ListItem',
@@ -189,7 +189,7 @@ const jsonLd = {
       '@type': 'Product',
       name: 'Legal Notice for Insurance Claim Not Settled Delay',
       description:
-        'Advocate-drafted statutory demand notice service for policyholders facing unlawful delays, arbitrary deductions, or unresolved health, motor, life, fire, and commercial insurance claims across India.',
+        'Fact-verified statutory demand notice service for policyholders facing unlawful delays, arbitrary deductions, or unresolved health, motor, life, fire, and commercial insurance claims across India.',
       brand: {
         '@type': 'Organization',
         name: 'Legal Recovery',
@@ -266,7 +266,7 @@ export default function InsuranceClaimNotSettledDelayClient() {
 
   const shareUrl = encodeURIComponent(pageUrl);
   const shareText = encodeURIComponent(
-    'Insurance company delaying or refusing to settle your legitimate claim? Send an advocate-vetted statutory legal notice for claim settlement delay under IRDAI 30-day mandate & penal interest rules! #InsuranceRecovery #LegalNotice #IRDAI'
+    'Insurance company delaying or refusing to settle your legitimate claim? Send a fact-verified statutory legal notice for claim settlement delay under IRDAI 30-day mandate & penal interest rules! #InsuranceRecovery #LegalNotice #IRDAI'
   );
 
   return (
@@ -441,7 +441,7 @@ export default function InsuranceClaimNotSettledDelayClient() {
                     Quick Answer
                   </h2>
                   <p className="text-sm text-slate-700 font-medium leading-relaxed">
-                    A policyholder facing an unsettled or delayed health, motor, life, or commercial insurance claim can serve an advocate-vetted statutory legal notice under{' '}
+                    A policyholder facing an unsettled or delayed health, motor, life, or commercial insurance claim can serve a fact-verified statutory legal notice under{' '}
                     <span className="font-semibold text-slate-800">
                       Regulation 15 of the IRDAI (Protection of Policyholders’ Interests) Regulations, 2017
                     </span>
@@ -608,7 +608,7 @@ export default function InsuranceClaimNotSettledDelayClient() {
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      When an insurance company defaults on its statutory settlement mandate, serving an advocate-drafted legal notice provides the crucial foundational milestone required to unlock multi-tiered legal remedies across specialized dispute resolution forums in India:
+                      When an insurance company defaults on its statutory settlement mandate, serving a fact-verified legal notice provides the crucial foundational milestone required to unlock multi-tiered legal remedies across specialized dispute resolution forums in India:
                     </p>
 
                     <div className="space-y-5">
@@ -728,7 +728,7 @@ export default function InsuranceClaimNotSettledDelayClient() {
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      A poorly drafted demand notice can be dismissed by insurance company legal departments as routine correspondence. To command immediate compliance, an advocate-vetted notice must incorporate four indispensable structural clauses:
+                      A poorly drafted demand notice can be dismissed by insurance company legal departments as routine correspondence. To command immediate compliance, a fact-verified notice must incorporate four indispensable structural clauses:
                     </p>
 
                     <div className="space-y-4">
@@ -787,8 +787,8 @@ export default function InsuranceClaimNotSettledDelayClient() {
                         },
                         {
                           step: '02',
-                          title: 'Advocate Drafting & Statutory Penal Interest Computation',
-                          desc: 'A seasoned panel advocate drafts a bespoke, high-impact statutory demand notice incorporating IRDAI Regulation 15, the Consumer Protection Act 2019, Supreme Court precedents, and exact penal interest calculations.',
+                          title: 'Notice Drafting & Statutory Penal Interest Computation',
+                          desc: 'We prepare a bespoke, high-impact statutory demand notice from your fact-verified details, incorporating IRDAI Regulation 15, the Consumer Protection Act 2019, Supreme Court precedents, and exact penal interest calculations.',
                         },
                         {
                           step: '03',
@@ -798,7 +798,7 @@ export default function InsuranceClaimNotSettledDelayClient() {
                         {
                           step: '04',
                           title: '15-Day Real-Time Tracking & Settlement Negotiation',
-                          desc: 'Track postal delivery status and courier consignment numbers on your live dashboard. Over 70% of insurance claims are expedited, approved, or settled during this 15-day window as legal departments prioritize advocate notices over regular customer tickets.',
+                          desc: 'Track postal delivery status and courier consignment numbers on your live dashboard. Over 70% of insurance claims are expedited, approved, or settled during this 15-day window as legal departments prioritize fact-verified notices over regular customer tickets.',
                         },
                         {
                           step: '05',
@@ -968,7 +968,7 @@ export default function InsuranceClaimNotSettledDelayClient() {
                   <p className="text-sm text-slate-650 leading-relaxed mb-6">
                     Legal Recovery is India&apos;s trusted online legal notice and dispute resolution
                     platform, connecting policyholders, consumers, businesses, and professionals with
-                    seasoned panel advocates for rapid, advocate-vetted statutory demand notices at
+                    our team for rapid, fact-verified statutory demand notices at
                     transparent flat fees. With ₹100 Crore+ recovered and 10,000+ cases resolved across
                     India, Legal Recovery delivers verified legal impact without the delays and
                     unpredictability of traditional law firms.
@@ -1009,7 +1009,7 @@ export default function InsuranceClaimNotSettledDelayClient() {
                   Insurance Company Delaying Your Settlement?
                 </h3>
                 <p className="text-slate-300 text-xs leading-relaxed mb-4">
-                  Send an advocate-vetted statutory notice today. Over 70% of insurers approve delayed claims
+                  Send a fact-verified statutory notice today. Over 70% of insurers approve delayed claims
                   and release pending funds within 15 days upon receiving formal notice from Legal Recovery.
                 </p>
                 <button
@@ -1019,7 +1019,7 @@ export default function InsuranceClaimNotSettledDelayClient() {
                   Draft &amp; Send Notice Now
                 </button>
                 <p className="text-center text-slate-400 text-[10px] mt-3">
-                  Flat fee • Advocate-drafted • Sent same day
+                  Flat fee • Fact-verified • Sent same day
                 </p>
               </div>
 
@@ -1074,7 +1074,7 @@ export default function InsuranceClaimNotSettledDelayClient() {
                 {[
                   { stat: '70%+', label: 'Insurers settle claims before consumer court filings' },
                   { stat: '₹100CR+', label: 'Total amount recovered for policyholders & clients' },
-                  { stat: 'Same Day', label: 'Advocate notice drafted and dispatched' },
+                  { stat: 'Same Day', label: 'Notice prepared and dispatched' },
                   { stat: 'Flat Fee', label: 'Transparent pricing with no hidden commissions' },
                 ].map((item, i) => (
                   <div key={i} className="flex items-center justify-between py-2 border-b border-slate-50 last:border-0">

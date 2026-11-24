@@ -143,7 +143,7 @@ const RECOVERY_TABS: RecoveryTab[] = [
       {
         step: "Mandatory 30-Day Statutory Advocate Demand Notice",
         description:
-          "Serve a formal advocate demand notice under Section 25(1)(b) of the PSS Act within 30 days of receiving the dishonour memo, demanding payment within 15 days.",
+          "Serve a formal fact-verified demand notice under Section 25(1)(b) of the PSS Act within 30 days of receiving the dishonour memo, demanding payment within 15 days.",
       },
       {
         step: "Filing Criminal Complaint Under Section 142 NI Act / PSS Act",

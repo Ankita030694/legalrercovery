@@ -52,7 +52,7 @@ export default function ContactThankYouPage() {
           Thank You! Case Submission Received
         </h1>
         <p className="mb-6 max-w-2xl text-sm font-semibold leading-relaxed text-[#6B7280] sm:text-base">
-          Our legal experts will review your details and contact you within 24
+          Our team will review your details and contact you within 24
           hours.
         </p>
 
@@ -67,7 +67,7 @@ export default function ContactThankYouPage() {
               </span>
               <h3 className="mb-1 text-sm font-bold text-slate-900">Case Review</h3>
               <p className="text-xs text-slate-500 leading-relaxed">
-                Our legal team reviews your dispute facts and submitted details.
+                Our team reviews your dispute facts and submitted details.
               </p>
             </div>
             <div className="rounded-2xl border border-slate-100 bg-slate-50 p-4 text-center">

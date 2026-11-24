@@ -25,13 +25,13 @@ export default function HealthInsuranceNoticeCTA({
           <div className="bg-gradient-to-br from-[#111827] via-[#1F2937] to-[#111827] text-white rounded-2xl p-5 sm:p-8 md:p-10 border border-slate-800 shadow-2xl w-full">
             <div className="max-w-3xl">
               <span className="inline-block px-3 py-1 rounded-full text-[11px] sm:text-xs font-semibold tracking-wide uppercase bg-slate-800 text-red-400 border border-slate-700 mb-3 sm:mb-4">
-                IRDAI Policyholder Protection Rules • 15-Day Advocate Demand Notice
+                IRDAI Policyholder Protection Rules • 15-Day Fact-Verified Demand Notice
               </span>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-bold tracking-tight text-white mb-3">
                 Overturn Your Unjust Health Insurance Claim Rejection or Repudiation
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6">
-                Have a verified advocate draft and serve an official statutory legal demand notice directly to your insurer&apos;s Grievance Redressal Officer (GRO) and legal department. Invoking Section 45 of the Insurance Act, 1938, IRDAI Master Circular 2024 directives, and binding Supreme Court precedents. Served by email and WhatsApp under Section 63 BSA. Speed Post is optional at ₹450 per party.
+                Serve an official statutory legal demand notice directly to your insurer&apos;s Grievance Redressal Officer (GRO) and legal department. Invoking Section 45 of the Insurance Act, 1938, IRDAI Master Circular 2024 directives, and binding Supreme Court precedents. Served by email and WhatsApp under Section 63 BSA. Speed Post is optional at ₹450 per party.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button
@@ -42,7 +42,7 @@ export default function HealthInsuranceNoticeCTA({
                   {buttonText} — ₹{basePrice}
                 </button>
                 <div className="text-xs text-slate-300 flex flex-wrap sm:flex-nowrap items-center gap-2 sm:gap-3">
-                  <span>✓ 24h Advocate Drafting</span>
+                  <span>✓ 24h Notice Drafting</span>
                   <span>•</span>
                   <span>✓ Email + WhatsApp</span>
                   <span>•</span>

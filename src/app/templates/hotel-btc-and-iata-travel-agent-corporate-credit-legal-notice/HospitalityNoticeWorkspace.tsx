@@ -507,7 +507,7 @@ Counsel for ${form.creditorName}`;
           <div className="bg-slate-900 text-white px-4 sm:px-5 py-3.5 flex flex-wrap items-center justify-between gap-3">
             <div>
               <p className="text-xs font-extrabold uppercase tracking-wider text-red-400">
-                Live Advocate-Vetted Notice Preview
+                Live Fact-Verified Notice Preview
               </p>
               <p className="text-[11px] text-slate-300">
                 Ref: {form.noticeRef} · Principal: {formattedPrincipal}

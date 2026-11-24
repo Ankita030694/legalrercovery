@@ -23,10 +23,10 @@ export default function HospitalCorporateCTA({ className = "" }: HospitalCorpora
               Track 1 &bull; Single Corporate / PSU Claim Test
             </span>
             <p className="text-lg sm:text-xl font-extrabold text-white mb-2">
-              Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Advocate Drafted &middot; Email + WhatsApp + Speed Post RPAD)
+              Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Fact-Verified &middot; Email + WhatsApp + Speed Post RPAD)
             </p>
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-              Serve a high-impact, advocate-vetted 15-day commercial legal notice or Section 80 CPC notice on an overdue corporate credit letter, unpaid annual executive health-camp invoice, or defaulting PSU medical cell. Formally itemizes admitted credit authorisations, GST invoices, and compound interest demands under the Interest Act, 1978.
+              Serve a high-impact, fact-verified 15-day commercial legal notice or Section 80 CPC notice on an overdue corporate credit letter, unpaid annual executive health-camp invoice, or defaulting PSU medical cell. Formally itemizes admitted credit authorisations, GST invoices, and compound interest demands under the Interest Act, 1978.
             </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-3">

@@ -13,7 +13,7 @@ const faqs = [
     question:
       'Can a startup co-founder send a legal notice to recover unpaid compensation and enforce vested equity allocation in India?',
     answer:
-      'Yes, an aggrieved co-founder can issue an advocate-vetted statutory legal demand notice under Section 73 of the Indian Contract Act, 1872, and Sections 56, 88, and 169 of the Companies Act, 2013, demanding immediate disbursement of unpaid remuneration and formal allotment or transfer of vested equity shares. A formal legal demand puts the defaulting co-founders and the startup corporate entity on strict statutory notice to rectify the cap table and settle monetary liabilities within a 15-day compliance window. If the company fails to comply, the notice serves as foundational documentary evidence before the National Company Law Tribunal (NCLT) for oppression and mismanagement or in commercial courts for summary debt recovery and specific performance.',
+      'Yes, an aggrieved co-founder can issue a fact-verified statutory legal demand notice under Section 73 of the Indian Contract Act, 1872, and Sections 56, 88, and 169 of the Companies Act, 2013, demanding immediate disbursement of unpaid remuneration and formal allotment or transfer of vested equity shares. A formal legal demand puts the defaulting co-founders and the startup corporate entity on strict statutory notice to rectify the cap table and settle monetary liabilities within a 15-day compliance window. If the company fails to comply, the notice serves as foundational documentary evidence before the National Company Law Tribunal (NCLT) for oppression and mismanagement or in commercial courts for summary debt recovery and specific performance.',
   },
   {
     question:
@@ -43,7 +43,7 @@ const faqs = [
     question:
       'Can personal criminal liability be attached to a co-founder for cheating, forged cap table alterations, or misappropriation of startup funds?',
     answer:
-      'Yes, if a managing co-founder dishonestly diverts company capital, fabricates board meeting resolutions, submits forged corporate filings to the Registrar of Companies (ROC), or induces a founder to contribute sweat equity under false pretenses, criminal complaints can be initiated. Under Section 316 (criminal breach of trust), Section 318 (cheating and dishonestly inducing delivery of property), and Section 336 (forgery of valuable security) of the Bharatiya Nyaya Sanhita, 2023, defaulting directors and co-founders face non-bailable criminal prosecution. Serving an advocate-vetted statutory notice detailing these criminal liabilities frequently accelerates out-of-court commercial settlement before police FIR registration.',
+      'Yes, if a managing co-founder dishonestly diverts company capital, fabricates board meeting resolutions, submits forged corporate filings to the Registrar of Companies (ROC), or induces a founder to contribute sweat equity under false pretenses, criminal complaints can be initiated. Under Section 316 (criminal breach of trust), Section 318 (cheating and dishonestly inducing delivery of property), and Section 336 (forgery of valuable security) of the Bharatiya Nyaya Sanhita, 2023, defaulting directors and co-founders face non-bailable criminal prosecution. Serving a fact-verified statutory notice detailing these criminal liabilities frequently accelerates out-of-court commercial settlement before police FIR registration.',
   },
 ];
 
@@ -54,7 +54,7 @@ const ogImage =
   'https://legalrecovery.in/images/og/co-founder-startup-unpaid-dues-equity.jpg';
 
 const reviewBodyText =
-  'As a technical co-founder of a Bengaluru-based AI logistics startup, I dedicated 18 months bootstrapping the MVP with an agreed deferred compensation of ₹38.5 Lakhs and 22.5% equity vesting over 4 years. Right after closing a $1.5M institutional funding round, the managing co-founder unlawfully altered company records on the MCA portal, refused to file Form PAS-3 for my vested share allotment, and blocked my remuneration. Legal Recovery immediately drafted a rigorous, advocate-vetted statutory demand notice citing Sections 88, 169, and 241/242 of the Companies Act 2013, Section 73 of the Indian Contract Act, and Section 10 of the Specific Relief Act. Within 14 days of service, the company\'s legal counsel convened an emergency board meeting, agreed to our settlement terms, issued my 22.5% equity shares, and disbursed the entire ₹38.5 Lakhs in unpaid dues with interest. Their commercial dispute prowess is unmatched.';
+  'As a technical co-founder of a Bengaluru-based AI logistics startup, I dedicated 18 months bootstrapping the MVP with an agreed deferred compensation of ₹38.5 Lakhs and 22.5% equity vesting over 4 years. Right after closing a $1.5M institutional funding round, the managing co-founder unlawfully altered company records on the MCA portal, refused to file Form PAS-3 for my vested share allotment, and blocked my remuneration. Legal Recovery immediately drafted a rigorous, fact-verified statutory demand notice citing Sections 88, 169, and 241/242 of the Companies Act 2013, Section 73 of the Indian Contract Act, and Section 10 of the Specific Relief Act. Within 14 days of service, the company\'s legal counsel convened an emergency board meeting, agreed to our settlement terms, issued my 22.5% equity shares, and disbursed the entire ₹38.5 Lakhs in unpaid dues with interest. Their commercial dispute prowess is unmatched.';
 
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -174,7 +174,7 @@ const jsonLd = {
         {
           '@type': 'ListItem',
           position: 4,
-          name: 'Draft an advocate-vetted statutory legal notice citing Companies Act 2013 (Sec 88, 169, 241/242), Indian Contract Act (Sec 73), and Specific Relief Act (Sec 10)',
+          name: 'Draft a fact-verified statutory legal notice citing Companies Act 2013 (Sec 88, 169, 241/242), Indian Contract Act (Sec 73), and Specific Relief Act (Sec 10)',
         },
         {
           '@type': 'ListItem',
@@ -189,7 +189,7 @@ const jsonLd = {
       '@type': 'Product',
       name: 'Legal Notice to Co-Founder for Unpaid Startup Dues & Equity',
       description:
-        'Advocate-drafted statutory demand notice service for startup founders, CTOs, early executives, and partners to recover unpaid salary dues, deferred compensation, and enforce vested equity allocation in India.',
+        'Fact-verified statutory demand notice service for startup founders, CTOs, early executives, and partners to recover unpaid salary dues, deferred compensation, and enforce vested equity allocation in India.',
       brand: {
         '@type': 'Organization',
         name: 'Legal Recovery',
@@ -266,7 +266,7 @@ export default function CoFounderStartupUnpaidDuesEquityClient() {
 
   const shareUrl = encodeURIComponent(pageUrl);
   const shareText = encodeURIComponent(
-    'Co-founder withholding your startup equity, unpaid salary dues, or sweat equity? Issue an advocate-vetted statutory legal notice for rapid recovery in India! #StartupDispute #CoFounderNotice #EquityRecovery #LegalNotice'
+    'Co-founder withholding your startup equity, unpaid salary dues, or sweat equity? Issue a fact-verified statutory legal notice for rapid recovery in India! #StartupDispute #CoFounderNotice #EquityRecovery #LegalNotice'
   );
 
   return (
@@ -441,7 +441,7 @@ export default function CoFounderStartupUnpaidDuesEquityClient() {
                     Quick Answer
                   </h2>
                   <p className="text-sm text-slate-700 font-medium leading-relaxed">
-                    A startup founder, technical architect, or early partner can serve an advocate-drafted statutory legal notice to a defaulting co-founder and company under{' '}
+                    A startup founder, technical architect, or early partner can serve a fact-verified statutory legal notice to a defaulting co-founder and company under{' '}
                     <span className="font-semibold text-slate-800">
                       Section 73 of the Indian Contract Act, 1872
                     </span>{' '}
@@ -775,7 +775,7 @@ export default function CoFounderStartupUnpaidDuesEquityClient() {
                         <span className="text-[#DC2626]">🏛️</span> Statutory MCA Portal Audit &amp; Cap Table Verification
                       </h4>
                       <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
-                        Before dispatching the notice, our legal team conducts a forensic audit on the{' '}
+                        Before dispatching the notice, our team conducts a forensic audit on the{' '}
                         <span className="font-semibold text-slate-800">
                           Ministry of Corporate Affairs (MCA) portal
                         </span>
@@ -792,7 +792,7 @@ export default function CoFounderStartupUnpaidDuesEquityClient() {
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      An advocate-drafted statutory demand notice must balance assertive commercial demands with clinical statutory precision:
+                      A fact-verified statutory demand notice must balance assertive commercial demands with clinical statutory precision:
                     </p>
 
                     <div className="space-y-4">
@@ -844,15 +844,15 @@ export default function CoFounderStartupUnpaidDuesEquityClient() {
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      Serving an advocate-vetted statutory notice through Legal Recovery resolves over 72% of founder equity disputes out of court. If the defaulting founders remain recalcitrant, our structured multi-stage escalation protocol protects your startup rights:
+                      Serving a fact-verified statutory notice through Legal Recovery resolves over 72% of founder equity disputes out of court. If the defaulting founders remain recalcitrant, our structured multi-stage escalation protocol protects your startup rights:
                     </p>
 
                     <div className="space-y-4">
                       {[
                         {
                           step: 'Stage 1',
-                          title: 'Advocate Demand Notice Served via Multi-Channel Hybrid Dispatch',
-                          desc: 'The notice is issued on official advocate letterhead, digitally signed under Section 5 of the Information Technology Act, 2000, and delivered simultaneously via Speed Post AD, verified corporate emails, and tracked WhatsApp channels.',
+                          title: 'Demand Notice Served via Multi-Channel Hybrid Dispatch',
+                          desc: 'The fact-verified notice is delivered simultaneously via Speed Post AD, verified corporate emails, and tracked WhatsApp channels.',
                         },
                         {
                           step: 'Stage 2',
@@ -862,7 +862,7 @@ export default function CoFounderStartupUnpaidDuesEquityClient() {
                         {
                           step: 'Stage 3',
                           title: 'Emergency Section 9 High Court / Commercial Court Injunction',
-                          desc: 'If the company attempts to close an investment round or transfer IP during the dispute, our panel counsels file an urgent petition under Section 9 of the Arbitration Act or Order 39 CPC to freeze share transfers.',
+                          desc: 'If the company attempts to close an investment round or transfer IP during the dispute, you can instruct counsel to file an urgent petition under Section 9 of the Arbitration Act or Order 39 CPC to freeze share transfers.',
                         },
                         {
                           step: 'Stage 4',
@@ -1032,7 +1032,7 @@ export default function CoFounderStartupUnpaidDuesEquityClient() {
                     </div>
                   </div>
                   <p className="text-sm text-slate-650 leading-relaxed mb-6">
-                    Legal Recovery is India&apos;s premier corporate dispute resolution and debt recovery platform, empowering startup founders, early executives, technology architects, and commercial partners to resolve cap table conflicts, enforce equity allocations, and recover unpaid dues through seasoned corporate panel advocates. Backed by ₹100 Crore+ recovered and 10,000+ disputes resolved across India, we deliver prompt, advocate-vetted statutory notices with verified legal impact.
+                    Legal Recovery is India&apos;s premier corporate dispute resolution and debt recovery platform, empowering startup founders, early executives, technology architects, and commercial partners to resolve cap table conflicts, enforce equity allocations, and recover unpaid dues through fact-verified statutory notices. Backed by ₹100 Crore+ recovered and 10,000+ disputes resolved across India, we deliver prompt, fact-verified statutory notices with verified legal impact.
                   </p>
                   <div className="flex flex-wrap gap-3">
                     {[
@@ -1070,7 +1070,7 @@ export default function CoFounderStartupUnpaidDuesEquityClient() {
                   Co-Founder Withholding Dues or Equity?
                 </h3>
                 <p className="text-slate-300 text-xs leading-relaxed mb-4">
-                  Send an advocate-vetted statutory demand notice today. Over 72% of startup founder and equity disputes settle within 15 days upon notice service from Legal Recovery.
+                  Send a fact-verified statutory demand notice today. Over 72% of startup founder and equity disputes settle within 15 days upon notice service from Legal Recovery.
                 </p>
                 <button
                   onClick={() => setIsPaymentModalOpen(true)}
@@ -1079,7 +1079,7 @@ export default function CoFounderStartupUnpaidDuesEquityClient() {
                   Draft &amp; Send Notice Now
                 </button>
                 <p className="text-center text-slate-400 text-[10px] mt-3">
-                  Flat fee • Advocate-drafted • Sent same day
+                  Flat fee • Fact-verified • Sent same day
                 </p>
               </div>
 
@@ -1134,7 +1134,7 @@ export default function CoFounderStartupUnpaidDuesEquityClient() {
                 {[
                   { stat: '72%', label: 'Founder disputes settled out-of-court during notice period' },
                   { stat: '₹100CR+', label: 'Total commercial debt & startup claims recovered' },
-                  { stat: 'Same Day', label: 'Advocate notice drafted and dispatched with tracking' },
+                  { stat: 'Same Day', label: 'Notice prepared and dispatched with tracking' },
                   { stat: 'Flat Fee', label: 'Transparent pricing with no hidden equity commissions' },
                 ].map((item, i) => (
                   <div key={i} className="flex items-center justify-between py-2 border-b border-slate-50 last:border-0">

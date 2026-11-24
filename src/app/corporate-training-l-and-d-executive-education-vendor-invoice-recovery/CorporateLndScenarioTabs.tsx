@@ -60,7 +60,7 @@ const SCENARIOS: ScenarioTab[] = [
       {
         step: "Issue Cure-or-Suspend Notice Under MSA Default Clause",
         description:
-          "Serve a 7-to-15 day advocate notice invoking the MSA non-cancellability clause and reserving the right to suspend learner SSO access without waiving accrued annual fees.",
+          "Serve a 7-to-15 day fact-verified notice invoking the MSA non-cancellability clause and reserving the right to suspend learner SSO access without waiving accrued annual fees.",
       },
       {
         step: "Rebut 'Low Utilization' Defenses with Liquidated SOW Pricing",
@@ -119,7 +119,7 @@ const SCENARIOS: ScenarioTab[] = [
       {
         step: "Serve Formal Section 80 CPC / Pre-Institution Notice",
         description:
-          "Dispatch an advocate-drafted demand notice to the Secretary/CMD via Speed Post RPAD, creating a statutory compliance clock for file movement.",
+          "Dispatch a fact-verified demand notice to the Secretary/CMD via Speed Post RPAD, creating a statutory compliance clock for file movement.",
       },
     ],
     statutoryRule: "CPC s.80 (60-Day Govt Notice) | MSMED Act s.15–18 | Commercial Courts Act s.12A",

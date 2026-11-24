@@ -38,7 +38,7 @@ const SCENARIOS: ScenarioTab[] = [
       {
         step: "Serve Section 140 Subrogation Demand Notice",
         description:
-          "Issue an advocate-drafted statutory notice asserting Section 140 subrogation rights alongside NI Act Section 138 warning on any post-dated security cheques held by the DCA.",
+          "Issue a fact-verified statutory notice asserting Section 140 subrogation rights alongside NI Act Section 138 warning on any post-dated security cheques held by the DCA.",
       },
     ],
     statutoryRule: "Indian Contract Act, 1872 ss.140–141 & Order XXXVII CPC",

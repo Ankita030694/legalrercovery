@@ -11,7 +11,7 @@ interface BankLoanRecoveryCTAProps {
 }
 
 export default function BankLoanRecoveryCTA({
-  buttonText = "Empanel Our Banking Litigation Advocates",
+  buttonText = "Start Institutional Bank Recovery",
   className = "",
   variant = "primary",
 }: BankLoanRecoveryCTAProps) {
@@ -25,13 +25,13 @@ export default function BankLoanRecoveryCTA({
           <div className="bg-gradient-to-br from-[#111827] via-[#1F2937] to-[#111827] text-white rounded-2xl p-5 sm:p-8 md:p-10 border border-slate-800 shadow-2xl w-full">
             <div className="max-w-3xl">
               <span className="inline-block px-3 py-1 rounded-full text-[11px] sm:text-xs font-semibold tracking-wide uppercase bg-slate-800 text-red-400 border border-slate-700 mb-3 sm:mb-4">
-                Institutional Banking &amp; NBFC Recovery Vertical • Pan-India Advocate Panel
+                Institutional Banking &amp; NBFC Recovery Vertical • Pan-India Recovery Desk
               </span>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-bold tracking-tight text-white mb-3">
                 Accelerate NPA Recovery Across Secured &amp; Unsecured Portfolios
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6">
-                Empanel our specialized banking litigation firm for institutional loan portfolio recovery. We represent Scheduled Commercial Banks, Regional Rural Banks, NBFCs, and FinTech lenders across India in SARFAESI Section 13(2)/13(4) actions, DRT Original Applications, Section 138 NI Act criminal trials, Section 25 PSSA auto-debit disputes, and Commercial Summary Suits.
+                Onboard with our institutional recovery desk for loan portfolio recovery. We support Scheduled Commercial Banks, Regional Rural Banks, NBFCs, and FinTech lenders across India with fact-verified pre-litigation notices ahead of SARFAESI Section 13(2)/13(4) actions, DRT Original Applications, Section 138 NI Act proceedings, Section 25 PSSA auto-debit disputes, and Commercial Summary Suits.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button

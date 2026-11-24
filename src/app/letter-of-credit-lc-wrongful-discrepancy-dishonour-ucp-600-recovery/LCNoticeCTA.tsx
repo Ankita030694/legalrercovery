@@ -32,7 +32,7 @@ export default function LCNoticeCTA({
                 Force Delinquent Issuing Banks to Honor Wrongfully Dishonoured Letters of Credit
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6">
-                When foreign buyers and Tier-3 issuing banks manufacture frivolous spelling discrepancies or exceed the strict 5-banking-day examination window under UCP 600 Article 14(b), Article 16(f) precludes them forever from claiming discrepancy. Serve a cross-border statutory advocate legal notice and regulatory complaint to recover your full drawn export value plus international interest.
+                When foreign buyers and Tier-3 issuing banks manufacture frivolous spelling discrepancies or exceed the strict 5-banking-day examination window under UCP 600 Article 14(b), Article 16(f) precludes them forever from claiming discrepancy. Serve a cross-border statutory fact-verified legal notice and regulatory complaint to recover your full drawn export value plus international interest.
               </p>
 
               {/* Dual-Track B2B Action Grid */}
@@ -52,7 +52,7 @@ export default function LCNoticeCTA({
                       Statutory UCP 600 Demand Notice &amp; SWIFT Rebuttal
                     </h4>
                     <p className="text-slate-400 text-xs leading-relaxed mb-4">
-                      Advocate-drafted formal legal notice citing UCP 600 Art. 14, 16(c) &amp; 16(f), served via MT799/MT799 SWIFT channels, registered airmail, and corporate diplomatic escalation to the bank&apos;s primary correspondent.
+                      Fact-verified formal legal notice citing UCP 600 Art. 14, 16(c) &amp; 16(f), served via MT799/MT799 SWIFT channels, registered airmail, and corporate diplomatic escalation to the bank&apos;s primary correspondent.
                     </p>
                   </div>
                   <div className="flex flex-col sm:flex-row gap-2">

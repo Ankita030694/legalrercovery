@@ -677,7 +677,7 @@ export default function WrongAccountTransferRefundApplicationPage() {
                     </span>
                     <div className="space-y-1 sm:space-y-1.5">
                       <h3 className="text-sm sm:text-base md:text-lg font-bold text-slate-900">
-                        Serve a Formal Statutory Advocate Legal Demand Notice
+                        Serve a Formal Statutory Fact-Verified Legal Demand Notice
                       </h3>
                       <p className="text-xs sm:text-sm leading-relaxed">
                         If the unintended recipient refuses consent or stops answering calls, engage an advocate to issue a 15-day statutory demand notice under Section 72 Contract Act and Section 314/316 Bharatiya Nyaya Sanhita, 2023. Dispatched via Registered Speed Post and WhatsApp, the notice warns of immediate summary suit attachment and criminal prosecution.
@@ -882,7 +882,7 @@ export default function WrongAccountTransferRefundApplicationPage() {
                       <strong>The Deadlock:</strong> Rajeshwar approached his local SBI branch within 2 hours. The branch official casually remarked: <em>&quot;The account is in PNB; we cannot debit another bank. You must visit the PNB branch yourself.&quot;</em> PNB officials, citing banking privacy, refused to share the recipient&apos;s phone number or address.
                     </p>
                     <p>
-                      <strong>The Statutory Action:</strong> Rajeshwar printed two copies of our <em>Urgent Home Branch Application</em>, formally served it on the SBI Branch Manager, and demanded a stamped receiving copy. SBI immediately dispatched an inter-bank dispute message to PNB via CBS. In parallel, an advocate issued a Section 72 Contract Act Demand Notice to the destination bank&apos;s Principal Nodal Officer, warning of co-liability for facilitating dishonest misappropriation under Section 314 BNS.
+                      <strong>The Statutory Action:</strong> Rajeshwar printed two copies of our <em>Urgent Home Branch Application</em>, formally served it on the SBI Branch Manager, and demanded a stamped receiving copy. SBI immediately dispatched an inter-bank dispute message to PNB via CBS. In parallel, LegalRecovery.in issued a Section 72 Contract Act Demand Notice to the destination bank&apos;s Principal Nodal Officer, warning of co-liability for facilitating dishonest misappropriation under Section 314 BNS.
                     </p>
                     <div className="p-3.5 sm:p-4 bg-emerald-950/70 border border-emerald-700/60 rounded-xl text-emerald-200">
                       <strong className="block text-emerald-400 font-bold mb-1">The Outcome:</strong>

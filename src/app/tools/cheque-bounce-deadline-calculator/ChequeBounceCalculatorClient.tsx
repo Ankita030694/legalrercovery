@@ -552,7 +552,7 @@ https://www.legalrecovery.in/tools/cheque-bounce-deadline-calculator`;
               </div>
               <p className="text-xs sm:text-sm text-slate-200 leading-relaxed">
                 You have only <strong>{calculations.daysUntilNoticeDeadline} calendar days</strong> remaining before your Section 138 criminal remedy expires on{" "}
-                <strong>{formatDate(calculations.noticeDeadline)}</strong>. Dispatch your advocate demand notice immediately via Registered Speed Post.
+                <strong>{formatDate(calculations.noticeDeadline)}</strong>. Dispatch your fact-verified demand notice immediately via Registered Speed Post.
               </p>
             </div>
           ) : (

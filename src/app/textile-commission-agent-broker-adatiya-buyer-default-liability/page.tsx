@@ -204,7 +204,7 @@ export default function TextileBrokerBuyerDefaultLiabilityPage() {
       {
         "@type": "HowToStep",
         name: "Issue Joint Statutory Co-Notice",
-        text: "Serve a 72-hour formal advocate demand notice arraying both the defaulting outstation buyer and the local commission broker.",
+        text: "Serve a 72-hour formal fact-verified demand notice arraying both the defaulting outstation buyer and the local commission broker.",
       },
       {
         "@type": "HowToStep",
@@ -959,7 +959,7 @@ export default function TextileBrokerBuyerDefaultLiabilityPage() {
                     Recover Unpaid Outstation Fabric Consignments &amp; Bind Defaulting Brokers
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-300 mt-2 max-w-2xl leading-relaxed">
-                    Deploy advocate-drafted statutory demand notices establishing Del Credere agency liability, file coordinated multi-victim criminal complaints before the Economic Offences Wing, and invoke MSME Samadhaan conciliation with 3x RBI compound interest.
+                    Deploy fact-verified statutory demand notices establishing Del Credere agency liability, file coordinated multi-victim criminal complaints before the Economic Offences Wing, and invoke MSME Samadhaan conciliation with 3x RBI compound interest.
                   </p>
                 </div>
 
@@ -972,7 +972,7 @@ export default function TextileBrokerBuyerDefaultLiabilityPage() {
                       </span>
                       <h4 className="text-base font-bold text-white">Test 1 Overdue Case (₹999)</h4>
                       <p className="text-xs text-slate-300 mt-1 leading-relaxed">
-                        Advocate-drafted statutory co-notice served on both outstation buyer and local broker via Email, WhatsApp, and Speed Post RPAD with electronic tracking.
+                        Fact-verified statutory co-notice served on both outstation buyer and local broker via Email, WhatsApp, and Speed Post RPAD with electronic tracking.
                       </p>
                     </div>
                     <TextileBrokerNoticeCTA

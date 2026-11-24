@@ -37,9 +37,9 @@ const PROBLEMS: ProblemTab[] = [
           "Serve a formal written email to the agency director demanding an itemised statement of actual administrative expenses incurred and an immediate refund of the unspent consultation fee within 7 days.",
       },
       {
-        step: "Issue Advocate Statutory Legal Demand Notice",
+        step: "Issue Statutory Legal Demand Notice",
         description:
-          "If the agency refuses or offers an arbitrary credit voucher, issue a statutory 15-day advocate notice under CPA 2019 threatening an e-Jagriti consumer complaint for full refund plus 12% interest and compensation.",
+          "If the agency refuses or offers an arbitrary credit voucher, issue a statutory 15-day legal notice under CPA 2019 threatening an e-Jagriti consumer complaint for full refund plus 12% interest and compensation.",
       },
     ],
     statutoryRule: "Section 2(11) CPA 2019 & NCDRC Study Abroad Fee Jurisprudence",
@@ -59,7 +59,7 @@ const PROBLEMS: ProblemTab[] = [
           "Verify the sponsor license number with the destination country's official immigration database (e.g., UK Visas and Immigration Sponsor Register, Canadian Job Bank) to prove forgery.",
       },
       {
-        step: "Draft Dual-Pronged Advocate Demand Notice",
+        step: "Draft Dual-Pronged Legal Demand Notice",
         description:
           "Serve a stern legal notice demanding immediate refund of total collected amounts within 15 days, explicitly detailing Section 318 BNS criminal exposure and PGE recruitment violations.",
       },
@@ -91,9 +91,9 @@ const PROBLEMS: ProblemTab[] = [
           "Issue a formal dispute letter rejecting internal administrative deductions and invoking Section 2(46) CPA 2019 regarding unconscionable contract terms.",
       },
       {
-        step: "Serve Advocate Statutory Demand for Restitution",
+        step: "Serve Statutory Demand for Restitution",
         description:
-          "Issue a formal advocate legal notice for complete restitution, interest, and mental harassment damages, followed by an online consumer petition on e-Jagriti.",
+          "Issue a formal legal notice for complete restitution, interest, and mental harassment damages, followed by an online consumer petition on e-Jagriti.",
       },
     ],
     statutoryRule: "Section 2(46) & Section 2(47) Consumer Protection Act 2019",
@@ -115,7 +115,7 @@ const PROBLEMS: ProblemTab[] = [
       {
         step: "Invoke Section 2(46) CPA 2019 in Legal Notice",
         description:
-          "Have an advocate prepare a legal demand notice specifically challenging the non-refundable clause as an unfair contract under Section 2(46) and Section 2(47) of the CPA 2019.",
+          "Send a legal demand notice specifically challenging the non-refundable clause as an unfair contract under Section 2(46) and Section 2(47) of the CPA 2019.",
       },
       {
         step: "Seek Annulment & Full Award Before District Commission",
@@ -253,13 +253,13 @@ export default function VisaAgentProblemTabs() {
         {/* Bottom Contextual Callout */}
         <div className="pt-2 flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs border-t border-slate-100">
           <span className="text-slate-600">
-            Need an advocate demand notice served to your immigration consultant?
+            Need a legal demand notice served to your immigration consultant?
           </span>
           <Link
             href="/legal-notice-charges"
             className="text-blue-700 hover:text-blue-900 underline font-semibold shrink-0"
           >
-            Review Advocate Notice Charges &amp; Speed Post Dispatch →
+            Review Legal Notice Charges &amp; Speed Post Dispatch →
           </Link>
         </div>
       </div>

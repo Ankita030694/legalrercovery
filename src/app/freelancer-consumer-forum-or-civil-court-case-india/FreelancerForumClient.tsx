@@ -111,7 +111,7 @@ const reviewSchema = {
   "@type": "Product",
   "name": "Freelancer Forum Choice & Payment Recovery Services",
   "image": "https://www.legalrecovery.in/og-freelancer-forum.png",
-  "description": "Expert advocate-drafted legal notices and structured debt recovery solutions for freelancers, consultants, and gig workers in India.",
+  "description": "Fact-verified legal notices and structured debt recovery solutions for freelancers, consultants, and gig workers in India.",
   "brand": {
     "@type": "Brand",
     "name": "LegalRecovery"
@@ -553,7 +553,7 @@ export default function FreelancerForumClient() {
                       Before initiating a Summary Suit under Order 37, a regular civil recovery case, or an MSME Samadhaan complaint, there is a crucial, mandatory preliminary step: serving a formal <strong>Pre-Suit Legal Notice</strong> on the defaulting client. A legal notice is a formal communication sent by an advocate on behalf of the freelancer, detailing the facts of the dispute, calculating the exact outstanding dues along with interest, and giving the client a final opportunity (typically <strong>15 days</strong>) to resolve the matter before legal action is initiated.
                     </p>
                     <p>
-                      Serving a legal notice is highly recommended for several reasons. First, under Section 35 of the CPC, the court evaluates the conduct of both parties when deciding whether to award litigation costs to the winning party. By sending a formal notice, you establish that you acted in good faith, gave the client a reasonable opportunity to clear the dues, and that the client's failure to respond left you with no option but to file a suit. Second, a legal notice acts as an extremely effective dispute filter. In over 80% of payment recovery cases, a professional legal notice drafted by an advocate and served on formal letterhead is sufficient to secure a settlement. It signals to the client that the freelancer is serious and is prepared to initiate formal judicial action, which immediately escalates the dispute from a routine HR/procurement matter to the client's legal department.
+                      Serving a legal notice is highly recommended for several reasons. First, under Section 35 of the CPC, the court evaluates the conduct of both parties when deciding whether to award litigation costs to the winning party. By sending a formal notice, you establish that you acted in good faith, gave the client a reasonable opportunity to clear the dues, and that the client's failure to respond left you with no option but to file a suit. Second, a legal notice acts as an extremely effective dispute filter. In over 80% of payment recovery cases, a professional legal notice prepared on verified facts and served on formal letterhead is sufficient to secure a settlement. It signals to the client that the freelancer is serious and is prepared to initiate formal judicial action, which immediately escalates the dispute from a routine HR/procurement matter to the client's legal department.
                     </p>
                     <p>
                       To be enforceable, a legal notice must contain specific, key elements:
@@ -752,7 +752,7 @@ export default function FreelancerForumClient() {
                 <div className="absolute top-0 right-0 w-24 h-24 bg-red-600/10 rounded-full blur-xl pointer-events-none" />
                 <h3 className="text-sm font-black mb-3">Recover Freelance Payments</h3>
                 <p className="text-gray-400 mb-5 text-[11px] leading-relaxed">
-                  Resolve your unpaid freelancer invoices through formal legal notice dispatches drafted by expert advocates.
+                  Resolve your unpaid freelancer invoices through formal legal notice dispatches prepared on verified facts.
                 </p>
                 <button 
                   onClick={() => setIsPaymentModalOpen(true)}

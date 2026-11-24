@@ -64,7 +64,7 @@ const PROBLEMS: ProblemTab[] = [
           "Retain all SMS alerts where the provider falsely claims 'fault resolved' while physical connectivity remains down. These prove fraudulent service closure.",
       },
       {
-        step: "Issue Advocate Notice Demanding Rental Rebate + Security Deposit",
+        step: "Issue Fact-Verified Notice Demanding Rental Rebate + Security Deposit",
         description:
           "Serve a 15-day statutory demand notice for refund of wrongful rentals, return of security deposit, and compensation for lost working hours before the District Commission.",
       },
@@ -120,7 +120,7 @@ const PROBLEMS: ProblemTab[] = [
       {
         step: "Issue Statutory Legal Demand Notice",
         description:
-          "If the bank and payment gateway refuse auto-reversal within 30 days, serve a statutory advocate notice claiming refund, RBI statutory penalty of ₹100/day, and litigation damages.",
+          "If the bank and payment gateway refuse auto-reversal within 30 days, serve a statutory fact-verified notice claiming refund, RBI statutory penalty of ₹100/day, and litigation damages.",
       },
     ],
     statutoryRule: "RBI Harmonisation of TAT Circular 2019 & Section 2(47) CPA 2019",
@@ -145,9 +145,9 @@ const PROBLEMS: ProblemTab[] = [
           "Capture clear timestamped photographs of the device, screen, and serial number tag to disprove physical abuse claims.",
       },
       {
-        step: "Issue 15-Day Advocate Notice to Corporate HQ",
+        step: "Issue 15-Day Fact-Verified Notice to Corporate HQ",
         description:
-          "Serve an advocate statutory notice to the brand's India Managing Director demanding immediate repair, unit replacement, or full invoice refund under threat of consumer court prosecution.",
+          "Serve a fact-verified statutory notice to the brand's India Managing Director demanding immediate repair, unit replacement, or full invoice refund under threat of consumer court prosecution.",
       },
     ],
     statutoryRule: "Sections 2(10), 84 & 85 CPA 2019 (Product Liability Framework)",

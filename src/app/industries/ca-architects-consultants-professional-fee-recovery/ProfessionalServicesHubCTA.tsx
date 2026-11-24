@@ -29,7 +29,7 @@ export default function ProfessionalServicesHubCTA({
                 Test 1 Live Overdue Case Now (&#8377;{basePrice})
               </h3>
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-                Advocate Drafted &bull; Email + WhatsApp + Speed Post RPAD. Serve one defaulting corporate audit client, one builder using unpaid GFC drawings, or one promoter evading a signed debt/M&amp;A mandate with zero council-ethics risk.
+                Fact-Verified &bull; Email + WhatsApp + Speed Post RPAD. Serve one defaulting corporate audit client, one builder using unpaid GFC drawings, or one promoter evading a signed debt/M&amp;A mandate with zero council-ethics risk.
               </p>
               <ul className="space-y-1.5 text-xs text-slate-200 mb-6">
                 <li>&check; ICAI Chapter VII, Form 26AS 194J &amp; Balance-Sheet Acknowledgment Framing</li>

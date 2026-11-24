@@ -134,7 +134,7 @@ const FAQS = [
   {
     question: "How do institutional law firms manage thousands of defaulted loan accounts without manual drafting errors?",
     answer:
-      "Institutional law firms leverage specialized Case Management Systems (CMS) integrated directly with bank Core Banking System (CBS) APIs or secure SFTP batch extractions. Delinquent account parameters—including borrower KYC, loan agreement identifiers, defaulted EMI schedules, interest breakdowns, and bounced NACH transaction reference numbers—are automatically parsed into verified advocate legal templates. Every notice undergoes programmatic field validation, statutory limitation checks, and senior advocate review before automated multi-channel dispatch, completely eliminating manual typographical errors.",
+      "Institutional law firms leverage specialized Case Management Systems (CMS) integrated directly with bank Core Banking System (CBS) APIs or secure SFTP batch extractions. Delinquent account parameters—including borrower KYC, loan agreement identifiers, defaulted EMI schedules, interest breakdowns, and bounced NACH transaction reference numbers—are automatically parsed into verified advocate legal templates. Every notice undergoes programmatic field validation, statutory limitation checks, and fact verification before automated multi-channel dispatch, completely eliminating manual typographical errors.",
   },
   {
     question: "Are bulk legal notices sent via WhatsApp and Email legally enforceable in Indian courts?",
@@ -144,7 +144,7 @@ const FAQS = [
   {
     question: "What is the difference between retail debt collection agencies (DRAs) and institutional law firms?",
     answer:
-      "Debt Recovery Agencies (DRAs) rely on call-centre telecalling and field executives, operating under stringent RBI Fair Practices Code boundaries without judicial authority. They cannot issue statutory advocate notices, initiate Section 138/25 criminal proceedings, represent lenders in court, or execute judicial asset attachments. Institutional law firms provide licensed advocate representation, structured pre-litigation conciliation via National Lok Adalat, court filings across pan-India district judiciaries, and legally binding settlement decrees.",
+      "Debt Recovery Agencies (DRAs) rely on call-centre telecalling and field executives, operating under stringent RBI Fair Practices Code boundaries without judicial authority. They cannot issue statutory legal notices, initiate Section 138/25 criminal proceedings, represent lenders in court, or execute judicial asset attachments. Institutional law firms provide licensed advocate representation, structured pre-litigation conciliation via National Lok Adalat, court filings across pan-India district judiciaries, and legally binding settlement decrees.",
   },
   {
     question: "What is the typical timeline for recovering delinquent personal loan pools through law firms?",
@@ -343,7 +343,7 @@ export default function BankRecoveryThousandsPage() {
                   Indian scheduled commercial banks, non-banking financial companies (NBFCs), and digital lending fintechs currently manage massive retail credit expansion across unsecured personal loans, credit card facilities, consumer durable financing, and micro-business credit. However, when economic headwinds or borrower job losses push accounts across the 90-day delinquency threshold into Special Mention Accounts (SMA-1, SMA-2) and Non-Performing Assets (NPAs), institutional recovery desks encounter severe structural bottlenecks.
                 </p>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
-                  Traditional Debt Recovery Agencies (DRAs) rely heavily on telecalling and field tracing. Under the Reserve Bank of India&apos;s stringent Master Direction on Fair Practices Code, aggressive call-center tactics now attract severe regulatory penalties, account freezes, and reputational backlash. Furthermore, collection agencies lack the statutory authority to issue binding advocate notices, initiate Section 138 Negotiable Instruments Act or Section 25 Payment and Settlement Systems Act proceedings, or represent lenders before judicial tribunals.
+                  Traditional Debt Recovery Agencies (DRAs) rely heavily on telecalling and field tracing. Under the Reserve Bank of India&apos;s stringent Master Direction on Fair Practices Code, aggressive call-center tactics now attract severe regulatory penalties, account freezes, and reputational backlash. Furthermore, collection agencies lack the statutory authority to issue binding legal notices, initiate Section 138 Negotiable Instruments Act or Section 25 Payment and Settlement Systems Act proceedings, or represent lenders before judicial tribunals.
                 </p>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Conversely, engaging fragmented local advocates on individual retainers creates crippling administrative chaos: unstandardized legal pleadings, lack of unified MIS tracking, missed limitation deadlines under the Limitation Act 1963, and prohibitive legal fees. Specialized institutional law firms solve this paradigm by bridging advanced legal technology with pan-India courtroom execution—enabling lenders to process 500 to 50,000+ defaulting accounts concurrently under unified institutional governance.
@@ -482,7 +482,7 @@ export default function BankRecoveryThousandsPage() {
                       ✓
                     </span>
                     <div>
-                      <strong className="text-sm sm:text-base text-slate-900 font-bold">Pan-India Empanelled Advocate Dispatch &amp; Hearing Auditing:</strong>
+                      <strong className="text-sm sm:text-base text-slate-900 font-bold">Pan-India Empanelled Dispatch &amp; Hearing Auditing:</strong>
                       <p className="text-xs sm:text-sm mt-0.5 leading-relaxed">
                         Instead of relying on single localized law offices, institutional law firms maintain networks of verified advocates across 500+ district courts. Hearing dates, daily court orders, process serving, and warrant executions are tracked in real time through centralized cloud dashboards.
                       </p>
@@ -668,7 +668,7 @@ export default function BankRecoveryThousandsPage() {
                         Automated Statutory Notice Dispatch via Registered Post &amp; WhatsApp
                       </h3>
                       <p className="text-xs sm:text-sm leading-relaxed">
-                        Formal advocate legal demand notices are generated under an advocate&apos;s seal. Dispatched via India Post Registered Post with barcode tracking and concurrently delivered via official WhatsApp and email channels under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023. Borrowers are granted a strict 15-day window to cure defaults or enter structured restructuring.
+                        Formal legal demand notices are generated under an advocate&apos;s seal. Dispatched via India Post Registered Post with barcode tracking and concurrently delivered via official WhatsApp and email channels under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023. Borrowers are granted a strict 15-day window to cure defaults or enter structured restructuring.
                       </p>
                       <p className="text-xs text-slate-500 font-medium">
                         Explore our enterprise notice framework on the <Link href="/bulk-recovery-cases-all-in-one-affordable-solutions" className="text-blue-700 underline">bulk recovery solutions page</Link>.

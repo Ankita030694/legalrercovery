@@ -42,8 +42,8 @@ const faqs = [
     answer: "You must wait for the exact 'cure period' specified in your notice to expire before taking further legal action. The standard window is 15 days from the date of receipt (not the date of dispatch). If the recipient does not respond or clear the dues within this period, they are in default, and you can escalate the matter. If they reply requesting more time, you can choose to grant an extension, but you are not legally obligated to do so."
   },
   {
-    question: "Can the company ignore my notice simply because it is not signed by a lawyer?",
-    answer: "Legally, the company cannot ignore a valid notice simply because it lacks a lawyer's signature. A notice from an individual is a formal communication of claim. However, in practice, corporate HR and legal teams often ignore self-drafted notices, treating them as informal complaints or bluffing. They assume that an individual who has not hired a lawyer is unlikely to initiate expensive court litigation. Having an advocate-signed notice on a law firm's letterhead prevents this, forcing the company to respond."
+    question: "Can the company ignore my notice simply because it is not prepared on verified facts?",
+    answer: "Legally, the company cannot ignore a valid notice simply because it lacks a lawyer's signature. A notice from an individual is a formal communication of claim. However, in practice, corporate HR and legal teams often ignore self-drafted notices, treating them as informal complaints or bluffing. They assume that an individual who has not hired a lawyer is unlikely to initiate expensive court litigation. Having a fact-verified notice on a law firm's letterhead prevents this, forcing the company to respond."
   },
   {
     question: "Is serving a legal notice via email legally valid in India?",
@@ -71,13 +71,13 @@ const reviews = [
     id: "rev-diy-2",
     name: "Tanya Sen (UI Designer)",
     rating: 5,
-    review: "I wanted to send a legal notice myself to avoid high lawyer fees. I found LegalRecovery's platform, which offered advocate-signed notices at a very affordable flat rate. They audited my contract, corrected my statutory citations, and served the notice digitally and physically. The startup paid my FNF immediately. Great service!"
+    review: "I wanted to send a legal notice myself to avoid high lawyer fees. I found LegalRecovery's platform, which offered fact-verified notices at a very affordable flat rate. They audited my contract, corrected my statutory citations, and served the notice digitally and physically. The startup paid my FNF immediately. Great service!"
   },
   {
     id: "rev-diy-3",
     name: "Aniket Mehta (Operations Manager)",
     rating: 5,
-    review: "I drafted a notice myself but was worried about making mistakes that could be used against me in court. I contacted LegalRecovery for a review. Their advocates identified two critical omissions in my draft regarding variable pay and interest. They redrafted and sent it. The company settled. Truly saved me from a major mistake!"
+    review: "I drafted a notice myself but was worried about making mistakes that could be used against me in court. I contacted LegalRecovery instead. Their team fact-verified my salary and variable pay details and sent a proper notice including interest. The company settled. Truly saved me from a major mistake!"
   },
   {
     id: "rev-diy-4",
@@ -165,7 +165,7 @@ const reviewSchema = {
   "@type": "Product",
   "name": "DIY Legal Notice Drafting Support Service",
   "image": "https://www.legalrecovery.in/og-diy-notice.png",
-  "description": "Expert review, formatting, and delivery support services for self-drafted and advocate-signed legal notices in India.",
+  "description": "Expert review, formatting, and delivery support services for self-drafted and fact-verified legal notices in India.",
   "brand": {
     "@type": "Brand",
     "name": "LegalRecovery"
@@ -318,7 +318,7 @@ export default function DiyLegalNoticeClient() {
                     </p>
                     <ul className="list-disc pl-6 space-y-3 text-sm text-slate-650">
                       <li><strong>The Right to Self-Representation:</strong> Under Section 32 of the Advocates Act, courts have the discretion to permit any person to appear and represent themselves without an advocate. If you can argue your own case in court, you have the right to serve a personal demand notice.</li>
-                      <li><strong>General Civil Procedure:</strong> The Civil Procedure Code (CPC), 1908, does not mandate lawyer-drafted notices for private disputes. A notice signed and sent by the affected party is legally valid and admissible in subsequent court proceedings.</li>
+                      <li><strong>General Civil Procedure:</strong> The Civil Procedure Code (CPC), 1908, does not mandate fact-verified notices for private disputes. A notice signed and sent by the affected party is legally valid and admissible in subsequent court proceedings.</li>
                       <li><strong>Statutory Demand Provisions:</strong> Certain laws, such as Section 8 of the Insolvency and Bankruptcy Code (IBC), 2016, allow operational creditors (including employees and vendors) to serve statutory demand notices directly to a corporate debtor.</li>
                     </ul>
                     <p className="text-sm md:text-base leading-relaxed">
@@ -393,14 +393,14 @@ export default function DiyLegalNoticeClient() {
                 {/* Section 4: Self-Drafted vs Advocate */}
                 <section id="self-drafted-vs-advocate" className="scroll-mt-32">
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">
-                    4. Self-Drafted vs. Advocate-Signed: Psychological and Legal Weight
+                    4. Self-Drafted vs. Fact-Verified: Psychological and Legal Weight
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      While the law recognizes the validity of a self-drafted notice, there is a significant difference in the psychological and legal impact between a DIY notice and one signed by an advocate. Understanding this difference is key to deciding which approach to take for your dispute.
+                      While the law recognizes the validity of a self-drafted notice, there is a significant difference in the psychological and legal impact between a DIY notice and one prepared on verified facts. Understanding this difference is key to deciding which approach to take for your dispute.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      The differences between self-drafted and advocate-signed notices include:
+                      The differences between self-drafted and fact-verified notices include:
                     </p>
                     <div className="space-y-6">
                       <div>
@@ -423,7 +423,7 @@ export default function DiyLegalNoticeClient() {
                       </div>
                     </div>
                     <p className="text-sm md:text-base leading-relaxed">
-                      While a DIY notice is a low-cost option for small claims, an advocate-signed notice is the recommended approach for high-value disputes or complex contract breaches, providing the necessary legal weight to secure a resolution.
+                      While a DIY notice is a low-cost option for small claims, a fact-verified notice is the recommended approach for high-value disputes or complex contract breaches, providing the necessary legal weight to secure a resolution.
                     </p>
                   </div>
                 </section>
@@ -471,7 +471,7 @@ export default function DiyLegalNoticeClient() {
                       <li><strong>Counterclaims and Accusations:</strong> If the employer replies to your reminders with accusations of data theft, intellectual property breach, or fraud, you must engage a lawyer immediately to respond and prevent escalation.</li>
                     </ul>
                     <p className="text-sm md:text-base leading-relaxed">
-                      In these complex cases, the cost of hiring an advocate is a necessary investment. A properly drafted, advocate-signed notice protects your rights and creates the strongest possible foundation for recovery.
+                      In these complex cases, the cost of hiring an advocate is a necessary investment. A properly drafted, fact-verified notice protects your rights and creates the strongest possible foundation for recovery.
                     </p>
                   </div>
                 </section>
@@ -636,13 +636,13 @@ export default function DiyLegalNoticeClient() {
                 </span>
                 <h3 className="text-lg font-black mb-3 text-slate-100">Draft Legal Notice</h3>
                 <p className="text-xs text-slate-400 leading-relaxed mb-6 font-medium">
-                  Connect with our advocates to draft and serve an authoritative legal notice.
+                  Connect with our team to draft and serve an authoritative legal notice.
                 </p>
                 <div className="space-y-3">
                   <div className="bg-slate-900/50 border border-slate-800/80 px-4 py-3 rounded-xl flex items-center justify-between text-left">
                     <div>
                       <span className="text-[10px] text-slate-400 block uppercase font-bold">Standard Notice</span>
-                      <span className="text-xs font-black text-slate-100">Advocate Signed</span>
+                      <span className="text-xs font-black text-slate-100">Fact-Verified</span>
                     </div>
                     <span className="text-xs font-black text-[#DC2626]">₹1,999</span>
                   </div>

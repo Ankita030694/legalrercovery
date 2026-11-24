@@ -28,7 +28,7 @@ const SCENARIOS: ScenarioItem[] = [
       {
         step: "Serve Section 213 Accounting & University Remittance Demand",
         description:
-          "Issue an advocate notice demanding line-item university remittance advice, FX credit dates, and CAS/CoE enrolment status within 15 days.",
+          "Issue a fact-verified notice demanding line-item university remittance advice, FX credit dates, and CAS/CoE enrolment status within 15 days.",
       },
       {
         step: "Lock Census-Date Enrolment & Tuition Payment Proof",

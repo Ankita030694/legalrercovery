@@ -455,7 +455,7 @@ export default function SchoolFeeNoticeWorkspace() {
           <div className="bg-slate-900 text-white px-4 py-3 flex flex-wrap items-center justify-between gap-2">
             <div>
               <span className="text-xs font-bold uppercase tracking-wider text-emerald-400 block">
-                Live Advocate-Vetted Draft Preview
+                Live Draft Preview
               </span>
               <span className="text-[11px] text-slate-300">
                 Child-Insulated · Zero Threat to TC / Marksheet / Board Roll No.

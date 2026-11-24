@@ -32,7 +32,7 @@ const faqs = [
   },
   {
     question: "Can I draft and send a legal notice online without visiting an advocate's office?",
-    answer: "Yes, modern legal tech platforms like LegalRecovery allow you to draft and send a legal notice completely online. You do not need to make physical visits to an advocate's chambers. You submit your case details through our secure digital intake questionnaire, upload supporting files to an encrypted document vault, and review the draft notice prepared by a panel advocate on your personal dashboard. Once you approve the draft, the advocate digitally signs the notice under Section 5 of the Information Technology Act, 2000. The portal then dispatches the notice digitally via verified email and WhatsApp, providing you with real-time delivery tracking alerts."
+    answer: "Yes, modern legal tech platforms like LegalRecovery allow you to draft and send a legal notice completely online. You do not need to make physical visits to an advocate's chambers. You submit your case details through our secure digital intake questionnaire, and our team verifies the facts you submit. We then prepare the notice on those verified facts and dispatch it digitally via verified email and WhatsApp, providing you with real-time delivery tracking alerts."
   },
   {
     question: "How is the delivery of a legal notice proved in court if the recipient refuses to accept it?",
@@ -48,15 +48,15 @@ const faqs = [
   },
   {
     question: "What is the flat fee pricing structure for sending a notice through LegalRecovery?",
-    answer: "LegalRecovery operates on a transparent, flat-fee pricing model starting at ₹999 per opposing party. This flat rate covers: 1) Client intake and case file assembly. 2) Document verification and vetting by a panel advocate. 3) Professional drafting on the advocate's official letterhead. 4) Digital review and modifications via the user dashboard. 5) Digital signing under the IT Act. 6) Electronic dispatch via verified email and WhatsApp. 7) Real-time tracking dashboard updates. Speed Post is optional at ₹450 per party. There are no hidden charges or hourly fees."
+    answer: "LegalRecovery operates on a transparent, flat-fee pricing model starting at ₹999 per opposing party. This flat rate covers: 1) Client intake through the online form. 2) Fact verification by our team. 3) Notice preparation from structured templates. 4) Electronic dispatch via verified email and WhatsApp. 5) Real-time tracking dashboard updates. Speed Post is optional at ₹450 per party. There are no hidden charges or hourly fees."
   },
   {
     question: "What legal actions can I take if the recipient ignores my legal notice?",
     answer: "If the recipient fails to comply with or respond to the legal notice within the stipulated notice period (e.g., 15 days), the next step is to initiate formal legal action. Depending on the nature of the dispute, your advocate can file: 1) A Summary Suit under Order 37 of the CPC for fast-track recovery of contractual debts. 2) A criminal complaint under Section 138 of the Negotiable Instruments Act for cheque bounce. 3) An eviction and recovery suit under the Rent Control Act or Transfer of Property Act. 4) A complaint before the consumer forum for deficiency of service. 5) An application before the Labour Court or Labour Commissioner for unpaid salary. The portal organizes your case files and proof of service into a litigation-ready package to simplify this transition."
   },
   {
-    question: "How secure is the document vault on LegalRecovery?",
-    answer: "Security and confidentiality are fundamental to legal transactions. LegalRecovery uses enterprise-grade security protocols. All documents uploaded to our cloud vault are encrypted both in transit (using SSL/TLS) and at rest (using AES-256 encryption). Access to the documents is restricted to the assigned panel advocate and the client. The data is protected under advocate-client privilege guidelines, ensuring complete confidentiality. We do not share or sell client data to third parties."
+    question: "How secure is my data on LegalRecovery?",
+    answer: "Security and confidentiality are fundamental to legal transactions. LegalRecovery uses enterprise-grade security protocols. All case details you submit are encrypted both in transit (using SSL/TLS) and at rest (using AES-256 encryption). Access to the case details is restricted to our team and the client. We do not share or sell client data to third parties."
   }
 ];
 
@@ -155,7 +155,7 @@ const reviewSchema = {
         "@type": "Person",
         "name": "Vikram Rathore"
       },
-      "reviewBody": "Sending a legal notice to my former business partner was incredibly easy through this portal. The platform verified the firm's registration via GSTIN and automatically filled the correct office address. The lawyer drafted the notice on his letterhead, signed it electronically, and it was served via Speed Post and WhatsApp. The partner agreed to settle within 10 days of receiving the notice. Fantastic tech-enabled legal workflow!"
+      "reviewBody": "Sending a legal notice to my former business partner was incredibly easy through this portal. The platform verified the firm's registration via GSTIN and automatically filled the correct office address. The team verified the facts and prepared the notice on his letterhead, signed it electronically, and it was served via Speed Post and WhatsApp. The partner agreed to settle within 10 days of receiving the notice. Fantastic tech-enabled legal workflow!"
     },
     {
       "@type": "Review",
@@ -191,7 +191,7 @@ const reviewSchema = {
         "@type": "Person",
         "name": "Priyanka Joshi"
       },
-      "reviewBody": "The flat fee of ₹999 is highly transparent and competitive. Traditional lawyers quoted hourly consultations plus mailing costs. Here, everything was done online, tracked in real-time, and supported by a panel advocate. The ODR pipeline option is a great touch for out-of-court settlements."
+      "reviewBody": "The flat fee of ₹999 is highly transparent and competitive. Traditional lawyers quoted hourly consultations plus mailing costs. Here, everything was done online, tracked in real-time, and supported by a helpful team. The ODR pipeline option is a great touch for out-of-court settlements."
     },
     {
       "@type": "Review",
@@ -203,7 +203,7 @@ const reviewSchema = {
         "@type": "Person",
         "name": "Aditya Vardhan"
       },
-      "reviewBody": "A client defaulted on my invoice payments for freelance development work. The online legal notice portal allowed me to upload the contracts and invoices to the document vault. The advocate reviewed the trail, sent the notice, and the client e-signed the settlement deed. Excellent service for freelancers."
+      "reviewBody": "A client defaulted on my invoice payments for freelance development work. The online legal notice portal allowed me to enter the contract and invoice details online. The team verified the facts and prepared the trail, sent the notice, and the client e-signed the settlement deed. Excellent service for freelancers."
     },
     {
       "@type": "Review",
@@ -375,7 +375,7 @@ export default function SendALegalNoticeClient() {
                       Under the Indian legal framework, sending a legal notice serves several critical objectives. First, it clearly conveys your legal grievances to the other party, leaving no room for ambiguity about your intentions. Second, it establishes a reliable, court-admissible paper trail showing that you made reasonable efforts to resolve the dispute out of court. Third, it sets a firm timeline for the other party to respond or comply, which is vital for calculating limitation periods in civil recovery suits. Fourth, it demonstrates your good faith in eventual court proceedings. Judges consistently look favorably upon plaintiffs who have tried to settle disputes through formal warnings before burdening the judicial system.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      In recent years, the process of sending a legal notice has undergone a massive digital transition. Traditionally, drafting a notice required multiple in-person meetings with an advocate, manual document checks, printing on legal paper, and posting at a local post office. Today, legal tech platforms have digitized this entire flow. By combining automated database checks, secure cloud document vaults, panel advocate assignment, and digital tracking dashboards, online portals make drafting and dispatching notices faster and more transparent. A legal notice has evolved into a structured digital case file, which is integrated with Online Dispute Resolution (ODR) systems and ready for e-filing.
+                      In recent years, the process of sending a legal notice has undergone a massive digital transition. Traditionally, drafting a notice required multiple in-person meetings with an advocate, manual document checks, printing on legal paper, and posting at a local post office. Today, legal tech platforms have digitized this entire flow. By combining automated database checks, online case intake forms, fact verification, and digital tracking dashboards, online portals make drafting and dispatching notices faster and more transparent. A legal notice has evolved into a structured digital case file, which is integrated with Online Dispute Resolution (ODR) systems and ready for e-filing.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
                       Legal notices in India fall into two broad categories: statutory notices and non-statutory notices. Statutory notices are those mandated by specific acts of parliament before any legal action can be filed. For instance, you cannot file a suit against a government department without serving a 60-day notice under Section 80 of the Code of Civil Procedure (CPC), nor can you file a criminal cheque bounce complaint without serving a 15-day notice under Section 138 of the Negotiable Instruments Act. Non-statutory notices are those sent in general civil matters, such as contractual breaches, partition disputes, or consumer grievances. While not strictly mandated by law, sending a non-statutory notice is standard practice to establish default and encourage settlement.
@@ -467,9 +467,9 @@ export default function SendALegalNoticeClient() {
                           1
                         </div>
                         <div>
-                          <h4 className="font-extrabold text-sm sm:text-base text-slate-900 mb-1">Upload to the Secure Document Vault</h4>
+                          <h4 className="font-extrabold text-sm sm:text-base text-slate-900 mb-1">Enter Your Case Details Online</h4>
                           <p className="text-xs sm:text-sm text-slate-650 leading-relaxed">
-                            The client begins by uploading all supporting documents to our secure, encrypted cloud vault. For salary disputes, this includes offer letters, payslips, and resignation emails. For commercial defaults, this includes invoices, ledgers, bank receipts, and agreements. This file storage preserves evidence integrity and ensures all documents are ready for review by the panel advocate.
+                            The client begins by entering the key facts of the dispute in our secure online form. For salary disputes, keep your offer letter, payslips, and resignation emails ready; for commercial defaults, keep your invoices, ledgers, bank receipts, and agreements ready. You do not upload them to us, but they should be preserved for any later court or forum filing.
                           </p>
                         </div>
                       </div>
@@ -481,7 +481,7 @@ export default function SendALegalNoticeClient() {
                         <div>
                           <h4 className="font-extrabold text-sm sm:text-base text-slate-900 mb-1">Complete the Case Intake Questionnaire</h4>
                           <p className="text-xs sm:text-sm text-slate-650 leading-relaxed">
-                            The client completes a guided online intake questionnaire. This form captures essential details, including the identities of the parties, transaction dates, the exact default amount, details of communication, and attempts made to resolve the dispute. This structured data allows the system to analyze the claim and route the file to the right advocate.
+                            The client completes a guided online intake questionnaire. This form captures essential details, including the identities of the parties, transaction dates, the exact default amount, details of communication, and attempts made to resolve the dispute. This structured data allows the system to analyze the claim and prepare it for fact verification by our team.
                           </p>
                         </div>
                       </div>
@@ -491,9 +491,9 @@ export default function SendALegalNoticeClient() {
                           3
                         </div>
                         <div>
-                          <h4 className="font-extrabold text-sm sm:text-base text-slate-900 mb-1">Advocate Assignment &amp; Custom Drafting</h4>
+                          <h4 className="font-extrabold text-sm sm:text-base text-slate-900 mb-1">Fact Verification &amp; Notice Preparation</h4>
                           <p className="text-xs sm:text-sm text-slate-650 leading-relaxed">
-                            The system assigns the case file to a panel advocate specializing in the relevant area of law (e.g., labor, property, or corporate recovery). The advocate reviews the documents in the vault, drafts a customized notice on their official letterhead with all statutory citations, and uploads the draft to the client&apos;s dashboard for review.
+                            Our team verifies the facts you submitted. The notice is then prepared from our structured templates for the relevant area of law (e.g., labor, property, or corporate recovery), with all statutory citations, and made available on the client&apos;s dashboard.
                           </p>
                         </div>
                       </div>
@@ -503,9 +503,9 @@ export default function SendALegalNoticeClient() {
                           4
                         </div>
                         <div>
-                          <h4 className="font-extrabold text-sm sm:text-base text-slate-900 mb-1">Digital Signing under the IT Act</h4>
+                          <h4 className="font-extrabold text-sm sm:text-base text-slate-900 mb-1">Client Confirmation</h4>
                           <p className="text-xs sm:text-sm text-slate-650 leading-relaxed">
-                            Once the draft notice is approved by the client, the advocate digitally signs the PDF notice using their registered Digital Signature Certificate (DSC) or e-sign under Section 5 of the Information Technology Act, 2000. E-signed legal notices carry the same validity in court as physical signatures, eliminating the need to physically mail documents back and forth.
+                            Once the client confirms the facts and the notice details, the notice is ready for dispatch. Everything is handled online, eliminating the need to physically mail documents back and forth.
                           </p>
                         </div>
                       </div>
@@ -725,7 +725,7 @@ export default function SendALegalNoticeClient() {
                 <div className="absolute top-0 right-0 w-24 h-24 bg-red-600/10 rounded-full blur-xl pointer-events-none" />
                 <h3 className="text-sm font-black mb-3">Send Legal Notice</h3>
                 <p className="text-gray-400 mb-5 text-[11px] leading-relaxed">
-                  We match you with a panel advocate, handle the custom drafting, physically post the notice, and track its delivery in real-time.
+                  We verify your facts, prepare the notice, physically post the notice, and track its delivery in real-time.
                 </p>
                 <button
                   onClick={() => setIsPaymentModalOpen(true)}
@@ -739,7 +739,7 @@ export default function SendALegalNoticeClient() {
               <div className="bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
                 <h3 className="text-sm font-black text-slate-900 mb-2">Practice Areas</h3>
                 <p className="text-xs text-slate-500 mb-4 leading-relaxed">
-                  Browse 16+ specialized statutory legal notice frameworks vetted by high court and corporate panel advocates.
+                  Browse 16+ specialized statutory legal notice frameworks prepared from structured templates.
                 </p>
                 <a
                   href="#notice-templates"

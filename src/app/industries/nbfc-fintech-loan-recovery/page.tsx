@@ -453,9 +453,9 @@ const FAQS = [
   },
   {
     question:
-      "How does an advocate-backed bulk notice desk reduce RBI Ombudsman & SRO compliance risk compared to telecalling agencies?",
+      "How does a fact-verified bulk notice desk reduce RBI Ombudsman & SRO compliance risk compared to telecalling agencies?",
     answer:
-      "Telecalling and field recovery agencies face strict RBI Outsourcing Directions, 8 AM–7 PM calling caps, privacy prohibitions, and reputational vicarious liability for unlicensed harassment. Dispatching statutory notices prepared and signed by enrolled advocates under the Advocates Act, 1961 via logged Email, verified WhatsApp Business templates, and India Post Speed Post RPAD shifts communication strictly onto lawful statutory channels backed by Bharatiya Sakshya Adhiniyam, 2023 Section 63 digital hash certificates.",
+      "Telecalling and field recovery agencies face strict RBI Outsourcing Directions, 8 AM–7 PM calling caps, privacy prohibitions, and reputational vicarious liability for unlicensed harassment. Dispatching statutory notices prepared on verified facts via logged Email, verified WhatsApp Business templates, and India Post Speed Post RPAD shifts communication strictly onto lawful statutory channels backed by Bharatiya Sakshya Adhiniyam, 2023 Section 63 digital hash certificates.",
   },
   {
     question:
@@ -473,7 +473,7 @@ const FAQS = [
     question:
       "How can an NBFC validate LegalRecovery.in before uploading 5,000 CSV borrower rows?",
     answer:
-      "Our dual-track onboarding lets risk and legal teams pilot a single defaulted account for ₹999 using the live loan-recovery intake engine (capturing Disbursed Amount, Disbursement Date, As-On Date, UMRN, and bounce schedule). Once your team inspects the advocate draft, BSA s.63 server certificate, and tri-channel Speed Post RPAD delivery receipt, you can onboard full multi-entity CSV buckets via the Representee Vault with zero mandatory SaaS lock-in.",
+      "Our dual-track onboarding lets risk and legal teams pilot a single defaulted account for ₹999 using the live loan-recovery intake engine (capturing Disbursed Amount, Disbursement Date, As-On Date, UMRN, and bounce schedule). Once your team inspects the notice draft, BSA s.63 server certificate, and tri-channel Speed Post RPAD delivery receipt, you can onboard full multi-entity CSV buckets via the Representee Vault with zero mandatory SaaS lock-in.",
   },
 ];
 
@@ -955,7 +955,7 @@ export default function NbfcFintechLoanRecoveryPage() {
                   },
                   {
                     step: "02. Statutory Drafting",
-                    text: "Enrolled advocates draft Suman Sethi compliant s.25 notices, s.176 gold warnings, and post-CORE neutral ODR demands.",
+                    text: "We draft Suman Sethi compliant s.25 notices, s.176 gold warnings, and post-CORE neutral ODR demands.",
                   },
                   {
                     step: "03. Tri-Channel Dispatch",

@@ -646,7 +646,7 @@ export default function CommercialPropertySection106GuidePage() {
                     <span className="text-[10px] font-bold text-red-400 uppercase tracking-wider block">Stage 2</span>
                     <strong className="text-sm block">15-Day Section 106 Statutory Notice</strong>
                     <p className="text-xs text-slate-300">
-                      Serve Advocate Demand Notice incorporating 15-day termination, forfeiture under s.111(g), and double market rent penal mesne profits warning.
+                      Serve Fact-Verified Demand Notice incorporating 15-day termination, forfeiture under s.111(g), and double market rent penal mesne profits warning.
                     </p>
                   </div>
                   <div className="p-4 rounded-xl bg-slate-900 text-white space-y-1">
@@ -1040,7 +1040,7 @@ export default function CommercialPropertySection106GuidePage() {
                     Fast-Track Commercial Eviction &amp; Institutional Recovery Desk
                   </h2>
                   <p className="text-xs font-semibold text-slate-500 mt-1">
-                    Deploy Advocate-Drafted Section 106 Notices Today or Onboard Enterprise Default Portfolios
+                    Deploy Fact-Verified Section 106 Notices Today or Onboard Enterprise Default Portfolios
                   </p>
                 </div>
 
@@ -1119,7 +1119,7 @@ export default function CommercialPropertySection106GuidePage() {
 
                   <div className="pt-3 border-t border-slate-100 text-xs text-slate-500">
                     <p>
-                      <strong>Advocate Verification Note:</strong> Authored and reviewed by Adv. Anuj Anand Malik (Advocate &amp; Founder, AMA Legal Solutions). Content grounded strictly in statutory bare act provisions of the Transfer of Property Act, 1882, Commercial Courts Act, 2015, and the landmark Supreme Court 3-Judge Bench ratio in <em>Vidya Drolia v. Durga Trading Corporation (2021) 2 SCC 1</em>.
+                      <strong>Fact Verification Note:</strong> Authored and reviewed by Adv. Anuj Anand Malik (Advocate &amp; Founder, AMA Legal Solutions). Content grounded strictly in statutory bare act provisions of the Transfer of Property Act, 1882, Commercial Courts Act, 2015, and the landmark Supreme Court 3-Judge Bench ratio in <em>Vidya Drolia v. Durga Trading Corporation (2021) 2 SCC 1</em>.
                     </p>
                     {/* // TODO(reviewer): src/data/reviewers.ts is absent in this repository */}
                   </div>

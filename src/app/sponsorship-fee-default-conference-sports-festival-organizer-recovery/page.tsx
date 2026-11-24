@@ -137,8 +137,8 @@ export default function SponsorshipRecoveryPage() {
       {
         "@type": "HowToStep",
         position: 2,
-        name: "Serve Formal Advocate Demand Notice",
-        text: "Issue a 15-day formal advocate demand notice under Order XXXVII CPC and Indian Contract Act Section 70 via Registered Speed Post AD, email, and WhatsApp.",
+        name: "Serve Formal Fact-Verified Demand Notice",
+        text: "Issue a 15-day formal fact-verified demand notice under Order XXXVII CPC and Indian Contract Act Section 70 via Registered Speed Post AD, email, and WhatsApp.",
       },
       {
         "@type": "HowToStep",
@@ -672,7 +672,7 @@ export default function SponsorshipRecoveryPage() {
                       <span className="text-emerald-400">+ ₹1,34,815</span>
                     </div>
                     <div className="flex justify-between text-xs text-slate-400">
-                      <span>Advocate Drafting, Postal &amp; Legal Filing Fee Recovery:</span>
+                      <span>Notice Drafting, Postal &amp; Legal Filing Fee Recovery:</span>
                       <span>+ ₹45,000</span>
                     </div>
 
@@ -687,7 +687,7 @@ export default function SponsorshipRecoveryPage() {
                   <p className="font-bold text-emerald-800 mb-1">
                     Income Tax Disallowance Leverage (Section 43B(h))
                   </p>
-                  Under Section 43B(h) of the Income Tax Act, 1961, any unpaid sum owed to an MSME service provider beyond the 45-day statutory limit is added back to the defaulting brand&apos;s taxable income. Corporate CFOs cannot claim sponsorship expenses as business tax deductions until payment is cleared. Citing Section 43B(h) alongside MSMED Act Section 16 in our advocate demand notice triggers immediate finance department clearance.
+                  Under Section 43B(h) of the Income Tax Act, 1961, any unpaid sum owed to an MSME service provider beyond the 45-day statutory limit is added back to the defaulting brand&apos;s taxable income. Corporate CFOs cannot claim sponsorship expenses as business tax deductions until payment is cleared. Citing Section 43B(h) alongside MSMED Act Section 16 in our team demand notice triggers immediate finance department clearance.
                 </div>
               </section>
 

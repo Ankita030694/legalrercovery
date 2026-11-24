@@ -3,7 +3,7 @@ import LegalNoticeOnlineClient from "./LegalNoticeOnlineClient";
 
 export const metadata: Metadata = {
   title: "Legal Notice Online Portal: Process, Validity & Pricing",
-  description: "Learn about the legal notice online portal system in India. Understand how technology simplifies case submission, advocate drafting, and digital tracking.",
+  description: "Learn about the legal notice online portal system in India. Understand how technology simplifies case submission, notice drafting, and digital tracking.",
   keywords: [
     "legal notice online",
     "send legal notice online India",
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Legal Notice Online Portal: Process, Validity & Pricing",
-    description: "Learn about the legal notice online portal system in India. Understand how technology simplifies case submission, advocate drafting, and digital tracking.",
+    description: "Learn about the legal notice online portal system in India. Understand how technology simplifies case submission, notice drafting, and digital tracking.",
     url: "https://www.legalrecovery.in/online-legal-notice",
     type: "article",
     siteName: "LegalRecovery.in",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Legal Notice Online Portal: Process, Validity & Pricing",
-    description: "Learn about the legal notice online portal system in India. Understand how technology simplifies case submission, advocate drafting, and digital tracking.",
+    description: "Learn about the legal notice online portal system in India. Understand how technology simplifies case submission, notice drafting, and digital tracking.",
     site: "@legalrecoveryin",
     creator: "@legalrecoveryin",
     images: ["https://www.legalrecovery.in/blog_money_recovery.png"],

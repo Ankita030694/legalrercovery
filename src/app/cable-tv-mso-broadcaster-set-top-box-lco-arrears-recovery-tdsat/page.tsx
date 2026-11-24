@@ -790,7 +790,7 @@ export default function MsoLcoArrearsRecoveryPage() {
                   {
                     title: "Vendor & B2B Invoice Recovery Services",
                     href: "/services/vendor-and-invoice-recoveries",
-                    desc: "Advocate-drafted tri-channel demand notices for B2B service providers and channel partners.",
+                    desc: "Fact-verified tri-channel demand notices for B2B service providers and channel partners.",
                   },
                   {
                     title: "SaaS & Telecom MSA Payment Default Notice Template",

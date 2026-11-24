@@ -186,7 +186,7 @@ const DOCUMENT_MATRIX = [
   {
     doc: "Section 63 BSA Electronic Evidence Certificate",
     why: "Makes all mobile app screenshots, emails, WhatsApp chats, and PDF statements legally admissible before Consumer Commissions.",
-    where: "Prepared by your advocate alongside the statutory legal notice and e-Jagriti petition.",
+    where: "Prepared on verified facts alongside the statutory legal notice and e-Jagriti petition.",
   },
 ];
 
@@ -224,7 +224,7 @@ const FAQS = [
   {
     question: "Co-living ya PG operator security deposit wapas nahi kar raha toh legal notice kaise bheje?",
     answer:
-      "Agar co-living ya PG operator deposit na lautaye, toh onboarding agreement aur payment proof ke saath formal legal notice bhejein. Advocate CPA 2019 aur Contract Act Section 74 ke tehat 15 din ka legal demand notice bhejte hain. Isse operator par turant refund ka dabav banta hai.",
+      "Agar co-living ya PG operator deposit na lautaye, toh onboarding agreement aur payment proof ke saath formal legal notice bhejein. Hamari team CPA 2019 aur Contract Act Section 74 ke tehat 15 din ka legal demand notice bhejti hai. Isse operator par turant refund ka dabav banta hai.",
   },
 ];
 
@@ -853,14 +853,14 @@ export default function CoLivingDepositRefundLegalNoticePage() {
                     <div className="space-y-1.5 w-full">
                       <div className="flex flex-wrap items-center justify-between gap-2">
                         <h3 className="text-sm sm:text-base md:text-lg font-bold text-slate-900">
-                          Serve a 15-Day Statutory Advocate Legal Demand Notice
+                          Serve a 15-Day Statutory Fact-Verified Legal Demand Notice
                         </h3>
                         <time dateTime="P15D" className="text-[11px] font-extrabold uppercase tracking-wider px-2.5 py-0.5 rounded bg-red-50 text-red-700">
                           15 Calendar Days Cure Window
                         </time>
                       </div>
                       <p className="text-xs sm:text-sm leading-relaxed">
-                        Co-living companies routinely ignore standard support tickets but escalate formal legal notices directly to their legal and finance desks to avoid consumer court litigation costs. Have an advocate dispatch a statutory demand notice to the operator&apos;s registered corporate office (via Registered Speed Post + email/WhatsApp under Section 63 BSA), demanding 100% of the withheld deposit, 18% annual interest, and ₹15,000 for mental harassment within 15 days.
+                        Co-living companies routinely ignore standard support tickets but escalate formal legal notices directly to their legal and finance desks to avoid consumer court litigation costs. Dispatch a statutory demand notice to the operator&apos;s registered corporate office (via Registered Speed Post + email/WhatsApp under Section 63 BSA), demanding 100% of the withheld deposit, 18% annual interest, and ₹15,000 for mental harassment within 15 days.
                       </p>
                     </div>
                   </li>
@@ -939,7 +939,7 @@ export default function CoLivingDepositRefundLegalNoticePage() {
                       <strong>The Unfair Deduction &amp; Delay:</strong> The onboarding agreement promised deposit refund within 30 working days. On Day 38, the operator generated a settlement sheet deducting <strong>₹4,500</strong> for &quot;Exit Refurbishment &amp; Repainting&quot; and <strong>₹3,200</strong> for &quot;Common Appliance Depreciation&quot;, approving only ₹28,300. Worse still, even after 55 calendar days, the approved ₹28,300 remained stuck on <em>&quot;Sent to Bank / Payout Queued&quot;</em> with support tickets automatically closed.
                     </p>
                     <p>
-                      <strong>The Statutory Action:</strong> Siddharth engaged LegalRecovery.in. An advocate served a formal 15-day statutory demand notice via Registered Speed Post and Section 63 BSA email to the operator&apos;s corporate headquarters and Grievance Officer. The notice challenged the ₹7,700 deductions as an unfair trade practice under Section 2(47) of the Consumer Protection Act, 2019 and Section 74 of the Contract Act, demanding the full ₹36,000 principal plus 18% interest before filing an e-Jagriti complaint.
+                      <strong>The Statutory Action:</strong> Siddharth engaged LegalRecovery.in. LegalRecovery.in served a formal 15-day statutory demand notice via Registered Speed Post and Section 63 BSA email to the operator&apos;s corporate headquarters and Grievance Officer. The notice challenged the ₹7,700 deductions as an unfair trade practice under Section 2(47) of the Consumer Protection Act, 2019 and Section 74 of the Contract Act, demanding the full ₹36,000 principal plus 18% interest before filing an e-Jagriti complaint.
                     </p>
                     <div className="p-3.5 sm:p-4 bg-emerald-950/70 border border-emerald-700/60 rounded-xl text-emerald-200">
                       <strong className="block text-emerald-400 font-bold mb-1">The Resolution (Day 9 After Notice):</strong>
@@ -967,7 +967,7 @@ export default function CoLivingDepositRefundLegalNoticePage() {
                   </span>
                 </div>
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
-                  Use the structured format below to send a final pre-litigation escalation to the co-living operator&apos;s Grievance Officer, or have a verified advocate issue it on formal legal letterhead with Registered Speed Post tracking:
+                  Use the structured format below to send a final pre-litigation escalation to the co-living operator&apos;s Grievance Officer, or issue it on formal legal letterhead with Registered Speed Post tracking:
                 </p>
 
                 <div className="bg-slate-900 text-slate-100 rounded-2xl p-5 sm:p-7 border border-slate-800 shadow-lg space-y-4 text-xs sm:text-sm font-mono overflow-x-auto">
@@ -1095,7 +1095,7 @@ export default function CoLivingDepositRefundLegalNoticePage() {
                   <strong className="text-slate-900 font-bold block mb-1">
                     Scope of Our Legal Notice Service:
                   </strong>
-                  LegalRecovery.in drafts and serves a formal advocate statutory demand notice via Registered Speed Post, email, and WhatsApp against registered co-living companies, managed PG operators, and property owners where you hold verifiable payment proof. While over 70% of corporate accommodation deposit disputes settle at the pre-litigation notice stage to avoid consumer forum penalties, if an operator is insolvent or ignores the notice, the next step is filing an online petition on e-Jagriti using the notice and delivery receipt we provide.
+                  LegalRecovery.in prepares and serves a formal statutory demand notice via Registered Speed Post, email, and WhatsApp against registered co-living companies, managed PG operators, and property owners where you hold verifiable payment proof. While over 70% of corporate accommodation deposit disputes settle at the pre-litigation notice stage to avoid consumer forum penalties, if an operator is insolvent or ignores the notice, the next step is filing an online petition on e-Jagriti using the notice and delivery receipt we provide.
                 </div>
 
                 <h2 id="heading-cta-block-title" className="sr-only">

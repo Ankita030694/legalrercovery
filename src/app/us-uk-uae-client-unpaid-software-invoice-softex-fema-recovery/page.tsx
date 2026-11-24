@@ -63,7 +63,7 @@ const STATUTORY_MATRIX = [
     remedy: "FEMA 9-Month SOFTEX Realization & AD Bank Write-Off SOP",
     statute: "Foreign Exchange Management Act, 1999 & RBI Master Direction on Export of Goods and Services",
     timing: "Mandatory within 9 months from export invoice date; extension or write-off application at Month 9",
-    mechanism: "Serve formal Advocate Legal Demand Notice on overseas buyer; compile certified proof of non-realization and deliver statutory write-off request to Authorized Dealer (AD) Bank under Regulation 16/Master Direction",
+    mechanism: "Serve formal Fact-Verified Legal Demand Notice on overseas buyer; compile certified proof of non-realization and deliver statutory write-off request to Authorized Dealer (AD) Bank under Regulation 16/Master Direction",
     relief: "Closes open SOFTEX shipping bills in RBI EDPMS, preventing company caution-listing and loss of export IEC benefits; legal proof enables write-off without penal inquiries",
     suitability: "All Indian IT exporters, STPI units, SEZ tech companies, and SaaS exporters with open SOFTEX forms exceeding 9 months",
     tone: "emerald",
@@ -124,7 +124,7 @@ const FAQS = [
   {
     question: "Why does my Authorized Dealer (AD) Bank insist on legal notice proof to permit a SOFTEX write-off?",
     answer:
-      "Under RBI Master Direction (Section C.16 on Write-Off of Unrealized Export Bills), an Authorized Dealer (AD) Bank can write off unrealized software export bills up to 10% of total export proceeds realized during the preceding calendar year (or 5% for self-write-off). However, AD Banks cannot process a write-off simply on the exporter's oral assertion that a client refused to pay. The bank's internal compliance committee and concurrent auditors strictly require verifiable evidence that the exporter has exhausted all legal remedies to recover the funds. A formal, advocate-drafted Cross-Border Statutory Demand Notice served on the overseas entity—complete with electronic delivery receipts under BSA 2023 Section 63—constitutes the primary regulatory proof required to sanction an EDPMS write-off.",
+      "Under RBI Master Direction (Section C.16 on Write-Off of Unrealized Export Bills), an Authorized Dealer (AD) Bank can write off unrealized software export bills up to 10% of total export proceeds realized during the preceding calendar year (or 5% for self-write-off). However, AD Banks cannot process a write-off simply on the exporter's oral assertion that a client refused to pay. The bank's internal compliance committee and concurrent auditors strictly require verifiable evidence that the exporter has exhausted all legal remedies to recover the funds. A formal, fact-verified Cross-Border Statutory Demand Notice served on the overseas entity—complete with electronic delivery receipts under BSA 2023 Section 63—constitutes the primary regulatory proof required to sanction an EDPMS write-off.",
   },
   {
     question: "Can an Indian software agency legally recover money from a US entity registered in Delaware or California?",
@@ -247,7 +247,7 @@ export default function ForeignClientSoftexRecoveryPage() {
         "@type": "HowToStep",
         position: 2,
         name: "Serve Formal Cross-Border Statutory Demand Notice",
-        text: "Issue an advocate-drafted legal demand notice to the foreign debtor's registered office (Delaware/California Registered Agent, UK Companies House address, or Dubai mainland office). Invoke US UCC Article 2, UK Pre-Action Protocol, or UAE Commercial Law, paired with Section 19 Copyright Act ownership liens.",
+        text: "Issue a fact-verified legal demand notice to the foreign debtor's registered office (Delaware/California Registered Agent, UK Companies House address, or Dubai mainland office). Invoke US UCC Article 2, UK Pre-Action Protocol, or UAE Commercial Law, paired with Section 19 Copyright Act ownership liens.",
       },
       {
         "@type": "HowToStep",
@@ -363,7 +363,7 @@ export default function ForeignClientSoftexRecoveryPage() {
                 Executive Creditor Answer &bull; Software Export Recovery &amp; EDPMS Write-Off
               </span>
               <p>
-                When overseas tech clients in the US, UK, or UAE default on custom software development or SaaS invoices, Indian tech exporters face a dual liability: unrecovered revenue and punitive regulatory action under the Foreign Exchange Management Act, 1999 (FEMA). Under RBI export regulations, all STPI SOFTEX declarations must be realized within 9 months. To prevent Authorized Dealer (AD) Banks from reporting your company on RBI&apos;s EDPMS Caution List, exporters must serve advocate-drafted cross-border statutory demand notices. This establishes mandatory legal recovery effort required for an AD Bank write-off while enforcing Copyright Act Section 19 IP liens and CPC Section 44A bilateral enforcement. Explore our comprehensive sector guidance at the{" "}
+                When overseas tech clients in the US, UK, or UAE default on custom software development or SaaS invoices, Indian tech exporters face a dual liability: unrecovered revenue and punitive regulatory action under the Foreign Exchange Management Act, 1999 (FEMA). Under RBI export regulations, all STPI SOFTEX declarations must be realized within 9 months. To prevent Authorized Dealer (AD) Banks from reporting your company on RBI&apos;s EDPMS Caution List, exporters must serve fact-verified cross-border statutory demand notices. This establishes mandatory legal recovery effort required for an AD Bank write-off while enforcing Copyright Act Section 19 IP liens and CPC Section 44A bilateral enforcement. Explore our comprehensive sector guidance at the{" "}
                 <Link
                   href="/industries/it-saas-software-recovery"
                   className="text-red-400 hover:text-red-300 font-bold underline decoration-red-400/50 underline-offset-2"
@@ -790,7 +790,7 @@ export default function ForeignClientSoftexRecoveryPage() {
                         2. Exhaustion of Recovery Efforts &amp; Advocate Notice
                       </p>
                       <p className="text-xs text-slate-600 leading-relaxed">
-                        The exporter must demonstrate that all reasonable recovery channels were pursued. An advocate-drafted statutory legal demand notice served via international courier/registered email is mandatory audit proof.
+                        The exporter must demonstrate that all reasonable recovery channels were pursued. A fact-verified statutory legal demand notice served via international courier/registered email is mandatory audit proof.
                       </p>
                     </div>
 
@@ -1095,7 +1095,7 @@ export default function ForeignClientSoftexRecoveryPage() {
                     Institutional Cross-Border Software Recovery &amp; EDPMS Desk
                   </h2>
                   <p className="text-xs sm:text-sm text-slate-500 mt-1">
-                    Select your operational track below to launch an advocate-drafted cross-border notice or ingest aged offshore tech receivables in bulk.
+                    Select your operational track below to launch a fact-verified cross-border notice or ingest aged offshore tech receivables in bulk.
                   </p>
                 </div>
 

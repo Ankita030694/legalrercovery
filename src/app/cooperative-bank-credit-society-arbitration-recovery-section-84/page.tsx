@@ -883,7 +883,7 @@ export default function CooperativeBankArbitrationSection84Page() {
                 </div>
 
                 <p className="text-xs sm:text-sm text-slate-600">
-                  Operational impact: In institutional cooperative portfolios, serving a formal advocate-signed notice simultaneously on both sureties creates immediate social and workplace pressure—frequently settling sub-₹5 Lakh unsecured accounts within 14 days without ever paying Registrar filing costs. For standardized recall clauses, see our{" "}
+                  Operational impact: In institutional cooperative portfolios, serving a formal fact-verified notice simultaneously on both sureties creates immediate social and workplace pressure—frequently settling sub-₹5 Lakh unsecured accounts within 14 days without ever paying Registrar filing costs. For standardized recall clauses, see our{" "}
                   <Link
                     href="/templates/bank-loan-recall-cum-guarantee-invocation-notice"
                     className="text-[#DC2626] font-semibold underline hover:text-[#B91C1C]"
@@ -1041,7 +1041,7 @@ export default function CooperativeBankArbitrationSection84Page() {
 
                   <div className="bg-red-950/40 border border-red-800/60 rounded-xl p-3.5 text-xs text-slate-200 leading-relaxed">
                     <strong className="text-red-300 block mb-1">Tri-Party Notice Multiplier:</strong>
-                    Serving formal advocate notices simultaneously on <strong>Both Co-Employee Sureties</strong> + DDO requisition triggers immediate surety intervention—converting 100% of the net ₹3.06L balance via payroll deduction or lump-sum closure without spending ₹25,000+ in contested arbitration hearings.
+                    Serving formal fact-verified notices simultaneously on <strong>Both Co-Employee Sureties</strong> + DDO requisition triggers immediate surety intervention—converting 100% of the net ₹3.06L balance via payroll deduction or lump-sum closure without spending ₹25,000+ in contested arbitration hearings.
                   </div>
                 </div>
               </div>
@@ -1146,7 +1146,7 @@ export default function CooperativeBankArbitrationSection84Page() {
               </div>
 
               <p className="text-sm text-slate-600 mb-5">
-                Explore companion statutory playbooks, interactive calculators, and advocate-vetted notice formats across LegalRecovery&apos;s institutional banking cluster:
+                Explore companion statutory playbooks, interactive calculators, and ready-to-use notice formats across LegalRecovery&apos;s institutional banking cluster:
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3.5">

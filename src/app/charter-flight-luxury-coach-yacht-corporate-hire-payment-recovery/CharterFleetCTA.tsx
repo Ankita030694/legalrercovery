@@ -19,7 +19,7 @@ export default function CharterFleetCTA() {
         </h3>
 
         <p className="text-sm sm:text-base text-slate-300 leading-relaxed mb-8 max-w-3xl">
-          Corporate roadshow coordinators, wedding planners, and election campaign agencies stall ₹10L–₹2Cr charter bills when operators only send informal WhatsApp reminders. An Advocate-signed Statutory Demand Notice annexing your <strong>DGCA Flight Tech-Log</strong>, <strong>AAI/Fuel Disbursements</strong>, <strong>GPS/Fastag Telemetry</strong>, and <strong>Order XXXVII CPC Summary Suit</strong> warning triggers immediate treasury clearance.
+          Corporate roadshow coordinators, wedding planners, and election campaign agencies stall ₹10L–₹2Cr charter bills when operators only send informal WhatsApp reminders. A Fact-verified Statutory Demand Notice annexing your <strong>DGCA Flight Tech-Log</strong>, <strong>AAI/Fuel Disbursements</strong>, <strong>GPS/Fastag Telemetry</strong>, and <strong>Order XXXVII CPC Summary Suit</strong> warning triggers immediate treasury clearance.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
@@ -33,10 +33,10 @@ export default function CharterFleetCTA() {
                 <span className="text-xl font-black text-white">₹999</span>
               </div>
               <h4 className="text-base font-bold text-white mb-2">
-                Test 1 Live Overdue Case Now (₹999 · Advocate Drafted · Email + WhatsApp + Speed Post RPAD)
+                Test 1 Live Overdue Case Now (₹999 · Fact-Verified · Email + WhatsApp + Speed Post RPAD)
               </h4>
               <p className="text-xs text-slate-300 leading-relaxed mb-4">
-                Upload one overdue NSOP charter invoice, helicopter campaign balance, yacht overtime bill, or luxury coach fleet trip sheet. Our commercial litigation advocates attach your Tech-Log/GPS proof into a 15-day statutory notice.
+                Enter the details of one overdue NSOP charter invoice, helicopter campaign balance, yacht overtime bill, or luxury coach fleet trip sheet. Our team verifies the facts, including your Tech-Log/GPS details, and prepares a 15-day statutory notice.
               </p>
               <ul className="space-y-1.5 text-xs text-slate-300 mb-6">
                 <li className="flex items-center gap-2">

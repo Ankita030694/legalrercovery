@@ -31,7 +31,7 @@ export default function LoanEcsNoticeCTA({
                 Recover Unauthorised Post-Closure Debits &amp; Stop ECS/NACH Mandates Immediately
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6">
-                Have a seasoned banking and consumer advocate draft and serve an unassailable legal notice directly to your lender (NBFC/Bank) and the destination sponsor bank. Demand immediate mandate revocation, full refund of excess deducted EMIs with penal interest, and ₹100/day bounce charge reversal. Served via Registered Speed Post and digitally under Section 63 BSA 2023.
+                Serve an unassailable legal notice directly to your lender (NBFC/Bank) and the destination sponsor bank. Demand immediate mandate revocation, full refund of excess deducted EMIs with penal interest, and ₹100/day bounce charge reversal. Served via Registered Speed Post and digitally under Section 63 BSA 2023.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button
@@ -42,7 +42,7 @@ export default function LoanEcsNoticeCTA({
                   {buttonText} — ₹{basePrice}
                 </button>
                 <div className="text-xs text-slate-300 flex flex-wrap sm:flex-nowrap items-center gap-2 sm:gap-3">
-                  <span>✓ 24h Advocate Drafting</span>
+                  <span>✓ 24h Notice Drafting</span>
                   <span>•</span>
                   <span>✓ Mandate Revocation Proof</span>
                   <span>•</span>

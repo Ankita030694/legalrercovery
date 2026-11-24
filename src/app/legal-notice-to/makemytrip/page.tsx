@@ -163,7 +163,7 @@ const FAQS = [
   {
     question: "MakeMyTrip se flight ya hotel cancel hone par refund na mile toh legal notice kaise bheje?",
     answer:
-      "Agar MakeMyTrip cancellation ke baad refund bank account mein credit na kare ya airline par ilzaam daalkar refund atka de, toh aap ek formal statutory legal notice bhej sakte hain. LegalRecovery.in par verified advocate DGCA CAR regulations aur Consumer Protection Act 2019 ke tehat MakeMyTrip (India) Private Limited ke registered office (DLF Cyber City, Gurugram) aur carrying airline dono ko Speed Post aur email dwara notice dispatch karte hain, jismein 15 din ka strict payment deadline hota hai.",
+      "Agar MakeMyTrip cancellation ke baad refund bank account mein credit na kare ya airline par ilzaam daalkar refund atka de, toh aap ek formal statutory legal notice bhej sakte hain. LegalRecovery.in par hamari team DGCA CAR regulations aur Consumer Protection Act 2019 ke tehat MakeMyTrip (India) Private Limited ke registered office (DLF Cyber City, Gurugram) aur carrying airline dono ko Speed Post aur email dwara notice dispatch karti hai, jismein 15 din ka strict payment deadline hota hai.",
   },
 ];
 
@@ -670,13 +670,13 @@ export default function MakeMyTripLegalNoticePage() {
                     </span>
                     <div className="space-y-1 sm:space-y-1.5">
                       <h3 className="text-sm sm:text-base md:text-lg font-bold text-slate-900">
-                        Serve a Joint Statutory Advocate Legal Demand Notice
+                        Serve a Joint Statutory Fact-Verified Legal Demand Notice
                       </h3>
                       <p className="text-xs sm:text-sm leading-relaxed">
                         If 14 to 30 days pass without bank receipt, instruct an advocate to serve a formal statutory legal demand notice jointly to MakeMyTrip (India) Private Limited at its corporate headquarters (DLF Cyber City, Gurugram) and registered address (Greater Kailash-I, New Delhi), as well as the carrying airline or hotel chain. The notice demands the principal refund, 18% annual penal interest, and compensation for deficiency in service, granting a strict 15-day compliance window.
                       </p>
                       <p className="text-xs text-slate-500 font-medium">
-                        Learn about transparent advocate notice drafting on our <Link href="/legal-notice-charges" className="text-blue-700 underline">legal notice charges</Link> schedule.
+                        Learn about transparent notice preparation on our <Link href="/legal-notice-charges" className="text-blue-700 underline">legal notice charges</Link> schedule.
                       </p>
                     </div>
                   </li>
@@ -809,7 +809,7 @@ export default function MakeMyTripLegalNoticePage() {
                   id="heading-worked-example-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Case Study: Recovers ₹58,400 Booking via Advocate Notice
+                  Case Study: Recovers ₹58,400 Booking via Fact-Verified Notice
                 </h2>
                 <div className="bg-slate-900 text-white rounded-2xl p-5 sm:p-8 shadow-xl space-y-4 sm:space-y-5 w-full overflow-hidden">
                   <div className="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800 pb-3">
@@ -827,11 +827,11 @@ export default function MakeMyTripLegalNoticePage() {
                       <strong>The Deadlock:</strong> For the next 6 weeks, MakeMyTrip customer support claimed that the flight refund of ₹32,000 had not been released by the airline, while the resort booking of ₹26,400 was forfeited under &apos;100% Hotel Cancellation Policy&apos;. Meanwhile, the airline confirmed via email that all flight money was remitted to MakeMyTrip&apos;s agency settlement account 48 hours after cancellation.
                     </p>
                     <p>
-                      <strong>The Statutory Action:</strong> Rohan engaged LegalRecovery.in. A verified advocate drafted and served a joint statutory legal notice to MakeMyTrip (India) Private Limited at its DLF Cyber City, Gurugram headquarters and the carrying airline. The notice cited DGCA CAR Section 3 Series M Part II (Clause 3.3.2), Section 2(47) CPA 2019 for unconscionable hotel forfeiture, and Supreme Court precedent in <em>Pravasi Legal Cell</em>, demanding full electronic refund within 15 days.
+                      <strong>The Statutory Action:</strong> Rohan engaged LegalRecovery.in. The team verified the facts and served a joint statutory legal notice to MakeMyTrip (India) Private Limited at its DLF Cyber City, Gurugram headquarters and the carrying airline. The notice cited DGCA CAR Section 3 Series M Part II (Clause 3.3.2), Section 2(47) CPA 2019 for unconscionable hotel forfeiture, and Supreme Court precedent in <em>Pravasi Legal Cell</em>, demanding full electronic refund within 15 days.
                     </p>
                     <div className="p-3.5 sm:p-4 bg-emerald-950/70 border border-emerald-700/60 rounded-xl text-emerald-200">
                       <strong className="block text-emerald-400 font-bold mb-1">The Outcome:</strong>
-                      On Day 11 following delivery of the advocate notice, MakeMyTrip&apos;s Senior Legal Grievance Manager responded with an ARN bank reference. The complete sum of ₹58,400 (including 100% of the flight fare and hotel tariff) was credited directly back to Rohan&apos;s Axis Bank credit card account, averting formal consumer commission litigation.
+                      On Day 11 following delivery of the fact-verified notice, MakeMyTrip&apos;s Senior Legal Grievance Manager responded with an ARN bank reference. The complete sum of ₹58,400 (including 100% of the flight fare and hotel tariff) was credited directly back to Rohan&apos;s Axis Bank credit card account, averting formal consumer commission litigation.
                     </div>
                   </div>
                 </div>

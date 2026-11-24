@@ -74,7 +74,7 @@ const FAQS = [
   {
     question: "Why do companies settle after a legal notice but ignore months of customer support emails?",
     answer:
-      "Support desks are built to deflect complaints and lack authority to approve refunds. A formal notice signed by an advocate moves the issue to company lawyers. Defending cases in court costs companies ₹25,000 to ₹75,000 in lawyer retainers alone. Settling early is usually their smartest financial choice.",
+      "Support desks are built to deflect complaints and lack authority to approve refunds. A formal notice prepared on verified facts moves the issue to company lawyers. Defending cases in court costs companies ₹25,000 to ₹75,000 in lawyer retainers alone. Settling early is usually their smartest financial choice.",
   },
   {
     question: "Is speed post delivery mandatory for a legal notice to be legally effective in India?",
@@ -371,7 +371,7 @@ export default function LegalNoticeOutcomesStudyPage() {
                 </div>
 
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
-                  To ensure statistical validity and prevent observational bias, this study adheres to standardized empirical legal research protocols. The dataset comprises strictly validated legal notices drafted by advocates enrolled with the Bar Council of India, served through the Ministry of Communications Department of Posts (India Post Speed Post) with consignment tracking, and supplemented by electronic mail dispatches compliant with Section 63 of Bharatiya Sakshya Adhiniyam, 2023.
+                  To ensure statistical validity and prevent observational bias, this study adheres to standardized empirical legal research protocols. The dataset comprises strictly validated legal notices prepared on verified facts enrolled with the Bar Council of India, served through the Ministry of Communications Department of Posts (India Post Speed Post) with consignment tracking, and supplemented by electronic mail dispatches compliant with Section 63 of Bharatiya Sakshya Adhiniyam, 2023.
                 </p>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">

@@ -30,7 +30,7 @@ const SCENARIOS: Scenario[] = [
     statutoryTimeline:
       "30-day statutory settlement window from final bill submission; mandatory penal interest accumulates from Day 31 onwards.",
     recoveryAction:
-      "Issue 15-day joint Advocate Legal Notice to Insurer MD & TPA Grievance Cell demanding principal deduction refund plus RBI Bank Rate + 2% penal interest; escalate to IRDAI Bima Bharosa portal and Commercial Court s.2(1)(c)(xx).",
+      "Issue 15-day joint Fact-Verified Legal Notice to Insurer MD & TPA Grievance Cell demanding principal deduction refund plus RBI Bank Rate + 2% penal interest; escalate to IRDAI Bima Bharosa portal and Commercial Court s.2(1)(c)(xx).",
     recommendedRoute: "/hospital-tpa-insurance-delayed-short-settled-claim-recovery",
   },
   {
@@ -62,7 +62,7 @@ const SCENARIOS: Scenario[] = [
     statutoryTimeline:
       "15-day cure notice under Section 138 NI Act / Section 73 Contract Act; 3-year limitation clock stops upon formal legal demand.",
     recoveryAction:
-      "Dispatch advocate-signed Demand Notice via Email, WhatsApp (BSA s.63 certificate) and Speed Post RPAD; invoke Section 138 criminal proceedings if cheque returned and initiate Order XXXVII summary attachment.",
+      "Dispatch fact-verified Demand Notice via Email, WhatsApp (BSA s.63 certificate) and Speed Post RPAD; invoke Section 138 criminal proceedings if cheque returned and initiate Order XXXVII summary attachment.",
     recommendedRoute: "/hospital-unpaid-patient-bill-recovery-without-detaining-patient",
   },
   {

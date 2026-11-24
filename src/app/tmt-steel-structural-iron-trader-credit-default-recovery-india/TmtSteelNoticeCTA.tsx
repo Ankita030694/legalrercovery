@@ -49,7 +49,7 @@ export default function TmtSteelNoticeCTA({
                 Test 1 Live Overdue Steel Case Now (&rupee;{basePrice})
               </h3>
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-                Advocate-drafted demand notice annexing Dharamkanta slips, GST E-Way Bills, Mill Test Certificates (MTC), and Order XXXVII / NI Act s.138 warnings &mdash; dispatched via Email + WhatsApp + Speed Post RPAD.
+                Fact-verified demand notice annexing Dharamkanta slips, GST E-Way Bills, Mill Test Certificates (MTC), and Order XXXVII / NI Act s.138 warnings &mdash; dispatched via Email + WhatsApp + Speed Post RPAD.
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-3">

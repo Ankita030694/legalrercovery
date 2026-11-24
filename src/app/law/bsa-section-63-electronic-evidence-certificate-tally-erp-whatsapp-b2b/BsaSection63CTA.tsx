@@ -29,7 +29,7 @@ export default function BsaSection63CTA({ className = "" }: BsaSection63CTAProps
               Test 1 Live Overdue Case Now (&rupee;{basePrice})
             </h3>
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-              Advocate-drafted commercial demand notice backed by Tally/SAP ledger verification, E-Way Bill &amp; WhatsApp evidence indexing, and tri-channel dispatch (Email + WhatsApp + Speed Post RPAD) logged for BSA 2023 s.63 admissibility.
+              Fact-verified commercial demand notice backed by Tally/SAP ledger verification, E-Way Bill &amp; WhatsApp evidence indexing, and tri-channel dispatch (Email + WhatsApp + Speed Post RPAD) logged for BSA 2023 s.63 admissibility.
             </p>
           </div>
           <div className="flex flex-col sm:flex-row sm:items-center gap-3">

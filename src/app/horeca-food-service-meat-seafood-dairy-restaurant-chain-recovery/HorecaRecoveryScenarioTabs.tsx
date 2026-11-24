@@ -53,9 +53,9 @@ const SCENARIOS: ScenarioTab[] = [
       "If your food processing, dairy, bakery, or spice/sauce supply unit holds an Udyam Registration Certificate (Micro or Small Enterprise), Sections 15–16 of the MSMED Act, 2006 cap credit at 45 days maximum regardless of any QSR vendor-portal terms. Any balance unpaid past 45 days triggers mandatory 3x RBI Bank Rate monthly compounded interest AND bars the QSR chain from claiming the unpaid invoice as a tax-deductible expense under Section 43B(h) of the Income Tax Act.",
     actionSteps: [
       {
-        step: "Trigger Day-35 Pre-Shutdown Advocate Notice",
+        step: "Trigger Day-35 Pre-Shutdown Fact-Verified Notice",
         detail:
-          "Never wait until Day 120 when an F&B chain runs out of runway. Serve a formal Advocate Legal Notice at Day 35–45 putting the CFO and Procurement Head on statutory notice.",
+          "Never wait until Day 120 when an F&B chain runs out of runway. Serve a formal Fact-Verified Legal Notice at Day 35–45 putting the CFO and Procurement Head on statutory notice.",
       },
       {
         step: "Invoke Income Tax Act Section 43B(h) Disallowance",

@@ -80,7 +80,7 @@ const SCENARIO_TABS: ScenarioTab[] = [
       "Compare sanctioned loan amount versus actual disbursed net proceeds to identify the exact deducted premium.",
       "Send an email to the Bank Nodal Officer and Insurer within 30 days stating the insurance was forced as a pre-condition.",
       "Demand immediate cancellation and reversal of the premium with recalculation of loan amortisation schedule.",
-      "Serve an Advocate Legal Notice if the branch refuses refund claiming 'mandatory bank policy'.",
+      "Serve a Fact-Verified Legal Notice if the branch refuses refund claiming 'mandatory bank policy'.",
     ],
   },
   {
@@ -243,7 +243,7 @@ export default function InsuranceDebitChecklistWizard() {
               </span>
             ) : (
               <span className="font-semibold text-slate-600">
-                Tip: Even if you only have the bank statement debit entry, our advocates can draft the formal statutory notice compelling disclosure of the proposal form.
+                Tip: Even if you only have the bank statement debit entry, our team can draft the formal statutory notice compelling disclosure of the proposal form.
               </span>
             )}
           </p>

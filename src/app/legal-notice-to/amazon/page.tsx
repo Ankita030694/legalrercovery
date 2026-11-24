@@ -131,7 +131,7 @@ const faqData = [
   {
     question: "Amazon ko legal notice kaise bheje aur iska kitna kharcha aata hai?",
     answer:
-      "Amazon ko legal notice bhejne ke liye Amazon Seller Services Private Limited ke Bengaluru registered office aur Delhi grievance desk par advocate-drafted demand notice bheja jata hai. Isme order details, return receipts aur 15-day deadline shamil hoti hai, jise Speed Post aur email dono zariye dispatch kiya jata hai. LegalRecovery platform par advocate drafting, email aur WhatsApp dispatch aur digital tracking ki transparent fee flat ₹999 per party hai. Speed Post optional hai, ₹450 per party.",
+      "Amazon ko legal notice bhejne ke liye Amazon Seller Services Private Limited ke Bengaluru registered office aur Delhi grievance desk par fact-verified demand notice bheja jata hai. Isme order details, return receipts aur 15-day deadline shamil hoti hai, jise Speed Post aur email dono zariye dispatch kiya jata hai. LegalRecovery platform par notice drafting, email aur WhatsApp dispatch aur digital tracking ki transparent fee flat ₹999 per party hai. Speed Post optional hai, ₹450 per party.",
   },
 ];
 
@@ -461,7 +461,7 @@ export default function AmazonLegalNoticePage() {
                   <span className="text-xs text-gray-500 font-medium">Pre-Litigation Advocate Notice</span>
                 </div>
                 <h3 className="text-lg font-bold text-[#111827] mb-2">
-                  Serve a Formal Advocate Legal Notice to Amazon &amp; Seller
+                  Serve a Formal Fact-Verified Legal Notice to Amazon &amp; Seller
                 </h3>
                 <p className="text-sm text-[#4B5563] leading-relaxed mb-3">
                   A formal demand notice issued by an advocate establishes joint and several liability under CPA 2019, outlines documentary evidence, demands full refund with commercial interest, and sets a 15-day compliance deadline. Delivered via Registered Speed Post and Section 63 BSA certified email to Amazon legal counsel.
@@ -716,7 +716,7 @@ export default function AmazonLegalNoticePage() {
               <strong>The Rejection:</strong> On 18 August 2026, ATS courier picked up the return parcel. On 22 August 2026, Amazon sent an automated notification: <em>&quot;Inspection confirms returned item does not match product ordered. Refund denied and case closed.&quot;</em> Customer support refused to review the decision.
             </p>
             <p className="text-sm text-[#4B5563] leading-relaxed mb-4">
-              <strong>Escalation &amp; Resolution:</strong> On 24 August 2026, Priya emailed <code>grievance-officer@amazon.in</code>. When 48 hours passed without acknowledgment, Priya engaged LegalRecovery to serve an advocate demand notice on 1 September 2026. The notice cited Rule 5 of the E-Commerce Rules and Darjeeling Commission case law. On Day 8 following notice delivery, Amazon Executive Relations called Priya, verified courier pickup weight logs, and remitted the full ₹42,999 refund to her bank account with a UTR confirmation, along with ₹2,500 goodwill credit.
+              <strong>Escalation &amp; Resolution:</strong> On 24 August 2026, Priya emailed <code>grievance-officer@amazon.in</code>. When 48 hours passed without acknowledgment, Priya engaged LegalRecovery to serve a fact-verified demand notice on 1 September 2026. The notice cited Rule 5 of the E-Commerce Rules and Darjeeling Commission case law. On Day 8 following notice delivery, Amazon Executive Relations called Priya, verified courier pickup weight logs, and remitted the full ₹42,999 refund to her bank account with a UTR confirmation, along with ₹2,500 goodwill credit.
             </p>
           </div>
         </section>

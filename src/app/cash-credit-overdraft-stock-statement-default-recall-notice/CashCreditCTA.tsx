@@ -24,10 +24,10 @@ export default function CashCreditCTA({ className = "" }: CashCreditCTAProps) {
                 Track 1 &middot; Self-Serve Single CC/OD Account Pilot
               </span>
               <p className="text-lg sm:text-xl font-bold text-white mb-2">
-                Test 1 Live Overdue Case Now (&#8377;{basePrice} &middot; Advocate Drafted &middot; Email + WhatsApp + Speed Post RPAD)
+                Test 1 Live Overdue Case Now (&#8377;{basePrice} &middot; Fact-Verified &middot; Email + WhatsApp + Speed Post RPAD)
               </p>
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-                Issue an Advocate-vetted Cash Credit / Overdraft DP-Shortfall Cure or Loan Recall-cum-Guarantee Invocation Notice on a live SME borrower. Includes simultaneous multi-channel dispatch and BSA 2023 s.63 delivery certificates.
+                Issue a Fact-verified Cash Credit / Overdraft DP-Shortfall Cure or Loan Recall-cum-Guarantee Invocation Notice on a live SME borrower. Includes simultaneous multi-channel dispatch and BSA 2023 s.63 delivery certificates.
               </p>
             </div>
 

@@ -213,7 +213,7 @@ export default function TmtSteelRecoveryPage() {
         "@type": "HowToStep",
         position: 2,
         name: "Serve Statutory Demand Notice & s.43B(h) Audit Alert",
-        text: "Issue an advocate-drafted notice demanding principal, 3x RBI MSMED interest (or contractual 18–24% interest), and rejecting any post-delivery weight or rust claims under Sale of Goods Act s.42.",
+        text: "Issue a fact-verified notice demanding principal, 3x RBI MSMED interest (or contractual 18–24% interest), and rejecting any post-delivery weight or rust claims under Sale of Goods Act s.42.",
       },
       {
         "@type": "HowToStep",

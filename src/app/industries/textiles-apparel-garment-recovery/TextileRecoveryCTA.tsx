@@ -55,15 +55,15 @@ export default function TextileRecoveryCTA() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
               <div className="space-y-1">
                 <span className="text-[10px] font-bold text-red-400 uppercase tracking-wider block">
-                  Step 1: Upload Invoice & Bilty
+                  Step 1: Enter Invoice & Bilty Details
                 </span>
                 <p className="text-xs text-slate-300">
-                  Upload GST invoice, lorry receipt (LR), and broker brokerage slip. Auto-parses debtor GSTIN and terms.
+                  Enter your GST invoice, lorry receipt (LR), and broker brokerage slip details, plus the debtor GSTIN and terms.
                 </p>
               </div>
               <div className="space-y-1">
                 <span className="text-[10px] font-bold text-red-400 uppercase tracking-wider block">
-                  Step 2: Advocate Drafting
+                  Step 2: Notice Drafting
                 </span>
                 <p className="text-xs text-slate-300">
                   Custom legal notice under MSMED Act s.15-18, s.43B(h), and Contract Act s.230 broker joint liability.
@@ -114,7 +114,7 @@ export default function TextileRecoveryCTA() {
                   Batch Notice Generation
                 </span>
                 <p className="text-xs text-slate-300">
-                  Advocate-reviewed batch drafting across 100+ defaulting parties and commission agents simultaneously.
+                  Fact-verified batch drafting across 100+ defaulting parties and commission agents simultaneously.
                 </p>
               </div>
               <div className="space-y-1">

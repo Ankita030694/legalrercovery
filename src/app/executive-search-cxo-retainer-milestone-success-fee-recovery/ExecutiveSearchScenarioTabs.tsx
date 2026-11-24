@@ -62,7 +62,7 @@ const SEARCH_DEFAULT_SCENARIOS: ScenarioTab[] = [
       {
         phase: "Step 2: Issue Section 74 / Order XXXVII Legal Notice",
         description:
-          "Serve an advocate-vetted demand notice establishing that the Kill Fee constitutes liquidated compensation under Section 74, contractually agreed between two sophisticated commercial entities with equal bargaining power.",
+          "Serve a fact-verified demand notice establishing that the Kill Fee constitutes liquidated compensation under Section 74, contractually agreed between two sophisticated commercial entities with equal bargaining power.",
       },
       {
         phase: "Step 3: Section 12A Pre-Institution Commercial Mediation",

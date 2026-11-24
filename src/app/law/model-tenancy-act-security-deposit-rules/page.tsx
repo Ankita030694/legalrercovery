@@ -175,7 +175,7 @@ const FAQS = [
   {
     question: "Makan malik ya PG owner vacating ke baad security deposit wapas na kare toh legal notice kaise bheje?",
     answer:
-      "Agar flat ya PG khali karne aur chabi (keys) dene ke baad bhi makan malik (landlord) aapka security deposit rok le ya painting ke naam par 1 mahine ka kiraya kaat le, toh aap ek formal Advocate Legal Notice bhej sakte hain. LegalRecovery.in par verified advocate aapke state ke kanoon (jaise UP Tenancy Act Section 11 ya Transfer of Property Act Section 108 aur Contract Act Section 74) ke tehat Registered Speed Post, email aur WhatsApp par 15 din ka statutory demand notice bhejte hain, jisse 18% byaj (interest) ke saath bina lambi court tareekh ke paisa wapas milne ka rasta khulta hai.",
+      "Agar flat ya PG khali karne aur chabi (keys) dene ke baad bhi makan malik (landlord) aapka security deposit rok le ya painting ke naam par 1 mahine ka kiraya kaat le, toh aap ek formal Fact-Verified Legal Notice bhej sakte hain. LegalRecovery.in par hamari team aapke state ke kanoon (jaise UP Tenancy Act Section 11 ya Transfer of Property Act Section 108 aur Contract Act Section 74) ke tehat Registered Speed Post, email aur WhatsApp par 15 din ka fact-verified statutory demand notice bhejti hai, jisse 18% byaj (interest) ke saath bina lambi court tareekh ke paisa wapas milne ka rasta khulta hai.",
   },
 ];
 
@@ -1243,13 +1243,13 @@ export default function ModelTenancyActDepositRulesPage() {
                     </span>
                     <div className="space-y-1 sm:space-y-1.5">
                       <h3 className="text-sm sm:text-base md:text-lg font-bold text-slate-900">
-                        Serve a 15-Day Statutory Advocate Legal Demand Notice
+                        Serve a 15-Day Statutory Fact-Verified Legal Demand Notice
                       </h3>
                       <p className="text-xs sm:text-sm leading-relaxed">
-                        When a landlord stops answering calls or refuses to release the deposit after 7 days, have an advocate serve a formal 15-day statutory demand notice via Registered Speed Post (RPAD) and electronic mail/WhatsApp under Section 63 BSA, 2023. In UP, Tamil Nadu, Assam, and AP, the notice invokes <strong>Section 11(2) and Section 15 of the state Tenancy Act</strong>; in Bengaluru, Mumbai, Pune, Delhi, and Gurugram, it invokes <strong>Section 108 TPA, Section 73/74 Contract Act, and 18% p.a. penal interest</strong> under <em>Uberoisons</em> and <em>H.S. Bedi</em>.
+                        When a landlord stops answering calls or refuses to release the deposit after 7 days, serve a formal 15-day statutory demand notice via Registered Speed Post (RPAD) and electronic mail/WhatsApp under Section 63 BSA, 2023. In UP, Tamil Nadu, Assam, and AP, the notice invokes <strong>Section 11(2) and Section 15 of the state Tenancy Act</strong>; in Bengaluru, Mumbai, Pune, Delhi, and Gurugram, it invokes <strong>Section 108 TPA, Section 73/74 Contract Act, and 18% p.a. penal interest</strong> under <em>Uberoisons</em> and <em>H.S. Bedi</em>.
                       </p>
                       <p className="text-xs text-slate-500 font-medium">
-                        Compare our flat-fee advocate drafting options on our <Link href="/legal-notice-charges" className="text-blue-700 underline font-semibold">transparent legal notice charges page</Link> or read our dedicated guide on <Link href="/legal-notice-to-landlord-for-security-deposit-refund-india" className="text-blue-700 underline font-semibold">sending a legal notice to a landlord for security deposit refund</Link>.
+                        Compare our flat-fee notice drafting options on our <Link href="/legal-notice-charges" className="text-blue-700 underline font-semibold">transparent legal notice charges page</Link> or read our dedicated guide on <Link href="/legal-notice-to-landlord-for-security-deposit-refund-india" className="text-blue-700 underline font-semibold">sending a legal notice to a landlord for security deposit refund</Link>.
                       </p>
                     </div>
                   </li>
@@ -1311,7 +1311,7 @@ export default function ModelTenancyActDepositRulesPage() {
                       <strong>The Landlord&apos;s Unlawful Deduction:</strong> After completing his 11-month term and serving a 30-day written move-out notice, Siddharth cleared his final NPCL electricity bill and society maintenance, recorded a timestamped walkthrough video, and handed over the keys on 30 September. However, 25 days after taking back the flat, the landlord transferred only ₹18,000 and refused to pay the remaining <strong>₹46,000</strong>, claiming: <em>&quot;₹32,000 (1 month&apos;s rent) deducted for full flat repainting and ₹14,000 deducted for bathroom tap leakage and deep cleaning.&quot;</em>
                     </p>
                     <p>
-                      <strong>The Statutory Action:</strong> Siddharth engaged LegalRecovery.in. Our advocate drafted and served a formal 15-day statutory demand notice on the landlord via Registered Speed Post and WhatsApp/email, citing:
+                      <strong>The Statutory Action:</strong> Siddharth engaged LegalRecovery.in. Our team verified the facts and served a formal 15-day statutory demand notice on the landlord via Registered Speed Post and WhatsApp/email, citing:
                     </p>
                     <ul className="list-disc list-inside space-y-1 text-slate-200 pl-2">
                       <li><strong>Section 11(2) of UP Act No. 28 of 2021 (Model Tenancy Act):</strong> Mandating refund of the ₹64,000 deposit on the exact date of taking over vacant possession (30 September);</li>
@@ -1320,7 +1320,7 @@ export default function ModelTenancyActDepositRulesPage() {
                     </ul>
                     <div className="p-3.5 sm:p-4 bg-emerald-950/70 border border-emerald-700/60 rounded-xl text-emerald-200">
                       <strong className="block text-emerald-400 font-bold mb-1">The Outcome:</strong>
-                      On Day 11 after receiving the advocate notice by Speed Post, the landlord—realising that the Noida Rent Authority (Additional District Collector) strictly enforces the Second Schedule and that the flat had already been let out to a new tenant without any ₹46,000 renovation—transferred the remaining <strong>₹44,500</strong> (after a mutually agreed ₹1,500 actual tap replacement bill) directly to Siddharth&apos;s bank account via NEFT.
+                      On Day 11 after receiving the fact-verified notice by Speed Post, the landlord—realising that the Noida Rent Authority (Additional District Collector) strictly enforces the Second Schedule and that the flat had already been let out to a new tenant without any ₹46,000 renovation—transferred the remaining <strong>₹44,500</strong> (after a mutually agreed ₹1,500 actual tap replacement bill) directly to Siddharth&apos;s bank account via NEFT.
                     </div>
                   </div>
                 </div>
@@ -1393,7 +1393,7 @@ export default function ModelTenancyActDepositRulesPage() {
                   <strong className="text-slate-900 font-bold block mb-1">
                     Honest Scope — What LegalRecovery Can and Cannot Do for Your Rental Deposit Dispute:
                   </strong>
-                  We audit your rental agreement and deduction claims against your state&apos;s exact tenancy law, draft and dispatch an Advocate Statutory Demand Notice to your landlord, PG owner, or property management platform via Registered Speed Post and electronic delivery, and prepare your claim for the District Rent Authority, Order XXXVII Summary Suit, or e-Jagriti. However, we cannot force a landlord in a non-adopted state (such as Karnataka or Maharashtra) to accept a 2-month upfront deposit before you sign a lease, nor can we recover cash deposits paid without any receipt, witness, or WhatsApp admission by the landlord.
+                  We verify the facts you submit about your rental agreement and deductions against your state&apos;s exact tenancy law, prepare and dispatch a Statutory Demand Notice to your landlord, PG owner, or property management platform via Registered Speed Post and electronic delivery, and prepare your claim for the District Rent Authority, Order XXXVII Summary Suit, or e-Jagriti. However, we cannot force a landlord in a non-adopted state (such as Karnataka or Maharashtra) to accept a 2-month upfront deposit before you sign a lease, nor can we recover cash deposits paid without any receipt, witness, or WhatsApp admission by the landlord.
                 </div>
               </section>
 

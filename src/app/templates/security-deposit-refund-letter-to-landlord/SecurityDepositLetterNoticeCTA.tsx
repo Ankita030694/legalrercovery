@@ -11,7 +11,7 @@ interface SecurityDepositLetterNoticeCTAProps {
 }
 
 export default function SecurityDepositLetterNoticeCTA({
-  buttonText = "Serve Advocate Legal Notice to Landlord",
+  buttonText = "Serve Fact-Verified Legal Notice to Landlord",
   className = "",
   variant = "primary",
 }: SecurityDepositLetterNoticeCTAProps) {
@@ -31,7 +31,7 @@ export default function SecurityDepositLetterNoticeCTA({
                 Landlord Ignored Your Refund Letter or Cut 1 Month&apos;s Rent for Painting?
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6">
-                When a self-sent refund request letter goes unanswered past your 7-day deadline, escalate immediately. Have a verified advocate draft and dispatch a formal 15-day statutory legal notice to your landlord, PG owner, or co-living operator by email and WhatsApp under Section 63 BSA—demanding 100% principal refund plus 18% annual interest. Speed Post is optional at ₹450 per party.
+                When a self-sent refund request letter goes unanswered past your 7-day deadline, escalate immediately. Dispatch a formal 15-day statutory legal notice to your landlord, PG owner, or co-living operator by email and WhatsApp under Section 63 BSA—demanding 100% principal refund plus 18% annual interest. Speed Post is optional at ₹450 per party.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button
@@ -42,7 +42,7 @@ export default function SecurityDepositLetterNoticeCTA({
                   {buttonText} — ₹{basePrice}
                 </button>
                 <div className="text-xs text-slate-300 flex flex-wrap sm:flex-nowrap items-center gap-2 sm:gap-3">
-                  <span>✓ 24h Advocate Drafting</span>
+                  <span>✓ 24h Notice Drafting</span>
                   <span>•</span>
                   <span>✓ Email + WhatsApp</span>
                   <span>•</span>

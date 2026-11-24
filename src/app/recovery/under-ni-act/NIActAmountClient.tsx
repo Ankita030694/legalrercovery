@@ -158,7 +158,7 @@ const reviewSchema = {
         "@type": "Person",
         "name": "Neha Goel"
       },
-      "reviewBody": "A client gave me a post-dated cheque for ₹4 Lakhs that bounced. LegalRecovery's advocate drafted and sent the statutory notice within 10 days of the bounce. The client paid immediately with interest. Highly recommend."
+      "reviewBody": "A client gave me a post-dated cheque for ₹4 Lakhs that bounced. LegalRecovery's team verified the facts and sent the statutory notice within 10 days of the bounce. The client paid immediately with interest. Highly recommend."
     },
     {
       "@type": "Review",
@@ -225,7 +225,7 @@ export default function NIActAmountClient() {
   const tocSections = [
     { id: "statutory-elements-negotiable-instruments", title: "Legal Foundations" },
     { id: "timelines-provisions-section-138", title: "NI Act Timelines" },
-    { id: "advocate-drafted-demand-notice-ni", title: "Notice Strategy" },
+    { id: "fact-verified-demand-notice-ni", title: "Notice Strategy" },
     { id: "magistrate-complaint-process", title: "Magistrate Filings" },
     { id: "fast-track-civil-summary-suits", title: "Summary Suits & CPC" },
     { id: "section-143a-interim-relief-penalties", title: "Interim Pay & Penalties" },
@@ -331,7 +331,7 @@ export default function NIActAmountClient() {
                       The statutory framework of Section 138 is designed to protect lenders and creditors. The law applies if a cheque is drawn by a person on an account maintained by them with a banker for payment of any amount of money to another person for the discharge, in whole or in part, of any <strong>legally enforceable debt or other liability</strong>. If the cheque is returned by the bank unpaid because the amount of money standing to the credit of that account is insufficient to honor the cheque or it exceeds the amount arranged to be paid, the drawer is deemed to have committed a criminal offense.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      At LegalRecovery, our legal panel specializes in guiding clients through the complex procedural steps of cheque bounce recoveries. We ensure that your evidence, starting with the Cheque Return Memo, is correctly compiled and that all legal notices are served within the strict timelines mandated by law, maximizing your chances of recovery.
+                      At LegalRecovery, our team specializes in guiding clients through the complex procedural steps of cheque bounce recoveries. We ensure that your evidence, starting with the Cheque Return Memo, is correctly compiled and that all legal notices are served within the strict timelines mandated by law, maximizing your chances of recovery.
                     </p>
                     <div className="bg-red-50 p-6 rounded-2xl border-l-4 border-[#DC2626] italic text-xs sm:text-sm text-red-900 font-semibold leading-relaxed">
                       &quot;The NI Act provides an effective statutory shield to lenders. Correct application of Section 138, combined with proper notice dispatch timelines, is the key to recovering outstanding dues.&quot;
@@ -384,13 +384,13 @@ export default function NIActAmountClient() {
                 </section>
 
                 {/* Section 3: The Strategy of a Statutory Legal Notice under the NI Act */}
-                <section id="advocate-drafted-demand-notice-ni" className="scroll-mt-32">
+                <section id="fact-verified-demand-notice-ni" className="scroll-mt-32">
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">
                     The Strategy of a Statutory Legal Notice under the NI Act
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      A statutory legal notice under Section 138 is a formal, advocate-signed document that serves as the mandatory prelude to criminal litigation. The notice must be drafted carefully to include all essential legal details, as any technical flaw can cause the court to reject your subsequent complaint.
+                      A statutory legal notice under Section 138 is a formal, fact-verified document that serves as the mandatory prelude to criminal litigation. The notice must be drafted carefully to include all essential legal details, as any technical flaw can cause the court to reject your subsequent complaint.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
                       The legal notice must specify:
@@ -529,7 +529,7 @@ export default function NIActAmountClient() {
                       LegalRecovery is India&apos;s leading tech-enabled legal assistance platform. We combine the expertise of veteran recovery advocates with advanced tracking systems to provide a stress-free, transparent, and highly effective recovery experience.
                     </p>
                     <ul className="list-disc pl-6 space-y-3 text-sm text-slate-650">
-                      <li><strong>Custom Legal Notice:</strong> We do not send generic letters. Our legal panel carefully reviews your UPI transactions, bank records, and chat logs to draft a notice that cites precise legal provisions tailored to your case.</li>
+                      <li><strong>Custom Legal Notice:</strong> We do not send generic letters. Our team carefully reviews your UPI transactions, bank records, and chat logs to draft a notice that cites precise legal provisions tailored to your case.</li>
                       <li><strong>Digital Evidence Certification:</strong> We handle the complex drafting of electronic certificates (under BSA Section 63) to ensure your WhatsApp messages and emails are ready for court.</li>
                       <li><strong>Director & Personal Trackers:</strong> If you lent to a business or if the borrower has a corporate standing, we dispatch notices digitally via email and WhatsApp to their homes and registered offices, maximizing reach and pressure.</li>
                       <li><strong>End-to-End Legal Support:</strong> From sending the first legal notice to representing you in Summary Suits, cheque bounce cases, and filing criminal complaints, our panel of labor and civil advocates handles it all.</li>

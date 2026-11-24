@@ -35,7 +35,7 @@ const SCENARIOS: ScenarioItem[] = [
       {
         step: "1. Pilot a Single Overdue Case (₹999)",
         detail:
-          "Test Advocate drafting, tri-channel dispatch, and borrower settlement response on 1 live overdue account without procurement committee delays.",
+          "Test Notice drafting, tri-channel dispatch, and borrower settlement response on 1 live overdue account without procurement committee delays.",
       },
       {
         step: "2. Upload 10 to 10,000+ Accounts via CSV",
@@ -61,7 +61,7 @@ const SCENARIOS: ScenarioItem[] = [
     saasGap:
       "Generic collection SaaS tools trigger automated SMS/WhatsApp reminders that lack advocate authority, fail to satisfy the strict Section 25 statutory demand format, and omit BSA 2023 Section 63 electronic hash certificates.",
     bundledAdvantage:
-      "LegalRecovery.in auto-generates Advocate-signed Section 25 demand notices within the 30-day window, dispatches them across Email, verified WATI WhatsApp, and Speed Post RPAD, and archives BSA 2023 s.63 server-hash certificates.",
+      "LegalRecovery.in auto-generates Fact-verified Section 25 demand notices within the 30-day window, dispatches them across Email, verified WATI WhatsApp, and Speed Post RPAD, and archives BSA 2023 s.63 server-hash certificates.",
     steps: [
       {
         step: "1. NPCI Dishonour Memo Ingestion",
@@ -92,7 +92,7 @@ const SCENARIOS: ScenarioItem[] = [
     saasGap:
       "Pure software platforms dump inbound replies into generic ticketing queues or leave the NBFC's internal 2-person legal team overwhelmed, forcing expensive ad-hoc external counsel billing.",
     bundledAdvantage:
-      "LegalRecovery.in includes structured Reply Triage backed by AMA Legal Solutions: replies are categorized into Full Settlement, EMI Restructuring, Genuine Billing Dispute, or Frivolous Delay, with advocate-vetted responses and ODR routing.",
+      "LegalRecovery.in includes structured Reply Triage backed by AMA Legal Solutions: replies are categorized into Full Settlement, EMI Restructuring, Genuine Billing Dispute, or Frivolous Delay, with fact-verified responses and ODR routing.",
     steps: [
       {
         step: "1. Automated Inbound Capture",

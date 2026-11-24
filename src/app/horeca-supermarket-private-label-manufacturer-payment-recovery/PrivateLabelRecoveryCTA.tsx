@@ -56,7 +56,7 @@ export default function PrivateLabelRecoveryCTA({
                     Test 1 Live Overdue Case Now (₹{basePrice})
                   </p>
                   <p className="text-xs text-slate-300 leading-relaxed mb-4">
-                    Advocate-drafted 15-Day Statutory Demand Notice under Sale of Goods Act Section 55 (Action for Full Price of Custom Goods) and MSMED Act Section 15. Served via Speed Post RPAD, WhatsApp &amp; Email with cryptographic BSA 2023 Section 63 Certificate of Analysis &amp; Purchase Order proofs.
+                    Fact-verified 15-Day Statutory Demand Notice under Sale of Goods Act Section 55 (Action for Full Price of Custom Goods) and MSMED Act Section 15. Served via Speed Post RPAD, WhatsApp &amp; Email with cryptographic BSA 2023 Section 63 Certificate of Analysis &amp; Purchase Order proofs.
                   </p>
                 </div>
 

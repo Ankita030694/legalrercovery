@@ -26,10 +26,10 @@ export default function WoodenPalletRecoveryCTA({
                 Track 1 &middot; Single Exporter / Factory Ledger
               </span>
               <h3 className="text-lg sm:text-xl font-bold text-white mb-2">
-                Test 1 Live Overdue Case Now (&#8377;{basePrice} &middot; Advocate Drafted &middot; Email + WhatsApp + Speed Post RPAD)
+                Test 1 Live Overdue Case Now (&#8377;{basePrice} &middot; Fact-Verified &middot; Email + WhatsApp + Speed Post RPAD)
               </h3>
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-                Upload your GST invoices, E-Way bills, DPPQS ISPM-15 heat-treatment certificates, signed factory gate-in challans, or container lashing photos. Our advocates dispatch a Sale of Goods Act s.42/55 + MSMED s.15&ndash;18 &amp; Section 43B(h) statutory demand notice within 24 hours.
+                Enter your GST invoice, E-Way bill, DPPQS ISPM-15 heat-treatment certificate, factory gate-in challan, or container lashing details in our online form. Our team verifies the facts and dispatches a Sale of Goods Act s.42/55 + MSMED s.15&ndash;18 &amp; Section 43B(h) statutory demand notice within 24 hours.
               </p>
             </div>
 

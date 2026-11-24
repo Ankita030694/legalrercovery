@@ -120,7 +120,7 @@ const DEFENSES: DefenseTab[] = [
       {
         step: "Lock Admission via Advocate Demand Notice",
         description:
-          "Dispatch an advocate legal notice itemizing the running ledger; if the dealer fails to specifically deny receipt of goods within 15 days, it strengthens an Order 37 Summary Suit.",
+          "Dispatch a fact-verified legal notice itemizing the running ledger; if the dealer fails to specifically deny receipt of goods within 15 days, it strengthens an Order 37 Summary Suit.",
       },
     ],
     statutoryRule: "Order XXXVII Rule 1(2) CPC & Bharat Forge v. Onil Gulati (Del HC)",

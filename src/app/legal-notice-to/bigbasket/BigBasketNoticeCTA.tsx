@@ -31,7 +31,7 @@ export default function BigBasketNoticeCTA({
                 Recover Your Missing BigBasket Refund or Denied Perishable Claim
               </h3>
               <p className="text-slate-300 text-sm sm:text-base leading-relaxed mb-6">
-                Have an advocate draft and serve a formal 15-day statutory demand notice directly to Innovative Retail
+                Serve a formal 15-day statutory demand notice directly to Innovative Retail
                 Concepts Private Limited and Supermarket Grocery Supplies Private Limited. Served by email and WhatsApp
                 under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023. Speed Post is optional at ₹450 per party.
               </p>

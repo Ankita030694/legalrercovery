@@ -492,7 +492,7 @@ Counsel for ${form.exporterName}`;
           <div className="bg-slate-900 text-white px-4 sm:px-5 py-3.5 flex flex-wrap items-center justify-between gap-3">
             <div>
               <span className="text-[10px] font-bold uppercase tracking-wider text-red-400 block">
-                Live Advocate-Vetted Draft
+                Live Draft
               </span>
               <p className="text-xs sm:text-sm font-bold">
                 {form.noticeRef} · {formattedPrincipal}

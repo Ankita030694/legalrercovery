@@ -112,7 +112,7 @@ const FAQS = [
   },
   {
     q: "How can a CBSE/ICSE school trust recover arrears from 50 to 500 defaulting parents without overwhelming its accounts office?",
-    a: "School Trusts and K-12 chains can upload a single CSV batch of aged parent arrears (student ID, parent names, residential/office addresses, admission undertaking dates, and net arrears) to LegalRecovery.in's Representees Desk. Each parent receives an individualized, confidential Advocate Civil Notice via Speed Post RPAD, email, and WhatsApp—keeping the Principal and school staff completely insulated from confrontation.",
+    a: "School Trusts and K-12 chains can upload a single CSV batch of aged parent arrears (student ID, parent names, residential/office addresses, admission undertaking dates, and net arrears) to LegalRecovery.in's Representees Desk. Each parent receives an individualized, confidential Fact-Verified Civil Notice via Speed Post RPAD, email, and WhatsApp—keeping the Principal and school staff completely insulated from confrontation.",
   },
 ];
 
@@ -163,7 +163,7 @@ const HOWTO_SCHEMA = {
     {
       "@type": "HowToStep",
       position: 3,
-      name: "Serve Confidential Advocate Civil Notice Solely to Parents",
+      name: "Serve Confidential Fact-Verified Civil Notice Solely to Parents",
       text: "Dispatch a sealed 15-day statutory demand notice exclusively to the parents' residential and office addresses via Speed Post RPAD, Email, and WhatsApp.",
     },
     {
@@ -528,7 +528,7 @@ export default function PrivateSchoolFeeRecoveryPage() {
                 {[
                   { step: "Stage 1 (Day 0)", title: "Release TC & Delink Child", desc: "Issue TC unconditionally under RTE s.5(3); obtain signed parent receipt." },
                   { step: "Stage 2 (Day 1–3)", title: "Audit Admission Undertaking & BSA s.63 Ledger", desc: "Compile signed Admission Form, ERP fee ledger, and parent office/home KYC." },
-                  { step: "Stage 3 (Day 4–19)", title: "Serve Confidential Parent-Only Advocate Notice", desc: "Sealed Speed Post RPAD + Email + WhatsApp to parents only (60–75% settle here)." },
+                  { step: "Stage 3 (Day 4–19)", title: "Serve Confidential Parent-Only Fact-Verified Notice", desc: "Sealed Speed Post RPAD + Email + WhatsApp to parents only (60–75% settle here)." },
                   { step: "Stage 4 (If Bounced)", title: "Trigger NI Act s.138 or PSS Act s.25", desc: "Serve mandatory 15-day statutory demand for bounced fee cheques or NACH mandates." },
                   { step: "Stage 5 (Day 20+)", title: "File Order XXXVII CPC Summary Suit", desc: "Seek fast-track civil decree on the written admission contract and attach salary/bank accounts." },
                 ].map((item) => (
@@ -610,7 +610,7 @@ export default function PrivateSchoolFeeRecoveryPage() {
               </div>
 
               <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-4 text-xs sm:text-sm text-emerald-900">
-                <strong>Portfolio Impact for a 100-Defaulter School:</strong> Writing off 100 such accounts costs a school Trust <strong>₹3.96 Crore</strong> in working capital. Deploying a bulk parent-only Advocate Notice batch across those 100 accounts at institutional rates recovers ₹2.37 Cr–₹2.97 Cr (60–75%) at pre-litigation stage before a single court fee is paid. You can also model statutory interest on B2B vendor/school contracts using our{" "}
+                <strong>Portfolio Impact for a 100-Defaulter School:</strong> Writing off 100 such accounts costs a school Trust <strong>₹3.96 Crore</strong> in working capital. Deploying a bulk parent-only Fact-Verified Notice batch across those 100 accounts at institutional rates recovers ₹2.37 Cr–₹2.97 Cr (60–75%) at pre-litigation stage before a single court fee is paid. You can also model statutory interest on B2B vendor/school contracts using our{" "}
                 <Link
                   href="/tools/msme-delayed-payment-interest-calculator"
                   className="text-[#DC2626] font-bold underline"
@@ -790,7 +790,7 @@ export default function PrivateSchoolFeeRecoveryPage() {
                   {
                     title: "Statutory Legal Notice & Reply Template Workspace",
                     href: "/templates/legal-notice-reply-format",
-                    desc: "Review advocate-vetted notice formats and formal reply structures for commercial claims.",
+                    desc: "Review ready-to-use notice formats and formal reply structures for commercial claims.",
                   },
                 ].map((link) => (
                   <Link

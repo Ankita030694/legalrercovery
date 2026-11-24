@@ -163,7 +163,7 @@ const FAQS = [
   {
     question: "Cleartrip se flight ya hotel cancel hone par refund na mile toh advocate legal notice kaise bheje?",
     answer:
-      "Agar Cleartrip cancellation ke baad aapka refund 7 se 14 din ke andar bank account mein credit na kare ya airline par ilzaam daalkar refund roke, toh aap LegalRecovery.in ke through advocate legal notice bhej sakte hain. Hamare verified advocates Cleartrip Private Limited ke Bengaluru registered office aur airline ke nodal legal address par Registered Speed Post aur email se statutory demand notice dispatch karte hain, jismein 15 din ka strict compliance ultimatum diya jata hai.",
+      "Agar Cleartrip cancellation ke baad aapka refund 7 se 14 din ke andar bank account mein credit na kare ya airline par ilzaam daalkar refund roke, toh aap LegalRecovery.in ke through fact-verified legal notice bhej sakte hain. Hamari team Cleartrip Private Limited ke Bengaluru registered office aur airline ke nodal legal address par Registered Speed Post aur email se statutory demand notice dispatch karti hai, jismein 15 din ka strict compliance ultimatum diya jata hai.",
   },
 ];
 
@@ -858,11 +858,11 @@ export default function CleartripLegalNoticePage() {
                       <strong>The Impasse:</strong> Over the next 45 days, Cleartrip&apos;s support bot deflected inquiries, stating: <em>&quot;The airline has acknowledged the cancellation, but payment clearance is pending with their treasury.&quot;</em> Meanwhile, the airline confirmed via email that the gross refund had been credited to Cleartrip&apos;s corporate settlement account. Cleartrip then credited ₹12,000 as Clearcash wallet funds and withheld the rest.
                     </p>
                     <p>
-                      <strong>The Legal Action:</strong> Rohan instructed LegalRecovery.in. A verified advocate drafted and served a statutory legal notice to Cleartrip Private Limited at its Embassy Tech Village registered office and copied the airline&apos;s legal nodal cell. The notice cited DGCA CAR Section 3, Series M, Part II, Clause 3.3.2, the Supreme Court&apos;s <em>Pravasi Legal Cell</em> mandate, and Rule 5 of the E-Commerce Rules, demanding ₹42,600 full bank reversal plus 18% interest within 15 days.
+                      <strong>The Legal Action:</strong> Rohan instructed LegalRecovery.in. The team verified the facts and served a statutory legal notice to Cleartrip Private Limited at its Embassy Tech Village registered office and copied the airline&apos;s legal nodal cell. The notice cited DGCA CAR Section 3, Series M, Part II, Clause 3.3.2, the Supreme Court&apos;s <em>Pravasi Legal Cell</em> mandate, and Rule 5 of the E-Commerce Rules, demanding ₹42,600 full bank reversal plus 18% interest within 15 days.
                     </p>
                     <div className="p-3.5 sm:p-4 bg-emerald-950/70 border border-emerald-700/60 rounded-xl text-emerald-200">
                       <strong className="block text-emerald-400 font-bold mb-1">The Resolution:</strong>
-                      On Day 11 following delivery of the advocate legal demand notice by Speed Post, Cleartrip&apos;s escalation desk contacted Rohan. The ₹12,000 Clearcash credits were revoked and the complete sum of ₹42,600 was transferred directly to his ICICI credit card account with a valid 12-digit ARN tracking number.
+                      On Day 11 following delivery of the fact-verified legal demand notice by Speed Post, Cleartrip&apos;s escalation desk contacted Rohan. The ₹12,000 Clearcash credits were revoked and the complete sum of ₹42,600 was transferred directly to his ICICI credit card account with a valid 12-digit ARN tracking number.
                     </div>
                   </div>
                 </div>

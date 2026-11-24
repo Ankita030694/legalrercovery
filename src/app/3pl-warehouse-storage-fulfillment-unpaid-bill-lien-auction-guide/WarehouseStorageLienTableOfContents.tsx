@@ -170,7 +170,7 @@ export default function WarehouseStorageLienTableOfContents({
             <div className="rounded-xl bg-slate-900 text-white p-3 text-[11px] space-y-1.5">
               <p className="font-bold text-amber-300">Need Immediate Advice?</p>
               <p className="text-slate-300 text-[10px] leading-relaxed">
-                Issue advocate-vetted 15-day bailee lien auction notice within 24 hours.
+                Issue fact-verified 15-day bailee lien auction notice within 24 hours.
               </p>
               <a
                 href="#dual-track-cta"

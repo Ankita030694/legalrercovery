@@ -25,7 +25,7 @@ export default function MsmeOdrNoticeCTA({ variant = "primary" }: MsmeOdrNoticeC
               Buyer Delaying Invoice Past 45 Days or Threatening Quality Deductions?
             </h3>
             <p className="text-xs sm:text-sm text-slate-300">
-              Serve an advocate-drafted statutory MSME demand notice invoking 3× RBI monthly compound interest and Section 43B(h) Income Tax disallowance before or alongside your MSME ODR filing.
+              Serve a fact-verified statutory MSME demand notice invoking 3× RBI monthly compound interest and Section 43B(h) Income Tax disallowance before or alongside your MSME ODR filing.
             </p>
           </div>
           <button
@@ -51,7 +51,7 @@ export default function MsmeOdrNoticeCTA({ variant = "primary" }: MsmeOdrNoticeC
         <div className="relative z-10 space-y-4 sm:space-y-5">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-500/20 border border-red-500/30 text-red-300 text-xs font-bold uppercase tracking-wider">
             <span className="w-2 h-2 rounded-full bg-red-400 animate-pulse" />
-            Advocate-Drafted MSME Statutory Recovery Notice
+            Fact-Verified MSME Statutory Recovery Notice
           </div>
 
           <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold tracking-tight leading-snug text-white">
@@ -59,7 +59,7 @@ export default function MsmeOdrNoticeCTA({ variant = "primary" }: MsmeOdrNoticeC
           </h3>
 
           <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed max-w-2xl">
-            Before a dispute drags through multi-stage ODR arbitration, a formal advocate legal notice addressed to the buyer&apos;s Managing Director, CFO, and Statutory Auditor computing <strong>3× RBI bank rate monthly compound interest (Section 16)</strong> and warning of <strong>100% tax expense disallowance under Section 43B(h) of the Income-tax Act</strong> settles a high share of MSME invoices within 15 days.
+            Before a dispute drags through multi-stage ODR arbitration, a formal fact-verified legal notice addressed to the buyer&apos;s Managing Director, CFO, and Statutory Auditor computing <strong>3× RBI bank rate monthly compound interest (Section 16)</strong> and warning of <strong>100% tax expense disallowance under Section 43B(h) of the Income-tax Act</strong> settles a high share of MSME invoices within 15 days.
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-2.5 sm:gap-3 pt-1 text-xs text-slate-300">

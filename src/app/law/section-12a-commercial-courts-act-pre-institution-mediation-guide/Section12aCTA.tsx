@@ -29,7 +29,7 @@ export default function Section12aCTA({ className = "" }: Section12aCTAProps) {
               Test 1 Live Overdue Case Now (&rupee;{basePrice})
             </h3>
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-              Advocate-drafted pre-mediation statutory demand notice + Form-1 DLSA readiness audit, Specified Value computation, and tri-channel dispatch via Email + WhatsApp + Speed Post RPAD before commercial suit escalation.
+              Fact-verified pre-mediation statutory demand notice + Form-1 DLSA readiness audit, Specified Value computation, and tri-channel dispatch via Email + WhatsApp + Speed Post RPAD before commercial suit escalation.
             </p>
           </div>
           <div className="flex flex-col sm:flex-row sm:items-center gap-3">

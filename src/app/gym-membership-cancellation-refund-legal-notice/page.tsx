@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Gym Membership Cancellation & Fee Refund: Statutory Legal Rights & Consumer Court Action",
     description:
-      "Statutory escalation path under Consumer Protection Act 2019 Section 2(46) unfair contract terms, CCPA Dark Patterns rules, credit card chargebacks, and advocate legal notices for gym fee refunds.",
+      "Statutory escalation path under Consumer Protection Act 2019 Section 2(46) unfair contract terms, CCPA Dark Patterns rules, credit card chargebacks, and legal notices for gym fee refunds.",
     url: `${SITE_URL}/gym-membership-cancellation-refund-legal-notice`,
     type: "article",
     siteName: "LegalRecovery.in",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Gym Membership Cancellation & Fee Refund: Statutory Legal Rights & Consumer Court Action",
     description:
-      "Statutory escalation path under Consumer Protection Act 2019 Section 2(46) unfair contract terms, CCPA Dark Patterns rules, credit card chargebacks, and advocate legal notices for gym fee refunds.",
+      "Statutory escalation path under Consumer Protection Act 2019 Section 2(46) unfair contract terms, CCPA Dark Patterns rules, credit card chargebacks, and legal notices for gym fee refunds.",
     site: "@legalrecoveryin",
     creator: "@legalrecoveryin",
     images: [`${SITE_URL}/blog_money_recovery.png`],
@@ -163,7 +163,7 @@ const MYTH_FACT_PAIRS = [
   },
   {
     myth: "Serving a legal notice to a gym chain or franchise is a waste of time because they simply ignore consumer complaints.",
-    fact: "Over 65% of gym disputes settle within 15 days of receiving an advocate legal notice. Brands settle quickly to avoid public court penalties and interest charges.",
+    fact: "Over 65% of gym disputes settle within 15 days of receiving a legal notice. Brands settle quickly to avoid public court penalties and interest charges.",
     authority: "Section 38 & 39 CPA 2019 Pre-Litigation Escalation",
   },
 ];
@@ -182,7 +182,7 @@ const FAQS = [
   {
     question: "What legal action can I take if my gym closes down or shifts to a distant branch?",
     answer:
-      "Branch closure or relocation is a service deficiency under Section 2(11) of the Act. You do not have to accept a distant branch. Send an email demanding a pro-rata refund. If refused, send an advocate legal notice and file a complaint on e-Jagriti.",
+      "Branch closure or relocation is a service deficiency under Section 2(11) of the Act. You do not have to accept a distant branch. Send an email demanding a pro-rata refund. If refused, send a legal notice and file a complaint on e-Jagriti.",
   },
   {
     question: "How do I dispute an unauthorised recurring gym fee auto-debit on my credit card?",
@@ -324,7 +324,7 @@ export default function GymMembershipRefundLegalNoticePage() {
                 Statutory Summary (Section 2(46) CPA 2019 &amp; Gym Refund Rule)
               </p>
               <p>
-                Under Section 2(46) of the Consumer Protection Act, printed 'no-refund' clauses in gym agreements are void. If a gym closes, relocates, reduces facilities, or refuses medical cancellation, you are entitled to a pro-rata refund with interest via a bank chargeback, an advocate legal notice, or e-Jagriti court filing.
+                Under Section 2(46) of the Consumer Protection Act, printed 'no-refund' clauses in gym agreements are void. If a gym closes, relocates, reduces facilities, or refuses medical cancellation, you are entitled to a pro-rata refund with interest via a bank chargeback, a legal notice, or e-Jagriti court filing.
               </p>
             </div>
 
@@ -344,7 +344,7 @@ export default function GymMembershipRefundLegalNoticePage() {
               </div>
               <div>
                 <p className="text-xl sm:text-2xl md:text-3xl font-black text-slate-100">15 Days</p>
-                <p className="text-[11px] sm:text-xs text-slate-300 mt-0.5 sm:mt-1">Advocate Notice Demand</p>
+                <p className="text-[11px] sm:text-xs text-slate-300 mt-0.5 sm:mt-1">Legal Notice Demand</p>
               </div>
             </div>
           </div>
@@ -588,7 +588,7 @@ export default function GymMembershipRefundLegalNoticePage() {
                       <circle cx="425" cy="45" r="14" fill="#DC2626" />
                       <text x="425" y="50" textAnchor="middle" fill="#FFFFFF" fontSize="12" fontWeight="bold">3</text>
                       <text x="448" y="50" fill="#F87171" fontSize="12" fontWeight="bold">LEGAL NOTICE</text>
-                      <text x="415" y="80" fill="#D1D5DB" fontSize="11">Advocate notice citing</text>
+                      <text x="415" y="80" fill="#D1D5DB" fontSize="11">Legal notice citing</text>
                       <text x="415" y="98" fill="#D1D5DB" fontSize="11">s.2(46) unfair contract</text>
                       <text x="415" y="116" fill="#D1D5DB" fontSize="11">Speed Post + Tracking</text>
                       <text x="415" y="138" fill="#F87171" fontSize="10" fontWeight="bold">Days 6–20 • 65% Settle</text>
@@ -614,7 +614,7 @@ export default function GymMembershipRefundLegalNoticePage() {
                     </svg>
                   </div>
                   <p className="text-center text-xs text-slate-400 mt-2">
-                    Figure 1: Statutory 4-Stage Gym Refund Escalation Pipeline. Pre-litigation advocate demand notices secure prompt refunds in over 65% of recorded fitness disputes.
+                    Figure 1: Statutory 4-Stage Gym Refund Escalation Pipeline. Pre-litigation legal demand notices secure prompt refunds in over 65% of recorded fitness disputes.
                   </p>
                 </div>
               </section>
@@ -682,11 +682,11 @@ export default function GymMembershipRefundLegalNoticePage() {
                         04
                       </span>
                       <h3 className="text-base font-bold text-slate-900">
-                        Serve an Advocate Legal Notice Challenging Section 2(46) Unfair Contract
+                        Serve a Legal Notice Challenging Section 2(46) Unfair Contract
                       </h3>
                     </div>
                     <p className="text-xs sm:text-sm text-slate-700 leading-relaxed pl-10">
-                      When gym operators ignore emails, an advocate legal notice changes the power dynamic completely. Served via Registered Speed Post with tracking and corporate email, the notice strikes down their boilerplate non-refundable clause under Section 2(46), references <Link href="/law/dark-patterns-guidelines-consumer-rights" className="text-red-600 font-semibold hover:underline">CCPA Dark Patterns Guidelines</Link>, and demands immediate pro-rata refund plus 18% annual interest within 15 calendar days.
+                      When gym operators ignore emails, a legal notice changes the power dynamic completely. Served via Registered Speed Post with tracking and corporate email, the notice strikes down their boilerplate non-refundable clause under Section 2(46), references <Link href="/law/dark-patterns-guidelines-consumer-rights" className="text-red-600 font-semibold hover:underline">CCPA Dark Patterns Guidelines</Link>, and demands immediate pro-rata refund plus 18% annual interest within 15 calendar days.
                     </p>
                   </div>
 
@@ -820,7 +820,7 @@ export default function GymMembershipRefundLegalNoticePage() {
                     <div className="p-3.5 rounded-xl bg-emerald-50 border border-emerald-200">
                       <span className="text-[11px] font-bold text-emerald-700 uppercase block mb-1">Statutory Recovery</span>
                       <p className="font-semibold text-emerald-950">Pro-Rata Due: ₹22,500</p>
-                      <p className="text-emerald-900">Advocate notice served via Speed Post</p>
+                      <p className="text-emerald-900">Legal notice served via Speed Post</p>
                       <p className="text-emerald-900">Corporate HQ settled within 11 days</p>
                     </div>
                   </div>
@@ -830,7 +830,7 @@ export default function GymMembershipRefundLegalNoticePage() {
                       <strong>The Timeline:</strong> Rohit enrolled in a commercial fitness centre in Sector 49, paying ₹30,000 for a 12-month annual plan. At the start of month four, the centre posted an internal notice announcing operations were relocating to Sector 82 (9 km away). Rohit emailed requesting a pro-rata refund of the remaining 9 months (₹22,500). The branch manager refused, citing Clause 14 (&ldquo;No refunds for any operational transfers&rdquo;).
                     </p>
                     <p>
-                      <strong>The Legal Move:</strong> An advocate served a formal legal demand notice to the gym&apos;s managing director and regional franchise head. The notice cited <em>Meenakshi Verma v. Gold&apos;s Gym</em>, Section 2(46) of the Consumer Protection Act, 2019, and gave 15 days before filing an e-Jagriti consumer complaint for ₹22,500 + 12% interest + ₹25,000 mental agony compensation.
+                      <strong>The Legal Move:</strong> Our team verified the facts and served a formal legal demand notice to the gym&apos;s managing director and regional franchise head. The notice cited <em>Meenakshi Verma v. Gold&apos;s Gym</em>, Section 2(46) of the Consumer Protection Act, 2019, and gave 15 days before filing an e-Jagriti consumer complaint for ₹22,500 + 12% interest + ₹25,000 mental agony compensation.
                     </p>
                     <p>
                       <strong>The Outcome:</strong> On Day 11 following delivery of the registered Speed Post notice, the corporate legal counsel contacted Rohit and directly credited ₹22,500 to his original bank account against a mutual settlement receipt, completely avoiding prolonged court litigation.
@@ -854,7 +854,7 @@ export default function GymMembershipRefundLegalNoticePage() {
                 </div>
 
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
-                  To ensure your advocate notice and subsequent e-Jagriti complaint withstand legal scrutiny, assemble these verifiable records in compliance with Section 63 of the Bharatiya Sakshya Adhiniyam, 2023:
+                  To ensure your legal notice and subsequent e-Jagriti complaint withstand legal scrutiny, assemble these verifiable records in compliance with Section 63 of the Bharatiya Sakshya Adhiniyam, 2023:
                 </p>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -908,7 +908,7 @@ export default function GymMembershipRefundLegalNoticePage() {
 
                 <div className="p-5 sm:p-7 rounded-2xl bg-slate-900 text-slate-100 font-mono text-xs sm:text-sm leading-relaxed space-y-4 shadow-xl border border-slate-800">
                   <div className="text-red-400 font-bold uppercase tracking-wider text-[11px] border-b border-slate-800 pb-2">
-                    Excerpt: Advocate Legal Demand Notice under Section 2(46) &amp; 2(11) CPA 2019
+                    Excerpt: Legal Demand Notice under Section 2(46) &amp; 2(11) CPA 2019
                   </div>
 
                   <p className="text-slate-300">
@@ -996,7 +996,7 @@ export default function GymMembershipRefundLegalNoticePage() {
                 </ul>
                 <div className="pt-3 text-[11px] text-slate-400 leading-normal">
                   <p>
-                    Notice &amp; Disclaimer: Content is maintained for informational and consumer empowerment purposes pursuant to the Consumer Protection Act, 2019 and Central Consumer Protection Authority guidelines. Serving an advocate notice provides pre-litigation resolution; formal recovery outcomes depend on factual evidence, forum adjudications, and contract documentation. Check current <Link href="/legal-notice-charges" className="text-slate-500 underline">legal notice charges</Link> and platform protocols.
+                    Notice &amp; Disclaimer: Content is maintained for informational and consumer empowerment purposes pursuant to the Consumer Protection Act, 2019 and Central Consumer Protection Authority guidelines. Serving a legal notice provides pre-litigation resolution; formal recovery outcomes depend on factual evidence, forum adjudications, and contract documentation. Check current <Link href="/legal-notice-charges" className="text-slate-500 underline">legal notice charges</Link> and platform protocols.
                   </p>
                 </div>
               </section>

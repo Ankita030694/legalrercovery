@@ -34,7 +34,7 @@ const PROBLEMS: ProblemTab[] = [
       {
         step: "Serve Section 18(1) Withdrawal & Demand Notice",
         description:
-          "Dispatch a formal advocate legal notice exercising your statutory option under Section 18(1)(a) to withdraw from the project and demanding 100% principal refund + SBI MCLR + 2% interest from each date of payment within 15 days.",
+          "Dispatch a formal fact-verified legal notice exercising your statutory option under Section 18(1)(a) to withdraw from the project and demanding 100% principal refund + SBI MCLR + 2% interest from each date of payment within 15 days.",
       },
       {
         step: "File Online Form M Before State RERA Authority",
@@ -115,7 +115,7 @@ const PROBLEMS: ProblemTab[] = [
       {
         step: "Serve 30-Day Statutory Rectification Notice Under Sec 14(3)",
         description:
-          "Send a formal advocate notice putting the promoter on a strict 30-day statutory clock under Section 14(3) to rectify the structural defects at their own cost or refund the excess carpet area price.",
+          "Send a formal fact-verified notice putting the promoter on a strict 30-day statutory clock under Section 14(3) to rectify the structural defects at their own cost or refund the excess carpet area price.",
       },
       {
         step: "File Form M (Rectification/Proportional Refund) & Form N (Damages)",
@@ -142,7 +142,7 @@ const PROBLEMS: ProblemTab[] = [
       {
         step: "Dispatch Joint Legal Notice to Builder & Lending Bank",
         description:
-          "Serve an advocate legal notice to the promoter demanding immediate reimbursement of paid Pre-EMIs and total loan closure under Section 18, while putting the bank on notice of the builder's upfront disbursement violation.",
+          "Serve a fact-verified legal notice to the promoter demanding immediate reimbursement of paid Pre-EMIs and total loan closure under Section 18, while putting the bank on notice of the builder's upfront disbursement violation.",
       },
       {
         step: "File Online Form M Seeking Loan Foreclosure + Refund",
@@ -269,7 +269,7 @@ export default function ReraProblemTabs() {
         {/* Quick Dispute Action Link */}
         <div className="p-3 bg-amber-50 border border-amber-200 rounded-xl flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs text-amber-950">
           <span>
-            <strong>Need an advocate-drafted pre-RERA notice?</strong> We prepare and dispatch a formal Section 18 / Section 13 statutory demand notice to the builder within 24 hours.
+            <strong>Need a fact-verified pre-RERA notice?</strong> We prepare and dispatch a formal Section 18 / Section 13 statutory demand notice to the builder within 24 hours.
           </span>
           <Link
             href="/builder-booking-cancellation-refund-legal-notice"

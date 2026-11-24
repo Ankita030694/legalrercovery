@@ -164,7 +164,7 @@ const FAQS = [
   {
     question: "Unsecured personal loan default par bank aur NBFC legal notice kaise bhejte hain?",
     answer:
-      "Jab koi borrower personal loan ya credit card ka EMI default karta hai aur e-NACH mandate bounce ho jata hai, toh bank ya NBFC ek formal statutory legal notice bhejti hai. LegalRecovery.in par verified advocates Section 25 PSS Act aur Indian Contract Act ke tehat legal demand notice tayyar karke Registered Speed Post aur Section 63 BSA electronic audit trail ke sath bhejte hain, jismein 15 din ka payment time diya jata hai civil summary suit ya criminal complaint se pehle.",
+      "Jab koi borrower personal loan ya credit card ka EMI default karta hai aur e-NACH mandate bounce ho jata hai, toh bank ya NBFC ek formal statutory legal notice bhejti hai. LegalRecovery.in par hamari team Section 25 PSS Act aur Indian Contract Act ke tehat fact-verified legal demand notice tayyar karke Registered Speed Post aur Section 63 BSA electronic audit trail ke sath bhejti hai, jismein 15 din ka payment time diya jata hai civil summary suit ya criminal complaint se pehle.",
   },
 ];
 
@@ -656,10 +656,10 @@ export default function UnsecuredLoansLegalRecoveryPage() {
                     </span>
                     <div className="space-y-1 sm:space-y-1.5">
                       <h3 className="text-sm sm:text-base md:text-lg font-bold text-slate-900">
-                        Dispatch Formal Advocate Demand Notice Within 30 Days
+                        Dispatch Formal Fact-Verified Demand Notice Within 30 Days
                       </h3>
                       <p className="text-xs sm:text-sm leading-relaxed">
-                        Upon receiving the NPCI e-NACH or UPI mandate bounce report, issue a statutory advocate demand notice within 30 days under Section 25 of the Payment and Settlement Systems Act, 2007. Serve simultaneously via Registered Speed Post and tracked electronic channels, granting a strict 15-day cure window.
+                        Upon receiving the NPCI e-NACH or UPI mandate bounce report, issue a statutory fact-verified demand notice within 30 days under Section 25 of the Payment and Settlement Systems Act, 2007. Serve simultaneously via Registered Speed Post and tracked electronic channels, granting a strict 15-day cure window.
                       </p>
                     </div>
                   </li>
@@ -829,7 +829,7 @@ export default function UnsecuredLoansLegalRecoveryPage() {
                       <strong>The Operational Challenge:</strong> Traditional tele-calling recovery agents achieved less than 8% resolution, while physical doorstep visits triggered borrower harassment counter-threats before consumer portals. Furthermore, instituting 180 separate civil suits in district courts was financially prohibitive, with court fees and individual counsel costs exceeding projected returns.
                     </p>
                     <p>
-                      <strong>The Structured Legal Strategy:</strong> The NBFC onboarded LegalRecovery.in to implement an automated statutory escalation workflow. Within 14 days of mandate dishonour, advocate demand notices under Section 25 of the PSS Act were generated and served via registered speed post alongside Section 63 BSA compliant electronic delivery trails. The notices explicitly outlined impending Section 25 criminal proceedings and CIBIL wilful defaulter reporting.
+                      <strong>The Structured Legal Strategy:</strong> The NBFC onboarded LegalRecovery.in to implement an automated statutory escalation workflow. Within 14 days of mandate dishonour, fact-verified demand notices under Section 25 of the PSS Act were generated and served via registered speed post alongside Section 63 BSA compliant electronic delivery trails. The notices explicitly outlined impending Section 25 criminal proceedings and CIBIL wilful defaulter reporting.
                     </p>
                     <div className="p-3.5 sm:p-4 bg-emerald-950/70 border border-emerald-700/60 rounded-xl text-emerald-200">
                       <strong className="block text-emerald-400 font-bold mb-1">The Recovery Outcome:</strong>

@@ -31,7 +31,7 @@ export default function BankLegalActionCTA({
                 Accelerate Debt Recovery Across Retail &amp; Commercial NPA Portfolios
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6">
-                Consult our legal strategy desk to select the fastest, most cost-effective statutory recovery channel per loan bucket. Whether issuing Section 13(2) SARFAESI demand notices, lodging Section 25 PSS Act criminal complaints for bounced NACH mandates, instituting Order XXXVII Summary Suits, or filing Section 19 DRT Original Applications, our advocate network delivers pan-India execution with registered postal tracking and BSA Section 63-compliant digital audit logs.
+                Consult our legal strategy desk to select the fastest, most cost-effective statutory recovery channel per loan bucket. Whether issuing Section 13(2) SARFAESI demand notices, lodging Section 25 PSS Act criminal complaints for bounced NACH mandates, instituting Order XXXVII Summary Suits, or filing Section 19 DRT Original Applications, our team delivers pan-India dispatch with registered postal tracking and BSA Section 63-compliant digital audit logs.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button
@@ -46,7 +46,7 @@ export default function BankLegalActionCTA({
                   <span>•</span>
                   <span>✓ Speed Post + Section 63 BSA Digital Dispatch</span>
                   <span>•</span>
-                  <span>✓ Pan-India Advocate Panel</span>
+                  <span>✓ Pan-India Recovery Desk</span>
                 </div>
               </div>
             </div>

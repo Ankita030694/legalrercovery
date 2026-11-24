@@ -25,10 +25,10 @@ export default function PharmaExpiredStockRecoveryCTA({
               Track 1 &bull; Single Stockist Default Test
             </span>
             <p className="text-lg sm:text-xl font-extrabold text-white mb-2">
-              Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Advocate Drafted &middot; Email + WhatsApp + Speed Post RPAD)
+              Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Fact-Verified &middot; Email + WhatsApp + Speed Post RPAD)
             </p>
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-              Serve an advocate-vetted, high-impact 15-day statutory demand notice on a defaulting pharmaceutical stockist, wholesale druggist, or regional distributor. Rebuts unilateral debit notes, enforces 1.5%–2% contractual expiry caps, itemizes CBIC Circular 72/46/2018-GST violations, CGST Section 34 cut-offs, and claims statutory compound interest under MSMED Act Section 16.
+              Serve a fact-verified, high-impact 15-day statutory demand notice on a defaulting pharmaceutical stockist, wholesale druggist, or regional distributor. Rebuts unilateral debit notes, enforces 1.5%–2% contractual expiry caps, itemizes CBIC Circular 72/46/2018-GST violations, CGST Section 34 cut-offs, and claims statutory compound interest under MSMED Act Section 16.
             </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-3">

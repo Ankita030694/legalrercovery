@@ -552,7 +552,7 @@ export default function FnFSettlementNoticeClient() {
                     A senior engineer in Bengaluru resigned after serving a 3-month notice period. The company withheld their FnF dues of ₹3.5 Lakhs, claiming they did not complete a database handover. The engineer sent a formal notice citing the Karnataka Shop and Establishments Act. The company released the entire amount along with the relieving letter within a week, avoiding further escalation.
                   </p>
                   <p className="text-sm md:text-base leading-relaxed">
-                    By understanding these timelines, employees can track the progress of their claims. In most cases, serving a formal legal notice prepared by an advocate is sufficient to resolve the dispute, as companies prefer to settle outstanding dues out of court rather than attend hearings before the Labor Commissioner.
+                    By understanding these timelines, employees can track the progress of their claims. In most cases, serving a formal legal notice prepared on verified facts is sufficient to resolve the dispute, as companies prefer to settle outstanding dues out of court rather than attend hearings before the Labor Commissioner.
                   </p>
                 </div>
               </section>
@@ -600,7 +600,7 @@ export default function FnFSettlementNoticeClient() {
                 <div className="absolute top-0 right-0 w-24 h-24 bg-red-600/10 rounded-full blur-xl pointer-events-none" />
                 <h3 className="text-sm font-black mb-3">Need Legal Advice?</h3>
                 <p className="text-gray-400 mb-5 text-[11px] leading-relaxed">
-                  Discuss your money recovery case with legal experts. We draft and serve legally compliant notices tailored to your transaction.
+                  Discuss your money recovery case with our team. We draft and serve legally compliant notices tailored to your transaction.
                 </p>
                 <button 
                   onClick={() => setIsPaymentModalOpen(true)}

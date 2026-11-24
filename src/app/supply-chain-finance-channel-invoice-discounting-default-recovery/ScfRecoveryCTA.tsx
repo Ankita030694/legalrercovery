@@ -23,7 +23,7 @@ export default function ScfRecoveryCTA({ className = "" }: ScfRecoveryCTAProps) 
               Track 1 &bull; Self-Serve Single Case Test
             </span>
             <h3 className="text-lg sm:text-xl font-extrabold text-white mb-2">
-              Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Advocate Drafted &middot; Email + WhatsApp + Speed Post RPAD)
+              Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Fact-Verified &middot; Email + WhatsApp + Speed Post RPAD)
             </h3>
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
               Validate our Factoring Act s.8 Notice of Assignment, Anchor Stop-Supply intimation, or BNS s.318 dual-pledge demand with BSA 2023 s.63 delivery logs on a single overdue dealer or vendor account before scaling.

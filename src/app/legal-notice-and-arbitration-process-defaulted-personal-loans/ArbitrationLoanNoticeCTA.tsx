@@ -42,7 +42,7 @@ export default function ArbitrationLoanNoticeCTA({
                   {buttonText} — Flat ₹{basePrice}
                 </button>
                 <div className="text-xs text-slate-300 flex flex-wrap sm:flex-nowrap items-center gap-2 sm:gap-3">
-                  <span>✓ Advocate-Drafted Notice</span>
+                  <span>✓ Fact-Verified Notice</span>
                   <span>•</span>
                   <span>✓ Institutional Tribunal Rail</span>
                   <span>•</span>

@@ -206,7 +206,7 @@ const FAQS = [
   {
     question: "Agar dost ko diya hua loan 3 saal purana ho gaya ho toh WhatsApp chat ya partial payment se paise kaise wapas le?",
     answer:
-      "Agar aapne kisi dost ya rishtedaar ko paise diye the aur 3 saal se zyada waqt beet chuka hai, toh check kijiye ki kya unhone beech mein WhatsApp par paise wapas karne ka vaada kiya tha ya koi chhota UPI transfer kiya tha. Limitation Act ke Section 18 aur Section 19 ke tehat, written acknowledgment ya part payment se 3 saal ka limitation period dobara shuru ho jata hai. LegalRecovery.in par verified advocate Section 18/19 ka reference dekar 15 din ka formal statutory legal notice bhejte hain, jiske baad Order 37 CPC ke tehat summary suit file karke paisa recover kiya ja sakta hai.",
+      "Agar aapne kisi dost ya rishtedaar ko paise diye the aur 3 saal se zyada waqt beet chuka hai, toh check kijiye ki kya unhone beech mein WhatsApp par paise wapas karne ka vaada kiya tha ya koi chhota UPI transfer kiya tha. Limitation Act ke Section 18 aur Section 19 ke tehat, written acknowledgment ya part payment se 3 saal ka limitation period dobara shuru ho jata hai. LegalRecovery.in par hamari team Section 18/19 ka reference dekar 15 din ka formal statutory legal notice bhejti hai, jiske baad Order 37 CPC ke tehat summary suit file karke paisa recover kiya ja sakta hai.",
   },
 ];
 
@@ -704,10 +704,10 @@ export default function LimitationExtendedPage() {
                     </span>
                     <div className="space-y-1 sm:space-y-1.5">
                       <h3 className="text-sm sm:text-base md:text-lg font-bold text-slate-900">
-                        Serve a Formal Statutory Advocate Legal Demand Notice
+                        Serve a Formal Statutory Fact-Verified Legal Demand Notice
                       </h3>
                       <p className="text-xs sm:text-sm leading-relaxed">
-                        Engage a verified advocate to draft a comprehensive legal demand notice. The notice must set out the loan particulars, explicitly cite the borrower&apos;s WhatsApp/email admissions under Section 18 and bank credits under Section 19, and demand full settlement within 15 days. For complete transparency on drafting costs, review our <Link href="/legal-notice-charges" className="text-blue-700 underline font-semibold">legal notice charges</Link> schedule.
+                        Have a comprehensive legal demand notice prepared and sent through LegalRecovery.in. The notice must set out the loan particulars, explicitly cite the borrower&apos;s WhatsApp/email admissions under Section 18 and bank credits under Section 19, and demand full settlement within 15 days. For complete transparency on notice costs, review our <Link href="/legal-notice-charges" className="text-blue-700 underline font-semibold">legal notice charges</Link> schedule.
                       </p>
                     </div>
                   </li>
@@ -853,7 +853,7 @@ export default function LimitationExtendedPage() {
                     </p>
                     <div className="p-3.5 sm:p-4 bg-emerald-950/70 border border-emerald-700/60 rounded-xl text-emerald-200">
                       <strong className="block text-emerald-400 font-bold mb-1">The Legal Action &amp; Resolution:</strong>
-                      In August 2025 (4.5 years after the original loan), Vikramaditya engaged LegalRecovery.in. An advocate drafted and dispatched an official statutory demand notice citing Section 18, Section 19, and the Supreme Court precedent in <em>Khan Bahadur Shapoor Fredoom Mazda</em>. Faced with incontrovertible digital evidence and the immediate prospect of an Order XXXVII CPC Summary Suit, Harish signed a structured settlement agreement and cleared the entire balance of ₹6,40,000 in three monthly instalments.
+                      In August 2025 (4.5 years after the original loan), Vikramaditya engaged LegalRecovery.in. The team verified the facts and dispatched an official statutory demand notice citing Section 18, Section 19, and the Supreme Court precedent in <em>Khan Bahadur Shapoor Fredoom Mazda</em>. Faced with incontrovertible digital evidence and the immediate prospect of an Order XXXVII CPC Summary Suit, Harish signed a structured settlement agreement and cleared the entire balance of ₹6,40,000 in three monthly instalments.
                     </div>
                   </div>
                 </div>

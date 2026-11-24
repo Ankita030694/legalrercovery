@@ -207,7 +207,7 @@ const FAQS = [
   {
     question: "What legal notice format should I send to a hospital for refund of overcharges?",
     answer:
-      "An advocate issues the legal notice to the hospital's Medical Superintendent. The notice details the admission dates, agreed package price, and audited billing errors. It cites violations under the Consumer Protection Act, 2019 and gives a 15-day deadline to refund the excess money with interest before filing a consumer court case.",
+      "We issue the legal notice to the hospital's Medical Superintendent. The notice details the admission dates, agreed package price, and audited billing errors. It cites violations under the Consumer Protection Act, 2019 and gives a 15-day deadline to refund the excess money with interest before filing a consumer court case.",
   },
 ];
 
@@ -1037,7 +1037,7 @@ export default function HospitalOverbillingRefundPage() {
                   </div>
 
                   <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-4 text-xs sm:text-sm text-emerald-900 leading-relaxed">
-                    <strong>Result: </strong>Upon receipt of the advocate legal demand notice detailing the specific absence of DAR entries and referencing Rule 18(2) of the Legal Metrology Rules, the hospital billing committee reversed the ₹1,42,000 overcharge and refunded the sum to the patient&apos;s bank account within 10 days.
+                    <strong>Result: </strong>Upon receipt of the fact-verified legal demand notice detailing the specific absence of DAR entries and referencing Rule 18(2) of the Legal Metrology Rules, the hospital billing committee reversed the ₹1,42,000 overcharge and refunded the sum to the patient&apos;s bank account within 10 days.
                   </div>
                 </div>
               </section>
@@ -1209,7 +1209,7 @@ export default function HospitalOverbillingRefundPage() {
                     href="/send-a-legal-notice"
                     className="px-3 py-1.5 rounded-lg bg-white border border-slate-200 text-slate-800 hover:text-red-600 hover:border-red-300 font-medium transition-colors"
                   >
-                    Send an Advocate Legal Notice Online
+                    Send a Fact-Verified Legal Notice Online
                   </Link>
                 </div>
               </div>

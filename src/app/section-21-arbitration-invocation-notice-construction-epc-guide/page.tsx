@@ -211,7 +211,7 @@ const FAQS = [
   {
     question: "Why is a regular legal demand notice insufficient to invoke arbitration under Indian law?",
     answer:
-      "Under Section 21 of the Arbitration and Conciliation Act, 1996, arbitral proceedings commence on the specific date on which a request for that dispute to be referred to arbitration is received by the respondent. In Alupro Building Systems Pvt. Ltd. v. Ozone Overseas Pvt. Ltd. (2017), the Delhi High Court established that a conventional money demand notice—even if drafted by an advocate—does NOT constitute a Section 21 notice unless it expressly invokes the arbitration clause, defines the disputes, and calls upon the recipient to concur on an arbitrator. Consequently, a mere demand notice fails to arrest the 3-year statutory limitation period.",
+      "Under Section 21 of the Arbitration and Conciliation Act, 1996, arbitral proceedings commence on the specific date on which a request for that dispute to be referred to arbitration is received by the respondent. In Alupro Building Systems Pvt. Ltd. v. Ozone Overseas Pvt. Ltd. (2017), the Delhi High Court established that a conventional money demand notice—even if prepared on verified facts—does NOT constitute a Section 21 notice unless it expressly invokes the arbitration clause, defines the disputes, and calls upon the recipient to concur on an arbitrator. Consequently, a mere demand notice fails to arrest the 3-year statutory limitation period.",
   },
   {
     question: "How does the Supreme Court ruling in BSNL v. Nortel Networks define arbitration limitation?",
@@ -964,11 +964,11 @@ export default function Section21ArbitrationNoticeGuidePage() {
                     07
                   </span>
                   <span className="text-[11px] font-bold uppercase tracking-wider text-slate-400">
-                    Advocate Drafting Protocol
+                    Notice Drafting Protocol
                   </span>
                 </div>
                 <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-slate-900 tracking-tight mb-4">
-                  The 8-Part Anatomy of an Advocate-Settled Section 21 Notice
+                  The 8-Part Anatomy of a Fact-Verified Section 21 Notice
                 </h2>
                 <p className="text-slate-700 text-sm sm:text-base leading-relaxed mb-6">
                   To ensure complete immunity against Section 11 preliminary challenges, an institutional Section 21 notice must adhere to an 8-part architectural structure:
@@ -1073,7 +1073,7 @@ export default function Section21ArbitrationNoticeGuidePage() {
                 </div>
 
                 <p className="text-slate-700 text-sm sm:text-base leading-relaxed mt-6">
-                  If you have received an adverse legal notice from an employer threatening termination or liquidated damages, adapt our advocate-vetted{" "}
+                  If you have received an adverse legal notice from an employer threatening termination or liquidated damages, adapt our fact-verified{" "}
                   <Link
                     href="/templates/legal-notice-reply-format"
                     className="text-[#DC2626] font-semibold hover:underline"

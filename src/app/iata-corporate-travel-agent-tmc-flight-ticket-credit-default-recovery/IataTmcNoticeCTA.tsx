@@ -29,10 +29,10 @@ export default function IataTmcNoticeCTA({
                   Track 1 &bull; Single Corporate Defaulter
                 </span>
                 <h3 className="text-lg sm:text-xl font-bold text-white mb-2">
-                  Test 1 Live Overdue Case Now (&rupee;{basePrice} &bull; Advocate Drafted)
+                  Test 1 Live Overdue Case Now (&rupee;{basePrice} &bull; Fact-Verified)
                 </h3>
                 <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-                  Before your next 7-day IATA BSP auto-debit hits, dispatch an Advocate-vetted statutory demand notice via Email, WhatsApp, and Speed Post RPAD citing flown PNR manifests, Order XXXVII CPC, and MSMED s.16 interest.
+                  Before your next 7-day IATA BSP auto-debit hits, dispatch a Fact-verified statutory demand notice via Email, WhatsApp, and Speed Post RPAD citing flown PNR manifests, Order XXXVII CPC, and MSMED s.16 interest.
                 </p>
               </div>
               <div className="flex flex-col sm:flex-row gap-3">
@@ -41,7 +41,7 @@ export default function IataTmcNoticeCTA({
                   onClick={() => setIsModalOpen(true)}
                   className="flex-1 inline-flex items-center justify-center px-5 py-3 rounded-xl font-bold text-white bg-[#DC2626] hover:bg-[#B91C1C] transition-colors text-xs sm:text-sm cursor-pointer shadow-lg shadow-red-950/40"
                 >
-                  Start &rupee;{basePrice} Advocate Notice &rarr;
+                  Start &rupee;{basePrice} Fact-Verified Notice &rarr;
                 </button>
                 <Link
                   href="/user/new-recovery"
@@ -62,7 +62,7 @@ export default function IataTmcNoticeCTA({
                   Have 10 to 10,000+ Defaulters? Upload CSV / Activate Institutional Desk
                 </h3>
                 <p className="text-xs sm:text-sm text-slate-600 leading-relaxed mb-5">
-                  Reconciling aged corporate BTC flight ledgers, LCC wallet arrears, or sub-agent credit defaults? Upload your overdue debtor sheet in bulk and trigger automated multi-channel advocate notices with centralized tracking.
+                  Reconciling aged corporate BTC flight ledgers, LCC wallet arrears, or sub-agent credit defaults? Upload your overdue debtor sheet in bulk and trigger automated multi-channel fact-verified notices with centralized tracking.
                 </p>
               </div>
               <div className="flex flex-col sm:flex-row gap-3">

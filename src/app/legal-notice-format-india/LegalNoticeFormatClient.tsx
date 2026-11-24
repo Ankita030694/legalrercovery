@@ -14,7 +14,7 @@ const faqs = [
   },
   {
     question: "Can a legal notice be sent without hiring an advocate?",
-    answer: "Yes, a legal notice can be sent by a person directly, without hiring an advocate. This is known as a personal legal notice. However, it is highly recommended to have a notice drafted and served by an advocate. An advocate-drafted notice carries the lawyer's letterhead, which adds legal weight and seriousness to the demand. Furthermore, advocates possess the professional expertise to structure the legal arguments, specify the exact provisions of the relevant acts (such as the Indian Contract Act or the Code of Civil Procedure), and avoid errors that could damage the subsequent lawsuit. Any admissions made in a legal notice are legally binding, so professional drafting is critical."
+    answer: "Yes, a legal notice can be sent by a person directly, without hiring an advocate. This is known as a personal legal notice. However, it is highly recommended to have a notice prepared on verified facts. A fact-verified notice carries the lawyer's letterhead, which adds legal weight and seriousness to the demand. Furthermore, advocates possess the professional expertise to structure the legal arguments, specify the exact provisions of the relevant acts (such as the Indian Contract Act or the Code of Civil Procedure), and avoid errors that could damage the subsequent lawsuit. Any admissions made in a legal notice are legally binding, so professional drafting is critical."
   },
   {
     question: "What is the typical notice period given in a legal notice for recovery of money?",
@@ -50,7 +50,7 @@ const reviews = [
   {
     author: "Vikramaditya Sen (Kolkata)",
     rating: "5",
-    text: "I was struggling to recover 4.5 Lakhs from a client who kept ignoring my invoices. I downloaded generic templates online, but they were full of old English and lacked specific statutory provisions. After consulting with the legal team, we sent a highly structured, advocate-backed notice detailing the breach. The client paid the full amount within 10 days of receiving the notice. Having the right format and citing the Contract Act was the turning point."
+    text: "I was struggling to recover 4.5 Lakhs from a client who kept ignoring my invoices. I downloaded generic templates online, but they were full of old English and lacked specific statutory provisions. After consulting with the legal team, we sent a highly structured, fact-verified notice detailing the breach. The client paid the full amount within 10 days of receiving the notice. Having the right format and citing the Contract Act was the turning point."
   },
   {
     author: "Meera Deshmukh (Pune)",
@@ -314,7 +314,7 @@ export default function LegalNoticeFormatClient() {
                     1. Header, Title, and Reference Number
                   </h3>
                   <p className="text-sm md:text-base leading-relaxed">
-                    The header of the legal notice contains the professional credentials of the advocate drafting the notice. It is printed on the advocate's official letterhead, which displays their name, office address, contact numbers, email address, and enrollment number with the State Bar Council. This information is critical because it establishes the sender's legal representation and provides a direct channel for the recipient or their lawyer to respond.
+                    The header of the legal notice contains the professional credentials of the notice drafting the notice. It is printed on the advocate's official letterhead, which displays their name, office address, contact numbers, email address, and enrollment number with the State Bar Council. This information is critical because it establishes the sender's legal representation and provides a direct channel for the recipient or their lawyer to respond.
                   </p>
                   <p className="text-sm md:text-base leading-relaxed">
                     Immediately below the letterhead, the notice must carry a unique reference number and the date of dispatch. The reference number is essential for tracking correspondence and proving the date of service in future court proceedings. The date is particularly important as it marks the beginning of the compliance window and is used to calculate the interest period for outstanding debts. The title of the notice must be centered and written in bold, uppercase letters, clearly stating the nature of the notice (e.g., 'LEGAL NOTICE FOR RECOVERY OF OUTSTANDING DUES UNDER THE INDIAN CONTRACT ACT, 1872' or 'LEGAL NOTICE UNDER SECTION 138 OF THE NEGOTIABLE INSTRUMENTS ACT, 1881').
@@ -671,7 +671,7 @@ export default function LegalNoticeFormatClient() {
                 <div className="absolute top-0 right-0 w-24 h-24 bg-red-600/10 rounded-full blur-xl pointer-events-none" />
                 <h3 className="text-lg font-bold mb-3 text-white">Need Legal Advice?</h3>
                 <p className="text-gray-400 mb-5 text-[11px] leading-relaxed">
-                  Discuss your money recovery case with legal experts. We draft and serve legally compliant notices tailored to your transaction.
+                  Discuss your money recovery case with our team. We draft and serve legally compliant notices tailored to your transaction.
                 </p>
                 <button 
                   onClick={() => setIsPaymentModalOpen(true)}

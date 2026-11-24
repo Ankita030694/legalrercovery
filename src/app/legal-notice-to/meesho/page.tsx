@@ -147,7 +147,7 @@ const faqJsonLd = {
       "name": "Can I send a legal notice to Meesho without hiring an expensive local lawyer?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. LegalRecovery drafts advocate legal demand notices with statutory 15-day compliance terms for a flat fee of ₹999, served by email and WhatsApp to Meesho Limited in Bengaluru. Speed Post is optional at ₹450 per party.",
+        "text": "Yes. LegalRecovery drafts fact-verified legal demand notices with statutory 15-day compliance terms for a flat fee of ₹999, served by email and WhatsApp to Meesho Limited in Bengaluru. Speed Post is optional at ₹450 per party.",
       },
     },
     {
@@ -163,7 +163,7 @@ const faqJsonLd = {
       "name": "Meesho ko legal notice kaise bheje aur iska statutory time period kitna hota hai?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Meesho Limited ko verified advocate ke madhyam se Speed Post aur email par notice bheja jata hai jisme 15 dino ka demand period hota hai. Non-compliance par e-Jagriti par mukadma kiya jata hai.",
+        "text": "Meesho Limited ko hamari team ke fact-verification ke baad email, WhatsApp aur optional Speed Post par notice bheja jata hai jisme 15 dino ka demand period hota hai. Non-compliance par e-Jagriti par mukadma kiya jata hai.",
       },
     },
   ],
@@ -550,10 +550,10 @@ export default function MeeshoRefundLegalNoticePage() {
               When to Serve a Formal Legal Notice to Meesho
             </h2>
             <p className="text-slate-800 text-sm leading-relaxed font-semibold mb-2 text-justify">
-              Serve an Advocate Legal Notice when 15 days elapse without a refund, your return is rejected arbitrarily, or support closes tickets without payment. A formal notice gives Meesho and the merchant a mandatory 15-day statutory window to remedy the default.
+              Serve a Fact-Verified Legal Notice when 15 days elapse without a refund, your return is rejected arbitrarily, or support closes tickets without payment. A formal notice gives Meesho and the merchant a mandatory 15-day statutory window to remedy the default.
             </p>
             <p className="text-slate-700 text-xs sm:text-sm leading-relaxed text-justify">
-              An Advocate Legal Notice establishes formal legal default under the Code of Civil Procedure, 1908 and Consumer Protection Act, 2019. Over 70% of consumer e-commerce disputes settle during this notice window. Notices are dispatched via Registered Speed Post to Meesho&apos;s Bengaluru headquarters and via email with Section 63 BSA audit logs. See our guide on <Link href="/legal-notice-charges" className="text-[#DC2626] font-bold hover:underline">legal notice charges in India</Link>.
+              A Fact-Verified Legal Notice establishes formal legal default under the Code of Civil Procedure, 1908 and Consumer Protection Act, 2019. Over 70% of consumer e-commerce disputes settle during this notice window. Notices are dispatched via Registered Speed Post to Meesho&apos;s Bengaluru headquarters and via email with Section 63 BSA audit logs. See our guide on <Link href="/legal-notice-charges" className="text-[#DC2626] font-bold hover:underline">legal notice charges in India</Link>.
             </p>
           </section>
 
@@ -618,7 +618,7 @@ export default function MeeshoRefundLegalNoticePage() {
               If Meesho fails to pay your refund within the 15-day notice window, file online via the e-Jagriti portal (<code className="bg-slate-100 text-slate-900 px-1 py-0.5 rounded font-bold">e-jagriti.gov.in</code>), which replaced e-Daakhil. Claims up to ₹5,00,000 carry zero court fees.
             </p>
             <p className="text-slate-700 text-xs sm:text-sm leading-relaxed text-justify">
-              Under Section 34(2) of the Consumer Protection Act, 2019, you can file before the District Commission where <strong>you reside or work</strong> without traveling to Bengaluru. The petition requires naming Meesho Limited and the seller, attaching your invoice, unboxing proof, bank statement, the advocate legal notice, and postal tracking receipts. Read our guide on <Link href="/how-to-file-consumer-complaint-india" className="text-[#DC2626] font-bold hover:underline">how to file a consumer complaint online in India</Link>.
+              Under Section 34(2) of the Consumer Protection Act, 2019, you can file before the District Commission where <strong>you reside or work</strong> without traveling to Bengaluru. The petition requires naming Meesho Limited and the seller, attaching your invoice, unboxing proof, bank statement, the fact-verified legal notice, and postal tracking receipts. Read our guide on <Link href="/how-to-file-consumer-complaint-india" className="text-[#DC2626] font-bold hover:underline">how to file a consumer complaint online in India</Link>.
             </p>
           </section>
 
@@ -639,7 +639,7 @@ export default function MeeshoRefundLegalNoticePage() {
               What Can and Cannot LegalRecovery Do for Your Meesho Dispute?
             </h2>
             <p className="text-slate-800 text-sm leading-relaxed font-semibold mb-2 text-justify">
-              LegalRecovery drafts advocate statutory notices served on Meesho Limited and merchants by email and WhatsApp, with delivery certificates and optional speed post. We enforce genuine consumer claims, but do not operate as debt collectors or cyber-fraud investigators.
+              LegalRecovery drafts fact-verified statutory notices served on Meesho Limited and merchants by email and WhatsApp, with delivery certificates and optional speed post. We enforce genuine consumer claims, but do not operate as debt collectors or cyber-fraud investigators.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-3 my-3 text-xs sm:text-sm">
               <div className="border border-green-200 bg-green-50/50 rounded-xl p-3.5">
@@ -731,7 +731,7 @@ export default function MeeshoRefundLegalNoticePage() {
                   Can I send a legal notice to Meesho without hiring an expensive local lawyer?
                 </h3>
                 <p className="text-slate-700 leading-relaxed text-justify">
-                  Yes. LegalRecovery drafts advocate legal demand notices with statutory 15-day compliance terms for a flat fee of ₹{BASE_PRICE}, served by email and WhatsApp to Meesho Limited in Bengaluru. Speed Post is optional at ₹450 per party.
+                  Yes. LegalRecovery drafts fact-verified legal demand notices with statutory 15-day compliance terms for a flat fee of ₹{BASE_PRICE}, served by email and WhatsApp to Meesho Limited in Bengaluru. Speed Post is optional at ₹450 per party.
                 </p>
               </div>
 
@@ -749,7 +749,7 @@ export default function MeeshoRefundLegalNoticePage() {
                   Meesho ko legal notice kaise bheje aur iska statutory time period kitna hota hai?
                 </h3>
                 <p className="text-slate-700 leading-relaxed text-justify">
-                  Meesho Limited ko verified advocate ke madhyam se Speed Post aur email par notice bheja jata hai jisme 15 dino ka demand period hota hai. Non-compliance par e-Jagriti par mukadma kiya jata hai.
+                  Meesho Limited ko hamari team ke fact-verification ke baad email, WhatsApp aur optional Speed Post par notice bheja jata hai jisme 15 dino ka demand period hota hai. Non-compliance par e-Jagriti par mukadma kiya jata hai.
                 </p>
               </div>
             </div>
@@ -777,7 +777,7 @@ export default function MeeshoRefundLegalNoticePage() {
                 <strong>The Failure Point:</strong> On 17 September, Meesho marked the order <em>&quot;Refund Successful&quot;</em>, yet Rohit&apos;s bank confirmed zero credit. Meesho&apos;s chatbot insisted payment succeeded and auto-closed tickets without resolution.
               </p>
               <p>
-                <strong>The Legal Action:</strong> On 28 September, Rohit served a 15-day Advocate Legal Notice via LegalRecovery to Meesho Limited&apos;s Bengaluru headquarters and email <code className="bg-slate-100 text-slate-900 px-1 py-0.5 rounded font-mono">legalsupport@meesho.com</code>, citing Rule 5(6) fallback liability and demanding ₹3,499 plus compensation.
+                <strong>The Legal Action:</strong> On 28 September, Rohit served a 15-day Fact-Verified Legal Notice via LegalRecovery to Meesho Limited&apos;s Bengaluru headquarters and email <code className="bg-slate-100 text-slate-900 px-1 py-0.5 rounded font-mono">legalsupport@meesho.com</code>, citing Rule 5(6) fallback liability and demanding ₹3,499 plus compensation.
               </p>
               <p>
                 <strong>The Settlement:</strong> Seven days post-delivery, Meesho escalations contacted Rohit, confirmed a payment webhook glitch, issued an immediate NEFT transfer of ₹3,499 with a valid UTR, and closed the dispute.

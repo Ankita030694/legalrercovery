@@ -168,7 +168,7 @@ const FAQS = [
   {
     question: "Can our SCF or Factoring desk test LegalRecovery.in on one defaulted account before uploading a bulk portfolio?",
     answer:
-      "Yes. Your legal or collections team can initiate a single live ₹999 Advocate-drafted notice (covering Factoring s.8 assignment, Anchor Stop-Supply, or Recourse Recall) via /user/new-recovery to audit our BSA s.63 tri-channel delivery logs, and then scale to 10–10,000+ dealer or vendor accounts via our Bulk CSV Desk.",
+      "Yes. Your legal or collections team can initiate a single live ₹999 Fact-verified notice (covering Factoring s.8 assignment, Anchor Stop-Supply, or Recourse Recall) via /user/new-recovery to audit our BSA s.63 tri-channel delivery logs, and then scale to 10–10,000+ dealer or vendor accounts via our Bulk CSV Desk.",
   },
 ];
 
@@ -244,7 +244,7 @@ export default function ScfInvoiceDiscountingRecoveryPage() {
       {
         "@type": "HowToStep",
         name: "Issue Statutory Demand (s.25 PSS / s.138 NI / BNS s.318)",
-        text: "Serve BSA 2023 s.63-certified tri-channel Advocate Notices for e-NACH bounce, recourse buyback, or dual-financing criminal fraud.",
+        text: "Serve BSA 2023 s.63-certified tri-channel Fact-Verified Notices for e-NACH bounce, recourse buyback, or dual-financing criminal fraud.",
       },
       {
         "@type": "HowToStep",
@@ -420,7 +420,7 @@ export default function ScfInvoiceDiscountingRecoveryPage() {
                   >
                     RBI-compliant legal escalation guide for NBFCs
                   </Link>
-                  , replacing aggressive field-agent pressure with formal, advocate-signed tri-channel notices shields the lender from regulatory penalties while creating an admissible evidentiary trail under Section 63 of the Bharatiya Sakshya Adhiniyam (BSA), 2023.
+                  , replacing aggressive field-agent pressure with formal, fact-verified tri-channel notices shields the lender from regulatory penalties while creating an admissible evidentiary trail under Section 63 of the Bharatiya Sakshya Adhiniyam (BSA), 2023.
                 </p>
               </section>
 

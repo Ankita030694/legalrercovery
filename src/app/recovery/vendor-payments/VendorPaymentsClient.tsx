@@ -125,7 +125,7 @@ const reviewSchema = {
   "@type": "Product",
   "name": "B2B Vendor Payments Recovery Services",
   "image": "https://www.legalrecovery.in/og-vendor-payments.png",
-  "description": "Advocate-backed legal assistance for recovering outstanding B2B vendor payments, raw material supplier dues, and contract payments in India.",
+  "description": "Fact-verified legal assistance for recovering outstanding B2B vendor payments, raw material supplier dues, and contract payments in India.",
   "brand": {
     "@type": "Brand",
     "name": "LegalRecovery"
@@ -166,7 +166,7 @@ const reviewSchema = {
         "@type": "Person",
         "name": "Venkatesh Prasad"
       },
-      "reviewBody": "A corporate client withheld ₹7,50,000 of our logistics and transport dues. LegalRecovery served an advocate notice warning of a summary suit under Order 37 CPC. Their legal team advised settlement to avoid litigation, and we recovered the principal plus interest."
+      "reviewBody": "A corporate client withheld ₹7,50,000 of our logistics and transport dues. LegalRecovery served a fact-verified notice warning of a summary suit under Order 37 CPC. Their legal team advised settlement to avoid litigation, and we recovered the principal plus interest."
     },
     {
       "@type": "Review",
@@ -286,7 +286,7 @@ export default function VendorPaymentsClient() {
               Recover Outstanding <span className="text-[#DC2626]">Vendor Payments</span> &amp; Supplier Dues
             </h1>
             <p className="text-sm md:text-xl mb-8 md:mb-12 max-w-3xl mx-auto text-slate-300 leading-relaxed font-medium">
-              Struggling with defaulting buyers, unpaid supplier invoices, delayed MSME vendor payments, or bounced corporate cheques? Serve advocate-backed legal notices and initiate fast-track recovery.
+              Struggling with defaulting buyers, unpaid supplier invoices, delayed MSME vendor payments, or bounced corporate cheques? Serve fact-verified legal notices and initiate fast-track recovery.
             </p>
             <button 
               onClick={() => setIsPaymentModalOpen(true)}
@@ -464,13 +464,13 @@ export default function VendorPaymentsClient() {
                       Before initiating formal litigation, it is essential to follow a structured pre-litigation escalation process. This shows courts that you acted in good faith and exhausted all informal remedies. The escalation should begin with a formal email to the buyer&apos;s finance team, attaching a reconciliation sheet showing all paid and unpaid invoices, credit notes, and the outstanding balance. If this is ignored, escalate the communication to the buyer&apos;s Chief Financial Officer (CFO) and Chief Executive Officer (CEO), demanding a formal response within a specific timeframe.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      If executive escalation fails, the next step is to serve a formal <strong>Legal Notice</strong>. A legal notice is a structured, advocate-signed document sent to the debtor, setting out the facts of the transaction, detailing the default, demanding payment of the outstanding dues within a strict window (typically 15 days), and warning of the legal actions that will be taken if they fail to comply. A legal notice is not just a warning; it establishes your cause of action and forms part of the court record.
+                      If executive escalation fails, the next step is to serve a formal <strong>Legal Notice</strong>. A legal notice is a structured, fact-verified document sent to the debtor, setting out the facts of the transaction, detailing the default, demanding payment of the outstanding dues within a strict window (typically 15 days), and warning of the legal actions that will be taken if they fail to comply. A legal notice is not just a warning; it establishes your cause of action and forms part of the court record.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      Our legal panel drafts custom notices tailored to the specific facts of your case. We do not use generic templates. Instead, we highlight the buyer&apos;s violations of the contract, the statutory interest liabilities under the MSMED Act, and the criminal consequences of bounced cheques or cheating. The notice is digitally dispatched via verified email and WhatsApp to the debtor&apos;s corporate office. Crucially, we also send copies of the notice to the personal residential addresses of the company&apos;s directors, piercing the corporate veil and encouraging immediate settlement.
+                      Our team drafts custom notices tailored to the specific facts of your case. We do not use generic templates. Instead, we highlight the buyer&apos;s violations of the contract, the statutory interest liabilities under the MSMED Act, and the criminal consequences of bounced cheques or cheating. The notice is digitally dispatched via verified email and WhatsApp to the debtor&apos;s corporate office. Crucially, we also send copies of the notice to the personal residential addresses of the company&apos;s directors, piercing the corporate veil and encouraging immediate settlement.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      Approximately 85% of B2B payment disputes are resolved successfully at the legal notice stage. Most corporate entities prefer to settle undisputed dues rather than face public litigation, credit rating downgrades, or asset attachment. If the debtor responds with a counter-claim or denies the debt, their reply helps our legal team understand their defense strategy, allowing us to prepare a stronger petition for the MSEFC, a Summary Suit, or cheque bounce proceedings.
+                      Approximately 85% of B2B payment disputes are resolved successfully at the legal notice stage. Most corporate entities prefer to settle undisputed dues rather than face public litigation, credit rating downgrades, or asset attachment. If the debtor responds with a counter-claim or denies the debt, their reply helps our team understand their defense strategy, allowing us to prepare a stronger petition for the MSEFC, a Summary Suit, or cheque bounce proceedings.
                     </p>
                   </div>
                 </section>

@@ -608,7 +608,7 @@ export default function EJagritiConsumerComplaintGuidePage() {
                           Establishes pre-litigation default; crystallizes the cause of action date; justifies compensation for mental harassment.
                         </td>
                         <td className="py-3 px-4 text-slate-600">
-                          Advocate signed letterhead copy + India Post Speed Post receipt and delivery tracking.
+                          Fact-verified letterhead copy + India Post Speed Post receipt and delivery tracking.
                         </td>
                       </tr>
                       <tr className="hover:bg-slate-50">
@@ -1051,7 +1051,7 @@ export default function EJagritiConsumerComplaintGuidePage() {
                   <div className="space-y-2 text-xs sm:text-sm text-slate-700">
                     <h4 className="font-bold text-slate-900 text-sm">Legal Escalation &amp; e-Jagriti Resolution:</h4>
                     <ol className="list-decimal list-inside space-y-1.5 pl-1 leading-relaxed">
-                      <li><strong>Pre-Notice Served:</strong> An advocate legal notice was served to the corporate registered office giving 15 days to replace the unit or refund ₹1,35,000. The company sent an evasive automated response.</li>
+                      <li><strong>Pre-Notice Served:</strong> A fact-verified legal notice was served to the corporate registered office giving 15 days to replace the unit or refund ₹1,35,000. The company sent an evasive automated response.</li>
                       <li><strong>e-Jagriti Complaint Filed:</strong> The consumer uploaded Annexures A (Tax Invoice), B (Bank Debit), C (Service Job Sheet with &apos;No Physical Damage&apos; remark), and D (Legal Notice + Speed Post Delivery Proof) under DCDRC Bengaluru.</li>
                       <li><strong>Admissibility &amp; Summons:</strong> The complaint was admitted within 14 days under Section 36(2). Digital summons were issued via e-Jagriti to the corporate email and ROC address.</li>
                       <li><strong>Final Award:</strong> The District Commission held the manufacturer guilty of unfair trade practice for fabricating liquid damage without photographic proof. The forum ordered: (a) Full refund of ₹1,35,000 upon return of laptop, (b) 9% interest from date of complaint, (c) ₹20,000 compensation for work interruption, and (d) ₹7,500 litigation costs.</li>

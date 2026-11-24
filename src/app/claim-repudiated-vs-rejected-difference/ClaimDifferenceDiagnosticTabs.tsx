@@ -31,7 +31,7 @@ const SCENARIOS: DiagnosticScenario[] = [
     legalStanding:
       "This cannot be resolved by providing missing receipts or diagnostic slips. The contract is either being treated as voidable or the specific treatment is permanently excluded. The policyholder must challenge the substantive legal basis before the Grievance Redressal Officer (GRO), via a formal legal notice, and subsequently before the Insurance Ombudsman or Consumer Court.",
     recommendedAction:
-      "1. Secure treating doctor certificate certifying disease was acute and had no prior history.\n2. Obtain complete Indoor Case Papers (ICP) with initial admitting notes.\n3. Send an advocate statutory notice citing Section 45 and Supreme Court in Manmohan Nanda.\n4. Escalate to Bima Bharosa and file an Insurance Ombudsman complaint under Rule 13(1)(b).",
+      "1. Secure treating doctor certificate certifying disease was acute and had no prior history.\n2. Obtain complete Indoor Case Papers (ICP) with initial admitting notes.\n3. Send a fact-verified statutory notice citing Section 45 and Supreme Court in Manmohan Nanda.\n4. Escalate to Bima Bharosa and file an Insurance Ombudsman complaint under Rule 13(1)(b).",
     governingRule: "Section 45 Insurance Act 1938 & IRDAI Master Circular 2024",
   },
   {

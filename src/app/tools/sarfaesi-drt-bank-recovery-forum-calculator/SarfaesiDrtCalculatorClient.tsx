@@ -1029,7 +1029,7 @@ export default function SarfaesiDrtCalculatorClient() {
                 Execute Pre-SARFAESI Recall or Bulk Portfolio Dispatch Now
               </p>
               <p className="text-sm font-bold text-white mt-0.5">
-                Serve BSA s.63 compliant Advocate Notices before invoking DRT, SARFAESI s.13(2), or Lok Adalat.
+                Serve BSA s.63 compliant Fact-Verified Notices before invoking DRT, SARFAESI s.13(2), or Lok Adalat.
               </p>
             </div>
             <div className="flex flex-wrap gap-2.5 shrink-0">

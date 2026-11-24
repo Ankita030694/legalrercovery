@@ -36,7 +36,7 @@ const GIG_SCENARIOS: ProblemScenario[] = [
           "Email the platform's designated Grievance Officer and Partner Support quoting your Registered Partner ID and mobile number, demanding the specific audit log or trip IDs triggering the block.",
       },
       {
-        step: "Serve 15-Day Advocate Legal Demand Notice",
+        step: "Serve 15-Day Fact-Verified Legal Demand Notice",
         description:
           "If the platform defers or gives automated chatbot responses for 7 days, dispatch an advocate demand notice for immediate payout release with 18% penal interest under Contract Act Section 73.",
       },

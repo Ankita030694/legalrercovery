@@ -63,7 +63,7 @@ const PAPER_MILL_SCENARIOS: PaperMillScenario[] = [
       {
         step: "Serve Dual Notice + Paper Trade Association Circulation",
         detail:
-          "Dispatch an Advocate Statutory Notice to the merchant firm, all partners/directors, and any del credere broker, alongside formal default intimation to regional Paper Merchants' Associations where bye-laws permit.",
+          "Dispatch a Fact-Verified Statutory Notice to the merchant firm, all partners/directors, and any del credere broker, alongside formal default intimation to regional Paper Merchants' Associations where bye-laws permit.",
       },
       {
         step: "Move Commercial Court Order XXXVIII Rule 5 Attachment",
@@ -124,7 +124,7 @@ const PAPER_MILL_SCENARIOS: PaperMillScenario[] = [
       {
         step: "Trigger MSMED s.18 / IBC s.8 & Section 43B(h) Notice",
         detail:
-          "Dispatch an Advocate Notice to the mill's Managing Director and Statutory Auditor citing Section 43B(h) expense disallowance (for Micro/Small processors) or IBC Form 3 for >= ₹1 Cr raw-material arrears.",
+          "Dispatch a Fact-Verified Notice to the mill's Managing Director and Statutory Auditor citing Section 43B(h) expense disallowance (for Micro/Small processors) or IBC Form 3 for >= ₹1 Cr raw-material arrears.",
       },
     ],
     keyStatutes: "Sale of Goods Act s.42 | MSMED Act ss.15–18 | Income Tax Act s.43B(h) | IBC 2016 ss.8–9 | CGST Act s.34",

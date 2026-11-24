@@ -49,7 +49,7 @@ export default function FinishingMaterialCTA({
                 Test 1 Live Overdue Case Now (&rupee;{basePrice})
               </h3>
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-                Advocate-drafted statutory notice rejecting encumbered &lsquo;barter flat&rsquo; pressure, invoking MSMED Act s.15&ndash;18 + Section 43B(h) + Order XXXVII CPC &mdash; dispatched via Email + WhatsApp + Speed Post RPAD.
+                Fact-verified statutory notice rejecting encumbered &lsquo;barter flat&rsquo; pressure, invoking MSMED Act s.15&ndash;18 + Section 43B(h) + Order XXXVII CPC &mdash; dispatched via Email + WhatsApp + Speed Post RPAD.
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-3">

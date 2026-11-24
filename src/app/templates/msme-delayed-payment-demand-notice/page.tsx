@@ -145,7 +145,7 @@ const FAQS = [
   {
     question: "Can a registered MSME send a demand notice on its own letterhead before hiring an advocate?",
     answer:
-      "Yes. A Udyam-registered Micro or Small Enterprise can dispatch an initial Polite Reminder (Variant 1) or Firm Statutory Demand Notice (Variant 2) directly on its company letterhead signed by a Partner, Director, or Authorised Signatory. However, if the buyer's accounts payable team ignores your letterhead notice, serving an official 15-day Pre-Litigation Legal Notice drafted and dispatched by an Advocate (via Registered Post RPAD and legal email) carries substantially stronger weight with corporate legal and audit departments.",
+      "Yes. A Udyam-registered Micro or Small Enterprise can dispatch an initial Polite Reminder (Variant 1) or Firm Statutory Demand Notice (Variant 2) directly on its company letterhead signed by a Partner, Director, or Authorised Signatory. However, if the buyer's accounts payable team ignores your letterhead notice, serving an official 15-day Pre-Litigation Legal Notice prepared on verified facts (via Registered Post RPAD and legal email) carries substantially stronger weight with corporate legal and audit departments.",
   },
   {
     question: "Why should my MSME demand notice mention Section 43B(h) of the Income-tax Act?",
@@ -931,7 +931,7 @@ export default function MsmeDelayedPaymentDemandNoticePage() {
                       .
                     </p>
                     <p>
-                      <strong>The Statutory Demand Notice:</strong> In February 2026—just ahead of the buyer&apos;s March 31 financial year-end tax audit—VoltCraft engaged LegalRecovery.in. An advocate served a formal 15-day Statutory Demand Notice (Variant 2/3 structure) on the buyer&apos;s Managing Director, CFO, and Statutory Audit partner via RPAD and email. The notice attached a month-by-month Section 16 interest schedule computing ₹1,62,850 in monthly compounded interest (@ 20.25% p.a.) and explicitly flagged that if ₹11,40,000 remained unpaid on March 31, the buyer would suffer an immediate ~₹3,42,000 cash income-tax disallowance under Section 43B(h).
+                      <strong>The Statutory Demand Notice:</strong> In February 2026—just ahead of the buyer&apos;s March 31 financial year-end tax audit—VoltCraft engaged LegalRecovery.in, which served a formal 15-day Statutory Demand Notice (Variant 2/3 structure) on the buyer&apos;s Managing Director, CFO, and Statutory Audit partner via RPAD and email. The notice attached a month-by-month Section 16 interest schedule computing ₹1,62,850 in monthly compounded interest (@ 20.25% p.a.) and explicitly flagged that if ₹11,40,000 remained unpaid on March 31, the buyer would suffer an immediate ~₹3,42,000 cash income-tax disallowance under Section 43B(h).
                     </p>
                     <div className="p-3.5 sm:p-4 bg-emerald-950/70 border border-emerald-700/60 rounded-xl text-emerald-200">
                       <strong className="block text-emerald-400 font-bold mb-1">The Resolution:</strong>
@@ -1070,7 +1070,7 @@ export default function MsmeDelayedPaymentDemandNoticePage() {
                     </span>
                     <ul className="space-y-2 text-xs sm:text-sm text-emerald-950 leading-relaxed list-disc list-inside">
                       <li>
-                        Advocate-drafted 15-day Statutory Demand Notice citing MSMED Sections 15, 16, 22, 23 &amp; Income-tax Section 43B(h).
+                        Fact-verified 15-day Statutory Demand Notice citing MSMED Sections 15, 16, 22, 23 &amp; Income-tax Section 43B(h).
                       </li>
                       <li>
                         Verified month-by-month Section 16 compound interest calculation sheet annexed to the notice.

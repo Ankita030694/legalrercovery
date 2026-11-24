@@ -31,7 +31,7 @@ export default function CreditCardRecoveryCTA({
                 Establish an End-to-End Statutory Escalation Pipeline for Delinquent Card Accounts
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6">
-                Partner with our specialized recovery litigation practice to transform delinquent credit card write-offs into legally binding recoveries. From automated advocate demand notices to Lok Adalat pre-litigation settlements, institutional digital arbitration under the Arbitration &amp; Conciliation Act 1996, and Order 37 summary suits, we protect your NPA provisions and recover outstanding balances at scale.
+                Partner with our specialized recovery litigation practice to transform delinquent credit card write-offs into legally binding recoveries. From automated fact-verified demand notices to Lok Adalat pre-litigation settlements, institutional digital arbitration under the Arbitration &amp; Conciliation Act 1996, and Order 37 summary suits, we protect your NPA provisions and recover outstanding balances at scale.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button

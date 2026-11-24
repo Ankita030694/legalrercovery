@@ -66,7 +66,7 @@ const CREDIT_CARD_REMEDY_CHANNELS: RemedyTab[] = [
       "Under Section 19 & 20 of the Legal Services Authorities Act, 1987, banks can refer pre-litigation credit card default pools to the National Lok Adalat through District Legal Services Authorities (DLSA). An award passed by Lok Adalat is deemed a Civil Court Decree under Section 21 and is final and binding with zero court fees, enforceable via immediate execution attachment under Order XXI CPC.",
     steps: [
       {
-        step: "Issue Advocate Statutory Legal Demand Notice (15-Day Cure Period)",
+        step: "Issue Fact-Verified Statutory Legal Demand Notice (15-Day Cure Period)",
         description:
           "Our banking advocates serve a formal statutory demand notice via Speed Post and digital channels demanding total outstanding settlement with contractual interest.",
       },
@@ -143,7 +143,7 @@ const CREDIT_CARD_REMEDY_CHANNELS: RemedyTab[] = [
       {
         step: "Serve Statutory 15-Day Demand Notice within 30 Days of Return",
         description:
-          "Dispatch advocate statutory demand notice under Section 25 PSS Act requiring the cardholder to pay the returned amount within 15 days of notice receipt.",
+          "Dispatch fact-verified statutory demand notice under Section 25 PSS Act requiring the cardholder to pay the returned amount within 15 days of notice receipt.",
       },
       {
         step: "Lodge Criminal Complaint before Metropolitan Magistrate / JMFC",

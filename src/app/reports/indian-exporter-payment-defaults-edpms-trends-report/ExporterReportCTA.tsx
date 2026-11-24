@@ -22,7 +22,7 @@ export default function ExporterReportCTA() {
               Test 1 Live Overdue Case Now (₹{basePrice})
             </p>
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
-              Advocate-drafted international demand notice citing Shipping Bill No., Bill of Lading, ECGC default reporting, and RBI EDPMS Para C.20/C.24 audit trails—dispatched via Email + WhatsApp under BSA s.63.
+              Fact-verified international demand notice citing Shipping Bill No., Bill of Lading, ECGC default reporting, and RBI EDPMS Para C.20/C.24 audit trails—dispatched via Email + WhatsApp under BSA s.63.
             </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-3 pt-2">

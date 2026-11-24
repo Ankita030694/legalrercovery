@@ -192,7 +192,7 @@ export default function CabTableOfContents({
         <div className="mt-6 pt-4 border-t border-slate-100 text-[11px] text-slate-500 leading-relaxed">
           <p className="font-semibold text-slate-700 mb-1">Facing an unaddressed cab dispute?</p>
           <p>
-            Serve a verified statutory advocate legal notice directly to the platform&apos;s corporate legal cell before consumer court filing.
+            Serve a fact-verified legal notice directly to the platform&apos;s corporate legal cell before consumer court filing.
           </p>
         </div>
       </aside>

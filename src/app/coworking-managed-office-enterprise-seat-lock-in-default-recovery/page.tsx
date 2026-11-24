@@ -406,7 +406,7 @@ export default function CoworkingManagedOfficeRecoveryPage() {
                   When funded startups face funding freezes, bridge round collapses, or strategic downscaling, they routinely stop paying monthly seat fees, ignore GST invoices, and abandon private cabins filled with dozens of IT monitors, server racks, and office chairs. Flex-space center managers and CFOs often hesitate to act—falsely believing they must file lengthy eviction suits under archaic Rent Control Acts, or fearing criminal charges of &quot;illegal dispossession&quot; if they deactivate turnstiles or clear abandoned hardware. This operational paralysis destroys center yields and locks up valuable commercial floor space.
                 </div>
                 <p>
-                  This operational guide provides the definitive, advocate-vetted playbook for co-working and managed-office operators to swiftly enforce their rights under the Indian Easements Act, 1882, the Indian Contract Act, 1872, and the Bharatiya Sakshya Adhiniyam, 2023.
+                  This operational guide provides the definitive, fact-verified playbook for co-working and managed-office operators to swiftly enforce their rights under the Indian Easements Act, 1882, the Indian Contract Act, 1872, and the Bharatiya Sakshya Adhiniyam, 2023.
                 </p>
               </div>
             </section>
@@ -781,7 +781,7 @@ export default function CoworkingManagedOfficeRecoveryPage() {
                   </p>
                   <div className="space-y-2 text-xs sm:text-sm text-slate-200">
                     <p>
-                      <strong>1. Deliver 48-Hour Written Notice:</strong> Transmit an advocate-vetted statutory notice citing Section 52 and Section 62 of the Indian Easements Act, 1882, notifying the client that failure to cure invoice arrears within 48 hours will trigger immediate electronic license revocation.
+                      <strong>1. Deliver 48-Hour Written Notice:</strong> Transmit a fact-verified statutory notice citing Section 52 and Section 62 of the Indian Easements Act, 1882, notifying the client that failure to cure invoice arrears within 48 hours will trigger immediate electronic license revocation.
                     </p>
                     <p>
                       <strong>2. Deactivate Turnstiles, Not Exits:</strong> Ensure that all biometric and RFID credentials are electronically deactivated at entrance barriers, while emergency fire exits and stairwells remain completely unimpeded to comply with municipal fire codes.

@@ -100,7 +100,7 @@ const SCENARIOS: Scenario[] = [
     statutoryTrap:
       "Deploying standard CRM calling agents who offer ad-hoc verbal waivers, or engaging traditional law firms that take 3 to 6 months to draft individual notices. Disparate notice dates, inconsistent interest calculations, and lack of certified India Post delivery tracking destroy evidentiary weight before State RERA benches.",
     promoterRemedy:
-      "Ingest the complete default ledger into LegalRecovery's B2B Institutional Real Estate Recovery Engine. Generate advocate-vetted, automated statutory Cure-cum-Interest Notices under Section 19(6) with individual SBI MCLR + 2% interest ledgers and tower-specific Architect Certificates. Dispatch simultaneously via Registered Speed Post RPAD, email, and WhatsApp with BSA Section 63 compliant digital delivery certificates.",
+      "Ingest the complete default ledger into LegalRecovery's B2B Institutional Real Estate Recovery Engine. Generate fact-verified, automated statutory Cure-cum-Interest Notices under Section 19(6) with individual SBI MCLR + 2% interest ledgers and tower-specific Architect Certificates. Dispatch simultaneously via Registered Speed Post RPAD, email, and WhatsApp with BSA Section 63 compliant digital delivery certificates.",
     statutoryCitations: [
       "RERA Act 2016 s.19(6), 19(7) & s.11(5) (Institutional Enforcement Rail)",
       "Bharatiya Sakshya Adhiniyam, 2023 s.63 (Electronic Service Admissibility)",
@@ -131,7 +131,7 @@ export default function ReraSection19ScenarioTabs() {
           Select Allottee Default Failure Mode
         </h3>
         <p className="text-xs sm:text-sm text-slate-600 mt-1">
-          Explore tailored statutory strategies, RERA precedent traps, and advocate-vetted cure workflows across 4 critical developer collection challenges.
+          Explore tailored statutory strategies, RERA precedent traps, and fact-verified cure workflows across 4 critical developer collection challenges.
         </p>
       </div>
 

@@ -28,7 +28,7 @@ const SCENARIOS: ScenarioTab[] = [
       {
         step: "1. Freeze Cylinder Rotation & Serve 7-Day BNS s.316 Recall Notice",
         description:
-          "Issue an Advocate Legal Notice annexing the PESO neck-ring serial register and signed delivery challans, demanding physical return of all serial-numbered cylinders plus daily holding rent (demurrage) within 7 days.",
+          "Issue a Fact-Verified Legal Notice annexing the PESO neck-ring serial register and signed delivery challans, demanding physical return of all serial-numbered cylinders plus daily holding rent (demurrage) within 7 days.",
       },
       {
         step: "2. Separate Gas Invoice Claim from Cylinder Replacement Indemnity",
@@ -55,7 +55,7 @@ const SCENARIOS: ScenarioTab[] = [
       {
         step: "1. Serve Dual-Addressee Cease & Desist on Buyer + Rogue Refiller",
         description:
-          "Dispatch a tri-channel Advocate Notice simultaneously to the defaulting factory and the suspected rival filling plant, putting the refiller on formal statutory notice of PESO Rules violation and BNS s.317 liability.",
+          "Dispatch a tri-channel Fact-Verified Notice simultaneously to the defaulting factory and the suspected rival filling plant, putting the refiller on formal statutory notice of PESO Rules violation and BNS s.317 liability.",
       },
       {
         step: "2. Preserve Serial-Numbered Gate & Weighbridge Evidence",

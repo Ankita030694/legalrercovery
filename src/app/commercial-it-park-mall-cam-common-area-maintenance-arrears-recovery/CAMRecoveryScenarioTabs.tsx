@@ -49,7 +49,7 @@ const SCENARIOS: Scenario[] = [
     statutorySolution:
       "Disputes over CAM reconciliations do not create an automatic right to withhold undisputed base maintenance. Under Supreme Court principles affirmed in commercial leasing jurisprudence, an occupant cannot enjoy peaceful possession, climate control, and common facilities without paying the admitted or baseline operational costs. The facility agreement binds the tenant to pay billed amounts 'without deduction or set-off' under protest while audit reconciliations proceed in parallel.",
     actionableSteps: [
-      "Serve an Advocate Notice with Annexure 1: Statutory Auditor's True-Up Certificate and BMS energy telemetry logs.",
+      "Serve a Fact-Verified Notice with Annexure 1: Statutory Auditor's True-Up Certificate and BMS energy telemetry logs.",
       "Invoke the 'No Set-Off / Pay First, Reconcile Later' covenant in the Tripartite Facility Agreement.",
       "Issue a 7-day conditional notice to taper secondary cooling (chilled water valve throttling) during off-peak hours.",
       "Initiate Pre-Institution Commercial Mediation under Section 12A of the Commercial Courts Act 2015 for immediate deposit of undisputed baseline dues.",

@@ -27,7 +27,7 @@ export default function AgriColdStorageHubCTA({ className = "" }: AgriColdStorag
                 Test 1 Live Overdue Case Now (&rupee;{basePrice})
               </h3>
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-                Advocate Drafted &bull; Email + WhatsApp + Speed Post RPAD. Serve one defaulting Krishi Kendra agro-dealer, one trader abandoning cold-storage bags, or one outstation rice/dal/oil mill buyer today.
+                Fact-Verified &bull; Email + WhatsApp + Speed Post RPAD. Serve one defaulting Krishi Kendra agro-dealer, one trader abandoning cold-storage bags, or one outstation rice/dal/oil mill buyer today.
               </p>
               <ul className="space-y-1.5 text-xs text-slate-200 mb-6">
                 <li>&check; NI Act s.138/141 Bounced Seasonal PDC Demand &amp; 15-Day Statutory Clock</li>

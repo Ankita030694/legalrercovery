@@ -43,7 +43,7 @@ const SCENARIOS: ScenarioItem[] = [
     creditorMove: [
       "On the day exclusivity expires (or termination notice arrives), formally transmit the finalized 'Tail-Protected Investor & Lender Schedule' citing VDR access timestamps, calendar invites, and email introductions under BSA 2023 s.63.",
       "Monitor MCA Form PAS-3 (Return of Allotment) and Form MGT-14 / SH-7 filings: Form PAS-3 provides indisputable public statutory proof of share allotment to the exact introduced fund (or its affiliate SPV / Mauritius-Singapore pooling vehicle).",
-      "Invoke the Tail-Period Survival Clause (typically 12–24 months post-termination) and 'Effective Cause' commission law via Advocate Demand Notice + urgent Arbitration Section 9 application to ring-fence the ₹2.50 Crore fee from closing escrow or primary investment proceeds.",
+      "Invoke the Tail-Period Survival Clause (typically 12–24 months post-termination) and 'Effective Cause' commission law via Fact-Verified Demand Notice + urgent Arbitration Section 9 application to ring-fence the ₹2.50 Crore fee from closing escrow or primary investment proceeds.",
     ],
     outcomeMetric:
       "Institutional PE/VC funds carry strict representations and warranties requiring disclosure of all broker/advisor claims; placing the founder's closing table on formal legal notice triggers immediate indemnity pressure from the incoming investor's legal counsel.",

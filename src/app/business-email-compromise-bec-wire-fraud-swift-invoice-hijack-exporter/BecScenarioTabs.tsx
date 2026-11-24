@@ -72,7 +72,7 @@ const SCENARIOS: Scenario[] = [
     statutoryOutcome:
       "Customs issues Rule 18 Duty Drawback recovery notices with 15% interest. AD Bank threatens caution-listing. Exporter must legally establish bona fide cross-border fraud and litigated recovery to seek EDPMS extension or write-off under RBI AP (DIR Series) Circular No. 88.",
     recommendedAction:
-      "Issue formal Advocate Legal Notice to foreign buyer for debt enforcement + Submit formal application to AD Category-1 Bank enclosing FIR, SWIFT recall proof, and legal notice for EDPMS extension.",
+      "Issue formal Fact-Verified Legal Notice to foreign buyer for debt enforcement + Submit formal application to AD Category-1 Bank enclosing FIR, SWIFT recall proof, and legal notice for EDPMS extension.",
     governingPrecedent:
       "RBI Master Direction on Export of Goods & Services (FED Master Direction No. 16/2015-16): Legal proceedings permit AD Bank to grant provisional write-off/extension.",
   },

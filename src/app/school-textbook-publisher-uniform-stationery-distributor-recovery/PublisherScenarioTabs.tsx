@@ -30,7 +30,7 @@ const SCENARIOS: Scenario[] = [
       "Signed delivery challans or school gate-register entries stamped by campus storekeeper",
     ],
     actionStep:
-      "Serve a Pre-Session December–January Advocate Legal Notice on the School Trust Chairman, Principal, and Bookshop Proprietor warning of Order 37 CPC Summary Suit & MSEFC reference before new-session admissions open.",
+      "Serve a Pre-Session December–January Fact-Verified Legal Notice on the School Trust Chairman, Principal, and Bookshop Proprietor warning of Order 37 CPC Summary Suit & MSEFC reference before new-session admissions open.",
   },
   {
     id: "unsold-dump",

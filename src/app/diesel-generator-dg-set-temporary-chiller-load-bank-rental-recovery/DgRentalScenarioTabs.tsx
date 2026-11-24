@@ -31,7 +31,7 @@ const SCENARIOS: ScenarioItem[] = [
       "GST tax invoices and e-Way bills proving uninterrupted site deployment during the billing cycle",
     ],
     actionStep:
-      "Serve an Advocate Demand Notice invoking Contract Act s.73 + MSMED Act s.15 (if Udyam-registered) demanding full minimum hire plus 3x RBI compound interest, precluding belated hourly re-pricing.",
+      "Serve a Fact-Verified Demand Notice invoking Contract Act s.73 + MSMED Act s.15 (if Udyam-registered) demanding full minimum hire plus 3x RBI compound interest, precluding belated hourly re-pricing.",
     timeline: "15-Day Cure Notice -> Order 37 Summary Suit / MSEFC Reference",
   },
   {
@@ -69,7 +69,7 @@ const SCENARIOS: ScenarioItem[] = [
       "GPS / Telematics location ping confirming asset immobilization inside the lessee's premises",
     ],
     actionStep:
-      "Dispatch an Advocate Notice via Email, WhatsApp & Speed Post RPAD with Police Station Email CC citing BNS s.316 and continuing per-day detention hire, plus Section 9 Arbitration interim receiver application if arbitrable.",
+      "Dispatch a Fact-Verified Notice via Email, WhatsApp & Speed Post RPAD with Police Station Email CC citing BNS s.316 and continuing per-day detention hire, plus Section 9 Arbitration interim receiver application if arbitrable.",
     timeline: "48-Hour Gate-Pass Ultimatum -> BNS s.316 Complaint / Sec. 9 Receiver",
   },
   {

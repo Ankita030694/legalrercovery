@@ -32,7 +32,7 @@ const SCENARIOS: Scenario[] = [
       "Issue an immediate formal Repudiation Notice of the unilateral debit note within 7 days, denying liability and objecting to unauthorized ERP ledger set-offs.",
       "Demand constitution of an accredited Joint Quality Audit Committee and independent failure analysis at an ARAI/NABL accredited laboratory.",
       "Re-invoice the deducted sum as an overdue principal invoice, triggering the statutory 45-day countdown under MSMED Act Section 15.",
-      "Serve an Advocate Demand Notice warning of Section 16 penal compound interest (3x RBI Bank Rate) and corporate tax disallowance under Section 43B(h).",
+      "Serve a Fact-Verified Demand Notice warning of Section 16 penal compound interest (3x RBI Bank Rate) and corporate tax disallowance under Section 43B(h).",
     ],
   },
   {

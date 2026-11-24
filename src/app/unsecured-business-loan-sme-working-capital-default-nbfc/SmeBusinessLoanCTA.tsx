@@ -23,7 +23,7 @@ export default function SmeBusinessLoanCTA({ className = "" }: SmeBusinessLoanCT
               Track 1 &bull; Self-Serve Single Case Test
             </span>
             <h3 className="text-lg sm:text-xl font-extrabold text-white mb-2">
-              Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Advocate Drafted &middot; Email + WhatsApp + Speed Post RPAD)
+              Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Fact-Verified &middot; Email + WhatsApp + Speed Post RPAD)
             </h3>
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
               Validate our composite PSS Act s.25 + Loan Recall &amp; Personal Guarantee invocation notice with BSA s.63 electronic service logs on a single live ₹5L–₹75L SME or EDI default before scaling.

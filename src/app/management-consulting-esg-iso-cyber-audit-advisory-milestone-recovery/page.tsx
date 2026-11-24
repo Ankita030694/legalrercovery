@@ -157,7 +157,7 @@ const DECISION_STAGES = [
     stage: "Stage 3 · Day 26–40",
     title: "Statutory Advocate Demand Notice",
     detail:
-      "Issue 15-day pre-litigation advocate notice citing Order XXXVII CPC liquidated liability, MSMED Act Sections 15–18 (3x RBI compound interest), and Section 43B(h) corporate tax disallowance.",
+      "Issue 15-day pre-litigation fact-verified notice citing Order XXXVII CPC liquidated liability, MSMED Act Sections 15–18 (3x RBI compound interest), and Section 43B(h) corporate tax disallowance.",
   },
   {
     stage: "Stage 4 · Day 41–55",

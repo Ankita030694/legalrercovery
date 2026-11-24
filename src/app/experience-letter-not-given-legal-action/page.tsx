@@ -150,12 +150,12 @@ const FAQS = [
   {
     question: "Can I take legal action against an employer for delaying or denying my experience letter?",
     answer:
-      "Yes. You have four established legal remedies: (1) Serve an Advocate Legal Demand Notice giving a 15-day compliance window; (2) File an online or offline conciliation complaint before the Labour Commissioner or on the state Samadhan portal; (3) File a civil suit for mandatory injunction under Section 39 of the Specific Relief Act, 1963, claiming damages for professional loss; or (4) If the employer demands money under threat of tarnishing your career or background verification (BGV), file a criminal complaint for extortion and criminal breach of trust under Sections 308 and 316 of the Bharatiya Nyaya Sanhita, 2023.",
+      "Yes. You have four established legal remedies: (1) Serve a Fact-Verified Legal Demand Notice giving a 15-day compliance window; (2) File an online or offline conciliation complaint before the Labour Commissioner or on the state Samadhan portal; (3) File a civil suit for mandatory injunction under Section 39 of the Specific Relief Act, 1963, claiming damages for professional loss; or (4) If the employer demands money under threat of tarnishing your career or background verification (BGV), file a criminal complaint for extortion and criminal breach of trust under Sections 308 and 316 of the Bharatiya Nyaya Sanhita, 2023.",
   },
   {
     question: "Experience letter employer nahi de raha toh kya legal notice bhej sakte hain?",
     answer:
-      "Haan, bilkul. Agar company resignation ke baad aapka experience certificate rok kar baithi hai, toh aap apne employer, HR Head aur Board of Directors ko ek statutory legal notice bhej sakte hain. LegalRecovery.in par verified advocates Model Standing Orders Central Rules aur State Shops & Establishments Act ke tehat Registered Speed Post aur email se 15-day statutory demand notice draft aur serve karte hain, jisse adhiktam mamle bina adalat gaye turant sulajh jaate hain.",
+      "Haan, bilkul. Agar company resignation ke baad aapka experience certificate rok kar baithi hai, toh aap apne employer, HR Head aur Board of Directors ko ek statutory legal notice bhej sakte hain. LegalRecovery.in par hamari team aapke facts verify karti hai aur Model Standing Orders Central Rules aur State Shops & Establishments Act ke tehat email, WhatsApp (aur optional Speed Post) se 15-day statutory demand notice taiyaar karke bhejti hai, jisse adhiktam mamle bina adalat gaye turant sulajh jaate hain.",
   },
 ];
 
@@ -456,7 +456,7 @@ export default function ExperienceLetterNotGivenPage() {
                   </table>
                 </div>
                 <p className="text-xs text-slate-500 italic">
-                  Note on pricing: Advocate legal notice drafting fees follow our published{" "}
+                  Note on pricing: Fact-verified legal notice drafting fees follow our published{" "}
                   <Link href="/legal-notice-charges" className="text-blue-700 underline font-semibold">
                     legal notice charges schedule
                   </Link>
@@ -503,7 +503,7 @@ export default function ExperienceLetterNotGivenPage() {
                     </p>
                     <div className="p-3 bg-slate-50 rounded-xl border border-slate-100 text-xs text-slate-700">
                       <strong className="text-slate-900 block mb-1">Recommended Move:</strong>
-                      Serve an immediate <strong>15-day statutory advocate legal notice</strong>. In parallel, share your EPFO electronic service passbook and Form 16 with your new HR under Section 63 BSA as interim proof.
+                      Serve an immediate <strong>15-day statutory fact-verified legal notice</strong>. In parallel, share your EPFO electronic service passbook and Form 16 with your new HR under Section 63 BSA as interim proof.
                     </div>
                   </div>
 
@@ -541,7 +541,7 @@ export default function ExperienceLetterNotGivenPage() {
                     </p>
                     <div className="p-3 bg-slate-50 rounded-xl border border-slate-100 text-xs text-slate-700">
                       <strong className="text-slate-900 block mb-1">Recommended Move:</strong>
-                      Serve an advocate notice invoking <strong>Section 27 of the Contract Act</strong> and warning against civil and criminal defamation under Section 356 BNS 2023, coupled with an interim civil court injunction petition.
+                      Serve a fact-verified notice invoking <strong>Section 27 of the Contract Act</strong> and warning against civil and criminal defamation under Section 356 BNS 2023, coupled with an interim civil court injunction petition.
                     </div>
                   </div>
                 </div>
@@ -753,7 +753,7 @@ export default function ExperienceLetterNotGivenPage() {
                   </h2>
                 </div>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
-                  A statutory legal notice drafted by an advocate is the single most effective tool to compel the immediate release of an experience certificate. Corporate HR departments routinely deflect individual employee requests with generic template emails. However, when an official legal notice arrives on an advocate&apos;s letterhead, addressed not merely to HR but to the <strong>Managing Director and Board of Directors</strong> via Registered Speed Post and Section 63 BSA electronic mail, the company&apos;s legal and compliance counsel is compelled to intervene.
+                  A statutory legal notice prepared on verified facts is the single most effective tool to compel the immediate release of an experience certificate. Corporate HR departments routinely deflect individual employee requests with generic template emails. However, when an official legal notice arrives on an advocate&apos;s letterhead, addressed not merely to HR but to the <strong>Managing Director and Board of Directors</strong> via Registered Speed Post and Section 63 BSA electronic mail, the company&apos;s legal and compliance counsel is compelled to intervene.
                 </p>
                 <div className="space-y-3 bg-white rounded-2xl border border-slate-200 p-5 shadow-sm">
                   <h3 className="text-base font-bold text-slate-900">What a Properly Drafted Legal Notice Contains:</h3>
@@ -1154,11 +1154,11 @@ export default function ExperienceLetterNotGivenPage() {
                       <strong>The Deadlock:</strong> Management refused the notice buyout, demanded that she work the entire 90 days, and withheld both her final month&apos;s salary and her experience certificate. When she exited on Day 30 after completing formal KT documentation, HR sent an aggressive email branding her &quot;absconding&quot; and threatened to fail her upcoming background verification (BGV). Her new employer gave her a 14-day deadline to furnish her experience certificate or forfeit the offer.
                     </p>
                     <p>
-                      <strong>The Statutory Action:</strong> Ananya engaged LegalRecovery.in. An advocate drafted and served a statutory legal demand notice on the company&apos;s registered office and the Managing Director. The notice cited Section 27 of the Contract Act, Model Standing Orders Rule 16/17, and the Bombay High Court precedent in <em>Nandkishore Shenoy</em>. The notice dismantled the &quot;absconding&quot; tag using Section 63 BSA electronic email timestamps, gave a 15-day compliance window, and cautioned of a ₹15,00,000 damage claim for loss of career opportunity if her new offer was rescinded.
+                      <strong>The Statutory Action:</strong> Ananya engaged LegalRecovery.in. The team verified the facts and served a statutory legal demand notice on the company&apos;s registered office and the Managing Director. The notice cited Section 27 of the Contract Act, Model Standing Orders Rule 16/17, and the Bombay High Court precedent in <em>Nandkishore Shenoy</em>. The notice dismantled the &quot;absconding&quot; tag using Section 63 BSA electronic email timestamps, gave a 15-day compliance window, and cautioned of a ₹15,00,000 damage claim for loss of career opportunity if her new offer was rescinded.
                     </p>
                     <div className="p-3.5 sm:p-4 bg-emerald-950/70 border border-emerald-700/60 rounded-xl text-emerald-200">
                       <strong className="block text-emerald-400 font-bold mb-1">The Outcome:</strong>
-                      On Day 9 following delivery of the advocate legal notice via Registered Speed Post, the company&apos;s corporate legal counsel instructed HR to resolve the matter. The firm expunged the absconding remark, adjusted the 60-day notice shortfall against her earned incentives, credited the net remaining salary balance of ₹84,200 to her HDFC bank account, and issued an official, stamped Experience Certificate and Relieving Letter certifying her 3.4-year tenure. Her new employment onboarding proceeded without interruption.
+                      On Day 9 following delivery of the fact-verified legal notice via Registered Speed Post, the company&apos;s corporate legal counsel instructed HR to resolve the matter. The firm expunged the absconding remark, adjusted the 60-day notice shortfall against her earned incentives, credited the net remaining salary balance of ₹84,200 to her HDFC bank account, and issued an official, stamped Experience Certificate and Relieving Letter certifying her 3.4-year tenure. Her new employment onboarding proceeded without interruption.
                     </div>
                   </div>
                 </div>

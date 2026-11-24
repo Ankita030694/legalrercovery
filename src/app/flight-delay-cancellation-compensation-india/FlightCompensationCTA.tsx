@@ -31,7 +31,7 @@ export default function FlightCompensationCTA({
                 Airline Refusing Your Delay, Cancellation or Denied Boarding Claim?
               </h3>
               <p className="text-slate-300 text-sm sm:text-base leading-relaxed mb-6">
-                Airlines routinely cite vague &quot;operational reasons&quot; or offer expiring travel vouchers to evade DGCA compensation slabs of up to ₹20,000. Under DGCA CAR Section 3 Series M Part IV and the Consumer Protection Act 2019, statutory compensation is a non-waivable passenger right. Serve an advocate-drafted statutory demand notice delivered by email and WhatsApp. Speed Post is optional at ₹450 per party.
+                Airlines routinely cite vague &quot;operational reasons&quot; or offer expiring travel vouchers to evade DGCA compensation slabs of up to ₹20,000. Under DGCA CAR Section 3 Series M Part IV and the Consumer Protection Act 2019, statutory compensation is a non-waivable passenger right. Serve a fact-verified statutory demand notice delivered by email and WhatsApp. Speed Post is optional at ₹450 per party.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button

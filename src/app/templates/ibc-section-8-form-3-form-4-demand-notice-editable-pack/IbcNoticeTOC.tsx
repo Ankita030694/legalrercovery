@@ -15,7 +15,7 @@ const TOC_ITEMS: TOCItem[] = [
   { id: "heading-board-resolution-execution", label: "5. Board Resolution & Signatory" },
   { id: "heading-rule5-service-matrix", label: "6. Rule 5(2) Service Matrix" },
   { id: "heading-worked-default-ledger", label: "7. Worked ₹1.48 Cr Ledger" },
-  { id: "heading-dual-track-cta", label: "8. Advocate Review or Bulk CSV" },
+  { id: "heading-dual-track-cta", label: "8. Fact Verification or Bulk CSV" },
   { id: "heading-faqs", label: "9. IBC Form 3 & Form 4 FAQs" },
   { id: "heading-statutory-authorities", label: "10. Bare Acts & Related Guides" },
 ];

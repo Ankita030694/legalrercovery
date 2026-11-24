@@ -164,7 +164,7 @@ const FAQS = [
   {
     question: "Sarkari department ya PWD contractor ka pending bill na de toh Section 80 CPC notice kaise bheje?",
     answer:
-      "Agar koi sarkari vibhag (jaise PWD, CPWD, Nagar Nigam, Irrigation, ya Railways) kaam pura hone aur Measurement Book (MB) mein entry hone ke baad bhi aapka running ya final bill, EMD, ya security deposit rok kar rakha hai, toh civil court mein case dalne se pehle Section 80 CPC ke tehat 60 din ka legal notice dena kanoonan zaroori hai. LegalRecovery.in par verified advocate aapke work order, MB entries aur completion certificate ke aadhar par Secretary aur District Collector ko Registered Post A.D. aur email se pakka Section 80 CPC notice bhejte hain, jisse aksar bina court gaye departmental payment pass ho jata hai.",
+      "Agar koi sarkari vibhag (jaise PWD, CPWD, Nagar Nigam, Irrigation, ya Railways) kaam pura hone aur Measurement Book (MB) mein entry hone ke baad bhi aapka running ya final bill, EMD, ya security deposit rok kar rakha hai, toh civil court mein case dalne se pehle Section 80 CPC ke tehat 60 din ka legal notice dena kanoonan zaroori hai. LegalRecovery.in par hamari team aapke work order, MB entries aur completion certificate ki details verify karke Secretary aur District Collector ko Registered Post A.D. aur email se pakka Section 80 CPC notice bhejti hai, jisse aksar bina court gaye departmental payment pass ho jata hai.",
   },
 ];
 
@@ -348,7 +348,7 @@ export default function Section80CpcNoticePage() {
                   If a contractor, supplier, or citizen files a civil suit against the Government without first serving a written Section 80 notice—or files the plaint even one day before the mandatory <strong>two-month (60-day) waiting period</strong> expires—the court is legally bound to reject the plaint at the threshold under <strong>Order VII Rule 11(d) CPC</strong> as barred by law. The legislative rationale articulated by the Supreme Court is straightforward: unlike a private litigant, the State handles thousands of contracts through rotating officers, and public revenue should not be squandered on court fees and litigation if a valid claim can be examined by the Law Secretary or District Collector and settled administratively within 60 days.
                 </p>
                 <div className="p-4 bg-amber-50 border-l-4 border-amber-500 rounded-r-xl text-xs sm:text-sm text-amber-900 leading-relaxed">
-                  <strong>Why Section 80 CPC Is Your Best Pre-Litigation Weapon for Pending Contractor Bills:</strong> Because every Departmental Secretary, Chief Engineer, and District Collector knows that ignoring a Section 80 notice triggers personal scrutiny from the Law Department and exposes the treasury to post-notice commercial interest and court costs, a properly drafted advocate notice under Section 80 CPC forces the file out of the Executive Engineer&apos;s drawer and onto the sanctioning authority&apos;s desk.
+                  <strong>Why Section 80 CPC Is Your Best Pre-Litigation Weapon for Pending Contractor Bills:</strong> Because every Departmental Secretary, Chief Engineer, and District Collector knows that ignoring a Section 80 notice triggers personal scrutiny from the Law Department and exposes the treasury to post-notice commercial interest and court costs, a properly drafted fact-verified notice under Section 80 CPC forces the file out of the Executive Engineer&apos;s drawer and onto the sanctioning authority&apos;s desk.
                 </div>
               </section>
 
@@ -975,10 +975,10 @@ export default function Section80CpcNoticePage() {
                         Dispatch the Section 80 CPC Notice via Registered Post A.D. &amp; Official Email
                       </h3>
                       <p className="text-xs sm:text-sm leading-relaxed">
-                        Have an advocate draft and sign the statutory notice setting out your full name, description, registered residence/office address, chronological cause of action, and itemized relief (principal, security deposit refund, and interest). Dispatch physical copies to each addressee via India Post Registered Post with Acknowledgment Due (RPAD) / Speed Post, and preserve the postal receipts and signed delivery tracking cards. Simultaneously transmit PDF copies to the official NIC (`@gov.in` / `@nic.in`) email addresses.
+                        Send the statutory notice setting out your full name, description, registered residence/office address, chronological cause of action, and itemized relief (principal, security deposit refund, and interest). Dispatch physical copies to each addressee via India Post Registered Post with Acknowledgment Due (RPAD) / Speed Post, and preserve the postal receipts and signed delivery tracking cards. Simultaneously transmit PDF copies to the official NIC (`@gov.in` / `@nic.in`) email addresses.
                       </p>
                       <p className="text-xs text-slate-500 font-medium">
-                        Check our transparent advocate drafting fees on our{" "}
+                        Check our transparent notice drafting fees on our{" "}
                         <Link href="/legal-notice-charges" className="text-blue-700 underline">
                           legal notice charges
                         </Link>{" "}
@@ -1151,7 +1151,7 @@ export default function Section80CpcNoticePage() {
                   Evidence Checklist: 6 Documents for Section 80 Notice
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
-                  Under Order VII Rule 14 CPC and Section 63 of the Bharatiya Sakshya Adhiniyam, 2023 (BSA), assemble these six evidentiary records before your advocate dispatches a Section 80 CPC notice:
+                  Under Order VII Rule 14 CPC and Section 63 of the Bharatiya Sakshya Adhiniyam, 2023 (BSA), assemble these six evidentiary records before a Section 80 CPC notice is dispatched:
                 </p>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">

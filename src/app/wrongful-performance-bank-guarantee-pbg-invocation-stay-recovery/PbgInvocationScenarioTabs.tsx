@@ -21,7 +21,7 @@ const SCENARIOS: Scenario[] = [
     badge: "Coercive Leverage",
     title: "Buyer Involves 10% PBG When Manufacturer Demands Overdue 20% Retention Dues",
     buyerPretext:
-      "\"The machinery was commissioned 8 months ago, but we now notice micro-vibrations and slight throughput drop. Because you served an advocate notice for your pending ₹45 Lakh retention milestone, we have invoked your 10% Performance Bank Guarantee (₹25 Lakh) to secure our damages.\"",
+      "\"The machinery was commissioned 8 months ago, but we now notice micro-vibrations and slight throughput drop. Because you served a fact-verified notice for your pending ₹45 Lakh retention milestone, we have invoked your 10% Performance Bank Guarantee (₹25 Lakh) to secure our damages.\"",
     legalReality:
       "When a buyer has executed commercial production on delivered machinery without issuing contemporaneous defect notices under Sale of Goods Act s.42, invoking a PBG purely to counter a legitimate overdue payment demand constitutes bad faith. While banks cannot judge underlying disputes, if the buyer admitted satisfactory commissioning in prior minutes or emails, this creates compelling grounds of 'special equities' where permitting encashment would inflict irretrievable injustice on an operational creditor.",
     stayFeasibility:
@@ -85,7 +85,7 @@ const SCENARIOS: Scenario[] = [
       "POST-ENCASHMENT RESTITUTION: Cannot obtain stay, but can obtain Section 9/17 security deposit orders compelling buyer to furnish solvent security or bank guarantee for the encashed sum pending arbitration.",
     tacticalActionPlan: [
       "File an urgent Section 9(1)(ii)(b) petition for preservation of assets, or Section 17 before the Arbitral Tribunal, seeking an order directing the buyer to deposit ₹30 Lakh into court.",
-      "Issue an immediate Advocate Statutory Demand Notice for Restitution under Section 144 CPC and Section 73 of the Indian Contract Act, claiming 18% per annum commercial interest.",
+      "Issue an immediate Fact-Verified Statutory Demand Notice for Restitution under Section 144 CPC and Section 73 of the Indian Contract Act, claiming 18% per annum commercial interest.",
       "If the manufacturer is an MSME (Micro/Small Enterprise), file an MSEFC Reference claiming the encashed PBG as an illegal deduction from the total contract amount, demanding 3x RBI Bank Rate compound interest under Section 16 of the MSMED Act.",
       "Attach the buyer's plant equipment or bank accounts under Order XXXVIII Rule 5 CPC if there is risk of asset dissipation.",
     ],

@@ -155,7 +155,7 @@ const FAQS = [
     question:
       "How quickly must we act before a defaulting furniture factory or plywood dealer shifts godown stock?",
     answer:
-      "Once a dealer crosses 60 days past due or a PDC bounces, delay is fatal—timber and plywood are fast-moving, untraceable commodities once cut or resold. Issue an Advocate-drafted Tri-Channel Demand Notice (Email + WhatsApp + Speed Post RPAD) within 48 hours of default, diarize the 30-day NI s.138 statutory window from any cheque return memo, and prepare an Order XXXVIII Rule 5 CPC attachment affidavit if market intelligence shows the buyer is closing their showroom or moving inventory to a sister concern.",
+      "Once a dealer crosses 60 days past due or a PDC bounces, delay is fatal—timber and plywood are fast-moving, untraceable commodities once cut or resold. Issue a Fact-verified Tri-Channel Demand Notice (Email + WhatsApp + Speed Post RPAD) within 48 hours of default, diarize the 30-day NI s.138 statutory window from any cheque return memo, and prepare an Order XXXVIII Rule 5 CPC attachment affidavit if market intelligence shows the buyer is closing their showroom or moving inventory to a sister concern.",
   },
 ];
 
@@ -206,7 +206,7 @@ const HOWTO_SCHEMA = {
       "@type": "HowToStep",
       position: 3,
       name: "Serve Composite Tri-Channel Statutory Demand Notice",
-      text: "Dispatch an Advocate-drafted demand notice via Speed Post RPAD, Email, and WhatsApp invoking s.43B(h), Sale of Goods Act s.42 deemed acceptance, and NI s.138.",
+      text: "Dispatch a Fact-verified demand notice via Speed Post RPAD, Email, and WhatsApp invoking s.43B(h), Sale of Goods Act s.42 deemed acceptance, and NI s.138.",
     },
     {
       "@type": "HowToStep",
@@ -842,7 +842,7 @@ export default function TimberPlywoodRecoveryPage() {
               </div>
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed mb-6">
                 Stop funding defaulting furniture factories and wholesale plywood dealers out of your
-                own CC limit. Test our advocate-drafted statutory notice on one overdue account or
+                own CC limit. Test our fact-verified statutory notice on one overdue account or
                 onboard your entire dealer aging ledger:
               </p>
               <TimberPlywoodCTA />
@@ -893,7 +893,7 @@ export default function TimberPlywoodRecoveryPage() {
                     Notice Workspace
                   </span>
                   <p className="text-sm font-bold text-slate-900 mt-1">
-                    Advocate-Vetted Commercial Legal Notice &amp; Reply Template
+                    Fact-Verified Commercial Legal Notice &amp; Reply Template
                   </p>
                 </Link>
                 <Link

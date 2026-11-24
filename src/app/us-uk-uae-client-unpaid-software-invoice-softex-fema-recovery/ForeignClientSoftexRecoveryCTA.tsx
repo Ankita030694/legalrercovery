@@ -25,7 +25,7 @@ export default function ForeignClientSoftexRecoveryCTA({
               Track 1 &bull; Single Offshore Tech Default
             </span>
             <p className="text-lg sm:text-xl font-extrabold text-white mb-2">
-              Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Advocate Drafted &middot; Email + WhatsApp + Speed Post RPAD)
+              Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Fact-Verified &middot; Email + WhatsApp + Speed Post RPAD)
             </p>
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
               Issue a high-impact, cross-border statutory demand notice on a delinquent foreign client (US Delaware/California, UK Ltd, UAE Dubai/DIFC, Singapore). Establishes formal legal pursuit for your Authorized Dealer (AD) Bank to satisfy RBI EDPMS write-off criteria, invokes Copyright Act Section 19 code ownership liens under the Berne Convention, and demands immediate wire remittance under threat of extraterritorial litigation.

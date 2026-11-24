@@ -215,7 +215,7 @@ export default function DyeingFabricLienRecoveryPage() {
         "@type": "HowToStep",
         position: 3,
         name: "Serve Formal 7-Day Bailee's Particular Lien Notice",
-        text: "Issue an advocate demand notice invoking Contract Act Section 170, rejecting bogus shade/shrinkage claims and notifying daily demurrage charges.",
+        text: "Issue a fact-verified demand notice invoking Contract Act Section 170, rejecting bogus shade/shrinkage claims and notifying daily demurrage charges.",
       },
       {
         "@type": "HowToStep",

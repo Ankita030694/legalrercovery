@@ -32,7 +32,7 @@ export default function OtsRevocationCTA({
                 Revoke Broken OTS Sanctions &amp; Restore Full Contractual Liability Without Writ Delays
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6">
-                Equip your NPA Settlement Committee, Stressed Asset Recovery Branch (SARB), and panel advocates with court-vetted OTS Revocation &amp; Debt Revival Notices, No-Lien deposit appropriation intimations, and BSA 2023 s.63 delivery dossiers.
+                Equip your NPA Settlement Committee, Stressed Asset Recovery Branch (SARB), and panel advocates with fact-verified OTS Revocation &amp; Debt Revival Notices, No-Lien deposit appropriation intimations, and BSA 2023 s.63 delivery dossiers.
               </p>
 
               {/* Dual-Track B2B Conversion Funnel */}
@@ -47,7 +47,7 @@ export default function OtsRevocationCTA({
                       Test 1 Live Overdue Case Now
                     </h4>
                     <p className="text-xs text-slate-300 mb-4 leading-relaxed">
-                      Advocate-drafted OTS Revocation &amp; Full Liability Revival Notice dispatched via Email + WhatsApp + Speed Post RPAD with BSA 2023 s.63 audit proof.
+                      Fact-verified OTS Revocation &amp; Full Liability Revival Notice dispatched via Email + WhatsApp + Speed Post RPAD with BSA 2023 s.63 audit proof.
                     </p>
                   </div>
                   <div className="space-y-3">
@@ -66,7 +66,7 @@ export default function OtsRevocationCTA({
                         Direct Self-Serve Filing Portal
                       </Link>
                       <span>&bull;</span>
-                      <span>24h Advocate Vetting</span>
+                      <span>24h Fact Verification</span>
                     </div>
                   </div>
                 </div>

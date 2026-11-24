@@ -211,7 +211,7 @@ const FAQS = [
   {
     question: "Tenant rent nahi de raha aur ghar khali nahi kar raha, legal notice kaise bheje?",
     answer:
-      "Agar tenant rent default kare aur vacate na kare, toh Transfer of Property Act Section 106 ke tehat Registered Speed Post aur digital channels (Email/WhatsApp) ke zariye ek formal advocate legal notice bhejkar 15 din ka time diya jata hai. LegalRecovery.in par verified property advocates unassailable legal notice draft karte hain jismein rent arrears, interest, aur eviction demand clearly framed hoti hai.",
+      "Agar tenant rent default kare aur vacate na kare, toh Transfer of Property Act Section 106 ke tehat Registered Speed Post aur digital channels (Email/WhatsApp) ke zariye ek formal fact-verified legal notice bhejkar 15 din ka time diya jata hai. LegalRecovery.in par hamari team fact-verified legal notice tayyar karti hai jismein rent arrears, interest, aur eviction demand clearly framed hoti hai.",
   },
 ];
 
@@ -718,11 +718,11 @@ export default function TenantUnpaidRentEvictionPage() {
                         2
                       </span>
                       <h3 className="text-base sm:text-lg font-bold text-slate-900">
-                        Draft &amp; Issue a Statutory 15-Day Advocate Notice Under Section 106 TPA
+                        Draft &amp; Issue a Statutory 15-Day Fact-Verified Notice Under Section 106 TPA
                       </h3>
                     </div>
                     <p className="text-xs sm:text-sm text-slate-700 leading-relaxed pl-10">
-                      Have a verified property advocate draft a comprehensive Section 106 notice. The notice specifies the property details, terms of lease, exact month-wise arrears breakdown, and clearly stipulates that the tenancy stands unequivocally determined upon expiration of 15 days from receipt. Check our transparent{" "}
+                      Send a comprehensive Section 106 notice. The notice specifies the property details, terms of lease, exact month-wise arrears breakdown, and clearly stipulates that the tenancy stands unequivocally determined upon expiration of 15 days from receipt. Check our transparent{" "}
                       <Link href="/legal-notice-charges" className="text-red-700 font-bold hover:underline">
                         Legal Notice Charges
                       </Link>{" "}

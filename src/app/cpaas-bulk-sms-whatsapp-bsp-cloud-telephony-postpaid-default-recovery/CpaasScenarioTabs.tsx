@@ -38,7 +38,7 @@ const SCENARIOS: CpaasScenario[] = [
       {
         step: "15-Day Demand Notice & Order XXXVII Summary Suit",
         detail:
-          "Serve an advocate-drafted notice demanding principal, 18% GST reimbursement, and contractual/MSMED interest (3x RBI bank rate if the BSP holds Udyam registration).",
+          "Serve a fact-verified notice demanding principal, 18% GST reimbursement, and contractual/MSMED interest (3x RBI bank rate if the BSP holds Udyam registration).",
       },
     ],
     statutoryRule: "BSA 2023 s.63 + Order XXXVII CPC + MSMED Act 2006 s.15–16",

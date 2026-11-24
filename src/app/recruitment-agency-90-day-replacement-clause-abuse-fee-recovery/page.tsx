@@ -162,8 +162,8 @@ const HOWTO_SCHEMA = {
     {
       "@type": "HowToStep",
       position: 4,
-      name: "Serve Senior Advocate Statutory Demand Notice",
-      text: "Serve an advocate demand notice via Speed Post RPAD, email, and WhatsApp detailing principal debt, 3x RBI compound interest under MSMED Act Section 16, and Section 43B(h) tax disallowance notice.",
+      name: "Serve Senior Fact-Verified Statutory Demand Notice",
+      text: "Serve a fact-verified demand notice via Speed Post RPAD, email, and WhatsApp detailing principal debt, 3x RBI compound interest under MSMED Act Section 16, and Section 43B(h) tax disallowance notice.",
     },
     {
       "@type": "HowToStep",
@@ -962,7 +962,7 @@ export default function RecruitmentAgencyReplacementAbusePage() {
                 Model Contract Clause: Ironclad Payment-First Warranty
               </h2>
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed mb-4">
-                Protect your agency from day one by inserting the following advocate-vetted &ldquo;Payment-First Conditional Replacement Guarantee&rdquo; clause into your Terms of Business, Master Services Agreements (MSA), and Client Fee Schedules:
+                Protect your agency from day one by inserting the following ready-to-use &ldquo;Payment-First Conditional Replacement Guarantee&rdquo; clause into your Terms of Business, Master Services Agreements (MSA), and Client Fee Schedules:
               </p>
 
               <div className="p-4 sm:p-6 rounded-xl bg-slate-900 text-slate-100 font-mono text-xs leading-relaxed border border-slate-800 shadow-md mb-4 select-all">
@@ -1063,7 +1063,7 @@ export default function RecruitmentAgencyReplacementAbusePage() {
                 >
                   MSME Delayed Payment Interest Calculator
                 </Link>
-                , and review our advocate-drafted{" "}
+                , and review our fact-verified{" "}
                 <Link
                   href="/templates/legal-notice-reply-format"
                   className="text-[#DC2626] font-bold underline hover:text-[#B91C1C]"

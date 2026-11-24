@@ -378,7 +378,7 @@ export default function ZeptoLegalNoticePage() {
                       Advocate Statutory Demand Notice (15-Day Cure Period)
                     </h3>
                     <p className="text-sm text-slate-700 leading-relaxed mb-3">
-                      Have an advocate serve an enforceable legal demand notice to the registered corporate headquarters of Zepto Marketplace Private Limited in Bengaluru and Kiranakart Technologies Private Limited in Mumbai. Delivered via Registered Speed Post with postal tracking plus electronic delivery under Section 63 BSA, demanding immediate source refund plus damages for unfair trade practices.
+                      Serve an enforceable legal demand notice to the registered corporate headquarters of Zepto Marketplace Private Limited in Bengaluru and Kiranakart Technologies Private Limited in Mumbai. Delivered via Registered Speed Post with postal tracking plus electronic delivery under Section 63 BSA, demanding immediate source refund plus damages for unfair trade practices.
                     </p>
                     <div className="text-xs text-slate-600 font-mono bg-red-50/50 p-2.5 rounded border border-red-100">
                       Mode: Email + WhatsApp (Speed Post optional) &bull; Notice Period: 15 Days &bull; Cost: Flat ₹{BASE_PRICE}
@@ -415,7 +415,7 @@ export default function ZeptoLegalNoticePage() {
 
               {/* Mid-page CTA */}
               <div className="mt-8">
-                <ZeptoNoticeCTA buttonText="Draft Advocate Notice to Zepto Now" />
+                <ZeptoNoticeCTA buttonText="Draft Fact-Verified Notice to Zepto Now" />
               </div>
             </section>
 
@@ -793,11 +793,11 @@ export default function ZeptoLegalNoticePage() {
                     <strong className="text-white">The Dispute:</strong> Upon opening the single sealed brown paper bag, high-value items worth ₹2,840 were completely missing. In-app chat support refused compensation within 3 minutes, stating: <em>&ldquo;We cross-checked with our warehouse camera logs; our pickers confirmed all items were packed. No refund can be granted.&rdquo;</em>
                   </p>
                   <p>
-                    <strong className="text-white">Escalation Strategy:</strong> The consumer photographed the bag alongside the delivered low-value items, saved the invoice, and drafted an immediate grievance email to <code>grievances@zepto.com</code>. After 7 days of silence, an advocate served a formal 15-day statutory demand notice citing Section 2(47) CPA 2019 and CCPA Dark Patterns Guidelines for refusing refund.
+                    <strong className="text-white">Escalation Strategy:</strong> The consumer photographed the bag alongside the delivered low-value items, saved the invoice, and drafted an immediate grievance email to <code>grievances@zepto.com</code>. After 7 days of silence, a fact-verified formal 15-day statutory demand notice was served citing Section 2(47) CPA 2019 and CCPA Dark Patterns Guidelines for refusing refund.
                   </p>
                   <div className="bg-slate-800/80 p-4 rounded-xl border border-slate-700 text-xs text-slate-200">
                     <strong className="text-purple-300 block mb-1">Final Settlement Outcome:</strong>
-                    On Day 9 of receiving the advocate legal notice via Speed Post, Zepto Marketplace Private Limited legal operations contacted the customer. Zepto processed a 100% direct refund of ₹2,840 back to the customer&apos;s ICICI bank account via IMPS (rejecting Zepto Cash credits) and issued an official written apology to close the pre-litigation notice.
+                    On Day 9 of receiving the fact-verified legal notice via Speed Post, Zepto Marketplace Private Limited legal operations contacted the customer. Zepto processed a 100% direct refund of ₹2,840 back to the customer&apos;s ICICI bank account via IMPS (rejecting Zepto Cash credits) and issued an official written apology to close the pre-litigation notice.
                   </div>
                 </div>
               </div>
@@ -812,7 +812,7 @@ export default function ZeptoLegalNoticePage() {
                 Formal Refund and Compensation Notice to Zepto Marketplace
               </h2>
               <p className="text-slate-700 leading-relaxed mb-4">
-                You can adapt the following advocate-approved pre-litigation demand format to serve a formal written claim against Zepto. Fill in the bracketed placeholders with your specific order details before sending.
+                You can adapt the following ready-to-use pre-litigation demand format to serve a formal written claim against Zepto. Fill in the bracketed placeholders with your specific order details before sending.
               </p>
 
               <div className="bg-white border border-slate-200 rounded-2xl p-5 sm:p-6 shadow-sm my-6">
@@ -900,7 +900,7 @@ export default function ZeptoLegalNoticePage() {
 
             {/* FINAL CTA SECTION */}
             <div className="my-10">
-              <ZeptoNoticeCTA buttonText="Send Advocate Legal Notice to Zepto" />
+              <ZeptoNoticeCTA buttonText="Send Fact-Verified Legal Notice to Zepto" />
             </div>
 
             {/* SECTION 11: FAQ ACCORDION PER ARCHETYPE B1 */}
@@ -964,7 +964,7 @@ export default function ZeptoLegalNoticePage() {
               </ol>
 
               <div className="mt-6 p-4 rounded-xl bg-slate-100 text-xs text-slate-600 leading-relaxed">
-                <strong>Statutory Pre-Litigation Disclaimer:</strong> LegalRecovery is an automated drafting and technology enablement platform. Legal notices are drafted in collaboration with licensed advocates on our panel. Consumer court filings via e-Jagriti are submitted directly by consumers in accordance with the Consumer Protection (Consumer Commission Procedure) Regulations. As of November 2026.
+                <strong>Statutory Pre-Litigation Disclaimer:</strong> LegalRecovery is an automated drafting and technology enablement platform. Legal notices are generated from structured templates after our team verifies the facts you submit; they are not drafted or signed by an advocate. Consumer court filings via e-Jagriti are submitted directly by consumers in accordance with the Consumer Protection (Consumer Commission Procedure) Regulations. As of November 2026.
               </div>
             </section>
 

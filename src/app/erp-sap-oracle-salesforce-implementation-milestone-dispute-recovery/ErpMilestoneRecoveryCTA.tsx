@@ -25,7 +25,7 @@ export default function ErpMilestoneRecoveryCTA({
               Track 1 &bull; Single Stalled ERP / CRM Milestone Notice
             </span>
             <p className="text-lg sm:text-xl font-extrabold text-white mb-2">
-              Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Advocate Drafted &middot; Email + WhatsApp + Speed Post RPAD)
+              Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Fact-Verified &middot; Email + WhatsApp + Speed Post RPAD)
             </p>
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
               Serve a high-impact, statutory 15-day demand notice on an enterprise client withholding Go-Live, Blueprint, or Hypercare milestone payments. Enforces Indian Contract Act Sections 53 &amp; 54 reciprocal obligations, counters manufactured implementation failure pretexts, establishes deemed acceptance, and asserts IP liens under Copyright Act Section 19.

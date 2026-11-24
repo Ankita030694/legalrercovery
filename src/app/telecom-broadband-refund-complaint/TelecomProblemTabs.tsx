@@ -37,7 +37,7 @@ const PROBLEMS: ProblemTab[] = [
           "Register a written complaint with your telecom circle's Nodal Officer and Appellate Authority, explicitly citing Regulation 14 and claiming 10% p.a. interest.",
       },
       {
-        step: "Serve Formal Advocate Demand Notice",
+        step: "Serve Formal Fact-Verified Demand Notice",
         description:
           "If the deposit is not returned within 15 days of appellate escalation, issue an advocate legal notice holding the corporate leadership personally liable before filing in Consumer Court.",
       },
@@ -66,7 +66,7 @@ const PROBLEMS: ProblemTab[] = [
       {
         step: "Enforce Advocate Statutory Notice for Penalty",
         description:
-          "If unpaid after 7 days, dispatch an advocate demand notice claiming the principal debit plus statutory ₹100/day RBI compensation and mental agony damages.",
+          "If unpaid after 7 days, dispatch a fact-verified demand notice claiming the principal debit plus statutory ₹100/day RBI compensation and mental agony damages.",
       },
     ],
     statutoryRule: "RBI Circular RBI/2019-20/67 (TAT & Penalty) & CPA 2019 Sec 2(47)",
@@ -93,7 +93,7 @@ const PROBLEMS: ProblemTab[] = [
       {
         step: "Serve Pre-Litigation Legal Demand Notice",
         description:
-          "Have an advocate serve a legal notice demanding full refund of unutilized subscription fees, security deposit, and compensation for lost remote-work productivity.",
+          "Serve a legal notice demanding full refund of unutilized subscription fees, security deposit, and compensation for lost remote-work productivity.",
       },
     ],
     statutoryRule: "TRAI QoS Regulations & CPA 2019 Section 2(11) Deficiency of Service",
@@ -118,7 +118,7 @@ const PROBLEMS: ProblemTab[] = [
           "Email the Telecom Appellate Authority and Principal Nodal Officer repudiating the phantom invoice and demanding immediate withdrawal of recovery agents.",
       },
       {
-        step: "Serve Advocate Legal Notice for Harassment & Defamation",
+        step: "Serve Fact-Verified Legal Notice for Harassment & Defamation",
         description:
           "Serve a formal statutory notice holding the operator liable for consumer harassment, breach of privacy, and defamation, with notice of consumer court litigation.",
       },

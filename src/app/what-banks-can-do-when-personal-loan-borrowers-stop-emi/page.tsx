@@ -330,7 +330,7 @@ export default function WhatBanksCanDoWhenPersonalLoanBorrowersStopEmisPage() {
                   Unlike home loans or vehicle finance, retail personal loans are purely unsecured credit lines granted on the basis of income statements, credit bureau scores, and monthly auto-debit mandates. When a borrower stops paying EMIs—whether due to sudden job loss, financial over-leveraging, business cash-flow crunches, or deliberate willful default—the lending bank cannot simply dispatch asset recovery agents to seize physical collateral under the Securitisation and Reconstruction of Financial Assets and Enforcement of Security Interest (SARFAESI) Act, 2002.
                 </p>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
-                  However, unsecured does not mean unrecoverable. Indian statutory law provides scheduled commercial banks, public sector lenders, regional rural banks, and Non-Banking Financial Companies (NBFCs) with powerful legal mechanisms to enforce debt recovery. By acting rapidly through advocate-drafted statutory demand notices under Section 25 of the Payment and Settlement Systems Act, 2007 within the first 15 to 30 days of consecutive mandate dishonour, lenders transform a civil repayment delay into an enforceable statutory liability that protects balance sheet asset quality before accounts slip into Non-Performing Asset (NPA) status.
+                  However, unsecured does not mean unrecoverable. Indian statutory law provides scheduled commercial banks, public sector lenders, regional rural banks, and Non-Banking Financial Companies (NBFCs) with powerful legal mechanisms to enforce debt recovery. By acting rapidly through fact-verified statutory demand notices under Section 25 of the Payment and Settlement Systems Act, 2007 within the first 15 to 30 days of consecutive mandate dishonour, lenders transform a civil repayment delay into an enforceable statutory liability that protects balance sheet asset quality before accounts slip into Non-Performing Asset (NPA) status.
                 </p>
               </section>
 
@@ -865,7 +865,7 @@ export default function WhatBanksCanDoWhenPersonalLoanBorrowersStopEmisPage() {
 
               {/* Final High-Converting CTA */}
               <WhatBanksCanDoCTA
-                buttonText="Issue Formal Advocate Demand Notice to Defaulting Borrower"
+                buttonText="Issue Formal Fact-Verified Demand Notice to Defaulting Borrower"
                 variant="primary"
               />
 

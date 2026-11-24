@@ -32,7 +32,7 @@ export default function HomeTextilesNoticeCTA({
                 Recover Stuck Hotel FF&amp;E, Carpet, Curtain &amp; Hospitality Linen Arrears
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6">
-                Supplied custom banquet carpets, blackout curtains, mattresses, or 300-TC linen to a hotel pre-opening project or turnkey interior firm that stopped paying? Serve an advocate-drafted statutory demand notice invoking MSMED Act s.15–18 (3x RBI compound interest), Income Tax s.43B(h) disallowance, and Order XXXVII CPC summary recovery—or upload your entire dealer ledger for institutional recovery.
+                Supplied custom banquet carpets, blackout curtains, mattresses, or 300-TC linen to a hotel pre-opening project or turnkey interior firm that stopped paying? Serve a fact-verified statutory demand notice invoking MSMED Act s.15–18 (3x RBI compound interest), Income Tax s.43B(h) disallowance, and Order XXXVII CPC summary recovery—or upload your entire dealer ledger for institutional recovery.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button
@@ -50,7 +50,7 @@ export default function HomeTextilesNoticeCTA({
                 </Link>
               </div>
               <div className="mt-4 text-xs text-slate-300 flex flex-wrap sm:flex-nowrap items-center gap-2 sm:gap-3">
-                <span>&#10003; Advocate Drafted &bull; Email + WhatsApp + Speed Post RPAD</span>
+                <span>&#10003; Fact-Verified &bull; Email + WhatsApp + Speed Post RPAD</span>
                 <span>&bull;</span>
                 <span>&#10003; BSA 2023 s.63 Hash Proof</span>
                 <span>&bull;</span>

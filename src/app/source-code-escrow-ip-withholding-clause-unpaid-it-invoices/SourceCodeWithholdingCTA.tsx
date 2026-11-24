@@ -25,10 +25,10 @@ export default function SourceCodeWithholdingCTA({
               Track 1 &bull; Single IT Contract / IP Lien Dispute
             </span>
             <p className="text-lg sm:text-xl font-extrabold text-white mb-2">
-              Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Advocate Drafted &middot; Email + WhatsApp + Speed Post RPAD)
+              Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Fact-Verified &middot; Email + WhatsApp + Speed Post RPAD)
             </p>
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-              Issue an advocate-drafted Cure-Cum-Suspension Legal Notice under the Indian Contract Act (Sections 51–54) and Copyright Act (Section 19). Lawfully withhold private Git repositories, suspend uncompensated staging environments, assert IP ownership until full invoice clearance, and demand immediate liquidation of outstanding milestone arrears without exposing your executive leadership to Section 43/66 IT Act criminal counter-claims.
+              Issue a fact-verified Cure-Cum-Suspension Legal Notice under the Indian Contract Act (Sections 51–54) and Copyright Act (Section 19). Lawfully withhold private Git repositories, suspend uncompensated staging environments, assert IP ownership until full invoice clearance, and demand immediate liquidation of outstanding milestone arrears without exposing your executive leadership to Section 43/66 IT Act criminal counter-claims.
             </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-3">

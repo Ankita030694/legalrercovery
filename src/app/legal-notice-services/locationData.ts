@@ -14,7 +14,7 @@ export const noticeLocationData: NoticeLocationData[] = baseLocationData.map((lo
   slug: loc.slug,
   name: loc.name,
   title: `Legal Notice Services in ${loc.name}`,
-  description: `Send a professional legal notice in ${loc.name} drafted by expert advocates. Legal Recovery offers affordable legal notice services for unpaid dues, property disputes, tenant issues, employment matters & more in ${loc.name}.`,
+  description: `Send a professional legal notice in ${loc.name} prepared on verified facts. Legal Recovery offers affordable legal notice services for unpaid dues, property disputes, tenant issues, employment matters & more in ${loc.name}.`,
 }));
 
 export function getNoticeLocationBySlug(slug: string): NoticeLocationData | undefined {

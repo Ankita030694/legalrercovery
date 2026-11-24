@@ -184,7 +184,7 @@ const IND_06_SPOKES: IndustrySpoke[] = [
     url: "/hi/factory-msme-b2b-udhar-bill-recovery-legal-notice",
     statute: "MSMED s.15–18, s.43B(h), NI s.138 & Order 37",
     summary:
-      "Bawana, Okhla, Faridabad, Ludhiana, Rajkot aur Surat factory malikon ke liye E-Way Bill, GST ITC aur ₹999 advocate notice ki puri Hindi guide.",
+      "Bawana, Okhla, Faridabad, Ludhiana, Rajkot aur Surat factory malikon ke liye E-Way Bill, GST ITC aur ₹999 fact-verified notice ki puri Hindi guide.",
   },
 ];
 
@@ -212,7 +212,7 @@ const STATUTORY_PRECEDENTS = [
     parties: "Patil Automation Pvt. Ltd. v. Rakheja Engineers Pvt. Ltd. & Yamini Manohar",
     citation: "Supreme Court of India — Commercial Courts Act, 2015 Section 12A",
     holding:
-      "For commercial disputes of Specified Value ₹3 Lakh and above not seeking genuine urgent interim relief (such as Order XXXVIII Rule 5 asset attachment), pre-institution mediation under Section 12A is mandatory and non-compliance invites Order VII Rule 11 plaint rejection. A pre-suit advocate legal notice plus DLSA Form-1 mediation triggers faster settlement or produces a clean Non-Starter Report for Order XXXVII / Order XIII-A summary judgment.",
+      "For commercial disputes of Specified Value ₹3 Lakh and above not seeking genuine urgent interim relief (such as Order XXXVIII Rule 5 asset attachment), pre-institution mediation under Section 12A is mandatory and non-compliance invites Order VII Rule 11 plaint rejection. A pre-suit fact-verified legal notice plus DLSA Form-1 mediation triggers faster settlement or produces a clean Non-Starter Report for Order XXXVII / Order XIII-A summary judgment.",
     impact:
       "Structures Medium and non-MSME machinery claims cleanly for Commercial Court enforcement.",
   },
@@ -268,7 +268,7 @@ const FAQS = [
     question:
       "Can our factory test LegalRecovery.in on one stuck invoice before uploading an entire dealer ledger?",
     answer:
-      "Yes. Under our Dual-Track onboarding, plant finance controllers can submit a single overdue buyer or dealer account at ₹999—attaching multiple unpaid tax invoices, POs, and E-Way bills in one notice—to verify advocate drafting, BSA s.63 server certification, and tri-channel Email + WhatsApp + Speed Post RPAD tracking before launching 10–10,000+ CSV batch dispatches via Representees.",
+      "Yes. Under our Dual-Track onboarding, plant finance controllers can submit a single overdue buyer or dealer account at ₹999—attaching multiple unpaid tax invoices, POs, and E-Way bills in one notice—to verify notice drafting, BSA s.63 server certification, and tri-channel Email + WhatsApp + Speed Post RPAD tracking before launching 10–10,000+ CSV batch dispatches via Representees.",
   },
 ];
 
@@ -1220,7 +1220,7 @@ export default function ManufacturingMachineryOemRecoveryPage() {
                       title: "MSME Delayed Payment Demand Notice Template",
                       href: "/templates/msme-delayed-payment-demand-notice",
                       tag: "Live Template",
-                      desc: "Standard Samadhaan pre-filing demand format ready for customization and advocate review.",
+                      desc: "Standard Samadhaan pre-filing demand format ready for customization and fact verification.",
                     },
                     {
                       title: "Distributor & Dealer Dues Recovery Guide",
@@ -1238,7 +1238,7 @@ export default function ManufacturingMachineryOemRecoveryPage() {
                       title: "Bulk Recovery Cases: All-in-One CSV Solutions",
                       href: "/bulk-recovery-cases-all-in-one-affordable-solutions",
                       tag: "Enterprise Batch",
-                      desc: "Launch 10 to 10,000+ tri-channel advocate notices for dealer networks and industrial groups.",
+                      desc: "Launch 10 to 10,000+ tri-channel fact-verified notices for dealer networks and industrial groups.",
                     },
                     {
                       title: "HTML Sitemap & Legal Directory (All Categories & Industry Portals)",

@@ -715,7 +715,7 @@ export default function PPPDialysisDaycareRecoveryPage() {
                   4 Healthcare PPP Default Scenarios &amp; Tailored Recovery SOPs
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-600 mb-6">
-                  Select a commercial failure mode below to review the specific legal vulnerability in the government&apos;s defense and the precise advocate-led counter-measure.
+                  Select a commercial failure mode below to review the specific legal vulnerability in the government&apos;s defense and the precise fact-verified counter-measure.
                 </p>
 
                 <PPPDialysisScenarioTabs />
@@ -1154,7 +1154,7 @@ export default function PPPDialysisDaycareRecoveryPage() {
                   Deploy Healthcare PPP Legal Recovery: Single Notice or Multi-District CSV
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-600 mb-6">
-                  Choose between testing our advocate legal notice protocol on 1 frozen District Health Society tender invoice, or onboarding your entire multi-district dialysis or daycare chain via institutional CSV desk.
+                  Choose between testing our team legal notice protocol on 1 frozen District Health Society tender invoice, or onboarding your entire multi-district dialysis or daycare chain via institutional CSV desk.
                 </p>
 
                 <PPPDialysisRecoveryCTA />

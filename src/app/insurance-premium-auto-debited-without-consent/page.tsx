@@ -648,7 +648,7 @@ export default function InsuranceDebitPage() {
                         Day 11 – 20
                       </time>
                       <h3 className="text-sm sm:text-base font-bold text-slate-900">
-                        Serve a Formal 15-Day Advocate Legal Notice to Bank &amp; Insurer
+                        Serve a Formal 15-Day Fact-Verified Legal Notice to Bank &amp; Insurer
                       </h3>
                     </div>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
@@ -1012,7 +1012,7 @@ export default function InsuranceDebitPage() {
                     Need an advocate to customize, verify, and serve this notice via Registered Speed Post on your behalf?
                   </p>
                   <InsuranceDebitNoticeCTA
-                    buttonText="Serve Advocate Legal Notice"
+                    buttonText="Serve Fact-Verified Legal Notice"
                     source="legal_notice_template_block"
                     className="shrink-0"
                   />
@@ -1095,7 +1095,7 @@ export default function InsuranceDebitPage() {
               <section className="bg-gradient-to-br from-slate-900 to-slate-800 text-white rounded-3xl p-6 sm:p-10 shadow-xl border border-slate-700 space-y-4 text-center sm:text-left flex flex-col sm:flex-row items-center justify-between gap-6">
                 <div className="space-y-2 max-w-xl">
                   <span className="inline-block text-[11px] font-bold uppercase tracking-wider text-red-400">
-                    Advocate-Drafted Restitution Notice
+                    Fact-Verified Restitution Notice
                   </span>
                   <h3 className="text-lg sm:text-2xl font-black text-white">
                     Recover Your Auto-Debited Insurance Money Today

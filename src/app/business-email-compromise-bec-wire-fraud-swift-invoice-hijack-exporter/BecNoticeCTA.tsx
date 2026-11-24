@@ -31,7 +31,7 @@ export default function BecNoticeCTA() {
                 <span className="text-xl font-black text-white">₹999</span>
               </div>
               <h4 className="text-base font-bold text-white mb-2">
-                Advocate-Vetted BEC International Demand Notice
+                Fact-Verified BEC International Demand Notice
               </h4>
               <p className="text-xs text-slate-300 leading-relaxed mb-4">
                 Draft and dispatch an enforceable legal notice detailing the buyer's failure of verification, citing common-law duty of care, and setting strict 15-day cure window before international litigation and EDPMS default reporting.

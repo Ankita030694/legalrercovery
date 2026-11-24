@@ -31,7 +31,7 @@ export default function NoticePeriodCalculatorCTA({
                 Stop Your Employer from Illegally Withholding Your Salary or Relieving Documents
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6">
-                Have a verified labour and employment advocate draft and issue a formal statutory legal notice directly to your employer, HR director, and board of directors. Invoking Section 17(2) of the Code on Wages, Section 74 of the Indian Contract Act, 1872, and applicable Shops and Establishments laws to release your withheld FnF settlement and mandatory relieving letters.
+                Issue a formal statutory legal notice directly to your employer, HR director, and board of directors. Invoking Section 17(2) of the Code on Wages, Section 74 of the Indian Contract Act, 1872, and applicable Shops and Establishments laws to release your withheld FnF settlement and mandatory relieving letters.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button
@@ -42,7 +42,7 @@ export default function NoticePeriodCalculatorCTA({
                   {buttonText} — ₹{basePrice}
                 </button>
                 <div className="text-xs text-slate-300 flex flex-wrap sm:flex-nowrap items-center gap-2 sm:gap-3">
-                  <span>✓ 24h Advocate Drafting</span>
+                  <span>✓ 24h Notice Drafting</span>
                   <span>•</span>
                   <span>✓ Email + WhatsApp</span>
                   <span>•</span>

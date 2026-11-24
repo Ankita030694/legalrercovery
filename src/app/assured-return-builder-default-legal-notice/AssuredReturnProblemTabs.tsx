@@ -34,7 +34,7 @@ const PROBLEMS: AssuredProblemTab[] = [
       {
         step: "Serve 15-Day Revocation & Refund Legal Notice",
         description:
-          "Have an advocate serve a formal demand notice terminating the MoU/BBA for fundamental breach and demanding 100% principal refund with statutory interest or immediate clearance of assured-return arrears.",
+          "Serve a formal demand notice terminating the MoU/BBA for fundamental breach and demanding 100% principal refund with statutory interest or immediate clearance of assured-return arrears.",
       },
       {
         step: "File Form M Complaint Before State RERA",
@@ -93,7 +93,7 @@ const PROBLEMS: AssuredProblemTab[] = [
       {
         step: "Serve Order 37 Summary Demand & Tax Default Notice",
         description:
-          "Serve an advocate legal notice demanding immediate disbursement of the admitted net arrears plus 18% interest, warning of an Order XXXVII CPC Summary Suit and Income Tax TDS prosecution reporting.",
+          "Serve a fact-verified legal notice demanding immediate disbursement of the admitted net arrears plus 18% interest, warning of an Order XXXVII CPC Summary Suit and Income Tax TDS prosecution reporting.",
       },
     ],
     statutoryRule: "Order XXXVII CPC + Section 18 Limitation Act + Sec 194A IT Act",
@@ -140,7 +140,7 @@ const PROBLEMS: AssuredProblemTab[] = [
           "Check whether the building and your specific commercial floor/unit exist in approved town-planning layouts and state RERA disclosures.",
       },
       {
-        step: "Serve Multi-Statutory Advocate Demand Notice",
+        step: "Serve Multi-Statutory Fact-Verified Demand Notice",
         description:
           "Issue a notice invoking Contract Act Section 73/65, BUDS Act 2019 deposit-default provisions, and BNS Section 318/316 (where unlicensed/unapproved virtual spaces were sold dishonestly).",
       },

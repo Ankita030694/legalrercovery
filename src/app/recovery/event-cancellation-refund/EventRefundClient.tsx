@@ -362,7 +362,7 @@ export default function EventRefundClient() {
                       The consumer&apos;s commercial transaction is with the ticketing platform. The platform cannot unilaterally delegate its liability to a third party (the organizer) with whom the customer has no direct transaction record. The platform acts as a commercial agent for the organizer. Under Section 230 of the Indian Contract Act, 1872, while an agent is not personally liable for contracts made on behalf of an disclosed principal, the consumer commission views the platform and the organizer as <strong>joint and several service providers</strong>.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      Furthermore, the Consumer Protection (E-Commerce) Rules, 2020 explicitly dictate that e-commerce entities must provide a clear mechanism for refunds, grievances, and tracking of customer queries. Retaining convenience fees by e-commerce ticket sellers for services that were never delivered represents a direct violation of these rules. At LegalRecovery, our legal panel drafts notices naming both the portal and the organizer, holding them jointly responsible. When the ticketing platform realizes it cannot hide behind intermediary status, it typically initiates the refund process to protect its merchant account status and avoid court appearances.
+                      Furthermore, the Consumer Protection (E-Commerce) Rules, 2020 explicitly dictate that e-commerce entities must provide a clear mechanism for refunds, grievances, and tracking of customer queries. Retaining convenience fees by e-commerce ticket sellers for services that were never delivered represents a direct violation of these rules. At LegalRecovery, our team drafts notices naming both the portal and the organizer, holding them jointly responsible. When the ticketing platform realizes it cannot hide behind intermediary status, it typically initiates the refund process to protect its merchant account status and avoid court appearances.
                     </p>
                   </div>
                 </section>
@@ -424,10 +424,10 @@ export default function EventRefundClient() {
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">6. Statutory Demand Legal Notice</h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      A <strong>Legal Notice</strong> is a formal, advocate-signed document that serves as the final warning to the defaulting party. It is not a template email. It is a precise legal instrument served to the registered corporate office of the ticketing platform and the personal addresses of the event organizer&apos;s directors.
+                      A <strong>Legal Notice</strong> is a formal, fact-verified document that serves as the final warning to the defaulting party. It is not a template email. It is a precise legal instrument served to the registered corporate office of the ticketing platform and the personal addresses of the event organizer&apos;s directors.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      At LegalRecovery, our legal panel drafts customized notices citing:
+                      At LegalRecovery, our team drafts customized notices citing:
                     </p>
                     <ul className="list-disc pl-6 space-y-2 text-sm text-slate-650">
                       <li>Section 65 of the Indian Contract Act, 1872, demonstrating their absolute obligation to return the advance.</li>

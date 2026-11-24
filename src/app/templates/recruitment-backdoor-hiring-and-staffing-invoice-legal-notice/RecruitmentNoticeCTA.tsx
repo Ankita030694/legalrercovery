@@ -39,7 +39,7 @@ export default function RecruitmentNoticeCTA({
                 <div className="space-y-2 mb-6 text-xs text-slate-300">
                   <div className="flex items-center gap-2">
                     <span className="text-emerald-400 font-bold">&check;</span>
-                    <span>Advocate Vetted &amp; Dispatched on Bar Council Letterhead</span>
+                    <span>Fact-Verified &amp; Dispatched on Bar Council Letterhead</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <span className="text-emerald-400 font-bold">&check;</span>
@@ -120,10 +120,10 @@ export default function RecruitmentNoticeCTA({
           <div className="bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 text-white rounded-2xl p-6 sm:p-8 border border-slate-800 shadow-xl flex flex-col md:flex-row items-center justify-between gap-6">
             <div className="max-w-xl">
               <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider bg-red-950/80 text-red-400 border border-red-800/60 mb-2">
-                Advocate Notice Dispatch Protocol
+                Fact-Verified Notice Dispatch Protocol
               </span>
               <h3 className="text-lg sm:text-xl font-bold text-white mb-2">
-                Need an Advocate-Drafted Notice Served on Bar Council Letterhead?
+                Need a Fact-Verified Notice Served on Bar Council Letterhead?
               </h3>
               <p className="text-xs sm:text-sm text-slate-300">
                 Get your backdoor hiring or unpaid staffing invoice notice reviewed, customized with cryptographic ATS timestamps, and formally served via Speed Post RPAD, WhatsApp, and Email.

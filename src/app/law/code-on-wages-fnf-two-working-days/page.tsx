@@ -169,7 +169,7 @@ const FAQS = [
   {
     question: "FnF settlement 2 working days mein nahi mila toh HR ko notice kaise bheje?",
     answer:
-      "Agar company resignation ke 2 working days baad bhi aapka full and final settlement na kare, toh pehle Section 17(2) Code on Wages cite karke HR aur Finance head ko formal demand email bhejein. Agar 48 hours mein resolution na ho, toh verified advocate ke through 15 din ka statutory legal notice bheja jata hai. Is notice mein unpaid salary, leave encashment, 18% interest, aur Section 54 ke tehat ₹50,000 fine ki warning hoti hai.",
+      "Agar company resignation ke 2 working days baad bhi aapka full and final settlement na kare, toh pehle Section 17(2) Code on Wages cite karke HR aur Finance head ko formal demand email bhejein. Agar 48 hours mein resolution na ho, toh hamari team ke through 15 din ka statutory legal notice bheja jata hai. Is notice mein unpaid salary, leave encashment, 18% interest, aur Section 54 ke tehat ₹50,000 fine ki warning hoti hai.",
   },
 ];
 
@@ -971,7 +971,7 @@ export default function CodeOnWagesFnfPage() {
                     </span>
                     <div className="space-y-1 sm:space-y-1.5">
                       <h3 className="text-sm sm:text-base md:text-lg font-bold text-slate-900">
-                        Serve a Statutory Advocate Legal Demand Notice
+                        Serve a Statutory Fact-Verified Legal Demand Notice
                       </h3>
                       <p className="text-xs sm:text-sm leading-relaxed">
                         If the employer fails to disburse within 7 days, engage an advocate to issue a formal statutory legal notice. Dispatched via Registered Speed Post and Section 63 BSA electronic mail to the corporate office and all directors, the notice demands 100% payment with 18% penal interest and warns of Section 54 prosecution within 15 days.
@@ -1036,11 +1036,11 @@ export default function CodeOnWagesFnfPage() {
                       <strong>The Company&apos;s Unlawful Stance:</strong> On 20th September (Day 5 post-exit), HR informed Vikram that FnF would only be credited after 45 days on 31st October, pending &quot;client billability audits&quot; and &quot;IT asset re-verification&quot;. Despite multiple emails, no payment was released.
                     </p>
                     <p>
-                      <strong>The Legal Action:</strong> On Day 10, Vikram retained LegalRecovery.in. An advocate drafted and served an official statutory demand notice to the company&apos;s registered office and its two executive directors. The notice invoked Section 17(2) of the Code on Wages, demonstrated that asset clearance had been signed on 15th September, and gave a strict 15-day demand for payment plus 18% penal interest.
+                      <strong>The Legal Action:</strong> On Day 10, Vikram retained LegalRecovery.in. The team verified the facts and served an official statutory demand notice to the company&apos;s registered office and its two executive directors. The notice invoked Section 17(2) of the Code on Wages, demonstrated that asset clearance had been signed on 15th September, and gave a strict 15-day demand for payment plus 18% penal interest.
                     </p>
                     <div className="p-3.5 sm:p-4 bg-emerald-950/70 border border-emerald-700/60 rounded-xl text-emerald-200">
                       <strong className="block text-emerald-400 font-bold mb-1">The Resolution:</strong>
-                      Within 6 days of receiving the advocate notice via Registered Speed Post, the company&apos;s legal team instructed finance to release the entire principal sum of ₹1,85,000 immediately, along with an additional ₹15,000 to cover interest and legal drafting expenses. Vikram also received his digital Relieving Letter and Experience Certificate within 48 hours.
+                      Within 6 days of receiving the fact-verified notice via Registered Speed Post, the company&apos;s legal team instructed finance to release the entire principal sum of ₹1,85,000 immediately, along with an additional ₹15,000 to cover interest and legal drafting expenses. Vikram also received his digital Relieving Letter and Experience Certificate within 48 hours.
                     </div>
                   </div>
                 </div>
@@ -1138,7 +1138,7 @@ export default function CodeOnWagesFnfPage() {
                     Please be advised that withholding wages past the statutory timeline attracts penal fines under Section 54 and personal liability of the company directors under Section 56 of the Code on Wages, 2019.
                   </p>
                   <p>
-                    I hereby formally request the immediate remittance of my unpaid salary, earned leave encashment, and exit dues amounting to ₹[Amount], along with an itemized FnF statement, into my registered salary bank account within 24 hours of this email. Failing this, I shall instruct legal counsel to serve a formal statutory advocate demand notice and initiate proceedings before the Labour Authority under Section 45.
+                    I hereby formally request the immediate remittance of my unpaid salary, earned leave encashment, and exit dues amounting to ₹[Amount], along with an itemized FnF statement, into my registered salary bank account within 24 hours of this email. Failing this, I shall instruct legal counsel to serve a formal statutory fact-verified demand notice and initiate proceedings before the Labour Authority under Section 45.
                   </p>
                   <p>Yours sincerely,<br />[Your Full Name]<br />[Employee ID]<br />[Phone Number]</p>
                 </div>

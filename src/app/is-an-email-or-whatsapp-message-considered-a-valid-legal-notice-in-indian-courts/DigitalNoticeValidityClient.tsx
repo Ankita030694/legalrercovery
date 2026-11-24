@@ -507,7 +507,7 @@ export default function DigitalNoticeValidityClient() {
                       The digitally served legal notice and its Section 63 BSA certificate are critical during this phase. They are attached as primary exhibits (Annexures) to your complaint or petition. They establish that you provided the recipient with a fair opportunity to resolve the dispute before initiating litigation, fulfilling the principles of natural justice and allowing the court to proceed with your claims.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      LegalRecovery's panel of advocates assists you throughout this transition. We help draft the pleadings, file the complaints in the appropriate forums, and present the certified digital notices in court, ensuring a seamless path from notice service to recovery.
+                      LegalRecovery supports you up to notice service. If the matter proceeds to court, you can engage an advocate separately and present the certified digital notices and delivery records as evidence.
                     </p>
                   </div>
                 </section>
@@ -561,9 +561,9 @@ export default function DigitalNoticeValidityClient() {
                         </p>
                       </div>
                       <div className="bg-slate-50 p-6 rounded-2xl border border-slate-100">
-                        <span className="font-extrabold text-slate-900 block mb-2 text-sm">Advocate Panel Support</span>
+                        <span className="font-extrabold text-slate-900 block mb-2 text-sm">Fact-Verified Notices</span>
                         <p className="text-xs text-slate-600 leading-relaxed">
-                          Your notice is reviewed by qualified advocates who cited appropriate local statutes and handle court proceedings when required.
+                          Your notice is prepared on facts verified by our team and cites the appropriate local statutes. For court proceedings, you can engage an advocate separately.
                         </p>
                       </div>
                     </div>
@@ -614,7 +614,7 @@ export default function DigitalNoticeValidityClient() {
                 <div className="absolute top-0 right-0 w-24 h-24 bg-red-600/10 rounded-full blur-xl pointer-events-none" />
                 <h3 className="text-sm font-black mb-3">Verify Digital Notice</h3>
                 <p className="text-gray-400 mb-5 text-[11px] leading-relaxed">
-                  Discuss your case with legal experts and prepare verified digital notices with BSA 2023 evidence certificates.
+                  Discuss your case with our team and prepare verified digital notices with BSA 2023 evidence certificates.
                 </p>
                 <button 
                   onClick={() => setIsPaymentModalOpen(true)}

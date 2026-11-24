@@ -38,7 +38,7 @@ const SCENARIOS: ScenarioTab[] = [
       {
         step: "Serve Section 42 Rebuttal-Cum-Demand Notice",
         description:
-          "Issue an advocate-drafted notice placing on record the 28-day silence, plant retention-cube logs, and RERA structural continuation to pre-emptively destroy any sham pre-existing dispute plea.",
+          "Issue a fact-verified notice placing on record the 28-day silence, plant retention-cube logs, and RERA structural continuation to pre-emptively destroy any sham pre-existing dispute plea.",
       },
     ],
     statutoryRule: "Sale of Goods Act, 1930 s.42 & IBC 2016 s.8 / Mobilox Doctrine",

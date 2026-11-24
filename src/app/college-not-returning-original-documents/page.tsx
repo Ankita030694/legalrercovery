@@ -158,14 +158,14 @@ const FAQS = [
       "Go to samadhan.ugc.ac.in and sign up. Click 'Grievance Redressal for Students'. Select the category 'Retention of Original Documents / Refund of Fees'. Upload your admission slip, written return request, and the college refusal letter. The UGC sends the complaint to the Vice-Chancellor and Registrar for action within 15 days.",
   },
   {
-    question: "How effective is an advocate legal notice in getting original documents back from a college?",
+    question: "How effective is a legal notice in getting original documents back from a college?",
     answer:
-      "A lawyer notice is the fastest way to get your certificates back. Sent by Speed Post and email, it warns the Principal, Management, and Registrar of legal action. It warns them of High Court writ action under Article 226 and consumer cases on e-Jagriti. Most colleges return documents quickly to avoid public inquiry and regulatory penalties.",
+      "A legal notice is the fastest way to get your certificates back. Sent by Speed Post and email, it warns the Principal, Management, and Registrar of legal action. It warns them of High Court writ action under Article 226 and consumer cases on e-Jagriti. Most colleges return documents quickly to avoid public inquiry and regulatory penalties.",
   },
   {
     question: "Kya college admission cancel ya chhodne par original certificates rok sakta hai?",
     answer:
-      "Bilkul nahi. UGC aur AICTE ke niyam anusaar koi bhi college ya university admission verification ke baad aapke original 10th, 12th ya graduation ke certificates apne paas nahi rakh sakti. Agar college aage ke saalon ki fees maang kar documents rokta hai, toh yeh poori tarah gair-kanooni hai. Aap UGC e-Samadhan par complaint darj kar sakte hain aur advocate dwara statutory legal notice bhejkar turant documents wapas le sakte hain.",
+      "Bilkul nahi. UGC aur AICTE ke niyam anusaar koi bhi college ya university admission verification ke baad aapke original 10th, 12th ya graduation ke certificates apne paas nahi rakh sakti. Agar college aage ke saalon ki fees maang kar documents rokta hai, toh yeh poori tarah gair-kanooni hai. Aap UGC e-Samadhan par complaint darj kar sakte hain aur statutory legal notice bhejkar turant documents wapas le sakte hain.",
   },
 ];
 
@@ -294,7 +294,7 @@ export default function CollegeNotReturningOriginalDocumentsPage() {
                 Statutory Summary (UGC &amp; High Court Mandate)
               </p>
               <p>
-                Under UGC Clause 5 and High Court rulings, colleges cannot keep your original mark sheets or degrees after admission check. Colleges have no legal right to hold certificates to force fee payment. You can demand full return, file a grievance on UGC e-Samadhan, and send a lawyer notice before going to the High Court or Consumer Court.
+                Under UGC Clause 5 and High Court rulings, colleges cannot keep your original mark sheets or degrees after admission check. Colleges have no legal right to hold certificates to force fee payment. You can demand full return, file a grievance on UGC e-Samadhan, and send a legal notice before going to the High Court or Consumer Court.
               </p>
             </div>
 
@@ -506,7 +506,7 @@ export default function CollegeNotReturningOriginalDocumentsPage() {
                       </tr>
                       <tr className="hover:bg-slate-50/80">
                         <th scope="row" className="py-3 px-3.5 sm:py-3.5 sm:px-4 font-semibold text-slate-900">
-                          Pre-Litigation Advocate Notice Window
+                          Pre-Litigation Legal Notice Window
                         </th>
                         <td className="py-3 px-3.5 sm:py-3.5 sm:px-4 text-red-700 font-bold">7 to 15 Calendar Days</td>
                         <td className="py-3 px-3.5 sm:py-3.5 sm:px-4 text-xs">Registered Speed Post + Section 63 BSA Email</td>
@@ -617,7 +617,7 @@ export default function CollegeNotReturningOriginalDocumentsPage() {
                     {/* Step 4 */}
                     <rect x="520" y="20" width="140" height="90" rx="10" fill="url(#docAlert)" />
                     <text x="590" y="45" fill="#FCA5A5" fontWeight="bold" textAnchor="middle">STEP 4</text>
-                    <text x="590" y="65" fill="#FFFFFF" fontWeight="bold" textAnchor="middle">Advocate Notice</text>
+                    <text x="590" y="65" fill="#FFFFFF" fontWeight="bold" textAnchor="middle">Legal Notice</text>
                     <text x="590" y="82" fill="#FEE2E2" fontSize="10" textAnchor="middle">7-Day Final Demand</text>
                     <text x="590" y="98" fill="#FECACA" fontSize="9" textAnchor="middle">Speed Post + Email</text>
 
@@ -693,10 +693,10 @@ export default function CollegeNotReturningOriginalDocumentsPage() {
                     </span>
                     <div className="space-y-1">
                       <h3 className="text-sm sm:text-base md:text-lg font-bold text-slate-900">
-                        Serve a Formal Statutory Advocate Legal Demand Notice
+                        Serve a Formal Statutory Legal Demand Notice
                       </h3>
                       <p className="text-xs sm:text-sm leading-relaxed">
-                        If the college delays and admission or job deadlines are near, send a lawyer notice. Have an advocate send it by Speed Post and email to the Principal and Registrar. The notice gives a 7-day deadline and cites High Court rulings to compel document release.
+                        If the college delays and admission or job deadlines are near, send a legal notice. Send it by Speed Post and email to the Principal and Registrar. The notice gives a 7-day deadline and cites High Court rulings to compel document release.
                       </p>
                       <p className="text-xs text-slate-500 font-medium mt-1">
                         View transparent drafting fees on our <Link href="/legal-notice-charges" className="text-blue-700 underline">legal notice charges</Link> schedule.
@@ -748,7 +748,7 @@ export default function CollegeNotReturningOriginalDocumentsPage() {
                       <strong>The Deadlock:</strong> Aditya requested his original mark sheets and Transfer Certificate. The college refused. It demanded ₹4,50,000 for the remaining five semesters under an admission bond. The office stated certificates would stay locked until all fees were paid.
                     </p>
                     <p>
-                      <strong>The Statutory Action:</strong> Aditya contacted LegalRecovery.in. An advocate served a statutory demand notice to the Principal and Registrar. The notice cited UGC Clause 5 and High Court precedents. It set a 7-day return deadline, warning of High Court writ action and ₹5,00,000 in consumer court damages.
+                      <strong>The Statutory Action:</strong> Aditya contacted LegalRecovery.in. Our team verified the facts and served a statutory demand notice to the Principal and Registrar. The notice cited UGC Clause 5 and High Court precedents. It set a 7-day return deadline, warning of High Court writ action and ₹5,00,000 in consumer court damages.
                     </p>
                     <div className="p-3.5 sm:p-4 bg-emerald-950/70 border border-emerald-700/60 rounded-xl text-emerald-200">
                       <strong className="block text-emerald-400 font-bold mb-1">The Outcome:</strong>
@@ -855,7 +855,7 @@ export default function CollegeNotReturningOriginalDocumentsPage() {
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="font-bold text-amber-700">●</span>
-                    <span><strong>Legal Notice Impact:</strong> A statutory lawyer notice sent to the Principal and Registrar resolves most document retention disputes quickly without court litigation.</span>
+                    <span><strong>Legal Notice Impact:</strong> A statutory legal notice sent to the Principal and Registrar resolves most document retention disputes quickly without court litigation.</span>
                   </li>
                 </ul>
               </aside>

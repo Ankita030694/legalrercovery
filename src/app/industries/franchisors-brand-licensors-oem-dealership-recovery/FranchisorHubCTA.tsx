@@ -27,7 +27,7 @@ export default function FranchisorHubCTA({ className = "" }: FranchisorHubCTAPro
                 Test 1 Live Overdue Case Now (&rupee;{basePrice})
               </h3>
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-                Advocate Drafted &bull; Email + WhatsApp + Speed Post RPAD. Enforce against one defaulting QSR franchisee, one rogue ex-franchisee misusing your signboard, or one defaulting EV/auto dealership today.
+                Fact-Verified &bull; Email + WhatsApp + Speed Post RPAD. Enforce against one defaulting QSR franchisee, one rogue ex-franchisee misusing your signboard, or one defaulting EV/auto dealership today.
               </p>
               <ul className="space-y-1.5 text-xs text-slate-200 mb-6">
                 <li>&check; 15-Day Royalty Arrears &amp; POS Skimming Cure-or-Termination Notice</li>

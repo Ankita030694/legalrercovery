@@ -159,12 +159,12 @@ const FAQS = [
   {
     question: "What legal remedies exist if my employer puts my net pay into negative balance or withholds FnF?",
     answer:
-      "If your employer generates a payslip with negative net pay or withholds your Full & Final (FnF) settlement, you should first submit a formal written objection citing Section 17(2) and Section 18 of the Code on Wages, 2019. If HR does not resolve the issue within 7 working days, have an advocate serve a statutory 15-day legal demand notice to the company and its directors. If they fail to remit the dues, you can lodge an online complaint on the central Samadhan portal (samadhan.labour.gov.in) or file a claim before the jurisdictional Labour Commissioner.",
+      "If your employer generates a payslip with negative net pay or withholds your Full & Final (FnF) settlement, you should first submit a formal written objection citing Section 17(2) and Section 18 of the Code on Wages, 2019. If HR does not resolve the issue within 7 working days, serve a statutory 15-day legal demand notice to the company and its directors. If they fail to remit the dues, you can lodge an online complaint on the central Samadhan portal (samadhan.labour.gov.in) or file a claim before the jurisdictional Labour Commissioner.",
   },
   {
     question: "Payslip mein salary recovery ya illegal deduction lag gaya ho toh legal notice kaise bheje?",
     answer:
-      "Agar aapki company ne payslip par notice period deduction gross CTC par laga diya hai, training bond ka paisa kaat liya hai, ya bina investigation ke asset damage recover kiya hai, toh aap Section 18 Code on Wages 2019 aur Section 74 Indian Contract Act ke tehat advocate legal notice bhej sakte hain. LegalRecovery.in par verified labour advocates company ke Directors aur HR head ko Speed Post aur email se 15 din ka demand notice bhejte hain, jismein kaata gaya paisa 18% byaaj ke sath wapas karne ki maang ki jaati hai.",
+      "Agar aapki company ne payslip par notice period deduction gross CTC par laga diya hai, training bond ka paisa kaat liya hai, ya bina investigation ke asset damage recover kiya hai, toh aap Section 18 Code on Wages 2019 aur Section 74 Indian Contract Act ke tehat legal notice bhej sakte hain. LegalRecovery.in par hum company ke Directors aur HR head ko Speed Post aur email se 15 din ka demand notice bhejte hain, jismein kaata gaya paisa 18% byaaj ke sath wapas karne ki maang ki jaati hai.",
   },
 ];
 
@@ -289,7 +289,7 @@ export default function SalaryRecoveryInPayslipPage() {
               Statutory Summary (Wage Deductions &amp; Recovery Mandate)
             </p>
             <p>
-              On an Indian payslip, &quot;salary recovery&quot; is a deduction line item where an employer withholds earned wages for alleged notice shortfalls, training bonds, asset loss, or advance adjustments. Under Section 18 of the Code on Wages, 2019, deductions cannot exceed 50% of total wages, notice recovery cannot be calculated on full CTC, and penalty clawbacks without domestic inquiry are strictly illegal. Employees can dispute the payslip in writing and serve a statutory advocate legal notice.
+              On an Indian payslip, &quot;salary recovery&quot; is a deduction line item where an employer withholds earned wages for alleged notice shortfalls, training bonds, asset loss, or advance adjustments. Under Section 18 of the Code on Wages, 2019, deductions cannot exceed 50% of total wages, notice recovery cannot be calculated on full CTC, and penalty clawbacks without domestic inquiry are strictly illegal. Employees can dispute the payslip in writing and serve a statutory legal notice.
             </p>
           </div>
 
@@ -390,7 +390,7 @@ export default function SalaryRecoveryInPayslipPage() {
                       <td className="py-3 px-3.5 sm:py-3.5 sm:px-4 text-xs font-medium">Contract Act s.73–74 &amp; Wage Code s.18</td>
                       <td className="py-3 px-3.5 sm:py-3.5 sm:px-4 text-blue-700 font-bold">Basic Salary for unserved days only</td>
                       <td className="py-3 px-3.5 sm:py-3.5 sm:px-4 text-red-600 font-semibold text-xs">Calculated on Gross CTC, including HRA, perks &amp; non-incurred allowances</td>
-                      <td className="py-3 px-3.5 sm:py-3.5 sm:px-4 text-xs">Advocate Legal Notice citing High Court precedents</td>
+                      <td className="py-3 px-3.5 sm:py-3.5 sm:px-4 text-xs">Legal Notice citing High Court precedents</td>
                     </tr>
                     <tr className="hover:bg-slate-50/80">
                       <th scope="row" className="py-3 px-3.5 sm:py-3.5 sm:px-4 font-semibold text-slate-900">
@@ -519,7 +519,7 @@ export default function SalaryRecoveryInPayslipPage() {
                 When Salary Recovery Is Illegal Under Labour Law
               </h2>
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
-                Under the Indian legal framework, wages are recognized as a protected property right under Article 300A of the Constitution of India and specialized labour enactments. Section 18(1) of the Code on Wages, 2019 codifies an unambiguous mandate: <em>&quot;Notwithstanding anything contained in any other law for the time being in force, there shall be no deduction from the wages of an employee, except those authorized by or under this Code.&quot;</em>
+                Under the India legal framework, wages are recognized as a protected property right under Article 300A of the Constitution of India and specialized labour enactments. Section 18(1) of the Code on Wages, 2019 codifies an unambiguous mandate: <em>&quot;Notwithstanding anything contained in any other law for the time being in force, there shall be no deduction from the wages of an employee, except those authorized by or under this Code.&quot;</em>
               </p>
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                 A salary recovery crosses the line from administrative adjustment into a <strong>statutory violation</strong> under any of the following four conditions:
@@ -737,7 +737,7 @@ export default function SalaryRecoveryInPayslipPage() {
                 </div>
                 <div className="bg-slate-100 text-slate-900 p-4 rounded-xl border border-slate-300">
                   <span className="text-[10px] font-bold text-slate-600 uppercase tracking-wider block mb-1">Step 3</span>
-                  <h3 className="font-bold text-sm">Labour Advocate Legal Notice</h3>
+                  <h3 className="font-bold text-sm">Labour Legal Notice</h3>
                   <p className="text-xs text-slate-700 mt-1">Serve 15-day statutory demand via Speed Post &amp; Section 63 BSA email.</p>
                 </div>
                 <div className="bg-red-50 text-red-950 p-4 rounded-xl border border-red-200">
@@ -802,7 +802,7 @@ export default function SalaryRecoveryInPayslipPage() {
                   {/* Step 3 */}
                   <rect x="350" y="20" width="140" height="90" rx="10" fill="url(#salAlert)" />
                   <text x="420" y="45" fill="#FCA5A5" fontWeight="bold" textAnchor="middle">STEP 3</text>
-                  <text x="420" y="65" fill="#FFFFFF" fontWeight="bold" textAnchor="middle">Advocate Notice</text>
+                  <text x="420" y="65" fill="#FFFFFF" fontWeight="bold" textAnchor="middle">Legal Notice</text>
                   <text x="420" y="82" fill="#FEE2E2" fontSize="10" textAnchor="middle">15-Day Legal Demand</text>
                   <text x="420" y="98" fill="#FECACA" fontSize="9" textAnchor="middle">Speed Post + Email to Directors</text>
 
@@ -883,10 +883,10 @@ export default function SalaryRecoveryInPayslipPage() {
                   </span>
                   <div className="space-y-1 sm:space-y-1.5">
                     <h3 className="text-sm sm:text-base md:text-lg font-bold text-slate-900">
-                      Serve an Advocate Statutory Legal Demand Notice
+                      Serve a Statutory Legal Demand Notice
                     </h3>
                     <p className="text-xs sm:text-sm leading-relaxed">
-                      When internal HR channels stall, engage a verified labour advocate to draft and serve a formal statutory demand notice to the company&apos;s registered office, HR Director, and Board of Directors. Dispatched via Registered Speed Post and Section 63 BSA electronic mail, the notice demands immediate refund of the deducted wages plus 18% penal interest within 15 calendar days.
+                      When internal HR channels stall, serve a formal statutory demand notice to the company&apos;s registered office, HR Director, and Board of Directors. Dispatched via Registered Speed Post and Section 63 BSA electronic mail, the notice demands immediate refund of the deducted wages plus 18% penal interest within 15 calendar days.
                     </p>
                     <p className="text-xs text-slate-500 font-medium">
                       Review our transparent fee breakdown on our <Link href="/legal-notice-charges" className="text-blue-700 underline">legal notice charges schedule</Link>.
@@ -965,11 +965,11 @@ export default function SalaryRecoveryInPayslipPage() {
                     <strong>The Deadlock:</strong> In his final payslip and FnF statement, payroll deducted a staggering <strong>₹2,70,000</strong> under &quot;Salary Recovery - Notice Buyout&quot; by calculating 45 days on his full Gross CTC (₹1,80,000 × 1.5). Under established labour law, 45 days of Basic Salary amounted to only <strong>₹1,08,000</strong> (₹72,000 × 1.5). The payroll team unilaterally clawed back an excess ₹1,62,000, reducing Vikram&apos;s earned bonus and leave encashment to negative balance and demanding he deposit ₹45,000 to receive his relieving letter.
                   </p>
                   <p>
-                    <strong>The Statutory Action:</strong> Vikram engaged LegalRecovery.in. A verified labour advocate drafted and dispatched a formal statutory demand notice to the company&apos;s Managing Director and VP-Human Resources. The notice cited <em>Sanjay Jain v. National Aviation Co.</em>, Section 18 of the Code on Wages, 2019, and Section 74 of the Indian Contract Act, establishing that recovering non-incurred allowances and perks constitutes an unlawful penalty. The notice gave a strict 15-day demand for refund of the excess ₹1,62,000 and release of exit documentation.
+                    <strong>The Statutory Action:</strong> Vikram engaged LegalRecovery.in. The team verified the facts and dispatched a formal statutory demand notice to the company&apos;s Managing Director and VP-Human Resources. The notice cited <em>Sanjay Jain v. National Aviation Co.</em>, Section 18 of the Code on Wages, 2019, and Section 74 of the Indian Contract Act, establishing that recovering non-incurred allowances and perks constitutes an unlawful penalty. The notice gave a strict 15-day demand for refund of the excess ₹1,62,000 and release of exit documentation.
                   </p>
                   <div className="p-3.5 sm:p-4 bg-emerald-950/70 border border-emerald-700/60 rounded-xl text-emerald-200">
                     <strong className="block text-emerald-400 font-bold mb-1">The Outcome:</strong>
-                    On Day 8 following receipt of the advocate legal notice, the company&apos;s legal counsel instructed payroll to revise the FnF settlement. The notice recovery was recalculated strictly on Basic Salary at ₹1,08,000. The excess deducted sum of ₹1,62,000 was credited directly to Vikram&apos;s HDFC bank account, and his formal relieving letter and service certificate were released within 48 hours without any negative deductions.
+                    On Day 8 following receipt of the legal notice, the company&apos;s legal counsel instructed payroll to revise the FnF settlement. The notice recovery was recalculated strictly on Basic Salary at ₹1,08,000. The excess deducted sum of ₹1,62,000 was credited directly to Vikram&apos;s HDFC bank account, and his formal relieving letter and service certificate were released within 48 hours without any negative deductions.
                   </div>
                 </div>
               </div>

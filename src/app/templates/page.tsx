@@ -73,7 +73,7 @@ const GROUPS: { heading: string; items: Template[] }[] = [
   {
     heading: "Business and banking",
     items: [
-      { slug: "bank-loan-recall-cum-guarantee-invocation-notice", title: "Bank Loan Recall cum Guarantee Invocation Notice", desc: "Advocate-vetted bank loan recall and Section 128 personal/corporate guarantee invocation draft with an RBI-compliant uncapitalized penal charges schedule." },
+      { slug: "bank-loan-recall-cum-guarantee-invocation-notice", title: "Bank Loan Recall cum Guarantee Invocation Notice", desc: "Fact-verified bank loan recall and Section 128 personal/corporate guarantee invocation draft with an RBI-compliant uncapitalized penal charges schedule." },
       { slug: "msme-delayed-payment-demand-notice", title: "MSME Delayed Payment Demand Notice", desc: "A demand notice for Udyam-registered suppliers citing Sections 15–16 and 43B(h), with an interest schedule." },
       { slug: "wrong-account-transfer-refund-application", title: "Wrong Account Transfer Refund Application", desc: "Application formats in English and Hindi to reverse money sent to a wrong account or UPI ID." },
     ],
@@ -124,7 +124,7 @@ export default function TemplatesHubPage() {
             </h1>
             <p className="text-slate-300 text-sm md:text-base leading-relaxed max-w-3xl">
               {ALL.length + MORE.length} ready-to-use formats for the most common money disputes in India. Fill in your details, download as Word or PDF, and send. If the other side still doesn&apos;t pay, escalate with an{" "}
-              <Link href="/send-legal-notice-online-india" className="text-red-400 underline font-semibold">advocate-drafted legal notice</Link>.
+              <Link href="/send-legal-notice-online-india" className="text-red-400 underline font-semibold">fact-verified legal notice</Link>.
             </p>
           </div>
         </section>

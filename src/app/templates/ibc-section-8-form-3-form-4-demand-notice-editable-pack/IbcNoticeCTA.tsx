@@ -17,14 +17,14 @@ export default function IbcNoticeCTA({ className = "" }: IbcNoticeCTAProps) {
     <>
       <div className={`w-full ${className}`}>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
-          {/* Track 1: Single IBC Section 8 Advocate Review & Dispatch */}
+          {/* Track 1: Single IBC Section 8 Fact Verification & Dispatch */}
           <div className="bg-gradient-to-br from-[#0F172A] via-[#1E293B] to-[#0F172A] text-white rounded-2xl p-6 sm:p-7 border border-slate-800 shadow-xl flex flex-col justify-between">
             <div>
               <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold uppercase tracking-wider bg-red-950/70 text-red-300 border border-red-800/60 mb-3">
                 Track 1 &bull; Single ₹1 Cr+ Operational Debt Case
               </span>
               <h3 className="text-lg sm:text-xl md:text-2xl font-extrabold tracking-tight text-white mb-2.5">
-                Test 1 Live Overdue Case Now (₹{basePrice} &middot; Advocate Drafted)
+                Test 1 Live Overdue Case Now (₹{basePrice} &middot; Fact-Verified)
               </h3>
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
                 Have AMA Legal&rsquo;s corporate insolvency desk audit your invoices, pre-existing dispute risk, and Section 10A dates before serving Rule 5 Form 3 / Form 4 via Email, WhatsApp, and Speed Post RPAD.

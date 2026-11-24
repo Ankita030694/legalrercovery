@@ -587,7 +587,7 @@ Digital Verification Repository: BSA 2023 Section 63 Electronic Delivery Stamp â
           Select Construction Recovery Notice Archetype
         </h2>
         <p className="text-xs sm:text-sm text-slate-600 mt-1">
-          Switch between four advocate-vetted contractor templates, customize your measurement book schedule, and generate a print-ready legal demand.
+          Switch between four ready-to-use contractor templates, customize your measurement book schedule, and generate a print-ready legal demand.
         </p>
       </div>
 

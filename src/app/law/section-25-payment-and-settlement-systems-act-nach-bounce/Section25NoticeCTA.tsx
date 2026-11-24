@@ -31,7 +31,7 @@ export default function Section25NoticeCTA({
               Test 1 Live Overdue Case Now (&rupee;{basePrice})
             </h3>
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-              Advocate-drafted Section 25(1) PSS Act demand notice with UMRN &amp; NPCI return code verification, Suman Sethi exact-EMI separation, and tri-channel dispatch (Email + WhatsApp + Speed Post RPAD) with BSA 2023 s.63 certificate.
+              Fact-verified Section 25(1) PSS Act demand notice with UMRN &amp; NPCI return code verification, Suman Sethi exact-EMI separation, and tri-channel dispatch (Email + WhatsApp + Speed Post RPAD) with BSA 2023 s.63 certificate.
             </p>
           </div>
           <div className="flex flex-col sm:flex-row sm:items-center gap-3">

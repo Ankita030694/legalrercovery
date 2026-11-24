@@ -169,9 +169,9 @@ const FAQS = [
       "No. Section 18(3) of the Code on Wages strictly provides that total deductions from the wages of an employee in any wage period shall not exceed fifty percent (50%) of such wages. Blanket zero-pay statements or negative balance settlement sheets violate central labour regulations.",
   },
   {
-    question: "How fast do employers pay unpaid salary after receiving an advocate legal notice?",
+    question: "How fast do employers pay unpaid salary after receiving a legal notice?",
     answer:
-      "Serving a formal advocate statutory demand notice shifts the dispute from HR support desks directly to company directors and legal counsel. In-house counsels prioritize settling legitimate wage claims during the 15-day statutory window to avoid Section 54 penal sanctions, Labour Commissioner summons, and mandatory interest accrual.",
+      "Serving a formal statutory demand notice shifts the dispute from HR support desks directly to company directors and legal counsel. In-house counsels prioritize settling legitimate wage claims during the 15-day statutory window to avoid Section 54 penal sanctions, Labour Commissioner summons, and mandatory interest accrual.",
   },
   {
     question: "What legal actions can be taken if an employer ignores a legal notice for FnF?",
@@ -348,7 +348,7 @@ export default function SalaryFnFDisputeReportPage() {
                 Executive Data Summary (Section 17(2) Compliance &amp; Recovery Metrics)
               </p>
               <p>
-                Under Section 17(2) of the Code on Wages, 2019, employers are statutorily required to pay all wages and Full and Final (FnF) separation dues within <strong>two working days</strong> of exit. While corporate internal policies routinely attempt to enforce unilateral 45-to-90-day waiting periods or arbitrary notice buyout clawbacks, serving an advocate statutory demand notice creates direct legal cause of action under Section 17(2) and Section 18, compelling payroll clearance before Labour Authority escalation.
+                Under Section 17(2) of the Code on Wages, 2019, employers are statutorily required to pay all wages and Full and Final (FnF) separation dues within <strong>two working days</strong> of exit. While corporate internal policies routinely attempt to enforce unilateral 45-to-90-day waiting periods or arbitrary notice buyout clawbacks, serving a statutory demand notice creates direct legal cause of action under Section 17(2) and Section 18, compelling payroll clearance before Labour Authority escalation.
               </p>
             </div>
 
@@ -406,7 +406,7 @@ export default function SalaryFnFDisputeReportPage() {
                   In practice, however, Indian corporate human resource departments have maintained entrenched pre-code habits. Internal exit manuals continue to proclaim unilateral <em>&quot;45 to 90 days after the last working day (LWD)&quot;</em> payout cycles, while finance desks routinely hold salary balances hostage against protracted asset inspection tickets, notice buyout contests, or cash-flow constraints.
                 </p>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
-                  The LegalRecovery Research Cell monitors wage default trends and FnF dispute resolution across Indian commercial establishments following platform launch on May 25, 2026. Without formal statutory assertion under Section 17(2) and Section 18, exiting employees face unilateral internal HR delays. Serving an advocate legal demand notice triggers rapid corporate re-evaluation, unlocking settlement directly through corporate legal and finance desks.
+                  The LegalRecovery Research Cell monitors wage default trends and FnF dispute resolution across Indian commercial establishments following platform launch on May 25, 2026. Without formal statutory assertion under Section 17(2) and Section 18, exiting employees face unilateral internal HR delays. Serving a legal demand notice triggers rapid corporate re-evaluation, unlocking settlement directly through corporate legal and finance desks.
                 </p>
               </section>
 
@@ -438,7 +438,7 @@ export default function SalaryFnFDisputeReportPage() {
                         <li>• White-collar, tech, and operational professionals in registered private commercial establishments across India.</li>
                         <li>• Full and Final (FnF) separation balances or salary arrears exceeding ₹25,000.</li>
                         <li>• Written evidence of voluntary resignation, termination, mutual separation, or layoff.</li>
-                        <li>• Advocate statutory demand notice issued and tracked via Indian Post Speed Post or certified digital delivery.</li>
+                        <li>• statutory demand notice issued and tracked via Indian Post Speed Post or certified digital delivery.</li>
                       </ul>
                     </div>
 
@@ -504,7 +504,7 @@ export default function SalaryFnFDisputeReportPage() {
                   <div className="p-4 bg-slate-800 text-white rounded-xl text-center">
                     <span className="text-xs font-black uppercase text-red-400 block mb-1">Stage 2</span>
                     <span className="text-lg font-black text-red-300">Day 3–15</span>
-                    <p className="text-xs font-bold text-red-100 mt-1">Advocate Demand Notice</p>
+                    <p className="text-xs font-bold text-red-100 mt-1">Legal Demand Notice</p>
                     <p className="text-[11px] text-slate-400 mt-0.5">15-day statutory cure window</p>
                   </div>
 
@@ -571,7 +571,7 @@ export default function SalaryFnFDisputeReportPage() {
               {/* Mid-Page Dedicated CTA */}
               <div className="my-8">
                 <SalaryFnFReportCTA
-                  buttonText="Have an Advocate Draft Your FnF Demand Notice"
+                  buttonText="Send Your FnF Demand Notice"
                   variant="primary"
                 />
               </div>
@@ -820,8 +820,8 @@ export default function SalaryFnFDisputeReportPage() {
                     },
                     {
                       step: "3",
-                      title: "Dispatch Advocate Statutory Legal Demand Notice",
-                      desc: "If unpaid, engage an advocate to serve a formal legal notice addressed to the Managing Director, Board of Directors, and HR Head. Sent via Indian Post Speed Post with tracking and emailed with certified electronic audit under Section 63 BSA 2023.",
+                      title: "Dispatch Statutory Legal Demand Notice",
+                      desc: "If unpaid, serve a formal legal notice addressed to the Managing Director, Board of Directors, and HR Head. Sent via Indian Post Speed Post with tracking and emailed with certified electronic audit under Section 63 BSA 2023.",
                     },
                     {
                       step: "4",
@@ -1028,7 +1028,7 @@ export default function SalaryFnFDisputeReportPage() {
 
               {/* Bottom Page CTA */}
               <SalaryFnFReportCTA
-                buttonText="Recover Withheld Salary & FnF via Advocate Notice"
+                buttonText="Recover Withheld Salary & FnF via Legal Notice"
                 variant="primary"
               />
 

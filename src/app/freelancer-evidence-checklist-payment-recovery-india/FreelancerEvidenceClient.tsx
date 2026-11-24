@@ -47,7 +47,7 @@ const faqs = [
   },
   {
     question: "How does LegalRecovery help freelancers compile their evidence file?",
-    answer: "LegalRecovery provides freelancers with a structured platform to upload invoices, emails, and chat logs. Our legal-tech system reviews your files for completeness, automatically calculates interest penalties, generates the required Section 63 BSA certificates for your digital dispatches, and matches your documents to draft an advocate-backed legal notice served digitally via verified email and WhatsApp."
+    answer: "LegalRecovery provides freelancers with a structured online form to enter invoice, email, and chat details. Our team verifies the facts you submit, our system automatically calculates interest penalties and generates the required Section 63 BSA certificates for your digital dispatches, and we prepare a fact-verified legal notice served digitally via verified email and WhatsApp. Keep your original invoices, emails, and chat logs ready for any later court or forum filing."
   }
 ];
 
@@ -111,7 +111,7 @@ const reviewSchema = {
   "@type": "Product",
   "name": "Freelancer Evidence Review & Legal Notices",
   "image": "https://www.legalrecovery.in/og-freelancer-evidence.png",
-  "description": "Professional document auditing and advocate-backed legal notices with Section 63 BSA digital certificates for gig workers in India.",
+  "description": "Professional document auditing and fact-verified legal notices with Section 63 BSA digital certificates for gig workers in India.",
   "brand": {
     "@type": "Brand",
     "name": "LegalRecovery"
@@ -490,7 +490,7 @@ export default function FreelancerEvidenceClient() {
                       Before a freelancer files a lawsuit in a civil court or approaches the MSME Facilitation Council, they must establish that they gave the client a formal, final opportunity to settle the debt. This is done by serving a <strong>Pre-Suit Legal Notice</strong>. In court, the legal notice and its proof of service are the foundational documents that define your cause of action. If you cannot prove that the notice was successfully served on the client, your case can face severe procedural challenges. Therefore, you must maintain a complete pre-suit communication audit.
                     </p>
                     <p>
-                      The audit begins with the notice itself. You must preserve the final signed copy of the notice drafted by your advocate, detailing the specific demand and the 15-day timeline. Next, you must preserve the <strong>proof of dispatch</strong>. The notice must be sent digitally via <strong>verified email and WhatsApp</strong>. Keep the digital delivery receipts. Once the notice is delivered, save the official tracking report showing &quot;Item Delivered.&quot;
+                      The audit begins with the notice itself. You must preserve the final signed copy of the notice prepared on verified facts, detailing the specific demand and the 15-day timeline. Next, you must preserve the <strong>proof of dispatch</strong>. The notice must be sent digitally via <strong>verified email and WhatsApp</strong>. Keep the digital delivery receipts. Once the notice is delivered, save the official tracking report showing &quot;Item Delivered.&quot;
                     </p>
                     <p>
                       Under <strong>Section 27 of the General Clauses Act, 1897</strong>, if a formal document is sent to the correct address via registered post, the service is legally deemed complete. Even if the client intentionally evades the delivery, the law treats this as <strong>deemed service</strong>. You must preserve the digital logs as evidence of the client's evasion, which acts as a major point of bad faith in court.
@@ -555,7 +555,7 @@ export default function FreelancerEvidenceClient() {
                       By maintaining this level of organization, you eliminate any potential loopholes that the client's legal team can exploit. It allows your advocate to cite specific dates, times, and document reference numbers in the legal notice, demonstrating to the client that you have an airtight case. In many payment disputes, when a client receives a legal notice that is backed by such a precise evidence summary, they recognize that contesting the case in court will be a losing battle and immediately offer a settlement.
                     </p>
                     <p>
-                      At LegalRecovery, we specialize in helping freelancers build this Master Evidence File. Our automated platform guides you through uploading your documents, reviews your digital logs for legal compliance, automatically prepares the required Section 63 BSA certificates, and connects you with expert advocates to dispatch formal dispatches. By combining legal expertise with advanced technology, we ensure that your rights are protected, your evidence is airtight, and your outstanding freelance payments are recovered securely and efficiently.
+                      At LegalRecovery, we specialize in helping freelancers build this Master Evidence File. Our automated platform guides you through entering your case details in an online form, our team verifies the facts, the platform automatically prepares the required Section 63 BSA certificates, and we dispatch the formal legal notice for you. By combining legal expertise with advanced technology, we ensure that your rights are protected, your evidence is airtight, and your outstanding freelance payments are recovered securely and efficiently.
                     </p>
                   </div>
                 </section>
@@ -650,7 +650,7 @@ export default function FreelancerEvidenceClient() {
                 <div className="absolute top-0 right-0 w-24 h-24 bg-red-600/10 rounded-full blur-xl pointer-events-none" />
                 <h3 className="text-sm font-black mb-3">Recover Freelance Payments</h3>
                 <p className="text-gray-400 mb-5 text-[11px] leading-relaxed">
-                  Build an airtight evidence file and dispatch formal legal notices through expert advocate dispatches.
+                  Build an airtight evidence file and dispatch fact-verified legal notices through our team.
                 </p>
                 <button 
                   onClick={() => setIsPaymentModalOpen(true)}

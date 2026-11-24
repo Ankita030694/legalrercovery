@@ -51,7 +51,7 @@ const PROBLEMS: ProblemTab[] = [
     cause:
       "Unsecured term loans, merchant overdrafts, and personal lines of credit lack underlying collateral or hypothecated security. When the borrower defaults, banks cannot exercise self-help repossession under SARFAESI. Failure to serve a formal advocate loan recall notice creates an evidentiary void regarding the exact date of acceleration, enabling borrowers to contest liability, challenge interest rates, or exploit statutory limitation under the Limitation Act, 1963.",
     legalBasis:
-      "Under the Indian Contract Act, 1872 (Sections 73 & 74), default in EMI repayment entitles the lending institution to accelerate the entire outstanding balance and terminate the loan agreement. An advocate-drafted loan recall notice establishes the breach of the sanction letter, revokes the credit facility, and sets a strict 15-day pre-litigation deadline before filing an Order 37 summary suit in Civil Court or lodging Section 19 DRT claims.",
+      "Under the Indian Contract Act, 1872 (Sections 73 & 74), default in EMI repayment entitles the lending institution to accelerate the entire outstanding balance and terminate the loan agreement. A fact-verified loan recall notice establishes the breach of the sanction letter, revokes the credit facility, and sets a strict 15-day pre-litigation deadline before filing an Order 37 summary suit in Civil Court or lodging Section 19 DRT claims.",
     steps: [
       {
         step: "Assemble Loan Agreement & Digital Sanction Trail",
@@ -86,7 +86,7 @@ const PROBLEMS: ProblemTab[] = [
           "Prepare inter-creditor statements, unserviced drawing limits, inventory audit defaults, and audited asset classification reports.",
       },
       {
-        step: "Issue Advocate Demand Notice & Personal Guarantee Invocation",
+        step: "Issue Fact-Verified Demand Notice & Personal Guarantee Invocation",
         description:
           "Serve joint demand notices on the borrower company and personal/corporate guarantors, invoking guarantee deeds under Section 128 of the Indian Contract Act, 1872.",
       },
@@ -140,7 +140,7 @@ const PROBLEMS: ProblemTab[] = [
           "Obtain official banker's return memo with reasons such as 'Insufficient Funds' or 'Account Closed' within 30 days of presentation.",
       },
       {
-        step: "Issue Statutory 15-Day Advocate Demand Notice",
+        step: "Issue Statutory 15-Day Fact-Verified Demand Notice",
         description:
           "Serve Section 138 / Section 25 statutory legal notice demanding payment within 15 days of receipt via Speed Post AD and electronic mail.",
       },

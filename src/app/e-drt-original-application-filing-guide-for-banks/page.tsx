@@ -956,7 +956,7 @@ export default function EdrtOriginalApplicationFilingGuidePage() {
                         <strong>Pre-OA Loan Recall Mandatory Language:</strong> Expressly recalls the entire facility, specifies NPA date, itemizes Principal vs Contractual Interest vs Penal Charges, and explicitly invokes every Personal/Corporate Guarantee u/s 128 Contract Act.
                       </li>
                       <li>
-                        <strong>Use Our Pre-Vetted Draft:</strong> Download and customize the RBI-compliant{" "}
+                        <strong>Use Our Ready Draft:</strong> Download and customize the RBI-compliant{" "}
                         <Link
                           href="/templates/bank-loan-recall-cum-guarantee-invocation-notice"
                           className="text-[#DC2626] font-semibold hover:underline"

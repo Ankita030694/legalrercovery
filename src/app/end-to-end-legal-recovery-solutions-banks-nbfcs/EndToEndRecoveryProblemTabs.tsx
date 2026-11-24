@@ -61,7 +61,7 @@ const PROBLEMS: ProblemTab[] = [
       {
         step: "Advocate Notice with Structured Settlement Offers",
         description:
-          "Serve formal advocate notices detailing principal liability while offering controlled one-time settlement (OTS) terms or statutory 15-day settlement demands.",
+          "Serve formal fact-verified notices detailing principal liability while offering controlled one-time settlement (OTS) terms or statutory 15-day settlement demands.",
       },
       {
         step: "Institutional Arbitration or Civil Recovery Suit",
@@ -113,9 +113,9 @@ const PROBLEMS: ProblemTab[] = [
           "Capture bank return memos with return codes (e.g., Code 01 Insufficient Funds) within the strict 30-day statutory limitation window.",
       },
       {
-        step: "Statutory 30-Day Advocate Demand Notice Dispatch",
+        step: "Statutory 30-Day Fact-Verified Demand Notice Dispatch",
         description:
-          "Dispatch advocate statutory notices under Section 138(b) NI Act or Section 25 PSSA demanding full payment within 15 days of notice receipt.",
+          "Dispatch fact-verified statutory notices under Section 138(b) NI Act or Section 25 PSSA demanding full payment within 15 days of notice receipt.",
       },
       {
         step: "Filing Criminal Complaint in Judicial Magistrate Court",

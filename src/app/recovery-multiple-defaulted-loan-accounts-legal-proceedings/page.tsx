@@ -648,7 +648,7 @@ export default function RecoveryMultipleDefaultedLoanAccountsPage() {
                         Automated Statutory Notice Dispatch (Section 25 PSS Act &amp; Loan Recall)
                       </h3>
                       <p className="text-xs sm:text-sm leading-relaxed">
-                        Generate standardized advocate legal notices invoking Section 25 of the Payment and Settlement Systems Act, 2007, and Section 138 of the Negotiable Instruments Act. Dispatch notices simultaneously via registered email, WhatsApp, and India Post Registered Speed Post with e-Post tracking under Section 63 BSA compliance.
+                        Generate standardized fact-verified legal notices invoking Section 25 of the Payment and Settlement Systems Act, 2007, and Section 138 of the Negotiable Instruments Act. Dispatch notices simultaneously via registered email, WhatsApp, and India Post Registered Speed Post with e-Post tracking under Section 63 BSA compliance.
                       </p>
                       <p className="text-xs text-slate-500 font-medium">
                         Explore our enterprise service on <Link href="/bulk-legal-notice-services-credit-card-recovery" className="text-blue-700 underline font-semibold">bulk legal notice services</Link> for retail portfolios.
@@ -826,7 +826,7 @@ export default function RecoveryMultipleDefaultedLoanAccountsPage() {
                       <li>Batch 2 (630 Non-Mandate Accounts): Grouped into District Legal Services Authority (DLSA) National Lok Adalat schedules across 6 target districts.</li>
                     </ul>
                     <p>
-                      <strong>The Results at 90 Days:</strong> 540 borrowers settled immediately upon receiving the Section 25 PSS Act advocate notices to avoid criminal prosecution. A further 710 accounts resolved during the dedicated National Lok Adalat sessions, entering binding settlement awards. A total of ₹14.8 Crore was recovered into the NBFC&apos;s recovery collection account within 90 days—at a total legal operations cost of under 3.2% of recovered capital.
+                      <strong>The Results at 90 Days:</strong> 540 borrowers settled immediately upon receiving the Section 25 PSS Act fact-verified notices to avoid criminal prosecution. A further 710 accounts resolved during the dedicated National Lok Adalat sessions, entering binding settlement awards. A total of ₹14.8 Crore was recovered into the NBFC&apos;s recovery collection account within 90 days—at a total legal operations cost of under 3.2% of recovered capital.
                     </p>
                     <div className="p-3.5 sm:p-4 bg-emerald-950/70 border border-emerald-700/60 rounded-xl text-emerald-200">
                       <strong className="block text-emerald-400 font-bold mb-1">Key Takeaway for Legal Heads:</strong>

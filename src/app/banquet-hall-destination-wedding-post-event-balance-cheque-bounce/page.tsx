@@ -194,7 +194,7 @@ export default function BanquetChequeBounceRecoveryPage() {
       {
         "@type": "HowToStep",
         name: "Step 3: Serve Mandatory 15-Day Statutory Notice under NI Act s.138",
-        text: "Within 30 days of the Return Memo, dispatch an Advocate-drafted demand notice via Speed Post RPAD, Email, and WhatsApp invoking NI Act s.138, s.143A, and Contract Act s.74.",
+        text: "Within 30 days of the Return Memo, dispatch a Fact-verified demand notice via Speed Post RPAD, Email, and WhatsApp invoking NI Act s.138, s.143A, and Contract Act s.74.",
       },
       {
         "@type": "HowToStep",
@@ -482,7 +482,7 @@ export default function BanquetChequeBounceRecoveryPage() {
                   {
                     step: "Within 30 Days",
                     title: "Dispatch Mandatory NI Act s.138 Legal Notice",
-                    desc: "Serve Advocate demand notice via Speed Post RPAD, Email, and WhatsApp. Refer to our Section 138 notice timeline guide.",
+                    desc: "Serve Fact-verified demand notice via Speed Post RPAD, Email, and WhatsApp. Refer to our Section 138 notice timeline guide.",
                   },
                   {
                     step: "Post 15-Day Expiry",

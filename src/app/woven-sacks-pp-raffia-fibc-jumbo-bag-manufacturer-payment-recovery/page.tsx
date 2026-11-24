@@ -127,7 +127,7 @@ const FAQS = [
   },
   {
     q: "We manufacture 1 MT FIBC jumbo bags for chemical and mineral exporters who stretch payment 120+ days citing foreign buyer remittance delays. What is the fastest recovery track?",
-    a: "Domestic supplier payment liability is completely independent of an exporter's foreign buyer remittance. If your FIBC stitching/extrusion unit holds Udyam Micro or Small registration, serve an Advocate Demand Notice enforcing MSMED Act s.15 (45-day ceiling), 3x RBI compound interest (s.16), and Income Tax Section 43B(h) corporate tax disallowance—which disrupts the exporter's statutory audit and bank packing credit. For Medium/Large FIBC plants owed ₹1 Crore or more, an IBC Section 8 Form 3/4 Demand Notice or Commercial Court Order XXXVII Summary Suit delivers rapid Board-level settlement.",
+    a: "Domestic supplier payment liability is completely independent of an exporter's foreign buyer remittance. If your FIBC stitching/extrusion unit holds Udyam Micro or Small registration, serve a Fact-Verified Demand Notice enforcing MSMED Act s.15 (45-day ceiling), 3x RBI compound interest (s.16), and Income Tax Section 43B(h) corporate tax disallowance—which disrupts the exporter's statutory audit and bank packing credit. For Medium/Large FIBC plants owed ₹1 Crore or more, an IBC Section 8 Form 3/4 Demand Notice or Commercial Court Order XXXVII Summary Suit delivers rapid Board-level settlement.",
   },
   {
     q: "Are circular-loom PP raffia plants, leno bag makers, tarpaulin units, and FIBC converters covered by Income Tax Section 43B(h)?",
@@ -203,8 +203,8 @@ const HOWTO_SCHEMA = {
     {
       "@type": "HowToStep",
       position: 3,
-      name: "Dispatch CFO-Targeted Advocate Notice (s.55 Price + s.43B(h) + Cylinder Lien)",
-      text: "Serve a 15-day Advocate Statutory Notice via Email, WhatsApp, and Speed Post RPAD addressed to the mill/exporter CFO and Statutory Auditor combining Section 43B(h) tax disallowance, Section 55 custom BOPP price + Section 44 storage rent, and Contract Act s.170 cylinder lien.",
+      name: "Dispatch CFO-Targeted Fact-Verified Notice (s.55 Price + s.43B(h) + Cylinder Lien)",
+      text: "Serve a 15-day Fact-Verified Statutory Notice via Email, WhatsApp, and Speed Post RPAD addressed to the mill/exporter CFO and Statutory Auditor combining Section 43B(h) tax disallowance, Section 55 custom BOPP price + Section 44 storage rent, and Contract Act s.170 cylinder lien.",
     },
     {
       "@type": "HowToStep",
@@ -1002,7 +1002,7 @@ export default function WovenSacksFibcRecoveryPage() {
               </div>
 
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed mb-5">
-                Consider a Silvassa / Ahmedabad Udyam Small raffia converter supplying custom-printed 25 kg BOPP Basmati Rice bags and 1 MT FIBC jumbo bags to an agri-export house under a 30-day written PO. The buyer stops lifting 45,000 branded BOPP bags after export paddy rates dip and stalls ₹24.50 lakh of already-shipped FIBC invoices for 7 months (210 days past the 45-day statutory ceiling). Here is the exact statutory recovery stack quantified in the Advocate Notice:
+                Consider a Silvassa / Ahmedabad Udyam Small raffia converter supplying custom-printed 25 kg BOPP Basmati Rice bags and 1 MT FIBC jumbo bags to an agri-export house under a 30-day written PO. The buyer stops lifting 45,000 branded BOPP bags after export paddy rates dip and stalls ₹24.50 lakh of already-shipped FIBC invoices for 7 months (210 days past the 45-day statutory ceiling). Here is the exact statutory recovery stack quantified in the Fact-Verified Notice:
               </p>
 
               <div className="rounded-2xl overflow-hidden border border-slate-200 shadow-sm">
@@ -1183,7 +1183,7 @@ export default function WovenSacksFibcRecoveryPage() {
                   09
                 </span>
                 <h2 className="text-xl sm:text-2xl font-black text-slate-900 leading-snug">
-                  Start a ₹999 Advocate Notice or Bulk Raffia Plant CSV Desk
+                  Start a ₹999 Fact-Verified Notice or Bulk Raffia Plant CSV Desk
                 </h2>
               </div>
 

@@ -6,13 +6,13 @@ import CityDirectoryExplorer from "@/components/CityDirectoryExplorer";
 export const metadata: Metadata = {
   title: "Legal Recovery Services by City | Legal Recovery",
   description:
-    "Find the best advocate panel for legal recovery and debt collection across various cities in India. Get expert legal assistance with Legal Recovery.",
+    "Find the best online legal notice service for recovery and debt collection across various cities in India. Get fact-verified legal notices with Legal Recovery.",
   alternates: {
     canonical: 'https://www.legalrecovery.in/legal-recovery-by-city',
   },
   openGraph: {
     title: "Legal Recovery Services by City | Legal Recovery",
-    description: "Find the best advocate panel for legal recovery and debt collection across various cities in India. Get expert legal assistance with Legal Recovery.",
+    description: "Find the best online legal notice service for recovery and debt collection across various cities in India. Get fact-verified legal notices with Legal Recovery.",
     url: "https://www.legalrecovery.in/legal-recovery-by-city",
     type: "article",
     siteName: "LegalRecovery.in",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Legal Recovery Services by City | Legal Recovery",
-    description: "Find the best advocate panel for legal recovery and debt collection across various cities in India. Get expert legal assistance with Legal Recovery.",
+    description: "Find the best online legal notice service for recovery and debt collection across various cities in India. Get fact-verified legal notices with Legal Recovery.",
     site: "@legalrecoveryin",
     creator: "@legalrecoveryin",
     images: ["https://www.legalrecovery.in/blog_money_recovery.png"],
@@ -92,10 +92,10 @@ export default function LawyerByCity() {
           <div className="space-y-6">
             <h3 className="text-xl font-bold text-[#111827]">Navigating Local Courts and Tribunals</h3>
             <p>
-              This localized approach allows us to provide more strategic and efficient legal services, as our advocates can navigate the procedural requirements of local courts with ease. Whether you need assistance with property documentation in Jaipur, a salary recovery in Delhi, or corporate compliance in Mumbai, our city-specific legal directory is here to help.
+              This localized approach allows us to provide more strategic and efficient legal services, as our team can navigate the procedural requirements of local courts with ease. Whether you need assistance with property documentation in Jaipur, a salary recovery in Delhi, or corporate compliance in Mumbai, our city-specific legal directory is here to help.
             </p>
             <p>
-              We understand that finding a reliable lawyer in a new city or for a specific local matter can be daunting. Our platform is designed to simplify this process by connecting you with experienced professionals who have a proven track record in their respective cities. At <strong>Legal Recovery</strong>, we bridge the gap between clients and quality advocacy.
+              We understand that finding a reliable lawyer in a new city or for a specific local matter can be daunting. Our platform is designed to simplify this process by letting you send fact-verified legal notices online, wherever you are in India. At <strong>Legal Recovery</strong>, we bridge the gap between clients and effective pre-litigation recovery.
             </p>
           </div>
         </div>

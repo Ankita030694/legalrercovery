@@ -36,7 +36,7 @@ const TECH_SCENARIO_TRACKS: TechScenarioTrack[] = [
       {
         step: "2. 7-Day Cure-Cum-Read-Only Freeze Notice",
         detail:
-          "Serve an advocate notice demanding full accelerated ACV or unpaid cloud consumption while offering a lawful 7-day data-export window prior to read-only tenant suspension.",
+          "Serve a fact-verified notice demanding full accelerated ACV or unpaid cloud consumption while offering a lawful 7-day data-export window prior to read-only tenant suspension.",
       },
       {
         step: "3. Commercial Court / Order XXXVII & Garnishee Escalation",

@@ -12,7 +12,7 @@ export const revalidate = 86400;
 const PAGE_PATH = "/sma-1-sma-2-early-delinquency-cure-notice-strategy-banks";
 const PAGE_URL = `${SITE_URL}${PAGE_PATH}`;
 const EXACT_H1 =
-  "Arresting SMA-2 to NPA Roll-Rates (61–90 DPD): Why Advocate-Signed Cure Notices Outperform Telecalling 3x";
+  "Arresting SMA-2 to NPA Roll-Rates (61–90 DPD): Why Fact-Verified Cure Notices Outperform Telecalling 3x";
 
 const META_TITLE = "Stopping SMA-2 Slippage to NPA: Bank Cure Notice Guide";
 const META_DESCRIPTION =
@@ -104,9 +104,9 @@ const FAQS = [
   },
   {
     question:
-      "How does an Advocate-Signed Soft Legal Cure Notice outperform telecalling in SMA-2?",
+      "How does a Fact-Verified Soft Legal Cure Notice outperform telecalling in SMA-2?",
     answer:
-      "By Day 61, borrowers have typically muted collection IVRs, ignored automated SMS reminders, and screened unknown telecaller numbers. An Advocate-Signed Cure Notice carries formal statutory authority on legal letterhead, explains the irreversible Day-90 NPA & CICRA credit-score impact, attaches a verified Speed Post RPAD barcode alongside Email and WhatsApp delivery, and establishes an admissible BSA 2023 Section 63 audit trail.",
+      "By Day 61, borrowers have typically muted collection IVRs, ignored automated SMS reminders, and screened unknown telecaller numbers. A Fact-Verified Cure Notice carries formal statutory authority on legal letterhead, explains the irreversible Day-90 NPA & CICRA credit-score impact, attaches a verified Speed Post RPAD barcode alongside Email and WhatsApp delivery, and establishes an admissible BSA 2023 Section 63 audit trail.",
   },
   {
     question:
@@ -130,7 +130,7 @@ const FAQS = [
     question:
       "How can banks automate Day-62 Cure Notices across 1,000+ SMA-2 accounts without branch bottlenecks?",
     answer:
-      "Banks export daily CBS SMA-1/SMA-2 cohorts (CSV or SFTP) into an institutional legal-notice desk. Advocate-vetted templates dynamically populate loan ID, FIFO arrears, e-NACH return references, and vernacular translations, dispatching Email, WhatsApp, and Speed Post RPAD within 24 hours while logging India Post tracking and debtor replies.",
+      "Banks export daily CBS SMA-1/SMA-2 cohorts (CSV or SFTP) into an institutional legal-notice desk. Ready-to-use templates dynamically populate loan ID, FIFO arrears, e-NACH return references, and vernacular translations, dispatching Email, WhatsApp, and Speed Post RPAD within 24 hours while logging India Post tracking and debtor replies.",
   },
 ];
 
@@ -170,7 +170,7 @@ export default function SmaEarlyDelinquencyCureNoticePage() {
     "@context": "https://schema.org",
     "@type": "Table",
     about:
-      "Comparison of Bank Early Delinquency Intervention Channels (61–90 DPD SMA-2 Window): Telecalling vs SMS/WhatsApp Bot vs Field Agency vs Advocate-Signed Cure Notice",
+      "Comparison of Bank Early Delinquency Intervention Channels (61–90 DPD SMA-2 Window): Telecalling vs SMS/WhatsApp Bot vs Field Agency vs Fact-Verified Cure Notice",
     name: "SMA-2 Intervention Channel Comparison Matrix for Scheduled Commercial Banks & SFBs",
   };
 
@@ -255,7 +255,7 @@ export default function SmaEarlyDelinquencyCureNoticePage() {
                 Bank Loan Recovery Hub
               </Link>
             </span>
-            Under RBI&apos;s daily day-end NPA stamping mandate, an SMA-2 account crossing 90 DPD becomes irreversible through partial payments—upgradation requires 100% arrears clearance. Deploying automated Day-62 Advocate-Signed Cure Notices within your{" "}
+            Under RBI&apos;s daily day-end NPA stamping mandate, an SMA-2 account crossing 90 DPD becomes irreversible through partial payments—upgradation requires 100% arrears clearance. Deploying automated Day-62 Fact-Verified Cure Notices within your{" "}
             <Link
               href="/industries/banks-loan-recovery"
               className="text-red-300 underline hover:text-white"
@@ -426,7 +426,7 @@ export default function SmaEarlyDelinquencyCureNoticePage() {
                       <td className="py-3 px-4 text-slate-700">61–90 Days Past Due</td>
                       <td className="py-3 px-4 text-slate-700">Continuous excess &gt;60 to 90 days</td>
                       <td className="py-3 px-4 font-semibold text-slate-900">
-                        Day-62 Advocate-Signed Cure Notice (Email + WhatsApp + Speed Post RPAD)
+                        Day-62 Fact-Verified Cure Notice (Email + WhatsApp + Speed Post RPAD)
                       </td>
                     </tr>
                     <tr className="bg-red-50/50">
@@ -669,7 +669,7 @@ export default function SmaEarlyDelinquencyCureNoticePage() {
                   },
                   {
                     stage: "Stage 2 · Day 62",
-                    title: "Advocate Cure Notice Dispatch",
+                    title: "Fact-Verified Cure Notice Dispatch",
                     desc: "24-hour multi-channel service via Email, WhatsApp, and Speed Post RPAD with exact cure amount.",
                   },
                   {
@@ -716,7 +716,7 @@ export default function SmaEarlyDelinquencyCureNoticePage() {
               </div>
 
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
-                Select a banking portfolio segment below to inspect how RBI IRACP rules interact with borrower behavior between Day 61 and Day 85—and how an advocate-signed notice resolves each trap:
+                Select a banking portfolio segment below to inspect how RBI IRACP rules interact with borrower behavior between Day 61 and Day 85—and how a fact-verified notice resolves each trap:
               </p>
 
               <SmaCureScenarioTabs />
@@ -737,7 +737,7 @@ export default function SmaEarlyDelinquencyCureNoticePage() {
               </div>
 
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
-                To evaluate the return on investment (ROI) of Day-62 Advocate Cure Notices, consider an illustrative institutional model of <strong>1,000 retail/MSME accounts</strong> entering SMA-2 (61 DPD) with an average outstanding principal of <strong>₹4.50 Lakhs</strong> (total cohort exposure: <strong>₹45.00 Crore</strong>):
+                To evaluate the return on investment (ROI) of Day-62 Fact-Verified Cure Notices, consider an illustrative institutional model of <strong>1,000 retail/MSME accounts</strong> entering SMA-2 (61 DPD) with an average outstanding principal of <strong>₹4.50 Lakhs</strong> (total cohort exposure: <strong>₹45.00 Crore</strong>):
               </p>
 
               <div className="bg-slate-900 text-white rounded-2xl p-5 sm:p-6 border border-slate-800 space-y-4">

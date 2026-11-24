@@ -12,12 +12,12 @@ const faqs = [
   {
     question: 'Can a landlord send a legal notice to a tenant for not paying rent in India?',
     answer:
-      'Yes, any landlord or property owner whose tenant has defaulted on monthly rent can issue an advocate-drafted statutory legal notice demanding payment of all arrears within a fixed compliance period. Under Section 106 of the Transfer of Property Act, 1882, a valid notice to quit is a legal prerequisite before initiating eviction proceedings, and a combined rent-recovery-cum-eviction notice simultaneously satisfies this mandatory statutory requirement while creating an enforceable documentary record of the default. Serving the notice through a qualified advocate on official legal letterhead significantly elevates the psychological and legal pressure on a defaulting tenant.',
+      'Yes, any landlord or property owner whose tenant has defaulted on monthly rent can issue a fact-verified statutory legal notice demanding payment of all arrears within a fixed compliance period. Under Section 106 of the Transfer of Property Act, 1882, a valid notice to quit is a legal prerequisite before initiating eviction proceedings, and a combined rent-recovery-cum-eviction notice simultaneously satisfies this mandatory statutory requirement while creating an enforceable documentary record of the default. Serving the notice through a qualified advocate on official legal letterhead significantly elevates the psychological and legal pressure on a defaulting tenant.',
   },
   {
     question: 'What are the legal grounds for eviction of a non-paying tenant in India?',
     answer:
-      'Non-payment of rent is the single strongest statutory ground for eviction recognized across all state Rent Control Acts in India, including the Delhi Rent Control Act, the Maharashtra Rent Control Act, 1999, the Karnataka Rent Act, 2001, and the Model Tenancy Act, 2021. A landlord must typically issue a formal demand notice specifying the exact unpaid amount and give the tenant a statutory opportunity to cure the default—usually 15 days under the Model Tenancy Act—before approaching the Rent Authority or Civil Court for an eviction decree. Combining the demand for arrears with an eviction notice in a single advocate-drafted document is the most efficient pre-litigation strategy.',
+      'Non-payment of rent is the single strongest statutory ground for eviction recognized across all state Rent Control Acts in India, including the Delhi Rent Control Act, the Maharashtra Rent Control Act, 1999, the Karnataka Rent Act, 2001, and the Model Tenancy Act, 2021. A landlord must typically issue a formal demand notice specifying the exact unpaid amount and give the tenant a statutory opportunity to cure the default—usually 15 days under the Model Tenancy Act—before approaching the Rent Authority or Civil Court for an eviction decree. Combining the demand for arrears with an eviction notice in a single fact-verified document is the most efficient pre-litigation strategy.',
   },
   {
     question: 'How much rent arrears must a tenant owe before a legal notice can be sent?',
@@ -174,7 +174,7 @@ const jsonLd = {
       '@type': 'Product',
       name: 'Legal Notice to Tenant for Not Paying Rent',
       description:
-        'Advocate-drafted statutory demand notice service for landlords to recover unpaid rent arrears, serve a combined eviction cum rent-recovery notice, and initiate Rent Authority proceedings against defaulting tenants across India.',
+        'Fact-verified statutory demand notice service for landlords to recover unpaid rent arrears, serve a combined eviction cum rent-recovery notice, and initiate Rent Authority proceedings against defaulting tenants across India.',
       brand: {
         '@type': 'Organization',
         name: 'Legal Recovery',
@@ -446,7 +446,7 @@ export default function RecoverUnpaidRentFromTenantIndiaClient() {
                     Quick Answer
                   </h2>
                   <p className="text-sm text-slate-700 font-medium leading-relaxed">
-                    A landlord can send an advocate-drafted statutory legal notice to a tenant for
+                    A landlord can send a fact-verified statutory legal notice to a tenant for
                     not paying rent under <strong className="text-slate-900 font-semibold">Section 106 of the Transfer of Property Act, 1882</strong> and the applicable state Rent Control Act, demanding full payment of all rent
                     arrears within 15 days. The notice simultaneously satisfies the mandatory
                     statutory notice-to-quit requirement and creates a formal evidentiary record
@@ -714,7 +714,7 @@ export default function RecoverUnpaidRentFromTenantIndiaClient() {
                         {
                           n: 3,
                           title: "Engage an Advocate to Draft on Official Legal Stationery",
-                          desc: "The advocate drafts the notice on official Bar Council letterhead, citing Section 106 TPA for notice-to-quit, the applicable State Rent Control Act for eviction grounds, and Order XXXVII CPC for summary recovery. The notice precisely quantifies: (i) month-wise arrears, (ii) penalty interest, and (iii) advocate's fees and costs.",
+                          desc: "We draft the notice on official Bar Council letterhead, citing Section 106 TPA for notice-to-quit, the applicable State Rent Control Act for eviction grounds, and Order XXXVII CPC for summary recovery. The notice precisely quantifies: (i) month-wise arrears, (ii) penalty interest, and (iii) advocate's fees and costs.",
                         },
                         {
                           n: 4,
@@ -760,7 +760,7 @@ export default function RecoverUnpaidRentFromTenantIndiaClient() {
 
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      A generic email demand is routinely ignored. An advocate-drafted statutory
+                      A generic email demand is routinely ignored. A fact-verified statutory
                       notice that incorporates the following mandatory clauses triggers immediate
                       compliance in over 72% of cases, according to Legal Recovery&apos;s internal
                       resolution data:
@@ -985,8 +985,8 @@ export default function RecoverUnpaidRentFromTenantIndiaClient() {
                   </div>
                   <p className="text-sm text-slate-650 leading-relaxed mb-6">
                     Legal Recovery is India&apos;s trusted online legal notice and dispute resolution
-                    platform, connecting landlords, businesses, and individuals with experienced
-                    panel advocates for fast, advocate-vetted statutory notices at transparent
+                    platform, connecting landlords, businesses, and individuals with our
+                    fact-verification team for fast, fact-verified statutory notices at transparent
                     flat fees. With ₹100 Crore+ recovered and 10,000+ cases resolved, Legal
                     Recovery delivers verified legal impact without the delays of traditional
                     law firm engagement.
@@ -1027,7 +1027,7 @@ export default function RecoverUnpaidRentFromTenantIndiaClient() {
                   Tenant Not Paying Rent?
                 </h3>
                 <p className="text-slate-300 text-xs leading-relaxed mb-4">
-                  Send an advocate-vetted legal notice today. 72% of tenants pay
+                  Send a fact-verified legal notice today. 72% of tenants pay
                   within 10 days of receiving a formal notice from Legal Recovery.
                 </p>
                 <button
@@ -1037,7 +1037,7 @@ export default function RecoverUnpaidRentFromTenantIndiaClient() {
                   Draft &amp; Send Notice Now
                 </button>
                 <p className="text-center text-slate-400 text-[10px] mt-3">
-                  Flat fee • Advocate-drafted • Sent same day
+                  Flat fee • Fact-verified • Sent same day
                 </p>
               </div>
 

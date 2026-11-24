@@ -67,7 +67,7 @@ const FAQS = [
   {
     question: "Why do AD Banks insist on an Advocate Legal Demand Notice before approving a write-off?",
     answer:
-      "Para C.22 and Para C.23 of the RBI Master Direction strictly require that an exporter must satisfy the AD Bank that all reasonable recovery efforts have been exhausted without success. AD Banks are audited by RBI and cannot accept self-declarations alone. Serving an Advocate-vetted cross-border legal demand notice—corroborated by Section 63 BSA electronic evidence certificates or international courier tracking dossiers—proves bona fide recovery attempts and provides the mandatory paper trail for EDPMS closure.",
+      "Para C.22 and Para C.23 of the RBI Master Direction strictly require that an exporter must satisfy the AD Bank that all reasonable recovery efforts have been exhausted without success. AD Banks are audited by RBI and cannot accept self-declarations alone. Serving a Fact-verified cross-border legal demand notice—corroborated by Section 63 BSA electronic evidence certificates or international courier tracking dossiers—proves bona fide recovery attempts and provides the mandatory paper trail for EDPMS closure.",
   },
   {
     question: "What happens when an unrealized export bill remains open in EDPMS past 9 months?",
@@ -461,7 +461,7 @@ export default function SoftexFemaExportRealizationDeadlineCalculatorPage() {
                       Advocate Legal Notice
                     </p>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      A formal legal demand drafted by an Indian advocate citing SOW milestones, accepted deliverables, and Section 19 Copyright Act IP retention, dispatched to the foreign buyer&apos;s registered address.
+                      A formal legal demand prepared by our team citing SOW milestones, accepted deliverables, and Section 19 Copyright Act IP retention, dispatched to the foreign buyer&apos;s registered address.
                     </p>
                   </div>
 
@@ -496,7 +496,7 @@ export default function SoftexFemaExportRealizationDeadlineCalculatorPage() {
                       Need a formal cross-border legal demand notice for your overseas debtor?
                     </p>
                     <p className="text-xs text-slate-300">
-                      Our advocate team drafts multi-jurisdictional legal notices locking the statutory recovery proof required by AD Banks.
+                      Our team team drafts multi-jurisdictional legal notices locking the statutory recovery proof required by AD Banks.
                     </p>
                   </div>
                   <Link
@@ -606,7 +606,7 @@ export default function SoftexFemaExportRealizationDeadlineCalculatorPage() {
                         Statutory Verdict: 100% Eligible for AD-Bank Self Write-Off!
                       </p>
                       <p className="text-[11px] text-slate-600 mt-1">
-                        Because &rupee;43.80 Lakh is under the &rupee;1.20 Crore cap, the AD Bank can write off the entire bill and close EDPMS upon submission of advocate legal notice proof and CA compliance certificate.
+                        Because &rupee;43.80 Lakh is under the &rupee;1.20 Crore cap, the AD Bank can write off the entire bill and close EDPMS upon submission of fact-verified legal notice proof and CA compliance certificate.
                       </p>
                     </div>
                   </div>
@@ -746,7 +746,7 @@ export default function SoftexFemaExportRealizationDeadlineCalculatorPage() {
                       Legal Notice to International Client for Unpaid Invoices
                     </p>
                     <p className="text-[11px] text-slate-600 leading-relaxed">
-                      Advocate-drafted international legal notices citing cross-border contract law, arbitration clauses, and reciprocal enforcement.
+                      Fact-verified international legal notices citing cross-border contract law, arbitration clauses, and reciprocal enforcement.
                     </p>
                   </Link>
 
@@ -849,7 +849,7 @@ export default function SoftexFemaExportRealizationDeadlineCalculatorPage() {
 
                 <div className="mt-6 pt-4 border-t border-slate-200 text-[11px] text-slate-500">
                   <p>
-                    <strong>Advocate Verification &amp; Attribution:</strong> Vetted by Anuj Anand Malik, Advocate &amp; Founder, AMA Legal Solutions. Platform calculations are updated in accordance with RBI Master Directions on Export of Goods and Services and DGFT Foreign Trade Policy 2023.
+                    <strong>Fact Verification &amp; Attribution:</strong> Vetted by Anuj Anand Malik, Advocate &amp; Founder, AMA Legal Solutions. Platform calculations are updated in accordance with RBI Master Directions on Export of Goods and Services and DGFT Foreign Trade Policy 2023.
                   </p>
                 </div>
               </section>

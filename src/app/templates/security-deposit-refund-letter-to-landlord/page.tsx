@@ -159,7 +159,7 @@ const FAQS = [
   {
     question: "What is the next step if my landlord ignores the security deposit refund letter after 7 days?",
     answer:
-      "Do not keep sending repeated WhatsApp reminders that weaken your posture. Once your 7-day written deadline expires, instruct an advocate on LegalRecovery.in to serve a formal 15-day Statutory Legal Notice via Registered Speed Post and legal email. The advocate notice adds a claim for 18% p.a. interest and warns of an Order XXXVII CPC Summary Suit (or a complaint before the District Rent Authority / e-Jagriti Consumer Commission for PG and co-living operators).",
+      "Do not keep sending repeated WhatsApp reminders that weaken your posture. Once your 7-day written deadline expires, instruct an advocate on LegalRecovery.in to serve a formal 15-day Statutory Legal Notice via Registered Speed Post and legal email. The fact-verified notice adds a claim for 18% p.a. interest and warns of an Order XXXVII CPC Summary Suit (or a complaint before the District Rent Authority / e-Jagriti Consumer Commission for PG and co-living operators).",
   },
   {
     question: "Makan malik flat khali karne ke baad security deposit wapas na kare toh kya kare?",
@@ -312,7 +312,7 @@ export default function SecurityDepositRefundLetterPage() {
                 Statutory Summary (Tenant Deposit Refund &amp; Wear-and-Tear Mandate)
               </p>
               <p>
-                Once you hand over vacant possession and keys, your landlord is legally obligated to refund your security deposit—on the same day under Section 11(2) of the Model Tenancy Act, 2021 (in notified states †) or within the agreed lease window. Under Section 108(m) of the Transfer of Property Act, 1882, landlords cannot deduct money for routine repainting or normal wear and tear. Serve this written 7-day refund letter before escalating to a formal 15-day advocate legal notice.
+                Once you hand over vacant possession and keys, your landlord is legally obligated to refund your security deposit—on the same day under Section 11(2) of the Model Tenancy Act, 2021 (in notified states †) or within the agreed lease window. Under Section 108(m) of the Transfer of Property Act, 1882, landlords cannot deduct money for routine repainting or normal wear and tear. Serve this written 7-day refund letter before escalating to a formal 15-day fact-verified legal notice.
               </p>
             </div>
 
@@ -786,7 +786,7 @@ export default function SecurityDepositRefundLetterPage() {
                     </span>
                     <div className="space-y-1">
                       <h3 className="text-sm sm:text-base md:text-lg font-bold text-slate-900">
-                        Day 8: Serve a Formal 15-Day Statutory Advocate Legal Notice
+                        Day 8: Serve a Formal 15-Day Statutory Fact-Verified Legal Notice
                       </h3>
                       <p className="text-xs sm:text-sm leading-relaxed">
                         If the 7-day deadline passes without bank credit, escalate to an official{" "}
@@ -950,11 +950,11 @@ export default function SecurityDepositRefundLetterPage() {
                       <strong>The Arbitrary Deduction:</strong> Ten days after taking back the keys, the landlord sent a WhatsApp message offering to return only ₹78,500—proposing to deduct ₹41,500 (₹30,000 for &quot;1 month painting &amp; deep cleaning&quot;, ₹8,000 for &quot;kitchen cabinet hinge &amp; bathroom tap wear&quot;, and ₹3,500 for final electricity and water). Notably, the Rent Agreement had no fixed-sum painting deduction clause.
                     </p>
                     <p>
-                      <strong>The Written Letter + Escalation:</strong> Using <strong>Variant 2 (Deduction Challenge)</strong> above, Siddharth emailed and WhatsApped a signed PDF letter consenting only to ₹3,500 for actual BESCOM/water dues plus ₹2,000 as a goodwill touch-up gesture, while rejecting the remaining ₹36,000 cut under Section 108(m) TPA and <em>Uberoisons v. Samtel Color Ltd.</em> When the landlord ignored the 7-day letter deadline, Siddharth engaged LegalRecovery.in to serve a formal 15-day Advocate Legal Notice attaching the move-out video log and original NEFT UTR.
+                      <strong>The Written Letter + Escalation:</strong> Using <strong>Variant 2 (Deduction Challenge)</strong> above, Siddharth emailed and WhatsApped a signed PDF letter consenting only to ₹3,500 for actual BESCOM/water dues plus ₹2,000 as a goodwill touch-up gesture, while rejecting the remaining ₹36,000 cut under Section 108(m) TPA and <em>Uberoisons v. Samtel Color Ltd.</em> When the landlord ignored the 7-day letter deadline, Siddharth engaged LegalRecovery.in to serve a formal 15-day Fact-Verified Legal Notice attaching the move-out video log and original NEFT UTR.
                     </p>
                     <div className="p-3.5 sm:p-4 bg-emerald-950/70 border border-emerald-700/60 rounded-xl text-emerald-200">
                       <strong className="block text-emerald-400 font-bold mb-1">The Outcome:</strong>
-                      On Day 9 after receiving the Registered Speed Post advocate notice at his residential address, the landlord dropped the ₹36,000 painting and wear-and-tear claim to avoid an Order XXXVII CPC summary suit and 18% interest liability. He transferred <strong>₹1,14,500</strong> via IMPS directly to Siddharth&apos;s account against a signed full-and-final receipt.
+                      On Day 9 after receiving the Registered Speed Post fact-verified notice at his residential address, the landlord dropped the ₹36,000 painting and wear-and-tear claim to avoid an Order XXXVII CPC summary suit and 18% interest liability. He transferred <strong>₹1,14,500</strong> via IMPS directly to Siddharth&apos;s account against a signed full-and-final receipt.
                     </div>
                   </div>
                 </div>
@@ -1085,7 +1085,7 @@ export default function SecurityDepositRefundLetterPage() {
                         • <strong>Create Admissible Pre-Suit Proof:</strong> Establishes your exact vacating date, bank details, and written protest against illegal painting/wear-and-tear cuts.
                       </li>
                       <li>
-                        • <strong>Escalate via Verified Advocate Notice:</strong> When the landlord ignores your 7-day letter, our advocates draft and serve a 15-day statutory legal notice via Email and WhatsApp, with optional India Post Speed Post.
+                        • <strong>Escalate via Fact-Verified Legal Notice:</strong> When the landlord ignores your 7-day letter, our team drafts and serves a 15-day statutory legal notice via Email and WhatsApp, with optional India Post Speed Post.
                       </li>
                       <li>
                         • <strong>Cover Flat Owners, PGs, Co-Living &amp; Portals:</strong> We serve notices to individual landlords, corporate lessors, PG owners, co-living operators, and property portals like{" "}

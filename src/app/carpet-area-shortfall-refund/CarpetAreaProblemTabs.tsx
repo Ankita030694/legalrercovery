@@ -39,7 +39,7 @@ const PROBLEMS: ProblemTab[] = [
       {
         step: "Serve Sec 12 & Clause 1.7 Demand Notice",
         description:
-          "Serve a 15-day Advocate Demand Notice demanding a proportionate refund of the excess consideration with SBI MCLR + 2% interest, or full booking refund under Section 12 if you choose to exit.",
+          "Serve a 15-day Fact-Verified Demand Notice demanding a proportionate refund of the excess consideration with SBI MCLR + 2% interest, or full booking refund under Section 12 if you choose to exit.",
       },
     ],
     statutoryRule: "Sections 2(k), 12 & 13(2) RERA 2016 + Section 2(47) CPA 2019",
@@ -66,7 +66,7 @@ const PROBLEMS: ProblemTab[] = [
       {
         step: "Recover Unlawful Demand With MCLR+2% Interest",
         description:
-          "Dispatch an Advocate Legal Notice followed by a RERA Section 31 / e-Jagriti complaint to strike down the arbitrary super-area demand and recover the excess amount with 9%–11% interest.",
+          "Dispatch a Fact-Verified Legal Notice followed by a RERA Section 31 / e-Jagriti complaint to strike down the arbitrary super-area demand and recover the excess amount with 9%–11% interest.",
       },
     ],
     statutoryRule: "Pawan Gupta v. Experion Developers (SC 2020) + Model BBA Clause 1.7",
@@ -93,7 +93,7 @@ const PROBLEMS: ProblemTab[] = [
       {
         step: "Issue 15-Day Statutory Legal Demand Notice",
         description:
-          "Serve a formal advocate notice requiring credit adjustment against your final possession demand or direct bank refund within 15 days.",
+          "Serve a formal fact-verified notice requiring credit adjustment against your final possession demand or direct bank refund within 15 days.",
       },
     ],
     statutoryRule: "Model RERA Agreement Clause 1.7 + Pioneer Urban Land v. Govindan Raghavan (SC 2019)",
@@ -145,7 +145,7 @@ const PROBLEMS: ProblemTab[] = [
           "Establish a clear paper trail showing the exact date the latent dimension shortfall was discovered during post-handover interior measurement.",
       },
       {
-        step: "Serve Advocate Legal Notice Invoking Sec 14(3) & Arifur Rahman SC Ruling",
+        step: "Serve Fact-Verified Legal Notice Invoking Sec 14(3) & Arifur Rahman SC Ruling",
         description:
           "Demand refund of the excess sale price AND excess stamp duty/registration fee paid on the non-existent square footage within 15 days.",
       },

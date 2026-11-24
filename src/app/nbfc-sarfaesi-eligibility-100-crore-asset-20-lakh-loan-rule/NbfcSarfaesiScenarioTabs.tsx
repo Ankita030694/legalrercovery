@@ -48,7 +48,7 @@ const NBFC_SCENARIOS: ScenarioItem[] = [
       "Verify whether accrued interest + contractual charges push the NPA balance legitimately across ₹20.00 Lakh without compounding penal charges (prohibited by RBI Penal Charges Circular).",
       "If legitimately below ₹20 Lakh, immediately trigger Section 25 PSS Act (e-NACH bounce) or Section 138 NI Act notice within the strict 30-day statutory window from bank return memo.",
       "Simultaneously invoke institutional arbitration on the loan agreement's money-recovery covenant—avoiding Booz Allen non-arbitrability by claiming a money decree rather than direct mortgage foreclosure.",
-      "Bundle 10–500 similar sub-₹20L LAP accounts into a CSV batch for uniform advocate recall notices before selective litigation.",
+      "Bundle 10–500 similar sub-₹20L LAP accounts into a CSV batch for uniform fact-verified recall notices before selective litigation.",
     ],
     warning:
       "Artificially inflating a ₹17L account to ₹20.5L using compounded penal interest violates RBI's Fair Lending Practice directions and invites immediate s.17 DRT set-aside.",

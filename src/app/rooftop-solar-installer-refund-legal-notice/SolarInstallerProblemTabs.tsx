@@ -36,7 +36,7 @@ const PROBLEMS: ProblemTab[] = [
           "Submit a vendor delinquency ticket on the National Rooftop Solar Portal (pmsuryaghar.gov.in) and National Consumer Helpline (NCH 1915). Demand de-empanelment of the vendor.",
       },
       {
-        step: "Issue Advocate Statutory Demand Notice",
+        step: "Issue Fact-Verified Statutory Demand Notice",
         description:
           "Serve a 15-day statutory demand notice holding company directors personally accountable, demanding 100% principal advance refund with 12% annual interest and compensation.",
       },
@@ -92,7 +92,7 @@ const PROBLEMS: ProblemTab[] = [
       {
         step: "Serve Joint Statutory Demand Notice",
         description:
-          "Dispatch an advocate legal notice to the solar vendor and DISCOM Executive Engineer demanding net-meter sync within 15 days or damages equal to monthly solar generation loss.",
+          "Dispatch a fact-verified legal notice to the solar vendor and DISCOM Executive Engineer demanding net-meter sync within 15 days or damages equal to monthly solar generation loss.",
       },
     ],
     statutoryRule: "SERC Grid Interactive Rooftop Regulations & Section 14 CPA 2019",
@@ -146,7 +146,7 @@ const PROBLEMS: ProblemTab[] = [
       {
         step: "Pursue Complete Equipment Replacement or Full Monetary Restitution",
         description:
-          "Serve an advocate legal notice claiming full purchase price refund, reimbursement for roof restoration, and penal damages for fraudulent substitution of equipment.",
+          "Serve a fact-verified legal notice claiming full purchase price refund, reimbursement for roof restoration, and penal damages for fraudulent substitution of equipment.",
       },
     ],
     statutoryRule: "Sections 84 & 86 CPA 2019; Section 15 Sale of Goods Act 1930",

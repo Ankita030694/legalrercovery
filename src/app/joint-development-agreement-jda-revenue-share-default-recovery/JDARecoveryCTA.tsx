@@ -56,7 +56,7 @@ export default function JDARecoveryCTA({
                     Test 1 JDA Milestone / Escrow Notice (₹{basePrice})
                   </p>
                   <p className="text-xs text-slate-300 leading-relaxed mb-4">
-                    High Court advocate-drafted demand notice citing Commercial Courts Act s.2(1)(c)(vii), RERA s.4(2)(l)(D), and Arbitration s.21. Comprehensive default notice served via registered Email, WhatsApp &amp; Speed Post RPAD with BSA Section 63 electronic delivery certificate.
+                    High Court fact-verified demand notice citing Commercial Courts Act s.2(1)(c)(vii), RERA s.4(2)(l)(D), and Arbitration s.21. Comprehensive default notice served via registered Email, WhatsApp &amp; Speed Post RPAD with BSA Section 63 electronic delivery certificate.
                   </p>
                 </div>
 

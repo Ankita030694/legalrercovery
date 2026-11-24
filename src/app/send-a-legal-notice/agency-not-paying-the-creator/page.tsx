@@ -4,7 +4,7 @@ import AgencyNotPayingTheCreatorClient from './AgencyNotPayingTheCreatorClient';
 const slug = 'send-a-legal-notice/agency-not-paying-the-creator';
 const title = 'Legal Notice to Agency for Unpaid Creator Payments';
 const description =
-  'Agency withholding creator or influencer payments? Send an advocate-drafted legal notice under the Contract Act to recover unpaid dues.';
+  'Agency withholding creator or influencer payments? Send a fact-verified legal notice under the Contract Act to recover unpaid dues.';
 const url = `https://www.legalrecovery.in/${slug}`;
 const ogImage = `/images/og/agency-not-paying-the-creator.jpg`;
 

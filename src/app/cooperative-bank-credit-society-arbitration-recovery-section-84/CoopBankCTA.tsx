@@ -44,7 +44,7 @@ export default function CoopBankCTA({
                       Track 1 &bull; Self-Serve Single Case Test
                     </span>
                     <h4 className="text-base font-bold text-white mb-2">
-                      Test 1 Live Overdue Case Now (&#8377;{basePrice} &middot; Advocate Drafted)
+                      Test 1 Live Overdue Case Now (&#8377;{basePrice} &middot; Fact-Verified)
                     </h4>
                     <p className="text-xs text-slate-300 mb-4 leading-relaxed">
                       Send a statutory pre-arbitration (MSCS s.84 / State s.101-s.70), surety invocation, or SARFAESI recall notice via Email + WhatsApp + Speed Post RPAD with complete tracking evidence.

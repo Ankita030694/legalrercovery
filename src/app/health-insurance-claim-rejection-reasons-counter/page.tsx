@@ -950,10 +950,10 @@ export default function HealthInsuranceClaimRejectionPage() {
                     </span>
                     <div className="space-y-1 sm:space-y-1.5">
                       <h3 className="text-sm sm:text-base md:text-lg font-bold text-slate-900">
-                        Serve a Statutory Advocate Demand Notice (15-Day Ultimatum)
+                        Serve a Statutory Fact-Verified Demand Notice (15-Day Ultimatum)
                       </h3>
                       <p className="text-xs sm:text-sm leading-relaxed">
-                        If the GRO fails to resolve the dispute within 15 days or upholds the repudiation, have an advocate draft and dispatch a formal legal notice to the insurer&apos;s registered corporate office. Dispatched under Section 63 BSA and Speed Post, the notice cites Section 45 Insurance Act, IRDAI Master Circular 2024, and relevant Supreme Court rulings, demanding full payout plus 18% penal interest within 15 days.
+                        If the GRO fails to resolve the dispute within 15 days or upholds the repudiation, dispatch a formal legal notice to the insurer&apos;s registered corporate office. Dispatched under Section 63 BSA and Speed Post, the notice cites Section 45 Insurance Act, IRDAI Master Circular 2024, and relevant Supreme Court rulings, demanding full payout plus 18% penal interest within 15 days.
                       </p>
                       <p className="text-xs text-slate-500 font-medium">
                         See transparent notice drafting fees on our{" "}
@@ -1163,7 +1163,7 @@ export default function HealthInsuranceClaimRejectionPage() {
                       <strong>The Rejection:</strong> The TPA rejected the reimbursement claim under Clause 4.1 (&quot;Non-Disclosure of Pre-Existing Disease&quot;). The insurer pointed to a routine consultation note from 5 years earlier mentioning borderline high blood pressure and claimed that Krishnamurthy fraudulently concealed hypertension on his original proposal form.
                     </p>
                     <p>
-                      <strong>The Legal Counter:</strong> Krishnamurthy engaged LegalRecovery.in. An advocate drafted and dispatched an official statutory demand notice to the insurer&apos;s Grievance Redressal Officer and Head of Claims. The notice established two unassailable legal grounds:
+                      <strong>The Legal Counter:</strong> Krishnamurthy engaged LegalRecovery.in. The team verified the facts and dispatched an official statutory demand notice to the insurer&apos;s Grievance Redressal Officer and Head of Claims. The notice established two unassailable legal grounds:
                     </p>
                     <ul className="list-disc list-inside space-y-1 pl-2 text-slate-200">
                       <li>
@@ -1175,7 +1175,7 @@ export default function HealthInsuranceClaimRejectionPage() {
                     </ul>
                     <div className="p-3.5 sm:p-4 bg-emerald-950/70 border border-emerald-700/60 rounded-xl text-emerald-200">
                       <strong className="block text-emerald-400 font-bold mb-1">The Resolution:</strong>
-                      On Day 12 after delivery of the advocate legal demand notice via Speed Post, the insurer&apos;s Claims Review Committee reversed the repudiation order. The full hospital claim of ₹4,85,000 was settled directly to Krishnamurthy&apos;s bank account, alongside a formal email confirming continuation of his policy coverage without loading.
+                      On Day 12 after delivery of the fact-verified legal demand notice via Speed Post, the insurer&apos;s Claims Review Committee reversed the repudiation order. The full hospital claim of ₹4,85,000 was settled directly to Krishnamurthy&apos;s bank account, alongside a formal email confirming continuation of his policy coverage without loading.
                     </div>
                   </div>
                 </div>

@@ -168,7 +168,7 @@ const FAQS = [
   {
     question: "Chit fund ya kitty party / BC committee ke paise wapas na mile toh police complaint ya legal notice kaise bheje?",
     answer:
-      "Agar committee head ya chit fund organiser paise lekar bhaag gaya ho ya draw ka paisa dene se inkaar kare, toh sabse pehle sabhi members milkat WhatsApp chat, UPI payment UTR slips aur committee diary ke screenshots assemble karein. Iske baad ek verified advocate ke through 15-day statutory legal notice bhejein jismein Bharatiya Nyaya Sanhita (BNS) ki Section 316 (Amanat mein khayanat / Criminal Breach of Trust), Section 318 (Dhokhadhadi / Cheating) aur BUDS Act 2019 ke tehat FIR aur property attachment ki chetavani di jati hai. Legal notice ignore hone par Police Station ya Magistrate court mein Section 175(3) BNSS ke tehat FIR darj karayi ja sakti hai.",
+      "Agar committee head ya chit fund organiser paise lekar bhaag gaya ho ya draw ka paisa dene se inkaar kare, toh sabse pehle sabhi members milkat WhatsApp chat, UPI payment UTR slips aur committee diary ke screenshots assemble karein. Iske baad 15-day statutory legal notice bhejein jismein Bharatiya Nyaya Sanhita (BNS) ki Section 316 (Amanat mein khayanat / Criminal Breach of Trust), Section 318 (Dhokhadhadi / Cheating) aur BUDS Act 2019 ke tehat FIR aur property attachment ki chetavani di jati hai. Legal notice ignore hone par Police Station ya Magistrate court mein Section 175(3) BNSS ke tehat FIR darj karayi ja sakti hai.",
   },
 ];
 
@@ -499,7 +499,7 @@ export default function ChitFundRecoveryPage() {
                     <div>
                       <strong className="text-sm sm:text-base text-slate-900 font-bold">Joint Collective Legal Action Over Solo Complaints:</strong>
                       <p className="text-xs sm:text-sm mt-0.5 leading-relaxed">
-                        When multiple committee members (e.g. 5 to 15 victims) sign a unified advocate legal notice and police complaint, law enforcement cannot dismiss the dispute as a minor individual disagreement. Collective petitions establish widespread criminal inducement under BNS Section 318 and trigger the BUDS Act 2019.
+                        When multiple committee members (e.g. 5 to 15 victims) sign a unified legal notice and police complaint, law enforcement cannot dismiss the dispute as a minor individual disagreement. Collective petitions establish widespread criminal inducement under BNS Section 318 and trigger the BUDS Act 2019.
                       </p>
                     </div>
                   </li>
@@ -568,7 +568,7 @@ export default function ChitFundRecoveryPage() {
                   </div>
                   <div className="bg-slate-100 text-slate-900 p-4 rounded-xl border border-slate-300">
                     <span className="text-[10px] font-bold text-slate-600 uppercase tracking-wider block mb-1">Step 3</span>
-                    <h3 className="font-bold text-sm">Advocate Legal Notice</h3>
+                    <h3 className="font-bold text-sm">Legal Notice</h3>
                     <p className="text-xs text-slate-700 mt-1">Issue a formal 15-day demand notice invoking Chit Funds Act, Order XXXVII CPC, and BNS 316/318.</p>
                   </div>
                   <div className="bg-red-50 text-red-950 p-4 rounded-xl border border-red-200">
@@ -633,7 +633,7 @@ export default function ChitFundRecoveryPage() {
                     {/* Step 3 */}
                     <rect x="350" y="20" width="140" height="90" rx="10" fill="#F8FAFC" stroke="#64748B" strokeWidth="1.5" />
                     <text x="420" y="45" fill="#404447" fontWeight="bold" textAnchor="middle">STEP 3</text>
-                    <text x="420" y="65" fill="#0F172A" fontWeight="bold" textAnchor="middle">Advocate Notice</text>
+                    <text x="420" y="65" fill="#0F172A" fontWeight="bold" textAnchor="middle">Legal Notice</text>
                     <text x="420" y="82" fill="#334155" fontSize="10" textAnchor="middle">15-Day Statutory Demand</text>
                     <text x="420" y="98" fill="#475569" fontSize="9" textAnchor="middle">Speed Post + Section 63 BSA</text>
 
@@ -714,7 +714,7 @@ export default function ChitFundRecoveryPage() {
                     </span>
                     <div className="space-y-1 sm:space-y-1.5">
                       <h3 className="text-sm sm:text-base md:text-lg font-bold text-slate-900">
-                        Issue a Formal Statutory Advocate Legal Demand Notice
+                        Issue a Formal Statutory Legal Demand Notice
                       </h3>
                       <p className="text-xs sm:text-sm leading-relaxed">
                         Engage a qualified advocate to draft and dispatch a formal 15-day statutory legal notice to the organiser&apos;s residential and business addresses via Registered Speed Post with postal acknowledgment and Section 63 BSA electronic dispatch. The notice details the exact debt, invokes BNS Sections 316/318, BUDS Act 2019, and Order XXXVII CPC, and demands immediate settlement with 18% penal interest.
@@ -821,7 +821,7 @@ export default function ChitFundRecoveryPage() {
                       </tr>
                       <tr className="hover:bg-slate-50/80">
                         <th scope="row" className="py-3 px-3.5 sm:py-3.5 sm:px-4 font-semibold text-slate-900">
-                          Statutory Advocate Notice Response
+                          Statutory Legal Notice Response
                         </th>
                         <td className="py-3 px-3.5 sm:py-3.5 sm:px-4 text-red-700 font-bold">15 Calendar Days</td>
                         <td className="py-3 px-3.5 sm:py-3.5 sm:px-4 text-xs">Standard Pre-Litigation Practice</td>
@@ -876,7 +876,7 @@ export default function ChitFundRecoveryPage() {
                       <strong>The Deadlock:</strong> 8 non-bidder members who had not yet received their draw had paid ₹8,00,000 each over 16 months, leaving an aggregate pool of ₹64,00,000 unaccounted for. When the victims visited Harpreet&apos;s home, his relatives claimed that &quot;the business suffered massive losses and kitty parties are unregulated, so police cannot intervene in commercial debts.&quot; Local police station officials initially advised the traders to file a civil suit.
                     </p>
                     <p>
-                      <strong>The Statutory Action:</strong> The 8 members engaged LegalRecovery.in. An advocate collated all 16 months of bank statement UPI transfers, exported the complete WhatsApp group ledger with Harpreet&apos;s payment acknowledgments, and served a comprehensive joint statutory legal notice to Harpreet and his co-signatory brother. The notice invoked Section 316 (Criminal breach of trust) and Section 318 (Cheating) of the Bharatiya Nyaya Sanhita, 2023, along with Section 3 and Section 21 of the BUDS Act, 2019, giving a strict 15-day pre-litigation deadline. A copy of the notice was marked to the Commissioner of Police and the Economic Offences Wing.
+                      <strong>The Statutory Action:</strong> The 8 members engaged LegalRecovery.in. The members entered all 16 months of UPI transfer details and the WhatsApp group ledger summary with Harpreet&apos;s payment acknowledgments into the form; our team verified the facts and served a comprehensive joint statutory legal notice to Harpreet and his co-signatory brother. The notice invoked Section 316 (Criminal breach of trust) and Section 318 (Cheating) of the Bharatiya Nyaya Sanhita, 2023, along with Section 3 and Section 21 of the BUDS Act, 2019, giving a strict 15-day pre-litigation deadline. A copy of the notice was marked to the Commissioner of Police and the Economic Offences Wing.
                     </p>
                     <div className="p-3.5 sm:p-4 bg-emerald-950/70 border border-emerald-700/60 rounded-xl text-emerald-200">
                       <strong className="block text-emerald-400 font-bold mb-1">The Outcome:</strong>

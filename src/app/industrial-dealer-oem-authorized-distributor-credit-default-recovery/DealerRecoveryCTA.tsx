@@ -25,10 +25,10 @@ export default function DealerRecoveryCTA({
               Track 1 &bull; Single Stalled Industrial Dealer Account
             </span>
             <p className="text-lg sm:text-xl font-extrabold text-white mb-2">
-              Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Advocate Drafted &middot; Email + WhatsApp + Speed Post RPAD)
+              Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Fact-Verified &middot; Email + WhatsApp + Speed Post RPAD)
             </p>
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-              Serve a high-impact, advocate-vetted 15-day statutory demand and dealership termination notice on a defaulting dealer or stockist. Formally notifies contractual security deposit forfeiture, Bank Guarantee invocation, Section 138 NI Act criminal cheque dishonour proceedings, and Commercial Courts Act Section 12A pre-institution mediation.
+              Serve a high-impact, fact-verified 15-day statutory demand and dealership termination notice on a defaulting dealer or stockist. Formally notifies contractual security deposit forfeiture, Bank Guarantee invocation, Section 138 NI Act criminal cheque dishonour proceedings, and Commercial Courts Act Section 12A pre-institution mediation.
             </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-3">
@@ -58,7 +58,7 @@ export default function DealerRecoveryCTA({
               Have 10 to 10,000+ Defaulters? Upload CSV / Activate Dedicated Institutional Desk
             </p>
             <p className="text-xs sm:text-sm text-slate-600 leading-relaxed mb-5">
-              Engineered for Credit Heads, Commercial Directors, and General Counsels at pumps, motors, valves, bearings, cables, and switchgear manufacturers managing 100 to 800+ dealers nationwide. Bulk-ingest overdue dealer ledgers, dishonoured PDCs, and expired bank guarantees. Deploy standardized multi-jurisdictional advocate notices, BSA Section 63 electronic audit trails, and nationwide Commercial Court litigation management.
+              Engineered for Credit Heads, Commercial Directors, and General Counsels at pumps, motors, valves, bearings, cables, and switchgear manufacturers managing 100 to 800+ dealers nationwide. Bulk-ingest overdue dealer ledgers, dishonoured PDCs, and expired bank guarantees. Deploy standardized multi-jurisdictional fact-verified notices, BSA Section 63 electronic audit trails, and nationwide Commercial Court litigation management.
             </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-3">

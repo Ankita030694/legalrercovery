@@ -36,9 +36,9 @@ const PROBLEMS: ProblemTab[] = [
           "Submit a written Stop Mandate / Mandate Revocation form directly to your destination bank quoting RBI Circular DPSS.CO.CHD.No./2019-20, which obligates your bank to stop debits immediately upon customer request.",
       },
       {
-        step: "Issue Advocate Statutory Notice for Immediate Refund",
+        step: "Issue Fact-Verified Statutory Notice for Immediate Refund",
         description:
-          "Serve a 7-day advocate legal notice demanding immediate refund of debited amounts with 18% penal interest and expungement of any adverse CIBIL remarks.",
+          "Serve a 7-day fact-verified legal notice demanding immediate refund of debited amounts with 18% penal interest and expungement of any adverse CIBIL remarks.",
       },
     ],
     statutoryRule: "RBI Master Direction on Customer Service & CPA 2019 Section 2(11)",

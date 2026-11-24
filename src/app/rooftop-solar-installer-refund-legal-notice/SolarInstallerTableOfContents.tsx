@@ -181,7 +181,7 @@ export default function SolarInstallerTableOfContents({
               Need Direct Legal Action?
             </span>
             <p className="text-xs text-slate-600 mb-2.5">
-              Serve a verified advocate demand notice to your solar vendor within 24 hours.
+              Serve a fact-verified demand notice to your solar vendor within 24 hours.
             </p>
             <a
               href="#heading-escalation-playbook"

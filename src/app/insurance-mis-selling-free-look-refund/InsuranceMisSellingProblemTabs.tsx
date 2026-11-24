@@ -64,7 +64,7 @@ const PROBLEMS: ProblemTab[] = [
           "Highlight obvious signature variations, incorrect addresses, or falsified annual income figures (cross-checked against your genuine ITR returns or Form 16).",
       },
       {
-        step: "Issue Advocate Notice Invoking Criminal & Consumer Remedies",
+        step: "Issue Fact-Verified Notice Invoking Criminal & Consumer Remedies",
         description:
           "Serve a formal statutory legal demand notice alleging forgery, cheating under Bharatiya Nyaya Sanhita (BNS 318), and unfair trade practice, demanding complete reversal with statutory interest.",
       },

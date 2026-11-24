@@ -1587,7 +1587,7 @@ export default function AgricultureKccNpaRecoveryPage() {
                   {
                     title: "4. Omnichannel Notice Service Manifest",
                     detail:
-                      "Advocate-signed Loan Recall / Pre-RRC notice paired with India Post Speed Post RPAD tracking printouts, WhatsApp delivery/read logs, and Zoho/SMTP email transmission headers.",
+                      "Fact-verified Loan Recall / Pre-RRC notice paired with India Post Speed Post RPAD tracking printouts, WhatsApp delivery/read logs, and Zoho/SMTP email transmission headers.",
                   },
                   {
                     title: "5. Security Creation & CERSAI / Form 34 Proof",
@@ -1664,7 +1664,7 @@ export default function AgricultureKccNpaRecoveryPage() {
                     tag: "IND-01 Seed Service",
                     title: "Send a Legal Notice for Banks to Recover Unpaid Dues",
                     href: "/send-a-legal-notice/for-banks-to-recover-their-unpaid-dues",
-                    desc: "Dedicated institutional advocate notice desk covering KCC, retail, MSME, and commercial bank NPAs across India.",
+                    desc: "Dedicated institutional fact-verified notice desk covering KCC, retail, MSME, and commercial bank NPAs across India.",
                   },
                   {
                     tag: "SARFAESI s.14 Workflow",

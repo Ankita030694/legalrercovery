@@ -115,7 +115,7 @@ const faqData = [
   {
     question: "What should I do if Tata CLiQ rejects a refund claiming seller quality check (QC) failure?",
     answer:
-      "When Tata CLiQ or a vendor alleges that a returned luxury or electronic item was duplicate or altered, demand certified intake footage and inspection sheets. In Praveen Kumar v. Tata Unistore Limited (CC No. 347/2022), the District Commission rejected unsubstantiated seller QC claims and held the platform liable. Serve a formal advocate demand notice under Section 86 of the Consumer Protection Act, 2019 before moving to e-Jagriti.",
+      "When Tata CLiQ or a vendor alleges that a returned luxury or electronic item was duplicate or altered, demand certified intake footage and inspection sheets. In Praveen Kumar v. Tata Unistore Limited (CC No. 347/2022), the District Commission rejected unsubstantiated seller QC claims and held the platform liable. Serve a formal fact-verified demand notice under Section 86 of the Consumer Protection Act, 2019 before moving to e-Jagriti.",
   },
   {
     question: "How can I file an official complaint with the Tata CLiQ Grievance Officer?",
@@ -135,7 +135,7 @@ const faqData = [
   {
     question: "How do I send an advocate legal notice to Tata CLiQ and how much does it cost?",
     answer:
-      "An advocate legal notice is drafted on an enrolled advocate's letterhead and served by email and WhatsApp (with optional Speed Post) to Tata UniStore Limited's Mumbai corporate office. It sets out the order history, CPA violations, and gives a mandatory 15-day cure window. LegalRecovery handles drafting and email and WhatsApp dispatch for a transparent flat fee of ₹999 with zero percentage cuts. Speed Post is optional at ₹450 per party.",
+      "A fact-verified legal notice is drafted on an enrolled advocate's letterhead and served by email and WhatsApp (with optional Speed Post) to Tata UniStore Limited's Mumbai corporate office. It sets out the order history, CPA violations, and gives a mandatory 15-day cure window. LegalRecovery handles drafting and email and WhatsApp dispatch for a transparent flat fee of ₹999 with zero percentage cuts. Speed Post is optional at ₹450 per party.",
   },
 ];
 
@@ -365,7 +365,7 @@ export default function TataCliqRefundNoticePage() {
                         <td className="p-3.5 sm:p-4">Tata UniStore & Merchant (Joint & Several)</td>
                         <td className="p-3.5 sm:p-4">Fallback Liability Rule 5(3); CPA Sec 86</td>
                         <td className="p-3.5 sm:p-4">15 Days Cure Notice</td>
-                        <td className="p-3.5 sm:p-4">Serve formal advocate demand notice citing Casio case precedent</td>
+                        <td className="p-3.5 sm:p-4">Serve formal fact-verified demand notice citing Casio case precedent</td>
                       </tr>
                       <tr className="hover:bg-slate-50/80">
                         <td className="p-3.5 sm:p-4 font-semibold text-slate-900">
@@ -702,7 +702,7 @@ export default function TataCliqRefundNoticePage() {
                         Stage 3: Advocate Demand Notice via Speed Post & Email (Days 8–15)
                       </h3>
                       <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
-                        When support stalls, serve a formal legal notice drafted by an advocate to Tata UniStore’s Mumbai corporate office. The notice invokes statutory fallback liability, gives a mandatory 15-day cure window, and demands full refund plus costs.
+                        When support stalls, serve a formal legal notice prepared on verified facts to Tata UniStore’s Mumbai corporate office. The notice invokes statutory fallback liability, gives a mandatory 15-day cure window, and demands full refund plus costs.
                       </p>
                     </div>
                   </div>
@@ -828,7 +828,7 @@ export default function TataCliqRefundNoticePage() {
                       <span className="text-emerald-600 font-black">✓</span> What LegalRecovery Delivers
                     </h3>
                     <ul className="text-xs sm:text-sm text-slate-700 space-y-2 leading-relaxed">
-                      <li>• Statutory legal notice drafted by an enrolled advocate under the Consumer Protection Act.</li>
+                      <li>• Statutory legal notice prepared on verified facts under the Consumer Protection Act.</li>
                       <li>• Formal delivery by email and WhatsApp to Tata UniStore, with optional Speed Post (₹450 per party) to its registered office.</li>
                       <li>• Complete digital evidence compilation compliant with Section 63 BSA standards.</li>
                       <li>• Flat transparent fee of ₹{BASE_PRICE} with zero percentage deductions from recovered funds.</li>

@@ -412,7 +412,7 @@ export default function FnfSettlementClient() {
                       <li><strong>Clearance Sign-offs:</strong> Ensure you document the physical return of assets, obtaining an acknowledgment email or receipt from the IT and administration teams.</li>
                     </ul>
                     <p className="text-sm md:text-base leading-relaxed">
-                      If you have proof of returning company property, the employer has no legal basis to delay your exit documents or FNF. A legal notice from our advocate panel can demand the immediate release of these documents.
+                      If you have proof of returning company property, the employer has no legal basis to delay your exit documents or FNF. A legal notice from our team can demand the immediate release of these documents.
                     </p>
                   </div>
                 </section>
@@ -534,7 +534,7 @@ export default function FnfSettlementClient() {
                       <div className="border-t border-slate-200 pt-4">
                         <span className="font-extrabold text-sm text-[#DC2626] uppercase">Stage 3: Executive Legal Notice (Days 16 to 30)</span>
                         <p className="text-sm text-slate-600 leading-relaxed mt-1">
-                          If the company leadership ignores your representation, engage our legal-tech platform to serve an advocate-signed demand notice to the company and the board of directors.
+                          If the company leadership ignores your representation, engage our legal-tech platform to serve a fact-verified demand notice to the company and the board of directors.
                         </p>
                       </div>
                     </div>
@@ -745,7 +745,7 @@ export default function FnfSettlementClient() {
                       LegalRecovery is India&apos;s leading tech-enabled recovery platform. We combine the legal authority of veteran labor advocates with advanced workflow automation to deliver unmatched speed, transparency, and resolution rates. Here is what sets us apart:
                     </p>
                     <ul className="list-disc pl-6 space-y-3 text-sm text-slate-650">
-                      <li><strong>Attorney-Drafted Quality:</strong> Your notice is individually reviewed and drafted by a qualified legal professional, ensuring precise statutory citations tailored to your specific case facts.</li>
+                      <li><strong>Fact-Verified Quality:</strong> Your notice is individually reviewed and drafted by a qualified legal professional, ensuring precise statutory citations tailored to your specific case facts.</li>
                       <li><strong>VC/Director Escalation:</strong> We do not just email HR. We dispatch physical registered letters to the registered company office and personal residences of all active directors, maximizing pressure.</li>
                       <li><strong>Digital Dashboard:</strong> Track the drafting progress, post dispatch tracking, and delivery status of your legal notices in real-time from your secure client dashboard.</li>
                       <li><strong>Transparent Flat Pricing:</strong> No hourly bills, no retention fee surprises. You pay a single transparent flat fee for the entire notice pipeline.</li>
@@ -795,7 +795,7 @@ export default function FnfSettlementClient() {
                 <div className="absolute top-0 right-0 w-24 h-24 bg-red-600/10 rounded-full blur-xl pointer-events-none" />
                 <h3 className="text-sm font-black mb-3">Need Legal Advice?</h3>
                 <p className="text-gray-400 mb-5 text-[11px] leading-relaxed">
-                  Discuss your unpaid salary case with legal experts. We serve verified notices with full compliance support.
+                  Discuss your unpaid salary case with our team. We serve verified notices with full compliance support.
                 </p>
                 <button 
                   onClick={() => setIsPaymentModalOpen(true)}

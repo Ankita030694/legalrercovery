@@ -18,7 +18,7 @@ const EXACT_H1 =
 const EXACT_TITLE = "Hotel BTC City-Ledger & Travel Agent Credit Notice Format";
 
 const EXACT_DESCRIPTION =
-  "Downloadable advocate-drafted notice formats featuring Guest Folio / BTC Voucher / Airline PNR / GDS Ticket-Number schedules & GSTR-2B acceptance estoppel.";
+  "Downloadable ready-to-use notice formats featuring Guest Folio / BTC Voucher / Airline PNR / GDS Ticket-Number schedules & GSTR-2B acceptance estoppel.";
 
 export const metadata: Metadata = {
   title: EXACT_TITLE,

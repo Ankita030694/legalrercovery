@@ -134,12 +134,12 @@ export default function FriendRecoveryClient() {
     {
       id: "faq-9",
       question: "Does a Splitwise balance or UPI screenshot hold any weight in a legal dispute?",
-      answer: "Yes, significant weight. Screenshots of Splitwise balances, group expense logs, and UPI transfer receipts are recognized as secondary electronic evidence in India under Section 65B of the Indian Evidence Act, 1872. They serve as reliable corroborative proof of the financial transaction and the debt acknowledgment. When we draft your legal notice, our advocate panel explicitly cites these electronic records to establish a clear debt trail, making it extremely difficult for the borrower to deny receiving the funds or agreeing to the split."
+      answer: "Yes, significant weight. Screenshots of Splitwise balances, group expense logs, and UPI transfer receipts are recognized as secondary electronic evidence in India under Section 65B of the Indian Evidence Act, 1872. They serve as reliable corroborative proof of the financial transaction and the debt acknowledgment. When we draft your legal notice, our team explicitly cites these electronic records to establish a clear debt trail, making it extremely difficult for the borrower to deny receiving the funds or agreeing to the split."
     },
     {
       id: "faq-10",
       question: "What should I do if a friend has blocked me, moved, or is completely ignoring my calls?",
-      answer: "If the borrower has cut off communication, you should: 1) Extract all bank statements showing the transfers and take backups of all chats and emails, 2) Send our advocate-backed 3-stage legal notices served to their last known physical residential address, their current workplace/office address, and all active email IDs, and 3) If they remain unresponsive, file a police complaint for cheating (Section 420 IPC) or initiate a summary civil suit. Serving legal notices to their workplace often yields immediate responses as companies do not want police or court summons served at their offices."
+      answer: "If the borrower has cut off communication, you should: 1) Extract all bank statements showing the transfers and take backups of all chats and emails, 2) Send our fact-verified 3-stage legal notices served to their last known physical residential address, their current workplace/office address, and all active email IDs, and 3) If they remain unresponsive, file a police complaint for cheating (Section 420 IPC) or initiate a summary civil suit. Serving legal notices to their workplace often yields immediate responses as companies do not want police or court summons served at their offices."
     }
   ], []);
 
@@ -167,7 +167,7 @@ export default function FriendRecoveryClient() {
       id: "rev-4",
       name: "Priyesh Shah (HR Consultant, Pune)",
       rating: 5,
-      review: "I had a post-dated cheque for ₹95,000 from a relative for a personal loan, which bounced due to 'insufficient funds'. He kept making excuses. LegalRecovery launched their NI Act Section 138 notice pipeline with precise timelines. The moment the formal advocate notice warning of criminal prosecution was served, his lawyer reached out and settled the entire amount. Exceptional speed!"
+      review: "I had a post-dated cheque for ₹95,000 from a relative for a personal loan, which bounced due to 'insufficient funds'. He kept making excuses. LegalRecovery launched their NI Act Section 138 notice pipeline with precise timelines. The moment the formal fact-verified notice warning of criminal prosecution was served, his lawyer reached out and settled the entire amount. Exceptional speed!"
     }
   ], []);
 
@@ -449,10 +449,10 @@ export default function FriendRecoveryClient() {
                   At LegalRecovery, we believe that <strong className="font-extrabold text-[#111827]">personal relationships should not be used as shields for financial defaults</strong>. Friendly loans, cash advances, Splitwise balances, and stamped promissory notes are fully enforceable legal debts under Indian statutory frameworks. Debtors frequently rely on the assumption that you will quietly let the money go because hiring a traditional lawyer, attending court proceedings, and dealing with legal complexities are too expensive and time-consuming.
                 </p>
                 <p>
-                  Our <strong className="font-extrabold text-[#111827]">Friend and Personal Money Recovery Service</strong> is a professional, technology-driven legal campaign designed to break this deadlock. We have restructured the entire recovery lifecycle into an aggressive, systematic, and attorney-verified pre-litigation notice pipeline. We do not demand court visits, and we take <strong className="font-extrabold text-[#111827]">absolutely zero commissions</strong> on your recovered money. By combining formal advocate-backed demand notices with progressive digital tracking and a highly structured criminal complaint draft, we force the borrower to take your claim seriously and enter conciliation immediately.
+                  Our <strong className="font-extrabold text-[#111827]">Friend and Personal Money Recovery Service</strong> is a professional, technology-driven legal campaign designed to break this deadlock. We have restructured the entire recovery lifecycle into an aggressive, systematic, and fact-verified pre-litigation notice pipeline. We do not demand court visits, and we take <strong className="font-extrabold text-[#111827]">absolutely zero commissions</strong> on your recovered money. By combining formal fact-verified demand notices with progressive digital tracking and a highly structured criminal complaint draft, we force the borrower to take your claim seriously and enter conciliation immediately.
                 </p>
                 <blockquote>
-                  <strong>Our Service Promise:</strong> We provide a complete, progressive legal notices campaign and a customized police complaint draft prepared by expert civil and criminal lawyers, for a single flat fee of <strong>₹999</strong>. No hidden charges, no commissions, and complete confidentiality.
+                  <strong>Our Service Promise:</strong> We provide a complete, progressive legal notices campaign and a customized police complaint draft prepared by our team, for a single flat fee of <strong>₹999</strong>. No hidden charges, no commissions, and complete confidentiality.
                 </blockquote>
                 <p>
                   You do not have to jeopardize your peace of mind or let your hard-earned money slide. Let our platform systematically escalate pressure on the defaulting borrower, delivering formal demand notices directly to their personal inbox, professional mailbox, LinkedIn, and physical home address to achieve a swift resolution.
@@ -461,7 +461,7 @@ export default function FriendRecoveryClient() {
                 {/* 2. Personal Debt Types */}
                 <h2 id="coverage-details">2. Types of Personal Debts We Recover</h2>
                 <p>
-                  Personal debts take many forms. Whether your agreement was heavily documented on stamp paper or informal over a cup of coffee, our advocate panel compiles and details every piece of corroborative evidence to build an airtight demand.
+                  Personal debts take many forms. Whether your agreement was heavily documented on stamp paper or informal over a cup of coffee, our team compiles and details every piece of corroborative evidence to build an airtight demand.
                 </p>
                 
                 <h3 id="personal-loans">A. Unsecured Personal Loans & Friendly Advances</h3>
@@ -476,7 +476,7 @@ export default function FriendRecoveryClient() {
 
                 <h3 id="cash-advances">C. Emergency Cash Advances & Medical Outlays</h3>
                 <p>
-                  Lending cash to someone during emergencies (e.g. hospitalization, urgent travel, bail, or security deposit advances) is extremely common. Even if the transfer was done in cash, subsequent WhatsApp chats, SMS acknowledgments, or verbal agreements witnessed by others are leveraged by our legal team to establish the liability.
+                  Lending cash to someone during emergencies (e.g. hospitalization, urgent travel, bail, or security deposit advances) is extremely common. Even if the transfer was done in cash, subsequent WhatsApp chats, SMS acknowledgments, or verbal agreements witnessed by others are leveraged by our team to establish the liability.
                 </p>
 
                 <h3 id="promissory-notes">D. Stamped Promissory Notes & Loan Agreements</h3>
@@ -537,7 +537,7 @@ export default function FriendRecoveryClient() {
                 {/* 4. The Indian Statutory Shield */}
                 <h2 id="legal-framework">4. The Indian Statutory Shield: Know Your Rights</h2>
                 <p>
-                  India's legal framework provides strong remedies for lenders, designed to protect individuals from fraudulent defaults. In our legal notices, our advocate panel leverages several critical acts and sections to create a bulletproof claim:
+                  India's legal framework provides strong remedies for lenders, designed to protect individuals from fraudulent defaults. In our legal notices, our team leverages several critical acts and sections to create a bulletproof claim:
                 </p>
                 <ul>
                   <li><strong>The Indian Contract Act, 1872 (Section 10 & 25):</strong> Establishes that all agreements - whether written or oral - are legally valid contracts if made by the free consent of competent parties, for a lawful consideration. Even a WhatsApp agreement to return a loan is a contract.</li>
@@ -597,7 +597,7 @@ export default function FriendRecoveryClient() {
                 </table>
                 
                 <p>
-                  Whether your dispute falls under a heavily stamped promissory note or an informal UPI transfer backed by WhatsApp chats, our advocate panel compiles the specific evidence to draft a highly customized, authoritative demand.
+                  Whether your dispute falls under a heavily stamped promissory note or an informal UPI transfer backed by WhatsApp chats, our team compiles the specific evidence to draft a highly customized, authoritative demand.
                 </p>
 
                 {/* 6. Transparent Flat Pricing */}
@@ -606,7 +606,7 @@ export default function FriendRecoveryClient() {
                   Traditional advocates charge thousands of rupees per consultation and demand additional percentages (commissions) on the recovered amount. We believe this is highly exploitative. 
                 </p>
                 <p>
-                  LegalRecovery provides professional, attorney-verified personal money recovery campaigns for a single, flat fee of <strong className="font-extrabold text-[#111827]">₹999</strong>. We charge absolutely zero hidden fees and take zero commission on your recovered money.
+                  LegalRecovery provides professional, fact-verified personal money recovery campaigns for a single, flat fee of <strong className="font-extrabold text-[#111827]">₹999</strong>. We charge absolutely zero hidden fees and take zero commission on your recovered money.
                 </p>
 
                 {/* Pixel-perfect reproduction of the home page unified pricing container */}
@@ -622,7 +622,7 @@ export default function FriendRecoveryClient() {
                           </span>
                           <h3 className="text-2xl font-black text-[#111827] mb-4">Complete Legal Recovery</h3>
                           <p className="text-[14px] text-[#4B5563] font-medium leading-[1.6] mb-8">
-                            Get full-suite support from expert attorneys. Standardized flat pricing with absolutely zero commission on your recovered amount.
+                            Get full-suite support from our team. Standardized flat pricing with absolutely zero commission on your recovered amount.
                           </p>
                         </div>
                         
@@ -661,7 +661,7 @@ export default function FriendRecoveryClient() {
                               <Check className="w-4 h-4 sm:w-5 sm:h-5 text-[#10B981] stroke-[3.5] shrink-0 mt-0.5" />
                               <div className="flex flex-col">
                                 <span className="text-[11.5px] sm:text-[13.5px] font-bold text-[#111827] leading-snug">Attorney Validation</span>
-                                <span className="text-[9.5px] sm:text-[11.5px] text-[#6B7280] font-medium leading-tight">Verified by top legal experts</span>
+                                <span className="text-[9.5px] sm:text-[11.5px] text-[#6B7280] font-medium leading-tight">Facts verified by our team</span>
                               </div>
                             </div>
                             <div className="flex items-start gap-3">
@@ -697,13 +697,13 @@ export default function FriendRecoveryClient() {
                 {/* 7. Evidentiary Checklist */}
                 <h2 id="documentation-needed">7. The Evidentiary Checklist for Personal Debt Recovery</h2>
                 <p>
-                  To initiate your recovery campaign successfully on our platform, you will need to gather basic, standard records to prove your claim. Our advocate panel will utilize these records to compile an irrefutable legal demand notice:
+                  To initiate your recovery campaign successfully on our platform, you will enter your case details in our form and should keep basic, standard records ready to prove your claim. Our team verifies the facts you submit to prepare the legal demand notice:
                 </p>
                 <ul>
                   <li><strong>Bank Statements / UPI Receipts:</strong> Crucial primary proof of transaction. Highlight the date, time, transaction reference number (UTR/RRN), and amount transferred to the borrower.</li>
                   <li><strong>WhatsApp / SMS Chats:</strong> Exported chat logs or high-quality screenshots showing: 1) The borrower asking for the money, 2) Agreeing to the terms or repayment date, and 3) Acknowledging the debt subsequent to default (e.g. saying 'I will pay you next week' or 'Sorry I can't return the money right now').</li>
-                  <li><strong>Signed Promissory Note / Loan Agreement:</strong> If you have one, provide a high-resolution scan of the stamped and signed document showing the repayment terms, interest rates, and witness signatures.</li>
-                  <li><strong>Bounced Cheque & Bank Return Memo:</strong> If the debtor issued a cheque that was dishonored, upload a scan of both the cheque and the official 'Cheque Return Memo' showing the reason for dishonor (e.g., Funds Insufficient).</li>
+                  <li><strong>Signed Promissory Note / Loan Agreement:</strong> If you have one, keep a high-resolution scan ready of the stamped and signed document showing the repayment terms, interest rates, and witness signatures.</li>
+                  <li><strong>Bounced Cheque & Bank Return Memo:</strong> If the debtor issued a cheque that was dishonored, keep a scan ready of both the cheque and the official 'Cheque Return Memo' showing the reason for dishonor (e.g., Funds Insufficient).</li>
                   <li><strong>Audio Recordings & Call Details:</strong> Call logs or recordings where the debtor promises to repay the outstanding debt. Under Section 65B of the Indian Evidence Act, audio records are admissible as strong corroborative evidence.</li>
                 </ul>
 
@@ -872,7 +872,7 @@ export default function FriendRecoveryClient() {
               <div className="absolute top-0 right-0 w-24 h-24 bg-red-600/10 rounded-full blur-xl pointer-events-none" />
               <h3 className="text-base font-extrabold mb-3 tracking-tight">Need Urgent Debt Recovery?</h3>
               <p className="text-gray-400 mb-5 text-[11px] leading-relaxed">
-                Get an advocate-drafted 3-stage notice pipeline and a customized police complaint draft for a flat fee of ₹999.
+                Get a fact-verified 3-stage notice pipeline and a customized police complaint draft for a flat fee of ₹999.
               </p>
               <Link 
                 href="/contact" 

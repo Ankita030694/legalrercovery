@@ -485,7 +485,7 @@ export default function UnauthorizedBankDeductionClient() {
                       <div className="p-6 bg-slate-50 rounded-2xl border border-slate-200">
                         <h3 className="text-lg font-bold text-slate-900 mb-2">1. The Statutory Legal Notice</h3>
                         <p className="text-sm text-slate-650 leading-relaxed mb-3">
-                          A formal notice drafted by our panel of recovery advocates is sent to the bank's corporate office and Principal Nodal Officer. The notice cites the specific paragraphs of the RBI Customer Liability circular, details the bank's failure to resolve the dispute, and highlights any operational errors (such as processing cancelled mandates). The notice gives the bank a 15-day period to resolve the issue, failing which legal action will be initiated.
+                          A formal fact-verified notice prepared by our team is sent to the bank's corporate office and Principal Nodal Officer. The notice cites the specific paragraphs of the RBI Customer Liability circular, details the bank's failure to resolve the dispute, and highlights any operational errors (such as processing cancelled mandates). The notice gives the bank a 15-day period to resolve the issue, failing which legal action will be initiated.
                         </p>
                       </div>
                       

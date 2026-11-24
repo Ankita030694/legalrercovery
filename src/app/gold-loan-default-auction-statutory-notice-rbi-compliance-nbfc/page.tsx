@@ -210,7 +210,7 @@ const FAQS = [
   {
     question: "Can our NBFC test LegalRecovery.in on a single overdue gold loan before bulk onboarding?",
     answer:
-      "Yes. You can dispatch a single Advocate-drafted Section 176 pre-auction or post-auction deficit notice for ₹999 (with tri-channel Speed Post RPAD, WhatsApp, and Email logs) via our self-serve portal, or upload 10 to 10,000+ defaulted accounts via CSV under a dedicated Institutional Representee Desk.",
+      "Yes. You can dispatch a single Fact-verified Section 176 pre-auction or post-auction deficit notice for ₹999 (with tri-channel Speed Post RPAD, WhatsApp, and Email logs) via our self-serve portal, or upload 10 to 10,000+ defaulted accounts via CSV under a dedicated Institutional Representee Desk.",
   },
 ];
 

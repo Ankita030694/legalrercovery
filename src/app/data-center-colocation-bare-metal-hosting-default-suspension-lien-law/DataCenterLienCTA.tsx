@@ -27,7 +27,7 @@ export default function DataCenterLienCTA({ className = "" }: DataCenterLienCTAP
                 Test 1 Live Overdue Case Now (&#8377;{basePrice})
               </h3>
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-                Advocate-drafted Gate-Pass Lien &amp; 7-Day DPDP-Safe Export Notice dispatched via
+                Fact-verified Gate-Pass Lien &amp; 7-Day DPDP-Safe Export Notice dispatched via
                 Email + WhatsApp + Speed Post RPAD with BSA 2023 s.63 delivery proof.
               </p>
             </div>

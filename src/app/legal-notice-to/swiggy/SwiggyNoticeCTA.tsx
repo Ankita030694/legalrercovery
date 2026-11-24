@@ -24,7 +24,7 @@ export default function SwiggyNoticeCTA({
         <div className={`mt-5 pt-5 border-t border-slate-700/80 ${className}`}>
           <div className="flex items-baseline justify-between mb-3">
             <span className="text-xs uppercase tracking-wider text-slate-400 font-semibold">
-              Advocate Notice Fee
+              Fact-Verified Notice Fee
             </span>
             <span className="text-2xl font-black text-white">
               ₹{basePrice}
@@ -67,7 +67,7 @@ export default function SwiggyNoticeCTA({
               Did Swiggy or Instamart Deny Your Rightful Refund?
             </h3>
             <p className="text-sm sm:text-base text-slate-300 leading-relaxed mb-6 font-normal">
-              Stop arguing with automated chatbots. Under the Consumer Protection Act, 2019 and E-Commerce Rules, delivery aggregators face strict fallback liability. Serve a formal advocate legal notice to Swiggy Limited demanding your full principal refund, statutory interest, and harassment damages.
+              Stop arguing with automated chatbots. Under the Consumer Protection Act, 2019 and E-Commerce Rules, delivery aggregators face strict fallback liability. Serve a formal fact-verified legal notice to Swiggy Limited demanding your full principal refund, statutory interest, and harassment damages.
             </p>
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
               <button
@@ -101,7 +101,7 @@ export default function SwiggyNoticeCTA({
           onClick={() => setIsModalOpen(true)}
           className="inline-flex items-center justify-center py-3 px-6 rounded-xl text-sm font-bold text-white bg-[#DC2626] hover:bg-[#B91C1C] transition-all duration-150 shadow-md cursor-pointer"
         >
-          {buttonText || `Draft Advocate Notice to Swiggy — ₹${basePrice}`}
+          {buttonText || `Draft Fact-Verified Notice to Swiggy — ₹${basePrice}`}
         </button>
       </div>
 

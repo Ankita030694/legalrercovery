@@ -48,7 +48,7 @@ const SCENARIOS: Scenario[] = [
     shipperDefense:
       "'Market slowdown constitutes commercial hardship; Section 74 penal liquidated damages cannot be claimed without strict proof of actual financial loss.'",
     statutoryStrategy:
-      "Rely on Supreme Court precedents (Kailash Nath Associates v. DDA and ONGC v. Saw Pipes). Where vehicles are procured specifically for dedicated usage under custom specifications, fixed standing costs are genuine pre-estimated liquidated damages. The shipper cannot treat dedicated fleet capital as spot market rentals. Issue an advocate notice invoking arbitration or Commercial Court summary suit, asserting Section 53 of the Contract Act (prevention of performance by promisee) and claiming interest under the MSMED Act, 2006.",
+      "Rely on Supreme Court precedents (Kailash Nath Associates v. DDA and ONGC v. Saw Pipes). Where vehicles are procured specifically for dedicated usage under custom specifications, fixed standing costs are genuine pre-estimated liquidated damages. The shipper cannot treat dedicated fleet capital as spot market rentals. Issue a fact-verified notice invoking arbitration or Commercial Court summary suit, asserting Section 53 of the Contract Act (prevention of performance by promisee) and claiming interest under the MSMED Act, 2006.",
     actionChecklist: [
       "Assemble FASTag toll logs, GPS odometer reports, and gate-entry slips proving vehicle readiness and dispatch records.",
       "Quantify monthly vehicle loan EMIs, commercial road taxes, national permits, and fitness renewals as unavoidable standing losses.",
@@ -88,11 +88,11 @@ const SCENARIOS: Scenario[] = [
     shipperDefense:
       "'Cabs were not physically utilized after work-from-home mandate; payment for non-rendered services violates Section 56 of the Contract Act (frustration of contract).'",
     statutoryStrategy:
-      "The Supreme Court in Energy Watchdog v. CERC firmly held that commercial difficulty or internal restructuring does not constitute contract frustration under Section 56. The vendor maintained fleet readiness and drivers on standby. Serve an Advocate Legal Notice under Section 73 of the Contract Act and Order XXXVII CPC for liquidated debt. The employer is bound by its written contract to pay the contractual 90-day notice compensation and unpaid bills.",
+      "The Supreme Court in Energy Watchdog v. CERC firmly held that commercial difficulty or internal restructuring does not constitute contract frustration under Section 56. The vendor maintained fleet readiness and drivers on standby. Serve a Fact-Verified Legal Notice under Section 73 of the Contract Act and Order XXXVII CPC for liquidated debt. The employer is bound by its written contract to pay the contractual 90-day notice compensation and unpaid bills.",
     actionChecklist: [
       "Collate driver roster allocations, digital trip sheets, and employee pickup OTP logs.",
       "Demonstrate formal intimation of vehicle readiness delivered daily to the corporate transport helpdesk.",
-      "Issue 15-day Advocate Notice demanding immediate settlement of accrued billing and lock-in notice pay.",
+      "Issue 15-day Fact-Verified Notice demanding immediate settlement of accrued billing and lock-in notice pay.",
       "File a Summary Suit under Order 37 CPC in the District Commercial Court.",
     ],
   },

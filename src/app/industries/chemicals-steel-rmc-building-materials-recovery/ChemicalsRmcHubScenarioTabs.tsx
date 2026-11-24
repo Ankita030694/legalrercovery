@@ -39,7 +39,7 @@ const HEAVY_SUPPLY_SCENARIOS: HeavySupplyScenario[] = [
       {
         step: "2. Expose 'Constructed Slab & RERA Sale' Contradiction",
         detail:
-          "Serve an Advocate Notice placing on record that the builder never demolished the alleged defective slab and continues marketing the tower under RERA—neutralizing Mobilox dispute bluffs.",
+          "Serve a Fact-Verified Notice placing on record that the builder never demolished the alleged defective slab and continues marketing the tower under RERA—neutralizing Mobilox dispute bluffs.",
       },
       {
         step: "3. Trigger NI Act s.138, Order 37 or IBC Section 8 (>= ₹1 Cr)",

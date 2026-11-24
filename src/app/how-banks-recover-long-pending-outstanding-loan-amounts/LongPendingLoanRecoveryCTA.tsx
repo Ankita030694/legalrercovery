@@ -31,7 +31,7 @@ export default function LongPendingLoanRecoveryCTA({
                 Revive Aged Loan Accounts &amp; Recover Long-Pending Dues
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6">
-                Equip your bank or NBFC bad debt recovery team with senior advocate-drafted statutory demand notices, balance confirmation renewals under Section 18 of the Limitation Act, 1963, and legally binding One-Time Settlement (OTS) recovery frameworks. Dispatched via Registered Speed Post with tracking and admissible electronic notices under Section 63 of Bharatiya Sakshya Adhiniyam, 2023.
+                Equip your bank or NBFC bad debt recovery team with fact-verified statutory demand notices, balance confirmation renewals under Section 18 of the Limitation Act, 1963, and legally binding One-Time Settlement (OTS) recovery frameworks. Dispatched via Registered Speed Post with tracking and admissible electronic notices under Section 63 of Bharatiya Sakshya Adhiniyam, 2023.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button
@@ -42,7 +42,7 @@ export default function LongPendingLoanRecoveryCTA({
                   {buttonText} — ₹{basePrice}
                 </button>
                 <div className="text-xs text-slate-300 flex flex-wrap sm:flex-nowrap items-center gap-2 sm:gap-3">
-                  <span>✓ Senior Banking Advocate Drafting</span>
+                  <span>✓ Senior Banking Notice Drafting</span>
                   <span>•</span>
                   <span>✓ Speed Post + Digital Delivery</span>
                   <span>•</span>

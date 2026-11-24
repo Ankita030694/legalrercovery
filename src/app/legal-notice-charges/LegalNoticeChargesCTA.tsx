@@ -11,7 +11,7 @@ interface LegalNoticeChargesCTAProps {
 }
 
 export default function LegalNoticeChargesCTA({
-  buttonText = "Draft & Send Advocate Legal Notice",
+  buttonText = "Draft & Send Fact-Verified Legal Notice",
   className = "",
   variant = "primary",
 }: LegalNoticeChargesCTAProps) {
@@ -28,10 +28,10 @@ export default function LegalNoticeChargesCTA({
                 Transparent Advocate Pricing • No Hidden Costs
               </span>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-bold tracking-tight text-white mb-3">
-                Send a Legally Enforceable Advocate Notice for Flat ₹{basePrice}
+                Send a Legally Enforceable Fact-Verified Notice for Flat ₹{basePrice}
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6">
-                Avoid paying ₹5,000 to ₹15,000 to traditional city chambers for standard pre-litigation demands. Have a verified high court advocate draft, stamp, and serve your statutory legal notice by email and WhatsApp under Section 63 BSA. Speed Post is optional at ₹450 per party.
+                Avoid paying ₹5,000 to ₹15,000 to traditional city chambers for standard pre-litigation demands. Send, stamp, and serve your statutory legal notice by email and WhatsApp under Section 63 BSA. Speed Post is optional at ₹450 per party.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button
@@ -42,7 +42,7 @@ export default function LegalNoticeChargesCTA({
                   {buttonText} — ₹{basePrice}
                 </button>
                 <div className="text-xs text-slate-300 flex flex-wrap sm:flex-nowrap items-center gap-2 sm:gap-3">
-                  <span>✓ 24–48h Advocate Drafting</span>
+                  <span>✓ 24–48h Notice Drafting</span>
                   <span>•</span>
                   <span>✓ Email + WhatsApp</span>
                   <span>•</span>

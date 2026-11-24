@@ -102,7 +102,7 @@ export default function CanteenTableOfContents() {
             120-Day Mess Bill Frozen?
           </p>
           <p className="text-[11px] text-slate-500 leading-relaxed mb-3">
-            Serve an Advocate-signed MSMED s.15–18 &amp; s.43B(h) Demand Notice on Factory HR, CFO &amp; Hostel Trustees.
+            Serve a Fact-verified MSMED s.15–18 &amp; s.43B(h) Demand Notice on Factory HR, CFO &amp; Hostel Trustees.
           </p>
           <a
             href="#dual-cta"

@@ -38,7 +38,7 @@ const SCENARIOS: ScenarioTab[] = [
       {
         step: "Serve Section 55 + MSMED s.15 Demand Notice",
         description:
-          "Issue an advocate notice rejecting the belated debit note as time-barred under Section 42 Sale of Goods Act and invoking 3x RBI compound interest under MSMED s.16 plus s.43B(h) tax disallowance warning.",
+          "Issue a fact-verified notice rejecting the belated debit note as time-barred under Section 42 Sale of Goods Act and invoking 3x RBI compound interest under MSMED s.16 plus s.43B(h) tax disallowance warning.",
       },
     ],
     statutoryRule: "Sale of Goods Act s.17, s.42 & s.55(1) | BSA 2023 s.121 Estoppel",

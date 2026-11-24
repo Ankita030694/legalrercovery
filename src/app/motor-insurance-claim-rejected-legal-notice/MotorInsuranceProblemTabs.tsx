@@ -32,7 +32,7 @@ const PROBLEMS: ProblemTab[] = [
           "Collate discharge summaries, medical certificates of driver/passengers, or police diary extract proving emergency hospitalisation or bona fide delay.",
       },
       {
-        step: "Issue Advocate Demand Notice Citing Gurmel Singh",
+        step: "Issue Fact-Verified Demand Notice Citing Gurmel Singh",
         description:
           "Cite Supreme Court precedents establishing that intimation conditions are directory, not mandatory conditions precedent when loss is undisputed.",
       },

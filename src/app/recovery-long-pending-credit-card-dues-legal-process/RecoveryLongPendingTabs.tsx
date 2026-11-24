@@ -136,7 +136,7 @@ const RECOVERY_TABS: RecoveryTab[] = [
       "Order XXXVII Rules 1 & 2 of the Code of Civil Procedure, 1908 (liquidated demand on written contract) and Order XXI CPC (Execution of Decrees). Supported by High Court precedents affirming credit card statements as actionable debt.",
     strategicSteps: [
       {
-        step: "Issue Formal 15-Day Advocate Demand Notice",
+        step: "Issue Formal 15-Day Fact-Verified Demand Notice",
         description:
           "A formal statutory legal demand notice served via Speed Post and Section 63 BSA electronic mail demanding payment within 15 calendar days.",
       },

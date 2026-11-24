@@ -4,7 +4,7 @@ import InsuranceClaimNotSettledDelayClient from './InsuranceClaimNotSettledDelay
 const slug = 'send-a-legal-notice/insurance-claim-not-settled-delay';
 const title = 'Legal Notice for Delayed Insurance Claim Settlement';
 const description =
-  'Insurance company delaying your claim settlement? Send an advocate-vetted legal notice under IRDAI guidelines to claim dues with interest.';
+  'Insurance company delaying your claim settlement? Send a fact-verified legal notice under IRDAI guidelines to claim dues with interest.';
 const url = `https://www.legalrecovery.in/${slug}`;
 const ogImage = `/images/og/insurance-claim-not-settled-delay.jpg`;
 

@@ -131,7 +131,7 @@ const PROBLEMS: ProblemTab[] = [
     costDrain:
       "With average ticket sizes of ₹5,000 to ₹25,000 across millions of pan-India borrowers, traditional physical legal representation is mathematically impossible. Legal recovery costs would exceed the loan book principal.",
     legalBasis:
-      "Digital lending defaults fall under RBI Digital Lending Guidelines 2022 and Section 25 PSSA. Fully automated legal outsourcing enables programmatic dispatch of advocate notices at sub-₹100 marginal cost via electronic communications backed by Section 63 BSA affidavits.",
+      "Digital lending defaults fall under RBI Digital Lending Guidelines 2022 and Section 25 PSSA. Fully automated legal outsourcing enables programmatic dispatch of fact-verified notices at sub-₹100 marginal cost via electronic communications backed by Section 63 BSA affidavits.",
     steps: [
       {
         step: "Programmatic API Notice Triggers",

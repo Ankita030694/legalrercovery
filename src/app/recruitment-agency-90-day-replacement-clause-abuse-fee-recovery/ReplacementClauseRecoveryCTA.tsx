@@ -25,10 +25,10 @@ export default function ReplacementClauseRecoveryCTA({
               Track 1 &bull; Single Withheld Placement Fee Case
             </span>
             <p className="text-lg sm:text-xl font-extrabold text-white mb-2">
-              Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Advocate Drafted &middot; Email + WhatsApp + Speed Post RPAD)
+              Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Fact-Verified &middot; Email + WhatsApp + Speed Post RPAD)
             </p>
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-              Serve a senior advocate-drafted statutory demand notice to the client corporate entity enforcing Condition Precedent under Sections 51-54 of the Indian Contract Act. Rebuts the &lsquo;90-day replacement credit hold&rsquo; excuse, establishes that withholding payment forfeits warranty rights, calculates 3x RBI compound interest under MSMED Act Section 16, and notifies CFO of Section 43B(h) disallowance risks.
+              Serve a fact-verified statutory demand notice to the client corporate entity enforcing Condition Precedent under Sections 51-54 of the Indian Contract Act. Rebuts the &lsquo;90-day replacement credit hold&rsquo; excuse, establishes that withholding payment forfeits warranty rights, calculates 3x RBI compound interest under MSMED Act Section 16, and notifies CFO of Section 43B(h) disallowance risks.
             </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-3">

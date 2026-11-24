@@ -40,7 +40,7 @@ const SCENARIOS: ScenarioTab[] = [
       {
         step: "Serve Statutory Demand Notice & File with Ombudsman",
         description:
-          "Issue a 15-day advocate notice demanding claim settlement. If unresolved, escalate directly to the Insurance Ombudsman under Rule 13(1)(b) of Insurance Ombudsman Rules 2017.",
+          "Issue a 15-day fact-verified notice demanding claim settlement. If unresolved, escalate directly to the Insurance Ombudsman under Rule 13(1)(b) of Insurance Ombudsman Rules 2017.",
       },
     ],
     statutoryBasis: "Section 45 Insurance Act 1938 & IRDAI Master Circular 2024",
@@ -122,7 +122,7 @@ const SCENARIOS: ScenarioTab[] = [
           "Quote the binding IRDAI circular emphasizing that the condition is intended to prevent fraudulent claims, not to defeat honest policyholders with genuine hospital records.",
       },
       {
-        step: "Serve 15-Day Pre-Litigation Advocate Legal Demand Notice",
+        step: "Serve 15-Day Pre-Litigation Fact-Verified Legal Demand Notice",
         description:
           "Require the insurer to evaluate the claim strictly on medical merits and issue reimbursement within 15 days under penalty of consumer court damages.",
       },
@@ -305,7 +305,7 @@ export default function HealthInsuranceRejectionTabs() {
             href="#heading-cta-block"
             className="text-xs font-bold text-red-600 hover:text-red-700 hover:underline"
           >
-            Draft Advocate Legal Demand Notice →
+            Draft Fact-Verified Legal Demand Notice →
           </a>
         </div>
       </div>

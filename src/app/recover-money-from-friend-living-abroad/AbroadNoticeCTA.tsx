@@ -31,7 +31,7 @@ export default function AbroadNoticeCTA({
                 Recover Money Lent to a Friend or Relative Who Has Moved Abroad
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6">
-                Have a verified High Court recovery advocate draft an authoritative statutory legal demand notice. Served to the borrower&apos;s overseas address via International Registered Post / DHL, their verified foreign email address, and WhatsApp with Section 63 BSA electronic delivery certification. Establish cause of action in Indian jurisdiction before filing a summary suit or attaching Indian assets.
+                Send an authoritative statutory legal demand notice. Served to the borrower&apos;s overseas address via International Registered Post / DHL, their verified foreign email address, and WhatsApp with Section 63 BSA electronic delivery certification. Establish cause of action in Indian jurisdiction before filing a summary suit or attaching Indian assets.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button
@@ -42,7 +42,7 @@ export default function AbroadNoticeCTA({
                   {buttonText} — ₹{basePrice}
                 </button>
                 <div className="text-xs text-slate-300 flex flex-wrap sm:flex-nowrap items-center gap-2 sm:gap-3">
-                  <span>✓ 24h Advocate Drafting</span>
+                  <span>✓ 24h Notice Drafting</span>
                   <span>•</span>
                   <span>✓ Overseas Dispatch &amp; Electronic Service</span>
                   <span>•</span>

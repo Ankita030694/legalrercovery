@@ -149,7 +149,7 @@ const FAQS = [
   {
     question: "Why do colleges delay hostel caution deposit refunds, and how can I recover them?",
     answer:
-      "Colleges often delay caution deposits citing audits or shared block damages. Under the law, caution money is held in trust. Deductions are illegal unless the warden produces an inspection sheet signed by you showing damage you caused. To get your refund, obtain your 'No Dues' slip and send a 15-day advocate legal notice demanding your money with interest.",
+      "Colleges often delay caution deposits citing audits or shared block damages. Under the law, caution money is held in trust. Deductions are illegal unless the warden produces an inspection sheet signed by you showing damage you caused. To get your refund, obtain your 'No Dues' slip and send a 15-day legal notice demanding your money with interest.",
   },
   {
     question: "What if the college prospectus explicitly states 'Hostel Fees Once Paid Are Non-Refundable'?",
@@ -159,12 +159,12 @@ const FAQS = [
   {
     question: "Can I take a college or university to Consumer Court (e-Jagriti) for withholding hostel fees?",
     answer:
-      "Yes. Under Section 35 of the Consumer Protection Act, students and parents can file a complaint online on e-Jagriti against any college. You can file where you currently live. Consumer commissions routinely order complete refunds, 9% to 12% interest, and damages. Sending a 15-day advocate legal notice first often settles the dispute without a court hearing.",
+      "Yes. Under Section 35 of the Consumer Protection Act, students and parents can file a complaint online on e-Jagriti against any college. You can file where you currently live. Consumer commissions routinely order complete refunds, 9% to 12% interest, and damages. Sending a 15-day legal notice first often settles the dispute without a court hearing.",
   },
   {
     question: "College hostel aur mess fees refund nahi kar raha toh legal notice kaise bheje?",
     answer:
-      "Agar admission cancel karane ya hostel chhodne ke baad college paise na lautaaye, toh aap advocate legal notice bhej sakte hain. LegalRecovery.in par verified advocates UGC guidelines aur Consumer Protection Act ke tahat college ko Registered Post aur email se 15 din ka legal demand notice bhejte hain.",
+      "Agar admission cancel karane ya hostel chhodne ke baad college paise na lautaaye, toh aap legal notice bhej sakte hain. LegalRecovery.in par hum fact-verify karke UGC guidelines aur Consumer Protection Act ke tahat college ko Registered Post aur email se 15 din ka legal demand notice bhejte hain.",
   },
 ];
 
@@ -311,7 +311,7 @@ export default function HostelAndMessFeeRefundPage() {
               </div>
               <div>
                 <p className="text-xl sm:text-2xl md:text-3xl font-black text-red-400">15 Days</p>
-                <p className="text-[11px] sm:text-xs text-slate-300 mt-0.5 sm:mt-1">Advocate Notice Compliance Window</p>
+                <p className="text-[11px] sm:text-xs text-slate-300 mt-0.5 sm:mt-1">Legal Notice Compliance Window</p>
               </div>
             </div>
           </div>
@@ -490,9 +490,9 @@ export default function HostelAndMessFeeRefundPage() {
                       ✓
                     </span>
                     <div>
-                      <strong className="text-sm sm:text-base text-slate-900 font-bold">Formal Pre-Litigation Advocate Notice Served to Both Registrar and Trust:</strong>
+                      <strong className="text-sm sm:text-base text-slate-900 font-bold">Formal Pre-Litigation Legal Notice Served to Both Registrar and Trust:</strong>
                       <p className="text-xs sm:text-sm mt-0.5 leading-relaxed">
-                        Serving an advocate legal notice that impleaded the University Registrar, Finance Officer, Chief Warden, and Board of Trustees prevented administrative buck-passing and often induced voluntary settlement within the 15-day cure period.
+                        Serving a legal notice that impleaded the University Registrar, Finance Officer, Chief Warden, and Board of Trustees prevented administrative buck-passing and often induced voluntary settlement within the 15-day cure period.
                       </p>
                     </div>
                   </li>
@@ -530,7 +530,7 @@ export default function HostelAndMessFeeRefundPage() {
                   </div>
                   <div className="bg-red-50 text-red-950 p-4 rounded-xl border border-red-200">
                     <span className="text-[10px] font-bold text-red-700 uppercase tracking-wider block mb-1">Step 4</span>
-                    <h3 className="font-bold text-sm">Advocate Legal Notice</h3>
+                    <h3 className="font-bold text-sm">Legal Notice</h3>
                     <p className="text-xs text-red-900 mt-1">15-day statutory demand served via Registered Speed Post + BSA Section 63 Email.</p>
                   </div>
                   <div className="bg-emerald-50 text-emerald-950 p-4 rounded-xl border border-emerald-200">
@@ -600,7 +600,7 @@ export default function HostelAndMessFeeRefundPage() {
                     {/* Step 4 */}
                     <rect x="520" y="20" width="140" height="90" rx="10" fill="url(#hostelAlert)" />
                     <text x="590" y="45" fill="#FCA5A5" fontWeight="bold" textAnchor="middle">STEP 4</text>
-                    <text x="590" y="65" fill="#FFFFFF" fontWeight="bold" textAnchor="middle">Advocate Notice</text>
+                    <text x="590" y="65" fill="#FFFFFF" fontWeight="bold" textAnchor="middle">Legal Notice</text>
                     <text x="590" y="82" fill="#FEE2E2" fontSize="10" textAnchor="middle">15-Day Statutory Demand</text>
                     <text x="590" y="98" fill="#FECACA" fontSize="9" textAnchor="middle">Speed Post + Electronic</text>
 
@@ -685,7 +685,7 @@ export default function HostelAndMessFeeRefundPage() {
                     </span>
                     <div className="space-y-1 sm:space-y-1.5">
                       <h3 className="text-sm sm:text-base md:text-lg font-bold text-slate-900">
-                        Serve a Formal Statutory Advocate Legal Demand Notice
+                        Serve a Formal Statutory Legal Demand Notice
                       </h3>
                       <p className="text-xs sm:text-sm leading-relaxed">
                         When administrative escalation yields no reversal within 15 to 30 days, engage an advocate to issue a statutory demand notice to the University Registrar, Principal, Chief Warden, and Board of Trustees. Dispatched via Registered Speed Post and Section 63 BSA electronic mail, the notice cites UGC refund mandates, Section 2(47) CPA 2019, and the <em>RGNUL v. Amitesh Anand</em> precedent, giving a strict 15-day window for complete bank credit. Review our transparent fee structure on our <Link href="/legal-notice-charges" className="text-blue-700 underline font-medium">legal notice charges schedule</Link>.
@@ -777,7 +777,7 @@ export default function HostelAndMessFeeRefundPage() {
                       </tr>
                       <tr className="hover:bg-slate-50/80">
                         <th scope="row" className="py-3 px-3.5 sm:py-3.5 sm:px-4 font-semibold text-slate-900">
-                          Pre-Litigation Advocate Notice Window
+                          Pre-Litigation Legal Notice Window
                         </th>
                         <td className="py-3 px-3.5 sm:py-3.5 sm:px-4 text-red-700 font-bold">15 Calendar Days</td>
                         <td className="py-3 px-3.5 sm:py-3.5 sm:px-4 text-xs">Section 35 Consumer Protection Act 2019</td>
@@ -832,11 +832,11 @@ export default function HostelAndMessFeeRefundPage() {
                       <strong>The Deadlock:</strong> Aditya submitted his formal admission cancellation letter, vacated the room, returned keys, and obtained a signed clearance slip from the Hostel Warden on September 12. However, the university accounts division remitted only partial academic tuition and flatly refused to refund the ₹1,45,000 hostel and mess payment, quoting an admission undertaking: <em>&quot;Hostel accommodation is allotted on a strict non-refundable annual lock-in basis.&quot;</em>
                     </p>
                     <p>
-                      <strong>The Statutory Action:</strong> Aditya&apos;s father engaged LegalRecovery.in. An advocate drafted and served a comprehensive statutory legal notice to the University Registrar, Finance Officer, Chief Warden, and the Chancellor. The notice cited Section 2(47) CPA 2019, the UGC Fee Refund Policy, and landmark NCDRC rulings (<em>RGNUL v. Amitesh Anand</em> and <em>Sehgal School</em>). The notice demanded immediate pro-rata adjustment: deducting strictly 10 days of actual occupancy (₹2,830) and releasing the balance ₹1,42,170 alongside 12% statutory interest within 15 calendar days.
+                      <strong>The Statutory Action:</strong> Aditya&apos;s father engaged LegalRecovery.in. The team verified the facts and served a comprehensive statutory legal notice to the University Registrar, Finance Officer, Chief Warden, and the Chancellor. The notice cited Section 2(47) CPA 2019, the UGC Fee Refund Policy, and landmark NCDRC rulings (<em>RGNUL v. Amitesh Anand</em> and <em>Sehgal School</em>). The notice demanded immediate pro-rata adjustment: deducting strictly 10 days of actual occupancy (₹2,830) and releasing the balance ₹1,42,170 alongside 12% statutory interest within 15 calendar days.
                     </p>
                     <div className="p-3.5 sm:p-4 bg-emerald-950/70 border border-emerald-700/60 rounded-xl text-emerald-200">
                       <strong className="block text-emerald-400 font-bold mb-1">The Outcome:</strong>
-                      On Day 9 following receipt of the advocate notice via Registered Speed Post, the University Legal Cell intervened. Recognizing that defending an unfair contract clause before the District Consumer Commission would lead to adverse publicity and punitive damage awards, the finance division processed a full RTGS credit of ₹1,42,170 into the parent&apos;s bank account, waiving all lock-in penalties.
+                      On Day 9 following receipt of the legal notice via Registered Speed Post, the University Legal Cell intervened. Recognizing that defending an unfair contract clause before the District Consumer Commission would lead to adverse publicity and punitive damage awards, the finance division processed a full RTGS credit of ₹1,42,170 into the parent&apos;s bank account, waiving all lock-in penalties.
                     </div>
                   </div>
                 </div>
@@ -1008,7 +1008,7 @@ export default function HostelAndMessFeeRefundPage() {
                     href="/legal-notice-charges"
                     className="px-3 py-1.5 bg-white border border-slate-200 rounded-lg hover:border-red-500 hover:text-red-600 transition-colors"
                   >
-                    Advocate Notice Charges Schedule →
+                    Legal Notice Charges Schedule →
                   </Link>
                   <Link
                     href="/e-jagriti-consumer-complaint-guide"

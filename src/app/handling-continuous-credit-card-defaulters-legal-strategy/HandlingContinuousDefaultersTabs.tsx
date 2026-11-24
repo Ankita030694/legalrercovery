@@ -40,7 +40,7 @@ const TYPOLOGIES: DefaultTypology[] = [
       {
         stage: "Pre-Litigation Advocate Legal Notice",
         description:
-          "Issue a formal statutory advocate demand notice demanding full balance discharge within 15 days, referencing impending Order 37 summary recovery proceedings.",
+          "Issue a formal statutory fact-verified demand notice demanding full balance discharge within 15 days, referencing impending Order 37 summary recovery proceedings.",
       },
     ],
   },
@@ -89,7 +89,7 @@ const TYPOLOGIES: DefaultTypology[] = [
       {
         stage: "Statutory 30-Day Demand Notice Under PSSA",
         description:
-          "Issue a formal advocate statutory demand notice within 30 days of receiving the return memo, granting the cardholder 15 calendar days from receipt to pay the dishonored amount in full.",
+          "Issue a formal fact-verified statutory demand notice within 30 days of receiving the return memo, granting the cardholder 15 calendar days from receipt to pay the dishonored amount in full.",
       },
       {
         stage: "Filing Criminal Complaint in Metropolitan Magistrate Court",

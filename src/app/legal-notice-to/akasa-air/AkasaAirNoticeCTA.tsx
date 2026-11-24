@@ -31,7 +31,7 @@ export default function AkasaAirNoticeCTA({
                 Recover Your Withheld Akasa Air Ticket Refund
               </h3>
               <p className="text-slate-300 text-sm sm:text-base leading-relaxed mb-6">
-                Have a verified advocate draft and serve an official 15-day statutory legal notice directly to SNV Aviation Private Limited (Akasa Air) and your booking travel aggregator. Served by email and WhatsApp under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023. Speed Post is optional at ₹450 per party.
+                Serve an official 15-day statutory legal notice directly to SNV Aviation Private Limited (Akasa Air) and your booking travel aggregator. Served by email and WhatsApp under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023. Speed Post is optional at ₹450 per party.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button
@@ -42,7 +42,7 @@ export default function AkasaAirNoticeCTA({
                   {buttonText} — ₹{basePrice}
                 </button>
                 <div className="text-xs text-slate-300 flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-3">
-                  <span>✓ 24-Hour Advocate Drafting</span>
+                  <span>✓ 24-Hour Notice Drafting</span>
                   <span className="hidden sm:inline">•</span>
                   <span>✓ Email + WhatsApp</span>
                   <span className="hidden sm:inline">•</span>

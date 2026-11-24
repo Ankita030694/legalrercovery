@@ -147,7 +147,7 @@ export default function TravelRecoveryClient() {
     {
       id: "faq-10",
       question: "What is the limitation period to file a legal suit or consumer complaint for travel-related dues in India?",
-      answer: "Under the Consumer Protection Act, 2019, the limitation period to file a complaint before the Consumer Disputes Redressal Commission is two (2) years from the date on which the cause of action arose (i.e., the date of the cancelled flight, the day the baggage was lost, or when the refund was formally denied). For civil suits under the Limitation Act, 1963, the timeline to file a recovery suit is three (3) years. However, it is highly recommended to serve a formal advocate-backed legal notice within 30 to 90 days of the dispute to capture the evidence fresh and force a pre-litigation settlement."
+      answer: "Under the Consumer Protection Act, 2019, the limitation period to file a complaint before the Consumer Disputes Redressal Commission is two (2) years from the date on which the cause of action arose (i.e., the date of the cancelled flight, the day the baggage was lost, or when the refund was formally denied). For civil suits under the Limitation Act, 1963, the timeline to file a recovery suit is three (3) years. However, it is highly recommended to serve a formal fact-verified legal notice within 30 to 90 days of the dispute to capture the evidence fresh and force a pre-litigation settlement."
     }
   ], []);
 
@@ -169,7 +169,7 @@ export default function TravelRecoveryClient() {
       id: "rev-3",
       name: "Dr. Vikramaditya Sen (Senior Cardiologist, Bangalore)",
       rating: 5,
-      review: "My checked-in baggage containing expensive surgical equipment was severely damaged on a domestic flight. The airline offered a measly compensation of ₹3,000 citing weight limits. LegalRecovery served a formal advocate notice highlighting state consumer laws and the specific property damage clauses. The airline settled the matter out of court for ₹45,000!"
+      review: "My checked-in baggage containing expensive surgical equipment was severely damaged on a domestic flight. The airline offered a measly compensation of ₹3,000 citing weight limits. LegalRecovery served a formal fact-verified notice highlighting state consumer laws and the specific property damage clauses. The airline settled the matter out of court for ₹45,000!"
     },
     {
       id: "rev-4",
@@ -195,7 +195,7 @@ export default function TravelRecoveryClient() {
           "@id": "https://www.legalrecovery.in/services/airline-and-travel-recoveries"
         },
         "headline": "Professional Airline, Flight, and Travel Dues Recovery Service in India",
-        "description": "Reclaim unpaid flight refunds, train booking dues, hotel overcharges, and baggage loss compensation legally in India. 3 progressive notices, attorney-verified, based on DGCA and Consumer Protection laws.",
+        "description": "Reclaim unpaid flight refunds, train booking dues, hotel overcharges, and baggage loss compensation legally in India. 3 progressive notices, fact-verified, based on DGCA and Consumer Protection laws.",
         "image": "https://www.legalrecovery.in/blog_money_recovery.png",
         "datePublished": "2026-05-27T00:00:00Z",
         "dateModified": "2026-05-27T00:00:00Z",
@@ -457,10 +457,10 @@ export default function TravelRecoveryClient() {
                   Yet, the travel industry operates with a high degree of corporate asymmetry. Airlines, booking portals (Online Travel Agencies or OTAs), and hospitality chains utilize layered bureaucracy, automated chatbot loops, and arbitrary cancellation policies to frustrate consumers into giving up on their refunds. They count on the fact that an individual passenger will not hire a high-priced attorney to recover a ₹15,000 ticket or a ₹30,000 hotel deposit.
                 </p>
                 <p>
-                  The LegalRecovery <strong className="font-extrabold text-[#111827]">Airline & Travel Dues Recovery Service</strong> is built specifically to break this cycle. We have restructured the entire recovery lifecycle into an aggressive, automated, and attorney-verified pre-litigation pipeline. We cut through customer service call queues by delivering sharp, statutory demand notices directly to the Nodal Officers, compliance departments, and executive leadership of travel operators.
+                  The LegalRecovery <strong className="font-extrabold text-[#111827]">Airline & Travel Dues Recovery Service</strong> is built specifically to break this cycle. We have restructured the entire recovery lifecycle into an aggressive, automated, and fact-verified pre-litigation pipeline. We cut through customer service call queues by delivering sharp, statutory demand notices directly to the Nodal Officers, compliance departments, and executive leadership of travel operators.
                 </p>
                 <blockquote>
-                  <strong>Our Platform Mandate:</strong> We provide full-suite travel recovery support for a transparent, flat fee of <strong>₹999</strong>, with absolutely <strong>zero commissions</strong> taken on your recovered money. We draft, validate, and launch progressive legal notices backed by practicing consumer advocates to enforce your statutory rights under DGCA regulations and Indian consumer laws.
+                  <strong>Our Platform Mandate:</strong> We provide full-suite travel recovery support for a transparent, flat fee of <strong>₹999</strong>, with absolutely <strong>zero commissions</strong> taken on your recovered money. We prepare, fact-verify, and launch progressive legal notices to enforce your statutory rights under DGCA regulations and Indian consumer laws.
                 </blockquote>
                 <p>
                   No airline or travel booking giant is above the law. Let our platform bear the burden of tracking, executing, and escalating your travel-related financial claims, so you can reclaim your hard-earned funds with absolute peace of mind.
@@ -495,7 +495,7 @@ export default function TravelRecoveryClient() {
                 {/* 3. The DGCA Passenger Charter */}
                 <h2 id="dgca-charter">3. The DGCA Passenger Charter: Domestic Flight Rights</h2>
                 <p>
-                  In India, the Directorate General of Civil Aviation (DGCA) governs domestic passenger rights through a strict set of regulations known as the <strong className="font-extrabold text-[#111827]">Civil Aviation Requirements (CAR)</strong>. Understanding these rights is essential to establishing a valid claim. Our advocate panel leverages these regulations to ensure that airlines do not escape their statutory obligations:
+                  In India, the Directorate General of Civil Aviation (DGCA) governs domestic passenger rights through a strict set of regulations known as the <strong className="font-extrabold text-[#111827]">Civil Aviation Requirements (CAR)</strong>. Understanding these rights is essential to establishing a valid claim. Our team leverages these regulations to ensure that airlines do not escape their statutory obligations:
                 </p>
 
                 <div className="overflow-x-auto my-6">
@@ -602,7 +602,7 @@ export default function TravelRecoveryClient() {
                 {/* 7. The 3+1 Notice Strategy */}
                 <h2 id="notice-strategy">7. Our 3+1 Notice Strategy: Engineered for Maximum Pressure</h2>
                 <p>
-                  Traditional consumer litigation in India is sluggish. Most travel operators and airlines ignore standard customer service tickets because they are processed by automated AI bots. To break through this wall of indifference, LegalRecovery deploys an aggressive, attorney-backed <strong className="font-extrabold text-[#111827]">3-stage progressive notice pipeline combined with official regulatory compliance escalations</strong>:
+                  Traditional consumer litigation in India is sluggish. Most travel operators and airlines ignore standard customer service tickets because they are processed by automated AI bots. To break through this wall of indifference, LegalRecovery deploys an aggressive, fact-verified <strong className="font-extrabold text-[#111827]">3-stage progressive notice pipeline combined with official regulatory compliance escalations</strong>:
                 </p>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
@@ -661,13 +661,13 @@ export default function TravelRecoveryClient() {
                   <li><strong>No Compounding Pressure:</strong> Travel giants receive thousands of complaint emails daily. A single, isolated email does not create urgency. LegalRecovery's automated, progressive multi-stage pipeline builds compounding risk that forces their compliance team to prioritize your case.</li>
                 </ul>
                 <p>
-                  We provide attorney-verified, law-cited, and target-tracked notice campaigns, giving you the administrative strength of a corporate law firm for a single flat fee.
+                  We provide fact-verified, law-cited, and target-tracked notice campaigns, giving you the administrative strength of a corporate law firm for a single flat fee.
                 </p>
 
                 {/* 9. Evidentiary Checklist */}
                 <h2 id="evidentiary-checklist">9. Evidentiary Checklist for Travel Recoveries</h2>
                 <p>
-                  To build a bulletproof travel recovery claim on our platform, gather these standard booking records. Our advocate panel will utilize these to construct a highly authoritative notice campaign:
+                  To build a bulletproof travel recovery claim on our platform, gather these standard booking records. Our team will utilize these to construct a highly authoritative notice campaign:
                 </p>
                 <ul>
                   <li><strong>Booking Confirmation Email / E-Ticket:</strong> Serves as the primary contract, detailing the PNR number, travel dates, passenger names, and the exact fare paid.</li>
@@ -683,7 +683,7 @@ export default function TravelRecoveryClient() {
                   Traditional advocates charge expensive consulting fees and demand a percentage or commission on the recovered money. We believe this is exploitative to consumers who have already suffered financial loss.
                 </p>
                 <p>
-                  LegalRecovery provides professional, attorney-verified travel recovery campaigns for a single, flat fee of <strong className="font-extrabold text-[#111827]">₹999</strong>. We charge absolutely zero hidden fees and take zero commission on your recovered money.
+                  LegalRecovery provides professional, fact-verified travel recovery campaigns for a single, flat fee of <strong className="font-extrabold text-[#111827]">₹999</strong>. We charge absolutely zero hidden fees and take zero commission on your recovered money.
                 </p>
 
                 {/* Pricing Block */}
@@ -699,7 +699,7 @@ export default function TravelRecoveryClient() {
                           </span>
                           <h3 className="text-2xl font-black text-[#111827] mb-4">Complete Travel Recovery</h3>
                           <p className="text-[14px] text-[#4B5563] font-medium leading-[1.6] mb-8">
-                            Get complete pre-litigation support. We draft advocate notices and regulatory compliance packages with absolutely zero commissions.
+                            Get complete pre-litigation support. We draft fact-verified notices and regulatory compliance packages with absolutely zero commissions.
                           </p>
                         </div>
                         
@@ -941,7 +941,7 @@ export default function TravelRecoveryClient() {
               <div className="absolute top-0 right-0 w-24 h-24 bg-red-600/10 rounded-full blur-xl pointer-events-none" />
               <h3 className="text-base font-extrabold mb-3 tracking-tight">Need Urgent Travel Recovery?</h3>
               <p className="text-gray-400 mb-5 text-[11px] leading-relaxed">
-                Get an advocate-drafted 3-stage notice pipeline and a customized regulatory escalation package for a flat fee of ₹999.
+                Get a fact-verified 3-stage notice pipeline and a customized regulatory escalation package for a flat fee of ₹999.
               </p>
               <Link 
                 href="/contact" 

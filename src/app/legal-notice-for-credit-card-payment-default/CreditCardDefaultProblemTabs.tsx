@@ -34,7 +34,7 @@ const DEFAULT_PROBLEMS: ProblemTab[] = [
       {
         step: "Dispatch Simultaneous Dual-Mode Notice",
         description:
-          "Serve the advocate demand notice via India Post Registered Speed Post with tracking and concurrently through certified digital delivery channels (email + WhatsApp).",
+          "Serve the fact-verified demand notice via India Post Registered Speed Post with tracking and concurrently through certified digital delivery channels (email + WhatsApp).",
       },
       {
         step: "Generate BSA Section 63 Certificate",
@@ -113,7 +113,7 @@ const DEFAULT_PROBLEMS: ProblemTab[] = [
           "Categorize defaulting accounts by days-past-due (DPD) to prioritize accounts approaching the 24-to-30 month threshold.",
       },
       {
-        step: "Deploy Automated Advocate Notice Dispatch System",
+        step: "Deploy Automated Fact-Verified Notice Dispatch System",
         description:
           "Utilize verified bulk recovery notice dispatch workflows with automated India Post speed post barcode integration and electronic message receipts.",
       },

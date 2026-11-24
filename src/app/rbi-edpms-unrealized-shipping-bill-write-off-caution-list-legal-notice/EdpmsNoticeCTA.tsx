@@ -50,10 +50,10 @@ export default function EdpmsNoticeCTA({
                 Test 1 Live Overdue Case Now (&#8377;{basePrice})
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm leading-relaxed mb-5">
-                Advocate-drafted cross-border legal demand notice citing Shipping Bill &amp; FEMA Section 8 particulars, dispatched via Email + WhatsApp + Tracked Courier/RPAD, with verifiable delivery proof for your AD Category-I Bank write-off or ECGC dossier.
+                Fact-verified cross-border legal demand notice citing Shipping Bill &amp; FEMA Section 8 particulars, dispatched via Email + WhatsApp + Tracked Courier/RPAD, with verifiable delivery proof for your AD Category-I Bank write-off or ECGC dossier.
               </p>
               <ul className="space-y-1.5 text-xs text-slate-300 mb-6">
-                <li>&#10003; Advocate Drafted &amp; Signed on Law Firm Letterhead</li>
+                <li>&#10003; Fact-Verified on Law Firm Letterhead</li>
                 <li>&#10003; Email + WhatsApp + Speed Post / International Dispatch Logs</li>
                 <li>&#10003; Ready for SBI, HDFC, ICICI &amp; Axis Bank EDPMS Compliance</li>
               </ul>
@@ -85,7 +85,7 @@ export default function EdpmsNoticeCTA({
                 Have 10 to 10,000+ Aged EDPMS Bills?
               </h3>
               <p className="text-slate-600 text-xs sm:text-sm leading-relaxed mb-5">
-                Upload your AD-Bank EDPMS XOS dump via CSV to generate batch Advocate Legal Demand Notices and Disproportionate Foreign Litigation Cost Opinions across multiple overseas buyers, clearing caution-listed Shipping Bills systematically.
+                Upload your AD-Bank EDPMS XOS dump via CSV to generate batch Fact-Verified Legal Demand Notices and Disproportionate Foreign Litigation Cost Opinions across multiple overseas buyers, clearing caution-listed Shipping Bills systematically.
               </p>
               <ul className="space-y-1.5 text-xs text-slate-700 mb-6">
                 <li>&#10003; Bulk CSV Ingestion for Multi-Country Export Ledgers</li>

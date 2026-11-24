@@ -17,7 +17,7 @@ const faqs = [
   {
     question: 'What legal options exist if a gym or fitness center abruptly shuts down, relocates, or undergoes indefinite renovation?',
     answer:
-      'If a gym, yoga studio, or sports club closes its premises, relocates beyond a reasonable commuting distance, or suspends key facilities without providing equivalent alternative access, the service provider commits a fundamental breach of contract under Section 73 and triggers the Doctrine of Frustration under Section 56 of the Indian Contract Act, 1872. Aggrieved members should immediately issue an advocate-vetted statutory legal notice demanding a 100% prorated refund of advance fees within 15 days of receipt. If the management fails to comply, consumers can initiate summary proceedings before the District Consumer Disputes Redressal Commission (DCDRC) via the e-Daakhil portal or file a formal complaint with the Central Consumer Protection Authority (CCPA) for predatory trade practices.',
+      'If a gym, yoga studio, or sports club closes its premises, relocates beyond a reasonable commuting distance, or suspends key facilities without providing equivalent alternative access, the service provider commits a fundamental breach of contract under Section 73 and triggers the Doctrine of Frustration under Section 56 of the Indian Contract Act, 1872. Aggrieved members should immediately issue a fact-verified statutory legal notice demanding a 100% prorated refund of advance fees within 15 days of receipt. If the management fails to comply, consumers can initiate summary proceedings before the District Consumer Disputes Redressal Commission (DCDRC) via the e-Daakhil portal or file a formal complaint with the Central Consumer Protection Authority (CCPA) for predatory trade practices.',
   },
   {
     question: 'Can I legally cancel my annual gym membership and claim a prorated refund on medical grounds or job relocation?',
@@ -48,7 +48,7 @@ const ogImage =
   'https://legalrecovery.in/images/og/gym-yoga-club-membership-fee-refund.jpg';
 
 const reviewBodyText =
-  'I paid ₹52,000 for an annual premium all-access gym, yoga, and personal training package at a luxury fitness center in Indiranagar, Bengaluru. Within eight weeks, my assigned personal trainer resigned without any replacement, the steam room and pool were shut for indefinite repairs, and morning yoga batches were arbitrarily cancelled. When I requested a prorated refund for the remaining ten months, the center manager refused, pointing to their "Strict Non-Refundable Fee Policy" on the back of the receipt. Legal Recovery drafted and served a formidable advocate-vetted statutory legal notice citing Section 2(46) Unfair Contracts under the Consumer Protection Act 2019, CCPA guidelines, and Section 56 of the Indian Contract Act. Within 10 days of notice delivery, the club headquarters contacted me, apologized in writing, and credited a full prorated refund of ₹43,300 straight to my bank account. Exemplary legal service for consumer rights!';
+  'I paid ₹52,000 for an annual premium all-access gym, yoga, and personal training package at a luxury fitness center in Indiranagar, Bengaluru. Within eight weeks, my assigned personal trainer resigned without any replacement, the steam room and pool were shut for indefinite repairs, and morning yoga batches were arbitrarily cancelled. When I requested a prorated refund for the remaining ten months, the center manager refused, pointing to their "Strict Non-Refundable Fee Policy" on the back of the receipt. Legal Recovery drafted and served a formidable fact-verified statutory legal notice citing Section 2(46) Unfair Contracts under the Consumer Protection Act 2019, CCPA guidelines, and Section 56 of the Indian Contract Act. Within 10 days of notice delivery, the club headquarters contacted me, apologized in writing, and credited a full prorated refund of ₹43,300 straight to my bank account. Exemplary legal service for consumer rights!';
 
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -168,7 +168,7 @@ const jsonLd = {
         {
           '@type': 'ListItem',
           position: 4,
-          name: 'Draft an advocate-vetted statutory notice citing Consumer Protection Act 2019 Sections 2(11), 2(46), 2(47) & Indian Contract Act 1872',
+          name: 'Draft a fact-verified statutory notice citing Consumer Protection Act 2019 Sections 2(11), 2(46), 2(47) & Indian Contract Act 1872',
         },
         {
           '@type': 'ListItem',
@@ -183,7 +183,7 @@ const jsonLd = {
       '@type': 'Product',
       name: 'Legal Notice to Gym, Yoga & Fitness Club for Membership Fee Refund',
       description:
-        'Advocate-drafted statutory demand notice service for gym members, yoga practitioners, and fitness club subscribers to recover advance membership fees, personal training dues, and auto-debit amounts from defaulting fitness centers across India.',
+        'Fact-verified statutory demand notice service for gym members, yoga practitioners, and fitness club subscribers to recover advance membership fees, personal training dues, and auto-debit amounts from defaulting fitness centers across India.',
       brand: {
         '@type': 'Organization',
         name: 'Legal Recovery',
@@ -259,7 +259,7 @@ export default function GymYogaClubMembershipFeeRefundClient() {
 
   const shareUrl = encodeURIComponent(pageUrl);
   const shareText = encodeURIComponent(
-    'Gym or fitness club refusing advance membership fee refund? Send an advocate-vetted statutory legal notice for rapid refund in India! #LegalNotice #GymRefund #ConsumerRights #LegalRecovery'
+    'Gym or fitness club refusing advance membership fee refund? Send a fact-verified statutory legal notice for rapid refund in India! #LegalNotice #GymRefund #ConsumerRights #LegalRecovery'
   );
 
   return (
@@ -434,7 +434,7 @@ export default function GymYogaClubMembershipFeeRefundClient() {
                     Quick Answer
                   </h2>
                   <p className="text-sm text-slate-700 font-medium leading-relaxed">
-                    A consumer can serve an advocate-vetted statutory legal notice to a gym, yoga studio, or fitness club demanding a full prorated refund of unutilized membership fees under{' '}
+                    A consumer can serve a fact-verified statutory legal notice to a gym, yoga studio, or fitness club demanding a full prorated refund of unutilized membership fees under{' '}
                     <span className="font-semibold text-slate-800">
                       Section 2(11), Section 2(46), and Section 2(47) of the Consumer Protection Act, 2019
                     </span>
@@ -640,11 +640,11 @@ export default function GymYogaClubMembershipFeeRefundClient() {
                         <div className="flex items-center gap-3 mb-2">
                           <span className="bg-[#DC2626] text-white text-xs font-black px-2.5 py-1 rounded-md">TIER 1</span>
                           <h4 className="font-extrabold text-slate-900 text-sm md:text-base">
-                            Advocate-Drafted Statutory Demand Notice (15-Day Compliance Window)
+                            Fact-Verified Statutory Demand Notice (15-Day Compliance Window)
                           </h4>
                         </div>
                         <p className="text-xs sm:text-sm text-slate-650 leading-relaxed">
-                          The most rapid and cost-effective remedy. An advocate-vetted legal notice served on the fitness center&apos;s registered office and head directors shatters corporate resistance. It formally demands refund of unutilized principal subscription fees, interest at 18% p.a., and legal expenses within 15 days, warning of imminent consumer court and criminal litigation. Over 70% of fitness fee disputes settle in Tier 1.
+                          The most rapid and cost-effective remedy. A fact-verified legal notice served on the fitness center&apos;s registered office and head directors shatters corporate resistance. It formally demands refund of unutilized principal subscription fees, interest at 18% p.a., and legal expenses within 15 days, warning of imminent consumer court and criminal litigation. Over 70% of fitness fee disputes settle in Tier 1.
                         </p>
                       </div>
 
@@ -784,8 +784,8 @@ export default function GymYogaClubMembershipFeeRefundClient() {
                       {[
                         {
                           step: 'Stage 1',
-                          title: 'Advocate-Drafted Notice Served via Multi-Channel Hybrid Dispatch',
-                          desc: 'The notice is prepared on the advocate’s official letterhead, digitally signed under Section 5 of the Information Technology Act 2000, and served simultaneously via India Post Speed Post with AD, registered gym email, and tracked WhatsApp delivery to center owners.',
+                          title: 'Fact-Verified Notice Served via Multi-Channel Hybrid Dispatch',
+                          desc: 'The notice is served simultaneously via India Post Speed Post with AD, registered gym email, and tracked WhatsApp delivery to center owners.',
                         },
                         {
                           step: 'Stage 2',
@@ -795,7 +795,7 @@ export default function GymYogaClubMembershipFeeRefundClient() {
                         {
                           step: 'Stage 3',
                           title: 'e-Daakhil Consumer Forum Complaint Filing (DCDRC)',
-                          desc: 'If the gym ignores the 15-day notice, our panel advocates file a formal complaint before the District Consumer Disputes Redressal Commission claiming full refund, 18% annual interest, mental agony compensation, and legal costs.',
+                          desc: 'If the gym ignores the 15-day notice, our team files a formal complaint before the District Consumer Disputes Redressal Commission claiming full refund, 18% annual interest, mental agony compensation, and legal costs.',
                         },
                         {
                           step: 'Stage 4',
@@ -950,7 +950,7 @@ export default function GymYogaClubMembershipFeeRefundClient() {
                   <p className="text-sm text-slate-650 leading-relaxed mb-6">
                     Legal Recovery is India&apos;s trusted online legal notice and dispute resolution
                     platform, connecting gym members, yoga practitioners, consumers, businesses,
-                    and professionals with seasoned panel advocates for rapid, advocate-vetted statutory
+                    and professionals with our fact-verification team for rapid, fact-verified statutory
                     demand notices at transparent flat fees. With ₹100 Crore+ recovered and 10,000+
                     cases resolved across India, Legal Recovery delivers verified legal impact
                     without the delays and unpredictability of traditional law firms.
@@ -991,7 +991,7 @@ export default function GymYogaClubMembershipFeeRefundClient() {
                   Gym Refusing Your Fee Refund?
                 </h3>
                 <p className="text-slate-300 text-xs leading-relaxed mb-4">
-                  Send an advocate-vetted statutory notice today. 74% of gyms and fitness clubs settle advance fee disputes within 15 days upon receiving a formal legal notice from Legal Recovery.
+                  Send a fact-verified statutory notice today. 74% of gyms and fitness clubs settle advance fee disputes within 15 days upon receiving a formal legal notice from Legal Recovery.
                 </p>
                 <button
                   onClick={() => setIsPaymentModalOpen(true)}
@@ -1000,7 +1000,7 @@ export default function GymYogaClubMembershipFeeRefundClient() {
                   Draft &amp; Send Notice Now
                 </button>
                 <p className="text-center text-slate-400 text-[10px] mt-3">
-                  Flat fee • Advocate-drafted • Sent same day
+                  Flat fee • Fact-verified • Sent same day
                 </p>
               </div>
 
@@ -1055,7 +1055,7 @@ export default function GymYogaClubMembershipFeeRefundClient() {
                 {[
                   { stat: '74%', label: 'Fitness centers settle prior to consumer court litigation' },
                   { stat: '₹100CR+', label: 'Total amount recovered for clients across India' },
-                  { stat: 'Same Day', label: 'Advocate notice drafted and dispatched' },
+                  { stat: 'Same Day', label: 'Notice prepared and dispatched' },
                   { stat: 'Flat Fee', label: 'Transparent pricing with no hidden charges' },
                 ].map((item, i) => (
                   <div key={i} className="flex items-center justify-between py-2 border-b border-slate-50 last:border-0">

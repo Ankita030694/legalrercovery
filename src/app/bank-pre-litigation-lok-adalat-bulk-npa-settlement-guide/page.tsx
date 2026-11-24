@@ -74,7 +74,7 @@ const WORKFLOW_STAGES = [
     stage: "Stage 3 · T-30 to T-5",
     title: "Tri-Channel WhatsApp + Email + RPAD OTS Priming",
     detail:
-      "Dispatch Advocate-signed bilingual OTS Invitation-cum-Lok Adalat Pre-Intimation Notices showing the exact PLC number, court venue, pre-calculated OTS payoff amount, zero-court-fee waiver deadline, and a dynamic UPI/NEFT token-deposit link (10% upfront booking).",
+      "Dispatch Fact-verified bilingual OTS Invitation-cum-Lok Adalat Pre-Intimation Notices showing the exact PLC number, court venue, pre-calculated OTS payoff amount, zero-court-fee waiver deadline, and a dynamic UPI/NEFT token-deposit link (10% upfront booking).",
   },
   {
     stage: "Stage 4 · T-0 Sitting Day",
@@ -173,7 +173,7 @@ const FAQS = [
     question:
       "What electronic dispatch evidence under BSA 2023 Section 63 should banks preserve for pre-Lok-Adalat priming notices?",
     answer:
-      "To establish clean regulatory audit trails and support future Order XXI or civil proceedings if a borrower ignores the Lok Adalat notice, banks should archive: (1) advocate-signed notice PDFs with unique PLC & loan reference numbers; (2) verified WhatsApp API delivery/read receipts and SMTP email delivery logs certified under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023; (3) India Post Speed Post RPAD booking receipts and tracking proofs invoking General Clauses Act Section 27 deemed service; and (4) certified Bankers' Books Evidence Act ledgers separating principal from uncompounded penal charges.",
+      "To establish clean regulatory audit trails and support future Order XXI or civil proceedings if a borrower ignores the Lok Adalat notice, banks should archive: (1) fact-verified notice PDFs with unique PLC & loan reference numbers; (2) verified WhatsApp API delivery/read receipts and SMTP email delivery logs certified under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023; (3) India Post Speed Post RPAD booking receipts and tracking proofs invoking General Clauses Act Section 27 deemed service; and (4) certified Bankers' Books Evidence Act ledgers separating principal from uncompounded penal charges.",
   },
 ];
 
@@ -480,7 +480,7 @@ export default function BankPreLitigationLokAdalatGuidePage() {
                 </div>
 
                 <p>
-                  Solving sub-8% attendance does not require higher waiver sacrifices. It requires shifting the settlement conversation <strong>30 days upstream of the National Lok Adalat sitting</strong> through advocate-signed bilingual WhatsApp, Email, and Speed Post RPAD priming notices synchronized with pre-approved Board OTS slabs and immediate Section 21 decree drafting.
+                  Solving sub-8% attendance does not require higher waiver sacrifices. It requires shifting the settlement conversation <strong>30 days upstream of the National Lok Adalat sitting</strong> through fact-verified bilingual WhatsApp, Email, and Speed Post RPAD priming notices synchronized with pre-approved Board OTS slabs and immediate Section 21 decree drafting.
                 </p>
               </div>
             </section>
@@ -791,7 +791,7 @@ export default function BankPreLitigationLokAdalatGuidePage() {
 
               <div className="prose prose-slate max-w-none text-xs sm:text-sm md:text-base leading-relaxed text-slate-700 space-y-4">
                 <p>
-                  A generic court-clerk postcard reading <em>&ldquo;Appear before DLSA Bench No. 4 on Saturday&rdquo;</em> triggers avoidance—not repayment. Borrowers assume they will be berated in front of a judge for an impossible sum. To lift sitting attendance from under 8% into the 24%–35% bracket, banks must deploy a structured <strong>Advocate-Signed OTS Invitation-cum-Lok Adalat Pre-Intimation Notice</strong> across three synchronized touchpoints ahead of sitting day:
+                  A generic court-clerk postcard reading <em>&ldquo;Appear before DLSA Bench No. 4 on Saturday&rdquo;</em> triggers avoidance—not repayment. Borrowers assume they will be berated in front of a judge for an impossible sum. To lift sitting attendance from under 8% into the 24%–35% bracket, banks must deploy a structured <strong>Fact-Verified OTS Invitation-cum-Lok Adalat Pre-Intimation Notice</strong> across three synchronized touchpoints ahead of sitting day:
                 </p>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4 my-5">
@@ -1193,7 +1193,7 @@ export default function BankPreLitigationLokAdalatGuidePage() {
                     Send Bank Legal Notice for Unpaid Dues
                   </p>
                   <p className="text-xs text-slate-600 mt-1">
-                    Advocate-drafted demand and pre-litigation notices for overdue personal, MSME, and agri loans.
+                    Fact-verified demand and pre-litigation notices for overdue personal, MSME, and agri loans.
                   </p>
                 </Link>
 

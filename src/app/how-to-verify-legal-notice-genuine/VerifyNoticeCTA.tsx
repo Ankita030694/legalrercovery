@@ -11,7 +11,7 @@ interface VerifyNoticeCTAProps {
 }
 
 export default function VerifyNoticeCTA({
-  buttonText = "Draft Verified Advocate Legal Notice Reply",
+  buttonText = "Send a Fact-Verified Legal Notice Reply",
   className = "",
   variant = "primary",
 }: VerifyNoticeCTAProps) {
@@ -25,13 +25,13 @@ export default function VerifyNoticeCTA({
           <div className="bg-gradient-to-br from-[#111827] via-[#1F2937] to-[#111827] text-white rounded-2xl p-5 sm:p-8 md:p-10 border border-slate-800 shadow-2xl w-full">
             <div className="max-w-3xl">
               <span className="inline-block px-3 py-1 rounded-full text-[11px] sm:text-xs font-semibold tracking-wide uppercase bg-slate-800 text-red-400 border border-slate-700 mb-3 sm:mb-4">
-                Statutory Notice Reply • Bar Council Verified Advocates
+                Statutory Notice Reply • Fact-Verified by Our Team
               </span>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-bold tracking-tight text-white mb-3">
                 Received a Dubious or Aggressive Legal Notice? Respond Legally &amp; Safely
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6">
-                Never ignore a formal notice or succumb to recovery agent threats. Have an experienced advocate review the allegations, verify the sender’s standing, and issue a hard-hitting, legally binding written reply on official advocate letterhead to protect your rights.
+                Never ignore a formal notice or succumb to recovery agent threats. Have an fact verification the allegations, verify the sender’s standing, and issue a hard-hitting, legally binding written reply on official advocate letterhead to protect your rights.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button

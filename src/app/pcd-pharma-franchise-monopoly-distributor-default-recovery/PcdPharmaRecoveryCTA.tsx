@@ -23,10 +23,10 @@ export default function PcdPharmaRecoveryCTA({ className = "" }: PcdPharmaRecove
               Track 1 &bull; Single PCD Franchisee Default Test
             </span>
             <p className="text-lg sm:text-xl font-extrabold text-white mb-2">
-              Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Advocate Drafted &middot; Email + WhatsApp + Speed Post RPAD)
+              Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Fact-Verified &middot; Email + WhatsApp + Speed Post RPAD)
             </p>
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-              Serve an advocate-vetted, high-impact 15-day statutory demand notice on a defaulting district franchisee. Revokes exclusive territory monopoly rights, itemizes unpaid formulation delivery challans and transport bilties, and establishes immediate Section 138 criminal cheque bounce jurisdiction at your home bank branch in Chandigarh, Panchkula, Ambala, or Ahmedabad.
+              Serve a fact-verified, high-impact 15-day statutory demand notice on a defaulting district franchisee. Revokes exclusive territory monopoly rights, itemizes unpaid formulation delivery challans and transport bilties, and establishes immediate Section 138 criminal cheque bounce jurisdiction at your home bank branch in Chandigarh, Panchkula, Ambala, or Ahmedabad.
             </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-3">

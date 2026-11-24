@@ -626,7 +626,7 @@ export default function PitchTheftRecoveryPage() {
 
               <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
                 When filing before a Commercial Court, securing this claim amount allows the agency to seek an ad-interim pre-judgment security order under{" "}
-                <strong>Order 38 Rule 5 of the Code of Civil Procedure</strong>, requiring the brand to deposit security in court or risk attachment of its marketing bank accounts. If your firm needs to serve a formal demand before initiating this suit, utilize our advocate-backed{" "}
+                <strong>Order 38 Rule 5 of the Code of Civil Procedure</strong>, requiring the brand to deposit security in court or risk attachment of its marketing bank accounts. If your firm needs to serve a formal demand before initiating this suit, utilize our fact-verified{" "}
                 <Link
                   href="/send-a-legal-notice/for-business-to-recover-their-unpaid-dues"
                   className="text-[#DC2626] hover:underline font-semibold"

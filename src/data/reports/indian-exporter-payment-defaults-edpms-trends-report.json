@@ -29,7 +29,7 @@
       "statutoryLever": "ICC URC 522 + Sale of Goods / Bill of Lading title retention + Customs/Port re-import or distress-resale mitigation.",
       "edpmsImpact": "Goods cleared or abandoned without remittance leave Shipping Bill unmatched in ICEGATE–EDPMS; triggers Drawback Rule 18 clawback.",
       "recommendedAction": "72-hour Advocate Notice holding buyer liable for accruing demurrage/detention + parallel CHA distress-resale / re-import clearance.",
-      "unitCost": "₹999 flat advocate demand notice before container abandonment crosses cargo value"
+      "unitCost": "₹999 flat fact-verified demand notice before container abandonment crosses cargo value"
     },
     {
       "id": "usance_da",
@@ -49,7 +49,7 @@
       "statutoryLever": "ICC UCP 600 Article 14(b) & Article 16(f) Strict Preclusion Rule (5-banking-day single-notice bar).",
       "edpmsImpact": "Delayed LC negotiation leaves export bill overdue in AD-Bank EDPMS despite compliant presentation.",
       "recommendedAction": "Formal UCP 600 Art. 16 Preclusion Notice to Issuing/Confirming Bank & ICC Banking Commission escalation.",
-      "unitCost": "₹999 advocate notice establishing formal preclusion & banking-ombudsman/ICC record"
+      "unitCost": "₹999 fact-verified notice establishing formal preclusion & banking-ombudsman/ICC record"
     },
     {
       "id": "bec_wire_fraud",
@@ -145,7 +145,7 @@
     ],
     "definitions": {
       "edpmsClosureRate": "Percentage of aged (>9 months) open Shipping Bills regularized via full realization, AD-Bank approved extension, or Para C.20/C.24 legal write-off.",
-      "preLitigationCostRatio": "Flat advocate demand notice fee (₹999 digital / ₹1,449 tri-channel) as a percentage of cross-border invoice value compared against foreign litigation retainers.",
+      "preLitigationCostRatio": "Flat fact-verified demand notice fee (₹999 digital / ₹1,449 tri-channel) as a percentage of cross-border invoice value compared against foreign litigation retainers.",
       "futileRecoveryDossier": "Combined Advocate Legal Demand Notice, BSA 2023 s.63 delivery logs, and Disproportionate Foreign Litigation Cost Opinion required by AD Category-I Banks."
     },
     "dataIntegrity": "Live post-May 2026 export cohort telemetry is currently in active ingestion. This report publishes verified RBI FEMA Master Direction timelines, ICC UCP 600 / ECGC / Customs Drawback statutory rules, flat-rate unit economics (₹999–₹1,449), and the open EPC benchmark schema without fabricating unverified percentages."

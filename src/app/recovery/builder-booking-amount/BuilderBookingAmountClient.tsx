@@ -505,10 +505,10 @@ export default function BuilderBookingAmountClient() {
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">Serving Legal Notice</h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      When informal follow-ups and escalation emails fail to yield results, serving a formal <strong>Legal Notice</strong> is the next logical step. A legal notice is a structured, advocate-signed communication sent to the developer, declaring the builder&apos;s default, demanding a full refund within a specific window (usually 15 days), and detailing the civil and criminal actions that will be initiated if they fail to comply.
+                      When informal follow-ups and escalation emails fail to yield results, serving a formal <strong>Legal Notice</strong> is the next logical step. A legal notice is a structured, fact-verified communication sent to the developer, declaring the builder&apos;s default, demanding a full refund within a specific window (usually 15 days), and detailing the civil and criminal actions that will be initiated if they fail to comply.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      At LegalRecovery, our legal panel drafts custom notices tailored to the facts of your case. We highlight the developer&apos;s violations under RERA, the Consumer Protection Act, and the Indian Contract Act. The notice is digitally dispatched via verified email and WhatsApp to the builder&apos;s corporate office. Crucially, we copy the notice to the personal residential addresses of the company&apos;s active directors. This personal delivery pierces the corporate veil, signaling to the management that they can be held personally liable for the company&apos;s defaults.
+                      At LegalRecovery, our team drafts custom notices tailored to the facts of your case. We highlight the developer&apos;s violations under RERA, the Consumer Protection Act, and the Indian Contract Act. The notice is digitally dispatched via verified email and WhatsApp to the builder&apos;s corporate office. Crucially, we copy the notice to the personal residential addresses of the company&apos;s active directors. This personal delivery pierces the corporate veil, signaling to the management that they can be held personally liable for the company&apos;s defaults.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
                       Serving a legal notice is highly effective. Approximately 85% of real estate developers prefer to settle booking amount disputes at this stage to avoid public litigation, regulatory scrutiny, and the expense of hiring defense counsel. A professional legal notice on a law firm&apos;s letterhead demonstrates that you are serious and prepared to enforce your rights.
@@ -694,7 +694,7 @@ export default function BuilderBookingAmountClient() {
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">Success Stories</h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      Over the years, LegalRecovery has successfully resolved hundreds of complex booking amount and earnest money refund disputes across India. Our data-driven legal notice strategy and structured escalation flow have proven effective against developers of all sizes. Below are representative examples of recoveries handled by our legal panel:
+                      Over the years, LegalRecovery has successfully resolved hundreds of complex booking amount and earnest money refund disputes across India. Our data-driven legal notice strategy and structured escalation flow have proven effective against developers of all sizes. Below are representative examples of recoveries handled by our team:
                     </p>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">
                       <div className="bg-slate-50 p-6 rounded-2xl border border-slate-100">
@@ -763,10 +763,10 @@ export default function BuilderBookingAmountClient() {
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">Why Choose Us?</h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      LegalRecovery is India&apos;s leading tech-enabled legal recovery platform. We combine the expertise of senior real estate and property lawyers with state-of-the-art workflow automation to deliver unmatched resolution rates. Here is what sets us apart:
+                      LegalRecovery is India&apos;s leading tech-enabled legal recovery platform. We combine our team's fact verification with state-of-the-art workflow automation to deliver unmatched resolution rates. Here is what sets us apart:
                     </p>
                     <ul className="list-disc pl-6 space-y-3 text-sm text-slate-650">
-                      <li><strong>Expert Real Estate Counsel:</strong> Your legal notice is drafted by experienced property advocates who understand RERA and Consumer Protection Act nuances.</li>
+                      <li><strong>Fact-Verified Notices:</strong> Our team verifies the facts you submit, and your legal notice is prepared with RERA and Consumer Protection Act citations.</li>
                       <li><strong>Director & Partner Escalation:</strong> We do not just email customer service. We send notices digitally to the company&apos;s corporate office and the personal email addresses of active directors, maximizing pressure.</li>
                       <li><strong>Real-Time Tracking Dashboard:</strong> Monitor notice drafting and digital delivery status in real-time through your secure online client panel.</li>
                       <li><strong>Flat, Transparent Pricing:</strong> We believe in clear, flat-fee pricing. You pay one upfront cost for the entire notice pipeline, with no hidden fees or billable hours.</li>

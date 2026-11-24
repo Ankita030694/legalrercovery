@@ -31,7 +31,7 @@ export default function UpiLoanNoticeCTA({
                 Recover Money Lent on UPI or Bank Transfer Without a Formal Agreement
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6">
-                Have an advocate draft and serve an official 15-day statutory legal notice to the borrower. We assemble your UPI transaction UTRs, WhatsApp acknowledgments, and bank statements under Section 63 of Bharatiya Sakshya Adhiniyam, 2023, leaving no room for false gift defenses. Served by email and WhatsApp. Speed Post is optional at ₹450 per party.
+                Serve an official 15-day statutory legal notice to the borrower. We assemble your UPI transaction UTRs, WhatsApp acknowledgments, and bank statements under Section 63 of Bharatiya Sakshya Adhiniyam, 2023, leaving no room for false gift defenses. Served by email and WhatsApp. Speed Post is optional at ₹450 per party.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button
@@ -42,7 +42,7 @@ export default function UpiLoanNoticeCTA({
                   {buttonText} — ₹{basePrice}
                 </button>
                 <div className="text-xs text-slate-300 flex flex-wrap sm:flex-nowrap items-center gap-2 sm:gap-3">
-                  <span>✓ 24h Advocate Drafting</span>
+                  <span>✓ 24h Notice Drafting</span>
                   <span>•</span>
                   <span>✓ Email + WhatsApp</span>
                   <span>•</span>

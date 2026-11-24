@@ -750,7 +750,7 @@ export default function Section43bhStrategyPage() {
                       Stage 4: Multi-Recipient Service (CFO, Audit Committee &amp; Statutory Auditor)
                     </p>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Serve the advocate-vetted demand notice simultaneously to four key institutional recipients: (1) The Managing Director, (2) The Chief Financial Officer, (3) The Chairman of the Audit Committee, and (4) The Statutory Audit Partner (identified via MCA Ministry of Corporate Affairs portal filings).
+                      Serve the fact-verified demand notice simultaneously to four key institutional recipients: (1) The Managing Director, (2) The Chief Financial Officer, (3) The Chairman of the Audit Committee, and (4) The Statutory Audit Partner (identified via MCA Ministry of Corporate Affairs portal filings).
                     </p>
                   </div>
                 </div>
@@ -781,7 +781,7 @@ export default function Section43bhStrategyPage() {
                   07
                 </span>
                 <span className="text-[11px] font-bold uppercase tracking-wider text-red-600">
-                  Advocate-Vetted Notice Clause
+                  Ready-to-Use Notice Clause
                 </span>
               </div>
               <h2 className="text-xl sm:text-2xl font-black tracking-tight text-slate-900 mb-4">

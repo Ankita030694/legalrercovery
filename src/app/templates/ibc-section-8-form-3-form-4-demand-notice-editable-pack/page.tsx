@@ -146,7 +146,7 @@ const CREATIVE_WORK_SCHEMA = {
   "@type": "CreativeWork",
   name: "IBC Section 8 Form 3, Form 4, Default-Computation Sheet & Board Resolution Editable Word Pack",
   description:
-    "Advocate-vetted Rule 5(1)(a)/(b) statutory demand notice templates, tabular computation of default annexure, and Section 179 Board Resolution for ₹1 Crore+ operational creditors.",
+    "Fact-verified Rule 5(1)(a)/(b) statutory demand notice templates, tabular computation of default annexure, and Section 179 Board Resolution for ₹1 Crore+ operational creditors.",
   url: PAGE_URL,
   inLanguage: "en-IN",
   isAccessibleForFree: true,

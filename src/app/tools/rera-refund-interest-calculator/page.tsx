@@ -752,7 +752,7 @@ export default function ReraRefundInterestCalculatorPage() {
                     </p>
                     <div className="p-3.5 sm:p-4 bg-emerald-950/70 border border-emerald-700/60 rounded-xl text-emerald-200">
                       <strong className="block text-emerald-400 font-bold mb-1">The Resolution:</strong>
-                      Armed with the itemised CSV ledger showing a total statutory liability of <strong>₹64,28,475</strong> (₹45,00,000 principal + ₹19,28,475 simple interest), Siddharth served a formal 15-day Section 18 advocate demand notice on the developer&apos;s directors. Facing a 100% pre-deposit barrier under Section 43(5) if a RERA decree was passed, the promoter executed a consent settlement refunding ₹45,00,000 principal plus ₹17,80,000 interest in two RTGS tranches within 35 days.
+                      Armed with the itemised CSV ledger showing a total statutory liability of <strong>₹64,28,475</strong> (₹45,00,000 principal + ₹19,28,475 simple interest), Siddharth served a formal 15-day Section 18 fact-verified demand notice on the developer&apos;s directors. Facing a 100% pre-deposit barrier under Section 43(5) if a RERA decree was passed, the promoter executed a consent settlement refunding ₹45,00,000 principal plus ₹17,80,000 interest in two RTGS tranches within 35 days.
                     </div>
                   </div>
                 </div>

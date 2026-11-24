@@ -50,7 +50,7 @@ export default function GarmentSorNoticeCTA({
                 </Link>
               </div>
               <div className="mt-4 text-xs text-slate-400 flex flex-wrap items-center gap-2 sm:gap-3">
-                <span>&check; Advocate Drafted</span>
+                <span>&check; Fact-Verified</span>
                 <span>&bull;</span>
                 <span>&check; AQL Estoppel Integrated</span>
                 <span>&bull;</span>

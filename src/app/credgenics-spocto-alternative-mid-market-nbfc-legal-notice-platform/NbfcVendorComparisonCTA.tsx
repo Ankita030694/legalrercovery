@@ -30,7 +30,7 @@ export default function NbfcVendorComparisonCTA({
               </h3>
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
                 Skip 12-week enterprise SaaS sales cycles. Submit 1 overdue NBFC or fintech loan
-                today—Advocate-drafted by AMA Legal Solutions and dispatched via Email + WATI
+                today—Fact-verified by AMA Legal Solutions and dispatched via Email + WATI
                 WhatsApp + Speed Post RPAD with BSA s.63 proof.
               </p>
             </div>
@@ -61,7 +61,7 @@ export default function NbfcVendorComparisonCTA({
                 Have 10 to 10,000+ Defaulters? Upload CSV
               </h3>
               <p className="text-xs sm:text-sm text-slate-600 leading-relaxed mb-5">
-                Activate a zero-lock-in NBFC Legal Desk with bundled Advocate Notice drafting,
+                Activate a zero-lock-in NBFC Legal Desk with bundled Fact-Verified Notice drafting,
                 tri-channel batch dispatch, Reply Triage, and pre-litigation ODR escalation—pay per
                 notice or flexible retainer.
               </p>

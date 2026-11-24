@@ -37,7 +37,7 @@ const PROBLEMS: ProblemTab[] = [
           "Preserve emails, e-sign acknowledgments, or NetBanking balance verifications with certificates under Section 63 of Bharatiya Sakshya Adhiniyam, 2023 to establish continuous acknowledgment chains.",
       },
       {
-        step: "Issue Advocate Demand Notice Asserting Fresh Limitation Run",
+        step: "Issue Fact-Verified Demand Notice Asserting Fresh Limitation Run",
         description:
           "Serve a formal statutory legal notice explicitly detailing the chain of acknowledgments under Section 18, putting the borrower on notice that limitation stands renewed for 3 years from the latest signature.",
       },

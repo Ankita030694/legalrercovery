@@ -24,10 +24,10 @@ export default function EvDealerCTA({ className = "" }: EvDealerCTAProps) {
                 Track 1 · Single Dealer / Showroom Default
               </span>
               <h3 className="text-lg sm:text-xl font-bold text-white mb-2">
-                Test 1 Live Overdue Case Now (&#8377;{basePrice} &middot; Advocate Drafted &middot; Email + WhatsApp + Speed Post RPAD)
+                Test 1 Live Overdue Case Now (&#8377;{basePrice} &middot; Fact-Verified &middot; Email + WhatsApp + Speed Post RPAD)
               </h3>
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-                Upload your Dealership Agreement, unpaid VIN/chassis billing ledger, Form 21 hold status, and security cheque/e-NACH details. Our advocates dispatch a Sale of Goods s.25 + NI Act s.138 / BNS s.316 Notice immediately.
+                Upload your Dealership Agreement, unpaid VIN/chassis billing ledger, Form 21 hold status, and security cheque/e-NACH details. Our team dispatches a Sale of Goods s.25 + NI Act s.138 / BNS s.316 Notice immediately.
               </p>
             </div>
 

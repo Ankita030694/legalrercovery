@@ -177,7 +177,7 @@ const jsonLd = {
             "@type": "Person",
             "name": "Rohan Gupta"
           },
-          "reviewBody": "Sent a legal notice for an online shopping dispute regarding a fake product. I got my full refund within 12 days. The lawyer drafted a very strong notice."
+          "reviewBody": "Sent a legal notice for an online shopping dispute regarding a fake product. I got my full refund within 12 days. The team verified the facts and prepared a very strong notice."
         }
       ]
     }
@@ -574,7 +574,7 @@ export default function OnlineShoppingDisputeClient() {
                 <div className="absolute top-0 right-0 w-24 h-24 bg-red-600/10 rounded-full blur-xl pointer-events-none" />
                 <h3 className="text-sm font-black mb-3">Send Legal Notice</h3>
                 <p className="text-gray-400 mb-5 text-[11px] leading-relaxed">
-                  We match you with a panel advocate, handle the custom drafting, physically post the notice, and track its delivery in real-time.
+                  Our team verifies the facts you submit, prepares the notice, sends it (Speed Post optional), and tracks its delivery in real-time.
                 </p>
                 <button
                   onClick={() => setIsPaymentModalOpen(true)}
@@ -600,7 +600,7 @@ export default function OnlineShoppingDisputeClient() {
                     <span className="text-xs font-bold text-slate-800">Rohan Gupta</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed italic">
-                    "Sent a legal notice for an online shopping dispute regarding a fake product. I got my full refund within 12 days. The lawyer drafted a very strong notice."
+                    "Sent a legal notice for an online shopping dispute regarding a fake product. I got my full refund within 12 days. The team verified the facts and prepared a very strong notice."
                   </p>
                 </div>
               </div>
@@ -638,7 +638,7 @@ export default function OnlineShoppingDisputeClient() {
                 <img src="/lrlogo.svg" alt="LegalRecovery" width={3236} height={601} className="h-8 sm:h-10 w-auto object-contain" />
               </div>
               <p className="text-sm md:text-base text-slate-600 leading-relaxed mb-10 max-w-3xl font-medium">
-                Legal Recovery is India's trusted consumer protection and legal tech platform. Founded in 2022 and headquartered in New Delhi, Legal Recovery has counselled 15,000+ people on consumer disputes, defective products, and e-commerce frauds. Legal Recovery focuses on fast out-of-court settlements and connects you with top panel advocates.
+                Legal Recovery is India's trusted consumer protection and legal tech platform. Founded in 2022 and headquartered in New Delhi, Legal Recovery has counselled 15,000+ people on consumer disputes, defective products, and e-commerce frauds. Legal Recovery focuses on fast out-of-court settlements through fact-verified legal notices.
               </p>
 
               <div className="border-t border-slate-100 pt-10">

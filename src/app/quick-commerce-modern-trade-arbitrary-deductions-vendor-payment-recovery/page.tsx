@@ -180,7 +180,7 @@ const FAQS = [
   {
     question: "How does LegalRecovery.in handle vendor recovery disputes across dozens of dark stores?",
     answer:
-      "LegalRecovery.in operates a dual-track recovery infrastructure: (1) Self-serve single-case testing (₹999) for immediate resolution of an egregious single invoice or dark-store dispute; and (2) An Enterprise CSV Batch Desk for D2C brands, FMCG manufacturers, and C&F networks managing recurring deductions across hundreds of dark stores. Our platform reconciles portal debit notes against transporter PODs, verifies Section 63 BSA compliance, and issues advocate legal notices via simultaneous Email, WhatsApp Business API, and Speed Post RPAD with pan-India tracking.",
+      "LegalRecovery.in operates a dual-track recovery infrastructure: (1) Self-serve single-case testing (₹999) for immediate resolution of an egregious single invoice or dark-store dispute; and (2) An Enterprise CSV Batch Desk for D2C brands, FMCG manufacturers, and C&F networks managing recurring deductions across hundreds of dark stores. Our platform reconciles portal debit notes against transporter PODs, verifies Section 63 BSA compliance, and issues fact-verified legal notices via simultaneous Email, WhatsApp Business API, and Speed Post RPAD with pan-India tracking.",
   },
   {
     question: "What is the legal difference between an MSEFC recovery petition and a Commercial Court summary suit?",
@@ -290,8 +290,8 @@ const HOWTO_SCHEMA = {
     },
     {
       "@type": "HowToStep",
-      name: "Issue Section 43B(h) Audit & Advocate Demand Notice",
-      text: "Serve an Advocate Legal Notice citing MSMED Act Section 15 45-day payment covenants and Income Tax Act Section 43B(h) corporate tax disallowance on overdue vendor balances.",
+      name: "Issue Section 43B(h) Audit & Fact-Verified Demand Notice",
+      text: "Serve a Fact-Verified Legal Notice citing MSMED Act Section 15 45-day payment covenants and Income Tax Act Section 43B(h) corporate tax disallowance on overdue vendor balances.",
       url: `${CANONICAL_URL}#heading-recovery-sop`,
     },
     {
@@ -854,7 +854,7 @@ export default function QuickCommerceDeductionsRecoveryPage() {
                 </div>
 
                 <div className="pt-2 text-xs text-slate-300 border-t border-slate-800 leading-relaxed">
-                  <strong>The Resolution Outcome:</strong> Following service of a formal Advocate Legal Notice demanding reversal under MSMED Section 2(b) and warning the buyer of Section 43B(h) tax disallowance on their upcoming corporate return, the platform&rsquo;s legal counsel reversed the ₹14.80 Lakh debit notes in full and settled the statutory interest without litigation. Calculate your exact statutory claim with our{" "}
+                  <strong>The Resolution Outcome:</strong> Following service of a formal Fact-Verified Legal Notice demanding reversal under MSMED Section 2(b) and warning the buyer of Section 43B(h) tax disallowance on their upcoming corporate return, the platform&rsquo;s legal counsel reversed the ₹14.80 Lakh debit notes in full and settled the statutory interest without litigation. Calculate your exact statutory claim with our{" "}
                   <Link
                     href="/tools/msme-delayed-payment-interest-calculator"
                     className="text-emerald-400 underline font-bold hover:text-emerald-300"
@@ -907,7 +907,7 @@ export default function QuickCommerceDeductionsRecoveryPage() {
                     <li>&bull; <strong>Portal ASN Confirmation:</strong> Timestamped screenshot of Advanced Shipping Notice approval and scheduled bay window.</li>
                     <li>&bull; <strong>Vendor Portal Support Tickets:</strong> Complete correspondence thread demonstrating vendor immediate contestation of debit notes.</li>
                     <li>&bull; <strong>Truck GPS &amp; Waiting Logs:</strong> Vehicle telematics data refuting buyer claims of vendor delayed delivery.</li>
-                    <li>&bull; <strong>BSA Section 63 Certificate:</strong> Advocate-certified affidavit validating that digital exports were produced from computers in lawful operational custody.</li>
+                    <li>&bull; <strong>BSA Section 63 Certificate:</strong> Fact-verified affidavit validating that digital exports were produced from computers in lawful operational custody.</li>
                   </ul>
                 </div>
               </div>
@@ -1001,7 +1001,7 @@ export default function QuickCommerceDeductionsRecoveryPage() {
 
                 <div className="border border-slate-200 rounded-xl p-4 bg-slate-50">
                   <h3 className="text-sm font-bold text-slate-900 mb-1">
-                    Step 3: Issue Advocate Demand Notice via Tri-Channel Dispatch
+                    Step 3: Issue Fact-Verified Demand Notice via Tri-Channel Dispatch
                   </h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
                     Instruct an advocate to serve a statutory 15-day Demand Notice dispatched simultaneously via official Email, WhatsApp Business API, and Speed Post RPAD with tracking. Address the notice to the Company Secretary, CFO, and Key Account Directors. Use our{" "}

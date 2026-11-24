@@ -159,12 +159,12 @@ const FAQS = [
   {
     question: "How long does it take to get money back after serving a legal notice to an exchange?",
     answer:
-      "A statutory advocate legal notice provides a mandatory 15-day cure window. In cases involving arbitrary KYC locks or payment gateway settlement drops, compliance teams frequently resolve the discrepancy and credit funds within 7 to 14 business days of receiving the notice. In complex P2P cyber lien cases, submitting a formal advocate representation to the cyber cell alongside the notice typically takes 3 to 6 weeks to achieve lien isolation and partial defreezing.",
+      "A statutory legal notice provides a mandatory 15-day cure window. In cases involving arbitrary KYC locks or payment gateway settlement drops, compliance teams frequently resolve the discrepancy and credit funds within 7 to 14 business days of receiving the notice. In complex P2P cyber lien cases, submitting a formal advocate representation to the cyber cell alongside the notice typically takes 3 to 6 weeks to achieve lien isolation and partial defreezing.",
   },
   {
     question: "Crypto exchange se paise ya crypto withdrawal fas gaya hai toh kya karein (Hinglish)?",
     answer:
-      "Agar kisi Indian crypto exchange (jaise CoinDCX, WazirX, CoinSwitch) par aapka INR ya crypto withdrawal pending ya freeze hai, toh turant support ticket ka screenshot, P2P order slip aur bank statement download karein. Agar freeze police complaint ya P2P cyber lien ki wajah se hai, toh exchange se Section 106 BNSS notice maangein. Uske baad LegalRecovery ke zariye exchange ke Nodal Officer aur Cyber Cell ko 15-day statutory advocate legal notice bhejein taaki sirf disputed amount par lien lage aur baaki paisa turant unfreeze ho sake.",
+      "Agar kisi Indian crypto exchange (jaise CoinDCX, WazirX, CoinSwitch) par aapka INR ya crypto withdrawal pending ya freeze hai, toh turant support ticket ka screenshot, P2P order slip aur bank statement download karein. Agar freeze police complaint ya P2P cyber lien ki wajah se hai, toh exchange se Section 106 BNSS notice maangein. Uske baad LegalRecovery ke zariye exchange ke Nodal Officer aur Cyber Cell ko 15-day statutory legal notice bhejein taaki sirf disputed amount par lien lage aur baaki paisa turant unfreeze ho sake.",
   },
 ];
 
@@ -465,7 +465,7 @@ export default function CryptoExchangeWithdrawalStuckPage() {
                     </text>
                     <text x="280" y="330" fill="#94A3B8" fontSize="10">1. Re-verify KYC &amp; log ticket</text>
                     <text x="280" y="350" fill="#94A3B8" fontSize="10">2. Grievance Officer escalation</text>
-                    <text x="280" y="370" fill="#94A3B8" fontSize="10">3. 15-Day Advocate Notice</text>
+                    <text x="280" y="370" fill="#94A3B8" fontSize="10">3. 15-Day Legal Notice</text>
                     <text x="280" y="390" fill="#F59E0B" fontSize="10" fontWeight="bold">4. e-Jagriti consumer suit</text>
 
                     {/* Action 3 */}
@@ -538,7 +538,7 @@ export default function CryptoExchangeWithdrawalStuckPage() {
                     The Legal Remedy: Partial Lien Earmarking vs. Blanket Account Paralyzation
                   </h4>
                   <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
-                    Under landmark directives from the Bombay High Court (<em>Dr. S. Radhakrishnan v. State of Maharashtra</em>) and Delhi High Court, police cannot paralyze an innocent person&apos;s entire account when the disputed transaction represents only a fraction of the funds. By serving a formal legal representation with full P2P order receipts and chat records, an advocate compels the Cyber Cell and the exchange to restrict the lien strictly to the disputed amount, releasing the rest of your portfolio.
+                    Under landmark directives from the Bombay High Court (<em>Dr. S. Radhakrishnan v. State of Maharashtra</em>) and Delhi High Court, police cannot paralyze an innocent person&apos;s entire account when the disputed transaction represents only a fraction of the funds. By serving a formal legal representation with full P2P order receipts and chat records, a formal representation compels the Cyber Cell and the exchange to restrict the lien strictly to the disputed amount, releasing the rest of your portfolio.
                   </p>
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs pt-2">
@@ -572,7 +572,7 @@ export default function CryptoExchangeWithdrawalStuckPage() {
                   Under the <strong>Consumer Protection Act, 2019</strong>, an exchange provides digital intermediary services for valuable consideration (maker/taker trading fees and withdrawal charges). Unilaterally blocking a customer from accessing their own liquid assets constitutes a severe <strong>deficiency in service under Section 2(11)</strong> and an <strong>unfair trade practice under Section 2(47)</strong>.
                 </p>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
-                  Under Rule 3(2) of the Consumer Protection (E-Commerce) Rules, 2020, every digital platform must acknowledge grievances within 48 hours and provide a redressed determination within one month. Serving a formal 15-day statutory legal notice from an advocate pierces the support bot loop, placing the grievance directly before the exchange&apos;s Legal and Compliance Officers.
+                  Under Rule 3(2) of the Consumer Protection (E-Commerce) Rules, 2020, every digital platform must acknowledge grievances within 48 hours and provide a redressed determination within one month. Serving a formal 15-day statutory legal notice pierces the support bot loop, placing the grievance directly before the exchange&apos;s Legal and Compliance Officers.
                 </p>
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs pt-2">
                   <div className="bg-white border border-slate-200 p-3.5 rounded-xl">
@@ -621,7 +621,7 @@ export default function CryptoExchangeWithdrawalStuckPage() {
                   In catastrophic events where an exchange suffers an exploit or wallet compromise (such as the July 2024 WazirX cyberattack where $230M+ in ERC-20 tokens were drained), the management often suspends all INR and crypto withdrawals. Subsequently, the platform may seek a moratorium under foreign insolvency laws (such as Section 210 of the Singapore Companies Act) to force retail users into accepting fractional payouts (&quot;haircuts&quot;).
                 </p>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
-                  Indian legal remedies offer significant leverage in these scenarios:
+                  India legal remedies offer significant leverage in these scenarios:
                 </p>
                 <ul className="list-disc pl-5 space-y-2 text-sm text-slate-700 leading-relaxed">
                   <li>
@@ -857,7 +857,7 @@ export default function CryptoExchangeWithdrawalStuckPage() {
                         <strong>Evidence Dossier:</strong> Rohan compiled the exchange P2P order slip, blockchain transaction hash, verified KYC identity, buyer chat transcripts, and HDFC bank statement certified under BSA Section 63.
                       </li>
                       <li>
-                        <strong>Advocate Representation to IO:</strong> An advocate issued a comprehensive legal representation to the Hyderabad Cyber Crime Station House Officer demonstrating that Rohan was a bona fide seller for valuable consideration with zero mens rea or criminal nexus.
+                        <strong>Advocate Representation to IO:</strong> A comprehensive legal representation was submitted to the Hyderabad Cyber Crime Station House Officer demonstrating that Rohan was a bona fide seller for valuable consideration with zero mens rea or criminal nexus.
                       </li>
                       <li>
                         <strong>Statutory Notice to Exchange:</strong> A concurrent 15-day legal notice was served on the exchange&apos;s Legal Nodal Officer demanding the immediate restriction of the lien strictly to ₹32,500 under High Court guidelines, citing <em>Dr. S. Radhakrishnan v. State of Maharashtra</em>.
@@ -983,10 +983,10 @@ export default function CryptoExchangeWithdrawalStuckPage() {
                   <div className="bg-white border border-slate-200 p-5 rounded-2xl shadow-xs space-y-2">
                     <div className="flex items-center gap-2">
                       <span className="w-6 h-6 rounded-full bg-[#DC2626] text-white font-black text-xs flex items-center justify-center">2</span>
-                      <h3 className="text-sm font-extrabold text-slate-900">Step 2: Serve a 15-Day Statutory Advocate Legal Notice</h3>
+                      <h3 className="text-sm font-extrabold text-slate-900">Step 2: Serve a 15-Day Statutory Legal Notice</h3>
                     </div>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed pl-8">
-                      If the grievance officer fails to unfreeze the withdrawal, have an advocate draft and dispatch a formal statutory legal notice under Section 2(11) of the Consumer Protection Act, 2019 and the Contract Act. The notice is served via Registered Speed Post with tracking and digital email dispatch to the exchange&apos;s registered corporate headquarters.
+                      If the grievance officer fails to unfreeze the withdrawal, dispatch a formal statutory legal notice under Section 2(11) of the Consumer Protection Act, 2019 and the Contract Act. The notice is served via Registered Speed Post with tracking and digital email dispatch to the exchange&apos;s registered corporate headquarters.
                     </p>
                   </div>
 
@@ -1039,7 +1039,7 @@ export default function CryptoExchangeWithdrawalStuckPage() {
                       What We Can Do
                     </span>
                     <ul className="list-disc pl-5 space-y-1.5 text-xs text-slate-700 leading-relaxed">
-                      <li>Draft and serve formal 15-day statutory advocate legal notices to FIU-registered domestic and offshore crypto exchanges.</li>
+                      <li>Draft and serve formal 15-day statutory legal notices to FIU-registered domestic and offshore crypto exchanges.</li>
                       <li>Draft and file formal legal representations to interstate Cyber Crime Police Stations for P2P lien earmarking and partial wallet release.</li>
                       <li>Draft and file consumer court complaints on the national e-Jagriti portal claiming full fund release plus statutory interest and damages.</li>
                       <li>Bypass unilateral foreign arbitration clauses under Section 100 of the Consumer Protection Act, 2019.</li>

@@ -24,10 +24,10 @@ export default function PcsIpFeeCTA({ className = "" }: PcsIpFeeCTAProps) {
                 Track 1 &middot; Single Unpaid Filing / CIRP / Valuation Claim
               </span>
               <h3 className="text-lg sm:text-xl font-bold text-white mb-2">
-                Test 1 Live Overdue Case Now (&#8377;{basePrice} &middot; Advocate Drafted &middot; Email + WhatsApp + Speed Post RPAD)
+                Test 1 Live Overdue Case Now (&#8377;{basePrice} &middot; Fact-Verified &middot; Email + WhatsApp + Speed Post RPAD)
               </h3>
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-                Upload your MCA V3 SRN payment challans, ICSI UDIN / Form MR-3 filings, IBBI Valuation engagement letter, or CoC-ratified CIRP cost minutes. External litigation counsel drafts an ICSI- &amp; IBBI-compliant demand notice under Contract Act s.69/222, Order XXXVII CPC, or IBC s.5(13)/60(5)—protecting your COP and IBBI registration.
+                Enter the details of your MCA V3 SRN payment challans, ICSI UDIN / Form MR-3 filings, IBBI Valuation engagement letter, or CoC-ratified CIRP cost minutes. Our team verifies the facts and prepares an ICSI- &amp; IBBI-compliant demand notice under Contract Act s.69/222, Order XXXVII CPC, or IBC s.5(13)/60(5)—protecting your COP and IBBI registration.
               </p>
             </div>
 
@@ -58,7 +58,7 @@ export default function PcsIpFeeCTA({ className = "" }: PcsIpFeeCTAProps) {
                 Have 10 to 10,000+ Defaulters? Upload CSV / Activate Dedicated Institutional Desk
               </h3>
               <p className="text-xs sm:text-sm text-slate-600 leading-relaxed mb-5">
-                Recover aged annual ROC retainerships, unreimbursed MCA/stamp duty advances, multi-entity valuation invoices, or Insolvency Professional Entity (IPE) receivable portfolios in one structured batch—with representee-level tracking and advocate-signed dispatch logs.
+                Recover aged annual ROC retainerships, unreimbursed MCA/stamp duty advances, multi-entity valuation invoices, or Insolvency Professional Entity (IPE) receivable portfolios in one structured batch—with representee-level tracking and fact-verified dispatch logs.
               </p>
             </div>
 

@@ -389,7 +389,7 @@ export default function MyntraDisputePage() {
                       Legal Notice Price
                     </th>
                     <td className="py-3 px-4">
-                      ₹{BASE_PRICE} flat fee (Advocate drafted, Section 63 BSA email + WhatsApp; Speed Post optional at ₹450)
+                      ₹{BASE_PRICE} flat fee (Fact-verified, Section 63 BSA email + WhatsApp; Speed Post optional at ₹450)
                     </td>
                     <td className="py-3 px-4 text-xs font-semibold text-slate-900">
                       24-hour drafting &amp; dispatch by bar-enrolled advocate
@@ -617,7 +617,7 @@ export default function MyntraDisputePage() {
                 <div>
                   <span className="text-xs font-bold uppercase tracking-wider text-red-600">Day 15 – Day 20</span>
                   <h3 className="text-lg font-bold text-slate-900 mt-0.5 mb-1.5">
-                    Serve an Advocate Legal Notice to Myntra Designs Pvt Ltd
+                    Serve a Fact-Verified Legal Notice to Myntra Designs Pvt Ltd
                   </h3>
                   <p className="text-sm text-slate-600 leading-relaxed mb-3">
                     If the refund remains unpaid after 15 days, engage an advocate to draft and dispatch a formal statutory legal demand notice. The notice is addressed to Myntra Designs Private Limited at its registered office in Embassy Tech Village, Bengaluru, and served via Registered Speed Post with postal tracking plus digital transmission under Section 63 of Bharatiya Sakshya Adhiniyam, 2023.
@@ -885,7 +885,7 @@ export default function MyntraDisputePage() {
                   <strong>The Legal Intervention:</strong> On 26 January, Ananya engaged an advocate to serve a formal pre-litigation demand notice to Myntra Designs Private Limited in Bengaluru and the registered seller. The notice attached the bank&apos;s signed non-trace docket, cited Rule 4(5) of the Consumer Protection (E-Commerce) Rules, 2020, and demanded the refund within 15 days, with a notice of intention to file before the Kolkata District Consumer Commission under Section 35.
                 </p>
                 <p>
-                  <strong>The Outcome:</strong> Upon receipt of the advocate notice by Myntra&apos;s legal and compliance wing, senior operations intervened and discovered that their payment gateway had logged a failed webhook reconciliation, causing the funds to sit in an unmapped gateway pool. Within 8 days of receiving the legal notice, Myntra re-initiated the credit, successfully transferring ₹8,499 plus a ₹1,000 goodwill voucher into Ananya&apos;s account without litigation.
+                  <strong>The Outcome:</strong> Upon receipt of the fact-verified notice by Myntra&apos;s legal and compliance wing, senior operations intervened and discovered that their payment gateway had logged a failed webhook reconciliation, causing the funds to sit in an unmapped gateway pool. Within 8 days of receiving the legal notice, Myntra re-initiated the credit, successfully transferring ₹8,499 plus a ₹1,000 goodwill voucher into Ananya&apos;s account without litigation.
                 </p>
               </div>
             </div>

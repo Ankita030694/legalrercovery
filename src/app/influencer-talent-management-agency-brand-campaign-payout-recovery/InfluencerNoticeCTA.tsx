@@ -65,7 +65,7 @@ export default function InfluencerNoticeCTA({
             <svg className="w-3.5 h-3.5 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
             </svg>
-            <span>Advocate-Drafted under Copyright & MSMED Acts</span>
+            <span>Fact-Verified under Copyright & MSMED Acts</span>
           </div>
           <div className="flex items-center gap-1.5">
             <svg className="w-3.5 h-3.5 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">

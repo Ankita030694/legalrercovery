@@ -12,7 +12,7 @@ const faqs = [
   {
     question: 'Can a commercial property buyer legally recover token or earnest money if the seller or developer backs out?',
     answer:
-      'Commercial property buyers can recover the full token or advance amount alongside statutory interest under Section 70, Section 73, and Section 74 of the Indian Contract Act, 1872. If a builder, landlord, or seller fails to execute the registered agreement for sale, deliver clear title documents, or obtain statutory sanctions, unilateral forfeiture of earnest money is unlawful under the landmark Supreme Court ruling in Kailash Nath Associates v. DDA. Issuing an advocate-drafted statutory legal notice creates an evidentiary demand, mandates refund within a 15-day peremptory window, and paves the way for summary recovery suits under Order 37 of the CPC or commercial litigation under the Commercial Courts Act, 2015.',
+      'Commercial property buyers can recover the full token or advance amount alongside statutory interest under Section 70, Section 73, and Section 74 of the Indian Contract Act, 1872. If a builder, landlord, or seller fails to execute the registered agreement for sale, deliver clear title documents, or obtain statutory sanctions, unilateral forfeiture of earnest money is unlawful under the landmark Supreme Court ruling in Kailash Nath Associates v. DDA. Issuing a fact-verified statutory legal notice creates an evidentiary demand, mandates refund within a 15-day peremptory window, and paves the way for summary recovery suits under Order 37 of the CPC or commercial litigation under the Commercial Courts Act, 2015.',
   },
   {
     question: 'Does RERA apply to commercial real estate projects, retail shops, and office spaces in India?',
@@ -32,12 +32,12 @@ const faqs = [
   {
     question: 'What is the statutory limitation period for filing a legal recovery notice for stuck property funds?',
     answer:
-      'Under Article 47 and Article 55 of the Schedule to the Limitation Act, 1963, the statutory limitation period to initiate legal recovery proceedings for unpaid advances, refund of earnest money, or breach of contract is exactly three years from the date the consideration failed or the agreed execution date expired. Serving a formal advocate legal notice within this three-year period establishes a concrete date of demand and preserves critical pre-litigation proof. Any subsequent written acknowledgment of the debt by the seller over email, letter, or WhatsApp resets the limitation period under Section 18 of the Limitation Act.',
+      'Under Article 47 and Article 55 of the Schedule to the Limitation Act, 1963, the statutory limitation period to initiate legal recovery proceedings for unpaid advances, refund of earnest money, or breach of contract is exactly three years from the date the consideration failed or the agreed execution date expired. Serving a formal legal notice within this three-year period establishes a concrete date of demand and preserves critical pre-litigation proof. Any subsequent written acknowledgment of the debt by the seller over email, letter, or WhatsApp resets the limitation period under Section 18 of the Limitation Act.',
   },
   {
     question: 'Can criminal proceedings for cheating or criminal breach of trust be filed against fraudulent real estate developers?',
     answer:
-      'When a developer dishonestly induces a commercial buyer to deposit funds for unauthorized layouts, sells mortgaged property without disclosure, or diverts escrow funds, the aggrieved buyer can initiate criminal proceedings alongside civil recovery. Criminal complaints can be registered under Section 316 of the Bharatiya Nyaya Sanhita, 2023 (BNS) for criminal breach of trust and Section 318 of the BNS for cheating and dishonest inducement. Citing these statutory penal provisions in an advocate-drafted legal notice holds company directors and partners personally liable, creating intense legal leverage that often results in swift out-of-court settlements.',
+      'When a developer dishonestly induces a commercial buyer to deposit funds for unauthorized layouts, sells mortgaged property without disclosure, or diverts escrow funds, the aggrieved buyer can initiate criminal proceedings alongside civil recovery. Criminal complaints can be registered under Section 316 of the Bharatiya Nyaya Sanhita, 2023 (BNS) for criminal breach of trust and Section 318 of the BNS for cheating and dishonest inducement. Citing these statutory penal provisions in a fact-verified legal notice holds company directors and partners personally liable, creating intense legal leverage that often results in swift out-of-court settlements.',
   },
 ];
 
@@ -48,7 +48,7 @@ const ogImage =
   'https://legalrecovery.in/images/og/property-dispute-money-stuck.jpg';
 
 const reviewBodyText =
-  'I booked a 1,850 sq. ft. commercial office suite in an upcoming IT tower and deposited ₹38,50,000 as token booking advance. When the developer failed to furnish municipal layout approvals and fire safety NOCs within the committed 6-month timeline, I requested an immediate cancellation and full refund. The developer abruptly refused, citing a one-sided "non-refundable earnest money" clause in their draft MOU. Legal Recovery assigned a senior property advocate who drafted and served a formidable statutory legal demand notice under Sections 73 and 74 of the Indian Contract Act, Section 18 of RERA, and the Commercial Courts Act, citing the landmark Supreme Court ruling in Kailash Nath Associates v. DDA. Faced with the threat of RERA escalation and freezing of commercial project bank accounts, the developer agreed to a full settlement and disbursed the entire ₹38,50,000 plus 12% p.a. interest within 14 days of notice service. Truly outstanding and professional legal service!';
+  'I booked a 1,850 sq. ft. commercial office suite in an upcoming IT tower and deposited ₹38,50,000 as token booking advance. When the developer failed to furnish municipal layout approvals and fire safety NOCs within the committed 6-month timeline, I requested an immediate cancellation and full refund. The developer abruptly refused, citing a one-sided "non-refundable earnest money" clause in their draft MOU. Legal Recovery verified the facts and served a formidable statutory legal demand notice under Sections 73 and 74 of the Indian Contract Act, Section 18 of RERA, and the Commercial Courts Act, citing the landmark Supreme Court ruling in Kailash Nath Associates v. DDA. Faced with the threat of RERA escalation and freezing of commercial project bank accounts, the developer agreed to a full settlement and disbursed the entire ₹38,50,000 plus 12% p.a. interest within 14 days of notice service. Truly outstanding and professional legal service!';
 
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -163,7 +163,7 @@ const jsonLd = {
         {
           '@type': 'ListItem',
           position: 3,
-          name: 'Draft Comprehensive Advocate Statutory Legal Notice: Incorporate Section 73/74 Contract Act, Section 18 RERA, Commercial Courts Act, and penal provisions under Section 316/318 BNS',
+          name: 'Draft Comprehensive Statutory Legal Notice: Incorporate Section 73/74 Contract Act, Section 18 RERA, Commercial Courts Act, and penal provisions under Section 316/318 BNS',
         },
         {
           '@type': 'ListItem',
@@ -183,7 +183,7 @@ const jsonLd = {
       '@type': 'Product',
       name: 'Legal Notice for Commercial Property Dispute & Stuck Money Recovery',
       description:
-        'Advocate-drafted statutory demand notice service for commercial property investors, buyers, business owners, and allottees to recover stuck token money, advance booking deposits, and delayed possession refunds from developers and property vendors across India.',
+        'Fact-verified statutory demand notice service for commercial property investors, buyers, business owners, and allottees to recover stuck token money, advance booking deposits, and delayed possession refunds from developers and property vendors across India.',
       brand: {
         '@type': 'Organization',
         name: 'Legal Recovery',
@@ -260,7 +260,7 @@ export default function PropertyDisputeMoneyStuckClient() {
 
   const shareUrl = encodeURIComponent(pageUrl);
   const shareText = encodeURIComponent(
-    'Commercial property token money, earnest deposit, or booking advance stuck with a developer or seller? Send an advocate-drafted statutory legal notice under Contract Act, RERA & Commercial Courts Act! #RealEstateRecovery #PropertyDispute #LegalNotice'
+    'Commercial property token money, earnest deposit, or booking advance stuck with a developer or seller? Send a fact-verified statutory legal notice under Contract Act, RERA & Commercial Courts Act! #RealEstateRecovery #PropertyDispute #LegalNotice'
   );
 
   return (
@@ -435,7 +435,7 @@ export default function PropertyDisputeMoneyStuckClient() {
                     Quick Answer
                   </h2>
                   <p className="text-sm text-slate-700 font-medium leading-relaxed">
-                    Commercial buyers, investors, and business allottees can serve an advocate-vetted statutory legal notice to defaulting property developers, vendors, or commercial landlords under{' '}
+                    Commercial buyers, investors, and business allottees can serve a fact-verified statutory legal notice to defaulting property developers, vendors, or commercial landlords under{' '}
                     <span className="font-semibold text-slate-800">
                       Sections 70, 73, and 74 of the Indian Contract Act, 1872
                     </span>{' '}
@@ -473,7 +473,7 @@ export default function PropertyDisputeMoneyStuckClient() {
                     1. Statutory Framework: Contract Act, RERA &amp; Commercial Courts Act
                   </h2>
                   <p className="text-base text-slate-650 leading-relaxed font-normal">
-                    Commercial real estate transactions in India involve substantial capital outlay, complex deal structuring, and tight business timelines. When a transaction for an office floor, retail showroom, commercial plot, IT park suite, or co-working development stalls due to developer defaults, regulatory non-compliance, or title defects, the buyer’s capital becomes severely jeopardized. The Indian legal architecture provides robust statutory mechanisms across civil, commercial, and regulatory forums to compel defaulting counterparties to disgorge retained funds with commercial interest:
+                    Commercial real estate transactions in India involve substantial capital outlay, complex deal structuring, and tight business timelines. When a transaction for an office floor, retail showroom, commercial plot, IT park suite, or co-working development stalls due to developer defaults, regulatory non-compliance, or title defects, the buyer’s capital becomes severely jeopardized. The India legal architecture provides robust statutory mechanisms across civil, commercial, and regulatory forums to compel defaulting counterparties to disgorge retained funds with commercial interest:
                   </p>
 
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-6">
@@ -767,7 +767,7 @@ export default function PropertyDisputeMoneyStuckClient() {
                     5. Key Clauses in a Statutory Demand Notice to Builders &amp; Sellers
                   </h2>
                   <p className="text-base text-slate-650 leading-relaxed font-normal">
-                    A boilerplate or generic demand notice fails to trigger institutional urgency in commercial counterparties. An advocate-drafted statutory notice must be custom-engineered to incorporate specific legal covenants, statutory citations, and multi-tier litigation warnings:
+                    A boilerplate or generic demand notice fails to trigger institutional urgency in commercial counterparties. A fact-verified statutory notice must be custom-engineered to incorporate specific legal covenants, statutory citations, and multi-tier litigation warnings:
                   </p>
 
                   <div className="space-y-4">
@@ -945,10 +945,10 @@ export default function PropertyDisputeMoneyStuckClient() {
                         2
                       </div>
                       <h3 className="font-extrabold text-slate-900 text-base mb-1">
-                        Advocate Drafting &amp; Statutory Legal Notice Formulation
+                        Notice Drafting &amp; Statutory Legal Notice Formulation
                       </h3>
                       <p className="text-xs md:text-sm text-slate-650 leading-relaxed">
-                        A specialized real estate panel advocate drafts the formal statutory legal demand notice on legal letterhead, incorporating specific sections of the Indian Contract Act, RERA, Commercial Courts Act, and Bharatiya Nyaya Sanhita.
+                        Our team verifies the facts and prepares the formal statutory legal demand notice, incorporating specific sections of the Indian Contract Act, RERA, Commercial Courts Act, and Bharatiya Nyaya Sanhita.
                       </p>
                     </div>
 
@@ -984,7 +984,7 @@ export default function PropertyDisputeMoneyStuckClient() {
                         Immediate Judicial Escalation upon Notice Expiry
                       </h3>
                       <p className="text-xs md:text-sm text-slate-650 leading-relaxed">
-                        If the counterparty fails to settle the dues within the stipulated 15 days, our panel advocates immediately transition the matter into RERA Section 18 recovery proceedings, Section 12A commercial mediation, or Order 37 summary recovery suits.
+                        If the counterparty fails to settle the dues within the stipulated 15 days, our team immediately transition the matter into RERA Section 18 recovery proceedings, Section 12A commercial mediation, or Order 37 summary recovery suits.
                       </p>
                     </div>
                   </div>
@@ -1099,7 +1099,7 @@ export default function PropertyDisputeMoneyStuckClient() {
                     </div>
                   </div>
                   <p className="text-sm text-slate-650 leading-relaxed mb-6">
-                    Legal Recovery is India&apos;s premier online legal notice and commercial dispute resolution platform, connecting property buyers, real estate investors, corporate tenants, and commercial allottees with seasoned panel advocates for rapid, advocate-vetted statutory demand notices at transparent flat fees. With ₹100 Crore+ recovered and 10,000+ disputes resolved across India, Legal Recovery delivers verified legal impact without the delays and unpredictability of traditional law firms.
+                    Legal Recovery is India&apos;s premier online legal notice and commercial dispute resolution platform, helping property buyers, real estate investors, corporate tenants, and commercial allottees get rapid, fact-verified statutory demand notices at transparent flat fees. With ₹100 Crore+ recovered and 10,000+ disputes resolved across India, Legal Recovery delivers verified legal impact without the delays and unpredictability of traditional law firms.
                   </p>
                   <div className="flex flex-wrap gap-3">
                     {[
@@ -1137,7 +1137,7 @@ export default function PropertyDisputeMoneyStuckClient() {
                   Property Money Stuck with Builder or Seller?
                 </h3>
                 <p className="text-slate-300 text-xs leading-relaxed mb-4">
-                  Send an advocate-vetted statutory notice today. Over 78% of developers and property vendors settle refund claims within 15 days of notice service.
+                  Send a fact-verified statutory notice today. Over 78% of developers and property vendors settle refund claims within 15 days of notice service.
                 </p>
                 <button
                   onClick={() => setIsPaymentModalOpen(true)}
@@ -1146,7 +1146,7 @@ export default function PropertyDisputeMoneyStuckClient() {
                   Draft &amp; Send Notice Now
                 </button>
                 <p className="text-center text-slate-400 text-[10px] mt-3">
-                  Flat fee • Advocate-drafted • Sent same day
+                  Flat fee • Fact-verified • Sent same day
                 </p>
               </div>
 
@@ -1201,7 +1201,7 @@ export default function PropertyDisputeMoneyStuckClient() {
                 {[
                   { stat: '78%', label: 'Defaulting developers & sellers settle before litigation' },
                   { stat: '₹100CR+', label: 'Total amount recovered across real estate & commercial disputes' },
-                  { stat: 'Same Day', label: 'Advocate notice drafted and dispatched' },
+                  { stat: 'Same Day', label: 'Legal notice drafted and dispatched' },
                   { stat: 'Flat Fee', label: 'Transparent pricing with zero hidden commissions' },
                 ].map((item, i) => (
                   <div key={i} className="flex items-center justify-between py-2 border-b border-slate-50 last:border-0">

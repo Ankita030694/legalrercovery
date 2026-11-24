@@ -684,12 +684,12 @@ export default function AjioLegalNoticePage() {
                   <span className="text-xs text-red-700 font-bold">Statutory Legal Notice</span>
                 </div>
                 <h3 className="text-base sm:text-lg font-bold text-slate-900 mb-2">
-                  Serve an Advocate Legal Demand Notice to Reliance Retail Limited
+                  Serve a Fact-Verified Legal Demand Notice to Reliance Retail Limited
                 </h3>
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed mb-4">
-                  If the 15-day mark arrives with no refund, issue an official legal demand notice drafted by an enrolled advocate. The notice is served via Registered Speed Post with postal tracking to Reliance Retail&apos;s registered corporate office at Court House, Mumbai, and electronically to their legal compliance desk. The notice gives 15 days to refund the principal amount plus 9% annual interest and ₹10,000 compensation for mental harassment.
+                  If the 15-day mark arrives with no refund, issue an official legal demand notice prepared on verified facts. The notice is served via Registered Speed Post with postal tracking to Reliance Retail&apos;s registered corporate office at Court House, Mumbai, and electronically to their legal compliance desk. The notice gives 15 days to refund the principal amount plus 9% annual interest and ₹10,000 compensation for mental harassment.
                 </p>
-                <AjioNoticeCTA buttonText="Draft Advocate Notice to Reliance Retail" />
+                <AjioNoticeCTA buttonText="Draft Fact-Verified Notice to Reliance Retail" />
               </div>
             </li>
 
@@ -834,7 +834,7 @@ export default function AjioLegalNoticePage() {
                       Dispatched within 24 hours
                     </td>
                     <td className="p-3.5 sm:p-4 text-xs font-semibold text-[#DC2626]">
-                      Flat ₹999 incl. advocate drafting, email &amp; WhatsApp (Speed Post optional, ₹450)
+                      Flat ₹999 incl. notice drafting, email &amp; WhatsApp (Speed Post optional, ₹450)
                     </td>
                   </tr>
                 </tbody>
@@ -1093,7 +1093,7 @@ export default function AjioLegalNoticePage() {
                 </div>
                 <div className="bg-slate-50 p-4 rounded-xl">
                   <strong className="block text-slate-900 font-bold mb-1">3. Advocate Demand Notice</strong>
-                  Ramesh preserved the pickup slip and courier handover photos. Through LegalRecovery, an advocate drafted a formal demand notice served to Reliance Retail&apos;s corporate office, citing Rule 4(11) of E-Commerce Rules and DCDRC precedents.
+                  Ramesh preserved the pickup slip and courier handover photos. Through LegalRecovery, the team verified the facts and prepared a formal demand notice served to Reliance Retail&apos;s corporate office, citing Rule 4(11) of E-Commerce Rules and DCDRC precedents.
                 </div>
               </div>
 
@@ -1137,7 +1137,7 @@ export default function AjioLegalNoticePage() {
                 <ul className="space-y-2.5 text-xs sm:text-sm text-slate-600">
                   <li className="flex items-start gap-2">
                     <span className="text-emerald-600 font-bold">•</span>
-                    Advocate drafting of an official statutory legal demand notice tailored to your specific AJIO transaction.
+                    Notice drafting of an official statutory legal demand notice tailored to your specific AJIO transaction.
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-emerald-600 font-bold">•</span>
@@ -1308,7 +1308,7 @@ export default function AjioLegalNoticePage() {
         {/* Section 10: CTA Band (Archetype B4 Specification 7) */}
         <section className="py-12 sm:py-16 px-4 sm:px-6 md:px-12 bg-slate-900 text-white">
           <div className="max-w-5xl mx-auto">
-            <AjioNoticeCTA buttonText="Draft Advocate Notice to Reliance Retail" />
+            <AjioNoticeCTA buttonText="Draft Fact-Verified Notice to Reliance Retail" />
           </div>
         </section>
 

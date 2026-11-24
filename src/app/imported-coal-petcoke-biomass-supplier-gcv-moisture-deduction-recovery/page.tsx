@@ -131,7 +131,7 @@ const FAQS = [
     question:
       "How fast can a coal or petcoke trader serve recovery notices across 20+ defaulting brick kilns or textile mills?",
     answer:
-      "For a single high-value claim, you can launch an Advocate-Drafted Demand Notice for ₹999 dispatched via Email, WhatsApp, and Speed Post RPAD. For port traders and importers chasing 10 to 10,000+ defaulting mills or kilns simultaneously, you can upload your overdue ledger CSV via our Bulk Recovery Desk to automate multi-channel statutory notices in one batch.",
+      "For a single high-value claim, you can launch a Fact-Verified Demand Notice for ₹999 dispatched via Email, WhatsApp, and Speed Post RPAD. For port traders and importers chasing 10 to 10,000+ defaulting mills or kilns simultaneously, you can upload your overdue ledger CSV via our Bulk Recovery Desk to automate multi-channel statutory notices in one batch.",
   },
 ];
 
@@ -190,8 +190,8 @@ export default function ImportedCoalGcvRecoveryPage() {
       {
         "@type": "HowToStep",
         position: 3,
-        name: "Serve Advocate Statutory Demand Notice (Email + WhatsApp + RPAD)",
-        text: "Dispatch a 15-day Advocate Demand Notice quantifying principal, contractual interest (or 3x RBI MSMED interest for biomass manufacturers), and BSA s.63 electronic records.",
+        name: "Serve Fact-Verified Statutory Demand Notice (Email + WhatsApp + RPAD)",
+        text: "Dispatch a 15-day Fact-Verified Demand Notice quantifying principal, contractual interest (or 3x RBI MSMED interest for biomass manufacturers), and BSA s.63 electronic records.",
       },
       {
         "@type": "HowToStep",

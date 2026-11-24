@@ -15,7 +15,7 @@ const TOC_ITEMS: TOCItem[] = [
   { id: "heading-email-whatsapp-bsa63", label: "5. Email, WhatsApp & BSA s.63" },
   { id: "heading-worked-limitation-timeline", label: "6. Worked 3-Year Clock Reset" },
   { id: "heading-annexure-audit-checklist", label: "7. Audit & Service Checklist" },
-  { id: "heading-dual-track-cta", label: "8. Advocate Review or Bulk CSV" },
+  { id: "heading-dual-track-cta", label: "8. Fact Verification or Bulk CSV" },
   { id: "heading-faqs", label: "9. Limitation & Confirmation FAQs" },
   { id: "heading-statutory-authorities", label: "10. Bare Acts & Related Guides" },
 ];

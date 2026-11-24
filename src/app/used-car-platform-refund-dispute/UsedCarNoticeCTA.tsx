@@ -31,7 +31,7 @@ export default function UsedCarNoticeCTA({
                 Recover Your Money From a Defaulting Used-Car Platform or Dealer
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6">
-                Have an experienced consumer advocate draft and serve a formal statutory legal demand notice on the used car platform (such as Cars24, Spinny, CarDekho, or an authorized pre-owned dealer). Served by email and WhatsApp under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023. Speed Post is optional at ₹450 per party. Demand a 100% refund of the vehicle purchase price, cancellation of auto-loan EMIs, and compensation for mental agony within 15 days.
+                Serve a formal statutory legal demand notice on the used car platform (such as Cars24, Spinny, CarDekho, or an authorized pre-owned dealer). Served by email and WhatsApp under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023. Speed Post is optional at ₹450 per party. Demand a 100% refund of the vehicle purchase price, cancellation of auto-loan EMIs, and compensation for mental agony within 15 days.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button
@@ -42,7 +42,7 @@ export default function UsedCarNoticeCTA({
                   {buttonText} — ₹{basePrice}
                 </button>
                 <div className="text-xs text-slate-300 flex flex-wrap sm:flex-nowrap items-center gap-2 sm:gap-3">
-                  <span>✓ 24h Advocate Drafting</span>
+                  <span>✓ 24h Notice Drafting</span>
                   <span>•</span>
                   <span>✓ Email + WhatsApp</span>
                   <span>•</span>

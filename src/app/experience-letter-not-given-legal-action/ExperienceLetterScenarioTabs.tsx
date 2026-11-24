@@ -37,9 +37,9 @@ const SCENARIOS: ScenarioTab[] = [
           "Either offer lawful adjustment against accrued leave / bonus or reject illegal markup under Section 74 of the Contract Act in writing.",
       },
       {
-        step: "Serve Advocate Legal Demand Notice",
+        step: "Serve Fact-Verified Legal Demand Notice",
         description:
-          "Serve a 15-day statutory advocate notice demanding uncoupling of the experience certificate from the financial dispute under Article 21 livelihood rights.",
+          "Serve a 15-day statutory fact-verified notice demanding uncoupling of the experience certificate from the financial dispute under Article 21 livelihood rights.",
       },
     ],
     statutoryRule: "Sections 73 & 74 Contract Act & Model Standing Orders Central Rules",
@@ -64,7 +64,7 @@ const SCENARIOS: ScenarioTab[] = [
           "Ensure your KT sign-off, client handover notes, and laptop return challan are documented via personal email records before leaving.",
       },
       {
-        step: "Dispatch Statutory Advocate Demand Notice",
+        step: "Dispatch Statutory Fact-Verified Demand Notice",
         description:
           "Serve a formal legal notice demonstrating the bond's unenforceability under Section 27 and demanding unconditional release of your service certificate.",
       },

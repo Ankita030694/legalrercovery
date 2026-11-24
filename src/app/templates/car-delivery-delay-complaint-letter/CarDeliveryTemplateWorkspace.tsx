@@ -173,7 +173,7 @@ You are called upon to credit the entire principal sum of ${fields.bookingAmount
 - Savings Account Number: ${fields.accountNumber}
 - IFSC Code: ${fields.ifscCode}
 
-In the event of default or deduction of cancellation charges, I have instructed counsel to immediately dispatch a formal High Court Advocate Legal Notice and lodge an e-daakhil consumer complaint before the District Consumer Commission for the full amount, 18% penal interest, ₹50,000 compensation for mental harassment, and legal expenses.
+In the event of default or deduction of cancellation charges, I have instructed counsel to immediately dispatch a formal High Court Fact-Verified Legal Notice and lodge an e-daakhil consumer complaint before the District Consumer Commission for the full amount, 18% penal interest, ₹50,000 compensation for mental harassment, and legal expenses.
 
 Yours sincerely,
 

@@ -51,9 +51,9 @@ const PANELS: ProblemPanel[] = [
       },
       {
         stepNumber: "Step 3",
-        action: "Register NCH Docket & Serve Advocate Legal Demand Notice",
+        action: "Register NCH Docket & Serve Fact-Verified Legal Demand Notice",
         detail:
-          "Dial National Consumer Helpline 1915 to create an official INGRAM docket. If Zomato fails to credit the full amount within 48 hours, issue a formal advocate-drafted legal notice claiming refund, statutory interest, and compensation for mental agony.",
+          "Dial National Consumer Helpline 1915 to create an official INGRAM docket. If Zomato fails to credit the full amount within 48 hours, issue a formal fact-verified legal notice claiming refund, statutory interest, and compensation for mental agony.",
       },
     ],
     statutoryTimeline: "48-hour statutory acknowledgment; maximum 30 days dispute resolution under Rule 4(5).",
@@ -87,7 +87,7 @@ const PANELS: ProblemPanel[] = [
       },
       {
         stepNumber: "Step 3",
-        action: "Serve Joint Advocate Legal Notice to Zomato & Restaurant",
+        action: "Serve Joint Fact-Verified Legal Notice to Zomato & Restaurant",
         detail:
           "If the grievance officer refuses a cash refund, dispatch an advocate legal notice holding Zomato Limited (Respondent No. 1) and the restaurant merchant (Respondent No. 2) jointly liable under Section 35 of the Consumer Protection Act, 2019.",
       },

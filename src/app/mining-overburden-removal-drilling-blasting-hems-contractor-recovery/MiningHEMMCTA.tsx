@@ -26,7 +26,7 @@ export default function MiningHEMMCTA({ className = "" }: MiningHEMMCTAProps) {
               Test 1 Live Overdue Case Now (&#8377;{basePrice})
             </h3>
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-              Advocate-drafted Arbitration s.21 / RA Bill Demand &amp; HEMM Demobilization Gate-Pass Notice, dispatched via Email + WhatsApp + Speed Post RPAD.
+              Fact-verified Arbitration s.21 / RA Bill Demand &amp; HEMM Demobilization Gate-Pass Notice, dispatched via Email + WhatsApp + Speed Post RPAD.
             </p>
           </div>
           <div className="space-y-3">
@@ -46,7 +46,7 @@ export default function MiningHEMMCTA({ className = "" }: MiningHEMMCTAProps) {
               </Link>
             </div>
             <p className="text-[11px] text-slate-400">
-              &#10003; Advocate Drafted &bull; &#10003; Email + WhatsApp + Speed Post RPAD
+              &#10003; Fact-Verified &bull; &#10003; Email + WhatsApp + Speed Post RPAD
             </p>
           </div>
         </div>

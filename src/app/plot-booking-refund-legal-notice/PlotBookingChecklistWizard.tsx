@@ -78,7 +78,7 @@ const SCENARIO_TABS: ScenarioTab[] = [
       "ZERO Forfeiture (0% Deduction). The developer must refund 100% of the principal paid plus SBI Highest MCLR + 2% simple interest from the date of each payment installment.",
     remedySteps: [
       "Reject any 'plot shifting' offer to an inferior phase or credit-note adjustment.",
-      "Serve a 15-day statutory Advocate Legal Notice citing Section 12 (false brochure/approval representation) and Section 18(1) of RERA, plus Section 318 BNS (cheating) if sold without title/CLU.",
+      "Serve a 15-day statutory Fact-Verified Legal Notice citing Section 12 (false brochure/approval representation) and Section 18(1) of RERA, plus Section 318 BNS (cheating) if sold without title/CLU.",
       "If unpaid within 15 days, file an online complaint on the State RERA portal (Form M) or e-Jagriti Consumer Commission seeking 100% principal + ~10.85%–11.10% p.a. interest.",
     ],
   },
@@ -95,7 +95,7 @@ const SCENARIO_TABS: ScenarioTab[] = [
     remedySteps: [
       "Send the formal Plot Booking Cancellation Letter (template below) revoking the provisional application before the developer unilaterally executes an allotment.",
       "Challenge any clause in the booking application form that claims '100% of booking amount is non-refundable' as an unfair contract under Section 2(46) of the Consumer Protection Act, 2019.",
-      "Serve an Advocate Legal Notice demanding refund within 15 days, failing which file before State RERA or District Consumer Commission (e-Jagriti).",
+      "Serve a Fact-Verified Legal Notice demanding refund within 15 days, failing which file before State RERA or District Consumer Commission (e-Jagriti).",
     ],
   },
   {

@@ -70,7 +70,7 @@ const FAQS = [
   },
   {
     q: "How can an NBFC enforce an NPA loan whose legacy agreement contains a defective unilateral clause?",
-    a: "Do not proceed with an ex-parte unilateral appointment. Instead, serve an Advocate-drafted Section 21 notice proposing reference to an independent institutional ODR provider or seeking the borrower's express written waiver under the proviso to Section 12(5). If the borrower refuses or fails to respond within 30 days, file a Section 11(6) application before the High Court for appointment of a neutral arbitrator, or pursue parallel remedies under Section 25 of the Payment and Settlement Systems Act, 2007 (e-NACH bounce) and Order XXXVII CPC.",
+    a: "Do not proceed with an ex-parte unilateral appointment. Instead, serve a Fact-verified Section 21 notice proposing reference to an independent institutional ODR provider or seeking the borrower's express written waiver under the proviso to Section 12(5). If the borrower refuses or fails to respond within 30 days, file a Section 11(6) application before the High Court for appointment of a neutral arbitrator, or pursue parallel remedies under Section 25 of the Payment and Settlement Systems Act, 2007 (e-NACH bounce) and Order XXXVII CPC.",
   },
   {
     q: "What is the difference between 'Seat' and 'Venue' in an online arbitration (ODR) clause for digital lending?",
@@ -870,7 +870,7 @@ export default function NeutralOdrClauseDraftingPage() {
               </div>
 
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed mb-5">
-                Test a single overdue account with an Advocate-drafted Section 21 / Recall notice,
+                Test a single overdue account with a Fact-verified Section 21 / Recall notice,
                 or onboard your NBFC&apos;s CSV portfolio for bulk tri-channel dispatch and
                 reply triage.
               </p>

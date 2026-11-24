@@ -245,7 +245,7 @@ export default function SecurityDepositClient() {
               Recover Your <span className="text-[#DC2626]">Security Deposit & Certificates</span> From Employer
             </h1>
             <p className="text-sm md:text-xl mb-8 md:mb-12 max-w-3xl mx-auto text-slate-300 leading-relaxed font-medium">
-              Did your employer withhold your security deposit, deduct retention money, or lock away your original educational marksheets? Get veteran legal advocacy backed by state-of-the-art technology.
+              Did your employer withhold your security deposit, deduct retention money, or lock away your original educational marksheets? Get vetera legal advocacy backed by state-of-the-art technology.
             </p>
             <button 
               onClick={() => setIsPaymentModalOpen(true)}
@@ -670,7 +670,7 @@ export default function SecurityDepositClient() {
                     <ol className="list-decimal pl-6 space-y-4 text-sm text-slate-650">
                       <li><strong>Days 1-7 (Formal Demand Email):</strong> Email HR and leadership demanding your deposit and certificates with proof of clearance.</li>
                       <li><strong>Days 8-15 (Revocation & Stop-Payment):</strong> Revoke security cheque authorization in writing and place a bank stop-payment order.</li>
-                      <li><strong>Days 16-30 (Legal Notice):</strong> Serve a formal advocate notice giving 15 days to comply under BNS and Contract Act rules.</li>
+                      <li><strong>Days 16-30 (Legal Notice):</strong> Serve a formal legal notice giving 15 days to comply under BNS and Contract Act rules.</li>
                       <li><strong>Day 30+ (Labour Complaint & Police Action):</strong> File a complaint with the Labour Commissioner and report document retention to the police.</li>
                     </ol>
                   </div>
@@ -754,10 +754,10 @@ export default function SecurityDepositClient() {
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">Why LegalRecovery?</h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      LegalRecovery is India&apos;s leading legal tech recovery platform. We combine expert advocate authority with digital automation for fast, transparent results. Here is why professionals trust our platform:
+                      LegalRecovery is India&apos;s leading legal tech recovery platform. We combine fact-verified notices with digital automation for fast, transparent results. Here is why professionals trust our platform:
                     </p>
                     <ul className="list-disc pl-6 space-y-3 text-sm text-slate-650">
-                      <li><strong>Experienced Panel Advocates:</strong> Senior employment lawyers draft every notice with precise statutory citations.</li>
+                      <li><strong>Fact-Verified Notices:</strong> Our team verifies your facts and prepares every notice with precise statutory citations.</li>
                       <li><strong>Multi-Channel Dispatch:</strong> We send notices by email and WhatsApp to company headquarters and directors, with optional Speed Post (₹450 per party) to their office and residential addresses.</li>
                       <li><strong>Live Tracking:</strong> Monitor drafting progress and post office tracking directly on your client dashboard.</li>
                       <li><strong>Transparent Flat Fees:</strong> Clear flat fees with no hidden costs or surprising hourly bills.</li>
@@ -808,7 +808,7 @@ export default function SecurityDepositClient() {
                 <div className="absolute top-0 right-0 w-24 h-24 bg-red-600/10 rounded-full blur-xl pointer-events-none" />
                 <h3 className="text-sm font-black mb-3">Need Legal Advice?</h3>
                 <p className="text-gray-400 mb-5 text-[11px] leading-relaxed">
-                  Discuss your security deposit or bond recovery case with legal experts. We serve verified notices with full compliance support.
+                  Discuss your security deposit or bond recovery case with our team. We serve verified notices with full compliance support.
                 </p>
                 <button 
                   onClick={() => setIsPaymentModalOpen(true)}

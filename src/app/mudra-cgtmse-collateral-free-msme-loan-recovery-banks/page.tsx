@@ -110,7 +110,7 @@ const FAQS = [
     question:
       "Why do Mudra borrowers refuse to pay claiming the loan is a 'government grant'—and how do banks counter it?",
     answer:
-      "Because PMMY Mudra, PMEGP, and PM SVANidhi are government-promoted collateral-free schemes, many micro-borrowers mistakenly believe they are non-repayable subsidies or subject to political loan waivers. Branch telecalling rarely corrects this misconception. Serving an advocate-signed multi-channel Loan Recall Notice via Speed Post RPAD, WhatsApp, and Email—explicitly stating contractual bank debt liability, CIBIL/CIC adverse reporting, PSS Act s.25 criminal exposure on bounced e-NACH mandates, and Lok Adalat summons—immediately dispels the grant myth and drives pre-litigation settlements.",
+      "Because PMMY Mudra, PMEGP, and PM SVANidhi are government-promoted collateral-free schemes, many micro-borrowers mistakenly believe they are non-repayable subsidies or subject to political loan waivers. Branch telecalling rarely corrects this misconception. Serving a fact-verified multi-channel Loan Recall Notice via Speed Post RPAD, WhatsApp, and Email—explicitly stating contractual bank debt liability, CIBIL/CIC adverse reporting, PSS Act s.25 criminal exposure on bounced e-NACH mandates, and Lok Adalat summons—immediately dispels the grant myth and drives pre-litigation settlements.",
   },
   {
     question:
@@ -128,13 +128,13 @@ const FAQS = [
     question:
       "How should banks handle PMEGP margin-money subsidy TDR and PM SVANidhi defaults economically?",
     answer:
-      "For PMEGP accounts turning NPA inside the 3-year KVIC/DIC physical verification lock-in period, banks must serve a formal advocate notice documenting unit status and subsidy forfeiture exposure, coordinate margin-money TDR adjustment/refund strictly per KVIC guidelines, and initiate State Revenue Recovery Certificate (RRC) filings where state Public Moneys Recovery Acts apply. For high-volume PM SVANidhi micro-tickets (₹10,000–₹50,000), bulk digital + RPAD advocate notices paired with 0% court-fee Pre-Litigation National Lok Adalat batches keep recovery cost far below ticket value.",
+      "For PMEGP accounts turning NPA inside the 3-year KVIC/DIC physical verification lock-in period, banks must serve a formal fact-verified notice documenting unit status and subsidy forfeiture exposure, coordinate margin-money TDR adjustment/refund strictly per KVIC guidelines, and initiate State Revenue Recovery Certificate (RRC) filings where state Public Moneys Recovery Acts apply. For high-volume PM SVANidhi micro-tickets (₹10,000–₹50,000), bulk digital + RPAD fact-verified notices paired with 0% court-fee Pre-Litigation National Lok Adalat batches keep recovery cost far below ticket value.",
   },
   {
     question:
       "What electronic and postal proofs are essential to clear CGTMSE / NCGTC claim audits without queries?",
     answer:
-      "Nodal claim auditors scrutinize whether the Loan Recall Notice was properly itemized (separating principal, contractual interest, and non-capitalized RBI penal charges) and validly served before limitation expired. Banks should archive a single case dossier containing: (1) certified CBS Statement of Account with Bankers' Books Evidence Act s.2A certificate, (2) advocate-signed Recall Notice PDF, (3) India Post Speed Post RPAD receipt and online delivery/refusal tracking report, (4) timestamped Email + WhatsApp dispatch logs certified under Bharatiya Sakshya Adhiniyam (BSA) 2023 Section 63, and (5) CNR/DLSA Lok Adalat or PSS Act s.25 filing receipt.",
+      "Nodal claim auditors scrutinize whether the Loan Recall Notice was properly itemized (separating principal, contractual interest, and non-capitalized RBI penal charges) and validly served before limitation expired. Banks should archive a single case dossier containing: (1) certified CBS Statement of Account with Bankers' Books Evidence Act s.2A certificate, (2) fact-verified Recall Notice PDF, (3) India Post Speed Post RPAD receipt and online delivery/refusal tracking report, (4) timestamped Email + WhatsApp dispatch logs certified under Bharatiya Sakshya Adhiniyam (BSA) 2023 Section 63, and (5) CNR/DLSA Lok Adalat or PSS Act s.25 filing receipt.",
   },
 ];
 
@@ -185,7 +185,7 @@ const HOWTO_SCHEMA = {
     {
       "@type": "HowToStep",
       position: 2,
-      name: "Dispatch Advocate-Signed Multi-Channel Loan Recall Notice",
+      name: "Dispatch Fact-Verified Multi-Channel Loan Recall Notice",
       text: "Serve an RBI penal-charge-compliant Loan Recall Notice via India Post Speed Post RPAD, verified Email, and WhatsApp (certified under BSA 2023 s.63) to dismantle the government-grant myth and establish formal recall.",
     },
     {
@@ -302,7 +302,7 @@ export default function MudraCgtmseRecoveryBanksPage() {
             <span className="block text-[10px] sm:text-xs uppercase tracking-widest text-red-400 font-bold mb-1.5">
               Executive Creditor Answer &bull; CGTMSE &amp; Mudra Compliance
             </span>
-            Because collateral-free Mudra and CGTMSE loans cannot invoke SARFAESI (s.31(g)) or DRT under ₹20 Lakh, banks must pair advocate-signed multi-channel Recall Notices with PSS Act s.25 and 0%-fee Pre-Litigation Lok Adalats. Built on our{" "}
+            Because collateral-free Mudra and CGTMSE loans cannot invoke SARFAESI (s.31(g)) or DRT under ₹20 Lakh, banks must pair fact-verified multi-channel Recall Notices with PSS Act s.25 and 0%-fee Pre-Litigation Lok Adalats. Built on our{" "}
             <Link
               href="/industries/banks-loan-recovery"
               className="text-red-400 hover:text-red-300 underline font-semibold"
@@ -403,7 +403,7 @@ export default function MudraCgtmseRecoveryBanksPage() {
               </div>
 
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
-                Meanwhile, internal collection callers and generic SMS reminders carry zero statutory weight, while filing ad-valorem civil suits on ₹1.5 Lakh–₹6 Lakh accounts destroys branch recovery economics. The exact operational bridge is <strong>bulk, advocate-signed pre-litigation legal notices</strong> backed by Speed Post RPAD tracking, Email + WhatsApp audit certificates under <strong>Bharatiya Sakshya Adhiniyam (BSA) 2023 s.63</strong>, and automated routing into <strong>PSS Act s.25</strong> and <strong>Pre-Litigation National Lok Adalats</strong>. To calibrate your statutory jurisdiction across sub-₹20L and above-₹20L MSME accounts, see our{" "}
+                Meanwhile, internal collection callers and generic SMS reminders carry zero statutory weight, while filing ad-valorem civil suits on ₹1.5 Lakh–₹6 Lakh accounts destroys branch recovery economics. The exact operational bridge is <strong>bulk, fact-verified pre-litigation legal notices</strong> backed by Speed Post RPAD tracking, Email + WhatsApp audit certificates under <strong>Bharatiya Sakshya Adhiniyam (BSA) 2023 s.63</strong>, and automated routing into <strong>PSS Act s.25</strong> and <strong>Pre-Litigation National Lok Adalats</strong>. To calibrate your statutory jurisdiction across sub-₹20L and above-₹20L MSME accounts, see our{" "}
                 <Link
                   href="/bank-loan-recovery-below-20-lakhs-drt-threshold-options"
                   className="text-[#DC2626] hover:underline font-semibold"
@@ -676,7 +676,7 @@ export default function MudraCgtmseRecoveryBanksPage() {
                       <td className="py-3.5 px-4 text-slate-700">NCGTC CGFMU Portfolio</td>
                       <td className="py-3.5 px-4 text-[#DC2626] font-semibold">Neither (Unsecured &lt; ₹20L)</td>
                       <td className="py-3.5 px-4 text-slate-700">Recall notice + pre-litigation recovery proof</td>
-                      <td className="py-3.5 px-4 text-emerald-800 font-medium">Bulk Advocate Notice + Pre-Lit National Lok Adalat (₹0 fee)</td>
+                      <td className="py-3.5 px-4 text-emerald-800 font-medium">Bulk Fact-Verified Notice + Pre-Lit National Lok Adalat (₹0 fee)</td>
                     </tr>
                     <tr className="hover:bg-slate-50">
                       <td className="py-3.5 px-4 font-bold text-slate-900">
@@ -828,7 +828,7 @@ export default function MudraCgtmseRecoveryBanksPage() {
                   </div>
 
                   <div className="rounded-xl bg-white/5 border border-white/10 p-3 text-xs text-slate-300 leading-relaxed">
-                    <strong className="text-white">Audit Outcome:</strong> Outstanding is ≤ ₹10L (civil suit waived), so advocate recall notice + PSS s.25 / Lok Adalat docket cleanly unlocks ₹4,78,125 first tranche and preserves the ₹1,59,375 second tranche without burning ₹45,000+ in civil court ad-valorem fees.
+                    <strong className="text-white">Audit Outcome:</strong> Outstanding is ≤ ₹10L (civil suit waived), so fact-verified recall notice + PSS s.25 / Lok Adalat docket cleanly unlocks ₹4,78,125 first tranche and preserves the ₹1,59,375 second tranche without burning ₹45,000+ in civil court ad-valorem fees.
                   </div>
                 </div>
 
@@ -876,7 +876,7 @@ export default function MudraCgtmseRecoveryBanksPage() {
                   </div>
 
                   <div className="rounded-xl bg-white border border-emerald-200 p-3 text-xs text-slate-700 leading-relaxed">
-                    <strong className="text-slate-900">Unit-Economics Win:</strong> By converting &ldquo;grant-myth&rdquo; defaulters through advocate-signed recall notices and ₹0-fee DLSA Lok Adalat batches, branches recover cash within 45–90 days—preserving CGFMU portfolio first-loss deductibles.
+                    <strong className="text-slate-900">Unit-Economics Win:</strong> By converting &ldquo;grant-myth&rdquo; defaulters through fact-verified recall notices and ₹0-fee DLSA Lok Adalat batches, branches recover cash within 45–90 days—preserving CGFMU portfolio first-loss deductibles.
                   </div>
                 </div>
               </div>
@@ -977,7 +977,7 @@ export default function MudraCgtmseRecoveryBanksPage() {
                   },
                   {
                     num: "04",
-                    title: "Advocate-Signed Itemized Loan Recall Notice",
+                    title: "Fact-Verified Itemized Loan Recall Notice",
                     detail:
                       "Formal demand recalling the entire facility, refuting any grant/waiver myth, and granting 15 days cure before legal and CIC escalation.",
                   },
@@ -1097,7 +1097,7 @@ export default function MudraCgtmseRecoveryBanksPage() {
                     tag: "P1 Notice Template",
                     title: "Loan Recall cum Guarantee Invocation Notice Template",
                     href: "/templates/bank-loan-recall-cum-guarantee-invocation-notice",
-                    desc: "Advocate-vetted, RBI penal-charge-compliant recall notice ready for CGTMSE and MSME files.",
+                    desc: "Fact-verified, RBI penal-charge-compliant recall notice ready for CGTMSE and MSME files.",
                   },
                   {
                     tag: "P1 NACH Template",

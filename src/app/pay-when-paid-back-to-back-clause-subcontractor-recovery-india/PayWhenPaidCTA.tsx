@@ -23,7 +23,7 @@ export default function PayWhenPaidCTA({ className = "" }: PayWhenPaidCTAProps) 
               Track 1 &bull; Single Subcontract Recovery Test
             </span>
             <p className="text-lg sm:text-xl font-extrabold text-white mb-2">
-              Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Advocate Drafted &middot; Email + WhatsApp + Speed Post RPAD)
+              Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Fact-Verified &middot; Email + WhatsApp + Speed Post RPAD)
             </p>
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
               Issue an authoritative 15-day statutory demand notice that repudiates abusive &apos;pay-when-paid&apos; clauses under Indian Contract Act Section 23, 28, and 46. Establishes lapse of reasonable time, demands 18% commercial interest, serves direct notice on the prime contractor&apos;s managing directors, and puts them on notice for High Court Section 9 asset freezing and Commercial Court action. Full electronic audit trail under Section 63 of Bharatiya Sakshya Adhiniyam, 2023.

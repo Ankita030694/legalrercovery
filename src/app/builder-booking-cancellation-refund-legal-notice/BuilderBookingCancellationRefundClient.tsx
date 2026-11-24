@@ -55,7 +55,7 @@ const reviews = [
   {
     author: "Priya Sharma (Mumbai)",
     rating: "5",
-    text: "Priya Sharma paid a booking amount of 1.5 Lakhs to reserve a flat in Thane. The builder delayed providing the draft Builder-Buyer Agreement for four months. When the draft BBA was finally shared, it contained clauses that allowed the builder to delay possession indefinitely without penalties. Priya refused to sign the BBA and demanded a refund. The builder refused, claiming unilateral forfeiture. Priya served a lawyer-backed notice and subsequently filed a complaint with MahaRERA. The authority ordered the builder to refund the entire booking amount with interest, ruling that a builder cannot force a buyer to sign a one-sided agreement."
+    text: "Priya Sharma paid a booking amount of 1.5 Lakhs to reserve a flat in Thane. The builder delayed providing the draft Builder-Buyer Agreement for four months. When the draft BBA was finally shared, it contained clauses that allowed the builder to delay possession indefinitely without penalties. Priya refused to sign the BBA and demanded a refund. The builder refused, claiming unilateral forfeiture. Priya served a fact-verified notice and subsequently filed a complaint with MahaRERA. The authority ordered the builder to refund the entire booking amount with interest, ruling that a builder cannot force a buyer to sign a one-sided agreement."
   },
   {
     author: "Vikram Mehta (Bengaluru)",
@@ -613,7 +613,7 @@ export default function BuilderBookingCancellationRefundClient() {
                 <div className="absolute top-0 right-0 w-24 h-24 bg-red-600/10 rounded-full blur-xl pointer-events-none" />
                 <h3 className="text-lg font-bold mb-3 text-white">Need Legal Advice?</h3>
                 <p className="text-gray-400 mb-5 text-[11px] leading-relaxed">
-                  Discuss your money recovery case with legal experts. We draft and serve legally compliant notices tailored to your transaction.
+                  Discuss your money recovery case with our team. We draft and serve legally compliant notices tailored to your transaction.
                 </p>
                 <button 
                   onClick={() => setIsPaymentModalOpen(true)}

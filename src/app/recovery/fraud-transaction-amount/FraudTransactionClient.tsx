@@ -403,7 +403,7 @@ export default function FraudTransactionClient() {
                       <li>Details showing that no sensitive credentials (OTP, PIN) were shared, or that the security breach occurred on the bank/merchant/gateway side.</li>
                     </ul>
                     <p className="text-sm md:text-base leading-relaxed">
-                      In parallel, serving a formal <strong>Statutory Legal Notice</strong> drafted by an expert recovery advocate to the bank&apos;s corporate office and Grievance Principal Officer is highly effective. Banks have large legal teams and are highly risk-averse; they understand that ignoring an RBI Master Circular or a formal legal notice can lead to heavy penalties from the regulator, alongside a public consumer court dispute.
+                      In parallel, serving a formal <strong>Statutory Legal Notice</strong> prepared by our team to the bank&apos;s corporate office and Grievance Principal Officer is highly effective. Banks have large legal teams and are highly risk-averse; they understand that ignoring an RBI Master Circular or a formal legal notice can lead to heavy penalties from the regulator, alongside a public consumer court dispute.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
                       A well-drafted legal notice sets a strict 15-day deadline for the bank to reverse the disputed funds, clear any accrued interest or late fees on fraud transactions, and restore the customer&apos;s CIBIL score if it was affected. If the bank fails to comply, the notice serves as a mandatory pre-requisite for consumer court litigation.
@@ -503,7 +503,7 @@ export default function FraudTransactionClient() {
                     <ul className="list-disc pl-6 space-y-3 text-sm text-slate-650">
                       <li><strong>RBI Circular Enforcement:</strong> Our legal notices are built on specific paragraphs of the RBI July 2017 Master Circular, forcing bank compliance teams to act quickly.</li>
                       <li><strong>Digital Evidence Formatting:</strong> We draft your Section 63 BSA certificates to ensure your emails, IP logs, and WhatsApp screenshots are fully admissible in court.</li>
-                      <li><strong>Expert Cyber Advocates:</strong> Our panel includes seasoned cyber law experts and banking advocates who represent you before the RBI Ombudsman and Consumer Courts.</li>
+                      <li><strong>Fact-Verified Notices:</strong> Our team verifies the facts you submit and prepares your notice. For hearings before the RBI Ombudsman and Consumer Courts, you can engage an advocate separately.</li>
                       <li><strong>End-to-End Tracking:</strong> We manage the entire lifecycle of your dispute, from filing the 1930 Cyber complaint to managing bank correspondence and legal follow-ups.</li>
                     </ul>
                   </div>

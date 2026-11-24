@@ -87,7 +87,7 @@ const CASE_CITATIONS = [
       "The Supreme Court ruled that banks and NBFCs are vicariously liable for the actions of outsourced recovery agents. The apex court held that debt recovery in India must strictly adhere to the procedure established by law—such as statutory legal notices, summary civil suits, and execution decrees—rather than coercive extra-judicial tactics. The court mandated the Reserve Bank of India to formulate comprehensive regulations governing recovery agents and fair practice codes.",
     amount: "Absolute Judicial Prohibition of Force + Mandatory Recourse to Formal Legal Recovery",
     takeaway:
-      "For banks and credit card issuers, replacing aggressive field agencies with advocate-drafted statutory demand notices and Order 37 summary suits completely eliminates vicarious criminal liability while ensuring legally enforceable recovery.",
+      "For banks and credit card issuers, replacing aggressive field agencies with fact-verified statutory demand notices and Order 37 summary suits completely eliminates vicarious criminal liability while ensuring legally enforceable recovery.",
   },
   {
     title: "High Court Precedent on Order XXXVII Summary Suit for Defaulted Credit Card Dues",
@@ -95,7 +95,7 @@ const CASE_CITATIONS = [
     citation: "Summary Suit No. 2481/2006, Bombay High Court",
     date: "Order Dated 18 November 2008",
     facts:
-      "The cardholder accumulated an unpaid outstanding balance of ₹8.45 Lakhs on an international credit card facility and ceased repayments. The issuing bank instituted a summary suit under Order XXXVII of the CPC based on the cardholder agreement, certified monthly billing statements, and an unanswered advocate demand notice. The defendant claimed the debt was an unliquidated commercial claim requiring a full multi-year trial.",
+      "The cardholder accumulated an unpaid outstanding balance of ₹8.45 Lakhs on an international credit card facility and ceased repayments. The issuing bank instituted a summary suit under Order XXXVII of the CPC based on the cardholder agreement, certified monthly billing statements, and an unanswered fact-verified demand notice. The defendant claimed the debt was an unliquidated commercial claim requiring a full multi-year trial.",
     holding:
       "The High Court held that a credit card agreement, accompanied by monthly account statements generated in the ordinary course of banking business, constitutes a binding written contract for a liquidated sum under Order XXXVII Rule 1(2)(b)(i) CPC. Because the defendant failed to disclose a bona fide triable defense within the statutory 10-day leave-to-defend window, the court passed an immediate summary decree for the entire debt alongside 12% commercial interest.",
     amount: "₹8,45,000 Liquidated Balance Decree + 12% Commercial Interest + Full Court Costs",
@@ -134,7 +134,7 @@ const FAQS = [
   {
     question: "What legal action can banks take against credit card defaulters in India?",
     answer:
-      "Banks and credit card issuers in India have multiple statutory legal remedies against defaulting cardholders. Primary actions include: (1) Serving a formal advocate-drafted statutory demand notice recalling the card facility; (2) Filing a Commercial Summary Suit under Order XXXVII of the Code of Civil Procedure (CPC), 1908 for an expedited money decree; (3) Initiating institutional arbitration under the Arbitration and Conciliation Act, 1996 if contemplated in the cardholder terms; (4) Criminal prosecution under Section 138 of the Negotiable Instruments Act, 1881 or Section 25 of the Payment and Settlement Systems Act, 2007 if settlement cheques or NACH auto-debit mandates bounce; and (5) Submitting default data to credit information companies (CIBIL, Experian, CRIF High Mark) and pursuing settlement at National Lok Adalats.",
+      "Banks and credit card issuers in India have multiple statutory legal remedies against defaulting cardholders. Primary actions include: (1) Serving a formal fact-verified statutory demand notice recalling the card facility; (2) Filing a Commercial Summary Suit under Order XXXVII of the Code of Civil Procedure (CPC), 1908 for an expedited money decree; (3) Initiating institutional arbitration under the Arbitration and Conciliation Act, 1996 if contemplated in the cardholder terms; (4) Criminal prosecution under Section 138 of the Negotiable Instruments Act, 1881 or Section 25 of the Payment and Settlement Systems Act, 2007 if settlement cheques or NACH auto-debit mandates bounce; and (5) Submitting default data to credit information companies (CIBIL, Experian, CRIF High Mark) and pursuing settlement at National Lok Adalats.",
   },
   {
     question: "Is credit card default a criminal offense or a civil dispute in India?",
@@ -342,7 +342,7 @@ export default function CreditCardDefaultersPage() {
                   Managing delinquency across credit card portfolios presents institutional lenders with a distinct legal challenge. Unlike mortgage loans, auto loans, or secured commercial credit lines, credit cards represent unsecured revolving credit. Consequently, card issuers cannot initiate immediate asset seizure under Section 13(4) of the SARFAESI Act, 2002. Historically, financial institutions reacted to this structural limitation by outsourcing collections to aggressive field recovery agencies—an approach that frequently culminated in borrower harassment complaints, severe brand damage, and regulatory censure by the Reserve Bank of India (RBI).
                 </p>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
-                  Under current Indian jurisprudence and RBI Master Directions, institutional card recovery has decisively shifted from informal field coercion to structured legal enforcement. By deploying advocate-drafted statutory demand notices, Commercial Summary Suits under Order XXXVII of the Code of Civil Procedure (CPC), 1908, fast-track arbitral references, and criminal prosecution under Section 138 of the Negotiable Instruments Act, 1881 for dishonored settlement instruments, banks achieve high liquidation velocity while maintaining complete regulatory compliance.
+                  Under current Indian jurisprudence and RBI Master Directions, institutional card recovery has decisively shifted from informal field coercion to structured legal enforcement. By deploying fact-verified statutory demand notices, Commercial Summary Suits under Order XXXVII of the Code of Civil Procedure (CPC), 1908, fast-track arbitral references, and criminal prosecution under Section 138 of the Negotiable Instruments Act, 1881 for dishonored settlement instruments, banks achieve high liquidation velocity while maintaining complete regulatory compliance.
                 </p>
               </section>
 
@@ -444,7 +444,7 @@ export default function CreditCardDefaultersPage() {
                     <div>
                       <strong className="text-sm sm:text-base text-slate-900 font-bold">Transition from Tele-Calling to Formal Advocate Demand Notices:</strong>
                       <p className="text-xs sm:text-sm mt-0.5 leading-relaxed">
-                        Replacing repetitive collection call cadences with an advocate-drafted statutory demand notice delivered via Registered Speed Post establishes an impeccable evidentiary record under the Bharatiya Sakshya Adhiniyam, 2023, while preventing allegations of nuisance or stalking.
+                        Replacing repetitive collection call cadences with a fact-verified statutory demand notice delivered via Registered Speed Post establishes an impeccable evidentiary record under the Bharatiya Sakshya Adhiniyam, 2023, while preventing allegations of nuisance or stalking.
                       </p>
                     </div>
                   </li>
@@ -645,7 +645,7 @@ export default function CreditCardDefaultersPage() {
                     </span>
                     <div className="space-y-1 sm:space-y-1.5">
                       <h3 className="text-sm sm:text-base md:text-lg font-bold text-slate-900">
-                        Dispatch Formal Advocate Statutory Loan Recall Notice
+                        Dispatch Formal Fact-Verified Statutory Loan Recall Notice
                       </h3>
                       <p className="text-xs sm:text-sm leading-relaxed">
                         Retain counsel to serve a comprehensive 15-day statutory recall notice terminating cardholder membership, recalling the full outstanding debt, and putting the debtor on formal notice of commercial litigation. Dispatch via Registered Speed Post with postal acknowledgment alongside digital transmission to the debtor&apos;s registered email and mobile number.
@@ -824,7 +824,7 @@ export default function CreditCardDefaultersPage() {
                       <strong>The Impasse &amp; Non-Compliance:</strong> The account aged to 180 DPD (NPA classification). Collection tele-callers were repeatedly blocked, and the cardholder threatened to file a police complaint against the bank for criminal harassment. Informal collection agency intervention yielded zero capital recovery while creating unacceptable compliance risks under RBI guidelines.
                     </p>
                     <p>
-                      <strong>The Legal Strategy:</strong> The bank engaged LegalRecovery.in to execute a strictly compliant legal recovery process. An advocate drafted and dispatched a formal statutory demand notice terminating card privileges and demanding ₹9,40,000 plus contractual finance charges within 15 days, served via Registered Speed Post and certified digital transmission under Section 63 BSA 2023. When no payment was received, the legal team instituted a Commercial Summary Suit under Order XXXVII CPC in the District Commercial Court, appending certified statements and the signed cardholder agreement.
+                      <strong>The Legal Strategy:</strong> The bank engaged LegalRecovery.in to execute a strictly compliant legal recovery process. The team verified the facts and dispatched a formal statutory demand notice terminating card privileges and demanding ₹9,40,000 plus contractual finance charges within 15 days, served via Registered Speed Post and certified digital transmission under Section 63 BSA 2023. When no payment was received, the legal team instituted a Commercial Summary Suit under Order XXXVII CPC in the District Commercial Court, appending certified statements and the signed cardholder agreement.
                     </p>
                     <div className="p-3.5 sm:p-4 bg-emerald-950/70 border border-emerald-700/60 rounded-xl text-emerald-200">
                       <strong className="block text-emerald-400 font-bold mb-1">The Recovery Outcome:</strong>

@@ -133,7 +133,7 @@ const HOWTO_SCHEMA = {
       "@type": "HowToStep",
       position: 3,
       name: "Issuance of Statutory Section 222 Agency Indemnity Demand Notice",
-      text: "Serve a formal advocate legal demand notice under Section 222 of the Indian Contract Act, 1872, mandating full indemnity for lawful outlays plus 18% p.a. commercial interest within 7 to 15 days.",
+      text: "Serve a formal fact-verified legal demand notice under Section 222 of the Indian Contract Act, 1872, mandating full indemnity for lawful outlays plus 18% p.a. commercial interest within 7 to 15 days.",
     },
     {
       "@type": "HowToStep",
@@ -589,7 +589,7 @@ export default function FreightForwarderCustomsDutyRecoveryPage() {
                     Lien Lost; s.222 Indemnity Suit
                   </text>
                   <text x="450" y="242" fill="#FFFFFF" fontSize="10" textAnchor="middle">
-                    Serve 7-Day Advocate Notice
+                    Serve 7-Day Fact-Verified Notice
                   </text>
 
                   {/* Step 4: Cargo Abandoned Check */}

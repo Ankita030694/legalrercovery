@@ -127,7 +127,7 @@ export default function GarmentSorRecoveryPage() {
         "@type": "HowToStep",
         position: 3,
         name: "Issue Statutory Demand under Sale of Goods Act Section 24 and MSMED Act",
-        text: "Serve an advocate-vetted demand notice demanding immediate RTGS release of invoice principal plus compounding interest at 3x RBI bank rate under MSMED Section 16, notifying Income Tax Section 43B(h) disallowance.",
+        text: "Serve a fact-verified demand notice demanding immediate RTGS release of invoice principal plus compounding interest at 3x RBI bank rate under MSMED Section 16, notifying Income Tax Section 43B(h) disallowance.",
       },
       {
         "@type": "HowToStep",
@@ -751,7 +751,7 @@ export default function GarmentSorRecoveryPage() {
                   <span className="text-red-400 font-bold text-xs uppercase block mb-1">
                     Stage 3 &bull; Statutory Demand Notice
                   </span>
-                  <h4 className="font-bold text-sm">Serve Advocate Notice Under SGA §24 &amp; MSMED Act</h4>
+                  <h4 className="font-bold text-sm">Serve Fact-Verified Notice Under SGA §24 &amp; MSMED Act</h4>
                   <p className="text-xs text-slate-300 mt-1">
                     Notify retail leadership of SGA Section 24 expiry of return rights, Section 15 payment caps, and imminent Section 43B(h) income tax disallowance.
                   </p>

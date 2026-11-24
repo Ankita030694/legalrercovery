@@ -492,7 +492,7 @@ export default function RecruitmentNoticeWorkspace() {
               Recruitment Backdoor-Hire &amp; Staffing Arrears Notice Generator
             </h3>
             <p className="text-xs sm:text-sm text-slate-400 mt-1">
-              Select notice variant, customize candidate / invoice schedules, and generate an advocate-vetted statutory demand notice.
+              Select notice variant, customize candidate / invoice schedules, and generate a fact-verified statutory demand notice.
             </p>
           </div>
 
@@ -611,7 +611,7 @@ export default function RecruitmentNoticeWorkspace() {
           <div className="space-y-4">
             <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 p-3 bg-slate-950 rounded-xl border border-slate-800 text-xs">
               <span className="text-slate-400">
-                <strong className="text-slate-200 font-bold">Live Document Preview:</strong> Formatted for Advocate Dispatch on Legal Recovery Bar Council Letterhead with BSA 2023 Section 63 Electronic Proof Annexures.
+                <strong className="text-slate-200 font-bold">Live Document Preview:</strong> Formatted for Dispatch on Legal Recovery Bar Council Letterhead with BSA 2023 Section 63 Electronic Proof Annexures.
               </span>
               <span className="text-[11px] font-mono text-red-400 bg-red-950/50 px-2 py-0.5 rounded border border-red-900/50 shrink-0">
                 100% Court-Tested Formatting
@@ -922,7 +922,7 @@ export default function RecruitmentNoticeWorkspace() {
             href="/user/new-recovery"
             className="text-xs font-bold text-red-400 hover:text-red-300 transition-colors"
           >
-            Initiate Advocate Legal Notice (&rupee;999) &rarr;
+            Initiate Fact-Verified Legal Notice (&rupee;999) &rarr;
           </a>
         </div>
       </div>

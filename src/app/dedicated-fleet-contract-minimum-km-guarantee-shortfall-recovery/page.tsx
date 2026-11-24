@@ -293,7 +293,7 @@ export default function DedicatedFleetShortfallRecoveryPage() {
       {
         "@type": "HowToStep",
         position: 3,
-        name: "Serve 15-Day Advocate Statutory Demand Notice",
+        name: "Serve 15-Day Fact-Verified Statutory Demand Notice",
         text: "Issue a formal demand notice under Sections 73 & 74 of the Indian Contract Act via Speed Post RPAD, WhatsApp, and Email with BSA 2023 s.63 certification.",
       },
       {

@@ -60,7 +60,7 @@ const SCENARIOS: ScenarioItem[] = [
     creditorMove: [
       "Separate your ledger cleanly: grant unconditional Clause (8) clearance on the paid statutory audit (protecting your ICAI standing 100%) while retaining your internal SA 230 working papers and immediately escalating non-audit bills through external legal counsel.",
       "Pull the client's Form 26AS / AIS (showing 10% TDS u/s 194J booked against your PAN) and GSTR-1/2B filing logs proving the client claimed GST Input Tax Credit on your SAC 998231/998222 invoices—invoking CGST Act s.16(2) second proviso (mandatory ITC reversal + 18% interest u/s 50 if unpaid >180 days).",
-      "Serve an Advocate Demand Notice invoking Order XXXVII CPC Summary Suit (plus MSMED Act ss.15–18 & Income Tax s.43B(h) warning if your firm holds Udyam Registration), backed by GST portal ARN receipts, ITAT/CIT(A) submission acknowledgments, and BSA 2023 s.63 email logs.",
+      "Serve a Fact-Verified Demand Notice invoking Order XXXVII CPC Summary Suit (plus MSMED Act ss.15–18 & Income Tax s.43B(h) warning if your firm holds Udyam Registration), backed by GST portal ARN receipts, ITAT/CIT(A) submission acknowledgments, and BSA 2023 s.63 email logs.",
     ],
     outcomeMetric:
       "Citing Form 26AS TDS admissions + CGST s.16(2) 180-day ITC reversal risk turns a 'non-audit retainer' into a high-leverage tax-compliance liability that the new CA and CFO cannot ignore during tax audit (Clause 22 / GSTR-9C reconciliation).",

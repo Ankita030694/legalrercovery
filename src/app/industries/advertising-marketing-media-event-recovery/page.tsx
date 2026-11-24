@@ -255,7 +255,7 @@ const FAQS = [
     question:
       "Can an agency take down live Meta ads, YouTube videos, or website creatives if a client defaults on invoices?",
     answer:
-      "Yes, provided your contract or SOW has not unconditionally assigned copyright prior to full payment. Under Section 19 of the Copyright Act, 1957, copyright assignment requires a signed written instrument. Serving an advocate-vetted notice revoking provisional usage licenses and giving a 7-day cure window before filing Meta/Google/YouTube/Shopify IP takedowns routinely resolves brand defaults within days.",
+      "Yes, provided your contract or SOW has not unconditionally assigned copyright prior to full payment. Under Section 19 of the Copyright Act, 1957, copyright assignment requires a signed written instrument. Serving a fact-verified notice revoking provisional usage licenses and giving a 7-day cure window before filing Meta/Google/YouTube/Shopify IP takedowns routinely resolves brand defaults within days.",
   },
   {
     question:
@@ -279,7 +279,7 @@ const FAQS = [
     question:
       "Can our agency or media network test LegalRecovery.in on one unpaid client before uploading multiple overdue accounts?",
     answer:
-      "Yes. Agencies can launch one live overdue retainer, RO, event balance, or sponsorship default for ₹999 (advocate-drafted and served via Email, Business WhatsApp, and Speed Post RPAD) and later scale to 10–10,000+ overdue accounts via our bulk CSV and multi-entity Representees workspace.",
+      "Yes. Agencies can launch one live overdue retainer, RO, event balance, or sponsorship default for ₹999 (fact-verified and served via Email, Business WhatsApp, and Speed Post RPAD) and later scale to 10–10,000+ overdue accounts via our bulk CSV and multi-entity Representees workspace.",
   },
 ];
 
@@ -743,7 +743,7 @@ export default function AdvertisingMediaEventRecoveryHubPage() {
                     <rect x="24" y="58" width="156" height="196" rx="10" fill="#1E293B" stroke="#334155" strokeWidth="1.5" />
                     <circle cx="48" cy="84" r="13" fill="#DC2626" />
                     <text x="48" y="88" textAnchor="middle" fill="#FFFFFF" fontSize="11" fontWeight="800">01</text>
-                    <text x="70" y="88" fill="#F8FAFC" fontSize="12" fontWeight="700">Proof Vault</text>
+                    <text x="70" y="88" fill="#F8FAFC" fontSize="12" fontWeight="700">Proof Checklist</text>
                     <text x="36" y="116" fill="#CBD5E1" fontSize="10.5">Signed SOW / RO / PO</text>
                     <text x="36" y="134" fill="#CBD5E1" fontSize="10.5">Ad Library &amp; Geo-Tags</text>
                     <text x="36" y="152" fill="#CBD5E1" fontSize="10.5">Live Event WhatsApp</text>
@@ -822,8 +822,8 @@ export default function AdvertisingMediaEventRecoveryHubPage() {
                   {[
                     {
                       num: "01",
-                      title: "Proof Vault & BSA s.63 Certification",
-                      desc: "Lock signed SOWs, Release Orders, Ad Library links, geo-tagged OOH photos, and live event WhatsApp approvals.",
+                      title: "Proof Checklist & BSA s.63 Certification",
+                      desc: "Keep signed SOWs, Release Orders, Ad Library links, geo-tagged OOH photos, and live event WhatsApp approvals ready; you enter their key details in our form.",
                     },
                     {
                       num: "02",
@@ -1201,7 +1201,7 @@ export default function AdvertisingMediaEventRecoveryHubPage() {
                       title: "Send Legal Notice for Business to Recover Unpaid Dues",
                       href: "/send-a-legal-notice/for-business-to-recover-their-unpaid-dues",
                       tag: "B2B Notice Portal",
-                      desc: "Advocate-drafted corporate recovery notice covering retainers, SOW milestones, and interest.",
+                      desc: "Fact-verified corporate recovery notice covering retainers, SOW milestones, and interest.",
                     },
                     {
                       title: "Pending Project Payment Recovery Guide",

@@ -81,7 +81,7 @@ const TABS: TabItem[] = [
     actionableSteps: [
       "Review the loan sanction letter and closure statement showing the exact deduction header (e.g., 'Foreclosure Cess', 'Exit Processing Fee').",
       "Establish borrower status as an individual (non-corporate / non-entity entity) and loan type as floating benchmark linked.",
-      "Serve an advocate demand notice invoking binding RBI circulars demanding 100% refund of foreclosure charges with 18% penal interest.",
+      "Serve a fact-verified demand notice invoking binding RBI circulars demanding 100% refund of foreclosure charges with 18% penal interest.",
       "Approach the Consumer Commission (DCDRC) for deficiency of service if the bank fails to reverse within 30 days of notice.",
     ],
     sampleGrounds:
@@ -205,7 +205,7 @@ export default function BankChargesProblemTabs() {
         {/* Sample legal notice grounds */}
         <div className="bg-slate-50 border border-slate-200 rounded-xl p-4">
           <span className="text-[11px] font-bold text-slate-500 uppercase tracking-wider block mb-1">
-            Advocate Drafted Notice Ground:
+            Fact-Verified Notice Ground:
           </span>
           <p className="text-xs sm:text-sm font-mono text-slate-800 italic bg-white p-3 rounded-lg border border-slate-200">
             &ldquo;{currentTab.sampleGrounds}&rdquo;

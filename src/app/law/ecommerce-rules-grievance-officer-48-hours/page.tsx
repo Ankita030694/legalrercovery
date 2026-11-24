@@ -299,7 +299,7 @@ export default function EcommerceRulesPage() {
                     <th scope="row" className="p-3.5 font-semibold text-slate-900">Legal Notice Platform Fee</th>
                     <td className="p-3.5 font-medium text-emerald-700">₹{BASE_PRICE} Flat</td>
                     <td className="p-3.5 text-slate-600">LegalRecovery transparent fee</td>
-                    <td className="p-3.5 text-slate-600">Advocate drafting and formal email and WhatsApp service (Speed Post optional, ₹450)</td>
+                    <td className="p-3.5 text-slate-600">Notice drafting and formal email and WhatsApp service (Speed Post optional, ₹450)</td>
                   </tr>
                 </tbody>
               </table>
@@ -774,7 +774,7 @@ export default function EcommerceRulesPage() {
                     Serving an Advocate Legal Demand Notice (Day 15)
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Serve an advocate-drafted statutory demand notice to both the marketplace corporate headquarters and the merchant under Rule 5 fallback liability. The notice specifies a 15-day rectification window before initiating formal consumer court litigation.
+                    Serve a fact-verified statutory demand notice to both the marketplace corporate headquarters and the merchant under Rule 5 fallback liability. The notice specifies a 15-day rectification window before initiating formal consumer court litigation.
                   </p>
                 </div>
               </li>
@@ -825,7 +825,7 @@ export default function EcommerceRulesPage() {
                   <strong>The Stall:</strong> The courier technician refused reverse pickup citing "serial mismatch with listing records." The platform marked the case "Return Rejected — Customer Discrepancy." An email to the platform Grievance Officer yielded an automated bot reply but zero acknowledgment ticket within 48 hours.
                 </p>
                 <p>
-                  <strong>The Statutory Action:</strong> Rahul retained unboxing photos, the invoice showing merchant GSTIN, and the courier refusal memo. Through LegalRecovery, Rahul served an advocate legal notice citing Rule 4(5) (failure to acknowledge in 48h), Rule 5(2) (failure to verify seller description), and Section 2(47) unfair trade practices.
+                  <strong>The Statutory Action:</strong> Rahul retained unboxing photos, the invoice showing merchant GSTIN, and the courier refusal memo. Through LegalRecovery, Rahul served a fact-verified legal notice citing Rule 4(5) (failure to acknowledge in 48h), Rule 5(2) (failure to verify seller description), and Section 2(47) unfair trade practices.
                 </p>
                 <p>
                   <strong>The Resolution:</strong> Nine days after Speed Post delivery of the legal notice, the marketplace escalation team arranged warehouse pickup and credited ₹34,999 back to his bank account with ₹3,000 goodwill credit.
@@ -987,7 +987,7 @@ export default function EcommerceRulesPage() {
                 <ul className="space-y-2 text-xs sm:text-sm text-slate-700">
                   <li className="flex items-start gap-2">
                     <span className="text-emerald-600 font-bold">•</span>
-                    Draft advocate legal notices establishing joint liability between marketplace and seller under Rule 5.
+                    Draft fact-verified legal notices establishing joint liability between marketplace and seller under Rule 5.
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-emerald-600 font-bold">•</span>

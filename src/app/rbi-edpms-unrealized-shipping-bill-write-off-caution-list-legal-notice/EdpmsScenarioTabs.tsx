@@ -29,9 +29,9 @@ const SCENARIOS: EdpmsScenario[] = [
       "Under Para C.23 of the RBI Master Direction on Export of Goods and Services, an AD Category-I Bank cannot close an unrealized Shipping Bill merely on an exporter's internal email or ledger write-off. The exporter must submit documentary evidence of bonafide recovery efforts—specifically a formal Advocate Legal Demand Notice served on the foreign buyer plus an Advocate's Legal Opinion establishing that foreign litigation in the buyer's jurisdiction would cost more than the unrealized export proceeds (disproportionate cost / futile recovery).",
     steps: [
       {
-        step: "1. Serve Cross-Border Advocate Legal Demand Notice",
+        step: "1. Serve Cross-Border Fact-Verified Legal Demand Notice",
         detail:
-          "Issue a formal 15-day Advocate Demand Notice citing the Commercial Invoice, Bill of Lading/AWB, and Shipping Bill numbers via tracked international courier (DHL/FedEx) and official buyer email, preserving BSA 2023 s.63 delivery logs.",
+          "Issue a formal 15-day Fact-Verified Demand Notice citing the Commercial Invoice, Bill of Lading/AWB, and Shipping Bill numbers via tracked international courier (DHL/FedEx) and official buyer email, preserving BSA 2023 s.63 delivery logs.",
       },
       {
         step: "2. Obtain Disproportionate Foreign Litigation Cost Opinion",
@@ -64,9 +64,9 @@ const SCENARIOS: EdpmsScenario[] = [
           "Download the full EDPMS XOS / Outstanding Export Bills dump from the AD Bank and classify bills into <5%/10% AD-Bank write-off eligible vs. >10% RBI Regional Office approval buckets.",
       },
       {
-        step: "2. Issue Consolidated Advocate Notices & Legal Opinions",
+        step: "2. Issue Consolidated Fact-Verified Notices & Legal Opinions",
         detail:
-          "Serve batch Advocate Legal Demand Notices across every defaulting overseas buyer and compile individual Shipping-Bill-linked Legal Opinions demonstrating recovery steps or buyer insolvency.",
+          "Serve batch Fact-Verified Legal Demand Notices across every defaulting overseas buyer and compile individual Shipping-Bill-linked Legal Opinions demonstrating recovery steps or buyer insolvency.",
       },
       {
         step: "3. Submit De-Cautioning Representation via AD Bank",

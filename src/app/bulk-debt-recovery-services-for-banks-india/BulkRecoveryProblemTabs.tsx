@@ -34,7 +34,7 @@ const ASSET_TABS: AssetTab[] = [
       {
         step: "Simultaneous Multi-Channel Statutory Demand",
         description:
-          "Dispatch advocate-signed demand notices via Registered Speed Post AD alongside verifiable WhatsApp and Registered Email notices containing unique settlement payment links.",
+          "Dispatch fact-verified demand notices via Registered Speed Post AD alongside verifiable WhatsApp and Registered Email notices containing unique settlement payment links.",
       },
       {
         step: "Batch Pre-Litigation Lok Adalat & Summary Action",

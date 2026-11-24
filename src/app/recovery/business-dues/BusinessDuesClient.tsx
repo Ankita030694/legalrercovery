@@ -125,7 +125,7 @@ const reviewSchema = {
   "@type": "Product",
   "name": "Business Dues Recovery Services",
   "image": "https://www.legalrecovery.in/og-business-dues.png",
-  "description": "Advocate-backed legal assistance for recovering outstanding commercial dues, vendor invoices, and contract payments in India.",
+  "description": "Fact-verified legal assistance for recovering outstanding commercial dues, vendor invoices, and contract payments in India.",
   "brand": {
     "@type": "Brand",
     "name": "LegalRecovery"
@@ -166,7 +166,7 @@ const reviewSchema = {
         "@type": "Person",
         "name": "Karan Johar"
       },
-      "reviewBody": "A corporate client withheld ₹8,20,000 of our software consultancy payments. LegalRecovery served an advocate notice warning of a summary suit under Order 37 CPC. Their legal team advised settlement to avoid litigation. We recovered the principal plus interest."
+      "reviewBody": "A corporate client withheld ₹8,20,000 of our software consultancy payments. LegalRecovery served a fact-verified notice warning of a summary suit under Order 37 CPC. Their legal team advised settlement to avoid litigation. We recovered the principal plus interest."
     },
     {
       "@type": "Review",
@@ -299,7 +299,7 @@ export default function BusinessDuesClient() {
               Recover Outstanding <span className="text-[#DC2626]">Business Dues</span> &amp; Invoices
             </h1>
             <p className="text-sm md:text-xl mb-8 md:mb-12 max-w-3xl mx-auto text-slate-300 leading-relaxed font-medium">
-              Struggling with defaulting buyers, unpaid vendor invoices, delayed MSME dues, or bounced cheques? Serve advocate-backed legal notices and leverage fast-track legal recovery mechanisms in India.
+              Struggling with defaulting buyers, unpaid vendor invoices, delayed MSME dues, or bounced cheques? Serve fact-verified legal notices and leverage fast-track legal recovery mechanisms in India.
             </p>
             <button 
               onClick={() => setIsPaymentModalOpen(true)}
@@ -344,7 +344,7 @@ export default function BusinessDuesClient() {
                       However, delayed payments and deliberate defaults are extremely common in the commercial sector. Defaulting buyers often exploit the slow Indian civil court system to delay payments, leaving suppliers with locked capital, unpaid bills, and mounting debts. Startups, freelancers, and small vendors are particularly vulnerable to these defaults, as they lack the resources to engage in lengthy litigation. Fortunately, the Indian legal system provides specialized, fast-track recovery mechanisms—such as the MSME Samadhaan Facilitation Council, Commercial Courts pre-institution mediation, and Summary Suits—specifically designed to bypass standard judicial delays.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      At LegalRecovery, we specialize in corporate debt recovery. We guide businesses, vendors, and consultants through the process of auditing debt ledgers, serving strategic advocate notices to defaulting corporate boards, filing complaints on the MSME Samadhaan portal, and initiating recovery lawsuits under Order 37 of the CPC. This guide outlines the legal frameworks, statutory protections, and procedures available to recover your outstanding business dues.
+                      At LegalRecovery, we specialize in corporate debt recovery. We guide businesses, vendors, and consultants through the process of auditing debt ledgers, serving strategic fact-verified notices to defaulting corporate boards, filing complaints on the MSME Samadhaan portal, and initiating recovery lawsuits under Order 37 of the CPC. This guide outlines the legal frameworks, statutory protections, and procedures available to recover your outstanding business dues.
                     </p>
                     <div className="bg-red-50 p-6 rounded-2xl border-l-4 border-[#DC2626] italic text-xs sm:text-sm text-red-900 font-semibold leading-relaxed">
                       &quot;Delayed payment to commercial suppliers is a major operational breach. If you are an MSME, buyers are legally obligated to clear your bills within 45 days, failing which they must pay penal interest at three times the RBI bank rate.&quot;
@@ -588,10 +588,10 @@ export default function BusinessDuesClient() {
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">Serving a Strategic Legal Demand Notice</h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      When informal follow-ups and escalation emails fail to yield results, serving a formal <strong>Legal Notice</strong> is the next logical step. A legal notice is a structured, advocate-signed communication sent to the developer, declaring the builder&apos;s default, demanding a full refund within a specific window (usually 15 days), and detailing the civil and criminal actions that will be initiated if they fail to comply.
+                      When informal follow-ups and escalation emails fail to yield results, serving a formal <strong>Legal Notice</strong> is the next logical step. A legal notice is a structured, fact-verified communication sent to the developer, declaring the builder&apos;s default, demanding a full refund within a specific window (usually 15 days), and detailing the civil and criminal actions that will be initiated if they fail to comply.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      At LegalRecovery, our legal panel drafts custom notices tailored to the facts of your case. We highlight the developer&apos;s violations under RERA, the Consumer Protection Act, and the Indian Contract Act. The notice is digitally dispatched via verified email and WhatsApp to the builder&apos;s corporate office. Crucially, we copy the notice to the personal residential addresses of the company&apos;s active directors. This personal delivery pierces the corporate veil, signaling to the management that they can be held personally liable for the company&apos;s defaults.
+                      At LegalRecovery, our team drafts custom notices tailored to the facts of your case. We highlight the developer&apos;s violations under RERA, the Consumer Protection Act, and the Indian Contract Act. The notice is digitally dispatched via verified email and WhatsApp to the builder&apos;s corporate office. Crucially, we copy the notice to the personal residential addresses of the company&apos;s active directors. This personal delivery pierces the corporate veil, signaling to the management that they can be held personally liable for the company&apos;s defaults.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
                       Serving a legal notice is highly effective. Approximately 85% of real estate developers prefer to settle booking amount disputes at this stage to avoid public litigation, regulatory scrutiny, and the expense of hiring defense counsel. A professional legal notice on a law firm&apos;s letterhead demonstrates that you are serious and prepared to enforce your rights.
@@ -610,7 +610,7 @@ export default function BusinessDuesClient() {
                       If the international client defaults:
                     </p>
                     <ul className="list-disc pl-6 space-y-2 text-sm text-slate-650">
-                      <li>You can serve a formal legal notice digitally via verified email through our panel advocates.</li>
+                      <li>You can serve a formal legal notice digitally via verified email through our team.</li>
                       <li>We highlight the terms of the commercial contract, including choice of law clauses. Many international clients choose to settle disputes to avoid litigation costs and protect their credit rating in their home countries.</li>
                       <li>If they fail to comply, you can file a commercial recovery suit in India, and execute the decree internationally under reciprocal agreements.</li>
                     </ul>

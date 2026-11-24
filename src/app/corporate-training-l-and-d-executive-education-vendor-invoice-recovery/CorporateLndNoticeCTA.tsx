@@ -27,7 +27,7 @@ export default function CorporateLndNoticeCTA({ className = "" }: CorporateLndNo
                 Test 1 Live Overdue Case Now
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm leading-relaxed mb-5">
-                &rupee;{basePrice} &middot; Advocate Drafted with MSMED s.15&ndash;18, Income Tax s.43B(h) &amp; Workshop Attendance Estoppel &middot; Dispatched via Email + WhatsApp + Speed Post RPAD to the client CFO &amp; Company Secretary.
+                &rupee;{basePrice} &middot; Fact-Verified with MSMED s.15&ndash;18, Income Tax s.43B(h) &amp; Workshop Attendance Estoppel &middot; Dispatched via Email + WhatsApp + Speed Post RPAD to the client CFO &amp; Company Secretary.
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-3">
@@ -57,7 +57,7 @@ export default function CorporateLndNoticeCTA({ className = "" }: CorporateLndNo
                 Have 10 to 10,000+ Defaulters?
               </h3>
               <p className="text-slate-600 text-xs sm:text-sm leading-relaxed mb-5">
-                Upload a single CSV of frozen corporate L&amp;D POs, annual LMS seat renewals, or campus-proctoring invoices. Our institutional desk maps s.43B(h) tax hooks &amp; dispatches batch Advocate Notices across enterprise accounts.
+                Upload a single CSV of frozen corporate L&amp;D POs, annual LMS seat renewals, or campus-proctoring invoices. Our institutional desk maps s.43B(h) tax hooks &amp; dispatches batch Fact-Verified Notices across enterprise accounts.
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-3">

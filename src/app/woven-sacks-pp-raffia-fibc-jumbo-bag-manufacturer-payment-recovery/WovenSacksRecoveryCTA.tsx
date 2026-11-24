@@ -26,10 +26,10 @@ export default function WovenSacksRecoveryCTA({
                 Track 1 &middot; Single Mill, Exporter or Trader Ledger
               </span>
               <h3 className="text-lg sm:text-xl font-bold text-white mb-2">
-                Test 1 Live Overdue Case Now (&#8377;{basePrice} &middot; Advocate Drafted &middot; Email + WhatsApp + Speed Post RPAD)
+                Test 1 Live Overdue Case Now (&#8377;{basePrice} &middot; Fact-Verified &middot; Email + WhatsApp + Speed Post RPAD)
               </h3>
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-                Upload your GST invoices, bale weighbridge slips, E-Way bills, BOPP artwork proofs, or ISO 21898/BIS test reports. Our advocates dispatch a Sale of Goods Act s.42/55 + MSMED s.15&ndash;18, Section 43B(h) &amp; NI Act s.138 statutory demand notice within 24 hours.
+                Enter the details of your GST invoices, bale weighbridge slips, E-Way bills, BOPP artwork proofs, or ISO 21898/BIS test reports. Our team verifies the facts and dispatches a Sale of Goods Act s.42/55 + MSMED s.15&ndash;18, Section 43B(h) &amp; NI Act s.138 statutory demand notice within 24 hours.
               </p>
             </div>
 

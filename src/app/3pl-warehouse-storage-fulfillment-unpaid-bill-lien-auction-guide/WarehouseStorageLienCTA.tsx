@@ -56,7 +56,7 @@ export default function WarehouseStorageLienCTA({
                     Test 1 Live Overdue Case Now (₹{basePrice})
                   </p>
                   <p className="text-xs text-slate-300 leading-relaxed mb-4">
-                    Advocate-drafted 15-Day Statutory Bailee Lien &amp; Intended Public Auction Notice under Section 170 Indian Contract Act and Order XXXVII CPC. Dispatched simultaneously via Speed Post RPAD, WhatsApp &amp; Email with cryptographic BSA 2023 Section 63 delivery certificates.
+                    Fact-verified 15-Day Statutory Bailee Lien &amp; Intended Public Auction Notice under Section 170 Indian Contract Act and Order XXXVII CPC. Dispatched simultaneously via Speed Post RPAD, WhatsApp &amp; Email with cryptographic BSA 2023 Section 63 delivery certificates.
                   </p>
                 </div>
 
@@ -114,7 +114,7 @@ export default function WarehouseStorageLienCTA({
             </div>
 
             <div className="mt-6 pt-4 border-t border-white/10 flex flex-wrap items-center justify-between gap-3 text-[11px] text-slate-400">
-              <span>Backed by Bar Council of India-licensed advocates specializing in contract logistics &amp; commercial bailment.</span>
+              <span>Fact-verified by our team for contract logistics &amp; commercial bailment disputes.</span>
               <span className="text-emerald-400 font-semibold">Zero Commission &bull; Flat Predictable Recovery Fee</span>
             </div>
           </div>

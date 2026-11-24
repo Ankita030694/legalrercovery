@@ -37,7 +37,7 @@ const PROBLEMS: ProblemTab[] = [
           "Call an authorized manufacturer engineer (e.g., Daikin, LG, Voltas) to inspect the damaged appliance. Obtain an official diagnostic job-sheet and itemized repair estimate attributing the failure to improper handling.",
       },
       {
-        step: "Serve Advocate Statutory Notice Impleading Urban Company",
+        step: "Serve Fact-Verified Statutory Notice Impleading Urban Company",
         description:
           "Issue a formal 15-day statutory demand notice to Urban Company Limited corporate headquarters and the partner, demanding full replacement/repair reimbursement alongside compensation for mental agony.",
       },
@@ -64,7 +64,7 @@ const PROBLEMS: ProblemTab[] = [
           "Submit a formal complaint to grievanceofficer@urbancompany.com citing the booking ID, stating partner abandonment, and setting a 48-hour deadline for refund under E-Commerce Rules, 2020.",
       },
       {
-        step: "Issue Advocate Demand Notice for Refund & Damages",
+        step: "Issue Fact-Verified Demand Notice for Refund & Damages",
         description:
           "If the company fails to rectify or refund within 48 hours, issue a formal statutory notice demanding 100% refund of service fees and offline sums, with 18% statutory interest.",
       },
@@ -93,7 +93,7 @@ const PROBLEMS: ProblemTab[] = [
       {
         step: "Serve Statutory Pre-Litigation Legal Notice",
         description:
-          "Send an advocate demand notice invoking Section 2(46) and Section 85 CPA 2019, warning of consumer commission filing on e-Jagriti for full property restoration plus litigation costs.",
+          "Send a fact-verified demand notice invoking Section 2(46) and Section 85 CPA 2019, warning of consumer commission filing on e-Jagriti for full property restoration plus litigation costs.",
       },
     ],
     statutoryRule: "Section 2(46) Unfair Contract & E-Commerce Rules",
@@ -118,9 +118,9 @@ const PROBLEMS: ProblemTab[] = [
           "Take dated, close-up photos of the affected facial/skin area. Secure packaging of any left-over cream, bleach, or wax sachets used by the professional.",
       },
       {
-        step: "Serve Advocate Legal Notice for Bodily Harm Damages",
+        step: "Serve Fact-Verified Legal Notice for Bodily Harm Damages",
         description:
-          "Dispatch a statutory advocate notice holding Urban Company and the beautician liable for personal injury, claiming full medical expense reimbursement and substantial damages for physical trauma.",
+          "Dispatch a statutory fact-verified notice holding Urban Company and the beautician liable for personal injury, claiming full medical expense reimbursement and substantial damages for physical trauma.",
       },
     ],
     statutoryRule: "Section 86 CPA 2019 (Strict Service Provider Liability)",
@@ -145,9 +145,9 @@ const PROBLEMS: ProblemTab[] = [
           "Email grievanceofficer@urbancompany.com citing CCPA Dark Patterns Guidelines 2023, requesting immediate cancellation of membership and full bank account reversal.",
       },
       {
-        step: "Serve Advocate Legal Notice for Monetary Restitution",
+        step: "Serve Fact-Verified Legal Notice for Monetary Restitution",
         description:
-          "Issue a formal advocate demand notice for the withheld funds with statutory interest, citing CCPA regulations and Section 2(47) unfair trade practices.",
+          "Issue a formal fact-verified demand notice for the withheld funds with statutory interest, citing CCPA regulations and Section 2(47) unfair trade practices.",
       },
     ],
     statutoryRule: "CCPA Dark Patterns Guidelines 2023 & Section 2(47) CPA",

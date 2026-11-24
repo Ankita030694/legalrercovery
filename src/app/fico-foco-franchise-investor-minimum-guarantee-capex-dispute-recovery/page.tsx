@@ -239,7 +239,7 @@ export default function FicoFocoFranchiseRecoveryPage() {
         "@type": "HowToStep",
         position: 2,
         name: "Serve 48-Hour BNS s.316 Inventory Release Notice",
-        text: "Dispatch an Advocate Legal Notice via Email, WhatsApp, and Speed Post RPAD demanding immediate shutter access and notifying criminal breach of trust liability.",
+        text: "Dispatch a Fact-Verified Legal Notice via Email, WhatsApp, and Speed Post RPAD demanding immediate shutter access and notifying criminal breach of trust liability.",
       },
       {
         "@type": "HowToStep",

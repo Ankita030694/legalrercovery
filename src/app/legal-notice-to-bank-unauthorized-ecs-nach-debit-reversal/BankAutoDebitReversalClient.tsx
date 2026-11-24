@@ -34,7 +34,7 @@ const faqs = [
   },
   {
     question: "Can I file a complaint with the Banking Ombudsman immediately?",
-    answer: "You can approach the RBI Banking Ombudsman after 30 days have passed since you filed a written complaint with the bank, or immediately if the bank rejects your complaint or provides an unsatisfactory resolution. Serving an advocate-drafted legal notice during this window forces the bank's Nodal Officer to resolve the dispute before Ombudsman penalties apply."
+    answer: "You can approach the RBI Banking Ombudsman after 30 days have passed since you filed a written complaint with the bank, or immediately if the bank rejects your complaint or provides an unsatisfactory resolution. Serving a fact-verified legal notice during this window forces the bank's Nodal Officer to resolve the dispute before Ombudsman penalties apply."
   },
   {
     question: "How can I recover wrongful bounce charges debited by the bank?",
@@ -389,7 +389,7 @@ export default function BankAutoDebitReversalClient() {
                     <div>
                       <h4 className="font-bold text-slate-900 mb-1">Serve a Formal Legal Notice</h4>
                       <p className="text-xs md:text-sm text-slate-600 leading-relaxed">
-                        Serve a formal legal notice prepared by an advocate to the bank's Nodal Officer and Chairman. Demand reversal of the debits and refund of charges within 15 days.
+                        Serve a formal legal notice prepared on verified facts to the bank's Nodal Officer and Chairman. Demand reversal of the debits and refund of charges within 15 days.
                       </p>
                     </div>
                   </div>
@@ -556,7 +556,7 @@ export default function BankAutoDebitReversalClient() {
                   <div className="bg-slate-50 p-6 rounded-2xl border border-slate-200 my-6 shadow-sm">
                     <h4 className="font-bold text-slate-900 text-base mb-2">The Closed Personal Loan Case</h4>
                     <p className="text-sm text-slate-600 leading-relaxed">
-                      A business owner in Pune cleared his personal loan and obtained a No Objection Certificate (NOC). However, the bank's automated backend processed a NACH auto-debit of ₹22,000 the following month. He submitted two written complaints, which were ignored. He served a formal legal notice prepared by an advocate, citing the RBI customer rights. The bank, recognizing its regulatory liabilities under the RBI charter, reversed the unauthorized debit and credited ₹1,500 as compensation within 5 days of receiving the legal notice, avoiding any further escalation.
+                      A business owner in Pune cleared his personal loan and obtained a No Objection Certificate (NOC). However, the bank's automated backend processed a NACH auto-debit of ₹22,000 the following month. He submitted two written complaints, which were ignored. He served a formal legal notice prepared on verified facts, citing the RBI customer rights. The bank, recognizing its regulatory liabilities under the RBI charter, reversed the unauthorized debit and credited ₹1,500 as compensation within 5 days of receiving the legal notice, avoiding any further escalation.
                     </p>
                   </div>
 
@@ -570,7 +570,7 @@ export default function BankAutoDebitReversalClient() {
                   <div className="bg-slate-50 p-6 rounded-2xl border border-slate-200 my-6 shadow-sm">
                     <h4 className="font-bold text-slate-900 text-base mb-2">The Wrongful Bounce Fees Recovery</h4>
                     <p className="text-sm text-slate-600 leading-relaxed">
-                      An account holder was charged ₹3,200 in mandate failure fees because of an auto-debit that she had cancelled months ago. She served a legal notice prepared by an advocate, challenging the charges and warning of Ombudsman escalation. The bank's legal cell reviewed the notice, credited the bounce fees, and updated the mandate status to prevent future errors.
+                      An account holder was charged ₹3,200 in mandate failure fees because of an auto-debit that she had cancelled months ago. She served a legal notice prepared on verified facts, challenging the charges and warning of Ombudsman escalation. The bank's legal cell reviewed the notice, credited the bounce fees, and updated the mandate status to prevent future errors.
                     </p>
                   </div>
                 </div>
@@ -619,7 +619,7 @@ export default function BankAutoDebitReversalClient() {
                 <div className="absolute top-0 right-0 w-24 h-24 bg-red-600/10 rounded-full blur-xl pointer-events-none" />
                 <h3 className="text-sm font-black mb-3">Need Legal Advice?</h3>
                 <p className="text-gray-400 mb-5 text-[11px] leading-relaxed">
-                  Discuss your money recovery case with legal experts. We draft and serve legally compliant notices tailored to your transaction.
+                  Discuss your money recovery case with our team. We draft and serve legally compliant notices tailored to your transaction.
                 </p>
                 <button 
                   onClick={() => setIsPaymentModalOpen(true)}

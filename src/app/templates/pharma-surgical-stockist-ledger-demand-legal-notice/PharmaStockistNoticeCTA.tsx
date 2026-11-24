@@ -24,10 +24,10 @@ export default function PharmaStockistNoticeCTA({ className = "" }: PharmaStocki
                 Track 1 &bull; Self-Serve Single Account Test
               </span>
               <h3 className="text-lg sm:text-xl md:text-2xl font-extrabold tracking-tight text-white mb-2.5">
-                Issue 1 Advocate Demand Notice Now (&rupee;{basePrice})
+                Issue 1 Fact-Verified Demand Notice Now (&rupee;{basePrice})
               </h3>
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-                Have an empanelled pharmaceutical debt-recovery advocate review your stockist ledger, Drug License details, batch invoices, and security cheque covenants, then dispatch a formal statutory notice via Speed Post RPAD, Email, and WhatsApp within 24 hours.
+                Have an empanelled pharmaceutical debt-recovery fact verification your stockist ledger, Drug License details, batch invoices, and security cheque covenants, then dispatch a formal statutory notice via Speed Post RPAD, Email, and WhatsApp within 24 hours.
               </p>
               <ul className="space-y-1.5 text-xs text-slate-200 mb-6">
                 <li>&check; Mandatory Section 20 NI Act pre-deposit intimation before filling security cheque</li>
@@ -42,7 +42,7 @@ export default function PharmaStockistNoticeCTA({ className = "" }: PharmaStocki
                 onClick={() => setIsModalOpen(true)}
                 className="flex-1 inline-flex items-center justify-center px-5 py-3.5 rounded-xl font-bold text-white bg-[#DC2626] hover:bg-[#B91C1C] transition-colors shadow-lg shadow-red-900/30 text-xs sm:text-sm cursor-pointer text-center"
               >
-                Dispatch 1 Advocate Notice (&rupee;{basePrice}) &rarr;
+                Dispatch 1 Fact-Verified Notice (&rupee;{basePrice}) &rarr;
               </button>
               <Link
                 href="/user/new-recovery"

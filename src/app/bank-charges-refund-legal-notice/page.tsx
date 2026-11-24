@@ -154,7 +154,7 @@ const FAQS = [
   {
     question: "What should I do if my bank refuses to reverse unfair charges through customer care?",
     answer:
-      "Customer care desks and branch executives operate under sales quotas and lack discretionary waiver authority. The statutory escalation path is: (1) Lodge a formal written complaint with the Branch Manager and Branch Grievance Cell with a 30-day resolution deadline; (2) Escalate to the Principal Nodal Officer (PNO); (3) Serve an advocate legal notice under Section 2(11) of the Consumer Protection Act, 2019; and (4) File a formal complaint on the RBI CMS portal (cms.rbi.org.in) or consumer court on e-Jagriti.",
+      "Customer care desks and branch executives operate under sales quotas and lack discretionary waiver authority. The statutory escalation path is: (1) Lodge a formal written complaint with the Branch Manager and Branch Grievance Cell with a 30-day resolution deadline; (2) Escalate to the Principal Nodal Officer (PNO); (3) Serve a fact-verified legal notice under Section 2(11) of the Consumer Protection Act, 2019; and (4) File a formal complaint on the RBI CMS portal (cms.rbi.org.in) or consumer court on e-Jagriti.",
   },
   {
     question: "Can I claim a refund of GST charged on illegal bank charges?",
@@ -205,7 +205,7 @@ export default function BankChargesRefundPage() {
           </h1>
 
           <p className="text-slate-300 text-sm sm:text-base md:text-lg leading-relaxed mb-6">
-            Arbitrary minimum balance deductions, repeated ECS/NACH bounce fees, unsolicited card charges, and illegal loan foreclosure penalties violate binding Reserve Bank of India (RBI) circulars. Discover how to enforce your statutory consumer rights, demand 100% fee reversal with interest, and serve a verified advocate legal notice.
+            Arbitrary minimum balance deductions, repeated ECS/NACH bounce fees, unsolicited card charges, and illegal loan foreclosure penalties violate binding Reserve Bank of India (RBI) circulars. Discover how to enforce your statutory consumer rights, demand 100% fee reversal with interest, and serve a fact-verified legal notice.
           </p>
 
           <div className="flex flex-wrap items-center gap-4 text-xs sm:text-sm text-slate-400 border-t border-slate-800/80 pt-4">
@@ -525,7 +525,7 @@ export default function BankChargesRefundPage() {
               </span>
               <div>
                 <h3 className="text-base font-bold text-slate-900">
-                  Step 3: Issue a Formal Advocate Legal Notice (15-Day Statutory Demand)
+                  Step 3: Issue a Formal Fact-Verified Legal Notice (15-Day Statutory Demand)
                 </h3>
                 <p className="text-xs sm:text-sm text-slate-600 mt-1 leading-relaxed">
                   If the bank remains non-responsive or justifies unfair fees, serve a formal statutory advocate notice via Registered Speed Post and digital delivery under Section 63 BSA 2023. A legal notice puts the bank on notice of litigation, cites penal damages under the Consumer Protection Act 2019, and usually triggers prompt legal department intervention.

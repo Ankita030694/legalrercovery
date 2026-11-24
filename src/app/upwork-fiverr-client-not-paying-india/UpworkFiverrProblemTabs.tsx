@@ -120,7 +120,7 @@ const PROBLEMS: ProblemTab[] = [
       {
         step: "Serve a 15-Day Advocate Legal Demand & IP Freeze Notice",
         description:
-          "Dispatch a formal Advocate Legal Notice to the company and its directors demanding full invoice settlement within 15 days, backed by MSME ODR / Order 37 CPC (for India) or cross-border debt & IP escalation.",
+          "Dispatch a formal Fact-Verified Legal Notice to the company and its directors demanding full invoice settlement within 15 days, backed by MSME ODR / Order 37 CPC (for India) or cross-border debt & IP escalation.",
       },
     ],
     statutoryRule: "Sections 10, 70 & 73 Indian Contract Act + Sec 16 MSMED Act + Order 37 CPC",

@@ -138,7 +138,7 @@ const RECOVERY_STAGES = [
     stage: "Stage 3",
     timeline: "Day 16 – 25",
     title: "Section 19 Copyright Lien & Infringement Warning",
-    desc: "Serve an advocate demand notice confirming that software copyright remains with the agency under Copyright Act s.17/19. Warn debtor directors that unauthorized live use constitutes infringement under s.51.",
+    desc: "Serve a fact-verified demand notice confirming that software copyright remains with the agency under Copyright Act s.17/19. Warn debtor directors that unauthorized live use constitutes infringement under s.51.",
   },
   {
     stage: "Stage 4",
@@ -181,7 +181,7 @@ const FAQS = [
   },
   {
     q: "Can an Indian software agency recover unpaid milestone dues from international US, UK, or EU clients?",
-    a: "Yes. Cross-border tech contracts executed with foreign clients can be enforced through multiple legal mechanisms. If the contract designates Indian governing law and jurisdiction, the agency can obtain a Commercial Summary Decree under Order XXXVII CPC and execute it internationally. If the contract includes an international commercial arbitration clause (e.g., SIAC, LCIA, or MCIA), arbitral awards are enforceable across 170+ countries under the 1958 New York Convention. Furthermore, serving an advocate-drafted statutory breach notice directly on the foreign entity's General Counsel and Board of Directors, coupled with threats of DMCA / copyright takedown notices to their cloud host (AWS/Azure/GCP), resolves over 70% of cross-border software milestone disputes without overseas litigation.",
+    a: "Yes. Cross-border tech contracts executed with foreign clients can be enforced through multiple legal mechanisms. If the contract designates Indian governing law and jurisdiction, the agency can obtain a Commercial Summary Decree under Order XXXVII CPC and execute it internationally. If the contract includes an international commercial arbitration clause (e.g., SIAC, LCIA, or MCIA), arbitral awards are enforceable across 170+ countries under the 1958 New York Convention. Furthermore, serving a fact-verified statutory breach notice directly on the foreign entity's General Counsel and Board of Directors, coupled with threats of DMCA / copyright takedown notices to their cloud host (AWS/Azure/GCP), resolves over 70% of cross-border software milestone disputes without overseas litigation.",
   },
   {
     q: "What electronic evidence is required under Section 63 of Bharatiya Sakshya Adhiniyam, 2023 (BSA)?",
@@ -769,7 +769,7 @@ export default function SoftwareUatSignOffDelayRecoveryPage() {
               <div className="bg-emerald-50 border-l-4 border-emerald-600 p-4 rounded-r-xl text-xs sm:text-sm text-slate-800 space-y-2">
                 <p className="font-bold text-emerald-900">Commercial Resolution Outcome:</p>
                 <p>
-                  Upon receiving the Advocate Tri-Channel Demand Notice containing timestamped AWS CloudWatch telemetry and the Section 43B(h) tax disallowance intimation, the client's Chief Financial Officer intervened. Within 18 business days, the client disbursed ₹26.40 Lakh (100% of Milestone 4 + 100% of approved Change Orders), agreed to execute a written IP assignment deed, and entered a paid annual support contract. Calculate your own statutory interest with our{" "}
+                  Upon receiving the Fact-Verified Tri-Channel Demand Notice containing timestamped AWS CloudWatch telemetry and the Section 43B(h) tax disallowance intimation, the client's Chief Financial Officer intervened. Within 18 business days, the client disbursed ₹26.40 Lakh (100% of Milestone 4 + 100% of approved Change Orders), agreed to execute a written IP assignment deed, and entered a paid annual support contract. Calculate your own statutory interest with our{" "}
                   <Link
                     href="/tools/msme-delayed-payment-interest-calculator"
                     className="text-[#DC2626] font-semibold underline hover:text-red-700"

@@ -777,7 +777,7 @@ export default function DutyDrawbackRecoveryDefensePage() {
                       <strong>Immediate SCN Docket Inspection:</strong> Obtain certified copies of the port recovery file to ascertain whether the notice arose from automated EDPMS non-realization flags or specific DRI intelligence.
                     </li>
                     <li>
-                      <strong>Execute Formal Legal Notice to Foreign Buyer:</strong> Issue an advocate-drafted cross-border legal demand letter via registered courier and email. Under RBI Master Direction Para C.18, producing an advocate legal notice is prime evidence demonstrating that all commercial recovery avenues were exhausted.
+                      <strong>Execute Formal Legal Notice to Foreign Buyer:</strong> Issue a fact-verified cross-border legal demand letter via registered courier and email. Under RBI Master Direction Para C.18, producing a fact-verified legal notice is prime evidence demonstrating that all commercial recovery avenues were exhausted.
                     </li>
                     <li>
                       <strong>Obtain AD Bank Extension or Pending Status Certificate:</strong> Secure a formal letter from the Authorized Dealer Bank confirming that an extension application under FEMA Regulation 9 is pending or that an ECGC claim has been lodged.

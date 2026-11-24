@@ -98,7 +98,7 @@ const FAQS = [
     question:
       "How can shipping aggregators recover RTO and volumetric weight arrears when COD payouts were remitted early?",
     answer:
-      "Early T+1 or T+2 COD remittance is a credit accommodation governed by the aggregator's settlement and clawback clauses. Once subsequent Return-to-Origin (RTO) freight charges or automated sorter volumetric weight-discrepancy debits push the wallet negative, the aggregator can freeze any linked GSTIN/PAN sub-wallets, generate a consolidated AWB-level ledger, and serve a 15-day batch advocate notice via Email, WhatsApp, and Speed Post RPAD demanding wallet regularization.",
+      "Early T+1 or T+2 COD remittance is a credit accommodation governed by the aggregator's settlement and clawback clauses. Once subsequent Return-to-Origin (RTO) freight charges or automated sorter volumetric weight-discrepancy debits push the wallet negative, the aggregator can freeze any linked GSTIN/PAN sub-wallets, generate a consolidated AWB-level ledger, and serve a 15-day batch legal notice via Email, WhatsApp, and Speed Post RPAD demanding wallet regularization.",
   },
   {
     question:
@@ -110,7 +110,7 @@ const FAQS = [
     question:
       "Can a courier company send 500 to 1,000+ legal notices in a single monthly batch via CSV?",
     answer:
-      "Yes. Enterprise courier aggregators and hyperlocal platforms routinely onboard 500 to 1,000+ negative-wallet accounts per month using a standardized CSV ledger feed (Seller Legal Name, GSTIN/PAN, Registered Address, Email, WhatsApp Number, Negative Wallet Principal, and AWB/Weight Audit Count). Each account receives an individualized, advocate-signed statutory notice dispatched across Email, WhatsApp, and Speed Post RPAD.",
+      "Yes. Enterprise courier aggregators and hyperlocal platforms routinely onboard 500 to 1,000+ negative-wallet accounts per month using a standardized CSV ledger feed (Seller Legal Name, GSTIN/PAN, Registered Address, Email, WhatsApp Number, Negative Wallet Principal, and AWB/Weight Audit Count). Each account receives an individualized, fact-verified statutory notice dispatched across Email, WhatsApp, and Speed Post RPAD.",
   },
   {
     question:
@@ -122,7 +122,7 @@ const FAQS = [
     question:
       "What is the typical ticket threshold for moving from batch legal notices to Order 37 CPC or Arbitration?",
     answer:
-      "Accounts between -₹15,000 and -₹1,00,000 typically deliver the highest net ROI through automated 3-channel advocate demand notices and institutional ODR conciliation, avoiding disproportionate court fees. Accounts exceeding -₹1,00,000 to -₹5,00,000+ (including postpaid enterprise courier defaults) justify rapid escalation to Institutional Arbitration under Section 21 or Order XXXVII CPC summary suits.",
+      "Accounts between -₹15,000 and -₹1,00,000 typically deliver the highest net ROI through automated 3-channel legal demand notices and institutional ODR conciliation, avoiding disproportionate court fees. Accounts exceeding -₹1,00,000 to -₹5,00,000+ (including postpaid enterprise courier defaults) justify rapid escalation to Institutional Arbitration under Section 21 or Order XXXVII CPC summary suits.",
   },
   {
     question:
@@ -185,7 +185,7 @@ const HOWTO_SCHEMA = {
       "@type": "HowToStep",
       "position": 3,
       "name": "Dispatch Synchronized Batch Legal Notices (Email, WhatsApp & RPAD)",
-      "text": "Serve individualized advocate-signed 15-day statutory demand notices in batches of 500 to 1,000+ accounts per month with direct wallet top-up payment links.",
+      "text": "Serve individualized fact-verified 15-day statutory demand notices in batches of 500 to 1,000+ accounts per month with direct wallet top-up payment links.",
     },
     {
       "@type": "HowToStep",
@@ -393,7 +393,7 @@ export default function CourierAggregatorNegativeWalletRecoveryPage() {
               </div>
 
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
-                Automated email dunning and WhatsApp bot reminders recover barely 6%–8% of abandoned balances because merchants assume aggregators will not litigate sub-₹2 Lakh clickwrap balances. Replacing passive reminders with <strong>advocate-signed statutory legal notices</strong>—backed by{" "}
+                Automated email dunning and WhatsApp bot reminders recover barely 6%–8% of abandoned balances because merchants assume aggregators will not litigate sub-₹2 Lakh clickwrap balances. Replacing passive reminders with <strong>fact-verified statutory legal notices</strong>—backed by{" "}
                 <Link
                   href="/recovery/unpaid-invoices"
                   className="text-[#DC2626] font-semibold underline hover:text-[#B91C1C]"
@@ -466,7 +466,7 @@ export default function CourierAggregatorNegativeWalletRecoveryPage() {
                     RTO / Weight Audit
                   </text>
                   <text x="110" y="192" textAnchor="middle" fill="#94A3B8" fontSize="10">
-                    CSV Batch Advocate Notice
+                    CSV Batch Legal Notice
                   </text>
                   <text x="110" y="207" textAnchor="middle" fill="#94A3B8" fontSize="10">
                     (Email + WhatsApp + RPAD)
@@ -537,7 +537,7 @@ export default function CourierAggregatorNegativeWalletRecoveryPage() {
                 <div className="bg-slate-900 text-white rounded-xl p-4 border border-slate-800">
                   <p className="text-xs font-extrabold text-emerald-400">Tier 1: -₹15K to -₹1L</p>
                   <p className="text-xs text-slate-300 mt-1">
-                    CSV Batch Advocate Notice (Email + WhatsApp + Speed Post RPAD) with direct wallet top-up link.
+                    CSV Batch Legal Notice (Email + WhatsApp + Speed Post RPAD) with direct wallet top-up link.
                   </p>
                 </div>
                 <div className="bg-slate-900 text-white rounded-xl p-4 border border-slate-800">
@@ -720,7 +720,7 @@ export default function CourierAggregatorNegativeWalletRecoveryPage() {
                 </div>
                 <div className="border border-slate-200 rounded-xl p-4 bg-slate-50">
                   <h3 className="text-sm font-extrabold text-slate-900 mb-1.5">
-                    Stage B: Advocate-Signed Notice Generation
+                    Stage B: Fact-Verified Notice Generation
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                     Generate bespoke statutory notices citing IT Act s.10A clickwrap acceptance, exact AWB/RTO/volumetric ledger arrears, a 15-day cure window, and embedded UPI/NEFT wallet-recharge links.
@@ -788,7 +788,7 @@ export default function CourierAggregatorNegativeWalletRecoveryPage() {
                     Structured Batch Legal Notice + Selective ODR Escalation
                   </p>
                   <ul className="space-y-2 text-xs sm:text-sm text-emerald-950">
-                    <li>• Batch Dispatch: <strong>500 Advocate Notices</strong> (Email + WhatsApp + RPAD)</li>
+                    <li>• Batch Dispatch: <strong>500 Legal Notices</strong> (Email + WhatsApp + RPAD)</li>
                     <li>• Illustrative Pre-Suit Cure Scenario (28%–35%): <strong>₹95.2L–₹1.19 Cr</strong></li>
                     <li>• Top 80 Accounts (&gt;₹1.5L) Escalated to ODR / Order 37: <strong>+₹42L–₹55L</strong></li>
                     <li>• Preserved Audit Trail: <strong>500 BSA s.63 Dossiers</strong> for tax write-off or suit</li>

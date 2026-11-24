@@ -24,10 +24,10 @@ export default function CraneGatePassCTA({ className = "" }: CraneGatePassCTAPro
                 Track 1 · Single Crane / Rig Gate-Pass Release
               </span>
               <h3 className="text-lg sm:text-xl font-bold text-white mb-2">
-                Test 1 Live Overdue Case Now (&#8377;{basePrice} &middot; Advocate Drafted &middot; Email + WhatsApp + Speed Post RPAD)
+                Test 1 Live Overdue Case Now (&#8377;{basePrice} &middot; Fact-Verified &middot; Email + WhatsApp + Speed Post RPAD)
               </h3>
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-                Upload your Vahan RC / OEM Invoice, Hire Agreement, Gate-In Challan, and Project Owner / EPC Contractor details. Our advocates serve a Joint Tortious Conversion &amp; BNS s.316 Gate-Pass Notice with daily idle-rent demand and Police Station CC.
+                Enter your vehicle/OEM invoice, hire agreement, gate-in challan, and Project Owner / EPC Contractor details in the online form. Our team verifies the facts and serves a Joint Tortious Conversion &amp; BNS s.316 Gate-Pass Notice with daily idle-rent demand and Police Station CC.
               </p>
             </div>
 

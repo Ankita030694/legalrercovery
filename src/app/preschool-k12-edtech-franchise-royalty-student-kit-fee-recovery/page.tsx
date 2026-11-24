@@ -70,7 +70,7 @@ const FAQ_ITEMS = [
   },
   {
     q: "How does a multi-center skill or preschool chain recover unpaid Welcome Kit fees from 50+ centers at once?",
-    a: "India's 120+ preschool, abacus, and robotics chains rarely litigate ₹50,000–₹3 Lakh per-center arrears individually due to legal fees. By onboarding as a recurring Representee account on LegalRecovery.in, franchisors upload a single CSV of defaulting centers and dispatch synchronized Advocate Demand Notices via Email, WhatsApp, and Speed Post RPAD—triggering rapid 15-day settlements across the territory.",
+    a: "India's 120+ preschool, abacus, and robotics chains rarely litigate ₹50,000–₹3 Lakh per-center arrears individually due to legal fees. By onboarding as a recurring Representee account on LegalRecovery.in, franchisors upload a single CSV of defaulting centers and dispatch synchronized Fact-Verified Demand Notices via Email, WhatsApp, and Speed Post RPAD—triggering rapid 15-day settlements across the territory.",
   },
   {
     q: "Are post-dated cheques or e-NACH mandates collected for annual student-kit dispatches enforceable if bounced?",
@@ -213,7 +213,7 @@ export default function PreschoolKitRecoveryPage() {
         "@type": "HowToStep",
         position: 3,
         name: "Serve Synchronized Demand & Copyright Cease-and-Desist Notice",
-        text: "Dispatch an Advocate Legal Notice (single or bulk CSV batch) claiming imputed kit fees, unpaid royalties, and Copyright Act s.51/s.55 relief with a 15-day cure window.",
+        text: "Dispatch a Fact-Verified Legal Notice (single or bulk CSV batch) claiming imputed kit fees, unpaid royalties, and Copyright Act s.51/s.55 relief with a 15-day cure window.",
       },
       {
         "@type": "HowToStep",
@@ -652,7 +652,7 @@ export default function PreschoolKitRecoveryPage() {
               </div>
 
               <p className="text-sm text-slate-600 mb-6">
-                Test our Advocate-drafted audit demand workflow on a single defaulting preschool center, or onboard your entire 50–1,500 center network as a bulk Representee account.
+                Test our Fact-verified audit demand workflow on a single defaulting preschool center, or onboard your entire 50–1,500 center network as a bulk Representee account.
               </p>
 
               <PreschoolKitCTA />

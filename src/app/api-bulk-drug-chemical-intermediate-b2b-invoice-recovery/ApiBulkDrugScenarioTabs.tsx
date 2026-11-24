@@ -31,7 +31,7 @@ const SCENARIOS: Scenario[] = [
     actionProtocol: [
       "Issue an immediate formal requisition under Section 42 Sale of Goods Act for batch manufacturing records (BMR), dispensing logs, and retained sample verification.",
       "Send a sealed aliquot of the manufacturer's certified Control/Retention Sample to a NABL-accredited or CDL reference laboratory for third-party re-testing.",
-      "Serve an advocate-vetted 10-day Demand Notice demonstrating that the buyer's silence past the contractual QC window constituted final statutory acceptance.",
+      "Serve a fact-verified 10-day Demand Notice demonstrating that the buyer's silence past the contractual QC window constituted final statutory acceptance.",
       "Escalate unpaid ledger dues (>= ₹1 Crore) via IBC Section 8 Demand Notice (Form 3/4) to preempt fraudulent NCLT 'pre-existing dispute' defenses.",
     ],
   },

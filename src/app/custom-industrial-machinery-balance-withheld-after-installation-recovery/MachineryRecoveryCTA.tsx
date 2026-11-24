@@ -25,10 +25,10 @@ export default function MachineryRecoveryCTA({
               Track 1 &bull; Single Stalled Machinery Balance Notice
             </span>
             <p className="text-lg sm:text-xl font-extrabold text-white mb-2">
-              Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Advocate Drafted &middot; Email + WhatsApp + Speed Post RPAD)
+              Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Fact-Verified &middot; Email + WhatsApp + Speed Post RPAD)
             </p>
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-              Serve a high-impact, advocate-vetted 15-day demand notice on a factory buyer running your machinery in commercial production while withholding the final 10–20% balance. Enforces Sale of Goods Act Section 42 deemed acceptance, Section 59 bar against belated rejection, Section 43B(h) income tax disallowance warnings, and MSMED Act 3x RBI compound interest.
+              Serve a high-impact, fact-verified 15-day demand notice on a factory buyer running your machinery in commercial production while withholding the final 10–20% balance. Enforces Sale of Goods Act Section 42 deemed acceptance, Section 59 bar against belated rejection, Section 43B(h) income tax disallowance warnings, and MSMED Act 3x RBI compound interest.
             </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-3">

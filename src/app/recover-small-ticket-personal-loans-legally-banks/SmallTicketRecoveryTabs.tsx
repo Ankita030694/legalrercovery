@@ -85,7 +85,7 @@ const SCENARIOS: ScenarioTab[] = [
       {
         step: "Section 25 PSS Act Pre-Trial Summons Warning",
         description:
-          "Serve a stern advocate notice specifying that criminal prosecution under Section 25 PSS Act entails mandatory court appearances, non-bailable warrants (NBWs) upon default, and permanent police verification disqualification.",
+          "Serve a stern fact-verified notice specifying that criminal prosecution under Section 25 PSS Act entails mandatory court appearances, non-bailable warrants (NBWs) upon default, and permanent police verification disqualification.",
       },
       {
         step: "Fast-Track Digital Mediation / ODR Referral",

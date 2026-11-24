@@ -173,7 +173,7 @@ const IND_14_SPOKES: IndustrySpoke[] = [
     archetype: "P1",
     archetypeLabel: "P1 Notice Workspace",
     track: "Notice Templates",
-    title: "Advocate-Vetted Legal Demand Notice for RMC, Steel, Chemical & Polymer",
+    title: "Fact-Verified Legal Demand Notice for RMC, Steel, Chemical & Polymer",
     url: "/templates/rmc-steel-chemical-building-material-demand-legal-notice",
     statute: "s.42 Acceptance & Pre-IBC Warning",
     summary:
@@ -1086,7 +1086,7 @@ export default function ChemicalsSteelRmcBuildingMaterialsRecoveryPage() {
                 </div>
 
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
-                  Explore all 10 specialized playbooks, statutory deep-dives, Hindi Vyapari guides, and advocate-vetted notice workspaces in the IND-14 Chemicals, Steel, RMC &amp; Building Materials cluster:
+                  Explore all 10 specialized playbooks, statutory deep-dives, Hindi Vyapari guides, and ready-to-use notice workspaces in the IND-14 Chemicals, Steel, RMC &amp; Building Materials cluster:
                 </p>
 
                 <div className="space-y-8">
@@ -1271,7 +1271,7 @@ export default function ChemicalsSteelRmcBuildingMaterialsRecoveryPage() {
 
                 <div className="pt-4 border-t border-slate-200 text-[11px] text-slate-500 leading-relaxed">
                   <p>
-                    <strong>Editorial &amp; Review Attribution:</strong> Reviewed by Advocate Anuj Anand Malik, Founder &amp; Managing Partner, AMA Legal Solutions. Formulated strictly from institutional creditor perspectives for RMC plants, steel distributors, chemical traders, polymer DCAs, and building-material manufacturers across India.
+                    <strong>Editorial &amp; Review Attribution:</strong> Prepared on verified facts Anuj Anand Malik, Founder &amp; Managing Partner, AMA Legal Solutions. Formulated strictly from institutional creditor perspectives for RMC plants, steel distributors, chemical traders, polymer DCAs, and building-material manufacturers across India.
                   </p>
                 </div>
               </section>

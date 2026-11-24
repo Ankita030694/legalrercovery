@@ -110,7 +110,7 @@ const reviews = [
     name: "Vikram S.",
     rating: 5,
     datePublished: "2024-02-18",
-    review: "I lent 5 lakhs to a friend who stopped taking my calls. The lawyers drafted a very strict legal notice quoting my WhatsApp chats and bank transfers. He settled within 10 days of receiving the notice. Exceptional service."
+    review: "I lent 5 lakhs to a friend who stopped taking my calls. The team verified my details and sent a very strict legal notice quoting my WhatsApp chats and bank transfers. He settled within 10 days of receiving the notice. Exceptional service."
   },
   {
     name: "Anjali M.",
@@ -122,7 +122,7 @@ const reviews = [
     name: "Rajesh K.",
     rating: 4,
     datePublished: "2023-12-10",
-    review: "I didn't have a written agreement, just NEFT records and some texts. The advocate explained how civil recovery works and sent a powerful demand notice. It forced the borrower to negotiate."
+    review: "I didn't have a written agreement, just NEFT records and some texts. The team verified my details and sent a powerful demand notice. It forced the borrower to negotiate."
   },
   {
     name: "Neha P.",
@@ -297,7 +297,7 @@ export default function FriendlyLoanRecoveryClient() {
               Recover Friendly Loans via <span className="text-[#DC2626]">Legal Notice</span>
             </h1>
             <p className="text-sm md:text-xl mb-8 md:mb-12 max-w-3xl mx-auto text-slate-300 leading-relaxed font-medium">
-              Don't let relationships cost you your hard-earned money. Send a powerful, lawyer-drafted legal notice utilizing evidence like WhatsApp chats, bank statements, and promissory notes to force repayment.
+              Don't let relationships cost you your hard-earned money. Send a powerful, fact-verified legal notice utilizing evidence like WhatsApp chats, bank statements, and promissory notes to force repayment.
             </p>
             <button 
               onClick={() => setIsPaymentModalOpen(true)}
@@ -412,7 +412,7 @@ export default function FriendlyLoanRecoveryClient() {
                 <div className="absolute top-0 right-0 w-32 h-32 bg-[#DC2626] opacity-5 rounded-full blur-2xl -translate-y-1/2 translate-x-1/2"></div>
                 <h3 className="text-lg font-black text-slate-900 mb-2">Ready to Recover?</h3>
                 <p className="text-sm text-slate-600 mb-6 leading-relaxed">
-                  Let expert advocates draft a powerful legal notice to force repayment immediately.
+                  Let We draft a powerful legal notice to force repayment immediately.
                 </p>
                 <button 
                   onClick={() => setIsPaymentModalOpen(true)}
@@ -423,7 +423,7 @@ export default function FriendlyLoanRecoveryClient() {
                 <div className="flex flex-col gap-2 text-left mt-4">
                   <div className="flex items-start gap-2">
                     <CheckCircle className="w-4 h-4 text-green-500 shrink-0 mt-0.5" />
-                    <span className="text-xs text-slate-600 font-medium">Drafted by Senior Advocates</span>
+                    <span className="text-xs text-slate-600 font-medium">Prepared on verified facts</span>
                   </div>
                   <div className="flex items-start gap-2">
                     <CheckCircle className="w-4 h-4 text-green-500 shrink-0 mt-0.5" />

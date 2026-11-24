@@ -60,7 +60,7 @@ const SCENARIOS: ScenarioTab[] = [
       {
         step: "Serve 7-Day BNS s.316 Hardware Surrender Notice",
         description:
-          "Issue a formal advocate notice demanding physical surrender of the tagged appliances within 7 days, specifying full replacement value and daily rental detention charges.",
+          "Issue a formal fact-verified notice demanding physical surrender of the tagged appliances within 7 days, specifying full replacement value and daily rental detention charges.",
       },
       {
         step: "Notify IT-Park Facility & File BNS s.316 / Civil Action",

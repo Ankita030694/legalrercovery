@@ -37,9 +37,9 @@ const PROBLEMS: ProblemTab[] = [
           "Send an email demanding a 100% refund of the registration fee due to complete non-performance of placement services within the agreed timeframe.",
       },
       {
-        step: "Serve an Advocate Statutory Legal Notice",
+        step: "Serve a Fact-Verified Statutory Legal Notice",
         description:
-          "If the agency refuses or claims the fee is 'non-refundable', have an advocate serve a formal legal notice. Under consumer court precedents, unilateral 'non-refundable' clauses in consumer contracts are void ab initio.",
+          "If the agency refuses or claims the fee is 'non-refundable', serve a formal legal notice. Under consumer court precedents, unilateral 'non-refundable' clauses in consumer contracts are void ab initio.",
       },
     ],
     statutoryRule: "Section 2(47) Consumer Protection Act 2019 & Section 318(4) BNS 2023",
@@ -118,7 +118,7 @@ const PROBLEMS: ProblemTab[] = [
           "File a formal complaint with the regional POE office under the Ministry of External Affairs, which has statutory powers to suspend agency licenses and initiate police prosecution.",
       },
       {
-        step: "Serve Advocate Legal Notice & Consumer Complaint",
+        step: "Serve Fact-Verified Legal Notice & Consumer Complaint",
         description:
           "If the consultancy has an operational office in India, serve an advocate legal notice citing Section 24 Emigration Act and file a petition before the District Consumer Commission on e-Jagriti.",
       },

@@ -284,7 +284,7 @@ export default function EmployerWithholdingClient() {
                     Issuing a Formal Legal Notice to the Employer
                   </h3>
                   <p className="text-sm md:text-base leading-relaxed">
-                    If polite emails to HR and senior management go unanswered or result in hostile refusals, you must escalate the matter legally. The most potent tool at this stage is a formal legal notice drafted by a qualified advocate. A legal notice serves as a strict, formal warning that you are preparing to initiate civil and criminal proceedings if your demands are not met. It shatters the employer&apos;s illusion that you are just a helpless former employee who will eventually give up. If you are unsure about the logistics of this process, you can easily explore how to <Link href="/how-can-i-send-a-legal-notice-online-to-someone-in-india-without-hiring-a-lawyer" className="text-[#DC2626] hover:underline font-medium">send a legal notice online</Link> to initiate this critical step swiftly.
+                    If polite emails to HR and senior management go unanswered or result in hostile refusals, you must escalate the matter legally. The most potent tool at this stage is a formal legal notice prepared on verified facts. A legal notice serves as a strict, formal warning that you are preparing to initiate civil and criminal proceedings if your demands are not met. It shatters the employer&apos;s illusion that you are just a helpless former employee who will eventually give up. If you are unsure about the logistics of this process, you can easily explore how to <Link href="/how-can-i-send-a-legal-notice-online-to-someone-in-india-without-hiring-a-lawyer" className="text-[#DC2626] hover:underline font-medium">send a legal notice online</Link> to initiate this critical step swiftly.
                   </p>
                   
                   {/* LEGAL PROCESS MAP UI */}
@@ -485,7 +485,7 @@ export default function EmployerWithholdingClient() {
                       <div className="flex flex-col md:flex-row justify-between items-start md:items-center p-6 bg-white hover:bg-slate-50 transition-colors">
                         <div className="mb-2 md:mb-0">
                           <h5 className="font-bold text-slate-800">Drafting and Serving Legal Notice</h5>
-                          <p className="text-xs text-slate-500 mt-1">Initial formal warning drafted by an advocate</p>
+                          <p className="text-xs text-slate-500 mt-1">Initial formal warning prepared on verified facts</p>
                         </div>
                         <div className="text-left md:text-right">
                           <span className="inline-block bg-green-100 text-green-800 text-xs font-bold px-3 py-1 rounded-full border border-green-200">Very Low Cost</span>

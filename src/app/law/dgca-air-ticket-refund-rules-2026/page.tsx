@@ -817,7 +817,7 @@ export default function DgcaAirTicketRefundRules2026Page() {
                 </div>
                 <div>
                   <h3 className="text-lg font-bold text-slate-900 mb-1">
-                    Serve an Advocate Statutory Legal Demand Notice
+                    Serve a Fact-Verified Statutory Legal Demand Notice
                   </h3>
                   <p className="text-sm sm:text-base text-slate-600 leading-relaxed">
                     When customer care stonewalls or sends bot replies, serve a formal Advocate Legal Demand Notice to the airline and booking intermediary. An advocate notice puts corporate legal directors on formal notice under Section 2(47) of the Consumer Protection Act, demanding the principal amount plus 18% statutory interest within 15 days.

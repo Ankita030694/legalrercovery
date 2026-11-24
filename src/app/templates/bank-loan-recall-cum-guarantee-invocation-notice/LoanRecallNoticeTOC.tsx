@@ -113,7 +113,7 @@ export default function LoanRecallNoticeTOC() {
               href="#heading-institutional-cta"
               className="block w-full text-center px-3 py-2 rounded-xl bg-[#DC2626] hover:bg-[#B91C1C] text-white text-xs font-bold transition-colors"
             >
-              Advocate Dispatch (&rupee;999)
+              Dispatch (&rupee;999)
             </a>
           </div>
         </div>

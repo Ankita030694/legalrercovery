@@ -117,7 +117,7 @@ export default function HospitalityNoticeTOC() {
               href="/user/new-recovery"
               className="block w-full py-2.5 px-3 rounded-xl bg-[#DC2626] hover:bg-[#B91C1C] text-white text-xs font-bold text-center transition-colors shadow-sm"
             >
-              Send Advocate Notice (₹999)
+              Send Fact-Verified Notice (₹999)
             </Link>
             <Link
               href="/bulk-recovery-cases-all-in-one-affordable-solutions"

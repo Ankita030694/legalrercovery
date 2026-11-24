@@ -185,7 +185,7 @@ const FAQS = [
     question:
       "What if our old quotation or invoice did NOT contain an explicit general-lien clause under Section 171?",
     answer:
-      "Do not panic—and do not blindly surrender the cylinders before getting advocate review. Even without a written s.171 contractual clause, you still have four statutory levers: (1) check whether cylinder invoices themselves remain partly unpaid or billed as 'development contribution' (giving you title retention under Sale of Goods s.19 or unpaid seller's lien under s.47); (2) check whether Section 170 particular lien applies to unpaid cylinder engraving/re-chroming/proofing charges; (3) issue an immediate MSMED Act s.15–18 + Income Tax Section 43B(h) demand notice before offering conditional handover against a bank guarantee or RTGS settlement; and (4) claim Order XXXVIII Rule 5 attachment before judgment in a Commercial Court recovery suit.",
+      "Do not panic—and do not blindly surrender the cylinders before getting fact verification. Even without a written s.171 contractual clause, you still have four statutory levers: (1) check whether cylinder invoices themselves remain partly unpaid or billed as 'development contribution' (giving you title retention under Sale of Goods s.19 or unpaid seller's lien under s.47); (2) check whether Section 170 particular lien applies to unpaid cylinder engraving/re-chroming/proofing charges; (3) issue an immediate MSMED Act s.15–18 + Income Tax Section 43B(h) demand notice before offering conditional handover against a bank guarantee or RTGS settlement; and (4) claim Order XXXVIII Rule 5 attachment before judgment in a Commercial Court recovery suit.",
   },
   {
     question:
@@ -1133,7 +1133,7 @@ export default function PrintingCylindersLienLawPage() {
               </div>
 
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed mb-6">
-                Never send an informal WhatsApp refusal that a brand&rsquo;s counsel can twist into an illegal-detention allegation. Put an advocate-vetted statutory lien, MSME Section 43B(h), and Section 44 storage notice on the legal record immediately:
+                Never send an informal WhatsApp refusal that a brand&rsquo;s counsel can twist into an illegal-detention allegation. Put a fact-verified statutory lien, MSME Section 43B(h), and Section 44 storage notice on the legal record immediately:
               </p>
 
               <CylinderLienCTA />

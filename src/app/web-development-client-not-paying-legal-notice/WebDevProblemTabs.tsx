@@ -32,7 +32,7 @@ const PROBLEMS: ProblemTab[] = [
           "Export complete WhatsApp, Slack, email trails, and git commit hashes. Prepare a certificate under Section 63 of Bharatiya Sakshya Adhiniyam, 2023 (BSA) to establish digital admissibility.",
       },
       {
-        step: "Issue Advocate Notice Citing Section 19 Copyright Lever",
+        step: "Issue Fact-Verified Notice Citing Section 19 Copyright Lever",
         description:
           "Serve a 15-day statutory demand notice stating that software copyright remains strictly with the developer and that continued commercial use constitutes intentional copyright infringement.",
       },
@@ -140,7 +140,7 @@ const PROBLEMS: ProblemTab[] = [
           "Send an immediate written reply stating that independent vendor invoices are not contingent on third-party settlements and demand payment within 7 days.",
       },
       {
-        step: "Serve Advocate Legal Notice to the Marketing / Tech Agency",
+        step: "Serve Fact-Verified Legal Notice to the Marketing / Tech Agency",
         description:
           "Serve a legal notice demanding full outstanding dues plus 3× RBI compound interest under Section 16 MSMED Act, naming the agency directors personally.",
       },

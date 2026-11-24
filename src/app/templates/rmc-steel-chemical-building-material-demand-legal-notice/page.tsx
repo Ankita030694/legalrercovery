@@ -11,7 +11,7 @@ export const revalidate = 86400;
 
 const PAGE_URL = "/templates/rmc-steel-chemical-building-material-demand-legal-notice";
 const EXACT_H1 =
-  "Advocate-Vetted Legal Demand Notice Format for RMC, TMT Steel, Chemical & Polymer Suppliers (With MTC / Weighbridge / E-Way Bill Annexure)";
+  "Ready-to-Use Legal Demand Notice Format for RMC, TMT Steel, Chemical & Polymer Suppliers (With MTC / Weighbridge / E-Way Bill Annexure)";
 const META_TITLE = "RMC, Steel, Chemical & Building-Material Legal Notice Format";
 const META_DESCRIPTION =
   "Heavy-supply demand notice format with E-Way, Dharamkanta & MTC Batch annexures, Sale of Goods s.42 acceptance lock, Order 37 CPC & Pre-IBC warning.";

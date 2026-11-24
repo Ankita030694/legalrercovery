@@ -19,7 +19,7 @@ const faqs = [
     question:
       'What is the statutory limitation period for sending a legal notice and filing a claim for unpaid leave encashment?',
     answer:
-      'Under Article 7, Article 113, and Article 55 of the Schedule to the Limitation Act, 1963, the statutory limitation period for initiating recovery proceedings and serving a formal legal notice for unpaid leave encashment is three years from the date the F&F settlement fell due or when the employment relationship ceased. Serving an advocate-vetted statutory demand notice promptly within this three-year window prevents the claim from becoming time-barred under Indian jurisprudence. Furthermore, written admissions, email exchanges, or partial F&F statements acknowledging pending leave balances constitute valid acknowledgments of liability under Section 18 of the Limitation Act, resetting the three-year clock.',
+      'Under Article 7, Article 113, and Article 55 of the Schedule to the Limitation Act, 1963, the statutory limitation period for initiating recovery proceedings and serving a formal legal notice for unpaid leave encashment is three years from the date the F&F settlement fell due or when the employment relationship ceased. Serving a fact-verified statutory demand notice promptly within this three-year window prevents the claim from becoming time-barred under Indian jurisprudence. Furthermore, written admissions, email exchanges, or partial F&F statements acknowledging pending leave balances constitute valid acknowledgments of liability under Section 18 of the Limitation Act, resetting the three-year clock.',
   },
   {
     question:
@@ -43,7 +43,7 @@ const faqs = [
     question:
       'Are IT sector professionals and managerial executives covered under Indian labor laws for leave encashment recovery?',
     answer:
-      'Yes, managerial, supervisory, and IT/ITeS corporate professionals are fully entitled to recover unpaid leave encashment under State Shops and Commercial Establishments Acts, which govern all commercial establishments regardless of managerial designation. While certain operational remedies under the Industrial Disputes Act, 1947 apply specifically to non-managerial workmen, civil remedies, summary debt recovery under Order 37 CPC, and breach of contract actions under Section 73 of the Indian Contract Act, 1872 remain available to all salaried executives. A formal advocate-drafted statutory demand notice puts the corporate board on immediate legal jeopardy, prompting settlement in over 70% of corporate F&F disputes.',
+      'Yes, managerial, supervisory, and IT/ITeS corporate professionals are fully entitled to recover unpaid leave encashment under State Shops and Commercial Establishments Acts, which govern all commercial establishments regardless of managerial designation. While certain operational remedies under the Industrial Disputes Act, 1947 apply specifically to non-managerial workmen, civil remedies, summary debt recovery under Order 37 CPC, and breach of contract actions under Section 73 of the Indian Contract Act, 1872 remain available to all salaried executives. A formal fact-verified statutory demand notice puts the corporate board on immediate legal jeopardy, prompting settlement in over 70% of corporate F&F disputes.',
   },
 ];
 
@@ -54,7 +54,7 @@ const ogImage =
   'https://legalrecovery.in/images/og/leave-encashment-not-paid-by-employer.jpg';
 
 const reviewBodyText =
-  'Following my resignation as a Lead Software Architect at a multinational tech enterprise in Bengaluru after 5.5 years of service, the management withheld my earned leave encashment totaling ₹3,84,500 for 68 accumulated Privilege Leaves, arbitrarily citing a revised internal policy capping leave encashment upon resignation. Legal Recovery drafted and served an impeccable, advocate-vetted statutory legal notice citing Section 79(11) of the Factories Act, 1948, Section 15 of the Karnataka Shops and Commercial Establishments Act, 1961, Section 15 of the Payment of Wages Act, and Supreme Court precedent in State of Jharkhand v. Jitendra Kumar Srivastava establishing leave encashment as an accrued property right under Article 300A. Within 14 days of notice dispatch via registered post and digital tracking, the company’s HR Director and legal counsel reached out, conceded the statutory violation, and disbursed the entire ₹3,84,500 into my salary account along with full F&F clearance and relieving documentation. Highly effective pre-litigation recovery platform.';
+  'Following my resignation as a Lead Software Architect at a multinational tech enterprise in Bengaluru after 5.5 years of service, the management withheld my earned leave encashment totaling ₹3,84,500 for 68 accumulated Privilege Leaves, arbitrarily citing a revised internal policy capping leave encashment upon resignation. Legal Recovery drafted and served an impeccable, fact-verified statutory legal notice citing Section 79(11) of the Factories Act, 1948, Section 15 of the Karnataka Shops and Commercial Establishments Act, 1961, Section 15 of the Payment of Wages Act, and Supreme Court precedent in State of Jharkhand v. Jitendra Kumar Srivastava establishing leave encashment as an accrued property right under Article 300A. Within 14 days of notice dispatch via registered post and digital tracking, the company’s HR Director and legal counsel reached out, conceded the statutory violation, and disbursed the entire ₹3,84,500 into my salary account along with full F&F clearance and relieving documentation. Highly effective pre-litigation recovery platform.';
 
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -174,7 +174,7 @@ const jsonLd = {
         {
           '@type': 'ListItem',
           position: 4,
-          name: 'Draft an advocate-vetted statutory demand notice citing Article 300A, Factories Act Section 79, Payment of Wages Act, and Order 37 CPC',
+          name: 'Draft a fact-verified statutory demand notice citing Article 300A, Factories Act Section 79, Payment of Wages Act, and Order 37 CPC',
         },
         {
           '@type': 'ListItem',
@@ -189,7 +189,7 @@ const jsonLd = {
       '@type': 'Product',
       name: 'Legal Notice to Company for Unpaid Leave Encashment',
       description:
-        'Advocate-drafted statutory demand notice service for employees, software engineers, managers, and executives to recover unpaid leave encashment, earned leave balances, and Full & Final settlement dues from defaulting employers in India.',
+        'Fact-verified statutory demand notice service for employees, software engineers, managers, and executives to recover unpaid leave encashment, earned leave balances, and Full & Final settlement dues from defaulting employers in India.',
       brand: {
         '@type': 'Organization',
         name: 'Legal Recovery',
@@ -287,7 +287,7 @@ export default function LeaveEncashmentNotPaidByEmployerClient() {
 
   const shareUrl = encodeURIComponent(pageUrl);
   const shareText = encodeURIComponent(
-    'Company withholding your earned leave encashment in Full & Final settlement? Send an advocate-vetted statutory legal notice for rapid recovery in India! #LegalNotice #LeaveEncashment #EmploymentLaw'
+    'Company withholding your earned leave encashment in Full & Final settlement? Send a fact-verified statutory legal notice for rapid recovery in India! #LegalNotice #LeaveEncashment #EmploymentLaw'
   );
 
   return (
@@ -476,7 +476,7 @@ export default function LeaveEncashmentNotPaidByEmployerClient() {
                     Quick Answer
                   </h2>
                   <p className="text-sm text-slate-700 font-medium leading-relaxed">
-                    An employee, executive, or workman in India can serve an advocate-drafted
+                    An employee, executive, or workman in India can serve a fact-verified
                     statutory legal notice to an employer for unpaid leave encashment under{' '}
                     <span className="font-semibold text-slate-800">
                       Section 79(11) of the Factories Act, 1948
@@ -605,7 +605,7 @@ export default function LeaveEncashmentNotPaidByEmployerClient() {
                     Employers deploy a wide array of unlawful administrative pretexts to wipe out or
                     refuse earned leave payouts when an executive or employee submits their resignation.
                     Understanding these common default scenarios is essential for framing an unyielding,
-                    advocate-vetted statutory legal notice:
+                    fact-verified statutory legal notice:
                   </p>
 
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
@@ -943,7 +943,7 @@ export default function LeaveEncashmentNotPaidByEmployerClient() {
                     6. Key Clauses in a Statutory Notice for Leave Encashment Recovery
                   </h2>
                   <p className="text-sm md:text-base text-slate-650 leading-relaxed">
-                    A legally formidable notice drafted by a High Court advocate contains precise statutory
+                    A legally formidable notice prepared on fact-verified details contains precise statutory
                     invocations, chronological fact assertions, mathematical calculations, and stern legal
                     consequences:
                   </p>
@@ -1022,12 +1022,12 @@ export default function LeaveEncashmentNotPaidByEmployerClient() {
                       {
                         step: '01',
                         title: 'Case Intake & Leave Balance Forensic Audit (Day 1)',
-                        desc: 'Client submits HRMS screenshots, F&F statements, and appointment letters. Panel advocates audit the employment contract, determine applicable state statutes, and compute exact leave encashment principal plus interest.',
+                        desc: 'Client enters the HRMS details, F&F statement figures, and appointment letter terms in the online form. Our team verifies the facts, determines applicable state statutes, and computes exact leave encashment principal plus interest.',
                       },
                       {
                         step: '02',
-                        title: 'Advocate Drafting & Statutory Grounding (Day 1–2)',
-                        desc: 'Experienced labor and commercial advocates draft a customized legal notice under high-court advocate letterhead, integrating statutory labor enactments and Supreme Court precedents.',
+                        title: 'Notice Drafting & Statutory Grounding (Day 1–2)',
+                        desc: 'Our team prepares a customized legal notice, integrating statutory labor enactments and Supreme Court precedents.',
                       },
                       {
                         step: '03',
@@ -1213,8 +1213,8 @@ export default function LeaveEncashmentNotPaidByEmployerClient() {
                   </div>
                   <p className="text-sm text-slate-650 leading-relaxed mb-6">
                     Legal Recovery is India&apos;s trusted online legal notice and dispute resolution
-                    platform, connecting employees, software engineers, corporate managers, and
-                    professionals with experienced panel advocates for fast, advocate-vetted statutory
+                    platform, helping employees, software engineers, corporate managers, and
+                    professionals get fast, fact-verified statutory
                     demand notices at transparent flat fees. With ₹100 Crore+ recovered and 10,000+
                     disputes resolved across India, Legal Recovery delivers authoritative legal impact
                     without the delays and unpredictability of traditional law firms.
@@ -1269,7 +1269,7 @@ export default function LeaveEncashmentNotPaidByEmployerClient() {
                   Employer Withholding Your Leave Encashment?
                 </h3>
                 <p className="text-slate-300 text-xs leading-relaxed mb-4">
-                  Send an advocate-vetted statutory legal notice today. 76% of employers settle unpaid
+                  Send a fact-verified statutory legal notice today. 76% of employers settle unpaid
                   earned leave wages and F&amp;F dues within 15 days of notice service.
                 </p>
                 <button
@@ -1279,7 +1279,7 @@ export default function LeaveEncashmentNotPaidByEmployerClient() {
                   Draft &amp; Send Notice Now
                 </button>
                 <p className="text-center text-slate-400 text-[10px] mt-3">
-                  Flat fee • Advocate-drafted • Sent same day
+                  Flat fee • Fact-verified • Sent same day
                 </p>
               </div>
 
@@ -1348,7 +1348,7 @@ export default function LeaveEncashmentNotPaidByEmployerClient() {
                     stat: '₹100CR+',
                     label: 'Total employment & commercial dues recovered across India',
                   },
-                  { stat: 'Same Day', label: 'Advocate notice drafted and dispatched' },
+                  { stat: 'Same Day', label: 'Legal notice drafted and dispatched' },
                   { stat: 'Flat Fee', label: 'Transparent pricing with no hidden legal fees' },
                 ].map((item, i) => (
                   <div

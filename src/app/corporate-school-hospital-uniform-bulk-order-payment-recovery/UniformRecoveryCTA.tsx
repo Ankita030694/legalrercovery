@@ -27,7 +27,7 @@ export default function UniformRecoveryCTA({ className = "" }: UniformRecoveryCT
                 Test 1 Live Overdue Uniform Invoice Now
               </h3>
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-                Advocate-drafted Section 55 Sale of Goods Act + MSMED s.15 &amp; s.43B(h) statutory demand notice citing your Size-Set approval, delivered via Email, WhatsApp &amp; Speed Post RPAD.
+                Fact-verified Section 55 Sale of Goods Act + MSMED s.15 &amp; s.43B(h) statutory demand notice citing your Size-Set approval, delivered via Email, WhatsApp &amp; Speed Post RPAD.
               </p>
             </div>
 
@@ -48,7 +48,7 @@ export default function UniformRecoveryCTA({ className = "" }: UniformRecoveryCT
                 </Link>
               </div>
               <p className="text-[11px] text-slate-400">
-                &check; Advocate Drafted &bull; &check; Email + WhatsApp + Speed Post RPAD &bull; &check; Size-Set Estoppel Clause
+                &check; Fact-Verified &bull; &check; Email + WhatsApp + Speed Post RPAD &bull; &check; Size-Set Estoppel Clause
               </p>
             </div>
           </div>

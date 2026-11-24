@@ -33,7 +33,7 @@ const PORTFOLIO_TRANCHES: PortfolioTranche[] = [
       {
         title: "Automated Bounce Webhook Ingestion & Notice Dispatch",
         description:
-          "Nightly ingestion of NACH/e-Mandate bounce data from Bank LMS. Generation of advocate-signed statutory legal demand notices with Section 65B/BSA Section 63 digitally verifiable proof.",
+          "Nightly ingestion of NACH/e-Mandate bounce data from Bank LMS. Generation of fact-verified statutory legal demand notices with Section 65B/BSA Section 63 digitally verifiable proof.",
       },
       {
         title: "Batch Pre-Litigation Lok Adalat Summons",

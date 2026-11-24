@@ -22,7 +22,7 @@ export default function NbfcBenchmarksCTA() {
               Test 1 Live Overdue Case Now (₹{basePrice})
             </p>
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
-              Advocate-drafted statutory demand notice (Section 25 PSS Act / Section 138 NI Act / Loan Recall) dispatched via verified Email + WhatsApp under BSA s.63. Optional Speed Post RPAD at ₹450.
+              Fact-verified statutory demand notice (Section 25 PSS Act / Section 138 NI Act / Loan Recall) dispatched via verified Email + WhatsApp under BSA s.63. Optional Speed Post RPAD at ₹450.
             </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-3 pt-2">

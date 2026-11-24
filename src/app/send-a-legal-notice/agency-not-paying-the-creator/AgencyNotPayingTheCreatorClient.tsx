@@ -12,7 +12,7 @@ const faqs = [
   {
     question: 'Can a content creator or influencer send a legal notice to an agency for unpaid brand campaign deliverables in India?',
     answer:
-      'Yes, a digital content creator, influencer, UGC artist, or freelance media professional can issue an advocate-drafted statutory legal notice under Section 70 and Section 73 of the Indian Contract Act, 1872, demanding immediate liquidation of outstanding campaign fees, production reimbursements, and applicable statutory interest. The legal notice formally establishes the agency’s contractual default, itemizes delivered milestones and published social media assets, and provides a strict 15-day peremptory timeline before initiating legal recovery under Order 37 of the Code of Civil Procedure, 1908 or filing an MSEFC petition under the MSMED Act, 2006. Serving this statutory demand creates an indispensable evidentiary foundation and triggers personal legal liability for agency proprietors and managing directors.',
+      'Yes, a digital content creator, influencer, UGC artist, or freelance media professional can issue a fact-verified statutory legal notice under Section 70 and Section 73 of the Indian Contract Act, 1872, demanding immediate liquidation of outstanding campaign fees, production reimbursements, and applicable statutory interest. The legal notice formally establishes the agency’s contractual default, itemizes delivered milestones and published social media assets, and provides a strict 15-day peremptory timeline before initiating legal recovery under Order 37 of the Code of Civil Procedure, 1908 or filing an MSEFC petition under the MSMED Act, 2006. Serving this statutory demand creates an indispensable evidentiary foundation and triggers personal legal liability for agency proprietors and managing directors.',
   },
   {
     question: 'Can an influencer marketing agency legally withhold creator payments claiming that the end-client or brand has not cleared the invoice?',
@@ -22,7 +22,7 @@ const faqs = [
   {
     question: 'Can an unpaid creator revoke content usage rights and sue the agency or brand for copyright infringement?',
     answer:
-      'Under Section 19(1) and Section 19(3) of the Copyright Act, 1957, any assignment or commercial license of intellectual property rights is legally contingent upon the actual payment of agreed royalties and consideration. If an agency defaults on payment, the commercial license automatically lapses or becomes revocable, rendering the continued broadcasting, whitelisting, or commercial utilization of the content by either the agency or the end-brand an actionable infringement under Section 51 of the Copyright Act. An advocate-drafted statutory legal notice can incorporate an immediate Cease-and-Desist demand, compelling both agency and corporate brand to take down the assets or face statutory damages and interim injunctions under Section 55.',
+      'Under Section 19(1) and Section 19(3) of the Copyright Act, 1957, any assignment or commercial license of intellectual property rights is legally contingent upon the actual payment of agreed royalties and consideration. If an agency defaults on payment, the commercial license automatically lapses or becomes revocable, rendering the continued broadcasting, whitelisting, or commercial utilization of the content by either the agency or the end-brand an actionable infringement under Section 51 of the Copyright Act. A fact-verified statutory legal notice can incorporate an immediate Cease-and-Desist demand, compelling both agency and corporate brand to take down the assets or face statutory damages and interim injunctions under Section 55.',
   },
   {
     question: 'How can Udyam-registered creators leverage the MSME Samadhaan portal against defaulting marketing agencies?',
@@ -163,7 +163,7 @@ const jsonLd = {
         {
           '@type': 'ListItem',
           position: 3,
-          name: 'Engage Panel Advocate to Draft Comprehensive Statutory Legal Demand Notice incorporating Indian Contract Act, MSMED Act, and BNS provisions',
+          name: 'Prepare Comprehensive Statutory Legal Demand Notice incorporating Indian Contract Act, MSMED Act, and BNS provisions',
         },
         {
           '@type': 'ListItem',
@@ -183,7 +183,7 @@ const jsonLd = {
       '@type': 'Product',
       name: 'Legal Notice to Agency for Creator & Influencer Payment Recovery',
       description:
-        'Advocate-drafted statutory demand notice service for content creators, influencers, media artists, and freelance talent to recover unpaid brand campaign dues, usage rights fees, and production retainers from marketing agencies across India.',
+        'Fact-verified statutory demand notice service for content creators, influencers, media artists, and freelance talent to recover unpaid brand campaign dues, usage rights fees, and production retainers from marketing agencies across India.',
       brand: {
         '@type': 'Organization',
         name: 'Legal Recovery',
@@ -260,7 +260,7 @@ export default function AgencyNotPayingTheCreatorClient() {
 
   const shareUrl = encodeURIComponent(pageUrl);
   const shareText = encodeURIComponent(
-    'Marketing agency not paying for completed creator campaigns, reels, or deliverables? Send an advocate-vetted legal notice under Indian Contract Act, Copyright Act & MSMED Act! #CreatorEconomy #InfluencerRights #PaymentRecovery'
+    'Marketing agency not paying for completed creator campaigns, reels, or deliverables? Send a fact-verified legal notice under Indian Contract Act, Copyright Act & MSMED Act! #CreatorEconomy #InfluencerRights #PaymentRecovery'
   );
 
   return (
@@ -435,7 +435,7 @@ export default function AgencyNotPayingTheCreatorClient() {
                     Quick Answer
                   </h2>
                   <p className="text-sm text-slate-700 font-medium leading-relaxed">
-                    A digital content creator, influencer, or video producer can serve an advocate-vetted statutory legal notice to an advertising or talent management agency under{' '}
+                    A digital content creator, influencer, or video producer can serve a fact-verified statutory legal notice to an advertising or talent management agency under{' '}
                     <span className="font-semibold text-slate-800">
                       Section 70 and Section 73 of the Indian Contract Act, 1872
                     </span>{' '}
@@ -877,10 +877,10 @@ export default function AgencyNotPayingTheCreatorClient() {
                       </div>
                       <div className="space-y-1">
                         <h3 className="font-extrabold text-slate-900 text-base">
-                          Stage 2: Formal Advocate Legal Notice Drafting
+                          Stage 2: Formal Legal Notice Preparation
                         </h3>
                         <p className="text-xs md:text-sm text-slate-650 leading-relaxed">
-                          A seasoned panel advocate drafts a customized statutory legal demand notice itemizing every breach under the Indian Contract Act, invoking copyright license revocation under Section 19 of the Copyright Act, calculating 18% p.a. interest, and establishing a strict 15-day peremptory ultimatum.
+                          Our team prepares a customized statutory legal demand notice itemizing every breach under the Indian Contract Act, invoking copyright license revocation under Section 19 of the Copyright Act, calculating 18% p.a. interest, and establishing a strict 15-day peremptory ultimatum.
                         </p>
                       </div>
                     </div>
@@ -905,7 +905,7 @@ export default function AgencyNotPayingTheCreatorClient() {
                       </div>
                       <div className="space-y-1">
                         <h3 className="font-extrabold text-slate-900 text-base">
-                          Stage 4: Advocate-Led Out-of-Court Settlement Negotiation
+                          Stage 4: Out-of-Court Settlement Negotiation
                         </h3>
                         <p className="text-xs md:text-sm text-slate-650 leading-relaxed">
                           Over 78% of marketing agencies settle the full principal amount within the 15-day notice period to protect their agency reputation, avoid copyright take-down notices to end-clients, and escape compounding MSME statutory interest.
@@ -922,7 +922,7 @@ export default function AgencyNotPayingTheCreatorClient() {
                           Stage 5: Judicial Escalation &amp; Enforcement
                         </h3>
                         <p className="text-xs md:text-sm text-slate-650 leading-relaxed">
-                          If the agency fails to settle within 15 days, our advocates initiate immediate escalation by filing an MSEFC Samadhaan petition, an Order 37 summary recovery suit, an intellectual property injunction application, or a Section 316/318 BNS criminal complaint.
+                          If the agency fails to settle within 15 days, our team initiates immediate escalation by filing an MSEFC Samadhaan petition, an Order 37 summary recovery suit, an intellectual property injunction application, or a Section 316/318 BNS criminal complaint.
                         </p>
                       </div>
                     </div>
@@ -1079,7 +1079,7 @@ export default function AgencyNotPayingTheCreatorClient() {
                   <p className="text-sm text-slate-650 leading-relaxed mb-6">
                     Legal Recovery is India&apos;s trusted online legal notice and dispute resolution
                     platform, connecting content creators, influencers, media professionals, and digital
-                    agencies with seasoned panel advocates for rapid, advocate-vetted statutory demand notices
+                    agencies with our fact-verifying team for rapid, fact-verified statutory demand notices
                     at transparent flat fees. With ₹100 Crore+ recovered and 10,000+ cases resolved across India,
                     Legal Recovery delivers verified legal impact without the delays and unpredictability of
                     traditional law firms.
@@ -1120,7 +1120,7 @@ export default function AgencyNotPayingTheCreatorClient() {
                   Agency Withholding Your Creator Payment?
                 </h3>
                 <p className="text-slate-300 text-xs leading-relaxed mb-4">
-                  Send an advocate-vetted statutory notice today. Over 78% of marketing agencies settle unpaid campaign invoices within 15 days of notice service.
+                  Send a fact-verified statutory notice today. Over 78% of marketing agencies settle unpaid campaign invoices within 15 days of notice service.
                 </p>
                 <button
                   onClick={() => setIsPaymentModalOpen(true)}
@@ -1129,7 +1129,7 @@ export default function AgencyNotPayingTheCreatorClient() {
                   Draft &amp; Send Notice Now
                 </button>
                 <p className="text-center text-slate-400 text-[10px] mt-3">
-                  Flat fee • Advocate-drafted • Sent same day
+                  Flat fee • Fact-verified • Sent same day
                 </p>
               </div>
 
@@ -1184,7 +1184,7 @@ export default function AgencyNotPayingTheCreatorClient() {
                 {[
                   { stat: '78%', label: 'Defaulting agencies settle before judicial escalation' },
                   { stat: '₹4.2CR+', label: 'Total amount recovered for creators & businesses' },
-                  { stat: 'Same Day', label: 'Advocate notice drafted and dispatched' },
+                  { stat: 'Same Day', label: 'Notice prepared and dispatched' },
                   { stat: 'Flat Fee', label: 'Transparent pricing with no hidden commissions' },
                 ].map((item, i) => (
                   <div key={i} className="flex items-center justify-between py-2 border-b border-slate-50 last:border-0">

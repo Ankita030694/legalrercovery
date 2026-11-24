@@ -115,7 +115,7 @@ const FAQS = [
   },
   {
     q: "A startup founder ghosted us immediately after their Series-A funding press release was published in Economic Times. How do we recover?",
-    a: "Collate the counter-signed Retainer Agreement, the founder's written approval (email/WhatsApp) of the press release, the published press clipping dossier, and your GST invoices. Issue an immediate advocate legal notice invoking Section 73 of the Indian Contract Act and Section 15 of the MSMED Act. If registered on Udyam, initiate proceedings before the MSEFC for 3× RBI compound interest, or file a summary suit under Order XXXVII CPC.",
+    a: "Collate the counter-signed Retainer Agreement, the founder's written approval (email/WhatsApp) of the press release, the published press clipping dossier, and your GST invoices. Issue an immediate fact-verified legal notice invoking Section 73 of the Indian Contract Act and Section 15 of the MSMED Act. If registered on Udyam, initiate proceedings before the MSEFC for 3× RBI compound interest, or file a summary suit under Order XXXVII CPC.",
   },
   {
     q: "Can we legally bill and recover the mandatory 60-day termination notice fee if the client walks out abruptly?",
@@ -200,7 +200,7 @@ export default function PRPublicRelationsRetainerCrisisRecoveryPage() {
       {
         "@type": "HowToStep",
         position: 3,
-        name: "Serve Advocate Legal Notice with Compound Interest Computation",
+        name: "Serve Fact-Verified Legal Notice with Compound Interest Computation",
         text: "Issue a high-court advocate legal demand invoking MSMED Act Section 16 compound interest (3× RBI bank rate) and mandatory 60-day notice period fees under Section 73 Indian Contract Act.",
       },
       {

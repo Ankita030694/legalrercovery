@@ -39,7 +39,7 @@ const PROBLEMS: ProblemTab[] = [
       {
         step: "Issue Section 10 Carriage by Road Act Notice & Legal Demand",
         description:
-          "Serve a formal statutory notice within 180 days specifying the damage quantum, original purchase invoices, and repair estimates, followed by an advocate demand notice.",
+          "Serve a formal statutory notice within 180 days specifying the damage quantum, original purchase invoices, and repair estimates, followed by a fact-verified demand notice.",
       },
     ],
     statutoryRule: "Sections 10, 12 & 13 Carriage by Road Act 2007 & Section 2(11) CPA 2019",
@@ -120,7 +120,7 @@ const PROBLEMS: ProblemTab[] = [
       {
         step: "Issue Statutory Notice for Misrepresentation & Recovery",
         description:
-          "Serve an advocate legal notice demanding full reimbursement of damaged articles and refund of fraudulent insurance fees, warning of criminal cheating proceedings and consumer litigation on e-Jagriti.",
+          "Serve a fact-verified legal notice demanding full reimbursement of damaged articles and refund of fraudulent insurance fees, warning of criminal cheating proceedings and consumer litigation on e-Jagriti.",
       },
     ],
     statutoryRule: "Section 2(47) CPA 2019 & IRDAI Protection of Policyholders' Interests Regulations",

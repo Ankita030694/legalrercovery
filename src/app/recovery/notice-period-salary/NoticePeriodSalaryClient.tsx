@@ -23,7 +23,7 @@ const faqs = [
   },
   {
     question: "What legal actions can I take if my employer withholds my relieving letter due to a notice period dispute?",
-    answer: "Withholding a relieving letter, experience certificate, or form 16 is a form of coercion. You can: (1) serve an advocate-signed legal notice; (2) file a complaint with the Labour Commissioner for unfair labor practices; or (3) file a civil suit for damages, as withholding these documents prevents you from taking up new employment, violating Section 27 of the Contract Act."
+    answer: "Withholding a relieving letter, experience certificate, or form 16 is a form of coercion. You can: (1) serve a fact-verified legal notice; (2) file a complaint with the Labour Commissioner for unfair labor practices; or (3) file a civil suit for damages, as withholding these documents prevents you from taking up new employment, violating Section 27 of the Contract Act."
   },
   {
     question: "How much notice period is legally mandated under state Shops and Establishments Acts?",
@@ -125,7 +125,7 @@ const reviewSchema = {
   "@type": "Product",
   "name": "Notice Period Salary Recovery Services",
   "image": "https://www.legalrecovery.in/og-notice-period-salary.png",
-  "description": "Advocate-backed legal assistance for recovering unpaid notice period salaries, buy-out disputes, and wrongful termination notice pay in India.",
+  "description": "Fact-verified legal assistance for recovering unpaid notice period salaries, buy-out disputes, and wrongful termination notice pay in India.",
   "brand": {
     "@type": "Brand",
     "name": "LegalRecovery"
@@ -178,7 +178,7 @@ const reviewSchema = {
         "@type": "Person",
         "name": "Anil Deshmukh"
       },
-      "reviewBody": "A manufacturing firm terminated my services without the contractually agreed 3-month notice pay, alleging performance issues without any proof. LegalRecovery sent an advocate notice pointing out that performance claims do not exempt them from paying notice salary. The firm settled out of court, transferring the entire amount with interest."
+      "reviewBody": "A manufacturing firm terminated my services without the contractually agreed 3-month notice pay, alleging performance issues without any proof. LegalRecovery sent a fact-verified notice pointing out that performance claims do not exempt them from paying notice salary. The firm settled out of court, transferring the entire amount with interest."
     },
     {
       "@type": "Review",
@@ -396,7 +396,7 @@ export default function NoticePeriodSalaryClient() {
                       Additionally, employees can approach the <strong>Labour Commissioner or Labour Inspector</strong> under the state-specific Shops and Commercial Establishments Act. In major cities like Bangalore, Mumbai, Chennai, and Delhi, labor inspectors have the power to audit company payroll records, inspect employment agreements, and summon management. A summons from a labor inspector often encourages companies to settle notice pay disputes quickly to avoid regulatory penalties or audits of their overall labor compliance.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      If the employer has deducted notice buy-out fees or PF contributions but refused to release the relieving letter or deposit the funds, the employee can initiate criminal proceedings. Under <strong>Section 316 of the Bharatiya Nyaya Sanhita, 2023 (BNS)</strong> (formerly Section 406 IPC), this conduct constitutes <strong>Criminal Breach of Trust</strong>, which carries a penalty of up to three years of imprisonment. Filing a criminal complaint alongside civil recovery actions provides powerful leverage, as company directors want to avoid police investigations or criminal charges. Our legal team evaluates your case to recommend the most effective combination of civil and regulatory remedies.
+                      If the employer has deducted notice buy-out fees or PF contributions but refused to release the relieving letter or deposit the funds, the employee can initiate criminal proceedings. Under <strong>Section 316 of the Bharatiya Nyaya Sanhita, 2023 (BNS)</strong> (formerly Section 406 IPC), this conduct constitutes <strong>Criminal Breach of Trust</strong>, which carries a penalty of up to three years of imprisonment. Filing a criminal complaint alongside civil recovery actions provides powerful leverage, as company directors want to avoid police investigations or criminal charges. Our team evaluates your case to recommend the most effective combination of civil and regulatory remedies.
                     </p>
                   </div>
                 </section>
@@ -409,10 +409,10 @@ export default function NoticePeriodSalaryClient() {
                       The recovery process for notice period salary should begin with a structured pre-litigation escalation strategy. This involves building a clear documentary record of the dispute. You should compile all relevant records, including your appointment letter, resignation email, manager approvals for early release, the termination letter, monthly payslips, and all HR correspondence. You should send a formal final email to HR and senior management (CEO, CFO, and Directors) detailing the unpaid notice pay and outstanding FNF dues, requesting resolution within a specific timeframe.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      If internal escalation is ignored, the next step is to serve a formal <strong>Advocate-Signed Legal Notice</strong>. A legal notice is a structured legal document sent to the employer, setting out the facts of your employment, detailing the notice period violations, calculating the interest due under the Interest Act, 1978, and warning of the civil and criminal actions that will follow if they fail to comply. Serving a legal notice is a mandatory step before filing a summary suit or labor complaint, as it establishes your cause of action and is part of the court record.
+                      If internal escalation is ignored, the next step is to serve a formal <strong>Fact-Verified Legal Notice</strong>. A legal notice is a structured legal document sent to the employer, setting out the facts of your employment, detailing the notice period violations, calculating the interest due under the Interest Act, 1978, and warning of the civil and criminal actions that will follow if they fail to comply. Serving a legal notice is a mandatory step before filing a summary suit or labor complaint, as it establishes your cause of action and is part of the court record.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      At LegalRecovery, our legal panel drafts custom notices tailored to the specific details of your notice pay dispute. We do not use generic templates. Instead, we highlight the contract terms, the provisions of state Shops and Establishments Acts, and the personal liability of the company&apos;s directors. We digitally dispatch the notice via verified email and WhatsApp to the company&apos;s registered office, and send copies to the personal residential addresses of the directors, ensuring they are personally aware of their legal exposure.
+                      At LegalRecovery, our team drafts custom notices tailored to the specific details of your notice pay dispute. We do not use generic templates. Instead, we highlight the contract terms, the provisions of state Shops and Establishments Acts, and the personal liability of the company&apos;s directors. We digitally dispatch the notice via verified email and WhatsApp to the company&apos;s registered office, and send copies to the personal residential addresses of the directors, ensuring they are personally aware of their legal exposure.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
                       Approximately 85% of notice pay disputes are resolved successfully at the legal notice stage. Most companies prefer to settle these claims rather than face public litigation, credit rating impacts, or regulatory audits. If the employer responds with a settlement offer, we help you negotiate the terms and draft a binding settlement deed that covers both the payment of notice salary and the release of your relieving documents, helping you transition smoothly to your new role.

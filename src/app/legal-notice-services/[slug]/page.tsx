@@ -30,7 +30,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       `legal notice for cheque bounce ${location.name}`,
       "send legal notice online india",
       "legal notice drafting services",
-      "advocate drafted legal notice",
+      "fact-verified legal notice",
     ],
     alternates: {
       canonical: `https://www.legalrecovery.in/legal-notice-services/${location.slug}`,

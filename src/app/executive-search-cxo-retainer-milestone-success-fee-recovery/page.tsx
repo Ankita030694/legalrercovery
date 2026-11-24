@@ -235,7 +235,7 @@ export default function ExecutiveSearchRecoveryPage() {
         "@type": "HowToStep",
         position: 3,
         name: "Serve 15-Day Statutory Legal Demand Notice",
-        text: "Issue an advocate-drafted statutory demand notice under Order XXXVII CPC, Section 53/70/73 of the Indian Contract Act, and Section 15 of the MSMED Act, detailing Section 43B(h) corporate tax disallowance liabilities.",
+        text: "Issue a fact-verified statutory demand notice under Order XXXVII CPC, Section 53/70/73 of the Indian Contract Act, and Section 15 of the MSMED Act, detailing Section 43B(h) corporate tax disallowance liabilities.",
       },
       {
         "@type": "HowToStep",
@@ -744,7 +744,7 @@ export default function ExecutiveSearchRecoveryPage() {
                     Stage 3 &bull; Days 16–30
                   </span>
                   <h3 className="text-sm font-bold text-white mb-1">
-                    Advocate-Drafted Legal Demand Notice
+                    Fact-Verified Legal Demand Notice
                   </h3>
                   <p className="text-xs text-slate-300">
                     Dispatch an Order XXXVII / MSMED Act demand notice via Email + WhatsApp + Speed Post RPAD, highlighting Section 43B(h) corporate tax disallowance liabilities.
@@ -929,11 +929,11 @@ export default function ExecutiveSearchRecoveryPage() {
                   08
                 </span>
                 <h2 className="text-xl sm:text-2xl font-extrabold text-slate-900 tracking-tight">
-                  Model Advocate-Vetted Retained Mandate Agreement Clauses
+                  Model Ready-to-Use Retained Mandate Agreement Clauses
                 </h2>
               </div>
               <p className="text-xs sm:text-sm md:text-base text-slate-700 leading-relaxed mb-6">
-                To guarantee rapid summary enforcement under Order XXXVII CPC and eliminate debtor ambiguities, retained search practice leaders should incorporate the following advocate-vetted contractual clauses into their standard Terms of Business (TOB):
+                To guarantee rapid summary enforcement under Order XXXVII CPC and eliminate debtor ambiguities, retained search practice leaders should incorporate the following ready-to-use contractual clauses into their standard Terms of Business (TOB):
               </p>
 
               <div className="space-y-4">
@@ -1263,7 +1263,7 @@ export default function ExecutiveSearchRecoveryPage() {
                 </ul>
               </div>
 
-              {/* Author & Advocate Review Box */}
+              {/* Author & Fact Verification Box */}
               <div className="mt-8 pt-6 border-t border-slate-100 flex items-center justify-between flex-wrap gap-4 text-xs text-slate-500">
                 <div className="flex items-center gap-3">
                   <div className="w-10 h-10 rounded-full bg-slate-900 text-white font-black flex items-center justify-center text-xs">

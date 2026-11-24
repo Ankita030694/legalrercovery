@@ -39,7 +39,7 @@ const CREATOR_SCENARIOS: CreatorScenarioTab[] = [
       {
         step: "Serve Joint 15-Day Statutory Demand Notice",
         description:
-          "Have an advocate serve a formal notice naming the Agency as Primary Debtor (Party No. 1) and the Brand as Principal Beneficiary (Party No. 2), demanding full invoice clearance plus 18%–20.25% interest.",
+          "Serve a formal notice naming the Agency as Primary Debtor (Party No. 1) and the Brand as Principal Beneficiary (Party No. 2), demanding full invoice clearance plus 18%–20.25% interest.",
       },
     ],
     statutoryRule: "Sections 70, 73 & 226 Indian Contract Act + Ircon SC Precedent",
@@ -66,7 +66,7 @@ const CREATOR_SCENARIOS: CreatorScenarioTab[] = [
       {
         step: "Serve Copyright Revocation & Legal Demand Notice",
         description:
-          "Dispatch an advocate legal notice revoking all usage licenses, warning of formal Copyright Infringement Takedown strikes on Meta/YouTube (which can suspend the brand's Ad Manager account) if dues are not cleared in 15 days.",
+          "Dispatch a legal notice revoking all usage licenses, warning of formal Copyright Infringement Takedown strikes on Meta/YouTube (which can suspend the brand's Ad Manager account) if dues are not cleared in 15 days.",
       },
     ],
     statutoryRule: "Sections 17, 19 & 51 Copyright Act, 1957 + Performers' Rights (s.38)",
@@ -120,7 +120,7 @@ const CREATOR_SCENARIOS: CreatorScenarioTab[] = [
       {
         step: "Issue Legal Notice for 100% Contract Value",
         description:
-          "Serve a 15-day advocate demand notice for the full agreed fee plus interest, and if you hold Udyam MSME registration, invoke the 15-day deemed acceptance rule under Section 2(b) MSMED Act.",
+          "Serve a 15-day legal demand notice for the full agreed fee plus interest, and if you hold Udyam MSME registration, invoke the 15-day deemed acceptance rule under Section 2(b) MSMED Act.",
       },
     ],
     statutoryRule: "Sections 37, 73 & 74 Indian Contract Act + Section 2(b) MSMED Act",
@@ -147,7 +147,7 @@ const CREATOR_SCENARIOS: CreatorScenarioTab[] = [
       {
         step: "Serve Fiduciary Breach & Recovery Legal Notice",
         description:
-          "Serve a 15-day advocate notice invoking Sections 213–218 Contract Act and Section 316 BNS (criminal breach of trust), demanding immediate remittance of your 80%–85% share with 18% interest.",
+          "Serve a 15-day legal notice invoking Sections 213–218 Contract Act and Section 316 BNS (criminal breach of trust), demanding immediate remittance of your 80%–85% share with 18% interest.",
       },
     ],
     statutoryRule: "Sections 213 & 218 Contract Act (Agent's Duty) + Section 316 BNS 2023",
@@ -265,7 +265,7 @@ export default function InfluencerScenarioTabs() {
 
         <div className="p-3 bg-amber-50 border border-amber-200 rounded-xl flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs text-amber-950">
           <span>
-            <strong>Need to escalate against both the Agency and the Brand?</strong> Our advocates dispatch a joint statutory notice within 24 hours.
+            <strong>Need to escalate against both the Agency and the Brand?</strong> Our team dispatches a joint statutory notice within 24 hours.
           </span>
           <Link
             href="/send-a-legal-notice/agency-not-paying-the-creator"

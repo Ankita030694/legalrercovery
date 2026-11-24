@@ -28,7 +28,7 @@ export default function HospitalsHubCTA() {
       </p>
       <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-6 max-w-3xl">
         Multi-specialty hospitals, nursing homes, specialty clinics, and diagnostic chains can
-        validate our advocate drafting on a single post-discharge balance or stop-payment cheque
+        validate our notice drafting on a single post-discharge balance or stop-payment cheque
         first—or upload aged TPA, corporate credit, and PCC franchisee batches via CSV.
       </p>
 
@@ -48,7 +48,7 @@ export default function HospitalsHubCTA() {
               Test 1 Live Overdue Patient, Doctor or Clinic Case
             </p>
             <p className="text-xs text-slate-300 leading-relaxed mb-4">
-              Advocate-drafted demand notice citing Article-21 compliant discharge undertakings,
+              Fact-verified demand notice citing Article-21 compliant discharge undertakings,
               Section 138 NI Act, or Section 73 Contract Act—served simultaneously via Email,
               WhatsApp, and Speed Post RPAD with BSA 2023 s.63 proof.
             </p>

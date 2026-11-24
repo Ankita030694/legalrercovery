@@ -168,7 +168,7 @@ const MISTAKES_TO_AVOID = [
     consequence:
       "Civil and consumer litigation can involve court fees, advocate appearances, and procedural delays. If the dispute is under ₹50 Lakhs, the Insurance Ombudsman provides an expedited, zero-court-fee forum that is statutorily binding on the insurer.",
     correctAction:
-      "If the claim is ₹50 Lakhs or less, prioritize the Insurance Ombudsman. Serve an advocate legal notice concurrently to preserve your civil limitation and compel executive settlement.",
+      "If the claim is ₹50 Lakhs or less, prioritize the Insurance Ombudsman. Serve a fact-verified legal notice concurrently to preserve your civil limitation and compel executive settlement.",
   },
 ];
 
@@ -332,7 +332,7 @@ export default function LifeInsuranceDeathClaimRejectedPage() {
                 Statutory Summary (Section 45 Incontestability &amp; Nominee Remedies)
               </p>
               <p>
-                When a life insurer rejects a death claim, Section 45 of the Insurance Act, 1938 bars any repudiation after 3 years from policy inception on any ground whatsoever, including fraud. For claims under 3 years, repudiation requires proof of intentional suppression causally linked to death. Nominees can challenge wrongful rejection via advocate legal notice, Bima Bharosa, and the zero-cost Insurance Ombudsman (claims up to ₹50 lakh).
+                When a life insurer rejects a death claim, Section 45 of the Insurance Act, 1938 bars any repudiation after 3 years from policy inception on any ground whatsoever, including fraud. For claims under 3 years, repudiation requires proof of intentional suppression causally linked to death. Nominees can challenge wrongful rejection via fact-verified legal notice, Bima Bharosa, and the zero-cost Insurance Ombudsman (claims up to ₹50 lakh).
               </p>
             </div>
 
@@ -696,7 +696,7 @@ export default function LifeInsuranceDeathClaimRejectedPage() {
                       </span>
                       <div className="space-y-2">
                         <h3 className="text-base sm:text-lg font-bold text-slate-900">
-                          Step 3: Serve an Advocate Statutory Legal Demand Notice
+                          Step 3: Serve a Fact-Verified Statutory Legal Demand Notice
                         </h3>
                         <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                           Engage an advocate to serve an official legal demand notice directly to the Managing Director, Claims Review Committee, and Appointed Actuary of the life insurance company. The notice must detail: the policy history, Section 45 incontestability, absence of fraud, IRDAI settlement guidelines, and demand release of the complete sum assured plus accrued bonus and Bank Rate + 2% penal interest within 15 calendar days.
@@ -958,7 +958,7 @@ export default function LifeInsuranceDeathClaimRejectedPage() {
                       <tr className="hover:bg-slate-50">
                         <td className="p-3.5 sm:p-4 font-bold text-slate-900">Advocate Statutory Legal Notice</td>
                         <td className="p-3.5 sm:p-4 font-semibold">Unlimited</td>
-                        <td className="p-3.5 sm:p-4 font-semibold text-emerald-700">Zero Court Fee (Advocate Drafting)</td>
+                        <td className="p-3.5 sm:p-4 font-semibold text-emerald-700">Zero Court Fee (Notice Drafting)</td>
                         <td className="p-3.5 sm:p-4 text-emerald-700 font-bold">15 Calendar Days</td>
                         <td className="p-3.5 sm:p-4">Creates immediate statutory record, preserves limitation, triggers executive board review.</td>
                       </tr>
@@ -1027,7 +1027,7 @@ export default function LifeInsuranceDeathClaimRejectedPage() {
                     </p>
                     <p>
                       <strong>The Outcome: </strong>
-                      Upon receiving the advocate legal notice quoting Section 45 and Supreme Court rulings, the insurer&apos;s Central Claims Review Committee overturned the repudiation without forcing Sunita to appear before the Ombudsman. The full ₹25,00,000 sum assured plus ₹1,12,500 penal interest (at Bank Rate + 2%) was credited directly to Sunita&apos;s bank account within 21 days.
+                      Upon receiving the fact-verified legal notice quoting Section 45 and Supreme Court rulings, the insurer&apos;s Central Claims Review Committee overturned the repudiation without forcing Sunita to appear before the Ombudsman. The full ₹25,00,000 sum assured plus ₹1,12,500 penal interest (at Bank Rate + 2%) was credited directly to Sunita&apos;s bank account within 21 days.
                     </p>
                   </div>
                 </div>

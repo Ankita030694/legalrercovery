@@ -149,9 +149,9 @@ const ABANDONMENT_SCENARIOS: AbandonmentScenario[] = [
           "Submit a detailed chronological representation to the Deputy Commissioner of Police (DCP) and Judicial Magistrate documenting the extortionate conduct, enclosing CCTV logs of family refusal to take discharge, defeating retaliatory FIRs.",
       },
       {
-        step: "Step 3: Issue Final Advocate Demand Notice with Senior Citizens Act Impleadment",
+        step: "Step 3: Issue Final Fact-Verified Demand Notice with Senior Citizens Act Impleadment",
         detail:
-          "Serve a 15-day formal Advocate Demand Notice warning of Section 24 Senior Citizens Act penal prosecution, civil damages for bed obstruction, and initiation of high-value Order XXXVII proceedings.",
+          "Serve a 15-day formal Fact-Verified Demand Notice warning of Section 24 Senior Citizens Act penal prosecution, civil damages for bed obstruction, and initiation of high-value Order XXXVII proceedings.",
       },
       {
         step: "Step 4: File Civil Suit for Mandatory Injunction & Summary Money Decree",

@@ -22,7 +22,7 @@ export default function OtaRecoveryCTA() {
           </h3>
 
           <p className="text-xs sm:text-sm md:text-base text-slate-300 leading-relaxed mb-7 max-w-3xl">
-            Stop absorbing unilateral chargebacks, expired Virtual Credit Cards (VCCs), and arbitrary guest-relocation penalties. Serve an advocate-vetted statutory demand notice backed by your PMS folios, Udyam certificate, and BSA 2023 s.63 electronic audit trail.
+            Stop absorbing unilateral chargebacks, expired Virtual Credit Cards (VCCs), and arbitrary guest-relocation penalties. Serve a fact-verified statutory demand notice backed by your PMS folios, Udyam certificate, and BSA 2023 s.63 electronic audit trail.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
@@ -36,10 +36,10 @@ export default function OtaRecoveryCTA() {
                   <span className="text-xl font-black text-white">&#8377;{basePrice}</span>
                 </div>
                 <h4 className="text-base font-bold text-white mb-2">
-                  Test 1 Live Overdue Case Now (&#8377;{basePrice} &middot; Advocate Drafted)
+                  Test 1 Live Overdue Case Now (&#8377;{basePrice} &middot; Fact-Verified)
                 </h4>
                 <p className="text-xs text-slate-300 leading-relaxed mb-4">
-                  Dispatch an advocate-drafted Extranet Reconciliation &amp; MSMED Demand Notice via Email, WhatsApp, and Speed Post RPAD to the OTA Nodal Officer or defaulting B2B wholesaler.
+                  Dispatch a fact-verified Extranet Reconciliation &amp; MSMED Demand Notice via Email, WhatsApp, and Speed Post RPAD to the OTA Nodal Officer or defaulting B2B wholesaler.
                 </p>
                 <ul className="space-y-1.5 text-xs text-slate-300 mb-5">
                   <li>&#10003; Includes MSMED s.16 3x RBI interest calculation</li>

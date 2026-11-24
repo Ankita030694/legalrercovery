@@ -186,7 +186,7 @@ const HOWTO_SCHEMA = {
       "@type": "HowToStep",
       position: 1,
       name: "Notice 1: Loan Recall-cum-Pre-Repossession Cure Notice (7–15 Days)",
-      text: "Serve an advocate-signed Recall and Pre-Repossession Notice to borrower and guarantor via Email, WhatsApp, and Speed Post RPAD stating itemized principal, non-capitalized penal charges, and the explicit cure deadline before asset enforcement.",
+      text: "Serve a fact-verified Recall and Pre-Repossession Notice to borrower and guarantor via Email, WhatsApp, and Speed Post RPAD stating itemized principal, non-capitalized penal charges, and the explicit cure deadline before asset enforcement.",
     },
     {
       "@type": "HowToStep",
@@ -481,7 +481,7 @@ export default function VehicleTractorRepossessionBanksPage() {
               <p className="text-slate-700 text-sm sm:text-base leading-relaxed">
                 Crucially, Indian law does <strong>not</strong> strip banks of
                 their contractual right to enforce hypothecation. It merely
-                requires strict adherence to a documented, advocate-backed{" "}
+                requires strict adherence to a documented, fact-verified{" "}
                 <strong>4-Notice Statutory Sequence</strong> so that every
                 action—from loan recall to RTO Form 36 fresh registration and
                 post-auction deficit recovery—is 100% insulated against criminal
@@ -1559,7 +1559,7 @@ export default function VehicleTractorRepossessionBanksPage() {
                     tag: "Seed Bank Notice Page",
                     title: "Send Legal Notice for Banks to Recover Dues",
                     href: "/send-a-legal-notice/for-banks-to-recover-their-unpaid-dues",
-                    desc: "Dedicated advocate-drafted demand notice desk for PSU, Private & SFB branches.",
+                    desc: "Fact-verified demand notice desk for PSU, Private & SFB branches.",
                   },
                   {
                     tag: "Zero-Fee Deficit Route",
@@ -1691,7 +1691,7 @@ export default function VehicleTractorRepossessionBanksPage() {
                 ))}
               </ul>
 
-              {/* Advocate Review & Institutional Disclaimer */}
+              {/* Fact Verification & Institutional Disclaimer */}
               <div className="mt-6 pt-5 border-t border-slate-200 flex flex-col sm:flex-row sm:items-center justify-between gap-4 bg-slate-50 rounded-xl p-4">
                 <div className="space-y-1">
                   <p className="text-xs font-bold text-slate-900">

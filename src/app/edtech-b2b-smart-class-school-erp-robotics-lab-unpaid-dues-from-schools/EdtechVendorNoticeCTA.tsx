@@ -27,7 +27,7 @@ export default function EdtechVendorNoticeCTA({ className = "" }: EdtechVendorNo
                 Test 1 Live Overdue Case Now
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm leading-relaxed mb-5">
-                &rupee;{basePrice} &middot; Advocate Drafted against the exact Registered Society, Trust, or Section 8 Company (not just the school name) &middot; Dispatched via Email + WhatsApp + Speed Post RPAD.
+                &rupee;{basePrice} &middot; Fact-Verified against the exact Registered Society, Trust, or Section 8 Company (not just the school name) &middot; Dispatched via Email + WhatsApp + Speed Post RPAD.
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-3">
@@ -57,7 +57,7 @@ export default function EdtechVendorNoticeCTA({ className = "" }: EdtechVendorNo
                 Have 10 to 10,000+ Defaulters?
               </h3>
               <p className="text-slate-600 text-xs sm:text-sm leading-relaxed mb-5">
-                Upload a single CSV of 50 to 500+ delinquent Tier-2/3 partner schools. Our institutional desk verifies Society/Trust entities, maps PDC/NACH &amp; MSME s.43B(h) hooks, and dispatches batch Advocate Notices at enterprise slabs.
+                Upload a single CSV of 50 to 500+ delinquent Tier-2/3 partner schools. Our institutional desk verifies Society/Trust entities, maps PDC/NACH &amp; MSME s.43B(h) hooks, and dispatches batch Fact-Verified Notices at enterprise slabs.
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-3">

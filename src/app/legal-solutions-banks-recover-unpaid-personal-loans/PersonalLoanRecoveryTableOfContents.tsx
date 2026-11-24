@@ -200,7 +200,7 @@ export default function PersonalLoanRecoveryTableOfContents({
               Need Institutional Drafting?
             </span>
             <p className="text-[11px] text-slate-700 leading-snug mb-2">
-              Send advocate legal notices under Section 25 PSS Act &amp; Order 37 CPC.
+              Send fact-verified legal notices under Section 25 PSS Act &amp; Order 37 CPC.
             </p>
             <button
               type="button"

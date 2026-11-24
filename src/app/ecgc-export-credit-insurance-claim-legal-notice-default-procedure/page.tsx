@@ -61,7 +61,7 @@ const FAQS = [
   {
     question: "Is a formal Legal Notice to the foreign buyer mandatory before ECGC pays the 80%–90% claim?",
     answer:
-      "Yes. ECGC policy conditions obligate the insured exporter to act as a prudent uninsured seller and take all reasonable steps to prevent or minimize loss. Informal emails or WhatsApp reminders rarely pass ECGC's claim audit. An Advocate-drafted International Legal Demand Notice served via email and trackable international courier (with Proof of Delivery and a BSA 2023 Section 63 certificate) proves bonafide recovery diligence.",
+      "Yes. ECGC policy conditions obligate the insured exporter to act as a prudent uninsured seller and take all reasonable steps to prevent or minimize loss. Informal emails or WhatsApp reminders rarely pass ECGC's claim audit. A Fact-verified International Legal Demand Notice served via email and trackable international courier (with Proof of Delivery and a BSA 2023 Section 63 certificate) proves bonafide recovery diligence.",
   },
   {
     question: "Is complaining to the Indian Embassy or Consulate enough for an ECGC claim?",
@@ -159,8 +159,8 @@ const HOWTO_SCHEMA = {
     {
       "@type": "HowToStep",
       position: 2,
-      name: "Serve Audit-Ready Advocate Legal Notice to Foreign Buyer",
-      text: "Dispatch an Advocate-vetted International Legal Demand Notice via email, WhatsApp, and trackable international courier with BSA 2023 s.63 evidence logs to satisfy ECGC loss-mitigation clauses.",
+      name: "Serve Audit-Ready Fact-Verified Legal Notice to Foreign Buyer",
+      text: "Dispatch a Fact-verified International Legal Demand Notice via email, WhatsApp, and trackable international courier with BSA 2023 s.63 evidence logs to satisfy ECGC loss-mitigation clauses.",
     },
     {
       "@type": "HowToStep",
@@ -427,7 +427,7 @@ export default function EcgcExportCreditInsuranceClaimPage() {
                   <circle cx="278" cy="52" r="14" fill="#DC2626" />
                   <text x="278" y="57" textAnchor="middle" fill="#FFFFFF" fontSize="12" fontWeight="700">2</text>
                   <text x="300" y="57" fill="#F8FAFC" fontSize="13" fontWeight="700">Buyer Legal Notice</text>
-                  <text x="266" y="88" fill="#94A3B8" fontSize="11">Serve Advocate Notice via</text>
+                  <text x="266" y="88" fill="#94A3B8" fontSize="11">Serve Fact-Verified Notice via</text>
                   <text x="266" y="106" fill="#94A3B8" fontSize="11">Email + DHL/FedEx POD.</text>
                   <text x="266" y="132" fill="#F87171" fontSize="11" fontWeight="600">Due + 45 to 90 Days:</text>
                   <text x="266" y="150" fill="#CBD5E1" fontSize="11">Rebut sham quality claims;</text>
@@ -482,7 +482,7 @@ export default function EcgcExportCreditInsuranceClaimPage() {
                   {
                     step: "2",
                     title: "Audit-Ready Foreign Buyer Legal Notice",
-                    desc: "Serve an Advocate Demand Notice via Email + DHL/FedEx POD with BSA 2023 s.63 logs to satisfy ECGC loss-mitigation clauses and rebut sham quality excuses.",
+                    desc: "Serve a Fact-Verified Demand Notice via Email + DHL/FedEx POD with BSA 2023 s.63 logs to satisfy ECGC loss-mitigation clauses and rebut sham quality excuses.",
                   },
                   {
                     step: "3",
@@ -797,7 +797,7 @@ export default function EcgcExportCreditInsuranceClaimPage() {
                   "Monthly Form 203 Shipment Declarations, Premium Ledger & Form 205 Overdue Acknowledgments.",
                   "Shipping Bill (ICEGATE), Commercial Invoice, Packing List & Clean On-Board Bill of Lading / AWB.",
                   "Pre-Shipment Quality Inspection Certificate (SGS / Intertek / Buyer QC sign-off) to defeat sham disputes.",
-                  "Advocate-Drafted International Legal Demand Notice served via Email + Trackable DHL/FedEx POD.",
+                  "Fact-Verified International Legal Demand Notice served via Email + Trackable DHL/FedEx POD.",
                   "Section 63 Bharatiya Sakshya Adhiniyam (BSA), 2023 Certificate covering email headers & WhatsApp logs.",
                   "AD Category-I Bank Non-Realization / Dishonour Memo & FEMA 9-Month Extension Correspondence.",
                   "ECGC Claim Settlement Advice & Executed Letter of Subrogation for AD Bank Clause C.24 EDPMS closure.",

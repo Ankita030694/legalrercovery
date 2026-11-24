@@ -226,7 +226,7 @@ const HOWTO_SCHEMA = {
       "@type": "HowToStep",
       position: 3,
       name: "Serve Forensic Rebuttal-Cum-Demand Notice (IS 456 + Section 43B(h))",
-      text: "Issue an advocate-drafted notice exposing IS 516 curing violations, rejecting unilateral debit notes under Contract Act s.74, and notifying Section 43B(h) tax disallowance.",
+      text: "Issue a fact-verified notice exposing IS 516 curing violations, rejecting unilateral debit notes under Contract Act s.74, and notifying Section 43B(h) tax disallowance.",
     },
     {
       "@type": "HowToStep",

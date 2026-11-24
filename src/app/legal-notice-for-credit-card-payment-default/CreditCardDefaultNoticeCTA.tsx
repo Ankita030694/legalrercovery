@@ -31,7 +31,7 @@ export default function CreditCardDefaultNoticeCTA({
                 Recover Outstanding Credit Card Dues with Verifiable Legal Delivery Proofs
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6">
-                Send an advocate-drafted statutory demand notice directly to defaulting credit cardholders. Includes an itemized principal vs. finance charge breakdown, 15-day cure window, and legally certified electronic delivery proofs under Section 63 of Bharatiya Sakshya Adhiniyam, 2023. Speed Post dispatch is optional at ₹450 per party.
+                Send a fact-verified statutory demand notice directly to defaulting credit cardholders. Includes an itemized principal vs. finance charge breakdown, 15-day cure window, and legally certified electronic delivery proofs under Section 63 of Bharatiya Sakshya Adhiniyam, 2023. Speed Post dispatch is optional at ₹450 per party.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button
@@ -42,7 +42,7 @@ export default function CreditCardDefaultNoticeCTA({
                   {buttonText} — ₹{basePrice}
                 </button>
                 <div className="text-xs text-slate-300 flex flex-wrap sm:flex-nowrap items-center gap-2 sm:gap-3">
-                  <span>✓ 24h Advocate Drafting</span>
+                  <span>✓ 24h Notice Drafting</span>
                   <span>•</span>
                   <span>✓ Email + WhatsApp Delivery</span>
                   <span>•</span>

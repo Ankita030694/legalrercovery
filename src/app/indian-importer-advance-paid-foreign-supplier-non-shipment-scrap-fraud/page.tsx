@@ -612,7 +612,7 @@ export default function IndianImporterAdvancePaidRecoveryPage() {
                     <span className="text-xs font-bold text-red-600 uppercase">Stage 3</span>
                     <h3 className="text-sm font-bold text-slate-900 mt-1">Cross-Border Legal Demand Notice</h3>
                     <p className="text-xs text-slate-600 mt-1">
-                      Issue formal advocate notice to foreign supplier entity and directors asserting CISG, local civil liability, and Hague convention service.
+                      Issue formal fact-verified notice to foreign supplier entity and directors asserting CISG, local civil liability, and Hague convention service.
                     </p>
                   </div>
                   <div className="p-4 bg-slate-50 rounded-xl border border-slate-200">
@@ -724,7 +724,7 @@ export default function IndianImporterAdvancePaidRecoveryPage() {
                   </div>
 
                   <div className="p-3 bg-white/5 rounded-lg border border-white/10 text-xs text-slate-300 leading-relaxed">
-                    <strong>Operational Outcome:</strong> By serving an advocate-backed Hague Service notice within 10 days of the customs joint survey, lodging a BNS Section 318(4) cheating complaint, and petitioning the AD Bank with the certified survey panchnama under RBI Para C.1, the importer secured a 180-day regulatory extension, prevented ED prosecution, and forced the supplier&apos;s local trading sponsor to negotiate a USD 65,000 settlement.
+                    <strong>Operational Outcome:</strong> By serving a fact-verified Hague Service notice within 10 days of the customs joint survey, lodging a BNS Section 318(4) cheating complaint, and petitioning the AD Bank with the certified survey panchnama under RBI Para C.1, the importer secured a 180-day regulatory extension, prevented ED prosecution, and forced the supplier&apos;s local trading sponsor to negotiate a USD 65,000 settlement.
                   </div>
                 </div>
               </section>
@@ -802,7 +802,7 @@ export default function IndianImporterAdvancePaidRecoveryPage() {
                 </div>
 
                 <div className="mt-6 p-4 bg-emerald-50 rounded-xl border border-emerald-200 text-xs text-emerald-800">
-                  <strong>Statutory Best Practice:</strong> Compile all items above into a unified indexed dossier before meeting with your AD Bank&apos;s Chief Manager (Forex). Presenting an advocate-vetted evidence bundle demonstrates active legal recovery under RBI Para C.1, obligating the bank to grant regulatory relief.
+                  <strong>Statutory Best Practice:</strong> Compile all items above into a unified indexed dossier before meeting with your AD Bank&apos;s Chief Manager (Forex). Presenting a fact-verified evidence bundle demonstrates active legal recovery under RBI Para C.1, obligating the bank to grant regulatory relief.
                 </div>
               </section>
 

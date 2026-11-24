@@ -118,7 +118,7 @@ const FAQS = [
   },
   {
     q: "How can an MSP or MSSP recover overdue retainers across 25 to 500+ SMB and multi-branch clients efficiently?",
-    a: "Instead of writing off sub-₹2 lakh retainers or risking IT Act counter-claims, MSPs can upload overdue client ledgers, SOW dates, and FaaS hardware serials via CSV for standardized tri-channel Advocate Notices (Email + WhatsApp + Speed Post RPAD) and escalate stubborn accounts selectively to MSEFC Samadhaan or Order XXXVII summary suits.",
+    a: "Instead of writing off sub-₹2 lakh retainers or risking IT Act counter-claims, MSPs can upload overdue client ledgers, SOW dates, and FaaS hardware serials via CSV for standardized tri-channel Fact-Verified Notices (Email + WhatsApp + Speed Post RPAD) and escalate stubborn accounts selectively to MSEFC Samadhaan or Order XXXVII summary suits.",
   },
 ];
 
@@ -178,7 +178,7 @@ export default function ManagedItMspRecoveryPage() {
             "@type": "HowToStep",
             position: 3,
             name: "Serve Combined AMC Demand & 7-Day BNS s.316 CPE Notice",
-            text: "Dispatch a tri-channel Advocate Notice demanding overdue AMC/SOC retainers, unamortized OEM licenses, and physical return of bailed FaaS firewalls within 7 days.",
+            text: "Dispatch a tri-channel Fact-Verified Notice demanding overdue AMC/SOC retainers, unamortized OEM licenses, and physical return of bailed FaaS firewalls within 7 days.",
           },
           {
             "@type": "HowToStep",
@@ -463,7 +463,7 @@ export default function ManagedItMspRecoveryPage() {
                   },
                   {
                     step: "4. Tri-Channel Demand + 7-Day CPE Notice",
-                    desc: "Serve Advocate Notice combining AMC/SOC arrears, s.43B(h) tax alert, and 7-day BNS s.316 hardware surrender.",
+                    desc: "Serve Fact-Verified Notice combining AMC/SOC arrears, s.43B(h) tax alert, and 7-day BNS s.316 hardware surrender.",
                   },
                   {
                     step: "5. Order XXXVII / MSEFC + BNS s.316",

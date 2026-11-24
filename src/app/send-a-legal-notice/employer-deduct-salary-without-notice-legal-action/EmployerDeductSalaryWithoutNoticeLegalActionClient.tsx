@@ -19,7 +19,7 @@ const faqs = [
     question:
       'Under what statutory provisions can an employee serve a legal notice for unauthorized salary deduction?',
     answer:
-      'An aggrieved employee can issue an advocate-vetted statutory demand notice citing Section 7, Section 8, Section 10, and Section 15 of the Payment of Wages Act, 1936, Section 18 of the Code on Wages, 2019, and Section 73 of the Indian Contract Act, 1872. The notice formally places the employer on record for statutory wage violations, breach of the employment contract, and illegal deprivation of livelihood while demanding unconditional reimbursement within a 15-day peremptory timeline. Serving this formal notice also establishes crucial documentary evidence required before escalating the dispute to the jurisdictional Labour Commissioner, the Payment of Wages Authority, or the Civil Court under Order 37 of the Code of Civil Procedure, 1908.',
+      'An aggrieved employee can issue a fact-verified statutory demand notice citing Section 7, Section 8, Section 10, and Section 15 of the Payment of Wages Act, 1936, Section 18 of the Code on Wages, 2019, and Section 73 of the Indian Contract Act, 1872. The notice formally places the employer on record for statutory wage violations, breach of the employment contract, and illegal deprivation of livelihood while demanding unconditional reimbursement within a 15-day peremptory timeline. Serving this formal notice also establishes crucial documentary evidence required before escalating the dispute to the jurisdictional Labour Commissioner, the Payment of Wages Authority, or the Civil Court under Order 37 of the Code of Civil Procedure, 1908.',
   },
   {
     question:
@@ -174,7 +174,7 @@ const jsonLd = {
         {
           '@type': 'ListItem',
           position: 4,
-          name: 'Draft an advocate-vetted 15-day statutory demand notice invoking Section 7 & 10 Payment of Wages Act 1936, Code on Wages 2019, and BNS criminal provisions',
+          name: 'Draft a fact-verified 15-day statutory demand notice invoking Section 7 & 10 Payment of Wages Act 1936, Code on Wages 2019, and BNS criminal provisions',
         },
         {
           '@type': 'ListItem',
@@ -189,7 +189,7 @@ const jsonLd = {
       '@type': 'Product',
       name: 'Legal Notice to Employer for Unauthorized Salary Deduction & Wage Recovery',
       description:
-        'Advocate-drafted statutory demand notice service for corporate employees, IT professionals, executives, and workers to recover unauthorized salary deductions, unlawful penalty clawbacks, and withheld wages from defaulting employers across India.',
+        'Fact-verified statutory demand notice service for corporate employees, IT professionals, executives, and workers to recover unauthorized salary deductions, unlawful penalty clawbacks, and withheld wages from defaulting employers across India.',
       brand: {
         '@type': 'Organization',
         name: 'Legal Recovery',
@@ -265,7 +265,7 @@ export default function EmployerDeductSalaryWithoutNoticeLegalActionClient() {
 
   const shareUrl = encodeURIComponent(pageUrl);
   const shareText = encodeURIComponent(
-    'Employer deducted your salary without prior notice or explanation? Send an advocate-vetted statutory legal notice for instant wage recovery in India! #LegalNotice #SalaryDeduction #LabourLaw'
+    'Employer deducted your salary without prior notice or explanation? Send a fact-verified statutory legal notice for instant wage recovery in India! #LegalNotice #SalaryDeduction #LabourLaw'
   );
 
   return (
@@ -439,7 +439,7 @@ export default function EmployerDeductSalaryWithoutNoticeLegalActionClient() {
                     Quick Answer
                   </h2>
                   <p className="text-sm text-slate-700 font-medium leading-relaxed">
-                    An employee or corporate professional can issue an advocate-vetted statutory legal notice to an employer for deducting salary without prior written notice under{' '}
+                    An employee or corporate professional can issue a fact-verified statutory legal notice to an employer for deducting salary without prior written notice under{' '}
                     <span className="font-semibold text-slate-800">
                       Section 7 and Section 10 of the Payment of Wages Act, 1936
                     </span>
@@ -646,7 +646,7 @@ export default function EmployerDeductSalaryWithoutNoticeLegalActionClient() {
                         {
                           forum: 'Forum 3',
                           name: 'Summary Civil Recovery Suit under Order 37 of CPC, 1908',
-                          desc: 'For senior IT architects, managers, directors, and executives outside the traditional workman definition, our panel advocates file an expedited Summary Suit under Order 37 of the Code of Civil Procedure. Because the salary claim is based on written appointment letters and pay slips, the employer cannot defend without special leave of court, resulting in swift decrees.',
+                          desc: 'For senior IT architects, managers, directors, and executives outside the traditional workman definition, our team files an expedited Summary Suit under Order 37 of the Code of Civil Procedure. Because the salary claim is based on written appointment letters and pay slips, the employer cannot defend without special leave of court, resulting in swift decrees.',
                         },
                         {
                           forum: 'Forum 4',
@@ -755,7 +755,7 @@ export default function EmployerDeductSalaryWithoutNoticeLegalActionClient() {
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      An advocate-drafted statutory demand notice must be structured with clinical precision, combining chronological factual recitals with stringent statutory warnings:
+                      A fact-verified statutory demand notice must be structured with clinical precision, combining chronological factual recitals with stringent statutory warnings:
                     </p>
 
                     <div className="space-y-4">
@@ -814,8 +814,8 @@ export default function EmployerDeductSalaryWithoutNoticeLegalActionClient() {
                       {[
                         {
                           stage: 'Stage 1',
-                          title: 'Advocate Notice Served via Multi-Channel Hybrid Dispatch',
-                          desc: 'The notice is prepared on the advocate\'s official letterhead, digitally signed under Section 5 of the Information Technology Act, 2000, and dispatched simultaneously via India Post Registered Post AD, Speed Post, verified corporate email, and tracked WhatsApp.',
+                          title: 'Legal Notice Served via Multi-Channel Hybrid Dispatch',
+                          desc: 'The notice is prepared from fact-verified details and dispatched simultaneously via India Post Registered Post AD, Speed Post, verified corporate email, and tracked WhatsApp.',
                         },
                         {
                           stage: 'Stage 2',
@@ -825,7 +825,7 @@ export default function EmployerDeductSalaryWithoutNoticeLegalActionClient() {
                         {
                           stage: 'Stage 3',
                           title: 'Filing Petition Before Payment of Wages Authority / Labour Court',
-                          desc: 'In case of non-compliance, our panel advocates file an expedited wage recovery petition under Section 15(3) of the Payment of Wages Act or Section 33C(2) of the Industrial Disputes Act, demanding principal plus statutory penalties.',
+                          desc: 'In case of non-compliance, our team files an expedited wage recovery petition under Section 15(3) of the Payment of Wages Act or Section 33C(2) of the Industrial Disputes Act, demanding principal plus statutory penalties.',
                         },
                         {
                           stage: 'Stage 4',
@@ -995,7 +995,7 @@ export default function EmployerDeductSalaryWithoutNoticeLegalActionClient() {
                     </div>
                   </div>
                   <p className="text-sm text-slate-650 leading-relaxed mb-6">
-                    Legal Recovery is India&apos;s trusted online legal notice and dispute resolution platform, connecting employees, corporate professionals, executives, and businesses with seasoned panel advocates for rapid, advocate-vetted statutory demand notices at transparent flat fees. With ₹100 Crore+ recovered and 10,000+ cases resolved across India, Legal Recovery delivers verified legal impact without the delays and unpredictability of traditional law firms.
+                    Legal Recovery is India&apos;s trusted online legal notice and dispute resolution platform, helping employees, corporate professionals, executives, and businesses get rapid, fact-verified statutory demand notices at transparent flat fees. With ₹100 Crore+ recovered and 10,000+ cases resolved across India, Legal Recovery delivers verified legal impact without the delays and unpredictability of traditional law firms.
                   </p>
                   <div className="flex flex-wrap gap-3">
                     {[
@@ -1031,7 +1031,7 @@ export default function EmployerDeductSalaryWithoutNoticeLegalActionClient() {
                   Employer Deducted Your Salary?
                 </h3>
                 <p className="text-slate-300 text-xs leading-relaxed mb-4">
-                  Send an advocate-vetted statutory notice today. 78% of employers reverse unauthorized deductions within 15 days upon receiving formal notice from Legal Recovery.
+                  Send a fact-verified statutory notice today. 78% of employers reverse unauthorized deductions within 15 days upon receiving formal notice from Legal Recovery.
                 </p>
                 <button
                   onClick={() => setIsPaymentModalOpen(true)}
@@ -1040,7 +1040,7 @@ export default function EmployerDeductSalaryWithoutNoticeLegalActionClient() {
                   Draft &amp; Send Notice Now
                 </button>
                 <p className="text-center text-slate-400 text-[10px] mt-3">
-                  Flat fee • Advocate-drafted • Sent same day
+                  Flat fee • Fact-verified • Sent same day
                 </p>
               </div>
 
@@ -1095,7 +1095,7 @@ export default function EmployerDeductSalaryWithoutNoticeLegalActionClient() {
                 {[
                   { stat: '78%', label: 'Employers settle wage disputes prior to Labour Court filing' },
                   { stat: '₹100CR+', label: 'Total amount recovered for clients across India' },
-                  { stat: 'Same Day', label: 'Advocate notice drafted and dispatched' },
+                  { stat: 'Same Day', label: 'Legal notice drafted and dispatched' },
                   { stat: 'Flat Fee', label: 'Transparent pricing with no hidden charges' },
                 ].map((item, i) => (
                   <div key={i} className="flex items-center justify-between py-2 border-b border-slate-50 last:border-0">

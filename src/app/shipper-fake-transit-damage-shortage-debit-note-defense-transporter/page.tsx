@@ -234,7 +234,7 @@ const FAQ_ITEMS = [
   {
     question: "How does LegalRecovery assist transporters in reversing arbitrary transit debit notes?",
     answer:
-      "LegalRecovery provides an automated institutional recovery rail for fleet operators, 3PL logistics firms, and express cargo carriers. We deploy advocate-drafted statutory demand notices citing Raman Iron Foundry and Section 16 Carriage by Road Act, demand marine insurance subrogation audit disclosures, execute BSA Section 63 electronic evidence dossiers, file MSME Samadhaan references, and initiate Order XXXVII summary suits across Pan-India commercial courts.",
+      "LegalRecovery provides an automated institutional recovery rail for fleet operators, 3PL logistics firms, and express cargo carriers. We deploy fact-verified statutory demand notices citing Raman Iron Foundry and Section 16 Carriage by Road Act, demand marine insurance subrogation audit disclosures, execute BSA Section 63 electronic evidence dossiers, file MSME Samadhaan references, and initiate Order XXXVII summary suits across Pan-India commercial courts.",
   },
 ];
 
@@ -748,7 +748,7 @@ export default function ShipperTransitDamageDebitDefensePage() {
                       </h3>
                     </div>
                     <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
-                      Dispatch a comprehensive, advocate-vetted legal demand notice via Speed Post RPAD and registered corporate email.
+                      Dispatch a comprehensive, fact-verified legal demand notice via Speed Post RPAD and registered corporate email.
                       Formally separate the admitted running freight ledger from the disputed damage allegation under the Supreme Court's
                       <em>Raman Iron Foundry</em> doctrine. For Udyam-registered transporters, demand 3x RBI compound interest and notify
                       the CFO and Statutory Auditors of Section 43B(h) income tax disallowance.
@@ -884,7 +884,7 @@ export default function ShipperTransitDamageDebitDefensePage() {
                       Unliquidated damages cannot be set off
                     </text>
                     <text x="775" y="402" fill="#FECACA" fontSize="10" textAnchor="middle">
-                      Issue 15-Day Advocate Notice + MSMED 3x Interest
+                      Issue 15-Day Fact-Verified Notice + MSMED 3x Interest
                     </text>
                     <text x="775" y="420" fill="#FCA5A5" fontSize="10" textAnchor="middle">
                       Carrier Lien on Fresh Consignments (s.14)
@@ -1161,7 +1161,7 @@ export default function ShipperTransitDamageDebitDefensePage() {
 
                 <div className="mt-4 p-4 rounded-xl bg-red-50 border border-red-200 text-xs sm:text-sm text-red-950 font-medium">
                   <strong className="text-[#DC2626] font-bold">BSA Section 63 Compliance: </strong>
-                  All telematics records, GPS audit logs, and email correspondence must be accompanied by an advocate-vetted
+                  All telematics records, GPS audit logs, and email correspondence must be accompanied by a fact-verified
                   electronic certificate under Section 63 of Bharatiya Sakshya Adhiniyam, 2023 to ensure unquestioned admissibility
                   before Commercial Courts and Arbitral Tribunals.
                 </div>
@@ -1197,7 +1197,7 @@ export default function ShipperTransitDamageDebitDefensePage() {
                       <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
                         Under Section 14 of the Carriage by Road Act, 2007 read with Section 170 of the Indian Contract Act,
                         a common carrier is entitled to detain goods until all charges for carriage, storage, and demurrage
-                        are paid. By serving an advocate-drafted Notice of Carrier Lien on the next consignment, the transporter
+                        are paid. By serving a fact-verified Notice of Carrier Lien on the next consignment, the transporter
                         legally halts delivery to the buyer. If unpaid after notice, Section 14 empowers the carrier to auction
                         the goods to recover freight balances. Explore our dedicated{" "}
                         <Link

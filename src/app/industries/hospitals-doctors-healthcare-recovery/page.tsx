@@ -217,7 +217,7 @@ const IND_03_SPOKES: IndustrySpoke[] = [
     url: "/templates/hospital-discharge-pending-bill-undertaking-and-legal-notice",
     statute: "NI s.4 Promissory Note, Contract s.126 & Article 21 Clause",
     summary:
-      "Advocate-drafted non-coercive discharge financial undertaking with attendant co-guarantee plus 15-day post-discharge notice.",
+      "Ready-to-use non-coercive discharge financial undertaking with attendant co-guarantee plus 15-day post-discharge notice.",
   },
   {
     id: "B2B-052",
@@ -451,7 +451,7 @@ const FAQS = [
     question:
       "Can a hospital or diagnostic chain test LegalRecovery.in on one unpaid case before onboarding CSV batches?",
     answer:
-      "Yes. Under our dual-track onboarding model, hospital Medical Superintendents, clinic founders, or RCM heads can pilot a single overdue post-discharge file, stop-payment cheque, or diagnostic ledger for ₹999 via the self-serve intake form. After reviewing the advocate-drafted notice, Section 63 BSA 2023 server certificate, and Speed Post RPAD tracking proof, institutions can onboard 10 to 10,000+ receivables in bulk via CSV and Representee mandates.",
+      "Yes. Under our dual-track onboarding model, hospital Medical Superintendents, clinic founders, or RCM heads can pilot a single overdue post-discharge file, stop-payment cheque, or diagnostic ledger for ₹999 via the self-serve intake form. After reviewing the fact-verified notice, Section 63 BSA 2023 server certificate, and Speed Post RPAD tracking proof, institutions can onboard 10 to 10,000+ receivables in bulk via CSV and Representee mandates.",
   },
 ];
 
@@ -1022,7 +1022,7 @@ export default function HospitalsDoctorsHealthcareRecoveryPage() {
                   },
                   {
                     step: "02. Statutory Drafting",
-                    text: "Advocates draft NI s.138 discharge cheque notices, IRDAI Bank Rate + 2% TPA claims, CPC s.80 notices, or 194J/franchise demands in ethical medical-legal tone.",
+                    text: "We prepare NI s.138 discharge cheque notices, IRDAI Bank Rate + 2% TPA claims, CPC s.80 notices, or 194J/franchise demands in ethical medical-legal tone.",
                   },
                   {
                     step: "03. Tri-Channel Dispatch",
@@ -1076,7 +1076,7 @@ export default function HospitalsDoctorsHealthcareRecoveryPage() {
                   05
                 </span>
                 <h2 className="text-xl sm:text-2xl font-extrabold text-slate-900 leading-snug">
-                  Advocate-Led Discharge Desk, TPA Batch &amp; Representee Vault
+                  Fact-Verified Discharge Desk, TPA Batch &amp; Representee Vault
                 </h2>
               </div>
 
@@ -1104,7 +1104,7 @@ export default function HospitalsDoctorsHealthcareRecoveryPage() {
                     <Link href="/user/new-recovery" className="text-[#DC2626] font-semibold underline">
                       /user/new-recovery
                     </Link>
-                    . Enrolled advocates verify your itemized bill and dispatch tri-channel notices
+                    . Our team verifies the facts of your itemized bill and dispatches tri-channel notices
                     with Email, WhatsApp, and India Post RPAD tracking.
                   </p>
                 </div>

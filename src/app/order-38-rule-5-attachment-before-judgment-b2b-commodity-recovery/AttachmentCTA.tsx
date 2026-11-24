@@ -27,10 +27,10 @@ export default function AttachmentCTA({ className = "" }: AttachmentCTAProps) {
                 Test 1 Live Overdue Case Now (&rupee;{basePrice})
               </h3>
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-                Lock your pre-suit urgency record before filing an Order XXXVIII Rule 5 attachment application. Our advocates draft and serve a formal statutory demand annexing your invoices, E-Way Bills, and asset-restraint warning via Email, Business WhatsApp &amp; Speed Post RPAD.
+                Lock your pre-suit urgency record before filing an Order XXXVIII Rule 5 attachment application. Our team drafts and serves a formal statutory demand annexing your invoices, E-Way Bills, and asset-restraint warning via Email, Business WhatsApp &amp; Speed Post RPAD.
               </p>
               <ul className="space-y-1.5 text-xs text-slate-200 mb-6">
-                <li>&check; Advocate-drafted demand establishing timeline for s.12A urgent relief</li>
+                <li>&check; Fact-verified demand establishing timeline for s.12A urgent relief</li>
                 <li>&check; Simultaneous Email + Business WhatsApp + Speed Post RPAD (BSA s.63)</li>
                 <li>&check; Escalation-ready dossier for Order 38 Rule 5, Order 37 &amp; NI s.138</li>
               </ul>

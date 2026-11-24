@@ -76,7 +76,7 @@ const FAQ_ITEMS = [
   },
   {
     q: "How should we recover unpaid dues from 200+ defaulting Tier-2 and Tier-3 partner schools at once?",
-    a: "Do not litigate 200 fragmented ₹1.5–₹8 Lakh ledgers individually in district courts. First, standardize your master CSV with each school's underlying Registered Society/Trust name, GSTIN, and office-bearer details. Second, dispatch advocate-vetted batch notices simultaneously via Email, WhatsApp, and Speed Post RPAD. Third, escalate non-responders selectively via Section 138 NI Act (for bounced PDCs), Section 25 PSS Act (for NACH bounces), or MSEFC Samadhaan.",
+    a: "Do not litigate 200 fragmented ₹1.5–₹8 Lakh ledgers individually in district courts. First, standardize your master CSV with each school's underlying Registered Society/Trust name, GSTIN, and office-bearer details. Second, dispatch fact-verified batch notices simultaneously via Email, WhatsApp, and Speed Post RPAD. Third, escalate non-responders selectively via Section 138 NI Act (for bounced PDCs), Section 25 PSS Act (for NACH bounces), or MSEFC Samadhaan.",
   },
   {
     q: "Can we disable the School ERP or cloud LMS license while the dispute is pending?",
@@ -174,7 +174,7 @@ const HOWTO_SCHEMA = {
     {
       "@type": "HowToStep",
       position: 3,
-      name: "Serve Cured Advocate Demand Notice (Single or Batch CSV)",
+      name: "Serve Cured Fact-Verified Demand Notice (Single or Batch CSV)",
       text: "Dispatch a 15-day statutory notice naming the Society/Trust through its President/Secretary alongside the School Principal via Email, WhatsApp, and Speed Post RPAD.",
     },
     {
@@ -753,7 +753,7 @@ export default function EdtechB2BSmartClassRecoveryPage() {
                 </h2>
               </div>
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed mb-5">
-                When an EdTech CFO manages 200 to 500+ overdue school accounts across Tier-2 and Tier-3 towns, traditional per-case law firm billing makes ₹1.5–₹4 Lakh accounts economically unviable to pursue. LegalRecovery&apos;s institutional Representee workflow converts your ERP aging sheet into compliant, entity-cured Advocate Notices at scale:
+                When an EdTech CFO manages 200 to 500+ overdue school accounts across Tier-2 and Tier-3 towns, traditional per-case law firm billing makes ₹1.5–₹4 Lakh accounts economically unviable to pursue. LegalRecovery&apos;s institutional Representee workflow converts your ERP aging sheet into compliant, entity-cured Fact-Verified Notices at scale:
               </p>
               <ol className="space-y-3 text-xs sm:text-sm text-slate-700 list-decimal pl-5 mb-6">
                 <li>
@@ -763,7 +763,7 @@ export default function EdtechB2BSmartClassRecoveryPage() {
                   <strong>Automated Statutory Tagging:</strong> Tag Udyam-eligible invoices for MSMED Act s.16 compound interest and flag bounced PDC/NACH accounts for 30-day NI Act s.138 / PSS Act s.25 notices.
                 </li>
                 <li>
-                  <strong>Multi-Channel Dispatch &amp; RPAD Tracking:</strong> Dispatch all 200+ Advocate Notices simultaneously via verified Email, WhatsApp, and Speed Post RPAD with automated Section 63 BSA delivery certificates.
+                  <strong>Multi-Channel Dispatch &amp; RPAD Tracking:</strong> Dispatch all 200+ Fact-Verified Notices simultaneously via verified Email, WhatsApp, and Speed Post RPAD with automated Section 63 BSA delivery certificates.
                 </li>
                 <li>
                   <strong>Selective Litigation Escalation:</strong> Convert early-settling schools via structured payment links and escalate hard defaulters to MSEFC Samadhaan, Section 138 courts, or Order XXXVII CPC.

@@ -39,7 +39,7 @@ export default function SecurityChequeNoticeCTA({
                 <div className="space-y-2 mb-6 text-xs text-slate-300">
                   <div className="flex items-center gap-2">
                     <span className="text-emerald-400 font-bold">&check;</span>
-                    <span>Advocate Vetted &amp; Dispatched on Bar Council Letterhead</span>
+                    <span>Fact-Verified &amp; Dispatched on Bar Council Letterhead</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <span className="text-emerald-400 font-bold">&check;</span>

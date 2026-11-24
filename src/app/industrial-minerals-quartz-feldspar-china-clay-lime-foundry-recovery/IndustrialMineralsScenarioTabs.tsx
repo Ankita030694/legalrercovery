@@ -33,7 +33,7 @@ const SCENARIOS: ScenarioTab[] = [
       {
         step: "2. Reject Unilateral Debit Notes in Writing Within 7 Days",
         description:
-          "Serve a formal Advocate Notice under Sale of Goods Act s.42 + MSMED Act s.15 rejecting the belated debit note and demanding the full invoice principal plus 3x RBI compound interest.",
+          "Serve a formal Fact-Verified Notice under Sale of Goods Act s.42 + MSMED Act s.15 rejecting the belated debit note and demanding the full invoice principal plus 3x RBI compound interest.",
       },
       {
         step: "3. Trigger Section 43B(h) Tax Disallowance Alert to Buyer's CA",
@@ -60,7 +60,7 @@ const SCENARIOS: ScenarioTab[] = [
       {
         step: "2. Serve Pre-MSEFC Statutory Demand + 3x RBI Interest Ledger",
         description:
-          "Issue a tri-channel Advocate Notice quantifying principal plus monthly compounded interest at 3x the RBI bank rate under Section 16 of the MSMED Act.",
+          "Issue a tri-channel Fact-Verified Notice quantifying principal plus monthly compounded interest at 3x the RBI bank rate under Section 16 of the MSMED Act.",
       },
       {
         step: "3. File MSME Samadhaan Reference or Order XXXVII Summary Suit",

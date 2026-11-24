@@ -87,7 +87,7 @@ const FAQS = [
   },
   {
     q: "How can an enterprise upskilling or proctoring vendor chase 30 to 300+ overdue corporate POs without hiring an army of lawyers?",
-    a: "Instead of fragmented manual follow-ups, upload your entire overdue receivable ledger via CSV to LegalRecovery's Representee portal. Our institutional desk verifies each corporate CIN/GSTIN, maps Udyam s.43B(h) and Order XXXVII CPC hooks, and dispatches advocate-drafted notices across Email, WhatsApp, and Speed Post RPAD at flat institutional slabs.",
+    a: "Instead of fragmented manual follow-ups, upload your entire overdue receivable ledger via CSV to LegalRecovery's Representee portal. Our institutional desk verifies each corporate CIN/GSTIN, maps Udyam s.43B(h) and Order XXXVII CPC hooks, and dispatches fact-verified notices across Email, WhatsApp, and Speed Post RPAD at flat institutional slabs.",
   },
 ];
 
@@ -519,7 +519,7 @@ export default function CorporateLndInvoiceRecoveryPage() {
                 {[
                   { stage: "Stage 1 (Day 1–15)", title: "Lock Estoppel Evidence", desc: "Export signed attendance sheets, feedback scores, and LMS SSO logs with BSA s.63 certificate." },
                   { stage: "Stage 2 (Day 16–45)", title: "Deemed Acceptance", desc: "Document 15-day objection-free window under MSMED s.2(b) and GSTR-1 invoice upload." },
-                  { stage: "Stage 3 (Day 46)", title: "Serve s.43B(h) Demand", desc: "Send Advocate Notice to CFO, Company Secretary & Auditor citing 30% tax disallowance." },
+                  { stage: "Stage 3 (Day 46)", title: "Serve s.43B(h) Demand", desc: "Send Fact-Verified Notice to CFO, Company Secretary & Auditor citing 30% tax disallowance." },
                   { stage: "Stage 4 (Parallel)", title: "Trigger NI s.138 / CPC s.80", desc: "Enforce 30-day bounced cheque notices or 60-day Govt/SSDM Section 80 CPC notices." },
                   { stage: "Stage 5 (Enforce)", title: "MSEFC or Order XXXVII Suit", desc: "File on MSME Samadhaan for 3x RBI compound interest or Commercial Court s.12A." },
                 ].map((item, idx) => (

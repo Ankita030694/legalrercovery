@@ -133,9 +133,9 @@ const FAQS = [
       "The legal notice reply time limit depends on the governing statute. For cheque bounce notices under Section 138 of the Negotiable Instruments Act, the statutory window is strictly 15 days from the date of receipt. In consumer and civil recovery disputes, notices typically prescribe a 15-day or 30-day response window. Notices to the Government under Section 80 CPC provide 60 days. While an inadvertent delay of a few days does not bar your defense, issuing your reply within the stated timeframe prevents the sender from claiming you tacitly accepted their allegations.",
   },
   {
-    question: "What are the legal notice reply charges if drafted by an advocate?",
+    question: "What are the legal notice reply charges if prepared on verified facts?",
     answer:
-      "Standard legal notice reply charges in India generally range from ₹3,000 to ₹15,000 depending on the complexity of the dispute, advocate seniority, and required annexures. On LegalRecovery.in, verified litigation advocates review the notice, draft paragraph-by-paragraph specific denials under Order VIII Rule 5 CPC, and dispatch the response by email and WhatsApp under BSA Section 63 for a transparent, flat fee of ₹999. Speed Post is optional at ₹450 per party.",
+      "Standard legal notice reply charges in India generally range from ₹3,000 to ₹15,000 depending on the complexity of the dispute, advocate seniority, and required annexures. On LegalRecovery.in, our team verifies the facts you submit, prepares paragraph-by-paragraph specific denials under Order VIII Rule 5 CPC, and dispatches the response by email and WhatsApp under BSA Section 63 for a transparent, flat fee of ₹999. Speed Post is optional at ₹450 per party.",
   },
   {
     question: "What happens if I ignore a legal notice and do not send a reply?",
@@ -160,7 +160,7 @@ const FAQS = [
   {
     question: "Legal notice aane par reply kaise karein aur kitne din mein bhejna hota hai?",
     answer:
-      "Legal notice milte hi sabse pehle uske envelope ka Speed Post tracking number aur receipt date note karein. Cheque bounce notice mein 15 din ka kanooni samay hota hai, jabki consumer ya civil mamlo mein aam taur par 15 se 30 din milte hain. Notice ka paragraph-wise jawab taiyar karein, har jhuthe arop ko specifically deny karein aur apna paksh rakhein. LegalRecovery.in par verified advocate se proper legal language mein reply draft karwake Speed Post aur email se bhejein taaki court mein adverse inference na bane.",
+      "Legal notice milte hi sabse pehle uske envelope ka Speed Post tracking number aur receipt date note karein. Cheque bounce notice mein 15 din ka kanooni samay hota hai, jabki consumer ya civil mamlo mein aam taur par 15 se 30 din milte hain. Notice ka paragraph-wise jawab taiyar karein, har jhuthe arop ko specifically deny karein aur apna paksh rakhein. LegalRecovery.in par hamari team aapke facts verify karke proper legal language mein reply taiyaar karti hai aur email/WhatsApp (optional Speed Post) se bhejti hai taaki court mein adverse inference na bane.",
   },
 ];
 
@@ -301,7 +301,7 @@ export default function LegalNoticeReplyPage() {
                 Statutory Summary (Admissions, Denials &amp; Time Limits)
               </p>
               <p>
-                A reply to a legal notice must be issued within the stipulated 15 to 30 days (strictly 15 days under Section 138 NI Act). Under Order VIII Rule 5 CPC, every allegation must be specifically denied to prevent deemed admission. An advocate-drafted reply establishes your defence, preserves counter-claims, and prevents adverse inferences before litigation begins.
+                A reply to a legal notice must be issued within the stipulated 15 to 30 days (strictly 15 days under Section 138 NI Act). Under Order VIII Rule 5 CPC, every allegation must be specifically denied to prevent deemed admission. A fact-verified reply establishes your defence, preserves counter-claims, and prevents adverse inferences before litigation begins.
               </p>
             </div>
 
@@ -643,7 +643,7 @@ export default function LegalNoticeReplyPage() {
                   </div>
                   <div className="bg-red-50 text-red-950 p-4 rounded-xl border border-red-200">
                     <span className="text-[10px] font-bold text-red-700 uppercase tracking-wider block mb-1">Step 4</span>
-                    <h3 className="font-bold text-sm">Advocate Verification &amp; Dispatch</h3>
+                    <h3 className="font-bold text-sm">Fact Verification &amp; Dispatch</h3>
                     <p className="text-xs text-red-900 mt-1">Serve via Registered Speed Post + BSA Section 63 compliant electronic mail.</p>
                   </div>
                   <div className="bg-emerald-50 text-emerald-950 p-4 rounded-xl border border-emerald-200">
@@ -713,7 +713,7 @@ export default function LegalNoticeReplyPage() {
                     {/* Step 4 */}
                     <rect x="520" y="20" width="140" height="90" rx="10" fill="url(#replyAlertGrad)" />
                     <text x="590" y="45" fill="#FCA5A5" fontWeight="bold" textAnchor="middle">STEP 4</text>
-                    <text x="590" y="65" fill="#FFFFFF" fontWeight="bold" textAnchor="middle">Advocate Dispatch</text>
+                    <text x="590" y="65" fill="#FFFFFF" fontWeight="bold" textAnchor="middle">Dispatch</text>
                     <text x="590" y="82" fill="#FEE2E2" fontSize="10" textAnchor="middle">Speed Post + AD</text>
                     <text x="590" y="98" fill="#FECACA" fontSize="9" textAnchor="middle">BSA Section 63 Email</text>
 
@@ -833,13 +833,13 @@ export default function LegalNoticeReplyPage() {
 
                   <div className="space-y-3 text-xs sm:text-sm text-slate-300 leading-relaxed">
                     <p>
-                      <strong>The Situation:</strong> Vivek Enterprises, a tech accessories distributor in Bengaluru, received a high-pressure advocate legal demand notice from an overseas component vendor claiming an alleged unpaid invoice of ₹7,50,000 with 24% annual penal interest, giving a 15-day ultimatum before instituting commercial recovery and criminal proceedings.
+                      <strong>The Situation:</strong> Vivek Enterprises, a tech accessories distributor in Bengaluru, received a high-pressure fact-verified legal demand notice from an overseas component vendor claiming an alleged unpaid invoice of ₹7,50,000 with 24% annual penal interest, giving a 15-day ultimatum before instituting commercial recovery and criminal proceedings.
                     </p>
                     <p>
                       <strong>The Actual Facts:</strong> The component consignment delivered 5 months earlier was substantially defective, having failed quality testing. Vivek Enterprises had formally repudiated the consignment within 72 hours via email and returned 80% of the defective units via V-Trans logistics with signed receiving receipts. The vendor had suppressed these return receipts and attempted to enforce the original gross invoice.
                     </p>
                     <p>
-                      <strong>The Statutory Action:</strong> Within 10 days of receiving the notice, Vivek Enterprises engaged an advocate through LegalRecovery.in. The advocate issued a comprehensive Reply under Order VIII Rule 5 CPC and Section 63 BSA. The reply: (1) specifically admitted the initial purchase order while specifically denying the debt; (2) placed on record the rejection emails and signed logistics proof; (3) invoked the &apos;Without Prejudice&apos; doctrine; and (4) called upon the vendor to withdraw the notice within 7 days and compensate ₹25,000 in drafting expenses.
+                      <strong>The Statutory Action:</strong> Within 10 days of receiving the notice, Vivek Enterprises used LegalRecovery.in. A fact-verified comprehensive Reply was issued under Order VIII Rule 5 CPC and Section 63 BSA. The reply: (1) specifically admitted the initial purchase order while specifically denying the debt; (2) placed on record the rejection emails and signed logistics proof; (3) invoked the &apos;Without Prejudice&apos; doctrine; and (4) called upon the vendor to withdraw the notice within 7 days and compensate ₹25,000 in drafting expenses.
                     </p>
                     <div className="p-3.5 sm:p-4 bg-emerald-950/70 border border-emerald-700/60 rounded-xl text-emerald-200">
                       <strong className="block text-emerald-400 font-bold mb-1">The Outcome:</strong>
@@ -976,7 +976,7 @@ export default function LegalNoticeReplyPage() {
               {/* Primary CTA */}
               <section id="heading-cta-block" aria-labelledby="heading-cta-block-title" className="w-full">
                 <h2 id="heading-cta-block-title" className="sr-only">
-                  Have an Advocate Draft Your Legal Notice Reply
+                  Get Your Fact-Verified Legal Notice Reply Prepared
                 </h2>
                 <LegalNoticeReplyCTA variant="primary" />
               </section>

@@ -29,7 +29,7 @@ const SCENARIOS: ScenarioTab[] = [
       {
         step: "Issue Formal s.51–52 Conditional Performance & Fee Settlement Notice",
         detail:
-          "Serve an Advocate Notice placing on record that your firm remains ready and willing to inspect and issue the final Structural Stability / MEP As-Built certificate immediately upon settlement of all certified prior milestone invoices (or via bank escrow / RTGS clearing).",
+          "Serve a Fact-Verified Notice placing on record that your firm remains ready and willing to inspect and issue the final Structural Stability / MEP As-Built certificate immediately upon settlement of all certified prior milestone invoices (or via bank escrow / RTGS clearing).",
       },
       {
         step: "Refuse Uncertified Post-Dated Cheques Without Personal Director Guarantee",
@@ -63,7 +63,7 @@ const SCENARIOS: ScenarioTab[] = [
       {
         step: "Serve Formal Demobilization Warning + 15-Day Arrears Demand Notice",
         detail:
-          "Issue an Advocate Notice under Contract Act ss.51–52 giving 15 days to clear accumulated man-month arrears failing which site manpower will be lawfully demobilized without waiver of idle-standby and demobilization costs under s.73.",
+          "Issue a Fact-Verified Notice under Contract Act ss.51–52 giving 15 days to clear accumulated man-month arrears failing which site manpower will be lawfully demobilized without waiver of idle-standby and demobilization costs under s.73.",
       },
       {
         step: "Escalate Simultaneously to MSEFC Samadhaan or Commercial Court Order XXXVII",

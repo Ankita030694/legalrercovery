@@ -23,10 +23,10 @@ export default function PatientChequeBounceCTA({ className = "" }: PatientCheque
               Track 1 &bull; Single Discharge Cheque Dishonour Test
             </span>
             <p className="text-lg sm:text-xl font-extrabold text-white mb-2">
-              Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Advocate Drafted &middot; Email + WhatsApp + Speed Post RPAD)
+              Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Fact-Verified &middot; Email + WhatsApp + Speed Post RPAD)
             </p>
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-              Serve a high-impact, advocate-vetted Section 138 Statutory Demand Notice on a patient or third-party relative whose discharge cheque dishonoured or was stopped. Pre-empts spurious duress defenses by citing the Supreme Court benchmark in <em className="italic">ICDS Ltd. v. Beena Shabeer</em> and lays the foundation for 20% interim compensation under Section 143A.
+              Serve a high-impact, fact-verified Section 138 Statutory Demand Notice on a patient or third-party relative whose discharge cheque dishonoured or was stopped. Pre-empts spurious duress defenses by citing the Supreme Court benchmark in <em className="italic">ICDS Ltd. v. Beena Shabeer</em> and lays the foundation for 20% interim compensation under Section 143A.
             </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-3">

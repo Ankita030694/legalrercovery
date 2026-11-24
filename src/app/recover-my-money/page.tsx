@@ -157,7 +157,7 @@ const FAQS = [
   {
     question: "Can I get a refund?",
     answer:
-      "Refunds are not available once advocate review begins or after a notice is issued, so please check your details before paying. Our terms have the full policy.",
+      "Refunds are not available once fact verification begins or after a notice is issued, so please check your details before paying. Our terms have the full policy.",
   },
 ];
 

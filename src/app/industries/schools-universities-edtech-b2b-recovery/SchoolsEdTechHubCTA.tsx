@@ -27,7 +27,7 @@ export default function SchoolsEdTechHubCTA({ className = "" }: SchoolsEdTechHub
                 Test 1 Live Overdue Case Now (&rupee;{basePrice})
               </h3>
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-                Advocate Drafted &bull; Email + WhatsApp + Speed Post RPAD. Serve one chronic fee-defaulting parent (with RTE-safe child-protection disclaimer), one university co-guarantor, or one defaulting School Trust / coaching franchisee today.
+                Fact-Verified &bull; Email + WhatsApp + Speed Post RPAD. Serve one chronic fee-defaulting parent (with RTE-safe child-protection disclaimer), one university co-guarantor, or one defaulting School Trust / coaching franchisee today.
               </p>
               <ul className="space-y-1.5 text-xs text-slate-200 mb-6">
                 <li>&check; RTE s.5(3) &amp; NCPCR Safe-Harbour wording (zero TC/student pressure)</li>

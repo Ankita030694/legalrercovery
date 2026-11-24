@@ -159,7 +159,7 @@ export default function PitchTheftTableOfContents({
         <div className="mt-6 pt-5 border-t border-slate-200">
           <p className="text-[11px] font-bold text-slate-900 mb-1">Facing Creative Pitch Theft?</p>
           <p className="text-[11px] text-slate-500 mb-3 leading-relaxed">
-            Issue a high-priority advocate notice demanding copyright injunction, account of profits, and kill fees.
+            Issue a high-priority fact-verified notice demanding copyright injunction, account of profits, and kill fees.
           </p>
           <a
             href="/user/new-recovery"

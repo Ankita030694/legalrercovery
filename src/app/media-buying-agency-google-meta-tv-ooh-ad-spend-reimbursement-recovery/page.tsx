@@ -235,7 +235,7 @@ export default function MediaBuyingRecoveryPage() {
         "@type": "HowToStep",
         position: 3,
         name: "Dispatch 7-Day Statutory Legal Demand Notice",
-        text: "Serve an advocate-drafted demand notice citing Indian Contract Act Section 222 (agent indemnity), signed Release Orders, Section 43B(h) income tax disallowance, and MSMED Act 3x compound interest.",
+        text: "Serve a fact-verified demand notice citing Indian Contract Act Section 222 (agent indemnity), signed Release Orders, Section 43B(h) income tax disallowance, and MSMED Act 3x compound interest.",
       },
       {
         "@type": "HowToStep",
@@ -779,7 +779,7 @@ export default function MediaBuyingRecoveryPage() {
                 </div>
                 <div className="bg-slate-900 text-white p-4 rounded-xl border border-slate-800">
                   <span className="text-[10px] font-black uppercase text-red-400 block mb-1">
-                    Stage 3 &bull; Serve 7-Day Advocate Legal Demand Notice
+                    Stage 3 &bull; Serve 7-Day Fact-Verified Legal Demand Notice
                   </span>
                   <p className="text-xs text-slate-300">
                     Dispatch formal legal notice under Contract Act s.222, Section 43B(h), and Order XXXVII CPC via
@@ -1151,7 +1151,7 @@ export default function MediaBuyingRecoveryPage() {
                 Model Release Order (RO) Indemnity &amp; Personal Guarantee Clause
               </h2>
               <p className="text-xs sm:text-sm text-slate-600 mb-4">
-                Incorporate this advocate-vetted contractual indemnity clause into every Release Order (RO) and media
+                Incorporate this ready-to-use contractual indemnity clause into every Release Order (RO) and media
                 schedule to eliminate client evasion tactics before campaign launch:
               </p>
 

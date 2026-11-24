@@ -37,7 +37,7 @@ const PROBLEMS: ProblemTab[] = [
           "Report the trip in the app under 'Charged cancellation fee unfairly / Driver asked me to cancel'. If bot deflection closes the ticket, dial 1915 or register on consumerhelpline.gov.in quoting the booking CRN/Trip ID.",
       },
       {
-        step: "Serve Statutory Advocate Legal Notice",
+        step: "Serve Statutory Fact-Verified Legal Notice",
         description:
           "If the aggregator refuses a source bank reversal, issue a formal advocate demand notice to ANI Technologies, Uber India Systems, or Roppen Transportation asserting unfair trade practice under Section 2(47) of the Consumer Protection Act, 2019.",
       },
@@ -118,7 +118,7 @@ const PROBLEMS: ProblemTab[] = [
           "Check your bank statement. If the aggregator claims the refund was processed to bank, demand the 12-digit Acquirer Reference Number (ARN) or bank UTR to verify inward credit.",
       },
       {
-        step: "Issue Advocate Demand Notice for Cash Reversal",
+        step: "Issue Fact-Verified Demand Notice for Cash Reversal",
         description:
           "Serve a formal statutory notice demanding immediate remittance to your bank account along with penal interest of 18% per annum for wrongful retention of consumer funds.",
       },

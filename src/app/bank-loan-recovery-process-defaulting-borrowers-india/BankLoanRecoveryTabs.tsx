@@ -86,9 +86,9 @@ const PROBLEMS: ProblemTab[] = [
           "Secure original return memo from clearing bank stating reason for dishonor. For NACH, extract certified electronic failure logs from NPCI clearing rail.",
       },
       {
-        step: "Serve 30-Day Statutory Advocate Demand Notice",
+        step: "Serve 30-Day Statutory Fact-Verified Demand Notice",
         description:
-          "Issue a formal advocate legal demand notice within 30 days of receiving the return memo, giving the drawer 15 days from notice receipt to clear the full dishonored amount.",
+          "Issue a formal fact-verified legal demand notice within 30 days of receiving the return memo, giving the drawer 15 days from notice receipt to clear the full dishonored amount.",
       },
       {
         step: "File Criminal Complaint under Section 138 NI Act / 25 PSSA",
@@ -108,7 +108,7 @@ const PROBLEMS: ProblemTab[] = [
       "Under Order XXXVII (Order 37) of the Code of Civil Procedure, 1908, banks can institute an expedited Summary Suit in the competent Commercial Court based on loan agreements, promissory notes, and admitted debt acknowledgments. The defendant has no automatic right to defend; they must apply for Leave to Defend within 10 days of summons, demonstrating a substantial and genuine defense. If denied, the court enters immediate judgment.",
     steps: [
       {
-        step: "Issue Advocate Demand Notice & Invoke Arbitration Clause",
+        step: "Issue Fact-Verified Demand Notice & Invoke Arbitration Clause",
         description:
           "Dispatch formal demand notice terminating the credit facility and invoking the arbitration clause under Section 21 of the Arbitration and Conciliation Act, 1996 if provided.",
       },

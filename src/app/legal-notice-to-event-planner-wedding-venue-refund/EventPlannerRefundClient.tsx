@@ -22,7 +22,7 @@ const faqs = [
   },
   {
     question: "How do I send a legal notice to a wedding decorator who defaulted on services?",
-    answer: "If a wedding decorator defaults on services such as failing to set up the decor, providing substandard materials, or failing to show up, you should serve a formal legal notice. The notice must detail the terms of the agreement, the amount paid as an advance, the specific defaults committed by the decorator, and the resulting financial and emotional distress. You must demand a full refund of the advance along with interest and compensation. The notice should give the decorator a 15-day compliance window to settle the matter. It should be drafted by a qualified advocate and served digitally via email and WhatsApp to ensure legal validity."
+    answer: "If a wedding decorator defaults on services such as failing to set up the decor, providing substandard materials, or failing to show up, you should serve a formal legal notice. The notice must detail the terms of the agreement, the amount paid as an advance, the specific defaults committed by the decorator, and the resulting financial and emotional distress. You must demand a full refund of the advance along with interest and compensation. The notice should give the decorator a 15-day compliance window to settle the matter. It should be prepared on verified facts and served digitally via email and WhatsApp to ensure legal validity."
   },
   {
     question: "Can I file a consumer complaint against a banquet hall for poor service?",
@@ -335,7 +335,7 @@ export default function EventPlannerRefundClient() {
                     When a wedding venue, banquet hall, or event planner refuses to issue a refund, you must evaluate the most effective route to recover your money. The main options are serving a formal legal notice, filing a complaint in the Consumer Disputes Redressal Commission, or initiating a commercial civil suit.
                   </p>
                   <p className="text-sm md:text-base leading-relaxed">
-                    Serving a formal legal notice is the most recommended first step. It is a structured demand letter drafted by a lawyer that details the contract terms, the payments made, the breach committed by the vendor, and the legal provisions under which the refund is claimed. The notice gives the vendor a 15-day period to return the money and warns them of legal action if they fail to comply. In a large majority of cases, receiving a formal legal notice from an advocate convinces the vendor to settle the matter. They realize that the client is serious, has professional legal representation, and that defending a lawsuit will cost them more than settling the refund.
+                    Serving a formal legal notice is the most recommended first step. It is a structured demand letter prepared on verified facts that details the contract terms, the payments made, the breach committed by the vendor, and the legal provisions under which the refund is claimed. The notice gives the vendor a 15-day period to return the money and warns them of legal action if they fail to comply. In a large majority of cases, receiving a formal legal notice from an advocate convinces the vendor to settle the matter. They realize that the client is serious, has professional legal representation, and that defending a lawsuit will cost them more than settling the refund.
                   </p>
                   <p className="text-sm md:text-base leading-relaxed">
                     If the vendor ignores the legal notice, you can proceed to litigation. For personal bookings like weddings and family events, you can file a complaint in the Consumer Forum. The Consumer Protection Act, 2019, provides a highly consumer-friendly forum where disputes are resolved relatively quickly without the strict procedural formalities of civil courts. The forum has the power to order a refund, award interest, and direct the vendor to pay compensation for mental harassment. For commercial bookings (such as corporate product launches or exhibitions), the dispute is classified as a commercial dispute. In such cases, you must file a commercial suit or invoke the arbitration clause if one exists in your agreement.
@@ -599,7 +599,7 @@ export default function EventPlannerRefundClient() {
                 <div className="absolute top-0 right-0 w-24 h-24 bg-[#DC2626]/10 rounded-full blur-xl pointer-events-none" />
                 <h3 className="text-lg font-bold mb-3 text-white">Need Legal Advice?</h3>
                 <p className="text-gray-400 mb-5 text-[11px] leading-relaxed">
-                  Need Legal Advice? Discuss your money recovery case with legal experts. We draft and serve legally compliant notices tailored to your transaction.
+                  Need Legal Advice? Discuss your money recovery case with our team. We draft and serve legally compliant notices tailored to your transaction.
                 </p>
                 <button 
                   onClick={() => setIsPaymentModalOpen(true)}

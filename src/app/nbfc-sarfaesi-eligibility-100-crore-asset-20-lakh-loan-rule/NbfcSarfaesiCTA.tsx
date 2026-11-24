@@ -26,7 +26,7 @@ export default function NbfcSarfaesiCTA({ className = "" }: NbfcSarfaesiCTAProps
               Test 1 Live Overdue LAP or NBFC Case Now
             </h3>
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-              &rupee;{basePrice} &middot; Advocate Drafted Recall / s.21 Arbitration / s.25 PSS Notice &middot; Tri-Channel Dispatch via Email + WhatsApp + Speed Post RPAD with BSA s.63 log.
+              &rupee;{basePrice} &middot; Fact-Verified Recall / s.21 Arbitration / s.25 PSS Notice &middot; Tri-Channel Dispatch via Email + WhatsApp + Speed Post RPAD with BSA s.63 log.
             </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-2.5">

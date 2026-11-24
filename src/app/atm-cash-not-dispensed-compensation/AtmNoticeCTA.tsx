@@ -31,7 +31,7 @@ export default function AtmNoticeCTA({
                 Recover Your Failed ATM Withdrawal &amp; Claim Mandatory Delay Compensation
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6">
-                Has your bank refused to reverse a failed ATM cash withdrawal or wrongfully closed your complaint? Have an experienced advocate issue a formal statutory legal demand notice demanding the immediate refund of your debited funds, mandatory ₹100 per day RBI delayed-TAT compensation, Electronic Journal (EJ) switch logs, and CCTV preservation under Section 63 of Bharatiya Sakshya Adhiniyam, 2023.
+                Has your bank refused to reverse a failed ATM cash withdrawal or wrongfully closed your complaint? Issue a formal statutory legal demand notice demanding the immediate refund of your debited funds, mandatory ₹100 per day RBI delayed-TAT compensation, Electronic Journal (EJ) switch logs, and CCTV preservation under Section 63 of Bharatiya Sakshya Adhiniyam, 2023.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button
@@ -42,7 +42,7 @@ export default function AtmNoticeCTA({
                   {buttonText} — ₹{basePrice}
                 </button>
                 <div className="text-xs text-slate-300 flex flex-wrap sm:flex-nowrap items-center gap-2 sm:gap-3">
-                  <span>✓ 24h Advocate Drafting</span>
+                  <span>✓ 24h Notice Drafting</span>
                   <span>•</span>
                   <span>✓ Email + WhatsApp</span>
                   <span>•</span>

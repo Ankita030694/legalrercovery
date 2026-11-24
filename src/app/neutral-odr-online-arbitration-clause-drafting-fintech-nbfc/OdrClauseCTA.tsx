@@ -26,7 +26,7 @@ export default function OdrClauseCTA({ className = "" }: OdrClauseCTAProps) {
               Test 1 Live Overdue Case Now (&rupee;{basePrice})
             </h3>
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-              Advocate-Drafted Loan Recall, Section 21 ODR Invocation, or Section 25 PSS Notice &middot; Dispatched via Email + WhatsApp + Speed Post RPAD with BSA s.63 delivery log.
+              Fact-Verified Loan Recall, Section 21 ODR Invocation, or Section 25 PSS Notice &middot; Dispatched via Email + WhatsApp + Speed Post RPAD with BSA s.63 delivery log.
             </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-2.5">

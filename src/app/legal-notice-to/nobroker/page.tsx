@@ -182,7 +182,7 @@ const FAQS = [
   {
     question: "NoBroker money back plan ya token money refund nahi mil raha toh legal notice kaise bheje?",
     answer:
-      "Agar NoBroker aapka Money-Back Plan refund reject kar de, ya मकान मालिक (landlord) aur NoBroker aapka token advance wapas na karein, toh aap Consumer Protection Act 2019 aur Indian Contract Act Section 65 ke tehat 15-day Advocate Legal Notice bhej sakte hain. LegalRecovery.in par verified advocate aapke RM WhatsApp chats, payment receipt aur plan terms ke aadhar par NoBroker Head Office (Bengaluru) ko Registered Speed Post aur email se notice bhejte hain.",
+      "Agar NoBroker aapka Money-Back Plan refund reject kar de, ya मकान मालिक (landlord) aur NoBroker aapka token advance wapas na karein, toh aap Consumer Protection Act 2019 aur Indian Contract Act Section 65 ke tehat 15-day Fact-Verified Legal Notice bhej sakte hain. LegalRecovery.in par hamari team aapke RM WhatsApp chats, payment receipt aur plan terms ke aadhar par NoBroker Head Office (Bengaluru) ko Registered Speed Post aur email se notice bhejti hai.",
   },
 ];
 
@@ -643,7 +643,7 @@ export default function NoBrokerLegalNoticePage() {
                       • Platform Fine-Print Bottleneck (Stage 3): Challenge unfair RM contact-quota rejection under Sec 2(46) CPA 2019 &amp; CCPA Dark Patterns Guidelines.
                     </text>
                     <text x="25" y="226" fill="#475569" fontSize="10">
-                      • Landlord Token Forfeiture (Stage 4): Serve joint 15-day Advocate Legal Notice to NoBroker (Bengaluru HQ) + Property Owner under Sec 65 Contract Act.
+                      • Landlord Token Forfeiture (Stage 4): Serve joint 15-day Fact-Verified Legal Notice to NoBroker (Bengaluru HQ) + Property Owner under Sec 65 Contract Act.
                     </text>
                   </svg>
                   <figcaption className="text-[11px] sm:text-xs text-slate-500 mt-3 pt-2 border-t border-slate-100">
@@ -940,7 +940,7 @@ export default function NoBrokerLegalNoticePage() {
                     </span>
                     <div className="space-y-1 sm:space-y-1.5">
                       <h3 className="text-sm sm:text-base md:text-lg font-bold text-slate-900">
-                        Day 15: Serve a Statutory Advocate Legal Demand Notice to NoBroker HQ
+                        Day 15: Serve a Statutory Fact-Verified Legal Demand Notice to NoBroker HQ
                       </h3>
                       <p className="text-xs sm:text-sm leading-relaxed">
                         Engage an advocate to dispatch a formal statutory demand notice to <strong>NoBroker Technologies Solutions Private Limited</strong> at its Bengaluru corporate office (and to the landlord if a token or <Link href="/recover-security-deposit-from-landlord-india" className="text-blue-700 underline">rental security deposit refund</Link> is involved). Sent via Registered Speed Post and Section 63 BSA email, the notice invokes Sections 2(11), 2(46), and 2(47) CPA 2019 and Section 65 Contract Act, granting a strict 15-day cure window.
@@ -1016,7 +1016,7 @@ export default function NoBrokerLegalNoticePage() {
                       <strong>The Deadlock:</strong> Siddharth cancelled the unexecuted deal and requested a refund of both his ₹18,000 token and his ₹5,899 Money-Back Plan fee. The landlord stopped answering calls, while NoBroker customer care rejected the plan refund claiming <em>&quot;Customer paid token on a property, hence plan marked fulfilled&quot;</em> and disclaimed responsibility for the ₹18,000 token.
                     </p>
                     <p>
-                      <strong>The Statutory Action:</strong> Siddharth used LegalRecovery.in to serve a joint 15-day statutory advocate legal notice to <strong>NoBroker Technologies Solutions Pvt. Ltd.</strong> (Koramangala, Bengaluru) and the property owner. The notice cited Section 65 of the Indian Contract Act, 1872 (restitution of token on frustrated agreement) and Sections 2(11), 2(46), and 2(47) of the Consumer Protection Act, 2019 (unfair contract terms and misleading money-back guarantee).
+                      <strong>The Statutory Action:</strong> Siddharth used LegalRecovery.in to serve a joint 15-day statutory fact-verified legal notice to <strong>NoBroker Technologies Solutions Pvt. Ltd.</strong> (Koramangala, Bengaluru) and the property owner. The notice cited Section 65 of the Indian Contract Act, 1872 (restitution of token on frustrated agreement) and Sections 2(11), 2(46), and 2(47) of the Consumer Protection Act, 2019 (unfair contract terms and misleading money-back guarantee).
                     </p>
                     <div className="p-3.5 sm:p-4 bg-emerald-950/70 border border-emerald-700/60 rounded-xl text-emerald-200">
                       <strong className="block text-emerald-400 font-bold mb-1">The Outcome:</strong>
@@ -1111,7 +1111,7 @@ export default function NoBrokerLegalNoticePage() {
                       ✓ What We Can Enforce
                     </span>
                     <ul className="space-y-2 text-xs sm:text-sm text-slate-700 leading-relaxed list-disc list-inside">
-                      <li>Serve a formal 15-day Advocate Legal Notice to NoBroker Technologies Solutions Pvt. Ltd. for wrongfully rejected Money-Back Guarantee plans.</li>
+                      <li>Serve a formal 15-day Fact-Verified Legal Notice to NoBroker Technologies Solutions Pvt. Ltd. for wrongfully rejected Money-Back Guarantee plans.</li>
                       <li>Issue a joint statutory demand notice to both NoBroker and the landlord to recover forfeited token advances or <Link href="/legal-notice-landlord-unreasonable-security-deposit-deductions" className="text-blue-700 underline">unreasonable security deposit deductions</Link>.</li>
                       <li>Demand immediate reversal and ₹100/day RBI TAT compensation for stuck NoBroker Pay rent or deposit transfers.</li>
                       <li>Pursue full compensation for Packers &amp; Movers or Home Services advance forfeitures and transit damages.</li>

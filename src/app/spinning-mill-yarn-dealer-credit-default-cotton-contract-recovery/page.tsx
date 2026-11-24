@@ -105,7 +105,7 @@ const FAQS = [
   {
     question: "How can spinning mills manage recovery across dozens of defaulting weavers simultaneously?",
     answer:
-      "Spinning mills dealing with dozens of defaulting powerloom or circular knitting units in Surat, Bhiwandi, or Tirupur can leverage LegalRecovery's bulk institutional engine. Mills upload an aging ledger CSV to dispatch automated, advocate-signed statutory demand notices with real-time tracking, GST verification, and seamless escalation to MSME Samadhaan or commercial litigation.",
+      "Spinning mills dealing with dozens of defaulting powerloom or circular knitting units in Surat, Bhiwandi, or Tirupur can leverage LegalRecovery's bulk institutional engine. Mills upload an aging ledger CSV to dispatch automated, fact-verified statutory demand notices with real-time tracking, GST verification, and seamless escalation to MSME Samadhaan or commercial litigation.",
   },
 ];
 
@@ -987,7 +987,7 @@ export default function SpinningMillYarnRecoveryPage() {
                       Single High-Value Breach
                     </span>
                     <p className="text-xs text-slate-300">
-                      Issue an advocate-signed 48-hour statutory demand notice for rate differences, unlifted lots, or bounced PDCs.
+                      Issue a fact-verified 48-hour statutory demand notice for rate differences, unlifted lots, or bounced PDCs.
                     </p>
                     <YarnMillNoticeCTA buttonText="Issue Mill Legal Notice (₹999)" />
                   </div>

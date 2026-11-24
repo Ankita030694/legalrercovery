@@ -34,7 +34,6 @@ import {
   Building2,
   AlertTriangle,
   Lightbulb,
-  Upload,
   FileSearch,
   Send,
   Handshake,
@@ -57,7 +56,7 @@ export default function HomeClient({ latestPosts }: { latestPosts?: React.ReactN
     },
     {
       question: "How much does it cost to recover money through LegalRecovery?",
-      answer: "We offer transparent, flat-fee pricing with no hidden charges. Our recovery plan is ₹999 per opposing party and includes attorney-drafted legal notices sent by Email and WhatsApp, delivery tracking, and multi-stage escalation. Speed Post for all 3 notices is optional at ₹450 per party, charged at cost. There are no retainer fees or hourly billing."
+      answer: "We offer transparent, flat-fee pricing with no hidden charges. Our recovery plan is ₹999 per opposing party and includes fact-verified legal notices sent by Email and WhatsApp, delivery tracking, and multi-stage escalation. Speed Post for all 3 notices is optional at ₹450 per party, charged at cost. There are no retainer fees or hourly billing."
     },
     {
       question: "How long does the legal recovery process take?",
@@ -73,11 +72,11 @@ export default function HomeClient({ latestPosts }: { latestPosts?: React.ReactN
     },
     {
       question: "Do I need to visit a court or lawyer's office?",
-      answer: "No. LegalRecovery is a 100% digital platform. You submit your case online, our qualified advocates draft and dispatch legal notices, and you track everything from your dashboard. No physical visits are required at any stage."
+      answer: "No. LegalRecovery is a 100% digital platform. You submit your case details online, our team verifies the facts, the legal notice is dispatched, and you track everything from your dashboard. No physical visits are required at any stage."
     },
     {
       question: "How to send a legal notice in India?",
-      answer: "To know how to send a legal notice in India, simply use our online legal notice drafting service. You fill out our questionnaire, and an advocate for legal notice drafts the document using a professional legal notice format in India. We then handle dispatch and tracking."
+      answer: "To know how to send a legal notice in India, simply use our online legal notice drafting service. You fill out our questionnaire, our team verifies the facts you submit, and the notice is generated from a structured legal notice format used in India. We then handle dispatch and tracking."
     },
     {
       question: "How to reply to a legal notice?",
@@ -89,7 +88,7 @@ export default function HomeClient({ latestPosts }: { latestPosts?: React.ReactN
     },
     {
       question: "Can I find a legal notice lawyer near me on your platform?",
-      answer: "Instead of searching for a physical legal notice lawyer near me, you can get legal notice consultation and legal notice assistance online from anywhere in the country. We connect you with a qualified legal notice lawyer online and legal notice expert to handle your case."
+      answer: "Instead of searching for a physical legal notice lawyer near me, you can get legal notice consultation and legal notice assistance online from anywhere in the country. You enter your case details online, our team verifies the facts, and we prepare and send your legal notice."
     },
     {
       question: "Can I send legal notice without court?",
@@ -134,7 +133,7 @@ export default function HomeClient({ latestPosts }: { latestPosts?: React.ReactN
 
             {/* Subheading / Description Paragraph */}
             <p className="text-[15px] md:text-[16px] text-[#4B5563] font-medium leading-[1.6] mb-5 max-w-lg select-text">
-              Whether you need legal notice drafting for outstanding payment recovery, unpaid dues, or tenant disputes, our money recovery lawyers and online advocates for legal notice are here to help. Get professional legal notice assistance and send a legal notice online in India without any physical court visits.
+              Whether you need legal notice drafting for outstanding payment recovery, unpaid dues, or tenant disputes, our online legal notice service is here to help. Get fact-verified legal notices and send a legal notice online in India without any physical court visits.
             </p>
 
             {/* High-Trust Tagline Banner */}
@@ -546,7 +545,7 @@ export default function HomeClient({ latestPosts }: { latestPosts?: React.ReactN
               </h2>
               
               <p className="text-[13px] sm:text-[14.5px] text-[#4B5563] leading-relaxed mb-6 font-medium max-w-2xl mx-auto lg:mx-0">
-                To guarantee absolute validity and the highest resolution rates, our cutting-edge online legal notice drafting service is backed and legally powered by <b>AMA Legal Solutions</b> - a leading full-service legal firm. Whether you need a legal notice for recovery of money, a Section 138 Notice for a dishonoured cheque, or a legal notice for property dispute, our legal notice experts provide dedicated legal notice consultation, legal notice assistance, and advocate for legal notice services online. From preparing the perfect legal notice format in India to handling complex commercial dispute notices and contract breach legal notices, we ensure expert-led legal notice lawyer online support with transparent legal notice drafting charges and zero hidden costs.
+                To guarantee absolute validity and the highest resolution rates, our cutting-edge online legal notice drafting service is backed and legally powered by <b>AMA Legal Solutions</b> - a leading full-service legal firm. Whether you need a legal notice for recovery of money, a Section 138 Notice for a dishonoured cheque, or a legal notice for property dispute, we verify the facts of your case and send a structured legal notice online. From preparing the perfect legal notice format in India to handling complex commercial dispute notices and contract breach legal notices, we keep the process simple, with transparent legal notice charges and zero hidden costs.
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-xl mx-auto lg:mx-0">
@@ -555,8 +554,8 @@ export default function HomeClient({ latestPosts }: { latestPosts?: React.ReactN
                     <Shield className="w-4 h-4" />
                   </div>
                   <div className="text-left">
-                    <p className="text-[12.5px] font-bold text-[#111827]">Advocate-Vetted Process</p>
-                    <p className="text-[11.5px] text-[#6B7280] leading-relaxed mt-0.5">Every step is designed and audited by senior legal professionals.</p>
+                    <p className="text-[12.5px] font-bold text-[#111827]">Fact-Verified Process</p>
+                    <p className="text-[11.5px] text-[#6B7280] leading-relaxed mt-0.5">Our team verifies the facts of every case before a notice is sent.</p>
                   </div>
                 </div>
 
@@ -926,8 +925,8 @@ function HowItWorksSection() {
     {
       step: 1,
       title: "Provide Case Details",
-      description: "Fill out custom dispute placeholder info, upload your proof, and specify the case details in just a few minutes.",
-      icon: <Upload className="w-16 h-16 sm:w-24 sm:h-24 text-[#111827] stroke-[1.5]" />
+      description: "Fill out your dispute details and specify the case facts in just a few minutes. No document uploads needed.",
+      icon: <FileText className="w-16 h-16 sm:w-24 sm:h-24 text-[#111827] stroke-[1.5]" />
     },
     {
       step: 2,
@@ -1179,7 +1178,7 @@ function PricingSection({ onOpenModal }: { onOpenModal: () => void }) {
               </span>
               <h3 className="text-2xl font-black text-[#111827] mb-4">Complete Legal Recovery</h3>
               <p className="text-[14px] text-[#4B5563] font-medium leading-[1.6] mb-8">
-                Get full-suite support from expert attorneys. Standardized flat pricing with absolutely zero commission on your recovered amount.
+                Fact-verified legal notices with standardized flat pricing with absolutely zero commission on your recovered amount.
               </p>
             </div>
             
@@ -1217,8 +1216,8 @@ function PricingSection({ onOpenModal }: { onOpenModal: () => void }) {
                 <div className="flex items-start gap-2 sm:gap-3">
                   <Check className="w-4 h-4 sm:w-5 sm:h-5 text-[#10B981] stroke-[3.5] shrink-0 mt-0.5" />
                   <div className="flex flex-col">
-                    <span className="text-[11.5px] sm:text-[13.5px] font-bold text-[#111827] leading-snug">Attorney Validation</span>
-                    <span className="text-[9.5px] sm:text-[11.5px] text-[#6B7280] font-medium leading-tight">Verified by top legal experts</span>
+                    <span className="text-[11.5px] sm:text-[13.5px] font-bold text-[#111827] leading-snug">Fact Verification</span>
+                    <span className="text-[9.5px] sm:text-[11.5px] text-[#6B7280] font-medium leading-tight">Facts verified by our team</span>
                   </div>
                 </div>
                 <div className="flex items-start gap-2 sm:gap-3">

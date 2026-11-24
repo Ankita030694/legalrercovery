@@ -34,7 +34,7 @@ const SCENARIOS: SubcontractorScenario[] = [
       {
         step: "Rebut Indefinite 'Pay-When-Paid' Shield",
         description:
-          "Serve a formal advocate notice citing Ircon International (2015) 13 SCC 680 and Section 73 Contract Act, putting the Main Contractor on strict 15-day notice that back-to-back clauses do not extinguish primary liability.",
+          "Serve a formal fact-verified notice citing Ircon International (2015) 13 SCC 680 and Section 73 Contract Act, putting the Main Contractor on strict 15-day notice that back-to-back clauses do not extinguish primary liability.",
       },
       {
         step: "Put Principal Employer on Notice / Invoke Section 9",
@@ -93,7 +93,7 @@ const SCENARIOS: SubcontractorScenario[] = [
       {
         step: "Serve Final Retention Release Demand Notice",
         description:
-          "Issue a 15-day advocate notice demanding 100% release of withheld retention funds plus 18% commercial interest, failing which summary recovery or arbitration will be initiated.",
+          "Issue a 15-day fact-verified notice demanding 100% release of withheld retention funds plus 18% commercial interest, failing which summary recovery or arbitration will be initiated.",
       },
     ],
     statutoryRule: "Sec 73 & 74 Indian Contract Act • Kailash Nath (2015) 4 SCC 136",
@@ -120,7 +120,7 @@ const SCENARIOS: SubcontractorScenario[] = [
       {
         step: "Serve Section 70 Quantum Meruit Demand Notice",
         description:
-          "Serve an advocate legal notice invoking Section 70 of the Contract Act, putting the Main Contractor on notice that unjust enrichment from unbilled variation work will be recovered with interest.",
+          "Serve a fact-verified legal notice invoking Section 70 of the Contract Act, putting the Main Contractor on notice that unjust enrichment from unbilled variation work will be recovered with interest.",
       },
     ],
     statutoryRule: "Section 70 Indian Contract Act (Quantum Meruit) & (2007) 13 SCC 544",

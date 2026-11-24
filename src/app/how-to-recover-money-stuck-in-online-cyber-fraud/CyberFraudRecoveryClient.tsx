@@ -52,7 +52,7 @@ const reviews = [
   {
     author: "Deepika Padukone (Bengaluru)",
     rating: "5",
-    text: "A fraudster withdrew ₹80,000 from my savings account using a cloned debit card. I reported it within 24 hours. The bank delayed the refund, but after we sent a formal legal notice prepared by an advocate, they credited the money back within a week. Knowing the RBI guidelines is essential."
+    text: "A fraudster withdrew ₹80,000 from my savings account using a cloned debit card. I reported it within 24 hours. The bank delayed the refund, but after we sent a formal legal notice prepared on verified facts, they credited the money back within a week. Knowing the RBI guidelines is essential."
   },
   {
     author: "Anil Kapoor (Hyderabad)",
@@ -541,7 +541,7 @@ export default function CyberFraudRecoveryClient() {
                 <div className="absolute top-0 right-0 w-24 h-24 bg-red-600/10 rounded-full blur-xl pointer-events-none" />
                 <h3 className="text-sm font-black mb-3">Need Legal Advice?</h3>
                 <p className="text-gray-400 mb-5 text-[11px] leading-relaxed">
-                  Discuss your money recovery case with legal experts. We draft and serve legally compliant notices tailored to your transaction.
+                  Discuss your money recovery case with our team. We draft and serve legally compliant notices tailored to your transaction.
                 </p>
                 <button 
                   onClick={() => setIsPaymentModalOpen(true)}

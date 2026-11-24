@@ -24,10 +24,10 @@ export default function AgroDealerCTA({ className = "" }: AgroDealerCTAProps) {
                 Track 1 · Single Krishi Kendra Default
               </span>
               <h3 className="text-lg sm:text-xl font-bold text-white mb-2">
-                Test 1 Live Overdue Case Now (&#8377;{basePrice} &middot; Advocate Drafted &middot; Email + WhatsApp + Speed Post RPAD)
+                Test 1 Live Overdue Case Now (&#8377;{basePrice} &middot; Fact-Verified &middot; Email + WhatsApp + Speed Post RPAD)
               </h3>
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-                Upload your Distributor Agreement, GST invoices, E-Way bills, batch COA, and bounced PDC memo. Our advocates draft and dispatch a Seeds Act / Insecticides Act estoppel &amp; Section 138 demand notice in 24 hours.
+                Enter your dealer, invoice, E-Way bill, batch and bounced PDC details in the online form. Our team verifies the facts and dispatches a Seeds Act / Insecticides Act estoppel &amp; Section 138 demand notice in 24 hours.
               </p>
             </div>
 

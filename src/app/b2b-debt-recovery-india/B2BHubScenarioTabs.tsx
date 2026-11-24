@@ -39,7 +39,7 @@ const ENTERPRISE_SCENARIOS: EnterpriseScenario[] = [
           "Configure separate bank/NBFC or co-lending SPV sender identities in Representees and upload DPD-bucketed CSV ledgers with UMRN, sanction dates, and guarantor details.",
       },
       {
-        step: "2. Trigger Tri-Channel Advocate Notices (Email + WhatsApp + RPAD)",
+        step: "2. Trigger Tri-Channel Fact-Verified Notices (Email + WhatsApp + RPAD)",
         detail:
           "Dispatch bilingual notices with uncompounded RBI penal-charge schedules, capturing BSA 2023 s.63 delivery logs and Speed Post RPAD tracking IDs.",
       },

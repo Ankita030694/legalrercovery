@@ -134,12 +134,12 @@ const FAQS = [
   {
     question: "How do I stop loan EMIs if I cancel an ed-tech course?",
     answer:
-      "To stop continuing loan EMIs, execute three simultaneous steps: (1) Send a formal course withdrawal notice via registered email to the ed-tech company's official cancellation desk, retaining the timestamp; (2) Write an immediate written dispute to the financing NBFC's Grievance Redressal Officer (GRO) citing your ed-tech cancellation ticket and demanding immediate loan freeze under RBI Digital Lending norms; and (3) Log into your net banking or visit your bank branch to submit a written request for 'Cancellation of NACH / e-Mandate' under Section 25 of the Payment and Settlement Systems Act, 2007. If the NBFC continues presenting debits, serve a joint statutory advocate legal notice demanding immediate loan closure.",
+      "To stop continuing loan EMIs, execute three simultaneous steps: (1) Send a formal course withdrawal notice via registered email to the ed-tech company's official cancellation desk, retaining the timestamp; (2) Write an immediate written dispute to the financing NBFC's Grievance Redressal Officer (GRO) citing your ed-tech cancellation ticket and demanding immediate loan freeze under RBI Digital Lending norms; and (3) Log into your net banking or visit your bank branch to submit a written request for 'Cancellation of NACH / e-Mandate' under Section 25 of the Payment and Settlement Systems Act, 2007. If the NBFC continues presenting debits, serve a joint statutory legal notice demanding immediate loan closure.",
   },
   {
     question: "Byju's is not refunding my money and ignoring my emails. What legal remedy do I have?",
     answer:
-      "If BYJU'S (Think & Learn Pvt. Ltd.) or any major ed-tech platform ignores your refund requests, you have clear statutory recourse: (1) File a complaint on the National Consumer Helpline (NCH / consumerhelpline.gov.in) to create a verified government docket; (2) Serve a formal 15-day statutory advocate legal notice via Registered Speed Post and email to their registered corporate office and directors invoking Section 2(47) CPA 2019; and (3) If unpaid, file an e-complaint on the government's e-Jagriti consumer portal. Consumer commissions across India routinely direct ed-tech firms to refund 100% of course fees with 9% to 12% annual interest and ₹20,000 to ₹50,000 in mental harassment compensation.",
+      "If BYJU'S (Think & Learn Pvt. Ltd.) or any major ed-tech platform ignores your refund requests, you have clear statutory recourse: (1) File a complaint on the National Consumer Helpline (NCH / consumerhelpline.gov.in) to create a verified government docket; (2) Serve a formal 15-day statutory legal notice via Registered Speed Post and email to their registered corporate office and directors invoking Section 2(47) CPA 2019; and (3) If unpaid, file an e-complaint on the government's e-Jagriti consumer portal. Consumer commissions across India routinely direct ed-tech firms to refund 100% of course fees with 9% to 12% annual interest and ₹20,000 to ₹50,000 in mental harassment compensation.",
   },
   {
     question: "Can an NBFC hit my CIBIL credit score if the ed-tech company failed to remit the refund?",
@@ -159,12 +159,12 @@ const FAQS = [
   {
     question: "What should be included in a joint legal notice to an ed-tech firm and their loan partner?",
     answer:
-      "A joint statutory legal notice drafted by an advocate must specify: (1) Admission and enrollment details, including course title and sales counselor representations; (2) The financing structure, identifying the ed-tech platform as the Lending Service Provider (LSP) and the NBFC as the Regulated Entity; (3) The timestamped cancellation request within the trial or cooling-off period; (4) The failure of promised deliverables constituting deficiency under Section 2(11) and unfair contract under Section 2(46) CPA 2019; (5) A strict 15-day demand for complete loan extinguishment, refund of all debited EMIs, issuance of an official NOC, and zero adverse reporting to credit bureaus.",
+      "A joint statutory legal notice prepared on verified facts must specify: (1) Admission and enrollment details, including course title and sales counselor representations; (2) The financing structure, identifying the ed-tech platform as the Lending Service Provider (LSP) and the NBFC as the Regulated Entity; (3) The timestamped cancellation request within the trial or cooling-off period; (4) The failure of promised deliverables constituting deficiency under Section 2(11) and unfair contract under Section 2(46) CPA 2019; (5) A strict 15-day demand for complete loan extinguishment, refund of all debited EMIs, issuance of an official NOC, and zero adverse reporting to credit bureaus.",
   },
   {
     question: "Ed-tech course cancel karne ke baad bhi loan EMI kat rahi hai to kya karein?",
     answer:
-      "Agar ed-tech course cancel karne ke baad bhi NBFC aapke bank account se EMI kaat rahi hai, toh turant 3 legal steps lein: (1) Apne bank mein jakar ya net banking se NACH e-mandate ko cancel/stop karein; (2) Ed-tech company aur NBFC ke Grievance Officer ko written email bhejkar loan termination ki maang karein; (3) Ek verified advocate ke zariye Section 2(47) Consumer Protection Act 2019 aur RBI Digital Lending Guidelines ke tehat dono parties ko 15-day joint legal notice bhejein. Legal notice ke baad adhiktar NBFCs loan close karke No-Dues Certificate (NOC) de deti hain.",
+      "Agar ed-tech course cancel karne ke baad bhi NBFC aapke bank account se EMI kaat rahi hai, toh turant 3 legal steps lein: (1) Apne bank mein jakar ya net banking se NACH e-mandate ko cancel/stop karein; (2) Ed-tech company aur NBFC ke Grievance Officer ko written email bhejkar loan termination ki maang karein; (3) Section 2(47) Consumer Protection Act 2019 aur RBI Digital Lending Guidelines ke tehat dono parties ko 15-day joint legal notice bhejein. Legal notice ke baad adhiktar NBFCs loan close karke No-Dues Certificate (NOC) de deti hain.",
   },
 ];
 
@@ -292,7 +292,7 @@ export default function EdtechLoanCancellationRefundPage() {
                 Statutory Summary (Ed-Tech Refund &amp; Loan Termination Mandate)
               </p>
               <p>
-                Under Section 2(47) of the Consumer Protection Act, 2019 and the RBI Digital Lending Guidelines, an ed-tech platform and its financing NBFC bear joint statutory liability for misleading loan onboarding and failed refunds. If you cancelled within the trial or cooling-off period, you are legally entitled to 100% course fee restitution, termination of the credit agreement, cancellation of NACH auto-debits, and written CIBIL score protection via a formal advocate legal demand notice.
+                Under Section 2(47) of the Consumer Protection Act, 2019 and the RBI Digital Lending Guidelines, an ed-tech platform and its financing NBFC bear joint statutory liability for misleading loan onboarding and failed refunds. If you cancelled within the trial or cooling-off period, you are legally entitled to 100% course fee restitution, termination of the credit agreement, cancellation of NACH auto-debits, and written CIBIL score protection via a formal legal demand notice.
               </p>
             </div>
 
@@ -341,7 +341,7 @@ export default function EdtechLoanCancellationRefundPage() {
                     Comparing Legal Remedies: Notice, Consumer Court and Ombudsman
                   </h2>
                   <p className="text-xs sm:text-sm text-slate-600 mt-1">
-                    Evaluate cost, statutory turnaround time, evidentiary burden, and actual recovery success rates across all available Indian legal forums:
+                    Evaluate cost, statutory turnaround time, evidentiary burden, and actual recovery success rates across all available India legal forums:
                   </p>
                 </div>
 
@@ -360,7 +360,7 @@ export default function EdtechLoanCancellationRefundPage() {
                     <tbody className="divide-y divide-slate-200">
                       <tr className="bg-red-50/40 hover:bg-red-50/70">
                         <th scope="row" className="py-3 px-3.5 sm:py-3.5 sm:px-4 font-bold text-slate-900">
-                          Advocate Statutory Legal Notice (Recommended First Step)
+                          Statutory Legal Notice (Recommended First Step)
                         </th>
                         <td className="py-3 px-3.5 sm:py-3.5 sm:px-4 text-emerald-700 font-bold">15 Calendar Days</td>
                         <td className="py-3 px-3.5 sm:py-3.5 sm:px-4 font-semibold text-slate-900">Fixed Flat Fee (₹999)</td>
@@ -449,7 +449,7 @@ export default function EdtechLoanCancellationRefundPage() {
                     <div className="pt-3 border-t border-slate-100">
                       <strong className="text-xs text-slate-900 block mb-1">Recommended Strategy:</strong>
                       <p className="text-xs text-emerald-700 font-semibold leading-relaxed">
-                        Serve a Joint Advocate Statutory Notice to Ed-Tech + NBFC and submit NACH cancellation to your bank. Resolves 80% of cases in 15 days.
+                        Serve a Joint Statutory Notice to Ed-Tech + NBFC and submit NACH cancellation to your bank. Resolves 80% of cases in 15 days.
                       </p>
                     </div>
                   </div>
@@ -686,7 +686,7 @@ export default function EdtechLoanCancellationRefundPage() {
                   </div>
                   <div className="bg-red-50 text-red-950 p-4 rounded-xl border border-red-200">
                     <span className="text-[10px] font-bold text-red-700 uppercase tracking-wider block mb-1">Stage 4</span>
-                    <h3 className="font-bold text-sm">Joint Advocate Legal Notice</h3>
+                    <h3 className="font-bold text-sm">Joint Legal Notice</h3>
                     <p className="text-xs text-red-900 mt-1">15-day statutory demand served via Registered Speed Post + Section 63 BSA email.</p>
                   </div>
                   <div className="bg-emerald-50 text-emerald-950 p-4 rounded-xl border border-emerald-200">
@@ -841,7 +841,7 @@ export default function EdtechLoanCancellationRefundPage() {
                     </span>
                     <div className="space-y-1 sm:space-y-1.5">
                       <h3 className="text-sm sm:text-base md:text-lg font-bold text-slate-900">
-                        Serve a Joint Advocate Statutory Demand Notice
+                        Serve a Joint Statutory Demand Notice
                       </h3>
                       <p className="text-xs sm:text-sm leading-relaxed">
                         When the ed-tech company stalls and the NBFC continues asserting debt liability, engage an advocate to draft and dispatch a joint statutory legal notice. Served to the corporate head offices of both entities via Registered Speed Post and Section 63 BSA electronic mail, the notice gives a strict 15-day ultimatum to cancel the credit facility, refund debited EMIs, issue an official No-Dues Certificate, and confirm zero adverse reporting to credit bureaus.
@@ -918,7 +918,7 @@ export default function EdtechLoanCancellationRefundPage() {
                       </tr>
                       <tr className="hover:bg-slate-50/80">
                         <th scope="row" className="py-3 px-3.5 sm:py-3.5 sm:px-4 font-semibold text-slate-900">
-                          Statutory Advocate Legal Notice Period
+                          Statutory Legal Notice Period
                         </th>
                         <td className="py-3 px-3.5 sm:py-3.5 sm:px-4 text-red-700 font-bold">15 Calendar Days</td>
                         <td className="py-3 px-3.5 sm:py-3.5 sm:px-4 text-xs">Section 35, Consumer Protection Act 2019</td>
@@ -981,7 +981,7 @@ export default function EdtechLoanCancellationRefundPage() {
                       <strong>The Deadlock:</strong> On Day 4, Aditya discovered that all lectures were low-resolution videos recorded two years prior, with no live mentorship available. On Day 6, he sent an email to cancellations@edtechfirm.com requesting immediate course withdrawal. The ed-tech company took 3 weeks to respond, claiming that the 14-day period applied only if zero lectures were viewed, and refused to refund. Meanwhile, the partner NBFC auto-debited two monthly EMIs totaling ₹16,000 and threatened legal notices when Aditya emptied his bank balance.
                     </p>
                     <p>
-                      <strong>The Statutory Action:</strong> Aditya retained LegalRecovery.in. An advocate drafted and served a comprehensive joint statutory legal notice to the Managing Director of the Ed-Tech firm and the Grievance Head of the NBFC. The notice cited Section 2(46) (Unfair Contract) and Section 2(47) (Unfair Trade Practice) of the Consumer Protection Act, 2019, alongside Paragraph 4.1 of the RBI Digital Lending Guidelines for failing to provide a Key Fact Statement (KFS) at point of sale. The notice demanded immediate loan closure, refund of ₹16,000, and an official No-Dues Certificate within 15 days.
+                      <strong>The Statutory Action:</strong> Aditya retained LegalRecovery.in. The team verified the facts and served a comprehensive joint statutory legal notice to the Managing Director of the Ed-Tech firm and the Grievance Head of the NBFC. The notice cited Section 2(46) (Unfair Contract) and Section 2(47) (Unfair Trade Practice) of the Consumer Protection Act, 2019, alongside Paragraph 4.1 of the RBI Digital Lending Guidelines for failing to provide a Key Fact Statement (KFS) at point of sale. The notice demanded immediate loan closure, refund of ₹16,000, and an official No-Dues Certificate within 15 days.
                     </p>
                     <div className="p-3.5 sm:p-4 bg-emerald-950/70 border border-emerald-700/60 rounded-xl text-emerald-200">
                       <strong className="block text-emerald-400 font-bold mb-1">The Outcome:</strong>

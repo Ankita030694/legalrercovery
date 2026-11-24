@@ -303,7 +303,7 @@ const FAQS = [
   {
     question: "Why send advocate cure notices during SMA-2 (61–90 DPD)?",
     answer:
-      "Once an account crosses 90 DPD into NPA status, RBI rules block upgradation until 100% of overdue arrears clear. Sending an advocate-signed SMA-2 cure notice at Day 62 drives regularization before provisioning locks in.",
+      "Once an account crosses 90 DPD into NPA status, RBI rules block upgradation until 100% of overdue arrears clear. Sending a fact-verified SMA-2 cure notice at Day 62 drives regularization before provisioning locks in.",
   },
   {
     question: "Can Cooperative Banks and RRBs use SARFAESI and bulk notices?",
@@ -323,7 +323,7 @@ const FAQS = [
   {
     question: "Can a bank test LegalRecovery with one overdue loan first?",
     answer:
-      "Yes. Branches can submit 1 live overdue account at ₹999 (24-hour tri-channel advocate dispatch) to audit notice quality and delivery proofs before onboarding 10–10,000+ monthly accounts via CSV.",
+      "Yes. Branches can submit 1 live overdue account at ₹999 (24-hour tri-channel dispatch) to audit notice quality and delivery proofs before onboarding 10–10,000+ monthly accounts via CSV.",
   },
 ];
 
@@ -518,7 +518,7 @@ export default function BanksLoanRecoveryHubPage() {
                 Executive Creditor Answer (Scheduled, Small Finance &amp; Co-op Banks)
               </span>
               <p>
-                Indian banks can cut branch pre-litigation notice turnaround from weeks to under 24 hours by combining RBI-compliant advocate notices (Email, WhatsApp, and Speed Post RPAD with BSA s.63 certificates) across SARFAESI s.13(2), RDB Act s.19 DRT, sub-₹20 Lakh Order 37/PSS s.25/ODR tracks, MSCS s.84 arbitration, and bulk Pre-Litigation Lok Adalats.
+                Indian banks can cut branch pre-litigation notice turnaround from weeks to under 24 hours by combining RBI-compliant fact-verified notices (Email, WhatsApp, and Speed Post RPAD with BSA s.63 certificates) across SARFAESI s.13(2), RDB Act s.19 DRT, sub-₹20 Lakh Order 37/PSS s.25/ODR tracks, MSCS s.84 arbitration, and bulk Pre-Litigation Lok Adalats.
               </p>
             </div>
 
@@ -537,7 +537,7 @@ export default function BanksLoanRecoveryHubPage() {
                   &lt; 24 Hours
                 </p>
                 <p className="text-[10px] sm:text-xs text-slate-400 mt-1">
-                  Tri-Channel Advocate Dispatch TAT
+                  Tri-Channel Dispatch TAT
                 </p>
               </div>
               <div>
@@ -635,7 +635,7 @@ export default function BanksLoanRecoveryHubPage() {
                       BCI &amp; RBI Compliant
                     </strong>
                     <p className="text-xs text-slate-600 mt-1">
-                      Advocate-signed statutory notices complying with DPDP 2023 and RBI Fair Practices norms.
+                      Fact-verified statutory notices complying with DPDP 2023 and RBI Fair Practices norms.
                     </p>
                   </div>
                   <div className="p-4 rounded-xl bg-slate-50 border border-slate-200">

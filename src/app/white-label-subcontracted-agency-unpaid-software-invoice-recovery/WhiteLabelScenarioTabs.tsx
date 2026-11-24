@@ -30,7 +30,7 @@ const SCENARIOS: Scenario[] = [
       "Copyright Act 1957 ss. 17 & 19 + Bharatiya Nyaya Sanhita 2023 s.316 (Criminal Breach of Trust) + Commercial Courts Act 2015 s.2(1)(c)(xviii)",
     actionProtocol: [
       "Compile repository telemetry: Git commit logs with developer PGP signatures, pull request approvals, Jira task exports, and staging server deploy logs under BSA 2023 Section 63.",
-      "Issue a formal Advocate Demand Notice to the prime agency demanding ₹14.5 Lakh plus 18% interest within 10 days, explicitly stating that copyright has not transferred under Section 19.",
+      "Issue a formal Fact-Verified Demand Notice to the prime agency demanding ₹14.5 Lakh plus 18% interest within 10 days, explicitly stating that copyright has not transferred under Section 19.",
       "Put the prime agency on formal notice that continued unencumbered commercial use by their end-client triggers contributory copyright infringement under Section 51 of the Copyright Act.",
       "Reserve the statutory right to serve an IP Encumbrance Disclosure on the end-client and file an emergency Section 9 / Order 38 interim injunction to freeze delinquent agency receivables.",
     ],
@@ -70,7 +70,7 @@ const SCENARIOS: Scenario[] = [
       "Indian Contract Act 1872 s.28 (Agreements Restraining Legal Proceedings Void) + Copyright Act 1957 s.51 + Specific Relief Act 1963 s.41(h)",
     actionProtocol: [
       "Refrain from sending uncoordinated, informal emails or LinkedIn messages directly to the end-client that could be mischaracterized as tortious interference with contract.",
-      "Serve an Advocate Notice on the prime agency pointing out that an unperformed contract forfeits the right of equitable relief under the doctrine of 'Clean Hands'.",
+      "Serve a Fact-Verified Notice on the prime agency pointing out that an unperformed contract forfeits the right of equitable relief under the doctrine of 'Clean Hands'.",
       "Draft a formal 'Notice of Third-Party IP Impairment' to be served jointly on the prime agency and the end-client in the capacity of copyright holder, not as a competing agency.",
       "File a pre-institution mediation petition under Section 12A of the Commercial Courts Act, 2015, putting the entire dispute onto formal judicial record without violating confidentiality.",
     ],

@@ -31,7 +31,7 @@ export default function WrongUpiNoticeCTA({
                 Sent Money to the Wrong UPI ID or Bank Account? Recover Your Funds Fast
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6">
-                Whether the unintended recipient refuses to refund the money or the remitter / beneficiary banks are stalling the inter-bank recall, have an experienced advocate issue a formal statutory legal demand notice. Fast-track your refund under Section 72 (Contract Act), invoke bank duties under RBI mandates, and press criminal breach of trust under BNS Section 316 if they unlawfully retain your money.
+                Whether the unintended recipient refuses to refund the money or the remitter / beneficiary banks are stalling the inter-bank recall, issue a formal statutory legal demand notice. Fast-track your refund under Section 72 (Contract Act), invoke bank duties under RBI mandates, and press criminal breach of trust under BNS Section 316 if they unlawfully retain your money.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button
@@ -42,7 +42,7 @@ export default function WrongUpiNoticeCTA({
                   {buttonText} — ₹{basePrice}
                 </button>
                 <div className="text-xs text-slate-300 flex flex-wrap sm:flex-nowrap items-center gap-2 sm:gap-3">
-                  <span>✓ 24h Advocate Drafting</span>
+                  <span>✓ 24h Notice Drafting</span>
                   <span>•</span>
                   <span>✓ Email + WhatsApp</span>
                   <span>•</span>
@@ -57,7 +57,7 @@ export default function WrongUpiNoticeCTA({
               Unintended Recipient Refusing to Return Your Wrong Transfer?
             </h4>
             <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-400 mb-4 max-w-xl mx-auto">
-              Retaining mistakenly credited funds is illegal under Section 72 of the Indian Contract Act. Issue an advocate-drafted demand notice to compel immediate restitution.
+              Retaining mistakenly credited funds is illegal under Section 72 of the Indian Contract Act. Issue a fact-verified demand notice to compel immediate restitution.
             </p>
             <button
               type="button"

@@ -10,7 +10,7 @@ import { PaymentModal } from "@/components/PaymentModal";
 const faqs = [
   {
     question: "Can a business send a legal notice to recover unpaid B2B invoices and overdue client dues in India?",
-    answer: "Yes, businesses operating as private limited companies, LLPs, partnership firms, or sole proprietorships in India can issue an advocate-drafted statutory legal notice to recover outstanding commercial invoices, delayed client retainers, and unpaid contractor dues under the Indian Contract Act, 1872, the MSMED Act, 2006, and Order XXXVII of the Code of Civil Procedure, 1908. The formal legal demand notice gives defaulting commercial buyers, corporate clients, or distributors a mandatory 15-day statutory cure window to settle the outstanding principal alongside contractual or statutory interest. If the debtor fails to discharge the liability within the stipulated timeframe, the business is legally entitled to file a summary recovery suit, initiate fast-track arbitration, lodge a complaint before the MSME Facilitation Council, or file an insolvency petition before the NCLT."
+    answer: "Yes, businesses operating as private limited companies, LLPs, partnership firms, or sole proprietorships in India can issue a fact-verified statutory legal notice to recover outstanding commercial invoices, delayed client retainers, and unpaid contractor dues under the Indian Contract Act, 1872, the MSMED Act, 2006, and Order XXXVII of the Code of Civil Procedure, 1908. The formal legal demand notice gives defaulting commercial buyers, corporate clients, or distributors a mandatory 15-day statutory cure window to settle the outstanding principal alongside contractual or statutory interest. If the debtor fails to discharge the liability within the stipulated timeframe, the business is legally entitled to file a summary recovery suit, initiate fast-track arbitration, lodge a complaint before the MSME Facilitation Council, or file an insolvency petition before the NCLT."
   },
   {
     question: "What is the statutory payment timeline and compound interest rate for registered MSME businesses under the MSMED Act?",
@@ -22,7 +22,7 @@ const faqs = [
   },
   {
     question: "How can a business recover unpaid dues if there is no formal written agreement with the buyer?",
-    answer: "Even in the absence of a comprehensive master service contract, a business can establish an enforceable commercial liability through purchase orders, GST tax invoices, delivery challans, transport bilty receipts, and written email or WhatsApp acknowledgments under the Indian Contract Act, 1872 and the Commercial Courts Act, 2015. Certified bank statements reflecting prior partial payments and ledger statements audited under the Bankers' Books Evidence Act serve as admissible secondary proof of debt. An advocate-drafted legal notice consolidates these contemporaneous business records to demand immediate payment and crystallize the cause of action before initiating a Commercial Summary Suit."
+    answer: "Even in the absence of a comprehensive master service contract, a business can establish an enforceable commercial liability through purchase orders, GST tax invoices, delivery challans, transport bilty receipts, and written email or WhatsApp acknowledgments under the Indian Contract Act, 1872 and the Commercial Courts Act, 2015. Certified bank statements reflecting prior partial payments and ledger statements audited under the Bankers' Books Evidence Act serve as admissible secondary proof of debt. A fact-verified legal notice consolidates these contemporaneous business records to demand immediate payment and crystallize the cause of action before initiating a Commercial Summary Suit."
   }
 ];
 
@@ -129,7 +129,7 @@ const jsonLd = {
         {
           "@type": "ListItem",
           "position": 3,
-          "name": "Draft an advocate-vetted statutory demand notice under MSMED Act, Order 37 CPC, or NI Act"
+          "name": "Draft a fact-verified statutory demand notice under MSMED Act, Order 37 CPC, or NI Act"
         },
         {
           "@type": "ListItem",
@@ -146,7 +146,7 @@ const jsonLd = {
     {
       "@type": "Product",
       "name": "Legal Notice for Business Debt Recovery",
-      "description": "Specialized advocate-drafted statutory legal notice service for businesses, enterprises, MSMEs, and vendors to recover unpaid commercial invoices, client retainers, and overdue contract dues.",
+      "description": "Specialized fact-verified statutory legal notice service for businesses, enterprises, MSMEs, and vendors to recover unpaid commercial invoices, client retainers, and overdue contract dues.",
       "brand": {
         "@type": "Organization",
         "name": "Legal Recovery"
@@ -241,7 +241,7 @@ export default function ForBusinessToRecoverTheirUnpaidDuesClient() {
               Legal Notice for Business to <span className="text-[#DC2626]">Recover Their Unpaid Dues</span>
             </h1>
             <p className="text-sm md:text-xl mb-8 md:mb-12 max-w-3xl mx-auto text-slate-300 leading-relaxed font-medium">
-              Recover overdue B2B invoices, delayed client retainers, contractor balances, and supply chain dues with an advocate-drafted statutory legal notice backed by MSMED Act, Order 37 CPC, and Section 138 NI Act.
+              Recover overdue B2B invoices, delayed client retainers, contractor balances, and supply chain dues with a fact-verified statutory legal notice backed by MSMED Act, Order 37 CPC, and Section 138 NI Act.
             </p>
             <button
               onClick={() => setIsPaymentModalOpen(true)}
@@ -346,7 +346,7 @@ export default function ForBusinessToRecoverTheirUnpaidDuesClient() {
                 <div id="quick-answer" className="bg-slate-50 border-l-4 border-[#DC2626] p-6 rounded-r-2xl">
                   <h2 className="text-sm font-extrabold text-slate-900 mb-2 uppercase tracking-wide">Quick Answer</h2>
                   <p className="text-sm text-slate-700 font-medium leading-relaxed">
-                    A legal notice for a business to recover unpaid dues is an advocate-drafted statutory demand letter served on defaulting buyers, corporate clients, or commercial debtors who fail to pay for supplied goods or rendered services. The legal notice formally sets out the contractual transaction history, itemizes overdue GST invoices and statutory compound interest, and grants the debtor a mandatory 15-day cure window to discharge the outstanding liability in full. Failure to settle the dues within the notice period enables the creditor business to initiate an expedited Commercial Summary Suit under Order XXXVII of the Code of Civil Procedure, file for statutory recovery under Section 18 of the MSMED Act, 2006, prosecute dishonored cheques under Section 138 of the Negotiable Instruments Act, or trigger Corporate Insolvency Resolution under the Insolvency and Bankruptcy Code.
+                    A legal notice for a business to recover unpaid dues is a fact-verified statutory demand letter served on defaulting buyers, corporate clients, or commercial debtors who fail to pay for supplied goods or rendered services. The legal notice formally sets out the contractual transaction history, itemizes overdue GST invoices and statutory compound interest, and grants the debtor a mandatory 15-day cure window to discharge the outstanding liability in full. Failure to settle the dues within the notice period enables the creditor business to initiate an expedited Commercial Summary Suit under Order XXXVII of the Code of Civil Procedure, file for statutory recovery under Section 18 of the MSMED Act, 2006, prosecute dishonored cheques under Section 138 of the Negotiable Instruments Act, or trigger Corporate Insolvency Resolution under the Insolvency and Bankruptcy Code.
                   </p>
                 </div>
 
@@ -365,7 +365,7 @@ export default function ForBusinessToRecoverTheirUnpaidDuesClient() {
                       For corporate and general commercial debts, creditors utilize the fast-track mechanism of a Commercial Summary Suit under Order XXXVII of the <span className="font-semibold text-slate-800">Code of Civil Procedure, 1908 (CPC)</span>. Governed by the <span className="font-semibold text-slate-800">Commercial Courts Act, 2015</span>, summary suits apply to liquidated debts arising from written contracts, purchase orders, bills of exchange, or unpaid invoices. Under Order XXXVII, the defendant debtor does not possess an automatic right to defend the suit; they must obtain leave to defend from the court by demonstrating a bona fide, non-frivolous triable defense. If the court denies leave or the debtor defaults, the court enters an immediate money decree in favor of the creditor business.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      Where defaulting buyers attempt to discharge commercial debts through negotiable instruments that subsequent bounce, Section 138 of the <span className="font-semibold text-slate-800">Negotiable Instruments Act, 1881</span> and Section 25 of the <span className="font-semibold text-slate-800">Payment and Settlement Systems Act, 2007</span> establish strict criminal liability. In cases of corporate debtor default exceeding ₹1 Crore, operational creditors can serve a mandatory Form 3 or Form 4 demand notice under Section 8 of the <span className="font-semibold text-slate-800">Insolvency and Bankruptcy Code, 2016 (IBC)</span> and initiate Corporate Insolvency Resolution Processes (CIRP) under Section 9 before the National Company Law Tribunal (NCLT). Serving a formal advocate legal demand notice is the mandatory pre-condition that establishes the uncontroverted record of commercial default across all these forums.
+                      Where defaulting buyers attempt to discharge commercial debts through negotiable instruments that subsequent bounce, Section 138 of the <span className="font-semibold text-slate-800">Negotiable Instruments Act, 1881</span> and Section 25 of the <span className="font-semibold text-slate-800">Payment and Settlement Systems Act, 2007</span> establish strict criminal liability. In cases of corporate debtor default exceeding ₹1 Crore, operational creditors can serve a mandatory Form 3 or Form 4 demand notice under Section 8 of the <span className="font-semibold text-slate-800">Insolvency and Bankruptcy Code, 2016 (IBC)</span> and initiate Corporate Insolvency Resolution Processes (CIRP) under Section 9 before the National Company Law Tribunal (NCLT). Serving a formal fact-verified legal demand notice is the mandatory pre-condition that establishes the uncontroverted record of commercial default across all these forums.
                     </p>
                   </div>
                 </section>
@@ -593,7 +593,7 @@ export default function ForBusinessToRecoverTheirUnpaidDuesClient() {
                       <div className="flex items-start space-x-4">
                         <div className="bg-[#DC2626] text-white rounded-full w-8 h-8 flex items-center justify-center shrink-0 font-black text-sm">3</div>
                         <div>
-                          <h4 className="font-extrabold text-sm sm:text-base text-slate-900 mb-1">Advocate Drafting on Formal Legal Letterhead</h4>
+                          <h4 className="font-extrabold text-sm sm:text-base text-slate-900 mb-1">Notice Drafting on Formal Legal Letterhead</h4>
                           <p className="text-xs sm:text-sm text-slate-650 leading-relaxed">
                             Engage a commercial recovery advocate to draft the statutory notice on official letterhead, reciting the transaction timeline, delivery acknowledgments, explicit invoice terms, default details, and statutory legal consequences.
                           </p>
@@ -605,7 +605,7 @@ export default function ForBusinessToRecoverTheirUnpaidDuesClient() {
                         <div>
                           <h4 className="font-extrabold text-sm sm:text-base text-slate-900 mb-1">Stipulation of 15-Day Mandatory Cure Period</h4>
                           <p className="text-xs sm:text-sm text-slate-650 leading-relaxed">
-                            Grant the debtor exactly 15 days from the date of notice receipt to remit the full outstanding amount alongside advocate drafting charges into the designated corporate bank account.
+                            Grant the debtor exactly 15 days from the date of notice receipt to remit the full outstanding amount alongside notice drafting charges into the designated corporate bank account.
                           </p>
                         </div>
                       </div>
@@ -723,7 +723,7 @@ export default function ForBusinessToRecoverTheirUnpaidDuesClient() {
                 <div className="absolute top-0 right-0 w-24 h-24 bg-red-600/10 rounded-full blur-xl pointer-events-none" />
                 <h3 className="text-sm font-black mb-3">Recover Business &amp; B2B Dues</h3>
                 <p className="text-gray-400 mb-5 text-[11px] leading-relaxed">
-                  Partner with senior commercial recovery advocates. We draft institutional demand notices, calculate statutory 3x compound interest, execute verified multi-channel dispatch, and handle MSEFC/Court filings.
+                  Our team verifies your facts, prepares institutional demand notices, calculates statutory 3x compound interest, and executes verified multi-channel dispatch.
                 </p>
                 <button
                   onClick={() => setIsPaymentModalOpen(true)}
@@ -783,7 +783,7 @@ export default function ForBusinessToRecoverTheirUnpaidDuesClient() {
                 <img src="/lrlogo.svg" alt="LegalRecovery" width={3236} height={601} className="h-8 sm:h-10 w-auto object-contain" />
               </div>
               <p className="text-sm md:text-base text-slate-600 leading-relaxed mb-10 max-w-3xl font-medium">
-                Legal Recovery is India&apos;s trusted consumer protection and commercial debt resolution platform. Founded in 2022 and headquartered in New Delhi, Legal Recovery has counselled 15,000+ businesses, financial institutions, and consumers on debt recovery, commercial contract breaches, and loan defaults. Legal Recovery accelerates out-of-court settlements and connects you with top verified panel advocates.
+                Legal Recovery is India&apos;s trusted consumer protection and commercial debt resolution platform. Founded in 2022 and headquartered in New Delhi, Legal Recovery has counselled 15,000+ businesses, financial institutions, and consumers on debt recovery, commercial contract breaches, and loan defaults. Legal Recovery accelerates out-of-court settlements and prepares and sends fact-verified notices for you.
               </p>
 
               <div className="border-t border-slate-100 pt-10">

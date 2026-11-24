@@ -32,7 +32,7 @@ export default function FreightForwarderRecoveryCTA({ className = "" }: FreightF
           Test 1 Overdue Importer / Consignee Case Now (₹{testPrice}) or Batch Process 10 to 1,000+ Outstanding Freight &amp; Duty Invoices via CSV
         </p>
         <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-6 max-w-3xl">
-          Whether you are a Customs House Agent (CHA) recovering ₹5L–₹40L in upfront ICEGATE customs duty and CFS outlays, an NVOCC seeking container demurrage indemnity for abandoned boxes, or an air freight forwarder facing an IATA CASS bi-monthly shortfall, deploy court-tested Section 222 advocate demand notices today.
+          Whether you are a Customs House Agent (CHA) recovering ₹5L–₹40L in upfront ICEGATE customs duty and CFS outlays, an NVOCC seeking container demurrage indemnity for abandoned boxes, or an air freight forwarder facing an IATA CASS bi-monthly shortfall, deploy court-tested Section 222 fact-verified demand notices today.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
@@ -48,10 +48,10 @@ export default function FreightForwarderRecoveryCTA({ className = "" }: FreightF
                 </span>
               </div>
               <p className="text-base font-bold text-white mb-2">
-                Test 1 Live Overdue Case Now (Advocate Drafted)
+                Test 1 Live Overdue Case Now (Fact-Verified)
               </p>
               <p className="text-xs text-slate-300 leading-relaxed mb-4">
-                Submit details of one defaulting importer or freight debtor. Receive a bespoke advocate-drafted legal notice under Indian Contract Act Section 222, Customs Act Section 48, and Commercial Courts Act Section 2(1)(c), with full itemization of ICEGATE challans, ocean freight, THC, CFS detention, and 18% statutory penal interest, delivered via Speed Post RPAD, WhatsApp, and registered email.
+                Submit details of one defaulting importer or freight debtor. Receive a bespoke fact-verified legal notice under Indian Contract Act Section 222, Customs Act Section 48, and Commercial Courts Act Section 2(1)(c), with full itemization of ICEGATE challans, ocean freight, THC, CFS detention, and 18% statutory penal interest, delivered via Speed Post RPAD, WhatsApp, and registered email.
               </p>
             </div>
 
@@ -87,7 +87,7 @@ export default function FreightForwarderRecoveryCTA({ className = "" }: FreightF
                 Bulk CSV Dispatch &amp; Dedicated Forwarder Legal Desk
               </p>
               <p className="text-xs text-slate-300 leading-relaxed mb-4">
-                Engineered for mid-sized and large freight forwarding companies, NVOCCs, and licensed customs brokerage firms managing multi-port operations across JNPT, Mundra, Chennai, and Delhi ICD. Upload an Excel/CSV ledger of defaulting importers and shippers to generate automated batch advocate notices, tracked India Post consignment barcodes, and court-ready Order XXXVII summary suit dossiers.
+                Engineered for mid-sized and large freight forwarding companies, NVOCCs, and licensed customs brokerage firms managing multi-port operations across JNPT, Mundra, Chennai, and Delhi ICD. Upload an Excel/CSV ledger of defaulting importers and shippers to generate automated batch fact-verified notices, tracked India Post consignment barcodes, and court-ready Order XXXVII summary suit dossiers.
               </p>
             </div>
 

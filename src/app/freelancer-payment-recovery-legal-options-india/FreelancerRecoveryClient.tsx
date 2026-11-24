@@ -111,7 +111,7 @@ const reviewSchema = {
   "@type": "Product",
   "name": "Freelancer Payment Recovery Services",
   "image": "https://www.legalrecovery.in/og-freelancer-recovery.png",
-  "description": "Expert attorney-drafted legal notices and recovery solutions for freelancers, consultants, and independent contractors in India.",
+  "description": "Fact-verified legal notices and recovery solutions for freelancers, consultants, and independent contractors in India.",
   "brand": {
     "@type": "Brand",
     "name": "LegalRecovery"

@@ -27,9 +27,9 @@ const SCENARIOS: Scenario[] = [
     statutoryTrap:
       "Under Section 16(2)(c) of the CGST Act, 2017, input tax credit is conditional upon tax having been actually deposited with the Government. Two years later, the GST audit officer issues a Form DRC-01 demand notice reversing the entire ₹9,00,000 ITC, demanding 18% penal interest under Section 50(3) and a 100% penalty under Section 122(1).",
     recoveryPlaybook:
-      "Deploy a twin-track statutory recovery strategy: (1) Serve an urgent High Court Advocate Legal Notice demanding immediate Challan PMT-06 / GSTR-3B filing within 7 days, warning the supplier's Managing Director and CFO that collecting GST without remitting it violates Section 76 of the CGST Act and constitutes a cognizable offense under Section 132(1)(d). (2) Simultaneously file a protective objection to the GST Assessing Officer citing Calcutta High Court's landmark judgment in Suncraft Energy Pvt. Ltd., barring coercive recovery against the bona fide purchaser before exhausting remedies against the seller.",
+      "Deploy a twin-track statutory recovery strategy: (1) Serve an urgent High Court Fact-Verified Legal Notice demanding immediate Challan PMT-06 / GSTR-3B filing within 7 days, warning the supplier's Managing Director and CFO that collecting GST without remitting it violates Section 76 of the CGST Act and constitutes a cognizable offense under Section 132(1)(d). (2) Simultaneously file a protective objection to the GST Assessing Officer citing Calcutta High Court's landmark judgment in Suncraft Energy Pvt. Ltd., barring coercive recovery against the bona fide purchaser before exhausting remedies against the seller.",
     actionableSteps: [
-      "Issue 7-Day Advocate Statutory Demand Notice citing CGST Act ss. 76, 122(1)(iv), 132(1)(d), and Contract Act s. 124.",
+      "Issue 7-Day Fact-Verified Statutory Demand Notice citing CGST Act ss. 76, 122(1)(iv), 132(1)(d), and Contract Act s. 124.",
       "Calculate 18% statutory interest under CGST Section 50 plus commercial damages from the invoice due date.",
       "Submit written reply to DRC-01A citing Suncraft Energy (Calcutta HC) and D.Y. Beathel (Madras HC) demanding supplier audit first.",
       "Lodge formal complaint with the DGGI (Directorate General of GST Intelligence) under Section 76 Anti-Evasion provisions.",
@@ -73,7 +73,7 @@ const SCENARIOS: Scenario[] = [
     actionableSteps: [
       "Prepare Section 155 Evidence Dossier establishing physical movement of goods and genuine consumption in production.",
       "Challenge Rule 86A ledger blocking on grounds of lack of 'reasons to believe' under Delhi High Court precedent.",
-      "Issue urgent Advocate Demand Notice to tier-1 vendor invoking indemnity clauses and demanding indemnification bond.",
+      "Issue urgent Fact-Verified Demand Notice to tier-1 vendor invoking indemnity clauses and demanding indemnification bond.",
       "Initiate Section 9 Arbitration petition or Order 38 Rule 5 CPC interim asset attachment against defaulting vendor.",
     ],
     expectedOutcome:
@@ -90,10 +90,10 @@ const SCENARIOS: Scenario[] = [
     statutoryTrap:
       "Corporate buyers assume they have reached a dead end because the corporate vehicle has no bank balance. Defaulting promoters hide behind the corporate veil to evade tax debts and civil recovery.",
     recoveryPlaybook:
-      "Pierce the corporate veil under Section 89 of the CGST Act (Director Liability in Private Companies) and Section 339 of the Companies Act (Fraudulent Trading). Under CGST Act Section 89, every person who was a director of a private company during the period for which tax was due is jointly and severally liable unless they prove non-gross neglect. Issue an advocate notice to directors' personal addresses demanding immediate indemnification.",
+      "Pierce the corporate veil under Section 89 of the CGST Act (Director Liability in Private Companies) and Section 339 of the Companies Act (Fraudulent Trading). Under CGST Act Section 89, every person who was a director of a private company during the period for which tax was due is jointly and severally liable unless they prove non-gross neglect. Issue a fact-verified notice to directors' personal addresses demanding immediate indemnification.",
     actionableSteps: [
       "Extract director DINs, personal asset filings, and home addresses from Ministry of Corporate Affairs (MCA) records.",
-      "Serve Advocate Notice invoking CGST Section 89 fastening personal, joint, and several liability on all directors.",
+      "Serve Fact-Verified Notice invoking CGST Section 89 fastening personal, joint, and several liability on all directors.",
       "File criminal complaint under Bharatiya Nyaya Sanhita (BNS) Section 316 (Criminal Breach of Trust) and Section 318 (Cheating).",
       "Lodge formal objection before the Registrar of Companies (ROC) to prevent company strike-off or dissolution.",
     ],

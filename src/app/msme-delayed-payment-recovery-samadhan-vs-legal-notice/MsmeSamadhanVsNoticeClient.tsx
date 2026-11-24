@@ -336,7 +336,7 @@ export default function MsmeSamadhanVsNoticeClient() {
                         </tr>
                         <tr>
                           <td className="px-6 py-4 font-bold text-slate-900">Legal Representation</td>
-                          <td className="px-6 py-4">Drafted by an advocate for formal validity</td>
+                          <td className="px-6 py-4">Prepared on verified facts for formal validity</td>
                           <td className="px-6 py-4">Can be filed directly by the entrepreneur online</td>
                         </tr>
                         <tr>
@@ -588,7 +588,7 @@ export default function MsmeSamadhanVsNoticeClient() {
                 <div className="absolute top-0 right-0 w-24 h-24 bg-red-600/10 rounded-full blur-xl pointer-events-none" />
                 <h3 className="text-lg font-bold mb-3 text-white">Need Legal Advice?</h3>
                 <p className="text-gray-400 mb-5 text-[11px] leading-relaxed">
-                  Discuss your money recovery case with legal experts. We draft and serve legally compliant notices tailored to your transaction.
+                  Discuss your money recovery case with our team. We draft and serve legally compliant notices tailored to your transaction.
                 </p>
                 <button 
                   onClick={() => setIsPaymentModalOpen(true)}

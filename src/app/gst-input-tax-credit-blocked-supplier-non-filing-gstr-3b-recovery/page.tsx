@@ -140,7 +140,7 @@ const FAQS = [
   {
     question: "How does CGST Section 76 help in recovering money from a defaulting vendor?",
     answer:
-      "Section 76 of the CGST Act is a powerful coercive statutory weapon. It mandates that any person who has collected tax from another person must immediately deposit the amount to the Central Government, irrespective of whether the supplies were taxable. Failure to deposit tax collected triggers immediate recovery proceedings under Section 79, a mandatory penalty equal to the tax under Section 122(1)(iv), and if the un-deposited tax exceeds ₹2 Crore, criminal prosecution with up to 5 years rigorous imprisonment under Section 132(1)(d). Highlighting Section 76 in an Advocate Legal Notice exposes the vendor's directors to severe penal and criminal liabilities, compelling immediate return filing or cash reimbursement.",
+      "Section 76 of the CGST Act is a powerful coercive statutory weapon. It mandates that any person who has collected tax from another person must immediately deposit the amount to the Central Government, irrespective of whether the supplies were taxable. Failure to deposit tax collected triggers immediate recovery proceedings under Section 79, a mandatory penalty equal to the tax under Section 122(1)(iv), and if the un-deposited tax exceeds ₹2 Crore, criminal prosecution with up to 5 years rigorous imprisonment under Section 132(1)(d). Highlighting Section 76 in a Fact-Verified Legal Notice exposes the vendor's directors to severe penal and criminal liabilities, compelling immediate return filing or cash reimbursement.",
   },
   {
     question: "What is Rule 37A and what is the deadline for reversing blocked ITC?",
@@ -170,7 +170,7 @@ const FAQS = [
   {
     question: "How does LegalRecovery handle high-volume vendor GSTR-2B mismatches for enterprises?",
     answer:
-      "LegalRecovery provides a dedicated Institutional B2B Tax-Indemnity Desk for enterprise CFOs, FMCG manufacturers, modern retail chains, and EPC contractors. Through our Bulk CSV Desk, corporate tax teams upload defaulting vendor ledgers containing GSTINs, missing invoice numbers, and tax exposure. We automate the dispatch of customized High Court advocate demand notices across India via Speed Post RPAD and certified email, coordinate Section 76 DGGI Anti-Evasion complaints, and institute commercial recovery suits.",
+      "LegalRecovery provides a dedicated Institutional B2B Tax-Indemnity Desk for enterprise CFOs, FMCG manufacturers, modern retail chains, and EPC contractors. Through our Bulk CSV Desk, corporate tax teams upload defaulting vendor ledgers containing GSTINs, missing invoice numbers, and tax exposure. We automate the dispatch of customized High Court fact-verified demand notices across India via Speed Post RPAD and certified email, coordinate Section 76 DGGI Anti-Evasion complaints, and institute commercial recovery suits.",
   },
 ];
 
@@ -620,7 +620,7 @@ export default function BlockedGstItcVendorRecoveryPage() {
                         Stage 3: Dispatch High Court Advocate Tax-Indemnity Demand Notice
                       </h3>
                       <p className="text-xs text-slate-600 leading-relaxed">
-                        Serve a formal 7-day Advocate Demand Notice on the vendor's registered office and personal addresses of its directors. Demand: (a) Filing of pending GSTR-3B and Challan PMT-06 proof within 7 days, or (b) Immediate refund of the 18% tax component plus 18% statutory interest under CGST Section 50. Warn of Section 76 DGGI complaints and Section 132(1)(d) criminal prosecution.
+                        Serve a formal 7-day Fact-Verified Demand Notice on the vendor's registered office and personal addresses of its directors. Demand: (a) Filing of pending GSTR-3B and Challan PMT-06 proof within 7 days, or (b) Immediate refund of the 18% tax component plus 18% statutory interest under CGST Section 50. Warn of Section 76 DGGI complaints and Section 132(1)(d) criminal prosecution.
                       </p>
                     </div>
                   </div>
@@ -788,7 +788,7 @@ export default function BlockedGstItcVendorRecoveryPage() {
                     Supplier active on portal, invoice in GSTR-1, GSTR-3B unpaid
                   </p>
                   <p className="text-xs text-slate-300 mt-2">
-                    <strong>Action:</strong> Serve 7-day Advocate Notice citing CGST s.76, s.50(3) 18% interest, and DGGI Section 132 prosecution. Holds pending supplier invoices.
+                    <strong>Action:</strong> Serve 7-day Fact-Verified Notice citing CGST s.76, s.50(3) 18% interest, and DGGI Section 132 prosecution. Holds pending supplier invoices.
                   </p>
                 </div>
 
@@ -1019,7 +1019,7 @@ export default function BlockedGstItcVendorRecoveryPage() {
                 </div>
 
                 <p>
-                  Presenting this exact arithmetic inside an Advocate Legal Notice demonstrates to the vendor's board of directors that delaying GSTR-3B filing is commercially catastrophic. A ₹18 Lakh tax float generates an immediate ₹27.78 Lakh claim that can be enforced against company bank accounts.
+                  Presenting this exact arithmetic inside a Fact-Verified Legal Notice demonstrates to the vendor's board of directors that delaying GSTR-3B filing is commercially catastrophic. A ₹18 Lakh tax float generates an immediate ₹27.78 Lakh claim that can be enforced against company bank accounts.
                 </p>
               </div>
             </section>

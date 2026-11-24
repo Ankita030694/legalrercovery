@@ -153,7 +153,7 @@ const FAQS = [
   {
     question: "What can I do if the seller backs out of the property deal after taking bayana?",
     answer:
-      "When a seller backs out—often because property rates rose or another buyer offered a higher price—you have two statutory options: (1) Serve a formal advocate legal notice demanding 100% refund of your bayana plus contractual damages (many bayana agreements stipulate 'double bayana' compensation on seller default, enforceable to the extent of market price differential under Section 73 Contract Act) along with a Section 55(6)(b) statutory charge on the property; or (2) File a suit for Specific Performance under Section 10 of the Specific Relief Act, 1963 along with an Order 39 CPC temporary injunction restraining the seller from transferring the property to any third party.",
+      "When a seller backs out—often because property rates rose or another buyer offered a higher price—you have two statutory options: (1) Serve a formal fact-verified legal notice demanding 100% refund of your bayana plus contractual damages (many bayana agreements stipulate 'double bayana' compensation on seller default, enforceable to the extent of market price differential under Section 73 Contract Act) along with a Section 55(6)(b) statutory charge on the property; or (2) File a suit for Specific Performance under Section 10 of the Specific Relief Act, 1963 along with an Order 39 CPC temporary injunction restraining the seller from transferring the property to any third party.",
   },
   {
     question: "What are the token amount refund rules under RERA when booking a flat with a builder?",
@@ -168,7 +168,7 @@ const FAQS = [
   {
     question: "Property deal cancel hone par token money ya bayana wapas kaise le?",
     answer:
-      "Agar resale flat, plot ya rental deal cancel hone ke baad makan malik, seller ya broker aapka token / bayana paisa wapas nahi kar raha hai, toh sabse pehle WhatsApp aur email par likhit cancellation aur refund demand bhejein. Agar seller bina kisi vastavik nuksan (actual loss) ke bayana zabt (forfeit) karne ki dhamki de, toh LegalRecovery.in ke madhyam se Indian Contract Act ki Dhara 73–74 aur Transfer of Property Act ki Dhara 55(6)(b) ke tehat 15 din ka Advocate Legal Notice bhejein. Legal notice se property par kanooni daava (statutory charge) darj ho jata hai, jisse seller kisi teesre vyakti ko property nahi bech pata aur 15 din mein samjhauta kar leta hai.",
+      "Agar resale flat, plot ya rental deal cancel hone ke baad makan malik, seller ya broker aapka token / bayana paisa wapas nahi kar raha hai, toh sabse pehle WhatsApp aur email par likhit cancellation aur refund demand bhejein. Agar seller bina kisi vastavik nuksan (actual loss) ke bayana zabt (forfeit) karne ki dhamki de, toh LegalRecovery.in ke madhyam se Indian Contract Act ki Dhara 73–74 aur Transfer of Property Act ki Dhara 55(6)(b) ke tehat 15 din ka Fact-Verified Legal Notice bhejein. Legal notice se property par kanooni daava (statutory charge) darj ho jata hai, jisse seller kisi teesre vyakti ko property nahi bech pata aur 15 din mein samjhauta kar leta hai.",
   },
 ];
 
@@ -635,7 +635,7 @@ export default function TokenMoneyRefundPropertyDealPage() {
                       </span>
                     </div>
                     <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
-                      In 70%+ of resale property and rental token disputes, the seller holds onto the money assuming the buyer will not spend years in civil court. A formal advocate legal notice reverses that calculation overnight. Drafted under <strong>Sections 73 and 74 of the Indian Contract Act</strong> and <strong>Section 55(6)(b) of the Transfer of Property Act, 1882</strong>, the notice formally terminates the transaction (or calls upon the seller to cure title defects), demands 100% restitution with 18% annual interest within 15 days, and notifies the seller (and the housing society / RWA) of the buyer&apos;s statutory charge over the property. Because no new buyer or bank will fund a property facing an active recovery dispute, sellers typically settle during the 15-day window. If your dispute involves a stuck advance in a broader real estate transaction, see our guide on{" "}
+                      In 70%+ of resale property and rental token disputes, the seller holds onto the money assuming the buyer will not spend years in civil court. A formal fact-verified legal notice reverses that calculation overnight. Drafted under <strong>Sections 73 and 74 of the Indian Contract Act</strong> and <strong>Section 55(6)(b) of the Transfer of Property Act, 1882</strong>, the notice formally terminates the transaction (or calls upon the seller to cure title defects), demands 100% restitution with 18% annual interest within 15 days, and notifies the seller (and the housing society / RWA) of the buyer&apos;s statutory charge over the property. Because no new buyer or bank will fund a property facing an active recovery dispute, sellers typically settle during the 15-day window. If your dispute involves a stuck advance in a broader real estate transaction, see our guide on{" "}
                       <Link href="/send-a-legal-notice/property-dispute-money-stuck" className="text-blue-700 underline font-semibold">
                         recovering money stuck in a property dispute
                       </Link>.
@@ -968,10 +968,10 @@ export default function TokenMoneyRefundPropertyDealPage() {
                     </span>
                     <div className="space-y-1 sm:space-y-1.5">
                       <h3 className="text-sm sm:text-base md:text-lg font-bold text-slate-900">
-                        Serve a 15-Day Advocate Legal Notice Asserting Section 74 &amp; Section 55(6)(b) Charge
+                        Serve a 15-Day Fact-Verified Legal Notice Asserting Section 74 &amp; Section 55(6)(b) Charge
                       </h3>
                       <p className="text-xs sm:text-sm leading-relaxed">
-                        Have an advocate dispatch a formal statutory legal notice via Registered Speed Post (RPAD), Email, and WhatsApp to the property owner (and jointly to the broker if the broker mediated the deal). The notice demands 100% refund within 15 days, challenges illegal forfeiture under Section 74 of the Contract Act, and formally notifies the seller that a <strong>statutory buyer&apos;s charge under Section 55(6)(b) of the Transfer of Property Act</strong> attaches to the property until every rupee is returned.
+                        Dispatch a formal statutory legal notice via Registered Speed Post (RPAD), Email, and WhatsApp to the property owner (and jointly to the broker if the broker mediated the deal). The notice demands 100% refund within 15 days, challenges illegal forfeiture under Section 74 of the Contract Act, and formally notifies the seller that a <strong>statutory buyer&apos;s charge under Section 55(6)(b) of the Transfer of Property Act</strong> attaches to the property until every rupee is returned.
                       </p>
                     </div>
                   </li>
@@ -1048,7 +1048,7 @@ export default function TokenMoneyRefundPropertyDealPage() {
                     3. Under <strong>Sections 65, 70, and 74 of the Indian Contract Act, 1872</strong> and the settled law laid down by the Hon&apos;ble Supreme Court in <em>Fateh Chand v. Balkishan Dass (AIR 1963 SC 1405)</em> and <em>Kailash Nath Associates v. DDA ((2015) 4 SCC 136)</em>, you have no legal right to forfeit the said token/advance amount in the absence of proved financial loss. Furthermore, under <strong>Section 55(6)(b) of the Transfer of Property Act, 1882</strong>, the prepaid amount constitutes a statutory buyer&apos;s charge on the said property.
                   </p>
                   <p>
-                    4. You are hereby requested to refund the full sum of <strong>₹[Amount]</strong> to my bank account [Account Holder Name, Bank Name, A/c No., IFSC] within <strong>7 (seven) calendar days</strong> of receiving this communication, failing which I shall be constrained to serve a formal Advocate Legal Notice and initiate civil recovery proceedings at your sole risk as to costs and 18% p.a. interest.
+                    4. You are hereby requested to refund the full sum of <strong>₹[Amount]</strong> to my bank account [Account Holder Name, Bank Name, A/c No., IFSC] within <strong>7 (seven) calendar days</strong> of receiving this communication, failing which I shall be constrained to serve a formal Fact-Verified Legal Notice and initiate civil recovery proceedings at your sole risk as to costs and 18% p.a. interest.
                   </p>
                   <p>Sincerely,<br /><strong>[Your Full Name, Address &amp; Mobile Number]</strong><br />Date: [DD/MM/YYYY]</p>
                 </article>
@@ -1078,7 +1078,7 @@ export default function TokenMoneyRefundPropertyDealPage() {
                       <strong>The Dispute &amp; Forfeiture Threat:</strong> When Saurabh applied for an ₹70,00,000 home loan with SBI, the bank&apos;s legal scrutiny revealed two major hurdles: the seller hadnot registered the Tripartite Sub-Lease Deed properly, and there were ₹1,85,000 in pending society maintenance and sunken-fund arrears. When Saurabh asked the seller to clear the arrears and provide the missing chain document, the seller stalled past Day 45 and then sent a WhatsApp message claiming the ₹5,00,000 bayana stood forfeited due to &quot;buyer delay.&quot;
                     </p>
                     <p>
-                      <strong>The Statutory Action:</strong> Saurabh engaged LegalRecovery.in. Within 24 hours, a property recovery advocate drafted and dispatched a 15-day statutory demand notice via Registered Speed Post and email to both the seller and the property dealer, with a copy marked to the Apartment Owners Association (AOA) secretary. The notice cited <strong>Section 55(1)(a) and Section 55(1)(g) of the Transfer of Property Act</strong> (seller&apos;s failure to disclose defects and clear society dues), <strong>Section 74 of the Contract Act</strong> (<em>Kailash Nath</em> &amp; <em>Fateh Chand</em>), and placed the flat under formal notice of a <strong>Section 55(6)(b) statutory buyer&apos;s charge for ₹5,00,000 plus 18% interest</strong>.
+                      <strong>The Statutory Action:</strong> Saurabh engaged LegalRecovery.in. Within 24 hours, the team verified the facts and dispatched a 15-day statutory demand notice via Registered Speed Post and email to both the seller and the property dealer, with a copy marked to the Apartment Owners Association (AOA) secretary. The notice cited <strong>Section 55(1)(a) and Section 55(1)(g) of the Transfer of Property Act</strong> (seller&apos;s failure to disclose defects and clear society dues), <strong>Section 74 of the Contract Act</strong> (<em>Kailash Nath</em> &amp; <em>Fateh Chand</em>), and placed the flat under formal notice of a <strong>Section 55(6)(b) statutory buyer&apos;s charge for ₹5,00,000 plus 18% interest</strong>.
                     </p>
                     <div className="p-3.5 sm:p-4 bg-emerald-950/70 border border-emerald-700/60 rounded-xl text-emerald-200">
                       <strong className="block text-emerald-400 font-bold mb-1">The Outcome:</strong>
@@ -1237,7 +1237,7 @@ export default function TokenMoneyRefundPropertyDealPage() {
               {/* Primary CTA */}
               <section id="heading-cta-block" aria-labelledby="heading-cta-block-title" className="w-full">
                 <h2 id="heading-cta-block-title" className="sr-only">
-                  Send an Advocate Legal Notice to Recover Your Token or Bayana Money
+                  Send a Fact-Verified Legal Notice to Recover Your Token or Bayana Money
                 </h2>
                 <TokenMoneyNoticeCTA variant="primary" />
               </section>

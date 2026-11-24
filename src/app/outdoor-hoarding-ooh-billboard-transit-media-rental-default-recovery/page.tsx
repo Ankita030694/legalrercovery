@@ -244,7 +244,7 @@ export default function OutdoorHoardingOOHRecoveryPage() {
       {
         "@type": "HowToStep",
         position: 3,
-        name: "Issue 15-Day Advocate Demand Notice under Order 37 CPC",
+        name: "Issue 15-Day Fact-Verified Demand Notice under Order 37 CPC",
         text: "Dispatch a formal legal notice via Speed Post RPAD, WhatsApp, and registered corporate email setting out liquidated display rentals, municipal holding losses, and interest.",
       },
       {
@@ -941,7 +941,7 @@ export default function OutdoorHoardingOOHRecoveryPage() {
                     Individual Overdue Hoarding Invoices?
                   </span>
                   <p className="text-xs text-slate-600">
-                    Draft and serve an advocate-vetted statutory demand notice via Speed Post RPAD &amp; Email with full Section 63 BSA compliance.
+                    Draft and serve a fact-verified statutory demand notice via Speed Post RPAD &amp; Email with full Section 63 BSA compliance.
                   </p>
                   <a
                     href="/user/new-recovery"

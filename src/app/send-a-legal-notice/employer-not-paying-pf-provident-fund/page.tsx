@@ -3,7 +3,7 @@ import EmployerNotPayingPfProvidentFundClient from './EmployerNotPayingPfProvide
 
 const slug = 'send-a-legal-notice/employer-not-paying-pf-provident-fund';
 const title = 'Legal Notice to Employer for Not Paying PF / EPF Dues';
-const description = 'Employer not depositing PF with EPFO? Send an advocate-vetted legal notice for unpaid provident fund under Section 14B of the EPF Act.';
+const description = 'Employer not depositing PF with EPFO? Send a fact-verified legal notice for unpaid provident fund under Section 14B of the EPF Act.';
 const url = `https://www.legalrecovery.in/${slug}`;
 
 export const metadata: Metadata = {

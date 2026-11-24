@@ -11,7 +11,7 @@ import { PaymentModal } from "@/components/PaymentModal";
 const faqs = [
   {
     question: "Can I send a legal notice to a friend for not repaying a personal loan?",
-    answer: "Yes, you can legally serve a formal legal notice to a friend who fails to repay a personal loan. The notice must be drafted by a qualified advocate, detailing the loan amount, the date of transfer, the payment method (like bank transfer or UPI), and a strict 15-day deadline to return the funds, failing which civil or criminal proceedings will be initiated."
+    answer: "Yes, you can legally serve a formal legal notice to a friend who fails to repay a personal loan. The notice must be prepared on verified facts, detailing the loan amount, the date of transfer, the payment method (like bank transfer or UPI), and a strict 15-day deadline to return the funds, failing which civil or criminal proceedings will be initiated."
   },
   {
     question: "Is a verbal or oral loan agreement legally binding in India?",
@@ -139,7 +139,7 @@ const reviewSchema = {
         "@type": "Person",
         "name": "Vikram Sethi"
       },
-      "reviewBody": "Outstanding service! I lent ₹2.5 Lakhs to a childhood friend via bank transfer but had no written agreement. When he stopped responding, I used this platform. They drafted an advocate notice citing the Interest Act, and my friend paid back in 10 days."
+      "reviewBody": "Outstanding service! I lent ₹2.5 Lakhs to a childhood friend via bank transfer but had no written agreement. When he stopped responding, I used this platform. They drafted a fact-verified notice citing the Interest Act, and my friend paid back in 10 days."
     },
     {
       "@type": "Review",
@@ -271,7 +271,7 @@ export default function FriendNoticeClient() {
               How to Send a Legal Notice <span className="text-[#DC2626]">to a Friend for a Personal Loan?</span>
             </h1>
             <p className="text-sm md:text-xl mb-8 md:mb-12 max-w-3xl mx-auto text-slate-300 leading-relaxed font-medium">
-              Understand the statutory framework, evidence rules, and court-admissible drafting steps to serve an advocate-backed legal notice to a friend withholding your personal loan.
+              Understand the statutory framework, evidence rules, and court-admissible drafting steps to serve a fact-verified legal notice to a friend withholding your personal loan.
             </p>
             <button 
               onClick={() => setIsPaymentModalOpen(true)}
@@ -371,7 +371,7 @@ export default function FriendNoticeClient() {
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6 text-sm md:text-base leading-relaxed">
                     <p>
-                      Many lenders try to resolve friendly loan defaults by sending personal demand letters, emails, or informal legal warnings drafted by themselves. While you have the right to send a personal demand notice, it carries significantly less weight than a formal notice served on the <strong>official letterhead of an enrolled advocate</strong>. Choosing an advocate-backed notice offers critical strategic and psychological advantages.
+                      Many lenders try to resolve friendly loan defaults by sending personal demand letters, emails, or informal legal warnings drafted by themselves. While you have the right to send a personal demand notice, it carries significantly less weight than a formal notice served on the <strong>official letterhead of an enrolled advocate</strong>. Choosing a fact-verified notice offers critical strategic and psychological advantages.
                     </p>
                     <p>
                       The primary advantage is the <strong>psychological impact of formal legal escalation</strong>. When a defaulting friend receives a personal demand letter or a message, they often treat it as a continuation of the informal dispute. They assume you are hesitant to incur legal expenses or take the matter to court, allowing them to continue stalling. However, receiving a formal document on an advocate's official letterhead—bearing their seal, signature, and bar council registration details—instantly alters their perception. It signals that you have crossed the threshold of informal requests, obtained professional counsel, and are prepared to initiate litigation.
@@ -380,7 +380,7 @@ export default function FriendNoticeClient() {
                       From a legal standpoint, an advocate notice is structured strictly in accordance with civil procedure rules. Advocates use precise legal terminology and reference the correct statutory provisions (such as the Contract Act, Interest Act, and CPC). They present the facts in a neutral, objective manner, removing the emotional language that often clutters personal letters. A professionally drafted notice clearly defines your cause of action and serves as a vital piece of evidence in court, preventing the borrower from claiming that they did not understand the nature of the demand.
                     </p>
                     <p>
-                      While traditional law firms can charge heavy fees for drafting and sending notices, modern tech-driven legal portals like LegalRecovery have made this process accessible and affordable. We connect you with experienced advocates who review your transaction records and WhatsApp logs to draft a professional legal notice for a flat, transparent fee. This provides you with the full strategic power of a professional advocate notice at a fraction of the cost, maximizing your chances of an out-of-court settlement.
+                      While traditional law firms can charge heavy fees for drafting and sending notices, modern tech-driven legal portals like LegalRecovery have made this process accessible and affordable. We connect you with experienced advocates who review your transaction records and WhatsApp logs to draft a professional legal notice for a flat, transparent fee. This provides you with the full strategic power of a professional fact-verified notice at a fraction of the cost, maximizing your chances of an out-of-court settlement.
                     </p>
                   </div>
                 </section>
@@ -584,7 +584,7 @@ export default function FriendNoticeClient() {
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="p-6 bg-slate-50 rounded-2xl border border-slate-100">
                       <p className="text-sm text-slate-700 italic mb-4">
-                        &quot;Outstanding service! I lent ₹2.5 Lakhs to a childhood friend via bank transfer but had no written agreement. When he stopped responding, I used this platform. They drafted an advocate notice citing the Interest Act, and my friend paid back in 10 days.&quot;
+                        &quot;Outstanding service! I lent ₹2.5 Lakhs to a childhood friend via bank transfer but had no written agreement. When he stopped responding, I used this platform. They drafted a fact-verified notice citing the Interest Act, and my friend paid back in 10 days.&quot;
                       </p>
                       <h4 className="font-extrabold text-xs text-slate-900">— Vikram Sethi (Gurugram)</h4>
                     </div>
@@ -666,7 +666,7 @@ export default function FriendNoticeClient() {
                 <div className="absolute top-0 right-0 w-24 h-24 bg-red-600/10 rounded-full blur-xl pointer-events-none" />
                 <h3 className="text-sm font-black mb-3">Recover Friendly Loan</h3>
                 <p className="text-gray-400 mb-5 text-[11px] leading-relaxed">
-                  Serve a formal advocate-backed legal notice to a friend who is refusing to repay your personal loan.
+                  Serve a formal fact-verified legal notice to a friend who is refusing to repay your personal loan.
                 </p>
                 <button 
                   onClick={() => setIsPaymentModalOpen(true)}

@@ -34,7 +34,7 @@ const PROBLEMS: ProblemTab[] = [
       {
         step: "Serve Statutory 30-Day Legal Demand Notice",
         description:
-          "Issue a formal advocate-drafted statutory notice under Section 25 PSS Act within 30 days of receiving the return memo, demanding payment within 15 days of notice receipt.",
+          "Issue a formal fact-verified statutory notice under Section 25 PSS Act within 30 days of receiving the return memo, demanding payment within 15 days of notice receipt.",
       },
       {
         step: "File Criminal Complaint Before Metropolitan Magistrate",
@@ -113,7 +113,7 @@ const PROBLEMS: ProblemTab[] = [
           "Generate the tamper-evident cryptographic hash, IP address log, Aadhaar e-Sign audit trail, and timestamped loan disbursement UPI/NEFT transaction report.",
       },
       {
-        step: "Dispatch Electronic & Speed Post Advocate Legal Notice",
+        step: "Dispatch Electronic & Speed Post Fact-Verified Legal Notice",
         description:
           "Serve formal notice to borrower's registered email, WhatsApp, and residential address with full legal disclosure of penal interest, CIBIL reporting impact, and litigation costs.",
       },

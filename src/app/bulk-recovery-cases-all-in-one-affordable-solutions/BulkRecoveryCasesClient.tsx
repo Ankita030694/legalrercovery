@@ -10,7 +10,7 @@ import { PaymentModal } from "@/components/PaymentModal";
 const faqs = [
   {
     question: "How does a business initiate bulk recovery of unpaid dues from multiple defaulting clients?",
-    answer: "A business initiates bulk recovery of unpaid dues by aggregating delinquent invoices, verifying delivery acknowledgments, and dispatching advocate-drafted demand notices simultaneously across all defaulting entities. Each formal notice establishes a strict 15-day settlement deadline and warns of statutory compound interest under the MSMED Act or commercial summary suits. This coordinated multi-debtor workflow standardizes legal costs and resolves over 75% of commercial payment defaults prior to court intervention."
+    answer: "A business initiates bulk recovery of unpaid dues by aggregating delinquent invoices, verifying delivery acknowledgments, and dispatching fact-verified demand notices simultaneously across all defaulting entities. Each formal notice establishes a strict 15-day settlement deadline and warns of statutory compound interest under the MSMED Act or commercial summary suits. This coordinated multi-debtor workflow standardizes legal costs and resolves over 75% of commercial payment defaults prior to court intervention."
   },
   {
     question: "Can MSMEs claim compound interest on bulk unpaid invoices under Indian law?",
@@ -22,7 +22,7 @@ const faqs = [
   },
   {
     question: "How do all-in-one bulk recovery solutions reduce commercial legal costs?",
-    answer: "All-in-one bulk recovery solutions lower commercial legal expenses by automating portfolio ingestion, standardizing advocate drafting templates, and consolidating India Post Registered Post dispatches at scale. By replacing fragmented lawyer retainers and ad-hoc filings with a centralized legal operations workflow, enterprises achieve cost savings between 70% and 85% per defaulting counterparty. This economic efficiency allows businesses to pursue smaller unpaid invoices that were previously uneconomical to litigate individually."
+    answer: "All-in-one bulk recovery solutions lower commercial legal expenses by automating portfolio ingestion, standardizing notice drafting templates, and consolidating India Post Registered Post dispatches at scale. By replacing fragmented lawyer retainers and ad-hoc filings with a centralized legal operations workflow, enterprises achieve cost savings between 70% and 85% per defaulting counterparty. This economic efficiency allows businesses to pursue smaller unpaid invoices that were previously uneconomical to litigate individually."
   },
   {
     question: "Are digital legal notices sent via WhatsApp and Email legally valid in Indian courts?",
@@ -137,7 +137,7 @@ const jsonLd = {
         {
           "@type": "ListItem",
           "position": 3,
-          "name": "Draft customized advocate statutory demand notices with compound interest"
+          "name": "Draft customized fact-verified statutory demand notices with compound interest"
         },
         {
           "@type": "ListItem",
@@ -259,7 +259,7 @@ export default function BulkRecoveryCasesClient() {
               Bulk Recovery Cases: <span className="text-[#DC2626]">All-in-One Affordable Solutions</span>
             </h1>
             <p className="text-sm md:text-xl mb-8 md:mb-12 max-w-3xl mx-auto text-slate-300 leading-relaxed font-medium">
-              Recover unpaid commercial dues, unfreeze working capital, and resolve multiple delinquent corporate accounts simultaneously through advocate-drafted bulk legal notices, statutory MSME enforcement, and summary recovery.
+              Recover unpaid commercial dues, unfreeze working capital, and resolve multiple delinquent corporate accounts simultaneously through fact-verified bulk legal notices, statutory MSME enforcement, and summary recovery.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <button
@@ -386,7 +386,7 @@ export default function BulkRecoveryCasesClient() {
                 <div id="quick-answer" className="bg-slate-50 border-l-4 border-[#DC2626] p-6 rounded-r-2xl">
                   <h2 className="text-sm font-extrabold text-slate-900 mb-2 uppercase tracking-wide">Quick Answer</h2>
                   <p className="text-sm md:text-base text-slate-700 font-medium leading-relaxed">
-                    Recovery of unpaid dues for business across multiple defaulting debtors is achieved through a structured bulk legal notice framework supported by statutory enforcement under Indian commercial statutes. Creditors issue advocate-drafted statutory demand notices simultaneously to defaulting buyers, establishing a strict 15-day compliance window and invoking compound interest under Section 16 of the MSMED Act, 2006, summary suits under Order 37 of the Code of Civil Procedure, 1908, or criminal prosecution under Section 138 of the Negotiable Instruments Act, 1881. Consolidating multi-debtor commercial claims into an all-in-one recovery system lowers legal costs by up to 85% and prompts rapid out-of-court settlements without protracted trial litigation.
+                    Recovery of unpaid dues for business across multiple defaulting debtors is achieved through a structured bulk legal notice framework supported by statutory enforcement under Indian commercial statutes. Creditors issue fact-verified statutory demand notices simultaneously to defaulting buyers, establishing a strict 15-day compliance window and invoking compound interest under Section 16 of the MSMED Act, 2006, summary suits under Order 37 of the Code of Civil Procedure, 1908, or criminal prosecution under Section 138 of the Negotiable Instruments Act, 1881. Consolidating multi-debtor commercial claims into an all-in-one recovery system lowers legal costs by up to 85% and prompts rapid out-of-court settlements without protracted trial litigation.
                   </p>
                 </div>
 
@@ -403,7 +403,7 @@ export default function BulkRecoveryCasesClient() {
                       When debtors defer payments beyond agreed credit windows, vendors struggle to meet payroll schedules, default on statutory GST liabilities, and incur bank overdraft interest. Over 68% of MSMEs report that delayed buyer payments restrict operational growth and daily production.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      Traditional collection calls yield diminishing returns after 60 days, while hiring bespoke litigation counsel for each invoice is cost-prohibitive. Modern commercial recovery requires an all-in-one programmatic methodology executing advocate-drafted statutory demands in bulk while cutting per-case overhead costs.
+                      Traditional collection calls yield diminishing returns after 60 days, while hiring bespoke litigation counsel for each invoice is cost-prohibitive. Modern commercial recovery requires an all-in-one programmatic methodology executing fact-verified statutory demands in bulk while cutting per-case overhead costs.
                     </p>
                   </div>
                 </section>
@@ -502,13 +502,13 @@ export default function BulkRecoveryCasesClient() {
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-4">
                     <p className="text-sm md:text-base leading-relaxed">
-                      An all-in-one bulk recovery platform combines legal expertise, document parsing, advocate oversight, and postal logistics into a unified digital infrastructure, lowering costs by 70% to 85%:
+                      An all-in-one bulk recovery platform combines legal expertise, fact verification by our team, and postal logistics into a unified digital infrastructure, lowering costs by 70% to 85%:
                     </p>
                     <div className="bg-slate-50 p-4 rounded-xl border border-slate-200 space-y-2">
                       <ul className="list-disc list-inside text-xs md:text-sm text-slate-650 space-y-1.5">
                         <li><strong>Batch Ingestion:</strong> Creditors upload ledgers, invoices, purchase orders, and transport receipts in unified digital batches.</li>
                         <li><strong>Algorithmic Triage:</strong> The system segments debtors into aging buckets (30, 60, 90, 180+ days) and verifies corporate status on MCA and GST portals.</li>
-                        <li><strong>Advocate Dynamic Drafting:</strong> Panel advocates customize legal notices with invoice breakdowns, delivery dates, and compound interest calculations.</li>
+                        <li><strong>Dynamic Drafting:</strong> Notices are prepared from fact-verified data with invoice breakdowns, delivery dates, and compound interest calculations.</li>
                         <li><strong>Dual-Track Dispatch:</strong> Notices are printed on advocate letterheads, posted via RPAD, and transmitted electronically via email and WhatsApp.</li>
                         <li><strong>Tracking &amp; Proof of Service:</strong> Real-time postal logs generate delivery certificates admissible under Section 65B of the Evidence Act / Section 63 BSA.</li>
                         <li><strong>Settlement Conciliation:</strong> Pre-litigation desks negotiate binding installment plans and compromise deeds without court fees.</li>
@@ -660,8 +660,8 @@ export default function BulkRecoveryCasesClient() {
                       <div className="flex items-start space-x-3">
                         <div className="bg-[#DC2626] text-white rounded-full w-6 h-6 flex items-center justify-center shrink-0 font-black text-xs">3</div>
                         <div>
-                          <h4 className="font-extrabold text-xs md:text-sm text-slate-900 mb-0.5">Advocate Notice Drafting &amp; Interest Computation</h4>
-                          <p className="text-xs text-slate-650 leading-relaxed">Advocates draft tailored notices detailing transaction histories, invoices, and statutory compound interest under the MSMED Act.</p>
+                          <h4 className="font-extrabold text-xs md:text-sm text-slate-900 mb-0.5">Notice Preparation &amp; Interest Computation</h4>
+                          <p className="text-xs text-slate-650 leading-relaxed">Our team prepares tailored notices from verified facts detailing transaction histories, invoices, and statutory compound interest under the MSMED Act.</p>
                         </div>
                       </div>
                       <div className="flex items-start space-x-3">
@@ -707,7 +707,7 @@ export default function BulkRecoveryCasesClient() {
                     />
                   </div>
                   <p className="text-xs text-slate-500 mt-2 italic text-center">
-                    Figure 1: End-to-end commercial bulk debt recovery lifecycle from portfolio ingestion and advocate drafting to omnichannel dispatch, pre-litigation settlement, and statutory judicial escalation.
+                    Figure 1: End-to-end commercial bulk debt recovery lifecycle from portfolio ingestion and notice drafting to omnichannel dispatch, pre-litigation settlement, and statutory judicial escalation.
                   </p>
                 </section>
 
@@ -718,7 +718,7 @@ export default function BulkRecoveryCasesClient() {
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-3">
                     <p className="text-sm md:text-base leading-relaxed">
-                      An enforceable statutory commercial notice drafted by an advocate must incorporate eight foundational components:
+                      An enforceable statutory commercial notice prepared on verified facts must incorporate eight foundational components:
                     </p>
                     <ul className="list-disc list-inside text-xs md:text-sm text-slate-650 space-y-1.5">
                       <li><strong>Bar Council Letterhead:</strong> Issued under an advocate&apos;s professional letterhead, displaying enrollment number and chamber address.</li>
@@ -965,7 +965,7 @@ export default function BulkRecoveryCasesClient() {
                 </span>
                 <h3 className="text-sm font-black mb-2 text-white">Start Bulk Notice Intake</h3>
                 <p className="text-gray-400 mb-5 text-[11px] leading-relaxed">
-                  Upload your delinquent debtor ledger. Our panel advocates handle batch legal notice drafting, email and WhatsApp dispatch (India Post Speed Post optional), and tracking.
+                  Upload your delinquent debtor ledger. Our team handles batch legal notice drafting, email and WhatsApp dispatch (India Post Speed Post optional), and tracking.
                 </p>
                 <button
                   onClick={() => setIsPaymentModalOpen(true)}
@@ -1058,7 +1058,7 @@ export default function BulkRecoveryCasesClient() {
                   Send a Legal Notice Online
                 </h3>
                 <p className="text-xs text-slate-500 line-clamp-2">
-                  Explore our full suite of advocate-drafted legal notice services, optional speed post dispatch, and digital tracking for businesses.
+                  Explore our full suite of fact-verified legal notice services, optional speed post dispatch, and digital tracking for businesses.
                 </p>
               </Link>
               <Link
@@ -1082,7 +1082,7 @@ export default function BulkRecoveryCasesClient() {
                 <img src="/lrlogo.svg" alt="LegalRecovery" width={3236} height={601} className="h-8 sm:h-10 w-auto object-contain" />
               </div>
               <p className="text-sm md:text-base text-slate-650 leading-relaxed mb-10 max-w-3xl font-medium">
-                Legal Recovery is India&apos;s trusted commercial recovery and legal tech platform. Founded in 2022 and headquartered in New Delhi, Legal Recovery has counselled 15,000+ businesses and individuals on debt recovery, commercial dispute resolution, and contractual enforcement. Legal Recovery focuses on fast out-of-court settlements and connects you with top panel advocates.
+                Legal Recovery is India&apos;s trusted commercial recovery and legal tech platform. Founded in 2022 and headquartered in New Delhi, Legal Recovery has counselled 15,000+ businesses and individuals on debt recovery, commercial dispute resolution, and contractual enforcement. Legal Recovery focuses on fast out-of-court settlements and prepares and sends fact-verified notices for you.
               </p>
 
               <div className="border-t border-slate-100 pt-10">

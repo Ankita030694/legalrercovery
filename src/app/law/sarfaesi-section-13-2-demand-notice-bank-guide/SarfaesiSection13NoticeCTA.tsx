@@ -31,7 +31,7 @@ export default function SarfaesiSection13NoticeCTA({
               Test 1 Live Overdue Case Now (&rupee;{basePrice})
             </h3>
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-              Advocate-drafted SARFAESI Section 13(2) Demand Notice with itemized Section 13(3) principal &amp; interest schedule, exact NPA date verification, and Security Interest (Enforcement) Rules 2002 Rule 3 service via Email + WhatsApp + Speed Post RPAD with BSA 2023 s.63 electronic certificate.
+              Fact-verified SARFAESI Section 13(2) Demand Notice with itemized Section 13(3) principal &amp; interest schedule, exact NPA date verification, and Security Interest (Enforcement) Rules 2002 Rule 3 service via Email + WhatsApp + Speed Post RPAD with BSA 2023 s.63 electronic certificate.
             </p>
           </div>
           <div className="flex flex-col sm:flex-row sm:items-center gap-3">

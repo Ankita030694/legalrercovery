@@ -389,10 +389,10 @@ For and on behalf of ${state.hospitalName}
       <div className="bg-slate-900 text-white px-5 sm:px-6 py-4 flex flex-col md:flex-row md:items-center md:justify-between gap-3 border-b border-slate-800">
         <div>
           <span className="text-[10px] sm:text-xs font-bold uppercase tracking-widest text-red-400 block mb-0.5">
-            Advocate-Vetted RCM Interactive Workspace (P1 Archetype)
+            Ready-to-Use RCM Interactive Workspace (P1 Archetype)
           </span>
           <p className="text-base sm:text-lg font-black tracking-tight text-white">
-            2-in-1 Healthcare Desk: Discharge Undertaking + 15-Day Advocate Notice
+            2-in-1 Healthcare Desk: Discharge Undertaking + 15-Day Fact-Verified Notice
           </p>
         </div>
 

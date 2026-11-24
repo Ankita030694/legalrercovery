@@ -367,7 +367,7 @@ export default function CarDeliveryDelayComplaintLetterPage() {
                       Platform Advocate Notice Fee
                     </th>
                     <td className="px-5 py-3 text-red-600 font-bold">
-                      Flat ₹1,499 (Advocate-drafted, dispatched via Speed Post + Email tracking)
+                      Flat ₹1,499 (Fact-verified, dispatched via Speed Post + Email tracking)
                     </td>
                   </tr>
                 </tbody>
@@ -386,7 +386,7 @@ export default function CarDeliveryDelayComplaintLetterPage() {
               {/* Quick Consultation Badge */}
               <div className="mt-6 bg-slate-100 border border-slate-200 rounded-xl p-4 text-xs text-slate-600 hidden lg:block">
                 <span className="font-bold text-slate-900 block mb-1">
-                  Need an Advocate-Drafted Notice?
+                  Need a Fact-Verified Notice?
                 </span>
                 If the dealership ignores your written complaint letter for more than 7 days, escalate immediately to an advocate demand notice.
                 <a
@@ -670,7 +670,7 @@ export default function CarDeliveryDelayComplaintLetterPage() {
                   </div>
 
                   <p className="text-xs text-slate-500 italic">
-                    <strong>Outcome:</strong> Upon receipt of the formal 15-day statutory advocate legal notice citing NCDRC precedents, the Dealership Principal settled within 6 days, releasing ₹51,000 via RTGS alongside ₹15,000 towards documented cab expenses, avoiding adverse consumer court proceedings.
+                    <strong>Outcome:</strong> Upon receipt of the formal 15-day statutory fact-verified legal notice citing NCDRC precedents, the Dealership Principal settled within 6 days, releasing ₹51,000 via RTGS alongside ₹15,000 towards documented cab expenses, avoiding adverse consumer court proceedings.
                   </p>
                 </div>
               </section>
@@ -721,7 +721,7 @@ export default function CarDeliveryDelayComplaintLetterPage() {
                         Level 3: 15-Day Advocate Statutory Legal Demand Notice
                       </h3>
                       <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                        Serve an official advocate notice under Section 2(11) and 2(47) CPA 2019 on advocate letterhead via Registered Speed Post with electronic tracking admissible under Section 63 of Bharatiya Sakshya Adhiniyam, 2023. Over 85% of dealerships settle at this stage to avoid public litigation and OEM dealer audit penalties.
+                        Serve an official fact-verified notice under Section 2(11) and 2(47) CPA 2019 on advocate letterhead via Registered Speed Post with electronic tracking admissible under Section 63 of Bharatiya Sakshya Adhiniyam, 2023. Over 85% of dealerships settle at this stage to avoid public litigation and OEM dealer audit penalties.
                       </p>
                       <Link
                         href="/legal-notice-to-car-dealer-delayed-delivery-defective-vehicle"
@@ -849,7 +849,7 @@ export default function CarDeliveryDelayComplaintLetterPage() {
               {/* Section 10: Advocate Notice Escalation */}
               <section id="heading-advocate-escalation" aria-labelledby="heading-advocate-escalation-title">
                 <CarDeliveryNoticeCTA
-                  buttonText="Send Advocate Notice to Dealership &amp; OEM"
+                  buttonText="Send Fact-Verified Notice to Dealership &amp; OEM"
                   variant="primary"
                 />
               </section>

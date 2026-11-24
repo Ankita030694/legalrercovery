@@ -65,7 +65,7 @@ const SCENARIOS: ScenarioTab[] = [
       {
         step: "Serve Bailment Return & BNS s.316 Warning Notice",
         description:
-          "Issue an advocate notice demanding physical return within 7 days or immediate buyout settlement, putting the lessee's supply-chain head on notice for dishonest retention under BNS s.316.",
+          "Issue a fact-verified notice demanding physical return within 7 days or immediate buyout settlement, putting the lessee's supply-chain head on notice for dishonest retention under BNS s.316.",
       },
     ],
     statutoryRule: "Contract Act s.160 & s.161 | BNS 2023 s.316 | Commercial Courts s.12A",

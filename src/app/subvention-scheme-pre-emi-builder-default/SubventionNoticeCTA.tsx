@@ -31,7 +31,7 @@ export default function SubventionNoticeCTA({
                 Stop Unfair Pre-EMI Demands &amp; Recover Your Stuck Booking Money
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6">
-                Have a verified real-estate recovery advocate draft and serve a formal statutory notice to the defaulting builder (demanding Pre-EMI clearance, indemnity, or 100% RERA Section 18 refund with SBI MCLR + 2% interest) and a formal regulatory representation to the lending bank/HFC citing RBI upfront-disbursal violations and Supreme Court protection orders.
+                Serve a formal statutory notice to the defaulting builder (demanding Pre-EMI clearance, indemnity, or 100% RERA Section 18 refund with SBI MCLR + 2% interest) and a formal regulatory representation to the lending bank/HFC citing RBI upfront-disbursal violations and Supreme Court protection orders.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button
@@ -42,7 +42,7 @@ export default function SubventionNoticeCTA({
                   {buttonText} — ₹{basePrice}
                 </button>
                 <div className="text-xs text-slate-300 flex flex-wrap sm:flex-nowrap items-center gap-2 sm:gap-3">
-                  <span>✓ 24h Advocate Drafting</span>
+                  <span>✓ 24h Notice Drafting</span>
                   <span>•</span>
                   <span>✓ Email + WhatsApp</span>
                   <span>•</span>

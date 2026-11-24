@@ -24,7 +24,7 @@ export default function FlipkartNoticeCTA({
         <div className={`mt-5 pt-5 border-t border-slate-700/80 ${className}`}>
           <div className="flex items-baseline justify-between mb-3">
             <span className="text-xs uppercase tracking-wider text-slate-400 font-semibold">
-              Advocate Notice Fee
+              Fact-Verified Notice Fee
             </span>
             <span className="text-2xl font-black text-white">
               ₹{basePrice}
@@ -41,7 +41,7 @@ export default function FlipkartNoticeCTA({
             {buttonText || `Draft Notice to Flipkart — ₹${basePrice}`}
           </button>
           <div className="mt-3 flex items-center justify-center gap-2 text-[10px] text-slate-400">
-            <span>✓ Verified Advocate Draft</span>
+            <span>✓ Fact-Verified Notice</span>
             <span>•</span>
             <span>✓ 15-Day Cure Window</span>
           </div>
@@ -66,7 +66,7 @@ export default function FlipkartNoticeCTA({
             Hold Flipkart and the Merchant Legally Accountable
           </h3>
           <p className="text-slate-300 text-sm sm:text-base leading-relaxed mb-6">
-            Bypass scripted customer care bots. Have an experienced recovery advocate draft and serve a formal demand notice to Flipkart Internet Private Limited’s registered corporate office and the third-party seller, citing fallback liability under Rule 5(3) of the E-Commerce Rules, 2020.
+            Bypass scripted customer care bots. Serve a formal demand notice to Flipkart Internet Private Limited’s registered corporate office and the third-party seller, citing fallback liability under Rule 5(3) of the E-Commerce Rules, 2020.
           </p>
           <div className="flex flex-col sm:flex-row sm:items-center gap-4">
             <button

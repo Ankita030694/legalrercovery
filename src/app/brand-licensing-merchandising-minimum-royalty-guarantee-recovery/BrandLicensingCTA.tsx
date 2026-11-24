@@ -27,7 +27,7 @@ export default function BrandLicensingCTA({ className = "" }: BrandLicensingCTAP
                 Test 1 Live MGR or Sell-Off Violation Now
               </h3>
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-                Advocate-drafted Minimum Guaranteed Royalty (MGR) demand + Trade Marks Act s.29 post-expiry cease-and-desist notice via Email, WhatsApp &amp; Speed Post RPAD.
+                Fact-verified Minimum Guaranteed Royalty (MGR) demand + Trade Marks Act s.29 post-expiry cease-and-desist notice via Email, WhatsApp &amp; Speed Post RPAD.
               </p>
             </div>
 
@@ -48,7 +48,7 @@ export default function BrandLicensingCTA({ className = "" }: BrandLicensingCTAP
                 </Link>
               </div>
               <p className="text-[11px] text-slate-400">
-                &check; Advocate Drafted &bull; &check; Email + WhatsApp + Speed Post RPAD &bull; &check; s.29 &amp; MGR Ready
+                &check; Fact-Verified &bull; &check; Email + WhatsApp + Speed Post RPAD &bull; &check; s.29 &amp; MGR Ready
               </p>
             </div>
           </div>

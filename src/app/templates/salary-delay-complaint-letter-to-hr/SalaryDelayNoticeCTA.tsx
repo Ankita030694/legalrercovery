@@ -11,7 +11,7 @@ interface SalaryDelayNoticeCTAProps {
 }
 
 export default function SalaryDelayNoticeCTA({
-  buttonText = "Send Advocate Legal Notice for Delayed Salary",
+  buttonText = "Send Fact-Verified Legal Notice for Delayed Salary",
   className = "",
   variant = "primary",
 }: SalaryDelayNoticeCTAProps) {
@@ -28,10 +28,10 @@ export default function SalaryDelayNoticeCTA({
                 Statutory Wage Demand • Code on Wages 2019 Section 17(1) Enforceable
               </span>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-bold tracking-tight text-white mb-3">
-                Still Awaiting Delayed Salary? Issue a Formal Advocate Legal Notice
+                Still Awaiting Delayed Salary? Issue a Formal Fact-Verified Legal Notice
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6">
-                When HR emails and reminders yield empty promises, escalate to a verified advocate demand notice served to your employer, Managing Director, and Board of Directors. Served by email and WhatsApp under Section 63 of Bharatiya Sakshya Adhiniyam, 2023, demanding 18% compound interest and immediate bank credit. Speed Post is optional at ₹450 per party.
+                When HR emails and reminders yield empty promises, escalate to a fact-verified demand notice served to your employer, Managing Director, and Board of Directors. Served by email and WhatsApp under Section 63 of Bharatiya Sakshya Adhiniyam, 2023, demanding 18% compound interest and immediate bank credit. Speed Post is optional at ₹450 per party.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button
@@ -42,7 +42,7 @@ export default function SalaryDelayNoticeCTA({
                   {buttonText} — ₹{basePrice}
                 </button>
                 <div className="text-xs text-slate-300 flex flex-wrap sm:flex-nowrap items-center gap-2 sm:gap-3">
-                  <span>✓ 24h Advocate Drafting</span>
+                  <span>✓ 24h Notice Drafting</span>
                   <span>•</span>
                   <span>✓ Email + WhatsApp</span>
                   <span>•</span>

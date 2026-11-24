@@ -18,7 +18,7 @@
       "primaryStatute": "Payment and Settlement Systems Act, 2007 — Section 25(1) & 28 (30-day notice window from return memo)",
       "recommendedWave": "Wave 1 (Email + WhatsApp BSA s.63) -> Wave 2 (Statutory s.25 Demand within 30 days)",
       "statutoryCureWindow": "15 Days from notice receipt under Section 25(1)(c) PSS Act",
-      "unitCostPerAccount": "₹999 flat advocate notice (Email + WhatsApp); +₹450 optional Speed Post RPAD",
+      "unitCostPerAccount": "₹999 flat fact-verified notice (Email + WhatsApp); +₹450 optional Speed Post RPAD",
       "escalationPath": "JMFC / Metropolitan Magistrate complaint within 30 days of 15-day cure expiry"
     },
     {
@@ -28,7 +28,7 @@
       "primaryStatute": "General Clauses Act, 1897 — s.27 (RPAD presumption) + RBI CIC Pre-Reporting Alert Norms",
       "recommendedWave": "Wave 2–3 (Tri-Channel: Verified Email + WhatsApp + Speed Post RPAD with Tracking)",
       "statutoryCureWindow": "15 Days (s.25/s.138) + 21-Day CIC/CIBIL Grievance Window",
-      "unitCostPerAccount": "₹1,449 full tri-channel advocate dispatch (₹999 + ₹450 Speed Post)",
+      "unitCostPerAccount": "₹1,449 full tri-channel dispatch (₹999 + ₹450 Speed Post)",
       "escalationPath": "Section 21 Arbitration Invocation / Neutral ODR Reference (Post-CORE compliant)"
     },
     {
@@ -58,7 +58,7 @@
       "legalBasis": "Section 63 Bharatiya Sakshya Adhiniyam (BSA), 2023 + IT Act s.4",
       "deliverySpeed": "Instant (< 60 seconds)",
       "evidentiaryRole": "Establishes timestamped electronic service on borrower's KYC-registered email ID",
-      "costStructure": "Included in ₹999 base advocate notice",
+      "costStructure": "Included in ₹999 base fact-verified notice",
       "operationalStrength": "Reaches corporate/SME borrowers, CFOs, and salaried professionals during work hours with zero physical transit lag."
     },
     {
@@ -66,7 +66,7 @@
       "legalBasis": "Section 63 BSA, 2023 + Supreme Court / High Court electronic service precedents (e.g., Rossi / Tata Sons service principles)",
       "deliverySpeed": "Instant (< 60 seconds)",
       "evidentiaryRole": "Captures delivery & read-receipt metadata against KYC-linked mobile number",
-      "costStructure": "Included in ₹999 base advocate notice",
+      "costStructure": "Included in ₹999 base fact-verified notice",
       "operationalStrength": "Eliminates 'unopened email' friction in retail, BNPL, and tier-2/3 MSME portfolios where mobile is primary."
     },
     {
@@ -90,7 +90,7 @@
     "sampleFrame": "Anonymized institutional & creditor-side pre-litigation recovery workflows initiated on LegalRecovery.in following the May 25, 2026 platform launch across Indian NBFCs, digital lending fintechs, HFCs, and SME lenders.",
     "inclusionCriteria": [
       "Accounts with verifiable KYC contact metadata (email, mobile, and/or physical address) and valid loan/credit facility agreements",
-      "Notices drafted and issued by enrolled advocates with statutory cure windows (15-day PSS s.25 / NI s.138 or contractual recall)",
+      "Notices prepared on verified facts with statutory cure windows (15-day PSS s.25 / NI s.138 or contractual recall)",
       "Clear DPD classification at dispatch (SMA-0, SMA-1, SMA-2, or NPA 90+)"
     ],
     "exclusionCriteria": [
@@ -100,7 +100,7 @@
     ],
     "definitions": {
       "cureRate": "Percentage of noticed accounts achieving full EMI regularization, restructuring, or documented settlement within the statutory 15-day, 30-day, or 60-day observation window.",
-      "costPerRupeeRecovered": "Total advocate drafting, tri-channel dispatch, and administrative fee divided by gross principal + penal interest realized pre-litigation.",
+      "costPerRupeeRecovered": "Total notice drafting, tri-channel dispatch, and administrative fee divided by gross principal + penal interest realized pre-litigation.",
       "triChannelWave": "Coordinated sequence combining instant BSA s.63 electronic service (Email + WhatsApp) with Section 27 General Clauses Act Speed Post RPAD."
     },
     "dataIntegrity": "Live post-May 2026 cohort telemetry is currently in active ingestion. This benchmark report publishes verified statutory timelines, flat-rate unit economics (₹999 digital / ₹1,449 tri-channel), and the open telemetry schema without fabricating unverified post-launch percentages."

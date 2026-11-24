@@ -104,7 +104,7 @@ const SCENARIOS: ScenarioTab[] = [
     cause:
       "Mid-to-large B2B EdTech companies often carry ₹3–₹25 Crore in fragmented ₹1.5–₹8 Lakh receivables spread across 200 to 500+ Tier-2/3 schools. Sending bespoke court notices one by one costs ₹15,000+ per school in legal overhead, while security cheques or NACH mandates bounce with 'Funds Insufficient' or 'Signature Differs'.",
     legalBasis:
-      "High-volume school receivables require a structured two-tier escalation: (1) Automated, advocate-vetted CSV batch demand notices curing the Society/Trust entity name across all 200+ accounts simultaneously; and (2) Strict 30-day statutory tracking on dishonoured PDCs under Section 138 of the Negotiable Instruments Act, 1881 and NACH bounces under Section 25 of the Payment and Settlement Systems Act, 2007—naming both the Trust/Society and the authorized signatory trustees.",
+      "High-volume school receivables require a structured two-tier escalation: (1) Automated, fact-verified CSV batch demand notices curing the Society/Trust entity name across all 200+ accounts simultaneously; and (2) Strict 30-day statutory tracking on dishonoured PDCs under Section 138 of the Negotiable Instruments Act, 1881 and NACH bounces under Section 25 of the Payment and Settlement Systems Act, 2007—naming both the Trust/Society and the authorized signatory trustees.",
     steps: [
       {
         step: "Segment Portfolio by DPD Bucket & Cheque/NACH Availability",
@@ -112,7 +112,7 @@ const SCENARIOS: ScenarioTab[] = [
           "Tag every school ledger by Society/Trust name, GSTIN, principal overdue, Udyam eligibility, and whether a live PDC/NACH mandate is available for criminal-quasi-criminal Section 138/25 leverage.",
       },
       {
-        step: "Dispatch Batch Advocate Notices via Email + WhatsApp + Speed Post RPAD",
+        step: "Dispatch Batch Fact-Verified Notices via Email + WhatsApp + Speed Post RPAD",
         description:
           "Upload the 200+ school CSV to LegalRecovery's Representee portal so every notice carries exact Society/Trust party array, invoice table, and Section 63 BSA-compliant digital delivery logs.",
       },

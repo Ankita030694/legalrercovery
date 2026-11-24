@@ -177,7 +177,7 @@ const FAQS = [
   {
     question: "What should I do if the platform denies my 7-day money-back guarantee return request?",
     answer:
-      "When a platform rejects a return request under fine-print exclusions (such as exceeding kilometer limits or alleging customer damage), immediately lock down your paper trail. Obtain an independent diagnostic inspection report from an authorized OEM brand service center, download your initial ticket submission timestamps, and send an urgent formal escalation to the platform's Grievance Officer and Nodal Desk. If they fail to accept return within 7 days, dispatch a statutory advocate legal notice demanding immediate vehicle repurchase and refund.",
+      "When a platform rejects a return request under fine-print exclusions (such as exceeding kilometer limits or alleging customer damage), immediately lock down your paper trail. Obtain an independent diagnostic inspection report from an authorized OEM brand service center, download your initial ticket submission timestamps, and send an urgent formal escalation to the platform's Grievance Officer and Nodal Desk. If they fail to accept return within 7 days, dispatch a statutory fact-verified legal notice demanding immediate vehicle repurchase and refund.",
   },
   {
     question: "How do I prove that a used car's odometer was rolled back or tampered with?",
@@ -187,7 +187,7 @@ const FAQS = [
   {
     question: "What legal actions can I take against a used car dealer for fraud?",
     answer:
-      "You have three concurrent legal remedies: (1) Serve a 15-day statutory advocate legal notice demanding full refund, cancellation of tied loans, and compensation; (2) File an online consumer complaint on the government's e-Jagriti portal under the Consumer Protection Act, 2019 for unfair trade practices and product liability; and (3) File a formal police complaint or Section 175(3) BNSS application before the Judicial Magistrate for criminal cheating under Section 318 of the Bharatiya Nyaya Sanhita, 2023.",
+      "You have three concurrent legal remedies: (1) Serve a 15-day statutory fact-verified legal notice demanding full refund, cancellation of tied loans, and compensation; (2) File an online consumer complaint on the government's e-Jagriti portal under the Consumer Protection Act, 2019 for unfair trade practices and product liability; and (3) File a formal police complaint or Section 175(3) BNSS application before the Judicial Magistrate for criminal cheating under Section 318 of the Bharatiya Nyaya Sanhita, 2023.",
   },
   {
     question: "The used car platform has not transferred the RC even after 6 months. What are my rights?",
@@ -669,11 +669,11 @@ export default function UsedCarPlatformRefundPage() {
                         03
                       </span>
                       <h3 className="text-base sm:text-lg font-bold text-slate-900">
-                        Serve a Statutory Advocate Legal Demand Notice
+                        Serve a Statutory Fact-Verified Legal Demand Notice
                       </h3>
                     </div>
                     <p className="text-xs sm:text-sm text-slate-700 leading-relaxed pl-10">
-                      If the platform refuses the return or stalls past 7 days, engage a verified advocate to draft a formal statutory legal notice. The notice is addressed to the corporate operating entity (e.g., CARS24 Services Pvt. Ltd. or Valuedrive Technologies Pvt. Ltd. for Spinny) and served via Registered Speed Post with Electronic Tracking and digital email dispatch under Section 63 BSA 2023. The notice establishes a 15-day deadline for full refund and alerts the platform to impending prosecution for unfair trade practices.
+                      If the platform refuses the return or stalls past 7 days, have a fact-verified formal statutory legal notice prepared. The notice is addressed to the corporate operating entity (e.g., CARS24 Services Pvt. Ltd. or Valuedrive Technologies Pvt. Ltd. for Spinny) and served via Registered Speed Post with Electronic Tracking and digital email dispatch under Section 63 BSA 2023. The notice establishes a 15-day deadline for full refund and alerts the platform to impending prosecution for unfair trade practices.
                     </p>
                   </div>
 

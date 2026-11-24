@@ -573,7 +573,7 @@ export default function CompanyRefusingRefundClient() {
                 <div className="absolute top-0 right-0 w-24 h-24 bg-red-600/10 rounded-full blur-xl pointer-events-none" />
                 <h3 className="text-sm font-black mb-3">Send Legal Notice</h3>
                 <p className="text-gray-400 mb-5 text-[11px] leading-relaxed">
-                  We match you with a panel advocate, handle the custom drafting, physically post the notice, and track its delivery in real-time.
+                  We verify your facts, prepare the notice, physically post the notice, and track its delivery in real-time.
                 </p>
                 <button
                   onClick={() => setIsPaymentModalOpen(true)}
@@ -633,7 +633,7 @@ export default function CompanyRefusingRefundClient() {
                 <img src="/lrlogo.svg" alt="LegalRecovery" width={3236} height={601} className="h-8 sm:h-10 w-auto object-contain" />
               </div>
               <p className="text-sm md:text-base text-slate-600 leading-relaxed mb-10 max-w-3xl font-medium">
-                Legal Recovery is India's trusted consumer protection and legal tech platform. Founded in 2022 and headquartered in New Delhi, Legal Recovery has counselled 15,000+ people on consumer disputes, defective products, and e-commerce frauds. Legal Recovery focuses on fast out-of-court settlements and connects you with top panel advocates.
+                Legal Recovery is India's trusted consumer protection and legal tech platform. Founded in 2022 and headquartered in New Delhi, Legal Recovery has counselled 15,000+ people on consumer disputes, defective products, and e-commerce frauds. Legal Recovery focuses on fast out-of-court settlements and sends fact-verified notices on your behalf.
               </p>
 
               <div className="border-t border-slate-100 pt-10">

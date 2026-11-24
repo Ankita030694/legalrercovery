@@ -8,7 +8,7 @@ import ChequeBounceHindiNoticeCTA from "./ChequeBounceHindiNoticeCTA";
 import ChequeBounceHindiTOC from "./ChequeBounceHindiTOC";
 import ChequeBounceHindiTabs from "./ChequeBounceHindiTabs";
 
-// TODO(reviewer): Advocate verification metadata pending src/data/reviewers.ts creation
+// TODO(reviewer): Fact verification metadata pending src/data/reviewers.ts creation
 
 const PAGE_URL = `${SITE_URL}/hi/cheque-bounce-notice-kitne-din-mein`;
 const EN_PAIR_URL = `${SITE_URL}/cheque-bounce-notice-timeline-section-138`;

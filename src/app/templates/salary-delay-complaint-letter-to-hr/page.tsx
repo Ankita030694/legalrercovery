@@ -141,7 +141,7 @@ const FAQS = [
   {
     question: "What should I do if HR ignores my salary delay complaint email?",
     answer:
-      "If HR fails to reply or credit the salary within the 7-day deadline specified in your letter: (1) Re-forward the communication to the Managing Director, CFO, and Board of Directors, (2) File an online grievance on the Ministry of Labour's Samadhan Portal, and (3) Instruct a verified advocate to issue an official 15-day statutory legal notice via Registered Speed Post and legal email.",
+      "If HR fails to reply or credit the salary within the 7-day deadline specified in your letter: (1) Re-forward the communication to the Managing Director, CFO, and Board of Directors, (2) File an online grievance on the Ministry of Labour's Samadhan Portal, and (3) Send an official fact-verified 15-day statutory legal notice via Registered Speed Post and legal email.",
   },
   {
     question: "Can HR fire me or take retaliatory action for sending a salary complaint email?",
@@ -151,7 +151,7 @@ const FAQS = [
   {
     question: "Company salary nahi de rahi ya delay kar rahi hai toh complaint kaise kare?",
     answer:
-      "Agar company bina kisi karan aapki salary 7 tareekh ke baad bhi roke hue hai, toh sabse pehle hamare diye gaye format se HR aur Reporting Manager ko written email bhejein. Agar 7 din mein payment na aaye, toh Ministry of Labour ke Samadhan portal par online complaint darj karein ya LegalRecovery.in ke through company ke Directors aur Registered Office par 15-day advocate legal notice bhejein.",
+      "Agar company bina kisi karan aapki salary 7 tareekh ke baad bhi roke hue hai, toh sabse pehle hamare diye gaye format se HR aur Reporting Manager ko written email bhejein. Agar 7 din mein payment na aaye, toh Ministry of Labour ke Samadhan portal par online complaint darj karein ya LegalRecovery.in ke through company ke Directors aur Registered Office par 15-day fact-verified legal notice bhejein.",
   },
 ];
 
@@ -293,7 +293,7 @@ export default function SalaryDelayComplaintLetterPage() {
                 Statutory Summary (7th-of-Month Wage Payment Mandate)
               </p>
               <p>
-                Under Section 17(1) of the Code on Wages, 2019, employers must disburse monthly wages on or before the 7th of the succeeding month. Withholding salary beyond this deadline violates statutory law and attracts an 18% compound interest claim. If informal inquiries fail, serve our structured 3-tier complaint letters before escalating to a formal 15-day advocate legal notice and the Labour Commissioner.
+                Under Section 17(1) of the Code on Wages, 2019, employers must disburse monthly wages on or before the 7th of the succeeding month. Withholding salary beyond this deadline violates statutory law and attracts an 18% compound interest claim. If informal inquiries fail, serve our structured 3-tier complaint letters before escalating to a formal 15-day fact-verified legal notice and the Labour Commissioner.
               </p>
             </div>
 
@@ -436,7 +436,7 @@ export default function SalaryDelayComplaintLetterPage() {
                         <td className="py-3.5 px-4 font-bold text-slate-900">Statutory Escalation Platform</td>
                         <td className="py-3.5 px-4 text-slate-700">Labour Commissioner / e-Samadhan</td>
                         <td className="py-3.5 px-4 font-semibold text-slate-900">Ministry of Labour &amp; Employment</td>
-                        <td className="py-3.5 px-4 text-slate-700">Serve Advocate Notice beforehand</td>
+                        <td className="py-3.5 px-4 text-slate-700">Serve Fact-Verified Notice beforehand</td>
                       </tr>
                     </tbody>
                   </table>
@@ -914,7 +914,7 @@ export default function SalaryDelayComplaintLetterPage() {
                       What We Can Do
                     </h3>
                     <ul className="text-xs text-emerald-950 space-y-2 list-disc pl-4 leading-relaxed">
-                      <li>Draft an authoritative, advocate-vetted statutory demand notice citing Section 17(1) of the Code on Wages, 2019 and relevant High Court precedents.</li>
+                      <li>Draft an authoritative, fact-verified statutory demand notice citing Section 17(1) of the Code on Wages, 2019 and relevant High Court precedents.</li>
                       <li>Serve the notice via India Post Registered Speed Post with tracking and digital copy under BSA Section 63 to Company Directors.</li>
                       <li>Assist in filing online recovery petitions on the Ministry of Labour&apos;s central Samadhan Portal.</li>
                       <li>Provide calculations for 18% compound interest and damages for credit score impairment.</li>

@@ -184,7 +184,7 @@ const IND_08_SPOKES: IndustrySpoke[] = [
     url: "/templates/commercial-lease-lock-in-breach-section-106-termination-notice",
     statute: "TPA s.106, IT Act s.194-I/205, Contract s.74 & Order XV-A",
     summary:
-      "Advocate-vetted commercial notice format with 18% GST rent ledger, Form 26AS TDS schedule, CAM/DG arrears & fit-out clawback.",
+      "Ready-to-use commercial notice format with 18% GST rent ledger, Form 26AS TDS schedule, CAM/DG arrears & fit-out clawback.",
   },
 ];
 
@@ -209,7 +209,7 @@ const SPOKE_TRACKS = [
   },
   {
     key: "templates",
-    heading: "Track D: Advocate-Drafted Commercial Lease & Lock-In Notice Template",
+    heading: "Track D: Fact-Verified Commercial Lease & Lock-In Notice Template",
     badgeClass: "bg-slate-100 border-slate-200 text-slate-800",
     items: IND_08_SPOKES.filter((s) => s.track === "templates"),
   },
@@ -814,7 +814,7 @@ export default function BuildersCommercialLandlordsCoworkingRecoveryPage() {
                   <rect x="265" y="64" width="195" height="190" rx="12" fill="#1E293B" stroke="#334155" strokeWidth="1.5" />
                   <rect x="265" y="64" width="195" height="32" rx="12" fill="#334155" />
                   <text x="362" y="85" textAnchor="middle" fill="#FFFFFF" fontSize="12" fontWeight="bold">
-                    02. ADVOCATE NOTICE DRAFT
+                    02. NOTICE PREPARATION
                   </text>
                   <text x="279" y="122" fill="#E2E8F0" fontSize="12" fontWeight="bold">• Precision Statutory Hook</text>
                   <text x="279" y="148" fill="#CBD5E1" fontSize="11">RERA s.19(6)-(7) / s.11(5)</text>
@@ -868,7 +868,7 @@ export default function BuildersCommercialLandlordsCoworkingRecoveryPage() {
                     text: "Separate RERA allotments, registered TPA commercial leases, and Easements s.52 co-working licenses while validating Architect Stage Certificates, Form 26AS gaps, and CapEx amortization.",
                   },
                   {
-                    step: "02. Advocate Notice Drafting",
+                    step: "02. Notice Preparation",
                     text: "Emit precise statutory demands citing RERA s.19(6)–(7)/11(5), TPA s.106 termination + mesne profits, s.276B TDS warnings, or RFID/CAM cutoff clauses.",
                   },
                   {
@@ -933,7 +933,7 @@ export default function BuildersCommercialLandlordsCoworkingRecoveryPage() {
                   Property owners and developers frequently operate across multiple SPVs, RERA
                   registration numbers, and Facility Management entities. Issuing an unsigned ERP
                   email reminder or sending an ambiguous tenant termination letter destroys
-                  litigation leverage. LegalRecovery.in pairs enrolled advocate drafting with a
+                  litigation leverage. LegalRecovery.in pairs notice drafting with a
                   centralized{" "}
                   <Link
                     href="/user/representees"

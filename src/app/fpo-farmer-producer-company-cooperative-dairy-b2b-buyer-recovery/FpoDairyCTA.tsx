@@ -24,10 +24,10 @@ export default function FpoDairyCTA({ className = "" }: FpoDairyCTAProps) {
                 Track 1 · Single Offtaker or Mandi Trader Default
               </span>
               <h3 className="text-lg sm:text-xl font-bold text-white mb-2">
-                Test 1 Live Overdue Case Now (&#8377;{basePrice} &middot; Advocate Drafted &middot; Email + WhatsApp + Speed Post RPAD)
+                Test 1 Live Overdue Case Now (&#8377;{basePrice} &middot; Fact-Verified &middot; Email + WhatsApp + Speed Post RPAD)
               </h3>
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-                Upload your Supply Agreement, GST invoices, Kanta Parchi / Tak-Patti, Fat/SNF slips, and bounced cheque memo. Our advocates draft and dispatch a statutory demand notice (with APMC Secretary CC where applicable) in 24 hours.
+                Enter the details of your Supply Agreement, GST invoices, Kanta Parchi / Tak-Patti, Fat/SNF slips, and bounced cheque memo. Our team verifies the facts, then prepares and dispatches a statutory demand notice (with APMC Secretary CC where applicable) in 24 hours.
               </p>
             </div>
 

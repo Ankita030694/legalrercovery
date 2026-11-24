@@ -173,7 +173,7 @@ const IND_11_SPOKES: IndustrySpoke[] = [
     url: "/templates/recruitment-backdoor-hiring-and-staffing-invoice-legal-notice",
     statute: "Contract Act s.8/70/73, MSMED s.16 & Order 37 CPC",
     summary:
-      "Downloadable advocate-vetted commercial notice formats complete with CV timestamp schedules, Section 8 conduct-acceptance pleadings, statutory payroll outlay tables, and 18% interest clauses.",
+      "Downloadable ready-to-use commercial notice formats complete with CV timestamp schedules, Section 8 conduct-acceptance pleadings, statutory payroll outlay tables, and 18% interest clauses.",
   },
 ];
 
@@ -303,7 +303,7 @@ const FAQS = [
     question:
       "Can our staffing firm test the legal recovery portal on 1 client before uploading our complete unpaid roster?",
     answer:
-      "Yes. You can test LegalRecovery.in on a single overdue placement fee or monthly payroll invoice for ₹999. Our team drafts an advocate statutory notice served across Email, Business WhatsApp, and physical Speed Post RPAD with electronic tracking manifests. For staffing firms and FMS agencies managing 10 to 10,000+ overdue corporate accounts, our Enterprise CSV Desk enables bulk onboarding with multi-branch Representee entity isolation.",
+      "Yes. You can test LegalRecovery.in on a single overdue placement fee or monthly payroll invoice for ₹999. Our team drafts a fact-verified statutory notice served across Email, Business WhatsApp, and physical Speed Post RPAD with electronic tracking manifests. For staffing firms and FMS agencies managing 10 to 10,000+ overdue corporate accounts, our Enterprise CSV Desk enables bulk onboarding with multi-branch Representee entity isolation.",
   },
   {
     question:
@@ -1276,7 +1276,7 @@ export default function StaffingRecruitmentManpowerRecoveryHubPage() {
 
                 <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                   Explore our dedicated operational guides, statutory precedent analyses, and
-                  advocate-vetted notice workspaces covering every specialized dispute across the
+                  ready-to-use notice workspaces covering every specialized dispute across the
                   Indian staffing, HR recruitment, and facility management landscape:
                 </p>
 

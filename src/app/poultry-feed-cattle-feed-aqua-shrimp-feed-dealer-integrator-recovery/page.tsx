@@ -128,7 +128,7 @@ const FAQS = [
   },
   {
     q: "Can a regional feed manufacturer issue legal notices to 100–500 defaulting dealers or contract farmers in one post-harvest batch?",
-    a: "Yes. Using LegalRecovery.in's Bulk Institutional Desk, credit heads can upload a single CSV of overdue dealer ledgers across Namakkal, Telangana, Haryana, Pune, Andhra Pradesh, and Odisha to dispatch advocate-vetted Section 138, BNS s.316, and MSMED notices simultaneously via Email, WhatsApp, and Speed Post RPAD.",
+    a: "Yes. Using LegalRecovery.in's Bulk Institutional Desk, credit heads can upload a single CSV of overdue dealer ledgers across Namakkal, Telangana, Haryana, Pune, Andhra Pradesh, and Odisha to dispatch fact-verified Section 138, BNS s.316, and MSMED notices simultaneously via Email, WhatsApp, and Speed Post RPAD.",
   },
 ];
 

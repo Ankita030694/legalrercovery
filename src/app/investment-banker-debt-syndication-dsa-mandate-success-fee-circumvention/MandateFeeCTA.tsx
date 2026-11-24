@@ -24,7 +24,7 @@ export default function MandateFeeCTA({ className = "" }: MandateFeeCTAProps) {
                 Track 1 &middot; Single Bypassed Mandate Claim
               </span>
               <h3 className="text-lg sm:text-xl font-bold text-white mb-2">
-                Test 1 Live Overdue Case Now (&#8377;{basePrice} &middot; Advocate Drafted &middot; Email + WhatsApp + Speed Post RPAD)
+                Test 1 Live Overdue Case Now (&#8377;{basePrice} &middot; Fact-Verified &middot; Email + WhatsApp + Speed Post RPAD)
               </h3>
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
                 Upload your signed Engagement Letter / Mandate, Exclusivity &amp; Tail-Period Clause, Protected Lender/Investor List, CMA/IM transmittal emails, MCA Form CHG-1 / PAS-3 extract, or bounced fee cheque. Commercial litigation advocates draft and serve a formal Contract Act s.73/205, Section 9 / Order XXXVIII pre-disbursement demand notice.

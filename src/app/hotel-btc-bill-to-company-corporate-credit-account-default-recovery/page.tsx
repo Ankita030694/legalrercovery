@@ -128,7 +128,7 @@ const COURT_PRECEDENTS = [
     holding:
       "Section 12A of the Commercial Courts Act, 2015 is mandatory for commercial disputes of Specified Value >= ₹3 Lakh that do not contemplate urgent interim relief (such as Order XXXVIII Rule 5 attachment). Any settlement reached before the DLSA/SLSA authority carries the executable force of an arbitral award under Section 30(4) of the Arbitration Act.",
     takeaway:
-      "For aged City-Ledger accounts between ₹3 Lakh and ₹1 Crore, initiating Form-1 Pre-Institution Mediation after a 15-day Advocate Demand Notice forces the corporate CFO to the settlement table for a ₹1,000 statutory fee.",
+      "For aged City-Ledger accounts between ₹3 Lakh and ₹1 Crore, initiating Form-1 Pre-Institution Mediation after a 15-day Fact-Verified Demand Notice forces the corporate CFO to the settlement table for a ₹1,000 statutory fee.",
   },
 ];
 
@@ -242,7 +242,7 @@ const HOWTO_SCHEMA = {
       "@type": "HowToStep",
       position: 3,
       name: "Stage 3: Tri-Channel Advocate Legal Demand Notice (Day 75–90)",
-      text: "Serve a 15-day Advocate-signed statutory demand notice on the Company CFO, Managing Director, and Travel Desk Head via Zoho Verified Email, WATI WhatsApp, and India Post Speed Post RPAD.",
+      text: "Serve a 15-day Fact-verified statutory demand notice on the Company CFO, Managing Director, and Travel Desk Head via Zoho Verified Email, WATI WhatsApp, and India Post Speed Post RPAD.",
     },
     {
       "@type": "HowToStep",
@@ -459,7 +459,7 @@ export default function HotelBtcCorporateCreditDefaultRecoveryPage() {
                 </div>
 
                 <p>
-                  When hotel credit teams rely solely on sales-relationship follow-ups, corporate CFOs prioritize statutory vendors, banks, and aggressive litigants while pushing hotel BTC invoices beyond 150 to 240 days—eventually forcing painful bad-debt write-offs that wipe out the property’s Gross Operating Profit (GOP). Converting aged City-Ledger vouchers into formal, advocate-signed statutory demands under{" "}
+                  When hotel credit teams rely solely on sales-relationship follow-ups, corporate CFOs prioritize statutory vendors, banks, and aggressive litigants while pushing hotel BTC invoices beyond 150 to 240 days—eventually forcing painful bad-debt write-offs that wipe out the property’s Gross Operating Profit (GOP). Converting aged City-Ledger vouchers into formal, fact-verified statutory demands under{" "}
                   <Link
                     href="/recovery/business-dues"
                     className="text-[#DC2626] font-semibold underline hover:text-[#B91C1C]"
@@ -928,7 +928,7 @@ export default function HotelBtcCorporateCreditDefaultRecoveryPage() {
                   </div>
                   <div className="bg-slate-800/70 p-3 rounded-lg">
                     <span className="text-emerald-400 font-bold block">Pre-Suit ROI:</span>
-                    Initial Advocate Notice dispatches for <strong>₹999</strong>; Section 12A Commercial Mediation filing fee is just <strong>₹1,000</strong>.
+                    Initial Fact-Verified Notice dispatches for <strong>₹999</strong>; Section 12A Commercial Mediation filing fee is just <strong>₹1,000</strong>.
                   </div>
                 </div>
               </div>
@@ -1210,7 +1210,7 @@ export default function HotelBtcCorporateCreditDefaultRecoveryPage() {
                       Hospitality & Travel Credit Legal Notice Pack (Hotel BTC + IATA Flown-PNR Format)
                     </h3>
                     <p className="text-xs text-slate-600 mt-1.5 leading-relaxed">
-                      Advocate-vetted notice workspace featuring Guest Folio, BTC Voucher, GDS Ticket-Number schedules, and GSTR-2B estoppel clauses.
+                      Ready-to-use notice workspace featuring Guest Folio, BTC Voucher, GDS Ticket-Number schedules, and GSTR-2B estoppel clauses.
                     </p>
                   </div>
                   <span className="inline-flex items-center gap-1 text-xs font-bold text-[#DC2626] mt-3">

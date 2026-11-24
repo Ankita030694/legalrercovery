@@ -139,7 +139,7 @@ const PROBLEMS: ProblemTab[] = [
           "Preserve emails and portal messages showing you cancelled immediately after the debit and did not consume or access the service for the renewed period.",
       },
       {
-        step: "Draft Pre-Litigation Advocate Notice",
+        step: "Draft Pre-Litigation Fact-Verified Notice",
         description:
           "Send a formal 15-day statutory legal demand notice through an advocate to the merchant's registered corporate office and directors, threatening CCPA prosecution.",
       },

@@ -25,10 +25,10 @@ export default function BackdoorHiringNoticeCTA({
               Track 1 &bull; Single Backdoor Hire Recovery Test
             </span>
             <p className="text-lg sm:text-xl font-extrabold text-white mb-2">
-              Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Advocate Drafted &middot; Email + WhatsApp + Speed Post RPAD)
+              Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Fact-Verified &middot; Email + WhatsApp + Speed Post RPAD)
             </p>
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-              Serve an advocate-vetted, statutory Legal Demand Notice under Indian Contract Act Sections 70, 73 &amp; 74 that demolishes false &ldquo;internal database duplicate&rdquo; excuses and enforces your 12-month candidate introduction ownership clause. Fully backed by ATS server audit logs, candidate email timestamps, and Bharatiya Sakshya Adhiniyam, 2023 Section 63 electronic delivery certificates.
+              Serve a fact-verified, statutory Legal Demand Notice under Indian Contract Act Sections 70, 73 &amp; 74 that demolishes false &ldquo;internal database duplicate&rdquo; excuses and enforces your 12-month candidate introduction ownership clause. Fully backed by ATS server audit logs, candidate email timestamps, and Bharatiya Sakshya Adhiniyam, 2023 Section 63 electronic delivery certificates.
             </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-3">
@@ -58,7 +58,7 @@ export default function BackdoorHiringNoticeCTA({
               Have 10 to 10,000+ Defaulters? Upload CSV / Activate Dedicated Institutional Desk
             </p>
             <p className="text-xs sm:text-sm text-slate-600 leading-relaxed mb-5">
-              Designed for Founders, Managing Partners, and Operations Heads of Recruitment Agencies, Executive Search Boutiques, and Contract Staffing Firms. Ingest disputed placements via bulk CSV export, track cross-client candidate employment status via automated LinkedIn &amp; MCA matching, generate bulk advocate notices, and orchestrate nationwide Commercial Summary Suits and MSME Samadhaan arbitrations.
+              Designed for Founders, Managing Partners, and Operations Heads of Recruitment Agencies, Executive Search Boutiques, and Contract Staffing Firms. Ingest disputed placements via bulk CSV export, track cross-client candidate employment status via automated LinkedIn &amp; MCA matching, generate bulk fact-verified notices, and orchestrate nationwide Commercial Summary Suits and MSME Samadhaan arbitrations.
             </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-3">

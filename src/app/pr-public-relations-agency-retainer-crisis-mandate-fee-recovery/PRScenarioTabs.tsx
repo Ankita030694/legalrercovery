@@ -27,7 +27,7 @@ const PR_SCENARIOS: PRScenario[] = [
     statutoryRemedy:
       "Immediate demand notice under Indian Contract Act §73 & MSMED Act §15 (if registered). Enforce accrued retainer fees plus liquidated damages or notice-period retainer for the unexpired lock-in duration.",
     recommendedAction:
-      "Compile press distribution logs, media wire pickup proofs, and WhatsApp exchanges confirming approval of the press release. Serve an advocate notice holding directors personally accountable if fraud or misrepresentation occurred.",
+      "Compile press distribution logs, media wire pickup proofs, and WhatsApp exchanges confirming approval of the press release. Serve a fact-verified notice holding directors personally accountable if fraud or misrepresentation occurred.",
     evidenceItems: [
       "Counter-signed Master Services Agreement (MSA) with explicit 6-month lock-in / 60-day notice clause",
       "Email/WhatsApp written sign-off on the final funding press release copy and target media list",

@@ -257,7 +257,7 @@ export default function BlogListingClient({ initialBlogs }: { initialBlogs: Blog
                 2. Resolving Consumer Disputes & Stuck Refunds
               </h3>
               <p className="text-[12.5px] text-[#6B7280] leading-relaxed font-semibold">
-                The <strong>Consumer Protection Act, 2019</strong> guarantees protection against unfair trade practices, defective products, and deficient services. Under this law, consumer forums have the authority to order refunds, product replacements, and compensation for mental agony. Platforms like <strong>e-Jagriti (e-Daakhil)</strong> allow consumers to file complaints online directly. Initiating the process with an attorney-drafted legal notice often prompts brands to settle disputes out of court.
+                The <strong>Consumer Protection Act, 2019</strong> guarantees protection against unfair trade practices, defective products, and deficient services. Under this law, consumer forums have the authority to order refunds, product replacements, and compensation for mental agony. Platforms like <strong>e-Jagriti (e-Daakhil)</strong> allow consumers to file complaints online directly. Initiating the process with a fact-verified legal notice often prompts brands to settle disputes out of court.
               </p>
             </div>
 
@@ -282,7 +282,7 @@ export default function BlogListingClient({ initialBlogs }: { initialBlogs: Blog
               </li>
               <li className="bg-[#F8F9FB] rounded-2xl p-4 border border-gray-100">
                 <strong className="text-[13px] text-[#111827] block mb-1">Draft a Formal Notice</strong>
-                <span className="text-[12px] text-[#6B7280] leading-relaxed font-semibold">A legal notice prepared and signed by a qualified advocate holds strong evidentiary value and sets clear terms.</span>
+                <span className="text-[12px] text-[#6B7280] leading-relaxed font-semibold">A legal notice prepared on verified facts holds strong evidentiary value and sets clear terms.</span>
               </li>
               <li className="bg-[#F8F9FB] rounded-2xl p-4 border border-gray-100">
                 <strong className="text-[13px] text-[#111827] block mb-1">Track Delivery</strong>

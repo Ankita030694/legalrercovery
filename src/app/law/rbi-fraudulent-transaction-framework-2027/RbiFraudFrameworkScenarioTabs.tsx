@@ -39,7 +39,7 @@ const SCENARIOS: FraudScenarioTab[] = [
       {
         step: "Serve 15-Day Statutory Notice Before Ombudsman",
         description:
-          "Dispatch an advocate legal notice citing SBI v. Pallabh Bhowmick (2025 SC) and demanding full reversal plus 9% interest before filing on cms.rbi.org.in.",
+          "Dispatch a fact-verified legal notice citing SBI v. Pallabh Bhowmick (2025 SC) and demanding full reversal plus 9% interest before filing on cms.rbi.org.in.",
       },
     ],
     statutoryRule: "RBI Burden-of-Proof Mandate (2017 Cl. 12 / 2027 Framework†) & SBI v. Pallabh Bhowmick (2025 SC)",
@@ -265,7 +265,7 @@ export default function RbiFraudFrameworkScenarioTabs() {
 
         <div className="p-3 bg-amber-50 border border-amber-200 rounded-xl flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs text-amber-950">
           <span>
-            <strong>Bank still refusing to credit your account?</strong> Serve a formal 15-day Advocate Legal Notice demanding server logs and statutory reversal before approaching the RBI Ombudsman.
+            <strong>Bank still refusing to credit your account?</strong> Serve a formal 15-day Fact-Verified Legal Notice demanding server logs and statutory reversal before approaching the RBI Ombudsman.
           </span>
           <Link
             href="/recovery/fraud-transaction-amount"

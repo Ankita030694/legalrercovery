@@ -375,7 +375,7 @@ export default function UnsignedTermsRecoveryPage() {
                   <p>
                     Every recruitment agency owner in India has heard the exact same corporate evasion:{" "}
                     <em>
-                      &ldquo;We never signed your Master Services Agreement (MSA); our legal team was still evaluating the draft, so your agency shared candidate resumes at its own commercial peril.&rdquo;
+                      &ldquo;We never signed your Master Services Agreement (MSA); our team was still evaluating the draft, so your agency shared candidate resumes at its own commercial peril.&rdquo;
                     </em>{" "}
                     Unscrupulous employers exploit the fast-paced nature of hiring, demanding immediate candidate submissions on WhatsApp or email, interviewing candidates within 48 hours, rolling out an employment offer, and then hiding behind internal procurement bureaucracy when the standard Day-30 placement invoice arrives.
                   </p>
@@ -1176,7 +1176,7 @@ export default function UnsignedTermsRecoveryPage() {
                   <div className="flex items-center gap-2">
                     <span className="w-2.5 h-2.5 rounded-full bg-emerald-400"></span>
                     <span className="font-bold uppercase tracking-wider text-slate-300">
-                      Advocate-Vetted Commentary &bull; Commercial Litigation Desk
+                      Fact-Verified Commentary &bull; Commercial Litigation Desk
                     </span>
                   </div>
                   <p className="text-slate-300 leading-relaxed">

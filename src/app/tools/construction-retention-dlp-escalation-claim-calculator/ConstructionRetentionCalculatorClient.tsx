@@ -761,7 +761,7 @@ Generated via LegalRecovery.in Construction Claims Intelligence Engine`;
                 onClick={() => setIsModalOpen(true)}
                 className="w-full py-3 rounded-xl font-bold text-xs uppercase tracking-wider text-white bg-[#DC2626] hover:bg-[#B91C1C] transition-colors shadow-lg shadow-red-900/40"
               >
-                Draft Advocate Notice &mdash; ₹{basePrice} &rarr;
+                Draft Fact-Verified Notice &mdash; ₹{basePrice} &rarr;
               </button>
               <Link
                 href="/bulk-recovery-cases-all-in-one-affordable-solutions"

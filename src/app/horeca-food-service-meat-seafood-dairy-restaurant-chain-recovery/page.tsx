@@ -183,7 +183,7 @@ const HOWTO_SCHEMA = {
     {
       "@type": "HowToStep",
       position: 2,
-      name: "Dispatch Day-35 Advocate Notice to LLP & Promoters",
+      name: "Dispatch Day-35 Fact-Verified Notice to LLP & Promoters",
       text: "Serve a formal Legal Notice via Speed Post RPAD, Email, and WhatsApp addressing both the hospitality entity and its Designated Partners/Directors, citing Section 43B(h) if Udyam-registered.",
     },
     {
@@ -466,7 +466,7 @@ export default function HorecaFoodServiceRecoveryPage() {
                   },
                   {
                     stage: "Stage 2 · Day 36",
-                    title: "Serve Advocate Notice to LLP & Promoters",
+                    title: "Serve Fact-Verified Notice to LLP & Promoters",
                     desc: "Dispatch via Speed Post RPAD, Email & WhatsApp; cite Income Tax s.43B(h) if you are an Udyam food processor.",
                   },
                   {

@@ -148,7 +148,7 @@ const FAQS = [
   {
     question: "What should an agency do when a client terminates the contract overnight and replaces guards on the 1st?",
     answer:
-      "Immediately execute a 4-step emergency protocol: (1) Record timestamped video evidence and log a written Station Diary / GD entry at the local police station noting the sudden lockout and obstruction of staff; (2) Collect all physical visitor registers, key logs, and daily muster rolls from your supervisors before vacating; (3) Issue an advocate legal notice within 24 hours citing breach of the contractual 30-day notice clause, claiming notice-period billing, outstanding arrears, and release of security deposits; (4) Serve a Section 43B(h) tax disallowance intimation on the corporate client's directors and statutory auditors.",
+      "Immediately execute a 4-step emergency protocol: (1) Record timestamped video evidence and log a written Station Diary / GD entry at the local police station noting the sudden lockout and obstruction of staff; (2) Collect all physical visitor registers, key logs, and daily muster rolls from your supervisors before vacating; (3) Issue a fact-verified legal notice within 24 hours citing breach of the contractual 30-day notice clause, claiming notice-period billing, outstanding arrears, and release of security deposits; (4) Serve a Section 43B(h) tax disallowance intimation on the corporate client's directors and statutory auditors.",
   },
   {
     question: "Can a newly elected RWA or housing society committee disclaim unpaid security bills from the previous committee?",
@@ -933,7 +933,7 @@ export default function SecurityAgencyRecoveryPage() {
 
                 <div className="mt-6 pt-4 border-t border-slate-100 text-[11px] text-slate-400 leading-relaxed">
                   <p>
-                    // TODO(reviewer): src/data/reviewers.ts is absent in this repository. Editorial attribution: Reviewed and verified by Advocate Anuj Anand Malik, Managing Partner at AMA Legal Solutions, specializing in institutional debt recovery, MSMED Act arbitrations, and commercial contract enforcement.
+                    // TODO(reviewer): src/data/reviewers.ts is absent in this repository. Editorial attribution: Prepared on verified facts Anuj Anand Malik, Managing Partner at AMA Legal Solutions, specializing in institutional debt recovery, MSMED Act arbitrations, and commercial contract enforcement.
                   </p>
                 </div>
               </section>

@@ -23,10 +23,10 @@ export default function CdmoBatchCTA({ className = "" }: CdmoBatchCTAProps) {
               Track 1 &bull; Single Batch / PCD Default
             </span>
             <h3 className="text-lg sm:text-xl font-extrabold text-white mb-2 leading-snug">
-              Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Advocate Drafted)
+              Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Fact-Verified)
             </h3>
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-              Serve an Advocate-vetted 15-day statutory demand notice combining Sale of Goods Act
+              Serve a Fact-verified 15-day statutory demand notice combining Sale of Goods Act
               s.44 storage charges, MSMED Act s.16 3x RBI compound interest, and Income Tax s.43B(h)
               disallowance warnings via Email + WhatsApp + Speed Post RPAD.
             </p>

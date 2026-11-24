@@ -25,10 +25,10 @@ export default function ArbitralAwardExecutionCTA({
               Track 1 &bull; Single Arbitral Award Execution Notice
             </span>
             <p className="text-lg sm:text-xl font-extrabold text-white mb-2">
-              Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Advocate Drafted &middot; Email + WhatsApp + Speed Post RPAD)
+              Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Fact-Verified &middot; Email + WhatsApp + Speed Post RPAD)
             </p>
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-              Serve a high-impact, advocate-vetted Pre-Execution Demand Notice citing Arbitration Act Section 36(2)–(3), Supreme Court precedents (<em>Manish</em> and <em>Pam Developments</em>), and CPC Order XXI Rule 46 garnishee warnings. Repudiates false &quot;automatic stay&quot; claims, demands 100% court cash deposit, notifies PSU of NITI Aayog 75% Bank Guarantee payout directives, and puts directors on notice for asset disclosures under perjury sanctions.
+              Serve a high-impact, fact-verified Pre-Execution Demand Notice citing Arbitration Act Section 36(2)–(3), Supreme Court precedents (<em>Manish</em> and <em>Pam Developments</em>), and CPC Order XXI Rule 46 garnishee warnings. Repudiates false &quot;automatic stay&quot; claims, demands 100% court cash deposit, notifies PSU of NITI Aayog 75% Bank Guarantee payout directives, and puts directors on notice for asset disclosures under perjury sanctions.
             </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-3">

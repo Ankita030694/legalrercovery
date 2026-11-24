@@ -26,7 +26,7 @@ export default function ReraSection19CTA({ className = "" }: ReraSection19CTAPro
               Test 1 Live Overdue Allottee Notice
             </h3>
             <p className="text-slate-300 text-xs sm:text-sm leading-relaxed mb-5">
-              &#8377;{basePrice} &middot; Advocate Drafted &middot; Email + WhatsApp + Speed Post RPAD. Issue an audit-proof Section 19(6) Cure-cum-Interest Notice with SBI MCLR + 2% calculation, Architect Form 1 annexure, and BSA 2023 s.63 delivery logs.
+              &#8377;{basePrice} &middot; Fact-Verified &middot; Email + WhatsApp + Speed Post RPAD. Issue an audit-proof Section 19(6) Cure-cum-Interest Notice with SBI MCLR + 2% calculation, Architect Form 1 annexure, and BSA 2023 s.63 delivery logs.
             </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-3">

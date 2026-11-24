@@ -273,7 +273,7 @@ export default function MediclaimReimbursementClient() {
           
           <div className="relative z-20 mx-auto px-4 max-w-8xl text-center">
             <span className="inline-block text-[#DC2626] text-xs md:text-sm font-black uppercase tracking-widest mb-4 bg-red-950/30 px-4 py-1.5 rounded-full border border-[#DC2626]/20">
-              National Mediclaim Recovery Legal Panel
+              National Mediclaim Recovery Desk
             </span>
             <h1 className="text-3xl md:text-6xl font-black mb-6 leading-tight tracking-tight">
               Recover <span className="text-[#DC2626]">Mediclaim Reimbursement</span>
@@ -482,7 +482,7 @@ export default function MediclaimReimbursementClient() {
                       <div className="p-6 bg-slate-50 rounded-2xl border border-slate-200">
                         <h3 className="text-lg font-bold text-slate-900 mb-2">1. The Statutory Legal Notice</h3>
                         <p className="text-sm text-slate-650 leading-relaxed mb-3">
-                          A formal notice drafted by our panel of recovery advocates is served to the insurer's corporate office and GRO. The notice details the bank's/insurer's violation of IRDAI regulations, challenges the repudiation grounds with medical or billing evidence, and demands settlement of the claim with the statutory 2% interest penalty on the delay. The notice sets a 15-day deadline for resolution before escalating to court.
+                          A fact-verified formal notice prepared by our team is served to the insurer's corporate office and GRO. The notice details the bank's/insurer's violation of IRDAI regulations, challenges the repudiation grounds with medical or billing evidence, and demands settlement of the claim with the statutory 2% interest penalty on the delay. The notice sets a 15-day deadline for resolution before escalating to court.
                         </p>
                       </div>
                       
@@ -539,7 +539,7 @@ export default function MediclaimReimbursementClient() {
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      Navigating the recovery process for mediclaim claims requires a combination of medical knowledge, understanding of policy terms, and regulatory expertise. Individual complaints are often delayed by insurer customer service, which may rely on standard template rejections. LegalRecovery provides structured legal support through our panel of recovery advocates and dispute resolution professionals.
+                      Navigating the recovery process for mediclaim claims requires a combination of medical knowledge, understanding of policy terms, and regulatory expertise. Individual complaints are often delayed by insurer customer service, which may rely on standard template rejections. LegalRecovery provides structured legal support through our fact-verified notice process and dispute resolution support.
                     </p>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
                       <div className="p-6 bg-slate-50 rounded-2xl border border-slate-200">
@@ -606,13 +606,13 @@ export default function MediclaimReimbursementClient() {
             <div className="hidden lg:block sticky top-24">
               <div className="bg-gradient-to-br from-[#111827] to-[#0F172A] text-white p-6 rounded-3xl border border-slate-900 shadow-xl">
                 <span className="inline-block text-[#DC2626] text-[10px] font-black uppercase tracking-widest mb-3 bg-red-950/40 px-3 py-1 rounded-full border border-red-500/10">
-                  Legal Panel Active
+                  Recovery Desk Active
                 </span>
                 <h3 className="text-lg font-black mb-3 text-white leading-tight">
                   Recover Wrongfully Rejected Mediclaim
                 </h3>
                 <p className="text-xs text-slate-400 mb-6 leading-relaxed">
-                  Connect with our panel of mediclaim recovery advocates. We help draft legal notices, file Bima Bharosa complaints, and represent you before the Ombudsman.
+                  Tell us your case details. We verify the facts, prepare and send legal notices, and guide you on Bima Bharosa and Ombudsman complaints.
                 </p>
                 <button
                   onClick={() => setIsPaymentModalOpen(true)}

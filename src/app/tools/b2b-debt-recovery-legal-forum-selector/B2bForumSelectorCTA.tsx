@@ -23,10 +23,10 @@ export default function B2bForumSelectorCTA({ className = "" }: B2bForumSelector
               Track 1 • Self-Serve Single Case Test
             </span>
             <h3 className="text-lg sm:text-xl font-bold text-white mb-2.5 leading-snug">
-              Test 1 Live Overdue Case Now (₹{basePrice} · Advocate Drafted)
+              Test 1 Live Overdue Case Now (₹{basePrice} · Fact-Verified)
             </h3>
             <p className="text-slate-300 text-xs sm:text-sm leading-relaxed mb-5">
-              Turn your selected statutory track into an advocate-vetted Pre-Litigation Legal Notice (MSME s.15/43B(h), IBC Form 3/4, NI s.138, PSS s.25, or Order 37 Demand) dispatched via Email + WhatsApp + Speed Post RPAD.
+              Turn your selected statutory track into a fact-verified Pre-Litigation Legal Notice (MSME s.15/43B(h), IBC Form 3/4, NI s.138, PSS s.25, or Order 37 Demand) dispatched via Email + WhatsApp + Speed Post RPAD.
             </p>
           </div>
           <div className="space-y-3">
@@ -80,7 +80,7 @@ export default function B2bForumSelectorCTA({ className = "" }: B2bForumSelector
               </Link>
             </div>
             <p className="text-[11px] text-slate-500">
-              ✓ CSV batch upload • ✓ Multi-forum routing • ✓ Dedicated advocate review
+              ✓ CSV batch upload • ✓ Multi-forum routing • ✓ Fact verification
             </p>
           </div>
         </div>

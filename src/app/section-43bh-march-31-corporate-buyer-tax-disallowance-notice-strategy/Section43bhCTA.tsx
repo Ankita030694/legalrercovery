@@ -25,10 +25,10 @@ export default function Section43bhCTA({
               Track 1 &bull; Single Corporate Defaulter Notice
             </span>
             <p className="text-lg sm:text-xl font-extrabold text-white mb-2">
-              Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Advocate Drafted &middot; Email + WhatsApp + Speed Post RPAD)
+              Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Fact-Verified &middot; Email + WhatsApp + Speed Post RPAD)
             </p>
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-              Serve a high-impact, advocate-vetted Section 43B(h) Statutory Disclosure Notice on a corporate buyer withholding your invoice past the 45-day statutory limit. Formally notifies the Managing Director, CFO, and Audit Committee of mandatory Form 3CD Clause 22 disallowance, triggering 25%–35% immediate corporate tax liability on March 31 plus MSMED Act 3x RBI compound interest.
+              Serve a high-impact, fact-verified Section 43B(h) Statutory Disclosure Notice on a corporate buyer withholding your invoice past the 45-day statutory limit. Formally notifies the Managing Director, CFO, and Audit Committee of mandatory Form 3CD Clause 22 disallowance, triggering 25%–35% immediate corporate tax liability on March 31 plus MSMED Act 3x RBI compound interest.
             </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-3">
@@ -84,7 +84,7 @@ export default function Section43bhCTA({
           onClose={() => setIsModalOpen(false)}
           amount={basePrice}
           title="Section 43B(h) Corporate Buyer Notice"
-          description="Generate and serve an advocate-vetted Section 43B(h) & Form 3CD Clause 22 notice via Email, WhatsApp, and Speed Post RPAD directly to the defaulting corporate buyer's CFO."
+          description="Generate and serve a fact-verified Section 43B(h) & Form 3CD Clause 22 notice via Email, WhatsApp, and Speed Post RPAD directly to the defaulting corporate buyer's CFO."
         />
       )}
     </>

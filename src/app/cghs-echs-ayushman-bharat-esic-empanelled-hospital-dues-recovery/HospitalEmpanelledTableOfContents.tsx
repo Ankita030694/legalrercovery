@@ -189,7 +189,7 @@ export default function HospitalEmpanelledTableOfContents({
 
           <div className="mt-5 pt-4 border-t border-slate-100 text-[11px] text-slate-500 leading-relaxed">
             <p className="font-semibold text-slate-700 mb-1">Empanelled Recovery Desk</p>
-            <p>Advocate-drafted Section 80 notices and Article 226 Mandamus preparation for hospitals.</p>
+            <p>Fact-verified Section 80 notices and Article 226 Mandamus preparation for hospitals.</p>
           </div>
         </div>
       </aside>

@@ -4,7 +4,7 @@ import CommissionNotPaidByCompanyClient from './CommissionNotPaidByCompanyClient
 const slug = 'send-a-legal-notice/commission-not-paid-by-company';
 const title = 'Legal Notice to Company for Unpaid Commission Fees';
 const description =
-  'Company refusing to pay sales commission? Send an advocate-vetted legal notice under the Contract Act & Code on Wages to recover dues.';
+  'Company refusing to pay sales commission? Send a fact-verified legal notice under the Contract Act & Code on Wages to recover dues.';
 const url = `https://www.legalrecovery.in/${slug}`;
 const ogImage = `/images/og/commission-not-paid-by-company.jpg`;
 

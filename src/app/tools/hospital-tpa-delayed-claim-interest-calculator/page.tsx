@@ -670,7 +670,7 @@ export default function HospitalTpaDelayedClaimInterestCalculatorPage() {
                       </span>
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      A formal advocate-drafted demand notice issued simultaneously to the TPA Managing Director and the Health Insurer&apos;s CCO. It details claim IDs, submission dates, TAT calculations, and statutory interest claims, giving a 15-day cure window to release funds before court institution.
+                      A formal fact-verified demand notice issued simultaneously to the TPA Managing Director and the Health Insurer&apos;s CCO. It details claim IDs, submission dates, TAT calculations, and statutory interest claims, giving a 15-day cure window to release funds before court institution.
                     </p>
                   </div>
 
@@ -875,7 +875,7 @@ export default function HospitalTpaDelayedClaimInterestCalculatorPage() {
                       Promissory Note &amp; Attendant Undertaking Format &rarr;
                     </Link>
                     <p className="text-[11px] text-slate-600 mt-1">
-                      Advocate-vetted discharge undertaking for unpaid patient co-pays, deductible balances, and bounced cheques.
+                      Ready-to-use discharge undertaking for unpaid patient co-pays, deductible balances, and bounced cheques.
                     </p>
                   </div>
                 </div>

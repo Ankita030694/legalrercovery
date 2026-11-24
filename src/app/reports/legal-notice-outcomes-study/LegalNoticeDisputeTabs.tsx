@@ -47,7 +47,7 @@ export default function LegalNoticeDisputeTabs({ segments }: LegalNoticeDisputeT
       default:
         return {
           href: "/send-legal-notice-online-india",
-          label: "Send an Advocate Legal Notice Online →",
+          label: "Send a Fact-Verified Legal Notice Online →",
         };
     }
   };

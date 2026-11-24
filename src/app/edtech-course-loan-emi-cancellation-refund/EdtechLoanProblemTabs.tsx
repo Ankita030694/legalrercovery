@@ -37,7 +37,7 @@ const PROBLEMS: ProblemTab[] = [
           "Email the financing partner's Grievance Redressal Officer (GRO) citing your ed-tech cancellation ticket number and declaring the underlying commercial service revoked.",
       },
       {
-        step: "Serve Joint Statutory Advocate Demand Notice",
+        step: "Serve Joint Statutory Fact-Verified Demand Notice",
         description:
           "Serve a joint statutory legal notice to both the Ed-Tech corporate office and NBFC under Section 2(11) & Section 2(47) CPA 2019, demanding immediate loan cancellation and full refund.",
       },
@@ -120,7 +120,7 @@ const PROBLEMS: ProblemTab[] = [
       {
         step: "Claim 100% Restitution with Litigation Damages",
         description:
-          "Serve an advocate legal notice seeking full restitution of course fees, termination of financing, and compensation for academic loss and emotional distress.",
+          "Serve a fact-verified legal notice seeking full restitution of course fees, termination of financing, and compensation for academic loss and emotional distress.",
       },
     ],
     statutoryRule: "Section 2(11) Deficiency in Service & Section 2(46) Unfair Contract CPA 2019",

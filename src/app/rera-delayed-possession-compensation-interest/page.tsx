@@ -181,7 +181,7 @@ const FAQS = [
   {
     question: "What should I do if the builder offers a nominal ₹5 or ₹10 per sq. ft. monthly delay penalty?",
     answer:
-      "You should firmly reject the nominal contractual penalty in writing. Under Section 89 of RERA, the statutory provisions of the Act explicitly override any inconsistent clauses in private Builder-Buyer Agreements. Furthermore, the Supreme Court of India in Pioneer Urban Land & Infrastructure Ltd. v. Govindan Raghavan (2019) 5 SCC 725 ruled that one-sided agreements offering ₹5/sq.ft penalties while charging 18% for buyer defaults constitute unfair trade practices and are void against public policy. Issue a formal statutory advocate legal notice demanding recalibration to SBI MCLR + 2% per annum.",
+      "You should firmly reject the nominal contractual penalty in writing. Under Section 89 of RERA, the statutory provisions of the Act explicitly override any inconsistent clauses in private Builder-Buyer Agreements. Furthermore, the Supreme Court of India in Pioneer Urban Land & Infrastructure Ltd. v. Govindan Raghavan (2019) 5 SCC 725 ruled that one-sided agreements offering ₹5/sq.ft penalties while charging 18% for buyer defaults constitute unfair trade practices and are void against public policy. Issue a formal statutory fact-verified legal notice demanding recalibration to SBI MCLR + 2% per annum.",
   },
   {
     question: "Does the delay interest clock stop if the builder offers possession for fit-outs without an OC?",
@@ -191,7 +191,7 @@ const FAQS = [
   {
     question: "How do I file a RERA complaint for delayed possession monthly interest?",
     answer:
-      "First, serve a 15-day statutory advocate demand notice to the promoter and registered directors via Registered Speed Post and email. If the builder fails to disburse accrued interest or adjust the demand, file an online complaint under Section 31 of RERA on your state's official RERA portal (such as UP RERA, MahaRERA, HRERA, or Karnataka RERA) using Form M (or state equivalent). Attach your Allotment Letter, Builder-Buyer Agreement with promised possession date, all bank payment receipts, and the copy of the legal notice. Pay the state filing fee (typically ₹1,000 to ₹5,000) to initiate formal adjudication.",
+      "First, serve a 15-day statutory fact-verified demand notice to the promoter and registered directors via Registered Speed Post and email. If the builder fails to disburse accrued interest or adjust the demand, file an online complaint under Section 31 of RERA on your state's official RERA portal (such as UP RERA, MahaRERA, HRERA, or Karnataka RERA) using Form M (or state equivalent). Attach your Allotment Letter, Builder-Buyer Agreement with promised possession date, all bank payment receipts, and the copy of the legal notice. Pay the state filing fee (typically ₹1,000 to ₹5,000) to initiate formal adjudication.",
   },
   {
     question: "What happens if the builder refuses to pay the RERA delay interest order?",

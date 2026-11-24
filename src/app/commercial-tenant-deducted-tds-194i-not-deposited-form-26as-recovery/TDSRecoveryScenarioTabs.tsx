@@ -27,9 +27,9 @@ const SCENARIOS: Scenario[] = [
     statutoryTrap:
       "Tenants exploit the delay between monthly deduction (due by the 7th of the following month) and the landlord's annual ITR filing window. If the landlord merely sends informal email reminders, the tenant rolls over the funds. Worse, when the landlord files their return, the Income Tax Department's CPC portal disallows the uncredited TDS, raising an immediate tax demand with interest under Section 234B/234C against the landlord!",
     recoveryPlaybook:
-      "Serve an urgent High Court Advocate Legal Notice demanding payment of the un-deposited ₹12,00,000 directly to the landlord or proof of Challan ITNS 281 deposit within 7 days. Put the tenant's Board of Directors and Principal Officer on notice that continuing default triggers Section 276B criminal prosecution (up to 7 years rigorous imprisonment) and Section 271C penalty equal to 100% of the defaulted sum. Simultaneously, notify the local CIT (TDS) under Section 201.",
+      "Serve an urgent High Court Fact-Verified Legal Notice demanding payment of the un-deposited ₹12,00,000 directly to the landlord or proof of Challan ITNS 281 deposit within 7 days. Put the tenant's Board of Directors and Principal Officer on notice that continuing default triggers Section 276B criminal prosecution (up to 7 years rigorous imprisonment) and Section 271C penalty equal to 100% of the defaulted sum. Simultaneously, notify the local CIT (TDS) under Section 201.",
     actionableSteps: [
-      "Issue 7-Day Advocate Statutory Demand Notice citing Income Tax Act ss. 194-I, 201(1A), 271C, and 276B.",
+      "Issue 7-Day Fact-Verified Statutory Demand Notice citing Income Tax Act ss. 194-I, 201(1A), 271C, and 276B.",
       "Calculate 1.5% per month penal interest under Section 201(1A) from the date of each monthly rental deduction.",
       "Inform the tenant that Section 194-I non-deposit constitutes an uncured material breach of lease covenants under Transfer of Property Act Section 106.",
       "File a formal letter with the Jurisdictional Joint Commissioner / CIT (TDS) requesting survey and prosecution under Section 276B.",
@@ -72,7 +72,7 @@ const SCENARIOS: Scenario[] = [
       "Submit formal representation to the Assessing Officer citing CBDT Circular No. 275/29/2014-IT(B) and Yashpal Sahni.",
       "Attach lease deed, monthly rent invoices showing 10% TDS deduction, and bank statements confirming 90% net receipts.",
       "Demand immediate cancellation of the Section 143(1) intimation demand and stay of coercive recovery under Section 220(6).",
-      "Serve high-stakes Advocate Notice on the tenant making them liable for all consequential tax penalties and advocate fees.",
+      "Serve high-stakes Fact-Verified Notice on the tenant making them liable for all consequential tax penalties and advocate fees.",
     ],
     expectedOutcome: "Immediate stay and cancellation of tax demand against landlord; AO shifts coercive recovery to the defaulting tenant.",
   },
@@ -90,7 +90,7 @@ const SCENARIOS: Scenario[] = [
       "Implement the Institutional Bulk TDS Remediation Protocol via LegalRecovery. Deploy automated batch reconciliations comparing bank inward remittances against PAN-linked 26AS credits, issue batched Advocate Section 194-I Demand Notices via registered email and Speed Post RPAD, and execute a master representation to the Principal Director General of Income Tax (Systems) and CIT-TDS.",
     actionableSteps: [
       "Upload multi-tenant rent ledgers to the LegalRecovery Bulk CSV Desk to identify exact PAN mismatches and deficit quarters.",
-      "Dispatch standardized advocate cure notices giving tenants 10 days to file revised Form 26Q returns and provide Challan ITNS 281 details.",
+      "Dispatch standardized fact-verified cure notices giving tenants 10 days to file revised Form 26Q returns and provide Challan ITNS 281 details.",
       "Incorporate mandatory TDS compliance warranties and immediate deposit clauses with 18% penal interest in standard lease renewals.",
       "Submit collective Section 205 immunity schedule to the REIT statutory auditors to prevent balance-sheet audit qualifications.",
     ],

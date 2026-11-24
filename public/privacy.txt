@@ -23,18 +23,13 @@ Number of Opposing Parties
 Billing and payment information
 B. Claim & Dispute Information
 
-When you submit a claim, we may collect:
+When you submit a claim, we collect the case details you enter in our online form (we do not accept document or evidence uploads), such as:
 
-Screenshots
-Agreements/contracts
-Invoices
-UPI/payment proof
-Emails
-WhatsApp chats
-Salary slips
-Consumer complaint details
-Refund dispute details
-Supporting legal documents
+Amounts owed and payment dates
+Details of agreements, invoices or transactions
+Opposing party names and contact details
+Salary, refund or consumer dispute details
+A description of what happened
 C. Technical Information
 
 We may automatically collect:
@@ -52,7 +47,7 @@ We use your information to:
 Process legal claims and dispute requests
 Draft and send legal notices
 Provide claim tracking and updates
-Verify documents and uploaded proof
+Verify the facts of your case
 Improve our services and platform functionality
 Prevent fraud, misuse, and unauthorized activity
 Communicate with you regarding your claim
@@ -63,7 +58,7 @@ We understand that legal disputes involve sensitive information.
 
 We implement reasonable technical and organizational security measures to protect:
 
-uploaded documents
+case details you submit
 payment records
 personal information
 legal communications
@@ -91,7 +86,7 @@ Information is shared only to the extent necessary for claim processing and lega
 By using the platform, you confirm that:
 
 the information submitted by you is accurate
-you have lawful rights to upload documents and communications
+you have lawful rights to share the case details you submit
 your claim is genuine and not misleading
 you will not misuse the platform for harassment, defamation, intimidation, or illegal purposes
 
@@ -131,7 +126,7 @@ Users may disable cookies through browser settings.
 
 8. DATA RETENTION
 
-We may retain your information and uploaded documents:
+We may retain your information and case details:
 
 for claim management
 compliance purposes
@@ -191,6 +186,6 @@ Website: legalrecovery.in
 By accessing or using Legal Recovery, you consent to:
 
 collection of information
-processing of uploaded documents
+processing of the case details you submit
 communication regarding claims
 usage of services in accordance with this Privacy Policy.

@@ -30,7 +30,7 @@ const faqs = [
   },
   {
     q: 'Do I need to hire a lawyer to send a legal notice to my former employer?',
-    a: 'An advocate ensures your notice cites relevant laws like the Payment of Wages Act. Formal legal representation demonstrates that you are fully prepared for civil court litigation. Employers respond much faster when a licensed lawyer issues a stern demand.'
+    a: 'No lawyer is needed to send the notice. Our team verifies the facts you submit and prepares a notice citing relevant laws like the Payment of Wages Act. A formal notice demonstrates that you are fully prepared for civil court litigation, and employers respond much faster to a stern, formal demand.'
   },
   {
     q: 'Can a startup or a small private company be sued for unpaid settlements?',
@@ -266,7 +266,7 @@ export default function FullAndFinalSettlementClient() {
                       <div className="relative pl-6">
                         <div className="absolute w-4 h-4 bg-[#DC2626] rounded-full -left-[10px] top-1"></div>
                         <h5 className="font-bold text-slate-900 text-base">Day 46 to 60: The Demand Notice</h5>
-                        <p className="text-sm text-slate-600 mt-2">Transition from informal email messages to a formal advocate notice at this point. A drafted legal demand proves that you are ready to start civil litigation.</p>
+                        <p className="text-sm text-slate-600 mt-2">Transition from informal email messages to a formal legal notice at this point. A drafted legal demand proves that you are ready to start civil litigation.</p>
                       </div>
                       <div className="relative pl-6">
                         <div className="absolute w-4 h-4 bg-[#DC2626] rounded-full -left-[10px] top-1"></div>
@@ -334,7 +334,7 @@ export default function FullAndFinalSettlementClient() {
                 </h2>
                 <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                   <p className="text-sm md:text-base leading-relaxed">
-                    When informal talks fail, you must invoke formal Indian legal recovery procedures. The legal system provides multiple dispute mechanisms based on your designation and salary. Your recovery strategy depends on whether your role qualifies as clerical or managerial.
+                    When informal talks fail, you must invoke formal India legal recovery procedures. The legal system provides multiple dispute mechanisms based on your designation and salary. Your recovery strategy depends on whether your role qualifies as clerical or managerial.
                   </p>
 
                   <h3 className="text-lg md:text-xl font-bold text-slate-900 mt-8 mb-3">
@@ -360,7 +360,7 @@ export default function FullAndFinalSettlementClient() {
                 </h2>
                 <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                   <p className="text-sm md:text-base leading-relaxed">
-                    A legal notice serves as the final formal warning before filing civil litigation. It establishes your clear claim and warns company directors about impending judicial actions. Receiving an advocate notice often convinces stubborn employers to pay without court battles. Many professionals choose to <Link href="/send-legal-notice-online-india" className="text-[#DC2626] hover:underline font-medium">send a legal notice online in India</Link> for rapid delivery.
+                    A legal notice serves as the final formal warning before filing civil litigation. It establishes your clear claim and warns company directors about impending judicial actions. Receiving a legal notice often convinces stubborn employers to pay without court battles. Many professionals choose to <Link href="/send-legal-notice-online-india" className="text-[#DC2626] hover:underline font-medium">send a legal notice online in India</Link> for rapid delivery.
                   </p>
 
                   <h3 className="text-lg md:text-xl font-bold text-slate-900 mt-8 mb-3">
@@ -409,7 +409,7 @@ export default function FullAndFinalSettlementClient() {
                         <span className="text-sm font-bold text-slate-900">1% - 3%</span>
                       </div>
                       <div className="flex justify-between items-center p-4 px-6 hover:bg-slate-50 transition-colors">
-                        <span className="text-sm font-medium text-slate-600">Advocate Drafting and Filing Fees</span>
+                        <span className="text-sm font-medium text-slate-600">Notice Drafting and Filing Fees</span>
                         <span className="text-sm font-bold text-slate-900">₹15,000 - ₹35,000</span>
                       </div>
                       <div className="flex justify-between items-center p-4 px-6 hover:bg-slate-50 transition-colors">

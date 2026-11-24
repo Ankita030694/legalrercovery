@@ -230,7 +230,7 @@ const HOWTO_SCHEMA = {
       "@type": "HowToStep",
       position: 1,
       name: "Pre-NPA Advocate Recall & s.25 PSS Act Notice (60–89 DPD)",
-      text: "Serve a BSA 2023 s.63-logged tri-channel Advocate Recall Notice and Section 25 PSS Act demand upon e-NACH dishonour before 90-DPD NPA tagging.",
+      text: "Serve a BSA 2023 s.63-logged tri-channel Fact-Verified Recall Notice and Section 25 PSS Act demand upon e-NACH dishonour before 90-DPD NPA tagging.",
     },
     {
       "@type": "HowToStep",
@@ -687,7 +687,7 @@ export default function HfcAffordableHomeLoanNpaRecoveryPage() {
                       href="/templates/bank-loan-recall-cum-guarantee-invocation-notice"
                       className="text-[#DC2626] font-semibold underline hover:text-[#B91C1C]"
                     >
-                      Advocate-Vetted Loan Recall &amp; Guarantee Invocation Template
+                      Fact-Verified Loan Recall &amp; Guarantee Invocation Template
                     </Link>{" "}
                     to place co-borrowers and guarantors on formal notice alongside{" "}
                     <Link

@@ -92,7 +92,7 @@ const SCENARIOS: ScenarioTab[] = [
       {
         step: "Issue Legal Demand for Balance Unpaid Loss",
         description:
-          "Serve a 15-day statutory advocate notice demanding the deficit between total verified WIP plus lost profit and the retained advance.",
+          "Serve a 15-day statutory fact-verified notice demanding the deficit between total verified WIP plus lost profit and the retained advance.",
       },
     ],
     statutoryRule: "Kailash Nath Associates v. DDA (2015) & Energy Watchdog v. CERC (2017)",

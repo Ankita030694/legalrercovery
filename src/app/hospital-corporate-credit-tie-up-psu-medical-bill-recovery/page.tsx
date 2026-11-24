@@ -130,7 +130,7 @@ const FAQS = [
   {
     question: "How can hospitals recover unpaid monthly retainers for on-site factory Occupational Health Centers (OHCs)?",
     answer:
-      "Factory OHCs are statutorily required under Section 41-C of the Factories Act, 1948. Hospitals and occupational health firms deputing industrial doctors, nurses, and factory ambulances hold substantial leverage. To recover aged retainer arrears: (1) Audit biometric attendance logs and duty rosters countersigned by factory safety managers; (2) Issue a formal 30-day Credit Suspension and Service Withdrawal Notice alerting the plant management that pausing OHC operations will expose the factory to penal closure under factory safety regulations; and (3) Issue an Advocate Legal Notice demanding payment of retainer arrears with compound interest at 18% p.a. under the Interest Act, 1978 or MSMED Act, 2006.",
+      "Factory OHCs are statutorily required under Section 41-C of the Factories Act, 1948. Hospitals and occupational health firms deputing industrial doctors, nurses, and factory ambulances hold substantial leverage. To recover aged retainer arrears: (1) Audit biometric attendance logs and duty rosters countersigned by factory safety managers; (2) Issue a formal 30-day Credit Suspension and Service Withdrawal Notice alerting the plant management that pausing OHC operations will expose the factory to penal closure under factory safety regulations; and (3) Issue a Fact-Verified Legal Notice demanding payment of retainer arrears with compound interest at 18% p.a. under the Interest Act, 1978 or MSMED Act, 2006.",
   },
   {
     question: "Can hospitals claim statutory interest on delayed corporate credit bills and PSU medical invoices?",
@@ -227,7 +227,7 @@ const HOWTO_SCHEMA = {
       "@type": "HowToStep",
       position: 3,
       name: "Dispatch 15-Day Advocate Commercial Demand / Section 80 CPC Notice",
-      text: "Serve a formal advocate legal notice invoking Order XXXVII CPC (for private corporations) or Section 80 CPC (for government departments and PSUs), demanding payment of principal plus statutory commercial interest.",
+      text: "Serve a formal fact-verified legal notice invoking Order XXXVII CPC (for private corporations) or Section 80 CPC (for government departments and PSUs), demanding payment of principal plus statutory commercial interest.",
     },
     {
       "@type": "HowToStep",
@@ -449,7 +449,7 @@ export default function HospitalCorporateCreditRecoveryPage() {
                     >
                       recovering delayed TPA insurance claims
                     </Link>
-                    . To recover corporate and PSU healthcare receivables without burning valuable commercial ties, healthcare institutions must implement a graduated, advocate-backed credit recovery framework that transitions from collaborative reconciliation to statutory civil enforcement.
+                    . To recover corporate and PSU healthcare receivables without burning valuable commercial ties, healthcare institutions must implement a graduated, fact-verified credit recovery framework that transitions from collaborative reconciliation to statutory civil enforcement.
                   </p>
                 </div>
               </section>

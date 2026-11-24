@@ -177,7 +177,7 @@ Please be advised that:
 3. FINAL ${fields.cureWindowDays}-DAY DEADLINE:
 You are hereby given one final opportunity to transfer the sum of ${fields.netRefundClaimed} directly to our bank account (${fields.bankAccountDetails}) and email the UTR confirmation within ${fields.cureWindowDays} calendar days of receipt of this notice.
 
-Should the funds not reflect in our bank account within ${fields.cureWindowDays} days, we shall immediately serve a formal Advocate Statutory Legal Notice and file:
+Should the funds not reflect in our bank account within ${fields.cureWindowDays} days, we shall immediately serve a formal Fact-Verified Statutory Legal Notice and file:
 (a) An online Form 'M' Complaint under Section 31 read with Sections 12, 13, 18 & 40(1) of RERA, 2016 before the State RERA Authority; and
 (b) A Consumer Complaint on the e-Jagriti portal seeking 100% principal refund, 10.75%–18% p.a. interest, ₹1,00,000 towards mental harassment damages, and full litigation costs, entirely at your company's risk and consequence.
 

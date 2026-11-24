@@ -215,7 +215,7 @@ function LinkQuickCard() {
         30-Day Clock Active?
       </p>
       <p className="text-[11px] text-slate-300 leading-relaxed">
-        Serve advocate-signed PSS s.25 notices via Email, WhatsApp &amp; Speed Post RPAD before Day 30 expires.
+        Serve fact-verified PSS s.25 notices via Email, WhatsApp &amp; Speed Post RPAD before Day 30 expires.
       </p>
       <a
         href="#institutional-dispatch-cta"

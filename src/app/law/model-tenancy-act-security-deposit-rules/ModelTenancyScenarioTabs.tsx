@@ -74,7 +74,7 @@ const SCENARIOS: ScenarioItem[] = [
     immediateFix: [
       "If vacating due to uninhabitability (seepage, sewage backup, cut utilities), serve a written notice under Section 15(4) MTA / Section 108(e) TPA documenting that the landlord's breach terminated the lock-in.",
       "If vacating for personal relocation, offer a replacement tenant or serve the standard 1-month notice and track when a new tenant moves in (via society gate/MyGate logs) to defeat double-recovery claims.",
-      "Issue an Advocate Legal Notice demanding refund of the deposit minus only actual, unmitigated vacancy days.",
+      "Issue a Fact-Verified Legal Notice demanding refund of the deposit minus only actual, unmitigated vacancy days.",
     ],
   },
   {
@@ -90,7 +90,7 @@ const SCENARIOS: ScenarioItem[] = [
     immediateFix: [
       "Download your onboarding payment receipt, app move-out ticket, and sub-meter photo before your app login is deactivated on move-out day.",
       "Reject arbitrary app wallet credits or unitemised 'utility pool' deductions in writing to the operator's grievance officer.",
-      "Serve a 15-day Advocate Legal Notice invoking CPA 2019 (which enables fast online filing on e-Jagriti from your home city, even after you move back from Pune, Bengaluru, or Kota).",
+      "Serve a 15-day Fact-Verified Legal Notice invoking CPA 2019 (which enables fast online filing on e-Jagriti from your home city, even after you move back from Pune, Bengaluru, or Kota).",
     ],
   },
 ];

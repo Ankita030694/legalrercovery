@@ -147,7 +147,7 @@ const COURT_PRECEDENTS = [
     holding:
       "The Supreme Court declared Section 12A mediation mandatory for covered commercial suits (specified value ₹3 Lakh and above) not contemplating urgent interim relief, failing which plaints are rejected under Order VII Rule 11 CPC.",
     creditorTakeaway:
-      "Where an advisory firm's overdue corporate retainer exceeds ₹3 Lakh and falls within Commercial Court jurisdiction, pairing an external Advocate Demand Notice with Section 12A Pre-Institution Mediation (or Order XXXVII Civil Summary Suit where applicable) secures rapid settlement without threshold dismissal.",
+      "Where an advisory firm's overdue corporate retainer exceeds ₹3 Lakh and falls within Commercial Court jurisdiction, pairing an external Fact-Verified Demand Notice with Section 12A Pre-Institution Mediation (or Order XXXVII Civil Summary Suit where applicable) secures rapid settlement without threshold dismissal.",
   },
 ];
 
@@ -255,7 +255,7 @@ const HOWTO_SCHEMA = {
     {
       "@type": "HowToStep",
       position: 4,
-      name: "Dispatch External Advocate Legal Notice (Order XXXVII, NI s.138 & CGST s.16(2))",
+      name: "Dispatch External Fact-Verified Legal Notice (Order XXXVII, NI s.138 & CGST s.16(2))",
       text: "Instruct independent litigation counsel to serve a formal 15-day demand notice via Email, WhatsApp, and Speed Post RPAD covering all audit, GST litigation, and Virtual-CFO arrears, citing CGST s.16(2) 180-day ITC reversal + 18% interest.",
     },
     {
@@ -355,7 +355,7 @@ export default function CaUnpaidAuditFeeRecoveryPage() {
             <span className="block text-[10px] sm:text-xs uppercase tracking-widest text-red-400 font-bold mb-1.5">
               Executive Creditor Answer (ICAI Ethics &amp; Civil Law)
             </span>
-            ICAI ethics and <em>R.D. Saxena</em> forbid withholding client Tally books or DSC tokens for unpaid fees—yet <strong>ICAI Council General Guidelines Chapter VII</strong> bars an incoming auditor from accepting any non-sick-unit audit while <strong>Balance-Sheet-provisioned undisputed audit fees</strong> remain unpaid. Combine written Clause (8) objection with an external Advocate Notice (Order XXXVII CPC, NI s.138 &amp; CGST s.16(2)) via our{" "}
+            ICAI ethics and <em>R.D. Saxena</em> forbid withholding client Tally books or DSC tokens for unpaid fees—yet <strong>ICAI Council General Guidelines Chapter VII</strong> bars an incoming auditor from accepting any non-sick-unit audit while <strong>Balance-Sheet-provisioned undisputed audit fees</strong> remain unpaid. Combine written Clause (8) objection with an external Fact-Verified Notice (Order XXXVII CPC, NI s.138 &amp; CGST s.16(2)) via our{" "}
             <Link
               href="/industries/ca-architects-consultants-professional-fee-recovery"
               className="text-red-300 underline hover:text-white font-semibold"
@@ -1078,7 +1078,7 @@ export default function CaUnpaidAuditFeeRecoveryPage() {
                   09
                 </span>
                 <h2 className="text-xl sm:text-2xl font-extrabold text-slate-900 tracking-tight">
-                  Send an ICAI-Safe Advocate Notice or Batch CA Firm CSV
+                  Send an ICAI-Safe Fact-Verified Notice or Batch CA Firm CSV
                 </h2>
               </div>
 

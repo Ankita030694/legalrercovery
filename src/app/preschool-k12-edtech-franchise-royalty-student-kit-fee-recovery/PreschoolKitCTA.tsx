@@ -23,7 +23,7 @@ export default function PreschoolKitCTA({ className = "" }: PreschoolKitCTAProps
               Track 1 &bull; Single Center Pilot Notice
             </span>
             <h3 className="text-lg sm:text-xl font-bold text-white mb-2">
-              Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Advocate Drafted)
+              Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Fact-Verified)
             </h3>
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
               Dispatch a formal Headcount Audit, Copyright Act s.51 Workbook Piracy &amp; Kit-Fee Demand Notice via Email + WhatsApp + Speed Post RPAD to any defaulting preschool or skill center.

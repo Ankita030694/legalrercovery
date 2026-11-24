@@ -51,7 +51,7 @@ const SCENARIOS: StatusScenario[] = [
     identifierType: "Disputed Banking Reference (Dropped Settlement Packet or Fake Transaction Code)",
     probableLocation: "Payment Aggregator (Razorpay / PayU / Cashfree) Escrow Node or Merchant Nodal Account",
     statutoryTAT: "30-Day Dispute Resolution Window under RBI Integrated Ombudsman Scheme (RB-IOS, 2021)",
-    immediateAction: "Issue Tripartite Advocate Legal Notice to Merchant, Payment Aggregator, and Issuing Bank demanding joint reconciliation.",
+    immediateAction: "Issue Tripartite Fact-Verified Legal Notice to Merchant, Payment Aggregator, and Issuing Bank demanding joint reconciliation.",
     targetAnchor: "#route-3",
   },
 ];

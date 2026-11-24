@@ -26,7 +26,7 @@ const HEALTHCARE_TRACKS: HealthcareTrack[] = [
     primaryStatutes:
       "Article 21 Constitution, Indian Contract Act s.73 & s.126, NI Act s.4 & s.138, Order XXXVII CPC",
     headlineSummary:
-      "Never detain stabilized patients or mortal remains at the billing desk. Secure voluntary itemized bill acknowledgments and attendant co-obligor promissory undertakings at discharge, then enforce unpaid balances or relative stop-payment cheques through 15-day advocate notices.",
+      "Never detain stabilized patients or mortal remains at the billing desk. Secure voluntary itemized bill acknowledgments and attendant co-obligor promissory undertakings at discharge, then enforce unpaid balances or relative stop-payment cheques through 15-day fact-verified notices.",
     workflowSteps: [
       {
         step: "1. Non-Coercive Discharge Documentation",

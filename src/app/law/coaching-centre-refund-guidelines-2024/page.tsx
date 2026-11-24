@@ -155,7 +155,7 @@ const FAQS = [
   {
     question: "What legal action can parents take if a coaching centre ignores refund requests?",
     answer:
-      "Take three steps: (1) Send an advocate legal demand notice citing the 2024 MoE Guidelines and Consumer Protection Act; (2) File a complaint on the National Consumer Helpline (1915) and e-Jagriti portal; (3) Report the institute to the District Magistrate or Education Department.",
+      "Take three steps: (1) Send a legal demand notice citing the 2024 MoE Guidelines and Consumer Protection Act; (2) File a complaint on the National Consumer Helpline (1915) and e-Jagriti portal; (3) Report the institute to the District Magistrate or Education Department.",
   },
   {
     question: "Can I cancel a zero-interest EMI loan taken for coaching fees if my child drops out?",
@@ -165,7 +165,7 @@ const FAQS = [
   {
     question: "Coaching fees refund niyam kya hain aur legal notice kaise bheje (Hinglish FAQ)?",
     answer:
-      "Ministry of Education ke 2024 Coaching Guidelines ke tahat, agar student course chhodta hai toh coaching centre ko 10 din ke andar pro-rata fees wapas karni hoti hai. Agar institute mana kare, toh aap LegalRecovery.in par verified advocate ke zariye 15 din ka statutory legal notice bhej sakte hain.",
+      "Ministry of Education ke 2024 Coaching Guidelines ke tahat, agar student course chhodta hai toh coaching centre ko 10 din ke andar pro-rata fees wapas karni hoti hai. Agar institute mana kare, toh aap LegalRecovery.in par 15 din ka statutory legal notice bhej sakte hain.",
   },
 ];
 
@@ -285,7 +285,7 @@ export default function CoachingRefundGuidelinesPage() {
                 Statutory Summary (MoE 2024 Coaching Guidelines &amp; Consumer Protection Act)
               </p>
               <p>
-                Under Clause 11 of the Ministry of Education's 2024 Coaching Guidelines, coaching centres must refund fees on a pro-rata basis within 10 days if a student leaves midway. Blanket 'no-refund' clauses are illegal under Section 2(47) of the Consumer Protection Act. Parents can recover their money through an advocate legal notice or on e-Jagriti.
+                Under Clause 11 of the Ministry of Education's 2024 Coaching Guidelines, coaching centres must refund fees on a pro-rata basis within 10 days if a student leaves midway. Blanket 'no-refund' clauses are illegal under Section 2(47) of the Consumer Protection Act. Parents can recover their money through a legal notice or on e-Jagriti.
               </p>
             </div>
 
@@ -339,7 +339,7 @@ export default function CoachingRefundGuidelinesPage() {
                   In response to surging consumer disputes and national student welfare concerns, the <strong>Ministry of Education (Department of Higher Education), Government of India</strong>, notified the comprehensive <strong>&quot;Guidelines for Regulation of Coaching Centres&quot; on January 16, 2024</strong>. This landmark statutory framework dismantled unilateral fee forfeiture, introducing an unequivocal national mandate: any student who discontinues a coaching course midway is entitled to an automatic pro-rata refund of tuition fees, hostel expenses, and caution deposits within 10 calendar days.
                 </p>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
-                  Combined with the enforceable remedies of the <strong>Consumer Protection Act, 2019</strong> and rulings by the National Consumer Disputes Redressal Commission (NCDRC), parents now hold powerful statutory leverage to recover their hard-earned savings through advocate legal notices and online consumer proceedings.
+                  Combined with the enforceable remedies of the <strong>Consumer Protection Act, 2019</strong> and rulings by the National Consumer Disputes Redressal Commission (NCDRC), parents now hold powerful statutory leverage to recover their hard-earned savings through legal notices and online consumer proceedings.
                 </p>
               </section>
 
@@ -576,7 +576,7 @@ export default function CoachingRefundGuidelinesPage() {
                     <rect x="410" y="30" width="160" height="160" rx="12" fill="#FEF2F2" stroke="#FCA5A5" strokeWidth="2" />
                     <rect x="425" y="45" width="40" height="24" rx="6" fill="#DC2626" />
                     <text x="435" y="61" fill="#FFFFFF" fontSize="12" fontWeight="bold">03</text>
-                    <text x="425" y="95" fill="#991B1B" fontSize="13" fontWeight="bold">Advocate Demand</text>
+                    <text x="425" y="95" fill="#991B1B" fontSize="13" fontWeight="bold">Legal Demand</text>
                     <text x="425" y="118" fill="#7F1D1D" fontSize="10">15-day statutory notice</text>
                     <text x="425" y="132" fill="#7F1D1D" fontSize="10">via Speed Post + Email.</text>
                     <text x="425" y="152" fill="#DC2626" fontSize="10" fontWeight="bold">BSA s.63 electronic audit</text>
@@ -732,10 +732,10 @@ export default function CoachingRefundGuidelinesPage() {
                       STEP 3
                     </span>
                     <h3 className="text-base font-bold text-slate-900 mb-2">
-                      Serve a Formal Statutory Advocate Legal Demand Notice
+                      Serve a Formal Statutory Legal Demand Notice
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      If the institute fails to disburse payment within 10 days or issues a denial, engage an advocate to issue a formal statutory demand notice. Dispatched via Registered Speed Post with tracking and served digitally under Section 63 BSA, the notice establishes a strict 15-day cure period before institutional deregistration complaints and consumer court litigation.
+                      If the institute fails to disburse payment within 10 days or issues a denial, send a formal statutory demand notice. Dispatched via Registered Speed Post with tracking and served digitally under Section 63 BSA, the notice establishes a strict 15-day cure period before institutional deregistration complaints and consumer court litigation.
                     </p>
                   </div>
 
@@ -842,7 +842,7 @@ export default function CoachingRefundGuidelinesPage() {
                   </div>
 
                   <p className="text-xs text-slate-600 leading-relaxed bg-slate-50 p-3 rounded-lg border border-slate-200/60">
-                    <strong>Dispute Resolution Path:</strong> The coaching centre initially offered only ₹20,000, claiming all fees were locked into faculty contracts. Upon serving a statutory advocate legal notice citing Clause 11 of the MoE 2024 Guidelines and the NCDRC <em>FIITJEE</em> precedent, the institute released ₹1,75,000 directly via RTGS within 12 days to avoid public consumer litigation.
+                    <strong>Dispute Resolution Path:</strong> The coaching centre initially offered only ₹20,000, claiming all fees were locked into faculty contracts. Upon serving a statutory legal notice citing Clause 11 of the MoE 2024 Guidelines and the NCDRC <em>FIITJEE</em> precedent, the institute released ₹1,75,000 directly via RTGS within 12 days to avoid public consumer litigation.
                   </p>
                 </div>
               </section>
@@ -1006,7 +1006,7 @@ export default function CoachingRefundGuidelinesPage() {
                       What LegalRecovery Does
                     </h3>
                     <ul className="text-xs sm:text-sm text-slate-700 space-y-2 list-disc list-inside">
-                      <li>Drafts an authoritative advocate legal demand notice based on the MoE 2024 Guidelines, NCDRC precedents, and CPA 2019.</li>
+                      <li>Drafts an authoritative legal demand notice based on the MoE 2024 Guidelines, NCDRC precedents, and CPA 2019.</li>
                       <li>Dispatches physical notices via Registered Speed Post with barcoded tracking to corporate headquarters and branch offices.</li>
                       <li>Transmits formal digital notices via registered email with audit certificates satisfying Section 63 BSA.</li>
                       <li>Prepares and formats your e-Jagriti consumer complaint dossier if the coaching centre defaults on the statutory notice.</li>
@@ -1020,7 +1020,7 @@ export default function CoachingRefundGuidelinesPage() {
                     </h3>
                     <ul className="text-xs sm:text-sm text-slate-700 space-y-2 list-disc list-inside">
                       <li>We do not engage in informal campus picketing, physical confrontations, or unverified negotiations.</li>
-                      <li>We do not guarantee unverified instantaneous outcomes; all recovery follows statutory Indian legal processes.</li>
+                      <li>We do not guarantee unverified instantaneous outcomes; all recovery follows statutory India legal processes.</li>
                       <li>We cannot recover fees from unregistered phantom tutors who lack identifiable physical or banking addresses.</li>
                       <li>We do not represent clients in courtroom physical hearings without separate regional vakalatnama engagements.</li>
                     </ul>
@@ -1139,7 +1139,7 @@ export default function CoachingRefundGuidelinesPage() {
                         href="/send-legal-notice-online-india"
                         className="font-bold text-red-600 hover:text-red-700 hover:underline flex items-center gap-1.5"
                       >
-                        <span>→</span> Send a Legal Notice Online in India Through Verified Advocates
+                        <span>→</span> Send a Fact-Verified Legal Notice Online in India
                       </Link>
                     </li>
                   </ul>

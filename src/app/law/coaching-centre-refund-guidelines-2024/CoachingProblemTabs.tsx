@@ -37,9 +37,9 @@ const COACHING_PROBLEMS: CoachingProblemTab[] = [
           "Provide the mathematical breakdown: (Total Fee ÷ Total Course Weeks) × Unattended Weeks = Refund Due. Demand payment within the 10-day statutory window.",
       },
       {
-        step: "Serve Advocate Statutory Demand Notice",
+        step: "Serve Fact-Verified Statutory Demand Notice",
         description:
-          "If the centre stonewalls or fails to credit the amount within 10 days, dispatch a formal statutory advocate demand notice via Registered Speed Post and email, warning of CCPA penalty up to ₹1,00,000 and e-Jagriti consumer court proceedings.",
+          "If the centre stonewalls or fails to credit the amount within 10 days, dispatch a formal statutory fact-verified demand notice via Registered Speed Post and email, warning of CCPA penalty up to ₹1,00,000 and e-Jagriti consumer court proceedings.",
       },
     ],
     statutoryRule: "MoE 2024 Guidelines Clause 11 & Section 2(47) CPA 2019",
@@ -93,7 +93,7 @@ const COACHING_PROBLEMS: CoachingProblemTab[] = [
       {
         step: "Statutory Notice Contesting Disproportionate Retentions",
         description:
-          "Serve an advocate demand notice highlighting NCDRC precedents that cap administrative processing charges to reasonable nominal thresholds (typically under 10%).",
+          "Serve a fact-verified demand notice highlighting NCDRC precedents that cap administrative processing charges to reasonable nominal thresholds (typically under 10%).",
       },
     ],
     statutoryRule: "Section 2(47) Consumer Protection Act 2019 & CCPA Guidelines",
@@ -118,7 +118,7 @@ const COACHING_PROBLEMS: CoachingProblemTab[] = [
           "Send an email pointing out the direct breach of representations made during enrolment, giving 7 days to rectify the faculty allocation or process a complete refund.",
       },
       {
-        step: "Escalate to CCPA and Serve Advocate Notice",
+        step: "Escalate to CCPA and Serve Fact-Verified Notice",
         description:
           "File an unfair trade practice grievance before the National Consumer Helpline (NCH) and CCPA, backed by an advocate notice demanding 100% fee refund plus compensation for lost academic time.",
       },
@@ -147,7 +147,7 @@ const COACHING_PROBLEMS: CoachingProblemTab[] = [
       {
         step: "Serve Statutory Notice for Credit Score Protection",
         description:
-          "Serve an advocate demand notice instructing the NBFC not to report adverse entries to CIBIL / Experian, while holding the coaching centre liable for any ongoing interest debits.",
+          "Serve a fact-verified demand notice instructing the NBFC not to report adverse entries to CIBIL / Experian, while holding the coaching centre liable for any ongoing interest debits.",
       },
     ],
     statutoryRule: "RBI Digital Lending Guidelines & CPA 2019 Section 2(47)",

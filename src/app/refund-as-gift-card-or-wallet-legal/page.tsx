@@ -115,7 +115,7 @@ const FAQS = [
   {
     question: "Agar e-commerce app wallet me paise bhej de toh bank account me refund kaise le?",
     answer:
-      "Agar platform ne zabardasti wallet credit de diya hai, toh us balance ko kharch na karein. Turant grievance officer ko email karein ki aapne wallet credit ki sweekriti nahi di hai aur CPA 2019 Section 2(47) ke antargat bank refund chahte hain. Agar 48 hours me resolution na mile, toh advocate legal notice bhejkar 15 din me bank credit ki statutory maang ki ja sakti hai.",
+      "Agar platform ne zabardasti wallet credit de diya hai, toh us balance ko kharch na karein. Turant grievance officer ko email karein ki aapne wallet credit ki sweekriti nahi di hai aur CPA 2019 Section 2(47) ke antargat bank refund chahte hain. Agar 48 hours me resolution na mile, toh fact-verified legal notice bhejkar 15 din me bank credit ki statutory maang ki ja sakti hai.",
   },
 ];
 
@@ -368,7 +368,7 @@ export default function ForcedWalletRefundPage() {
                       CPC Order 37 &amp; Legal Notice Rail
                     </td>
                     <td className="p-3.5 sm:p-4 leading-relaxed">
-                      Formal advocate notice demands bank remittance within 15 days; transparent fixed fee of ₹{BASE_PRICE} on LegalRecovery.
+                      Formal fact-verified notice demands bank remittance within 15 days; transparent fixed fee of ₹{BASE_PRICE} on LegalRecovery.
                     </td>
                   </tr>
                 </tbody>
@@ -730,7 +730,7 @@ export default function ForcedWalletRefundPage() {
                 </span>
                 <div>
                   <h3 className="text-base font-bold text-slate-900 sm:text-lg">
-                    Serve an Advocate Pre-Litigation Legal Notice
+                    Serve a Fact-Verified Pre-Litigation Legal Notice
                   </h3>
                   <p className="mt-1 text-xs sm:text-sm text-slate-600 leading-relaxed">
                     When digital appeals fail, an advocate legal notice drafted under the Consumer Protection Act 2019 changes the commercial equation. The notice puts the company&apos;s legal team on formal notice of pre-litigation liability, citing unfair trade practice damages, commercial interest at 18% p.a., and litigation expenses. Over 85% of forced wallet disputes settle within the 15-day notice period via direct NEFT or IMPS bank credit.
@@ -924,7 +924,7 @@ export default function ForcedWalletRefundPage() {
                 <div>
                   <h4 className="font-bold text-slate-900">3. Legal Escalation Rail</h4>
                   <p className="mt-1 text-slate-600 leading-relaxed">
-                    Rahul left the voucher untouched. Through LegalRecovery, he dispatched a formal advocate legal notice to the marketplace&apos;s corporate office in Bangalore. The notice established that imposing expiring vouchers violated Section 2(46) of the Consumer Protection Act, 2019, CCPA Dark Patterns Guidelines, and RBI Master Direction on PPIs Section 10.2.
+                    Rahul left the voucher untouched. Through LegalRecovery, he dispatched a formal fact-verified legal notice to the marketplace&apos;s corporate office in Bangalore. The notice established that imposing expiring vouchers violated Section 2(46) of the Consumer Protection Act, 2019, CCPA Dark Patterns Guidelines, and RBI Master Direction on PPIs Section 10.2.
                   </p>
                 </div>
                 <div>
@@ -1126,7 +1126,7 @@ export default function ForcedWalletRefundPage() {
                   <span className="text-sm">✓</span> What We Can Do
                 </div>
                 <ul className="mt-3 space-y-2 text-xs sm:text-sm text-slate-700">
-                  <li>• Draft an advocate legal notice asserting CPA §2(47) and CCPA Dark Patterns violations.</li>
+                  <li>• Draft a fact-verified legal notice asserting CPA §2(47) and CCPA Dark Patterns violations.</li>
                   <li>• Demand cancellation of store wallet units and direct bank remittance with statutory interest.</li>
                   <li>• Dispatch notices via Speed Post and digital channels directly to corporate directors and legal officers.</li>
                   <li>• Provide structured pre-litigation documentation ready for e-Jagriti consumer court filings.</li>

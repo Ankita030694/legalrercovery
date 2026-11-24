@@ -770,7 +770,7 @@ export default function MedicalIcuEquipmentRecoveryPage() {
                   8
                 </span>
                 <h2 className="text-xl sm:text-2xl font-extrabold text-slate-900 tracking-tight">
-                  Send One Clinical Handover Notice or Upload Hospital Portfolio
+                  Send One Clinical Handover Notice or Submit Hospital Portfolio
                 </h2>
               </div>
 
@@ -856,7 +856,7 @@ export default function MedicalIcuEquipmentRecoveryPage() {
                   className="p-4 rounded-xl border border-slate-200 hover:border-[#DC2626] hover:bg-red-50/40 transition-colors"
                 >
                   <span className="font-bold text-slate-900 block mb-1">
-                    Advocate-Vetted Legal Notice &amp; Reply Template Workspace
+                    Ready-to-Use Legal Notice &amp; Reply Template Workspace
                   </span>
                   <span className="text-slate-600">
                     Draft, preview, and export structured commercial demand notices.

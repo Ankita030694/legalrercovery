@@ -197,7 +197,7 @@ export default function GoibiboTableOfContents({
           <div className="pt-3 border-t border-slate-100">
             <div className="p-3 bg-slate-50 rounded-xl border border-slate-200/70 text-slate-600 text-[11px] leading-relaxed">
               <span className="font-bold text-slate-900 block mb-0.5">Need Urgent Legal Escalation?</span>
-              Send an advocate legal demand notice to Ibibo Group for uncredited flight, hotel, or bus refunds.
+              Send a fact-verified legal demand notice to Ibibo Group for uncredited flight, hotel, or bus refunds.
             </div>
           </div>
         </div>

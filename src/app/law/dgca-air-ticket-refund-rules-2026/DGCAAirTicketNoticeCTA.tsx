@@ -31,7 +31,7 @@ export default function DGCAAirTicketNoticeCTA({
                 Airlines or Travel Portals Holding Your Flight Refund?
               </h3>
               <p className="text-slate-300 text-sm sm:text-base leading-relaxed mb-6">
-                Under the revised DGCA CAR Section 3 Series M Part II (effective 26 March 2026), airlines must refund payments within 7 working days and remain statutorily answerable for travel agent defaults. Forced credit shells and zero-refund policies on cancelled flights violate aviation directives. Serve an advocate-drafted statutory demand notice today.
+                Under the revised DGCA CAR Section 3 Series M Part II (effective 26 March 2026), airlines must refund payments within 7 working days and remain statutorily answerable for travel agent defaults. Forced credit shells and zero-refund policies on cancelled flights violate aviation directives. Serve a fact-verified statutory demand notice today.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button
@@ -42,7 +42,7 @@ export default function DGCAAirTicketNoticeCTA({
                   {buttonText} — ₹{basePrice}
                 </button>
                 <div className="text-xs text-slate-400 flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-3">
-                  <span>✓ Advocate-Drafted Notice</span>
+                  <span>✓ Fact-Verified Notice</span>
                   <span className="hidden sm:inline">•</span>
                   <span>✓ Email + WhatsApp</span>
                   <span className="hidden sm:inline">•</span>

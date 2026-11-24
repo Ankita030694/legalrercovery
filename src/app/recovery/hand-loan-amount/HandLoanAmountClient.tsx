@@ -43,7 +43,7 @@ const faqs = [
   },
   {
     question: "What is the cost of sending a legal notice for hand loan recovery?",
-    answer: "The cost of sending a legal notice is highly affordable compared to filing a lawsuit. At LegalRecovery, we provide transparent flat-fee pricing for advocate-signed notices, which include drafting, reviewing your evidence trail, and dispatching physical registered letters to the borrower."
+    answer: "The cost of sending a legal notice is highly affordable compared to filing a lawsuit. At LegalRecovery, we provide transparent flat-fee pricing for fact-verified notices, which include drafting, reviewing your evidence trail, and dispatching physical registered letters to the borrower."
   },
   {
     question: "What happens if a borrower lives in a different state from me?",
@@ -182,7 +182,7 @@ const reviewSchema = {
         "@type": "Person",
         "name": "Divya Chawla"
       },
-      "reviewBody": "Very smooth process. They explained the legal provisions clearly. The advocate notice alone was enough to get my pending hand loan of ₹2.5 Lakhs back in less than 3 weeks."
+      "reviewBody": "Very smooth process. They explained the legal provisions clearly. The fact-verified notice alone was enough to get my pending hand loan of ₹2.5 Lakhs back in less than 3 weeks."
     },
     {
       "@type": "Review",
@@ -402,7 +402,7 @@ export default function HandLoanAmountClient() {
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      Before initiating a formal lawsuit, serving an <strong>Advocate-Signed Legal Notice</strong> is highly recommended. It serves as a final statutory warning, giving the borrower a strict timeline (typically 15 days) to return the loan amount.
+                      Before initiating a formal lawsuit, serving an <strong>Fact-Verified Legal Notice</strong> is highly recommended. It serves as a final statutory warning, giving the borrower a strict timeline (typically 15 days) to return the loan amount.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
                       A professional legal notice serves several purposes:
@@ -572,7 +572,7 @@ export default function HandLoanAmountClient() {
                       LegalRecovery is India&apos;s leading tech-enabled legal assistance platform. We combine the expertise of veteran recovery advocates with advanced tracking systems to provide a stress-free, transparent, and highly effective recovery experience.
                     </p>
                     <ul className="list-disc pl-6 space-y-3 text-sm text-slate-650">
-                      <li><strong>Custom Legal Notice:</strong> We do not send generic letters. Our legal panel carefully reviews your UPI transactions, bank records, and chat logs to draft a notice that cites precise legal provisions tailored to your case.</li>
+                      <li><strong>Custom Legal Notice:</strong> We do not send generic letters. Our team carefully reviews your UPI transactions, bank records, and chat logs to draft a notice that cites precise legal provisions tailored to your case.</li>
                       <li><strong>Digital Evidence Certification:</strong> We handle the complex drafting of electronic certificates (under BSA Section 63) to ensure your WhatsApp messages and emails are ready for court.</li>
                       <li><strong>Director & Personal Trackers:</strong> If you lent to a business or if the borrower has a corporate standing, we dispatch notices digitally to their personal emails and registered offices, maximizing reach and pressure.</li>
                       <li><strong>End-to-End Legal Support:</strong> From sending the first legal notice to representing you in Summary Suits, cheque bounce cases, and filing criminal complaints, our panel of labor and civil advocates handles it all.</li>

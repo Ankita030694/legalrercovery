@@ -184,12 +184,12 @@ const FAQS = [
   {
     question: "How do doctors handle patients who threaten fake 1-star Google or Instagram reviews to avoid bills?",
     answer:
-      "When a patient conditions a financial concession on withholding negative public reviews—e.g. 'Waiver the ₹75,000 balance or I will post videos alleging botched surgery'—this crosses the line from consumer feedback into criminal extortion under Section 308 of the Bharatiya Nyaya Sanhita, 2023 (BNS) and criminal defamation under Section 356 BNS. The doctor should immediately archive the communication under BSA 2023 s.63, serve a dual Advocate Demand Notice combining fee recovery with a Cease-and-Desist defamation warning, and file a formal cyber-cell police complaint if published.",
+      "When a patient conditions a financial concession on withholding negative public reviews—e.g. 'Waiver the ₹75,000 balance or I will post videos alleging botched surgery'—this crosses the line from consumer feedback into criminal extortion under Section 308 of the Bharatiya Nyaya Sanhita, 2023 (BNS) and criminal defamation under Section 356 BNS. The doctor should immediately archive the communication under BSA 2023 s.63, serve a dual Fact-Verified Demand Notice combining fee recovery with a Cease-and-Desist defamation warning, and file a formal cyber-cell police complaint if published.",
   },
   {
     question: "Does issuing a recovery notice violate National Medical Commission (NMC) ethical regulations?",
     answer:
-      "No. The National Medical Commission (Registered Medical Practitioner Conduct) Regulations explicitly allow medical practitioners and registered clinical establishments to recover legitimate professional charges for services rendered. What the NMC and Supreme Court (Jacob Mathew v. State of Punjab) prohibit is medical negligence and detaining patients physically. Serving an advocate-vetted civil demand notice or Section 138 cheque bounce notice through lawful legal channels is an entirely lawful constitutional right of every healthcare provider.",
+      "No. The National Medical Commission (Registered Medical Practitioner Conduct) Regulations explicitly allow medical practitioners and registered clinical establishments to recover legitimate professional charges for services rendered. What the NMC and Supreme Court (Jacob Mathew v. State of Punjab) prohibit is medical negligence and detaining patients physically. Serving a fact-verified civil demand notice or Section 138 cheque bounce notice through lawful legal channels is an entirely lawful constitutional right of every healthcare provider.",
   },
   {
     question: "Can a clinic prosecute both the patient and their spouse for bounced package cheques?",
@@ -287,8 +287,8 @@ const HOWTO_SCHEMA = {
     {
       "@type": "HowToStep",
       position: 3,
-      name: "Serve Tri-Channel 15-Day Advocate Notice Combining Civil Debt & BNS Warnings",
-      text: "Dispatch an advocate demand notice via Email, WhatsApp, and Speed Post RPAD demanding milestone payment under Contract Act s.73 / NI Act s.138 while issuing a cease-and-desist against criminal extortion under BNS s.308.",
+      name: "Serve Tri-Channel 15-Day Fact-Verified Notice Combining Civil Debt & BNS Warnings",
+      text: "Dispatch a fact-verified demand notice via Email, WhatsApp, and Speed Post RPAD demanding milestone payment under Contract Act s.73 / NI Act s.138 while issuing a cease-and-desist against criminal extortion under BNS s.308.",
     },
   ],
 };
@@ -833,7 +833,7 @@ export default function IvfDentalCosmeticPackageRecoveryPage() {
                   </div>
 
                   <div className="mt-5 p-3.5 bg-emerald-950/40 border border-emerald-800/50 rounded-xl text-xs text-emerald-200">
-                    <strong>Settlement Outcome:</strong> Within 9 days of receiving the Advocate Demand Notice detailing Section 138 criminal liability and Section 308 BNS extortion exposure for their WhatsApp review threats, the patient settled ₹2,45,000 in full via RTGS and signed a mutual non-disparagement release.
+                    <strong>Settlement Outcome:</strong> Within 9 days of receiving the Fact-Verified Demand Notice detailing Section 138 criminal liability and Section 308 BNS extortion exposure for their WhatsApp review threats, the patient settled ₹2,45,000 in full via RTGS and signed a mutual non-disparagement release.
                   </div>
                 </div>
               </section>
@@ -1056,7 +1056,7 @@ export default function IvfDentalCosmeticPackageRecoveryPage() {
                       className="p-3.5 rounded-xl border border-slate-200 hover:border-red-300 hover:bg-red-50/50 transition-colors flex flex-col justify-between group"
                     >
                       <span className="font-bold text-slate-900 group-hover:text-[#DC2626]">
-                        Promissory Note Format India (Advocate Drafted) &rarr;
+                        Promissory Note Format India (Fact-Verified) &rarr;
                       </span>
                       <span className="text-slate-500 mt-1">
                         Enforceable Section 4 NI Act promissory note structure for clinic packages and co-guarantors.

@@ -181,7 +181,7 @@ const FAQS = [
   {
     question: "Why should a contract manufacturing plant issue an advocate demand notice before going to court or MSEFC?",
     answer:
-      "Over 75% of defaulting D2C brand disputes settle within 15 to 30 days of receiving a formal, advocate-drafted statutory demand notice. When brand founders and their venture capital/angel backers see a meticulously prepared notice citing Sale of Goods Act Section 55, MSMED Act 3x RBI compound interest, personal director liability under NI Act Section 141, and potential regulatory notifications to the state FDA/FSSAI licensing authorities, they immediately prioritize liquidating the plant's invoices to safeguard their company valuation and avoid public litigation.",
+      "Over 75% of defaulting D2C brand disputes settle within 15 to 30 days of receiving a formal, fact-verified statutory demand notice. When brand founders and their venture capital/angel backers see a meticulously prepared notice citing Sale of Goods Act Section 55, MSMED Act 3x RBI compound interest, personal director liability under NI Act Section 141, and potential regulatory notifications to the state FDA/FSSAI licensing authorities, they immediately prioritize liquidating the plant's invoices to safeguard their company valuation and avoid public litigation.",
   },
 ];
 
@@ -284,8 +284,8 @@ export default function PrivateLabelManufacturerRecoveryPage() {
       {
         "@type": "HowToStep",
         position: 4,
-        name: "Serve 15-Day Advocate Pre-Litigation Statutory Notice",
-        text: "Issue an advocate demand notice invoking Sale of Goods Act Section 55(2), MSMED Act Section 15, and Contract Act Section 73, served via Speed Post RPAD, WhatsApp, and email under BSA 2023 Section 63.",
+        name: "Serve 15-Day Fact-Verified Pre-Litigation Statutory Notice",
+        text: "Issue a fact-verified demand notice invoking Sale of Goods Act Section 55(2), MSMED Act Section 15, and Contract Act Section 73, served via Speed Post RPAD, WhatsApp, and email under BSA 2023 Section 63.",
       },
       {
         "@type": "HowToStep",
@@ -1189,10 +1189,10 @@ export default function PrivateLabelManufacturerRecoveryPage() {
                     </span>
                     <div>
                       <strong className="text-slate-900 block font-bold mb-1">
-                        Step 4: Serve 15-Day Advocate Pre-Litigation Statutory Demand Notice
+                        Step 4: Serve 15-Day Fact-Verified Pre-Litigation Statutory Demand Notice
                       </strong>
                       <p className="text-slate-600">
-                        Issue an advocate demand notice invoking Sale of Goods Act Section 55(2), MSMED Act Section 15, and Contract Act Section 73, served via Speed Post RPAD, WhatsApp, and email under BSA 2023 Section 63.
+                        Issue a fact-verified demand notice invoking Sale of Goods Act Section 55(2), MSMED Act Section 15, and Contract Act Section 73, served via Speed Post RPAD, WhatsApp, and email under BSA 2023 Section 63.
                       </p>
                     </div>
                   </div>

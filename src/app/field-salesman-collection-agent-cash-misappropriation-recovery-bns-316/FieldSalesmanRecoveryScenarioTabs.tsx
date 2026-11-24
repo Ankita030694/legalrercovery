@@ -93,7 +93,7 @@ const SCENARIOS: Scenario[] = [
       "Formal legal rebuttal citing IRDAI (Protection of Policyholders' Interests) Regulations 2024 against arbitrary surveyor delays",
     ],
     recommendedAction:
-      "Submit an advocate-drafted formal Claim Representation to the insurer's Grievance Redressal Officer (GRO) with the certified BNS s.316(4) FIR dossier. If unresolved within 30 days, escalate to the Insurance Ombudsman or Commercial Court.",
+      "Submit a fact-verified formal Claim Representation to the insurer's Grievance Redressal Officer (GRO) with the certified BNS s.316(4) FIR dossier. If unresolved within 30 days, escalate to the Insurance Ombudsman or Commercial Court.",
   },
 ];
 

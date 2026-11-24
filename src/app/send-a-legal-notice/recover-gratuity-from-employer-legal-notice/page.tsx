@@ -4,7 +4,7 @@ import RecoverGratuityFromEmployerLegalNoticeClient from './RecoverGratuityFromE
 const slug = 'send-a-legal-notice/recover-gratuity-from-employer-legal-notice';
 const title = 'Legal Notice to Employer for Unpaid Gratuity in India';
 const description =
-  'Employer withholding your gratuity? Send an advocate-vetted legal notice under the Payment of Gratuity Act to claim dues with 10% interest.';
+  'Employer withholding your gratuity? Send a fact-verified legal notice under the Payment of Gratuity Act to claim dues with 10% interest.';
 const url = `https://www.legalrecovery.in/${slug}`;
 const ogImage = `/images/og/recover-gratuity-from-employer-legal-notice.jpg`;
 

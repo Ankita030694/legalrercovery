@@ -239,7 +239,7 @@ export default function BrandLicensingMinimumRoyaltyRecoveryPage() {
         "@type": "HowToStep",
         position: 2,
         name: "Serve Dual MGR Debt + Trade Marks Act s.29 Cease-and-Desist Notice",
-        text: "Dispatch an Advocate Demand Notice via Email, WhatsApp, and Speed Post RPAD demanding unconditional MGR arrears within 15 days and halting post-sell-off sales within 48 hours.",
+        text: "Dispatch a Fact-Verified Demand Notice via Email, WhatsApp, and Speed Post RPAD demanding unconditional MGR arrears within 15 days and halting post-sell-off sales within 48 hours.",
       },
       {
         "@type": "HowToStep",
@@ -884,7 +884,7 @@ export default function BrandLicensingMinimumRoyaltyRecoveryPage() {
                   },
                   {
                     label: "Notice Workspace",
-                    title: "Advocate-Vetted Commercial Legal Notice & Reply Format",
+                    title: "Fact-Verified Commercial Legal Notice & Reply Format",
                     href: "/templates/legal-notice-reply-format",
                   },
                   {

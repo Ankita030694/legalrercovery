@@ -123,7 +123,7 @@ export default function ExportDemandNoticeTOC() {
               href="/user/new-recovery"
               className="w-full py-2.5 px-4 rounded-xl bg-[#DC2626] hover:bg-[#B91C1C] text-white text-xs font-bold text-center block shadow-sm transition-colors"
             >
-              Send Advocate Notice (₹999)
+              Send Fact-Verified Notice (₹999)
             </Link>
           </div>
         </div>

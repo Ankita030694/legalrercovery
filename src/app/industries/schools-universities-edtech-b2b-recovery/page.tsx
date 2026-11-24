@@ -96,7 +96,7 @@ const IND_17_SPOKES: IndustrySpoke[] = [
     url: "/templates/school-compliant-parent-fee-recovery-legal-notice-format",
     statute: "RTE s.5(3) Safe-Harbour + Parent Contractual Liability + Order 37",
     summary:
-      "Advocate-vetted notice template with explicit Child-Safe Disclaimer confirming zero impact on Board roll numbers, exams, or TC issuance.",
+      "Ready-to-use notice template with explicit Child-Safe Disclaimer confirming zero impact on Board roll numbers, exams, or TC issuance.",
   },
   {
     id: "B2B-203",
@@ -243,7 +243,7 @@ const FAQS = [
     question:
       "Can a private unaided school legally recover unpaid tuition fees if the High Court forbids withholding Transfer Certificates (TCs)?",
     answer:
-      "Yes. High Courts bar withholding TCs, marksheets, or Board admit cards because the child cannot be penalized—but they explicitly recognize the school Trust's right to recover unpaid fees from the contracting parent or guardian. Issuing the TC cleanly and serving an advocate-drafted civil demand notice addressed solely to the earning parent (with an explicit RTE s.5(3) child-protection disclaimer) is 100% lawful and reputation-safe.",
+      "Yes. High Courts bar withholding TCs, marksheets, or Board admit cards because the child cannot be penalized—but they explicitly recognize the school Trust's right to recover unpaid fees from the contracting parent or guardian. Issuing the TC cleanly and serving a fact-verified civil demand notice addressed solely to the earning parent (with an explicit RTE s.5(3) child-protection disclaimer) is 100% lawful and reputation-safe.",
   },
   {
     question:
@@ -279,7 +279,7 @@ const FAQS = [
     question:
       "Can a school Trust, university, or EdTech vendor test LegalRecovery.in on one defaulter before uploading a 200-row CSV?",
     answer:
-      "Yes. You can test 1 live overdue parent fee ledger, bounced semester cheque, or defaulting school Trust account for ₹999 (advocate-drafted and dispatched via Email, Business WhatsApp, and Speed Post RPAD), and then onboard 10 to 10,000+ cases in our bulk CSV and campus-isolated Representees workspace.",
+      "Yes. You can test 1 live overdue parent fee ledger, bounced semester cheque, or defaulting school Trust account for ₹999 (fact-verified and dispatched via Email, Business WhatsApp, and Speed Post RPAD), and then onboard 10 to 10,000+ cases in our bulk CSV and campus-isolated Representees workspace.",
   },
 ];
 
@@ -739,7 +739,7 @@ export default function SchoolsUniversitiesEdTechHubPage() {
                 >
                   Representees Workspace
                 </Link>
-                , school Trusts and EdTech controllers can isolate ledgers campus-by-campus, test 1 live notice for ₹999 first, and then dispatch 10 to 10,000+ advocate-vetted notices simultaneously with tracked Email, Business WhatsApp, and Speed Post RPAD delivery logs.
+                , school Trusts and EdTech controllers can isolate ledgers campus-by-campus, test 1 live notice for ₹999 first, and then dispatch 10 to 10,000+ fact-verified notices simultaneously with tracked Email, Business WhatsApp, and Speed Post RPAD delivery logs.
               </p>
 
               <SchoolsEdTechHubCTA />

@@ -161,7 +161,7 @@ const faqJsonLd = {
       "name": "Dark patterns se hue extra deduction ka refund kaise claim karein aur legal notice kaise bhejein?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Sabse pehle checkout screens aur payment invoice ka screenshot lekar Bharatiya Sakshya Adhiniyam (BSA) Section 63 ke tahat electronic evidence preserve karein. Uske baad platform ke statutory Grievance Officer ko 48 ghante ka statutory notice dein aur NCH 1915 par docket register karein. Agar 30 din me refund na mile, toh LegalRecovery ke panel advocate se formal legal notice bhejkar e-Jagriti portal par compensation claim karein.",
+        "text": "Sabse pehle checkout screens aur payment invoice ka screenshot lekar Bharatiya Sakshya Adhiniyam (BSA) Section 63 ke tahat electronic evidence preserve karein. Uske baad platform ke statutory Grievance Officer ko 48 ghante ka statutory notice dein aur NCH 1915 par docket register karein. Agar 30 din me refund na mile, toh LegalRecovery ke zariye fact-verified formal legal notice bhejkar e-Jagriti portal par compensation claim karein.",
       },
     },
   ],
@@ -307,7 +307,7 @@ export default function DarkPatternsLawPage() {
                   <tr className="hover:bg-slate-50/80 transition-colors">
                     <td className="py-2.5 px-4 font-semibold text-slate-900">Legal Demand Notice</td>
                     <td className="py-2.5 px-4">Pre-Litigation Advocate Rail via LegalRecovery</td>
-                    <td className="py-2.5 px-4">Drafted by panel advocates and served by email and WhatsApp for a transparent flat fee of ₹{BASE_PRICE}. Speed Post is optional at ₹450 per party.</td>
+                    <td className="py-2.5 px-4">Prepared on verified facts and served by email and WhatsApp for a transparent flat fee of ₹{BASE_PRICE}. Speed Post is optional at ₹450 per party.</td>
                   </tr>
                 </tbody>
               </table>
@@ -954,10 +954,10 @@ export default function DarkPatternsLawPage() {
                 </div>
                 <div>
                   <h3 className="text-base font-bold text-slate-900 mb-1">
-                    Serve an Advocate Legal Notice & File on e-Jagriti
+                    Serve a Fact-Verified Legal Notice & File on e-Jagriti
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed mb-1.5">
-                    If unresolved, serve an Advocate Legal Demand Notice giving a final 15-day window for complete reimbursement plus interest. If ignored, file on <strong>e-Jagriti</strong> before the District Consumer Commission for refund, statutory costs, and compensation. Check standard <Link href="/legal-notice-charges" className="text-red-600 font-semibold hover:underline">legal notice charges</Link> on our portal.
+                    If unresolved, serve a Fact-Verified Legal Demand Notice giving a final 15-day window for complete reimbursement plus interest. If ignored, file on <strong>e-Jagriti</strong> before the District Consumer Commission for refund, statutory costs, and compensation. Check standard <Link href="/legal-notice-charges" className="text-red-600 font-semibold hover:underline">legal notice charges</Link> on our portal.
                   </p>
                   <p className="text-xs text-slate-500 font-medium">
                     Jurisdiction: District Commissions adjudicate claims up to ₹50 Lakh with minimal court fees.
@@ -1012,7 +1012,7 @@ export default function DarkPatternsLawPage() {
                   <ul className="space-y-1.5 text-slate-700">
                     <li>• <strong>Day 0:</strong> Priyanshu discovers unconsented insurance and 3 recurring charges. Platform chatbot claims subscriptions cannot be reversed.</li>
                     <li>• <strong>Day 2:</strong> Formal grievance submitted to Statutory Grievance Officer citing CCPA Guidelines Annexure 1(2), 1(5), and 1(8). Platform sends automated acknowledgment but takes no action.</li>
-                    <li>• <strong>Day 6:</strong> Priyanshu serves an Advocate Legal Demand Notice via LegalRecovery demanding reimbursement of ₹5,498 within 15 days, warning of e-Jagriti filing.</li>
+                    <li>• <strong>Day 6:</strong> Priyanshu serves a Fact-Verified Legal Demand Notice via LegalRecovery demanding reimbursement of ₹5,498 within 15 days, warning of e-Jagriti filing.</li>
                     <li>• <strong>Day 11:</strong> Platform Legal Directorate intervenes. Full refund of ₹5,498 credited to source account, mandate cancelled, and ₹5,000 paid as goodwill compensation.</li>
                   </ul>
                 </div>
@@ -1216,7 +1216,7 @@ export default function DarkPatternsLawPage() {
                   What LegalRecovery Does
                 </span>
                 <ul className="space-y-1.5 text-xs sm:text-sm text-slate-700">
-                  <li>• We draft and dispatch formal Advocate Legal Demand Notices directly to registered e-commerce entities, online travel portals, and subscription providers.</li>
+                  <li>• We draft and dispatch formal Fact-Verified Legal Demand Notices directly to registered e-commerce entities, online travel portals, and subscription providers.</li>
                   <li>• We cite specific statutory violations under the CCPA Dark Patterns Guidelines 2023, E-Commerce Rules 2020/2026, and Section 2(47) of CPA 2019.</li>
                   <li>• We calculate statutory interest and demand compensation for mental harassment and loss of consumer time.</li>
                   <li>• We serve notices by registered corporate email and WhatsApp to board directors, with optional Speed Post (₹450 per party).</li>
@@ -1231,7 +1231,7 @@ export default function DarkPatternsLawPage() {
                 <ul className="space-y-1.5 text-xs sm:text-sm text-slate-700">
                   <li>• We cannot trace anonymous cyber fraudsters operating fake Telegram trading channels or illicit betting apps (those require Cyber Crime Cell FIRs via 1930).</li>
                   <li>• We cannot guarantee an instant settlement if an e-commerce company chooses to contest the dispute before the Consumer Commission.</li>
-                  <li>• We do not provide physical courtroom advocacy; our service provides standardized pre-litigation advocate notice drafting and digital e-filing dossiers.</li>
+                  <li>• We do not provide physical courtroom advocacy; our service provides standardized pre-litigation fact-verified notice drafting and digital e-filing dossiers.</li>
                   <li>• We cannot unilaterally freeze merchant bank accounts without a formal judicial order or banking ombudsman directive.</li>
                 </ul>
               </div>

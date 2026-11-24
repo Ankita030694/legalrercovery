@@ -617,7 +617,7 @@ export default function RbiZeroLiabilityUnauthorisedTransactionPage() {
                         YES / NO
                       </span>
                       <span>
-                        <strong>5. 10 Working Days Elapsed Without Shadow Reversal:</strong> Have more than <strong>10 working days</strong> passed since your complaint without the bank crediting a value-dated shadow reversal? (<em>If YES → Bank is in statutory breach of Paragraph 9; serve an Advocate Legal Notice &amp; file on RBI CMS</em>)
+                        <strong>5. 10 Working Days Elapsed Without Shadow Reversal:</strong> Have more than <strong>10 working days</strong> passed since your complaint without the bank crediting a value-dated shadow reversal? (<em>If YES → Bank is in statutory breach of Paragraph 9; serve a Legal Notice &amp; file on RBI CMS</em>)
                       </span>
                     </li>
                   </ul>
@@ -755,8 +755,8 @@ export default function RbiZeroLiabilityUnauthorisedTransactionPage() {
                   </div>
                   <div className="bg-red-50 text-red-950 p-4 rounded-xl border border-red-200">
                     <span className="text-[10px] font-bold text-red-700 uppercase tracking-wider block mb-1">Step 4 • 15-Day Statutory Notice</span>
-                    <h3 className="font-bold text-sm">Serve Advocate Legal Notice to Bank MD &amp; Nodal Cell</h3>
-                    <p className="text-xs text-red-900 mt-1">Dispatch formal advocate legal notice via Speed Post + Email demanding principal + interest.</p>
+                    <h3 className="font-bold text-sm">Serve Legal Notice to Bank MD &amp; Nodal Cell</h3>
+                    <p className="text-xs text-red-900 mt-1">Dispatch formal legal notice via Speed Post + Email demanding principal + interest.</p>
                   </div>
                   <div className="bg-emerald-50 text-emerald-950 p-4 rounded-xl border border-emerald-200">
                     <span className="text-[10px] font-bold text-emerald-700 uppercase tracking-wider block mb-1">Step 5 • Day 30 Onwards</span>
@@ -822,7 +822,7 @@ export default function RbiZeroLiabilityUnauthorisedTransactionPage() {
                     {/* Step 4 */}
                     <rect x="520" y="20" width="142" height="92" rx="10" fill="url(#rbiAlert)" />
                     <text x="591" y="43" fill="#FCA5A5" fontWeight="bold" textAnchor="middle">STEP 4 (DAY 11+)</text>
-                    <text x="591" y="63" fill="#FFFFFF" fontWeight="bold" textAnchor="middle">Advocate Notice</text>
+                    <text x="591" y="63" fill="#FFFFFF" fontWeight="bold" textAnchor="middle">Legal Notice</text>
                     <text x="591" y="81" fill="#FEE2E2" fontSize="10" textAnchor="middle">15-Day Statutory Demand</text>
                     <text x="591" y="97" fill="#FECACA" fontSize="9" textAnchor="middle">Bank Nodal Officer + MD</text>
 
@@ -951,7 +951,7 @@ export default function RbiZeroLiabilityUnauthorisedTransactionPage() {
                       <strong>The Bank&apos;s Illegal Refusal (Day 14):</strong> Instead of crediting a shadow reversal within <strong>10 working days</strong> under Paragraph 9 of the 6 July 2017 RBI Circular, the bank closed his ticket on Day 14 stating: <em>&quot;Transactions were completed using valid device binding and OTP; hence bank is not liable.&quot;</em>
                     </p>
                     <p>
-                      <strong>The Statutory Action:</strong> Siddharth engaged LegalRecovery.in (flat ₹{noticePrice} fee—see our <Link href="/legal-notice-charges" className="text-sky-400 underline">legal notice charges</Link>). An advocate served a 15-day statutory legal demand notice on the Bank&apos;s Principal Nodal Officer and Managing Director, citing <strong>Paragraphs 6(b), 9(i), and 12 of RBI Circular DBR.No.Leg.BC.78/09.07.005/2017-18</strong> and the Supreme Court&apos;s 2025 ruling in <em>State Bank of India v. Pallabh Bhowmick</em>—demanding the bank&apos;s server logs explaining how a new payee cooling-off period was bypassed at 1:15 AM.
+                      <strong>The Statutory Action:</strong> Siddharth engaged LegalRecovery.in (flat ₹{noticePrice} fee—see our <Link href="/legal-notice-charges" className="text-sky-400 underline">legal notice charges</Link>). Our team verified the facts and served a 15-day statutory legal demand notice on the Bank&apos;s Principal Nodal Officer and Managing Director, citing <strong>Paragraphs 6(b), 9(i), and 12 of RBI Circular DBR.No.Leg.BC.78/09.07.005/2017-18</strong> and the Supreme Court&apos;s 2025 ruling in <em>State Bank of India v. Pallabh Bhowmick</em>—demanding the bank&apos;s server logs explaining how a new payee cooling-off period was bypassed at 1:15 AM.
                     </p>
                     <div className="p-3.5 sm:p-4 bg-emerald-950/70 border border-emerald-700/60 rounded-xl text-emerald-200">
                       <strong className="block text-emerald-400 font-bold mb-1">The Outcome (Day 12 After Legal Notice):</strong>
@@ -1038,7 +1038,7 @@ export default function RbiZeroLiabilityUnauthorisedTransactionPage() {
                       ✓ What We Do: Enforce Your Bank&apos;s Statutory Liability
                     </div>
                     <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
-                      We pursue <strong>your bank or card/wallet issuer</strong> when it breaches RBI Circular <strong>DBR.No.Leg.BC.78/09.07.005/2017-18</strong>—including refusing the mandatory 10-working-day shadow reversal, failing to block your account after you called the helpline, permitting high-velocity midnight debits or non-OTP international swipes, or rejecting a 3-day Zero Liability claim without discharging its Clause 12 burden of proof. Our advocate legal notice sets up rapid escalation to the <strong>RBI Integrated Ombudsman (CMS)</strong> and <strong>e-Jagriti Consumer Commission</strong>.
+                      We pursue <strong>your bank or card/wallet issuer</strong> when it breaches RBI Circular <strong>DBR.No.Leg.BC.78/09.07.005/2017-18</strong>—including refusing the mandatory 10-working-day shadow reversal, failing to block your account after you called the helpline, permitting high-velocity midnight debits or non-OTP international swipes, or rejecting a 3-day Zero Liability claim without discharging its Clause 12 burden of proof. Our legal notice sets up rapid escalation to the <strong>RBI Integrated Ombudsman (CMS)</strong> and <strong>e-Jagriti Consumer Commission</strong>.
                     </p>
                   </div>
 

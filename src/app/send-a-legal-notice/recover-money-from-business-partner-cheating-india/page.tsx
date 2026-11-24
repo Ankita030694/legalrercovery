@@ -4,7 +4,7 @@ import RecoverMoneyFromBusinessPartnerCheatingIndiaClient from './RecoverMoneyFr
 const slug = 'send-a-legal-notice/recover-money-from-business-partner-cheating-india';
 const title = 'Legal Notice to Business Partner for Money Recovery';
 const description =
-  'Cheated by a business partner? Send an advocate-vetted legal notice under the Partnership Act & Order 37 CPC to recover your business dues.';
+  'Cheated by a business partner? Send a fact-verified legal notice under the Partnership Act & Order 37 CPC to recover your business dues.';
 const url = `https://www.legalrecovery.in/${slug}`;
 const ogImage = `/images/og/recover-money-from-business-partner-cheating-india.jpg`;
 

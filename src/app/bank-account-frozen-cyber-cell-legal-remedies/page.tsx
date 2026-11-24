@@ -168,7 +168,7 @@ const FAQS = [
   {
     question: "Cyber crime cell ne bank account debit freeze kar diya hai toh legal notice kaise bheje?",
     answer:
-      "Agar cyber cell ne aapka bank account freeze kar diya hai, toh sabse pehle bank branch se Cyber Police Station ka naam, NCRP complaint number aur disputed amount extract karein. Iske baad ek verified advocate ke through Investigating Officer (IO) ko formal representation bheja jata hai jismein transaction proof, KYC aur innocent third-party status explain kiya jata hai. Saath hi bank manager ko Section 106 BNSS aur High Court rulings ka statutory legal notice bheja jata hai taaki total freeze ko hata kar sirf disputed amount par lien mark kiya jaye.",
+      "Agar cyber cell ne aapka bank account freeze kar diya hai, toh sabse pehle bank branch se Cyber Police Station ka naam, NCRP complaint number aur disputed amount extract karein. Iske baad Investigating Officer (IO) ko ek formal representation bheji ja sakti hai jismein transaction proof, KYC aur innocent third-party status explain kiya jata hai. Saath hi bank manager ko Section 106 BNSS aur High Court rulings ka statutory legal notice bheja jata hai taaki total freeze ko hata kar sirf disputed amount par lien mark kiya jaye.",
   },
 ];
 
@@ -716,7 +716,7 @@ export default function BankAccountFrozenCyberCellPage() {
                 </ol>
 
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
-                  The notice establishes that continuing a blanket debit freeze over a disproportionately small disputed transaction constitutes gross &quot;Deficiency in Service&quot; under Section 2(11) of the <Link href="/law/rbi-ombudsman-complaint-guide" className="text-red-600 font-semibold hover:underline">Consumer Protection Act, 2019</Link>, directly violates the <Link href="/law/rbi-zero-liability-unauthorised-transaction" className="text-red-600 font-semibold hover:underline">RBI zero liability protection framework</Link>, and breaches RBI customer service standards. For transparency on procedural costs, check our breakdown of <Link href="/legal-notice-charges" className="text-red-600 font-semibold hover:underline">statutory advocate legal notice charges</Link>. Upon receiving a formal advocate notice citing binding case law, banks frequently convert the freeze into a lien hold within 3 to 5 business days, instantly restoring full access to your remaining balance.
+                  The notice establishes that continuing a blanket debit freeze over a disproportionately small disputed transaction constitutes gross &quot;Deficiency in Service&quot; under Section 2(11) of the <Link href="/law/rbi-ombudsman-complaint-guide" className="text-red-600 font-semibold hover:underline">Consumer Protection Act, 2019</Link>, directly violates the <Link href="/law/rbi-zero-liability-unauthorised-transaction" className="text-red-600 font-semibold hover:underline">RBI zero liability protection framework</Link>, and breaches RBI customer service standards. For transparency on procedural costs, check our breakdown of <Link href="/legal-notice-charges" className="text-red-600 font-semibold hover:underline">statutory fact-verified legal notice charges</Link>. Upon receiving a formal fact-verified notice citing binding case law, banks frequently convert the freeze into a lien hold within 3 to 5 business days, instantly restoring full access to your remaining balance.
                 </p>
 
                 <div className="flex flex-wrap items-center justify-between gap-3 p-3.5 bg-emerald-50/60 border border-emerald-100 rounded-xl text-xs text-emerald-900">
@@ -961,10 +961,10 @@ export default function BankAccountFrozenCyberCellPage() {
                         <strong>Day 1–2: Statutory Document Collection:</strong> Rahul obtained the formal Cyber Cell Notice copy, NCRP acknowledgment number, and IO contact details from HDFC Bank operations.
                       </li>
                       <li>
-                        <strong>Day 3: Dual Legal Action Initiated:</strong> An advocate prepared an evidentiary dossier for the Cyberabad Cyber Cell attaching the Binance order slip, chat logs, blockchain hash, and Section 63 BSA certificate. Concurrently, a formal statutory legal notice was served on HDFC Bank&apos;s Branch Manager and Nodal Officer demanding conversion of the total freeze to a lien hold under Gujarat High Court and Madras High Court precedents.
+                        <strong>Day 3: Dual Legal Action Initiated:</strong> An evidentiary dossier was prepared for the Cyberabad Cyber Cell attaching the Binance order slip, chat logs, blockchain hash, and Section 63 BSA certificate. Concurrently, a formal statutory legal notice was served on HDFC Bank&apos;s Branch Manager and Nodal Officer demanding conversion of the total freeze to a lien hold under Gujarat High Court and Madras High Court precedents.
                       </li>
                       <li>
-                        <strong>Day 7: Bank Converts Freeze to Disputed Lien:</strong> HDFC Bank Legal Cell reviewed the advocate demand notice and case precedents. The bank converted the total debit freeze into an administrative lien of ₹42,500, immediately releasing the remaining ₹4,97,500 for normal banking operations.
+                        <strong>Day 7: Bank Converts Freeze to Disputed Lien:</strong> HDFC Bank Legal Cell reviewed the demand notice and case precedents. The bank converted the total debit freeze into an administrative lien of ₹42,500, immediately releasing the remaining ₹4,97,500 for normal banking operations.
                       </li>
                       <li>
                         <strong>Day 18: Formal Police NOC Issued:</strong> The Cyberabad Cyber Crime IO examined the electronic evidence, confirmed Rahul&apos;s innocent third-party bona fide status, and dispatched an official de-freeze NOC email to HDFC Bank, fully extinguishing the remaining ₹42,500 lien.

@@ -24,10 +24,10 @@ export default function MsoLcoCTA({ className = "" }: MsoLcoCTAProps) {
                 Track 1 · Single LCO / LFP Pilot Test
               </span>
               <h3 className="text-lg sm:text-xl font-bold text-white mb-2">
-                Test 1 Live Overdue Case Now (&#8377;{basePrice} &middot; Advocate Drafted &middot; Email + WhatsApp + Speed Post RPAD)
+                Test 1 Live Overdue Case Now (&#8377;{basePrice} &middot; Fact-Verified &middot; Email + WhatsApp + Speed Post RPAD)
               </h3>
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-                Upload a single defaulting LCO&apos;s Model Interconnection Agreement (MIA), CAS/SMS STB serial ledger, and unpaid subscription invoices. Our advocates draft a TRAI-compliant 21-day statutory demand and BNS s.316 hardware return notice ready for TDSAT or Commercial Court escalation.
+                Upload a single defaulting LCO&apos;s Model Interconnection Agreement (MIA), CAS/SMS STB serial ledger, and unpaid subscription invoices. Our team drafts a TRAI-compliant 21-day statutory demand and BNS s.316 hardware return notice ready for TDSAT or Commercial Court escalation.
               </p>
             </div>
 

@@ -27,7 +27,7 @@ export default function FicoFocoRecoveryCTA({ className = "" }: FicoFocoRecovery
                 Test 1 Live Overdue FOCO / FICO Dispute Now
               </h3>
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-                Advocate-drafted BNS s.316 inventory release notice, CapEx balance demand &amp; Section 9 arbitration warning, dispatched via Email, WhatsApp &amp; Speed Post RPAD.
+                Fact-verified BNS s.316 inventory release notice, CapEx balance demand &amp; Section 9 arbitration warning, dispatched via Email, WhatsApp &amp; Speed Post RPAD.
               </p>
             </div>
 
@@ -48,7 +48,7 @@ export default function FicoFocoRecoveryCTA({ className = "" }: FicoFocoRecovery
                 </Link>
               </div>
               <p className="text-[11px] text-slate-400">
-                &check; Advocate Drafted &bull; &check; Email + WhatsApp + Speed Post RPAD &bull; &check; BNS s.316 &amp; s.9 Ready
+                &check; Fact-Verified &bull; &check; Email + WhatsApp + Speed Post RPAD &bull; &check; BNS s.316 &amp; s.9 Ready
               </p>
             </div>
           </div>

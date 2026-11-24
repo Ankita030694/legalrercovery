@@ -149,12 +149,12 @@ const FAQS = [
   {
     question: "What is the limitation period to file a court case or summary suit on a promissory note?",
     answer:
-      "Under Article 35 of the Limitation Act, 1963, the limitation period for an on-demand promissory note is exactly 3 years from the date of its execution. If the borrower makes a partial repayment (under Section 19) or provides a written signed acknowledgment of liability via email, WhatsApp, or letter before the 3-year term expires (under Section 18), a fresh 3-year limitation clock begins from that date. Serving an advocate legal notice does not stop the limitation clock; formal court filing must occur within the 3-year window.",
+      "Under Article 35 of the Limitation Act, 1963, the limitation period for an on-demand promissory note is exactly 3 years from the date of its execution. If the borrower makes a partial repayment (under Section 19) or provides a written signed acknowledgment of liability via email, WhatsApp, or letter before the 3-year term expires (under Section 18), a fresh 3-year limitation clock begins from that date. Serving a legal notice does not stop the limitation clock; formal court filing must occur within the 3-year window.",
   },
   {
     question: "How can I recover money lent to a friend if they default on a promissory note?",
     answer:
-      "The statutory escalation path consists of four steps: (1) Collate the promissory note, bank transfer receipts (NEFT/RTGS/UPI), and WhatsApp chats; (2) Issue a formal 15-day statutory pre-litigation advocate legal demand notice demanding repayment with contractual interest; (3) If unpaid, file an urgent Summary Suit under Order XXXVII of the Code of Civil Procedure (CPC) in the competent Civil Court having territorial and pecuniary jurisdiction; (4) Obtain a summary decree if the borrower fails to enter appearance within 10 days or fails to obtain leave to defend.",
+      "The statutory escalation path consists of four steps: (1) Collate the promissory note, bank transfer receipts (NEFT/RTGS/UPI), and WhatsApp chats; (2) Issue a formal 15-day statutory pre-litigation legal demand notice demanding repayment with contractual interest; (3) If unpaid, file an urgent Summary Suit under Order XXXVII of the Code of Civil Procedure (CPC) in the competent Civil Court having territorial and pecuniary jurisdiction; (4) Obtain a summary decree if the borrower fails to enter appearance within 10 days or fails to obtain leave to defend.",
   },
   {
     question: "Does a promissory note need to be registered or notarized by a notary public in India?",
@@ -164,7 +164,7 @@ const FAQS = [
   {
     question: "Dost ya relative ko diya hua udhar promissory note ke bina ya note ke sath wapas kaise le?",
     answer:
-      "Agar aapke paas signed promissory note hai, toh aap Section 4 NI Act aur Order 37 CPC ke tehat fast summary suit daal kar bina lambe trial ke decree prapt kar sakte hain. Agar promissory note nahi hai, tab bhi Bharatiya Sakshya Adhiniyam 2023 ki Dhara 63 ke tehat aapke bank statement, UPI transaction ID, aur WhatsApp chat par borrower dwara udhar lene ki baat manna valid electronic evidence hota hai. Pehla kadam LegalRecovery ke verified advocate ke jariye 15 din ka formal pre-litigation demand notice bhejkar settlement ki maang karna hai.",
+      "Agar aapke paas signed promissory note hai, toh aap Section 4 NI Act aur Order 37 CPC ke tehat fast summary suit daal kar bina lambe trial ke decree prapt kar sakte hain. Agar promissory note nahi hai, tab bhi Bharatiya Sakshya Adhiniyam 2023 ki Dhara 63 ke tehat aapke bank statement, UPI transaction ID, aur WhatsApp chat par borrower dwara udhar lene ki baat manna valid electronic evidence hota hai. Pehla kadam LegalRecovery ke jariye 15 din ka formal pre-litigation demand notice bhejkar settlement ki maang karna hai.",
   },
 ];
 
@@ -804,7 +804,7 @@ export default function PromissoryNoteFormatPage() {
                         <rect x="10" y="30" width="180" height="120" rx="12" fill="#1F2937" stroke="#374151" strokeWidth="2" />
                         <text x="100" y="60" textAnchor="middle" fill="#EF4444" fontSize="12" fontWeight="bold">STAGE 1</text>
                         <text x="100" y="85" textAnchor="middle" fill="#F9FAFB" fontSize="13" fontWeight="bold">15-Day Demand Notice</text>
-                        <text x="100" y="105" textAnchor="middle" fill="#9CA3AF" fontSize="10">Advocate Speed Post + WhatsApp</text>
+                        <text x="100" y="105" textAnchor="middle" fill="#9CA3AF" fontSize="10">Legal Notice Speed Post + WhatsApp</text>
                         <text x="100" y="125" textAnchor="middle" fill="#9CA3AF" fontSize="10">Invocation of Pronote Debt</text>
 
                         <line x1="190" y1="90" x2="225" y2="90" stroke="#DC2626" strokeWidth="3" markerEnd="url(#arrowhead)" />
@@ -887,7 +887,7 @@ export default function PromissoryNoteFormatPage() {
                     <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs">
                       <div className="p-3 bg-white rounded-lg border border-slate-200">
                         <span className="text-slate-500 block text-[11px]">Day 1–15: Statutory Notice</span>
-                        <p className="font-bold text-slate-900 mt-1">15-Day Advocate Demand</p>
+                        <p className="font-bold text-slate-900 mt-1">15-Day Legal Demand</p>
                         <p className="text-slate-600 text-[11px] mt-0.5">Dispatched via Speed Post + WhatsApp under BSA Sec 63.</p>
                       </div>
                       <div className="p-3 bg-white rounded-lg border border-slate-200">

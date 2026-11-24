@@ -132,7 +132,7 @@ const RECOVERY_STAGES = [
     stage: "Stage 2",
     timeline: "Day 16 – 30",
     title: "Tri-Channel Advocate Statutory Notice",
-    desc: "Serve an advocate-signed demand notice via Speed Post RPAD, WhatsApp, and registered email. Formally invokes MSMED Act s.16 penal interest and alerts auditors to Section 43B(h) tax disallowances.",
+    desc: "Serve a fact-verified demand notice via Speed Post RPAD, WhatsApp, and registered email. Formally invokes MSMED Act s.16 penal interest and alerts auditors to Section 43B(h) tax disallowances.",
   },
   {
     stage: "Stage 3",

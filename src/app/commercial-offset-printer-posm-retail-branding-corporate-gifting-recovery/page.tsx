@@ -198,8 +198,8 @@ const HOWTO_SCHEMA = {
     {
       "@type": "HowToStep",
       position: 3,
-      name: "Dispatch Advocate Statutory Notice Copying CFO & Tax Auditor on Section 43B(h)",
-      text: "Serve a 15-day Advocate Demand Notice via Email, WhatsApp, and Speed Post RPAD putting corporate finance on formal notice of March 31 Income Tax s.43B(h) disallowance, Form 3CD Clause 22 disclosure, and CGST s.16(2) 180-day ITC reversal.",
+      name: "Dispatch Fact-Verified Statutory Notice Copying CFO & Tax Auditor on Section 43B(h)",
+      text: "Serve a 15-day Fact-Verified Demand Notice via Email, WhatsApp, and Speed Post RPAD putting corporate finance on formal notice of March 31 Income Tax s.43B(h) disallowance, Form 3CD Clause 22 disclosure, and CGST s.16(2) 180-day ITC reversal.",
     },
     {
       "@type": "HowToStep",
@@ -550,7 +550,7 @@ export default function CommercialPrintPosmGiftingRecoveryPage() {
                     step: "03",
                     window: "Days 35–46",
                     title: "Advocate CFO & Section 43B(h) Notice",
-                    desc: "Serve a 15-day formal Advocate Notice copying the CFO and Statutory Auditor on March 31 Income Tax disallowance, Form 3CD Clause 22, and CGST 180-day ITC reversal.",
+                    desc: "Serve a 15-day formal Fact-Verified Notice copying the CFO and Statutory Auditor on March 31 Income Tax disallowance, Form 3CD Clause 22, and CGST 180-day ITC reversal.",
                   },
                   {
                     step: "04",
@@ -795,7 +795,7 @@ export default function CommercialPrintPosmGiftingRecoveryPage() {
                     <li className="flex items-start gap-2">
                       <span className="text-[#DC2626] font-bold">&bull;</span>
                       <span>
-                        <strong>Carve Out the Disputed Sum Proactively:</strong> In your Advocate Notice, explicitly deduct or offer replacement for the 3 verified damaged units (&#8377;10,500) so the remaining &#8377;34,89,500 becomes an ironclad, indisputable liquidated debt.
+                        <strong>Carve Out the Disputed Sum Proactively:</strong> In your Fact-Verified Notice, explicitly deduct or offer replacement for the 3 verified damaged units (&#8377;10,500) so the remaining &#8377;34,89,500 becomes an ironclad, indisputable liquidated debt.
                       </span>
                     </li>
                   </ul>

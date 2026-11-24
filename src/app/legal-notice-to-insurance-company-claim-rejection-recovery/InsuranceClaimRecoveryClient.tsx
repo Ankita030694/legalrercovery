@@ -50,12 +50,12 @@ const reviews = [
   {
     author: "Devendra Sharma (New Delhi)",
     rating: "5",
-    text: "My four lakh health claim was rejected citing an alleged pre-existing condition. I had already disclosed this medical condition during my initial policy application. We served an advocate legal notice directly to the national grievance head. The company reviewed the historical proposal form and acknowledged their administrative error. They credited my full claim amount to my bank within twenty days."
+    text: "My four lakh health claim was rejected citing an alleged pre-existing condition. I had already disclosed this medical condition during my initial policy application. We served a fact-verified legal notice directly to the national grievance head. The company reviewed the historical proposal form and acknowledged their administrative error. They credited my full claim amount to my bank within twenty days."
   },
   {
     author: "Meenakshi Iyer (Chennai)",
     rating: "5",
-    text: "The insurer delayed my motor insurance settlement for four months citing ongoing investigations. Routine email reminders produced no responses from the surveyor or branch managers. We served a formal advocate notice citing statutory IRDAI claim processing timelines. The insurer's corporate legal team contacted me within one week of notice delivery. They accepted the assessment and released two lakh rupees without further disputes."
+    text: "The insurer delayed my motor insurance settlement for four months citing ongoing investigations. Routine email reminders produced no responses from the surveyor or branch managers. We served a formal fact-verified notice citing statutory IRDAI claim processing timelines. The insurer's corporate legal team contacted me within one week of notice delivery. They accepted the assessment and released two lakh rupees without further disputes."
   },
   {
     author: "Vikramjit Singh (Amritsar)",
@@ -389,7 +389,7 @@ export default function InsuranceClaimRecoveryClient() {
                     Stage 2: Serving the Formal Legal Notice
                   </h3>
                   <p className="text-sm md:text-base leading-relaxed">
-                    If the internal grievance cell denies your appeal, you must serve a legal notice. An advocate drafts and issues this formal demand to corporate headquarters and branch offices. The legal notice specifies your contractual rights and sets a strict fifteen-day compliance period. It announces your firm intent to pursue litigation if payment is not cleared.
+                    If the internal grievance cell denies your appeal, you must serve a legal notice. We draft and issues this formal demand to corporate headquarters and branch offices. The legal notice specifies your contractual rights and sets a strict fifteen-day compliance period. It announces your firm intent to pursue litigation if payment is not cleared.
                   </p>
                   <p className="text-sm md:text-base leading-relaxed">
                     A formal advocate notice bypasses junior claim agents and automated customer service bots. It moves your claim file directly to corporate legal and risk management counsel. In-house lawyers assess court exposure, litigation expenses, and potential regulatory sanctions under IRDAI guidelines. Consequently, insurers frequently approve valid claim payouts to avoid expensive litigation in court.
@@ -536,7 +536,7 @@ export default function InsuranceClaimRecoveryClient() {
                       <div className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-5 rounded-2xl shadow-sm border border-slate-100 group-hover:border-[#DC2626]/30 transition-colors">
                         <h3 className="text-base md:text-lg font-bold text-slate-900 mb-2">Step 3: Service of Legal Notice</h3>
                         <p className="text-xs md:text-sm text-slate-600 leading-relaxed">
-                          Serve an advocate legal notice giving the insurer fifteen days to settle dues.
+                          Serve a fact-verified legal notice giving the insurer fifteen days to settle dues.
                         </p>
                       </div>
                     </div>

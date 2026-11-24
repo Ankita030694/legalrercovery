@@ -25,10 +25,10 @@ export default function ColdChainRecoveryCTA({
               Track 1 &bull; Single Cold-Chain Case Test
             </span>
             <p className="text-lg sm:text-xl font-extrabold text-white mb-2">
-              Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Advocate Drafted &middot; Email + WhatsApp + Speed Post RPAD)
+              Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Fact-Verified &middot; Email + WhatsApp + Speed Post RPAD)
             </p>
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-              Serve an advocate-vetted, high-impact 15-day statutory demand notice on a defaulting hospital, cancer center, or wholesale pharmacy chain. Incorporates certified USB temperature-logger readouts under BSA 2023 s.63, enforces risk transfer under Sale of Goods Act ss.41–44, and claims statutory compound interest at 3 times RBI Bank Rate under MSMED Act Section 16.
+              Serve a fact-verified, high-impact 15-day statutory demand notice on a defaulting hospital, cancer center, or wholesale pharmacy chain. Incorporates certified USB temperature-logger readouts under BSA 2023 s.63, enforces risk transfer under Sale of Goods Act ss.41–44, and claims statutory compound interest at 3 times RBI Bank Rate under MSMED Act Section 16.
             </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-3">
@@ -83,7 +83,7 @@ export default function ColdChainRecoveryCTA({
         onClose={() => setIsModalOpen(false)}
         defaultPrice={basePrice}
         title="Serve Statutory Demand Notice — Cold-Chain Biologics Recovery"
-        description="Initiate an advocate-drafted statutory demand notice for disputed cold-chain, vaccine, or oncology biologics invoices. Dispatched via Email, WhatsApp, and Speed Post RPAD with digital proof tracking."
+        description="Initiate a fact-verified statutory demand notice for disputed cold-chain, vaccine, or oncology biologics invoices. Dispatched via Email, WhatsApp, and Speed Post RPAD with digital proof tracking."
       />
     </>
   );

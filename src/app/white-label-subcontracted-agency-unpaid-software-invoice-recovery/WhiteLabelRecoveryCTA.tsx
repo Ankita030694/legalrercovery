@@ -25,10 +25,10 @@ export default function WhiteLabelRecoveryCTA({
               Track 1 &bull; Single White-Label Default Test Case
             </span>
             <p className="text-lg sm:text-xl font-extrabold text-white mb-2">
-              Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Advocate Drafted &middot; Email + WhatsApp + Speed Post RPAD)
+              Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Fact-Verified &middot; Email + WhatsApp + Speed Post RPAD)
             </p>
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-              Issue an advocate-signed 10-day statutory demand notice to a delinquent prime agency. Asserts failure of conditional copyright assignment under Section 19 of the Copyright Act, defeats bogus &quot;paid-when-paid&quot; back-to-back defenses, warns of immediate copyright infringement liability under Section 51 impacting their end-client IP warranty, and demands compound penal interest under MSMED Act Section 16.
+              Issue a fact-verified 10-day statutory demand notice to a delinquent prime agency. Asserts failure of conditional copyright assignment under Section 19 of the Copyright Act, defeats bogus &quot;paid-when-paid&quot; back-to-back defenses, warns of immediate copyright infringement liability under Section 51 impacting their end-client IP warranty, and demands compound penal interest under MSMED Act Section 16.
             </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-3">

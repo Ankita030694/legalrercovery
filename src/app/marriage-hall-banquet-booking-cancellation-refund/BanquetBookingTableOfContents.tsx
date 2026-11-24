@@ -173,7 +173,7 @@ export default function BanquetBookingTableOfContents({
             Marriage Hall Refusing to Return Advance?
           </p>
           <p className="text-xs text-slate-300 leading-relaxed">
-            Get an advocate-drafted statutory demand notice under Section 74 Contract Act sent via Speed Post in 24 hours.
+            Get a fact-verified statutory demand notice under Section 74 Contract Act sent via Speed Post in 24 hours.
           </p>
           <button
             type="button"

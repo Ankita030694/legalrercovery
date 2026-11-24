@@ -31,7 +31,7 @@ const TMC_SCENARIOS: TmcScenario[] = [
           "Download the BSP billing statement, airline PNR 'Flown/Used' coupon status, and the corporate travel desk's approval emails with a Section 63 BSA 2023 certificate.",
       },
       {
-        step: "Serve 7-Day Advocate Statutory Demand Notice",
+        step: "Serve 7-Day Fact-Verified Statutory Demand Notice",
         detail:
           "Issue a pre-litigation notice to the Managing Director, CFO, and Board warning of Order XXXVIII Rule 5 bank attachment, MSMED Act s.16 3x RBI interest, and Section 43B(h) tax disallowance.",
       },
@@ -90,7 +90,7 @@ const TMC_SCENARIOS: TmcScenario[] = [
           "Attach prior paid invoices approved by the same corporate email domain (@company.com) to establish ostensible authority under Contract Act s.237.",
       },
       {
-        step: "Serve Advocate Notice Rejecting Internal Policy Defense",
+        step: "Serve Fact-Verified Notice Rejecting Internal Policy Defense",
         detail:
           "Put the CFO on formal notice that internal HR exits do not extinguish third-party TMC debts for consumed airline seats.",
       },

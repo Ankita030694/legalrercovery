@@ -85,7 +85,7 @@ const FAQ_ITEMS = [
   },
   {
     q: "Can we test LegalRecovery.in on a single ₹5 Lakh–₹25 Lakh white-label dispute before onboarding larger ledgers?",
-    a: "Yes. Our Self-Serve Track allows any dev shop founder or CTO to serve an advocate-vetted, high-impact statutory demand notice for ₹999 on a single delinquent prime agency. For dev shops with ongoing portfolios of subcontracted invoices across multiple agencies, our Institutional Bulk Desk provides end-to-end ledger reconciliation, multi-jurisdiction notices, and Commercial Court mediation escalation.",
+    a: "Yes. Our Self-Serve Track allows any dev shop founder or CTO to serve a fact-verified, high-impact statutory demand notice for ₹999 on a single delinquent prime agency. For dev shops with ongoing portfolios of subcontracted invoices across multiple agencies, our Institutional Bulk Desk provides end-to-end ledger reconciliation, multi-jurisdiction notices, and Commercial Court mediation escalation.",
   },
 ];
 
@@ -492,7 +492,7 @@ export default function WhiteLabelSubcontractorRecoveryPage() {
                     <p className="font-bold text-sm text-slate-100">Advocate Notice of IP Defect &amp; Statutory Demand</p>
                   </div>
                   <p className="text-xs text-slate-300">
-                    Issue a 10-day advocate demand notice warning that continuing to license or deploy unpaid code constitutes contributory copyright infringement under Section 51, compelling third-party joinder.
+                    Issue a 10-day fact-verified demand notice warning that continuing to license or deploy unpaid code constitutes contributory copyright infringement under Section 51, compelling third-party joinder.
                   </p>
                 </div>
                 <div className="bg-slate-900 text-white p-4 rounded-xl border border-slate-800">
@@ -726,7 +726,7 @@ export default function WhiteLabelSubcontractorRecoveryPage() {
                 </div>
 
                 <p>
-                  When an advocate demand notice clearly highlights that the prime agency has transferred a defective, unassigned IP title to their enterprise client, the prime agency realizes that stalling payment jeopardizes their most lucrative client relationship. In over 80% of cases, this leverage prompts immediate settlement negotiations. Also consult our analysis on{" "}
+                  When a fact-verified demand notice clearly highlights that the prime agency has transferred a defective, unassigned IP title to their enterprise client, the prime agency realizes that stalling payment jeopardizes their most lucrative client relationship. In over 80% of cases, this leverage prompts immediate settlement negotiations. Also consult our analysis on{" "}
                   <Link
                     href="/copyright-not-transferred-until-paid-freelancer"
                     className="text-[#DC2626] hover:underline font-semibold"
@@ -757,7 +757,7 @@ export default function WhiteLabelSubcontractorRecoveryPage() {
                   When dev shop founders realize the prime agency has pocketed client funds, their immediate instinct is often to email the enterprise end-client directly or post on LinkedIn. <strong>This is a dangerous misstep.</strong> Sending informal, uncoordinated messages directly to the client allows the prime agency to file an emergency suit for breach of NDA, trade secret misappropriation, and tortious interference with contractual relations.
                 </p>
                 <p>
-                  To legally dismantle the NDA shield, dev shops must execute a structured, advocate-led strategy that relies on statutory rights rather than informal communications:
+                  To legally dismantle the NDA shield, dev shops must execute a structured, fact-verified strategy that relies on statutory rights rather than informal communications:
                 </p>
 
                 <div className="space-y-3 my-4">

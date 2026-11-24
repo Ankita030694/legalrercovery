@@ -25,7 +25,7 @@ export default function FlatCancellationNoticeCTA({
           <div className="bg-gradient-to-br from-[#111827] via-[#1F2937] to-[#111827] text-white rounded-2xl p-5 sm:p-8 md:p-10 border border-slate-800 shadow-2xl w-full">
             <div className="max-w-3xl">
               <span className="inline-block px-3 py-1 rounded-full text-[11px] sm:text-xs font-semibold tracking-wide uppercase bg-slate-800 text-red-400 border border-slate-700 mb-3 sm:mb-4">
-                RERA Sections 12, 13 &amp; 18 • Advocate Legal Notice Service
+                RERA Sections 12, 13 &amp; 18 • Fact-Verified Legal Notice Service
               </span>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-bold tracking-tight text-white mb-3">
                 Builder Threatening 100% Forfeiture or Ignoring Your Cancellation Letter?

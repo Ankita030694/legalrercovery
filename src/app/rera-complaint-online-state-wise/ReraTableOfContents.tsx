@@ -147,7 +147,7 @@ export default function ReraTableOfContents({ items }: ReraTableOfContentsProps)
               <span className="text-[10px] uppercase tracking-wider font-bold text-red-400">
                 Section 18 / 31 RERA
               </span>
-              <span className="text-[10px] text-gray-300 font-semibold">Advocate Drafted</span>
+              <span className="text-[10px] text-gray-300 font-semibold">Fact-Verified</span>
             </div>
             <p className="font-bold text-white leading-snug">
               Builder Delaying Possession or Refund? Serve a Statutory Notice First

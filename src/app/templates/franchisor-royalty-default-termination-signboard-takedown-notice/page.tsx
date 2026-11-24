@@ -19,7 +19,7 @@ const EXACT_TITLE =
   "Franchisor Royalty Default & Signboard Takedown Notice";
 
 const EXACT_DESCRIPTION =
-  "Advocate-vetted franchisor templates for Royalty/MMG/Ad-Fund arrears, POS-bypass penalties, 48-hr signboard removal & Zomato/Swiggy/Google IP takedowns.";
+  "Ready-to-use franchisor templates for Royalty/MMG/Ad-Fund arrears, POS-bypass penalties, 48-hr signboard removal & Zomato/Swiggy/Google IP takedowns.";
 
 const HERO_IMAGE_ALT = formatAltText(
   "2-Stage Franchisor Royalty Default Termination and Signboard Takedown Legal Notice"

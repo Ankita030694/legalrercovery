@@ -390,7 +390,7 @@ export default function GratuityAmountClient() {
                       Under Section 2A, an employee is deemed to have completed a year of continuous service if they have actually worked for at least <strong>240 days</strong> in the preceding 12 months (or 190 days in the case of mines, plantations, or offices working less than 6 days a week). High Courts across India have repeatedly ruled that if an employee completes four years and at least 240 days of work in the fifth year, they are deemed to have completed the five years of continuous service required for gratuity eligibility.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      This means that if you have worked for 4 years and 240 days (including paid leaves, national holidays, and weekends), you are fully eligible for gratuity. Defaulting companies often try to ignore this rule to avoid payouts, but our legal team regularly cites these High Court precedents to enforce compliance and secure payouts for eligible clients.
+                      This means that if you have worked for 4 years and 240 days (including paid leaves, national holidays, and weekends), you are fully eligible for gratuity. Defaulting companies often try to ignore this rule to avoid payouts, but our team regularly cites these High Court precedents to enforce compliance and secure payouts for eligible clients.
                     </p>
                   </div>
                 </section>
@@ -459,10 +459,10 @@ export default function GratuityAmountClient() {
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">Serving Legal Notice</h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      If your employer ignores your Form I application or refuses to pay, serving a formal <strong>Legal Notice</strong> is the next logical step. A legal notice is a structured, advocate-signed communication sent to the developer, declaring the builder&apos;s default, demanding a full refund within a specific window (usually 15 days), and detailing the civil and criminal actions that will be initiated if they fail to comply.
+                      If your employer ignores your Form I application or refuses to pay, serving a formal <strong>Legal Notice</strong> is the next logical step. A legal notice is a structured, fact-verified communication sent to the developer, declaring the builder&apos;s default, demanding a full refund within a specific window (usually 15 days), and detailing the civil and criminal actions that will be initiated if they fail to comply.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      At LegalRecovery, our legal panel drafts custom notices tailored to the facts of your case. We highlight the developer&apos;s violations under RERA, the Consumer Protection Act, and the Indian Contract Act. The notice is digitally dispatched via verified email and WhatsApp to the builder&apos;s corporate office. Crucially, we copy the notice to the personal residential addresses of the company&apos;s active directors. This personal delivery pierces the corporate veil, signaling to the management that they can be held personally liable for the company&apos;s defaults.
+                      At LegalRecovery, our team drafts custom notices tailored to the facts of your case. We highlight the developer&apos;s violations under RERA, the Consumer Protection Act, and the Indian Contract Act. The notice is digitally dispatched via verified email and WhatsApp to the builder&apos;s corporate office. Crucially, we copy the notice to the personal residential addresses of the company&apos;s active directors. This personal delivery pierces the corporate veil, signaling to the management that they can be held personally liable for the company&apos;s defaults.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
                       Serving a legal notice is highly effective. Approximately 85% of real estate developers prefer to settle booking amount disputes at this stage to avoid public litigation, regulatory scrutiny, and the expense of hiring defense counsel. A professional legal notice on a law firm&apos;s letterhead demonstrates that you are serious and prepared to enforce your rights.
@@ -600,7 +600,7 @@ export default function GratuityAmountClient() {
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">Success Stories</h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      Over the years, we have successfully resolved hundreds of complex gratuity recovery and employment dues disputes across India. Our data-driven legal notice strategy and structured escalation flow have proven effective against startups, mid-sized firms, and large multinational corporations alike. Below are representative examples of recoveries handled by our legal panel:
+                      Over the years, we have successfully resolved hundreds of complex gratuity recovery and employment dues disputes across India. Our data-driven legal notice strategy and structured escalation flow have proven effective against startups, mid-sized firms, and large multinational corporations alike. Below are representative examples of recoveries handled by our team:
                     </p>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">
                       <div className="bg-slate-50 p-6 rounded-2xl border border-slate-100">
@@ -672,7 +672,7 @@ export default function GratuityAmountClient() {
                       LegalRecovery is India&apos;s leading tech-enabled recovery platform. We combine the legal authority of veteran labor advocates with advanced workflow automation to deliver unmatched speed, transparency, and resolution rates. Here is what sets us apart:
                     </p>
                     <ul className="list-disc pl-6 space-y-3 text-sm text-slate-650">
-                      <li><strong>Attorney-Drafted Quality:</strong> Your notice is individually reviewed and drafted by a qualified legal professional, ensuring precise statutory citations tailored to your specific case facts.</li>
+                      <li><strong>Fact-Verified Quality:</strong> Your notice is individually reviewed and drafted by a qualified legal professional, ensuring precise statutory citations tailored to your specific case facts.</li>
                       <li><strong>VC/Director Escalation:</strong> We do not just email HR. We dispatch physical registered letters to the registered company office and personal residences of all active directors, maximizing pressure.</li>
                       <li><strong>Digital Dashboard:</strong> Track the drafting progress, post dispatch tracking, and delivery status of your legal notices in real-time from your secure client dashboard.</li>
                       <li><strong>Transparent Flat Pricing:</strong> No hourly bills, no retention fee surprises. You pay a single transparent flat fee for the entire notice pipeline.</li>

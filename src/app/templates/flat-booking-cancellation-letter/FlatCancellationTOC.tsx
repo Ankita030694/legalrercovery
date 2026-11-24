@@ -199,7 +199,7 @@ export default function FlatCancellationTOC({
             onClick={(e) => scrollToSection(e, "heading-cta-block")}
             className="inline-flex items-center gap-1 text-xs font-bold text-red-600 hover:text-red-700 mt-1.5"
           >
-            <span>Send RERA Advocate Notice</span>
+            <span>Send RERA Fact-Verified Notice</span>
             <span>→</span>
           </a>
         </div>

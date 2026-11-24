@@ -25,10 +25,10 @@ export default function HospitalTpaRecoveryCTA({
               Track 1 &bull; Self-Serve Single Case Test
             </span>
             <h3 className="text-lg sm:text-xl font-extrabold text-white mb-2">
-              Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Advocate Drafted &middot; Email + WhatsApp + Speed Post RPAD)
+              Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Fact-Verified &middot; Email + WhatsApp + Speed Post RPAD)
             </h3>
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-              Test our formal Advocate Legal Demand Notice on a single delayed or short-settled TPA file. Enforce executed hospital MOU package rates, repudiate unilateral tariff cuts, and demand statutory IRDAI penal interest (Bank Rate + 2%).
+              Test our formal Fact-Verified Legal Demand Notice on a single delayed or short-settled TPA file. Enforce executed hospital MOU package rates, repudiate unilateral tariff cuts, and demand statutory IRDAI penal interest (Bank Rate + 2%).
             </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-3">

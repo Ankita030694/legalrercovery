@@ -224,7 +224,7 @@ const HOWTO_SCHEMA = {
       "@type": "HowToStep",
       position: 2,
       name: "Issue Retention-of-Title & Statutory Demand Notice",
-      text: "Serve a comprehensive 15-day Advocate Legal Notice invoking Section 25 Sale of Goods Act (Reservation of Right of Disposal), Section 42 Deemed Acceptance, and Section 16 MSMED Act statutory compound interest.",
+      text: "Serve a comprehensive 15-day Fact-Verified Legal Notice invoking Section 25 Sale of Goods Act (Reservation of Right of Disposal), Section 42 Deemed Acceptance, and Section 16 MSMED Act statutory compound interest.",
     },
     {
       "@type": "HowToStep",
@@ -673,7 +673,7 @@ export default function MedicalEquipmentRecoveryPage() {
                 </h2>
 
                 <p className="text-sm text-slate-600 mb-6">
-                  Select a commercial default profile to review the exact contractual stumbling block, statutory exposure, and advocate-vetted recovery rail.
+                  Select a commercial default profile to review the exact contractual stumbling block, statutory exposure, and fact-verified recovery rail.
                 </p>
 
                 <MedicalEquipmentScenarioTabs />
@@ -770,7 +770,7 @@ export default function MedicalEquipmentRecoveryPage() {
                     The 4-Step Bulletproof PCPNDT Repossession SOP
                   </h3>
                   <p>
-                    To lawfully repossess a defaulted ultrasound unit without violating PCPNDT criminal provisions, MedTech creditors must execute this mandatory advocate-vetted protocol:
+                    To lawfully repossess a defaulted ultrasound unit without violating PCPNDT criminal provisions, MedTech creditors must execute this mandatory fact-verified protocol:
                   </p>
 
                   <div className="space-y-3">
@@ -899,7 +899,7 @@ export default function MedicalEquipmentRecoveryPage() {
                   </p>
                   <ol className="list-decimal pl-5 space-y-2 text-slate-800">
                     <li>
-                      <strong>30-Day Cure-or-Suspend Statutory Legal Notice:</strong> Serve an Advocate Legal Notice itemizing all unpaid quarterly invoices and installed spare parts, granting 30 calendar days to cure arrears.
+                      <strong>30-Day Cure-or-Suspend Statutory Legal Notice:</strong> Serve a Fact-Verified Legal Notice itemizing all unpaid quarterly invoices and installed spare parts, granting 30 calendar days to cure arrears.
                     </li>
                     <li>
                       <strong>Statutory Administrative Disclosure:</strong> Concurrently serve copies of the notice on the District Chief Medical Officer (CMO), the State Directorate of Health Services, and the State Clinical Establishments Authority, formally placing the administrative onus of patient safety squarely upon hospital leadership.

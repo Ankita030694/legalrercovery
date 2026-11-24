@@ -61,7 +61,7 @@ const SCENARIOS: ScenarioTab[] = [
       {
         step: "Reply to Any Section 138 or Section 25 Notice Within 15 Days",
         description:
-          "Never ignore a cheque or NACH bounce notice. Have an advocate serve a statutory reply placing the Tripartite Agreement, builder Pre-EMI indemnity clause, and RBI circular breach on record.",
+          "Never ignore a cheque or NACH bounce notice. Serve a statutory reply placing the Tripartite Agreement, builder Pre-EMI indemnity clause, and RBI circular breach on record.",
       },
       {
         step: "Seek Interim Restraint Before State RERA or Consumer Commission",

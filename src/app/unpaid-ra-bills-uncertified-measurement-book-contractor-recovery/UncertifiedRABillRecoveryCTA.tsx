@@ -25,10 +25,10 @@ export default function UncertifiedRABillRecoveryCTA({
               Track 1 &bull; Single Stalled RA Bill / Final Bill Recovery Notice
             </span>
             <p className="text-lg sm:text-xl font-extrabold text-white mb-2">
-              Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Advocate Drafted &middot; Email + WhatsApp + Speed Post RPAD)
+              Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Fact-Verified &middot; Email + WhatsApp + Speed Post RPAD)
             </p>
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-              Serve a high-impact, advocate-vetted statutory demand notice citing Supreme Court precedents (<em>Ambica Construction</em> and <em>R.L. Kalathia</em>). Overcomes PMC measurement stalling, triggers deemed certification clauses, repudiates coerced No-Claim Certificates (NDCs) signed under financial duress, establishes suspension rights under Contract Act Section 53/54 without Liquidated Damages (LD) liability, and demands 18% commercial interest.
+              Serve a high-impact, fact-verified statutory demand notice citing Supreme Court precedents (<em>Ambica Construction</em> and <em>R.L. Kalathia</em>). Overcomes PMC measurement stalling, triggers deemed certification clauses, repudiates coerced No-Claim Certificates (NDCs) signed under financial duress, establishes suspension rights under Contract Act Section 53/54 without Liquidated Damages (LD) liability, and demands 18% commercial interest.
             </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-3">

@@ -206,7 +206,7 @@ const reviewSchema = {
         "@type": "Person",
         "name": "Harmeet Singh"
       },
-      "reviewBody": "Professional dispute handling. They prepared the digital evidence and drafted a comprehensive legal notice. The bank's legal team reviewed the notice and approved the reversal without requiring a court filing. I recommend their services for complex card disputes."
+      "reviewBody": "Professional dispute handling. They verified my case facts and prepared a comprehensive legal notice. The bank's legal team reviewed the notice and approved the reversal without requiring a court filing. I recommend their services for complex card disputes."
     }
   ]
 };
@@ -528,7 +528,7 @@ export default function CreditCardFraudClient() {
                       <div className="p-6 bg-slate-50 rounded-2xl border border-slate-200">
                         <h3 className="text-lg font-bold text-slate-900 mb-2">1. The Statutory Legal Notice</h3>
                         <p className="text-sm text-slate-650 leading-relaxed mb-3">
-                          A formal notice drafted by our panel of recovery advocates is sent to the bank's corporate office and Principal Nodal Officer. The notice cites the specific paragraphs of the RBI Master Circular, details the bank's failure to provide shadow credit within 10 days, and highlights any security deficiencies (e.g., failure to detect anomalous international transactions). The notice gives the bank a 15-day period to resolve the issue, failing which legal action will be initiated.
+                          A formal notice prepared by our team is sent to the bank's corporate office and Principal Nodal Officer. The notice cites the specific paragraphs of the RBI Master Circular, details the bank's failure to provide shadow credit within 10 days, and highlights any security deficiencies (e.g., failure to detect anomalous international transactions). The notice gives the bank a 15-day period to resolve the issue, failing which legal action will be initiated.
                         </p>
                       </div>
                       
@@ -585,7 +585,7 @@ export default function CreditCardFraudClient() {
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      Navigating the recovery process for credit card fraud requires a combination of technical knowledge, understanding of payment network rules, and legal expertise. Individual complaints are often delayed by bank customer service, which may rely on standard template rejections. LegalRecovery provides structured legal support through our panel of recovery advocates and dispute resolution professionals.
+                      Navigating the recovery process for credit card fraud requires a combination of technical knowledge, understanding of payment network rules, and legal expertise. Individual complaints are often delayed by bank customer service, which may rely on standard template rejections. LegalRecovery provides structured legal support through our team, which verifies your case facts and prepares and sends the notice.
                     </p>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
                       <div className="p-6 bg-slate-50 rounded-2xl border border-slate-200">
@@ -658,7 +658,7 @@ export default function CreditCardFraudClient() {
                   Recover Your Credit Card Funds
                 </h3>
                 <p className="text-xs text-slate-400 mb-6 leading-relaxed">
-                  Connect with our panel of cyber advocates. We help draft legal notices, initiate chargeback disputes, and file RBI Ombudsman complaints.
+                  Connect with our team. We help prepare legal notices, initiate chargeback disputes, and file RBI Ombudsman complaints.
                 </p>
                 <button
                   onClick={() => setIsPaymentModalOpen(true)}

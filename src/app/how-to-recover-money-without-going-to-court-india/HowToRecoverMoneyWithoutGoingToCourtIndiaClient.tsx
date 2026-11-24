@@ -41,7 +41,7 @@ const reviews = [
   {
     author: "Rohit Mehra",
     rating: "5",
-    text: "A corporate client held back our ₹12-lakh payment for six months. We skipped court and sent an advocate notice citing our arbitration clause. The client's legal team stepped in and paid us in full within three weeks."
+    text: "A corporate client held back our ₹12-lakh payment for six months. We skipped court and sent a fact-verified notice citing our arbitration clause. The client's legal team stepped in and paid us in full within three weeks."
   },
   {
     author: "Sunita Agarwal",
@@ -276,7 +276,7 @@ export default function HowToRecoverMoneyWithoutGoingToCourtIndiaClient() {
                 </h3>
                 <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                   <p className="text-sm md:text-base leading-relaxed">
-                    A formal legal notice is the foundation of any successful recovery. It is an official letter drafted and signed by an advocate on legal letterhead. Learning <Link href="/how-to-draft-a-legal-notice-for-recovery-of-money" className="text-[#DC2626] hover:underline font-medium">how to draft a legal notice</Link> helps you document the default clearly. The notice lists key details, including invoices, delivery dates, and the exact balance due.
+                    A formal legal notice is the foundation of any successful recovery. It is an official letter prepared on verified facts on legal letterhead. Learning <Link href="/how-to-draft-a-legal-notice-for-recovery-of-money" className="text-[#DC2626] hover:underline font-medium">how to draft a legal notice</Link> helps you document the default clearly. The notice lists key details, including invoices, delivery dates, and the exact balance due.
                   </p>
                   <p className="text-sm md:text-base leading-relaxed">
                     A lawyer&apos;s demand letter turns an informal dispute into an urgent legal risk. It warns of summary suits under Order 37 of the CPC. It can also cite Section 406 or Section 420 for criminal breach. The debtor gets a strict fifteen-day to thirty-day compliance window to settle the debt in full.

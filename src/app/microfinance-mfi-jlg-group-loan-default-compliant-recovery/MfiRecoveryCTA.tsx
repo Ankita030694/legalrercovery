@@ -49,7 +49,7 @@ export default function MfiRecoveryCTA() {
                 Test 1 Live Overdue Case Now
               </p>
               <p className="text-xs text-slate-300 leading-relaxed mb-4">
-                Advocate-drafted demand notice delivered via Email + WhatsApp + Speed Post RPAD
+                Fact-verified demand notice delivered via Email + WhatsApp + Speed Post RPAD
                 with BSA 2023 s.63 timestamped logs and zero coercive agent exposure.
               </p>
             </div>

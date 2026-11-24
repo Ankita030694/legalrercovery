@@ -56,7 +56,7 @@ export default function EventRecoveryNoticeCTA({
                     Test 1 Live Overdue Case Now (₹{basePrice})
                   </p>
                   <p className="text-xs text-slate-300 leading-relaxed mb-4">
-                    Advocate-drafted 15-day statutory demand notice incorporating BSA 2023 Section 63 cryptographic WhatsApp approval logs, on-site completion photos, and MSMED Act 3x RBI compound interest calculation. Dispatched simultaneously via Speed Post RPAD, WhatsApp &amp; Email.
+                    Fact-verified 15-day statutory demand notice incorporating BSA 2023 Section 63 cryptographic WhatsApp approval logs, on-site completion photos, and MSMED Act 3x RBI compound interest calculation. Dispatched simultaneously via Speed Post RPAD, WhatsApp &amp; Email.
                   </p>
                 </div>
 
@@ -116,7 +116,7 @@ export default function EventRecoveryNoticeCTA({
             <div className="mt-6 pt-5 border-t border-slate-800/80 flex flex-wrap items-center justify-between text-xs text-slate-400 gap-3">
               <span>&check; BSA 2023 s.63 Compliant WhatsApp Audit Certificate</span>
               <span>&bull;</span>
-              <span>&check; Bar Council of India Advocate Vetted Notice</span>
+              <span>&check; Fact-Verified Notice</span>
               <span>&bull;</span>
               <span>&check; Pan-India Speed Post Tracking with Delivery Confirmation</span>
             </div>

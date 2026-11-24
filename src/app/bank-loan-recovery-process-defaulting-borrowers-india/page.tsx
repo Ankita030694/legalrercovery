@@ -308,7 +308,7 @@ export default function BankLoanRecoveryProcessPage() {
               </div>
               <div>
                 <p className="text-xl sm:text-2xl md:text-3xl font-black text-red-400">Pan-India</p>
-                <p className="text-[11px] sm:text-xs text-slate-300 mt-0.5 sm:mt-1">Advocate Panel Across DRTs &amp; High Courts</p>
+                <p className="text-[11px] sm:text-xs text-slate-300 mt-0.5 sm:mt-1">Recovery Support Across DRTs &amp; High Courts</p>
               </div>
             </div>
           </div>
@@ -642,7 +642,7 @@ export default function BankLoanRecoveryProcessPage() {
                     </span>
                     <div className="space-y-1 sm:space-y-1.5">
                       <h3 className="text-sm sm:text-base md:text-lg font-bold text-slate-900">
-                        Dispatch Multi-Pronged Advocate Demand Notice (SARFAESI + NI Act)
+                        Dispatch Multi-Pronged Fact-Verified Demand Notice (SARFAESI + NI Act)
                       </h3>
                       <p className="text-xs sm:text-sm leading-relaxed">
                         Engage empanelled banking litigation counsel to draft and serve the statutory 60-day demand notice under Section 13(2) of the SARFAESI Act, 2002 via Registered Post AD and Section 63 BSA electronic mail. Concurrently, if EMI cheques or NACH auto-debits were dishonoured, issue a statutory demand notice under Section 138 of the Negotiable Instruments Act and Section 25 of the Payment and Settlement Systems Act, 2007.

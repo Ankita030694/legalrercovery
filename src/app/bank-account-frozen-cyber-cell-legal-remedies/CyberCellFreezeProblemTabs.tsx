@@ -87,7 +87,7 @@ const PROBLEMS: ProblemTab[] = [
       {
         step: "Serve Legal Notice Demanding Conversion to Lien-Only Hold",
         description:
-          "Issue an advocate notice to the Bank Branch Manager and Cyber Cell demanding immediate unfreezing of non-disputed funds and placing a lien only on the disputed quantum.",
+          "Issue a fact-verified notice to the Bank Branch Manager and Cyber Cell demanding immediate unfreezing of non-disputed funds and placing a lien only on the disputed quantum.",
       },
       {
         step: "File Magistrate Application under Section 503 BNSS / 457 CrPC",

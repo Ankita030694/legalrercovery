@@ -228,7 +228,7 @@ export default function SchoolCompliantParentFeeNoticePage() {
             >
               Schools, Universities &amp; EdTech B2B Recovery Hub
             </Link>
-            , private schools and colleges cannot withhold Transfer Certificates (TC) or Board Roll Numbers under RTE Act s.5(3). This advocate-vetted template explicitly insulates the student&apos;s academic rights while enforcing signed parent fee undertakings under Order XXXVII CPC.
+            , private schools and colleges cannot withhold Transfer Certificates (TC) or Board Roll Numbers under RTE Act s.5(3). This ready-to-use template explicitly insulates the student&apos;s academic rights while enforcing signed parent fee undertakings under Order XXXVII CPC.
           </div>
 
           {/* 4-Card Key Metrics Strip */}
@@ -437,7 +437,7 @@ export default function SchoolCompliantParentFeeNoticePage() {
               </div>
               <div className="space-y-4 text-sm sm:text-base text-slate-600 leading-relaxed">
                 <p>
-                  <strong>Dignified Fee Arrears Legal Notice After TC Issued:</strong> Many parents wait until March/April, demand a Transfer Certificate under RTE s.5(3), and then block the school accounts office&apos;s phone numbers after enrolling the child elsewhere. Because the school has already complied with the law by releasing the TC, a formal advocate notice sent to the parent&apos;s residential and corporate email addresses establishes clean equity before the Civil Judge.
+                  <strong>Dignified Fee Arrears Legal Notice After TC Issued:</strong> Many parents wait until March/April, demand a Transfer Certificate under RTE s.5(3), and then block the school accounts office&apos;s phone numbers after enrolling the child elsewhere. Because the school has already complied with the law by releasing the TC, a formal legal notice sent to the parent&apos;s residential and corporate email addresses establishes clean equity before the Civil Judge.
                 </p>
                 <p>
                   <strong>School Enrollment Financial Undertaking Form:</strong> To maximize summary suit enforceability, school Trusts should ensure their annual admission or re-enrollment form contains a clear <em>School Enrollment Financial Undertaking</em> signed by both parents, specifying quarterly due dates, transport/hostel opt-in fees, and consent to electronic service.
@@ -578,7 +578,7 @@ export default function SchoolCompliantParentFeeNoticePage() {
                     Bulk Recovery for 10 to 10,000+ Fee Defaulters
                   </div>
                   <p className="text-xs text-slate-600">
-                    Upload school ERP defaulter spreadsheets for automated advocate notice dispatch.
+                    Upload school ERP defaulter spreadsheets for automated legal notice dispatch.
                   </p>
                 </Link>
 

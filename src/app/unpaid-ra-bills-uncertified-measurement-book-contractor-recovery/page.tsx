@@ -76,7 +76,7 @@ const STATUTORY_MATRIX = [
     statute: "Supreme Court Ambica Construction & R.L. Kalathia Doctrine",
     timing: "Prior to execution or within 24–48 hours of part-payment receipt",
     mechanism:
-      "Issue registered advocate notice establishing financial duress and economic coercion under Contract Act Sections 15 & 19; reserve full rights to arbitrate extra items and escalation.",
+      "Issue registered fact-verified notice establishing financial duress and economic coercion under Contract Act Sections 15 & 19; reserve full rights to arbitrate extra items and escalation.",
     relief:
       "Neutralizes employer's 'Full & Final Accord and Satisfaction' defense; preserves multi-crore arbitral claims despite signing standard-form No-Dues Undertakings.",
     suitability:
@@ -185,7 +185,7 @@ const FAQS = [
   {
     question: "What should a contractor do if forced to sign a 'No-Claim Certificate' to get the Final Bill released?",
     answer:
-      "Follow the Supreme Court Ambica Construction and R.L. Kalathia protocol: (1) If possible, endorse the payment receipt voucher with the words: 'Received under protest and financial duress, without prejudice to our pending claims detailed in letter dated [Date]'; (2) If the developer refuses to hand over the cheque unless a clean pre-printed form is signed, immediately dispatch a registered Advocate Legal Notice within 24 to 48 hours of bank credit repudiating the certificate as vitiated by economic coercion under Sections 15 and 19 of the Indian Contract Act; (3) Invoke arbitration under Section 21 of the Arbitration and Conciliation Act, 1996 for the balance claims.",
+      "Follow the Supreme Court Ambica Construction and R.L. Kalathia protocol: (1) If possible, endorse the payment receipt voucher with the words: 'Received under protest and financial duress, without prejudice to our pending claims detailed in letter dated [Date]'; (2) If the developer refuses to hand over the cheque unless a clean pre-printed form is signed, immediately dispatch a registered Fact-Verified Legal Notice within 24 to 48 hours of bank credit repudiating the certificate as vitiated by economic coercion under Sections 15 and 19 of the Indian Contract Act; (3) Invoke arbitration under Section 21 of the Arbitration and Conciliation Act, 1996 for the balance claims.",
   },
   {
     question: "Does a contractor have the legal right to stop or suspend construction work for unpaid RA bills?",
@@ -543,7 +543,7 @@ export default function UnpaidRABillsContractorRecoveryPage() {
                   </li>
                 </ul>
                 <p>
-                  To preserve your claims, you must adhere strictly to the <strong>Kalathia Protest Protocol</strong>: either endorse the payment voucher with &lsquo;Under Protest and Without Prejudice&rsquo; or dispatch a registered advocate notice within 24 to 48 hours of payment credit formally repudiating the certificate as coerced. If you are dealing with government authorities, also review our guide on{" "}
+                  To preserve your claims, you must adhere strictly to the <strong>Kalathia Protest Protocol</strong>: either endorse the payment voucher with &lsquo;Under Protest and Without Prejudice&rsquo; or dispatch a registered fact-verified notice within 24 to 48 hours of payment credit formally repudiating the certificate as coerced. If you are dealing with government authorities, also review our guide on{" "}
                   <Link
                     href="/law/section-80-cpc-notice-to-government"
                     className="text-[#DC2626] font-semibold hover:underline"
@@ -974,7 +974,7 @@ export default function UnpaidRABillsContractorRecoveryPage() {
                 Four Real-World Commercial Scenarios Faced by Civil Contractors
               </h2>
               <p className="text-xs sm:text-sm text-slate-600 mb-6 leading-relaxed">
-                Select a scenario below to explore specific contractual failure modes, statutory legal grounds, and advocate-vetted action steps:
+                Select a scenario below to explore specific contractual failure modes, statutory legal grounds, and fact-verified action steps:
               </p>
               <UncertifiedRABillScenarioTabs />
             </section>

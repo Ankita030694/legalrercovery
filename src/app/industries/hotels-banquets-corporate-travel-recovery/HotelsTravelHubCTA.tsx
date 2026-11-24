@@ -27,7 +27,7 @@ export default function HotelsTravelHubCTA({ className = "" }: HotelsTravelHubCT
                 Test 1 Live Overdue Case Now (&rupee;{basePrice})
               </h3>
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-                Advocate Drafted &bull; Email + WhatsApp + Speed Post RPAD. Serve one defaulting BTC corporate finance desk, IATA airfare client, wedding host, OTA, or canteen contractor today with folio/PNR schedules attached.
+                Fact-Verified &bull; Email + WhatsApp + Speed Post RPAD. Serve one defaulting BTC corporate finance desk, IATA airfare client, wedding host, OTA, or canteen contractor today with folio/PNR schedules attached.
               </p>
               <ul className="space-y-1.5 text-xs text-slate-200 mb-6">
                 <li>&check; Folio, GDS 13-digit PNR &amp; extra-pax slip <code className="font-mono text-[11px] bg-white/10 px-1 py-0.5 rounded">invoices[]</code> schedule</li>

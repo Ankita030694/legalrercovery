@@ -48,7 +48,7 @@ const RIGID_PACKAGING_SCENARIOS: ScenarioItem[] = [
       "Never raise a GST Credit Note under CGST s.34—issue a formal written rejection of the debit note citing Sale of Goods Act s.42 and MSMED s.2(b) (15-day objection bar).",
       "Compile dispatch-day QC sheets: top-load test, 1.2m drop-test pass logs, Go/No-Go neck-finish gauge checks, parison weight charts, and polymer resin COA (Certificate of Analysis).",
       "Challenge the buyer to produce its filling-line torque-meter calibration logs, induction-sealer dwell-time records, and untouched sealed control samples from the same batch.",
-      "Trigger Section 43B(h) tax-disallowance intimation to the buyer's CFO and Statutory Auditor alongside a 15-day Advocate Demand Notice.",
+      "Trigger Section 43B(h) tax-disallowance intimation to the buyer's CFO and Statutory Auditor alongside a 15-day Fact-Verified Demand Notice.",
     ],
     evidenceNeeded:
       "Resin Batch COA (RIL/IOCL/OPAL), Pre-Dispatch Drop-Test & Neck-Gauge QC Register, Signed Clean GRNs, E-Way Bills, and WhatsApp/Email dispatch approvals (BSA s.63).",

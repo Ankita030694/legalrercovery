@@ -25,10 +25,10 @@ export default function SurgicalConsumablesRecoveryCTA({
               Track 1 &bull; Single Hospital Overdue Invoice Test
             </span>
             <p className="text-lg sm:text-xl font-extrabold text-white mb-2">
-              Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Advocate Drafted &middot; Email + WhatsApp + Speed Post RPAD)
+              Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Fact-Verified &middot; Email + WhatsApp + Speed Post RPAD)
             </p>
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-              Serve an advocate-vetted 10-day statutory recovery notice on a defaulting corporate hospital or nursing home. Demands immediate clearance of approved GRNs, invokes Section 43B(h) Corporate Tax Audit Disallowance, applies MSMED Act Section 16 compound interest (3x RBI repo rate), and prepares your record for MSEFC Samadhaan or Order XXXVII summary suit.
+              Serve a fact-verified 10-day statutory recovery notice on a defaulting corporate hospital or nursing home. Demands immediate clearance of approved GRNs, invokes Section 43B(h) Corporate Tax Audit Disallowance, applies MSMED Act Section 16 compound interest (3x RBI repo rate), and prepares your record for MSEFC Samadhaan or Order XXXVII summary suit.
             </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-3">

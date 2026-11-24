@@ -37,7 +37,7 @@ const PROBLEMS: ProblemTab[] = [
           "Send a written demand letter citing Section 73 of the Indian Contract Act demanding wire transfer of the admitted purchase sum within 7 business days, including 18% per annum commercial default interest.",
       },
       {
-        step: "Serve Advocate Statutory Demand Notice",
+        step: "Serve Fact-Verified Statutory Demand Notice",
         description:
           "If funds are not remitted, engage counsel to dispatch an advocate legal notice under Section 68 Companies Act and Section 73 Contract Act, preparing for a Commercial Summary Suit under Order 37 of the CPC.",
       },
@@ -64,9 +64,9 @@ const PROBLEMS: ProblemTab[] = [
           "Submit a formal objection to the Board and Nomination Committee asserting that vested rights are irrevocable property rights, referencing Section 62(1)(b) of the Companies Act, 2013.",
       },
       {
-        step: "Issue Advocate Notice for Reinstatement or Equivalent Damages",
+        step: "Issue Fact-Verified Notice for Reinstatement or Equivalent Damages",
         description:
-          "Serve a 15-day statutory advocate demand notice requiring the company to reinstate your vested units or deposit equivalent fair market value damages before approaching the Commercial Court.",
+          "Serve a 15-day statutory fact-verified demand notice requiring the company to reinstate your vested units or deposit equivalent fair market value damages before approaching the Commercial Court.",
       },
     ],
     statutoryRule: "Section 27 Indian Contract Act 1872 & Section 62(1)(b) Companies Act 2013",
@@ -93,7 +93,7 @@ const PROBLEMS: ProblemTab[] = [
       {
         step: "Escalate via Registrar of Companies (ROC) & Legal Notice",
         description:
-          "Serve an advocate notice indicating intent to file an ROC complaint under Section 450 and an oppression petition before the National Company Law Tribunal (NCLT) under Section 241.",
+          "Serve a fact-verified notice indicating intent to file an ROC complaint under Section 450 and an oppression petition before the National Company Law Tribunal (NCLT) under Section 241.",
       },
     ],
     statutoryRule: "Rule 12(7) PAS Rules 2014 & Section 171 / 241 Companies Act 2013",

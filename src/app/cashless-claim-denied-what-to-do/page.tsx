@@ -158,7 +158,7 @@ const FAQS = [
   {
     question: "How do I escalate if my cashless claim is denied due to an alleged pre-existing disease (PED)?",
     answer:
-      "Get a certificate from your doctor stating the acute illness has no link to prior health issues. Under Section 45 of the Insurance Act, after a policy completes three continuous years, no claim can be denied for non-disclosure. Pay the bill and send an advocate legal notice.",
+      "Get a certificate from your doctor stating the acute illness has no link to prior health issues. Under Section 45 of the Insurance Act, after a policy completes three continuous years, no claim can be denied for non-disclosure. Pay the bill and send a fact-verified legal notice.",
   },
   {
     question: "Can I approach the Insurance Ombudsman if my cashless claim was denied and reimbursement is delayed?",
@@ -771,7 +771,7 @@ export default function CashlessClaimDeniedPage() {
                     </span>
                     <div className="space-y-1.5">
                       <h3 className="font-bold text-slate-900 text-sm sm:text-base">
-                        Dispatch Advocate Legal Demand Notice &amp; File Before the Insurance Ombudsman
+                        Dispatch Fact-Verified Legal Demand Notice &amp; File Before the Insurance Ombudsman
                       </h3>
                       <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                         If the insurer rejects your reimbursement claim or fails to pay within 30 days, engage an advocate to dispatch a formal statutory legal notice via Registered Speed Post and digital channels. If unresolved within 30 days of the notice, file an online complaint before your territorial Insurance Ombudsman (see our{" "}
@@ -839,7 +839,7 @@ export default function CashlessClaimDeniedPage() {
                         <strong>Section 45 Statutory Invocation:</strong> Policy had completed 4 continuous years. Under Section 45 of the Insurance Act, 1938, questioning pre-existing conditions after 3 years is statutorily barred.
                       </li>
                       <li>
-                        <strong>Statutory Advocate Demand Notice:</strong> Served an advocate legal notice under Registered Speed Post demanding reimbursement of ₹3,60,000, refund of the ₹8,000 excess room charge under IRDAI Master Circular 2024, and 12% penal interest.
+                        <strong>Statutory Fact-Verified Demand Notice:</strong> Served a fact-verified legal notice under Registered Speed Post demanding reimbursement of ₹3,60,000, refund of the ₹8,000 excess room charge under IRDAI Master Circular 2024, and 12% penal interest.
                       </li>
                       <li>
                         <strong>Escalation to Ombudsman:</strong> When the insurer offered a partial settlement of ₹2,10,000, Mr. Rajesh approached the Insurance Ombudsman (Bengaluru Center).
@@ -1025,7 +1025,7 @@ export default function CashlessClaimDeniedPage() {
                       What LegalRecovery Does for You
                     </p>
                     <ul className="text-xs sm:text-sm text-slate-700 space-y-1.5 list-disc list-inside">
-                      <li>Drafts an unassailable statutory legal notice served by a verified advocate.</li>
+                      <li>Prepares an unassailable statutory legal notice from your fact-verified details and sends it for you.</li>
                       <li>Cites IRDAI&apos;s 2024 1-hour and 3-hour norms, Section 45 Insurance Act, and binding NCDRC precedents.</li>
                       <li>Demands full hospital reimbursement + penal interest at bank rate + 2% + mental agony compensation.</li>
                       <li>Dispatches notice via Registered Speed Post with tracking and digital service under Section 63 BSA 2023.</li>

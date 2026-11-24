@@ -42,7 +42,7 @@ const TPA_SCENARIOS: TpaScenario[] = [
       {
         step: "Issue 15-Day Breach of Contract Notice Impleading Both TPA & Insurer",
         detail:
-          "Serve a joint advocate demand notice upon the Chief Operating Officer of the TPA and the Principal Insurer under Contract Act s.73, demanding release of withheld amounts with penal interest within 15 days.",
+          "Serve a joint fact-verified demand notice upon the Chief Operating Officer of the TPA and the Principal Insurer under Contract Act s.73, demanding release of withheld amounts with penal interest within 15 days.",
       },
     ],
     recoveryLeverage: "Very High: Insurers settle package disputes quickly once reminded that TPAs have no independent contracting power outside the principal policy.",

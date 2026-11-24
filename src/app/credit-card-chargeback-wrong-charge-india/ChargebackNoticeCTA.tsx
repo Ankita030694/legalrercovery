@@ -31,7 +31,7 @@ export default function ChargebackNoticeCTA({
                 Bank Refusing Chargeback or Delaying Duplicate Debit Reversal?
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6">
-                Have an advocate draft and serve a formal statutory demand notice to your credit card issuing bank and card network (Visa, Mastercard, RuPay, Amex). Enforce mandatory shadow credit, reverse wrongful late fees, and claim statutory interest and consumer compensation.
+                Serve a formal statutory demand notice to your credit card issuing bank and card network (Visa, Mastercard, RuPay, Amex). Enforce mandatory shadow credit, reverse wrongful late fees, and claim statutory interest and consumer compensation.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button
@@ -42,7 +42,7 @@ export default function ChargebackNoticeCTA({
                   {buttonText} — ₹{basePrice}
                 </button>
                 <div className="text-xs text-slate-300 flex flex-wrap sm:flex-nowrap items-center gap-2 sm:gap-3">
-                  <span>✓ 24h Advocate Drafting</span>
+                  <span>✓ 24h Notice Drafting</span>
                   <span>•</span>
                   <span>✓ Email + WhatsApp</span>
                   <span>•</span>

@@ -31,7 +31,7 @@ export default function ForeignEmployerNoticeCTA({
                 Recover Unpaid Remote Salary, Invoices or Severance from a Foreign Employer
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6">
-                Have a verified advocate draft and serve an official cross-border legal demand notice directly to the foreign corporation, its registered agent, overseas executive directors, and any Indian Employer of Record (EOR). Dispatched via International Registered Post / Airmail with global tracking, and served electronically with certified digital timestamping under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023.
+                Serve an official cross-border legal demand notice directly to the foreign corporation, its registered agent, overseas executive directors, and any Indian Employer of Record (EOR). Dispatched via International Registered Post / Airmail with global tracking, and served electronically with certified digital timestamping under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button

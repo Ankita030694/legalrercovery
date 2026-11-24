@@ -38,7 +38,7 @@ const SCENARIOS: ScenarioTab[] = [
       {
         step: "Serve 15-Day Penal Royalty & Audit Demand Notice",
         description:
-          "Issue an Advocate Legal Notice invoking the Input-Output Audit Clause and Section 74 liquidated damages (2x–3x audit-deficit royalty), demanding full bank statement disclosure and immediate escrow settlement.",
+          "Issue a Fact-Verified Legal Notice invoking the Input-Output Audit Clause and Section 74 liquidated damages (2x–3x audit-deficit royalty), demanding full bank statement disclosure and immediate escrow settlement.",
       },
     ],
     statutoryRule: "Contract Act s.73 & s.74 | BNS s.316 | BSA 2023 s.63 Electronic Proof",

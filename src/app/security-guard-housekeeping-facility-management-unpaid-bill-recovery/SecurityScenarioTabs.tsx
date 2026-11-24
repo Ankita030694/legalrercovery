@@ -38,7 +38,7 @@ const SCENARIOS: ScenarioTab[] = [
       {
         step: "Segregation of Pass-Through Wages & Criminal Warning",
         description:
-          "Issue an advocate notice putting directors/officers on notice that withholding security guard wages to cover unverified commercial inventory discrepancies exposes them to criminal breach of trust (BNS 316) and extortion (BNS 308).",
+          "Issue a fact-verified notice putting directors/officers on notice that withholding security guard wages to cover unverified commercial inventory discrepancies exposes them to criminal breach of trust (BNS 316) and extortion (BNS 308).",
       },
       {
         step: "MSME Samadhaan (MSEFC) Reference",
@@ -65,7 +65,7 @@ const SCENARIOS: ScenarioTab[] = [
       {
         step: "Issuance of Comprehensive Handover Protocol Notice",
         description:
-          "Serve an advocate legal notice recording the client's breach of notice-period clauses, claiming notice-period remuneration, security deposit refund, and immediate clearance of all certified past arrears.",
+          "Serve a fact-verified legal notice recording the client's breach of notice-period clauses, claiming notice-period remuneration, security deposit refund, and immediate clearance of all certified past arrears.",
       },
       {
         step: "Income Tax Section 43B(h) Corporate Warning",

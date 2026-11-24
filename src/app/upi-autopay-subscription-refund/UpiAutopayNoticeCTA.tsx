@@ -11,7 +11,7 @@ interface UpiAutopayNoticeCTAProps {
 }
 
 export default function UpiAutopayNoticeCTA({
-  buttonText = "Draft Advocate Notice for UPI AutoPay Refund",
+  buttonText = "Draft Fact-Verified Notice for UPI AutoPay Refund",
   className = "",
   variant = "primary",
 }: UpiAutopayNoticeCTAProps) {
@@ -31,7 +31,7 @@ export default function UpiAutopayNoticeCTA({
                 Trapped in an Unwanted UPI AutoPay Debit? Recover Your Money Fast
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6">
-                Have a verified advocate draft and serve an unassailable statutory legal notice directly to the subscription merchant, their payment aggregator, and your bank. Enforce mandatory RBI 24-hour pre-debit rules and CCPA dark-pattern penalties to secure a prompt refund back to your bank account.
+                Serve an unassailable statutory legal notice directly to the subscription merchant, their payment aggregator, and your bank. Enforce mandatory RBI 24-hour pre-debit rules and CCPA dark-pattern penalties to secure a prompt refund back to your bank account.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button
@@ -42,7 +42,7 @@ export default function UpiAutopayNoticeCTA({
                   {buttonText} — ₹{basePrice}
                 </button>
                 <div className="text-xs text-slate-300 flex flex-wrap sm:flex-nowrap items-center gap-2 sm:gap-3">
-                  <span>✓ 24h Advocate Drafting</span>
+                  <span>✓ 24h Notice Drafting</span>
                   <span>•</span>
                   <span>✓ Email + WhatsApp</span>
                   <span>•</span>

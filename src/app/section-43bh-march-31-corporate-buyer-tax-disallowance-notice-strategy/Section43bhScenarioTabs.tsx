@@ -31,7 +31,7 @@ const SCENARIOS: Scenario[] = [
     actionProtocol: [
       "Never sign 'Non-MSME' declarations or surrender your Udyam registration; existing Udyam remains valid and retroactive for all supplies executed under that certificate.",
       "Issue a formal written objection rejecting the waiver, attaching your active Udyam Certificate showing Enterprise Category (Micro or Small) and manufacturing NIC codes.",
-      "Serve an advocate-vetted Section 43B(h) Statutory Disclosure Notice directly to the corporate buyer's Managing Director, CFO, and Audit Committee.",
+      "Serve a fact-verified Section 43B(h) Statutory Disclosure Notice directly to the corporate buyer's Managing Director, CFO, and Audit Committee.",
       "Inform the buyer that any ongoing procurement boycott based on MSME status violates Competition Act Section 4 (abuse of dominant position) and Section 15 of MSMED Act.",
     ],
   },

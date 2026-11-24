@@ -140,7 +140,7 @@ const FAQS = [
   {
     question: "What is the legal process for society maintenance dues recovery in India?",
     answer:
-      "The statutory maintenance dues recovery process follows 4 sequential steps: (1) Issue monthly maintenance bills and allow the grace period fixed in the society bye-laws; (2) Pass a Managing Committee resolution and serve a formal 15-day Society Maintenance Recovery Notice (first demand letter, followed by a final pre-litigation advocate notice) enclosing a certified bill-by-bill ledger statement; (3) If the member still defaults, file a summary recovery application before the Deputy/Assistant Registrar under Section 101 of the Maharashtra Co-operative Societies Act, 1960 (or Section 70 of the Delhi/Karnataka Co-operative Societies Acts, or Section 22 of the UP Apartment Act, 2010); and (4) Execute the Recovery Certificate by attaching the member's bank account, garnishing rent from their tenant, or registering a statutory charge on the flat.",
+      "The statutory maintenance dues recovery process follows 4 sequential steps: (1) Issue monthly maintenance bills and allow the grace period fixed in the society bye-laws; (2) Pass a Managing Committee resolution and serve a formal 15-day Society Maintenance Recovery Notice (first demand letter, followed by a final pre-litigation legal notice) enclosing a certified bill-by-bill ledger statement; (3) If the member still defaults, file a summary recovery application before the Deputy/Assistant Registrar under Section 101 of the Maharashtra Co-operative Societies Act, 1960 (or Section 70 of the Delhi/Karnataka Co-operative Societies Acts, or Section 22 of the UP Apartment Act, 2010); and (4) Execute the Recovery Certificate by attaching the member's bank account, garnishing rent from their tenant, or registering a statutory charge on the flat.",
   },
   {
     question: "How much interest can a housing society legally charge on overdue maintenance arrears?",
@@ -710,7 +710,7 @@ export default function SocietyMaintenanceRecoveryNoticePage() {
                     href="/legal-notice-to-cooperative-housing-society-maintenance-disputes"
                     className="text-[#DC2626] font-semibold underline hover:text-red-800"
                   >
-                    advocate legal notice for housing society maintenance disputes
+                    legal notice for housing society maintenance disputes
                   </Link>
                   , verify which elements are statutorily mandatory for Registrar admissibility versus optional best practices:
                 </p>
@@ -1134,7 +1134,7 @@ export default function SocietyMaintenanceRecoveryNoticePage() {
                       STAGE 3 (15 DAYS)
                     </text>
                     <text x="463" y="76" textAnchor="middle" fill="#FFFFFF" fontSize="12" fontWeight="bold">
-                      Final Advocate
+                      Final Legal
                     </text>
                     <text x="463" y="93" textAnchor="middle" fill="#FFFFFF" fontSize="12" fontWeight="bold">
                       Show-Cause Notice

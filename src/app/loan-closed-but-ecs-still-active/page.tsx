@@ -151,7 +151,7 @@ const FAQS = [
   {
     question: "What legal notice format should be sent to a bank continuing post-closure autodebits?",
     answer:
-      "The notice must be drafted by an advocate citing Section 25 of the Payment and Settlement Systems Act, 2007, Section 72 of the Indian Contract Act, 1872, and Section 2(11) of the Consumer Protection Act, 2019. It must specify the loan account number, UMRN, date of full repayment/NOC, list of unauthorised debited sums with transaction UTRs, and mandate a 7-day deadline for full refund with interest and mandate revocation proof before filing an e-Jagriti consumer complaint.",
+      "The notice must be prepared on verified facts citing Section 25 of the Payment and Settlement Systems Act, 2007, Section 72 of the Indian Contract Act, 1872, and Section 2(11) of the Consumer Protection Act, 2019. It must specify the loan account number, UMRN, date of full repayment/NOC, list of unauthorised debited sums with transaction UTRs, and mandate a 7-day deadline for full refund with interest and mandate revocation proof before filing an e-Jagriti consumer complaint.",
   },
 ];
 
@@ -359,7 +359,7 @@ export default function LoanClosedEcsStillActivePage() {
                         </tr>
                         <tr className="hover:bg-slate-50">
                           <th scope="row" className="px-5 py-3.5 font-bold text-slate-900 bg-slate-50/50">Advocate Notice Notice Fee</th>
-                          <td className="px-5 py-3.5 font-bold text-red-600">Flat ₹1,499 (Standard Advocate Drafting, Speed Post &amp; Digital Tracking)</td>
+                          <td className="px-5 py-3.5 font-bold text-red-600">Flat ₹1,499 (Standard Notice Drafting, Speed Post &amp; Digital Tracking)</td>
                         </tr>
                       </tbody>
                     </table>
@@ -601,10 +601,10 @@ export default function LoanClosedEcsStillActivePage() {
                     <span className="shrink-0 w-8 h-8 rounded-full bg-slate-900 text-white font-bold flex items-center justify-center text-sm">3</span>
                     <div>
                       <h3 className="text-base sm:text-lg font-bold text-slate-900 mb-1">
-                        Serve a Statutory Advocate Legal Notice to the Creditor
+                        Serve a Statutory Fact-Verified Legal Notice to the Creditor
                       </h3>
                       <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
-                        Have an advocate dispatch a formal demand notice under Registered Speed Post and digitally under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023. The notice establishes the date of loan clearance, proves lack of consideration under Section 72 Contract Act, and demands immediate NEFT refund of the debited amounts within 7 days, alongside reimbursement of all bounce penalties and ₹50,000 compensation.
+                        Dispatch a formal demand notice under Registered Speed Post and digitally under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023. The notice establishes the date of loan clearance, proves lack of consideration under Section 72 Contract Act, and demands immediate NEFT refund of the debited amounts within 7 days, alongside reimbursement of all bounce penalties and ₹50,000 compensation.
                       </p>
                     </div>
                   </div>
@@ -715,7 +715,7 @@ export default function LoanClosedEcsStillActivePage() {
                       <strong>Lender Obstruction:</strong> Mr. Mehra contacted customer support, who cited 'clearing reconciliation latency' and asked him to wait 45 days. Meanwhile, HDFC Bank branch officials told him they could not cancel the mandate without an internal NOC approval form signed by the NBFC's zonal officer.
                     </p>
                     <p>
-                      <strong>The Legal Action:</strong> On 15 October, Mr. Mehra engaged LegalRecovery. An advocate drafted and dispatched a formal statutory demand notice to both the NBFC's Managing Director and HDFC Bank's Principal Nodal Officer, citing Section 25 PSS Act, Section 72 Indian Contract Act, and RBI customer mandate cancellation circulars. The notice demanded immediate refund with 18% penal interest within 7 days.
+                      <strong>The Legal Action:</strong> On 15 October, Mr. Mehra engaged LegalRecovery. The team verified the facts and dispatched a formal statutory demand notice to both the NBFC's Managing Director and HDFC Bank's Principal Nodal Officer, citing Section 25 PSS Act, Section 72 Indian Contract Act, and RBI customer mandate cancellation circulars. The notice demanded immediate refund with 18% penal interest within 7 days.
                     </p>
                     <p>
                       <strong>The Outcome:</strong> On Day 5 following notice receipt, the NBFC's legal desk contacted Mr. Mehra. The NBFC processed a direct RTGS refund of ₹48,000, paid ₹4,400 as commercial interest, and agreed to ₹15,000 in goodwill compensation to prevent filing before the Banking Ombudsman and e-Jagriti consumer forum. HDFC Bank formally terminated UMRN 20205839201948201948 within 24 hours.

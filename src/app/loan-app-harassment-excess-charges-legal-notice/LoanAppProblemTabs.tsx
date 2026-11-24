@@ -37,7 +37,7 @@ const PROBLEMS: ProblemTab[] = [
           "Take full-screen screenshots of threatening WhatsApp chats, call recordings, numbers, and agent names without cropping timestamps or caller headers.",
       },
       {
-        step: "File Emergency Cyber Complaint & Send Advocate Notice",
+        step: "File Emergency Cyber Complaint & Send Fact-Verified Notice",
         description:
           "Report immediately on cybercrime.gov.in (National Cyber Crime Helpline 1930) and serve a statutory advocate legal notice to the lending NBFC holding them vicariously liable.",
       },

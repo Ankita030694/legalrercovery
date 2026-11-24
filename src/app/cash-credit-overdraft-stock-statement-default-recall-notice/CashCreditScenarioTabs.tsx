@@ -34,7 +34,7 @@ const CC_OD_SCENARIOS: CashCreditScenario[] = [
       "Place debit-freeze ('Credit-Only' / 'No-Further-Drawal' flag) in CBS once DP shortfall exceeds 15% of outstanding",
     ],
     legalSOP:
-      "Do not wait for Day 180 to escalate. At Day 45 of missing stock statements, serve a formal Advocate-backed Notice of Covenant Breach demanding certified stock & aged-debtor schedules within 7 days, failing which DP is reduced to zero and the entire excess over DP becomes immediately payable.",
+      "Do not wait for Day 180 to escalate. At Day 45 of missing stock statements, serve a formal Fact-verified Notice of Covenant Breach demanding certified stock & aged-debtor schedules within 7 days, failing which DP is reduced to zero and the entire excess over DP becomes immediately payable.",
     targetOutcome: "Forces fresh CA-certified stock disclosure or triggers timely pre-stripping freeze.",
   },
   {

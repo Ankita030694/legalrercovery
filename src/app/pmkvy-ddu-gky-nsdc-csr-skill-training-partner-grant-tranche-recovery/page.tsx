@@ -849,7 +849,7 @@ export default function SkillTrainingTrancheRecoveryPage() {
                   className="p-4 rounded-xl border border-slate-200 hover:border-[#DC2626] hover:bg-red-50/30 transition-colors"
                 >
                   <p className="font-bold text-slate-900">
-                    Advocate-Vetted Legal Notice Template &rarr;
+                    Ready-to-Use Legal Notice Template &rarr;
                   </p>
                   <p className="text-slate-600 text-xs mt-1">
                     Interactive commercial demand and reply workspace with BSA s.63 clauses.

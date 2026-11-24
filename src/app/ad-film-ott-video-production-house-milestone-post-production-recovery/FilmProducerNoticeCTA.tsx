@@ -8,7 +8,7 @@ interface NoticeCTAProps {
 
 export default function FilmProducerNoticeCTA({
   heading = "Recover Unpaid Shoot Milestones, Crew Advances & Post-Production Dues",
-  subheading = "Don't let advertising agencies and corporate brands exploit your production house capital. Enforce your statutory rights under Copyright Act s.17, Indian Contract Act s.70, and MSMED Act s.15 with advocate-vetted statutory notices.",
+  subheading = "Don't let advertising agencies and corporate brands exploit your production house capital. Enforce your statutory rights under Copyright Act s.17, Indian Contract Act s.70, and MSMED Act s.15 with fact-verified statutory notices.",
   sourceLocation = "film_producer_recovery_cta",
 }: NoticeCTAProps) {
   return (
@@ -47,7 +47,7 @@ export default function FilmProducerNoticeCTA({
                 Statutory Legal Notice & Copyright Takedown
               </h4>
               <p className="text-xs text-slate-400 leading-relaxed mb-4">
-                Advocate-drafted notice issued under Copyright Act s.17 & s.51 + Contract Act s.70. Enforces 24-hr airing stay and 15-day milestone settlement.
+                Fact-verified notice issued under Copyright Act s.17 & s.51 + Contract Act s.70. Enforces 24-hr airing stay and 15-day milestone settlement.
               </p>
             </div>
             <Link

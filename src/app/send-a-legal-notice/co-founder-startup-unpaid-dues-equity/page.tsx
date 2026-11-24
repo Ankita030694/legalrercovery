@@ -4,7 +4,7 @@ import CoFounderStartupUnpaidDuesEquityClient from './CoFounderStartupUnpaidDues
 const slug = 'send-a-legal-notice/co-founder-startup-unpaid-dues-equity';
 const title = 'Legal Notice to Co-Founder for Unpaid Startup Dues & Equity';
 const description =
-  'Co-founder dispute over unpaid salary or equity shares? Send an advocate-drafted legal notice under the Companies Act to recover dues.';
+  'Co-founder dispute over unpaid salary or equity shares? Send a fact-verified legal notice under the Companies Act to recover dues.';
 const url = `https://www.legalrecovery.in/${slug}`;
 const ogImage = `/images/og/co-founder-startup-unpaid-dues-equity.jpg`;
 

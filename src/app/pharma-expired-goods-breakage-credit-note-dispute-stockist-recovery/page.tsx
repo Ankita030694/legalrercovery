@@ -232,7 +232,7 @@ export default function PharmaExpiredGoodsBreakageRecoveryPage() {
         "@type": "HowToStep",
         position: 3,
         name: "Issuance of Formal Debit Note Rebuttal & Legal Notice",
-        text: "Serve an Advocate Demand Notice itemizing contractual cap breaches, CBIC Circular 72/46/2018-GST violations, and Sale of Goods Act deemed acceptance, demanding payment within 15 days.",
+        text: "Serve a Fact-Verified Demand Notice itemizing contractual cap breaches, CBIC Circular 72/46/2018-GST violations, and Sale of Goods Act deemed acceptance, demanding payment within 15 days.",
       },
       {
         "@type": "HowToStep",
@@ -863,7 +863,7 @@ export default function PharmaExpiredGoodsBreakageRecoveryPage() {
                   Key Takeaway for Pharmaceutical CFOs &amp; Credit Controllers:
                 </p>
                 <p>
-                  By performing a rigorous batch reconciliation and enforcing contractual clauses under the Indian Contract Act, the manufacturer transformed an apparent ₹7,47,600 disputed settlement into an enforceable <strong>₹19,85,650 statutory recovery claim</strong>. The defaulting stockist, facing MSME Samadhaan proceedings and Section 43B(h) tax audit disallowance, settled the full ₹18,03,200 principal within 12 days of statutory advocate notice service.
+                  By performing a rigorous batch reconciliation and enforcing contractual clauses under the Indian Contract Act, the manufacturer transformed an apparent ₹7,47,600 disputed settlement into an enforceable <strong>₹19,85,650 statutory recovery claim</strong>. The defaulting stockist, facing MSME Samadhaan proceedings and Section 43B(h) tax audit disallowance, settled the full ₹18,03,200 principal within 12 days of statutory fact-verified notice service.
                 </p>
               </div>
             </section>

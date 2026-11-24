@@ -48,7 +48,7 @@ const SCENARIOS: ScenarioItem[] = [
       "Approved GST Invoice ledger and unpaid hire-rent reconciliation statement",
     ],
     recommendedAction:
-      "Never sign an unconditional waiver. Issue a 'Without Prejudice' protest communication and immediately serve an Advocate Notice demanding unconditional Gate-Pass release plus BNS s.316 criminal intimation.",
+      "Never sign an unconditional waiver. Issue a 'Without Prejudice' protest communication and immediately serve a Fact-Verified Notice demanding unconditional Gate-Pass release plus BNS s.316 criminal intimation.",
   },
   {
     id: "sub-pledge-or-clandestine-shift",
@@ -66,7 +66,7 @@ const SCENARIOS: ScenarioItem[] = [
       "Photographs/video of site yard showing unauthorized dismantling or movement",
     ],
     recommendedAction:
-      "Dispatch an Advocate Notice with mandatory CC to the jurisdictional Police Station House Officer (SHO) and SP under BNS s.316, attaching chassis/engine numbers to freeze unauthorized highway movement.",
+      "Dispatch a Fact-Verified Notice with mandatory CC to the jurisdictional Police Station House Officer (SHO) and SP under BNS s.316, attaching chassis/engine numbers to freeze unauthorized highway movement.",
   },
   {
     id: "no-privity-with-project-owner",

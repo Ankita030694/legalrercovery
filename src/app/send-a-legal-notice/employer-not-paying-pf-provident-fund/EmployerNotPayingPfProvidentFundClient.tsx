@@ -10,7 +10,7 @@ import { PaymentModal } from "@/components/PaymentModal";
 const faqs = [
   {
     question: "Can an employee send a legal notice to an employer for deducting but not depositing PF?",
-    answer: "Yes, an employee or former employee can issue an advocate-drafted statutory legal notice to an employer who deducts Provident Fund contributions from monthly wages but fails to deposit them with the Employees' Provident Fund Organisation. Under Explanation 1 to Section 405 of the Indian Penal Code (Section 316 of the Bharatiya Nyaya Sanhita), withholding employee contributions constitutes criminal breach of trust punishable with up to three years of imprisonment. The legal notice serves as an enforceable 15-day pre-litigation ultimatum demanding full remittance of arrears along with statutory damages and 12% annual interest under Section 7Q of the EPF Act."
+    answer: "Yes, an employee or former employee can issue a fact-verified statutory legal notice to an employer who deducts Provident Fund contributions from monthly wages but fails to deposit them with the Employees' Provident Fund Organisation. Under Explanation 1 to Section 405 of the Indian Penal Code (Section 316 of the Bharatiya Nyaya Sanhita), withholding employee contributions constitutes criminal breach of trust punishable with up to three years of imprisonment. The legal notice serves as an enforceable 15-day pre-litigation ultimatum demanding full remittance of arrears along with statutory damages and 12% annual interest under Section 7Q of the EPF Act."
   },
   {
     question: "What interest and penal damages apply to employers who delay PF remittance?",
@@ -129,7 +129,7 @@ const jsonLd = {
         {
           "@type": "ListItem",
           "position": 3,
-          "name": "Draft an advocate-vetted statutory demand notice citing EPF Act 1952, Section 406 IPC, and Section 316 BNS"
+          "name": "Draft a fact-verified statutory demand notice citing EPF Act 1952, Section 406 IPC, and Section 316 BNS"
         },
         {
           "@type": "ListItem",
@@ -146,7 +146,7 @@ const jsonLd = {
     {
       "@type": "Product",
       "name": "Legal Notice to Employer for Not Paying PF Provident Fund",
-      "description": "Specialized advocate legal notice drafting and dispatch service for employees, executives, and trade unions to recover deducted but undeposited Provident Fund (PF) dues with damages and statutory interest.",
+      "description": "Specialized fact-verified legal notice preparation and dispatch service for employees, executives, and trade unions to recover deducted but undeposited Provident Fund (PF) dues with damages and statutory interest.",
       "brand": {
         "@type": "Organization",
         "name": "Legal Recovery"
@@ -346,7 +346,7 @@ export default function EmployerNotPayingPfProvidentFundClient() {
                 <div id="quick-answer" className="bg-slate-50 border-l-4 border-[#DC2626] p-6 rounded-r-2xl">
                   <h2 className="text-sm font-extrabold text-slate-900 mb-2 uppercase tracking-wide">Quick Answer</h2>
                   <p className="text-sm text-slate-700 font-medium leading-relaxed">
-                    An employee can issue an advocate-drafted statutory legal notice to an employer for not depositing deducted Provident Fund (PF) contributions with the Employees&apos; Provident Fund Organisation (EPFO). The legal notice establishes an enforceable 15-day pre-litigation deadline demanding immediate remittance of accumulated arrears along with 12% statutory interest under Section 7Q and damages under Section 14B of the EPF &amp; MP Act, 1952. Non-compliance empowers the employee to initiate criminal prosecution for criminal breach of trust under Section 405/406 of the Indian Penal Code (Section 316 BNS) and file statutory recovery proceedings before the Regional Provident Fund Commissioner (RPFC).
+                    An employee can issue a fact-verified statutory legal notice to an employer for not depositing deducted Provident Fund (PF) contributions with the Employees&apos; Provident Fund Organisation (EPFO). The legal notice establishes an enforceable 15-day pre-litigation deadline demanding immediate remittance of accumulated arrears along with 12% statutory interest under Section 7Q and damages under Section 14B of the EPF &amp; MP Act, 1952. Non-compliance empowers the employee to initiate criminal prosecution for criminal breach of trust under Section 405/406 of the Indian Penal Code (Section 316 BNS) and file statutory recovery proceedings before the Regional Provident Fund Commissioner (RPFC).
                   </p>
                 </div>
 
@@ -365,7 +365,7 @@ export default function EmployerNotPayingPfProvidentFundClient() {
                       When an employer deducts the 12% employee share from the employee&apos;s monthly paycheck but fails to deposit the funds into the employee&apos;s Universal Account Number (UAN) passbook, the employer does not merely commit a civil contractual breach; the establishment commits a severe, non-bailable financial crime. Under <strong>Explanation 1 to Section 405 of the Indian Penal Code, 1860</strong> (and corresponding Section 316 of the Bharatiya Nyaya Sanhita, 2023), any employer who deducts employee wages under statutory welfare legislation but fails to remit the funds into the designated welfare account is legally deemed to have committed <em>Criminal Breach of Trust</em>, punishable under Section 406 with rigorous imprisonment extending up to 3 years, substantial fines, or both.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      Furthermore, under Section 7Q of the EPF &amp; MP Act, defaulting employers are statutorily liable to pay simple interest at the rate of 12% per annum on all defaulted sums from the due date until final realization. Under Section 14B of the Act, the RPFC possesses sweeping judicial powers to levy punitive damages scaling up to 100% of the arrears. Serving an advocate-vetted statutory legal notice is the vital evidentiary prerequisite that crystallizes employer liability, punctures corporate shielding, and paves the way for direct enforcement against company directors and designated partners.
+                      Furthermore, under Section 7Q of the EPF &amp; MP Act, defaulting employers are statutorily liable to pay simple interest at the rate of 12% per annum on all defaulted sums from the due date until final realization. Under Section 14B of the Act, the RPFC possesses sweeping judicial powers to levy punitive damages scaling up to 100% of the arrears. Serving a fact-verified statutory legal notice is the vital evidentiary prerequisite that crystallizes employer liability, punctures corporate shielding, and paves the way for direct enforcement against company directors and designated partners.
                     </p>
                   </div>
                 </section>
@@ -593,9 +593,9 @@ export default function EmployerNotPayingPfProvidentFundClient() {
                       <div className="flex items-start space-x-4">
                         <div className="bg-[#DC2626] text-white rounded-full w-8 h-8 flex items-center justify-center shrink-0 font-black text-sm">3</div>
                         <div>
-                          <h4 className="font-extrabold text-sm sm:text-base text-slate-900 mb-1">Advocate Drafting on Official Bar Council Letterhead</h4>
+                          <h4 className="font-extrabold text-sm sm:text-base text-slate-900 mb-1">Notice Drafting on Official Bar Council Letterhead</h4>
                           <p className="text-xs sm:text-sm text-slate-650 leading-relaxed">
-                            Have an experienced labour advocate draft the formal notice on their official legal stationery with Bar Council enrollment details. The notice must detail the complete employment chronology, establish salary deductions, cite Explanation 1 to Section 405 IPC, and quantify Section 7Q and 14B liabilities.
+                            Send the formal notice on their official legal stationery with Bar Council enrollment details. The notice must detail the complete employment chronology, establish salary deductions, cite Explanation 1 to Section 405 IPC, and quantify Section 7Q and 14B liabilities.
                           </p>
                         </div>
                       </div>
@@ -635,7 +635,7 @@ export default function EmployerNotPayingPfProvidentFundClient() {
 
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      A generic letter or casual email is easily brushed aside by company HR departments. To trigger immediate compliance, an advocate-drafted statutory demand notice must incorporate specific mandatory legal clauses:
+                      A generic letter or casual email is easily brushed aside by company HR departments. To trigger immediate compliance, a fact-verified statutory demand notice must incorporate specific mandatory legal clauses:
                     </p>
                     <ul className="list-disc list-inside text-sm md:text-base text-slate-650 space-y-3">
                       <li><strong>Advocate Authority &amp; Client Representation:</strong> Explicit statement confirming that the notice is served under the express legal instructions of the aggrieved employee.</li>
@@ -818,7 +818,7 @@ export default function EmployerNotPayingPfProvidentFundClient() {
                 <img src="/lrlogo.svg" alt="LegalRecovery" width={3236} height={601} className="h-8 sm:h-10 w-auto object-contain" />
               </div>
               <p className="text-sm md:text-base text-slate-650 leading-relaxed mb-10 max-w-3xl font-medium">
-                Legal Recovery is India&apos;s trusted consumer protection and commercial debt resolution platform. Founded in 2022 and headquartered in New Delhi, Legal Recovery has counselled 15,000+ businesses, professionals, and employees on employment disputes, statutory social security non-compliance, and delayed salary settlements. Legal Recovery accelerates out-of-court settlements and connects you with top verified panel advocates.
+                Legal Recovery is India&apos;s trusted consumer protection and commercial debt resolution platform. Founded in 2022 and headquartered in New Delhi, Legal Recovery has counselled 15,000+ businesses, professionals, and employees on employment disputes, statutory social security non-compliance, and delayed salary settlements. Legal Recovery accelerates out-of-court settlements and sends fact-verified notices on your behalf.
               </p>
 
               <div className="border-t border-slate-100 pt-10">

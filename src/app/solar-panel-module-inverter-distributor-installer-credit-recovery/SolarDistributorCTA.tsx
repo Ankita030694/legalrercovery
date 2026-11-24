@@ -26,10 +26,10 @@ export default function SolarDistributorCTA({
                 Track 1 &middot; Single Installer / EPC Default
               </span>
               <h3 className="text-lg sm:text-xl font-bold text-white mb-2">
-                Test 1 Live Overdue Case Now (&#8377;{basePrice} &middot; Advocate Drafted &middot; Email + WhatsApp + Speed Post RPAD)
+                Test 1 Live Overdue Case Now (&#8377;{basePrice} &middot; Fact-Verified &middot; Email + WhatsApp + Speed Post RPAD)
               </h3>
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-                Upload a bounced installer PDC, GST e-Invoice, e-Way Bill, and serial-number flash-test sheet. Our advocates draft an NI Act s.138, Sale of Goods s.56 &amp; Conditional OEM Warranty Hold Demand Notice.
+                Enter the details of a bounced installer PDC, GST e-Invoice, e-Way Bill, and serial-number flash-test sheet. Our team verifies the facts and prepares an NI Act s.138, Sale of Goods s.56 &amp; Conditional OEM Warranty Hold Demand Notice.
               </p>
             </div>
 

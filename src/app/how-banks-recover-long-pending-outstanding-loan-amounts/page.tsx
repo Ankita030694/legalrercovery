@@ -524,7 +524,7 @@ export default function HowBanksRecoverLongPendingOutstandingLoanAmountsPage() {
                   </div>
                   <div className="bg-amber-50 text-amber-950 p-4 rounded-xl border border-amber-300">
                     <span className="text-[10px] font-bold text-amber-800 uppercase tracking-wider block mb-1">Step 2</span>
-                    <h3 className="font-bold text-sm">Issue Advocate Statutory Demand Notice</h3>
+                    <h3 className="font-bold text-sm">Issue Statutory Demand Notice</h3>
                     <p className="text-xs text-amber-900 mt-1">Serve formal legal notice citing limitation revival, loan acceleration, and 15-day demand.</p>
                   </div>
                   <div className="bg-slate-100 text-slate-900 p-4 rounded-xl border border-slate-300">
@@ -584,7 +584,7 @@ export default function HowBanksRecoverLongPendingOutstandingLoanAmountsPage() {
                     {/* Step 2 */}
                     <rect x="180" y="20" width="140" height="90" rx="10" fill="#FEF3C7" stroke="#F59E0B" strokeWidth="1.5" />
                     <text x="250" y="45" fill="#B45309" fontWeight="bold" textAnchor="middle">STEP 2</text>
-                    <text x="250" y="65" fill="#92400E" fontWeight="bold" textAnchor="middle">Advocate Notice</text>
+                    <text x="250" y="65" fill="#92400E" fontWeight="bold" textAnchor="middle">Legal Notice</text>
                     <text x="250" y="82" fill="#78350F" fontSize="10" textAnchor="middle">15-Day Final Demand</text>
                     <text x="250" y="98" fill="#78350F" fontSize="9" textAnchor="middle">Speed Post + BSA 63</text>
 
@@ -675,10 +675,10 @@ export default function HowBanksRecoverLongPendingOutstandingLoanAmountsPage() {
                     </span>
                     <div className="space-y-1 sm:space-y-1.5">
                       <h3 className="text-sm sm:text-base md:text-lg font-bold text-slate-900">
-                        Dispatch Senior Advocate Statutory Demand Notice
+                        Dispatch Senior Statutory Demand Notice
                       </h3>
                       <p className="text-xs sm:text-sm leading-relaxed">
-                        Issue an advocate-drafted statutory demand notice to borrowers and personal guarantors via Registered Speed Post and tracked electronic mail. The notice accelerates the entire debt, documents the unbroken chain of Section 18/19 acknowledgments, and provides a strict 15-day settlement window before coercive action.
+                        Issue a fact-verified statutory demand notice to borrowers and personal guarantors via Registered Speed Post and tracked electronic mail. The notice accelerates the entire debt, documents the unbroken chain of Section 18/19 acknowledgments, and provides a strict 15-day settlement window before coercive action.
                       </p>
                       <p className="text-xs text-slate-500 font-medium">
                         Review standardized institutional drafting terms on our <Link href="/legal-notice-charges" className="text-blue-700 underline">legal notice charges</Link> schedule.
@@ -837,7 +837,7 @@ export default function HowBanksRecoverLongPendingOutstandingLoanAmountsPage() {
                       <strong>The Deadlock:</strong> In early 2026, when the bank&apos;s Stressed Asset Management vertical revisited the file, the borrower&apos;s counsel claimed that the bank was barred by limitation under Article 14 of the Limitation Act, 1963, as four full years had passed since the original default.
                     </p>
                     <p>
-                      <strong>The Statutory Action:</strong> The bank&apos;s recovery officers audited the debtor&apos;s Ministry of Corporate Affairs (MCA) regulatory filings and discovered that the company&apos;s audited balance sheets for FY 2023-24 and FY 2024-25 continued to show the bank&apos;s credit facility under &quot;Long-Term Borrowings&quot;. Leveraging the Supreme Court doctrine in <em>Laxmi Pat Surana v. Union Bank of India</em>, an advocate issued a comprehensive statutory legal notice asserting that these balance sheet admissions constituted unbroken Section 18 debt acknowledgments, keeping limitation fully alive through 2028.
+                      <strong>The Statutory Action:</strong> The bank&apos;s recovery officers audited the debtor&apos;s Ministry of Corporate Affairs (MCA) regulatory filings and discovered that the company&apos;s audited balance sheets for FY 2023-24 and FY 2024-25 continued to show the bank&apos;s credit facility under &quot;Long-Term Borrowings&quot;. Leveraging the Supreme Court doctrine in <em>Laxmi Pat Surana v. Union Bank of India</em>, a comprehensive statutory legal notice was issued asserting that these balance sheet admissions constituted unbroken Section 18 debt acknowledgments, keeping limitation fully alive through 2028.
                     </p>
                     <div className="p-3.5 sm:p-4 bg-emerald-950/70 border border-emerald-700/60 rounded-xl text-emerald-200">
                       <strong className="block text-emerald-400 font-bold mb-1">The Resolution &amp; Outcome:</strong>

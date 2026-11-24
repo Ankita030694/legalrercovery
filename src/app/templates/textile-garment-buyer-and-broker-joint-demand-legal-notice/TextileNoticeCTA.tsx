@@ -10,7 +10,7 @@ interface TextileNoticeCTAProps {
 
 export default function TextileNoticeCTA({
   title = "Serve Both the Defaulting Textile Buyer & Introducing Broker Today",
-  subtitle = "Do not let outstation buyers hide behind stale quality excuses or disappear from the mandi. Dispatch an advocate-vetted joint demand notice with Bijak/LR schedule and Section 43B(h) tax warning.",
+  subtitle = "Do not let outstation buyers hide behind stale quality excuses or disappear from the mandi. Dispatch a fact-verified joint demand notice with Bijak/LR schedule and Section 43B(h) tax warning.",
 }: TextileNoticeCTAProps) {
   const singleCaseFee = DEFAULT_FUNNEL_SETTINGS.basePricePerOpposition;
 
@@ -43,7 +43,7 @@ export default function TextileNoticeCTA({
                 Test 1 Live Overdue Case Now
               </h3>
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
-                ₹{singleCaseFee} · Advocate Drafted · Email + WhatsApp + Speed Post RPAD to Buyer (Noticee #1) &amp; Introducing Broker (Noticee #2) with Bijak/LR schedule.
+                ₹{singleCaseFee} · Fact-Verified · Email + WhatsApp + Speed Post RPAD to Buyer (Noticee #1) &amp; Introducing Broker (Noticee #2) with Bijak/LR schedule.
               </p>
             </div>
             <Link

@@ -1124,7 +1124,7 @@ export default function CustomMachineryRecoveryPage() {
               </h2>
 
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed mb-6">
-                Choose between sending a single advocate-drafted statutory demand notice on an intransigent factory buyer or engaging our dedicated enterprise recovery desk for your aged receivables portfolio:
+                Choose between sending a single fact-verified statutory demand notice on an intransigent factory buyer or engaging our dedicated enterprise recovery desk for your aged receivables portfolio:
               </p>
 
               <MachineryRecoveryCTA />

@@ -1040,7 +1040,7 @@ export default function TempToPermBuyoutRecoveryPage() {
                     </span>
                     <div>
                       <h3 className="text-base font-bold text-slate-900 mb-1">
-                        Serve Advocate-Vetted Tri-Channel Statutory Demand Notice
+                        Serve Fact-Verified Tri-Channel Statutory Demand Notice
                       </h3>
                       <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                         Dispatch a 15-day statutory demand notice drafted by legal recovery counsel. Deliver simultaneously via Speed Post RPAD with tracking receipt, registered corporate email to Directors and CFO, and verified WhatsApp with read receipts. Format based on our{" "}

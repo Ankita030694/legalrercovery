@@ -538,7 +538,7 @@ export default function CoachingCollegeRefundClient() {
                   <div className="bg-slate-50 p-6 rounded-2xl border border-slate-200 my-6 shadow-sm">
                     <h4 className="font-bold text-slate-900 text-base mb-2">The Kota Coaching Refund Success</h4>
                     <p className="text-sm text-slate-600 leading-relaxed">
-                      A student in Kota left a medical entrance batch after two months due to severe health issues. The coaching center refused to refund the remaining balance of ₹95,000, citing their non-refundable policy. The parent served a formal legal notice prepared by an advocate, citing the CCPA guidelines. The center's corporate legal cell reviewed the notice and processed a proportional refund of ₹65,000, deducting only the fees for the attended period.
+                      A student in Kota left a medical entrance batch after two months due to severe health issues. The coaching center refused to refund the remaining balance of ₹95,000, citing their non-refundable policy. The parent served a formal legal notice prepared on verified facts, citing the CCPA guidelines. The center's corporate legal cell reviewed the notice and processed a proportional refund of ₹65,000, deducting only the fees for the attended period.
                     </p>
                   </div>
 
@@ -594,7 +594,7 @@ export default function CoachingCollegeRefundClient() {
                 <div className="absolute top-0 right-0 w-24 h-24 bg-red-600/10 rounded-full blur-xl pointer-events-none" />
                 <h3 className="text-sm font-black mb-3">Need Legal Advice?</h3>
                 <p className="text-gray-400 mb-5 text-[11px] leading-relaxed">
-                  Discuss your money recovery case with legal experts. We draft and serve legally compliant notices tailored to your transaction.
+                  Discuss your money recovery case with our team. We draft and serve legally compliant notices tailored to your transaction.
                 </p>
                 <button 
                   onClick={() => setIsPaymentModalOpen(true)}

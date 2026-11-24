@@ -822,7 +822,7 @@ export default function RbiEdpmsWriteOffCautionListPage() {
                         Write-off rejected under Para C.23; Shipping Bill stays open past 24M.
                       </td>
                       <td className="p-3.5 text-slate-700">
-                        Serve formal Advocate Legal Demand Notice on Law Firm letterhead + international courier + BSA s.63 email logs.
+                        Serve formal Fact-Verified Legal Demand Notice on Law Firm letterhead + international courier + BSA s.63 email logs.
                       </td>
                     </tr>
                     <tr className="bg-slate-50/70">

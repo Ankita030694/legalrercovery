@@ -205,7 +205,7 @@ export default function IndustrialCanteenRecoveryPage() {
         "@type": "HowToStep",
         position: 3,
         name: "Serve Dual-Trigger Demand Notice (MSMED s.15–18 + Section 43B(h))",
-        text: "Dispatch an Advocate-signed notice to the Plant Head, CFO, Statutory Auditor, and Trustees demanding principal + 3x RBI compound interest.",
+        text: "Dispatch a Fact-verified notice to the Plant Head, CFO, Statutory Auditor, and Trustees demanding principal + 3x RBI compound interest.",
       },
       {
         "@type": "HowToStep",
@@ -625,7 +625,7 @@ export default function IndustrialCanteenRecoveryPage() {
                 {[
                   { stage: "Stage 1 (Day 46)", title: "Lock Biometric & GSTR-2B Logs", desc: "Export turnstile CSVs, signed canteen registers & BSA s.63 certificate." },
                   { stage: "Stage 2 (Day 60)", title: "Rebut Un-Sampled Hygiene Fines", desc: "Invoke MSMED s.15 (15-day bar) & Contract Act s.74 against backdated deductions." },
-                  { stage: "Stage 3 (Day 75)", title: "Advocate Notice to CFO & Auditor", desc: "Trigger Section 43B(h) tax disallowance & 3x RBI compound interest." },
+                  { stage: "Stage 3 (Day 75)", title: "Fact-Verified Notice to CFO & Auditor", desc: "Trigger Section 43B(h) tax disallowance & 3x RBI compound interest." },
                   { stage: "Stage 4 (Day 90)", title: "7-Day Cure Notice Before Pause", desc: "Shield Security Deposit under Contract Act s.51/54 before demobilizing." },
                   { stage: "Stage 5 (Day 105+)", title: "MSEFC / Order 37 / s.138 Action", desc: "Escalate to statutory tribunal or criminal cheque bounce court." },
                 ].map((step, i) => (
@@ -823,7 +823,7 @@ export default function IndustrialCanteenRecoveryPage() {
                     href="/templates/legal-notice-reply-format"
                     className="text-[#DC2626] font-semibold underline hover:text-[#B91C1C]"
                   >
-                    Advocate-Vetted Legal Notice Workspace
+                    Ready-to-Use Legal Notice Workspace
                   </Link>{" "}
                   or explore our{" "}
                   <Link

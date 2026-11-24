@@ -49,7 +49,7 @@ export default function RmcNoticeCTA({
                 Test 1 Live Overdue RMC Case Now (&rupee;{basePrice})
               </h3>
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-                Advocate-drafted statutory notice annexing batching-plant printouts, pour slips, IS 456/IS 516 curing rebuttal, and Sale of Goods Act s.42 acceptance proof &mdash; dispatched via Email + WhatsApp + Speed Post RPAD.
+                Fact-verified statutory notice annexing batching-plant printouts, pour slips, IS 456/IS 516 curing rebuttal, and Sale of Goods Act s.42 acceptance proof &mdash; dispatched via Email + WhatsApp + Speed Post RPAD.
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-3">

@@ -356,7 +356,7 @@ export default function NoticePeriodSalaryClient() {
                     When dealing with withheld notice period salary, employees have two main escalation paths: serving a formal legal notice or filing a complaint with the Labour Commissioner.
                   </p>
                   <p className="text-sm md:text-base leading-relaxed">
-                    A formal legal notice is a pre-litigation demand drafted by an advocate and served to the company's directors and HR head. It gives the employer a 15-day compliance window to release the withheld salary and F&F settlement. This is the fastest method, as companies want to avoid being dragged into labor disputes. If the employer ignores the notice, the employee can escalate the matter by filing a complaint with the local Labour Commissioner under the Shop and Establishment Act, or file a <Link href="/civil-suit-for-recovery-of-money-india" className="text-[#DC2626] hover:underline font-medium">civil suit for recovery of money India</Link>.
+                    A formal legal notice is a pre-litigation demand prepared on verified facts and served to the company's directors and HR head. It gives the employer a 15-day compliance window to release the withheld salary and F&F settlement. This is the fastest method, as companies want to avoid being dragged into labor disputes. If the employer ignores the notice, the employee can escalate the matter by filing a complaint with the local Labour Commissioner under the Shop and Establishment Act, or file a <Link href="/civil-suit-for-recovery-of-money-india" className="text-[#DC2626] hover:underline font-medium">civil suit for recovery of money India</Link>.
                   </p>
 
                   {/* Comparison Table */}
@@ -611,7 +611,7 @@ export default function NoticePeriodSalaryClient() {
                 <div className="absolute top-0 right-0 w-24 h-24 bg-red-600/10 rounded-full blur-xl pointer-events-none" />
                 <h3 className="text-lg font-bold mb-3 text-white">Need Legal Advice?</h3>
                 <p className="text-gray-400 mb-5 text-[11px] leading-relaxed">
-                  Discuss your money recovery case with legal experts. We draft and serve legally compliant notices tailored to your transaction.
+                  Discuss your money recovery case with our team. We draft and serve legally compliant notices tailored to your transaction.
                 </p>
                 <button 
                   onClick={() => setIsPaymentModalOpen(true)}

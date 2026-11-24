@@ -68,7 +68,7 @@ const reviews = [
   {
     author: "Aditya Hegde (Hyderabad)",
     rating: "5",
-    text: "We did not have a formal contract, only an email quotation and WhatsApp chats. The designer took 5 Lakhs advance and vanished. By compiling all WhatsApp chats, payment slips, and photos of the empty flat, we sent a lawyer-backed notice for recovery of money. The designer realized the evidence was solid and agreed to a settlement, paying back the advance in three installments. I highly recommend compiling digital records immediately."
+    text: "We did not have a formal contract, only an email quotation and WhatsApp chats. The designer took 5 Lakhs advance and vanished. By compiling all WhatsApp chats, payment slips, and photos of the empty flat, we sent a fact-verified notice for recovery of money. The designer realized the evidence was solid and agreed to a settlement, paying back the advance in three installments. I highly recommend compiling digital records immediately."
   }
 ];
 
@@ -687,7 +687,7 @@ export default function InteriorDesignerRefundClient() {
                 <div className="absolute top-0 right-0 w-24 h-24 bg-red-600/10 rounded-full blur-xl pointer-events-none" />
                 <h3 className="text-lg font-bold mb-3 text-white">Need Legal Advice?</h3>
                 <p className="text-gray-400 mb-5 text-[11px] leading-relaxed font-medium">
-                  Discuss your money recovery case with legal experts. We draft and serve legally compliant notices tailored to your transaction.
+                  Discuss your money recovery case with our team. We draft and serve legally compliant notices tailored to your transaction.
                 </p>
                 <button 
                   onClick={() => setIsPaymentModalOpen(true)}

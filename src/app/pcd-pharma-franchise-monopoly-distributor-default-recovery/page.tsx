@@ -984,7 +984,7 @@ export default function PcdPharmaFranchiseRecoveryPage() {
                       <strong>Promotional Input Challans:</strong> Signed delivery records for visual aids, doctor samples, and MR bags acknowledging bailed status.
                     </li>
                     <li>
-                      <strong>BSA 2023 Section 63 Certificate:</strong> Advocate-drafted forensic certificate affirming device hash, uninterrupted system custody, and data integrity.
+                      <strong>BSA 2023 Section 63 Certificate:</strong> Fact-verified forensic certificate affirming device hash, uninterrupted system custody, and data integrity.
                     </li>
                   </ul>
                 </div>

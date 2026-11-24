@@ -173,7 +173,7 @@ export default function ClaimDifferenceTableOfContents({
           </nav>
 
           <div className="mt-6 pt-4 border-t border-slate-100 text-[11px] text-slate-500 leading-normal">
-            Need an advocate notice? Our specialists draft and serve statutory insurance demand letters within 24 hours.
+            Need a fact-verified notice? Our specialists draft and serve statutory insurance demand letters within 24 hours.
           </div>
         </div>
       </aside>

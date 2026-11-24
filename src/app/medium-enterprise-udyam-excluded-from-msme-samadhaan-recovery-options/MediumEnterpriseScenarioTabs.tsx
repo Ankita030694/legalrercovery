@@ -50,7 +50,7 @@ const SCENARIOS: Scenario[] = [
       "Order XXXVII CPC (Summary Suit) + Commercial Courts Act 2015 s.12A + Limitation Act 1963 Article 14",
     actionProtocol: [
       "Abandon futile Section 43B(h) tax disallowance threats that signal legal weakness to corporate procurement heads.",
-      "Issue a 15-Day Advocate Demand Notice structuring the debt as an unconditioned liquidated claim on accepted invoices and signed delivery challans.",
+      "Issue a 15-Day Fact-Verified Demand Notice structuring the debt as an unconditioned liquidated claim on accepted invoices and signed delivery challans.",
       "Notify the buyer that commercial delay triggers 18% p.a. contractual or commercial interest under the Interest Act, 1978 and Sale of Goods Act Section 61(2).",
       "Prepare an immediate summary suit under Order XXXVII CPC in the designated Commercial Court, precluding general defense delays.",
     ],

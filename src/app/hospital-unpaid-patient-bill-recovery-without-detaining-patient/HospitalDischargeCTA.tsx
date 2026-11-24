@@ -23,7 +23,7 @@ export default function HospitalDischargeCTA({ className = "" }: HospitalDischar
               Track 1 &bull; Self-Serve Single Case Test
             </span>
             <h3 className="text-lg sm:text-xl font-extrabold text-white mb-2">
-              Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Advocate Drafted &middot; Email + WhatsApp + Speed Post RPAD)
+              Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Fact-Verified &middot; Email + WhatsApp + Speed Post RPAD)
             </h3>
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
               Validate our Article-21 compliant 15-day Hospital Bill Recovery Notice—impleading both the discharged patient and the admission attendant co-guarantor under Contract Act s.128—on one pending ICU or inpatient balance.

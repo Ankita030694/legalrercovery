@@ -27,7 +27,7 @@ export default function FmcgHubCTA({ className = "" }: FmcgHubCTAProps) {
                 Test 1 Live Overdue Case Now (&rupee;{basePrice})
               </h3>
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-                Validate notice precision on one overdue distributor ledger, Quick-Commerce short-GRN dispute, or C&amp;F exit deposit before scaling regionally. Advocate-drafted and dispatched via verified Email, Business WhatsApp, and Speed Post RPAD with Section 63 BSA certification.
+                Validate notice precision on one overdue distributor ledger, Quick-Commerce short-GRN dispute, or C&amp;F exit deposit before scaling regionally. Fact-verified and dispatched via verified Email, Business WhatsApp, and Speed Post RPAD with Section 63 BSA certification.
               </p>
               <ul className="space-y-1.5 text-xs text-slate-200 mb-6">
                 <li>&check; 7-Day s.20 Security-Cheque Crystallization or 15-Day Ledger Demand</li>

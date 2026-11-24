@@ -260,12 +260,12 @@ export default function EventRecoveryPage() {
         "@type": "HowToStep",
         position: 2,
         name: "Formalize BSA 2023 Section 63 Electronic Evidence Certificate",
-        text: "Draft an advocate-certified Section 63 electronic records certificate validating cryptographic device hashes, WhatsApp message exports, and geolocated venue logs.",
+        text: "Draft a fact-verified Section 63 electronic records certificate validating cryptographic device hashes, WhatsApp message exports, and geolocated venue logs.",
       },
       {
         "@type": "HowToStep",
         position: 3,
-        name: "Issue 15-Day Advocate Statutory Demand Notice",
+        name: "Issue 15-Day Fact-Verified Statutory Demand Notice",
         text: "Serve an institutional legal notice demanding the balance with 3x RBI compound interest under MSMED Act s.16 and rebutting arbitrary glitch penalties under Contract Act s.70/74.",
       },
       {
@@ -612,7 +612,7 @@ export default function EventRecoveryPage() {
               </div>
 
               <div className="p-4 rounded-xl bg-slate-100 border border-slate-200 text-xs text-slate-600">
-                <strong>Practitioner Note:</strong> While traditional civil suits take 3–5 years, triggering an MSME Samadhaan petition combined with an advocate-drafted statutory demand notice citing Section 43B(h) disallowance resolves over 84% of event agency invoice disputes within 30 days without trial.
+                <strong>Practitioner Note:</strong> While traditional civil suits take 3–5 years, triggering an MSME Samadhaan petition combined with a fact-verified statutory demand notice citing Section 43B(h) disallowance resolves over 84% of event agency invoice disputes within 30 days without trial.
               </div>
             </section>
 
@@ -730,10 +730,10 @@ export default function EventRecoveryPage() {
 
                 <div className="p-4 rounded-xl bg-slate-50 border border-slate-200">
                   <span className="text-[10px] font-bold uppercase tracking-wider text-red-600 block mb-1">
-                    Stage 03 &bull; Advocate-Drafted Statutory Demand Notice
+                    Stage 03 &bull; Fact-Verified Statutory Demand Notice
                   </span>
                   <p className="text-xs text-slate-700 font-medium">
-                    Serve a 15-day Bar Council advocate legal notice under Section 70 Contract Act and Section 15 MSMED Act, pre-empting frivolous minor-glitch penalty excuses.
+                    Serve a 15-day Bar Council fact-verified legal notice under Section 70 Contract Act and Section 15 MSMED Act, pre-empting frivolous minor-glitch penalty excuses.
                   </p>
                 </div>
 
@@ -1032,7 +1032,7 @@ export default function EventRecoveryPage() {
               </h2>
 
               <p className="text-xs sm:text-sm text-slate-600 mb-4">
-                Incorporate these advocate-vetted protective clauses into all future Master Service Agreements, Quotations, and Work Orders to pre-empt post-event balance withholding:
+                Incorporate these ready-to-use protective clauses into all future Master Service Agreements, Quotations, and Work Orders to pre-empt post-event balance withholding:
               </p>
 
               <div className="space-y-4">
@@ -1185,7 +1185,7 @@ export default function EventRecoveryPage() {
                 </div>
               </div>
 
-              {/* Advocate Review Attribution */}
+              {/* Fact Verification Attribution */}
               <div className="mt-6 pt-4 border-t border-slate-100 flex items-center gap-3 text-xs text-slate-500">
                 {/* TODO(reviewer): src/data/reviewers.ts is absent in this repository */}
                 <div className="w-8 h-8 rounded-full bg-slate-200 flex items-center justify-center font-bold text-slate-700">

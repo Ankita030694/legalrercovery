@@ -4,7 +4,7 @@ import DelayedSalaryStartupCompanyIndiaClient from './DelayedSalaryStartupCompan
 const slug = 'send-a-legal-notice/delayed-salary-startup-company-india';
 const title = 'Startup Not Paying Salary? Legal Notice to Founders';
 const description =
-  'Startup delaying salary due to funding winter? Serve an advocate legal notice to founders and directors or file an NCLT operational creditor claim.';
+  'Startup delaying salary due to funding winter? Serve a fact-verified legal notice to founders and directors or file an NCLT operational creditor claim.';
 const url = `https://www.legalrecovery.in/${slug}`;
 const ogImage = `/images/og/delayed-salary-startup-company-india.jpg`;
 

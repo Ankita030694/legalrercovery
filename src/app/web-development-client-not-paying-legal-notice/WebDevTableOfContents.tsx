@@ -173,7 +173,7 @@ export default function WebDevTableOfContents({
                 Need Fast Recovery?
               </p>
               <p className="text-[11px] text-slate-300 leading-snug">
-                Send an advocate legal notice citing Section 19 Copyright Act and MSME delayed payment laws within 24 hours.
+                Send a fact-verified legal notice citing Section 19 Copyright Act and MSME delayed payment laws within 24 hours.
               </p>
               <a
                 href="#heading-template-block"

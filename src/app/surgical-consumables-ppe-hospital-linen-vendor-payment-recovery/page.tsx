@@ -715,7 +715,7 @@ export default function SurgicalConsumablesRecoveryPage() {
                 4 Critical Hospital Failure Modes &amp; Commercial Recovery SOPs
               </h2>
               <p className="text-xs sm:text-sm text-slate-600 leading-relaxed mb-6">
-                Click through the tabs below to inspect specific clinical supply failure scenarios and access advocate-vetted action protocols:
+                Click through the tabs below to inspect specific clinical supply failure scenarios and access fact-verified action protocols:
               </p>
 
               <SurgicalConsumablesScenarioTabs />
@@ -768,7 +768,7 @@ export default function SurgicalConsumablesRecoveryPage() {
                 </div>
 
                 <p>
-                  Because corporate hospitals operate with strict tax budgets and board-level audit scrutiny, an advocate-vetted <strong>Section 43B(h) Pre-Audit Legal Intimation</strong> served on the hospital&apos;s Chief Financial Officer (CFO), Company Secretary, and Statutory Auditors in Q3/Q4 of the fiscal year instantly moves that vendor to the top of the treasury disbursement queue ahead of non-MSME creditors.
+                  Because corporate hospitals operate with strict tax budgets and board-level audit scrutiny, a fact-verified <strong>Section 43B(h) Pre-Audit Legal Intimation</strong> served on the hospital&apos;s Chief Financial Officer (CFO), Company Secretary, and Statutory Auditors in Q3/Q4 of the fiscal year instantly moves that vendor to the top of the treasury disbursement queue ahead of non-MSME creditors.
                 </p>
                 <p>
                   Learn more about our dedicated analysis of the{" "}
@@ -823,7 +823,7 @@ export default function SurgicalConsumablesRecoveryPage() {
                       1. Tripartite Statutory Legal Intimation (15-Day Cure Window)
                     </span>
                     <p className="text-xs text-slate-600">
-                      Serve a formal advocate notice marked to: (a) Hospital Medical Superintendent &amp; Board of Directors; (b) District Magistrate (DM) / District Collector; (c) Chief Medical Officer (CMO); and (d) State Drug Licensing Authority. The notice details the exact cryogenic delivery logs, overdue aging (e.g. 150 days), unpaid amount, and provides an unambiguous 15-day window for debt clearance.
+                      Serve a formal fact-verified notice marked to: (a) Hospital Medical Superintendent &amp; Board of Directors; (b) District Magistrate (DM) / District Collector; (c) Chief Medical Officer (CMO); and (d) State Drug Licensing Authority. The notice details the exact cryogenic delivery logs, overdue aging (e.g. 150 days), unpaid amount, and provides an unambiguous 15-day window for debt clearance.
                     </p>
                   </div>
                   <div className="p-3.5 bg-slate-50 rounded-xl border border-slate-200">

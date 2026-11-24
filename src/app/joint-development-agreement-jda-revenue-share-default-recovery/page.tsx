@@ -688,7 +688,7 @@ export default function JDARevenueShareRecoveryPage() {
                   <span className="text-[10px] font-bold uppercase tracking-wider text-red-400">Stage 02</span>
                   <h3 className="text-sm font-bold text-white mt-1">48-Hour Advocate Statutory Demand Notice</h3>
                   <p className="text-xs text-slate-300 mt-1">
-                    Serve High Court advocate notice under Commercial Courts Act s.2(1)(c)(vii) and RERA s.4, warning of inventory attachment.
+                    Serve High Court fact-verified notice under Commercial Courts Act s.2(1)(c)(vii) and RERA s.4, warning of inventory attachment.
                   </p>
                 </div>
                 <div className="p-4 rounded-xl bg-slate-900 text-white border-l-4 border-amber-500">
@@ -951,7 +951,7 @@ export default function JDARevenueShareRecoveryPage() {
                       Issue 48-Hour Advocate Statutory Demand &amp; Waterfall Cure Notice
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      Serve a High Court advocate demand notice to the developer&apos;s registered corporate office and all directors listed on the Ministry of Corporate Affairs (MCA) portal. The notice must cite Section 2(1)(c)(vii) of the Commercial Courts Act, RERA Section 4(2)(l)(D), and Section 73 of the Contract Act. Demand complete ledger transparency and cure of all revenue-sharing arrears within 48 hours, failing which arbitration and criminal breach of trust (BNS Section 316) will be initiated.
+                      Serve a High Court fact-verified demand notice to the developer&apos;s registered corporate office and all directors listed on the Ministry of Corporate Affairs (MCA) portal. The notice must cite Section 2(1)(c)(vii) of the Commercial Courts Act, RERA Section 4(2)(l)(D), and Section 73 of the Contract Act. Demand complete ledger transparency and cure of all revenue-sharing arrears within 48 hours, failing which arbitration and criminal breach of trust (BNS Section 316) will be initiated.
                     </p>
                   </div>
                 </div>
@@ -1170,7 +1170,7 @@ export default function JDARevenueShareRecoveryPage() {
               <div className="mt-8 pt-6 border-t border-slate-200 flex flex-col sm:flex-row sm:items-center justify-between gap-4 text-xs text-slate-600">
                 <div>
                   <p className="font-bold text-slate-900">
-                    Authored &amp; Vetted by Advocate Anuj Anand Malik
+                    Authored &amp; Prepared on verified facts Anuj Anand Malik
                   </p>
                   <p className="text-slate-500">
                     Founder &amp; Principal Advocate, AMA Legal Solutions &bull; High Court of Delhi &amp; Commercial Division Practice

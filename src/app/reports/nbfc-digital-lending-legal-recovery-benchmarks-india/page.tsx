@@ -57,7 +57,7 @@ const FAQS = [
     question:
       "Why do Indian NBFCs and fintechs lack granular pre-litigation legal-notice cure benchmarks?",
     answer:
-      "Public RBI Financial Stability Reports and Trend & Progress disclosures aggregate macro Gross NPA (GNPA) and Net NPA ratios at the sector level. They do not break down how many SMA-0, SMA-1, or SMA-2 accounts cure within 15 days of an advocate-signed notice across Email, WhatsApp, and Speed Post RPAD. LegalRecovery's post-May 2026 telemetry schema is structured to close this visibility gap for CROs and VP Collections.",
+      "Public RBI Financial Stability Reports and Trend & Progress disclosures aggregate macro Gross NPA (GNPA) and Net NPA ratios at the sector level. They do not break down how many SMA-0, SMA-1, or SMA-2 accounts cure within 15 days of a fact-verified notice across Email, WhatsApp, and Speed Post RPAD. LegalRecovery's post-May 2026 telemetry schema is structured to close this visibility gap for CROs and VP Collections.",
   },
   {
     question:
@@ -75,7 +75,7 @@ const FAQS = [
     question:
       "What is the cost-per-rupee advantage of pre-litigation tri-channel waves over traditional court litigation?",
     answer:
-      "A single advocate-drafted notice on LegalRecovery.in costs ₹999 flat for Email + WhatsApp (or ₹1,449 with Speed Post RPAD), compared to ₹25,000–₹75,000+ in initial court retainers, court fees, and counsel appearances. For small-ticket digital personal loans and BNPL (₹10,000–₹1,00,000), pre-litigation tri-channel waves are the only economically viable legal escalation tier.",
+      "A single fact-verified notice on LegalRecovery.in costs ₹999 flat for Email + WhatsApp (or ₹1,449 with Speed Post RPAD), compared to ₹25,000–₹75,000+ in initial court retainers, court fees, and counsel appearances. For small-ticket digital personal loans and BNPL (₹10,000–₹1,00,000), pre-litigation tri-channel waves are the only economically viable legal escalation tier.",
   },
   {
     question:
@@ -87,7 +87,7 @@ const FAQS = [
     question:
       "How do RBI Fair Practices Code and Digital Lending Directions restrict recovery escalation?",
     answer:
-      "RBI guidelines prohibit coercive recovery calls, third-party shaming, and unauthorized contact with borrower phonebook references. Routing delinquent accounts from in-house tele-calling into formal advocate-drafted statutory notices (Email, WhatsApp, and RPAD) shifts the communication onto a strictly documented, RBI-compliant legal rail while preserving CIBIL/CIC pre-reporting notice timelines.",
+      "RBI guidelines prohibit coercive recovery calls, third-party shaming, and unauthorized contact with borrower phonebook references. Routing delinquent accounts from in-house tele-calling into formal fact-verified statutory notices (Email, WhatsApp, and RPAD) shifts the communication onto a strictly documented, RBI-compliant legal rail while preserving CIBIL/CIC pre-reporting notice timelines.",
   },
   {
     question:
@@ -626,7 +626,7 @@ export default function NbfcBenchmarksReportPage() {
                     </span>
                     <p className="text-lg font-black">₹35,000 Ticket</p>
                     <p className="text-xs text-slate-300 leading-relaxed">
-                      Tri-channel advocate notice (₹1,449) equals <strong className="text-emerald-400">4.14%</strong> of principal. Traditional ₹25,000 litigation retainer equals <strong className="text-red-400">71.4%</strong> (economically unviable).
+                      Tri-channel fact-verified notice (₹1,449) equals <strong className="text-emerald-400">4.14%</strong> of principal. Traditional ₹25,000 litigation retainer equals <strong className="text-red-400">71.4%</strong> (economically unviable).
                     </p>
                   </div>
                   <div className="p-5 rounded-xl bg-slate-900 text-white border border-slate-800 space-y-2">
@@ -668,7 +668,7 @@ export default function NbfcBenchmarksReportPage() {
                   </h2>
                 </div>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
-                  Regulatory scrutiny on digital lending recovery has intensified under the RBI Digital Lending Directions and Fair Practices Code. Replacing aggressive field or tele-calling scripts with advocate-vetted statutory notices protects the lender from RBI Ombudsman penalties while strengthening enforceability:
+                  Regulatory scrutiny on digital lending recovery has intensified under the RBI Digital Lending Directions and Fair Practices Code. Replacing aggressive field or tele-calling scripts with fact-verified statutory notices protects the lender from RBI Ombudsman penalties while strengthening enforceability:
                 </p>
                 <ul className="space-y-3 text-xs sm:text-sm text-slate-700">
                   <li className="p-3.5 rounded-xl bg-slate-50 border border-slate-200">

@@ -744,7 +744,7 @@ export default function VisaAgentFraudRefundPage() {
                     </span>
                     <div className="space-y-1 sm:space-y-1.5">
                       <h3 className="text-sm sm:text-base md:text-lg font-bold text-slate-900">
-                        Dispatch a Statutory Advocate Legal Demand Notice (15-Day Window)
+                        Dispatch a Statutory Fact-Verified Legal Demand Notice (15-Day Window)
                       </h3>
                       <p className="text-xs sm:text-sm leading-relaxed">
                         Engage a verified advocate to issue a formal statutory notice dispatched to the consultant&apos;s registered corporate address, branch office, and home addresses of the proprietors via Registered Speed Post with tracking and electronic delivery under Section 63 BSA. The notice demands 100% refund, 18% penal interest, and ₹1,00,000 in damages for mental agony within 15 days, warning of simultaneous e-Jagriti consumer litigation and Section 318 BNS criminal prosecution.
@@ -895,11 +895,11 @@ export default function VisaAgentFraudRefundPage() {
                       <strong>The Deadlock:</strong> 9 months elapsed with zero tangible progress. When Harpreet demanded his file number, the agency sent him a PDF purporting to be an official &quot;Job Approval Letter&quot; from an Ontario logistics warehouse. Harpreet verified the employer number directly through the official Canadian government database, which revealed that no such business existed and the document was an outright fabrication. When he demanded an immediate full refund, the agency pointed to Clause 14 of their agreement: <em>&quot;Registration fees are non-refundable under any eventuality.&quot;</em> The proprietor subsequently blocked Harpreet&apos;s phone number.
                     </p>
                     <p>
-                      <strong>The Statutory Action:</strong> Harpreet engaged LegalRecovery.in. An advocate drafted a hard-hitting statutory demand notice served to the consultancy and its two directors via Registered Speed Post and Section 63 BSA electronic mail. The notice established that Clause 14 constituted an &quot;unfair contract&quot; under Section 2(46) CPA 2019, while the delivery of forged employer certificates constituted criminal cheating under Section 318 of the Bharatiya Nyaya Sanhita, 2023, giving a strict 15-day window before filing on e-Jagriti and lodging a formal complaint with the Economic Offences Wing (EOW).
+                      <strong>The Statutory Action:</strong> Harpreet engaged LegalRecovery.in. The team verified the facts and prepared a hard-hitting statutory demand notice served to the consultancy and its two directors via Registered Speed Post and Section 63 BSA electronic mail. The notice established that Clause 14 constituted an &quot;unfair contract&quot; under Section 2(46) CPA 2019, while the delivery of forged employer certificates constituted criminal cheating under Section 318 of the Bharatiya Nyaya Sanhita, 2023, giving a strict 15-day window before filing on e-Jagriti and lodging a formal complaint with the Economic Offences Wing (EOW).
                     </p>
                     <div className="p-3.5 sm:p-4 bg-emerald-950/70 border border-emerald-700/60 rounded-xl text-emerald-200">
                       <strong className="block text-emerald-400 font-bold mb-1">The Outcome:</strong>
-                      On Day 9 following receipt of the advocate legal demand notice, the consultancy&apos;s legal counsel contacted Harpreet. Acknowledging their criminal exposure under Section 318 BNS and Section 24 of the Emigration Act, the agency signed a formal settlement undertaking. The entire sum of ₹3,85,000 was refunded directly into Harpreet&apos;s HDFC Bank account via RTGS, along with a full waiver of all cancellation charges.
+                      On Day 9 following receipt of the fact-verified legal demand notice, the consultancy&apos;s legal counsel contacted Harpreet. Acknowledging their criminal exposure under Section 318 BNS and Section 24 of the Emigration Act, the agency signed a formal settlement undertaking. The entire sum of ₹3,85,000 was refunded directly into Harpreet&apos;s HDFC Bank account via RTGS, along with a full waiver of all cancellation charges.
                     </div>
                   </div>
                 </div>
@@ -984,7 +984,7 @@ export default function VisaAgentFraudRefundPage() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs sm:text-sm text-slate-700 leading-relaxed">
                   <div>
                     <strong className="text-emerald-700 block mb-1">What We Do:</strong>
-                    <p>• Verified advocates draft statutory legal demand notices invoking CPA 2019 and BNS 318.</p>
+                    <p>• We draft statutory legal demand notices invoking CPA 2019 and BNS 318.</p>
                     <p>• Serve notices via Registered Speed Post with tracking and Section 63 BSA electronic email.</p>
                     <p>• Prepare structured petition documentation for filing on the government&apos;s e-Jagriti consumer portal.</p>
                   </div>

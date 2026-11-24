@@ -28,7 +28,7 @@ export default function ThirdPartyRecoveryNoticeCTA({
                 Institutional Third-Party Legal Recovery • RBI &amp; DPDP Compliant
               </span>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-bold tracking-tight text-white mb-3">
-                Protect Institutional Brand Equity with Certified Advocate-Led Debt Recovery
+                Protect Institutional Brand Equity with Certified Fact-Verified Debt Recovery
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6">
                 Pivot your retail, MSME, and digital lending recovery from coercive collection agents to licensed advocates. Ensure 100% statutory compliance with Reserve Bank of India Fair Practice Codes, DPDP Act 2023, and Bar Council of India standards while accelerating portfolio resolution velocity.

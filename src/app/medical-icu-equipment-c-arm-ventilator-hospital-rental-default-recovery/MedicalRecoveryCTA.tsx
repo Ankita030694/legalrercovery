@@ -24,10 +24,10 @@ export default function MedicalRecoveryCTA({ className = "" }: MedicalRecoveryCT
                 Track 1 · Single Hospital / Clinic Default
               </span>
               <h3 className="text-lg sm:text-xl font-bold text-white mb-2">
-                Test 1 Live Overdue Case Now (&#8377;{basePrice} &middot; Advocate Drafted &middot; Email + WhatsApp + Speed Post RPAD)
+                Test 1 Live Overdue Case Now (&#8377;{basePrice} &middot; Fact-Verified &middot; Email + WhatsApp + Speed Post RPAD)
               </h3>
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-                Upload your Equipment Lease Agreement, Installation/Commissioning Report, serial numbers, and Medical Superintendent / District CMO contacts. Our advocates draft a Patient-Safe 7/14-Day Clinical Handover + BNS s.316 Notice.
+                Enter your equipment lease, installation/commissioning, serial number, and Medical Superintendent / District CMO details in the online form. Our team verifies the facts and prepares a Patient-Safe 7/14-Day Clinical Handover + BNS s.316 Notice.
               </p>
             </div>
 

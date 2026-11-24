@@ -224,7 +224,7 @@ const HOWTO_SCHEMA = {
       "@type": "HowToStep",
       position: 2,
       name: "Formal Scientific Neutrality Demand Notice",
-      text: "Issue advocate-drafted demand invoking ISO/IEC 17025 Clause 4.1, GLP anti-contingency rules, Contract Act Section 23, and MSMED Act 45-day payment ceiling.",
+      text: "Issue fact-verified demand invoking ISO/IEC 17025 Clause 4.1, GLP anti-contingency rules, Contract Act Section 23, and MSMED Act 45-day payment ceiling.",
     },
     {
       "@type": "HowToStep",
@@ -552,7 +552,7 @@ export default function CroNablTestingLabRecoveryPage() {
                     <span className="text-[10px] font-bold uppercase text-red-400">Stage 2</span>
                     <p className="font-bold text-sm text-white mt-0.5">Statutory Impartiality Demand</p>
                     <p className="text-xs text-slate-300 mt-1">
-                      Serve advocate-drafted demand citing ISO 17025 Clause 4.1, Contract Act Section 23, and Section 70 Quantum Meruit.
+                      Serve ready-to-use demand citing ISO 17025 Clause 4.1, Contract Act Section 23, and Section 70 Quantum Meruit.
                     </p>
                   </div>
                   <div className="bg-slate-900 text-white p-4 rounded-xl border border-slate-800">
@@ -868,7 +868,7 @@ export default function CroNablTestingLabRecoveryPage() {
                     Launch Your CRO Recovery Notice or Bulk Lab Receivables Drive
                   </h2>
                   <p className="text-xs font-semibold text-slate-500 mt-1">
-                    Advocate-drafted scientific neutrality demands, data lien notices, or bulk enterprise recovery
+                    Fact-verified scientific neutrality demands, data lien notices, or bulk enterprise recovery
                   </p>
                 </div>
 

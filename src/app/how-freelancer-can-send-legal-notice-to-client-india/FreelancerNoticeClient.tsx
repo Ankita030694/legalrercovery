@@ -47,7 +47,7 @@ const faqs = [
   },
   {
     question: "How much does it cost to send a legal notice to a client through LegalRecovery?",
-    answer: "LegalRecovery offers a highly affordable, transparent, flat-fee pricing model for freelancers. Drafting and dispatching a formal legal notice through our panel of experienced advocates costs a flat fee of ₹999 per opposing party. This fee includes the initial case review, attorney drafting, stamp charges (if applicable), digital service via email/WhatsApp, and real-time tracking updates on your client dashboard."
+    answer: "LegalRecovery offers a highly affordable, transparent, flat-fee pricing model for freelancers. Drafting and dispatching a formal legal notice through our team costs a flat fee of ₹999 per opposing party. This fee includes fact verification, notice preparation, stamp charges (if applicable), digital service via email/WhatsApp, and real-time tracking updates on your client dashboard."
   }
 ];
 
@@ -111,7 +111,7 @@ const reviewSchema = {
   "@type": "Product",
   "name": "Freelancer Legal Notice Services",
   "image": "https://www.legalrecovery.in/og-send-notice-freelancer.png",
-  "description": "Professional attorney-drafted legal notice services for freelancers, developers, designers, and consultants facing payment delays in India.",
+  "description": "Professional fact-verified legal notice services for freelancers, developers, designers, and consultants facing payment delays in India.",
   "brand": {
     "@type": "Brand",
     "name": "LegalRecovery"
@@ -613,7 +613,7 @@ export default function FreelancerNoticeClient() {
                     </p>
                     <ul className="list-disc pl-6 space-y-3 text-xs sm:text-sm text-slate-650">
                       <li>
-                        <strong>Attorney-Drafted Quality:</strong> Your notice is individually reviewed and drafted by a panel advocate specializing in commercial contracts and labor laws, ensuring precise statutory citations (including Section 70 Contract Act and BNS cheating warnings) tailored to your case.
+                        <strong>Fact-Verified Quality:</strong> Your notice is individually prepared on verified facts specializing in commercial contracts and labor laws, ensuring precise statutory citations (including Section 70 Contract Act and BNS cheating warnings) tailored to your case.
                       </li>
                       <li>
                         <strong>Corporate Due Diligence:</strong> For corporate clients, we search the ROC database to locate the active registered office and identify active directors. We dispatch separate physical notices to the registered office and the directors&apos; personal residences to prevent them from hiding behind the corporate entity.
@@ -629,7 +629,7 @@ export default function FreelancerNoticeClient() {
                       </li>
                     </ul>
                     <p>
-                      By combining verified digital delivery logs with Section 63 BSA certification, LegalRecovery provides freelancers with an airtight, enforceable legal recovery tool. Serving a formal notice through our advocate panel signals to the defaulting client that you are serious and fully prepared to enforce your rights, leading to an 85% settlement rate during the notice cure window.
+                      By combining verified digital delivery logs with Section 63 BSA certification, LegalRecovery provides freelancers with an airtight, enforceable legal recovery tool. Serving a formal notice through our team signals to the defaulting client that you are serious and fully prepared to enforce your rights, leading to an 85% settlement rate during the notice cure window.
                     </p>
                   </div>
                 </section>
@@ -724,7 +724,7 @@ export default function FreelancerNoticeClient() {
                 <div className="absolute top-0 right-0 w-24 h-24 bg-red-600/10 rounded-full blur-xl pointer-events-none" />
                 <h3 className="text-sm font-black mb-3">Send Legal Notice</h3>
                 <p className="text-gray-400 mb-5 text-[11px] leading-relaxed">
-                  Draft and dispatch an enforceable legal notice to a client with our expert panel of advocates.
+                  Draft and dispatch an enforceable legal notice to a client with our team, after we verify your facts.
                 </p>
                 <button 
                   onClick={() => setIsPaymentModalOpen(true)}

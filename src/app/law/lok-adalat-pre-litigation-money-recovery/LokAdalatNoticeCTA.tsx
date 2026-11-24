@@ -31,7 +31,7 @@ export default function LokAdalatNoticeCTA({
                 Recover Unpaid Money Before Full-Scale Civil Litigation Begins
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6">
-                Have an experienced advocate issue a formal pre-litigation legal demand notice establishing clear debt liability, invoking Section 19(5) of the Legal Services Authorities Act, 1987, and offering settlement before the District Legal Services Authority (DLSA) or National Lok Adalat prior to initiating court recovery.
+                Issue a formal pre-litigation legal demand notice establishing clear debt liability, invoking Section 19(5) of the Legal Services Authorities Act, 1987, and offering settlement before the District Legal Services Authority (DLSA) or National Lok Adalat prior to initiating court recovery.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button
@@ -42,7 +42,7 @@ export default function LokAdalatNoticeCTA({
                   {buttonText} — ₹{basePrice}
                 </button>
                 <div className="text-xs text-slate-300 flex flex-wrap sm:flex-nowrap items-center gap-2 sm:gap-3">
-                  <span>✓ 24h Advocate Drafting</span>
+                  <span>✓ 24h Notice Drafting</span>
                   <span>•</span>
                   <span>✓ Email + WhatsApp</span>
                   <span>•</span>

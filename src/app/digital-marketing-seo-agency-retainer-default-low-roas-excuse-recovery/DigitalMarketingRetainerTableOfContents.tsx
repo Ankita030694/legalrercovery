@@ -203,7 +203,7 @@ export default function DigitalMarketingRetainerTableOfContents({
               Need Instant Recovery?
             </span>
             <span className="text-[10px] text-slate-500 block leading-relaxed mb-2">
-              Issue an advocate demand notice with Copyright Act s.51 takedown warning in 24 hours.
+              Issue a fact-verified demand notice with Copyright Act s.51 takedown warning in 24 hours.
             </span>
             <button
               type="button"

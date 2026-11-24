@@ -17,7 +17,7 @@ const faqs = [
   {
     question: 'What legal options are available if an employer deducts salary for notice period shortfall despite an agreed early release?',
     answer:
-      'If an employer agreed to early release or waived the notice period in writing and subsequently deducted notice buyout charges from the F&F settlement, the employee can serve an advocate-drafted statutory legal notice under Section 73 and Section 74 of the Indian Contract Act, 1872. The notice demands immediate reimbursement of the wrongfully deducted sum alongside statutory interest within a 15-day compliance window. If the company fails to refund the amount, the aggrieved employee can initiate recovery proceedings before the Labour Commissioner, file an Order 37 summary suit in civil court, or submit a complaint under the State Shops and Establishments Act.',
+      'If an employer agreed to early release or waived the notice period in writing and subsequently deducted notice buyout charges from the F&F settlement, the employee can serve a fact-verified statutory legal notice under Section 73 and Section 74 of the Indian Contract Act, 1872. The notice demands immediate reimbursement of the wrongfully deducted sum alongside statutory interest within a 15-day compliance window. If the company fails to refund the amount, the aggrieved employee can initiate recovery proceedings before the Labour Commissioner, file an Order 37 summary suit in civil court, or submit a complaint under the State Shops and Establishments Act.',
   },
   {
     question: 'Can an employer withhold an employee\'s relieving letter and experience certificate over notice period salary disputes?',
@@ -37,12 +37,12 @@ const faqs = [
   {
     question: 'Does an employee need to go to court, or can notice period salary disputes be resolved through a legal notice?',
     answer:
-      'Over 75% of notice period salary deduction disputes in India are resolved out of court within 15 days of serving an advocate-vetted statutory legal notice. Corporate employers and HR departments typically settle immediately upon realizing that continued default exposes management to labor inspections, statutory penalty assessments under Section 15(3) of the Payment of Wages Act, and director liability. If formal mediation is required, the parties can also settle the matter through the Online Dispute Resolution (ODR) mechanism or the District Legal Services Authority (DLSA).',
+      'Over 75% of notice period salary deduction disputes in India are resolved out of court within 15 days of serving a fact-verified statutory legal notice. Corporate employers and HR departments typically settle immediately upon realizing that continued default exposes management to labor inspections, statutory penalty assessments under Section 15(3) of the Payment of Wages Act, and director liability. If formal mediation is required, the parties can also settle the matter through the Online Dispute Resolution (ODR) mechanism or the District Legal Services Authority (DLSA).',
   },
   {
     question: 'Can managerial or senior executive employees file claims under the Payment of Wages Act or Labour Court for notice period deductions?',
     answer:
-      'While managerial and executive personnel earning above statutory wage ceilings may fall outside the summary jurisdiction of the Payment of Wages Act, they are fully protected under the Indian Contract Act, 1872 and the Code of Civil Procedure, 1908. Senior professionals can recover deducted notice period salaries by issuing an advocate-drafted statutory demand notice and filing a fast-track Summary Suit under Order 37 CPC in the competent Civil Court or initiating proceedings under the State Shops and Establishments Act. These judicial forums provide expedited decree mechanisms for liquidated employment debts without lengthy trial procedures.',
+      'While managerial and executive personnel earning above statutory wage ceilings may fall outside the summary jurisdiction of the Payment of Wages Act, they are fully protected under the Indian Contract Act, 1872 and the Code of Civil Procedure, 1908. Senior professionals can recover deducted notice period salaries by issuing a fact-verified statutory demand notice and filing a fast-track Summary Suit under Order 37 CPC in the competent Civil Court or initiating proceedings under the State Shops and Establishments Act. These judicial forums provide expedited decree mechanisms for liquidated employment debts without lengthy trial procedures.',
   },
 ];
 
@@ -53,7 +53,7 @@ const ogImage =
   'https://legalrecovery.in/images/og/salary-deducted-during-notice-period-legal-action-india.jpg';
 
 const reviewBodyText =
-  'After submitting my 60-day notice with an agreed management buyout for the remaining 30 days of a 90-day policy, my employer unilaterally deducted ₹3,45,000 from my final two months\' salary under the pretext of "unauthorized notice shortfall" and refused to release my relieving letter. Legal Recovery drafted and served an aggressive statutory legal notice citing Section 7 and 15 of the Payment of Wages Act, Section 74 of the Indian Contract Act, and Maharashtra Shops & Establishments Act. Within just 11 days of receiving the advocate-signed notice, the corporate HR reversed all unlawful deductions, credited my full ₹3.45 Lakhs F&F balance with statutory interest, and issued my unconditional relieving experience letter. Exceptional legal service for working professionals!';
+  'After submitting my 60-day notice with an agreed management buyout for the remaining 30 days of a 90-day policy, my employer unilaterally deducted ₹3,45,000 from my final two months\' salary under the pretext of "unauthorized notice shortfall" and refused to release my relieving letter. Legal Recovery drafted and served an aggressive statutory legal notice citing Section 7 and 15 of the Payment of Wages Act, Section 74 of the Indian Contract Act, and Maharashtra Shops & Establishments Act. Within just 11 days of receiving the fact-verified notice, the corporate HR reversed all unlawful deductions, credited my full ₹3.45 Lakhs F&F balance with statutory interest, and issued my unconditional relieving experience letter. Exceptional legal service for working professionals!';
 
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -173,7 +173,7 @@ const jsonLd = {
         {
           '@type': 'ListItem',
           position: 4,
-          name: 'Draft an advocate-vetted statutory demand notice citing Sections 7 & 15 of Payment of Wages Act, Section 74 of Indian Contract Act, and Order 37 CPC',
+          name: 'Draft a fact-verified statutory demand notice citing Sections 7 & 15 of Payment of Wages Act, Section 74 of Indian Contract Act, and Order 37 CPC',
         },
         {
           '@type': 'ListItem',
@@ -193,7 +193,7 @@ const jsonLd = {
       '@type': 'Product',
       name: 'Legal Notice Service for Salary Deducted During Notice Period',
       description:
-        'Advocate-drafted statutory demand notice service for corporate employees, managers, and software professionals to recover unlawfully deducted notice period salaries, F&F settlements, and withheld relieving letters from employers in India.',
+        'Fact-verified statutory demand notice service for corporate employees, managers, and software professionals to recover unlawfully deducted notice period salaries, F&F settlements, and withheld relieving letters from employers in India.',
       brand: {
         '@type': 'Organization',
         name: 'Legal Recovery',
@@ -270,7 +270,7 @@ export default function SalaryDeductedDuringNoticePeriodLegalActionIndiaClient()
 
   const shareUrl = encodeURIComponent(pageUrl);
   const shareText = encodeURIComponent(
-    'Employer deducted your salary during notice period or withholding your FNF settlement? Send an advocate-vetted statutory legal notice for instant recovery in India! #SalaryRecovery #LegalNotice #EmployeeRights'
+    'Employer deducted your salary during notice period or withholding your FNF settlement? Send a fact-verified statutory legal notice for instant recovery in India! #SalaryRecovery #LegalNotice #EmployeeRights'
   );
 
   return (
@@ -463,7 +463,7 @@ export default function SalaryDeductedDuringNoticePeriodLegalActionIndiaClient()
                     Quick Answer
                   </h2>
                   <p className="text-sm text-slate-700 font-medium leading-relaxed">
-                    Under Section 7 and Section 15 of the <strong className="text-slate-900 font-semibold">Payment of Wages Act, 1936</strong>, Section 18 of the <strong className="text-slate-900 font-semibold">Code on Wages, 2019</strong>, and Section 74 of the <strong className="text-slate-900 font-semibold">Indian Contract Act, 1872</strong>, an employer in India cannot lawfully deduct salary or withhold wages during an employee&apos;s active notice period unless the deduction is strictly authorized by statute or represents a proportionate basic salary shortfall for unserved days. If an employer makes unauthorized deductions from monthly pay or the Full and Final (FNF) settlement, the aggrieved employee can serve an advocate-vetted statutory legal demand notice giving the management 15 days to refund the deducted amount with interest and release all service certificates. Continued non-compliance empowers the employee to initiate summary recovery proceedings under Order 37 of the Code of Civil Procedure, 1908, file a statutory claim before the Labour Commissioner with up to ten times penalty compensation, and register a complaint under the applicable State Shops and Establishments Act.
+                    Under Section 7 and Section 15 of the <strong className="text-slate-900 font-semibold">Payment of Wages Act, 1936</strong>, Section 18 of the <strong className="text-slate-900 font-semibold">Code on Wages, 2019</strong>, and Section 74 of the <strong className="text-slate-900 font-semibold">Indian Contract Act, 1872</strong>, an employer in India cannot lawfully deduct salary or withhold wages during an employee&apos;s active notice period unless the deduction is strictly authorized by statute or represents a proportionate basic salary shortfall for unserved days. If an employer makes unauthorized deductions from monthly pay or the Full and Final (FNF) settlement, the aggrieved employee can serve a fact-verified statutory legal demand notice giving the management 15 days to refund the deducted amount with interest and release all service certificates. Continued non-compliance empowers the employee to initiate summary recovery proceedings under Order 37 of the Code of Civil Procedure, 1908, file a statutory claim before the Labour Commissioner with up to ten times penalty compensation, and register a complaint under the applicable State Shops and Establishments Act.
                   </p>
                 </div>
 
@@ -549,7 +549,7 @@ export default function SalaryDeductedDuringNoticePeriodLegalActionIndiaClient()
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      Corporate employers employ a variety of opaque accounting maneuvers and punitive HR policies to withhold employee wages during resignation. When drafting an advocate-vetted demand notice, identifying the precise actionable breach is paramount:
+                      Corporate employers employ a variety of opaque accounting maneuvers and punitive HR policies to withhold employee wages during resignation. When drafting a fact-verified demand notice, identifying the precise actionable breach is paramount:
                     </p>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
                       {[
@@ -751,7 +751,7 @@ export default function SalaryDeductedDuringNoticePeriodLegalActionIndiaClient()
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      Serving an advocate-vetted statutory demand notice requires compiling conclusive documentary proof of your employment, resignation timeline, handover completion, and unauthorized salary deductions:
+                      Serving a fact-verified statutory demand notice requires compiling conclusive documentary proof of your employment, resignation timeline, handover completion, and unauthorized salary deductions:
                     </p>
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs sm:text-sm">
@@ -831,7 +831,7 @@ export default function SalaryDeductedDuringNoticePeriodLegalActionIndiaClient()
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      A formidable legal notice drafted by a labor advocate establishes strict liability, highlights statutory penalties, and leaves no room for corporate evasion:
+                      A formidable legal notice prepared by our team establishes strict liability, highlights statutory penalties, and leaves no room for corporate evasion:
                     </p>
 
                     <div className="space-y-4">
@@ -854,7 +854,7 @@ export default function SalaryDeductedDuringNoticePeriodLegalActionIndiaClient()
                         {
                           clause: 'Clause 4',
                           title: 'Statutory Interest Demand & Compensation for Mental Harassment',
-                          desc: 'Claims statutory interest on delayed wage payment at 18% per annum along with exemplary damages for mental agony, loss of career progression, and advocate drafting expenses.',
+                          desc: 'Claims statutory interest on delayed wage payment at 18% per annum along with exemplary damages for mental agony, loss of career progression, and notice drafting expenses.',
                         },
                         {
                           clause: 'Clause 5',
@@ -890,8 +890,8 @@ export default function SalaryDeductedDuringNoticePeriodLegalActionIndiaClient()
                       {[
                         {
                           step: 'Stage 1',
-                          title: 'Advocate Notice Dispatch via Speed Post AD & Digital Channels',
-                          desc: 'The notice is prepared on the advocate\'s official letterhead, digitally signed under Section 5 of the Information Technology Act, 2000, and served simultaneously via India Post Speed Post with Acknowledgment Due (AD), official corporate HR email, and WhatsApp delivery tracking.',
+                          title: 'Fact-Verified Notice Dispatch via Speed Post AD & Digital Channels',
+                          desc: 'The notice is prepared by our team after fact verification and served simultaneously via India Post Speed Post with Acknowledgment Due (AD), official corporate HR email, and WhatsApp delivery tracking.',
                         },
                         {
                           step: 'Stage 2',
@@ -901,12 +901,12 @@ export default function SalaryDeductedDuringNoticePeriodLegalActionIndiaClient()
                         {
                           step: 'Stage 3',
                           title: 'Labour Commissioner Claim for 10x Penalty Recovery',
-                          desc: 'If the company fails to settle, our panel advocates lodge a formal claim before the Payment of Wages Authority / Labour Commissioner under Section 15(3) of the Payment of Wages Act, triggering regulatory inspection notices and severe statutory penalties against the employer.',
+                          desc: 'If the company fails to settle, our team lodges a formal claim before the Payment of Wages Authority / Labour Commissioner under Section 15(3) of the Payment of Wages Act, triggering regulatory inspection notices and severe statutory penalties against the employer.',
                         },
                         {
                           step: 'Stage 4',
                           title: 'Fast-Track Summary Suit (Order 37 CPC) & Relieving Letter Mandamus',
-                          desc: 'For executive and managerial personnel, our advocates file an expedited Summary Suit under Order 37 CPC in Civil Court for immediate debt decree alongside mandatory injunction petitions for immediate release of service credentials.',
+                          desc: 'For executive and managerial personnel, our team files an expedited Summary Suit under Order 37 CPC in Civil Court for immediate debt decree alongside mandatory injunction petitions for immediate release of service credentials.',
                         },
                       ].map((item, i) => (
                         <div key={i} className="flex gap-4 p-4 rounded-xl bg-slate-50 border border-slate-100 items-start">
@@ -1083,7 +1083,7 @@ export default function SalaryDeductedDuringNoticePeriodLegalActionIndiaClient()
                   <p className="text-sm text-slate-650 leading-relaxed mb-6">
                     Legal Recovery is India&apos;s trusted online legal notice and dispute resolution
                     platform, connecting working professionals, corporate executives, managers, and
-                    employees with seasoned labor and commercial advocates for rapid, advocate-vetted
+                    employees with our fact-verifying team for rapid, fact-verified
                     statutory demand notices at transparent flat fees. With ₹100 Crore+ recovered and 10,000+
                     cases handled across India, Legal Recovery ensures swift financial restitution and
                     reputation protection without the delays and uncertainty of traditional litigation.
@@ -1124,7 +1124,7 @@ export default function SalaryDeductedDuringNoticePeriodLegalActionIndiaClient()
                   Salary Deducted During Notice Period?
                 </h3>
                 <p className="text-slate-300 text-xs leading-relaxed mb-4">
-                  Send an advocate-vetted statutory notice today. 75% of employers reverse illegal salary deductions and release relieving letters within 15 days upon receiving formal notice from Legal Recovery.
+                  Send a fact-verified statutory notice today. 75% of employers reverse illegal salary deductions and release relieving letters within 15 days upon receiving formal notice from Legal Recovery.
                 </p>
                 <button
                   onClick={() => setIsPaymentModalOpen(true)}
@@ -1133,7 +1133,7 @@ export default function SalaryDeductedDuringNoticePeriodLegalActionIndiaClient()
                   Draft &amp; Send Notice Now
                 </button>
                 <p className="text-center text-slate-400 text-[10px] mt-3">
-                  Flat fee • Advocate-drafted • Sent same day
+                  Flat fee • Fact-verified • Sent same day
                 </p>
               </div>
 
@@ -1188,7 +1188,7 @@ export default function SalaryDeductedDuringNoticePeriodLegalActionIndiaClient()
                 {[
                   { stat: '75%', label: 'Employers settle before Labour Court / Civil litigation' },
                   { stat: '₹100CR+', label: 'Total employment & commercial dues recovered across India' },
-                  { stat: 'Same Day', label: 'Advocate notice drafted and dispatched' },
+                  { stat: 'Same Day', label: 'Notice prepared and dispatched' },
                   { stat: 'Flat Fee', label: 'Transparent pricing with no hidden charges' },
                 ].map((item, i) => (
                   <div key={i} className="flex items-center justify-between py-2 border-b border-slate-50 last:border-0">

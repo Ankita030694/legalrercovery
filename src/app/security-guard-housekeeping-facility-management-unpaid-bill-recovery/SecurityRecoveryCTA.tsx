@@ -31,7 +31,7 @@ export default function SecurityRecoveryCTA({
                 Test 1 Defaulted Security / FMS Client Invoice
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm leading-relaxed mb-5">
-                Issue an advocate-vetted statutory demand notice citing MSMED Act Section 16 (3x compound interest), signed muster roll estoppel, and Section 43B(h) tax disallowance. Delivered via Speed Post RPAD, email, and tracking WhatsApp.
+                Issue a fact-verified statutory demand notice citing MSMED Act Section 16 (3x compound interest), signed muster roll estoppel, and Section 43B(h) tax disallowance. Delivered via Speed Post RPAD, email, and tracking WhatsApp.
               </p>
             </div>
 
@@ -52,7 +52,7 @@ export default function SecurityRecoveryCTA({
                 </Link>
               </div>
               <div className="flex flex-wrap items-center gap-2 text-[11px] text-slate-400">
-                <span>&#10003; Advocate Drafted</span>
+                <span>&#10003; Fact-Verified</span>
                 <span>&bull;</span>
                 <span>&#10003; Speed Post Tracking</span>
                 <span>&bull;</span>

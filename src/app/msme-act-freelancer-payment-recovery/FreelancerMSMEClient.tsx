@@ -546,7 +546,7 @@ export default function FreelancerMSMEClient() {
                         <strong>Document Audit:</strong> We review your Udyam certificate, contract trails, and invoices to verify that your case meets the statutory requirements of the MSMED Act, identifying any technical issues before filing.
                       </li>
                       <li>
-                        <strong>Pre-Suit Notice Dispatch:</strong> We draft and dispatch a formal advocate-backed pre-suit legal notice citing Section 15 and 16 of the MSMED Act, served digitally via verified email and WhatsApp with real-time tracking. In most cases, this notice is sufficient to secure a prompt settlement.
+                        <strong>Pre-Suit Notice Dispatch:</strong> We draft and dispatch a formal fact-verified pre-suit legal notice citing Section 15 and 16 of the MSMED Act, served digitally via verified email and WhatsApp with real-time tracking. In most cases, this notice is sufficient to secure a prompt settlement.
                       </li>
                       <li>
                         <strong>Interest Calculations:</strong> We calculate the compound interest under Section 16 based on the official RBI bank rates, ensuring that your claim includes every rupee of interest you are legally entitled to.

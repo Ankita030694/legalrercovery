@@ -520,7 +520,7 @@ export default function TelecomBroadbandRefundPage() {
                 </p>
                 <div className="p-5 bg-white rounded-2xl border border-slate-200 shadow-xs space-y-3 text-xs sm:text-sm text-slate-700">
                   <p className="leading-relaxed">
-                    A legal notice drafted by an advocate is formally addressed to the Managing Director, Chief Executive Officer, and Company Secretary of the telecom parent entity (e.g., Reliance Jio Infocomm Ltd., Bharti Airtel Ltd., Vodafone Idea Ltd., or Atria Convergence Technologies Ltd.), as well as the Circle General Manager.
+                    A legal notice prepared on verified facts is formally addressed to the Managing Director, Chief Executive Officer, and Company Secretary of the telecom parent entity (e.g., Reliance Jio Infocomm Ltd., Bharti Airtel Ltd., Vodafone Idea Ltd., or Atria Convergence Technologies Ltd.), as well as the Circle General Manager.
                   </p>
                   <p className="leading-relaxed">
                     The notice establishes an unassailable factual foundation: the subscriber customer ID, installation address, technician hardware pickup receipt with ONT serial number, payment gateway debit UTRs, and all prior TRAI docket numbers. It explicitly cites <strong className="text-slate-900">Regulation 14 of TRAI Regulations 2012</strong> (10% per annum penal interest mandate) and <strong className="text-slate-900">Section 2(11) of the Consumer Protection Act, 2019</strong>.
@@ -534,7 +534,7 @@ export default function TelecomBroadbandRefundPage() {
               {/* Mid-Page Notice CTA */}
               <TelecomNoticeCTA
                 variant="primary"
-                buttonText="Draft Advocate Notice to Telecom Provider"
+                buttonText="Draft Fact-Verified Notice to Telecom Provider"
               />
 
               {/* Deep-Dive H2 per Route: Route 3 */}
@@ -861,7 +861,7 @@ export default function TelecomBroadbandRefundPage() {
                   <div className="space-y-2">
                     <strong className="text-slate-900 font-bold block text-sm">The Legal Recovery Action:</strong>
                     <p className="leading-relaxed">
-                      Instead of continuing endless chat-bot loops, Priya engaged LegalRecovery.in. An advocate drafted a formal statutory demand notice addressed to the telecom company&apos;s Circle Nodal Officer and Managing Director. The notice attached the technician pickup voucher, bank statement showing zero inward credit, and cited TRAI Regulation 14 (60-day refund limit and 10% per annum penal interest), granting 15 days to settle before filing on e-Jagriti.
+                      Instead of continuing endless chat-bot loops, Priya engaged LegalRecovery.in. The team verified the facts and prepared a formal statutory demand notice addressed to the telecom company&apos;s Circle Nodal Officer and Managing Director. The notice attached the technician pickup voucher, bank statement showing zero inward credit, and cited TRAI Regulation 14 (60-day refund limit and 10% per annum penal interest), granting 15 days to settle before filing on e-Jagriti.
                     </p>
                   </div>
 

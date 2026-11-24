@@ -11,7 +11,7 @@ interface SocietyMaintenanceNoticeCTAProps {
 }
 
 export default function SocietyMaintenanceNoticeCTA({
-  buttonText = "Send Advocate Recovery Notice for Society Maintenance Dues",
+  buttonText = "Send Fact-Verified Recovery Notice for Society Maintenance Dues",
   className = "",
   variant = "primary",
 }: SocietyMaintenanceNoticeCTAProps) {
@@ -31,7 +31,7 @@ export default function SocietyMaintenanceNoticeCTA({
                 Defaulting Flat Owner Ignoring Society Maintenance Demand Letters?
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6">
-                When internal managing committee reminders go unanswered, have a verified advocate serve an official statutory 15-day pre-litigation demand notice on behalf of your Cooperative Housing Society (CHS), Apartment Owners Association (AOA), or RWA. Served by email and WhatsApp under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023—laying the mandatory record required for a Section 101 Recovery Certificate or Registrar arbitration. Speed Post is optional at ₹450 per party.
+                When internal managing committee reminders go unanswered, serve an official statutory 15-day pre-litigation demand notice on behalf of your Cooperative Housing Society (CHS), Apartment Owners Association (AOA), or RWA. Served by email and WhatsApp under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023—laying the mandatory record required for a Section 101 Recovery Certificate or Registrar arbitration. Speed Post is optional at ₹450 per party.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button
@@ -42,7 +42,7 @@ export default function SocietyMaintenanceNoticeCTA({
                   {buttonText} — ₹{basePrice}
                 </button>
                 <div className="text-xs text-slate-300 flex flex-wrap sm:flex-nowrap items-center gap-2 sm:gap-3">
-                  <span>✓ 24h Advocate Drafting</span>
+                  <span>✓ 24h Notice Drafting</span>
                   <span>•</span>
                   <span>✓ Email + WhatsApp</span>
                   <span>•</span>

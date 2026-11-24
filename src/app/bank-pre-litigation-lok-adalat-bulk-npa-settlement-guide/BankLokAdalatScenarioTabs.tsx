@@ -29,7 +29,7 @@ const LOK_ADALAT_SCENARIOS: LokAdalatScenario[] = [
       "Legal Services Authorities Act, 1987 Section 19(5)(ii) & Section 20(2) (pre-litigation cognizance at zero court fee) paired with Section 21 deemed Civil Court Decree. Pre-aligned consent awards also satisfy CGTMSE / CGFMU statutory legal-action prerequisites without paying ad-valorem civil court stamps.",
     primingChecklist: [
       "Pre-approved Board OTS matrix mapped to CBS ledger (principal + uncompounded interest slab)",
-      "T-30 Advocate-signed vernacular OTS Invitation-cum-Lok Adalat Pre-Intimation via WhatsApp + RPAD",
+      "T-30 Fact-verified vernacular OTS Invitation-cum-Lok Adalat Pre-Intimation via WhatsApp + RPAD",
       "Dynamic UPI/NEFT token-deposit link (10% upfront commitment prior to bench sitting)",
       "Pre-drafted Joint Compromise Memo with default-acceleration clause for instant bench signing",
     ],

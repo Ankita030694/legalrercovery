@@ -28,7 +28,7 @@ const SCENARIOS: Scenario[] = [
       "Under Section 42 of the Sale of Goods Act, 1930, an executed GRN without written rejection within the inspection window is conclusive deemed acceptance. Furthermore, under Section 15 of the MSMED Act, 2006, the statutory payment clock runs from the 'day of acceptance' (the GRN date). Irrespective of internal accounts routing, payment cannot be deferred beyond 45 days. Section 16 mandates monthly compounding interest at 3x the RBI Bank Rate.",
     actionPlan: [
       "Obtain certified hard copies or portal screenshots of the approved GRN with storekeeper stamp and serial number.",
-      "Issue an Advocate Statutory Notice on Letterhead demanding release within 10 days, citing MSMED Act s.15 & s.16 compound interest.",
+      "Issue a Fact-Verified Statutory Notice on Letterhead demanding release within 10 days, citing MSMED Act s.15 & s.16 compound interest.",
       "Attach Udyam Registration Certificate and invoke Section 43B(h) Income Tax disallowance alert addressed to the Chief Financial Officer and statutory auditors.",
       "File a formal Samadhaan application before the State MSEFC if the hospital fails to credit funds within the 10-day notice period.",
     ],

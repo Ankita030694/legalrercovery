@@ -215,7 +215,7 @@ export default function UniformBulkOrderPaymentRecoveryPage() {
       {
         "@type": "HowToStep",
         position: 4,
-        name: "Serve Advocate Statutory Demand Notice",
+        name: "Serve Fact-Verified Statutory Demand Notice",
         text: "Dispatch a 15-day notice invoking Sale of Goods Act s.55, MSMED s.15-16 (3x RBI interest), and Income Tax s.43B(h) disallowance via Email, WhatsApp, and Speed Post RPAD.",
       },
       {

@@ -175,8 +175,8 @@ const HOWTO_SCHEMA = {
     {
       "@type": "HowToStep",
       position: 4,
-      name: "Serve Advocate Statutory Demand Notice",
-      text: "Serve an advocate demand notice to the client corporate entity rebutting Section 27 employee defense bluffs and citing High Court authorities (Wipro v. Beckman Coulter; FL Smidth).",
+      name: "Serve Fact-Verified Statutory Demand Notice",
+      text: "Serve a fact-verified demand notice to the client corporate entity rebutting Section 27 employee defense bluffs and citing High Court authorities (Wipro v. Beckman Coulter; FL Smidth).",
     },
     {
       "@type": "HowToStep",
@@ -549,7 +549,7 @@ export default function ClientPoachedDeveloperRecoveryPage() {
                   },
                   {
                     num: "4",
-                    title: "Advocate-Drafted Statutory Demand Notice",
+                    title: "Fact-Verified Statutory Demand Notice",
                     desc: "Serve an institutional legal demand notice dismantling the client's Section 27 employee defense bluffs, citing Delhi High Court Wipro v. Beckman Coulter precedent.",
                   },
                   {
@@ -932,7 +932,7 @@ export default function ClientPoachedDeveloperRecoveryPage() {
               </div>
 
               <div className="p-4 bg-emerald-50 border border-emerald-200 rounded-xl text-xs text-slate-700 leading-relaxed font-medium">
-                <strong>Resolution Benchmark:</strong> Following service of the formal advocate demand notice incorporating the Section 63 BSA Git audit trail and citing the <em>Wipro v. Beckman Coulter</em> precedent, the client&apos;s board approved an immediate pre-mediation settlement of ₹19.50 Lakh within 22 days of notice dispatch, fully reimbursing the vendor without initiating commercial litigation. To calculate MSME statutory interest on overdue billing, utilize our{" "}
+                <strong>Resolution Benchmark:</strong> Following service of the formal fact-verified demand notice incorporating the Section 63 BSA Git audit trail and citing the <em>Wipro v. Beckman Coulter</em> precedent, the client&apos;s board approved an immediate pre-mediation settlement of ₹19.50 Lakh within 22 days of notice dispatch, fully reimbursing the vendor without initiating commercial litigation. To calculate MSME statutory interest on overdue billing, utilize our{" "}
                 <Link
                   href="/tools/msme-delayed-payment-interest-calculator"
                   className="text-[#DC2626] font-bold hover:underline"
@@ -1001,7 +1001,7 @@ export default function ClientPoachedDeveloperRecoveryPage() {
                 ))}
               </div>
               <p className="text-xs text-slate-600 leading-relaxed">
-                For standard notice formatting, review our advocate-vetted{" "}
+                For standard notice formatting, review our fact-verified{" "}
                 <Link
                   href="/templates/legal-notice-reply-format"
                   className="text-[#DC2626] font-semibold hover:underline"
@@ -1028,7 +1028,7 @@ export default function ClientPoachedDeveloperRecoveryPage() {
                 Deploy Developer Buyout Legal Recovery: Single Notice Test or Bulk Staffing Desk
               </h2>
               <p className="text-xs sm:text-sm text-slate-700 leading-relaxed mb-6">
-                Choose the appropriate recovery corridor: test an advocate-drafted statutory demand notice on an isolated client poaching default, or onboard your agency&apos;s entire overdue receivables and breached bench contracts for institutional portfolio recovery.
+                Choose the appropriate recovery corridor: test a fact-verified statutory demand notice on an isolated client poaching default, or onboard your agency&apos;s entire overdue receivables and breached bench contracts for institutional portfolio recovery.
               </p>
 
               {/* Dual-Track CTA Component */}
@@ -1163,7 +1163,7 @@ export default function ClientPoachedDeveloperRecoveryPage() {
                 </p>
               </div>
 
-              {/* Advocate Review Attribution */}
+              {/* Fact Verification Attribution */}
               <div className="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between text-[11px] text-slate-500">
                 <span>
                   Legal Review: <strong>{LEGAL_REVIEWER.name}</strong>, {LEGAL_REVIEWER.role}

@@ -78,7 +78,7 @@ const CASE_CITATIONS = [
     citation: "Consumer Complaint No. 184/2022, DCDRC New Delhi (South)",
     date: "Order Dated 18 November 2022",
     facts:
-      "The complainant purchased an ultra-thin laptop for ₹52,400. Upon delivery, the internal display screen was found shattered. Customer support refused return on the ground that the 7-day replacement window had expired during transit inspection. The complainant immediately lodged an NCH 1915 grievance (Docket No. 3829104). The seller closed the INGRAM docket with an automated remark 'Return rejected as per policy'. An advocate then issued a 15-day statutory legal notice quoting the unresolved docket.",
+      "The complainant purchased an ultra-thin laptop for ₹52,400. Upon delivery, the internal display screen was found shattered. Customer support refused return on the ground that the 7-day replacement window had expired during transit inspection. The complainant immediately lodged an NCH 1915 grievance (Docket No. 3829104). The seller closed the INGRAM docket with an automated remark 'Return rejected as per policy'. A 15-day statutory legal notice quoting the unresolved docket was then issued.",
     holding:
       "The Consumer Commission held that the NCH 1915 docket furnished contemporaneous proof under Section 65B Evidence Act (now Section 63 BSA 2023) that the consumer acted diligently within 24 hours of delivery. The seller's unilateral closure of the government helpline docket without physical inspection was deemed a gross deficiency in service and unfair trade practice under Section 2(47) CPA 2019. The Commission directed the seller to refund the full purchase price of ₹52,400 with 9% annual interest, pay ₹15,000 for mental harassment, and ₹7,500 toward litigation expenses.",
     amount: "₹52,400 Full Refund @ 9% Interest + ₹15,000 Harassment Damages + ₹7,500 Legal Costs",
@@ -181,7 +181,7 @@ const FAQS = [
   {
     question: "What should I do if the company rejects or closes my NCH docket without refunding?",
     answer:
-      "Download the full PDF grievance history showing company responses and timestamps. Have an advocate send a formal 15-day legal notice citing your NCH docket. Mention Section 2(11) for service deficiency under CPA 2019. If they do not pay, file directly on e-Jagriti.",
+      "Download the full PDF grievance history showing company responses and timestamps. Send a formal 15-day legal notice citing your NCH docket. Mention Section 2(11) for service deficiency under CPA 2019. If they do not pay, file directly on e-Jagriti.",
   },
   {
     question: "How long does a company have to respond to an NCH 1915 grievance?",
@@ -605,7 +605,7 @@ export default function NationalConsumerHelplinePage() {
                         <rect x="465" y="35" width="40" height="24" rx="6" fill="#DC2626" />
                         <text x="485" y="51" fill="#FFFFFF" fontSize="11" fontWeight="bold" textAnchor="middle">03</text>
                         <text x="465" y="85" fill="#FFFFFF" fontSize="14" fontWeight="bold">Statutory Legal Notice</text>
-                        <text x="465" y="110" fill="#E2E8F0" fontSize="11">Drafted by verified advocate</text>
+                        <text x="465" y="110" fill="#E2E8F0" fontSize="11">Prepared on verified facts</text>
                         <text x="465" y="130" fill="#E2E8F0" fontSize="11">Quotes NCH Docket ID</text>
                         <text x="465" y="150" fill="#E2E8F0" fontSize="11">Speed Post + Certified Email</text>
                         <text x="465" y="170" fill="#E2E8F0" fontSize="11">Strict 15-day refund window</text>
@@ -695,10 +695,10 @@ export default function NationalConsumerHelplinePage() {
                     </span>
                     <div className="space-y-1 text-xs sm:text-sm text-slate-700">
                       <strong className="text-sm sm:text-base text-slate-900 font-bold block">
-                        Issue Formal 15-Day Statutory Advocate Demand Notice
+                        Issue Formal 15-Day Statutory Fact-Verified Demand Notice
                       </strong>
                       <p className="leading-relaxed">
-                        Have a verified advocate draft and dispatch a formal legal notice under CPA 2019 to the registered headquarters of the company and its board of directors. The notice explicitly quotes your NCH docket number, disproving any defence of ignorance and setting a strict 15-day deadline for full refund plus interest.
+                        Dispatch a formal legal notice under CPA 2019 to the registered headquarters of the company and its board of directors. The notice explicitly quotes your NCH docket number, disproving any defence of ignorance and setting a strict 15-day deadline for full refund plus interest.
                       </p>
                     </div>
                   </li>
@@ -845,7 +845,7 @@ export default function NationalConsumerHelplinePage() {
                         <strong className="text-slate-900">NCH 1915 Filing:</strong> On 15 October 2025, Rajesh registered INGRAM Docket #4819203. On Day 22, the platform&apos;s convergence desk updated the ticket: &lsquo;Issue closed - outside 24h unboxing policy&rsquo;.
                       </p>
                       <p>
-                        <strong className="text-slate-900">Advocate Notice Intervention:</strong> On 10 November 2025, an advocate on LegalRecovery.in drafted and served a statutory notice to the platform&apos;s directors. The notice highlighted that the technician unboxed the unit, quoted NCH Docket #4819203, and demanded ₹46,500 + ₹15,000 within 15 days under threat of e-Jagriti filing.
+                        <strong className="text-slate-900">Fact-Verified Notice Intervention:</strong> On 10 November 2025, an advocate on LegalRecovery.in drafted and served a statutory notice to the platform&apos;s directors. The notice highlighted that the technician unboxed the unit, quoted NCH Docket #4819203, and demanded ₹46,500 + ₹15,000 within 15 days under threat of e-Jagriti filing.
                       </p>
                     </div>
                   </div>

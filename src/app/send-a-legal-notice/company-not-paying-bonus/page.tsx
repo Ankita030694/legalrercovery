@@ -4,7 +4,7 @@ import CompanyNotPayingBonusClient from './CompanyNotPayingBonusClient';
 const slug = 'send-a-legal-notice/company-not-paying-bonus';
 const title = 'Legal Notice to Company for Unpaid Employee Bonus';
 const description =
-  'Company not paying your earned bonus? Send an advocate-drafted legal notice under the Payment of Bonus Act to claim dues with 18% interest.';
+  'Company not paying your earned bonus? Send a fact-verified legal notice under the Payment of Bonus Act to claim dues with 18% interest.';
 const url = `https://www.legalrecovery.in/${slug}`;
 const ogImage = `/images/og/company-not-paying-bonus.jpg`;
 

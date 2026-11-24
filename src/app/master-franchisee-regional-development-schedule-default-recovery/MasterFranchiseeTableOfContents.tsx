@@ -114,7 +114,7 @@ export default function MasterFranchiseeTableOfContents() {
             Stalled State Territory?
           </p>
           <p className="text-[11px] text-slate-500 leading-relaxed mb-3">
-            Dispatch an Advocate-Drafted Cure-or-Revocation &amp; Step-In Notice across Email, WhatsApp &amp; Speed Post RPAD.
+            Dispatch a Fact-Verified Cure-or-Revocation &amp; Step-In Notice across Email, WhatsApp &amp; Speed Post RPAD.
           </p>
           <button
             type="button"

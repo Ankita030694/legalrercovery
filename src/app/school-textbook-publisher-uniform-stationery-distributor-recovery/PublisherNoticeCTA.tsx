@@ -33,10 +33,10 @@ export default function PublisherNoticeCTA() {
                 <span className="text-xl font-black text-white">₹999</span>
               </div>
               <h4 className="text-base font-bold text-white mb-2">
-                Test 1 Live Overdue Case Now (₹999 · Advocate Drafted · Email + WhatsApp + Speed Post RPAD)
+                Test 1 Live Overdue Case Now (₹999 · Fact-Verified · Email + WhatsApp + Speed Post RPAD)
               </h4>
               <p className="text-xs text-slate-300 leading-relaxed mb-4">
-                Upload one overdue school trust, campus bookshop, or regional distributor ledger. Our commercial recovery advocates annex your GST tax invoices, transporter bilties, and booklist POs into a 15-day statutory demand notice.
+                Enter the details of one overdue school trust, campus bookshop, or regional distributor account. Our team verifies the facts and prepares a 15-day statutory demand notice covering your invoices, transporter bilties, and booklist POs.
               </p>
               <ul className="space-y-1.5 text-xs text-slate-300 mb-6">
                 <li className="flex items-center gap-2">
@@ -109,7 +109,7 @@ export default function PublisherNoticeCTA() {
         </div>
 
         <p className="text-[11px] text-slate-400 text-center">
-          Strictly Creditor-Side Institutional Recovery Desk · All notices drafted and verified by Empaneled Commercial Advocates · BSA 2023 s.63 Compliant Dispatch
+          Strictly Creditor-Side Institutional Recovery Desk · All notices fact-verified by our team · BSA 2023 s.63 Compliant Dispatch
         </p>
       </div>
     </div>

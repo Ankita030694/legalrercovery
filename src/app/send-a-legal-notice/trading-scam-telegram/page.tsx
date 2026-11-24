@@ -4,7 +4,7 @@ import TradingScamTelegramClient from './TradingScamTelegramClient';
 const slug = 'send-a-legal-notice/trading-scam-telegram';
 const title = 'Legal Notice for Trading Scam on Telegram India';
 const description =
-  'Lost money in a Telegram trading or investment scam? Send an advocate-drafted legal notice and take legal action to recover stolen funds.';
+  'Lost money in a Telegram trading or investment scam? Send a fact-verified legal notice and take legal action to recover stolen funds.';
 const url = `https://www.legalrecovery.in/${slug}`;
 const ogImage = `/images/og/trading-scam-telegram.jpg`;
 

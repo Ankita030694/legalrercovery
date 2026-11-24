@@ -189,7 +189,7 @@ const HOWTO_SCHEMA = {
     {
       "@type": "HowToStep",
       position: 2,
-      name: "Serve Dual-Jurisdiction Tri-Channel Advocate Legal Notice",
+      name: "Serve Dual-Jurisdiction Tri-Channel Fact-Verified Legal Notice",
       text: "Dispatch simultaneous recall-cum-demand notices under Contract Act s.43 to the Indian parent co-obligor via Speed Post RPAD + Email + WhatsApp and to the overseas student via verified Email + international WhatsApp + last-known foreign courier under CPC Order V Rule 25.",
     },
     {
@@ -596,7 +596,7 @@ export default function EducationLoanRecoveryPage() {
                 </div>
 
                 <div className="bg-amber-50 border border-amber-200 rounded-xl p-4 text-xs sm:text-sm text-amber-950">
-                  <strong className="font-bold">Critical Co-Obligor Drafting Rule:</strong> Never issue a recall notice addressed solely to the student &ldquo;c/o Parent.&rdquo; Draft the Advocate Legal Notice expressly naming both <strong>Noticee No. 1 (Principal Student Borrower)</strong> and <strong>Noticee No. 2 (Indian Parent Co-Obligor / Mortgagor)</strong>, invoking Section 43 joint liability, CIBIL/CIC adverse credit-score reporting (30-day RBI pre-reporting alert), and domestic execution against Indian immovable assets, bank accounts, and pension/salaried receivables (respecting CPC s.60 exemptions). For deeper guarantor invocation mechanics, consult our{" "}
+                  <strong className="font-bold">Critical Co-Obligor Drafting Rule:</strong> Never issue a recall notice addressed solely to the student &ldquo;c/o Parent.&rdquo; Draft the Fact-Verified Legal Notice expressly naming both <strong>Noticee No. 1 (Principal Student Borrower)</strong> and <strong>Noticee No. 2 (Indian Parent Co-Obligor / Mortgagor)</strong>, invoking Section 43 joint liability, CIBIL/CIC adverse credit-score reporting (30-day RBI pre-reporting alert), and domestic execution against Indian immovable assets, bank accounts, and pension/salaried receivables (respecting CPC s.60 exemptions). For deeper guarantor invocation mechanics, consult our{" "}
                   <Link
                     href="/personal-guarantor-invocation-notice-bank-loan-recovery"
                     className="text-[#DC2626] hover:underline font-bold"
@@ -656,7 +656,7 @@ export default function EducationLoanRecoveryPage() {
                 </h3>
                 <ol className="space-y-2.5 list-decimal list-inside text-sm text-slate-700">
                   <li>
-                    <strong>Verified Email Dispatch (Primary Overseas Rail):</strong> Transmit the signed PDF Advocate Recall Notice to the student&apos;s personal email on loan KYC, university alumni email (if on record), and any active correspondence email—preserving raw SMTP headers, Message-ID, and non-bounce server confirmation.
+                    <strong>Verified Email Dispatch (Primary Overseas Rail):</strong> Transmit the signed PDF Fact-Verified Recall Notice to the student&apos;s personal email on loan KYC, university alumni email (if on record), and any active correspondence email—preserving raw SMTP headers, Message-ID, and non-bounce server confirmation.
                   </li>
                   <li>
                     <strong>WhatsApp Business API (WATI) Dispatch:</strong> Deliver the notice PDF to both the student&apos;s last registered Indian WhatsApp (many NRI students retain Indian WhatsApp accounts over Wi-Fi despite swapping SIMs) and any known international mobile number, logging timestamped message IDs, delivery status, and read receipts.
@@ -942,7 +942,7 @@ export default function EducationLoanRecoveryPage() {
                   </div>
                   <div className="mt-4 pt-3 border-t border-slate-800 space-y-1.5 text-xs text-slate-300">
                     <p>
-                      <strong className="text-white">Action Stack:</strong> Tri-Channel Advocate Notice (&#8377;999) &rarr; Pre-Litigation Lok Adalat (&#8377;0 Court Fee) + PSS s.25 e-NACH notice to salaried parent.
+                      <strong className="text-white">Action Stack:</strong> Tri-Channel Fact-Verified Notice (&#8377;999) &rarr; Pre-Litigation Lok Adalat (&#8377;0 Court Fee) + PSS s.25 e-NACH notice to salaried parent.
                     </p>
                     <p className="text-emerald-300 font-semibold">
                       Backstop: Even if OTS fails, valid legal initiation unlocks NCGTC CGFSEL 75% payout (~&#8377;5.4L–&#8377;6.5L eligible base) while Order XXI R.48 attaches parent salary.
@@ -1093,7 +1093,7 @@ export default function EducationLoanRecoveryPage() {
               </div>
 
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed mb-5">
-                Integrate this Overseas Education Loan playbook with our live IND-01 Banking Recovery Hub, interactive statutory calculator, advocate-vetted notice template, and sibling institutional workflows:
+                Integrate this Overseas Education Loan playbook with our live IND-01 Banking Recovery Hub, interactive statutory calculator, ready-to-use notice template, and sibling institutional workflows:
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -1138,7 +1138,7 @@ export default function EducationLoanRecoveryPage() {
                     Bank Loan Recall cum Co-Obligor / Guarantee Invocation Notice &rarr;
                   </h3>
                   <p className="text-xs text-slate-600 mt-1">
-                    Advocate-vetted RBI penal-charge compliant recall notice with Schedule A interest breakup ready for co-applicants.
+                    Fact-verified RBI penal-charge compliant recall notice with Schedule A interest breakup ready for co-applicants.
                   </p>
                 </Link>
 

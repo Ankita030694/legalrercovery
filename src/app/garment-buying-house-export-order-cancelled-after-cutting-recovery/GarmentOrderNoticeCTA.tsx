@@ -32,7 +32,7 @@ export default function GarmentOrderNoticeCTA({
                 Recover Stuck CMT Costs, Cancelled Export Garment Lots & Bar Illegal Air-Freight Debits
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6">
-                Did your buying house or overseas brand delay trim tech-packs and then slap a ₹15–30 Lakh air-freight debit note on your factory? Or cancel a custom cut order mid-line? Issue an advocate-vetted statutory demand notice holding the Indian buying agency and foreign principal jointly liable under Section 230 Indian Contract Act, invoking Section 53/54 to excuse delivery dates, and serving a 15-day De-branding Salvage Sale notice.
+                Did your buying house or overseas brand delay trim tech-packs and then slap a ₹15–30 Lakh air-freight debit note on your factory? Or cancel a custom cut order mid-line? Issue a fact-verified statutory demand notice holding the Indian buying agency and foreign principal jointly liable under Section 230 Indian Contract Act, invoking Section 53/54 to excuse delivery dates, and serving a 15-day De-branding Salvage Sale notice.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button
@@ -67,7 +67,7 @@ export default function GarmentOrderNoticeCTA({
               Have Multiple Cancelled POs or Coerced Air-Freight Deductions?
             </h3>
             <p className="text-slate-600 text-sm leading-relaxed mb-6">
-              Upload your buyer communications, POs, tech-pack approval logs, and cutting bills. Our senior commercial recovery advocates serve joint statutory demand notices on the liaison buying office in India and the overseas brand, enforce Section 43B(h) disallowances, and initiate arbitration or MSEFC proceedings.
+              Enter your buyer communications, PO, tech-pack approval, and cutting bill details. Our team verifies the facts and serves joint statutory demand notices on the liaison buying office in India and the overseas brand, enforce Section 43B(h) disallowances, and initiate arbitration or MSEFC proceedings.
             </p>
             <div className="flex flex-col sm:flex-row items-center gap-3">
               <button

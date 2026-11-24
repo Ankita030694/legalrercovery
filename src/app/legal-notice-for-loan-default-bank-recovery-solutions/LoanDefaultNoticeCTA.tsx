@@ -11,7 +11,7 @@ interface LoanDefaultNoticeCTAProps {
 }
 
 export default function LoanDefaultNoticeCTA({
-  buttonText = "Deploy Advocate Loan Recall Notice",
+  buttonText = "Deploy Fact-Verified Loan Recall Notice",
   className = "",
   variant = "primary",
 }: LoanDefaultNoticeCTAProps) {
@@ -28,10 +28,10 @@ export default function LoanDefaultNoticeCTA({
                 Institutional Recovery Rail • SARFAESI &amp; Section 106 TPA Compliant
               </span>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-bold tracking-tight text-white mb-3">
-                Deploy Standardized, Advocate-Vetted Loan Recall Notices for Defaulted Accounts
+                Deploy Standardized, Fact-Verified Loan Recall Notices for Defaulted Accounts
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6">
-                Equip your bank or NBFC legal operations with high-impact, advocate-signed loan default demand notices. Dispatched concurrently via India Post Registered Speed Post with tracking, verified business WhatsApp, and registered email with electronic audit certificates admissible under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023.
+                Equip your bank or NBFC legal operations with high-impact, fact-verified loan default demand notices. Dispatched concurrently via India Post Registered Speed Post with tracking, verified business WhatsApp, and registered email with electronic audit certificates admissible under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button

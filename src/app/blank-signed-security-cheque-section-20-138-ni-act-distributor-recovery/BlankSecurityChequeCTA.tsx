@@ -25,10 +25,10 @@ export default function BlankSecurityChequeCTA({
               Track 1 &bull; Single Defaulting Dealer Recovery Test
             </span>
             <p className="text-lg sm:text-xl font-extrabold text-white mb-2">
-              Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Advocate Drafted &middot; Email + WhatsApp + Speed Post RPAD)
+              Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Fact-Verified &middot; Email + WhatsApp + Speed Post RPAD)
             </p>
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-              Serve a defect-free, advocate-settled 7-Day Pre-Deposit Intimation Notice or statutory Section 138 Demand Notice that eliminates the "misuse of security cheque" defense under <em>Bir Singh v. Mukesh Kumar</em> and <em>Sripati Singh</em>. Complete with certified ledger statement, GST e-way bill reconciliations, Section 20 NI Act statutory authority recitals, and BSA 2023 Section 63 delivery certificates.
+              Serve a defect-free, fact-verified 7-Day Pre-Deposit Intimation Notice or statutory Section 138 Demand Notice that eliminates the "misuse of security cheque" defense under <em>Bir Singh v. Mukesh Kumar</em> and <em>Sripati Singh</em>. Complete with certified ledger statement, GST e-way bill reconciliations, Section 20 NI Act statutory authority recitals, and BSA 2023 Section 63 delivery certificates.
             </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-3">

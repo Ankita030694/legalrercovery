@@ -123,7 +123,7 @@ const FAQS = [
   },
   {
     q: "How can Rajkot, Jalgaon, Ludhiana, or Coimbatore manufacturers recover from 100+ rural dealers at once?",
-    a: "Instead of litigating 100 separate taluka claims ad hoc, export your overdue dealer ledger into a structured CSV segmented by aging bucket, PDC status, and Udyam eligibility. Running a synchronized bilingual (English + Hindi/regional) Batch Legal Notice Drive via Advocate Email, WhatsApp, and Speed Post RPAD prior to Kharif or Rabi booking cycles routinely triggers 40%–65% voluntary settlements within 15–21 days.",
+    a: "Instead of litigating 100 separate taluka claims ad hoc, export your overdue dealer ledger into a structured CSV segmented by aging bucket, PDC status, and Udyam eligibility. Running a synchronized bilingual (English + Hindi/regional) Batch Legal Notice Drive via Email, WhatsApp, and Speed Post RPAD prior to Kharif or Rabi booking cycles routinely triggers 40%–65% voluntary settlements within 15–21 days.",
   },
   {
     q: "What electronic records must we preserve under BSA 2023 Section 63 for subsidy writs and dealer suits?",
@@ -594,7 +594,7 @@ export default function DripIrrigationAgriMachineryRecoveryPage() {
                     stage: "STAGE 3 · STATUTORY NOTICE",
                     title: "15-Day NI s.138 / MSMED Notice or 60-Day CPC s.80 Notice",
                     detail:
-                      "Serve synchronized Advocate notices via Email, WhatsApp, and Speed Post RPAD—triggering 40%–65% pre-litigation settlements.",
+                      "Serve synchronized Fact-verified notices via Email, WhatsApp, and Speed Post RPAD—triggering 40%–65% pre-litigation settlements.",
                   },
                   {
                     stage: "STAGE 4 · ESCALATION",

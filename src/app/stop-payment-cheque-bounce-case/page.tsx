@@ -894,7 +894,7 @@ export default function StopPaymentChequeBouncePage() {
                       <strong>The Default &amp; Stop Payment:</strong> Apex presented the cheque on 22 September 2026. On 24 September, HDFC Bank returned the cheque unpaid with the CTS return memo: <em>&quot;Payment stopped by drawer&quot;</em>. Zenith sent a brief WhatsApp message asserting: <em>&quot;We stopped payment because 15 switches had minor packaging dents. Do not present again.&quot;</em> Zenith refused to release payment or return the supplied inventory.
                     </p>
                     <p>
-                      <strong>The Statutory Action:</strong> On Day 8 following receipt of the dishonour memo, Apex engaged LegalRecovery.in. An advocate drafted and dispatched a Section 138 statutory demand notice via Registered Speed Post and Section 63 BSA electronic mail. The notice cited <em>Goaplast</em> and <em>Modi Cements</em>, emphasizing that delivery challans were signed without demurral and giving Zenith strictly 15 days to pay ₹6,50,000.
+                      <strong>The Statutory Action:</strong> On Day 8 following receipt of the dishonour memo, Apex engaged LegalRecovery.in. The team verified the facts and dispatched a Section 138 statutory demand notice via Registered Speed Post and Section 63 BSA electronic mail. The notice cited <em>Goaplast</em> and <em>Modi Cements</em>, emphasizing that delivery challans were signed without demurral and giving Zenith strictly 15 days to pay ₹6,50,000.
                     </p>
                     <div className="p-3.5 sm:p-4 bg-emerald-950/70 border border-emerald-700/60 rounded-xl text-emerald-200">
                       <strong className="block text-emerald-400 font-bold mb-1">The Resolution &amp; Recovery:</strong>
@@ -972,7 +972,7 @@ export default function StopPaymentChequeBouncePage() {
                           Mandatory pre-condition under Section 138(b). Gives 15 days to pay; establishes cause of action.
                         </td>
                         <td className="py-3 px-3.5 sm:py-3.5 sm:px-4 text-xs">
-                          Drafted and dispatched by enrolled advocate via Speed Post and Email.
+                          Prepared on verified facts via Speed Post and Email.
                         </td>
                       </tr>
                       <tr className="hover:bg-slate-50/80">

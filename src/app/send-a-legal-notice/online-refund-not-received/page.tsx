@@ -3,7 +3,7 @@ import OnlineRefundNotReceivedClient from './OnlineRefundNotReceivedClient';
 
 const slug = 'send-a-legal-notice/online-refund-not-received';
 const title = 'Legal Notice for Online Refund Not Received | Draft & Send';
-const description = 'Online refund not received? Learn how to send an advocate-vetted legal notice to recover money from e-commerce sellers under consumer law.';
+const description = 'Online refund not received? Learn how to send a fact-verified legal notice to recover money from e-commerce sellers under consumer law.';
 const url = `https://www.legalrecovery.in/${slug}`;
 
 export const metadata: Metadata = {

@@ -29,7 +29,7 @@ export default function HospitalTpaCalculatorCTA({
                 Test 1 Live Overdue TPA Claim Now (&rupee;{basePrice})
               </h3>
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-                Lock statutory penal interest (Bank Rate + 2%) on an aged or short-settled cashless claim without bureaucratic delay. Advocate-drafted formal legal demand notice served directly on the Third Party Administrator (TPA) and the Health Insurer&apos;s Chief Compliance Officer (CCO) with an IRDAI Master Circular audit ledger.
+                Lock statutory penal interest (Bank Rate + 2%) on an aged or short-settled cashless claim without bureaucratic delay. Fact-verified formal legal demand notice served directly on the Third Party Administrator (TPA) and the Health Insurer&apos;s Chief Compliance Officer (CCO) with an IRDAI Master Circular audit ledger.
               </p>
               <ul className="space-y-1.5 text-xs text-slate-200 mb-6">
                 <li>&check; Itemized disallowance rebuttals (MOU package tariffs vs unauthorized cuts)</li>

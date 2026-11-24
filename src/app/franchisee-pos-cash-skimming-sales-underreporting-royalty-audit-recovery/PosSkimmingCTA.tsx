@@ -23,7 +23,7 @@ export default function PosSkimmingCTA({ className = "" }: PosSkimmingCTAProps) 
               Track 1 &bull; Single Rogue Outlet Test
             </span>
             <h3 className="text-lg sm:text-xl font-bold text-white mb-2">
-              Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Advocate Drafted)
+              Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Fact-Verified)
             </h3>
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
               Serve a forensic Input-Output Variance &amp; Contract Act s.74 Penal Royalty Demand Notice (plus PSS Act s.25 e-NACH notice if bounced) via Email + WhatsApp + Speed Post RPAD.

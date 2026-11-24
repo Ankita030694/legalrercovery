@@ -37,7 +37,7 @@ const PROBLEMS: ProblemTab[] = [
           "Extract the overseas entity's registered office, filing number (e.g. Delaware Division of Corporations, UK Companies House, ACRA Singapore), and active directors or managing executives.",
       },
       {
-        step: "Serve Cross-Border Advocate Statutory Notice",
+        step: "Serve Cross-Border Fact-Verified Statutory Notice",
         description:
           "Serve a formal statutory legal demand notice via International Registered Airmail/Speed Post and electronically under Section 63 BSA, citing Section 73 Indian Contract Act with 18% annual commercial interest.",
       },
@@ -61,7 +61,7 @@ const PROBLEMS: ProblemTab[] = [
       {
         step: "Issue Dual Demand to Indian EOR & Foreign Principal",
         description:
-          "Serve an advocate demand notice holding both the Indian EOR Pvt Ltd and the overseas client jointly and severally liable for wage recovery and statutory non-compliance.",
+          "Serve a fact-verified demand notice holding both the Indian EOR Pvt Ltd and the overseas client jointly and severally liable for wage recovery and statutory non-compliance.",
       },
       {
         step: "Escalate to Labour Authority & EPFO Enforcement",
@@ -88,7 +88,7 @@ const PROBLEMS: ProblemTab[] = [
       {
         step: "Serve Statutory Demand on Indian & Foreign Directors",
         description:
-          "Serve a joint advocate demand notice on the resident directors and the foreign board, establishing statutory non-compliance and personal exposure under labour statutes.",
+          "Serve a joint fact-verified demand notice on the resident directors and the foreign board, establishing statutory non-compliance and personal exposure under labour statutes.",
       },
       {
         step: "Institute Summary Suit (Order 37 CPC) or Labour Claim",
@@ -118,9 +118,9 @@ const PROBLEMS: ProblemTab[] = [
           "Identify lead venture capital funds and institutional board members from SEC Form D filings, Crunchbase, or company press releases.",
       },
       {
-        step: "Serve Advocate Notice with Investor Escalation Copy",
+        step: "Serve Fact-Verified Notice with Investor Escalation Copy",
         description:
-          "Issue a formal advocate notice demanding salary liquidation, with formal courtesy copies served to institutional board representatives, creating fiduciary pressure for immediate settlement.",
+          "Issue a formal fact-verified notice demanding salary liquidation, with formal courtesy copies served to institutional board representatives, creating fiduciary pressure for immediate settlement.",
       },
     ],
     statutoryRule: "Section 73 Indian Contract Act 1872 & Cross-Border Creditor Rights",

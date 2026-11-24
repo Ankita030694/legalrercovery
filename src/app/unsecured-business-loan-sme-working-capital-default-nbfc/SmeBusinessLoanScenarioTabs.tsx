@@ -35,7 +35,7 @@ const SME_SCENARIOS: SmeScenario[] = [
           "Pull NPCI e-NACH / EDI dishonour logs alongside live GSTN GSTR-1/3B filing status or physical store UPI QR evidence showing active daily turnover routed away from the designated escrow.",
       },
       {
-        step: "Day 7: Dual Advocate Notice (PSS s.25 + Escrow Covenant Recall)",
+        step: "Day 7: Dual Legal Notice (PSS s.25 + Escrow Covenant Recall)",
         detail:
           "Serve a 15-day statutory demand under Section 25 PSS Act on the borrower and all directors/partners, simultaneously putting the payment aggregator on formal notice of the prior escrow assignment.",
       },
@@ -117,9 +117,9 @@ const SME_SCENARIOS: SmeScenario[] = [
       "BSA 2023 s.63 electronic service certification; Section 25 PSS Act 15-day statutory notice; Section 29B Fast-Track Institutional Arbitration; Commercial Courts Act s.12A pre-institution mediation where non-urgent.",
     executionSteps: [
       {
-        step: "Wave-1: Batch CSV Ingestion & Tri-Channel Advocate Dispatch",
+        step: "Wave-1: Batch CSV Ingestion & Tri-Channel Dispatch",
         detail:
-          "Upload defaulted SME loan master data (sanction date, disbursedAmount, e-NACH bounce date, guarantor details) to dispatch advocate-vetted Section 25 + Loan Recall notices via Email, WhatsApp, and Speed Post RPAD.",
+          "Upload defaulted SME loan master data (sanction date, disbursedAmount, e-NACH bounce date, guarantor details) to dispatch fact-verified Section 25 + Loan Recall notices via Email, WhatsApp, and Speed Post RPAD.",
       },
       {
         step: "Wave-2: Triage Active GSTIN & High-Propensity Accounts",

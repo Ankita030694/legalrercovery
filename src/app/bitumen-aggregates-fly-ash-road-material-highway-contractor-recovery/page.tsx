@@ -226,7 +226,7 @@ const HOWTO_SCHEMA = {
       "@type": "HowToStep",
       position: 3,
       name: "Serve Urgent Statutory Demand & Garnishee Intimation",
-      text: "Dispatch an advocate notice to the EPC contractor with a copy to the NHAI PIU, PWD Division, or Concessionaire Escrow Bank putting them on notice of unpaid material dues.",
+      text: "Dispatch a fact-verified notice to the EPC contractor with a copy to the NHAI PIU, PWD Division, or Concessionaire Escrow Bank putting them on notice of unpaid material dues.",
     },
     {
       "@type": "HowToStep",

@@ -537,7 +537,7 @@ export default function ProfessionalFeeRecoveryNoticePage() {
                         Obsolete Generic Online Drafts
                       </th>
                       <th className="p-3.5 sm:p-4 font-bold text-emerald-300 w-3/8">
-                        Advocate-Vetted Professional Pack
+                        Fact-Verified Professional Pack
                       </th>
                     </tr>
                   </thead>

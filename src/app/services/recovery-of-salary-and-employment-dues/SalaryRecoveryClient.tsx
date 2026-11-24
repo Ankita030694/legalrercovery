@@ -120,7 +120,7 @@ export default function SalaryRecoveryClient() {
     {
       id: "faq-6",
       question: "How long does it take for a legal notice to show results for unpaid salaries?",
-      answer: "Most employers respond within 15 days of receiving an advocate notice. Companies want to avoid public labour disputes and court litigation. Responsible firms usually clear undisputed dues or propose a payment schedule quickly."
+      answer: "Most employers respond within 15 days of receiving a legal notice. Companies want to avoid public labour disputes and court litigation. Responsible firms usually clear undisputed dues or propose a payment schedule quickly."
     },
     {
       id: "faq-7",
@@ -188,7 +188,7 @@ export default function SalaryRecoveryClient() {
           "@id": "https://www.legalrecovery.in/services/recovery-of-salary-and-employment-dues"
         },
         "headline": "Professional Salary and Employment Dues Recovery Service in India",
-        "description": "Reclaim unpaid wages, delayed salaries, Full & Final (F&F) settlements, gratuity, and wrongful termination dues legally in India. 3 progressive notices, 1 police complaint draft, attorney-verified.",
+        "description": "Reclaim unpaid wages, delayed salaries, Full & Final (F&F) settlements, gratuity, and wrongful termination dues legally in India. 3 progressive notices, 1 police complaint draft, fact-verified.",
         "image": "https://www.legalrecovery.in/blog_money_recovery.png",
         "datePublished": "2026-05-27T00:00:00Z",
         "dateModified": "2026-05-27T00:00:00Z",
@@ -311,7 +311,7 @@ export default function SalaryRecoveryClient() {
               <span className="text-[#DC2626]">Dues Legally.</span>
             </h1>
             <p className="text-[15px] md:text-[17px] text-[#4B5563] font-medium leading-[1.6] mb-6 max-w-xl select-text">
-              Reclaim unpaid F&F dues, delayed salaries, incentives, and notice pay in India. We launch 3 advocate notices and provide 1 formal police complaint draft week-by-week.
+              Reclaim unpaid F&F dues, delayed salaries, incentives, and notice pay in India. We launch 3 legal notices and provide 1 formal police complaint draft week-by-week.
             </p>
 
             {/* High-Trust Tagline Banner */}
@@ -447,7 +447,7 @@ export default function SalaryRecoveryClient() {
                   Employment is a legally binding contract. When an employer delays salary or withholds your Full and Final settlement, they breach the contract. This also violates statutory Indian labour laws.
                 </p>
                 <p>
-                  Our <strong className="font-extrabold text-[#111827]">Salary and Employment Dues Recovery Service</strong> protects your workplace rights. Many companies rely on employees walking away due to the cost of regular litigation. We solve this through a swift, structured, attorney-backed recovery process.
+                  Our <strong className="font-extrabold text-[#111827]">Salary and Employment Dues Recovery Service</strong> protects your workplace rights. Many companies rely on employees walking away due to the cost of regular litigation. We solve this through a swift, structured, fact-verified recovery process.
                 </p>
                 <blockquote>
                   <strong>Our Service Promise:</strong> We provide complete recovery support for a flat fee. We take <strong>zero commission</strong> on your recovered money. We draft, verify, and deliver firm legal notices directly to company leadership.
@@ -459,7 +459,7 @@ export default function SalaryRecoveryClient() {
                 {/* 2. What We Help You Recover */}
                 <h2 id="coverage-details">2. Salary & Employment Dues We Help You Recover</h2>
                 <p>
-                  Salary claims often include multiple pay components. Our legal panel calculates every pending amount to build an airtight claim.
+                  Salary claims often include multiple pay components. Our team calculates every pending amount to build an airtight claim.
                 </p>
                 
                 <h3 id="unpaid-salaries">A. Unpaid Salaries & Cumulative Delayed Wages</h3>
@@ -496,7 +496,7 @@ export default function SalaryRecoveryClient() {
                   <div className="bg-[#F9FAFB] p-5 rounded-2xl border border-[#E5E7EB]">
                     <div className="flex items-center gap-3 mb-3">
                       <div className="w-8 h-8 rounded-full bg-[#DC2626] text-white flex items-center justify-center font-black text-xs">1</div>
-                      <h4 className="font-extrabold text-[#111827] text-sm">Stage 1: Advocate Demand Notice</h4>
+                      <h4 className="font-extrabold text-[#111827] text-sm">Stage 1: Demand Notice</h4>
                     </div>
                     <p className="text-xs text-[#4B5563] leading-relaxed">
                       We issue a formal legal notice on an advocate letterhead. We serve it via email and WhatsApp, with optional speed post, with a 15-day deadline.
@@ -540,7 +540,7 @@ export default function SalaryRecoveryClient() {
                 {/* 4. The Indian Statutory Shield */}
                 <h2 id="legal-framework">4. The Indian Statutory Shield: Know Your Rights</h2>
                 <p>
-                  Indian law strongly protects worker rights. Our advocates use these statutes to compel defaulting employers to pay:
+                  Indian law strongly protects worker rights. Our team uses these statutes to compel defaulting employers to pay:
                 </p>
                 <ul>
                   <li><strong>The Payment of Wages Act, 1936:</strong> Requires timely salary release under Section 7. Employees can demand unpaid wages with statutory damages under Section 15.</li>
@@ -556,7 +556,7 @@ export default function SalaryRecoveryClient() {
                   Many people use free legal notice formats found online. These generic templates rarely deliver results:
                 </p>
                 <ul>
-                  <li><strong>No Advocate Verification:</strong> Free formats lack a verified advocate signature and official letterhead. Corporate legal teams easily ignore them.</li>
+                  <li><strong>No Fact Verification:</strong> Free formats lack a fact verification and official letterhead. Corporate legal teams easily ignore them.</li>
                   <li><strong>Wrong Legal References:</strong> Generic templates miss state-specific Shops and Establishments Acts and workman rules under Section 2(s).</li>
                   <li><strong>No Systematic Follow-up:</strong> One lone notice is easy to overlook. Without structured escalation, employers know individuals often give up.</li>
                 </ul>
@@ -570,7 +570,7 @@ export default function SalaryRecoveryClient() {
                   Many lawyers charge hefty consultation fees and take percentages of your recovered money. We do not do that.
                 </p>
                 <p>
-                  We offer a complete, attorney-verified salary recovery package for a flat fee of <strong className="font-extrabold text-[#111827]">₹999</strong>. You pay no commissions and face zero hidden charges.
+                  We offer a complete, fact-verified salary recovery package for a flat fee of <strong className="font-extrabold text-[#111827]">₹999</strong>. You pay no commissions and face zero hidden charges.
                 </p>
 
                 {/* Pixel-perfect reproduction of the home page unified pricing container */}
@@ -625,7 +625,7 @@ export default function SalaryRecoveryClient() {
                               <Check className="w-4 h-4 sm:w-5 sm:h-5 text-[#10B981] stroke-[3.5] shrink-0 mt-0.5" />
                               <div className="flex flex-col">
                                 <span className="text-[11.5px] sm:text-[13.5px] font-bold text-[#111827] leading-snug">Attorney Validation</span>
-                                <span className="text-[9.5px] sm:text-[11.5px] text-[#6B7280] font-medium leading-tight">Verified by top legal experts</span>
+                                <span className="text-[9.5px] sm:text-[11.5px] text-[#6B7280] font-medium leading-tight">Facts verified by our team</span>
                               </div>
                             </div>
                             <div className="flex items-start gap-3">
@@ -661,7 +661,7 @@ export default function SalaryRecoveryClient() {
                 {/* 7. Evidentiary Checklist */}
                 <h2 id="documentation-needed">7. The Evidentiary Checklist for Salary Recovery</h2>
                 <p>
-                  To start your recovery, gather common workplace records. Our advocates will use these documents to build your claim:
+                  To start your recovery, gather common workplace records. Our team will use these documents to build your claim:
                 </p>
                 <ul>
                   <li><strong>Appointment Letter or Contract:</strong> Shows your role, agreed monthly pay, notice period terms, and work location.</li>
@@ -836,7 +836,7 @@ export default function SalaryRecoveryClient() {
               <div className="absolute top-0 right-0 w-24 h-24 bg-red-600/10 rounded-full blur-xl pointer-events-none" />
               <h3 className="text-base font-extrabold mb-3 tracking-tight">Need Urgent Salary Recovery?</h3>
               <p className="text-gray-400 mb-5 text-[11px] leading-relaxed">
-                Get an advocate-drafted 3-stage notice pipeline and a customized police complaint draft for a flat fee of ₹999.
+                Get a fact-verified 3-stage notice pipeline and a customized police complaint draft for a flat fee of ₹999.
               </p>
               <Link 
                 href="/contact" 

@@ -176,7 +176,7 @@ export default function EvServiceDelayTableOfContents({
 
         <div className="mt-6 pt-4 border-t border-slate-100">
           <p className="text-[11px] text-slate-500 font-medium leading-relaxed">
-            Statutory notice drafted by verified advocates under Section 2(10), 2(11) &amp; Chapter VI of CPA 2019.
+            Statutory notice prepared on verified facts under Section 2(10), 2(11) &amp; Chapter VI of CPA 2019.
           </p>
         </div>
       </aside>

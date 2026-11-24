@@ -163,7 +163,7 @@ const FAQS = [
   {
     question: "IndiGo flight cancel hone par refund na mile ya credit shell mein fas jaye toh legal notice kaise bheje?",
     answer:
-      "Agar IndiGo cancellation ke baad aapka refund 7 din mein bank account mein na bheje ya zabardasti credit shell pakda de, toh aap ek formal statutory legal notice bhej sakte hain. LegalRecovery.in par verified advocate DGCA CAR aur Supreme Court rules ke tehat InterGlobe Aviation Limited ke registered office (Janpath, New Delhi) par Speed Post aur email se notice dispatch karte hain, jismein 15 din ka strict payment demand diya jata hai.",
+      "Agar IndiGo cancellation ke baad aapka refund 7 din mein bank account mein na bheje ya zabardasti credit shell pakda de, toh aap ek formal statutory legal notice bhej sakte hain. LegalRecovery.in par hamari team aapke facts verify karke DGCA CAR aur Supreme Court rules ke tehat InterGlobe Aviation Limited ke registered office (Janpath, New Delhi) par email, WhatsApp (aur optional Speed Post) se notice dispatch karti hai, jismein 15 din ka strict payment demand diya jata hai.",
   },
 ];
 
@@ -679,7 +679,7 @@ export default function IndigoLegalNoticePage() {
                     </span>
                     <div className="space-y-1 sm:space-y-1.5">
                       <h3 className="text-sm sm:text-base md:text-lg font-bold text-slate-900">
-                        Serve a Formal Statutory Advocate Legal Demand Notice
+                        Serve a Formal Statutory Fact-Verified Legal Demand Notice
                       </h3>
                       <p className="text-xs sm:text-sm leading-relaxed">
                         When 7 working days pass without bank receipt and administrative escalation fails, instruct an advocate to serve a formal legal notice to InterGlobe Aviation Limited at its registered corporate office (Janpath, New Delhi) and corporate headquarters (Gurugram). The notice must demand the principal ticket refund, 18% penal interest, and compensation for deficiency in service, giving a strict 15-day compliance window.
@@ -836,11 +836,11 @@ export default function IndigoLegalNoticePage() {
                       <strong>The Deadlock:</strong> Vikramaditya called customer care requesting a reversal to his HDFC card, but the representative insisted: <em>&quot;Sir, our policy allows credit shells only for this fare class.&quot;</em> After 2 weeks of ignored emails and an unacknowledged AirSewa docket, Vikramaditya engaged LegalRecovery.in.
                     </p>
                     <p>
-                      <strong>The Statutory Action:</strong> A verified advocate drafted and served a formal statutory demand notice to InterGlobe Aviation Limited&apos;s Registered Office at Thapar House, Janpath, New Delhi, citing DGCA CAR Section 3 Series M Part II (Clause 3.3.1) and Supreme Court precedent in <em>Pravasi Legal Cell</em>. The notice demanded immediate electronic reversal of ₹34,800 plus statutory interest within 15 days.
+                      <strong>The Statutory Action:</strong> The team verified the facts and served a formal statutory demand notice to InterGlobe Aviation Limited&apos;s Registered Office at Thapar House, Janpath, New Delhi, citing DGCA CAR Section 3 Series M Part II (Clause 3.3.1) and Supreme Court precedent in <em>Pravasi Legal Cell</em>. The notice demanded immediate electronic reversal of ₹34,800 plus statutory interest within 15 days.
                     </p>
                     <div className="p-3.5 sm:p-4 bg-emerald-950/70 border border-emerald-700/60 rounded-xl text-emerald-200">
                       <strong className="block text-emerald-400 font-bold mb-1">The Outcome:</strong>
-                      On Day 9 after service of the advocate legal notice, IndiGo&apos;s corporate legal grievance cell sent an official acknowledgment with an Acquirer Reference Number (ARN). The full amount of ₹34,800 was credited directly to Vikramaditya&apos;s HDFC credit card statement without filing in court.
+                      On Day 9 after service of the fact-verified legal notice, IndiGo&apos;s corporate legal grievance cell sent an official acknowledgment with an Acquirer Reference Number (ARN). The full amount of ₹34,800 was credited directly to Vikramaditya&apos;s HDFC credit card statement without filing in court.
                     </div>
                   </div>
                 </div>

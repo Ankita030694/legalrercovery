@@ -27,7 +27,7 @@ export default function DgRentalRecoveryCTA({ className = "" }: DgRentalRecovery
                 Test 1 Live Overdue DG / Chiller Case Now
               </h3>
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-                Advocate-drafted demand notice citing signed operator logbooks, Contract Act ss.151&ndash;152 bailment fuel-damage liability, and MSMED s.15 (3x RBI interest) delivered via Email, WhatsApp &amp; Speed Post RPAD.
+                Fact-verified demand notice citing signed operator logbooks, Contract Act ss.151&ndash;152 bailment fuel-damage liability, and MSMED s.15 (3x RBI interest) delivered via Email, WhatsApp &amp; Speed Post RPAD.
               </p>
             </div>
 
@@ -48,7 +48,7 @@ export default function DgRentalRecoveryCTA({ className = "" }: DgRentalRecovery
                 </Link>
               </div>
               <p className="text-[11px] text-slate-400">
-                &check; Advocate Drafted &bull; &check; Email + WhatsApp + Speed Post RPAD &bull; &check; Logbook &amp; Bailment Clauses
+                &check; Fact-Verified &bull; &check; Email + WhatsApp + Speed Post RPAD &bull; &check; Logbook &amp; Bailment Clauses
               </p>
             </div>
           </div>

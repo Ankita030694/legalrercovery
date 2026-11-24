@@ -160,7 +160,7 @@ const FAQS = [
   {
     question: "Notice period recovery company ne gross pay par kar li aur relieving letter rok diya toh legal notice kaise bheje?",
     answer:
-      "Agar aapki company ne generic notice clause ke bawajood Gross CTC par notice deduction kar li hai ya aapka relieving letter rokh liya hai, toh aap Section 17(2) Code on Wages 2019 aur Section 74 Indian Contract Act ke tehat advocate legal notice bhej sakte hain. LegalRecovery.in par verified advocates employer ko Speed Post aur email se 15 din ka payment aur exit document release demand bhejte hain, jiske baad Labour Commissioner aur Civil Court escalation hota hai.",
+      "Agar aapki company ne generic notice clause ke bawajood Gross CTC par notice deduction kar li hai ya aapka relieving letter rokh liya hai, toh aap Section 17(2) Code on Wages 2019 aur Section 74 Indian Contract Act ke tehat legal notice bhej sakte hain. LegalRecovery.in par hum employer ko Speed Post aur email se 15 din ka payment aur exit document release demand bhejte hain, jiske baad Labour Commissioner aur Civil Court escalation hota hai.",
   },
 ];
 
@@ -704,7 +704,7 @@ export default function NoticePeriodRecoveryCalculatorPage() {
                       <strong>The Dispute:</strong> HR denied the waiver and issued an FnF settlement sheet computing notice recovery on Gross CTC: <strong>₹2,02,500</strong> ((₹1,35,000 / 30) × 45 days). This wiped out his entire earned salary of ₹67,500 for the 45 days worked, plus his leave encashment of ₹38,000, and demanded an out-of-pocket payment of ₹97,000 before releasing his relieving letter and experience certificate.
                     </p>
                     <p>
-                      <strong>The Statutory Action:</strong> Vikram engaged LegalRecovery.in. An advocate drafted and dispatched a statutory demand notice to the company&apos;s managing director and HR head citing Section 74 of the Indian Contract Act, Section 17(2) of the Code on Wages, 2019, and the Delhi High Court judgment in <em>Sanjay Jain v. Apace Savings</em>. The notice demonstrated that:
+                      <strong>The Statutory Action:</strong> Vikram engaged LegalRecovery.in. The team verified the facts and dispatched a statutory demand notice to the company&apos;s managing director and HR head citing Section 74 of the Indian Contract Act, Section 17(2) of the Code on Wages, 2019, and the Delhi High Court judgment in <em>Sanjay Jain v. Apace Savings</em>. The notice demonstrated that:
                     </p>
                     <ul className="list-disc list-inside space-y-1 pl-2 text-slate-300">
                       <li>The appointment clause did not specify Gross CTC; therefore, the lawful recovery baseline was Basic Pay: (₹45,000 / 30) × 45 days = <strong>₹67,500</strong>.</li>
@@ -713,7 +713,7 @@ export default function NoticePeriodRecoveryCalculatorPage() {
                     </ul>
                     <div className="p-3.5 sm:p-4 bg-emerald-950/70 border border-emerald-700/60 rounded-xl text-emerald-200">
                       <strong className="block text-emerald-400 font-bold mb-1">The Resolution:</strong>
-                      Within 5 business days of receiving the advocate legal notice via Speed Post and corporate email, the company&apos;s legal counsel revised the settlement to the Basic Salary formula (₹67,500). Vikram received his pending leave encashment of ₹38,000, saving <strong>₹67,500</strong> in excess deductions, and his official relieving letter and service certificate were released immediately.
+                      Within 5 business days of receiving the legal notice via Speed Post and corporate email, the company&apos;s legal counsel revised the settlement to the Basic Salary formula (₹67,500). Vikram received his pending leave encashment of ₹38,000, saving <strong>₹67,500</strong> in excess deductions, and his official relieving letter and service certificate were released immediately.
                     </div>
                   </div>
                 </div>
@@ -849,10 +849,10 @@ export default function NoticePeriodRecoveryCalculatorPage() {
                     </span>
                     <div className="space-y-1">
                       <strong className="text-slate-900 font-bold text-sm block">
-                        Serve Statutory Advocate Legal Notice:
+                        Serve Statutory Legal Notice:
                       </strong>
                       <p>
-                        If HR rejects your protest or withholds exit documents past the 2-day statutory timeline under Section 17(2) Code on Wages, have a verified advocate dispatch a formal demand notice to the company&apos;s registered office and board of directors via Registered Speed Post.
+                        If HR rejects your protest or withholds exit documents past the 2-day statutory timeline under Section 17(2) Code on Wages, dispatch a formal demand notice to the company&apos;s registered office and board of directors via Registered Speed Post.
                       </p>
                     </div>
                   </li>
@@ -1065,7 +1065,7 @@ export default function NoticePeriodRecoveryCalculatorPage() {
                     href="/legal-notice-charges"
                     className="px-3 py-1.5 bg-white border border-slate-200 rounded-lg hover:border-red-500 hover:text-red-600 transition-colors"
                   >
-                    Legal Notice Charges &amp; Advocate Fees →
+                    Legal Notice Charges →
                   </Link>
                 </div>
               </div>

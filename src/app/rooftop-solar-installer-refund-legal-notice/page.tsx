@@ -139,7 +139,7 @@ const FAQS = [
   {
     question: "What should I do if a rooftop solar vendor disappeared or stopped answering calls?",
     answer:
-      "Gather your bank statements, payment receipts, written quotes, and chat logs. File a complaint on the PM Surya Ghar portal (pmsuryaghar.gov.in) and call NCH at 1915. Have an advocate send a 15-day statutory legal notice. If they do not respond, file a case on e-Jagriti.",
+      "Gather your bank statements, payment receipts, written quotes, and chat logs. File a complaint on the PM Surya Ghar portal (pmsuryaghar.gov.in) and call NCH at 1915. Send a 15-day statutory legal notice. If they do not respond, file a case on e-Jagriti.",
   },
   {
     question: "Can an installer refuse to refund my advance by citing delays by the electricity DISCOM?",
@@ -450,7 +450,7 @@ export default function RooftopSolarInstallerRefundPage() {
                   </h3>
                   <ul className="text-xs sm:text-sm text-slate-600 space-y-2 list-disc pl-5">
                     <li>
-                      <strong>Route 1 (Zero Hardware Delivered, Advance Taken):</strong> If the vendor took a booking advance or structural deposit and performed zero work within 30 days, proceed immediately under BNS Section 318 (Cheating) and Consumer Protection Act Section 2(11). Issue an Advocate Demand Notice demanding 100% advance reversal within 15 days.
+                      <strong>Route 1 (Zero Hardware Delivered, Advance Taken):</strong> If the vendor took a booking advance or structural deposit and performed zero work within 30 days, proceed immediately under BNS Section 318 (Cheating) and Consumer Protection Act Section 2(11). Issue a Fact-Verified Demand Notice demanding 100% advance reversal within 15 days.
                     </li>
                     <li>
                       <strong>Route 2 (Panels / Rails Dumped on Roof but Unwired):</strong> Under Section 37 of the Sale of Goods Act, 1930, goods delivered in incomplete form are rejected. Serve a formal &quot;Notice of Non-Acceptance and Hazardous Site Condition&quot; demanding completion within 7 days or removal and full refund.
@@ -690,14 +690,14 @@ export default function RooftopSolarInstallerRefundPage() {
                     <div>
                       <div className="flex items-center gap-2 mb-1">
                         <h3 className="text-base font-bold text-slate-900">
-                          Serve Advocate Statutory Legal Demand Notice (The Critical Lever)
+                          Serve Fact-Verified Statutory Legal Demand Notice (The Critical Lever)
                         </h3>
                         <span className="text-[10px] font-bold text-white bg-[#DC2626] px-2 py-0.5 rounded-full uppercase">
                           Highest Recovery Success
                         </span>
                       </div>
                       <p className="text-xs sm:text-sm text-slate-600 leading-relaxed mb-2">
-                        Engage a verified consumer recovery advocate to draft and dispatch an official statutory legal demand notice. The notice is addressed to the company’s registered office and its directors individually, served via Registered Speed Post with postal tracking, and delivered electronically with cryptographic audit trails. The notice demands full refund of the advance with 12% interest and compensation within 15 calendar days, failing which legal proceedings under CPA 2019 and BNS 318 will commence.
+                        Have an official statutory legal demand notice prepared and dispatched through LegalRecovery.in after our team verifies the facts. The notice is addressed to the company’s registered office and its directors individually, served via Registered Speed Post with postal tracking, and delivered electronically with cryptographic audit trails. The notice demands full refund of the advance with 12% interest and compensation within 15 calendar days, failing which legal proceedings under CPA 2019 and BNS 318 will commence.
                       </p>
                       <div className="mt-3">
                         <SolarInstallerNoticeCTA
@@ -1001,7 +1001,7 @@ export default function RooftopSolarInstallerRefundPage() {
                 </div>
 
                 <div className="mt-6 p-4 rounded-xl bg-slate-100 border border-slate-200 text-xs text-slate-600">
-                  <span>Looking to understand advocate legal notice fees and dispatch charges? Consult our transparent{" "}</span>
+                  <span>Looking to understand fact-verified legal notice fees and dispatch charges? Consult our transparent{" "}</span>
                   <Link
                     href="/legal-notice-charges"
                     className="font-bold text-[#DC2626] hover:underline"

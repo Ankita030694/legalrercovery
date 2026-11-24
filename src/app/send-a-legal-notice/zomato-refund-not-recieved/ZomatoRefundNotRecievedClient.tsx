@@ -10,11 +10,11 @@ import { PaymentModal } from "@/components/PaymentModal";
 const faqs = [
   {
     question: "How long should a consumer wait before sending a legal notice to Zomato for an uncredited refund?",
-    answer: "Consumers should wait 3 to 7 business days following an order cancellation, failed transaction, or customer support dispute for automated payment gateway reversal. If Zomato customer support refuses the refund, issues an unhelpful chatbot rejection, or fails to credit the funds within this statutory timeframe, an aggrieved consumer can immediately issue a formal advocate-drafted legal notice. Promptly serving a legal notice establishes an unalterable paper trail and legally documents the service deficiency under the Consumer Protection Act, 2019."
+    answer: "Consumers should wait 3 to 7 business days following an order cancellation, failed transaction, or customer support dispute for automated payment gateway reversal. If Zomato customer support refuses the refund, issues an unhelpful chatbot rejection, or fails to credit the funds within this statutory timeframe, an aggrieved consumer can immediately issue a formal fact-verified legal notice. Promptly serving a legal notice establishes an unalterable paper trail and legally documents the service deficiency under the Consumer Protection Act, 2019."
   },
   {
     question: "Can Zomato legally deduct a 100% cancellation charge if the order is canceled due to delivery delay?",
-    answer: "Zomato cannot legally enforce a 100% cancellation fee when the cancellation arises from unreasonable restaurant preparation delays, delivery partner unavailability, or merchant delivery failures. Rule 4(11) of the Consumer Protection (E-Commerce) Rules, 2020 strictly prohibits digital e-commerce platforms from imposing arbitrary cancellation penalties unless the consumer bears sole fault and the platform demonstrates actual incurred costs. An advocate-drafted legal notice formally challenges these one-sided platform cancellation policies as void unfair trade practices under Section 2(47) of the Consumer Protection Act."
+    answer: "Zomato cannot legally enforce a 100% cancellation fee when the cancellation arises from unreasonable restaurant preparation delays, delivery partner unavailability, or merchant delivery failures. Rule 4(11) of the Consumer Protection (E-Commerce) Rules, 2020 strictly prohibits digital e-commerce platforms from imposing arbitrary cancellation penalties unless the consumer bears sole fault and the platform demonstrates actual incurred costs. A fact-verified legal notice formally challenges these one-sided platform cancellation policies as void unfair trade practices under Section 2(47) of the Consumer Protection Act."
   },
   {
     question: "Who bears legal liability for defective food or missing items: Zomato or the partner restaurant?",
@@ -22,7 +22,7 @@ const faqs = [
   },
   {
     question: "What financial compensation and damages can be claimed in a Zomato refund legal notice?",
-    answer: "A formal legal notice against Zomato can claim the full principal transaction amount alongside statutory interest calculated at 18% per annum from the payment debit date until final settlement. In addition, consumers are legally entitled to demand quantified compensation for mental agony, harassment, lost working hours, and reasonable advocate drafting fees incurred during dispute escalation. These additional statutory claims create strong commercial and legal pressure on Zomato's corporate legal department to resolve the grievance swiftly out of court."
+    answer: "A formal legal notice against Zomato can claim the full principal transaction amount alongside statutory interest calculated at 18% per annum from the payment debit date until final settlement. In addition, consumers are legally entitled to demand quantified compensation for mental agony, harassment, lost working hours, and reasonable notice drafting fees incurred during dispute escalation. These additional statutory claims create strong commercial and legal pressure on Zomato's corporate legal department to resolve the grievance swiftly out of court."
   },
   {
     question: "What legal recourse is available if Zomato fails to comply within the 15-day notice period?",
@@ -150,7 +150,7 @@ const jsonLd = {
     {
       "@type": "Product",
       "name": "Legal Notice for Zomato Refund Not Received",
-      "description": "Professional advocate drafting and statutory notice dispatch service to recover uncredited, blocked, or wrongfully denied refunds from Zomato Limited and Blink Commerce Private Limited.",
+      "description": "Professional notice drafting and statutory notice dispatch service to recover uncredited, blocked, or wrongfully denied refunds from Zomato Limited and Blink Commerce Private Limited.",
       "brand": {
         "@type": "Organization",
         "name": "Legal Recovery"
@@ -181,7 +181,7 @@ const jsonLd = {
             "@type": "Person",
             "name": "Rohan Malhotra"
           },
-          "reviewBody": "Zomato deducted ₹2,940 for an order that was marked delivered but never reached my doorstep. Customer support closed the chat repeatedly. Legal Recovery served an advocate legal notice to Zomato Limited's Gurugram headquarters, and my entire refund plus compensation was transferred to my bank within 5 days. Truly phenomenal legal support!"
+          "reviewBody": "Zomato deducted ₹2,940 for an order that was marked delivered but never reached my doorstep. Customer support closed the chat repeatedly. Legal Recovery served a fact-verified legal notice to Zomato Limited's Gurugram headquarters, and my entire refund plus compensation was transferred to my bank within 5 days. Truly phenomenal legal support!"
         }
       ]
     }
@@ -205,7 +205,7 @@ export default function ZomatoRefundNotRecievedClient() {
     { id: "actionable-grounds", title: "3. Actionable Grounds to Issue a Notice to Zomato Limited" },
     { id: "dispute-resolution-matrix", title: "4. Dispute Resolution Channels: Comparative Analysis" },
     { id: "zomato-corporate-identity", title: "5. Zomato Corporate Identity, Blinkit & Service Addresses" },
-    { id: "step-by-step-notice-process", title: "6. Step-by-Step Advocate Drafting & Notice Dispatch" },
+    { id: "step-by-step-notice-process", title: "6. Step-by-Step Notice Drafting & Notice Dispatch" },
     { id: "essential-notice-clauses", title: "7. Essential Clauses in an Enforceable Zomato Legal Notice" },
     { id: "consumer-court-escalation", title: "8. Escalation to District Consumer Commission (e-Daakhil)" },
     { id: "faqs", title: "9. Frequently Asked Questions" }
@@ -247,7 +247,7 @@ export default function ZomatoRefundNotRecievedClient() {
               Legal Notice for <span className="text-[#DC2626]">Zomato Refund Not Received</span>
             </h1>
             <p className="text-sm md:text-xl mb-8 md:mb-12 max-w-3xl mx-auto text-slate-300 leading-relaxed font-medium">
-              Has Zomato wrongfully withheld your refund, levied an arbitrary 100% cancellation penalty, delivered spoiled food, or failed to deliver an order? Issue a formal advocate-drafted legal notice under the Consumer Protection Act, 2019 to recover your money with statutory interest and damages.
+              Has Zomato wrongfully withheld your refund, levied an arbitrary 100% cancellation penalty, delivered spoiled food, or failed to deliver an order? Issue a formal fact-verified legal notice under the Consumer Protection Act, 2019 to recover your money with statutory interest and damages.
             </p>
             <button
               onClick={() => setIsPaymentModalOpen(true)}
@@ -352,7 +352,7 @@ export default function ZomatoRefundNotRecievedClient() {
                 <div id="quick-answer" className="bg-slate-50 border-l-4 border-[#DC2626] p-6 rounded-r-2xl">
                   <h2 className="text-sm font-extrabold text-slate-900 mb-2 uppercase tracking-wide">Quick Answer</h2>
                   <p className="text-sm text-slate-700 font-medium leading-relaxed">
-                    A legal notice for a Zomato refund not received is a formal statutory demand drafted by an advocate and served upon Zomato Limited requiring immediate reimbursement of wrongfully retained consumer funds. This formal legal document cites actionable violations under Section 2(11) for deficiency in service and Section 2(47) for unfair trade practices under the Consumer Protection Act, 2019, alongside Rule 4(11) of the Consumer Protection (E-Commerce) Rules, 2020. Serving this advocate notice establishes a mandatory 15-day pre-litigation compliance window, compelling Zomato&rsquo;s corporate legal department to credit the principal refund with 18% statutory interest and compensation before formal consumer court proceedings commence.
+                    A legal notice for a Zomato refund not received is a formal statutory demand prepared on verified facts and served upon Zomato Limited requiring immediate reimbursement of wrongfully retained consumer funds. This formal legal document cites actionable violations under Section 2(11) for deficiency in service and Section 2(47) for unfair trade practices under the Consumer Protection Act, 2019, alongside Rule 4(11) of the Consumer Protection (E-Commerce) Rules, 2020. Serving this advocate notice establishes a mandatory 15-day pre-litigation compliance window, compelling Zomato&rsquo;s corporate legal department to credit the principal refund with 18% statutory interest and compensation before formal consumer court proceedings commence.
                   </p>
                 </div>
 
@@ -604,7 +604,7 @@ export default function ZomatoRefundNotRecievedClient() {
                 {/* Section 6 */}
                 <section id="step-by-step-notice-process" className="scroll-mt-32">
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">
-                    6. Step-by-Step Advocate Drafting &amp; Notice Dispatch
+                    6. Step-by-Step Notice Drafting &amp; Notice Dispatch
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
@@ -637,7 +637,7 @@ export default function ZomatoRefundNotRecievedClient() {
                         <div>
                           <h4 className="font-extrabold text-sm sm:text-base text-slate-900 mb-1">Calculate Principal Claim, 18% Statutory Interest &amp; Mental Harassment Damages</h4>
                           <p className="text-xs sm:text-sm text-slate-650 leading-relaxed">
-                            Tabulate the disputed transaction value, compound interest at 18% per annum from the debit date, damages for mental distress and time loss (typically ₹10,000 to ₹25,000), and advocate drafting fees.
+                            Tabulate the disputed transaction value, compound interest at 18% per annum from the debit date, damages for mental distress and time loss (typically ₹10,000 to ₹25,000), and notice drafting fees.
                           </p>
                         </div>
                       </div>
@@ -647,7 +647,7 @@ export default function ZomatoRefundNotRecievedClient() {
                         <div>
                           <h4 className="font-extrabold text-sm sm:text-base text-slate-900 mb-1">Draft the Formal Legal Notice on Advocate Letterhead with Statutory Citations</h4>
                           <p className="text-xs sm:text-sm text-slate-650 leading-relaxed">
-                            An advocate drafts the statutory notice articulating chronological facts, statutory breaches under the Consumer Protection Act, 2019, E-Commerce Rules, 2020, and FSSAI regulations, accompanied by a strict 15-day compliance ultimatum.
+                            We draft the statutory notice articulating chronological facts, statutory breaches under the Consumer Protection Act, 2019, E-Commerce Rules, 2020, and FSSAI regulations, accompanied by a strict 15-day compliance ultimatum.
                           </p>
                         </div>
                       </div>
@@ -680,7 +680,7 @@ export default function ZomatoRefundNotRecievedClient() {
 
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      A poorly structured legal notice will be dismissed by corporate legal counsel as an informal grievance. To carry legal enforceability before consumer courts, an advocate-drafted notice must incorporate the following foundational clauses:
+                      A poorly structured legal notice will be dismissed by corporate legal counsel as an informal grievance. To carry legal enforceability before consumer courts, a fact-verified notice must incorporate the following foundational clauses:
                     </p>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -799,7 +799,7 @@ export default function ZomatoRefundNotRecievedClient() {
                 <div className="absolute top-0 right-0 w-24 h-24 bg-red-600/10 rounded-full blur-xl pointer-events-none" />
                 <h3 className="text-sm font-black mb-3">Recover Your Zomato Refund</h3>
                 <p className="text-gray-400 mb-5 text-[11px] leading-relaxed">
-                  We assign a specialized consumer panel advocate to custom draft your legal notice, dispatch it by email and WhatsApp to Zomato&rsquo;s corporate headquarters (India Post Speed Post optional), and track delivery in real time.
+                  Our team verifies the facts you submit, prepares your legal notice, dispatches it by email and WhatsApp to Zomato&rsquo;s corporate headquarters (India Post Speed Post optional), and track delivery in real time.
                 </p>
                 <button
                   onClick={() => setIsPaymentModalOpen(true)}
@@ -825,7 +825,7 @@ export default function ZomatoRefundNotRecievedClient() {
                     <span className="text-xs font-bold text-slate-800">Rohan Malhotra</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed italic">
-                    &ldquo;Zomato deducted ₹2,940 for an order that was marked delivered but never reached my doorstep. Customer support closed the chat repeatedly. Legal Recovery served an advocate legal notice to Zomato Limited&rsquo;s Gurugram headquarters, and my entire refund plus compensation was transferred to my bank within 5 days. Truly phenomenal legal support!&rdquo;
+                    &ldquo;Zomato deducted ₹2,940 for an order that was marked delivered but never reached my doorstep. Customer support closed the chat repeatedly. Legal Recovery served a fact-verified legal notice to Zomato Limited&rsquo;s Gurugram headquarters, and my entire refund plus compensation was transferred to my bank within 5 days. Truly phenomenal legal support!&rdquo;
                   </p>
                 </div>
               </div>
@@ -859,7 +859,7 @@ export default function ZomatoRefundNotRecievedClient() {
               </Link>
               <Link href="/send-a-legal-notice" className="group block p-6 rounded-2xl bg-white border border-slate-200 hover:border-[#DC2626] hover:shadow-md transition-all">
                 <h3 className="text-sm font-bold text-slate-900 group-hover:text-[#DC2626] mb-2">All Legal Notice Services</h3>
-                <p className="text-xs text-slate-500 line-clamp-2">Browse the full repository of advocate-drafted statutory legal notice solutions for money recovery.</p>
+                <p className="text-xs text-slate-500 line-clamp-2">Browse the full repository of fact-verified statutory legal notice solutions for money recovery.</p>
               </Link>
             </div>
           </div>
@@ -871,7 +871,7 @@ export default function ZomatoRefundNotRecievedClient() {
                 <img src="/lrlogo.svg" alt="Legal Recovery" width={3236} height={601} className="h-8 sm:h-10 w-auto object-contain" />
               </div>
               <p className="text-sm md:text-base text-slate-650 leading-relaxed mb-10 max-w-3xl font-medium">
-                Legal Recovery is India&rsquo;s trusted tech-legal platform empowering consumers and businesses to resolve disputes, recover pending dues, and send legally vetted notices with speed and authority. Our network of seasoned advocates ensures your voice is heard and your rights are protected across all judicial forums.
+                Legal Recovery is India&rsquo;s trusted tech-legal platform empowering consumers and businesses to resolve disputes, recover pending dues, and send fact-verified notices with speed and authority. Our team verifies your facts so your voice is heard and your rights are protected.
               </p>
 
               <div className="border-t border-slate-100 pt-10">

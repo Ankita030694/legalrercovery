@@ -31,7 +31,7 @@ export default function BankPersonalLoanCTA({
                 Appoint Our Law Firm to Enforce Retail Loan Remedies &amp; Accelerate Portfolio Recoveries
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6">
-                Are you a Consumer Lending Director, Retail Asset Operations Head, or NPA Management Team seeking legally robust enforcement? Our pan-India advocate panel drafts, executes, and serves Section 25 PSS Act (e-NACH bounce) notices, Section 138 NI Act statutory demands, Order 37 CPC summary suits, and pre-litigation Lok Adalat referrals. Dispatched via Registered Speed Post and tracked under Section 63 of Bharatiya Sakshya Adhiniyam, 2023.
+                Are you a Consumer Lending Director, Retail Asset Operations Head, or NPA Management Team seeking legally robust enforcement? Our team verifies the facts and prepares and sends Section 25 PSS Act (e-NACH bounce) notices, Section 138 NI Act statutory demands, Order 37 CPC summary suits, and pre-litigation Lok Adalat referrals. Dispatched via Registered Speed Post and tracked under Section 63 of Bharatiya Sakshya Adhiniyam, 2023.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button
@@ -42,7 +42,7 @@ export default function BankPersonalLoanCTA({
                   {buttonText} — ₹{basePrice}
                 </button>
                 <div className="text-xs text-slate-300 flex flex-wrap sm:flex-nowrap items-center gap-2 sm:gap-3">
-                  <span>✓ 24h Advocate Drafting</span>
+                  <span>✓ 24h Notice Drafting</span>
                   <span>•</span>
                   <span>✓ Speed Post + Email Service</span>
                   <span>•</span>

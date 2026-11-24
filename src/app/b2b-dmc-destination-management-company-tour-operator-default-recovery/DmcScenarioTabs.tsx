@@ -33,7 +33,7 @@ const DMC_SCENARIOS: DmcScenario[] = [
       {
         step: "Serve 48-Hour BNS s.318 & s.336/340 Statutory Notice",
         detail:
-          "Dispatch an Advocate notice via WhatsApp, email, and Speed Post RPAD explicitly attaching the forged PDF metadata and warning of an Economic Offences / Cyber Police FIR.",
+          "Dispatch a Fact-verified notice via WhatsApp, email, and Speed Post RPAD explicitly attaching the forged PDF metadata and warning of an Economic Offences / Cyber Police FIR.",
       },
       {
         step: "File Criminal Complaint + Order XXXVII Summary Suit",
@@ -85,7 +85,7 @@ const DMC_SCENARIOS: DmcScenario[] = [
           "Attach end-of-tour feedback sheets signed by the FTO's own tour escort showing zero contemporaneous complaints during the itinerary.",
       },
       {
-        step: "Serve Cross-Border Advocate Notice + AD-Bank Trail",
+        step: "Serve Cross-Border Fact-Verified Notice + AD-Bank Trail",
         detail:
           "Issue a formal demand notice citing the Indian jurisdiction clause, FEMA export-of-services realization obligation, and Section 44A CPC reciprocal decree enforcement.",
       },
@@ -114,7 +114,7 @@ const DMC_SCENARIOS: DmcScenario[] = [
       {
         step: "Invoke Contract Act s.74 & MSMED Act s.15–18",
         detail:
-          "Serve an Advocate demand notice claiming the exact forfeited block amount plus 3x RBI compound interest from the 45-day MSME due date.",
+          "Serve a Fact-verified demand notice claiming the exact forfeited block amount plus 3x RBI compound interest from the 45-day MSME due date.",
       },
       {
         step: "File MSEFC Samadhaan Claim / Commercial Suit",

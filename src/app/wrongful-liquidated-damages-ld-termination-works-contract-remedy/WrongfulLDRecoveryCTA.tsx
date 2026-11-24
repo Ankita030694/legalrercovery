@@ -25,10 +25,10 @@ export default function WrongfulLDRecoveryCTA({
               Track 1 &bull; Single Wrongful LD / Termination Notice
             </span>
             <p className="text-lg sm:text-xl font-extrabold text-white mb-2">
-              Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Advocate Drafted &middot; Email + WhatsApp + Speed Post RPAD)
+              Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Fact-Verified &middot; Email + WhatsApp + Speed Post RPAD)
             </p>
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-              Serve a high-impact, advocate-vetted statutory demand notice citing Supreme Court precedents (<em>Kailash Nath Associates v. DDA</em> and <em>Welspun Specialty Solutions v. ONGC</em>). Rebuts arbitrary 10% LD set-offs, disallows unproved penalty debit notes under Section 74, repudiates illegal risk-and-cost terminations, demands immediate joint inventory measurements, protects bank guarantees from retaliatory encashment, and claims 18% commercial interest.
+              Serve a high-impact, fact-verified statutory demand notice citing Supreme Court precedents (<em>Kailash Nath Associates v. DDA</em> and <em>Welspun Specialty Solutions v. ONGC</em>). Rebuts arbitrary 10% LD set-offs, disallows unproved penalty debit notes under Section 74, repudiates illegal risk-and-cost terminations, demands immediate joint inventory measurements, protects bank guarantees from retaliatory encashment, and claims 18% commercial interest.
             </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-3">

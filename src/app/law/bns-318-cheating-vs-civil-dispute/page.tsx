@@ -164,7 +164,7 @@ const FAQS = [
   {
     question: "Dost paise wapas nahi kar raha — kya police complaint ho sakti hai ya legal notice bhejna hoga?",
     answer:
-      "Agar aapne dost ya rishtedaar ko UPI ya cash se udhaar paisa diya hai aur woh wapas nahi de raha, toh police aamtaur par ise 'Civil Mamla' (Civil Dispute) bata kar FIR darj karne se mana kar deti hai. Criminal cheating case (BNS 318) tabhi banta hai jab dost ne shuru se hi jhooth bol kar paisa thaga ho (jaise nakli documents ya farzi scheme). Sahi kanooni tarika yeh hai ki pehle ek verified advocate ke dwara 15 din ka formal Legal Notice bheja jaye. Agar phir bhi paisa na mile, toh civil court mein Order 37 CPC ke tehat Summary Suit daal kar court se decree aur bank account attach karwaya ja sakta hai.",
+      "Agar aapne dost ya rishtedaar ko UPI ya cash se udhaar paisa diya hai aur woh wapas nahi de raha, toh police aamtaur par ise 'Civil Mamla' (Civil Dispute) bata kar FIR darj karne se mana kar deti hai. Criminal cheating case (BNS 318) tabhi banta hai jab dost ne shuru se hi jhooth bol kar paisa thaga ho (jaise nakli documents ya farzi scheme). Sahi kanooni tarika yeh hai ki pehle ek fact-verified 15 din ka formal Legal Notice bheja jaye. Agar phir bhi paisa na mile, toh civil court mein Order 37 CPC ke tehat Summary Suit daal kar court se decree aur bank account attach karwaya ja sakta hai.",
   },
 ];
 
@@ -903,7 +903,7 @@ export default function BnsCheatingVsCivilPage() {
                         Dispatch a 15-Day Statutory Legal Demand Notice
                       </h3>
                       <p className="text-xs sm:text-sm leading-relaxed">
-                        Have an advocate draft and serve an official statutory legal notice to the borrower. The notice must detail the exact principal advanced, agreed repayment schedule, accrued interest, and a strict 15-day deadline. Crucially, the notice warns the debtor of civil recovery under Order XXXVII CPC alongside Section 318 BNS criminal prosecution if fraudulent inducement occurred. Check transparent rates on our <Link href="/legal-notice-charges" className="text-blue-700 underline font-semibold">legal notice charges</Link> schedule.
+                        Serve an official statutory legal notice to the borrower. The notice must detail the exact principal advanced, agreed repayment schedule, accrued interest, and a strict 15-day deadline. Crucially, the notice warns the debtor of civil recovery under Order XXXVII CPC alongside Section 318 BNS criminal prosecution if fraudulent inducement occurred. Check transparent rates on our <Link href="/legal-notice-charges" className="text-blue-700 underline font-semibold">legal notice charges</Link> schedule.
                       </p>
                     </div>
                   </li>
@@ -1073,11 +1073,11 @@ export default function BnsCheatingVsCivilPage() {
                       <strong>The Deadlock:</strong> After 90 days, Rohan blocked Sunita&apos;s phone number and social media profiles. Sunita visited the hospital and discovered that Rohan&apos;s mother had never been admitted, and the estimate slips shared on WhatsApp were forged. Sunita approached her local police station to file an FIR. The station writer initially refused to accept the complaint, remarking that &quot;money disputes are civil matters for the court&quot;.
                     </p>
                     <p>
-                      <strong>The Statutory Action:</strong> Sunita engaged LegalRecovery.in. An advocate drafted an exhaustive statutory legal demand notice invoking Section 318(4) of the Bharatiya Nyaya Sanhita, 2023, and Section 18 of the Limitation Act, 1963. The notice highlighted the forged hospital estimate slips as conclusive evidence of fraudulent inducement at inception under Section 63 BSA. Simultaneously, a formal complaint was prepared under Section 173(3) BNSS addressed to the Deputy Commissioner of Police (DCP).
+                      <strong>The Statutory Action:</strong> Sunita engaged LegalRecovery.in. The team verified the facts and prepared an exhaustive statutory legal demand notice invoking Section 318(4) of the Bharatiya Nyaya Sanhita, 2023, and Section 18 of the Limitation Act, 1963. The notice highlighted the forged hospital estimate slips as conclusive evidence of fraudulent inducement at inception under Section 63 BSA. Simultaneously, a formal complaint was prepared under Section 173(3) BNSS addressed to the Deputy Commissioner of Police (DCP).
                     </p>
                     <div className="p-3.5 sm:p-4 bg-emerald-950/70 border border-emerald-700/60 rounded-xl text-emerald-200">
                       <strong className="block text-emerald-400 font-bold mb-1">The Outcome:</strong>
-                      Upon delivery of the advocate legal notice via Registered Speed Post and email, Rohan realised that his criminal exposure under BNS 318(4) carried up to 7 years non-bailable imprisonment. Facing imminent DCP inquiry and an Order 37 summary suit, Rohan engaged his counsel and entered into a formal registered settlement agreement, transferring ₹6,50,000 in full settlement within 14 days.
+                      Upon delivery of the fact-verified legal notice via Registered Speed Post and email, Rohan realised that his criminal exposure under BNS 318(4) carried up to 7 years non-bailable imprisonment. Facing imminent DCP inquiry and an Order 37 summary suit, Rohan engaged his counsel and entered into a formal registered settlement agreement, transferring ₹6,50,000 in full settlement within 14 days.
                     </div>
                   </div>
                 </div>

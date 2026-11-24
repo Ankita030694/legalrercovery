@@ -31,7 +31,7 @@ export default function UnsecuredLoansNoticeCTA({
                 Accelerate Recovery of Defaulted Unsecured Portfolios at Institutional Scale
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6">
-                Streamline your bank or NBFC retail loan recovery operations with verified advocate demand notices, Section 25 PSS Act e-mandate bounce proceedings, and digital summary suits. Served with Section 63 BSA electronic audit trails and registered speed post.
+                Streamline your bank or NBFC retail loan recovery operations with verified legal demand notices, Section 25 PSS Act e-mandate bounce proceedings, and digital summary suits. Served with Section 63 BSA electronic audit trails and registered speed post.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button

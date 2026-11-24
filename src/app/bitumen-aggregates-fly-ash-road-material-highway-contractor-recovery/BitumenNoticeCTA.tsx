@@ -49,7 +49,7 @@ export default function BitumenNoticeCTA({
                 Test 1 Live Overdue Road-Material Case (&rupee;{basePrice})
               </h3>
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-                Advocate-drafted urgent demand notice annexing State Mining e-Ravanna passes, Dharamkanta weighbridge slips, GST E-Way Bills, and Order XXXVIII Rule 5 pre-demobilization warning &mdash; dispatched via Email + WhatsApp + Speed Post RPAD.
+                Fact-verified urgent demand notice annexing State Mining e-Ravanna passes, Dharamkanta weighbridge slips, GST E-Way Bills, and Order XXXVIII Rule 5 pre-demobilization warning &mdash; dispatched via Email + WhatsApp + Speed Post RPAD.
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-3">

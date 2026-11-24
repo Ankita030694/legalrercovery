@@ -835,7 +835,7 @@ export default function CorporateItLaptopRentalRecoveryPage() {
               </div>
 
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
-                Test our advocate-drafted notice workflow on a single defaulting startup today, or upload a CSV of 50–500 scattered remote employees for simultaneous Email, WhatsApp, and Speed Post RPAD dispatch.
+                Test our fact-verified notice workflow on a single defaulting startup today, or upload a CSV of 50–500 scattered remote employees for simultaneous Email, WhatsApp, and Speed Post RPAD dispatch.
               </p>
 
               <DaasCTA />

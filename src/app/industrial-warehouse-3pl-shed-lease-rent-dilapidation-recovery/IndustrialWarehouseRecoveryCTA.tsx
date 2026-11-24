@@ -37,7 +37,7 @@ export default function IndustrialWarehouseRecoveryCTA({
               Warehouse Lessee Defaulted or Left Floor &amp; Power Arrears? Recover Now
             </h3>
             <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6 max-w-3xl">
-              Whether you are an industrial park developer in Bhiwandi, Luhari, Bilaspur, Chakan, Oragadam, or Dankuni managing Grade-A box warehouses or MIDC/GIDC/HSIIDC factory sheds, choose between a single advocate-drafted demand notice or enterprise multi-shed portfolio onboarding.
+              Whether you are an industrial park developer in Bhiwandi, Luhari, Bilaspur, Chakan, Oragadam, or Dankuni managing Grade-A box warehouses or MIDC/GIDC/HSIIDC factory sheds, choose between a single fact-verified demand notice or enterprise multi-shed portfolio onboarding.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
@@ -56,7 +56,7 @@ export default function IndustrialWarehouseRecoveryCTA({
                     Test 1 Live Overdue Case Now (₹{basePrice})
                   </p>
                   <p className="text-xs text-slate-300 leading-relaxed mb-4">
-                    Advocate-drafted statutory demand notice under TPA Sections 106 &amp; 108(m), Order XV-A CPC, and Commercial Courts Act Section 2(1)(c)(vii). Simultaneous dispatch via Email, WhatsApp &amp; Speed Post RPAD with digital BSA Section 63 delivery certificates.
+                    Fact-verified statutory demand notice under TPA Sections 106 &amp; 108(m), Order XV-A CPC, and Commercial Courts Act Section 2(1)(c)(vii). Simultaneous dispatch via Email, WhatsApp &amp; Speed Post RPAD with digital BSA Section 63 delivery certificates.
                   </p>
                 </div>
 

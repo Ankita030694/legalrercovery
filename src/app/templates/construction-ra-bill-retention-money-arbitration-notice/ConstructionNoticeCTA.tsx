@@ -27,7 +27,7 @@ export default function ConstructionNoticeCTA({
           <div className="bg-slate-900 text-white rounded-2xl p-5 sm:p-6 border border-slate-800 shadow-xl flex flex-col sm:flex-row items-center justify-between gap-4">
             <div>
               <span className="text-xs uppercase tracking-wider text-red-400 font-bold mb-1 block">
-                Advocate-Vetted Construction Demand &amp; Arbitration Notice
+                Fact-Verified Construction Demand &amp; Arbitration Notice
               </span>
               <p className="text-sm text-slate-200 font-medium">
                 Recover overdue RA bills, uncertified MB values &amp; post-DLP retention money with Section 21 notice protection.
@@ -62,7 +62,7 @@ export default function ConstructionNoticeCTA({
                 Track 1 &bull; Self-Serve Single Case Test
               </div>
               <h3 className="text-xl sm:text-2xl font-black tracking-tight text-white mb-3">
-                {buttonText} (₹{basePrice} &bull; Advocate Drafted)
+                {buttonText} (₹{basePrice} &bull; Fact-Verified)
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm leading-relaxed mb-5">
                 Issue a battle-tested commercial recovery notice for unpaid Running Account (RA) bills, uncertified Measurement Book (MB) values, or withheld post-DLP retention money. Dispatched via Registered Speed Post AD, formal legal email, and WATI WhatsApp with a BSA Section 63 digital delivery certificate.

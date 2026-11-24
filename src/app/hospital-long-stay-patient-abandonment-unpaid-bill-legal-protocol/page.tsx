@@ -264,7 +264,7 @@ const HOWTO_SCHEMA = {
       "@type": "HowToStep",
       position: 4,
       name: "File Order XXXVII CPC Summary Suit Against Admission Guarantor",
-      text: "Serve a 15-day formal Advocate Demand Notice and file an Order XXXVII CPC Summary Suit or Maintenance Tribunal petition to recover accrued treatment dues from relatives.",
+      text: "Serve a 15-day formal Fact-Verified Demand Notice and file an Order XXXVII CPC Summary Suit or Maintenance Tribunal petition to recover accrued treatment dues from relatives.",
     },
   ],
 };

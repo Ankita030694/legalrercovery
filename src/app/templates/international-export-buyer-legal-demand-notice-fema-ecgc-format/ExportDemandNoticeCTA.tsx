@@ -10,7 +10,7 @@ interface ExportDemandNoticeCTAProps {
 
 export default function ExportDemandNoticeCTA({
   title = "Serve an Audit-Ready International Legal Demand Notice Today",
-  subtitle = "Do not let overdue export bills trigger RBI EDPMS Caution-Listing or Customs Duty Drawback clawback. Dispatch an advocate-vetted notice citing Shipping Bill, Bill of Lading, UN CISG, and ECGC default reporting.",
+  subtitle = "Do not let overdue export bills trigger RBI EDPMS Caution-Listing or Customs Duty Drawback clawback. Dispatch a fact-verified notice citing Shipping Bill, Bill of Lading, UN CISG, and ECGC default reporting.",
 }: ExportDemandNoticeCTAProps) {
   const singleCaseFee = DEFAULT_FUNNEL_SETTINGS.basePricePerOpposition;
 
@@ -43,7 +43,7 @@ export default function ExportDemandNoticeCTA({
                 Test 1 Live Overdue Case Now
               </h3>
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
-                ₹{singleCaseFee} · Advocate Drafted · Email + WhatsApp + Speed Post RPAD / Courier Audit Log with Shipping Bill, IEC, AD-Code &amp; ECGC compliance clauses.
+                ₹{singleCaseFee} · Fact-Verified · Email + WhatsApp + Speed Post RPAD / Courier Audit Log with Shipping Bill, IEC, AD-Code &amp; ECGC compliance clauses.
               </p>
             </div>
             <Link

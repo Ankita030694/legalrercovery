@@ -36,7 +36,7 @@ const OVERSEAS_SCENARIOS: ScenarioTab[] = [
       {
         phase: "Step 2: Formal Tri-Lingual Statutory Demand Notice",
         description:
-          "Serve an advocate-vetted international demand notice simultaneously to the foreign employer's Gulf headquarters, their Indian liaison desk, and copy the Labor Attache at the Embassy of India in Riyadh/Abu Dhabi.",
+          "Serve a fact-verified international demand notice simultaneously to the foreign employer's Gulf headquarters, their Indian liaison desk, and copy the Labor Attache at the Embassy of India in Riyadh/Abu Dhabi.",
       },
       {
         phase: "Step 3: MEA Protector General of Emigrants (PGE) Blacklisting Petition",
@@ -65,7 +65,7 @@ const OVERSEAS_SCENARIOS: ScenarioTab[] = [
       {
         phase: "Step 2: Cross-Border Commercial Demand with EU Statutory Interest",
         description:
-          "Issue a formal advocate notice claiming actual incurred costs plus lost contractual agency commission, citing EU Directive 2011/7/EU and Indian Contract Act s.73.",
+          "Issue a formal fact-verified notice claiming actual incurred costs plus lost contractual agency commission, citing EU Directive 2011/7/EU and Indian Contract Act s.73.",
       },
       {
         phase: "Step 3: Indian MSME Samadhaan / Commercial Summary Filing",

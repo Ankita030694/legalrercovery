@@ -240,7 +240,7 @@ Accordingly, I request you to release the net refundable balance of ${netRefund}
    • IFSC Code: ${ifsc} | UPI ID: ${upi}
 
 5. RESERVATION OF STATUTORY RIGHTS:
-I prefer to close our tenancy amicably without legal friction. However, please note that if the undisputed refund of ${netRefund} is not remitted within ${days} days, I will be constrained to escalate the matter through a formal 15-day Advocate Legal Notice claiming the full deposit with 18% p.a. statutory interest and legal costs.
+I prefer to close our tenancy amicably without legal friction. However, please note that if the undisputed refund of ${netRefund} is not remitted within ${days} days, I will be constrained to escalate the matter through a formal 15-day Fact-Verified Legal Notice claiming the full deposit with 18% p.a. statutory interest and legal costs.
 
 Yours sincerely,
 

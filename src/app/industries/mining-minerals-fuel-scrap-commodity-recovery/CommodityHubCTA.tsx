@@ -27,10 +27,10 @@ export default function CommodityHubCTA({ className = "" }: CommodityHubCTAProps
                 Test 1 Live Overdue Case Now (&rupee;{basePrice})
               </h3>
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-                Start with one stalled coal rake, scrap truckload, mineral dispatch, or unreturned PESO cylinder ledger. Our advocates draft and serve a Sale of Goods Act s.42 + Order XXXVII CPC demand annexing your NABL certificate, Dharamkanta slip, and E-Way Bill via Email, WhatsApp &amp; Speed Post RPAD.
+                Start with one stalled coal rake, scrap truckload, mineral dispatch, or unreturned PESO cylinder ledger. Our team drafts and serves a Sale of Goods Act s.42 + Order XXXVII CPC demand annexing your NABL certificate, Dharamkanta slip, and E-Way Bill via Email, WhatsApp &amp; Speed Post RPAD.
               </p>
               <ul className="space-y-1.5 text-xs text-slate-200 mb-6">
-                <li>&check; Advocate-drafted notice locking s.42 consumption &amp; NABL sampling finality</li>
+                <li>&check; Fact-verified notice locking s.42 consumption &amp; NABL sampling finality</li>
                 <li>&check; Simultaneous Email + Business WhatsApp + Speed Post RPAD (BSA s.63)</li>
                 <li>&check; Direct escalation rail to Order 38 Rule 5 attachment, BNS s.316 &amp; IBC s.8</li>
               </ul>

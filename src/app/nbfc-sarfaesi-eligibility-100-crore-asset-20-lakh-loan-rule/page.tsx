@@ -417,7 +417,7 @@ export default function NbfcSarfaesiEligibilityPage() {
               </ul>
 
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
-                For non-SARFAESI LAP portfolios, pre-litigation leverage via an advocate-drafted{" "}
+                For non-SARFAESI LAP portfolios, pre-litigation leverage via a fact-verified{" "}
                 <Link
                   href="/send-a-legal-notice/for-nbfc-to-recover-their-unpaid-dues"
                   className="text-[#DC2626] font-semibold underline hover:text-[#B91C1C]"

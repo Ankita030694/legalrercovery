@@ -68,7 +68,7 @@ function StepContent({ stepNum }: { stepNum: number }) {
     return (
       <div className="flex flex-col gap-3 animate-in fade-in duration-200">
         <p className="text-[11px] sm:text-xs leading-relaxed text-slate-500 font-semibold font-sans">
-          Tell us who owes you money. Fill in the defaulter&apos;s identity, dues, contact info &amp; police jurisdiction. Our system uses this to auto-generate advocate-backed demand notices.
+          Tell us who owes you money. Fill in the defaulter&apos;s identity, dues, contact info &amp; police jurisdiction. Our system uses this to auto-generate fact-verified demand notices.
         </p>
         <div className="bg-slate-50 border border-slate-100 rounded-xl p-3 sm:p-4 font-sans">
           <span className="text-[10px] sm:text-[11px] font-extrabold text-slate-700 block mb-2">

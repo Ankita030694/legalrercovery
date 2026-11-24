@@ -24,7 +24,7 @@ export default function PRNoticeCTA({
         </h3>
 
         <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6 font-medium">
-          Whether a funded startup stopped paying after their Series-A announcement or a corporate client refuses crisis advisory invoices, issue an advocate-drafted legal notice that establishes Press Council earned-media boundaries and triggers MSMED 3× compound interest.
+          Whether a funded startup stopped paying after their Series-A announcement or a corporate client refuses crisis advisory invoices, issue a fact-verified legal notice that establishes Press Council earned-media boundaries and triggers MSMED 3× compound interest.
         </p>
 
         {/* Dual CTA Grid */}
@@ -36,7 +36,7 @@ export default function PRNoticeCTA({
                 Single Mandate / Startup Default
               </span>
               <h4 className="text-base sm:text-lg font-bold text-white mb-2">
-                Send Advocate Legal Notice (₹999)
+                Send Fact-Verified Legal Notice (₹999)
               </h4>
               <p className="text-xs text-slate-300 mb-4 leading-relaxed">
                 Drafted by high-court commercial advocates with press clipping dossiers, WhatsApp audit logs, and MSMED statutory demand clauses.

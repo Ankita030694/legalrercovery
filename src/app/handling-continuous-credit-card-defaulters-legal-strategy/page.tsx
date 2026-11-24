@@ -724,7 +724,7 @@ export default function HandlingContinuousDefaultersPage() {
                     </span>
                     <div className="space-y-1 sm:space-y-1.5">
                       <h3 className="text-sm sm:text-base md:text-lg font-bold text-slate-900">
-                        Serve Advocate-Drafted Statutory Legal Demand Notice
+                        Serve Fact-Verified Statutory Legal Demand Notice
                       </h3>
                       <p className="text-xs sm:text-sm leading-relaxed">
                         Engage a banking recovery advocate to draft and dispatch a formal statutory legal demand notice granting 15 calendar days to discharge outstanding dues in full. Dispatched via Registered Speed Post with Acknowledgment Due (RPAD) and Section 63 BSA-certified electronic mail, the notice invokes Order 37 CPC and Section 25 PSSA, establishing non-compliance.
@@ -883,7 +883,7 @@ export default function HandlingContinuousDefaultersPage() {
                       <strong>The Non-Payment Deadlock:</strong> A scheduled commercial bank issued an executive credit card with a ₹5,00,000 limit to an IT professional in Gurugram. Over a 9-month span, the cardholder continuously defaulted on monthly statements, accumulating an unpaid principal and contractual interest balance of ₹6,45,820. The borrower ignored automated reminders, deactivated his registered WhatsApp number, and rebuffed recovery calling agents asserting that credit card dues are unsecured and cannot be legally enforced.
                     </p>
                     <p>
-                      <strong>The Institutional Escalation:</strong> The bank&apos;s recovery division engaged LegalRecovery.in. An advocate drafted and dispatched a dual-channel statutory demand notice: (1) A formal 30-day notice under Section 17 &amp; 21 of CICRA notifying imminent &quot;Wilful Defaulter&quot; reporting across TransUnion CIBIL and Experian, and (2) A 15-day statutory demand under Order XXXVII CPC demanding full settlement. The notice was accompanied by an electronic records audit certificate under Section 63 BSA.
+                      <strong>The Institutional Escalation:</strong> The bank&apos;s recovery division engaged LegalRecovery.in. The team verified the facts and dispatched a dual-channel statutory demand notice: (1) A formal 30-day notice under Section 17 &amp; 21 of CICRA notifying imminent &quot;Wilful Defaulter&quot; reporting across TransUnion CIBIL and Experian, and (2) A 15-day statutory demand under Order XXXVII CPC demanding full settlement. The notice was accompanied by an electronic records audit certificate under Section 63 BSA.
                     </p>
                     <p>
                       <strong>The Judicial Proceedings:</strong> When the 15-day window elapsed without compliance, the bank instituted a Commercial Summary Suit under Order XXXVII in the Commercial Court. Summons in Form 4 were served. The cardholder entered an appearance but failed to submit a viable affidavit for &quot;Leave to Defend&quot; within the mandatory 10-day timeline.

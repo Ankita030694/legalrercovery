@@ -125,7 +125,7 @@ const reviewSchema = {
   "@type": "Product",
   "name": "Pending Overtime Payment Recovery Services",
   "image": "https://www.legalrecovery.in/og-pending-overtime-payment.png",
-  "description": "Advocate-backed legal assistance for recovering unpaid overtime wages, double rate overtime claims, and representation in labor disputes across India.",
+  "description": "Fact-verified legal assistance for recovering unpaid overtime wages, double rate overtime claims, and representation in labor disputes across India.",
   "brand": {
     "@type": "Brand",
     "name": "LegalRecovery"
@@ -154,7 +154,7 @@ const reviewSchema = {
         "@type": "Person",
         "name": "Siddharth Mehta"
       },
-      "reviewBody": "I worked as a Senior Quality Control Officer at a manufacturing plant. I regularly worked 12-hour shifts to meet production targets, but the management refused to pay me overtime, claiming my role was 'supervisory'. LegalRecovery helped me draft an advocate notice citing Factories Act Section 59. Facing statutory prosecution, the company paid my entire pending overtime dues within two weeks. Exceptional work!"
+      "reviewBody": "I worked as a Senior Quality Control Officer at a manufacturing plant. I regularly worked 12-hour shifts to meet production targets, but the management refused to pay me overtime, claiming my role was 'supervisory'. LegalRecovery helped me draft a fact-verified notice citing Factories Act Section 59. Facing statutory prosecution, the company paid my entire pending overtime dues within two weeks. Exceptional work!"
     },
     {
       "@type": "Review",
@@ -363,7 +363,7 @@ export default function PendingOvertimeClient() {
                       This formula ensures that employees are paid fairly for their additional hours, reflecting the statutory requirement to pay double the normal rate for overtime work.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      These protections are reinforced by the <strong>Code on Wages, 2019</strong>, which consolidates and updates previous labor laws. The Code standardizes overtime rules across all sectors and salary limits, requiring employers to pay overtime at a rate not less than twice the ordinary rate of wages. The Code also limits the maximum number of working hours, including overtime, to protect employee welfare. By establishing a clear national standard, the Code on Wages provides our legal team with a strong foundation to demand compliance and seek recovery from defaulting employers.
+                      These protections are reinforced by the <strong>Code on Wages, 2019</strong>, which consolidates and updates previous labor laws. The Code standardizes overtime rules across all sectors and salary limits, requiring employers to pay overtime at a rate not less than twice the ordinary rate of wages. The Code also limits the maximum number of working hours, including overtime, to protect employee welfare. By establishing a clear national standard, the Code on Wages provides our team with a strong foundation to demand compliance and seek recovery from defaulting employers.
                     </p>
                   </div>
                 </section>
@@ -387,7 +387,7 @@ export default function PendingOvertimeClient() {
                       </ul>
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      These practices violate basic contract and labor laws. If an employer requires you to work beyond standard hours, they must pay the statutory double rate. Vague claims of &quot;business exigencies&quot; or &quot;voluntary contributions&quot; do not excuse them from this obligation. Our legal team helps employees challenge these practices. We audit your actual duties and collect evidence of your working hours, showing the employer that their denial of overtime pay is legally unsustainable and exposes them to regulatory penalties.
+                      These practices violate basic contract and labor laws. If an employer requires you to work beyond standard hours, they must pay the statutory double rate. Vague claims of &quot;business exigencies&quot; or &quot;voluntary contributions&quot; do not excuse them from this obligation. Our team helps employees challenge these practices. We audit your actual duties and collect evidence of your working hours, showing the employer that their denial of overtime pay is legally unsustainable and exposes them to regulatory penalties.
                     </p>
                   </div>
                 </section>
@@ -406,7 +406,7 @@ export default function PendingOvertimeClient() {
                       For managers, supervisors, and other high-salaried professionals, the primary civil remedy is a <strong>Summary Suit under Order XXXVII of the Code of Civil Procedure, 1908 (CPC)</strong>. A regular civil suit can take years to resolve. Order 37 CPC provides an expedited pathway for recovering liquidated debts arising from written contracts (such as an employment agreement defining overtime rates or timesheet records). Upon receiving the summons, the employer has only <strong>10 days</strong> to enter an appearance and must apply for &quot;Leave to Defend,&quot; proving they have a genuine and substantial defense. If they fail to do so, the court immediately passes a decree in favor of the employee.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      Additionally, employees can approach the <strong>Labour Commissioner or Labour Inspector</strong> under the state-specific Shops and Commercial Establishments Act. Labor inspectors have the power to inspect the company&apos;s premises, audit attendance registers, and summon the management. In major cities like Bangalore, Mumbai, Chennai, and Delhi, a summons from a labor inspector is a powerful tool, as companies want to avoid regulatory audits and penalties for wage violations. If the employer has deducted statutory contributions but failed to pay overtime, they can also face criminal prosecution under BNS Section 316 for Criminal Breach of Trust. Our legal team evaluates your case to recommend the most effective combination of civil and regulatory remedies.
+                      Additionally, employees can approach the <strong>Labour Commissioner or Labour Inspector</strong> under the state-specific Shops and Commercial Establishments Act. Labor inspectors have the power to inspect the company&apos;s premises, audit attendance registers, and summon the management. In major cities like Bangalore, Mumbai, Chennai, and Delhi, a summons from a labor inspector is a powerful tool, as companies want to avoid regulatory audits and penalties for wage violations. If the employer has deducted statutory contributions but failed to pay overtime, they can also face criminal prosecution under BNS Section 316 for Criminal Breach of Trust. Our team evaluates your case to recommend the most effective combination of civil and regulatory remedies.
                     </p>
                   </div>
                 </section>
@@ -426,10 +426,10 @@ export default function PendingOvertimeClient() {
                       Once this evidence is compiled, you should send a formal written grievance to HR and senior management, requesting a reconciliation and payout.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      If internal escalation is ignored, the next step is to serve a formal <strong>Advocate-Signed Legal Notice</strong>. A legal notice is a structured legal document sent to the employer, setting out the facts of your employment, detailing the overtime hours worked, calculating the interest due under the Interest Act, 1978, and warning of the civil and criminal actions that will follow if they fail to comply. Serving a legal notice is a mandatory step before filing a summary suit or labor complaint, as it establishes your cause of action and forms part of the court record.
+                      If internal escalation is ignored, the next step is to serve a formal <strong>Fact-Verified Legal Notice</strong>. A legal notice is a structured legal document sent to the employer, setting out the facts of your employment, detailing the overtime hours worked, calculating the interest due under the Interest Act, 1978, and warning of the civil and criminal actions that will follow if they fail to comply. Serving a legal notice is a mandatory step before filing a summary suit or labor complaint, as it establishes your cause of action and forms part of the court record.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      At LegalRecovery, our legal panel drafts custom notices tailored to the specific details of your overtime dispute. We do not use generic templates. Instead, we highlight the contract terms, the provisions of the Factories Act or state Shops and Establishments Acts, and the personal liability of the company&apos;s directors. We digitally dispatch the notice via verified email and WhatsApp to the company&apos;s registered office, and send copies to the personal residential addresses of the directors, ensuring they are personally aware of their legal exposure.
+                      At LegalRecovery, our team drafts custom notices tailored to the specific details of your overtime dispute. We do not use generic templates. Instead, we highlight the contract terms, the provisions of the Factories Act or state Shops and Establishments Acts, and the personal liability of the company&apos;s directors. We digitally dispatch the notice via verified email and WhatsApp to the company&apos;s registered office, and send copies to the personal residential addresses of the directors, ensuring they are personally aware of their legal exposure.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
                       Approximately 85% of overtime pay disputes are resolved successfully at the legal notice stage. Most corporate entities prefer to clear undisputed salary debts rather than face public litigation, credit rating impacts, or regulatory audits. If the employer responds with a settlement offer, we help you negotiate the terms and draft a binding settlement deed. If they deny the claim or fail to respond, the legal notice serves as the base document for filing a claim before the Labour Commissioner, the Payment of Wages Authority, or the civil court, ensuring you are well-prepared for the next step of the recovery process.

@@ -27,10 +27,10 @@ export default function B2BHubCTA({ className = "" }: B2BHubCTAProps) {
                 Test 1 Live Overdue Case Now (&rupee;{basePrice})
               </h3>
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-                Validate our advocate-backed recovery velocity on one stalled B2B invoice, bounced EMI, or retention claim before onboarding your full ledger. Empaneled AMA Legal Solutions advocates draft and dispatch your statutory demand via Email, WATI Business WhatsApp &amp; Speed Post RPAD.
+                Validate our fact-verified recovery velocity on one stalled B2B invoice, bounced EMI, or retention claim before onboarding your full ledger. Empaneled AMA Legal Solutions advocates draft and dispatch your statutory demand via Email, WATI Business WhatsApp &amp; Speed Post RPAD.
               </p>
               <ul className="space-y-1.5 text-xs text-slate-200 mb-6">
-                <li>&check; Advocate-drafted statutory notice (MSMED s.16, s.43B(h), NI s.138, or Order 37)</li>
+                <li>&check; Fact-verified statutory notice (MSMED s.16, s.43B(h), NI s.138, or Order 37)</li>
                 <li>&check; Simultaneous Email + Business WhatsApp + Speed Post RPAD (BSA 2023 s.63)</li>
                 <li>&check; Full inbound reply triage &amp; escalation path to s.12A / Arbitration / IBC s.8</li>
               </ul>

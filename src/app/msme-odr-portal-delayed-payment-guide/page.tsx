@@ -163,7 +163,7 @@ const FAQS: FAQItem[] = [
   {
     question: "Who is eligible to file a delayed payment complaint on the MSME ODR portal?",
     answer:
-      "Only registered Micro Enterprises (investment up to ₹1 crore and turnover up to ₹5 crore; revised upward in Union Budget announcements as notified) and Small Enterprises (investment up to ₹10 crore and turnover up to ₹50 crore) holding a valid Udyam Registration Certificate prior to the supply of goods or services are eligible to file under Section 18. Medium Enterprises and unregistered traders are excluded from the MSEFC/ODR mechanism and must recover dues via an advocate statutory demand notice, Commercial Court Summary Suit (Order 37 CPC), or IBC Section 9.",
+      "Only registered Micro Enterprises (investment up to ₹1 crore and turnover up to ₹5 crore; revised upward in Union Budget announcements as notified) and Small Enterprises (investment up to ₹10 crore and turnover up to ₹50 crore) holding a valid Udyam Registration Certificate prior to the supply of goods or services are eligible to file under Section 18. Medium Enterprises and unregistered traders are excluded from the MSEFC/ODR mechanism and must recover dues via a fact-verified statutory demand notice, Commercial Court Summary Suit (Order 37 CPC), or IBC Section 9.",
   },
   {
     question: "How does the MSME ODR portal registration and login process work?",
@@ -831,7 +831,7 @@ export default function MsmeOdrPortalGuidePage() {
                         1
                       </span>
                       <h3 className="text-base sm:text-lg font-extrabold text-slate-900">
-                        Step 1: Serve a 15-Day Pre-ODR Advocate Demand Notice (Highly Recommended)
+                        Step 1: Serve a 15-Day Pre-ODR Fact-Verified Demand Notice (Highly Recommended)
                       </h3>
                     </div>
                     <p className="text-xs sm:text-sm text-slate-700 leading-relaxed pl-10">
@@ -1164,7 +1164,7 @@ export default function MsmeOdrPortalGuidePage() {
                       >
                         LegalRecovery.in&apos;s B2B invoice recovery team
                       </Link>
-                      . First, an advocate served a formal Statutory Legal Notice on the OEM&apos;s Managing Director, CFO, and Statutory Auditor citing: (1) <strong>Section 2(b) Deemed Acceptance</strong>, as no written quality objection was raised within 15 days of delivery; (2) <strong>₹3,42,600 in accrued monthly compound interest</strong> at 20.25% p.a. (3× RBI bank rate) under Section 16; and (3) mandatory reporting in the OEM&apos;s Form 3CD tax audit under <strong>Section 43B(h) of the Income-tax Act</strong>. Simultaneously, the reference was logged on the MSME ODR portal.
+                      . First, a fact-verified formal Statutory Legal Notice was served on the OEM&apos;s Managing Director, CFO, and Statutory Auditor citing: (1) <strong>Section 2(b) Deemed Acceptance</strong>, as no written quality objection was raised within 15 days of delivery; (2) <strong>₹3,42,600 in accrued monthly compound interest</strong> at 20.25% p.a. (3× RBI bank rate) under Section 16; and (3) mandatory reporting in the OEM&apos;s Form 3CD tax audit under <strong>Section 43B(h) of the Income-tax Act</strong>. Simultaneously, the reference was logged on the MSME ODR portal.
                     </p>
                     <div className="p-3.5 sm:p-4 bg-emerald-950/70 border border-emerald-700/60 rounded-xl text-emerald-200">
                       <strong className="block text-emerald-400 font-bold mb-1">
@@ -1291,7 +1291,7 @@ export default function MsmeOdrPortalGuidePage() {
                     What LegalRecovery.in Can and Cannot Do in MSME Delayed Payment Disputes
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
-                    <strong>What we do:</strong> Our advocates audit your invoice trail, compute exact Section 16 monthly compound interest, draft and serve formal Statutory Demand Notices invoking Sections 15, 16, 18 of the MSMED Act and Section 43B(h) of the Income-tax Act, prepare your MSME ODR / Samadhaan Statement of Claim and BSA Section 63 affidavits, and represent you in online mediation and commercial recovery negotiations.{" "}
+                    <strong>What we do:</strong> Our team verifies your invoice facts, computes exact Section 16 monthly compound interest, prepares and serves formal Statutory Demand Notices invoking Sections 15, 16, 18 of the MSMED Act and Section 43B(h) of the Income-tax Act, prepares your MSME ODR / Samadhaan Statement of Claim and BSA Section 63 affidavits, and represent you in online mediation and commercial recovery negotiations.{" "}
                     <strong>Where our scope is bounded:</strong> If your enterprise was unregistered on the date of supply (<em>Silpi Industries</em> bar) or is classified as a Medium Enterprise, we cannot file a Section 18 MSEFC reference on your behalf; instead, we pursue your recovery via a Commercial Court Order 37 Summary Suit, civil recovery suit, or IBC Section 9 operational creditor demand notice. Review our transparent{" "}
                     <Link
                       href="/legal-notice-charges"

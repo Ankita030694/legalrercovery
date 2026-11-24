@@ -92,7 +92,7 @@ const SCENARIOS: ScenarioTab[] = [
       {
         step: "Proceed Against MSI Independent of PSU",
         description:
-          "Issue an advocate-drafted demand notice to the MSI (not the PSU) under MSMED Act s.18 or Commercial Courts Act s.12A pre-institution mediation.",
+          "Issue a fact-verified demand notice to the MSI (not the PSU) under MSMED Act s.18 or Commercial Courts Act s.12A pre-institution mediation.",
       },
     ],
     statutoryRule: "Contract Act s.53/54 · MSMED Act s.18 · Commercial Courts Act, 2015 s.12A",

@@ -252,7 +252,7 @@ export default function DigitalMarketingRetainerRecoveryPage() {
         "@type": "HowToStep",
         position: 4,
         name: "Dual-Track Statutory Legal Demand Notice",
-        text: "Serve an advocate-vetted notice demanding retainer clearance under Contract Act Section 73 and giving a 48-hour copyright license revocation warning under Copyright Act Section 51.",
+        text: "Serve a fact-verified notice demanding retainer clearance under Contract Act Section 73 and giving a 48-hour copyright license revocation warning under Copyright Act Section 51.",
       },
       {
         "@type": "HowToStep",
@@ -797,7 +797,7 @@ export default function DigitalMarketingRetainerRecoveryPage() {
                       </span>
                     </div>
                     <p className="text-[11px] text-slate-200">
-                      Serve advocate notice asserting Section 73 contract damages + 48-hr Copyright
+                      Serve fact-verified notice asserting Section 73 contract damages + 48-hr Copyright
                       s.51 takedown ultimatum.
                     </p>
                   </div>

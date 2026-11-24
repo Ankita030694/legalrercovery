@@ -158,7 +158,7 @@ const FAQS = [
   {
     question: "EaseMyTrip se flight refund na mile ya status under process dikhaye toh legal notice kaise bheje?",
     answer:
-      "Agar EaseMyTrip cancellation ke baad aapka refund 14–30 din mein bank account mein na bheje ya airline par ilzaam daalkar taal-matol kare, toh aap Easy Trip Planners Limited ke registered office (Patparganj Industrial Area, New Delhi) par statutory advocate legal notice bhej sakte hain. LegalRecovery.in par verified advocate DGCA rules aur Consumer Protection Act ke tehat Speed Post aur official email se 15 din ka payment demand notice dispatch karte hain.",
+      "Agar EaseMyTrip cancellation ke baad aapka refund 14–30 din mein bank account mein na bheje ya airline par ilzaam daalkar taal-matol kare, toh aap Easy Trip Planners Limited ke registered office (Patparganj Industrial Area, New Delhi) par statutory fact-verified legal notice bhej sakte hain. LegalRecovery.in par hamari team DGCA rules aur Consumer Protection Act ke tehat Speed Post aur official email se 15 din ka fact-verified payment demand notice dispatch karti hai.",
   },
 ];
 
@@ -888,10 +888,10 @@ export default function EaseMyTripLegalNoticePage() {
                     </span>
                     <div className="space-y-1 sm:space-y-1.5">
                       <h3 className="text-sm sm:text-base md:text-lg font-bold text-slate-900">
-                        Serve a Statutory Advocate Legal Notice to Easy Trip Planners Limited
+                        Serve a Statutory Fact-Verified Legal Notice to Easy Trip Planners Limited
                       </h3>
                       <p className="text-xs sm:text-sm leading-relaxed">
-                        If 14–30 days lapse without bank receipt, instruct a verified advocate to dispatch a formal legal notice to Easy Trip Planners Limited at its Registered Office in New Delhi and Corporate Office in Noida, impleading the operating carrier. The notice demands the principal sum, 18% penal interest, and legal costs within a strict 15-day compliance window.
+                        If 14–30 days lapse without bank receipt, dispatch a formal legal notice to Easy Trip Planners Limited at its Registered Office in New Delhi and Corporate Office in Noida, impleading the operating carrier. The notice demands the principal sum, 18% penal interest, and legal costs within a strict 15-day compliance window.
                       </p>
                       <p className="text-xs text-slate-500 font-medium">
                         Review our transparent fee schedule on <Link href="/legal-notice-charges" className="text-blue-700 underline">legal notice charges</Link>.
@@ -1049,11 +1049,11 @@ export default function EaseMyTripLegalNoticePage() {
                       <strong>The Deadlock:</strong> Over the next 45 days, Rahul contacted EaseMyTrip support five times. Each executive claimed the carrier had not released the funds. However, when Rahul contacted the airline directly, the airline provided a transaction receipt proving the refund was credited to EaseMyTrip&apos;s corporate B2B agency account on Day 10. Rahul had exhausted ordinary customer support channels.
                     </p>
                     <p>
-                      <strong>The Statutory Action:</strong> Rahul engaged LegalRecovery.in. A verified advocate drafted and dispatched a formal statutory legal demand notice to Easy Trip Planners Limited at its Registered Office in Patparganj, New Delhi, and its Corporate Office in Sector 16, Noida, impleading the carrying airline. The notice cited DGCA CAR Series M Part II (Clause 3.3.2) and Section 2(11) of the Consumer Protection Act, giving a strict 15-day payment demand.
+                      <strong>The Statutory Action:</strong> Rahul engaged LegalRecovery.in. The team verified the facts and dispatched a formal statutory legal demand notice to Easy Trip Planners Limited at its Registered Office in Patparganj, New Delhi, and its Corporate Office in Sector 16, Noida, impleading the carrying airline. The notice cited DGCA CAR Series M Part II (Clause 3.3.2) and Section 2(11) of the Consumer Protection Act, giving a strict 15-day payment demand.
                     </p>
                     <div className="p-3.5 sm:p-4 bg-emerald-950/70 border border-emerald-700/60 rounded-xl text-emerald-200">
                       <strong className="block text-emerald-400 font-bold mb-1">The Outcome:</strong>
-                      On Day 11 following delivery of the advocate legal notice, EaseMyTrip&apos;s Senior Legal Escalations Desk acknowledged the dispute via email, issuing a valid bank UTR number. The full sum of ₹28,600 was transferred directly into Rahul&apos;s ICICI bank account without requiring court litigation.
+                      On Day 11 following delivery of the fact-verified legal notice, EaseMyTrip&apos;s Senior Legal Escalations Desk acknowledged the dispute via email, issuing a valid bank UTR number. The full sum of ₹28,600 was transferred directly into Rahul&apos;s ICICI bank account without requiring court litigation.
                     </div>
                   </div>
                 </div>

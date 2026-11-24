@@ -177,7 +177,7 @@ const FAQS = [
   {
     question: "What should I do if my overseas education consultant refuses a refund citing their 'non-refundable' contract?",
     answer:
-      "Do not accept their refusal. Under Sections 2(46) and 47 of the Consumer Protection Act, 2019, one-sided clauses that forfeit entire fees upon non-delivery are unfair contracts and legally void. Have an advocate send a legal notice giving 15 days to refund. If they refuse, file a complaint on the e-Jagriti portal for a full refund and damages.",
+      "Do not accept their refusal. Under Sections 2(46) and 47 of the Consumer Protection Act, 2019, one-sided clauses that forfeit entire fees upon non-delivery are unfair contracts and legally void. Send a legal notice giving 15 days to refund. If they refuse, file a complaint on the e-Jagriti portal for a full refund and damages.",
   },
   {
     question: "How long does an abroad education consultant have to refund money after receiving a legal notice?",
@@ -759,10 +759,10 @@ export default function StudyAbroadConsultantRefundPage() {
                     </span>
                     <div className="space-y-1">
                       <h3 className="text-base font-bold text-slate-900">
-                        Serve a Comprehensive Advocate Statutory Demand Notice
+                        Serve a Comprehensive Fact-Verified Statutory Demand Notice
                       </h3>
                       <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                        Have an advocate draft and serve an unassailable legal notice. The notice must cite Section 2(11) (deficiency in service), Section 2(46) (unfair contracts), and Section 47 of the Consumer Protection Act, 2019, alongside landmark NCDRC precedents like <em>Pioneer Institute</em>. Demand the unconditional release of your funds within 15 calendar days and serve copies via Registered Speed Post and digitally under Section 63 BSA 2023.
+                        Serve an unassailable legal notice. The notice must cite Section 2(11) (deficiency in service), Section 2(46) (unfair contracts), and Section 47 of the Consumer Protection Act, 2019, alongside landmark NCDRC precedents like <em>Pioneer Institute</em>. Demand the unconditional release of your funds within 15 calendar days and serve copies via Registered Speed Post and digitally under Section 63 BSA 2023.
                       </p>
                     </div>
                   </div>

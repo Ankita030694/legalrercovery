@@ -199,7 +199,7 @@ export default function IndustrialMineralsRecoveryPage() {
         "@type": "HowToStep",
         position: 2,
         name: "Reject Post-Unloading Debit Notes Under Sale of Goods Act s.42",
-        text: "Issue a formal Advocate Notice rejecting belated whiteness, mesh, or moisture cuts raised after the buyer unloaded and consumed the mineral powder.",
+        text: "Issue a formal Fact-Verified Notice rejecting belated whiteness, mesh, or moisture cuts raised after the buyer unloaded and consumed the mineral powder.",
       },
       {
         "@type": "HowToStep",

@@ -28,7 +28,7 @@ const SCENARIOS: ScenarioTab[] = [
       {
         step: "Serve Statutory Quality-Defense Estoppel Notice",
         detail:
-          "Issue an Advocate Legal Notice demanding the dealer produce a notified Seed Inspector / Insecticide Analyst Government Lab Report and joint panchnama within 7 days—failing which the defense stands estopped.",
+          "Issue a Fact-Verified Legal Notice demanding the dealer produce a notified Seed Inspector / Insecticide Analyst Government Lab Report and joint panchnama within 7 days—failing which the defense stands estopped.",
       },
       {
         step: "Attach Lot-Wise COA & GST E-Way Delivery Trail",

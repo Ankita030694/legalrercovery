@@ -33,7 +33,7 @@ const SCENARIOS: ScenarioTab[] = [
       {
         step: "2. Serve Formal Measurement Finality & RA Bill Demand Notice",
         description:
-          "Issue an Advocate Notice invoking the contract's joint-measurement clause, putting the MDO on notice that destroying bench topography via subsequent dumping bars any unilateral quantity deduction.",
+          "Issue a Fact-Verified Notice invoking the contract's joint-measurement clause, putting the MDO on notice that destroying bench topography via subsequent dumping bars any unilateral quantity deduction.",
       },
       {
         step: "3. Invoke Section 9 Interim Deposit & Section 21 Arbitration",
@@ -109,7 +109,7 @@ const SCENARIOS: ScenarioTab[] = [
       {
         step: "1. Serve 48-Hour Demobilization Gate-Pass & BNS s.316 Warning",
         description:
-          "Dispatch an urgent tri-channel Advocate Notice listing every machine's chassis/engine number, RC book, and NBFC hypothecation details, demanding immediate gate clearance.",
+          "Dispatch an urgent tri-channel Fact-Verified Notice listing every machine's chassis/engine number, RC book, and NBFC hypothecation details, demanding immediate gate clearance.",
       },
       {
         step: "2. File Urgent Section 9 Arbitration Petition Before Commercial Court",

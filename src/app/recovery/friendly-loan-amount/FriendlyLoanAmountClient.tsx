@@ -280,7 +280,7 @@ export default function FriendlyLoanAmountClient() {
               Struggling to Recover a <span className="text-[#DC2626]">Friendly Loan Amount</span>?
             </h1>
             <p className="text-sm md:text-xl mb-8 md:mb-12 max-w-3xl mx-auto text-slate-300 leading-relaxed font-medium">
-              Recover your hard-earned funds lent on good faith. Our legal panel guides you in compiling digital evidence, serving statutory notice, and taking civil or criminal recovery action.
+              Recover your hard-earned funds lent on good faith. Our team guides you in compiling digital evidence, serving statutory notice, and taking civil or criminal recovery action.
             </p>
             <button 
               onClick={() => setIsPaymentModalOpen(true)}
@@ -402,7 +402,7 @@ export default function FriendlyLoanAmountClient() {
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      Before initiating a formal lawsuit, serving an <strong>Advocate-Signed Legal Notice</strong> is highly recommended. It serves as a final statutory warning, giving the borrower a strict timeline (typically 15 days) to return the loan amount.
+                      Before initiating a formal lawsuit, serving an <strong>Fact-Verified Legal Notice</strong> is highly recommended. It serves as a final statutory warning, giving the borrower a strict timeline (typically 15 days) to return the loan amount.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
                       A professional legal notice serves several purposes:
@@ -572,7 +572,7 @@ export default function FriendlyLoanAmountClient() {
                       LegalRecovery is India&apos;s leading tech-enabled legal assistance platform. We combine the expertise of veteran recovery advocates with advanced tracking systems to provide a stress-free, transparent, and highly effective recovery experience.
                     </p>
                     <ul className="list-disc pl-6 space-y-3 text-sm text-slate-650">
-                      <li><strong>Custom Legal Notice:</strong> We do not send generic letters. Our legal panel carefully reviews your UPI transactions, bank records, and chat logs to draft a notice that cites precise legal provisions tailored to your case.</li>
+                      <li><strong>Custom Legal Notice:</strong> We do not send generic letters. Our team carefully reviews your UPI transactions, bank records, and chat logs to draft a notice that cites precise legal provisions tailored to your case.</li>
                       <li><strong>Digital Evidence Certification:</strong> We handle the complex drafting of electronic certificates (under BSA Section 63) to ensure your WhatsApp messages and emails are ready for court.</li>
                       <li><strong>Director & Personal Trackers:</strong> If you lent to a business or if the borrower has a corporate standing, we dispatch notices digitally via email and WhatsApp to their homes and registered offices, maximizing reach and pressure.</li>
                       <li><strong>End-to-End Legal Support:</strong> From sending the first legal notice to representing you in Summary Suits, cheque bounce cases, and filing criminal complaints, our panel of labor and civil advocates handles it all.</li>

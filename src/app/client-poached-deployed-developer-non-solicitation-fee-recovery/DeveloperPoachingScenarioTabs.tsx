@@ -30,7 +30,7 @@ const SCENARIOS: Scenario[] = [
       "Indian Contract Act 1872 (ss. 73 & 74) + Commercial Courts Act 2015 s.2(1)(c)(xviii) + Delhi High Court Wipro v. Beckman Doctrine",
     actionProtocol: [
       "Extract the Master Services Agreement (MSA) or SOW 'Non-Solicitation and Resource Conversion / Buyout' clause specifying the exact fee formula (e.g., 6–12 months billing or 30% first-year CTC).",
-      "Issue a formal advocate-drafted B2B Statutory Demand Notice to the client company—not threatening the developer, but demanding liquidated damages from the corporate counterparty.",
+      "Issue a formal fact-verified B2B Statutory Demand Notice to the client company—not threatening the developer, but demanding liquidated damages from the corporate counterparty.",
       "Rebut the Section 27 argument by establishing that the claim is purely a commercial debt enforcement between corporate peers under Section 74, with zero injunction sought against the individual's right to work.",
       "Initiate mandatory Section 12A Pre-Institution Commercial Mediation or invoke the MSA's dispute resolution/arbitration clause to enforce payment of the buyout invoice.",
     ],
@@ -71,7 +71,7 @@ const SCENARIOS: Scenario[] = [
     actionProtocol: [
       "Audit the MSA 'Survival' clause to verify that restrictive covenants explicitly survive expiry or early termination of individual SOWs.",
       "Calculate the statutory 3-year limitation clock starting from the date of the engineer's unauthorized onboarding (or the date of discovery).",
-      "Issue a formal commercial invoice for the conversion fee with 15-day statutory payment terms, coupled with a formal advocate legal notice.",
+      "Issue a formal commercial invoice for the conversion fee with 15-day statutory payment terms, coupled with a formal fact-verified legal notice.",
       "Reserve rights to claim additional consequential damages if the poached engineer possessed proprietary internal libraries, frameworks, or customer IP.",
     ],
   },
@@ -91,7 +91,7 @@ const SCENARIOS: Scenario[] = [
     actionProtocol: [
       "Present an itemized recruitment and institutional disruption ledger: sourcing fees, notice-pay buyouts, training and ramp-up hours, and gross margin loss during bench replacement.",
       "Demonstrate that the agreed conversion fee formula represented a negotiated commercial risk allocation agreed between experienced corporate entities with equal bargaining power.",
-      "Issue an advocate notice warning that refusal to pay liquidated dues will escalate to Commercial Court litigation where court costs, interest at 18% p.a., and advocate fees will be claimed.",
+      "Issue a fact-verified notice warning that refusal to pay liquidated dues will escalate to Commercial Court litigation where court costs, interest at 18% p.a., and advocate fees will be claimed.",
       "Offer a structured 30-day pre-institution mediation window to capture a lump-sum conversion fee before instituting formal court recovery proceedings.",
     ],
   },

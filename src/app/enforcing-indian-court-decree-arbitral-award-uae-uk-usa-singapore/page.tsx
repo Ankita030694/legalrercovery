@@ -745,7 +745,7 @@ export default function EnforcingIndianCourtDecreePage() {
                   <div>
                     <h3 className="text-sm font-bold text-slate-900">Issue Formal Advocate Statutory Demand</h3>
                     <p className="text-xs text-slate-600 mt-1">
-                      Serve a formal advocate legal demand notice granting 15 business days to cure default. Deliver simultaneously via DHL/FedEx trackable courier to the debtor’s registered headquarters and digitally via authenticated email, establishing formal notice under international commercial practice.
+                      Serve a formal fact-verified legal demand notice granting 15 business days to cure default. Deliver simultaneously via DHL/FedEx trackable courier to the debtor’s registered headquarters and digitally via authenticated email, establishing formal notice under international commercial practice.
                     </p>
                   </div>
                 </div>

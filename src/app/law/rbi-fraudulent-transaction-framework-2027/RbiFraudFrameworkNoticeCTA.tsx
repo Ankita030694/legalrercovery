@@ -11,7 +11,7 @@ interface RbiFraudFrameworkNoticeCTAProps {
 }
 
 export default function RbiFraudFrameworkNoticeCTA({
-  buttonText = "Send Advocate Legal Notice to Your Bank",
+  buttonText = "Send Fact-Verified Legal Notice to Your Bank",
   className = "",
   variant = "primary",
 }: RbiFraudFrameworkNoticeCTAProps) {
@@ -31,7 +31,7 @@ export default function RbiFraudFrameworkNoticeCTA({
                 Did Your Bank Reject Your Fraud Refund by Blaming &ldquo;OTP Sharing&rdquo; or &ldquo;Customer Negligence&rdquo;?
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6">
-                Under RBI&apos;s Customer Protection Directions and the revised 2027 Fraud Liability Framework, the legal burden of proof lies strictly on the bank—not the customer. Have a verified advocate serve a formal 15-day statutory demand notice on your bank&apos;s Nodal Officer, Managing Director, and Branch Manager demanding 10-day shadow reversal, server audit logs, and 100% reimbursement before escalating to the RBI Integrated Ombudsman and Consumer Commission.
+                Under RBI&apos;s Customer Protection Directions and the revised 2027 Fraud Liability Framework, the legal burden of proof lies strictly on the bank—not the customer. Serve a formal 15-day statutory demand notice on your bank&apos;s Nodal Officer, Managing Director, and Branch Manager demanding 10-day shadow reversal, server audit logs, and 100% reimbursement before escalating to the RBI Integrated Ombudsman and Consumer Commission.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button
@@ -42,7 +42,7 @@ export default function RbiFraudFrameworkNoticeCTA({
                   {buttonText} — ₹{basePrice}
                 </button>
                 <div className="text-xs text-slate-300 flex flex-wrap sm:flex-nowrap items-center gap-2 sm:gap-3">
-                  <span>✓ 24h Advocate Drafting</span>
+                  <span>✓ 24h Notice Drafting</span>
                   <span>•</span>
                   <span>✓ Email + WhatsApp</span>
                   <span>•</span>

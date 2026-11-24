@@ -105,7 +105,7 @@ const FAQS = [
   {
     question: "Refund successful dikha raha hai par bank account me paise nahi aaye toh legal notice kaise bheje?",
     answer:
-      "Agar e-commerce app refund successful dikhaye aur bank account me credit na mile, toh pehle app se 12-digit UTR ya 23-digit ARN maangein. Bank se likhit non-receipt confirmation lene ke baad merchant aur payment gateway ko advocate legal notice bheja ja sakta hai. Notice me RBI ke T+1 rule aur ₹100 per day compensation ki maang karte hue 15 dino ka statutory ultimatum diya jata hai.",
+      "Agar e-commerce app refund successful dikhaye aur bank account me credit na mile, toh pehle app se 12-digit UTR ya 23-digit ARN maangein. Bank se likhit non-receipt confirmation lene ke baad merchant aur payment gateway ko fact-verified legal notice bheja ja sakta hai. Notice me RBI ke T+1 rule aur ₹100 per day compensation ki maang karte hue 15 dino ka statutory ultimatum diya jata hai.",
   },
 ];
 
@@ -302,7 +302,7 @@ export default function RefundShowsSuccessfulPage() {
                     <tr className="hover:bg-slate-50/50">
                       <td className="px-6 py-4 font-semibold text-slate-900">Pre-Litigation Notice Fee</td>
                       <td className="px-6 py-4 font-semibold text-slate-900">₹{BASE_PRICE} flat</td>
-                      <td className="px-6 py-4">Verified Advocate Notice Drafting</td>
+                      <td className="px-6 py-4">Fact-Verified Notice Preparation</td>
                       <td className="px-6 py-4 text-emerald-700 font-medium">Digital delivery in 24 hours</td>
                     </tr>
                   </tbody>
@@ -673,7 +673,7 @@ export default function RefundShowsSuccessfulPage() {
                   <div className="flex items-start gap-2">
                     <span className="text-red-600 font-bold">1.</span>
                     <span>
-                      <strong>Tripartite Advocate Demand Notice:</strong> Serve a joint legal demand naming the E-Commerce Merchant, Payment Aggregator, and Bank. This legally compels all three entities to cross-examine their settlement logs simultaneously.
+                      <strong>Tripartite Fact-Verified Demand Notice:</strong> Serve a joint legal demand naming the E-Commerce Merchant, Payment Aggregator, and Bank. This legally compels all three entities to cross-examine their settlement logs simultaneously.
                     </span>
                   </div>
                   <div className="flex items-start gap-2">
@@ -725,7 +725,7 @@ export default function RefundShowsSuccessfulPage() {
                   <strong>The Deadlock:</strong> By 16 October 2026, Siddharth&apos;s bank statement reflected zero credit. The marketplace closed his support tickets citing the UTR, while his home branch staff reported zero incoming credit under his account number.
                 </p>
                 <p>
-                  <strong>The Tracing Intervention:</strong> Siddharth engaged LegalRecovery. An advocate notice citing UTR 428910481920 and RBI Circular DPSS.CO.PD No.629/2019-20 was served upon the Marketplace Grievance Officer and the bank&apos;s Principal Nodal Officer, demanding an inward clearing suspense ledger search.
+                  <strong>The Tracing Intervention:</strong> Siddharth engaged LegalRecovery. A fact-verified notice citing UTR 428910481920 and RBI Circular DPSS.CO.PD No.629/2019-20 was served upon the Marketplace Grievance Officer and the bank&apos;s Principal Nodal Officer, demanding an inward clearing suspense ledger search.
                 </p>
                 <p>
                   <strong>The Resolution:</strong> Within 48 hours of service, bank clearing operations confirmed the ₹14,999 arrived on 05 October at 18:32 IST, but auto-posting dropped due to a switch timeout, leaving funds parked in internal suspense.
@@ -892,7 +892,7 @@ export default function RefundShowsSuccessfulPage() {
                   </h3>
                   <ul className="mt-3 space-y-2 text-xs text-slate-700 leading-relaxed">
                     <li>
-                      • Draft and serve a formal Advocate Legal Demand Notice on the Merchant, Payment Aggregator, and Bank within 24 hours.
+                      • Prepare and serve a formal Legal Demand Notice on the Merchant, Payment Aggregator, and Bank within 24 hours.
                     </li>
                     <li>
                       • Compel corporate compliance teams to conduct manual Core Banking System (CBS) suspense ledger searches.

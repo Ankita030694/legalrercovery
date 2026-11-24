@@ -46,7 +46,7 @@ const SCENARIOS: ScenarioItem[] = [
       "Income Tax Act Section 43B(h) (disallowance of unpaid Micro/Small enterprise purchase beyond 15/45 days) + MSMED Act s.15–18 (3x RBI compound interest at MSEFC).",
     creditorAction: [
       "Include your Udyam Registration Number (Micro/Small category) prominently on every GST invoice, e-Way Bill, and ledger statement.",
-      "Serve an Advocate-vetted Section 43B(h) + MSMED s.16 computation notice 45 days before March 31 (or before statutory audit sign-off), quantifying the 30% corporate tax hit to the buyer.",
+      "Serve a Fact-verified Section 43B(h) + MSMED s.16 computation notice 45 days before March 31 (or before statutory audit sign-off), quantifying the 30% corporate tax hit to the buyer.",
       "File on the MSME Samadhaan portal (MSEFC) for mandatory conciliation followed by 90-day statutory arbitration.",
     ],
     expectedTimeline: "10–21 Days Audit-Driven Settlement | 90-Day MSEFC Track",

@@ -23,7 +23,7 @@ export default function HfcRecoveryCTA({ className = "" }: HfcRecoveryCTAProps) 
               Track 1 &bull; Self-Serve Single Case Test
             </span>
             <h3 className="text-lg sm:text-xl font-extrabold text-white mb-2">
-              Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Advocate Drafted &middot; Email + WhatsApp + Speed Post RPAD)
+              Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Fact-Verified &middot; Email + WhatsApp + Speed Post RPAD)
             </h3>
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
               Validate our HFC pre-SARFAESI Loan Recall, Tripartite Builder-Borrower Demand, or Section 25 PSS Act e-NACH notice with BSA 2023 s.63 delivery logs on a single delinquent home loan account before rolling out across zones.

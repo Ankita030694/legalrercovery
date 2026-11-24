@@ -87,7 +87,7 @@ const TEXTILE_SCENARIOS: ScenarioTab[] = [
       {
         phase: "Legal Notice Dispatch",
         action:
-          "Issue high-voltage advocate legal notice treating the breached Panch agreement as an enforceable commercial settlement agreement.",
+          "Issue high-voltage fact-verified legal notice treating the breached Panch agreement as an enforceable commercial settlement agreement.",
       },
       {
         phase: "Judicial Enforcement",

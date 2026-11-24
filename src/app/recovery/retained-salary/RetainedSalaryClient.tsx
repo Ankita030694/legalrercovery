@@ -15,7 +15,7 @@ const faqs = [
   },
   {
     question: "What legal actions can I take if my employer refuses to release my retained salary?",
-    answer: "You can: (1) serve a formal advocate-signed legal notice; (2) file a complaint with the Labour Commissioner or local Labour Inspector; (3) file a Summary Suit under Order 37 of the CPC for fast-track recovery; or (4) file a criminal complaint for Criminal Breach of Trust under Section 316 BNS if there is fraudulent withholding."
+    answer: "You can: (1) serve a formal fact-verified legal notice; (2) file a complaint with the Labour Commissioner or local Labour Inspector; (3) file a Summary Suit under Order 37 of the CPC for fast-track recovery; or (4) file a criminal complaint for Criminal Breach of Trust under Section 316 BNS if there is fraudulent withholding."
   },
   {
     question: "How long can an employer withhold my retained salary after I resign?",
@@ -125,7 +125,7 @@ const reviewSchema = {
   "@type": "Product",
   "name": "Retained Salary Recovery Services",
   "image": "https://www.legalrecovery.in/og-retained-salary.png",
-  "description": "Advocate-backed legal assistance for recovering outstanding retained salaries, withheld retention bonuses, and deferred compensation in India.",
+  "description": "Fact-verified legal assistance for recovering outstanding retained salaries, withheld retention bonuses, and deferred compensation in India.",
   "brand": {
     "@type": "Brand",
     "name": "LegalRecovery"
@@ -190,7 +190,7 @@ const reviewSchema = {
         "@type": "Person",
         "name": "Sneha Reddy"
       },
-      "reviewBody": "Recovered my retained salary of ₹2,80,000. LegalRecovery helped me audit my payslips showing the cuts, and served an advocate notice directly to the directors. The company cleared my dues immediately."
+      "reviewBody": "Recovered my retained salary of ₹2,80,000. LegalRecovery helped me audit my payslips showing the cuts, and served a fact-verified notice directly to the directors. The company cleared my dues immediately."
     },
     {
       "@type": "Review",
@@ -286,7 +286,7 @@ export default function RetainedSalaryClient() {
               Recover Withheld <span className="text-[#DC2626]">Retained Salary</span> &amp; Deferred Pay
             </h1>
             <p className="text-sm md:text-xl mb-8 md:mb-12 max-w-3xl mx-auto text-slate-300 leading-relaxed font-medium">
-              Struggling with employers withholding your retained wages, deferred compensation, or retention bonuses? Serve advocate-backed legal notices and initiate fast-track recovery.
+              Struggling with employers withholding your retained wages, deferred compensation, or retention bonuses? Serve fact-verified legal notices and initiate fast-track recovery.
             </p>
             <button 
               onClick={() => setIsPaymentModalOpen(true)}
@@ -356,7 +356,7 @@ export default function RetainedSalaryClient() {
                       Furthermore, <strong>Section 5</strong> of the Act mandates the timely payment of wages. It states that the wages of every person employed in any establishment must be paid before the expiry of the seventh day (for establishments with fewer than 1,000 employees) or tenth day (for larger establishments) after the last day of the wage period. If an employee resigns or is terminated, Section 5(2) requires the employer to clear all outstanding wages within two working days of termination. Holding back the retained salary for months after resignation directly violates this statutory timeline.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      In addition to the Payment of Wages Act, the <strong>Code on Wages, 2019</strong>, which consolidates and replaces previous wage-related laws, reinforces the employer&apos;s obligation to pay wages on time and limits deductions to a maximum of 50% of the total wages in any month. The Code strictly prohibits any unauthorized withholding of wages. The principles of the Code on Wages can be used by our legal team to show that the employer&apos;s salary retention practices are unlawful and constitute a statutory violation, regardless of the employee&apos;s title or salary.
+                      In addition to the Payment of Wages Act, the <strong>Code on Wages, 2019</strong>, which consolidates and replaces previous wage-related laws, reinforces the employer&apos;s obligation to pay wages on time and limits deductions to a maximum of 50% of the total wages in any month. The Code strictly prohibits any unauthorized withholding of wages. The principles of the Code on Wages can be used by our team to show that the employer&apos;s salary retention practices are unlawful and constitute a statutory violation, regardless of the employee&apos;s title or salary.
                     </p>
                   </div>
                 </section>
@@ -464,13 +464,13 @@ export default function RetainedSalaryClient() {
                       Before initiating formal litigation, it is essential to follow a structured pre-litigation escalation process. This shows courts that you acted in good faith and exhausted all informal remedies. The escalation should begin with a formal email to the employer&apos;s finance team, attaching a reconciliation sheet showing all earned salaries, deductions, retention amounts, and the outstanding balance. If this is ignored, escalate the communication to the employer&apos;s Chief Financial Officer (CFO) and Chief Executive Officer (CEO), demanding a formal response within a specific timeframe.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      If executive escalation fails, the next step is to serve a formal <strong>Legal Notice</strong>. A legal notice is a structured, advocate-signed document sent to the debtor, setting out the facts of the transaction, detailing the default, demanding payment of the outstanding dues within a strict window (typically 15 days), and warning of the legal actions that will be taken if they fail to comply. A legal notice is not just a warning; it establishes your cause of action and forms part of the court record.
+                      If executive escalation fails, the next step is to serve a formal <strong>Legal Notice</strong>. A legal notice is a structured, fact-verified document sent to the debtor, setting out the facts of the transaction, detailing the default, demanding payment of the outstanding dues within a strict window (typically 15 days), and warning of the legal actions that will be taken if they fail to comply. A legal notice is not just a warning; it establishes your cause of action and forms part of the court record.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      Our legal panel drafts custom notices tailored to the specific facts of your case. We do not use generic templates. Instead, we highlight the employer&apos;s violations of the contract, the statutory interest liabilities under the contract or Interest Act, and the criminal consequences of bounced cheques or cheating. The notice is digitally dispatched via verified email and WhatsApp to the debtor&apos;s corporate office. Crucially, we also send copies of the notice to the personal residential addresses of the company&apos;s directors, piercing the corporate veil and encouraging immediate settlement.
+                      Our team drafts custom notices tailored to the specific facts of your case. We do not use generic templates. Instead, we highlight the employer&apos;s violations of the contract, the statutory interest liabilities under the contract or Interest Act, and the criminal consequences of bounced cheques or cheating. The notice is digitally dispatched via verified email and WhatsApp to the debtor&apos;s corporate office. Crucially, we also send copies of the notice to the personal residential addresses of the company&apos;s directors, piercing the corporate veil and encouraging immediate settlement.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      Approximately 85% of B2B payment disputes are resolved successfully at the legal notice stage. Most corporate entities prefer to settle undisputed dues rather than face public litigation, credit rating downgrades, or asset attachment. If the debtor responds with a counter-claim or denies the debt, their reply helps our legal team understand their defense strategy, allowing us to prepare a stronger petition for the MSEFC, a Summary Suit, or cheque bounce proceedings.
+                      Approximately 85% of B2B payment disputes are resolved successfully at the legal notice stage. Most corporate entities prefer to settle undisputed dues rather than face public litigation, credit rating downgrades, or asset attachment. If the debtor responds with a counter-claim or denies the debt, their reply helps our team understand their defense strategy, allowing us to prepare a stronger petition for the MSEFC, a Summary Suit, or cheque bounce proceedings.
                     </p>
                   </div>
                 </section>

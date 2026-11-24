@@ -27,7 +27,7 @@ export default function LesseeSaleCTA({ className = "" }: LesseeSaleCTAProps) {
                 Test 1 Live Overdue Case Now (&#8377;{basePrice})
               </h3>
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-                Advocate-drafted <em>Nemo Dat</em> s.27 / BNS s.316 Police-CC or IBC s.18
+                Fact-verified <em>Nemo Dat</em> s.27 / BNS s.316 Police-CC or IBC s.18
                 Explanation(a) RP Demand Notice dispatched via Email + WhatsApp + Speed Post RPAD.
               </p>
             </div>

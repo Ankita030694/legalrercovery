@@ -251,7 +251,7 @@ const HOWTO_SCHEMA = {
       "@type": "HowToStep",
       position: 2,
       name: "Serve Simultaneous PSS Act s.25 + Loan Recall & PG Invocation Notice",
-      text: "Dispatch tri-channel advocate notices (Email + WhatsApp + Speed Post RPAD) within 30 days of mandate return, impleading directors under s.141/s.25(5) and invoking personal guarantees under s.128 Contract Act.",
+      text: "Dispatch tri-channel fact-verified notices (Email + WhatsApp + Speed Post RPAD) within 30 days of mandate return, impleading directors under s.141/s.25(5) and invoking personal guarantees under s.128 Contract Act.",
     },
     {
       "@type": "HowToStep",

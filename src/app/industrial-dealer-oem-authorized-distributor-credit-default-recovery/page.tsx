@@ -313,7 +313,7 @@ export default function IndustrialDealerCreditRecoveryPage() {
         "@type": "HowToStep",
         position: 4,
         name: "Comprehensive Dealership Termination & Cease-and-Desist Notice",
-        text: "Serve advocate-drafted termination notice terminating authorized distributor status, revoking trademark usage, demanding return of proprietary marketing collateral, and declaring full balance maturity.",
+        text: "Serve fact-verified termination notice terminating authorized distributor status, revoking trademark usage, demanding return of proprietary marketing collateral, and declaring full balance maturity.",
       },
       {
         "@type": "HowToStep",
@@ -1160,7 +1160,7 @@ export default function IndustrialDealerCreditRecoveryPage() {
 
               <div className="space-y-4 text-xs sm:text-sm text-slate-700 leading-relaxed">
                 <p>
-                  A routine commercial reminder email has zero statutory teeth against a calculated distributor default. To create immediate settlement pressure, the OEM must serve a composite, advocate-vetted <strong>15-Day Statutory Legal Demand &amp; Termination Notice</strong> that incorporates five mandatory legal components:
+                  A routine commercial reminder email has zero statutory teeth against a calculated distributor default. To create immediate settlement pressure, the OEM must serve a composite, fact-verified <strong>15-Day Statutory Legal Demand &amp; Termination Notice</strong> that incorporates five mandatory legal components:
                 </p>
 
                 <ol className="list-decimal pl-5 space-y-2 text-slate-700">

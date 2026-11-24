@@ -131,7 +131,7 @@ export default function CloudResellerRecoveryPage() {
         "@type": "HowToStep",
         position: 4,
         name: "Advocate Statutory Demand Notice & Section 63 BSA Dossier",
-        text: "Serve a formal advocate legal demand notice demanding full principal, 3x RBI compound penal interest under MSMED Act Section 16, and warning of Order XXXVII summary litigation.",
+        text: "Serve a formal fact-verified legal demand notice demanding full principal, 3x RBI compound penal interest under MSMED Act Section 16, and warning of Order XXXVII summary litigation.",
       },
       {
         "@type": "HowToStep",
@@ -929,7 +929,7 @@ export default function CloudResellerRecoveryPage() {
                     CFO Recovery Outcome via Advocate Demand
                   </p>
                   <p className="text-xs text-emerald-800 leading-relaxed">
-                    By issuing an immediate Advocate Notice asserting Order 37 summary debt and invoking the founder&apos;s personal guarantee, the reseller recovered ₹42,00,000 via upfront RTGS wire within 14 days, with the balance structured under a registered escrow charge against the startup&apos;s receivables.
+                    By issuing an immediate Fact-Verified Notice asserting Order 37 summary debt and invoking the founder&apos;s personal guarantee, the reseller recovered ₹42,00,000 via upfront RTGS wire within 14 days, with the balance structured under a registered escrow charge against the startup&apos;s receivables.
                   </p>
                 </div>
                 <div className="bg-red-50 border border-red-200 rounded-xl p-4">
@@ -1051,7 +1051,7 @@ export default function CloudResellerRecoveryPage() {
                 Stop Paying Hyperscalers Out of Pocket: Activate Your Institutional Cloud Recovery Desk
               </h2>
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-6">
-                Whether you need to serve a fast-track statutory legal notice on a single runaway AI startup default or upload an enterprise CSV ledger of 500+ aging VAR invoices, our senior advocate desk provides end-to-end recovery enforcement across India.
+                Whether you need to serve a fast-track statutory legal notice on a single runaway AI startup default or upload an enterprise CSV ledger of 500+ aging VAR invoices, our team desk provides end-to-end recovery enforcement across India.
               </p>
 
               <CloudResellerRecoveryCTA />
@@ -1165,7 +1165,7 @@ export default function CloudResellerRecoveryPage() {
               <div className="mt-8 pt-6 border-t border-slate-100 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
                 <div>
                   <p className="text-xs font-bold text-slate-900">
-                    Advocate Review &amp; Statutory Guidance:
+                    Fact Verification &amp; Statutory Guidance:
                   </p>
                   <p className="text-xs text-slate-600">
                     Authored by the LegalRecovery B2B Technology &amp; Cloud Practice Group under direction of{" "}

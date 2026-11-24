@@ -26,7 +26,7 @@ export default function CourierWalletCTA({ className = "" }: CourierWalletCTAPro
               Test 1 Live Negative Seller Wallet Case Now
             </h3>
             <p className="text-slate-300 text-xs sm:text-sm leading-relaxed mb-5">
-              Upload one high-value negative seller ledger (-₹15,000 to -₹5,00,000+) with clickwrap T&amp;Cs and AWB/weight-audit logs. Advocate-drafted statutory notice dispatched via Email, WhatsApp &amp; Speed Post RPAD.
+              Upload one high-value negative seller ledger (-₹15,000 to -₹5,00,000+) with clickwrap T&amp;Cs and AWB/weight-audit logs. Fact-verified statutory notice dispatched via Email, WhatsApp &amp; Speed Post RPAD.
             </p>
           </div>
           <div className="space-y-3">
@@ -46,7 +46,7 @@ export default function CourierWalletCTA({ className = "" }: CourierWalletCTAPro
               </Link>
             </div>
             <p className="text-[11px] text-slate-400">
-              ✓ Advocate Signed • ✓ IT Act s.10A &amp; BSA s.63 Compliant • ✓ 15-Day Cure Window
+              ✓ Fact-Verified • ✓ IT Act s.10A &amp; BSA s.63 Compliant • ✓ 15-Day Cure Window
             </p>
           </div>
         </div>
@@ -61,7 +61,7 @@ export default function CourierWalletCTA({ className = "" }: CourierWalletCTAPro
               Have 10 to 10,000+ Negative Seller Wallets?
             </h3>
             <p className="text-slate-600 text-xs sm:text-sm leading-relaxed mb-5">
-              Onboard your D2C shipping aggregator or hyperlocal fleet receivables via CSV/API. Automate 1,000+ monthly advocate notices, track RPAD/WhatsApp delivery proofs, and escalate non-payers to ODR or Order 37 CPC.
+              Onboard your D2C shipping aggregator or hyperlocal fleet receivables via CSV/API. Automate 1,000+ monthly fact-verified notices, track RPAD/WhatsApp delivery proofs, and escalate non-payers to ODR or Order 37 CPC.
             </p>
           </div>
           <div className="space-y-3">

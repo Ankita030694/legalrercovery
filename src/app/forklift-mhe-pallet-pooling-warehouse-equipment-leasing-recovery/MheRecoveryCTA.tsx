@@ -27,7 +27,7 @@ export default function MheRecoveryCTA({ className = "" }: MheRecoveryCTAProps) 
                 Test 1 Live Overdue MHE / Pallet Account Now
               </h3>
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-                Advocate-drafted Contract Act s.152 bailee negligence, pallet shrinkage buyout &amp; BNS s.316 repossession demand notice, delivered via Email, WhatsApp &amp; Speed Post RPAD.
+                Fact-verified Contract Act s.152 bailee negligence, pallet shrinkage buyout &amp; BNS s.316 repossession demand notice, delivered via Email, WhatsApp &amp; Speed Post RPAD.
               </p>
             </div>
 
@@ -48,7 +48,7 @@ export default function MheRecoveryCTA({ className = "" }: MheRecoveryCTAProps) 
                 </Link>
               </div>
               <p className="text-[11px] text-slate-400">
-                &check; Advocate Drafted &bull; &check; Email + WhatsApp + Speed Post RPAD &bull; &check; s.152 &amp; s.9 Clauses
+                &check; Fact-Verified &bull; &check; Email + WhatsApp + Speed Post RPAD &bull; &check; s.152 &amp; s.9 Clauses
               </p>
             </div>
           </div>

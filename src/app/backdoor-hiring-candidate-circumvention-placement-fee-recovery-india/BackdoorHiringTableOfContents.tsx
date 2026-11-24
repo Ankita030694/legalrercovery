@@ -163,7 +163,7 @@ export default function BackdoorHiringTableOfContents({
               Need Direct Legal Guidance?
             </span>
             <p className="text-[11px] text-slate-400 leading-normal">
-              Notice served via Advocate Panel with electronic delivery certificates under BSA 2023.
+              Fact-verified notice served with electronic delivery certificates under BSA 2023.
             </p>
           </div>
         </div>

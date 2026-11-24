@@ -220,7 +220,7 @@ const HOWTO_SCHEMA = {
     {
       "@type": "HowToStep",
       position: 2,
-      name: "Issue 15-Day Advocate Statutory Demand Notice",
+      name: "Issue 15-Day Fact-Verified Statutory Demand Notice",
       text: "Serve a formal legal demand notice via Speed Post RPAD, Email, and WhatsApp to the hospital Managing Director and Finance Head itemizing admitted 194J debt, unpaid surgical shares, and demanding 18% commercial interest under the Interest Act, 1978.",
     },
     {
@@ -423,7 +423,7 @@ export default function VisitingConsultantDoctorUnpaidFeePage() {
                       </h4>
                       <ul className="text-xs text-slate-700 space-y-1.5 list-disc pl-4">
                         <li>Anchor claim on Section 194J Form 26AS / AIS admissions</li>
-                        <li>Serve rigorous 15-day Advocate Notice with Interest Act claims</li>
+                        <li>Serve rigorous 15-day Fact-Verified Notice with Interest Act claims</li>
                         <li>Institute Order XXXVII CPC Summary Suit for rapid money decree</li>
                         <li>Invoke Section 21 Institutional Arbitration for commercial awards</li>
                       </ul>
@@ -530,7 +530,7 @@ export default function VisitingConsultantDoctorUnpaidFeePage() {
                   </div>
                   <div className="bg-slate-900 text-white p-4 rounded-xl border border-slate-800">
                     <span className="text-[10px] font-bold text-red-400 uppercase tracking-wider">Stage 2</span>
-                    <h3 className="text-sm font-bold text-white mt-1">Serve 15-Day Advocate Demand Notice</h3>
+                    <h3 className="text-sm font-bold text-white mt-1">Serve 15-Day Fact-Verified Demand Notice</h3>
                     <p className="text-xs text-slate-300 mt-1">
                       Formal legal notice served on Hospital MD, Trustees, and CFO claiming 18% commercial interest under Interest Act, 1978.
                     </p>
@@ -735,7 +735,7 @@ export default function VisitingConsultantDoctorUnpaidFeePage() {
                   </div>
 
                   <div className="mt-4 pt-4 border-t border-slate-800 text-xs text-slate-400 leading-relaxed">
-                    <strong>Outcome:</strong> Upon service of the Advocate Legal Notice accompanied by certified Form 26AS printouts, the hospital finance committee realized it could not survive an Order XXXVII CPC Summary Suit. The hospital settled the entire net principal of ₹22.15 Lakh plus ₹2.5 Lakh towards interest across 3 post-dated cheques within 21 days of notice receipt.
+                    <strong>Outcome:</strong> Upon service of the Fact-Verified Legal Notice accompanied by certified Form 26AS printouts, the hospital finance committee realized it could not survive an Order XXXVII CPC Summary Suit. The hospital settled the entire net principal of ₹22.15 Lakh plus ₹2.5 Lakh towards interest across 3 post-dated cheques within 21 days of notice receipt.
                   </div>
                 </div>
 

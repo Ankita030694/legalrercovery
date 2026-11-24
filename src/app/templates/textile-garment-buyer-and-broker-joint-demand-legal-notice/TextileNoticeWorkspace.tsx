@@ -501,7 +501,7 @@ ${form.advocateOffice}`;
           <div className="bg-slate-900 text-white px-4 sm:px-5 py-3.5 flex flex-wrap items-center justify-between gap-3">
             <div>
               <span className="text-[10px] uppercase tracking-widest text-red-400 font-bold block">
-                Live Advocate-Vetted Draft
+                Live Draft
               </span>
               <p className="text-xs sm:text-sm font-bold text-white">
                 Joint Demand: {formatINR(form.principalAmount)} + ~{formatINR(estimated90DayInterest)} MSMED Interest

@@ -164,7 +164,7 @@ const FAQS = [
   {
     question: "What should a bank's legal notice for long-pending credit card dues contain?",
     answer:
-      "The notice must be drafted by an advocate and served via Registered Speed Post and digitally under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023. It must specify: (1) Cardholder agreement execution date and credit limit, (2) Detailed transaction ledger and date of default, (3) Explicit references to any Section 18 acknowledgments or Section 19 token credits, (4) Statutory 15-day demand window to settle dues or accept Lok Adalat conciliation, and (5) Notice that failure to comply will trigger Order 37 summary suits, CIBIL willful defaulter reporting, and Section 25 PSS Act prosecution.",
+      "The notice must be prepared on verified facts and served via Registered Speed Post and digitally under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023. It must specify: (1) Cardholder agreement execution date and credit limit, (2) Detailed transaction ledger and date of default, (3) Explicit references to any Section 18 acknowledgments or Section 19 token credits, (4) Statutory 15-day demand window to settle dues or accept Lok Adalat conciliation, and (5) Notice that failure to comply will trigger Order 37 summary suits, CIBIL willful defaulter reporting, and Section 25 PSS Act prosecution.",
   },
   {
     question: "How do Lok Adalat consent decrees help banks resolve 180+ DPD card pools without high legal costs?",
@@ -680,10 +680,10 @@ export default function RecoveryLongPendingCreditCardDuesPage() {
                     </span>
                     <div className="space-y-1 sm:space-y-1.5">
                       <h3 className="text-sm sm:text-base md:text-lg font-bold text-slate-900">
-                        Issue Formal Advocate Demand Notice with Pre-Litigation Summons
+                        Issue Formal Fact-Verified Demand Notice with Pre-Litigation Summons
                       </h3>
                       <p className="text-xs sm:text-sm leading-relaxed">
-                        Serve an advocate-drafted statutory demand notice via Registered Speed Post and Section 63 BSA compliant electronic mail. The notice itemizes the principal outstanding, accrued interest, and penal charges, providing a 15-day pre-litigation cure period with an option to appear before the upcoming National Lok Adalat for an amicable consent decree.
+                        Serve a fact-verified statutory demand notice via Registered Speed Post and Section 63 BSA compliant electronic mail. The notice itemizes the principal outstanding, accrued interest, and penal charges, providing a 15-day pre-litigation cure period with an option to appear before the upcoming National Lok Adalat for an amicable consent decree.
                       </p>
                       <p className="text-xs text-slate-500 font-medium">
                         Explore our fixed-rate institutional pricing on the <Link href="/legal-notice-charges" className="text-blue-700 underline">legal notice charges</Link> schedule.

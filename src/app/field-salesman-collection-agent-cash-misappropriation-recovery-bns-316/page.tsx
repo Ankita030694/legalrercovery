@@ -152,7 +152,7 @@ const FAQS = [
   {
     question: "How does LegalRecovery assist FMCG, pharma, and beverage distributors with salesman fraud?",
     answer:
-      "LegalRecovery provides an end-to-end institutional recovery service: (1) Advocate drafting of statutory legal demand notices to erring employees and defaulting retailers; (2) Drafting bulletproof criminal complaints under BNS s.316(4) and BNSS s.173(1)/s.175(3); (3) Compiling forensic BSA s.63 electronic evidence bundles; (4) Managing surveyor queries for Fidelity Guarantee Insurance claims; and (5) Enabling bulk CSV ledger ingestion for distributors handling dozens of disputed retail accounts.",
+      "LegalRecovery provides an end-to-end institutional recovery service: (1) Notice drafting of statutory legal demand notices to erring employees and defaulting retailers; (2) Drafting bulletproof criminal complaints under BNS s.316(4) and BNSS s.173(1)/s.175(3); (3) Compiling forensic BSA s.63 electronic evidence bundles; (4) Managing surveyor queries for Fidelity Guarantee Insurance claims; and (5) Enabling bulk CSV ledger ingestion for distributors handling dozens of disputed retail accounts.",
   },
 ];
 
@@ -224,7 +224,7 @@ export default function FieldSalesmanMisappropriationRecoveryPage() {
         "@type": "HowToStep",
         position: 3,
         name: "Lodge Cognizable Police Complaint under BNS Section 316(4)",
-        text: "File an advocate-drafted complaint under Bharatiya Nyaya Sanhita Section 316(4) with the SP/DCP and Cyber Crime Cell under BNSS Section 173(1).",
+        text: "File a fact-verified complaint under Bharatiya Nyaya Sanhita Section 316(4) with the SP/DCP and Cyber Crime Cell under BNSS Section 173(1).",
       },
       {
         "@type": "HowToStep",

@@ -90,7 +90,7 @@ const PLAYBOOKS: ScenarioPlaybook[] = [
     creditorSequence: [
       "Audit the instruction email chain: under Indian Contract Law, an instructing foreign law firm is directly liable as contracting party unless an express written clause restricted recourse solely to the underlying foreign applicant.",
       "Immediately halt further credit advances for official IPO annuities/renewals after giving clear 30-day written notice of upcoming statutory deadlines to protect against malpractice allegations.",
-      "Serve a formal dual-jurisdiction Advocate Demand Notice citing Indian court jurisdiction under CPC s.20(c) (contract performed & filings executed in India), official IPO CBR disbursements, and contractual interest.",
+      "Serve a formal dual-jurisdiction Fact-Verified Demand Notice citing Indian court jurisdiction under CPC s.20(c) (contract performed & filings executed in India), official IPO CBR disbursements, and contractual interest.",
       "For undisputed USD/EUR invoices backed by email confirmations, initiate Order XXXVII CPC summary proceedings in the Commercial Division of the relevant Indian High Court / District Commercial Court, or leverage reciprocal enforcement / overseas bar ethics escalation where applicable.",
     ],
     evidenceLock:

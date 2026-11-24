@@ -27,7 +27,7 @@ export default function AgencyMediaHubCTA({ className = "" }: AgencyMediaHubCTAP
                 Test 1 Live Overdue Case Now (&rupee;{basePrice})
               </h3>
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-                Serve one defaulting brand CMO, CFO, or sponsor with our dual-impact advocate notice combining unpaid retainer / media-spend / balance recovery with a 7-day Copyright Takedown &amp; INS/Order 37 warning—dispatched via Email, Business WhatsApp, and Speed Post RPAD.
+                Serve one defaulting brand CMO, CFO, or sponsor with our dual-impact fact-verified notice combining unpaid retainer / media-spend / balance recovery with a 7-day Copyright Takedown &amp; INS/Order 37 warning—dispatched via Email, Business WhatsApp, and Speed Post RPAD.
               </p>
               <ul className="space-y-1.5 text-xs text-slate-200 mb-6">
                 <li>&check; Copyright s.19/s.51 Meta, YouTube &amp; Website Takedown Warning</li>

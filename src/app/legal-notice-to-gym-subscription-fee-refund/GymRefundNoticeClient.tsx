@@ -30,7 +30,7 @@ const faqs = [
   },
   {
     question: "How long should I wait before sending a formal legal notice to the gym management?",
-    answer: "If you have submitted a formal written request for cancellation (via email or physical letter) and the management denies the refund or ignores your communication for more than 15 days, you should immediately proceed with sending a legal notice drafted by an advocate."
+    answer: "If you have submitted a formal written request for cancellation (via email or physical letter) and the management denies the refund or ignores your communication for more than 15 days, you should immediately proceed with sending a legal notice prepared on verified facts."
   },
   {
     question: "Can I approach the Consumer Court directly without sending a legal notice first?",
@@ -365,7 +365,7 @@ export default function GymRefundNoticeClient() {
                 <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                   
                   <p className="text-sm md:text-base leading-relaxed">
-                    When customer support ignores your emails, an advocate notice bypasses the front desk and lands directly on the desks of the corporate legal and compliance teams. These teams understand consumer law and know when a fight is too expensive.
+                    When customer support ignores your emails, a fact-verified notice bypasses the front desk and lands directly on the desks of the corporate legal and compliance teams. These teams understand consumer law and know when a fight is too expensive.
                   </p>
                   
                   <p className="text-sm md:text-base leading-relaxed">

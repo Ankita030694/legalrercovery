@@ -49,7 +49,7 @@ export default function ChemWaterproofingNoticeCTA({
                 Test 1 Live Overdue Case Now (&rupee;{basePrice})
               </h3>
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-                Advocate-drafted statutory notice separating 10-year warranty bonds from 30-day invoice dues, annexing substrate moisture logs &amp; ponding reports &mdash; dispatched via Email + WhatsApp + Speed Post RPAD.
+                Fact-verified statutory notice separating 10-year warranty bonds from 30-day invoice dues, annexing substrate moisture logs &amp; ponding reports &mdash; dispatched via Email + WhatsApp + Speed Post RPAD.
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-3">

@@ -9,7 +9,7 @@ interface SchoolFeeNoticeCTAProps {
 }
 
 export default function SchoolFeeNoticeCTA({
-  title = "Send Child-Safe Advocate Notices Without Risking School Reputation",
+  title = "Send Child-Safe Fact-Verified Notices Without Risking School Reputation",
   subtitle = "Do not let chronic unpaid tuition, transport, or hostel fees erode Trust budgets—and never risk DEO show-cause notices with harsh local drafts. Serve RTE-safe, parent-addressed civil notices at scale.",
 }: SchoolFeeNoticeCTAProps) {
   const singleCaseFee = DEFAULT_FUNNEL_SETTINGS.basePricePerOpposition;
@@ -42,7 +42,7 @@ export default function SchoolFeeNoticeCTA({
                 Test 1 Live Overdue Case Now
               </h3>
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
-                ₹{singleCaseFee} · Advocate Drafted · Email + WhatsApp + Speed Post RPAD Dispatch with RTE s.5(3) Safe-Harbour Disclaimer, Parent Undertaking &amp; Order XXXVII CPC clauses.
+                ₹{singleCaseFee} · Fact-Verified · Email + WhatsApp + Speed Post RPAD Dispatch with RTE s.5(3) Safe-Harbour Disclaimer, Parent Undertaking &amp; Order XXXVII CPC clauses.
               </p>
             </div>
             <Link

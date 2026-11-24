@@ -273,7 +273,7 @@ export default function DebitCardFraudClient() {
           
           <div className="relative z-20 mx-auto px-4 max-w-8xl text-center">
             <span className="inline-block text-[#DC2626] text-xs md:text-sm font-black uppercase tracking-widest mb-4 bg-red-950/30 px-4 py-1.5 rounded-full border border-[#DC2626]/20">
-              National Debit Card Recovery Legal Panel
+              National Debit Card Recovery Desk
             </span>
             <h1 className="text-3xl md:text-6xl font-black mb-6 leading-tight tracking-tight">
               Recover <span className="text-[#DC2626]">Debit Card Fraud</span> Amount
@@ -528,7 +528,7 @@ export default function DebitCardFraudClient() {
                       <div className="p-6 bg-slate-50 rounded-2xl border border-slate-200">
                         <h3 className="text-lg font-bold text-slate-900 mb-2">1. The Statutory Legal Notice</h3>
                         <p className="text-sm text-slate-650 leading-relaxed mb-3">
-                          A formal notice drafted by our panel of recovery advocates is sent to the bank's corporate office and Principal Nodal Officer. The notice cites the specific paragraphs of the RBI Master Circular DBR.No.Leg.BC.78/09.07.005/2017-18, details the bank's failure to provide shadow credit within 10 days, and highlights any security deficiencies (e.g., failure to detect anomalous international transactions). The notice gives the bank a 15-day period to resolve the issue, failing which legal action will be initiated.
+                          A fact-verified formal notice prepared by our team is sent to the bank's corporate office and Principal Nodal Officer. The notice cites the specific paragraphs of the RBI Master Circular DBR.No.Leg.BC.78/09.07.005/2017-18, details the bank's failure to provide shadow credit within 10 days, and highlights any security deficiencies (e.g., failure to detect anomalous international transactions). The notice gives the bank a 15-day period to resolve the issue, failing which legal action will be initiated.
                         </p>
                       </div>
                       
@@ -585,7 +585,7 @@ export default function DebitCardFraudClient() {
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      Navigating the recovery process for debit card fraud requires a combination of technical knowledge, understanding of payment network rules, and legal expertise. Individual complaints are often delayed by bank customer service, which may rely on standard template rejections. LegalRecovery provides structured legal support through our panel of recovery advocates and dispute resolution professionals.
+                      Navigating the recovery process for debit card fraud requires a combination of technical knowledge, understanding of payment network rules, and legal expertise. Individual complaints are often delayed by bank customer service, which may rely on standard template rejections. LegalRecovery provides structured legal support through our fact-verified notice process and dispute resolution support.
                     </p>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
                       <div className="p-6 bg-slate-50 rounded-2xl border border-slate-200">
@@ -652,13 +652,13 @@ export default function DebitCardFraudClient() {
             <div className="hidden lg:block sticky top-24">
               <div className="bg-gradient-to-br from-[#111827] to-[#0F172A] text-white p-6 rounded-3xl border border-slate-900 shadow-xl">
                 <span className="inline-block text-[#DC2626] text-[10px] font-black uppercase tracking-widest mb-3 bg-red-950/40 px-3 py-1 rounded-full border border-red-500/10">
-                  Legal Panel Active
+                  Recovery Desk Active
                 </span>
                 <h3 className="text-lg font-black mb-3 text-white leading-tight">
                   Recover Your Debit Card Funds
                 </h3>
                 <p className="text-xs text-slate-400 mb-6 leading-relaxed">
-                  Connect with our panel of cyber advocates. We help draft legal notices, initiate chargeback disputes, and file RBI Ombudsman complaints.
+                  Tell us your case details. We verify the facts, prepare and send legal notices, initiate chargeback disputes, and file RBI Ombudsman complaints.
                 </p>
                 <button
                   onClick={() => setIsPaymentModalOpen(true)}

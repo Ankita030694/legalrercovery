@@ -624,7 +624,7 @@ For and on behalf of ${form.bankName}`;
           <div className="flex flex-wrap items-center justify-between gap-2 pb-3 border-b border-slate-200">
             <div>
               <p className="text-xs font-extrabold uppercase tracking-wider text-slate-900">
-                Live Advocate-Vetted Notice Preview
+                Live Fact-Verified Notice Preview
               </p>
               <p className="text-[11px] text-slate-500">
                 Ready for Word (.doc) export, clipboard copy, or Bar Council advocate dispatch
@@ -661,7 +661,7 @@ For and on behalf of ${form.bankName}`;
 
           <div className="bg-red-50 border border-red-200 rounded-xl p-4 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
             <div className="text-xs text-slate-800">
-              <strong className="text-slate-900 block">Need Panel Advocate Letterhead + Tri-Channel RPAD Proof?</strong>
+              <strong className="text-slate-900 block">Need Tri-Channel RPAD Proof?</strong>
               <span className="text-slate-600">
                 Test 1 live borrower/guarantor recall notice or upload a bulk CSV for branch/SARB dispatch.
               </span>

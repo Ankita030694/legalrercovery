@@ -3,7 +3,7 @@ import WrongfulTerminationClient from "./WrongfulTerminationClient";
 
 export const metadata: Metadata = {
   title: "Wrongful Termination & Unpaid Salary Legal Notice",
-  description: "Fired without cause, put on fake PIP, or forced to resign? Send an advocate legal notice for wrongful termination and claim full severance pay.",
+  description: "Fired without cause, put on fake PIP, or forced to resign? Send a fact-verified legal notice for wrongful termination and claim full severance pay.",
   keywords: [
     "legal notice for wrongful termination india",
     "forced resignation legal action india",
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Wrongful Termination & Unpaid Salary Legal Notice",
-    description: "Fired suddenly without cause or forced to resign? Serve an Advocate Legal Notice for wrongful termination & severance pay.",
+    description: "Fired suddenly without cause or forced to resign? Serve a Fact-Verified Legal Notice for wrongful termination & severance pay.",
     url: "https://www.legalrecovery.in/legal-notice-wrongful-termination-unpaid-notice-period-salary",
     type: "article",
     siteName: "LegalRecovery.in",
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Wrongful Termination & Unpaid Salary Legal Notice",
-    description: "Fired suddenly without cause or forced to resign? Serve an Advocate Legal Notice for wrongful termination & severance pay.",
+    description: "Fired suddenly without cause or forced to resign? Serve a Fact-Verified Legal Notice for wrongful termination & severance pay.",
     site: "@legalrecoveryin",
     creator: "@legalrecoveryin",
     images: ["https://www.legalrecovery.in/blog_money_recovery.png"],

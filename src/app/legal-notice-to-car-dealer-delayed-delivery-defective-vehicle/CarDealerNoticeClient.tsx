@@ -52,7 +52,7 @@ const reviews = [
   {
     author: "Vikram A.",
     rating: "5",
-    text: "Dealing with a lemon car is an absolute nightmare. The dealership blamed my driving style for an obvious engine defect. Sending a formal legal notice drafted by an advocate changed their entire tone. They realized I was preparing for consumer court and finally took the car back for a full refund."
+    text: "Dealing with a lemon car is an absolute nightmare. The dealership blamed my driving style for an obvious engine defect. Sending a formal legal notice prepared on verified facts changed their entire tone. They realized I was preparing for consumer court and finally took the car back for a full refund."
   }
 ];
 
@@ -404,7 +404,7 @@ export default function CarDealerNoticeClient() {
                     <div className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-5 rounded-2xl shadow-sm border border-slate-100 group-hover:border-[#DC2626]/30 transition-colors">
                       <h3 className="text-lg md:text-xl font-bold text-slate-900 mb-2">Days 1 to 15: Corporate Legal Notice</h3>
                       <p className="text-xs md:text-sm text-slate-600 leading-relaxed">
-                        The advocate issues the notice via RPAD to both the dealer and the manufacturer. Often, the corporate office intervenes upon receiving the notice, overriding the local dealer to offer a settlement (like a refund of the booking amount or offering a free extended warranty) to avoid bad PR and court costs.
+                        We issue the notice via RPAD to both the dealer and the manufacturer. Often, the corporate office intervenes upon receiving the notice, overriding the local dealer to offer a settlement (like a refund of the booking amount or offering a free extended warranty) to avoid bad PR and court costs.
                       </p>
                     </div>
                   </div>

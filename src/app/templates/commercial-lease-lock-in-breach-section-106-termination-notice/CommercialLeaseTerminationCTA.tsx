@@ -46,7 +46,7 @@ export default function CommercialLeaseTerminationCTA({
                 Track 1 &bull; Single Tenant Termination &amp; Arrears Notice
               </span>
               <p className="text-lg sm:text-xl font-extrabold text-white mb-2">
-                Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Advocate Drafted &middot; Email + WhatsApp + Speed Post RPAD)
+                Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Fact-Verified &middot; Email + WhatsApp + Speed Post RPAD)
               </p>
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
                 Serve a rigorous, court-tested Section 106 TPA termination notice on a defaulting corporate tenant, retail occupant, or warehouse lessee. Itemizes unpaid lease rent, 18% GST liability, uncredited Section 194-I TDS under Section 205 IT Act, unamortized fit-out CapEx clawbacks under Contract Act Section 74, and triggers CPC Order XV-A striking of defense warnings.

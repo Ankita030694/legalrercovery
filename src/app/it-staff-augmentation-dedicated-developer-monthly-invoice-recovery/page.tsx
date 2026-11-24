@@ -272,8 +272,8 @@ const HOWTO_SCHEMA = {
     {
       "@type": "HowToStep",
       position: 4,
-      name: "Serve Advocate Statutory Demand Notice",
-      text: "Issue a 15-day advocate legal notice invoking MSMED Act Section 16 compound interest (3x RBI rate) and Section 43B(h) corporate income tax disallowance.",
+      name: "Serve Fact-Verified Statutory Demand Notice",
+      text: "Issue a 15-day fact-verified legal notice invoking MSMED Act Section 16 compound interest (3x RBI rate) and Section 43B(h) corporate income tax disallowance.",
     },
     {
       "@type": "HowToStep",

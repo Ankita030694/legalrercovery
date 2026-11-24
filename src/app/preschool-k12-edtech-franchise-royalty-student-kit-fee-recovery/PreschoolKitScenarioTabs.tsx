@@ -38,7 +38,7 @@ const SCENARIOS: ScenarioTab[] = [
       {
         step: "Serve 15-Day Audit Cure & Kit-Fee Demand Notice",
         description:
-          "Dispatch an Advocate Legal Notice demanding immediate payment of imputed Welcome Kit fees, 18%–24% p.a. commercial interest, and liquidated audit costs under Contract Act s.74.",
+          "Dispatch a Fact-Verified Legal Notice demanding immediate payment of imputed Welcome Kit fees, 18%–24% p.a. commercial interest, and liquidated audit costs under Contract Act s.74.",
       },
     ],
     statutoryRule: "Contract Act s.73 & s.74 | BNS s.316 | Physical Headcount Audit Clause",
@@ -114,7 +114,7 @@ const SCENARIOS: ScenarioTab[] = [
       {
         step: "Dispatch Synchronized Multi-Channel Demand Notices",
         description:
-          "Trigger Advocate-drafted notices across Email, WhatsApp, and Speed Post RPAD simultaneously so non-paying centers cannot claim selective enforcement.",
+          "Trigger Fact-verified notices across Email, WhatsApp, and Speed Post RPAD simultaneously so non-paying centers cannot claim selective enforcement.",
       },
       {
         step: "Escalate Non-Responders to ODR / NI s.138 Track",

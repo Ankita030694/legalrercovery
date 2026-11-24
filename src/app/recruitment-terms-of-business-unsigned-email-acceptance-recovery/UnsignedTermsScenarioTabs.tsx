@@ -21,7 +21,7 @@ const SCENARIOS: Scenario[] = [
     title: "The 'Share CVs Urgently While Legal Reviews the MSA' Bait-and-Switch",
     badge: "Section 8 Acceptance by Conduct",
     clientTrap:
-      "Client Talent Acquisition or Business Head emails on Tuesday: 'Urgent closure needed for Senior DevOps Lead by Friday! Share profiles immediately with rates while our legal team reviews your Master Services Agreement (MSA).' You email terms specifying an 8.33% or 15% placement fee along with 4 shortlisted resumes. Client immediately schedules interviews, issues an offer letter, candidate joins, and CFO subsequently claims: 'We never signed your MSA; you provided profiles gratuitously without a contract.'",
+      "Client Talent Acquisition or Business Head emails on Tuesday: 'Urgent closure needed for Senior DevOps Lead by Friday! Share profiles immediately with rates while our team reviews your Master Services Agreement (MSA).' You email terms specifying an 8.33% or 15% placement fee along with 4 shortlisted resumes. Client immediately schedules interviews, issues an offer letter, candidate joins, and CFO subsequently claims: 'We never signed your MSA; you provided profiles gratuitously without a contract.'",
     statutoryHook:
       "Section 8 of the Indian Contract Act, 1872 explicitly establishes that 'performance of the conditions of a proposal... is an acceptance of the proposal.' Under Section 10A of the Information Technology Act, 2000, contract formation via email exchange is statutorily complete and enforceable. By scheduling interviews and onboarding the candidate after receiving your emailed terms, the client performed positive acts of acceptance by conduct.",
     creditorPlaybook: [

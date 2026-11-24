@@ -27,7 +27,7 @@ export default function SarfaesiDrtCalculatorCTA({ className = "" }: SarfaesiDrt
                 Test 1 Live Overdue Account Now (&rupee;{basePrice})
               </h3>
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-                Verify advocate-drafted statutory recall, Contract Act s.128 guarantee invocation, or PSS s.25 / NI s.138 notice quality on one live delinquent facility without enterprise procurement delays. Delivered via Email, Business WhatsApp, and Speed Post RPAD with Section 63 BSA certification.
+                Verify fact-verified statutory recall, Contract Act s.128 guarantee invocation, or PSS s.25 / NI s.138 notice quality on one live delinquent facility without enterprise procurement delays. Delivered via Email, Business WhatsApp, and Speed Post RPAD with Section 63 BSA certification.
               </p>
               <ul className="space-y-1.5 text-xs text-slate-200 mb-6">
                 <li>&check; Itemized principal, interest &amp; uncapitalized RBI penal charges</li>

@@ -27,7 +27,7 @@ export default function ManufacturingHubCTA({ className = "" }: ManufacturingHub
                 Test 1 Live Overdue Case Now (&rupee;{basePrice})
               </h3>
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-                Attach multiple overdue tax invoices, PO numbers, E-Way bills, and commissioning logs inside a single advocate-drafted notice—dispatched via verified Email, Business WhatsApp, and India Post Speed Post RPAD with Section 63 BSA certification.
+                Attach multiple overdue tax invoices, PO numbers, E-Way bills, and commissioning logs inside a single fact-verified notice—dispatched via verified Email, Business WhatsApp, and India Post Speed Post RPAD with Section 63 BSA certification.
               </p>
               <ul className="space-y-1.5 text-xs text-slate-200 mb-6">
                 <li>&check; Sale of Goods s.42 / MSMED s.16 / s.43B(h) / Order 37 tailored draft</li>

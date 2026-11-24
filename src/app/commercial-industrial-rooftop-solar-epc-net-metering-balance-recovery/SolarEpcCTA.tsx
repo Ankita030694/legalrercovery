@@ -24,10 +24,10 @@ export default function SolarEpcCTA({ className = "" }: SolarEpcCTAProps) {
                 Track 1 · Single C&amp;I Solar EPC Milestone
               </span>
               <h3 className="text-lg sm:text-xl font-bold text-white mb-2">
-                Test 1 Live Overdue Case Now (&#8377;{basePrice} &middot; Advocate Drafted &middot; Email + WhatsApp + Speed Post RPAD)
+                Test 1 Live Overdue Case Now (&#8377;{basePrice} &middot; Fact-Verified &middot; Email + WhatsApp + Speed Post RPAD)
               </h3>
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-                Upload your EPC contract / Supply PO, CEIG charging approval, DISCOM net-meter application receipt, and zero-export SCADA logs. Our advocates draft a Deemed Commissioning &amp; IEC 61724 PR Final Balance Demand Notice.
+                Enter your EPC contract / Supply PO details, CEIG charging approval, DISCOM net-meter application date, and zero-export SCADA log details in our online form. Our team verifies the facts and prepares a Deemed Commissioning &amp; IEC 61724 PR Final Balance Demand Notice.
               </p>
             </div>
 

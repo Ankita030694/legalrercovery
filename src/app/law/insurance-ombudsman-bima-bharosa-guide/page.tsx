@@ -1108,7 +1108,7 @@ export default function InsuranceOmbudsmanBimaBharosaGuidePage() {
                       <strong>Day 25:</strong> Insurer issues formal repudiation letter alleging fraudulent concealment of pre-existing hypertension under policy clause 4.1.
                     </p>
                     <p>
-                      <strong>Day 30:</strong> Advocate drafts statutory legal notice citing the Supreme Court judgment in <em>Manmohan Nanda v. United India Assurance (2022)</em> and IRDAI Master Circular 2024. Notice is dispatched to Insurer&apos;s Corporate GRO via Speed Post and registered on Bima Bharosa.
+                      <strong>Day 30:</strong> Fact-verified statutory legal notice prepared citing the Supreme Court judgment in <em>Manmohan Nanda v. United India Assurance (2022)</em> and IRDAI Master Circular 2024. Notice is dispatched to Insurer&apos;s Corporate GRO via Speed Post and registered on Bima Bharosa.
                     </p>
                     <p>
                       <strong>Day 62:</strong> 30 calendar days elapse with only generic auto-replies from the insurer GRO. Statutory default is formally established.
@@ -1293,7 +1293,7 @@ export default function InsuranceOmbudsmanBimaBharosaGuidePage() {
                   6. WE HEREBY DEMAND that you immediately recall your unlawful repudiation and disburse the full sum of ₹[Claim Amount] along with statutory delayed interest within 15 calendar days of receipt of this notice.<br /><br />
                   7. BE ADVISED that upon expiry of 30 calendar days from receipt hereof without complete settlement, our client shall initiate formal proceedings before the territorial Insurance Ombudsman on the CIO portal under Rule 13(1)(b) of the Insurance Ombudsman Rules, 2017, invoking the IRDAI 7-day ex-parte rule and claiming full compensation alongside litigation costs.<br /><br />
                   Yours faithfully,<br />
-                  [Advocate Signature &amp; Enrolment No.]<br />
+                  [Fact Verification &amp; Enrolment No.]<br />
                   Advocate for the Insured / Claimant
                 </p>
               </div>
@@ -1301,7 +1301,7 @@ export default function InsuranceOmbudsmanBimaBharosaGuidePage() {
               {/* Second CTA placement */}
               <div className="pt-2">
                 <InsuranceOmbudsmanNoticeCTA
-                  buttonText="Have an Advocate Draft Your GRO Notice &amp; Ombudsman Dossier"
+                  buttonText="Get Your Fact-Verified GRO Notice Prepared"
                   variant="primary"
                 />
               </div>

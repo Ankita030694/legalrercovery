@@ -183,7 +183,7 @@ const HOWTO_SCHEMA = {
       "@type": "HowToStep",
       position: 3,
       name: "Serve 48-Hour BNS s.318 & s.336/340 Statutory Demand Notice (Day 1–2)",
-      text: "Dispatch an Advocate demand notice via WhatsApp, email, and Speed Post RPAD citing electronic forgery under BNS s.336/340, cheating under s.318, and Order XXXVII CPC.",
+      text: "Dispatch a Fact-verified demand notice via WhatsApp, email, and Speed Post RPAD citing electronic forgery under BNS s.336/340, cheating under s.318, and Order XXXVII CPC.",
     },
     {
       "@type": "HowToStep",
@@ -608,7 +608,7 @@ export default function B2bDmcDefaultRecoveryPage() {
                     {
                       n: "3",
                       title: "48-Hour BNS s.336/340 Advocate Notice (Day 1–2)",
-                      desc: "Serve an Advocate demand notice via WhatsApp, email, and Speed Post RPAD citing non-bailable electronic forgery and cheating.",
+                      desc: "Serve a Fact-verified demand notice via WhatsApp, email, and Speed Post RPAD citing non-bailable electronic forgery and cheating.",
                     },
                     {
                       n: "4",

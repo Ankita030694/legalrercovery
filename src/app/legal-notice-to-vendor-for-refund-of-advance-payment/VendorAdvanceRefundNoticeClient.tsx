@@ -22,7 +22,7 @@ const faqs = [
   },
   {
     question: "Is a legal notice effective for recovering advance payments?",
-    answer: "Yes, a lawyer-backed legal notice is highly effective because it warns the vendor that they face formal civil litigation, consumer complaints, or police claims for cheating under Section 415 and 420 of the Indian Penal Code. The prospect of facing legal proceedings, bank account freezes, and losing business reputation prompts most defaulting vendors to refund the advance and settle the dispute out of court."
+    answer: "Yes, a fact-verified legal notice is highly effective because it warns the vendor that they face formal civil litigation, consumer complaints, or police claims for cheating under Section 415 and 420 of the Indian Penal Code. The prospect of facing legal proceedings, bank account freezes, and losing business reputation prompts most defaulting vendors to refund the advance and settle the dispute out of court."
   },
   {
     question: "Can I file a consumer complaint against a defaulting vendor or contractor?",
@@ -358,7 +358,7 @@ export default function VendorAdvanceRefundNoticeClient() {
                     When dealing with a defaulting vendor, you must choose the most effective dispute resolution path. In most cases, serving a formal legal notice resolves the issue without the need for court litigation.
                   </p>
                   <p className="text-sm md:text-base leading-relaxed">
-                    A formal legal notice is a demand drafted by an advocate and served to the vendor's registered address, giving them a 15-day period to refund the advance. If the vendor ignores the notice, the employee can file a complaint with the local Consumer Forum (if they are a consumer) or initiate a <Link href="/civil-suit-for-recovery-of-money-india" className="text-[#DC2626] hover:underline font-medium">civil suit for recovery of money India</Link>.
+                    A formal legal notice is a demand prepared on verified facts and served to the vendor's registered address, giving them a 15-day period to refund the advance. If the vendor ignores the notice, the employee can file a complaint with the local Consumer Forum (if they are a consumer) or initiate a <Link href="/civil-suit-for-recovery-of-money-india" className="text-[#DC2626] hover:underline font-medium">civil suit for recovery of money India</Link>.
                   </p>
 
                   {/* Comparison Table */}
@@ -613,7 +613,7 @@ export default function VendorAdvanceRefundNoticeClient() {
                 <div className="absolute top-0 right-0 w-24 h-24 bg-red-600/10 rounded-full blur-xl pointer-events-none" />
                 <h3 className="text-lg font-bold mb-3 text-white">Need Legal Advice?</h3>
                 <p className="text-gray-400 mb-5 text-[11px] leading-relaxed">
-                  Discuss your money recovery case with legal experts. We draft and serve legally compliant notices tailored to your transaction.
+                  Discuss your money recovery case with our team. We draft and serve legally compliant notices tailored to your transaction.
                 </p>
                 <button 
                   onClick={() => setIsPaymentModalOpen(true)}

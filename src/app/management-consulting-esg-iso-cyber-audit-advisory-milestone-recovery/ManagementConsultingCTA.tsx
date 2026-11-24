@@ -26,7 +26,7 @@ export default function ManagementConsultingCTA({
                 Track 1 · Single Milestone / Retainer Default
               </span>
               <p className="text-lg sm:text-xl font-bold text-white mb-2">
-                Test 1 Live Overdue Case Now (&#8377;{basePrice} &middot; Advocate Drafted &middot; Email + WhatsApp + Speed Post RPAD)
+                Test 1 Live Overdue Case Now (&#8377;{basePrice} &middot; Fact-Verified &middot; Email + WhatsApp + Speed Post RPAD)
               </p>
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
                 Upload your Mandate Agreement, Public Portal Sanction Letter, Final Sign-off Deliverable, and GST E-Invoice. Our High Court advocates serve a formal Demand Notice citing Order XXXVII CPC, MSMED Act Sections 15–18 (3x RBI interest), and Section 43B(h).

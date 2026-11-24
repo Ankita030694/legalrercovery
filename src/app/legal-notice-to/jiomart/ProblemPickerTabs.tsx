@@ -53,7 +53,7 @@ const PANELS: ProblemPanel[] = [
         stepNumber: "Step 3",
         action: "Escalate to Grievance Officer & Serve Legal Notice",
         detail:
-          "Send the evidence dossier to grievanceofficer@jiomart.com. If unrectified within 48 statutory business hours, serve an advocate legal demand notice to Reliance Retail Limited demanding an immediate 100% refund plus compensation.",
+          "Send the evidence dossier to grievanceofficer@jiomart.com. If unrectified within 48 statutory business hours, serve a fact-verified legal demand notice to Reliance Retail Limited demanding an immediate 100% refund plus compensation.",
       },
     ],
     statutoryTimeline: "Mandatory 48-hour acknowledgment; immediate replacement or full refund under Rule 6(5).",
@@ -89,7 +89,7 @@ const PANELS: ProblemPanel[] = [
         stepNumber: "Step 3",
         action: "Serve Joint Statutory Demand Notice to Platform and Gateway",
         detail:
-          "Transmit the bank's non-credit confirmation to grievanceofficer@jiomart.com. Issue a formal advocate legal notice demanding immediate credit of the principal amount along with 18% annual interest for wrongful retention of funds.",
+          "Transmit the bank's non-credit confirmation to grievanceofficer@jiomart.com. Issue a formal fact-verified legal notice demanding immediate credit of the principal amount along with 18% annual interest for wrongful retention of funds.",
       },
     ],
     statutoryTimeline: "T+1 business day under RBI TAT; 48-hour response limit under E-Commerce Rules.",
@@ -123,7 +123,7 @@ const PANELS: ProblemPanel[] = [
       },
       {
         stepNumber: "Step 3",
-        action: "Dispatch Advocate Notice Holding Platform Vicariously Liable",
+        action: "Dispatch Fact-Verified Notice Holding Platform Vicariously Liable",
         detail:
           "Issue a formal legal notice holding Reliance Retail Limited vicariously liable for the actions of its delivery executives, demanding immediate doorstep retrieval or waiver of return and release of full funds.",
       },
@@ -159,7 +159,7 @@ const PANELS: ProblemPanel[] = [
       },
       {
         stepNumber: "Step 3",
-        action: "Serve Joint Advocate Legal Notice & Prepare e-Jagriti Petition",
+        action: "Serve Joint Fact-Verified Legal Notice & Prepare e-Jagriti Petition",
         detail:
           "Serve a joint legal notice via Speed Post. In the event of non-compliance within 15 days, institute a formal consumer complaint before the District Consumer Disputes Redressal Commission via the e-Jagriti portal.",
       },
@@ -288,7 +288,7 @@ export default function ProblemPickerTabs() {
               {/* Action / Template Callout */}
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pt-4 border-t border-slate-100">
                 <div className="text-xs text-slate-500">
-                  Preparing your formal grievance? Review our lawyer-vetted legal notice draft format below.
+                  Preparing your formal grievance? Review our ready-to-use legal notice draft format below.
                 </div>
                 <a
                   href={panel.templateAnchor}

@@ -31,7 +31,7 @@ const SCENARIOS: Scenario[] = [
     actionProtocol: [
       "Export immutable AWS CloudTrail and Cost and Usage Reports (CUR) with SHA-256 cryptographic hashes under Section 63 of Bharatiya Sakshya Adhiniyam, 2023.",
       "Execute contractual console suspension protocol: isolate VPCs, de-allocate running GPU instances, and place root credentials into administrative custody.",
-      "Serve an immediate 7-day Advocate Statutory Demand Notice holding both the corporate entity and individual directors personally liable under their executed Personal Deed of Guarantee.",
+      "Serve an immediate 7-day Fact-Verified Statutory Demand Notice holding both the corporate entity and individual directors personally liable under their executed Personal Deed of Guarantee.",
       "File an urgent Commercial Summary Suit under Order XXXVII CPC accompanied by an Order XXXVIII Rule 5 application to freeze the startup's remaining bank accounts and director assets before equity dissipation.",
     ],
   },
@@ -91,7 +91,7 @@ const SCENARIOS: Scenario[] = [
     actionProtocol: [
       "Gather OEM license delivery emails, tenant provisioning confirmation timestamps, and proof of client users logging in and actively utilizing the software.",
       "Contact the software OEM to initiate license de-activation or suspension procedures under channel partner non-payment protocols.",
-      "Serve an advocate statutory notice highlighting that continued usage of unpaid software licenses exposes the enterprise to Section 51 Copyright infringement claims.",
+      "Serve a fact-verified statutory notice highlighting that continued usage of unpaid software licenses exposes the enterprise to Section 51 Copyright infringement claims.",
       "Initiate fast-track summary recovery under Order XXXVII CPC in the competent Commercial Court, attaching client receivables to satisfy the debt.",
     ],
   },

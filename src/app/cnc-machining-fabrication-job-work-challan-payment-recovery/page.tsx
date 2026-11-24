@@ -978,7 +978,7 @@ export default function JobWorkPaymentRecoveryPage() {
                     <span className="font-bold text-red-400 block mb-1">
                       Action Taken Under Section 170 &amp; MSMED Act:
                     </span>
-                    The job-worker lawfully withheld the finished 4,000 stub-axles under Invoice #294 (worth ₹5.20 Lakh in labour charges and ₹28 Lakh in raw material value) under Section 170 Particular Lien. Concurrently, an advocate demand notice was served claiming ₹16,36,840 with Section 43B(h) and CGST Section 143 disclosures. Faced with assembly-line stoppage and impending tax disallowance, the OEM cleared the entire ₹14.80 Lakh principal within 11 days.
+                    The job-worker lawfully withheld the finished 4,000 stub-axles under Invoice #294 (worth ₹5.20 Lakh in labour charges and ₹28 Lakh in raw material value) under Section 170 Particular Lien. Concurrently, a fact-verified demand notice was served claiming ₹16,36,840 with Section 43B(h) and CGST Section 143 disclosures. Faced with assembly-line stoppage and impending tax disallowance, the OEM cleared the entire ₹14.80 Lakh principal within 11 days.
                   </div>
                 </div>
 
@@ -1079,7 +1079,7 @@ export default function JobWorkPaymentRecoveryPage() {
 
                 <div className="prose prose-slate max-w-none text-xs sm:text-sm md:text-base leading-relaxed text-slate-700 space-y-4">
                   <p>
-                    Informal WhatsApp reminders and polite phone calls from factory owners are systematically ignored by corporate procurement teams. Recovery begins when an advocate-vetted <strong>15-Day Statutory Bailee Lien-Cum-Demand Notice</strong> lands on the desks of the Managing Director, CFO, and Company Secretary.
+                    Informal WhatsApp reminders and polite phone calls from factory owners are systematically ignored by corporate procurement teams. Recovery begins when a fact-verified <strong>15-Day Statutory Bailee Lien-Cum-Demand Notice</strong> lands on the desks of the Managing Director, CFO, and Company Secretary.
                   </p>
                   <p>
                     An effective job-work recovery legal notice must incorporate five mandatory statutory clauses:

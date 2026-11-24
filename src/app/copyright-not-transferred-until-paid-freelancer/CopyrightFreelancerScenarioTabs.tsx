@@ -34,7 +34,7 @@ const SCENARIOS: ScenarioTab[] = [
       {
         step: "Serve a Notice of Licence Revocation & Section 51 Infringement",
         description:
-          "Dispatch an advocate legal notice revoking any implied review licence, notifying the client that continued display without clearing the invoice within 7 days constitutes actionable copyright infringement under Sections 51 and 63.",
+          "Dispatch a fact-verified legal notice revoking any implied review licence, notifying the client that continued display without clearing the invoice within 7 days constitutes actionable copyright infringement under Sections 51 and 63.",
       },
       {
         step: "Put Hosting, App Store & Social Platforms on Takedown Alert",
@@ -61,7 +61,7 @@ const SCENARIOS: ScenarioTab[] = [
       {
         step: "Serve Dual Copyright + MSME / Contract Demand Notice",
         description:
-          "Have an advocate serve a notice combining Section 14(b)/51 software copyright infringement with Section 73 Contract Act damages (and 3x RBI compound interest under Section 16 MSMED Act if you hold Udyam registration).",
+          "Serve a notice combining Section 14(b)/51 software copyright infringement with Section 73 Contract Act damages (and 3x RBI compound interest under Section 16 MSMED Act if you hold Udyam registration).",
       },
       {
         step: "File Repository & Cloud Host Takedown if Default Persists",

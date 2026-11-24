@@ -240,7 +240,7 @@ const HOWTO_SCHEMA = {
       "@type": "HowToStep",
       position: 3,
       name: "Dispatch Composite CC/OD Loan Recall & Guarantee Invocation Notice",
-      text: "Serve an Advocate-signed Facility Recall-cum-Guarantee Invocation Notice via Email, WhatsApp, and Speed Post RPAD demanding full repayment within 7 to 15 days and citing exclusive routing breaches.",
+      text: "Serve a Fact-verified Facility Recall-cum-Guarantee Invocation Notice via Email, WhatsApp, and Speed Post RPAD demanding full repayment within 7 to 15 days and citing exclusive routing breaches.",
     },
     {
       "@type": "HowToStep",
@@ -1130,7 +1130,7 @@ export default function CashCreditOverdraftRecallPage() {
                       Editable P1 Notice Pack
                     </span>
                     <p className="text-sm font-bold text-slate-900 mt-1 group-hover:text-[#DC2626]">
-                      Advocate-Vetted Loan Recall cum Personal/Corporate Guarantee Invocation Notice &rarr;
+                      Fact-Verified Loan Recall cum Personal/Corporate Guarantee Invocation Notice &rarr;
                     </p>
                   </Link>
 

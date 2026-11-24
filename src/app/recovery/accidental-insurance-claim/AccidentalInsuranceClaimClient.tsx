@@ -343,7 +343,7 @@ export default function AccidentalInsuranceClaimClient() {
                       Accidents happen without warning and cause sudden financial stress for families. Personal accident insurance acts as a vital safety net during such crises. It covers injuries, hospital stays, disability, and accidental death. Yet insurers often reject genuine claims on flimsy grounds. Companies delay payouts or cut claim amounts using confusing policy terms.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      Our legal panel sees these unfair claim denials every day. A factory worker had his total disability claim cut to just 20% after a hand injury. A widow was denied a ₹50 lakh death claim when the insurer falsely claimed alcohol use. Another person suffered hip fractures and was denied temporary disability benefits. Our team stepped in and overturned these rejections through formal legal channels.
+                      Our team sees these unfair claim denials every day. A factory worker had his total disability claim cut to just 20% after a hand injury. A widow was denied a ₹50 lakh death claim when the insurer falsely claimed alcohol use. Another person suffered hip fractures and was denied temporary disability benefits. Our team stepped in and overturned these rejections through formal legal channels.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
                       India has a large accident insurance market. Policies include retail plans, group covers from employers, and motor accident covers. Millions of citizens also hold schemes like the Pradhan Mantri Suraksha Bima Yojana. Despite these policies, claimants face major roadblocks when filing claims. Insurers use aggressive exclusions and biased investigators to avoid payouts. Delays force families to accept unfair discounts.
@@ -443,7 +443,7 @@ export default function AccidentalInsuranceClaimClient() {
                         <strong>Notify the Insurance Company (Within 24-48 Hours):</strong> Inform the insurance company about the accident within 24 to 48 hours. Early notice opens your claim file. Courts hold that hospital care justifies a reasonable reporting delay. Send notice by email, mobile app, and phone. Always save your claim reference number.
                       </li>
                       <li>
-                        <strong>Fill the Claim Form (Days 1-7):</strong> Get the claim form for your specific claim category. Pick the right form for death, disability, or hospital costs. Fill in every box accurately to match your medical and police papers. Inaccurate entries create avoidable roadblocks. Our legal team reviews claim forms before submission.
+                        <strong>Fill the Claim Form (Days 1-7):</strong> Get the claim form for your specific claim category. Pick the right form for death, disability, or hospital costs. Fill in every box accurately to match your medical and police papers. Inaccurate entries create avoidable roadblocks. Our team reviews claim forms before submission.
                       </li>
                       <li>
                         <strong>Submit Supporting Documents (Days 7-15):</strong> Gather all required papers into an indexed folder:
@@ -466,7 +466,7 @@ export default function AccidentalInsuranceClaimClient() {
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">Rejection Grounds &amp; Counters</h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      Knowing common insurer rejection arguments helps build a strong legal defense. Most claim denials rely on narrow clause readings or unverified investigator notes. Our legal team uses binding court rulings to overturn unfair rejections:
+                      Knowing common insurer rejection arguments helps build a strong legal defense. Most claim denials rely on narrow clause readings or unverified investigator notes. Our team uses binding court rulings to overturn unfair rejections:
                     </p>
 
                     <div className="space-y-6">
@@ -528,7 +528,7 @@ export default function AccidentalInsuranceClaimClient() {
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">Grievance Escalation Ladder</h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      Follow a structured path to compel the insurer to pay your claim. Each step increases legal and regulatory pressure on the company. Skipping steps can weaken your case in consumer court. Our legal team guides you through every stage:
+                      Follow a structured path to compel the insurer to pay your claim. Each step increases legal and regulatory pressure on the company. Skipping steps can weaken your case in consumer court. Our team guides you through every stage:
                     </p>
 
                     <div className="space-y-5">
@@ -622,7 +622,7 @@ export default function AccidentalInsuranceClaimClient() {
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">Success Stories</h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      Our legal panel has recovered accident claim payouts from top insurers. We resolve tough claim rejections across India:
+                      Our team has recovered accident claim payouts from top insurers. We resolve tough claim rejections across India:
                     </p>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">
                       <div className="bg-slate-50 p-6 rounded-2xl border border-slate-100">
@@ -694,12 +694,12 @@ export default function AccidentalInsuranceClaimClient() {
                       LegalRecovery combines experienced insurance advocates with an easy digital case tracker. We help claimants overturn wrongful rejections and recover accident payouts:
                     </p>
                     <ul className="list-disc pl-6 space-y-3 text-sm text-slate-650">
-                      <li><strong>Dedicated Insurance Lawyers:</strong> Our advocates focus on IRDAI rules and consumer court litigation.</li>
-                      <li><strong>Ready-to-File Dossiers:</strong> We build well-organized evidence dossiers for the Ombudsman and Consumer Court.</li>
+                      <li><strong>Dedicated Insurance Lawyers:</strong> Our team focus on IRDAI rules and consumer court litigation.</li>
+                      <li><strong>Ready-to-File Dossiers:</strong> We help you understand what evidence to organize for the Ombudsman and Consumer Court.</li>
                       <li><strong>Multi-Track Recovery:</strong> We run internal complaints, Bima Bharosa filings, Ombudsman petitions, and legal notices together.</li>
                       <li><strong>Live Digital Tracking:</strong> Track your claim, legal notices, and court dates from our secure portal.</li>
                       <li><strong>Clear Upfront Fees:</strong> We charge transparent flat fees with no hidden costs or percentages.</li>
-                      <li><strong>Pan-India Reach:</strong> Our panel handles cases across all 17 Ombudsman offices and state commissions.</li>
+                      <li><strong>Pan-India Reach:</strong> Our guidance covers all 17 Ombudsman offices and state commissions.</li>
                     </ul>
                   </div>
                 </section>

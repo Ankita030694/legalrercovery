@@ -196,7 +196,7 @@ const HOWTO_SCHEMA = {
       "@type": "HowToStep",
       position: 2,
       name: "Serve an Extranet Reconciliation & Statutory Demand Notice",
-      text: "Issue an advocate-vetted 15-day demand notice to the OTA Nodal Officer or B2B wholesaler CFO disputing unproved Section 74 relocation penalties and claiming principal dues.",
+      text: "Issue a fact-verified 15-day demand notice to the OTA Nodal Officer or B2B wholesaler CFO disputing unproved Section 74 relocation penalties and claiming principal dues.",
     },
     {
       "@type": "HowToStep",

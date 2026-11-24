@@ -13,7 +13,7 @@ const PAGE_PATH = "/templates/international-export-buyer-legal-demand-notice-fem
 
 // TODO(reviewer): src/data/reviewers.ts is absent in this repository; attributed to Anuj Anand Malik (Advocate & Founder, AMA Legal Solutions).
 const EXACT_H1 =
-  "Advocate-Vetted International Legal Demand Notice Format for Indian Exporters (Compliant with AD-Bank EDPMS Write-Off & ECGC Audit)";
+  "Ready-to-Use International Legal Demand Notice Format for Indian Exporters (Compliant with AD-Bank EDPMS Write-Off & ECGC Audit)";
 
 const EXACT_TITLE = "Export Buyer Default Legal Notice Format (FEMA & ECGC)";
 
@@ -88,7 +88,7 @@ const FAQS = [
   {
     question: "How does this legal notice help clear aged Shipping Bills in RBI EDPMS?",
     answer:
-      "Under the RBI Master Direction on Export of Goods and Services (Para C.20 and Para C.23), an AD Category-I Bank cannot process an EDPMS write-off or Caution-List removal unless the exporter demonstrates documentary proof of bonafide recovery efforts or disproportionate foreign litigation cost. Serving an advocate-vetted notice citing the exact Shipping Bill number, AD Code, IEC, and port of loading creates the exact audit trail your bank's FEMA desk requires.",
+      "Under the RBI Master Direction on Export of Goods and Services (Para C.20 and Para C.23), an AD Category-I Bank cannot process an EDPMS write-off or Caution-List removal unless the exporter demonstrates documentary proof of bonafide recovery efforts or disproportionate foreign litigation cost. Serving a fact-verified notice citing the exact Shipping Bill number, AD Code, IEC, and port of loading creates the exact audit trail your bank's FEMA desk requires.",
   },
   {
     question: "Is a formal legal demand notice mandatory before filing an ECGC default claim?",
@@ -236,7 +236,7 @@ export default function ExportBuyerLegalNoticePage() {
             >
               Indian exporter cross-border recovery rules
             </Link>{" "}
-            and FEMA 1999, overdue foreign bills beyond 9 months trigger RBI EDPMS Caution-Listing and Customs Drawback clawbacks. This advocate-vetted notice pairs UN CISG / Incoterms commercial pressure with Shipping Bill, IEC, AD-Code, and ECGC Form 203/205 identifiers required by your AD Category-I Bank.
+            and FEMA 1999, overdue foreign bills beyond 9 months trigger RBI EDPMS Caution-Listing and Customs Drawback clawbacks. This fact-verified notice pairs UN CISG / Incoterms commercial pressure with Shipping Bill, IEC, AD-Code, and ECGC Form 203/205 identifiers required by your AD Category-I Bank.
           </div>
 
           {/* 4-Card Key Metrics Strip */}
@@ -301,7 +301,7 @@ export default function ExportBuyerLegalNoticePage() {
               </div>
 
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
-                Select your export default scenario below—Open Account / D/A overdue invoice, CAD / D/P port document refusal, or ECGC-insured buyer default—and customize your <strong>IEC, AD Bank Code, Shipping Bill No., Bill of Lading, and Incoterms 2020</strong>. Every field updates the live advocate-vetted notice in real time.
+                Select your export default scenario below—Open Account / D/A overdue invoice, CAD / D/P port document refusal, or ECGC-insured buyer default—and customize your <strong>IEC, AD Bank Code, Shipping Bill No., Bill of Lading, and Incoterms 2020</strong>. Every field updates the live fact-verified notice in real time.
               </p>
 
               <ExportDemandNoticeWorkspace />
@@ -565,7 +565,7 @@ export default function ExportBuyerLegalNoticePage() {
                     title: "Export Dues Recovery Service",
                     href: "/recovery/export-dues",
                     tag: "Dedicated Service",
-                    desc: "End-to-end advocate-led international export receivable recovery and AD-Bank compliance support.",
+                    desc: "End-to-end fact-verified international export receivable recovery and AD-Bank compliance support.",
                   },
                   {
                     title: "Legal Notice to International Client for Unpaid Invoice",

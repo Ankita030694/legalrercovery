@@ -27,7 +27,7 @@ const faqs = [
   },
   {
     question: "What legal notice should I send to a landlord who refuses to refund my deposit?",
-    answer: "You should send a formal Legal Notice drafted by a lawyer. The notice must specify the details of the rent agreement, the date of move-out, the proof of key handover, and demand the return of the deposit within 15 days, warning of civil litigation (Summary Suit) and criminal action for misappropriation."
+    answer: "You should send a formal Legal Notice prepared on verified facts. The notice must specify the details of the rent agreement, the date of move-out, the proof of key handover, and demand the return of the deposit within 15 days, warning of civil litigation (Summary Suit) and criminal action for misappropriation."
   },
   {
     question: "Can I adjust my security deposit against my last month's rent?",
@@ -677,7 +677,7 @@ export default function RentalSecurityDepositClient() {
                     <ol className="list-decimal pl-6 space-y-4 text-sm text-slate-650">
                       <li><strong>Day 1-7 (Formal Move-Out Email):</strong> Send a formal email to the landlord and property manager, attaching photos of the vacated property and proof of key handover. Request the deposit refund.</li>
                       <li><strong>Day 8-15 (Settlement Statement):</strong> If ignored, send a &quot;Deposit Settlement Statement&quot; detailing rent payments and utility clearances, and requesting a date for the refund credit.</li>
-                      <li><strong>Day 16-30 (Legal Notice):</strong> Serve a formal legal notice through our advocate panel. This notice demands the refund of the deposit within 15 days, warning of civil litigation (Summary Suit) and criminal action.</li>
+                      <li><strong>Day 16-30 (Legal Notice):</strong> Serve a formal legal notice through our team. This notice demands the refund of the deposit within 15 days, warning of civil litigation (Summary Suit) and criminal action.</li>
                       <li><strong>Day 30+ (Court/Rent Complaint):</strong> If the landlord fails to comply, file a complaint with the Rent Court or initiate a Summary Suit in the civil court.</li>
                     </ol>
                   </div>
@@ -761,10 +761,10 @@ export default function RentalSecurityDepositClient() {
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">Why Choose Us?</h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      LegalRecovery is India&apos;s leading tech-enabled recovery platform. We combine the legal authority of veteran property advocates with advanced workflow automation to deliver speed, transparency, and resolution rates that traditional law firms cannot match. Here is what sets us apart:
+                      LegalRecovery is India&apos;s leading tech-enabled recovery platform. We combine the statutory framework with advanced workflow automation to deliver speed, transparency, and resolution rates that traditional law firms cannot match. Here is what sets us apart:
                     </p>
                     <ul className="list-disc pl-6 space-y-3 text-sm text-slate-650">
-                      <li><strong>Expert Panel Advocates:</strong> Your notices are drafted and reviewed by experienced property and contract attorneys, ensuring precise statutory citations.</li>
+                      <li><strong>Fact-Verified Notices:</strong> Our team verifies the facts you submit, and your notice is prepared with precise statutory citations.</li>
                       <li><strong>Multi-Channel Escalations:</strong> We do not just email landlords. We dispatch physical registered letters to their registered address and local residences to maximize pressure.</li>
                       <li><strong>Real-Time Tracking:</strong> Track the drafting progress, post office dispatch status, and delivery of your legal notices in real-time from your secure client dashboard.</li>
                       <li><strong>Transparent Flat Pricing:</strong> No hourly bills, no hidden surprises. You pay a single transparent flat fee for the entire notice pipeline.</li>
@@ -815,7 +815,7 @@ export default function RentalSecurityDepositClient() {
                 <div className="absolute top-0 right-0 w-24 h-24 bg-red-600/10 rounded-full blur-xl pointer-events-none" />
                 <h3 className="text-sm font-black mb-3">Need Legal Advice?</h3>
                 <p className="text-gray-400 mb-5 text-[11px] leading-relaxed">
-                  Discuss your rental security deposit recovery case with legal experts. We serve verified notices with full compliance support.
+                  Discuss your rental security deposit recovery case with our team. We serve verified notices with full compliance support.
                 </p>
                 <button 
                   onClick={() => setIsPaymentModalOpen(true)}

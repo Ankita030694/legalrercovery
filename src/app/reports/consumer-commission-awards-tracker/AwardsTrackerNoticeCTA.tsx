@@ -31,7 +31,7 @@ export default function AwardsTrackerNoticeCTA({
                 Company Withholding Your Refund or Defrauding Service? Enforce Your Rights
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6">
-                As demonstrated by hundreds of monthly consumer commission awards, corporate delay tactics fail against documented statutory claims. Have a verified advocate draft and serve an official statutory legal demand notice directly to the company&apos;s Grievance Officer and Directors. Served by email and WhatsApp under Section 63 BSA. Speed Post is optional at ₹450 per party.
+                As demonstrated by hundreds of monthly consumer commission awards, corporate delay tactics fail against documented statutory claims. Serve an official statutory legal demand notice directly to the company&apos;s Grievance Officer and Directors. Served by email and WhatsApp under Section 63 BSA. Speed Post is optional at ₹450 per party.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button
@@ -42,7 +42,7 @@ export default function AwardsTrackerNoticeCTA({
                   {buttonText} — ₹{basePrice}
                 </button>
                 <div className="text-xs text-slate-300 flex flex-wrap sm:flex-nowrap items-center gap-2 sm:gap-3">
-                  <span>✓ 24h Advocate Drafting</span>
+                  <span>✓ 24h Notice Drafting</span>
                   <span>•</span>
                   <span>✓ Email + WhatsApp</span>
                   <span>•</span>

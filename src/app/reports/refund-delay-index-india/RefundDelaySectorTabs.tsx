@@ -112,7 +112,7 @@ export default function RefundDelaySectorTabs({ sectors }: RefundDelaySectorTabs
 
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-2">
           <p className="text-xs text-slate-600">
-            Have an unpaid refund in {currentSector.name}? Our advocates serve legal notices citing statutory sections.
+            Have an unpaid refund in {currentSector.name}? Our team serves legal notices citing statutory sections.
           </p>
           <Link
             href="/send-legal-notice-online-india"

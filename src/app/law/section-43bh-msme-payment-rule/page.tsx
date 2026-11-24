@@ -147,7 +147,7 @@ const FAQS = [
   {
     question: "How can an MSME supplier use Section 43B(h) to recover stuck invoice payments faster?",
     answer:
-      "An MSE supplier can serve an advocate-drafted Section 43B(h) + Section 16 Pre-Audit Demand Notice addressed to the buyer's Managing Director, Chief Financial Officer (CFO), and Company Secretary, putting them on formal notice of the Udyam Registration Number, exact Section 15 appointed-day breach, mandatory disclosure in Tax Audit Form 3CD Clause 22, and 30% tax disallowance risk. Because corporate CFOs want to avoid a qualified Form 3CD report and cash tax outflow, most settle within 7–15 days of receiving the formal notice.",
+      "An MSE supplier can serve a fact-verified Section 43B(h) + Section 16 Pre-Audit Demand Notice addressed to the buyer's Managing Director, Chief Financial Officer (CFO), and Company Secretary, putting them on formal notice of the Udyam Registration Number, exact Section 15 appointed-day breach, mandatory disclosure in Tax Audit Form 3CD Clause 22, and 30% tax disallowance risk. Because corporate CFOs want to avoid a qualified Form 3CD report and cash tax outflow, most settle within 7–15 days of receiving the formal notice.",
   },
   {
     question: "Section 43B(h) MSME rule kya hai aur 45 din mein payment na milne par legal notice kaise bheje?",
@@ -737,7 +737,7 @@ export default function Section43bhMsmePaymentRulePage() {
                     In B2B recovery, procurement managers often delay vendor bills to make their department&apos;s cash-flow metrics look good. However, a company&apos;s <strong>CFO and Tax Head</strong> have the opposite incentive: if an overdue ₹10,00,000 MSE invoice crosses March 31 unpaid, the company must pay ~₹2,51,680 to ₹3,12,000 in immediate cash Income-tax, suffer an audit qualification in <strong>Form 3CD Clause 22</strong>, and still owe the ₹10,00,000 principal plus 20.25% compound interest!
                   </p>
                   <p>
-                    A strategic advocate legal notice from LegalRecovery.in bridges this internal gap inside the buyer&apos;s organization by:
+                    A strategic fact-verified legal notice from LegalRecovery.in bridges this internal gap inside the buyer&apos;s organization by:
                   </p>
                   <ul className="space-y-2 pl-4 list-disc text-xs sm:text-sm text-slate-700">
                     <li>
@@ -1215,12 +1215,12 @@ export default function Section43bhMsmePaymentRulePage() {
                     </div>
 
                     <p>
-                      <strong>The Statutory Action:</strong> Precision Tooling Works engaged LegalRecovery.in. An advocate served a formal <strong>Section 43B(h) + Section 16 Statutory Demand Notice</strong> on the EPC company&apos;s Managing Director, CFO, and Company Secretary, enclosing the Udyam Certificate, e-Way Bill, and a detailed computation of the Section 43B(h) disallowance and Form 3CD Clause 22 reporting obligation.
+                      <strong>The Statutory Action:</strong> Precision Tooling Works engaged LegalRecovery.in, which served a formal <strong>Section 43B(h) + Section 16 Statutory Demand Notice</strong> on the EPC company&apos;s Managing Director, CFO, and Company Secretary, citing the Udyam registration, e-Way Bill details, and a detailed computation of the Section 43B(h) disallowance and Form 3CD Clause 22 reporting obligation.
                     </p>
 
                     <div className="p-3.5 sm:p-4 bg-emerald-950/70 border border-emerald-700/60 rounded-xl text-emerald-200">
                       <strong className="block text-emerald-400 font-bold mb-1">The Resolution:</strong>
-                      Within 9 days of the CFO receiving the advocate notice, the buyer&apos;s Finance Department bypassed the procurement bottleneck and released ₹29,50,000 in full via RTGS along with a negotiated delayed-interest settlement, securing an No-Dues Certificate before their statutory audit sign-off.
+                      Within 9 days of the CFO receiving the fact-verified notice, the buyer&apos;s Finance Department bypassed the procurement bottleneck and released ₹29,50,000 in full via RTGS along with a negotiated delayed-interest settlement, securing an No-Dues Certificate before their statutory audit sign-off.
                     </div>
                   </div>
                 </div>
@@ -1412,7 +1412,7 @@ export default function Section43bhMsmePaymentRulePage() {
                       ✓ Where a Section 43B(h) Legal Notice Works Fast
                     </div>
                     <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
-                      An advocate-drafted Section 43B(h) + Section 16 Legal Notice (₹{formattedPrice} via{" "}
+                      A fact-verified Section 43B(h) + Section 16 Legal Notice (₹{formattedPrice} via{" "}
                       <Link href="/legal-notice-charges" className="text-emerald-900 underline font-semibold">
                         LegalRecovery.in transparent fee schedule
                       </Link>

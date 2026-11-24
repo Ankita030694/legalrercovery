@@ -470,7 +470,7 @@ export default function OnlineScamClient() {
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      If the bank rejects your chargeback or delays the temporary credit, serving a formal <strong>Statutory Legal Notice</strong> drafted by an expert recovery advocate is highly effective. Banks and payment gateways operate under strict regulatory supervision and are highly risk-averse; they prefer settling legitimate consumer claims rather than facing regulatory audits or consumer court litigation.
+                      If the bank rejects your chargeback or delays the temporary credit, serving a formal <strong>Statutory Legal Notice</strong> prepared on fact-verified details is highly effective. Banks and payment gateways operate under strict regulatory supervision and are highly risk-averse; they prefer settling legitimate consumer claims rather than facing regulatory audits or consumer court litigation.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
                       A well-drafted legal notice:

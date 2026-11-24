@@ -19,7 +19,7 @@ export default function MiceNoticeCTA() {
         </h3>
 
         <p className="text-sm sm:text-base text-slate-300 leading-relaxed mb-8 max-w-3xl">
-          Corporate procurement teams routinely demand &ldquo;zero-charge goodwill waivers&rdquo; after cancelling a 100–300 room offsite 7 days prior. An Advocate-signed Statutory Demand Notice annexing your <strong>PMS Unsold Occupancy Log</strong>, <strong>Turnaway Register</strong>, and <strong>Contract Act s.74</strong> perishable-inventory computation shuts down refund threats and forces commercial settlement.
+          Corporate procurement teams routinely demand &ldquo;zero-charge goodwill waivers&rdquo; after cancelling a 100–300 room offsite 7 days prior. A Fact-verified Statutory Demand Notice annexing your <strong>PMS Unsold Occupancy Log</strong>, <strong>Turnaway Register</strong>, and <strong>Contract Act s.74</strong> perishable-inventory computation shuts down refund threats and forces commercial settlement.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
@@ -33,10 +33,10 @@ export default function MiceNoticeCTA() {
                 <span className="text-xl font-black text-white">₹999</span>
               </div>
               <h4 className="text-base font-bold text-white mb-2">
-                Test 1 Live Overdue Case Now (₹999 · Advocate Drafted · Email + WhatsApp + Speed Post RPAD)
+                Test 1 Live Overdue Case Now (₹999 · Fact-Verified · Email + WhatsApp + Speed Post RPAD)
               </h4>
               <p className="text-xs text-slate-300 leading-relaxed mb-4">
-                Upload one cancelled MICE group contract, room-block attrition shortfall, or unpaid dealer-meet balance. Our hospitality litigation advocates annex your PMS occupancy audit and Section 74 loss sheet into a formal 15-day demand notice.
+                Enter the details of one cancelled MICE group contract, room-block attrition shortfall, or unpaid dealer-meet balance. Our team verifies the facts and prepares a formal 15-day demand notice with your Section 74 loss computation.
               </p>
               <ul className="space-y-1.5 text-xs text-slate-300 mb-6">
                 <li className="flex items-center gap-2">

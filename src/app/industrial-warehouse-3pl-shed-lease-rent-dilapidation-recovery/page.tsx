@@ -838,7 +838,7 @@ export default function IndustrialWarehouseRecoveryPage() {
                 </div>
 
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
-                  Consider a standard real-world commercial failure: An e-commerce 3PL tenant occupying a 50,000 sq. ft. Grade-A logistics shed in the Luhari / Bilaspur corridor defaults on 4 months of rent (@ ₹28/sq.ft./month), severely gouges the VDF floor, leaves 3 months of HT electricity bills unpaid, and abandons 60 solvent drums in the yard. Here is how our legal team structures the comprehensive creditor recovery ledger:
+                  Consider a standard real-world commercial failure: An e-commerce 3PL tenant occupying a 50,000 sq. ft. Grade-A logistics shed in the Luhari / Bilaspur corridor defaults on 4 months of rent (@ ₹28/sq.ft./month), severely gouges the VDF floor, leaves 3 months of HT electricity bills unpaid, and abandons 60 solvent drums in the yard. Here is how our team structures the comprehensive creditor recovery ledger:
                 </p>
 
                 {/* Ledger Box */}
@@ -1059,7 +1059,7 @@ export default function IndustrialWarehouseRecoveryPage() {
                       4. Legal Notice &amp; Service Audit Trail
                     </p>
                     <ul className="text-xs text-slate-600 space-y-1.5 list-disc list-inside">
-                      <li>Advocate-drafted Section 106 TPA notice on law firm letterhead</li>
+                      <li>Fact-verified Section 106 TPA notice on law firm letterhead</li>
                       <li>India Post Speed Post tracking report with confirmed delivery seal</li>
                       <li>WhatsApp Business API delivery receipts with timestamped hashes</li>
                       <li>BSA 2023 Section 63 electronic signature and metadata certificate</li>

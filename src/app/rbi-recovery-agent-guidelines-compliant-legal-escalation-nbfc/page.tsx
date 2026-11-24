@@ -87,7 +87,7 @@ const FAQS = [
   {
     question: "Can an NBFC test compliant legal escalation on one loan before bulk CSV onboarding?",
     answer:
-      "Yes. Through LegalRecovery.in's dual-track onboarding desk, Compliance Officers and Collections Heads can pilot a single overdue account for ₹999 (inclusive of Advocate drafting, Email, WhatsApp, and Speed Post RPAD) via /user/new-recovery before uploading 10 to 10,000+ accounts via CSV.",
+      "Yes. Through LegalRecovery.in's dual-track onboarding desk, Compliance Officers and Collections Heads can pilot a single overdue account for ₹999 (inclusive of Notice drafting, Email, WhatsApp, and Speed Post RPAD) via /user/new-recovery before uploading 10 to 10,000+ accounts via CSV.",
   },
 ];
 
@@ -177,7 +177,7 @@ const HOWTO_SCHEMA = {
     {
       "@type": "HowToStep",
       position: 4,
-      name: "Dispatch Tri-Channel Advocate Legal Notice (Email + WhatsApp + RPAD)",
+      name: "Dispatch Tri-Channel Fact-Verified Legal Notice (Email + WhatsApp + RPAD)",
       text: "Serve a formal demand notice on Advocate letterhead citing Section 25 PSS Act / Contract Act terms with uncompounded penal charges.",
     },
     {
@@ -532,7 +532,7 @@ export default function RbiRecoveryGuidelinesNbfcPage() {
 
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   The table below benchmarks traditional outsourced recovery agencies and automated
-                  voice-bots against an Advocate-led Tri-Channel Legal Escalation desk across six
+                  voice-bots against a Fact-verified Tri-Channel Legal Escalation desk across six
                   RBI inspection parameters:
                 </p>
 
@@ -544,7 +544,7 @@ export default function RbiRecoveryGuidelinesNbfcPage() {
                         <th className="p-3.5 font-bold">Outsourced DRA / Field Agency</th>
                         <th className="p-3.5 font-bold">Automated Voice-Bot SaaS</th>
                         <th className="p-3.5 font-bold text-emerald-300">
-                          Advocate Legal Notice Desk
+                          Fact-Verified Legal Notice Desk
                         </th>
                       </tr>
                     </thead>
@@ -718,7 +718,7 @@ export default function RbiRecoveryGuidelinesNbfcPage() {
                     </span>
                     <div>
                       <h3 className="text-sm sm:text-base font-bold text-slate-900">
-                        Dispatch Tri-Channel Advocate Notices via Bulk CSV Engine
+                        Dispatch Tri-Channel Fact-Verified Notices via Bulk CSV Engine
                       </h3>
                       <p className="text-xs sm:text-sm text-slate-700 mt-1 leading-relaxed">
                         Upload 10 to 10,000+ accounts through our{" "}
@@ -728,7 +728,7 @@ export default function RbiRecoveryGuidelinesNbfcPage() {
                         >
                           Bulk Email, WhatsApp &amp; Speed Post RPAD Solution
                         </Link>
-                        . Each borrower receives an Advocate-signed notice on letterhead, with zero
+                        . Each borrower receives a Fact-verified notice on letterhead, with zero
                         third-party contact leakage.
                       </p>
                     </div>

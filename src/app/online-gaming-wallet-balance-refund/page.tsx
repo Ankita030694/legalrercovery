@@ -163,7 +163,7 @@ const FAQS = [
   {
     question: "How does a statutory legal notice help recover money stuck in a gaming wallet?",
     answer:
-      "Most gaming apps rely on automated bot replies to dismiss individual player complaints. A formal legal notice drafted by a High Court advocate and served on the company's registered corporate headquarters via Registered Speed Post alerts the corporate legal team and board of directors to impending litigation under Section 35 CPA 2019 and Section 316 BNS (Criminal Breach of Trust). Over 75% of legitimate wallet disputes are resolved amicably during the 15-day notice window.",
+      "Most gaming apps rely on automated bot replies to dismiss individual player complaints. A formal fact-verified legal notice served on the company's registered corporate headquarters via Registered Speed Post alerts the corporate legal team and board of directors to impending litigation under Section 35 CPA 2019 and Section 316 BNS (Criminal Breach of Trust). Over 75% of legitimate wallet disputes are resolved amicably during the 15-day notice window.",
   },
   {
     question: "What is the difference between unutilised cash deposit and promotional bonus cash?",
@@ -521,7 +521,7 @@ export default function OnlineGamingWalletBalanceRefundPage() {
                   Most online gaming companies operate with automated customer support bots that copy-paste pre-written excuses: &quot;Withdrawals are subject to 100% wagering&quot; or &quot;Our team is reviewing your activity.&quot; They do this because customer service agents have no legal authority to override algorithmic wallet restrictions.
                 </p>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
-                  A formal <Link href="/legal-notice-charges" className="text-red-600 underline font-semibold hover:text-red-700">statutory legal notice</Link> drafted by an advocate shifts the dispute from an automated ticketing queue directly onto the desks of the company&apos;s Legal Counsel, Compliance Officers, and Board of Directors. It cites:
+                  A formal <Link href="/legal-notice-charges" className="text-red-600 underline font-semibold hover:text-red-700">statutory legal notice</Link> prepared on verified facts shifts the dispute from an automated ticketing queue directly onto the desks of the company&apos;s Legal Counsel, Compliance Officers, and Board of Directors. It cites:
                 </p>
                 <ul className="list-disc list-inside space-y-2 text-xs sm:text-sm text-slate-700 pl-2">
                   <li>
@@ -572,7 +572,7 @@ export default function OnlineGamingWalletBalanceRefundPage() {
                     </div>
                     <div className="p-3 bg-slate-50 rounded-xl border border-slate-200">
                       <strong className="text-slate-900 block mb-1">4. Full Litigation Costs</strong>
-                      Court orders directing the corporate operator to reimburse your legal fees and advocate drafting costs.
+                      Court orders directing the corporate operator to reimburse your legal fees and notice drafting costs.
                     </div>
                   </div>
                 </div>

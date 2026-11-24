@@ -153,7 +153,7 @@ const TIMELINE_STAGES = [
     window: "Day 1 to Day 15",
     statute: "Contract Act s.176 & State Rules",
     action:
-      "Serve Advocate-drafted Registered Speed Post (RPAD) + WhatsApp + Email notice specifying Lot No., Bag Count, Chamber No., exact arrears, and a clear 15-day redemption deadline.",
+      "Serve Fact-verified Registered Speed Post (RPAD) + WhatsApp + Email notice specifying Lot No., Bag Count, Chamber No., exact arrears, and a clear 15-day redemption deadline.",
   },
   {
     stage: "Stage 3: 7-Day Final Intimation & Newspaper Publication",

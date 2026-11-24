@@ -17,7 +17,7 @@ const PAGE_TITLE = "Hospital Pending-Bill Undertaking & Legal Notice Pack";
 
 // TRIM_FOR_SF_SEO: Tightened to 154ch (120-155ch limit) preserving statutory facts
 const PAGE_DESCRIPTION =
-  "Free advocate-drafted hospital templates: (1) Non-coercive Discharge Bill Undertaking & Promissory Note, and (2) Post-Discharge Civil Recovery Legal Notice.";
+  "Free ready-to-use hospital templates: (1) Non-coercive Discharge Bill Undertaking & Promissory Note, and (2) Post-Discharge Civil Recovery Legal Notice.";
 
 // PDF Exact H1 (130ch) — strictly identical to ARTICLE_SCHEMA.headline
 const H1_TEXT =
@@ -144,7 +144,7 @@ const RECOVERY_STAGES = [
   {
     step: "Stage 3 (Days 8–15)",
     title: "Advocate Statutory Demand Notice",
-    desc: "Dispatch advocate-drafted 15-day legal notice via Speed Post RPAD + Email demanding liquidated balance + 18% interest.",
+    desc: "Dispatch fact-verified 15-day legal notice via Speed Post RPAD + Email demanding liquidated balance + 18% interest.",
   },
   {
     step: "Stage 4 (Day 31+)",
@@ -392,7 +392,7 @@ export default function HospitalDischargePendingBillTemplatePage() {
                 >
                   Hospitals &amp; Healthcare Recovery Hub
                 </Link>
-                , this 2-in-1 pack couples a non-coercive discharge financial undertaking and attendant co-guarantee promissory note with an advocate-drafted 15-day civil recovery notice—enabling lawful recovery without violating Article 21 detention mandates.
+                , this 2-in-1 pack couples a non-coercive discharge financial undertaking and attendant co-guarantee promissory note with a fact-verified 15-day civil recovery notice—enabling lawful recovery without violating Article 21 detention mandates.
               </p>
             </div>
 
@@ -461,7 +461,7 @@ export default function HospitalDischargePendingBillTemplatePage() {
 
                 <div className="bg-red-50 border-l-4 border-[#DC2626] p-4 rounded-r-xl">
                   <p className="text-xs sm:text-sm font-semibold text-red-900">
-                    <strong>The Institutional Solution:</strong> Hospitals must completely sever physical discharge from financial recovery. The patient must be discharged unconditionally with full medical records, while the billing desk secures a court-tested <em>Voluntary Discharge Financial Undertaking and Promissory Note</em> executed by both the patient and the attendant co-obligor. This leaves zero room for the debtor to claim coercion or duress when an advocate demand notice is served 15 days later!
+                    <strong>The Institutional Solution:</strong> Hospitals must completely sever physical discharge from financial recovery. The patient must be discharged unconditionally with full medical records, while the billing desk secures a court-tested <em>Voluntary Discharge Financial Undertaking and Promissory Note</em> executed by both the patient and the attendant co-obligor. This leaves zero room for the debtor to claim coercion or duress when a fact-verified demand notice is served 15 days later!
                   </p>
                 </div>
               </section>
@@ -506,7 +506,7 @@ export default function HospitalDischargePendingBillTemplatePage() {
                     id="heading-comparison-matrix-title"
                     className="text-xl sm:text-2xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Defective Gate-Pass Slips vs. Advocate-Vetted Discharge Undertakings
+                    Defective Gate-Pass Slips vs. Ready-to-Use Discharge Undertakings
                   </h2>
                   <p className="text-xs sm:text-sm text-slate-600 mt-1">
                     Why 95% of informal hospital undertakings collapse in civil court and how our dual-covenant draft withstands scrutiny.
@@ -522,7 +522,7 @@ export default function HospitalDischargePendingBillTemplatePage() {
                           Informal Hospital Slip / Billing Chit
                         </th>
                         <th className="p-3.5 sm:p-4 w-3/8 text-emerald-300">
-                          Advocate-Vetted 2-in-1 Healthcare Pack
+                          Fact-Verified 2-in-1 Healthcare Pack
                         </th>
                       </tr>
                     </thead>
@@ -690,7 +690,7 @@ export default function HospitalDischargePendingBillTemplatePage() {
 
                 <div className="p-4 bg-slate-50 border border-slate-200 rounded-xl text-xs text-slate-700 leading-relaxed">
                   <p>
-                    <strong>Promissory Note Enforcement:</strong> Need a standalone commercial promissory note format for general corporate advances or supplier debts? Access our advocate-vetted{" "}
+                    <strong>Promissory Note Enforcement:</strong> Need a standalone commercial promissory note format for general corporate advances or supplier debts? Access our fact-verified{" "}
                     <Link
                       href="/templates/promissory-note-format-india"
                       className="text-[#DC2626] font-bold underline hover:text-[#B91C1C]"
@@ -838,7 +838,7 @@ export default function HospitalDischargePendingBillTemplatePage() {
                       <strong>The Legal Escalation:</strong> On Day 18, an empanelled hospital recovery advocate dispatched our 15-day statutory demand notice via Speed Post RPAD and certified email, claiming &rupee;1,65,000 principal plus 18% p.a. interest under the Interest Act, 1978 and &rupee;5,000 legal costs, naming both the patient and the attendant co-guarantor.
                     </p>
                     <p className="text-emerald-400 font-semibold">
-                      <strong>The Outcome:</strong> Upon receiving the formal advocate notice citing their personal guarantee under Section 126 of the Contract Act and imminent summary suit proceedings under Order XXXVII CPC, the attendant contacted the hospital billing head on Day 24 and cleared the entire &rupee;1,65,000 balance via RTGS to avoid litigation and credit impairment.
+                      <strong>The Outcome:</strong> Upon receiving the formal fact-verified notice citing their personal guarantee under Section 126 of the Contract Act and imminent summary suit proceedings under Order XXXVII CPC, the attendant contacted the hospital billing head on Day 24 and cleared the entire &rupee;1,65,000 balance via RTGS to avoid litigation and credit impairment.
                     </p>
                   </div>
                 </div>
@@ -878,10 +878,10 @@ export default function HospitalDischargePendingBillTemplatePage() {
                     id="heading-institutional-cta-title"
                     className="text-xl sm:text-2xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Issue 1 Advocate Notice or Onboard Your Hospital Billing Portfolio
+                    Issue 1 Fact-Verified Notice or Onboard Your Hospital Billing Portfolio
                   </h2>
                   <p className="text-xs sm:text-sm text-slate-600 mt-1">
-                    Choose between a single advocate-reviewed recovery notice for &rupee;999 or upload bulk CSV batches for your entire clinic or hospital network.
+                    Choose between a single fact-verified recovery notice for &rupee;999 or upload bulk CSV batches for your entire clinic or hospital network.
                   </p>
                 </div>
 

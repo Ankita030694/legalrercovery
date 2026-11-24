@@ -24,10 +24,10 @@ export default function SiProjectCTA({ className = "" }: SiProjectCTAProps) {
                 Track 1 · Single Project / Pilot Notice
               </span>
               <h3 className="text-lg sm:text-xl font-bold text-white mb-2">
-                Test 1 Live Overdue Case Now (&#8377;{basePrice} &middot; Advocate Drafted &middot; Email + WhatsApp + Speed Post RPAD)
+                Test 1 Live Overdue Case Now (&#8377;{basePrice} &middot; Fact-Verified &middot; Email + WhatsApp + Speed Post RPAD)
               </h3>
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-                Upload a single stalled campus BoQ, E-Way Bill delivery challan, and site-not-ready email trail. Our advocates invoke Contract Act s.53/54 Deemed Commissioning, MSMED s.16 3x RBI interest, and Order XXXVII CPC.
+                Enter the details of a single stalled campus BoQ, E-Way Bill delivery challan, and site-not-ready email trail. Our team invokes Contract Act s.53/54 Deemed Commissioning, MSMED s.16 3x RBI interest, and Order XXXVII CPC.
               </p>
             </div>
 

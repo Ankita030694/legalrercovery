@@ -4,7 +4,7 @@ import RecoverUnpaidRentFromTenantIndiaClient from './RecoverUnpaidRentFromTenan
 const slug = 'send-a-legal-notice/recover-unpaid-rent-from-tenant-india';
 const title = 'Legal Notice to Tenant for Unpaid Rent Recovery India';
 const description =
-  'Tenant not paying rent in India? Send an advocate-vetted legal notice under Section 106 TPA to recover rent arrears and initiate eviction.';
+  'Tenant not paying rent in India? Send a fact-verified legal notice under Section 106 TPA to recover rent arrears and initiate eviction.';
 const url = `https://www.legalrecovery.in/${slug}`;
 const ogImage = `/images/og/recover-unpaid-rent-from-tenant-india.jpg`;
 

@@ -130,7 +130,7 @@ const FAQS = [
   {
     question: "What should I do if a driver cancels my ride but Ola, Uber or Rapido charges me a cancellation fee?",
     answer:
-      "Under Clause 13(2) of the MoRTH Motor Vehicle Aggregator Guidelines 2020, aggregators are strictly prohibited from charging riders cancellation fees when the default originates with the driver. Take immediate screenshots of the driver's stationary GPS location, call records proving the driver initiated contact, and the cancellation deduction. Dispute the charge in-app under 'Driver asked me to cancel' or 'Driver never arrived'. If customer support refuses a refund within 48 hours, lodge an escalation on the National Consumer Helpline (1915) and serve a statutory advocate legal notice demanding immediate bank reversal.",
+      "Under Clause 13(2) of the MoRTH Motor Vehicle Aggregator Guidelines 2020, aggregators are strictly prohibited from charging riders cancellation fees when the default originates with the driver. Take immediate screenshots of the driver's stationary GPS location, call records proving the driver initiated contact, and the cancellation deduction. Dispute the charge in-app under 'Driver asked me to cancel' or 'Driver never arrived'. If customer support refuses a refund within 48 hours, lodge an escalation on the National Consumer Helpline (1915) and serve a statutory legal notice demanding immediate bank reversal.",
   },
   {
     question: "Can cab aggregators legally force me to take refunds as in-app credits or Ola Money / Uber credits?",
@@ -145,7 +145,7 @@ const FAQS = [
   {
     question: "What is the official procedure and email format to serve a legal notice to Ola, Uber or Rapido?",
     answer:
-      "A formal statutory legal notice drafted by an advocate must be addressed to the registered corporate headquarters and designated Grievance Officers of ANI Technologies (Ola), Uber India Systems, or Roppen Transportation (Rapido). The notice must state the booking CRN/Trip ID, pickup-drop coordinates, payment transaction UTR, exact excess amount debited, and invoke MoRTH Aggregator Guidelines 2020 alongside Section 2(11) and 2(47) of CPA 2019, providing a strict 15-day cure window before filing on e-Jagriti.",
+      "A formal statutory legal notice prepared on verified facts must be addressed to the registered corporate headquarters and designated Grievance Officers of ANI Technologies (Ola), Uber India Systems, or Roppen Transportation (Rapido). The notice must state the booking CRN/Trip ID, pickup-drop coordinates, payment transaction UTR, exact excess amount debited, and invoke MoRTH Aggregator Guidelines 2020 alongside Section 2(11) and 2(47) of CPA 2019, providing a strict 15-day cure window before filing on e-Jagriti.",
   },
   {
     question: "Is it legal for cab drivers to refuse AC or demand extra cash, and can I get a fare refund?",
@@ -155,12 +155,12 @@ const FAQS = [
   {
     question: "Can I take Ola, Uber or Rapido to Consumer Court (e-Jagriti) without hiring a high-priced lawyer?",
     answer:
-      "Yes. Under Section 35 of the Consumer Protection Act, 2019, any consumer can register and file a case online on e-Jagriti (e-jagriti.gov.in) from their home district without attending physical court hearings. Serving a statutory advocate legal notice beforehand serves as mandatory pre-litigation proof; in over 80% of cases, aggregator legal teams settle the refund and compensation during the 15-day notice period to avoid public court penalties.",
+      "Yes. Under Section 35 of the Consumer Protection Act, 2019, any consumer can register and file a case online on e-Jagriti (e-jagriti.gov.in) from their home district without attending physical court hearings. Serving a statutory legal notice beforehand serves as mandatory pre-litigation proof; in over 80% of cases, aggregator legal teams settle the refund and compensation during the 15-day notice period to avoid public court penalties.",
   },
   {
     question: "Ola ya Uber ne galat cancellation fee kaat li ya trip overcharge kiya toh legal notice kaise bheje?",
     answer:
-      "Agar Ola, Uber ya Rapido support bot aapki legitimate refund request ko reject kar de ya driver ke cancel karne par aapse fee kaat le, toh aap ek formal advocate legal notice bhej sakte hain. LegalRecovery.in par verified advocate MoRTH Aggregator Guidelines 2020 aur Consumer Protection Act 2019 ke tehat aggregator ke registered Bangalore ya Mumbai corporate office aur Grievance Officer ko Speed Post aur email se notice bhejte hain, jismein 15 din ka refund demand diya jata hai.",
+      "Agar Ola, Uber ya Rapido support bot aapki legitimate refund request ko reject kar de ya driver ke cancel karne par aapse fee kaat le, toh aap ek formal legal notice bhej sakte hain. LegalRecovery.in par hum MoRTH Aggregator Guidelines 2020 aur Consumer Protection Act 2019 ke tehat aggregator ke registered Bangalore ya Mumbai corporate office aur Grievance Officer ko Speed Post aur email se notice bhejte hain, jismein 15 din ka refund demand diya jata hai.",
   },
 ];
 
@@ -296,7 +296,7 @@ export default function OlaUberRapidoLegalNoticePage() {
                 Statutory Summary (Cab Aggregator Refund &amp; Penalty Mandate)
               </p>
               <p>
-                Under Clause 13(2) of the MoRTH Motor Vehicle Aggregator Guidelines 2020 and Section 2(47) of the Consumer Protection Act, 2019, cab aggregators cannot penalize riders when drivers cancel, refuse AC, or inflate fares through route deviations. If in-app support fails to credit your bank account, riders can file on the National Consumer Helpline (1915), issue an advocate legal notice, and claim refunds plus compensation on e-Jagriti.
+                Under Clause 13(2) of the MoRTH Motor Vehicle Aggregator Guidelines 2020 and Section 2(47) of the Consumer Protection Act, 2019, cab aggregators cannot penalize riders when drivers cancel, refuse AC, or inflate fares through route deviations. If in-app support fails to credit your bank account, riders can file on the National Consumer Helpline (1915), issue a legal notice, and claim refunds plus compensation on e-Jagriti.
               </p>
             </div>
 
@@ -527,7 +527,7 @@ export default function OlaUberRapidoLegalNoticePage() {
                     <div>
                       <strong className="text-sm sm:text-base text-slate-900 font-bold">Statutory Legal Notice Dispatched to Registered Corporate HQ:</strong>
                       <p className="text-xs sm:text-sm mt-0.5 leading-relaxed">
-                        Serving an advocate demand notice via Registered Speed Post to the registered Bangalore or Mumbai corporate headquarters gave the aggregator&apos;s legal cell a formal 15-day deadline, prompting pre-litigation settlements in the majority of claims.
+                        Serving a legal demand notice via Registered Speed Post to the registered Bangalore or Mumbai corporate headquarters gave the aggregator&apos;s legal cell a formal 15-day deadline, prompting pre-litigation settlements in the majority of claims.
                       </p>
                     </div>
                   </li>
@@ -565,7 +565,7 @@ export default function OlaUberRapidoLegalNoticePage() {
                   </div>
                   <div className="bg-red-50 text-red-950 p-4 rounded-xl border border-red-200">
                     <span className="text-[10px] font-bold text-red-700 uppercase tracking-wider block mb-1">Step 4</span>
-                    <h3 className="font-bold text-sm">Advocate Legal Demand Notice</h3>
+                    <h3 className="font-bold text-sm">Legal Demand Notice</h3>
                     <p className="text-xs text-red-900 mt-1">15-day statutory demand served via Registered Speed Post + Corporate Email.</p>
                   </div>
                   <div className="bg-emerald-50 text-emerald-950 p-4 rounded-xl border border-emerald-200">
@@ -635,7 +635,7 @@ export default function OlaUberRapidoLegalNoticePage() {
                     {/* Step 4 */}
                     <rect x="520" y="20" width="140" height="90" rx="10" fill="url(#cabAlert)" />
                     <text x="590" y="45" fill="#FCA5A5" fontWeight="bold" textAnchor="middle">STEP 4</text>
-                    <text x="590" y="65" fill="#FFFFFF" fontWeight="bold" textAnchor="middle">Advocate Notice</text>
+                    <text x="590" y="65" fill="#FFFFFF" fontWeight="bold" textAnchor="middle">Legal Notice</text>
                     <text x="590" y="82" fill="#FEE2E2" fontSize="10" textAnchor="middle">15-Day Statutory Demand</text>
                     <text x="590" y="98" fill="#FECACA" fontSize="9" textAnchor="middle">Speed Post + Corporate Mail</text>
 
@@ -720,10 +720,10 @@ export default function OlaUberRapidoLegalNoticePage() {
                     </span>
                     <div className="space-y-1 sm:space-y-1.5">
                       <h3 className="text-sm sm:text-base md:text-lg font-bold text-slate-900">
-                        Serve a Formal Statutory Advocate Legal Demand Notice
+                        Serve a Formal Statutory Legal Demand Notice
                       </h3>
                       <p className="text-xs sm:text-sm leading-relaxed">
-                        When corporate support ignores or rejects your grievance after 7 business days, engage an advocate to draft and dispatch an official statutory legal notice to the registered corporate headquarters and Grievance Cell. Dispatched via Registered Speed Post and Section 63 BSA electronic mail, the notice demands immediate refund to source bank account, 18% penal interest, and compensation within a mandatory 15-day window.
+                        When corporate support ignores or rejects your grievance after 7 business days, send an official statutory legal notice to the registered corporate headquarters and Grievance Cell. Dispatched via Registered Speed Post and Section 63 BSA electronic mail, the notice demands immediate refund to source bank account, 18% penal interest, and compensation within a mandatory 15-day window.
                       </p>
                       <p className="text-xs text-slate-500 font-medium">
                         Learn about flat, transparent notice drafting fees on our <Link href="/legal-notice-charges" className="text-blue-700 underline">legal notice charges</Link> schedule.
@@ -906,7 +906,7 @@ export default function OlaUberRapidoLegalNoticePage() {
                       </tr>
                       <tr className="hover:bg-slate-50/80">
                         <th scope="row" className="py-3 px-3.5 sm:py-3.5 sm:px-4 font-semibold text-slate-900">
-                          Advocate Pre-Litigation Notice Window
+                          Pre-Litigation Notice Window
                         </th>
                         <td className="py-3 px-3.5 sm:py-3.5 sm:px-4 text-red-700 font-bold">15 Calendar Days</td>
                         <td className="py-3 px-3.5 sm:py-3.5 sm:px-4 text-xs">Section 35, Consumer Protection Act 2019</td>
@@ -961,11 +961,11 @@ export default function OlaUberRapidoLegalNoticePage() {
                       <strong>The Deadlock:</strong> With his flight boarding in two hours, Vivek cancelled the trip after 12 minutes of the driver remaining stationary. The platform algorithm immediately deducted a ₹115 cancellation charge. Vivek booked another cab on the same platform; the second driver turned off the AC and demanded ₹200 extra cash. When Vivek disputed both incidents in the app, customer support chatbots replied with canned responses stating that the cancellation fee was &quot;validly assessed as per partner arrival estimates&quot;.
                     </p>
                     <p>
-                      <strong>The Statutory Action:</strong> Vivek engaged LegalRecovery.in. An advocate drafted and dispatched an official statutory demand notice to the Group General Counsel and Grievance Officer at the aggregator&apos;s Koramangala, Bengaluru registered headquarters. The notice invoked Clause 13(2) of the MoRTH Motor Vehicle Aggregator Guidelines 2020, CCPA Dark Patterns Guidelines on Drip Pricing, and Section 2(47) of the Consumer Protection Act, 2019, providing a strict 15-day demand for refund plus compensation.
+                      <strong>The Statutory Action:</strong> Vivek engaged LegalRecovery.in. The team verified the facts and dispatched an official statutory demand notice to the Group General Counsel and Grievance Officer at the aggregator&apos;s Koramangala, Bengaluru registered headquarters. The notice invoked Clause 13(2) of the MoRTH Motor Vehicle Aggregator Guidelines 2020, CCPA Dark Patterns Guidelines on Drip Pricing, and Section 2(47) of the Consumer Protection Act, 2019, providing a strict 15-day demand for refund plus compensation.
                     </p>
                     <div className="p-3.5 sm:p-4 bg-emerald-950/70 border border-emerald-700/60 rounded-xl text-emerald-200">
                       <strong className="block text-emerald-400 font-bold mb-1">The Outcome:</strong>
-                      On Day 9 following delivery of the advocate legal notice via Registered Speed Post, the platform&apos;s senior escalations cell intervened. The aggregator reversed the ₹115 cancellation fee directly to Vivek&apos;s bank account, refunded the fare difference of ₹200 for the AC refusal, and remitted ₹15,000 as ex-gratia compensation for mental agony and airport transit stress, accompanied by a written apology.
+                      On Day 9 following delivery of the legal notice via Registered Speed Post, the platform&apos;s senior escalations cell intervened. The aggregator reversed the ₹115 cancellation fee directly to Vivek&apos;s bank account, refunded the fare difference of ₹200 for the AC refusal, and remitted ₹15,000 as ex-gratia compensation for mental agony and airport transit stress, accompanied by a written apology.
                     </div>
                   </div>
                 </div>

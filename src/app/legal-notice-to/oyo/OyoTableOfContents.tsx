@@ -194,7 +194,7 @@ export default function OyoTableOfContents({
                 onClick={(e) => scrollToSection(e, "heading-cta-block")}
                 className="mt-2.5 inline-block w-full py-2 px-3 bg-[#DC2626] hover:bg-[#B91C1C] text-white text-xs font-bold rounded-lg transition-colors shadow-xs"
               >
-                Send Advocate Notice
+                Send Fact-Verified Notice
               </a>
             </div>
           </div>

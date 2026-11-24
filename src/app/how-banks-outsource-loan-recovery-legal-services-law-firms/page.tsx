@@ -512,7 +512,7 @@ export default function HowBanksOutsourceLoanRecoveryPage() {
                   <div className="bg-amber-50 text-amber-950 p-4 rounded-xl border border-amber-300">
                     <span className="text-[10px] font-bold text-amber-800 uppercase tracking-wider block mb-1">Stage 2</span>
                     <h3 className="font-bold text-sm">Advocate Notice Drafting &amp; Audit</h3>
-                    <p className="text-xs text-amber-900 mt-1">Verified advocates review loan clauses and generate Section 138 / NACH / SARFAESI demand notices.</p>
+                    <p className="text-xs text-amber-900 mt-1">Our team verifies the loan facts you submit and generates Section 138 / NACH / SARFAESI demand notices.</p>
                   </div>
                   <div className="bg-slate-100 text-slate-900 p-4 rounded-xl border border-slate-300">
                     <span className="text-[10px] font-bold text-slate-600 uppercase tracking-wider block mb-1">Stage 3</span>
@@ -572,7 +572,7 @@ export default function HowBanksOutsourceLoanRecoveryPage() {
                     <rect x="180" y="20" width="140" height="90" rx="10" fill="#FEF3C7" stroke="#F59E0B" strokeWidth="1.5" />
                     <text x="250" y="45" fill="#B45309" fontWeight="bold" textAnchor="middle">STAGE 2</text>
                     <text x="250" y="65" fill="#92400E" fontWeight="bold" textAnchor="middle">Notice Vetting</text>
-                    <text x="250" y="82" fill="#78350F" fontSize="10" textAnchor="middle">Advocate Drafting</text>
+                    <text x="250" y="82" fill="#78350F" fontSize="10" textAnchor="middle">Notice Drafting</text>
                     <text x="250" y="98" fill="#78350F" fontSize="9" textAnchor="middle">s.138 / NACH / SARFAESI</text>
 
                     {/* Arrow 2 */}
@@ -679,7 +679,7 @@ export default function HowBanksOutsourceLoanRecoveryPage() {
                         Establish Encrypted Data Integration &amp; 48-Hour Notice Dispatch Pipelines
                       </h3>
                       <p className="text-xs sm:text-sm leading-relaxed">
-                        Set up automated batch transmission via SFTP or REST APIs. Delinquent accounts (cheque bounces, NACH failures) are converted into legally verified advocate demand notices with barcoded Speed Post and Section 63 BSA electronic dispatch within 48 hours of ingestion. Explore our dedicated portal for <Link href="/send-a-legal-notice/for-banks-to-recover-their-unpaid-dues" className="text-blue-700 underline font-semibold">sending bank recovery legal notices for unpaid dues</Link>.
+                        Set up automated batch transmission via SFTP or REST APIs. Delinquent accounts (cheque bounces, NACH failures) are converted into fact-verified demand notices with barcoded Speed Post and Section 63 BSA electronic dispatch within 48 hours of ingestion. Explore our dedicated portal for <Link href="/send-a-legal-notice/for-banks-to-recover-their-unpaid-dues" className="text-blue-700 underline font-semibold">sending bank recovery legal notices for unpaid dues</Link>.
                       </p>
                     </div>
                   </li>

@@ -168,7 +168,7 @@ const IND_24_SPOKES: IndustrySpoke[] = [
     url: "/templates/franchisor-royalty-default-termination-signboard-takedown-notice",
     statute: "Commercial Courts Act s.2(1)(c)(ix) + Trade Marks Act s.135 + NI Act s.138",
     summary:
-      "Interactive advocate-vetted notice builder generating: (1) 15-Day Royalty Arrears & POS Audit Cure Notice, and (2) Formal Franchise Termination & 48-Hour Signboard De-Branding Notice.",
+      "Interactive fact-verified notice builder generating: (1) 15-Day Royalty Arrears & POS Audit Cure Notice, and (2) Formal Franchise Termination & 48-Hour Signboard De-Branding Notice.",
   },
 ];
 
@@ -258,7 +258,7 @@ const FAQS = [
   {
     question: "Can a franchisor send bulk legal notices across 20+ defaulting stores simultaneously?",
     answer:
-      "Yes. Through our Institutional Batch Recovery Desk, franchisors and OEMs can upload store ledger CSVs mapping store codes, unpaid royalties, commissary invoices, and bounced PDC details. Advocate-vetted statutory demand notices are dispatched simultaneously via Email, WhatsApp, and physical Speed Post RPAD across all target cities with centralized tracking.",
+      "Yes. Through our Institutional Batch Recovery Desk, franchisors and OEMs can upload store ledger CSVs mapping store codes, unpaid royalties, commissary invoices, and bounced PDC details. Fact-verified statutory demand notices are dispatched simultaneously via Email, WhatsApp, and physical Speed Post RPAD across all target cities with centralized tracking.",
   },
 ];
 
@@ -1007,7 +1007,7 @@ export default function FranchisorsBrandLicensorsOEMHubPage() {
                 Complete IND-24 Directory: All 9 Spokes &amp; Legal Notice Pack
               </h2>
               <p className="text-xs sm:text-sm text-slate-600 mb-6 leading-relaxed">
-                Access specialized practitioner guides, operational playbooks, and advocate-vetted notice templates across every franchise and dealership dispute corridor.
+                Access specialized practitioner guides, operational playbooks, and ready-to-use notice templates across every franchise and dealership dispute corridor.
               </p>
 
               <div className="space-y-8">

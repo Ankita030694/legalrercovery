@@ -165,7 +165,7 @@ const FAQS = [
   {
     question: "Can I file a case on e-Jagriti against a fake job consultancy without hiring a private lawyer?",
     answer:
-      "Yes. The e-Jagriti portal (e-jagriti.gov.in) enables any consumer to file, upload evidence, and track a consumer complaint entirely online before the District Consumer Disputes Redressal Commission without mandatory advocate representation. You pay a nominal filing fee (zero fee for claims up to ₹5 lakh). However, serving a well-drafted statutory advocate legal notice beforehand gives the agency a 15-day window to refund your money voluntarily, which frequently resolves the dispute without ever needing to go to court.",
+      "Yes. The e-Jagriti portal (e-jagriti.gov.in) enables any consumer to file, upload evidence, and track a consumer complaint entirely online before the District Consumer Disputes Redressal Commission without mandatory advocate representation. You pay a nominal filing fee (zero fee for claims up to ₹5 lakh). However, serving a well-drafted statutory fact-verified legal notice beforehand gives the agency a 15-day window to refund your money voluntarily, which frequently resolves the dispute without ever needing to go to court.",
   },
 ];
 
@@ -759,7 +759,7 @@ export default function FakeJobOfferRefundPage() {
                         </time>
                       </div>
                       <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                        When the agency ignores your email or cites a &quot;non-refundable&quot; clause, have an advocate draft and serve a formal 15-day statutory demand notice. The notice is addressed to the registered company and its directors individually, detailing civil and criminal liabilities under Section 318(4) BNS 2023 and Section 35 CPA 2019. Dispatched via Registered Speed Post with tracking and served electronically under Section 63 BSA 2023.
+                        When the agency ignores your email or cites a &quot;non-refundable&quot; clause, serve a formal 15-day statutory demand notice. The notice is addressed to the registered company and its directors individually, detailing civil and criminal liabilities under Section 318(4) BNS 2023 and Section 35 CPA 2019. Dispatched via Registered Speed Post with tracking and served electronically under Section 63 BSA 2023.
                       </p>
                     </div>
                   </li>
@@ -838,7 +838,7 @@ export default function FakeJobOfferRefundPage() {
                       <ul className="list-disc pl-4 space-y-1 text-slate-600 text-xs">
                         <li><strong>Day 1:</strong> Filed an online complaint with the Karnataka Cyber Crime Police and obtained an NCRP acknowledgment slip.</li>
                         <li><strong>Day 4:</strong> Extracted MCA Master Data showing names and residential addresses of the two directors.</li>
-                        <li><strong>Day 7:</strong> Engaged LegalRecovery to issue an Advocate Statutory Legal Notice citing Section 318(4) BNS and Section 2(47) CPA 2019.</li>
+                        <li><strong>Day 7:</strong> Engaged LegalRecovery to issue a Fact-Verified Statutory Legal Notice citing Section 318(4) BNS and Section 2(47) CPA 2019.</li>
                       </ul>
                     </div>
                   </div>
@@ -849,7 +849,7 @@ export default function FakeJobOfferRefundPage() {
                       The Resolution &amp; Financial Outcome:
                     </strong>
                     <p className="leading-relaxed">
-                      Within 5 days of receiving the advocate legal notice at their registered office and director residential addresses via Registered Speed Post, the managing director contacted Rohit. Facing imminent criminal prosecution under BNS 318(4) and trade license cancellation proceedings before the Bruhat Bengaluru Mahanagara Palike (BBMP), the agency executed a full NEFT reversal of ₹28,500 plus ₹3,000 towards incidental expenses, executing a written settlement agreement.
+                      Within 5 days of receiving the fact-verified legal notice at their registered office and director residential addresses via Registered Speed Post, the managing director contacted Rohit. Facing imminent criminal prosecution under BNS 318(4) and trade license cancellation proceedings before the Bruhat Bengaluru Mahanagara Palike (BBMP), the agency executed a full NEFT reversal of ₹28,500 plus ₹3,000 towards incidental expenses, executing a written settlement agreement.
                     </p>
                   </div>
                 </div>

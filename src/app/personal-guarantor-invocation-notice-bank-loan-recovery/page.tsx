@@ -437,7 +437,7 @@ export default function PersonalGuarantorInvocationNoticeBankPage() {
                     When Stressed Assets Management Branches (SAMB) subsequently escalate that ₹5 Crore to ₹50 Crore NPA to NCLT under Section 95 of the Insolvency and Bankruptcy Code, 2016 (IBC) or to DRT under Section 19 of the RDB Act, seasoned insolvency counsel immediately demolish the petition. Under settled Supreme Court jurisprudence in <em>Syndicate Bank v. Channaveerappa Beleri</em> (2006) 11 SCC 506, standard bank Deeds of Guarantee are &ldquo;on-demand&rdquo; continuing contracts: the surety&apos;s default—and the bank&apos;s cause of action—does <strong>not</strong> occur on the borrower&apos;s NPA date. It occurs only when the bank formally invokes the guarantee by serving an unambiguous written demand directly upon the guarantor.
                   </p>
                   <p>
-                    Even more dangerously, relying on a SARFAESI Section 13(2) notice or an uninvoked Form B notice as a substitute for contractual invocation triggers jurisdictional objections before NCLT benches, forcing banks to withdraw defective Form C petitions and lose 9 to 14 months while promoters alienate unencumbered bungalows and equity stakes. Banks needing an immediate, advocate-vetted draft can use our{" "}
+                    Even more dangerously, relying on a SARFAESI Section 13(2) notice or an uninvoked Form B notice as a substitute for contractual invocation triggers jurisdictional objections before NCLT benches, forcing banks to withdraw defective Form C petitions and lose 9 to 14 months while promoters alienate unencumbered bungalows and equity stakes. Banks needing an immediate, fact-verified draft can use our{" "}
                     <Link
                       href="/templates/bank-loan-recall-cum-guarantee-invocation-notice"
                       className="text-[#DC2626] font-bold hover:underline"
@@ -976,7 +976,7 @@ export default function PersonalGuarantorInvocationNoticeBankPage() {
                       tag: "P1 Notice Workspace",
                       title: "Loan Recall & Guarantee Invocation Template",
                       href: "/templates/bank-loan-recall-cum-guarantee-invocation-notice",
-                      desc: "Editable advocate-vetted notice pack separating Borrower Recall and explicit s.128 Guarantee Invocation.",
+                      desc: "Editable fact-verified notice pack separating Borrower Recall and explicit s.128 Guarantee Invocation.",
                     },
                     {
                       tag: "T1 Calculator",

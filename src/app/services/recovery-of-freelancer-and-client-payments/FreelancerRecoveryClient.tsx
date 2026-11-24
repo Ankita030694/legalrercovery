@@ -148,7 +148,7 @@ export default function FreelancerRecoveryClient() {
       id: "rev-1",
       name: "Aman Gupta (Freelance UI/UX Designer, Bengaluru)",
       rating: 5,
-      review: "A client refused to clear my final milestone of ₹95,000 for a SaaS dashboard redesign, claiming revisions were pending. LegalRecovery sent an advocate notice outlining the Indian Contract Act and Copyright Act violations. They pointed out that using my designs on production without clearing dues was illegal. The client cleared the full bill within 48 hours."
+      review: "A client refused to clear my final milestone of ₹95,000 for a SaaS dashboard redesign, claiming revisions were pending. LegalRecovery sent a legal notice outlining the Indian Contract Act and Copyright Act violations. They pointed out that using my designs on production without clearing dues was illegal. The client cleared the full bill within 48 hours."
     },
     {
       id: "rev-2",
@@ -186,7 +186,7 @@ export default function FreelancerRecoveryClient() {
           "@id": "https://www.legalrecovery.in/services/recovery-of-freelancer-and-client-payments"
         },
         "headline": "Recover Unpaid Freelancer & Client Payments Legally in India",
-        "description": "Exhaustive legal guide on recovering unpaid freelance invoices, milestone payouts, monthly retainer defaults, and contract breaches in India under the Indian Contract Act, 1872. 3 progressive notices, 1 police complaint draft, attorney-verified.",
+        "description": "Exhaustive legal guide on recovering unpaid freelance invoices, milestone payouts, monthly retainer defaults, and contract breaches in India under the Indian Contract Act, 1872. 3 progressive notices, 1 police complaint draft, fact-verified.",
         "image": "https://www.legalrecovery.in/blog_money_recovery.png",
         "datePublished": "2026-05-27T00:00:00Z",
         "dateModified": "2026-05-27T00:00:00Z",
@@ -245,7 +245,7 @@ export default function FreelancerRecoveryClient() {
         "@type": "Product",
         "@id": "https://www.legalrecovery.in/services/recovery-of-freelancer-and-client-payments#service",
         "name": "Freelancer and Client Payments Recovery Service",
-        "description": "Professional money recovery for unpaid freelance invoices, milestone delays, monthly retainer defaults, and contract breaches using top-tier advocate-signed notice campaigns.",
+        "description": "Professional money recovery for unpaid freelance invoices, milestone delays, monthly retainer defaults, and contract breaches using top-tier fact-verified notice campaigns.",
         "brand": {
           "@type": "Organization",
           "name": "LegalRecovery",
@@ -309,7 +309,7 @@ export default function FreelancerRecoveryClient() {
               <span className="text-[#DC2626]">Recover It Legally.</span>
             </h1>
             <p className="text-[15px] md:text-[17px] text-[#4B5563] font-medium leading-[1.6] mb-6 max-w-xl select-text">
-              Reclaim unpaid milestone payments, retainer fees, and scope creep dues. Stop unauthorized use of your work with 3 advocate notices and 1 police complaint draft.
+              Reclaim unpaid milestone payments, retainer fees, and scope creep dues. Stop unauthorized use of your work with 3 legal notices and 1 police complaint draft.
             </p>
 
             {/* High-Trust Tagline Banner */}
@@ -448,7 +448,7 @@ export default function FreelancerRecoveryClient() {
                   Clients frequently stop replying once they receive the final deliverables. Others demand endless revisions or use draft work in production without paying. Some clients cancel contracts abruptly, violating agreed notice terms.
                 </p>
                 <p>
-                  Our <strong className="font-extrabold text-[#111827]">Freelancer and Client Payments Recovery Service</strong> evens the playing field. We turn payment recovery into an automated, attorney-verified legal pipeline. We serve notices directly to founders, finance heads, and directors to resolve disputes fast.
+                  Our <strong className="font-extrabold text-[#111827]">Freelancer and Client Payments Recovery Service</strong> evens the playing field. We turn payment recovery into an automated, fact-verified legal pipeline. We serve notices directly to founders, finance heads, and directors to resolve disputes fast.
                 </p>
                 <blockquote>
                   <strong>Our Service Promise:</strong> We provide flat-fee recovery support with <strong>zero commission</strong> on your recovered money. We draft, verify, and deliver firm legal notices directly to company leadership.
@@ -460,7 +460,7 @@ export default function FreelancerRecoveryClient() {
                 {/* 2. What We Help You Recover */}
                 <h2 id="coverage-details">2. Freelancer & Client Dues We Help You Recover</h2>
                 <p>
-                  Freelance payment disputes often involve multiple billing components. Our legal team calculates every unpaid balance to maximize your claim:
+                  Freelance payment disputes often involve multiple billing components. Our team calculates every unpaid balance to maximize your claim:
                 </p>
                 
                 <h3 id="milestone-payments">A. Milestone & Final Project Payouts</h3>
@@ -541,7 +541,7 @@ export default function FreelancerRecoveryClient() {
                 {/* 4. The Indian Statutory Shield */}
                 <h2 id="legal-framework">4. The Indian Statutory Shield: Know Your Freelancer Rights</h2>
                 <p>
-                  Indian law provides freelance professionals with solid legal protections. Our advocate panel leverages these statutes to recover your money:
+                  Indian law provides freelance professionals with solid legal protections. Our team leverages these statutes to recover your money:
                 </p>
                 <ul>
                   <li><strong>The Indian Contract Act, 1872:</strong> Recognizes electronic contracts and emails as binding under Sections 10 and 10A. Unilateral non-payment breaches contract law.</li>
@@ -598,7 +598,7 @@ export default function FreelancerRecoveryClient() {
                   Many creators use free legal notice formats found online. These generic templates rarely get results:
                 </p>
                 <ul>
-                  <li><strong>No Advocate Verification:</strong> Free templates lack the seal and signature of a practicing advocate. Corporate legal teams easily ignore them.</li>
+                  <li><strong>No Fact Verification:</strong> Free templates lack the seal and signature of a practicing advocate. Corporate legal teams easily ignore them.</li>
                   <li><strong>Missing IP and Copyright Claims:</strong> Generic formats overlook that using unpaid work violates Section 63 of the Copyright Act. Copyright claims create stronger settlement pressure.</li>
                   <li><strong>No Structured Escalation:</strong> One lone letter is easy to ignore. We provide tracked digital delivery and weekly escalations to executive leadership.</li>
                 </ul>
@@ -612,7 +612,7 @@ export default function FreelancerRecoveryClient() {
                   Traditional lawyers charge high consultation fees and take percentages of your recovered money. We do not do that.
                 </p>
                 <p>
-                  We offer a complete, attorney-verified freelancer recovery package for a flat fee of <strong className="font-extrabold text-[#111827]">₹999</strong>. You pay no commissions and face zero hidden charges.
+                  We offer a complete, fact-verified freelancer recovery package for a flat fee of <strong className="font-extrabold text-[#111827]">₹999</strong>. You pay no commissions and face zero hidden charges.
                 </p>
 
                 {/* Pixel-perfect reproduction of the home page unified pricing container */}
@@ -667,7 +667,7 @@ export default function FreelancerRecoveryClient() {
                               <Check className="w-4 h-4 sm:w-5 sm:h-5 text-[#10B981] stroke-[3.5] shrink-0 mt-0.5" />
                               <div className="flex flex-col">
                                 <span className="text-[11.5px] sm:text-[13.5px] font-bold text-[#111827] leading-snug">Attorney Validation</span>
-                                <span className="text-[9.5px] sm:text-[11.5px] text-[#6B7280] font-medium leading-tight">Verified by top legal experts</span>
+                                <span className="text-[9.5px] sm:text-[11.5px] text-[#6B7280] font-medium leading-tight">Facts verified by our team</span>
                               </div>
                             </div>
                             <div className="flex items-start gap-3">
@@ -703,7 +703,7 @@ export default function FreelancerRecoveryClient() {
                 {/* 7. Evidentiary Checklist */}
                 <h2 id="documentation-needed">7. The Evidentiary Checklist for Freelancer Recovery</h2>
                 <p>
-                  To start your recovery, gather common project records. Our advocates will use these documents to build your claim:
+                  To start your recovery, gather common project records. Our team will use these documents to build your claim:
                 </p>
                 <ul>
                   <li><strong>Service Agreement or Statement of Work (SOW):</strong> Defines deliverables, pricing, milestones, payment schedules, and notice rules.</li>
@@ -878,7 +878,7 @@ export default function FreelancerRecoveryClient() {
               <div className="absolute top-0 right-0 w-24 h-24 bg-red-600/10 rounded-full blur-xl pointer-events-none" />
               <h3 className="text-base font-extrabold mb-3 tracking-tight">Need Urgent Freelance Recovery?</h3>
               <p className="text-gray-400 mb-5 text-[11px] leading-relaxed">
-                Get an advocate-drafted 3-stage notice pipeline and a customized police complaint draft for a flat fee of ₹999.
+                Get a fact-verified 3-stage notice pipeline and a customized police complaint draft for a flat fee of ₹999.
               </p>
               <Link 
                 href="/contact" 

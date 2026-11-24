@@ -163,7 +163,7 @@ const FAQS = [
   {
     question: "redBus bus cancel hone par refund na mile ya operator par baat daal de toh legal notice kaise bheje?",
     answer:
-      "Agar bus operator trip cancel kar de aur redBus aapka refund bank account mein na bheje ya operator se baat karne ko kahe, toh aap ek formal statutory legal notice bhej sakte hain. LegalRecovery.in par verified advocate Consumer Protection Act, 2019 aur E-Commerce Rules ke tehat Ibibo Group Private Limited ke registered office (Gurugram / Bengaluru) par Registered Speed Post aur email se notice dispatch karte hain, jismein 15 din ka strict payment demand diya jata hai.",
+      "Agar bus operator trip cancel kar de aur redBus aapka refund bank account mein na bheje ya operator se baat karne ko kahe, toh aap ek formal statutory legal notice bhej sakte hain. LegalRecovery.in par hamari team Consumer Protection Act, 2019 aur E-Commerce Rules ke tehat Ibibo Group Private Limited ke registered office (Gurugram / Bengaluru) par Registered Speed Post aur email se notice dispatch karti hai, jismein 15 din ka strict payment demand diya jata hai.",
   },
 ];
 
@@ -679,7 +679,7 @@ export default function RedbusLegalNoticePage() {
                     </span>
                     <div className="space-y-1 sm:space-y-1.5">
                       <h3 className="text-sm sm:text-base md:text-lg font-bold text-slate-900">
-                        Serve a Formal Statutory Advocate Legal Demand Notice
+                        Serve a Formal Statutory Fact-Verified Legal Demand Notice
                       </h3>
                       <p className="text-xs sm:text-sm leading-relaxed">
                         When 7 working days pass without bank receipt and redBus blames the bus operator, instruct an advocate to serve a formal legal notice to Ibibo Group Private Limited at its registered corporate office (DLF Cyber City, Gurugram / Old Airport Road, Bengaluru) and to the transport operator. The notice demands the principal fare, 18% penal interest, alternate travel reimbursements, and compensation, giving a strict 15-day compliance window.
@@ -806,7 +806,7 @@ export default function RedbusLegalNoticePage() {
                       <strong>Why this defense fails in court:</strong> Under Section 2(47) of the Consumer Protection Act, 2019 and Rule 5 of the Consumer Protection (E-Commerce) Rules, 2020, aggregators that market tickets, collect payments, charge convenience fees, and manage customer service cannot claim immunity under Section 79 of the Information Technology Act. In multiple consumer commission orders, courts have established that redBus is an active commercial party to the contract.
                     </p>
                     <p>
-                      <strong>How to enforce joint liability:</strong> By serving a formal statutory legal notice that names both Ibibo Group Private Limited and the specific bus operator as opposite parties, you eliminate cross-blaming. When faced with an advocate notice dispatched via Speed Post, redBus&apos;s legal escalation desk routinely initiates the full refund from corporate funds rather than defending a consumer court case.
+                      <strong>How to enforce joint liability:</strong> By serving a formal statutory legal notice that names both Ibibo Group Private Limited and the specific bus operator as opposite parties, you eliminate cross-blaming. When faced with a fact-verified notice dispatched via Speed Post, redBus&apos;s legal escalation desk routinely initiates the full refund from corporate funds rather than defending a consumer court case.
                     </p>
                   </div>
                 </div>
@@ -836,11 +836,11 @@ export default function RedbusLegalNoticePage() {
                       <strong>The Deadlock:</strong> Raghavendra contacted support requesting an electronic UPI reversal. Support insisted: <em>&quot;As per operator policy, wallet credits cannot be transferred to your bank account.&quot;</em> After 3 weeks of unfulfilled promises and a closed in-app support ticket, Raghavendra engaged LegalRecovery.in.
                     </p>
                     <p>
-                      <strong>The Statutory Action:</strong> A verified advocate drafted and served a formal statutory demand notice to Ibibo Group Private Limited at its registered corporate office at DLF Cyber City, Gurugram, citing Rule 6 of the E-Commerce Rules, 2020 and Consumer Protection Act Section 2(47). The notice highlighted the illegal retention of consumer funds and demanded immediate UPI remittance of ₹4,200 plus statutory interest within 15 days.
+                      <strong>The Statutory Action:</strong> The team verified the facts and served a formal statutory demand notice to Ibibo Group Private Limited at its registered corporate office at DLF Cyber City, Gurugram, citing Rule 6 of the E-Commerce Rules, 2020 and Consumer Protection Act Section 2(47). The notice highlighted the illegal retention of consumer funds and demanded immediate UPI remittance of ₹4,200 plus statutory interest within 15 days.
                     </p>
                     <div className="p-3.5 sm:p-4 bg-emerald-950/70 border border-emerald-700/60 rounded-xl text-emerald-200">
                       <strong className="block text-emerald-400 font-bold mb-1">The Outcome:</strong>
-                      On Day 6 after receiving the advocate legal notice, redBus corporate legal operations acknowledged the notice via email and provided a 12-digit UPI bank transaction UTR. The full amount of ₹4,200 was successfully credited back to Raghavendra&apos;s bank account without needing to file in consumer court.
+                      On Day 6 after receiving the fact-verified legal notice, redBus corporate legal operations acknowledged the notice via email and provided a 12-digit UPI bank transaction UTR. The full amount of ₹4,200 was successfully credited back to Raghavendra&apos;s bank account without needing to file in consumer court.
                     </div>
                   </div>
                 </div>

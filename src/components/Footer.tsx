@@ -409,7 +409,7 @@ export default function Footer() {
         </div>
 
         <p className="mt-8 text-center text-[10px] text-gray-500 max-w-4xl mx-auto leading-relaxed select-text">
-          LegalRecovery is an automated drafting assistance platform. The draft is generated based on the information provided by User and is subject to advocate review. Submission of false, misleading, or incomplete information may result in rejection without liability. By proceeding, you agree to our <a href="/terms-and-conditions" className="text-gray-400 hover:text-white transition-colors underline">Terms & Conditions</a>.
+          LegalRecovery is an automated drafting assistance platform. The draft is generated based on the information provided by User and is subject to fact verification. Submission of false, misleading, or incomplete information may result in rejection without liability. By proceeding, you agree to our <a href="/terms-and-conditions" className="text-gray-400 hover:text-white transition-colors underline">Terms & Conditions</a>.
         </p>
 
         <p className="mt-8 text-center text-[11px] text-gray-600 font-semibold tracking-wide select-text">

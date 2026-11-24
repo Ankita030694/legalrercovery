@@ -43,7 +43,7 @@ const FMCG_SCENARIOS: FmcgScenario[] = [
       {
         step: "2. Serve 7-Day s.20 Presentation Intimation Notice",
         detail:
-          "Dispatch an advocate-signed Balance Crystallization Notice via Email, WhatsApp, and Speed Post RPAD informing the dealer that the exact crystallized balance will be filled on security cheque #[No.] after 7 days.",
+          "Dispatch a fact-verified Balance Crystallization Notice via Email, WhatsApp, and Speed Post RPAD informing the dealer that the exact crystallized balance will be filled on security cheque #[No.] after 7 days.",
       },
       {
         step: "3. Post-Bounce s.138 + s.141 / Order 37 Enforcement",

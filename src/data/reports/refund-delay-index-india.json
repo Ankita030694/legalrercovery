@@ -55,7 +55,7 @@
       "Consumer claims involving monetary refund requests where payment had been successfully debited from consumer's bank, card, or UPI.",
       "The consumer had raised at least one official customer support ticket or escalation with the merchant/service provider.",
       "The statutory or contractual Turn Around Time (TAT) had expired without inward settlement.",
-      "Complete documentary proof (invoices, transaction IDs, email tickets, refusal notices) was verified by an advocate."
+      "Complete documentary proof (invoices, transaction IDs, email tickets, refusal notices) was prepared on verified facts."
     ],
     "exclusionCriteria": [
       "Suspected consumer fraud or fraudulent chargeback claims.",
@@ -65,7 +65,7 @@
     ],
     "definitions": {
       "preNoticeDelay": "Total calendar days elapsed between the date of the consumer's first recorded refund grievance and the date of advocate notice dispatch.",
-      "postNoticeResolution": "Calendar days elapsed between verified delivery of advocate legal notice (via Speed Post tracking or digital read receipt) and complete inward credit to consumer's bank account.",
+      "postNoticeResolution": "Calendar days elapsed between fact-verified legal notice (via Speed Post tracking or digital read receipt) and complete inward credit to consumer's bank account.",
       "noticeResolutionRate": "Percentage of claims settled in full or mutually compromised without proceeding to an adversarial trial before a Consumer Commission."
     },
     "dataIntegrity": "Strict empirical protocol: LegalRecovery commenced operations on May 25, 2026. In accordance with rigorous research standards, no estimated, projected, or pre-launch figures are published. Company-level benchmarks require statistically significant case volumes post-launch before individual publication."

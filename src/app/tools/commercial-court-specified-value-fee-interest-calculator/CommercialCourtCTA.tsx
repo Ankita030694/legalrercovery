@@ -27,12 +27,12 @@ export default function CommercialCourtCTA({ className = "" }: CommercialCourtCT
                 Test 1 Live Overdue Case Now (₹{basePrice})
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm leading-relaxed mb-5">
-                Before depositing 1%–7.5% ad-valorem court fees in a Commercial Court, put the debtor&apos;s Directors on formal notice. Advocate-drafted demand notice citing your Section 12(1)(a) Specified Value, contractual interest, and Section 12A mediation readiness.
+                Before depositing 1%–7.5% ad-valorem court fees in a Commercial Court, put the debtor&apos;s Directors on formal notice. Fact-verified demand notice citing your Section 12(1)(a) Specified Value, contractual interest, and Section 12A mediation readiness.
               </p>
               <ul className="space-y-2 text-xs text-slate-300 mb-6">
                 <li className="flex items-center gap-2">
                   <span className="text-emerald-400 font-bold">✓</span>
-                  <span>Advocate-drafted &amp; dispatched via Email + WhatsApp + Speed Post RPAD</span>
+                  <span>Fact-verified &amp; dispatched via Email + WhatsApp + Speed Post RPAD</span>
                 </li>
                 <li className="flex items-center gap-2">
                   <span className="text-emerald-400 font-bold">✓</span>

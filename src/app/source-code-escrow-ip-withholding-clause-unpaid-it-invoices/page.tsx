@@ -194,7 +194,7 @@ const FAQ_ITEMS = [
   {
     question: "How do we draft a lawful 'Cure-Cum-Suspension Notice' that creates legal pressure without criminal exposure?",
     answer:
-      "A lawful Cure-Cum-Suspension Notice must be drafted by an advocate and cite Section 51–54 of the Indian Contract Act and Section 19 of the Copyright Act. It must formally declare that (1) milestone invoices are overdue, (2) further development and release deployments are suspended, (3) proprietary source code ownership remains with the agency, and (4) continued use of delivered binaries without payment will be prosecuted as copyright infringement under Sections 51, 55, and 63 of the Copyright Act. It must strictly avoid any threat of tampering with client-hosted infrastructure.",
+      "A lawful Cure-Cum-Suspension Notice must be prepared on verified facts and cite Section 51–54 of the Indian Contract Act and Section 19 of the Copyright Act. It must formally declare that (1) milestone invoices are overdue, (2) further development and release deployments are suspended, (3) proprietary source code ownership remains with the agency, and (4) continued use of delivered binaries without payment will be prosecuted as copyright infringement under Sections 51, 55, and 63 of the Copyright Act. It must strictly avoid any threat of tampering with client-hosted infrastructure.",
   },
   {
     question: "What digital evidence is required under Section 63 of Bharatiya Sakshya Adhiniyam, 2023 (BSA) to prove code ownership and client default?",

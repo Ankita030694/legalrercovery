@@ -396,7 +396,7 @@ export default function RelativeLoanRecoveryNoticeClient() {
                     <div className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-5 rounded-2xl shadow-sm border border-slate-100 group-hover:border-[#DC2626]/30 transition-colors">
                       <h3 className="text-lg md:text-xl font-bold text-slate-900 mb-2">Days 1 to 15: Formal Notice Period</h3>
                       <p className="text-xs md:text-sm text-slate-600 leading-relaxed">
-                        The advocate issues the legal notice via RPAD. This is the shock phase. The relative realizes you are no longer making casual requests. In over seventy percent of family disputes, the matter is settled here, often through the mediation of elders who wish to keep the dispute out of the public record.
+                        We issue the legal notice via RPAD. This is the shock phase. The relative realizes you are no longer making casual requests. In over seventy percent of family disputes, the matter is settled here, often through the mediation of elders who wish to keep the dispute out of the public record.
                       </p>
                     </div>
                   </div>

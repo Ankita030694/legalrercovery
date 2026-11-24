@@ -32,7 +32,7 @@ const faqs = [
   {
     question: 'Can I demand a refund for excess hospital charges and inflated ICU billing?',
     answer:
-      'Yes, patients and their families can legally demand a full refund of inflated hospital charges, phantom pharmacy billings, unauthorized consumable markups, and unutilized ICU admission deposits under Section 2(47) of the Consumer Protection Act, 2019 prohibiting unfair trade practices. When a private hospital violates government-mandated price caps on procedures, stents, or implants, or charges beyond the pre-agreed treatment package estimate without written emergency justification, serving an advocate-vetted statutory legal notice creates immediate leverage for financial reimbursement.',
+      'Yes, patients and their families can legally demand a full refund of inflated hospital charges, phantom pharmacy billings, unauthorized consumable markups, and unutilized ICU admission deposits under Section 2(47) of the Consumer Protection Act, 2019 prohibiting unfair trade practices. When a private hospital violates government-mandated price caps on procedures, stents, or implants, or charges beyond the pre-agreed treatment package estimate without written emergency justification, serving a fact-verified statutory legal notice creates immediate leverage for financial reimbursement.',
   },
 ];
 
@@ -163,7 +163,7 @@ const jsonLd = {
         {
           '@type': 'ListItem',
           position: 4,
-          name: 'Engage a specialist advocate to draft a statutory notice under Consumer Protection Act 2019 & NMC Regulations',
+          name: 'Prepare a statutory notice under Consumer Protection Act 2019 & NMC Regulations',
         },
         {
           '@type': 'ListItem',
@@ -178,7 +178,7 @@ const jsonLd = {
       '@type': 'Product',
       name: 'Legal Notice to Hospital for Medical Negligence & Refund',
       description:
-        'Advocate-drafted statutory demand notice service for patients and families to claim full refund of treatment expenses, overbilled ICU charges, and financial compensation for medical negligence, surgical malpractice, and hospital deficiency of service across India.',
+        'Fact-verified statutory demand notice service for patients and families to claim full refund of treatment expenses, overbilled ICU charges, and financial compensation for medical negligence, surgical malpractice, and hospital deficiency of service across India.',
       brand: {
         '@type': 'Organization',
         name: 'Legal Recovery',
@@ -255,7 +255,7 @@ export default function HospitalForMedicalNegligenceRefundClient() {
 
   const shareUrl = encodeURIComponent(pageUrl);
   const shareText = encodeURIComponent(
-    'Hospital medical negligence or overcharging? Send an advocate-vetted legal notice for refund & compensation in India! #MedicalNegligence #LegalNotice'
+    'Hospital medical negligence or overcharging? Send a fact-verified legal notice for refund & compensation in India! #MedicalNegligence #LegalNotice'
   );
 
   return (
@@ -434,7 +434,7 @@ export default function HospitalForMedicalNegligenceRefundClient() {
                     Quick Answer
                   </h2>
                   <p className="text-sm text-slate-700 font-medium leading-relaxed">
-                    An aggrieved patient or legal heir can issue an advocate-drafted statutory legal notice to a hospital, nursing home, or treating doctor under{' '}
+                    An aggrieved patient or legal heir can issue a fact-verified statutory legal notice to a hospital, nursing home, or treating doctor under{' '}
                     <span className="font-semibold text-slate-800">Section 2(42) and Section 35 of the Consumer Protection Act, 2019</span>
                     , demanding full refund of paid medical expenses, corrective treatment reimbursement, and financial compensation for medical negligence within 15 days. Healthcare services provided by commercial hospitals for monetary payment constitute "services" under Indian consumer law as held by the Supreme Court in{' '}
                     <em>Indian Medical Association v. V.P. Shantha</em>
@@ -554,7 +554,7 @@ export default function HospitalForMedicalNegligenceRefundClient() {
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      Citing binding Supreme Court of India precedents inside your advocate-vetted legal notice establishes immense legal authority, demonstrating to hospital management and their legal counsel that you are prepared for high-stakes litigation:
+                      Citing binding Supreme Court of India precedents inside your fact-verified legal notice establishes immense legal authority, demonstrating to hospital management and their legal counsel that you are prepared for high-stakes litigation:
                     </p>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
                       {[
@@ -704,7 +704,7 @@ export default function HospitalForMedicalNegligenceRefundClient() {
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      An advocate-drafted statutory notice must be drafted with clinical and legal precision. Omitting critical statutory recitals can weaken subsequent consumer court petitions:
+                      A fact-verified statutory notice must be drafted with clinical and legal precision. Omitting critical statutory recitals can weaken subsequent consumer court petitions:
                     </p>
                     <div className="space-y-4">
                       {[
@@ -762,7 +762,7 @@ export default function HospitalForMedicalNegligenceRefundClient() {
                         {
                           step: 'Stage 1',
                           title: 'Hospital Internal Grievance & Medico-Legal Committee Negotiation',
-                          desc: 'In over 68% of cases, receipt of an advocate-vetted statutory notice citing NCDRC precedents compels the hospital\'s internal risk management and insurance underwriters (TPA) to convene an out-of-court settlement negotiation, offering billing refunds and compensation.',
+                          desc: 'In over 68% of cases, receipt of a fact-verified statutory notice citing NCDRC precedents compels the hospital\'s internal risk management and insurance underwriters (TPA) to convene an out-of-court settlement negotiation, offering billing refunds and compensation.',
                         },
                         {
                           step: 'Stage 2',
@@ -944,8 +944,8 @@ export default function HospitalForMedicalNegligenceRefundClient() {
                   </div>
                   <p className="text-sm text-slate-650 leading-relaxed mb-6">
                     Legal Recovery is India&apos;s trusted online legal notice and dispute resolution
-                    platform, connecting patients, consumers, businesses, and individuals with experienced
-                    panel advocates for fast, advocate-vetted statutory notices at transparent
+                    platform, connecting patients, consumers, businesses, and individuals with our
+                    fact-verifying team for fast, fact-verified statutory notices at transparent
                     flat fees. With ₹100 Crore+ recovered and 10,000+ cases resolved, Legal
                     Recovery delivers verified legal impact without the delays of traditional
                     law firm engagement.
@@ -986,7 +986,7 @@ export default function HospitalForMedicalNegligenceRefundClient() {
                   Hospital Medical Negligence or Overbilling?
                 </h3>
                 <p className="text-slate-300 text-xs leading-relaxed mb-4">
-                  Send an advocate-vetted statutory notice today. 68% of private hospitals settle
+                  Send a fact-verified statutory notice today. 68% of private hospitals settle
                   disputed bills and malpractice claims upon receiving formal notice from Legal Recovery.
                 </p>
                 <button
@@ -996,7 +996,7 @@ export default function HospitalForMedicalNegligenceRefundClient() {
                   Draft &amp; Send Notice Now
                 </button>
                 <p className="text-center text-slate-400 text-[10px] mt-3">
-                  Flat fee • Advocate-drafted • Sent same day
+                  Flat fee • Fact-verified • Sent same day
                 </p>
               </div>
 

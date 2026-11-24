@@ -37,9 +37,9 @@ const PROBLEMS: ProblemTab[] = [
           "Submit an online grievance at samadhan.ugc.ac.in under 'Refund of Fees' category against the specific university and college, providing the payment receipt and withdrawal proof.",
       },
       {
-        step: "Serve Advocate Statutory Demand Notice",
+        step: "Serve Fact-Verified Statutory Demand Notice",
         description:
-          "If the college fails to remit the full refund within 15 days, have a legal recovery advocate issue a formal 15-day statutory notice citing UGC Guidelines and NCDRC precedents.",
+          "If the college fails to remit the full refund within 15 days, issue a formal 15-day statutory notice citing UGC Guidelines and NCDRC precedents.",
       },
     ],
     statutoryRule: "UGC Fee Refund Guidelines & Section 2(47) CPA 2019",
@@ -113,9 +113,9 @@ const PROBLEMS: ProblemTab[] = [
           "Send an email to the Accounts Officer, Principal, and Vice-Chancellor attaching previous correspondence, bank details, and demanding immediate electronic transfer.",
       },
       {
-        step: "Serve Advocate Legal Notice Demanding 18% Commercial Interest",
+        step: "Serve Fact-Verified Legal Notice Demanding 18% Commercial Interest",
         description:
-          "Issue a formal advocate notice demanding the principal refund alongside 18% penal interest and legal expenses for wrongful detention of student funds.",
+          "Issue a formal fact-verified notice demanding the principal refund alongside 18% penal interest and legal expenses for wrongful detention of student funds.",
       },
       {
         step: "Approach District Consumer Disputes Redressal Commission",

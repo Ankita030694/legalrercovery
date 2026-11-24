@@ -24,11 +24,11 @@ export default function DaasCTA({ className = "" }: DaasCTAProps) {
                 Track 1 · Single Startup / Director Default
               </span>
               <h3 className="text-lg sm:text-xl font-bold text-white mb-2">
-                Test 1 Live Overdue Case Now (&#8377;{basePrice} &middot; Advocate Drafted &middot; Email + WhatsApp + Speed Post RPAD)
+                Test 1 Live Overdue Case Now (&#8377;{basePrice} &middot; Fact-Verified &middot; Email + WhatsApp + Speed Post RPAD)
               </h3>
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-                Upload your Master Rental Agreement, serial-number delivery challans, ABM/Autopilot asset list, and{" "}
-                <code className="text-red-300 bg-red-950/60 px-1.5 py-0.5 rounded">policeStationEmail</code>. Our advocates dispatch a BNS s.316 + Residual Buyout Notice to the startup and directors.
+                Enter your Master Rental Agreement details, serial-number delivery challans, ABM/Autopilot asset list, and{" "}
+                <code className="text-red-300 bg-red-950/60 px-1.5 py-0.5 rounded">policeStationEmail</code>. Our team verifies the facts and dispatches a BNS s.316 + Residual Buyout Notice to the startup and directors.
               </p>
             </div>
 

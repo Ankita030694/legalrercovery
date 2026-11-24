@@ -149,7 +149,7 @@ const FAQS = [
   {
     question: "What legal action can I take if my salary is not paid on time by my employer?",
     answer:
-      "You can pursue a multi-stage statutory escalation: (1) Issue a formal written demand email citing Section 17(1) of the Code on Wages, 2019; (2) Serve an advocate statutory legal demand notice giving 15 days to clear unpaid salary with 18% annual interest; (3) File a wage recovery claim under Section 45 before the jurisdictional Labour Authority, which can award unpaid dues plus up to 10 times the amount as compensation; and (4) Lodge an online complaint on the SAMADHAN portal or with the Inspector-cum-Facilitator under Section 51.",
+      "You can pursue a multi-stage statutory escalation: (1) Issue a formal written demand email citing Section 17(1) of the Code on Wages, 2019; (2) Serve a fact-verified statutory legal demand notice giving 15 days to clear unpaid salary with 18% annual interest; (3) File a wage recovery claim under Section 45 before the jurisdictional Labour Authority, which can award unpaid dues plus up to 10 times the amount as compensation; and (4) Lodge an online complaint on the SAMADHAN portal or with the Inspector-cum-Facilitator under Section 51.",
   },
   {
     question: "Can the company withhold my regular monthly salary if I tender my resignation?",
@@ -678,7 +678,7 @@ export default function SalaryPaymentDeadlinePage() {
                     </span>
                     <div className="space-y-1 sm:space-y-1.5">
                       <h3 className="text-sm sm:text-base md:text-lg font-bold text-slate-900">
-                        Serve a Formal Statutory Advocate Legal Demand Notice
+                        Serve a Formal Statutory Fact-Verified Legal Demand Notice
                       </h3>
                       <p className="text-xs sm:text-sm leading-relaxed">
                         If salary is not released by Day 10–12, retain an advocate to issue a formal statutory legal notice to the company and its board of directors. Dispatched via Registered Speed Post and Section 63 BSA electronic mail, the notice demands immediate clearance of all salary arrears, 18% per annum commercial interest, and legal drafting costs within a strict 15-day cure window.
@@ -856,11 +856,11 @@ export default function SalaryPaymentDeadlinePage() {
                       <strong>The Deadlock:</strong> By September 10th, Aniket had received zero salary for two full months (₹2,40,000 in arrears). His home loan EMI bounced, triggering bank penalty charges and credit score damage. When Aniket escalated to HR in writing, he was informed that salaries would be cleared only once the company closed a bridge debt round in November.
                     </p>
                     <p>
-                      <strong>The Statutory Action:</strong> Aniket retained LegalRecovery.in. An advocate drafted and dispatched an official statutory demand notice to the company and its board of directors. The notice invoked <strong>Section 17(1)(d) and Section 54 of the Code on Wages, 2019</strong>, cited Delhi High Court rulings on director personal liability, and demanded immediate release of ₹2,40,000 principal plus 18% annual commercial interest and ₹15,000 in bounced EMI damages within a strict 15-day window.
+                      <strong>The Statutory Action:</strong> Aniket retained LegalRecovery.in. The team verified the facts and dispatched an official statutory demand notice to the company and its board of directors. The notice invoked <strong>Section 17(1)(d) and Section 54 of the Code on Wages, 2019</strong>, cited Delhi High Court rulings on director personal liability, and demanded immediate release of ₹2,40,000 principal plus 18% annual commercial interest and ₹15,000 in bounced EMI damages within a strict 15-day window.
                     </p>
                     <div className="p-3.5 sm:p-4 bg-emerald-950/70 border border-emerald-700/60 rounded-xl text-emerald-200">
                       <strong className="block text-emerald-400 font-bold mb-1">The Outcome:</strong>
-                      On Day 8 following receipt of the advocate legal notice, the company&apos;s legal counsel contacted Aniket&apos;s advocate. Recognizing their indefensible exposure before the Labour Commissioner under Section 45(2) (where the Authority could impose up to 10x penalty), the company executed an immediate RTGS transfer of <strong>₹2,40,000 full salary arrears</strong>, an additional <strong>₹18,200 towards statutory interest</strong>, and reimbursed his <strong>₹7,500 bank penalty costs</strong>.
+                      On Day 8 following receipt of the fact-verified legal notice, the company&apos;s legal counsel contacted Aniket&apos;s advocate. Recognizing their indefensible exposure before the Labour Commissioner under Section 45(2) (where the Authority could impose up to 10x penalty), the company executed an immediate RTGS transfer of <strong>₹2,40,000 full salary arrears</strong>, an additional <strong>₹18,200 towards statutory interest</strong>, and reimbursed his <strong>₹7,500 bank penalty costs</strong>.
                     </div>
                   </div>
                 </div>

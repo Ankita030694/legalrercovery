@@ -32,7 +32,7 @@ const SCENARIO_TABS: ScenarioTab[] = [
       "GST E-Invoice raised upon subsidy milestone + proof of delivery via Speed Post RPAD & email",
     ],
     actionPlan:
-      "Serve an immediate 15-day Advocate Demand Notice attaching the official sanction order as conclusive milestone proof. Put the factory on notice for Section 43B(h) tax disallowance and file an Order XXXVII Summary Suit with an ex-parte Order XXXVIII Rule 5 freezing application on the designated subsidy bank account.",
+      "Serve an immediate 15-day Legal Demand Notice attaching the official sanction order as conclusive milestone proof. Put the factory on notice for Section 43B(h) tax disallowance and file an Order XXXVII Summary Suit with an ex-parte Order XXXVIII Rule 5 freezing application on the designated subsidy bank account.",
     outcomeBenchmark: "14–28 days to compel settlement before trial; full recovery of contracted success fee.",
   },
   {
@@ -92,7 +92,7 @@ const SCENARIO_TABS: ScenarioTab[] = [
       "Unanswered milestone reminder emails and delivered GST invoices with digital IRN receipts",
     ],
     actionPlan:
-      "Dispatch a structured advocate demand notice to the Managing Director, CFO, and Company Secretary, noting that continued use of unpaid copyrighted ESG datasets in statutory stock exchange disclosures constitutes ongoing copyright infringement under Section 51, triggering immediate CFO intervention.",
+      "Dispatch a structured legal demand notice to the Managing Director, CFO, and Company Secretary, noting that continued use of unpaid copyrighted ESG datasets in statutory stock exchange disclosures constitutes ongoing copyright infringement under Section 51, triggering immediate CFO intervention.",
     outcomeBenchmark: "10–20 days to release trapped funds prior to upcoming quarterly audit sign-offs.",
   },
 ];
@@ -192,7 +192,7 @@ export default function ManagementConsultingScenarioTabs() {
 
           <div className="bg-slate-900 text-white rounded-xl p-4 sm:p-5 mt-4">
             <span className="block text-[11px] font-bold uppercase tracking-wider text-red-400 mb-1">
-              Advocate Escalation SOP &amp; Tactical Execution
+              Escalation SOP &amp; Tactical Execution
             </span>
             <p className="text-xs sm:text-sm text-slate-200 leading-relaxed mb-3">
               {activeTab.actionPlan}

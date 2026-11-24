@@ -33,7 +33,7 @@ const SCENARIOS: ScenarioTab[] = [
       {
         step: "Serve Estoppel & Veterinary Proof Demand Notice",
         detail:
-          "Issue an Advocate Legal Notice putting the dealer to strict proof of contemporaneous post-mortem, PCR/water-quality, or mycotoxin lab reports linking your batch to mortality within 7 days—failing which the defense is barred.",
+          "Issue a Fact-Verified Legal Notice putting the dealer to strict proof of contemporaneous post-mortem, PCR/water-quality, or mycotoxin lab reports linking your batch to mortality within 7 days—failing which the defense is barred.",
       },
       {
         step: "File Order XXXVII Summary Suit / MSEFC Claim",
@@ -60,7 +60,7 @@ const SCENARIOS: ScenarioTab[] = [
       {
         step: "Serve BNS s.316 Criminal Breach of Trust Notice",
         detail:
-          "Dispatch an urgent Advocate Notice via WhatsApp, Email, and Speed Post RPAD demanding immediate restitution of the lifted flock value within 48–72 hours before FIR registration under BNS s.316.",
+          "Dispatch an urgent Fact-Verified Notice via WhatsApp, Email, and Speed Post RPAD demanding immediate restitution of the lifted flock value within 48–72 hours before FIR registration under BNS s.316.",
       },
       {
         step: "File Police Complaint & Civil Attachment",

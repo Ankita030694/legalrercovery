@@ -57,7 +57,7 @@ const SCENARIOS: Scenario[] = [
     statutoryShield:
       "Supreme Court Landmark Precedent: *Union of India v. Raman Iron Foundry* (1974) 2 SCC 231 and *Gangotri Enterprises Ltd. v. Union of India* (2016) 11 SCC 720. A claim for unliquidated, unadjudicated damages does not constitute a 'debt due'. A debtor cannot unilaterally appropriate or set off disputed unliquidated damages against admitted, liquidated debts arising from separate freight contracts or running vouchers.",
     counterStrategy:
-      "Dispatch a 15-Day Advocate Statutory Demand Notice under Order XXXVII CPC / MSMED Act Section 15. Formally bifurcate the admitted freight ledger from the disputed damage claim. Put directors on personal notice that unilateral set-off of unliquidated damages is illegal per se under Supreme Court authority, entitling the transporter to 3x RBI compound interest under MSMED Act.",
+      "Dispatch a 15-Day Fact-Verified Statutory Demand Notice under Order XXXVII CPC / MSMED Act Section 15. Formally bifurcate the admitted freight ledger from the disputed damage claim. Put directors on personal notice that unilateral set-off of unliquidated damages is illegal per se under Supreme Court authority, entitling the transporter to 3x RBI compound interest under MSMED Act.",
     outcomeMetric: "Forced release of undisputed ₹12.80L running bills; damages relegated to arbitration/court.",
   },
   {

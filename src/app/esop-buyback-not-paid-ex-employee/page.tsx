@@ -168,7 +168,7 @@ const FAQS = [
   {
     question: "Startup company ESOP buyback ka paisa nahi de rahi toh ex-employee kya kare?",
     answer:
-      "Agar company ne aapke vested ESOPs ka buyback accept kar liya hai lekin bank account mein payout nahi bhej rahi, ya resignation ke baad vested options cancel kar diye hain, toh aap unhe statutory advocate legal notice bhej sakte hain. LegalRecovery.in par verified corporate advocates Companies Act 2013 aur Indian Contract Act Section 73 ke tehat Board of Directors aur registered office par 15 din ka strict recovery demand notice bhejte hain, jisse bina lambi court sunwayi ke payout release karwaya ja sakta hai.",
+      "Agar company ne aapke vested ESOPs ka buyback accept kar liya hai lekin bank account mein payout nahi bhej rahi, ya resignation ke baad vested options cancel kar diye hain, toh aap unhe statutory fact-verified legal notice bhej sakte hain. LegalRecovery.in par verified corporate advocates Companies Act 2013 aur Indian Contract Act Section 73 ke tehat Board of Directors aur registered office par 15 din ka strict recovery demand notice bhejte hain, jisse bina lambi court sunwayi ke payout release karwaya ja sakta hai.",
   },
 ];
 
@@ -694,7 +694,7 @@ export default function EsopBuybackNotPaidPage() {
                     </span>
                     <div className="space-y-1 sm:space-y-1.5">
                       <h3 className="text-sm sm:text-base md:text-lg font-bold text-slate-900">
-                        Dispatch a Statutory Advocate Legal Demand Notice to Board &amp; Investors
+                        Dispatch a Statutory Fact-Verified Legal Demand Notice to Board &amp; Investors
                       </h3>
                       <p className="text-xs sm:text-sm leading-relaxed">
                         When the company fails to remit the buyback consideration within 14 days, engage corporate counsel to issue a comprehensive statutory demand notice. Served via Registered Speed Post and tracked email to all Board members, institutional investor nominees, and the company secretary, the notice demands 100% remittance of the principal purchase consideration plus 18% commercial default interest within a strict 15-day window.
@@ -842,11 +842,11 @@ export default function EsopBuybackNotPaidPage() {
                       <strong>The Deadlock:</strong> Vikrant formally tendered 1,000 vested options, executed the Option Repurchase Agreement, and surrendered his option units on the equity management portal. The company officially confirmed receipt and committed to wire the ₹38,50,000 payout within 30 days. Two months later, following Vikrant&apos;s resignation, the CFO informed him that &quot;investor tranche remittances were held up in escrow&quot; and that under an unratified board policy amendment, ex-employees would only be paid after active employees. Subsequent emails were met with complete silence.
                     </p>
                     <p>
-                      <strong>The Statutory Action:</strong> Vikrant retained LegalRecovery.in. Corporate legal counsel audited his original ESOP grant letter, the executed repurchase tender form, and cap table logs. Counsel drafted and dispatched a comprehensive statutory advocate legal notice directly to the Founder &amp; CEO, the Nominee Investor Directors from two prominent venture capital funds, and the company&apos;s Registered Office in Bengaluru. The notice established an admitted debt under Section 73 of the Indian Contract Act and Section 68 of the Companies Act, providing a 15-day cure window prior to filing an Order 37 CPC Summary Commercial Suit and notifying the Registrar of Companies (ROC).
+                      <strong>The Statutory Action:</strong> Vikrant retained LegalRecovery.in. Vikrant entered his ESOP grant, repurchase tender, and cap table details in our form. Our team verified the facts and dispatched a comprehensive statutory fact-verified legal notice directly to the Founder &amp; CEO, the Nominee Investor Directors from two prominent venture capital funds, and the company&apos;s Registered Office in Bengaluru. The notice established an admitted debt under Section 73 of the Indian Contract Act and Section 68 of the Companies Act, providing a 15-day cure window prior to filing an Order 37 CPC Summary Commercial Suit and notifying the Registrar of Companies (ROC).
                     </p>
                     <div className="p-3.5 sm:p-4 bg-emerald-950/70 border border-emerald-700/60 rounded-xl text-emerald-200">
                       <strong className="block text-emerald-400 font-bold mb-1">The Outcome:</strong>
-                      On Day 9 following delivery of the statutory advocate notice, the lead venture capital investor instructed the company&apos;s board to immediately disburse the funds to avoid adverse audit disclosures during their ongoing Series C closing. The full principal consideration of ₹38,50,000 plus ₹1,15,000 in accrued interest was remitted directly to Vikrant&apos;s HDFC bank account, accompanied by a formal closure letter.
+                      On Day 9 following delivery of the statutory fact-verified notice, the lead venture capital investor instructed the company&apos;s board to immediately disburse the funds to avoid adverse audit disclosures during their ongoing Series C closing. The full principal consideration of ₹38,50,000 plus ₹1,15,000 in accrued interest was remitted directly to Vikrant&apos;s HDFC bank account, accompanied by a formal closure letter.
                     </div>
                   </div>
                 </div>

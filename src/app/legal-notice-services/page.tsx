@@ -5,13 +5,13 @@ import CityDirectoryExplorer from "@/components/CityDirectoryExplorer";
 export const metadata = {
   title: "Legal Notice Services Online & by City | Legal Recovery",
   description:
-    "Send a professional legal notice online from any city in India. Expert advocate-drafted notices for dues, tenancy, employment, and commercial disputes.",
+    "Send a professional legal notice online from any city in India. Fact-verified notices for dues, tenancy, employment, and commercial disputes.",
   alternates: {
     canonical: 'https://www.legalrecovery.in/legal-notice-services',
   },
   openGraph: {
     title: "Legal Notice Services Online & by City | Legal Recovery",
-    description: "Send a professional legal notice online from any city in India. Expert advocate-drafted notices for dues, tenancy, employment, and commercial disputes.",
+    description: "Send a professional legal notice online from any city in India. Fact-verified notices for dues, tenancy, employment, and commercial disputes.",
     url: "https://www.legalrecovery.in/legal-notice-services",
     type: "article",
     siteName: "LegalRecovery.in",
@@ -28,7 +28,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Legal Notice Services Online & by City | Legal Recovery",
-    description: "Send a professional legal notice online from any city in India. Expert advocate-drafted notices for dues, tenancy, employment, and commercial disputes.",
+    description: "Send a professional legal notice online from any city in India. Fact-verified notices for dues, tenancy, employment, and commercial disputes.",
     site: "@legalrecoveryin",
     creator: "@legalrecoveryin",
     images: ["https://www.legalrecovery.in/blog_money_recovery.png"],
@@ -58,7 +58,7 @@ export default function LegalNoticeServicesByCity() {
           </h1>
           <p className="text-lg md:text-xl text-[#4B5563] max-w-4xl mx-auto font-light leading-relaxed">
             Browse our comprehensive directory of legal notice services across
-            different cities in India. Get expert advocate-drafted legal notices
+            different cities in India. Get fact-verified legal notices
             sent on your behalf for disputes, defaults, and legal demands.
           </p>
         </div>
@@ -91,7 +91,7 @@ export default function LegalNoticeServicesByCity() {
           <div className="space-y-6">
             <h3 className="text-xl font-bold text-[#111827]">How Our Legal Notice Service Works</h3>
             <p>
-              Our platform connects you with experienced advocates who specialize in drafting and dispatching legal notices. Once you submit the details of your dispute, our advocate panel reviews the matter, drafts a professionally worded legal notice citing applicable laws and sections, and dispatches it via registered post and digital channels (email/WhatsApp) to the opposing party.
+              Our platform connects you with experienced advocates who specialize in drafting and dispatching legal notices. Once you submit the details of your dispute, our team reviews the matter, drafts a professionally worded legal notice citing applicable laws and sections, and dispatches it via registered post and digital channels (email/WhatsApp) to the opposing party.
             </p>
             <p>
               Each notice is customized to the specific nature of the dispute and the jurisdiction of the city in which the opposing party operates. This localized approach ensures compliance with regional court procedures and maximizes the impact of the notice. At <strong>Legal Recovery</strong>, we make sending a legal notice as simple as filling out an online form — no office visits, no court appearances, and no hidden charges.

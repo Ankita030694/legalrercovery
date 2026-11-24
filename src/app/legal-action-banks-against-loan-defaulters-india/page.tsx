@@ -703,7 +703,7 @@ export default function BankLegalActionAgainstDefaultersPage() {
                         Engage empanelled advocates to serve formal 15-day cure notices under Section 25 of the PSS Act within 30 days of return memo receipt. For persistent defaults, accelerate the debt, terminate installment privileges, and dispatch Loan Recall Demand Notices to primary borrowers and co-borrowers simultaneously.
                       </p>
                       <p className="text-xs text-slate-500 font-medium">
-                        See institutional advocate drafting charges on our{" "}
+                        See institutional notice drafting charges on our{" "}
                         <Link href="/legal-notice-charges" className="text-blue-700 underline">
                           legal notice charges
                         </Link>{" "}

@@ -40,7 +40,7 @@ const DIAGNOSTIC_SCENARIOS: DiagnosticScenario[] = [
           "Deploy field territory managers with time-stamped video/photo evidence of the defaulting center operating under your brand name while routing samples elsewhere. Send mystery shoppers to record receipt of non-network test reports under your signboard.",
       },
       {
-        step: "Dual-Track Advocate Legal Demand Dispatch",
+        step: "Dual-Track Legal Demand Dispatch",
         detail:
           "Serve a joint 15-day statutory demand: Track A demands immediate clearing of crystallised ledger arrears under Commercial Courts Act s.2(1)(c)(ix); Track B demands immediate de-branding, surrender of branded test kits, and warns of an ex-parte High Court / District Commercial Court injunction under Order XXXIX Rules 1 & 2 CPC.",
       },
@@ -66,7 +66,7 @@ const DIAGNOSTIC_SCENARIOS: DiagnosticScenario[] = [
       {
         step: "Issue Pre-Litigation Stop-Reporting Notice",
         detail:
-          "Serve a formal 7-day credit suspension and demand notice signed by an advocate, putting the hospital board and medical director on notice that unreleased lab results will be withheld and fresh specimen accessioning halted.",
+          "Serve a formal 7-day credit suspension and demand notice prepared on verified facts, putting the hospital board and medical director on notice that unreleased lab results will be withheld and fresh specimen accessioning halted.",
       },
       {
         step: "Initiate Pre-Institution Mediation or Order XXXVII Filing",
@@ -112,7 +112,7 @@ const DIAGNOSTIC_SCENARIOS: DiagnosticScenario[] = [
     title: "Corporate Health Aggregator or Employer Defaults on Annual Preventive Checkup (AHC) Camp Bills",
     failureMechanism:
       "Your diagnostic chain executes on-site blood collection, ECG, spirometry, and doctor consultations for 2,000+ corporate employees across industrial plants or IT parks. The broker, TPA wellness desk, or corporate client holds back payment for 180+ days alleging 'missing employee attendance sheets' or 'delayed digital report delivery'.",
-    lawfulProtocol: "Batch Attendance Reconciliation + MSME Samadhaan / Section 15 Compounded Interest Claim + Advocate Demand",
+    lawfulProtocol: "Batch Attendance Reconciliation + MSME Samadhaan / Section 15 Compounded Interest Claim + Legal Demand",
     statutoryHooks:
       "Micro, Small and Medium Enterprises Development (MSMED) Act 2006 ss.15, 16 & 18 (Mandatory 45-day payment & 3x RBI Bank Rate Compound Interest); Commercial Courts Act 2015 s.2(1)(c)(i); Companies Act 2013 s.43B(h) Income Tax disallowance leverage.",
     executionSteps: [

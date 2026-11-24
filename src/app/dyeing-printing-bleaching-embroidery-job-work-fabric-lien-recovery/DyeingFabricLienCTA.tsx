@@ -9,7 +9,7 @@ interface DyeingFabricLienCTAProps {
 
 export default function DyeingFabricLienCTA({
   title = "Hold Grey Fabric or Recover Unpaid Job-Work Dues Now",
-  subtitle = "Choose instant advocate notice drafting for a single defaulting merchant or upload high-volume credit ledgers across your process house client book.",
+  subtitle = "Choose instant fact-verified notice drafting for a single defaulting merchant or upload high-volume credit ledgers across your process house client book.",
   sourceContext = "dyeing-printing-bleaching-embroidery-job-work-fabric-lien-recovery",
 }: DyeingFabricLienCTAProps) {
   return (
@@ -46,7 +46,7 @@ export default function DyeingFabricLienCTA({
               Section 170 Bailee Lien & Fabric Auction Notice
             </h4>
             <p className="text-xs text-slate-300 leading-relaxed">
-              Generate an advocate-drafted statutory demand notice for an unlifted or disputed fabric lot. Includes spectrophotometer delta-E tolerance estoppel, lab-dip sign-off defense, daily demurrage clause, and Speed Post tracking.
+              Generate a fact-verified statutory demand notice for an unlifted or disputed fabric lot. Includes spectrophotometer delta-E tolerance estoppel, lab-dip sign-off defense, daily demurrage clause, and Speed Post tracking.
             </p>
             <ul className="text-[11px] text-slate-300 space-y-1.5 pt-2">
               <li className="flex items-center gap-2">
@@ -72,7 +72,7 @@ export default function DyeingFabricLienCTA({
               </svg>
             </Link>
             <p className="text-[10px] text-slate-400 text-center mt-2">
-              Dispatched within 24 hours under advocate signature
+              Dispatched within 24 hours under fact verification
             </p>
           </div>
         </div>

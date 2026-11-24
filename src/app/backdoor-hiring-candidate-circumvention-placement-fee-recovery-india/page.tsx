@@ -187,7 +187,7 @@ const FAQS = [
   {
     question: "How does LegalRecovery assist recruitment consultancies facing multiple backdoor hiring defaults?",
     answer:
-      "LegalRecovery provides a dedicated institutional recovery desk for recruitment agencies and executive search firms. Agencies upload disputed placements via CSV or self-serve portal. Our legal team cross-checks candidate employment data, prepares advocate-vetted statutory notices incorporating Section 63 BSA electronic evidence certificates, dispatches notices via Speed Post RPAD and email/WhatsApp, and initiates nationwide Summary Suits under Order XXXVII CPC or MSME Samadhaan arbitrations to enforce immediate financial settlement.",
+      "LegalRecovery provides a dedicated institutional recovery desk for recruitment agencies and executive search firms. Agencies upload disputed placements via CSV or self-serve portal. Our team cross-checks candidate employment data, prepares fact-verified statutory notices incorporating Section 63 BSA electronic evidence certificates, dispatches notices via Speed Post RPAD and email/WhatsApp, and initiates nationwide Summary Suits under Order XXXVII CPC or MSME Samadhaan arbitrations to enforce immediate financial settlement.",
   },
 ];
 
@@ -261,7 +261,7 @@ export default function BackdoorHiringPlacementFeeRecoveryPage() {
       {
         "@type": "HowToStep",
         position: 4,
-        name: "Serve Advocate Legal Demand Notice Under Contract Act s.70 & s.73",
+        name: "Serve Legal Demand Notice Under Contract Act s.70 & s.73",
         text: "Serve a comprehensive statutory Legal Notice via Speed Post RPAD and email, demolishing unverified 'internal database' claims under the 48-hour rule, citing the Effective Cause doctrine and Section 70 Quantum Meruit, and demanding immediate electronic transfer.",
       },
       {
@@ -667,7 +667,7 @@ export default function BackdoorHiringPlacementFeeRecoveryPage() {
                 </h2>
               </div>
               <p className="text-xs sm:text-sm text-slate-600 mb-6">
-                When candidate circumvention is uncovered, impulsive phone calls to client HR only give the debtor time to conceal records. Follow this disciplined, advocate-developed 5-stage protocol:
+                When candidate circumvention is uncovered, impulsive phone calls to client HR only give the debtor time to conceal records. Follow this disciplined, field-tested 5-stage protocol:
               </p>
 
               {/* Desktop SVG Flowchart */}
@@ -732,7 +732,7 @@ export default function BackdoorHiringPlacementFeeRecoveryPage() {
                     <circle cx="605" cy="50" r="16" fill="#FFFFFF" />
                     <text x="605" y="55" fill="#DC2626" fontSize="12" fontWeight="bold" textAnchor="middle">4</text>
                     <text x="605" y="85" fill="#FEE2E2" fontSize="11" fontWeight="bold" textAnchor="middle">STATUTORY NOTICE</text>
-                    <text x="605" y="105" fill="#FFFFFF" fontSize="12" fontWeight="bold" textAnchor="middle">Advocate Demand</text>
+                    <text x="605" y="105" fill="#FFFFFF" fontSize="12" fontWeight="bold" textAnchor="middle">Legal Demand</text>
                     <text x="605" y="125" fill="#FEE2E2" fontSize="10" textAnchor="middle">Speed Post RPAD + Email</text>
                     <text x="605" y="142" fill="#FEE2E2" fontSize="10" textAnchor="middle">s.70 &amp; s.73 Contract Act</text>
                   </g>
@@ -776,9 +776,9 @@ export default function BackdoorHiringPlacementFeeRecoveryPage() {
                 <div className="p-4 rounded-xl bg-slate-900 text-white border border-red-700">
                   <div className="flex items-center gap-2 mb-1.5">
                     <span className="w-5 h-5 rounded-full bg-red-600 text-white flex items-center justify-center text-[10px] font-bold">4</span>
-                    <span className="text-xs font-bold text-red-300 uppercase">Stage 4 &bull; Advocate Statutory Legal Notice</span>
+                    <span className="text-xs font-bold text-red-300 uppercase">Stage 4 &bull; Statutory Legal Notice</span>
                   </div>
-                  <p className="text-xs text-slate-200">Serve an advocate-drafted Legal Notice via Speed Post RPAD and email citing Contract Act s.70 (Quantum Meruit) and s.73 breach damages.</p>
+                  <p className="text-xs text-slate-200">Serve a fact-verified Legal Notice via Speed Post RPAD and email citing Contract Act s.70 (Quantum Meruit) and s.73 breach damages.</p>
                 </div>
                 <div className="p-4 rounded-xl bg-slate-900 text-white border border-slate-800">
                   <div className="flex items-center gap-2 mb-1.5">
@@ -882,7 +882,7 @@ export default function BackdoorHiringPlacementFeeRecoveryPage() {
                     href="/templates/legal-notice-reply-format"
                     className="text-[#DC2626] font-semibold underline hover:text-[#B91C1C]"
                   >
-                    Advocate-Vetted Legal Notice Reply Formats
+                    Ready-to-Use Legal Notice Reply Formats
                   </Link>.
                 </p>
               </div>
@@ -946,7 +946,7 @@ export default function BackdoorHiringPlacementFeeRecoveryPage() {
                       <span className="font-bold text-emerald-400">₹1,24,680</span>
                     </div>
                     <div className="flex justify-between items-center py-1 border-b border-slate-700">
-                      <span className="text-slate-400">Advocate Notice &amp; Legal Preparation Fee:</span>
+                      <span className="text-slate-400">Legal Notice &amp; Legal Preparation Fee:</span>
                       <span className="font-bold text-slate-100">₹25,000</span>
                     </div>
                     <div className="flex justify-between items-center py-1">
@@ -960,7 +960,7 @@ export default function BackdoorHiringPlacementFeeRecoveryPage() {
                   <span className="font-bold text-emerald-400 block mb-1">
                     Financial Recovery Takeaway for Agency CFOs:
                   </span>
-                  A client who engages in backdoor circumvention faces more than double the original placement fee once the 100% liquidated circumvention penalty under Section 74 and statutory interest are factored in. Confronting corporate HR with this formal financial ledger in an advocate legal notice compels immediate commercial settlement. Calculate exact delayed interest on our{" "}
+                  A client who engages in backdoor circumvention faces more than double the original placement fee once the 100% liquidated circumvention penalty under Section 74 and statutory interest are factored in. Confronting corporate HR with this formal financial ledger in a legal notice compels immediate commercial settlement. Calculate exact delayed interest on our{" "}
                   <Link
                     href="/tools/msme-delayed-payment-interest-calculator"
                     className="text-emerald-400 underline font-semibold hover:text-emerald-300"
@@ -1033,7 +1033,7 @@ export default function BackdoorHiringPlacementFeeRecoveryPage() {
                 </h2>
               </div>
               <p className="text-xs sm:text-sm text-slate-600 mb-6">
-                Corporate legal departments routinely rely on predictable boilerplate objections. Here is how our advocate-settled recovery notices neutralize each defense upfront:
+                Corporate legal departments routinely rely on predictable boilerplate objections. Here is how our fact-verified recovery notices neutralize each defense upfront:
               </p>
 
               <div className="overflow-x-auto rounded-xl border border-slate-200 shadow-xs">

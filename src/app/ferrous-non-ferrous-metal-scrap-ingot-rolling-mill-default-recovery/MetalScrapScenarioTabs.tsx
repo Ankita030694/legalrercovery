@@ -33,7 +33,7 @@ const SCENARIOS: ScenarioTab[] = [
       {
         step: "Invoke Sale of Goods Act s.42 Consumption Estoppel",
         description:
-          "Serve an Advocate Demand Notice putting the mill on notice that charging the furnace constitutes irreversible statutory acceptance under s.42, barring any post-melting slag or burning-loss debit.",
+          "Serve a Fact-Verified Demand Notice putting the mill on notice that charging the furnace constitutes irreversible statutory acceptance under s.42, barring any post-melting slag or burning-loss debit.",
       },
       {
         step: "File Order XXXVII Summary Suit on Tax Invoice + Ledger",

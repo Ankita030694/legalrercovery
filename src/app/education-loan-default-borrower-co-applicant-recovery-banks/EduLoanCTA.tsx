@@ -44,7 +44,7 @@ export default function EduLoanCTA({
                       Track 1 &bull; Self-Serve Single Case Test
                     </span>
                     <h4 className="text-base font-bold text-white mb-2">
-                      Test 1 Live Overdue Case Now (&#8377;{basePrice} &middot; Advocate Drafted)
+                      Test 1 Live Overdue Case Now (&#8377;{basePrice} &middot; Fact-Verified)
                     </h4>
                     <p className="text-xs text-slate-300 mb-4 leading-relaxed">
                       Send a Contract Act s.43 co-obligor recall notice + international Email/WhatsApp notice to the student abroad and Speed Post RPAD to Indian parents with full BSA s.63 tracking.

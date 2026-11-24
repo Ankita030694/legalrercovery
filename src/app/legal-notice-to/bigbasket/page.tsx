@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "BigBasket Refund Missing? Legal Steps to Recover Your Money",
     description:
-      "Missing BigBasket refund or uncredited source bank payment? Enforce 48-hour e-commerce rules, bypass wallet traps, and serve an advocate notice.",
+      "Missing BigBasket refund or uncredited source bank payment? Enforce 48-hour e-commerce rules, bypass wallet traps, and serve a legal notice.",
     url: `${SITE_URL}/legal-notice-to/bigbasket`,
     siteName: "LegalRecovery.in",
     locale: "en_IN",
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "BigBasket Refund Missing? Legal Steps to Recover Your Money",
     description:
-      "Missing BigBasket refund or uncredited source bank payment? Enforce 48-hour e-commerce rules, bypass wallet traps, and serve an advocate notice.",
+      "Missing BigBasket refund or uncredited source bank payment? Enforce 48-hour e-commerce rules, bypass wallet traps, and serve a legal notice.",
     site: "@legalrecoveryin",
     creator: "@legalrecoveryin",
     images: [`${SITE_URL}/blog_money_recovery.png`],
@@ -127,7 +127,7 @@ const FAQS = [
   {
     question: "BigBasket se kharab saman ya refund na milne par legal notice kaise bheje aur kitna kharcha lagta hai?",
     answer:
-      "Agar BigBasket kharab saman ya atke refund ka paisa na de, toh aap advocate notice bhej sakte hain. LegalRecovery.in par verified advocates ₹999 mein notice draft karke email aur WhatsApp se bhejte hain (Speed Post optional, ₹450 per party), jismein 15 din ka payment time diya jata hai.",
+      "Agar BigBasket kharab saman ya atke refund ka paisa na de, toh aap legal notice bhej sakte hain. LegalRecovery.in par hum ₹999 mein fact-verified notice tayyar karke email aur WhatsApp se bhejte hain (Speed Post optional, ₹450 per party), jismein 15 din ka payment time diya jata hai.",
   },
 ];
 
@@ -281,7 +281,7 @@ export default function BigBasketRefundLegalNoticePage() {
                       Innovative Retail Concepts is liable for missing BigBasket refunds under
                       Section 2(47) of the Consumer Protection Act and E-Commerce Rules. You
                       are entitled to a full refund to your source account. Demand your 12-digit ARN
-                      from their Grievance Officer; if unresolved, serve a 15-day advocate legal notice.
+                      from their Grievance Officer; if unresolved, serve a 15-day legal notice.
                     </p>
                   </div>
                 </div>
@@ -353,7 +353,7 @@ export default function BigBasketRefundLegalNoticePage() {
                   <tr className="hover:bg-slate-50/60">
                     <td className="p-3 sm:p-4 font-bold text-slate-900">LegalRecovery Notice Service</td>
                     <td className="p-3 sm:p-4 font-bold text-[#DC2626]">₹999 (Flat fixed fee, Email + WhatsApp; Speed Post optional)</td>
-                    <td className="p-3 sm:p-4">Dispatched within 24 hours by verified consumer advocates</td>
+                    <td className="p-3 sm:p-4">Dispatched within 24 hours after our team verifies the facts</td>
                   </tr>
                 </tbody>
               </table>
@@ -371,7 +371,7 @@ export default function BigBasketRefundLegalNoticePage() {
               </h3>
               <p className="text-xs sm:text-sm text-slate-600 mt-1">
                 How disputed perishable deliveries and stuck payment gateway credits advance from customer care denial
-                to enforceable advocate legal demand.
+                to an enforceable legal demand.
               </p>
             </div>
 
@@ -710,7 +710,7 @@ export default function BigBasketRefundLegalNoticePage() {
                   In your email, clearly state that standard chat support failed to resolve the issue, and that you
                   explicitly decline closed-wallet store credit. Request the 12-digit bank reconciliation UTR/ARN.
                   Setting a strict 48-hour compliance window creates a verifiable audit trail required before approaching
-                  the National Consumer Helpline or serving an advocate notice.
+                  the National Consumer Helpline or serving a legal notice.
                 </p>
               </div>
             </section>
@@ -749,7 +749,7 @@ export default function BigBasketRefundLegalNoticePage() {
                   While NCH achieves informal settlement in many straightforward cases, it is a pre-litigation conciliation
                   mechanism without judicial enforcement powers. If BigBasket provides an evasive reply or marks the NCH
                   ticket as &quot;resolved&quot; without actually remitting the funds to your bank account, you must proceed
-                  to the next legal step: serving an advocate legal notice.
+                  to the next legal step: serving a legal notice.
                 </p>
               </div>
             </section>
@@ -769,18 +769,18 @@ export default function BigBasketRefundLegalNoticePage() {
                 </span>
               </div>
               <h2 id="q7-heading" className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight mb-4">
-                Serving an Advocate Legal Notice to BigBasket Corporate Entities
+                Serving a Legal Notice to BigBasket Corporate Entities
               </h2>
               <div className="text-sm sm:text-base text-slate-700 leading-relaxed space-y-4">
                 <p className="font-semibold text-slate-900 bg-slate-50 p-4 rounded-xl border-l-4 border-[#DC2626]">
-                  An advocate legal notice is a formal statutory instrument served under Section 35 of the Consumer
-                  Protection Act, 2019, drafted by an enrolled advocate and dispatched via Registered Speed Post and
+                  A legal notice is a formal statutory instrument served under Section 35 of the Consumer
+                  Protection Act, 2019, prepared on verified facts and dispatched via Registered Speed Post and
                   certified email directly to the registered board of directors of Innovative Retail Concepts Private
                   Limited and Supermarket Grocery Supplies Private Limited. It establishes a mandatory 15-day cure
                   window to settle the claim.
                 </p>
                 <p>
-                  Corporate legal compliance teams treat formal advocate notices with maximum urgency because an unanswered
+                  Corporate legal compliance teams treat formal legal notices with maximum urgency because an unanswered
                   or improperly handled legal notice is placed directly before the District Consumer Commission as primary
                   documentary evidence. The notice details the complete transaction chronology, quantifies the statutory
                   deficiency in service, asserts violations of CCPA dark pattern regulations, and demands:
@@ -908,7 +908,7 @@ export default function BigBasketRefundLegalNoticePage() {
                       and retained LegalRecovery.in to serve a formal 15-day statutory legal notice.
                     </p>
                     <p>
-                      <strong>The Outcome:</strong> Within 4 business days of receiving the advocate notice via Speed
+                      <strong>The Outcome:</strong> Within 4 business days of receiving the legal notice via Speed
                       Post at their Bengaluru headquarters, BigBasket&apos;s senior escalations legal desk contacted
                       Rahul. The company reversed the ₹1,850 wallet credit, remitted the full ₹3,420 directly to Rahul&apos;s
                       original bank account via IMPS with a valid UTR, and provided ₹3,000 compensation to settle the
@@ -1136,7 +1136,7 @@ export default function BigBasketRefundLegalNoticePage() {
                 href="/send-a-legal-notice"
                 className="p-3 rounded-xl border border-slate-200 hover:border-[#DC2626] transition-colors block font-semibold text-slate-800 hover:text-[#DC2626]"
               >
-                Send Advocate Legal Notice Online →
+                Send Legal Notice Online →
               </Link>
             </div>
           </div>

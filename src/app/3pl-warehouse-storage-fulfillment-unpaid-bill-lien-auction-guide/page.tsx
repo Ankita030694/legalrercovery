@@ -143,7 +143,7 @@ const FAQS = [
   {
     question: "What happens if the auction proceeds do not cover the unpaid 3PL storage and handling bill?",
     answer:
-      "The sale of goods under a bailee lien operates as a pro tanto (partial) satisfaction of the debt. If 500 pallets of abandoned inventory yield ₹7.2 Lakhs at public auction while the accumulated storage, handling, and advertising expenses total ₹24.8 Lakhs, the client remains personally and corporately liable for the remaining deficit of ₹17.6 Lakhs. The 3PL operator issues an immediate Statement of Account showing auction realization and expenses, followed by an advocate demand notice for the deficit. If unpaid within 15 days, the operator files an Order XXXVII CPC summary suit in the Commercial Court claiming the liquidated shortfall balance plus statutory commercial interest.",
+      "The sale of goods under a bailee lien operates as a pro tanto (partial) satisfaction of the debt. If 500 pallets of abandoned inventory yield ₹7.2 Lakhs at public auction while the accumulated storage, handling, and advertising expenses total ₹24.8 Lakhs, the client remains personally and corporately liable for the remaining deficit of ₹17.6 Lakhs. The 3PL operator issues an immediate Statement of Account showing auction realization and expenses, followed by a fact-verified demand notice for the deficit. If unpaid within 15 days, the operator files an Order XXXVII CPC summary suit in the Commercial Court claiming the liquidated shortfall balance plus statutory commercial interest.",
   },
   {
     question: "Can a 3PL fulfillment center retain current fast-moving goods for unpaid bills on older dead stock?",
@@ -288,7 +288,7 @@ export default function ThreePLWarehouseLienAuctionGuidePage() {
         "@type": "HowToStep",
         position: 3,
         name: "Serve 15-Day Statutory Power-of-Sale Notice",
-        text: "Dispatch advocate legal notice via Speed Post RPAD, WhatsApp, and Email giving 15 days to redeem inventory or face public auction.",
+        text: "Dispatch fact-verified legal notice via Speed Post RPAD, WhatsApp, and Email giving 15 days to redeem inventory or face public auction.",
       },
       {
         "@type": "HowToStep",
@@ -1005,7 +1005,7 @@ export default function ThreePLWarehouseLienAuctionGuidePage() {
                     Serve 15-Day Final Statutory Power-of-Sale Notice
                   </p>
                   <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
-                    Issue an advocate legal notice under Section 170 Indian Contract Act and contract disposal clauses. Give exactly 15 clear days to redeem inventory by clearing total outstanding storage, handling, and valuation bills. Dispatch simultaneously via Registered Speed Post AD, courier, WhatsApp, and registered corporate email.
+                    Issue a fact-verified legal notice under Section 170 Indian Contract Act and contract disposal clauses. Give exactly 15 clear days to redeem inventory by clearing total outstanding storage, handling, and valuation bills. Dispatch simultaneously via Registered Speed Post AD, courier, WhatsApp, and registered corporate email.
                   </p>
                 </div>
 
@@ -1222,7 +1222,7 @@ export default function ThreePLWarehouseLienAuctionGuidePage() {
               </div>
               <div className="flex-1 text-xs sm:text-sm text-slate-600 leading-relaxed">
                 <p className="font-bold text-slate-900">
-                  Advocate Vetting &bull; Anuj Anand Malik
+                  Fact Verification &bull; Anuj Anand Malik
                 </p>
                 <p className="text-slate-500 text-[11px] mb-1">
                   Advocate &amp; Founder, AMA Legal Solutions &bull; Bar Council of Delhi &bull; Supreme Court Bar Association

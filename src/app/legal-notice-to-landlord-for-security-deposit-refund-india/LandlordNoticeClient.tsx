@@ -11,7 +11,7 @@ import { PaymentModal } from "@/components/PaymentModal";
 const faqs = [
   {
     question: "Can I send a legal notice to my landlord for withholding my security deposit?",
-    answer: "Yes, you can legally send a formal pre-suit legal notice to your landlord if they fail to refund your security deposit after you vacate the property. The notice must be drafted by an advocate on their official letterhead, detailing the terms of your lease, the handover date, and giving the landlord exactly fifteen (15) days to refund the amount, failing which you will initiate civil or Rent Tribunal proceedings."
+    answer: "Yes, you can legally send a formal pre-suit legal notice to your landlord if they fail to refund your security deposit after you vacate the property. The notice must be prepared on verified facts on their official letterhead, detailing the terms of your lease, the handover date, and giving the landlord exactly fifteen (15) days to refund the amount, failing which you will initiate civil or Rent Tribunal proceedings."
   },
   {
     question: "How long after vacating the property should I wait before sending a legal notice?",
@@ -31,7 +31,7 @@ const faqs = [
   },
   {
     question: "Can I draft and send the legal notice myself without hiring an advocate?",
-    answer: "While you can send a personal demand letter or notice yourself, it is strongly advised to have the legal notice drafted and signed by an enrolled advocate. Notices served on an advocate's official letterhead carry significant statutory weight, signal your readiness to enter court, and are highly respected by Rent Authorities and civil judges, resulting in a much higher success rate."
+    answer: "While you can send a personal demand letter or notice yourself, it is strongly advised to have the legal notice prepared on verified facts. Notices served on an advocate's official letterhead carry significant statutory weight, signal your readiness to enter court, and are highly respected by Rent Authorities and civil judges, resulting in a much higher success rate."
   },
   {
     question: "What are the common deductions a landlord can legally make from the deposit?",
@@ -271,7 +271,7 @@ export default function LandlordNoticeClient() {
               Can I Send a Legal Notice <span className="text-[#DC2626]">to My Landlord for the Deposit?</span>
             </h1>
             <p className="text-sm md:text-xl mb-8 md:mb-12 max-w-3xl mx-auto text-slate-300 leading-relaxed font-medium">
-              Understand the legal framework, drafting prerequisites, and delivery rules to serve an advocate-backed legal notice to a landlord withholding your rental security deposit.
+              Understand the legal framework, drafting prerequisites, and delivery rules to serve a fact-verified legal notice to a landlord withholding your rental security deposit.
             </p>
             <button 
               onClick={() => setIsPaymentModalOpen(true)}
@@ -321,7 +321,7 @@ export default function LandlordNoticeClient() {
                       Serving a legal notice is highly recommended because it locks in your legal claims. Under the <strong>Interest Act, 1978</strong>, a creditor can claim interest on a debt only if they have made a written demand for payment, giving notice to the debtor that interest will be charged. By dispatching a formal legal notice, you establish your right to claim penal interest (usually between <strong>12% and 18% per annum</strong>) starting from the date the notice is served until the date the deposit is refunded. This interest demand creates an escalating financial penalty that forces the landlord to take your claim seriously.
                     </p>
                     <p>
-                      Furthermore, the legal notice acts as a vital dispute filter. In over 75% of security deposit recovery cases, a professional legal notice drafted by an advocate is sufficient to secure a refund. Landlords are commercial property owners who value their public reputation and want to avoid the expenses, court visits, and public records associated with active litigation. Receiving a formal notice on advocate letterhead signals that the tenant is serious and prepared to enter court, which immediately encourages the landlord to negotiate an out-of-court settlement.
+                      Furthermore, the legal notice acts as a vital dispute filter. In over 75% of security deposit recovery cases, a professional legal notice prepared on verified facts is sufficient to secure a refund. Landlords are commercial property owners who value their public reputation and want to avoid the expenses, court visits, and public records associated with active litigation. Receiving a formal notice on advocate letterhead signals that the tenant is serious and prepared to enter court, which immediately encourages the landlord to negotiate an out-of-court settlement.
                     </p>
                     <div className="bg-red-50 p-6 rounded-2xl border-l-4 border-[#DC2626] italic text-xs sm:text-sm text-red-900 font-semibold leading-relaxed">
                       &quot;A legal notice is a formal court-admissible document that establishes your cause of action. Under the Interest Act, 1978, serving this notice is a mandatory step to claim penal interest on the withheld deposit. In most cases, a professional notice is sufficient to secure a refund without court intervention.&quot;
@@ -380,7 +380,7 @@ export default function LandlordNoticeClient() {
                       Legally, an advocate notice is drafted with precise statutory citations, referencing the Model Tenancy Act, the state Rent Control Act, the Interest Act, 1978, and the Code of Civil Procedure. Advocates are trained to present the facts in a structured, court-admissible manner, avoiding emotional arguments and focusing strictly on the contractual breach. This structure makes the advocate notice an excellent piece of evidence in subsequent litigation, as it clearly defines your cause of action from day one.
                     </p>
                     <p>
-                      While hiring a traditional senior advocate can be expensive, modern tech-enabled legal platforms like LegalRecovery have democratized access to legal dispatches. We connect tenants with a panel of qualified advocates who review your case and draft professional notices on their letterhead for a transparent, flat fee. This approach provides tenants with the full strategic weight of a professional advocate notice at a fraction of the cost, making it the most efficient way to initiate your rental deposit recovery.
+                      While hiring a traditional senior advocate can be expensive, modern tech-enabled legal platforms like LegalRecovery have democratized access to legal dispatches. We connect tenants with a panel of qualified advocates who review your case and draft professional notices on their letterhead for a transparent, flat fee. This approach provides tenants with the full strategic weight of a professional fact-verified notice at a fraction of the cost, making it the most efficient way to initiate your rental deposit recovery.
                     </p>
                   </div>
                 </section>
@@ -539,7 +539,7 @@ export default function LandlordNoticeClient() {
                         <strong>Agreement Audit:</strong> We review your Leave and License agreement, bank receipts, and notice logs to verify that your case is legally sound and free from loopholes.
                       </li>
                       <li>
-                        <strong>Advocate Drafting:</strong> We connect you with our panel of qualified advocates who draft a professional legal notice on their letterhead, citing the Model Tenancy Act, the Interest Act, 1978, and civil procedures.
+                        <strong>Notice Drafting:</strong> We connect you with our panel of qualified advocates who draft a professional legal notice on their letterhead, citing the Model Tenancy Act, the Interest Act, 1978, and civil procedures.
                       </li>
                       <li>
                         <strong>Digital Delivery Dispatch:</strong> We serve the notice digitally via verified email and WhatsApp to the landlord with verified tracking logs.
@@ -647,7 +647,7 @@ export default function LandlordNoticeClient() {
                 <div className="absolute top-0 right-0 w-24 h-24 bg-red-600/10 rounded-full blur-xl pointer-events-none" />
                 <h3 className="text-sm font-black mb-3">Recover Rental Deposit</h3>
                 <p className="text-gray-400 mb-5 text-[11px] leading-relaxed">
-                  Serve a formal advocate-backed legal notice to your landlord for withholding your security deposit.
+                  Serve a formal fact-verified legal notice to your landlord for withholding your security deposit.
                 </p>
                 <button 
                   onClick={() => setIsPaymentModalOpen(true)}

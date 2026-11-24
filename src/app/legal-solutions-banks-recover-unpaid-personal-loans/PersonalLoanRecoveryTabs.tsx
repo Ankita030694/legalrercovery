@@ -34,7 +34,7 @@ const PROBLEMS: ProblemTab[] = [
       {
         step: "Serve Section 25 PSS Act Demand Notice Within 30 Days",
         description:
-          "Dispatch an advocate statutory demand notice via Registered Speed Post and email within 30 calendar days of the debit failure, demanding the full dishonoured instalment within 15 days.",
+          "Dispatch a fact-verified statutory demand notice via Registered Speed Post and email within 30 calendar days of the debit failure, demanding the full dishonoured instalment within 15 days.",
       },
       {
         step: "File Section 25 Criminal Complaint",

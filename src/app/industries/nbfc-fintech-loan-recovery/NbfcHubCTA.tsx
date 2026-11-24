@@ -28,7 +28,7 @@ export default function NbfcHubCTA() {
       </p>
       <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-6 max-w-3xl">
         Mid-market NBFCs, fintechs, HFCs, and MFIs do not need six-month IT procurements to switch
-        from call centers to enforceable advocate notices. Validate our{" "}
+        from call centers to enforceable fact-verified notices. Validate our{" "}
         <code className="px-1.5 py-0.5 rounded bg-slate-800 text-red-300 text-xs">
           loan-recovery
         </code>{" "}
@@ -53,7 +53,7 @@ export default function NbfcHubCTA() {
             </p>
             <p className="text-xs text-slate-300 leading-relaxed mb-4">
               Enter Disbursed Amount, Disbursement Date, As-On Date, UMRN mandate code, and NPCI
-              return memo. Receive Advocate review, BSA 2023 s.63 server hash certificate, and live
+              return memo. Receive Fact verification, BSA 2023 s.63 server hash certificate, and live
               Email + WhatsApp + Speed Post RPAD tracking.
             </p>
           </div>

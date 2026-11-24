@@ -99,7 +99,7 @@ const CASE_CITATIONS = [
       "The Consumer Commission cited DGCA CAR Section 3, Series M, Part II, Clause 3.3.2, ruling that booking portals act as statutory agents of the carrying airline. An online travel aggregator cannot extinguish its duties after pocketing convenience fees and booking margins. The Commission held both the carrier and the booking conglomerate jointly and severally liable to refund the full airfare with compensatory damages.",
     amount: "₹24,600 Full Refund @ 9% p.a. Interest + ₹15,000 Harassment Compensation + ₹10,000 Legal Expenses",
     takeaway:
-      "If Goibibo claims 'we are waiting for airline approval' while the airline claims 'we already refunded the agent', a joint advocate legal notice holding both parties jointly liable terminates the deadlock and compels immediate banking remittance.",
+      "If Goibibo claims 'we are waiting for airline approval' while the airline claims 'we already refunded the agent', a joint fact-verified legal notice holding both parties jointly liable terminates the deadlock and compels immediate banking remittance.",
   },
   {
     title: "Unilateral Diversion of Refund into Expiring goCash / goCash+ Wallet Declared Unfair Trade Practice",
@@ -158,12 +158,12 @@ const FAQS = [
   {
     question: "What is the official procedure to serve an advocate legal demand notice to Goibibo (Ibibo Group)?",
     answer:
-      "A verified consumer advocate drafts a formal legal notice detailing your Goibibo Booking ID, PNR or hotel voucher number, transaction timeline, proof of cancellation, and bank statements showing zero inward credit. The notice is served to Ibibo Group Private Limited at its registered corporate office (19th Floor, Epitome Building No. 5, DLF Cyber City, Gurugram, Haryana - 122002) via Registered Speed Post with legal tracking and delivered electronically under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023. The notice establishes a strict 15-day compliance window before consumer court proceedings commence.",
+      "LegalRecovery.in prepares a formal legal notice, after verifying the facts you submit, detailing your Goibibo Booking ID, PNR or hotel voucher number, transaction timeline, proof of cancellation, and bank statements showing zero inward credit. The notice is served to Ibibo Group Private Limited at its registered corporate office (19th Floor, Epitome Building No. 5, DLF Cyber City, Gurugram, Haryana - 122002) via Registered Speed Post with legal tracking and delivered electronically under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023. The notice establishes a strict 15-day compliance window before consumer court proceedings commence.",
   },
   {
     question: "Goibibo refund pending hone par legal notice kaise bheje aur kitna samay lagta hai?",
     answer:
-      "Agar Goibibo flight, hotel ya bus cancellation ke baad aapka refund bank account mein credit nahi kar raha ya goCash wallet mein lock kar diya hai, toh aap ek formal statutory legal notice bhej sakte hain. LegalRecovery.in par expert advocate 24 ghante ke andar notice draft karke Ibibo Group Private Limited ke Gurugram head office par Speed Post aur official grievance email par dispatch karte hain. Company ko 15 din ka legal demand time diya jata hai, jiske baad e-Jagriti consumer forum mein case darj kiya ja sakta hai.",
+      "Agar Goibibo flight, hotel ya bus cancellation ke baad aapka refund bank account mein credit nahi kar raha ya goCash wallet mein lock kar diya hai, toh aap ek formal statutory legal notice bhej sakte hain. LegalRecovery.in par hamari team facts verify karke 24 ghante ke andar notice taiyar karke Ibibo Group Private Limited ke Gurugram head office par Speed Post aur official grievance email par dispatch karti hai. Company ko 15 din ka legal demand time diya jata hai, jiske baad e-Jagriti consumer forum mein case darj kiya ja sakta hai.",
   },
 ];
 
@@ -682,13 +682,13 @@ export default function GoibiboLegalNoticePage() {
                     </span>
                     <div className="space-y-1 sm:space-y-1.5">
                       <h3 className="text-sm sm:text-base md:text-lg font-bold text-slate-900">
-                        Serve a Formal Statutory Advocate Legal Demand Notice to Ibibo Group Private Limited
+                        Serve a Formal Statutory Fact-Verified Legal Demand Notice to Ibibo Group Private Limited
                       </h3>
                       <p className="text-xs sm:text-sm leading-relaxed">
                         When administrative escalation yields no money after statutory turnaround limits, engage an advocate to serve a formal legal notice to Ibibo Group Private Limited at its registered corporate office (19th Floor, Epitome Building No. 5, DLF Cyber City, Gurugram, Haryana - 122002). The notice must demand the principal booking tariff, 18% penal interest, and compensation for deficiency in service and mental harassment, giving a strict 15-day compliance window.
                       </p>
                       <p className="text-xs text-slate-500 font-medium">
-                        View transparent advocate drafting fee structures on our <Link href="/legal-notice-charges" className="text-blue-700 underline">legal notice charges</Link> page. Also see our specialised guide on <Link href="/send-a-legal-notice/airline-refund-not-received" className="text-blue-700 underline">airline refund legal notices</Link> or <Link href="/visa-agent-fraud-refund-legal-notice" className="text-blue-700 underline">travel agent refund fraud</Link>.
+                        View transparent notice drafting fee structures on our <Link href="/legal-notice-charges" className="text-blue-700 underline">legal notice charges</Link> page. Also see our specialised guide on <Link href="/send-a-legal-notice/airline-refund-not-received" className="text-blue-700 underline">airline refund legal notices</Link> or <Link href="/visa-agent-fraud-refund-legal-notice" className="text-blue-700 underline">travel agent refund fraud</Link>.
                       </p>
                     </div>
                   </li>
@@ -839,11 +839,11 @@ export default function GoibiboLegalNoticePage() {
                       <strong>The Deadlock:</strong> When Rohan checked the Goibibo app, the flight refund was marked &apos;Airline Approval Pending&apos; while the hotel refund of ₹14,200 was deposited into his goCash wallet. Over the next six weeks, Rohan made 14 phone calls to Goibibo support. Representatives repeatedly stated that the airline had not released clearing files and that goCash could not be transferred to a bank account. An NCH complaint received only boilerplate automated updates.
                     </p>
                     <p>
-                      <strong>The Statutory Action:</strong> Rohan instructed LegalRecovery.in to intervene. A verified consumer advocate served a formal statutory legal demand notice to Ibibo Group Private Limited at DLF Cyber City, Gurugram, and impleaded the carrying airline. The notice cited DGCA CAR Section 3, Series M, Part II, Rule 5 of the Consumer Protection (E-Commerce) Rules, 2020, and CCPA Dark Patterns Guidelines, demanding full bank remittance of ₹28,600 plus 18% interest within 15 days.
+                      <strong>The Statutory Action:</strong> Rohan instructed LegalRecovery.in to intervene. LegalRecovery.in served a formal statutory legal demand notice to Ibibo Group Private Limited at DLF Cyber City, Gurugram, and impleaded the carrying airline. The notice cited DGCA CAR Section 3, Series M, Part II, Rule 5 of the Consumer Protection (E-Commerce) Rules, 2020, and CCPA Dark Patterns Guidelines, demanding full bank remittance of ₹28,600 plus 18% interest within 15 days.
                     </p>
                     <div className="p-3.5 sm:p-4 bg-emerald-950/70 border border-emerald-700/60 rounded-xl text-emerald-200">
                       <strong className="block text-emerald-400 font-bold mb-1">The Outcome:</strong>
-                      On Day 11 following delivery of the advocate legal notice via Speed Post and registered email, Goibibo&apos;s senior escalations cell called Rohan to confirm that the entire ₹28,600 (both flight and hotel components) had been credited directly to his ICICI credit card, alongside a valid 12-digit Acquirer Reference Number (ARN). The dispute was fully resolved without filing in consumer court.
+                      On Day 11 following delivery of the fact-verified legal notice via Speed Post and registered email, Goibibo&apos;s senior escalations cell called Rohan to confirm that the entire ₹28,600 (both flight and hotel components) had been credited directly to his ICICI credit card, alongside a valid 12-digit Acquirer Reference Number (ARN). The dispute was fully resolved without filing in consumer court.
                     </div>
                   </div>
                 </div>

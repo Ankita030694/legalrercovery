@@ -565,7 +565,7 @@ const CLUSTERS: Record<string, { heading: string; items: GuideItem[] }> = {
         desc: "Court-tested s.25 PSS Act notice with UMRN, NPCI return memo & Suman Sethi dual-demand safeguard.",
       },
       {
-        title: "Enterprise Collection SaaS vs Advocate-Backed Bulk Legal Desk (NBFCs)",
+        title: "Enterprise Collection SaaS vs Fact-Verified Bulk Legal Desk (NBFCs)",
         href: "/credgenics-spocto-alternative-mid-market-nbfc-legal-notice-platform",
         tag: "IND-02 CFO Guide",
         desc: "Compare Credgenics/Spocto annual SaaS lock-in vs zero-lock-in Advocate Notice + Email/WATI WhatsApp/Speed Post RPAD + Reply Triage.",
@@ -604,7 +604,7 @@ const CLUSTERS: Record<string, { heading: string; items: GuideItem[] }> = {
         title: "Bank Loan Recall cum Guarantee Invocation Notice Format (RBI Compliant)",
         href: "/templates/bank-loan-recall-cum-guarantee-invocation-notice",
         tag: "Bank Notice Template",
-        desc: "Advocate-vetted loan recall and Contract Act s.126/128 guarantee invocation draft with uncompounded RBI Penal Charges Schedule A and Word (.doc) export.",
+        desc: "Fact-verified loan recall and Contract Act s.126/128 guarantee invocation draft with uncompounded RBI Penal Charges Schedule A and Word (.doc) export.",
       },
       {
         title: "SARFAESI, DRT Fee & Bank Recovery Forum Calculator India",
@@ -1154,7 +1154,7 @@ const CLUSTERS: Record<string, { heading: string; items: GuideItem[] }> = {
         title: "Legal Notice to Recover Friendly Loan from Friend or Relative",
         href: "/legal-notice-to-recovery-my-loan-from-friend",
         tag: "Friendly Loan",
-        desc: "Draft and serve an Advocate Legal Notice to recover personal loans within 15 days.",
+        desc: "Draft and serve a Fact-Verified Legal Notice to recover personal loans within 15 days.",
       },
       {
         title: "MSME ODR Portal Step by Step: From Registration to Award",
@@ -1288,7 +1288,7 @@ const CLUSTERS: Record<string, { heading: string; items: GuideItem[] }> = {
         desc: "Article-21 safe post-discharge undertakings, IRDAI Bank Rate + 2% TPA claims, CGHS s.80 notices, and B2B lab recovery.",
       },
       {
-        title: "Promissory Note Format India (Advocate-Drafted Template)",
+        title: "Promissory Note Format India (Ready-to-Use Template)",
         href: "/templates/promissory-note-format-india",
         tag: "Promissory Note",
         desc: "Enforceable Section 4 NI Act promissory note structure adaptable for attendant co-guarantors and commercial credit.",
@@ -1321,7 +1321,7 @@ const CLUSTERS: Record<string, { heading: string; items: GuideItem[] }> = {
         title: "Bulk Recovery Cases All-in-One Affordable Solutions",
         href: "/bulk-recovery-cases-all-in-one-affordable-solutions",
         tag: "CSV Batch Desk",
-        desc: "Onboard 10 to 10,000+ aged TPA, corporate OHC, and patient receivables via tri-channel advocate dispatch.",
+        desc: "Onboard 10 to 10,000+ aged TPA, corporate OHC, and patient receivables via tri-channel dispatch.",
       },
     ],
   },
@@ -1517,7 +1517,7 @@ const CLUSTERS: Record<string, { heading: string; items: GuideItem[] }> = {
         title: "Bulk Recovery Cases: All-in-One Institutional Solutions",
         href: "/bulk-recovery-cases-all-in-one-affordable-solutions",
         tag: "Multi-Buyer CSV Desk",
-        desc: "Dispatch 10 to 10,000+ tri-channel advocate notices for industrial dealers, job-work buyers & OEM ledgers.",
+        desc: "Dispatch 10 to 10,000+ tri-channel fact-verified notices for industrial dealers, job-work buyers & OEM ledgers.",
       },
     ],
   },
@@ -1623,7 +1623,7 @@ const CLUSTERS: Record<string, { heading: string; items: GuideItem[] }> = {
         title: "Transporter Freight, Halting & Carrier-Lien Legal Notice Format",
         href: "/templates/transporter-freight-detention-carrier-lien-legal-notice",
         tag: "P1 Template Pack",
-        desc: "Advocate-vetted legal notice templates for overdue bilty freight, GPS halting claims, and Section 171 carrier lien intimation.",
+        desc: "Ready-to-use legal notice templates for overdue bilty freight, GPS halting claims, and Section 171 carrier lien intimation.",
       },
       {
         title: "ट्रांसपोर्ट भाड़ा व हॉल्टिंग वसूली लीगल गाइड (POD Bilty Recovery)",
@@ -1754,7 +1754,7 @@ const CLUSTERS: Record<string, { heading: string; items: GuideItem[] }> = {
         title: "Pharma & Surgical Stockist Unpaid Ledger Legal Notice Format",
         href: "/templates/pharma-surgical-stockist-ledger-demand-legal-notice",
         tag: "Pharma Stockist Template",
-        desc: "Advocate-vetted demand notice for pharma/surgical ledgers: Order XXXVII invoice schedule, Drug License Form 20B/21B lock & s.20 NI Act security cheque notice.",
+        desc: "Fact-verified demand notice for pharma/surgical ledgers: Order XXXVII invoice schedule, Drug License Form 20B/21B lock & s.20 NI Act security cheque notice.",
       },
       {
         title: "Veterinary Pharma, AYUSH & Nutraceutical Distributor Recovery",
@@ -1850,7 +1850,7 @@ const CLUSTERS: Record<string, { heading: string; items: GuideItem[] }> = {
         title: "Bulk Recovery Cases All-in-One Affordable Solutions",
         href: "/bulk-recovery-cases-all-in-one-affordable-solutions",
         tag: "CSV Batch Desk",
-        desc: "Upload multi-state chemist, hospital, and PCD franchise default ledgers for simultaneous advocate dispatch.",
+        desc: "Upload multi-state chemist, hospital, and PCD franchise default ledgers for simultaneous dispatch.",
       },
     ],
   },
@@ -1897,7 +1897,7 @@ const CLUSTERS: Record<string, { heading: string; items: GuideItem[] }> = {
         title: "Bulk Recovery Cases: All-in-One Institutional Solutions",
         href: "/bulk-recovery-cases-all-in-one-affordable-solutions",
         tag: "CSV Batch Desk",
-        desc: "Upload 10 to 10,000+ overdue dealer and retailer accounts for simultaneous advocate dispatch.",
+        desc: "Upload 10 to 10,000+ overdue dealer and retailer accounts for simultaneous dispatch.",
       },
     ],
   },
@@ -1932,7 +1932,7 @@ const CLUSTERS: Record<string, { heading: string; items: GuideItem[] }> = {
         title: "Send Legal Notice for Business to Recover Unpaid Dues",
         href: "/send-a-legal-notice/for-business-to-recover-their-unpaid-dues",
         tag: "B2B Notice Portal",
-        desc: "Dispatch advocate-vetted corporate demand notices to brand CMOs, CFOs, and defaulting corporate debtors.",
+        desc: "Dispatch fact-verified corporate demand notices to brand CMOs, CFOs, and defaulting corporate debtors.",
       },
       {
         title: "Section 43B(h): The MSME 45-Day Payment Rule for Buyers",
@@ -1961,7 +1961,7 @@ const CLUSTERS: Record<string, { heading: string; items: GuideItem[] }> = {
         title: "Recruitment Backdoor-Hiring & Staffing Invoice Legal Notice Pack",
         href: "/templates/recruitment-backdoor-hiring-and-staffing-invoice-legal-notice",
         tag: "Commercial Notice Pack",
-        desc: "Advocate-vetted statutory demand notice formats for candidate circumvention, ATS email proof, and monthly payroll arrears.",
+        desc: "Ready-to-use statutory demand notice formats for candidate circumvention, ATS email proof, and monthly payroll arrears.",
       },
       {
         title: "Recruitment, Staffing, Manpower & FMS Debt Recovery India",
@@ -2068,7 +2068,7 @@ const CLUSTERS: Record<string, { heading: string; items: GuideItem[] }> = {
         title: "Hotel BTC & IATA Travel Agent Credit Legal Notice Pack",
         href: "/templates/hotel-btc-and-iata-travel-agent-corporate-credit-legal-notice",
         tag: "Notice Template",
-        desc: "Advocate-drafted notice pack with Guest Folio, BTC Voucher, 13-digit Airline Ticket & GDS PNR schedules plus GSTR-2B estoppel.",
+        desc: "Fact-verified notice pack with Guest Folio, BTC Voucher, 13-digit Airline Ticket & GDS PNR schedules plus GSTR-2B estoppel.",
       },
       {
         title: "Hotels, Banquets & Corporate Travel (TMC) Debt Recovery",
@@ -2199,7 +2199,7 @@ const CLUSTERS: Record<string, { heading: string; items: GuideItem[] }> = {
         title: "IT, Software & SaaS MSA Payment Default Legal Notice",
         href: "/templates/it-software-saas-msa-payment-default-legal-notice",
         tag: "SaaS Notice Template",
-        desc: "Advocate-vetted MSA payment default & license suspension notice format with Section 63 BSA electronic log clauses.",
+        desc: "Fact-verified MSA payment default & license suspension notice format with Section 63 BSA electronic log clauses.",
       },
       {
         title: "MSME Delayed Payment Interest Calculator (3x RBI Rate)",
@@ -2240,7 +2240,7 @@ const CLUSTERS: Record<string, { heading: string; items: GuideItem[] }> = {
         title: "IT, Software & SaaS MSA Payment Default Legal Notice",
         href: "/templates/it-software-saas-msa-payment-default-legal-notice",
         tag: "SaaS / Tech Notice",
-        desc: "Advocate-vetted MSA payment default & suspension notice template with BSA 2023 Section 63 electronic log clauses.",
+        desc: "Fact-verified MSA payment default & suspension notice template with BSA 2023 Section 63 electronic log clauses.",
       },
       {
         title: "MSME Delayed Payment Interest Calculator (3x RBI Rate)",
@@ -2588,7 +2588,7 @@ const CLUSTERS: Record<string, { heading: string; items: GuideItem[] }> = {
         title: "Coal, Metal Scrap, Fuel & Gas-Cylinder Legal Notice [Word]",
         href: "/templates/coal-scrap-commodity-supply-and-gas-cylinder-recovery-notice",
         tag: "Word Template",
-        desc: "Advocate-vetted notice formats featuring SGS/NABL COA finality, Dharamkanta/E-Way logs, PESO cylinder serial tables & Pre-IBC / Order 38 warnings.",
+        desc: "Ready-to-use notice formats featuring SGS/NABL COA finality, Dharamkanta/E-Way logs, PESO cylinder serial tables & Pre-IBC / Order 38 warnings.",
       },
       {
         title: "Imported Coal, Petcoke & Biomass GCV Deduction Recovery",
@@ -2636,7 +2636,7 @@ const CLUSTERS: Record<string, { heading: string; items: GuideItem[] }> = {
         title: "Unpaid B2B Invoices & Commercial Ledger Recovery",
         href: "/recovery/unpaid-invoices",
         tag: "B2B Invoices",
-        desc: "Advocate-drafted demand notices, GSTR-2B reconciliation, and multi-channel Email, WhatsApp & RPAD dispatch.",
+        desc: "Fact-verified demand notices, GSTR-2B reconciliation, and multi-channel Email, WhatsApp & RPAD dispatch.",
       },
       {
         title: "MSME 3x RBI Delayed Payment Interest Calculator",

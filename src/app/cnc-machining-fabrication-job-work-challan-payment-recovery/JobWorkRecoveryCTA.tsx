@@ -25,10 +25,10 @@ export default function JobWorkRecoveryCTA({
               Track 1 &bull; Single Job-Work Invoice / Stalled Challan
             </span>
             <p className="text-lg sm:text-xl font-extrabold text-white mb-2">
-              Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Advocate Drafted &middot; Email + WhatsApp + Speed Post RPAD)
+              Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Fact-Verified &middot; Email + WhatsApp + Speed Post RPAD)
             </p>
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-              Serve a high-impact, advocate-vetted 15-day statutory lien intimation cum legal demand notice on a defaulting principal OEM. Formally exercises your statutory Particular Lien under Indian Contract Act Section 170 on finished or in-process components, invokes CGST Section 143 1-year deemed supply tax consequences, and asserts MSMED Act Section 16 monthly compound interest at 3x RBI Bank Rate.
+              Serve a high-impact, fact-verified 15-day statutory lien intimation cum legal demand notice on a defaulting principal OEM. Formally exercises your statutory Particular Lien under Indian Contract Act Section 170 on finished or in-process components, invokes CGST Section 143 1-year deemed supply tax consequences, and asserts MSMED Act Section 16 monthly compound interest at 3x RBI Bank Rate.
             </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-3">
@@ -58,7 +58,7 @@ export default function JobWorkRecoveryCTA({
               Have 10 to 10,000+ Defaulters? Upload CSV / Activate Dedicated Institutional Desk
             </p>
             <p className="text-xs sm:text-sm text-slate-600 leading-relaxed mb-5">
-              Engineered for CNC machine shops, precision turning centers, fabrication yards, heat treaters, electroplaters, and foundry units across Bhosari, Peenya, Manesar, Ambattur, Rajkot, and Ludhiana. Ingest multiple stuck job-work delivery challans, disputed burning loss debit notes, and unpaid labour billing ledgers. Features bulk statutory advocate notices, BSA Section 63 technical evidence dossiers, and commercial litigation support.
+              Engineered for CNC machine shops, precision turning centers, fabrication yards, heat treaters, electroplaters, and foundry units across Bhosari, Peenya, Manesar, Ambattur, Rajkot, and Ludhiana. Ingest multiple stuck job-work delivery challans, disputed burning loss debit notes, and unpaid labour billing ledgers. Features bulk statutory fact-verified notices, BSA Section 63 technical evidence dossiers, and commercial litigation support.
             </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-3">

@@ -84,10 +84,10 @@ const CASE_CITATIONS = [
     facts:
       "A national private bank engaged third-party recovery agents who utilized aggressive, non-judicial measures to repossess a vehicle following loan default. The actions culminated in severe reputational damage, consumer litigation, and strict regulatory reprimand regarding unmonitored agent practices.",
     holding:
-      "The Hon'ble Supreme Court held that banks and financial institutions are strictly bound to enforce debt recovery only through recognized statutory mechanisms and licensed legal professionals. The bench affirmed that debt enforcement must operate within the rule of law, mandating advocate-supervised notices, court receivers, and established judicial protocols rather than coercive non-judicial staff.",
-    amount: "Strict Judicial Reprimand + Mandatory Regulatory Code for Advocate-Supervised Legal Recovery",
+      "The Hon'ble Supreme Court held that banks and financial institutions are strictly bound to enforce debt recovery only through recognized statutory mechanisms and licensed legal professionals. The bench affirmed that debt enforcement must operate within the rule of law, mandating fact-verified notices, court receivers, and established judicial protocols rather than coercive non-judicial staff.",
+    amount: "Strict Judicial Reprimand + Mandatory Regulatory Code for Fact-Verified Legal Recovery",
     takeaway:
-      "Banks cannot risk delegating recovery to non-legal collection agencies. Deploying outsourced legal teams operated by verified advocates ensures total immunity against criminal extortion allegations, RBI penal circulars, and consumer rights lawsuits.",
+      "Banks cannot risk delegating recovery to non-legal collection agencies. Deploying outsourced legal notice operations with fact-verified notices ensures total immunity against criminal extortion allegations, RBI penal circulars, and consumer rights lawsuits.",
   },
   {
     title: "Apex Bench Ruling on Delegation of Chamber Practice & Paralegal Assistance",
@@ -164,7 +164,7 @@ const FAQS = [
   {
     question: "What is the onboarding timeline to deploy a dedicated virtual legal cell for a bank or NBFC?",
     answer:
-      "A dedicated virtual legal desk can be fully operational within 7 to 14 business days. The onboarding protocol includes: (1) Execution of enterprise NDA and Master Service Agreement (MSA), (2) LOS/LMS data dictionary mapping and SFTP/API pipeline setup, (3) Approval of standardized advocate legal notice and complaint formats by the bank's In-House Legal Counsel, and (4) Deployment of dedicated paralegals and designated nodal partner chambers.",
+      "A dedicated virtual legal desk can be fully operational within 7 to 14 business days. The onboarding protocol includes: (1) Execution of enterprise NDA and Master Service Agreement (MSA), (2) LOS/LMS data dictionary mapping and SFTP/API pipeline setup, (3) Approval of standardized fact-verified legal notice and complaint formats by the bank's In-House Legal Counsel, and (4) Deployment of dedicated paralegals and designated nodal partner chambers.",
   },
 ];
 
@@ -450,7 +450,7 @@ export default function OutsourcedLegalTeamsBankingDebtRecoveryPage() {
                     <div>
                       <strong className="text-sm sm:text-base text-slate-900 font-bold">Standardized Automated Ingestion &amp; Error-Free Batch Notice Generation:</strong>
                       <p className="text-xs sm:text-sm mt-0.5 leading-relaxed">
-                        Rather than manual per-account data entry, dedicated paralegals ingest loan recovery books via encrypted SFTP/API feeds. Automated validation algorithms verify loan sanction dates, interest rate calculations, and default clauses, issuing advocate-signed legal notices within 72 hours of portfolio handover.
+                        Rather than manual per-account data entry, dedicated paralegals ingest loan recovery books via encrypted SFTP/API feeds. Automated validation algorithms verify loan sanction dates, interest rate calculations, and default clauses, issuing fact-verified legal notices within 72 hours of portfolio handover.
                       </p>
                     </div>
                   </li>
@@ -824,7 +824,7 @@ export default function OutsourcedLegalTeamsBankingDebtRecoveryPage() {
                       <strong>The Institutional Bottleneck:</strong> A leading private sector bank accumulated over 12,000 defaulted personal loan and digital consumer credit accounts totaling ₹142 Crore across 14 states. The internal zonal legal team of 6 counsels was encumbered by daily operational reviews, resulting in a 4-month backlog for issuing Section 25 PSSA demand notices. Delinquent borrowers were evading service, while limitation periods under the Limitation Act, 1963 were actively expiring.
                     </p>
                     <p>
-                      <strong>The Outsourced Solution:</strong> The bank contracted LegalRecovery.in to deploy a dedicated 24-advocate virtual legal operations cell. The cell integrated with the bank&apos;s LMS via secure SFTP, ingested all 12,000 files within 5 working days, audited the balance statements, and dispatched advocate demand notices across India Post EDI and verified WhatsApp channels backed by Section 63 BSA certificates.
+                      <strong>The Outsourced Solution:</strong> The bank contracted LegalRecovery.in to deploy a dedicated 24-advocate virtual legal operations cell. The cell integrated with the bank&apos;s LMS via secure SFTP, ingested all 12,000 files within 5 working days, audited the balance statements, and dispatched fact-verified demand notices across India Post EDI and verified WhatsApp channels backed by Section 63 BSA certificates.
                     </p>
                     <p>
                       <strong>Pan-India Court Enforcement:</strong> For 3,850 accounts that failed to settle post-notice, the desk drafted and filed batch Section 25 PSSA and Section 138 NI Act criminal complaints across designated magistrate courts. A coordinated network of 420 local appearance advocates managed summons service, bailable warrants, and pre-Lok Adalat conciliation schedules.

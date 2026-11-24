@@ -43,7 +43,7 @@ const MANUFACTURING_SCENARIOS: ManufacturingScenario[] = [
       {
         step: "2. Serve Section 42 Deemed-Acceptance Demand Notice",
         detail:
-          "Issue an advocate notice locking in deemed acceptance, refuting post-production defects, and segregating conditional vs unconditional PBG text before any retaliatory encashment.",
+          "Issue a fact-verified notice locking in deemed acceptance, refuting post-production defects, and segregating conditional vs unconditional PBG text before any retaliatory encashment.",
       },
       {
         step: "3. Escalate via MSEFC, Order XXXVII or Section 9/12A",
@@ -153,7 +153,7 @@ const MANUFACTURING_SCENARIOS: ManufacturingScenario[] = [
       {
         step: "3. Serve Statutory Lien or Anticipatory Breach Demand",
         detail:
-          "Dispatch advocate notice asserting lawful Section 170 particular lien or quantifying WIP + 10–15% loss of profit under Section 73 with 15-day cure window.",
+          "Dispatch fact-verified notice asserting lawful Section 170 particular lien or quantifying WIP + 10–15% loss of profit under Section 73 with 15-day cure window.",
       },
     ],
     primaryRoute: {

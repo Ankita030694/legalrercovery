@@ -56,7 +56,7 @@ export default function CAMRecoveryCTA({
                     Test 1 Chronic Defaulter Now (₹{basePrice})
                   </p>
                   <p className="text-xs text-slate-300 leading-relaxed mb-4">
-                    Advocate-drafted statutory demand notice under State Apartment Ownership Acts, Facility Management Covenants, and Order XXXVII CPC. Complete with Annexure Energy Logs, 15-day cure notice, and lawful utility disconnection warning. Delivered via Email, WhatsApp &amp; Speed Post RPAD.
+                    Fact-verified statutory demand notice under State Apartment Ownership Acts, Facility Management Covenants, and Order XXXVII CPC. Complete with Annexure Energy Logs, 15-day cure notice, and lawful utility disconnection warning. Delivered via Email, WhatsApp &amp; Speed Post RPAD.
                   </p>
                 </div>
 

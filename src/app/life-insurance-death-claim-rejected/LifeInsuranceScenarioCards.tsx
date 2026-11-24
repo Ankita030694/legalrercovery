@@ -31,7 +31,7 @@ const SCENARIOS: ScenarioCard[] = [
     odds: "95% Nominee Win Rate",
     oddsColor: "text-emerald-700 bg-emerald-50 border-emerald-200",
     statutoryBasis: "Section 45(1) Insurance Act 1938 & LIC v. Asha Goel (Supreme Court)",
-    recommendedAction: "Serve Advocate Legal Notice & Escalate to Insurance Ombudsman",
+    recommendedAction: "Serve Fact-Verified Legal Notice & Escalate to Insurance Ombudsman",
     actionHref: "#heading-playbook",
   },
   {

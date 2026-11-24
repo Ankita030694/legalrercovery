@@ -24,7 +24,7 @@ export default function LawFirmFeeCTA({ className = "" }: LawFirmFeeCTAProps) {
                 Track 1 &middot; Single Corporate Default / Patent Disbursement
               </span>
               <h3 className="text-lg sm:text-xl font-bold text-white mb-2">
-                Test 1 Live Overdue Case Now (&#8377;{basePrice} &middot; Advocate Drafted &middot; Email + WhatsApp + Speed Post RPAD)
+                Test 1 Live Overdue Case Now (&#8377;{basePrice} &middot; Fact-Verified &middot; Email + WhatsApp + Speed Post RPAD)
               </h3>
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
                 Upload your unpaid litigation appearance memos, Order III Rule 4(2) discharge order, engagement emails, Form 26AS s.194J TDS credits, or IPO/TMR official CBR disbursement receipts. Independent external recovery counsel drafts and serves an <em>R.D. Saxena</em>-safe Order XXXVII CPC &amp; Commercial Courts s.12A demand notice—preserving your chamber&rsquo;s Bar Council dignity and judicial standing.

@@ -37,9 +37,9 @@ const CIRCUMVENTION_SCENARIOS: ScenarioTab[] = [
           "Immediately issue a formal GST Tax Invoice referencing the candidate name, designation, joined date, standard placement fee percentage (e.g., 8.33%–15% of CTC), and 18% GST with a 7-day payment window.",
       },
       {
-        phase: "Step 3: Advocate Legal Notice Dispatch",
+        phase: "Step 3: Fact-Verified Legal Notice Dispatch",
         description:
-          "Upon non-payment or denial, serve a formal Legal Demand Notice via Advocate panel under Section 73 & Section 74 of the Contract Act and Section 63 BSA 2023, attaching electronic evidence proofs.",
+          "Upon non-payment or denial, serve a formal Legal Demand Notice, prepared and sent by our team after verifying your facts, under Section 73 & Section 74 of the Contract Act and Section 63 BSA 2023, backed by your electronic evidence proofs.",
       },
     ],
     statutoryHook: "Contract Act s.73, s.74 (Liquidated Circumvention Surcharge) & BSA 2023 s.63",
@@ -95,7 +95,7 @@ const CIRCUMVENTION_SCENARIOS: ScenarioTab[] = [
       {
         phase: "Step 3: Evidentiary Rebuttal Demand",
         description:
-          "Dispatch an advocate notice challenging the client to produce their certified server audit logs under BSA 2023 Section 63 demonstrating active outbound outreach prior to agency transmission.",
+          "Dispatch a fact-verified notice challenging the client to produce their certified server audit logs under BSA 2023 Section 63 demonstrating active outbound outreach prior to agency transmission.",
       },
     ],
     statutoryHook: "Bharatiya Sakshya Adhiniyam, 2023 Section 104 (Burden of Proof) & Section 63",

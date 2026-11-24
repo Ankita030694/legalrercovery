@@ -11,7 +11,7 @@ interface LegalNoticeReplyCTAProps {
 }
 
 export default function LegalNoticeReplyCTA({
-  buttonText = "Have an Advocate Draft Your Legal Notice Reply",
+  buttonText = "Get Your Legal Notice Reply Prepared",
   className = "",
   variant = "primary",
 }: LegalNoticeReplyCTAProps) {
@@ -25,13 +25,13 @@ export default function LegalNoticeReplyCTA({
           <div className="bg-gradient-to-br from-[#111827] via-[#1F2937] to-[#111827] text-white rounded-2xl p-5 sm:p-8 md:p-10 border border-slate-800 shadow-2xl w-full">
             <div className="max-w-3xl">
               <span className="inline-block px-3 py-1 rounded-full text-[11px] sm:text-xs font-semibold tracking-wide uppercase bg-slate-800 text-red-400 border border-slate-700 mb-3 sm:mb-4">
-                Statutory Defense &amp; Counter-Claim Protection • Advocate Drafted
+                Statutory Defense &amp; Counter-Claim Protection • Fact-Verified
               </span>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-bold tracking-tight text-white mb-3">
                 Received an Unjust or Intimidating Legal Notice? Respond Legally Before the Deadline Expires
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6">
-                Never ignore a legal notice or submit an evasive reply that invites adverse inference in court. Have an experienced litigation advocate examine the notice, frame paragraph-by-paragraph denials, reserve your counter-claims, and issue a formal reply by email and WhatsApp under BSA Section 63. Speed Post is optional at ₹450 per party.
+                Never ignore a legal notice or submit an evasive reply that invites adverse inference in court. Have our team verify your facts, prepare paragraph-by-paragraph denials, reserve your counter-claims, and issue a formal reply by email and WhatsApp under BSA Section 63. Speed Post is optional at ₹450 per party.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button
@@ -42,7 +42,7 @@ export default function LegalNoticeReplyCTA({
                   {buttonText} — ₹{basePrice}
                 </button>
                 <div className="text-xs text-slate-300 flex flex-wrap sm:flex-nowrap items-center gap-2 sm:gap-3">
-                  <span>✓ 24h Advocate Review</span>
+                  <span>✓ 24h Fact Verification</span>
                   <span>•</span>
                   <span>✓ Specific Denials Drafted</span>
                   <span>•</span>

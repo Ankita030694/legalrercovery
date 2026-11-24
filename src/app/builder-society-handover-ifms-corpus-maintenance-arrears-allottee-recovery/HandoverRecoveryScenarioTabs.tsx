@@ -70,7 +70,7 @@ const SCENARIOS: Scenario[] = [
       "Clauses requiring IFMS and advance maintenance deposits are standard statutory covenants in model BBA (Builder Buyer Agreements) registered under RERA Section 13. Promoters hold IFMS funds in designated trust/escrow accounts strictly for transfer to the RWA upon handover under Section 17. The promoter is legally entitled to withhold unconditional key handover until all mandatory pre-possession deposits under Section 19(6) are remitted.",
     actionableSteps: [
       "Furnish an audited escrow bank account statement proving IFMS deposits are ring-fenced exclusively for transfer to the registered RWA.",
-      "Issue a formal advocate notice explaining that key release is conditional upon complete discharge of Section 19(6) contractual and statutory obligations.",
+      "Issue a formal fact-verified notice explaining that key release is conditional upon complete discharge of Section 19(6) contractual and statutory obligations.",
       "Notify the buyer of accruing holding charges and interest under Section 19(7) for each day of possession delay caused by their deposit withholding.",
       "Provide a standardized undertaking confirming automated transfer of the allottee's IFMS credit directly into the RWA bank ledger upon registration.",
     ],

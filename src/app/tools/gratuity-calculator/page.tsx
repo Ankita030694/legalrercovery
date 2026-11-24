@@ -360,7 +360,7 @@ export default function GratuityCalculatorPage() {
                         <td className="py-3 px-3.5 sm:py-3.5 sm:px-4 text-red-700 font-bold">Unlawful Statutory Default</td>
                         <td className="py-3 px-3.5 sm:py-3.5 sm:px-4 text-xs">Principal exempt; interest taxable</td>
                         <td className="py-3 px-3.5 sm:py-3.5 sm:px-4 text-xs font-bold text-red-700">
-                          Serve Form I + Statutory Advocate Notice demanding 10% interest.
+                          Serve Form I + Statutory Fact-Verified Notice demanding 10% interest.
                         </td>
                       </tr>
                     </tbody>
@@ -601,7 +601,7 @@ export default function GratuityCalculatorPage() {
                     </span>
                     <div className="space-y-1 sm:space-y-1.5">
                       <h3 className="text-sm sm:text-base md:text-lg font-bold text-slate-900">
-                        Serve a Formal Statutory Advocate Legal Demand Notice
+                        Serve a Formal Statutory Fact-Verified Legal Demand Notice
                       </h3>
                       <p className="text-xs sm:text-sm leading-relaxed">
                         If the 30-day statutory window lapses without payment, engage an advocate to issue a formal legal demand notice under Section 7(3A) of the Payment of Gratuity Act and Section 17(2) of the Code on Wages. Dispatched via Registered Speed Post and Section 63 BSA compliant electronic mail, the notice demands immediate principal disbursement along with 10% annual penal interest, giving the company 15 calendar days to comply before government action.
@@ -758,7 +758,7 @@ export default function GratuityCalculatorPage() {
                         <strong>The Dispute:</strong> Sunita worked as a senior software architect for 7 years and 8 months. Her last drawn monthly Basic Pay was ₹65,000 (DA was nil). Her employer rounded her tenure down to 7 years in her FnF sheet and offered ₹2,63,077.
                       </p>
                       <p>
-                        <strong>The Legal Enforcement:</strong> Under Section 4(2), 8 months exceeds 6 months and must be rounded up to <strong>8 full years</strong>. The correct formula was: (15 × ₹65,000 × 8) ÷ 26 = <strong>₹3,00,000</strong>. After Sunita served an advocate legal notice citing Section 4(2) and Section 7(3), the employer revised the FnF sheet and paid the full ₹3,00,000 plus ₹8,200 accrued interest within 10 days.
+                        <strong>The Legal Enforcement:</strong> Under Section 4(2), 8 months exceeds 6 months and must be rounded up to <strong>8 full years</strong>. The correct formula was: (15 × ₹65,000 × 8) ÷ 26 = <strong>₹3,00,000</strong>. After Sunita served a fact-verified legal notice citing Section 4(2) and Section 7(3), the employer revised the FnF sheet and paid the full ₹3,00,000 plus ₹8,200 accrued interest within 10 days.
                       </p>
                     </div>
                   </div>
@@ -776,7 +776,7 @@ export default function GratuityCalculatorPage() {
                         <strong>The Dispute:</strong> Amit completed a 30-month fixed-term contract. HR refused gratuity outright, claiming &quot;contract employees are only eligible after 5 years&quot;.
                       </p>
                       <p>
-                        <strong>The Legal Enforcement:</strong> Amit invoked Section 53(2) of the Code on Social Security, which mandates pro-rata gratuity for fixed-term contracts exceeding 1 year. The pro-rata calculation: (15 × ₹48,000 × 2.5) ÷ 26 = <strong>₹69,230</strong>. Following a formal Form I submission and advocate notice, the company&apos;s legal department conceded and credited the full amount to avoid Labour Court scrutiny.
+                        <strong>The Legal Enforcement:</strong> Amit invoked Section 53(2) of the Code on Social Security, which mandates pro-rata gratuity for fixed-term contracts exceeding 1 year. The pro-rata calculation: (15 × ₹48,000 × 2.5) ÷ 26 = <strong>₹69,230</strong>. Following a formal Form I submission and fact-verified notice, the company&apos;s legal department conceded and credited the full amount to avoid Labour Court scrutiny.
                       </p>
                     </div>
                   </div>

@@ -23,7 +23,7 @@ export default function SponsorshipRecoveryNoticeCTA() {
               Recover Defaulted Sponsorship Fees Before the Next Financial Year Closes
             </p>
             <p className="text-sm sm:text-base text-slate-300 max-w-2xl mx-auto">
-              Choose your recovery track: dispatch a formal advocate-signed demand notice with BSA 2023 s.63 deliverable proof for a single sponsor, or onboard your full event defaulting roster.
+              Choose your recovery track: dispatch a formal fact-verified demand notice with BSA 2023 s.63 deliverable proof for a single sponsor, or onboard your full event defaulting roster.
             </p>
           </div>
 
@@ -39,7 +39,7 @@ export default function SponsorshipRecoveryNoticeCTA() {
                 </div>
                 <p className="text-lg font-bold text-white">Test 1 Live Overdue Sponsor Case Now</p>
                 <p className="text-xs text-slate-300 leading-relaxed">
-                  Advocate-drafted Demand Notice on formal Legal Letterhead. Includes WhatsApp, corporate domain email dispatch, and India Post Speed Post RPAD with legal tracking receipt.
+                  Fact-verified Demand Notice on formal Legal Letterhead. Includes WhatsApp, corporate domain email dispatch, and India Post Speed Post RPAD with legal tracking receipt.
                 </p>
                 <div className="pt-2 flex items-baseline gap-2">
                   <span className="text-3xl font-black text-white">&yen;999</span>

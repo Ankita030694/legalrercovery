@@ -28,10 +28,10 @@ export default function RefundTracingCTA({
                 Statutory Pre-Litigation Notice
               </span>
               <h3 className="mt-3 text-2xl font-bold tracking-tight sm:text-3xl text-white">
-                Break the Bank vs Platform Deadlock with an Advocate Notice
+                Break the Bank vs Platform Deadlock with a Fact-Verified Notice
               </h3>
               <p className="mt-3 text-sm leading-relaxed text-slate-300 sm:text-base">
-                Stop waiting in customer care loops while the platform points to the bank and the bank points to the platform. An advocate legal notice establishes joint statutory liability across the merchant, payment aggregator, and issuing bank under RBI TAT guidelines and the Consumer Protection Act.
+                Stop waiting in customer care loops while the platform points to the bank and the bank points to the platform. A fact-verified legal notice establishes joint statutory liability across the merchant, payment aggregator, and issuing bank under RBI TAT guidelines and the Consumer Protection Act.
               </p>
 
               <div className="mt-6 flex flex-wrap items-baseline gap-3">
@@ -46,7 +46,7 @@ export default function RefundTracingCTA({
               <div className="mt-4 grid grid-cols-1 gap-2.5 sm:grid-cols-3 text-xs text-slate-300">
                 <div className="flex items-center gap-2">
                   <span className="text-emerald-400">✓</span>
-                  <span>Drafted by verified advocates</span>
+                  <span>Prepared on verified facts</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <span className="text-emerald-400">✓</span>

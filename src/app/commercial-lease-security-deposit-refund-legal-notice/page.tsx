@@ -1049,7 +1049,7 @@ export default function CommercialLeaseDepositRecoveryPage() {
                       Final Financial Recovery Outcome:
                     </p>
                     <p className="text-xs sm:text-sm text-emerald-900 leading-relaxed">
-                      Following a comprehensive advocate legal notice threatening an Order 37 summary suit in the Bengaluru City Civil Court, the landlord agreed to withdraw ₹15,20,000 in bogus deductions. The tenant recovered <strong>₹22,00,000</strong> within 18 days of notice service, avoiding months of court litigation.
+                      Following a comprehensive fact-verified legal notice threatening an Order 37 summary suit in the Bengaluru City Civil Court, the landlord agreed to withdraw ₹15,20,000 in bogus deductions. The tenant recovered <strong>₹22,00,000</strong> within 18 days of notice service, avoiding months of court litigation.
                     </p>
                   </div>
                 </div>

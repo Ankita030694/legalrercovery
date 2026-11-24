@@ -80,7 +80,7 @@ export default function PitchTheftNoticeCTA({
           </span>
           <span className="flex items-center gap-1.5">
             <span className="w-1.5 h-1.5 rounded-full bg-emerald-400" />
-            Same-Day Advocate Notice Dispatch
+            Same-Day Fact-Verified Notice Dispatch
           </span>
         </div>
       </div>

@@ -245,7 +245,7 @@ export default function PackagingUnliftedStockNoticePage() {
             >
               Packaging, Corrugated Box, Printing &amp; Paper Mill Recovery Hub
             </Link>
-            , this advocate-vetted notice workspace combines{" "}
+            , this ready-to-use notice workspace combines{" "}
             <strong className="text-white">overdue GST invoice &amp; E-Way demands</strong> with a{" "}
             <strong className="text-white">15-day notice to lift custom-printed WIP/FG stock</strong>, invoking{" "}
             <strong className="text-white">Sale of Goods Act s.44 godown rent</strong>,{" "}
@@ -548,7 +548,7 @@ export default function PackagingUnliftedStockNoticePage() {
                   },
                   {
                     step: "STEP 02",
-                    title: "Serve 15-Day Advocate Notice",
+                    title: "Serve 15-Day Fact-Verified Notice",
                     text: "Serve composite notice demanding invoice clearance, s.44 rent, and physical lifting within 15 non-extendable days.",
                   },
                   {
@@ -693,7 +693,7 @@ export default function PackagingUnliftedStockNoticePage() {
             <section id="heading-dual-cta" className="scroll-mt-28">
               <div className="mb-4">
                 <h2 className="text-xl sm:text-2xl font-extrabold text-slate-900">
-                  Send an Advocate-Signed Packaging Notice or Batch 43B(h) Drive
+                  Send a Fact-Verified Packaging Notice or Batch 43B(h) Drive
                 </h2>
                 <p className="text-sm text-slate-600 mt-1">
                   Test LegalRecovery.in on a single stuck packaging account for &#8377;999, or onboard your entire corrugated, flexible, rigid, or paper-mill debtor ledger via CSV.

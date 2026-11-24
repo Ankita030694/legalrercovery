@@ -32,7 +32,7 @@ const SCENARIOS: Scenario[] = [
       "Issue a formal legal communication rejecting the unilateral termination as void ab initio and referencing the Non-Cancellable Order Form and Master Subscription Agreement (MSA).",
       "Trigger the contract's Debt Acceleration Clause, issuing an immediate Tax Invoice for the entire remaining unbilled ACV balance (Q3 + Q4) plus full discount clawback.",
       "Preserve comprehensive electronic telemetry under BSA 2023 Section 63 demonstrating uninterrupted platform availability, provisioned tenant seats, and allocated server resources.",
-      "Serve an advocate-drafted 15-Day Statutory Demand Notice initiating pre-institution commercial mediation under Section 12A of the Commercial Courts Act.",
+      "Serve a fact-verified 15-Day Statutory Demand Notice initiating pre-institution commercial mediation under Section 12A of the Commercial Courts Act.",
     ],
   },
   {
@@ -71,7 +71,7 @@ const SCENARIOS: Scenario[] = [
     actionProtocol: [
       "Audit tenant administration logs showing the initial provisioning of 500 seats and customer-initiated seat deactivations.",
       "Issue monthly Reconciliation Invoices billing the minimum commitment shortfall as contractually mandated liquidated receivables.",
-      "Serve an advocate demand notice highlighting that enterprise tier volume pricing was strictly contingent upon the minimum volume guarantee.",
+      "Serve a fact-verified demand notice highlighting that enterprise tier volume pricing was strictly contingent upon the minimum volume guarantee.",
       "If aggregate unpaid shortfall exceeds ₹1.00 Crore across the contract term, issue an IBC Section 8 Demand Notice (Form 3/4) against the corporate debtor.",
     ],
   },
@@ -90,7 +90,7 @@ const SCENARIOS: Scenario[] = [
       "Indian Contract Act 1872 (ss. 8 & 9 - Implied Contracts) + Doctrine of Estoppel + BSA 2023 s.63 API & Login Telemetry",
     actionProtocol: [
       "Extract immutable tenant activity logs (SSO logins, database queries, webhook triggers, API rate-limit utilization) for the post-renewal period.",
-      "Issue an advocate notice documenting both the contractual failure to serve timely non-renewal notice and the actual post-renewal consumption.",
+      "Issue a fact-verified notice documenting both the contractual failure to serve timely non-renewal notice and the actual post-renewal consumption.",
       "Offer a structured settlement: either continuation of the renewed annual term with quarterly installments, or immediate payment of a negotiated early termination buy-out fee.",
       "Institute legal proceedings in the designated Commercial Court under the exclusive jurisdiction clause of the SaaS agreement.",
     ],

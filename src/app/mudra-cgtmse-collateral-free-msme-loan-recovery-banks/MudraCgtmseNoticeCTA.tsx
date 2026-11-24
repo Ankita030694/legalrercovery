@@ -32,7 +32,7 @@ export default function MudraCgtmseNoticeCTA({
                 Need Audit-Proof Recall Notices Before CGTMSE / CGFMU Claim Lodgement?
               </h3>
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
-                Dispatch advocate-signed Loan Recall, PSS Act s.25, and Pre-Litigation Lok Adalat notices across Shishu, Kishore, Tarun, and CGTMSE portfolios with BSA 2023 s.63 delivery certificates.
+                Dispatch fact-verified Loan Recall, PSS Act s.25, and Pre-Litigation Lok Adalat notices across Shishu, Kishore, Tarun, and CGTMSE portfolios with BSA 2023 s.63 delivery certificates.
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-3 shrink-0">
@@ -82,7 +82,7 @@ export default function MudraCgtmseNoticeCTA({
               Bridge CGTMSE Claim Compliance &amp; Economical Mudra NPA Recovery
             </h3>
             <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed">
-              Stop losing Mudra and CGTMSE claims to missing service proofs or letting branch staff chase collateral-free NPAs with ineffective telecalling. Launch a single advocate-drafted notice in 24 hours or onboard your entire zonal MSME portfolio via CSV with automated Speed Post RPAD tracking, Email + WhatsApp logs, and BSA 2023 s.63 evidence certificates.
+              Stop losing Mudra and CGTMSE claims to missing service proofs or letting branch staff chase collateral-free NPAs with ineffective telecalling. Launch a single fact-verified notice in 24 hours or onboard your entire zonal MSME portfolio via CSV with automated Speed Post RPAD tracking, Email + WhatsApp logs, and BSA 2023 s.63 evidence certificates.
             </p>
           </div>
 
@@ -100,10 +100,10 @@ export default function MudraCgtmseNoticeCTA({
                   </span>
                 </div>
                 <p className="text-sm sm:text-base font-bold text-white">
-                  Test 1 Live Overdue Case Now (₹{basePrice} &middot; Advocate Drafted)
+                  Test 1 Live Overdue Case Now (₹{basePrice} &middot; Fact-Verified)
                 </p>
                 <p className="text-xs text-slate-300 leading-relaxed">
-                  Advocate-drafted Mudra / CGTMSE Loan Recall Notice (with optional PSS Act s.25 / NI s.138 demand) served via Email + WhatsApp + India Post Speed Post RPAD with CGTMSE-ready audit dossier.
+                  Fact-verified Mudra / CGTMSE Loan Recall Notice (with optional PSS Act s.25 / NI s.138 demand) served via Email + WhatsApp + India Post Speed Post RPAD with CGTMSE-ready audit dossier.
                 </p>
               </div>
 

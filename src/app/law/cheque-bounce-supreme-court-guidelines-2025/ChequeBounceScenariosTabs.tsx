@@ -234,7 +234,7 @@ export default function ChequeBounceScenariosTabs() {
 
         <div className="p-3 bg-red-50 border border-red-200/70 rounded-xl flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs">
           <span className="text-red-900 font-medium">
-            Need an advocate-drafted statutory notice for your dishonoured cheque?
+            Need a fact-verified statutory notice for your dishonoured cheque?
           </span>
           <Link
             href="/legal-notice-charges"

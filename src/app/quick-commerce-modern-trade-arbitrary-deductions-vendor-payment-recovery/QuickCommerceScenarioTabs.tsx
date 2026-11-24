@@ -32,7 +32,7 @@ const SCENARIOS: Scenario[] = [
       "Collate security-stamped delivery challans, physical gate passes, and transporter vehicle weight slips proving gross shipment weight delivered.",
       "Issue formal statutory repudiation within 7 days of the portal debit note, citing the Section 2(b) MSMED 15-day objection limitation bar.",
       "Deny platform consent for ERP ledger adjustment; refuse to accept credit note requests on GST portal.",
-      "Serve 15-Day Advocate Notice demanding immediate reversal of unauthorized deductions plus 3x RBI compound interest under Section 16 MSMED Act.",
+      "Serve 15-Day Fact-Verified Notice demanding immediate reversal of unauthorized deductions plus 3x RBI compound interest under Section 16 MSMED Act.",
     ],
   },
   {
@@ -91,7 +91,7 @@ const SCENARIOS: Scenario[] = [
     actionProtocol: [
       "Establish statutory Udyam status: serve written notification of Micro/Small registration along with your official Udyam certificate.",
       "Deliver statutory Section 43B(h) tax disallowance intimation to the platform's CFO, Board of Directors, and statutory auditors.",
-      "Issue an Advocate Notice asserting Section 24 non-obstante priority of MSMED Act over platform vendor policies.",
+      "Issue a Fact-Verified Notice asserting Section 24 non-obstante priority of MSMED Act over platform vendor policies.",
       "Prepare Section 9 Commercial Court petition or Competition Commission of India (CCI) complaint if the platform retaliates with unlawful SKU delisting.",
     ],
   },

@@ -177,7 +177,7 @@ const FAQS = [
   {
     question: "What does a claim repudiation letter mean, and can I appeal it?",
     answer:
-      "A repudiation letter means the insurer formally denies liability under the policy contract. You can appeal in three ways: First, appeal to the insurer's Grievance Officer and IRDAI Bima Bharosa. Second, send an advocate legal notice under the Consumer Protection Act, 2019. Third, file a complaint with the Insurance Ombudsman for claims up to ₹50 Lakh.",
+      "A repudiation letter means the insurer formally denies liability under the policy contract. You can appeal in three ways: First, appeal to the insurer's Grievance Officer and IRDAI Bima Bharosa. Second, send a fact-verified legal notice under the Consumer Protection Act, 2019. Third, file a complaint with the Insurance Ombudsman for claims up to ₹50 Lakh.",
   },
   {
     question: "Can a TPA legally repudiate an insurance claim in India?",
@@ -431,7 +431,7 @@ export default function ClaimRepudiatedVsRejectedPage() {
                       </tr>
                       <tr className="hover:bg-slate-50 transition-colors">
                         <td className="py-3 px-4 font-bold text-slate-900">Next Action Required</td>
-                        <td className="py-3 px-4">Serve formal Advocate Legal Notice &rarr; File Insurance Ombudsman / Consumer Court.</td>
+                        <td className="py-3 px-4">Serve formal Fact-Verified Legal Notice &rarr; File Insurance Ombudsman / Consumer Court.</td>
                         <td className="py-3 px-4">Submit missing documents + doctor certificate &rarr; If still blocked, serve Legal Notice.</td>
                       </tr>
                     </tbody>
@@ -721,7 +721,7 @@ export default function ClaimRepudiatedVsRejectedPage() {
                       </div>
                       <div>
                         <h4 className="font-bold text-slate-900 text-base mb-1">
-                          Serve an Advocate Statutory Legal Notice (15-Day Demand)
+                          Serve a Fact-Verified Statutory Legal Notice (15-Day Demand)
                         </h4>
                         <p className="text-slate-600 text-xs sm:text-sm leading-relaxed">
                           If the GRO fails to resolve or rejects your appeal, serve a formal statutory legal notice through a legal recovery advocate via Registered Speed Post and digital tracking. Citing Section 45, the IRDAI 2024 Master Circular, and the Supreme Court in <em>Manmohan Nanda</em> creates immense settlement pressure before escalation to external statutory forums.
@@ -796,7 +796,7 @@ export default function ClaimRepudiatedVsRejectedPage() {
                     <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-4 text-emerald-950">
                       <h4 className="font-bold text-emerald-900 text-sm mb-1">Financial Resolution Achieved:</h4>
                       <p className="text-xs sm:text-sm leading-relaxed">
-                        Within 11 days of receiving the advocate legal notice, the insurer&apos;s Claims Review Committee recalled the repudiation letter, cleared the file, and credited <strong className="font-bold text-emerald-900">₹6,20,000 (100% of the admissible claim)</strong> directly into Mr. Kapoor&apos;s bank account, plus ₹25,000 towards procedural delay compensation.
+                        Within 11 days of receiving the fact-verified legal notice, the insurer&apos;s Claims Review Committee recalled the repudiation letter, cleared the file, and credited <strong className="font-bold text-emerald-900">₹6,20,000 (100% of the admissible claim)</strong> directly into Mr. Kapoor&apos;s bank account, plus ₹25,000 towards procedural delay compensation.
                       </p>
                     </div>
                   </div>
@@ -922,7 +922,7 @@ export default function ClaimRepudiatedVsRejectedPage() {
                     ))}
                   </ul>
                   <p className="text-[11px] text-slate-500 pt-2 border-t border-slate-200">
-                    Disclaimer: LegalRecovery.in provides legal documentation and advocate notice dispatch services. For formal judicial complaints, policyholders may approach the statutory Insurance Ombudsman or Consumer Dispute Redressal Commissions.
+                    Disclaimer: LegalRecovery.in provides legal documentation and fact-verified notice dispatch services. For formal judicial complaints, policyholders may approach the statutory Insurance Ombudsman or Consumer Dispute Redressal Commissions.
                   </p>
                 </div>
               </section>

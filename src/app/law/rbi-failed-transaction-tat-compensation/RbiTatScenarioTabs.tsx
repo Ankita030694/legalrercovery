@@ -39,7 +39,7 @@ const SCENARIOS: ScenarioTab[] = [
       {
         step: "Serve a 15-Day Statutory Notice & Escalate to RBI Ombudsman",
         description:
-          "If the bank credits only the principal and withholds the ₹100/day compensation—or keeps the principal stuck past 7 days—serve an Advocate Legal Notice and lodge a complaint on cms.rbi.org.in.",
+          "If the bank credits only the principal and withholds the ₹100/day compensation—or keeps the principal stuck past 7 days—serve a Fact-Verified Legal Notice and lodge a complaint on cms.rbi.org.in.",
       },
     ],
     statutoryRule: "RBI Circular DPSS.CO.PD No.629 — Annexure Item 3 (IMPS: T+1) & Item 4 (UPI: T+1 / T+5)",
@@ -118,7 +118,7 @@ const SCENARIOS: ScenarioTab[] = [
           "Write to the bank's Nodal Officer citing Annexure Item 7(b) of Circular DPSS.CO.PD No.629, demanding full reversal of the wrongful debit and any penal return fees.",
       },
       {
-        step: "Serve Advocate Legal Notice for Unauthorized Auto-Debit & CIBIL Protection",
+        step: "Serve Fact-Verified Legal Notice for Unauthorized Auto-Debit & CIBIL Protection",
         description:
           "If a lender continues presenting NACH mandates after loan closure, serve a joint legal notice on the bank and NBFC/lender to halt presentation and protect your credit score.",
       },

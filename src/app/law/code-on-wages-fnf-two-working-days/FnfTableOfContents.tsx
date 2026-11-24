@@ -179,7 +179,7 @@ export default function FnfTableOfContents({
           </p>
           <div className="pt-2 border-t border-slate-800">
             <p className="text-[11px] font-bold text-slate-200">Need immediate notice?</p>
-            <p className="text-[10px] text-slate-400">Verified advocate draft delivered in 24h.</p>
+            <p className="text-[10px] text-slate-400">Fact-verified notice delivered in 24h.</p>
           </div>
         </div>
       </aside>

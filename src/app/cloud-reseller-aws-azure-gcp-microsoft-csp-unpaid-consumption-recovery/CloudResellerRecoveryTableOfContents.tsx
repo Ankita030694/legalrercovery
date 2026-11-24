@@ -179,7 +179,7 @@ export default function CloudResellerRecoveryTableOfContents({
                 Cloud Partner Emergency?
               </p>
               <p className="text-[10px] text-slate-500 leading-relaxed mb-2.5">
-                Issue a rapid Advocate Demand Notice or freeze client assets under Order 38 CPC before credit limits exhaust.
+                Issue a rapid Fact-Verified Demand Notice or freeze client assets under Order 38 CPC before credit limits exhaust.
               </p>
               <a
                 href="#heading-cta"

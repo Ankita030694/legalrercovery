@@ -127,7 +127,7 @@ const CIC_SCENARIOS: CicScenario[] = [
           "When DLG/FLDG covers a 90-DPD tranche internally between NBFC and Bank, ensure the borrower's bureau status accurately reflects the underlying unpaid loan obligation rather than marking it 'Settled' prematurely.",
       },
       {
-        step: "Step 3: Issue Joint-Authority Advocate Notice Curing Locus Standi",
+        step: "Step 3: Issue Joint-Authority Fact-Verified Notice Curing Locus Standi",
         detail:
           "Dispatch pre-reporting and recall notices under explicit Servicing Power of Attorney so the borrower cannot challenge either the bureau entry or the recovery demand for lack of privity.",
       },

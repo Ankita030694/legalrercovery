@@ -685,7 +685,7 @@ Generated via LegalRecovery.in FnF Calculator`;
               className="w-full py-3 px-4 rounded-xl text-xs sm:text-sm font-bold text-white bg-[#DC2626] hover:bg-[#B91C1C] transition-all shadow-md shadow-red-900/20 text-center flex items-center justify-center gap-2 cursor-pointer"
             >
               <span>⚖️</span>
-              <span>Send Advocate Legal Notice for Delayed FnF (₹{basePrice})</span>
+              <span>Send Fact-Verified Legal Notice for Delayed FnF (₹{basePrice})</span>
             </button>
             <div className="flex items-center justify-between text-[11px] text-slate-500 px-1">
               <span>Includes 15-day statutory demand</span>

@@ -37,7 +37,7 @@ const PROBLEMS: ProblemTab[] = [
           "Verify whether the hall or lawn was subsequently re-booked to another party on the same date. If the date was re-let, the venue suffered zero loss under Section 73 (mitigation principle).",
       },
       {
-        step: "Serve Statutory Advocate Notice Citing Section 74",
+        step: "Serve Statutory Fact-Verified Notice Citing Section 74",
         description:
           "Serve a 15-day legal notice warning of e-Jagriti consumer litigation for unfair trade practices under Section 2(47) and seeking full refund with 9%–12% interest.",
       },
@@ -66,7 +66,7 @@ const PROBLEMS: ProblemTab[] = [
       {
         step: "Dispatch Recovery Notice for Unjust Enrichment",
         description:
-          "Serve an advocate notice demanding immediate refund of the deposit, interest at 12% p.a., and ₹50,000 exemplary damages for malicious retention.",
+          "Serve a fact-verified notice demanding immediate refund of the deposit, interest at 12% p.a., and ₹50,000 exemplary damages for malicious retention.",
       },
     ],
     statutoryRule: "Section 73 (Mitigation) & Section 70 (Unjust Enrichment) Indian Contract Act",

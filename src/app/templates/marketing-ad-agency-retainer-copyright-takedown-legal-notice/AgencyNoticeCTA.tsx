@@ -13,7 +13,7 @@ export default function AgencyNoticeCTA({
     <section className="bg-gradient-to-br from-[#0F172A] via-[#1E293B] to-[#0F172A] border border-slate-800 rounded-3xl p-6 sm:p-8 md:p-10 text-white shadow-xl">
       <div className="max-w-4xl mx-auto space-y-6 text-center">
         <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider text-red-400 bg-red-950/60 border border-red-800/60">
-          <span>Advocate-Drafted Institutional Enforcement</span>
+          <span>Fact-Verified Institutional Enforcement</span>
         </div>
 
         <h2 className="text-xl sm:text-2xl md:text-3xl font-black tracking-tight text-white leading-tight">

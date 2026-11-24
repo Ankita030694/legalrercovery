@@ -169,7 +169,7 @@ const FAQS = [
   {
     question: "Small-ticket personal loan default par bank legal notice kaise bheje aur Lok Adalat mein settlement kaise karein?",
     answer:
-      "Agar personal loan borrower ₹15,000 se ₹1,50,000 tak ki EMI default karta hai, toh bank ya NBFC Legal Services Authorities Act 1987 aur Section 25 PSS Act ke tehat action leti hai. Pehle 15-day statutory advocate notice Speed Post aur WhatsApp se bheja jata hai. Iske baad matter District Legal Services Authority (DLSA) ki Pre-Litigation Lok Adalat mein sponsor kiya jata hai jahan zero court fees par settlement decree milti hai, jise Civil Court se execute karwaya ja sakta hai.",
+      "Agar personal loan borrower ₹15,000 se ₹1,50,000 tak ki EMI default karta hai, toh bank ya NBFC Legal Services Authorities Act 1987 aur Section 25 PSS Act ke tehat action leti hai. Pehle 15-day statutory fact-verified notice Speed Post aur WhatsApp se bheja jata hai. Iske baad matter District Legal Services Authority (DLSA) ki Pre-Litigation Lok Adalat mein sponsor kiya jata hai jahan zero court fees par settlement decree milti hai, jise Civil Court se execute karwaya ja sakta hai.",
   },
 ];
 
@@ -295,7 +295,7 @@ export default function RecoverSmallTicketPersonalLoansPage() {
                 Statutory Summary (Institutional Small-Ticket Recovery Mandate)
               </p>
               <p>
-                Under the Legal Services Authorities Act, 1987 (Sections 19–21) and Section 25 of the Payment and Settlement Systems Act, 2007, banks and digital FinTechs recover defaulted small-ticket personal loans (₹15,000 to ₹1,50,000) cost-effectively via flat-fee digital advocate notices, Online Dispute Resolution (ODR), and mass Pre-Litigation Lok Adalats, obtaining non-appealable civil decree settlements with zero court fees.
+                Under the Legal Services Authorities Act, 1987 (Sections 19–21) and Section 25 of the Payment and Settlement Systems Act, 2007, banks and digital FinTechs recover defaulted small-ticket personal loans (₹15,000 to ₹1,50,000) cost-effectively via flat-fee digital fact-verified notices, Online Dispute Resolution (ODR), and mass Pre-Litigation Lok Adalats, obtaining non-appealable civil decree settlements with zero court fees.
               </p>
             </div>
 
@@ -698,7 +698,7 @@ export default function RecoverSmallTicketPersonalLoansPage() {
                       </h3>
                       <div className="text-xs text-slate-700 space-y-1.5 leading-relaxed">
                         <p><strong>Court Fees &amp; Filing (per docket):</strong> ₹4,200</p>
-                        <p><strong>Advocate Drafting &amp; Appearance:</strong> ₹18,000</p>
+                        <p><strong>Notice Drafting &amp; Appearance:</strong> ₹18,000</p>
                         <p><strong>Total Legal Expense (1,200 cases):</strong> ₹2,66,40,000 (57% of book)</p>
                         <p><strong>Average Disposal Timeline:</strong> 30 Months</p>
                         <p><strong>Net Recovery After Legal Fees:</strong> ₹42,00,000 (Disastrous margin erosion)</p>

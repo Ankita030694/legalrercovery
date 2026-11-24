@@ -37,9 +37,9 @@ const SCENARIOS: ScenarioTab[] = [
           "Verify that the chat message admitting the debt occurred before the initial 3-year limitation window lapsed from the original loan date or agreed repayment date.",
       },
       {
-        step: "Issue Advocate Demand Notice Citing Section 18",
+        step: "Issue Fact-Verified Demand Notice Citing Section 18",
         description:
-          "Serve an advocate statutory notice referencing the specific chat admission and notifying the borrower that a fresh 3-year limitation clock has commenced under Section 18.",
+          "Serve a fact-verified statutory notice referencing the specific chat admission and notifying the borrower that a fresh 3-year limitation clock has commenced under Section 18.",
       },
     ],
     statutoryRule: "Section 18 Limitation Act 1963 & Section 63 BSA 2023",
@@ -120,7 +120,7 @@ const SCENARIOS: ScenarioTab[] = [
       {
         step: "Issue Legal Notice Enforcing Section 25(3) Contract",
         description:
-          "Serve a formal advocate demand notice establishing a fresh cause of action under Section 25(3) of the Indian Contract Act.",
+          "Serve a formal fact-verified demand notice establishing a fresh cause of action under Section 25(3) of the Indian Contract Act.",
       },
     ],
     statutoryRule: "Section 25(3) Indian Contract Act 1872 (AIR 1961 SC 1236)",

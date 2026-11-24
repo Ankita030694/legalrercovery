@@ -29,7 +29,7 @@ export default function CoLendingCTA({ className = "" }: CoLendingCTAProps) {
               Test 1 Live Overdue Case Now (&rupee;{basePrice})
             </h3>
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-              Advocate-drafted 80:20 Co-Lending Recall &amp; Section 25 / SARFAESI Pre-Litigation Notice citing your Servicing POA &amp; Non-Extinguishment DLG clause. Delivered via Email + WhatsApp + Speed Post RPAD with BSA 2023 s.63 proof.
+              Fact-verified 80:20 Co-Lending Recall &amp; Section 25 / SARFAESI Pre-Litigation Notice citing your Servicing POA &amp; Non-Extinguishment DLG clause. Delivered via Email + WhatsApp + Speed Post RPAD with BSA 2023 s.63 proof.
             </p>
           </div>
           <div className="flex flex-col sm:flex-row sm:items-center gap-3">

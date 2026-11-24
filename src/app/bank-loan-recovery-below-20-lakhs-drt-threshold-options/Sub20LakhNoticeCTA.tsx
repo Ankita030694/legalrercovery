@@ -30,7 +30,7 @@ export default function Sub20LakhNoticeCTA({
                 Stuck with Retail Bank NPAs Below the ₹20 Lakh DRT Limit?
               </h3>
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
-                Deploy advocate-drafted statutory notices under Section 25 PSS Act, Order XXXVII CPC, and Section 21 Arbitration across your retail, personal, and vehicle loan portfolios.
+                Deploy fact-verified statutory notices under Section 25 PSS Act, Order XXXVII CPC, and Section 21 Arbitration across your retail, personal, and vehicle loan portfolios.
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-3 shrink-0">
@@ -78,7 +78,7 @@ export default function Sub20LakhNoticeCTA({
               Eliminate Your Branch-Level Sub-₹20 Lakh Litigation Blind Spot
             </h3>
             <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed">
-              When debt recovery tribunals reject claims under ₹20 Lakhs, retail and personal loan NPAs languish at branch level without structured legal pressure. LegalRecovery.in provides scheduled commercial banks, small finance banks, and cooperative lenders with an automated, advocate-backed pre-litigation rail combining multi-channel demand notices, DLSA Lok Adalat batching, and institutional arbitration.
+              When debt recovery tribunals reject claims under ₹20 Lakhs, retail and personal loan NPAs languish at branch level without structured legal pressure. LegalRecovery.in provides scheduled commercial banks, small finance banks, and cooperative lenders with an automated, fact-verified pre-litigation rail combining multi-channel demand notices, DLSA Lok Adalat batching, and institutional arbitration.
             </p>
           </div>
 
@@ -99,7 +99,7 @@ export default function Sub20LakhNoticeCTA({
                   Test 1 Live Overdue Case Now
                 </h4>
                 <p className="text-xs text-slate-300 leading-relaxed">
-                  Advocate-drafted statutory demand notice customized for retail, personal, or Mudra NPA. Served via Speed Post RPAD with India Post tracking barcode, verified corporate email, and WhatsApp delivery proof.
+                  Fact-verified statutory demand notice customized for retail, personal, or Mudra NPA. Served via Speed Post RPAD with India Post tracking barcode, verified corporate email, and WhatsApp delivery proof.
                 </p>
               </div>
 

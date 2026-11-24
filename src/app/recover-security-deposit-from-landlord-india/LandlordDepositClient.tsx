@@ -19,7 +19,7 @@ const faqs = [
   },
   {
     question: "What legal actions can I take if my landlord refuses to return the security deposit?",
-    answer: "If a landlord refuses to return your security deposit, you can: (1) Send a formal advocate-drafted pre-suit legal notice demanding the refund within 15 days. (2) File a complaint before the Rent Authority or Rent Court if your state follows the Model Tenancy Act or a state Rent Control Act. (3) File a Summary Suit under Order 37 of the CPC in the civil court for fast-track recovery based on your written lease agreement."
+    answer: "If a landlord refuses to return your security deposit, you can: (1) Send a formal fact-verified pre-suit legal notice demanding the refund within 15 days. (2) File a complaint before the Rent Authority or Rent Court if your state follows the Model Tenancy Act or a state Rent Control Act. (3) File a Summary Suit under Order 37 of the CPC in the civil court for fast-track recovery based on your written lease agreement."
   },
   {
     question: "Does an 11-month unregistered rental agreement have legal standing in court?",
@@ -47,7 +47,7 @@ const faqs = [
   },
   {
     question: "How does LegalRecovery help tenants recover security deposits?",
-    answer: "LegalRecovery provides tenants with a structured platform to upload their rental agreement, payment receipts, and notice logs. We review your case, calculate applicable interest, draft a formal advocate-backed legal notice served digitally via verified email and WhatsApp with verified tracking, and assist in escalating the claim to Rent Courts or civil tribunals if the landlord fails to settle."
+    answer: "LegalRecovery provides tenants with a structured platform to upload their rental agreement, payment receipts, and notice logs. We review your case, calculate applicable interest, draft a formal fact-verified legal notice served digitally via verified email and WhatsApp with verified tracking, and assist in escalating the claim to Rent Courts or civil tribunals if the landlord fails to settle."
   }
 ];
 
@@ -497,7 +497,7 @@ export default function LandlordDepositClient() {
                       The notice must be dispatched digitally via verified email and WhatsApp. At LegalRecovery, we manage the entire notice workflow—drafting the notice through our panel of advocates, serving it digitally with verified tracking logs, and preparing the mandatory Section 63 BSA certificate for court.
                     </p>
                     <div className="bg-red-50 p-6 rounded-2xl border-l-4 border-[#DC2626] italic text-xs sm:text-sm text-red-900 font-semibold leading-relaxed">
-                      &quot;A legal notice is the necessary prelude to court action. When drafted by an advocate and served via Registered Post and WhatsApp with verified tracking, it forces the landlord to return the deposit or face a civil suit. It establishes your cause of action and locks in your entitlement to interest and litigation costs.&quot;
+                      &quot;A legal notice is the necessary prelude to court action. When prepared on verified facts and served via Registered Post and WhatsApp with verified tracking, it forces the landlord to return the deposit or face a civil suit. It establishes your cause of action and locks in your entitlement to interest and litigation costs.&quot;
                     </div>
                   </div>
                 </section>

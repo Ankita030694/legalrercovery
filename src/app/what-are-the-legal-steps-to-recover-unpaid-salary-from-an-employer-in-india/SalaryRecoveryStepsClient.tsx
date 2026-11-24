@@ -364,7 +364,7 @@ export default function SalaryRecoveryStepsClient() {
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      Once your evidence is compiled, the first formal step in the recovery roadmap is serving a <strong>Legal Notice</strong>. A legal notice is a formal, advocate-signed demand letter sent to the employer, detailing the employee's claims, specifying the exact outstanding dues, and providing a strict timeline (typically 15 days) to clear the payment, failing which legal action will be initiated. The notice is not just a procedural requirement; it is a critical tactical tool. It establishes your cause of action, puts the company's management on notice, and creates an official record that can be presented in any future court proceedings.
+                      Once your evidence is compiled, the first formal step in the recovery roadmap is serving a <strong>Legal Notice</strong>. A legal notice is a formal, fact-verified demand letter sent to the employer, detailing the employee's claims, specifying the exact outstanding dues, and providing a strict timeline (typically 15 days) to clear the payment, failing which legal action will be initiated. The notice is not just a procedural requirement; it is a critical tactical tool. It establishes your cause of action, puts the company's management on notice, and creates an official record that can be presented in any future court proceedings.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
                       At LegalRecovery, our legal notice strategy involves piercing the corporate veil by naming company directors personally. Under corporate law, a Private Limited company is a separate legal entity, and its directors generally enjoy limited liability. Defaulting employers often use this corporate shield to ignore letters addressed solely to the company. However, under Indian labor laws—including state-specific Shops and Commercial Establishments Acts—the definition of 'employer' is broad. It includes any person who has ultimate control over the affairs of the establishment, specifically naming directors, managing directors, and partners.
@@ -650,13 +650,13 @@ export default function SalaryRecoveryStepsClient() {
                 </span>
                 <h3 className="text-lg font-black mb-3 text-slate-100">Recover Your Salary</h3>
                 <p className="text-xs text-slate-400 leading-relaxed mb-6 font-medium">
-                  Connect with our legal team to review your evidence and draft an authoritative notice to your employer.
+                  Connect with our team to review your evidence and draft an authoritative notice to your employer.
                 </p>
                 <div className="space-y-3">
                   <div className="bg-slate-900/50 border border-slate-800/80 px-4 py-3 rounded-xl flex items-center justify-between text-left">
                     <div>
                       <span className="text-[10px] text-slate-400 block uppercase font-bold">Standard Notice</span>
-                      <span className="text-xs font-black text-slate-100">Drafted by Advocates</span>
+                      <span className="text-xs font-black text-slate-100">Prepared on verified facts</span>
                     </div>
                     <span className="text-xs font-black text-[#DC2626]">₹1,999</span>
                   </div>

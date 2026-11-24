@@ -25,7 +25,7 @@ export default function SaasSubscriptionRecoveryCTA({
               Track 1 &bull; Single Defaulted Enterprise SaaS Contract
             </span>
             <p className="text-lg sm:text-xl font-extrabold text-white mb-2">
-              Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Advocate Drafted &middot; Email + WhatsApp + Speed Post RPAD)
+              Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Fact-Verified &middot; Email + WhatsApp + Speed Post RPAD)
             </p>
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
               Serve a rigorous, high-impact 15-day statutory demand notice on an enterprise customer defaulting on an annual Order Form or quarterly billing schedule. Rebuts spurious SLA/downtime excuses, enforces Contract Act Section 73/74 committed ACV acceleration, invokes MSMED Act Section 16 compound interest, and issues a formal DPDP-safe notice of tenant read-only suspension.

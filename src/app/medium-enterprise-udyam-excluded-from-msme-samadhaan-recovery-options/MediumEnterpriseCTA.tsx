@@ -25,10 +25,10 @@ export default function MediumEnterpriseCTA({
               Track 1 &bull; Single Stalled Corporate Claim Notice
             </span>
             <p className="text-lg sm:text-xl font-extrabold text-white mb-2">
-              Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Advocate Drafted &middot; Email + WhatsApp + Speed Post RPAD)
+              Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Fact-Verified &middot; Email + WhatsApp + Speed Post RPAD)
             </p>
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-              Serve a high-impact, advocate-vetted 15-day statutory demand notice on a defaulting corporate buyer. Overcomes MSEFC jurisdictional roadblocks by directly preparing an Order XXXVII CPC summary suit, Section 12A Pre-Institution Commercial Mediation, or an IBC Section 8 Demand Notice for debts above &rupee;1 Crore.
+              Serve a high-impact, fact-verified 15-day statutory demand notice on a defaulting corporate buyer. Overcomes MSEFC jurisdictional roadblocks by directly preparing an Order XXXVII CPC summary suit, Section 12A Pre-Institution Commercial Mediation, or an IBC Section 8 Demand Notice for debts above &rupee;1 Crore.
             </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-3">

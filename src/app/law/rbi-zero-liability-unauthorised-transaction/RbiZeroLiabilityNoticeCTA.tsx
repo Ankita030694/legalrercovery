@@ -31,7 +31,7 @@ export default function RbiZeroLiabilityNoticeCTA({
                 Bank Refusing Your 10-Day Shadow Reversal or Unfairly Blaming You for Cyber Fraud?
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6">
-                Have a verified banking recovery advocate draft and serve a formal statutory legal demand notice on your bank&apos;s Nodal Officer, Managing Director, and Branch Manager. We invoke Clauses 6, 7, 9, and 12 of the RBI Customer Liability Circular and the Supreme Court&apos;s 2025 <em>Pallabh Bhowmick</em> precedent—demanding value-dated reversal before escalating to the RBI Integrated Ombudsman (CMS) and Consumer Commission.
+                Serve a formal statutory legal demand notice on your bank&apos;s Nodal Officer, Managing Director, and Branch Manager. We invoke Clauses 6, 7, 9, and 12 of the RBI Customer Liability Circular and the Supreme Court&apos;s 2025 <em>Pallabh Bhowmick</em> precedent—demanding value-dated reversal before escalating to the RBI Integrated Ombudsman (CMS) and Consumer Commission.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button
@@ -42,7 +42,7 @@ export default function RbiZeroLiabilityNoticeCTA({
                   {buttonText} — ₹{basePrice}
                 </button>
                 <div className="text-xs text-slate-300 flex flex-wrap sm:flex-nowrap items-center gap-2 sm:gap-3">
-                  <span>✓ 24h Advocate Drafting</span>
+                  <span>✓ 24h Notice Drafting</span>
                   <span>•</span>
                   <span>✓ Email + WhatsApp</span>
                   <span>•</span>
@@ -61,7 +61,7 @@ export default function RbiZeroLiabilityNoticeCTA({
                 Reported Within 3–7 Working Days Still Waiting for Bank Refund?
               </p>
               <p className="text-xs text-slate-300 max-w-xl">
-                Force your bank to discharge its statutory burden of proof under Clause 12 and credit value-dated shadow reversal with a formal advocate legal notice.
+                Force your bank to discharge its statutory burden of proof under Clause 12 and credit value-dated shadow reversal with a formal fact-verified legal notice.
               </p>
             </div>
             <button

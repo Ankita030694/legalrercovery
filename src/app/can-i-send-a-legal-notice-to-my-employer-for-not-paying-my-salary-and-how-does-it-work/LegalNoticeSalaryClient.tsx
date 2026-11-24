@@ -19,7 +19,7 @@ const faqs = [
   },
   {
     question: "What is the key difference between an informal HR demand letter and a formal legal notice?",
-    answer: "An informal demand letter or email is a personal correspondence sent directly by the employee or HR to highlight outstanding dues. It does not carry statutory obligations and is not signed by an officer of the court. A formal legal notice is an advocate-signed, structured communication issued under specific legal statutes (such as the Payment of Wages Act or the Contract Act). It establishes a clear legal cause of action, sets a strict statutory timeline (typically 15 days) for compliance, and warns of civil and criminal litigation. Servicing a legal notice is a mandatory prerequisite for many legal actions and signals to the employer that you are prepared to pursue the matter in court."
+    answer: "An informal demand letter or email is a personal correspondence sent directly by the employee or HR to highlight outstanding dues. It does not carry statutory obligations and is not signed by an officer of the court. A formal legal notice is a fact-verified, structured communication issued under specific legal statutes (such as the Payment of Wages Act or the Contract Act). It establishes a clear legal cause of action, sets a strict statutory timeline (typically 15 days) for compliance, and warns of civil and criminal litigation. Servicing a legal notice is a mandatory prerequisite for many legal actions and signals to the employer that you are prepared to pursue the matter in court."
   },
   {
     question: "Can I send a legal notice to my company while I am still actively working there?",
@@ -39,7 +39,7 @@ const faqs = [
   },
   {
     question: "Can I draft and send a salary recovery legal notice myself without a lawyer?",
-    answer: "While you can legally draft and send a notice yourself (known as a personal demand notice), it is highly recommended to have it drafted and served by a qualified advocate. A notice on a law firm's letterhead carries significantly more weight, showing the employer that you have engaged legal counsel and are serious about litigation. Advocates understand how to structure the notice, cite the correct statutory sections, and pierce the corporate veil by naming directors, which is critical to prompt a response from corporate HR and legal teams."
+    answer: "While you can legally draft and send a notice yourself (known as a personal demand notice), it is highly recommended to have it prepared on verified facts. A notice on a law firm's letterhead carries significantly more weight, showing the employer that you have engaged legal counsel and are serious about litigation. Advocates understand how to structure the notice, cite the correct statutory sections, and pierce the corporate veil by naming directors, which is critical to prompt a response from corporate HR and legal teams."
   },
   {
     question: "What happens if the company shuts down or files for insolvency after receiving the notice?",
@@ -71,7 +71,7 @@ const reviews = [
     id: "rev-lns-2",
     name: "Meenakshi Iyer (Content Marketing Lead)",
     rating: 5,
-    review: "The agency management ignored my Slack messages and emails regarding my unpaid salary for two months. LegalRecovery drafted a strong notice citing the state Shops Act. The HR director contacted me the very next day, apologized, and processed my pending salary. Having an advocate-signed notice made all the difference."
+    review: "The agency management ignored my Slack messages and emails regarding my unpaid salary for two months. LegalRecovery drafted a strong notice citing the state Shops Act. The HR director contacted me the very next day, apologized, and processed my pending salary. Having a fact-verified notice made all the difference."
   },
   {
     id: "rev-lns-3",
@@ -311,7 +311,7 @@ export default function LegalNoticeSalaryClient() {
                       Entering into an employment relationship establishes a mutual contract governed by specific central and state statutes. In India, employee salary rights are heavily protected. Yet, when companies face operational or financial difficulties, or when a relationship ends on bad terms, wage defaults become a common issue. If you are struggling to recover your monthly salary or FNF dues, the question is: <strong>Can I send a legal notice to my employer, and how does it work?</strong>
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      The answer is yes. Serving a legal notice is a recognized and effective step to recover unpaid salary. A legal notice is not an informal complaint or a personal threat. It is a formal, advocate-signed communication sent to the defaulting employer. It details your claims, specifies the exact outstanding dues, and provides a statutory timeline (typically 15 days) to clear the payment, warning of civil and criminal action for non-compliance.
+                      The answer is yes. Serving a legal notice is a recognized and effective step to recover unpaid salary. A legal notice is not an informal complaint or a personal threat. It is a formal, fact-verified communication sent to the defaulting employer. It details your claims, specifies the exact outstanding dues, and provides a statutory timeline (typically 15 days) to clear the payment, warning of civil and criminal action for non-compliance.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
                       The statutory framework for sending a legal notice draws from three main legal areas:
@@ -340,7 +340,7 @@ export default function LegalNoticeSalaryClient() {
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      A legal notice must be drafted carefully to be effective. While you can send a personal demand notice, a formal notice drafted and signed by an advocate on a law firm's letterhead carries significantly more weight. It signals to the employer's HR and legal teams that you are prepared to pursue the matter in court. The notice must follow a specific structure to be admissible in subsequent litigation.
+                      A legal notice must be drafted carefully to be effective. While you can send a personal demand notice, a formal notice prepared on verified facts on a law firm's letterhead carries significantly more weight. It signals to the employer's HR and legal teams that you are prepared to pursue the matter in court. The notice must follow a specific structure to be admissible in subsequent litigation.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
                       The structural anatomy of a salary recovery legal notice includes:
@@ -417,7 +417,7 @@ export default function LegalNoticeSalaryClient() {
                       In addition to physical post, you can legally serve notices via digital channels:
                     </p>
                     <ul className="list-disc pl-6 space-y-3 text-sm text-slate-650">
-                      <li><strong>Official Email:</strong> Send a PDF copy of the advocate-signed notice to the company's official corporate email, HR, and the directors. Request delivery and read receipts.</li>
+                      <li><strong>Official Email:</strong> Send a PDF copy of the fact-verified notice to the company's official corporate email, HR, and the directors. Request delivery and read receipts.</li>
                       <li><strong>WhatsApp/Slack:</strong> If the company used WhatsApp or Slack for official communication during your employment, you can send the PDF copy through these platforms. The Supreme Court has validated service of notice via WhatsApp if you can document the delivery status (blue ticks).</li>
                     </ul>
                     <p className="text-sm md:text-base leading-relaxed">
@@ -664,7 +664,7 @@ export default function LegalNoticeSalaryClient() {
                 </span>
                 <h3 className="text-lg font-black mb-3 text-slate-100">Draft Legal Notice</h3>
                 <p className="text-xs text-slate-400 leading-relaxed mb-6 font-medium">
-                  Connect with our advocates to draft and serve an authoritative legal notice to your employer.
+                  Connect with our team to draft and serve an authoritative legal notice to your employer.
                 </p>
                 <div className="space-y-3">
                   <div className="bg-slate-900/50 border border-slate-800/80 px-4 py-3 rounded-xl flex items-center justify-between text-left">

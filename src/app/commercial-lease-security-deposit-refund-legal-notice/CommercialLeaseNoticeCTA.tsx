@@ -31,7 +31,7 @@ export default function CommercialLeaseNoticeCTA({
                 Recover Your ₹5L–₹50L+ Commercial Security Deposit Without Costly Litigation
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6">
-                Have an experienced commercial recovery advocate draft and serve an unyielding 15-day statutory demand notice to your office or retail landlord. We refute bogus dilapidation deductions, invoke Section 108(m) fair wear and tear protections, and establish liability under Order 37 CPC and Commercial Courts pre-institution mediation before court summons are issued.
+                Serve an unyielding 15-day statutory demand notice to your office or retail landlord. We refute bogus dilapidation deductions, invoke Section 108(m) fair wear and tear protections, and establish liability under Order 37 CPC and Commercial Courts pre-institution mediation before court summons are issued.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button
@@ -42,7 +42,7 @@ export default function CommercialLeaseNoticeCTA({
                   {buttonText} — ₹{basePrice}
                 </button>
                 <div className="text-xs text-slate-300 flex flex-wrap sm:flex-nowrap items-center gap-2 sm:gap-3">
-                  <span>✓ 24h Senior Advocate Drafting</span>
+                  <span>✓ 24h Notice Drafting</span>
                   <span>•</span>
                   <span>✓ Email + WhatsApp</span>
                   <span>•</span>

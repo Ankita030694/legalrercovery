@@ -778,7 +778,7 @@ export default function CompanyDirectorsChequeBouncePage() {
                         Serve Dual Statutory Demand Notice via Speed Post &amp; Electronic Channels
                       </h3>
                       <p className="text-xs sm:text-sm leading-relaxed">
-                        Engage a verified advocate to draft a composite Section 138 and Section 141 statutory demand notice. Dispatch the notice via Registered Speed Post with postal tracking to the Company Registered Office AND to each individual director&apos;s residential address. Simultaneously transmit digital copies via corporate email and WhatsApp, backed by an evidentiary certificate under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023. Review transparent drafting fees on our{" "}
+                        Have a fact-verified composite Section 138 and Section 141 statutory demand notice prepared. Dispatch the notice via Registered Speed Post with postal tracking to the Company Registered Office AND to each individual director&apos;s residential address. Simultaneously transmit digital copies via corporate email and WhatsApp, backed by an evidentiary certificate under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023. Review transparent drafting fees on our{" "}
                         <Link href="/legal-notice-charges" className="text-blue-700 underline font-semibold">
                           legal notice charges
                         </Link>{" "}

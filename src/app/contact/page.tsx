@@ -37,7 +37,7 @@ interface ContactFAQ {
 const contactFaqs: ContactFAQ[] = [
   {
     question: "How quickly will LegalRecovery respond to my inquiry and draft my notice?",
-    answer: "Our legal review desk processes initial submissions within 2 to 4 business hours. Once all required transaction records, invoices, and debtor details are verified, an advocate drafts and finalizes your formal legal notice within 24 to 48 hours. You receive a draft preview for verification prior to postal dispatch via India Post Speed Post and simultaneous digital service over Email and WhatsApp.",
+    answer: "Our team processes initial submissions within 2 to 4 business hours. Once the transaction details, amounts, and debtor details you submit are fact-verified, we prepare your formal legal notice within 24 to 48 hours. You receive a draft preview for verification prior to postal dispatch via India Post Speed Post and simultaneous digital service over Email and WhatsApp.",
   },
   {
     question: "Is a legal notice delivered through WhatsApp and Email legally valid in Indian courts?",
@@ -49,7 +49,7 @@ const contactFaqs: ContactFAQ[] = [
   },
   {
     question: "Can I recover money if there was no formal signed contract or agreement?",
-    answer: "Yes. Under Section 10 of the Indian Contract Act, 1872, oral contracts and mutual understandings backed by valid consideration are legally binding. Furthermore, documentary evidence including bank account transfer statements, UPI reference IDs (UTR numbers), WhatsApp chat histories, SMS conversations, email acknowledgements of debt, and work handover notes can substantiate your legitimate claim. Our legal experts structure the demand notice around this electronic and circumstantial evidence to establish a clear cause of action.",
+    answer: "Yes. Under Section 10 of the Indian Contract Act, 1872, oral contracts and mutual understandings backed by valid consideration are legally binding. Furthermore, documentary evidence including bank account transfer statements, UPI reference IDs (UTR numbers), WhatsApp chat histories, SMS conversations, email acknowledgements of debt, and work handover notes can substantiate your legitimate claim. Our team structures the demand notice around this electronic and circumstantial evidence to establish a clear cause of action.",
   },
   {
     question: "How do I track the delivery status of my notice?",
@@ -57,15 +57,15 @@ const contactFaqs: ContactFAQ[] = [
   },
   {
     question: "What is the fee structure for sending a legal notice through Legal Recovery?",
-    answer: "We operate on a transparent, flat-fee pricing model starting at ₹999 with zero hidden charges, commission cuts, or open-ended hourly retainers. This includes dispute merit analysis, professional drafting by an experienced advocate, revision support, dispatch by Email and WhatsApp, and delivery tracking. Speed Post is optional at ₹450 per party. We believe accessible legal recourse should be affordable for every Indian citizen.",
+    answer: "We operate on a transparent, flat-fee pricing model starting at ₹999 with zero hidden charges, commission cuts, or open-ended hourly retainers. This includes fact verification by our team, notice preparation, revision support, dispatch by Email and WhatsApp, and delivery tracking. Speed Post is optional at ₹450 per party. We believe accessible legal recourse should be affordable for every Indian citizen.",
   },
   {
     question: "Can I send a legal notice to an employer who has withheld my salary or FnF settlement?",
-    answer: "Yes. Employers are legally obligated under the Payment of Wages Act, 1936, the Industrial Disputes Act, 1947, and prevailing state Shops and Commercial Establishments Acts to disburse earned wages and clear Full & Final (FnF) settlements within 7 to 10 days of the wage period or resignation. If your previous employer has arbitrarily withheld salary, encashment of leave, gratuity, or your relieving letter, our specialized employment advocates issue a stern demand notice holding directors and HR personally accountable.",
+    answer: "Yes. Employers are legally obligated under the Payment of Wages Act, 1936, the Industrial Disputes Act, 1947, and prevailing state Shops and Commercial Establishments Acts to disburse earned wages and clear Full & Final (FnF) settlements within 7 to 10 days of the wage period or resignation. If your previous employer has arbitrarily withheld salary, encashment of leave, gratuity, or your relieving letter, our team issues a stern demand notice holding directors and HR personally accountable.",
   },
   {
     question: "Is my personal information and case evidence kept strictly confidential?",
-    answer: "Yes, completely. All documents, financial records, identity proofs, and transaction details submitted through our platform are protected under bank-grade 256-bit SSL encryption. Furthermore, communications between claimants and our legal drafting counsel are privileged under Indian law. We never sell, monetize, or disclose your sensitive legal information to third parties without your explicit consent.",
+    answer: "Yes, completely. All case details and transaction details submitted through our platform are protected under bank-grade 256-bit SSL encryption. We never sell, monetize, or disclose your sensitive legal information to third parties without your explicit consent.",
   },
 ];
 
@@ -118,13 +118,13 @@ const PROCESS_STEPS = [
   {
     step: "01",
     title: "Submit Dispute & Evidence",
-    desc: "Fill in the counter-party's details and dispute specifics through our secure form. Attach transaction proofs, invoices, bank statements, contracts, or WhatsApp conversations.",
+    desc: "Fill in the counter-party's details and dispute specifics through our secure form. Enter the amounts, dates, parties, and what happened; keep your proofs, invoices, and contracts ready for later use.",
     icon: <FileCheck className="w-6 h-6 text-[#DC2626]" />,
   },
   {
     step: "02",
-    title: "Advocate Review & Strategy",
-    desc: "Our senior legal recovery advocates examine the merits of your claim, calculate statutory interest, confirm territorial jurisdiction, and identify relevant Indian legal provisions.",
+    title: "Fact Verification & Strategy",
+    desc: "Our team verifies the facts you submit, calculates statutory interest, confirms territorial jurisdiction, and identifies relevant Indian legal provisions.",
     icon: <Scale className="w-6 h-6 text-[#DC2626]" />,
   },
   {
@@ -142,7 +142,7 @@ const PROCESS_STEPS = [
   {
     step: "05",
     title: "Live Tracking & Resolution",
-    desc: "Track delivery confirmations live on your client dashboard. If the counter-party fails to resolve within 15 days, our legal team guides you on next-step court or tribunal recourse.",
+    desc: "Track delivery confirmations live on your client dashboard. If the counter-party fails to resolve within 15 days, our team guides you on next-step court or tribunal recourse.",
     icon: <Award className="w-6 h-6 text-[#DC2626]" />,
   },
 ];
@@ -157,7 +157,7 @@ export default function ContactPage() {
         url: "https://www.legalrecovery.in/contact",
         name: "Contact Legal Recovery | Recover Your Money Legally",
         description:
-          "Contact Legal Recovery India for advocate-vetted legal notice drafting, money recovery consultation, and pre-litigation dispute resolution.",
+          "Contact Legal Recovery India for fact-verified legal notice drafting, money recovery consultation, and pre-litigation dispute resolution.",
         breadcrumb: {
           "@type": "BreadcrumbList",
           itemListElement: [
@@ -253,7 +253,7 @@ export default function ContactPage() {
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-[#FEF2F2] rounded-full border border-[#FECACA] mb-4">
             <span className="w-2 h-2 rounded-full bg-[#DC2626] animate-pulse" />
             <span className="text-[11px] font-black text-[#DC2626] uppercase tracking-[0.14em]">
-              Legal Recovery Desk • 100% Advocate Vetted
+              Legal Recovery Desk • 100% Fact-Verified
             </span>
           </div>
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[52px] font-black tracking-tight text-[#111827] leading-[1.12] mb-4 select-text">
@@ -261,7 +261,7 @@ export default function ContactPage() {
             <span className="text-[#DC2626]">Money Dispute Resolution Desk</span>
           </h1>
           <p className="text-sm sm:text-base md:text-lg text-[#4B5563] font-medium leading-relaxed max-w-3xl select-text">
-            Need urgent legal assistance recovering unpaid wages, bounced cheques, delayed freelance dues, or withheld security deposits? Submit your case below or reach our support advocates. We draft, verify, and dispatch formal advocate legal notices across India within 24 to 48 hours.
+            Need urgent legal assistance recovering unpaid wages, bounced cheques, delayed freelance dues, or withheld security deposits? Submit your case below or reach our support team. We prepare, fact-verify, and dispatch formal legal notices across India within 24 to 48 hours.
           </p>
 
           {/* Quick Trust Highlights */}
@@ -428,7 +428,7 @@ export default function ContactPage() {
                   Submit Your Dispute Details
                 </h2>
                 <p className="text-xs sm:text-sm text-[#6B7280] font-medium mt-1">
-                  Start with a 100% free initial merit assessment by our legal counsel.
+                  Start with a 100% free initial merit assessment by our team.
                 </p>
               </div>
               <div className="hidden sm:flex items-center gap-1.5 text-xs text-emerald-700 bg-emerald-50 px-3 py-1.5 rounded-full border border-emerald-200 font-bold shrink-0">
@@ -443,7 +443,7 @@ export default function ContactPage() {
             <RecoveryForm />
 
             <p className="mt-5 text-[11px] text-center text-[#6B7280] leading-relaxed">
-              Your details are protected under strict advocate-client legal privilege. We do not share case records with third parties.
+              Your details are protected under strict confidentiality. We do not share case records with third parties.
             </p>
 
           </div>
@@ -505,7 +505,7 @@ export default function ContactPage() {
               Types of Unpaid Dues &amp; Claims We Help You Recover
             </h2>
             <p className="mt-3 text-xs sm:text-sm text-[#6B7280] leading-relaxed">
-              Our advocates draft enforceable legal notices across civil, criminal, commercial, employment, and consumer matters under prevailing Indian statutes.
+              Our team drafts enforceable legal notices across civil, criminal, commercial, employment, and consumer matters under prevailing Indian statutes.
             </p>
           </div>
 
@@ -556,7 +556,7 @@ export default function ContactPage() {
                 </span>
               </div>
               <h2 className="text-xl sm:text-2xl font-black text-[#111827] mb-3">
-                Documents to Prepare Before Contacting Our Legal Team
+                Documents to Prepare Before Contacting Our Team
               </h2>
               <p className="text-xs sm:text-sm text-[#4B5563] leading-relaxed mb-6 font-medium">
                 To accelerate your case evaluation and drafting turnaround, please gather whichever supporting documents are applicable to your dispute:
@@ -724,7 +724,7 @@ export default function ContactPage() {
                   24–48h Fast Turnaround
                 </h3>
                 <p className="text-xs text-[#4B5563] leading-relaxed">
-                  Traditional law offices take 2 to 4 weeks just to draft a demand notice. We complete drafting, advocate vetting, and dispatch within 24 to 48 hours.
+                  Traditional law offices take 2 to 4 weeks just to draft a demand notice. We complete drafting, fact verification, and dispatch within 24 to 48 hours.
                 </p>
               </div>
             </div>
@@ -752,7 +752,7 @@ export default function ContactPage() {
                   AMA Legal Alliance
                 </h3>
                 <p className="text-xs text-[#4B5563] leading-relaxed">
-                  Backed by seasoned Bar Council advocates ensuring strict statutory compliance, authoritative legal phrasing, and seamless courtroom escalation if needed.
+                  Fact-verified by our team, ensuring strict statutory compliance, authoritative legal phrasing, and seamless courtroom escalation if needed.
                 </p>
               </div>
             </div>
@@ -824,7 +824,7 @@ export default function ContactPage() {
               Ready to Recover Your Stuck Money Legally?
             </h2>
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-6">
-              Do not let defaulters walk away with your hard-earned funds. Initiate an advocate-drafted legal notice in minutes and reclaim your money with full legal backing.
+              Do not let defaulters walk away with your hard-earned funds. Initiate a fact-verified legal notice in minutes and reclaim your money with full legal backing.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <a

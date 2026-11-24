@@ -70,7 +70,7 @@ const SCENARIOS: Scenario[] = [
       "Copyright Act 1957 ss. 17, 19, 51 & 63 (Criminal Infringement) + Indian Contract Act 1872 ss. 51–54 (Reciprocal Promises)",
     actionProtocol: [
       "Assert a formal Statutory Vendor IP Lien under Section 19 of the Copyright Act and Section 51 of the Indian Contract Act (performance of reciprocal promises).",
-      "Serve an Advocate Legal Notice confirming that source code assignment covenants remain unvested and contingent upon full realization of cleared funds.",
+      "Serve a Fact-Verified Legal Notice confirming that source code assignment covenants remain unvested and contingent upon full realization of cleared funds.",
       "Advise the client in writing that unauthorized copying, decompilation, or deployment of staging builds constitutes willful copyright infringement under Section 51, exposing directors to damages and criminal prosecution under Section 63.",
       "Offer escrow or simultaneous closing: release of full Git admin credentials against verified RTGS/NEFT settlement or bank escrow disbursement.",
     ],

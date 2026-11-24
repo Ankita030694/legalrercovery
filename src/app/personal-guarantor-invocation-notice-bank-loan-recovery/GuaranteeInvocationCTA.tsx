@@ -29,10 +29,10 @@ export default function GuaranteeInvocationCTA({
                 Test 1 Live Overdue Case Now (&#8377;{basePrice})
               </h3>
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-                Replace risky &ldquo;CC&rdquo; recall letters with an explicit, advocate-drafted Personal &amp; Corporate Guarantee Invocation Notice (Contract Act s.128) or 14-day IBC Rule 7(1) Form B Demand Notice—dispatched via Email, WhatsApp &amp; Speed Post RPAD.
+                Replace risky &ldquo;CC&rdquo; recall letters with an explicit, fact-verified Personal &amp; Corporate Guarantee Invocation Notice (Contract Act s.128) or 14-day IBC Rule 7(1) Form B Demand Notice—dispatched via Email, WhatsApp &amp; Speed Post RPAD.
               </p>
               <ul className="space-y-1.5 text-xs text-slate-200 mb-6">
-                <li>&#10003; Advocate Drafted &bull; Email + WhatsApp + Speed Post RPAD</li>
+                <li>&#10003; Fact-Verified &bull; Email + WhatsApp + Speed Post RPAD</li>
                 <li>&#10003; Explicit On-Demand Invocation Fixing Limitation Date (Channaveerappa Beleri)</li>
                 <li>&#10003; BSA 2023 s.63 Electronic Proof Ready for NCLT Form C &amp; e-DRT OA</li>
               </ul>

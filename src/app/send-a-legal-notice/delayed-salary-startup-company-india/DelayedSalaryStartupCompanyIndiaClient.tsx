@@ -12,12 +12,12 @@ const faqs = [
   {
     question: 'Can a startup employee or tech professional send a legal notice for delayed or unpaid salary in India?',
     answer:
-      'Yes, any tech employee, manager, software engineer, or retained consultant can issue an advocate-drafted statutory legal notice to a startup employer under Section 17 of the Code on Wages, 2019 and Section 73 of the Indian Contract Act, 1872. Unpaid salary constitutes an undisputed actionable debt when substantiated by employment contracts, monthly pay slips, bank statements, or official email communications from founders and HR representatives. Serving a formal demand notice mandates the startup company and its active directors to disburse all outstanding wage arrears, bonuses, and contractual interest within a strict 15-day statutory compliance period.',
+      'Yes, any tech employee, manager, software engineer, or retained consultant can issue a fact-verified statutory legal notice to a startup employer under Section 17 of the Code on Wages, 2019 and Section 73 of the Indian Contract Act, 1872. Unpaid salary constitutes an undisputed actionable debt when substantiated by employment contracts, monthly pay slips, bank statements, or official email communications from founders and HR representatives. Serving a formal demand notice mandates the startup company and its active directors to disburse all outstanding wage arrears, bonuses, and contractual interest within a strict 15-day statutory compliance period.',
   },
   {
     question: 'What is the statutory limitation period for demanding delayed salary from a startup in Indian courts?',
     answer:
-      'Under Article 7 and Article 102 of the Limitation Act, 1963, the statutory limitation period to serve a legal demand notice and institute legal recovery proceedings for unpaid wages is exactly three years from the date the wages fell due. Employees must issue an advocate-vetted demand notice promptly within this three-year statutory window to ensure their legal claim remains actionable before labor tribunals, civil courts, or the National Company Law Tribunal (NCLT). Serving a formal legal notice containing explicit references to written email acknowledgments from startup founders also acts to renew and extend the limitation period under Section 18 of the Limitation Act.',
+      'Under Article 7 and Article 102 of the Limitation Act, 1963, the statutory limitation period to serve a legal demand notice and institute legal recovery proceedings for unpaid wages is exactly three years from the date the wages fell due. Employees must issue a fact-verified demand notice promptly within this three-year statutory window to ensure their legal claim remains actionable before labor tribunals, civil courts, or the National Company Law Tribunal (NCLT). Serving a formal legal notice containing explicit references to written email acknowledgments from startup founders also acts to renew and extend the limitation period under Section 18 of the Limitation Act.',
   },
   {
     question: 'Can a startup legally force employees to accept ESOPs or equity shares in lieu of delayed cash salaries?',
@@ -37,7 +37,7 @@ const faqs = [
   {
     question: 'Can a startup withhold an employee\'s Relieving Letter or Experience Certificate due to salary disputes?',
     answer:
-      'Startup management cannot legally withhold an employee\'s Relieving Letter, Experience Certificate, or Form 16 as an instrument of coercion to force them into waiving accrued salary arrears or notice pay. The High Courts of Delhi, Bombay, and Karnataka have consistently held that service certificates are fundamental statutory employment records and withholding them unlawfully prejudices a professional\'s fundamental right to livelihood under Article 21 of the Constitution of India. An advocate-drafted statutory legal notice demands the immediate, unconditional issuance of all exit credentials alongside full salary disbursement.',
+      'Startup management cannot legally withhold an employee\'s Relieving Letter, Experience Certificate, or Form 16 as an instrument of coercion to force them into waiving accrued salary arrears or notice pay. The High Courts of Delhi, Bombay, and Karnataka have consistently held that service certificates are fundamental statutory employment records and withholding them unlawfully prejudices a professional\'s fundamental right to livelihood under Article 21 of the Constitution of India. A fact-verified statutory legal notice demands the immediate, unconditional issuance of all exit credentials alongside full salary disbursement.',
   },
 ];
 
@@ -48,7 +48,7 @@ const ogImage =
   'https://legalrecovery.in/images/og/delayed-salary-startup-company-india.jpg';
 
 const reviewBodyText =
-  'I worked as a Lead Software Architect at a VC-funded fintech startup in Bengaluru. When their Series-A extension got delayed, the founders withheld 4 months of my salary totaling ₹8.45 Lakhs, promising equity swaps instead of cash. After they ignored my internal Slack messages and formal emails, I engaged Legal Recovery. Their panel advocates drafted and dispatched a formidable statutory legal notice citing Section 17 of the Code on Wages 2019, Section 73 of the Indian Contract Act, and Section 316 of the Bharatiya Nyaya Sanhita directly to the startup\'s registered office and founder-directors. Within 11 days of receiving the notice, the company cleared my entire outstanding salary of ₹8.45 Lakhs along with my relieving documentation. Exemplary and rapid legal intervention.';
+  'I worked as a Lead Software Architect at a VC-funded fintech startup in Bengaluru. When their Series-A extension got delayed, the founders withheld 4 months of my salary totaling ₹8.45 Lakhs, promising equity swaps instead of cash. After they ignored my internal Slack messages and formal emails, I engaged Legal Recovery. They prepared and dispatched a formidable statutory legal notice citing Section 17 of the Code on Wages 2019, Section 73 of the Indian Contract Act, and Section 316 of the Bharatiya Nyaya Sanhita directly to the startup\'s registered office and founder-directors. Within 11 days of receiving the notice, the company cleared my entire outstanding salary of ₹8.45 Lakhs along with my relieving documentation. Exemplary and rapid legal intervention.';
 
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -168,7 +168,7 @@ const jsonLd = {
         {
           '@type': 'ListItem',
           position: 4,
-          name: 'Draft an advocate-vetted statutory demand notice citing Section 17 Code on Wages 2019, Section 73 Contract Act, Order 37 CPC, and criminal breach of trust',
+          name: 'Draft a fact-verified statutory demand notice citing Section 17 Code on Wages 2019, Section 73 Contract Act, Order 37 CPC, and criminal breach of trust',
         },
         {
           '@type': 'ListItem',
@@ -183,7 +183,7 @@ const jsonLd = {
       '@type': 'Product',
       name: 'Legal Notice to Startup Company for Unpaid & Delayed Salary',
       description:
-        'Advocate-drafted statutory demand notice service for tech professionals, startup employees, engineers, and executives to recover delayed monthly salaries, withheld Full and Final settlements, and bonuses across India.',
+        'Fact-verified statutory demand notice service for tech professionals, startup employees, engineers, and executives to recover delayed monthly salaries, withheld Full and Final settlements, and bonuses across India.',
       brand: {
         '@type': 'Organization',
         name: 'Legal Recovery',
@@ -259,7 +259,7 @@ export default function DelayedSalaryStartupCompanyIndiaClient() {
 
   const shareUrl = encodeURIComponent(pageUrl);
   const shareText = encodeURIComponent(
-    'Startup delaying your salary or forcing equity swaps? Send an advocate-vetted statutory legal notice for swift recovery in India! #LegalNotice #StartupSalary #DelayedSalary #EmployeeRights'
+    'Startup delaying your salary or forcing equity swaps? Send a fact-verified statutory legal notice for swift recovery in India! #LegalNotice #StartupSalary #DelayedSalary #EmployeeRights'
   );
 
   return (
@@ -434,7 +434,7 @@ export default function DelayedSalaryStartupCompanyIndiaClient() {
                     Quick Answer
                   </h2>
                   <p className="text-sm text-slate-700 font-medium leading-relaxed">
-                    An aggrieved employee, software engineer, or executive can serve an advocate-drafted statutory legal notice to a startup company for delayed or unpaid salary under{' '}
+                    An aggrieved employee, software engineer, or executive can serve a fact-verified statutory legal notice to a startup company for delayed or unpaid salary under{' '}
                     <span className="font-semibold text-slate-800">Section 17 of the Code on Wages, 2019</span>{' '}
                     and{' '}
                     <span className="font-semibold text-slate-800">Section 73 of the Indian Contract Act, 1872</span>
@@ -590,7 +590,7 @@ export default function DelayedSalaryStartupCompanyIndiaClient() {
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      If a startup fails to disburse delayed salary arrears within the mandatory 15-day compliance window specified in the advocate-vetted legal notice, the employee has multiple high-impact judicial and quasi-judicial remedies across civil, labor, corporate, and criminal jurisdictions:
+                      If a startup fails to disburse delayed salary arrears within the mandatory 15-day compliance window specified in the fact-verified legal notice, the employee has multiple high-impact judicial and quasi-judicial remedies across civil, labor, corporate, and criminal jurisdictions:
                     </p>
 
                     <div className="space-y-4 my-6">
@@ -690,7 +690,7 @@ export default function DelayedSalaryStartupCompanyIndiaClient() {
                         <span className="text-amber-600 text-base">⚠️</span> Critical Step: Ministry of Corporate Affairs (MCA) Corporate Verification
                       </h4>
                       <p className="text-xs sm:text-sm text-amber-800 leading-relaxed">
-                        Startups frequently rebrand their public trading names, shift physical office spaces without updating paperwork, or operate under holding entity structures. Legal Recovery advocates verify the company&apos;s active status on the{' '}
+                        Startups frequently rebrand their public trading names, shift physical office spaces without updating paperwork, or operate under holding entity structures. Our team verifies the company&apos;s active status on the{' '}
                         <span className="font-semibold text-amber-900">Ministry of Corporate Affairs (MCA) Portal</span>
                         . This verification extracts the official registered office address, Corporate Identification Number (CIN), and Director Identification Numbers (DIN) of all active directors, ensuring statutory notices are served with undeniable legal validity.
                       </p>
@@ -705,7 +705,7 @@ export default function DelayedSalaryStartupCompanyIndiaClient() {
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      A generic letter or unstructured email demand lacks the legal teeth necessary to compel startup boards and investors to prioritize an employee payout. An advocate-drafted statutory demand notice must incorporate specific, precision-crafted legal clauses:
+                      A generic letter or unstructured email demand lacks the legal teeth necessary to compel startup boards and investors to prioritize an employee payout. A fact-verified statutory demand notice must incorporate specific, precision-crafted legal clauses:
                     </p>
 
                     <div className="space-y-4 my-6">
@@ -751,7 +751,7 @@ export default function DelayedSalaryStartupCompanyIndiaClient() {
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      Legal Recovery follows a streamlined, advocate-led recovery protocol engineered specifically for tech professionals, executives, and startup employees facing delayed remuneration:
+                      Legal Recovery follows a streamlined, fact-verified recovery protocol engineered specifically for tech professionals, executives, and startup employees facing delayed remuneration:
                     </p>
 
                     <div className="relative border-l-2 border-[#DC2626] ml-4 pl-6 space-y-8 my-8">
@@ -762,11 +762,11 @@ export default function DelayedSalaryStartupCompanyIndiaClient() {
                         },
                         {
                           step: 'Step 2: MCA Entity Verification & Director Profiling',
-                          desc: 'Our legal team verifies the startup on the MCA database, confirming active corporate status, registered office address, and the Director Identification Numbers (DINs) of all active board members to establish joint and several corporate liability.',
+                          desc: 'Our team verifies the startup on the MCA database, confirming active corporate status, registered office address, and the Director Identification Numbers (DINs) of all active board members to establish joint and several corporate liability.',
                         },
                         {
-                          step: 'Step 3: Advocate Drafting & Statutory Notice Formulation',
-                          desc: 'A seasoned High Court advocate drafts your customized demand notice, weaving together provisions of the Code on Wages 2019, Indian Contract Act 1872, Order 37 CPC, and IBC Operational Debt rules, establishing an unassailable legal demand.',
+                          step: 'Step 3: Notice Drafting & Statutory Notice Formulation',
+                          desc: 'We prepare your customized demand notice from your verified facts, weaving together provisions of the Code on Wages 2019, Indian Contract Act 1872, Order 37 CPC, and IBC Operational Debt rules, establishing an unassailable legal demand.',
                         },
                         {
                           step: 'Step 4: Multi-Channel Tracked Dispatch',
@@ -944,7 +944,7 @@ export default function DelayedSalaryStartupCompanyIndiaClient() {
                   <p className="text-sm text-slate-650 leading-relaxed mb-6">
                     Legal Recovery is India&apos;s trusted online legal notice and dispute resolution
                     platform, connecting tech professionals, engineers, executives, contractors,
-                    and employees with seasoned panel advocates for rapid, advocate-vetted statutory
+                    and employees with our team for rapid, fact-verified statutory
                     demand notices at transparent flat fees. With ₹100 Crore+ recovered and 10,000+
                     cases resolved across India, Legal Recovery delivers verified legal impact
                     without the delays and unpredictability of traditional law firms.
@@ -985,7 +985,7 @@ export default function DelayedSalaryStartupCompanyIndiaClient() {
                   Startup Delaying Your Earned Salary?
                 </h3>
                 <p className="text-slate-300 text-xs leading-relaxed mb-4">
-                  Send an advocate-vetted statutory notice today. 82% of venture-backed startups and companies settle pending salary dues within 15 days upon receiving formal legal notice from Legal Recovery.
+                  Send a fact-verified statutory notice today. 82% of venture-backed startups and companies settle pending salary dues within 15 days upon receiving formal legal notice from Legal Recovery.
                 </p>
                 <button
                   onClick={() => setIsPaymentModalOpen(true)}
@@ -994,7 +994,7 @@ export default function DelayedSalaryStartupCompanyIndiaClient() {
                   Draft &amp; Send Notice Now
                 </button>
                 <p className="text-center text-slate-400 text-[10px] mt-3">
-                  Flat fee • Advocate-drafted • Sent same day
+                  Flat fee • Fact-verified • Sent same day
                 </p>
               </div>
 
@@ -1049,7 +1049,7 @@ export default function DelayedSalaryStartupCompanyIndiaClient() {
                 {[
                   { stat: '82%', label: 'Startups settle prior to court or NCLT litigation' },
                   { stat: '₹100CR+', label: 'Total amount recovered for clients across India' },
-                  { stat: 'Same Day', label: 'Advocate notice drafted and dispatched' },
+                  { stat: 'Same Day', label: 'Notice prepared and dispatched' },
                   { stat: 'Flat Fee', label: 'Transparent pricing with no hidden charges' },
                 ].map((item, i) => (
                   <div key={i} className="flex items-center justify-between py-2 border-b border-slate-50 last:border-0">

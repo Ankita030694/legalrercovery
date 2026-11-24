@@ -155,7 +155,7 @@ const FAQS = [
   {
     question: "How can a mall landlord legally prove a food-court tenant is diverting sales via personal UPI QR codes?",
     answer:
-      "Under Bharatiya Sakshya Adhiniyam, 2023 (BSA Section 63), electronic records are admissible when backed by an evidentiary audit trail. Mall asset managers execute forensic mystery shopping during peak trade hours, capturing video of the cashier directing payments to a non-POS QR code, saving the bank transaction UTR receipt showing personal account credit, cross-referencing footfall heatmaps with zero-POS ticket intervals, and obtaining an advocate-supervised forensic POS hardware audit under contractual lease covenants.",
+      "Under Bharatiya Sakshya Adhiniyam, 2023 (BSA Section 63), electronic records are admissible when backed by an evidentiary audit trail. Mall asset managers execute forensic mystery shopping during peak trade hours, capturing video of the cashier directing payments to a non-POS QR code, saving the bank transaction UTR receipt showing personal account credit, cross-referencing footfall heatmaps with zero-POS ticket intervals, and obtaining a fact-verified forensic POS hardware audit under contractual lease covenants.",
   },
   {
     question: "What is the legal difference between Minimum Monthly Guarantee (MMG) and pure revenue-share rent?",
@@ -891,7 +891,7 @@ export default function RetailMallRevenueShareRecoveryPage() {
                       </h3>
                     </div>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed pl-8">
-                      Issue an advocate notice demanding immediate access to the tenant&rsquo;s cloud billing backend, physical POS terminal, bank merchant statements, and GSTR-3B filings under the mandatory audit clause. Accompany the notice with a Section 63 BSA electronic evidence preservation directive warning the tenant that deleting database entries constitutes destruction of electronic evidence.
+                      Issue a fact-verified notice demanding immediate access to the tenant&rsquo;s cloud billing backend, physical POS terminal, bank merchant statements, and GSTR-3B filings under the mandatory audit clause. Accompany the notice with a Section 63 BSA electronic evidence preservation directive warning the tenant that deleting database entries constitutes destruction of electronic evidence.
                     </p>
                   </div>
 

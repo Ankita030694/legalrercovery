@@ -394,7 +394,7 @@ export default function ReraSection19BuilderRecoveryPage() {
                     Standard CRM workflows rely on automated email chasers, WhatsApp reminders, and informal termination letters issued from sales dashboards. When the developer subsequently cancels the flat and attempts to re-allot the inventory, the defaulting allottee rushes to the State Regulatory Authority under Section 31. State RERA benches invariably set aside the cancellation as void ab initio, grant interim injunctions restraining third-party alienation of the unit, and impose penal interest or Section 61 penalties on the developer.
                   </p>
                   <p>
-                    Winning before RERA authorities requires transitioning from informal customer-relationship follow-ups to a rigorous, advocate-vetted statutory enforcement rail under Section 19(6), Section 19(7), and Section 11(5) of the RERA Act, 2016.
+                    Winning before RERA authorities requires transitioning from informal customer-relationship follow-ups to a rigorous, fact-verified statutory enforcement rail under Section 19(6), Section 19(7), and Section 11(5) of the RERA Act, 2016.
                   </p>
                 </div>
 

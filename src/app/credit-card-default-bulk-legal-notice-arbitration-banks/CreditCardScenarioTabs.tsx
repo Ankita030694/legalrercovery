@@ -41,7 +41,7 @@ const SCENARIOS: ScenarioItem[] = [
     riskExposure:
       "Aggressive agency calls to the cardholder's HR desk or family violate RBI Fair Practice Directions and invite RBI Integrated Ombudsman penalties plus reputational fallout.",
     statutoryAction: [
-      "Replace all agency telecalling escalation with a formal Advocate-signed Recall & Pre-Arbitration Notice served strictly to the cardholder's KYC email, WhatsApp, and Speed Post RPAD address.",
+      "Replace all agency telecalling escalation with a formal Fact-verified Recall & Pre-Arbitration Notice served strictly to the cardholder's KYC email, WhatsApp, and Speed Post RPAD address.",
       "Include an objective statutory disclosure under CICRA 2005 explaining the concrete 7-year credit-access impact of 'Written Off' or 'Settled' flags versus 'Closed' full-repayment status, alongside the mandatory 7-day pre-reporting alert.",
       "If unpaid after 15 days, trigger neutral ODR Section 29B fast-track arbitration (documents-only) to obtain a binding monetary award executable via Order XXI Rule 48 salary attachment.",
     ],
@@ -58,7 +58,7 @@ const SCENARIOS: ScenarioItem[] = [
     riskExposure:
       "Uniform one-size-fits-all litigation destroys unit economics on sub-₹1L balances, while doing nothing forces 100% provisioning and write-off drag on quarterly NIM.",
     statutoryAction: [
-      "Segment the CSV batch into 3 value bands: Band A (₹25K–₹1L) routed to Multi-Wave Advocate Notice + Pre-Litigation National Lok Adalat OTS offers; Band B (₹1L–₹3L) routed to Multi-Wave Notice + Neutral ODR Fast-Track; Band C (₹3L–₹20L) routed to Neutral ODR or Commercial Court Section 12A Pre-Institution Mediation.",
+      "Segment the CSV batch into 3 value bands: Band A (₹25K–₹1L) routed to Multi-Wave Fact-Verified Notice + Pre-Litigation National Lok Adalat OTS offers; Band B (₹1L–₹3L) routed to Multi-Wave Notice + Neutral ODR Fast-Track; Band C (₹3L–₹20L) routed to Neutral ODR or Commercial Court Section 12A Pre-Institution Mediation.",
       "Dispatch simultaneous Email + WATI WhatsApp + India Post Speed Post RPAD notices within 24 hours with automated inbound reply triage and BSA Section 63 delivery certificates.",
       "Capture structured part-payments or written OTS acknowledgments prior to Day 180, simultaneously refreshing limitation under Sections 18–19 of the Limitation Act, 1963.",
     ],

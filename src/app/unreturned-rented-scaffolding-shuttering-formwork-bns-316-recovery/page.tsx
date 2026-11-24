@@ -99,7 +99,7 @@ const FAQS = [
   },
   {
     q: "How does CC'ing the jurisdictional Police Station email on a Legal Notice speed up scaffolding return?",
-    a: "Most petty civil contractors ignore ordinary advocate letters expecting slow civil courts. When a formal BNS s.316 Bailee Termination Notice is dispatched through LegalRecovery with the jurisdictional SHO's official policeStationEmail in CC—attaching outward delivery challans and E-Way Bills—the local beat officer routinely calls the contractor for preliminary verification. Fear of an FIR under BNS s.316 and scrap-dealer investigation under s.317 prompts contractors to load return trucks within days.",
+    a: "Most petty civil contractors ignore ordinary fact-verified letters expecting slow civil courts. When a formal BNS s.316 Bailee Termination Notice is dispatched through LegalRecovery with the jurisdictional SHO's official policeStationEmail in CC—attaching outward delivery challans and E-Way Bills—the local beat officer routinely calls the contractor for preliminary verification. Fear of an FIR under BNS s.316 and scrap-dealer investigation under s.317 prompts contractors to load return trucks within days.",
   },
   {
     q: "Can I keep charging daily/monthly rent even after the Hire Agreement period expires?",
@@ -882,7 +882,7 @@ export default function UnreturnedScaffoldingRecoveryPage() {
                   .
                 </p>
                 <p>
-                  Because the notice attaches your signed outward challans,
+                  Because the notice cites your signed outward challans,
                   E-Way Bills, and explicit BNS s.316(2) / s.317 statutory
                   warnings, contractors realize that hiding material at a second
                   site or selling to a scrap yard creates immediate arrest and

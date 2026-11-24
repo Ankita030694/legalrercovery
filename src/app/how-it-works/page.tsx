@@ -31,7 +31,6 @@ import {
   Building2,
   AlertTriangle,
   Lightbulb,
-  Upload,
   FileSearch,
   Send,
   Handshake,
@@ -51,21 +50,21 @@ export default function HowItWorksPage() {
       step: 1,
       label: "STEP 1",
       title: "Submit Your Case",
-      description: "Upload your details and supporting documents related to your issue.",
+      description: "Fill in your case details in a simple online form: amounts, dates, and who owes you. No document uploads needed.",
       icon: <FilePlus className="w-8 h-8 sm:w-12 sm:h-12 lg:w-14 lg:h-14 text-[#111827] group-hover:text-[#DC2626] transition-colors stroke-[1.8]" />
     },
     {
       step: 2,
       label: "STEP 2",
-      title: "We Review & Analyze",
-      description: "Our legal experts analyze your case, evaluate the situation and suggest the best action.",
+      title: "We Verify the Facts",
+      description: "Our team verifies the facts you have submitted before anything is sent.",
       icon: <FileSearch className="w-8 h-8 sm:w-12 sm:h-12 lg:w-14 lg:h-14 text-[#111827] group-hover:text-[#DC2626] transition-colors stroke-[1.8]" />
     },
     {
       step: 3,
       label: "STEP 3",
       title: "Legal Notice Issued",
-      description: "A professional legal notice is drafted and sent to the respondent.",
+      description: "A fact-verified legal notice is generated and sent to the respondent by Email and WhatsApp (and Speed Post, if chosen).",
       icon: <MailOpen className="w-8 h-8 sm:w-12 sm:h-12 lg:w-14 lg:h-14 text-[#111827] group-hover:text-[#DC2626] transition-colors stroke-[1.8]" />
     },
     {
@@ -106,8 +105,8 @@ export default function HowItWorksPage() {
       )
     },
     {
-      title: "Expert Legal Team",
-      description: "Experienced advocates and legal experts",
+      title: "Fact-Verified Notices",
+      description: "Every case's facts are verified by our team",
       icon: (
         <div className="relative w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center shrink-0 bg-[#F9FAFB] rounded-xl border border-[#E5E7EB]">
           <Briefcase className="w-5 h-5 sm:w-6 sm:h-6 text-[#4B5563] stroke-[1.8]" />
@@ -149,7 +148,7 @@ export default function HowItWorksPage() {
       initials: "SR",
       role: "Startup Founder",
       location: "Gurgaon",
-      quote: "An enterprise client was dragging our software development milestone payout of ₹8.5 Lakhs for months with arbitrary excuses. The attorney-verified notice drafted here was extremely professional and resolved the dispute in days.",
+      quote: "An enterprise client was dragging our software development milestone payout of ₹8.5 Lakhs for months with arbitrary excuses. The fact-verified notice sent from here was extremely professional and resolved the dispute in days.",
       stars: 5
     },
     {
@@ -180,8 +179,8 @@ export default function HowItWorksPage() {
 
   const howItWorksFaqs: FAQItem[] = [
     {
-      question: "What documents do I need to submit my case?",
-      answer: "You need to provide basic details about the dispute, including any agreements, invoices, payment receipts, bank transfer screenshots, WhatsApp or email conversations, and the contact details of the respondent. The more evidence you provide, the stronger your legal notice will be."
+      question: "Do I need to upload any documents to submit my case?",
+      answer: "No. LegalRecovery does not take document or evidence uploads. You simply enter the key facts of the dispute in our online form: the amount owed, important dates, what was agreed, and the respondent's contact details. Our team verifies these facts before the notice is sent. Keep your agreements, invoices, payment receipts and chats safe with you, as you may need them later if the matter goes to a court or forum."
     },
     {
       question: "What happens after the legal notice is sent?",
@@ -218,7 +217,7 @@ export default function HowItWorksPage() {
             To <span className="text-[#DC2626]">Recover</span> What's Yours
           </h1>
           <p className="text-sm sm:text-base md:text-lg text-[#6B7280] font-semibold leading-relaxed max-w-2xl select-text">
-            Reclaim your stuck funds systematically with our streamlined, attorney-verified legal recovery engine.
+            Reclaim your stuck funds systematically with our streamlined, fact-verified legal recovery engine.
           </p>
         </div>
 
@@ -323,7 +322,7 @@ export default function HowItWorksPage() {
                 Not sure which category Fits your case?
               </p>
               <p className="text-xs sm:text-[13px] text-gray-400 font-semibold leading-normal mt-1 md:mt-2">
-                Talk to your legal experts and get clarity
+                Talk to our team and get clarity
               </p>
             </div>
 

@@ -34,7 +34,7 @@ const CROSS_BORDER_SCENARIOS: CrossBorderScenario[] = [
       {
         step: "1. Serve Dual-Purpose FEMA & ECGC Legal Demand Notice",
         detail:
-          "Issue an Advocate-signed demand notice via registered email, business messaging, and international courier annexing Commercial Invoice, Packing List, Bill of Lading/AWB, and Shipping Bill under BSA 2023 s.63.",
+          "Issue a Fact-verified demand notice via registered email, business messaging, and international courier annexing Commercial Invoice, Packing List, Bill of Lading/AWB, and Shipping Bill under BSA 2023 s.63.",
       },
       {
         step: "2. File ECGC Default Intimation Within Policy Window",

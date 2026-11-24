@@ -31,7 +31,7 @@ export default function LoanAppNoticeCTA({
                 Stop Loan App Harassment, Contact Abuse &amp; Excess Charges Legally
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6">
-                Have a verified High Court and consumer advocate draft and serve an unassailable statutory legal notice directly to the Regulated Entity (NBFC or Bank) and its recovery agency. Put an immediate halt to abusive calls, demand waiver of unauthorized fees, and protect your credit score under RBI Fair Practices Code and Bharatiya Nyaya Sanhita.
+                Serve an unassailable statutory legal notice directly to the Regulated Entity (NBFC or Bank) and its recovery agency. Put an immediate halt to abusive calls, demand waiver of unauthorized fees, and protect your credit score under RBI Fair Practices Code and Bharatiya Nyaya Sanhita.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button
@@ -42,7 +42,7 @@ export default function LoanAppNoticeCTA({
                   {buttonText} — ₹{basePrice}
                 </button>
                 <div className="text-xs text-slate-300 flex flex-wrap sm:flex-nowrap items-center gap-2 sm:gap-3">
-                  <span>✓ 24h Advocate Drafting</span>
+                  <span>✓ 24h Notice Drafting</span>
                   <span>•</span>
                   <span>✓ Email + WhatsApp</span>
                   <span>•</span>

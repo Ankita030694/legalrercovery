@@ -49,7 +49,7 @@ export default function PolymerNoticeCTA({
                 Test 1 Live Overdue Polymer / DCA Case Now (&rupee;{basePrice})
               </h3>
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-                Advocate-drafted statutory notice invoking Contract Act s.140 DCA subrogation, Sale of Goods Act s.42 hopper-consumption acceptance, COA/E-Way Bill annexures, and s.138 warning &mdash; dispatched via Email + WhatsApp + Speed Post RPAD.
+                Fact-verified statutory notice invoking Contract Act s.140 DCA subrogation, Sale of Goods Act s.42 hopper-consumption acceptance, COA/E-Way Bill annexures, and s.138 warning &mdash; dispatched via Email + WhatsApp + Speed Post RPAD.
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-3">

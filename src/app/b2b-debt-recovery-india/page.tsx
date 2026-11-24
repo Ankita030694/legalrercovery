@@ -15,7 +15,7 @@ const PAGE_TITLE = "B2B & Institutional Debt Recovery India | 25+ Industries";
 const PAGE_DESCRIPTION =
   "Pre-litigation & B2B recovery engine for Banks, NBFCs, Hospitals & 25+ industries. Email, WhatsApp & Speed Post RPAD notices via AMA Legal panel.";
 const H1_TEXT =
-  "India's Institutional & B2B Legal Recovery Infrastructure: From ₹999 Single Advocate Notices to 50,000-Case Enterprise Batch Dispatch";
+  "India's Institutional & B2B Legal Recovery Infrastructure: From ₹999 Single Fact-Verified Notices to 50,000-Case Enterprise Batch Dispatch";
 
 export const metadata: Metadata = {
   title: PAGE_TITLE,
@@ -342,7 +342,7 @@ const FAQS = [
   {
     question: "What happens if a corporate debtor issues a sham quality debit note after using our goods or services?",
     answer:
-      "Under Section 42 of the Sale of Goods Act, 1930, once a buyer consumes, melts, installs, or resells goods—or avails GST Input Tax Credit (GSTR-2B) without timely rejection—the buyer is deemed to have accepted the goods. Our advocate notices lock this statutory estoppel and rebut belated debit notes on record so the debtor cannot manufacture a fake 'pre-existing dispute' under the Supreme Court Mobilox test.",
+      "Under Section 42 of the Sale of Goods Act, 1930, once a buyer consumes, melts, installs, or resells goods—or avails GST Input Tax Credit (GSTR-2B) without timely rejection—the buyer is deemed to have accepted the goods. Our team notices lock this statutory estoppel and rebut belated debit notes on record so the debtor cannot manufacture a fake 'pre-existing dispute' under the Supreme Court Mobilox test.",
   },
   {
     question: "Do Medium Enterprises and EPC Works Contractors qualify for MSME Samadhaan?",
@@ -376,7 +376,7 @@ const SERVICE_SCHEMA = {
     "@type": "Offer",
     price: "999",
     priceCurrency: "INR",
-    description: "Single Advocate-Drafted Tri-Channel Statutory Notice Pilot",
+    description: "Single Fact-Verified Tri-Channel Statutory Notice Pilot",
   },
 };
 
@@ -497,7 +497,7 @@ export default function B2BDebtRecoveryIndiaPage() {
               <span className="block text-[10px] sm:text-xs uppercase tracking-widest text-red-400 font-bold mb-1.5">
                 Executive Institutional Summary
               </span>
-              LegalRecovery.in is India&apos;s advocate-backed B2B receivables and loan recovery
+              LegalRecovery.in is India&apos;s fact-verified B2B receivables and loan recovery
               infrastructure connecting 25+ vertical industry hubs to live bulk dispatch. Whether
               testing one ₹999 notice or onboarding 50,000 CSV accounts across segregated GSTIN
               Representees, every claim routes through SARFAESI, PSS s.25, NI s.138, MSMED
@@ -687,7 +687,7 @@ export default function B2BDebtRecoveryIndiaPage() {
                       Email + Business WhatsApp + Speed Post RPAD
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed mb-3">
-                      Every advocate-vetted notice is served simultaneously across verified email,
+                      Every fact-verified notice is served simultaneously across verified email,
                       WATI Business WhatsApp, and physical Speed Post RPAD (see{" "}
                       <Link
                         href="/bulk-recovery-notice-send-through-email-whatsapp-speedpost-solution"
@@ -1195,7 +1195,7 @@ export default function B2BDebtRecoveryIndiaPage() {
                 </div>
 
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed mb-5">
-                  Access LegalRecovery&apos;s live statutory calculators, advocate-vetted notice
+                  Access LegalRecovery&apos;s live statutory calculators, fact-verified notice
                   workspaces, and empirical settlement benchmarks:
                 </p>
 

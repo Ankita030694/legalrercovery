@@ -37,7 +37,7 @@ const PROBLEMS: ProblemTab[] = [
           "Issue a formal cancellation notice to the dealer principal and brand zonal manager stating that due to material delivery default, the contract stands repudiated under Section 31 Sale of Goods Act and demanding 100% refund within 7 days.",
       },
       {
-        step: "Serve Advocate Legal Notice for Restitution & Interest",
+        step: "Serve Fact-Verified Legal Notice for Restitution & Interest",
         description:
           "If the dealer fails to remit the booking amount within 7 days, dispatch an advocate demand notice demanding full refund with 12% annual commercial interest and compensation for mental harassment.",
       },
@@ -120,7 +120,7 @@ const PROBLEMS: ProblemTab[] = [
       {
         step: "Serve Formal Notice of Rejection & Demand for Full Return",
         description:
-          "Serve an advocate notice documenting the inspection rejection, asserting product non-conformity under CPA 2019, and demanding 100% reimbursement of all advance, insurance, and accessory charges.",
+          "Serve a fact-verified notice documenting the inspection rejection, asserting product non-conformity under CPA 2019, and demanding 100% reimbursement of all advance, insurance, and accessory charges.",
       },
     ],
     statutoryRule: "CPA 2019 (Chapter VI Product Liability) & Sale of Goods Act (s. 16)",
@@ -147,7 +147,7 @@ const PROBLEMS: ProblemTab[] = [
       {
         step: "Serve Dual Regulatory & Consumer Legal Notice",
         description:
-          "Dispatch an advocate legal notice citing CCI antitrust directives and CPA 2019 Section 2(47), putting the dealership on notice for tied selling and demanding immediate allocation or unconditional 100% advance refund.",
+          "Dispatch a fact-verified legal notice citing CCI antitrust directives and CPA 2019 Section 2(47), putting the dealership on notice for tied selling and demanding immediate allocation or unconditional 100% advance refund.",
       },
     ],
     statutoryRule: "Competition Act, 2002 (s. 3(4)) & CPA 2019 (s. 2(47))",
@@ -255,7 +255,7 @@ export default function BikeScooterProblemTabs() {
 
         <div className="pt-2 flex flex-col sm:flex-row items-center justify-between gap-3 border-t border-slate-100">
           <p className="text-xs text-slate-500">
-            Facing this exact issue? We assist consumers in issuing statutory advocate notices across India.
+            Facing this exact issue? We assist consumers in issuing statutory fact-verified notices across India.
           </p>
           <Link
             href="/services/refunds-and-consumer-complaints"

@@ -1128,7 +1128,7 @@ export default function SchoolCollegeFeeRefundApplicationPage() {
                   If the accounts department fails to disburse your refund within 15 calendar days, continued informal follow-ups only waste precious limitation time. The next statutory step is serving a formal 15-day Demand Notice through an advocate on official legal letterhead.
                 </p>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
-                  Under the Consumer Protection Act, 2019, an advocate legal notice establishes undeniable legal demand, fast-tracks UGC SAMARTH de-recognition scrutiny, and opens personal civil liability against college trustees. For ed-tech platforms or study abroad agencies, also review our guides on{" "}
+                  Under the Consumer Protection Act, 2019, a fact-verified legal notice establishes undeniable legal demand, fast-tracks UGC SAMARTH de-recognition scrutiny, and opens personal civil liability against college trustees. For ed-tech platforms or study abroad agencies, also review our guides on{" "}
                   <Link
                     href="/send-a-legal-notice/school-college-fee-refund-admission-cancellation"
                     className="text-red-600 font-bold hover:underline"

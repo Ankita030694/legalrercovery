@@ -164,7 +164,7 @@ const HOWTO_SCHEMA = {
       "@type": "HowToStep",
       position: 2,
       name: "Serve Composite s.138(b) / SoGA s.56 Demand Notice",
-      text: "Issue an Advocate-drafted statutory notice within 30 days of PDC dishonour (NI Act s.138) or forward-booking refusal (Sale of Goods Act s.54/56) via Email, WhatsApp, and Speed Post RPAD.",
+      text: "Issue a Fact-verified statutory notice within 30 days of PDC dishonour (NI Act s.138) or forward-booking refusal (Sale of Goods Act s.54/56) via Email, WhatsApp, and Speed Post RPAD.",
     },
     {
       "@type": "HowToStep",
@@ -1301,7 +1301,7 @@ export default function SolarModuleInverterCreditRecoveryPage() {
                   {
                     title: "Commercial Legal Notice & Reply Formats",
                     href: "/templates/legal-notice-reply-format",
-                    desc: "Advocate-vetted notice & rebuttal templates for commercial credit disputes.",
+                    desc: "Ready-to-use notice & rebuttal templates for commercial credit disputes.",
                   },
                 ].map((link) => (
                   <Link

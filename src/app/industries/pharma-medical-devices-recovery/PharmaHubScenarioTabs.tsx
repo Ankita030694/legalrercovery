@@ -39,7 +39,7 @@ const PHARMA_SCENARIOS: PharmaScenario[] = [
       {
         step: "2. Serve Dual Demand & Stock Audit Notice",
         detail:
-          "Dispatch an advocate notice invoking Sale of Goods Act s.24 for consumed kits (demanding payment within 15 days) and mandatory physical verification or return of unconsumed shelf inventory.",
+          "Dispatch a fact-verified notice invoking Sale of Goods Act s.24 for consumed kits (demanding payment within 15 days) and mandatory physical verification or return of unconsumed shelf inventory.",
       },
       {
         step: "3. Escalate via Order 37 CPC, 43B(h) or BNS s.316",
@@ -65,7 +65,7 @@ const PHARMA_SCENARIOS: PharmaScenario[] = [
       {
         step: "1. Reconcile Multi-Invoice Ledger & Bar Excess Credit Notes",
         detail:
-          "Upload all unpaid GST tax invoices, e-Way bills, and Drug License (Form 20B/21B) challans into the multi-invoice schedule while formally rejecting time-barred expiry deductions under CGST s.34.",
+          "Enter all unpaid GST tax invoice, e-Way bill, and Drug License (Form 20B/21B) challan details into the multi-invoice schedule while formally rejecting time-barred expiry deductions under CGST s.34.",
       },
       {
         step: "2. Serve Monopoly Revocation & s.20 Security Cheque Notice",

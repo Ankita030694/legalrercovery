@@ -33,7 +33,7 @@ const SCENARIOS: ScenarioTab[] = [
       {
         step: "Serve Ostensible-Authority & Order 37 Notice",
         detail:
-          "Issue an Advocate Notice invoking Contract Act s.237 ostensible agency and demanding settlement of the consolidated fortnightly statement within 7 days.",
+          "Issue a Fact-Verified Notice invoking Contract Act s.237 ostensible agency and demanding settlement of the consolidated fortnightly statement within 7 days.",
       },
       {
         step: "File Order XXXVII Summary Suit + NI s.138",
@@ -87,7 +87,7 @@ const SCENARIOS: ScenarioTab[] = [
       {
         step: "Repudiate Unilateral Debit Note",
         detail:
-          "Send an Advocate Notice rejecting the belated debit note under Sale of Goods Act s.42 and demanding full GST/VAT invoice value plus 18–24% contractual interest.",
+          "Send a Fact-Verified Notice rejecting the belated debit note under Sale of Goods Act s.42 and demanding full GST/VAT invoice value plus 18–24% contractual interest.",
       },
       {
         step: "Escalate via MSMED s.16 or Commercial Court",

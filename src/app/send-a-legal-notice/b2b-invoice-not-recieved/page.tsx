@@ -3,7 +3,7 @@ import B2bInvoiceNotRecievedClient from './B2bInvoiceNotRecievedClient';
 
 const slug = 'send-a-legal-notice/b2b-invoice-not-recieved';
 const title = 'Legal Notice for Unpaid B2B Invoices | Commercial Dues';
-const description = 'Unpaid B2B supplier invoices or corporate defaults? Send an advocate-vetted legal notice under the MSMED Act to recover dues with interest.';
+const description = 'Unpaid B2B supplier invoices or corporate defaults? Send a fact-verified legal notice under the MSMED Act to recover dues with interest.';
 const url = `https://www.legalrecovery.in/${slug}`;
 
 export const metadata: Metadata = {

@@ -31,7 +31,7 @@ export default function HandlingContinuousDefaultersCTA({
                 Recover Unpaid Credit Card Dues from Continuous &amp; Serial Defaulters
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6">
-                Have a verified recovery advocate draft and serve a binding statutory demand notice to chronic credit card defaulters and wilful non-payers. Formally establishes debt acknowledgment, limits dispute windows, enforces CIBIL reporting warnings under CICRA, and prepares grounds for Order 37 summary suits and Section 318 BNS fraud filings.
+                Serve a binding statutory demand notice to chronic credit card defaulters and wilful non-payers. Formally establishes debt acknowledgment, limits dispute windows, enforces CIBIL reporting warnings under CICRA, and prepares grounds for Order 37 summary suits and Section 318 BNS fraud filings.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button
@@ -42,7 +42,7 @@ export default function HandlingContinuousDefaultersCTA({
                   {buttonText} — ₹{basePrice}
                 </button>
                 <div className="text-xs text-slate-300 flex flex-wrap sm:flex-nowrap items-center gap-2 sm:gap-3">
-                  <span>✓ 24h Advocate Drafting</span>
+                  <span>✓ 24h Notice Drafting</span>
                   <span>•</span>
                   <span>✓ Speed Post + Digital Delivery</span>
                   <span>•</span>

@@ -37,7 +37,7 @@ const PROBLEMS: ProblemTab[] = [
           "Register a formal grievance on airsewa.gov.in under 'Airlines > Refund > Forced Voucher / Credit Shell' uploading your cancellation notice, PNR slip, and the airline's credit shell email.",
       },
       {
-        step: "Serve Advocate Statutory Legal Demand Notice",
+        step: "Serve Fact-Verified Statutory Legal Demand Notice",
         description:
           "If the airline fails to reverse the shell into cash within 7 working days, serve a 15-day statutory legal notice under Section 35 of the Consumer Protection Act, 2019, claiming the fare, 18% interest, and compensation.",
       },
@@ -64,7 +64,7 @@ const PROBLEMS: ProblemTab[] = [
           "Lodge a complaint on consumerhelpline.gov.in (NCH 1915) impleading both the OTA and the operating airline for unfair trade practices and dark-pattern fund withholding.",
       },
       {
-        step: "Issue Advocate Notice for Wallet De-linking & Bank Credit",
+        step: "Issue Fact-Verified Notice for Wallet De-linking & Bank Credit",
         description:
           "Serve a joint statutory legal demand notice on both the OTA corporate entity and the airline demanding immediate liquidation of the locked wallet balance into bank funds.",
       },
@@ -93,7 +93,7 @@ const PROBLEMS: ProblemTab[] = [
       {
         step: "Statutory Legal Notice with Interest & Punitive Damages",
         description:
-          "Have an advocate dispatch a legal notice demanding instant bank remittance of the expired principal plus statutory interest and litigation costs within 15 calendar days.",
+          "Dispatch a legal notice demanding instant bank remittance of the expired principal plus statutory interest and litigation costs within 15 calendar days.",
       },
     ],
     statutoryRule: "Supreme Court Pravasi Legal Cell Ruling (Para 14) & BNS Section 316 / CPA 2019",
@@ -118,7 +118,7 @@ const PROBLEMS: ProblemTab[] = [
           "Do not click 'Accept Flight Modification' or 'Generate Voucher' on the airline portal. Opt strictly for 'Cancel & Refund to Source'.",
       },
       {
-        step: "Serve Advocate Legal Notice for 100% Refund & Inconvenience",
+        step: "Serve Fact-Verified Legal Notice for 100% Refund & Inconvenience",
         description:
           "Serve a formal statutory notice under DGCA CAR Part IV demanding full refund of base fare, taxes, and passenger fees without cancellation fee deductions.",
       },

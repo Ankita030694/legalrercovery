@@ -37,7 +37,7 @@ export default function TDSRecoveryCTA({
               Tenant Deducted 10% TDS but Left Your Form 26AS Empty? Compel Immediate Deposit
             </h3>
             <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6 max-w-3xl">
-              Do not let cash-strapped corporate tenants pocket your rental tax credits. Serve an Advocate Demand Notice warning of Section 201(1A) penal interest, Section 271C penalties, and a formal complaint to the Commissioner of Income Tax (TDS) under Section 276B criminal prosecution.
+              Do not let cash-strapped corporate tenants pocket your rental tax credits. Serve a Fact-Verified Demand Notice warning of Section 201(1A) penal interest, Section 271C penalties, and a formal complaint to the Commissioner of Income Tax (TDS) under Section 276B criminal prosecution.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
@@ -56,7 +56,7 @@ export default function TDSRecoveryCTA({
                     Test 1 Defaulting Tenant Notice (₹{basePrice})
                   </p>
                   <p className="text-xs text-slate-300 leading-relaxed mb-4">
-                    High Court advocate-drafted demand notice citing Income Tax Act Section 194-I, Section 205, Section 276B, and Contract Act Section 73. Simultaneous service via Email, WhatsApp &amp; Speed Post RPAD with BSA Section 63 electronic delivery certificate.
+                    High Court fact-verified demand notice citing Income Tax Act Section 194-I, Section 205, Section 276B, and Contract Act Section 73. Simultaneous service via Email, WhatsApp &amp; Speed Post RPAD with BSA Section 63 electronic delivery certificate.
                   </p>
                 </div>
 

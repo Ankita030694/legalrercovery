@@ -168,7 +168,7 @@ const FAQS = [
   {
     question: "How can an NBFC test compliant CIC pre-reporting notices before rolling out across its portfolio?",
     answer:
-      "Nodal Officers and Collections Heads can pilot a single overdue account for ₹999 (Advocate-drafted notice dispatched via Email, WhatsApp, and Speed Post RPAD with BSA 2023 s.63 delivery logs) through /user/new-recovery, or onboard 10 to 10,000+ accounts via CSV on our Bulk Institutional Desk.",
+      "Nodal Officers and Collections Heads can pilot a single overdue account for ₹999 (Fact-verified notice dispatched via Email, WhatsApp, and Speed Post RPAD with BSA 2023 s.63 delivery logs) through /user/new-recovery, or onboard 10 to 10,000+ accounts via CSV on our Bulk Institutional Desk.",
   },
 ];
 
@@ -244,8 +244,8 @@ const HOWTO_SCHEMA = {
     {
       "@type": "HowToStep",
       position: 2,
-      name: "Issue Tri-Channel Advocate Legal Notice with CIC & CMR Disclosure (Day 30–45 DPD)",
-      text: "Serve an Advocate-drafted notice via Email, WhatsApp, and Speed Post RPAD pairing factual CIBIL/CMR impact with Section 25 PSS Act or Loan Recall demands.",
+      name: "Issue Tri-Channel Fact-Verified Legal Notice with CIC & CMR Disclosure (Day 30–45 DPD)",
+      text: "Serve a Fact-verified notice via Email, WhatsApp, and Speed Post RPAD pairing factual CIBIL/CMR impact with Section 25 PSS Act or Loan Recall demands.",
     },
     {
       "@type": "HowToStep",
@@ -439,7 +439,7 @@ export default function CicPreReportingDefaultNoticePage() {
                   turnaround time (TAT) or reports a contested e-NACH bounce without prior
                   intimation. Yet, treating CIC reporting purely as a defensive compliance burden
                   misses its single highest commercial upside: <strong>a statutory pre-reporting
-                  alert, when embedded inside an Advocate-backed Day-30/45 Legal Notice, is one of
+                  alert, when embedded inside a Fact-verified Day-30/45 Legal Notice, is one of
                   the strongest non-coercive cure triggers in Indian lending</strong>.
                 </p>
 

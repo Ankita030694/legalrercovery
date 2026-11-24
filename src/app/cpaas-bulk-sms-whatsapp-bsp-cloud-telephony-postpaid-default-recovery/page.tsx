@@ -95,7 +95,7 @@ const FAQS = [
     question:
       "How should a CPaaS platform handle 100+ small-ticket SME bulk SMS and IVR defaulters?",
     answer:
-      "Individual civil suits for ₹40,000 to ₹2 Lakh SME arrears are uneconomical. The most effective institutional workflow is uploading all overdue accounts in a structured CSV batch—mapping GSTIN, authorized signatory email, WhatsApp number, and unpaid invoice aging—to trigger synchronized advocate-drafted legal notices via Email, WhatsApp, and Speed Post RPAD before escalating holdouts.",
+      "Individual civil suits for ₹40,000 to ₹2 Lakh SME arrears are uneconomical. The most effective institutional workflow is uploading all overdue accounts in a structured CSV batch—mapping GSTIN, authorized signatory email, WhatsApp number, and unpaid invoice aging—to trigger synchronized fact-verified legal notices via Email, WhatsApp, and Speed Post RPAD before escalating holdouts.",
   },
 ];
 
@@ -173,7 +173,7 @@ const HOWTO_SCHEMA = {
     {
       "@type": "HowToStep",
       position: 3,
-      name: "Serve 15-Day Advocate Legal Notice",
+      name: "Serve 15-Day Fact-Verified Legal Notice",
       text: "Dispatch a multi-channel statutory demand notice citing strict API-key custody, upfront pass-through liability, and 18% GST.",
     },
     {
@@ -516,7 +516,7 @@ export default function CpaasPostpaidDefaultRecoveryPage() {
                   {
                     n: "3",
                     title: "15-Day Multi-Channel Legal Notice",
-                    desc: "Serve advocate-drafted notice via RPAD, Email & WhatsApp invoking Strict API-Key Custody & 18% GST recovery.",
+                    desc: "Serve fact-verified notice via RPAD, Email & WhatsApp invoking Strict API-Key Custody & 18% GST recovery.",
                   },
                   {
                     n: "4",
@@ -878,7 +878,7 @@ export default function CpaasPostpaidDefaultRecoveryPage() {
                     title: "IT, Software & SaaS MSA Payment Default Notice",
                     href: "/templates/it-software-saas-msa-payment-default-legal-notice",
                     tag: "P1 Notice Template",
-                    desc: "Advocate-vetted SaaS/MSA payment default & API suspension notice with BSA s.63 clauses.",
+                    desc: "Fact-verified SaaS/MSA payment default & API suspension notice with BSA s.63 clauses.",
                   },
                   {
                     title: "B2B Vendor & Commercial Invoice Recovery Desk",

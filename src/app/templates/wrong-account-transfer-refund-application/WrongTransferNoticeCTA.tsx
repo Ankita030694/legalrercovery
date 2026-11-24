@@ -25,13 +25,13 @@ export default function WrongTransferNoticeCTA({
           <div className="bg-gradient-to-br from-[#0F172A] via-[#1E293B] to-[#0F172A] text-white rounded-2xl p-5 sm:p-8 md:p-10 border border-slate-800 shadow-2xl w-full">
             <div className="max-w-3xl">
               <span className="inline-block px-3 py-1 rounded-full text-[11px] sm:text-xs font-semibold tracking-wide uppercase bg-slate-800 text-red-400 border border-slate-700 mb-3 sm:mb-4">
-                Section 72 Indian Contract Act • Advocate Statutory Demand Notice
+                Section 72 Indian Contract Act • Fact-Verified Statutory Demand Notice
               </span>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-bold tracking-tight text-white mb-3">
                 Recipient Refusing to Return Wrongly Transferred Money or Bank Inactive?
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6">
-                When money is credited by mistake, retaining or spending it constitutes unjust enrichment under Section 72 Contract Act and Criminal Misappropriation under Section 314 Bharatiya Nyaya Sanhita, 2023 (BNS). Have an experienced advocate issue a formal statutory legal demand notice to the unintended recipient and a regulatory directive to the Bank Nodal Officer.
+                When money is credited by mistake, retaining or spending it constitutes unjust enrichment under Section 72 Contract Act and Criminal Misappropriation under Section 314 Bharatiya Nyaya Sanhita, 2023 (BNS). Issue a formal statutory legal demand notice to the unintended recipient and a regulatory directive to the Bank Nodal Officer.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button

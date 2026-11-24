@@ -34,7 +34,7 @@ const MEDIA_BUYING_SCENARIOS: ScenarioTab[] = [
       {
         phase: "Section 222 Demand Notice",
         description:
-          "Issue a 7-day advocate demand notice invoking Contract Act Section 222, holding directors personally liable for misrepresentation under Section 17, and warning of corporate Section 43B(h) tax disallowance.",
+          "Issue a 7-day fact-verified demand notice invoking Contract Act Section 222, holding directors personally liable for misrepresentation under Section 17, and warning of corporate Section 43B(h) tax disallowance.",
       },
       {
         phase: "Commercial Summary Suit",

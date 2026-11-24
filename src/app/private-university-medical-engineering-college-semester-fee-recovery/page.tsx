@@ -127,7 +127,7 @@ const FAQS = [
     question:
       "How can a multi-campus university trust recover arrears from 100 to 500+ defaulting students without hiring a large litigation team?",
     answer:
-      "Instead of handling defaulters ad hoc, the Registrar or Finance Officer can upload a structured CSV of defaulted student ledgers, co-guarantor parent contacts, and bounced PDC/NACH details to LegalRecovery's Representees desk. Advocate-drafted statutory notices are dispatched simultaneously via Email, WhatsApp, and Speed Post RPAD—typically resolving 60–70% of chronic arrears at the notice stage before any Order XXXVII suit is required.",
+      "Instead of handling defaulters ad hoc, the Registrar or Finance Officer can upload a structured CSV of defaulted student ledgers, co-guarantor parent contacts, and bounced PDC/NACH details to LegalRecovery's Representees desk. Fact-verified statutory notices are dispatched simultaneously via Email, WhatsApp, and Speed Post RPAD—typically resolving 60–70% of chronic arrears at the notice stage before any Order XXXVII suit is required.",
   },
 ];
 
@@ -184,7 +184,7 @@ const HOWTO_SCHEMA = {
     {
       "@type": "HowToStep",
       position: 3,
-      name: "Issue Joint Advocate Notice to Student, Co-Guarantor Parent & Lending Bank",
+      name: "Issue Joint Fact-Verified Notice to Student, Co-Guarantor Parent & Lending Bank",
       text: "Serve a formal 15-day statutory demand under Contract Act s.43 on the student and earning parent/co-guarantor, copying the education-loan sanctioning bank where loan funds were diverted.",
     },
     {
@@ -465,7 +465,7 @@ export default function UniversitySemesterFeeRecoveryPage() {
                   },
                   {
                     step: "Stage 3 (T+15–30d)",
-                    title: "Serve Joint Advocate Statutory Notice",
+                    title: "Serve Joint Fact-Verified Statutory Notice",
                     desc: "Dispatch RPAD + Email + WhatsApp demand jointly to Student, Co-Guarantor Parent, and Nodal Bank Officer (where loan was diverted).",
                   },
                   {

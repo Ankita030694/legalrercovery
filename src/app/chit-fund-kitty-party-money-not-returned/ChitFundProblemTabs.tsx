@@ -32,9 +32,9 @@ const PROBLEMS: ProblemTab[] = [
           "Export full WhatsApp / Telegram group chats showing monthly contribution charts, member lists, and the organiser's payment confirmations. Download stamped bank statements highlighting all UPI and IMPS transfers made to the organiser.",
       },
       {
-        step: "Serve Joint Statutory Advocate Legal Demand Notice",
+        step: "Serve Joint Statutory Fact-Verified Legal Demand Notice",
         description:
-          "Have an advocate issue a formal 15-day legal demand notice to the organiser's residential and native address via Registered Speed Post with tracking, demanding immediate reimbursement with 18% penal interest.",
+          "Issue a formal 15-day legal demand notice to the organiser's residential and native address via Registered Speed Post with tracking, demanding immediate reimbursement with 18% penal interest.",
       },
       {
         step: "Lodge Collective Police Complaint & Section 175(3) BNSS Petition",
@@ -59,7 +59,7 @@ const PROBLEMS: ProblemTab[] = [
           "If the defaulting member provided a signed security cheque or promissory note, deposit the cheque in your bank. If returned dishonoured, obtain the official Cheque Return Memo with the bank's reason code.",
       },
       {
-        step: "Serve Section 138 NI Act or 15-Day Advocate Notice",
+        step: "Serve Section 138 NI Act or 15-Day Fact-Verified Notice",
         description:
           "Within strictly 30 days of receiving the bank memo, dispatch a Section 138 statutory demand notice through an advocate. If no cheque exists, issue an Order XXXVII pre-litigation legal notice demanding the arrears.",
       },
@@ -93,7 +93,7 @@ const PROBLEMS: ProblemTab[] = [
       {
         step: "Simultaneous Consumer Petition on e-Jagriti",
         description:
-          "Serve a 15-day advocate notice, then file an online consumer complaint on e-Jagriti claiming 100% prize money, 18% annual interest for wrongful retention, and mental agony damages.",
+          "Serve a 15-day fact-verified notice, then file an online consumer complaint on e-Jagriti claiming 100% prize money, 18% annual interest for wrongful retention, and mental agony damages.",
       },
     ],
     statutoryRule: "Chit Funds Act 1982 Sections 22, 64 & Consumer Protection Act 2019 Section 35",
@@ -208,7 +208,7 @@ export default function ChitFundProblemTabs() {
             href="/legal-notice-charges"
             className="text-red-600 hover:text-red-700 font-bold underline inline-flex items-center gap-1"
           >
-            Check Transparent Advocate Drafting Fees →
+            Check Transparent Notice Drafting Fees →
           </Link>
         </div>
       </div>

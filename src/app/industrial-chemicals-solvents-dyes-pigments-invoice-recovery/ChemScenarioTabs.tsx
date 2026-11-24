@@ -38,7 +38,7 @@ const SCENARIOS: ScenarioTab[] = [
       {
         step: "Serve Section 42 & Order XXXVII Rebuttal Notice",
         description:
-          "Dispatch an advocate-vetted notice placing on record the 45-day silence, commingling estoppel, and MSMED s.16 / Order XXXVII CPC summary liability before the buyer fabricates a paper trail.",
+          "Dispatch a fact-verified notice placing on record the 45-day silence, commingling estoppel, and MSMED s.16 / Order XXXVII CPC summary liability before the buyer fabricates a paper trail.",
       },
     ],
     statutoryRule: "Sale of Goods Act, 1930 s.42 & IBC 2016 s.8 / Mobilox Doctrine",

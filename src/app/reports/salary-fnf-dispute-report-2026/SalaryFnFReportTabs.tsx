@@ -32,7 +32,7 @@ const PROBLEMS: ProblemTab[] = [
           "Archive the HR email accepting your resignation, formal LWD confirmation, and signed IT/admin clearance handover logs with immutable timestamps.",
       },
       {
-        step: "Issue Advocate Demand Notice Citing Section 17(2)",
+        step: "Issue Fact-Verified Demand Notice Citing Section 17(2)",
         description:
           "Serve a formal legal notice demanding complete release of terminal dues within 15 days, asserting statutory simple interest (18% p.a.) and penalty exposure under Section 54.",
       },
@@ -64,7 +64,7 @@ const PROBLEMS: ProblemTab[] = [
           "Demand immediate payment of at least 50% of the terminal wage bill, contesting blanket zero-pay slips or negative FnF statements.",
       },
       {
-        step: "Serve Advocate Legal Notice for Wage Restitution",
+        step: "Serve Fact-Verified Legal Notice for Wage Restitution",
         description:
           "Direct the advocate notice to the company Directors under Section 141 principles and HR head, seeking immediate refund of excess deductions.",
       },
@@ -93,7 +93,7 @@ const PROBLEMS: ProblemTab[] = [
       {
         step: "Serve Legal Notice Against Unlawful Wage Withholding",
         description:
-          "Issue a formal advocate notice demanding release of undisputed salary balances immediately, separating bona fide hardware value from earned wages.",
+          "Issue a formal fact-verified notice demanding release of undisputed salary balances immediately, separating bona fide hardware value from earned wages.",
       },
     ],
     statutoryRule: "Section 18(2)(c) Code on Wages & Section 63 BSA 2023",
@@ -120,7 +120,7 @@ const PROBLEMS: ProblemTab[] = [
       {
         step: "Issue Combined Demand Notice & File Form N with Gratuity Controlling Authority",
         description:
-          "Serve an advocate notice demanding 10% penal interest; if unheeded, file Form N before the Assistant Labour Commissioner (Central or State).",
+          "Serve a fact-verified notice demanding 10% penal interest; if unheeded, file Form N before the Assistant Labour Commissioner (Central or State).",
       },
     ],
     statutoryRule: "Section 7(3A) Payment of Gratuity Act & Section 2(y) Code on Wages",

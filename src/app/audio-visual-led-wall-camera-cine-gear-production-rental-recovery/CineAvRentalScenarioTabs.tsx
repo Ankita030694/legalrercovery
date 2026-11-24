@@ -30,7 +30,7 @@ const SCENARIOS: ScenarioItem[] = [
       "GST Tax Invoices, e-Way Bills (where inter-state), and WhatsApp/Email overtime approvals",
     ],
     recommendedAction:
-      "Serve an Advocate Demand Notice combining the unpaid shift ledger, s.43B(h) tax-disallowance intimation (if Udyam-registered), and a 7-day deadline before MSEFC / Commercial Court Order XXXVII filing.",
+      "Serve a Fact-Verified Demand Notice combining the unpaid shift ledger, s.43B(h) tax-disallowance intimation (if Udyam-registered), and a 7-day deadline before MSEFC / Commercial Court Order XXXVII filing.",
   },
   {
     id: "laser-burn-rain-led-damage",

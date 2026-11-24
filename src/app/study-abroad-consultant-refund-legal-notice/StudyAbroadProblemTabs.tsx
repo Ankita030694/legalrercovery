@@ -37,7 +37,7 @@ const PROBLEMS: ProblemTab[] = [
           "Cross-examine the SOP, financial declarations, and application forms submitted by the agent against the refusal reasons to identify consultant errors or negligent disclosures.",
       },
       {
-        step: "Issue Advocate Demand Notice for Refund",
+        step: "Issue Fact-Verified Demand Notice for Refund",
         description:
           "Serve a formal statutory notice demanding refund of consultancy fees and unutilised third-party charges within 15 calendar days under threat of e-Jagriti consumer litigation.",
       },
@@ -113,7 +113,7 @@ const PROBLEMS: ProblemTab[] = [
           "Send an urgent formal demand via email and WhatsApp requiring the immediate, unconditional release of all original documents within 48 hours.",
       },
       {
-        step: "Serve Advocate Legal Notice with Criminal Penal Warnings",
+        step: "Serve Fact-Verified Legal Notice with Criminal Penal Warnings",
         description:
           "Put the consultant on notice for offences under the Passports Act, 1967 and criminal breach of trust under Section 316 BNS 2023.",
       },

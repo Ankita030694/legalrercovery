@@ -180,7 +180,7 @@ const IND_05_SPOKES: IndustrySpoke[] = [
     archetype: "P1",
     archetypeLabel: "P1 Notice Template",
     track: "law-tools",
-    title: "Advocate-Drafted IT Services, Custom Software & B2B SaaS Notice Format",
+    title: "Fact-Verified IT Services, Custom Software & B2B SaaS Notice Format",
     url: "/templates/it-software-saas-msa-payment-default-legal-notice",
     statute: "Commercial Courts s.2(1)(c)(xviii), Copyright s.51 & MSMED s.16",
     summary:
@@ -289,7 +289,7 @@ const STATUTORY_PRECEDENTS = [
     holding:
       "Agreements for licensing, software development, SaaS subscriptions, and technical consultancy valued at ₹3 Lakh or more fall squarely under 'commercial disputes'. Pre-Institution Mediation under Section 12A is mandatory before filing suit unless the creditor demonstrates urgent interim relief—such as freezing unauthorized code redistribution or dissipating assets.",
     operationalRule:
-      "Draft initial advocate demand notices to establish clean breach records for s.12A mediation or substantiate genuine urgency for interim injunctions.",
+      "Draft initial fact-verified demand notices to establish clean breach records for s.12A mediation or substantiate genuine urgency for interim injunctions.",
   },
   {
     title: "Pre-Existing Dispute Screening Against Spurious Post-Invoice UAT Excuses",
@@ -403,7 +403,7 @@ const FAQS = [
     question:
       "Can an IT founder or SaaS CFO test LegalRecovery.in on one unpaid client before onboarding a batch portfolio?",
     answer:
-      "Yes. Under our Dual-Track Onboarding model, you can submit a single overdue domestic or international invoice for ₹999 via the live recovery portal, review the advocate-drafted notice citing your exact SOW/Git/SOFTEX facts, and inspect the tri-channel Email, WhatsApp, and Speed Post RPAD tracking plus BSA s.63 certificate before scaling to bulk CSV recovery.",
+      "Yes. Under our Dual-Track Onboarding model, you can submit a single overdue domestic or international invoice for ₹999 via the live recovery portal, review the fact-verified notice citing your exact SOW/Git/SOFTEX facts, and inspect the tri-channel Email, WhatsApp, and Speed Post RPAD tracking plus BSA s.63 certificate before scaling to bulk CSV recovery.",
   },
 ];
 
@@ -715,7 +715,7 @@ export default function ItSaasSoftwareRecoveryPage() {
                   skipping <strong className="text-slate-900">Section 12A</strong> pre-institution
                   mediation under the Commercial Courts Act, 2015. Our IND-05 creditor desk pairs
                   tech-native digital evidence (Git hashes, Jira sprint approvals, cloud billing
-                  telemetry) with advocate-vetted statutory escalation across India, the US, the UK,
+                  telemetry) with fact-verified statutory escalation across India, the US, the UK,
                   Europe, and the GCC.
                 </p>
               </div>
@@ -834,7 +834,7 @@ export default function ItSaasSoftwareRecoveryPage() {
                   <rect x="265" y="64" width="195" height="190" rx="12" fill="#1E293B" stroke="#334155" strokeWidth="1.5" />
                   <rect x="265" y="64" width="195" height="32" rx="12" fill="#334155" />
                   <text x="362" y="85" textAnchor="middle" fill="#FFFFFF" fontSize="12" fontWeight="bold">
-                    02. ADVOCATE DRAFTING
+                    02. NOTICE DRAFTING
                   </text>
                   <text x="279" y="122" fill="#E2E8F0" fontSize="12" fontWeight="bold">• Precision Statutory Hook</text>
                   <text x="279" y="148" fill="#CBD5E1" fontSize="11">Copyright s.19 Non-Transfer</text>

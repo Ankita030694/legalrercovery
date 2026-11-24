@@ -116,7 +116,7 @@
       "Interactive Commodity & PESO Cylinder Notice Workspace [Word]",
       "Mandatory Statutory Clauses & Evidence Annexures by Supply Vertical",
       "Multi-Channel Dispatch Protocol Under BSA 2023 s.63 & General Clauses s.27",
-      "Advocate Review & Bulk Commodity Defaulter Dispatch Desk",
+      "Fact Verification & Bulk Commodity Defaulter Dispatch Desk",
       "IND-25 Vertical Playbooks & Core Commercial Recovery Guides",
       "FAQs: Coal, Metal Scrap & PESO Gas-Cylinder Legal Notices",
       "Official Statutory Portals & Bare Act Authorities"
@@ -2868,7 +2868,7 @@
       "How Do Extended Warranties (Croma ZipCare vs Reliance resQ) Operate Under Consumer Protection Law?",
       "What Have Consumer Commissions Ordered Croma (Infiniti Retail) and Reliance Digital to Pay?",
       "How Do You Escalate to the Grievance Officers of Infiniti Retail and Reliance Retail?",
-      "When and How Should You Serve an Advocate Legal Notice to the Electronics Retailer?",
+      "When and How Should You Serve a Fact-Verified Legal Notice to the Electronics Retailer?",
       "How Can You File a Case Against Croma or Reliance Digital on e-Jagriti Without a Lawyer?",
       "What Can LegalRecovery Do (and Not Do) in Electronics Replacement and Refund Disputes?",
       "Croma aur Reliance Digital Defective Product Replace Na Kare Toh Kya Kare: FAQs"
@@ -3182,7 +3182,7 @@
       "What Should You Do If BigBasket Delivered Spoiled Perishables or Wrong Grocery Items?",
       "How Do You File an Official BigBasket Refund Complaint With the Grievance Officer?",
       "When Should You Lodge a Docket on the National Consumer Helpline (NCH 1915)?",
-      "How Do You Serve an Advocate Legal Notice to Innovative Retail Concepts and Supermarket Grocery Supplies?",
+      "How Do You Serve a Fact-Verified Legal Notice to Innovative Retail Concepts and Supermarket Grocery Supplies?",
       "What Compensation Have Consumer Courts Awarded for Grocery Non-Delivery and Denied Refunds?",
       "Illustrative Scenario: Tracing a ₹3,420 BigBasket Perishable Refund Trapped in Closed Wallet Credit",
       "What Digital Evidence Must You Collect Under Section 63 BSA Before Demanding a BigBasket Refund?",
@@ -3674,7 +3674,7 @@
       "Change Timeline: Chronological statutory evolution from Supreme Court Pravasi Legal Cell to 26 March 2026 CAR enforcement",
       "Hand-authored SVG diagram: 6-stage aviation cancellation, refund reconciliation, AirSewa filing, and legal notice escalation architecture",
       "Key Facts Table: Statutory rules, effective date, cancellation fee window, refund payment timelines, and forum jurisdiction",
-      "Illustrative Worked Scenario: Priya & Sandeep's ₹24,800 Delhi-Bengaluru booking dispute (OTA cancellation fee, credit shell refusal, advocate notice settlement)",
+      "Illustrative Worked Scenario: Priya & Sandeep's ₹24,800 Delhi-Bengaluru booking dispute (OTA cancellation fee, credit shell refusal, fact-verified notice settlement)",
       "Judicial Precedents Digest: Supreme Court Pravasi Legal Cell & Delhi State Commission SpiceJet v. Dr. Sanjeev Kumar",
       "Electronic Evidence Preservation Checklist: 5-point BSA Section 63 compliance dossier for AirSewa and e-Jagriti"
     ],
@@ -3833,7 +3833,7 @@
       "How an Air India Refund Moves From PNR Cancellation to Bank Credit",
       "What Have Indian Consumer Commissions and Courts Ordered Air India to Pay for Refund Delays?",
       "What Documents and Digital Records Form Admissible Aviation Evidence Under BSA Section 63?",
-      "Worked Example: Overcoming a ₹64,200 International Air India Refund Deadlock via Advocate Legal Notice",
+      "Worked Example: Overcoming a ₹64,200 International Air India Refund Deadlock via Fact-Verified Legal Notice",
       "Our Scope: What LegalRecovery Can and Cannot Do for Your Air India Refund Dispute",
       "Frequently Asked Questions About Air India Refund Status, Delays & Legal Notices",
       "Primary Statutory Authorities, DGCA Regulations, and Official Gazettes"
@@ -4021,7 +4021,7 @@
       "The 5-Step Escalation Protocol for MakeMyTrip Flight, Hotel & Package Refunds",
       "Statutory Refund Deadlines for MakeMyTrip Bookings: DGCA CAR, RBI & E-Commerce Benchmarks",
       "The MakeMyTrip MyCash & Wallet Trap: Why Retaining Cash as Expiring Credits Violates Law",
-      "Worked Case Study: Recovering ₹58,400 for a Disrupted Family Flight & Hotel Booking via Advocate Legal Notice",
+      "Worked Case Study: Recovering ₹58,400 for a Disrupted Family Flight & Hotel Booking via Fact-Verified Legal Notice",
       "Evidence Checklist: 6 Critical Electronic Records Before Sending MakeMyTrip a Legal Notice",
       "Frequently Asked Questions About MakeMyTrip Refund Issues, Status & Legal Remedies",
       "Primary Statutory Provisions, DGCA Aviation Directives & Consumer Law References"
@@ -6021,7 +6021,7 @@
       "Interactive 4-scenario diagnostic tab component (powertrain, EV battery, safety/airbags, electrical/CAN)",
       "Worked ₹18.5L SUV DCT transmission recovery case study with concrete numbers",
       "6-item evidentiary checklist compliant with Section 63 BSA 2023",
-      "Advocate statutory notice CTA connected to PaymentModal at ₹999 flat price"
+      "Fact-verified statutory notice CTA connected to PaymentModal at ₹999 flat price"
     ],
     "sources": [
       "Consumer Protection Act, 2019 (Act No. 35 of 2019) — Chapter VI Product Liability (Sections 82 to 87)",
@@ -6141,7 +6141,7 @@
       "Worked ₹3,00,000 wedding booking advance recovery case study with concrete numbers",
       "Mistakes to avoid list with custom ✕ styling",
       "Evidence checklist compliant with Section 63 Bharatiya Sakshya Adhiniyam 2023",
-      "Statutory advocate notice format preview and PaymentModal integration at ₹999"
+      "Statutory fact-verified notice format preview and PaymentModal integration at ₹999"
     ],
     "sources": [
       "Indian Contract Act, 1872 — Section 74 & Section 73 (Mitigation)",
@@ -6350,7 +6350,7 @@
       "Can every NBFC issue a SARFAESI Section 13(2) demand notice to recover secured LAP defaults?",
       "Why does a Housing Finance Company (HFC) enjoy a lower SARFAESI threshold than an NBFC?",
       "What makes Section 25 of the Payment and Settlement Systems Act, 2007 vital for Fintech & NBFC e-NACH bounces?",
-      "How does an advocate-backed bulk notice desk reduce RBI Ombudsman & SRO compliance risk compared to telecalling agencies?",
+      "How does a fact-verified bulk notice desk reduce RBI Ombudsman & SRO compliance risk compared to telecalling agencies?",
       "How should co-lending partners (80:20) and LSPs manage FLDG / DLG 120-day legal recovery clocks?",
       "Are click-wrap OTP digital loan agreements and unilateral fintech arbitration clauses enforceable in 2026?",
       "How can an NBFC validate LegalRecovery.in before uploading 5,000 CSV borrower rows?"
@@ -6386,7 +6386,7 @@
       "Healthcare RCM Escalation Matrix Across 8 Receivable Categories",
       "Article-21 & NMC-Compliant Recovery Pipeline: Admission to Realization",
       "Interactive Recovery Playbooks Across 4 Healthcare Segments",
-      "Advocate-Led Discharge Desk, TPA Batch & Representee Vault",
+      "Fact-Verified Discharge Desk, TPA Batch & Representee Vault",
       "Binding Constitutional, IRDAI & Statutory Precedents for Hospitals",
       "Hospital RCM Unit Economics: ICU Undertaking vs Aged TPA Claims",
       "Complete IND-03 Directory: All 15 Healthcare Spokes, Tools & Templates",
@@ -7356,7 +7356,7 @@
     "archetype": "G2",
     "h2s": [
       "The Advocates Act 1961 Gap in Pure Collection SaaS",
-      "Vendor Matrix: Enterprise SaaS vs Advocate-Backed Legal Desk",
+      "Vendor Matrix: Enterprise SaaS vs Fact-Verified Legal Desk",
       "Architecture: SaaS Fragmentation vs Bundled Legal Desk",
       "Scenario Selector: Mid-Market NBFC & Fintech Vendor Fit",
       "Total Cost of Ownership: ₹250 Cr AUM NBFC Ledger",
@@ -8312,13 +8312,13 @@
     "h2s": [
       "The Article 21 Discharge Dilemma: Why Hospitals Cannot Detain Patients at Discharge",
       "Generate Your Hospital Discharge Undertaking & 15-Day Legal Notice",
-      "Defective Gate-Pass Slips vs. Advocate-Vetted Discharge Undertakings",
+      "Defective Gate-Pass Slips vs. Ready-to-Use Discharge Undertakings",
       "The 4-Stage Post-Discharge Patient Receivables Escalation Rail",
       "6 Mandatory Clauses Every Hospital Undertaking & Legal Notice Must Contain",
       "The 6-Document Medico-Legal Dossier Checklist for Civil Recovery",
       "High Court & Supreme Court Precedents on Hospital Discharge Recovery",
       "Financial Illustration: Recovering an Unpaid ₹1,65,000 Discharge Balance",
-      "Issue 1 Advocate Notice or Onboard Your Hospital Billing Portfolio",
+      "Issue 1 Fact-Verified Notice or Onboard Your Hospital Billing Portfolio",
       "Hospital Billing & Medico-Legal Cell FAQs",
       "Primary Statutory Sources & Clinical Regulatory Framework"
     ],
@@ -9497,11 +9497,11 @@
       "What is UAT Stonewalling and how does this notice defeat the infinite bug-fix defense?",
       "How does Section 63 of the Bharatiya Sakshya Adhiniyam, 2023 apply to software dispute evidence?",
       "Can an IT agency or SaaS startup claim 3x RBI compound interest under the MSMED Act, 2006?",
-      "What are the costs to have an empanelled technology advocate draft and dispatch this notice?"
+      "What are the costs to dispatch this notice?"
     ],
     "wordCount": 1950,
     "artefacts": [
-      "Advocate-Vetted Tech Notice Workspace with Real-Time Generator & Presets",
+      "Ready-to-Use Tech Notice Workspace with Real-Time Generator & Presets",
       "Copyright Act s.19/51 IP License Revocation & Criminal Exposure Clause",
       "7-Day SaaS Tenant Suspension Notice with DPDP Act 72hr Data Egress Safe Harbor",
       "BSA 2023 Section 63 Digital Telemetry & Git Commit Hash Evidence Matrix",
@@ -9722,7 +9722,7 @@
       "Side-by-side Dark-Header Forum & Remedy Comparison Matrix (s.43B(h), MSEFC, Order XXXVII, IBC s.8, Civil Suit)",
       "Interactive 4-Scenario Corporate Evasion & Tax Strategy Explorer",
       "Worked Financial Ledger: ₹50L Overdue Balance vs ₹71.5L Corporate Default Cost (+43% cash loss)",
-      "Full Operative Advocate-Vetted Section 43B(h) & Form 3CD Clause 22 Intimation Notice Format",
+      "Full Operative Fact-Verified Section 43B(h) & Form 3CD Clause 22 Intimation Notice Format",
       "Debtor Pre-Emption Matrix Neutralizing 4 Corporate Tax Defense Excuses"
     ],
     "sources": [
@@ -10573,7 +10573,7 @@
       "Statutory Deadlines Matrix: The 10d, 15d, 30d, 60d & 3-Year Windows",
       "Verified Judicial Precedents Governing Section 21 & Section 11(6)",
       "Employer Defense Pre-Emption Table: Neutralizing Preliminary Objections",
-      "The 8-Part Anatomy of an Advocate-Settled Section 21 Notice",
+      "The 8-Part Anatomy of a Fact-Verified Section 21 Notice",
       "EPC Failure Modes & Action Rails: Interactive Strategy Explorer",
       "Service Proof Protocol & BSA 2023 Section 63 Evidentiary Dossier",
       "Frequently Asked Questions (FAQ) on Section 21 Invocation",
@@ -10759,7 +10759,7 @@
     ],
     "wordCount": 1850,
     "artefacts": [
-      "Dedicated 'use client' ConstructionNoticeWorkspace with 4 advocate-vetted presets (Combined RA Bill & Retention, Section 21 Invocation, Subcontractor Demand, and Coerced NDC Protest Letter)",
+      "Dedicated 'use client' ConstructionNoticeWorkspace with 4 ready-to-use presets (Combined RA Bill & Retention, Section 21 Invocation, Subcontractor Demand, and Coerced NDC Protest Letter)",
       "Structured tabular RA Bill & Joint Measurement Book ledger with gross certified, uncertified MB, statutory deductions, retention, and net balance calculation",
       "Real-time annotated notice console with numbered statutory badges ① through ⑦",
       "5 verified judicial rulings with crimson left-accent bars (Ambica Construction, Boghara Polyfab, BSNL v. Nortel, CORE 2024 Constitution Bench, Gangotri Enterprises)",
@@ -11258,7 +11258,7 @@
     "wordCount": 1980,
     "artefacts": [
       "Hero 4-Card Key Metrics Strip (15-Day TPA s.106 Notice, 18% GST & s.50 Interest, S.194-I/205 IT Act TDS Protection, Order XV-A CPC Defense-Striking)",
-      "Interactive Commercial Notice Workspace with 4 advocate-drafted templates (Core Termination, Lock-in Breach & CapEx, Holdover Mesne Profits, Co-working Seat Default)",
+      "Interactive Commercial Notice Workspace with 4 ready-to-use templates (Core Termination, Lock-in Breach & CapEx, Holdover Mesne Profits, Co-working Seat Default)",
       "1-Click Copy, Download .doc, and Print/PDF Action Toolbar with margin annotations ①-⑥",
       "Multi-Criteria Arrears Matrix Table (Base Rent, 18% GST SAC 997212, Missing TDS, CAM/DG Dues, Fit-out CapEx)",
       "3 Verified Judicial Precedents with Crimson Left-Accent Bars (Vidya Drolia, Kailash Nath Associates, Order XV-A CPC jurisprudence)",
@@ -12556,7 +12556,7 @@
       "5-Stage Placement Fee Escalation Protocol Decision Tree (SVG Flowchart + Mobile Stacked Cards)",
       "Dark-Header Statutory Recovery Matrix Table (Contract Act, MSMED Act, Section 43B(h), Order XXXVII CPC)",
       "Interactive 4-Scenario Explorer (ReplacementClauseScenarioTabs.tsx) covering Free Credit Bluff, Layoffs/Constructive Dismissal, Role Changes, and Cash Refund vs Credit Note",
-      "Model Advocate-Vetted Condition Precedent Replacement Warranty Contract Clause",
+      "Model Fact-Verified Condition Precedent Replacement Warranty Contract Clause",
       "Worked Financial Simulation Ledger on ₹12 Lakh Executive Search Placement Fee Default",
       "BSA 2023 Section 63 Electronic Evidence Audit Checklist",
       "Dual-Track B2B Conversion Funnel (Self-Serve ₹999 Notice Test vs Enterprise Recruitment & Staffing Batch Desk)"
@@ -12724,7 +12724,7 @@
       "5-Stage Executive Search Retainer & Kill-Fee Recovery SOP (Desktop SVG Flowchart + Mobile Stacked Cards)",
       "Dark-Header Statutory Recovery Matrix Table (Order XXXVII CPC, ICA s.70, ICA ss.73–74, CPC Order XI, MSMED Act, Section 43B(h))",
       "Interactive 4-Scenario Explorer (ExecutiveSearchScenarioTabs.tsx) covering Role Freeze, Understated CTC, Exclusivity Breach, and Cancelled Mandate Kill Fee",
-      "Model Advocate-Vetted Retained Mandate Agreement Clause (Milestone Crystallization, Cancellation Kill Fee, TCTC Audit Rights)",
+      "Model Ready-to-Use Retained Mandate Agreement Clause (Milestone Crystallization, Cancellation Kill Fee, TCTC Audit Rights)",
       "Worked Financial Simulation Ledger on ₹24 Lakh CXO Search Default with MSMED compound interest calculation and Section 43B(h) tax disallowance",
       "BSA 2023 Section 63 Electronic Evidence Dossier for Search Firms (6-point audit checklist)",
       "Dual-Track B2B Conversion Funnel (Self-Serve ₹999 Single Case Test vs Enterprise Retained Search Batch Desk)"
@@ -14046,7 +14046,7 @@
       "BSA 2023 s.63 Technical Annexure: CAF, AT Report, CDR & kWh Logs",
       "Worked ₹38.40 Lakh ILL Lock-In, CPE & Bandwidth Arrears Ledger",
       "Binding Supreme Court & High Court Precedents for Telecom Creditors",
-      "Dispatch One Advocate Notice or Upload Postpaid CSV Batch",
+      "Dispatch One Fact-Verified Notice or Upload Postpaid CSV Batch",
       "Frequently Asked Questions: Telecom, ISP & Data Center Notices",
       "Statutory Bare Acts, TRAI/MeitY Portals & Cross-Cluster Links"
     ],
@@ -14837,7 +14837,7 @@
     "faqQuestions": [
       "Why can a partial EMI payment no longer prevent or upgrade an NPA under RBI IRACP norms?",
       "Why is Day 61–85 (SMA-2) the highest-ROI intervention window for bank collections?",
-      "How does an Advocate-Signed Soft Legal Cure Notice outperform telecalling in SMA-2?",
+      "How does a Fact-Verified Soft Legal Cure Notice outperform telecalling in SMA-2?",
       "Does sending an Advocate Cure Notice during SMA-1 or SMA-2 violate RBI Fair Practices Code?",
       "Can banks threaten SARFAESI Section 13(2) action inside a Day-62 SMA-2 Cure Notice?",
       "How do Cash Credit (CC) and Overdraft (OD) accounts slip into SMA-2 and NPA?",
@@ -16024,7 +16024,7 @@
       "Stacking Section 138 / PSS s.25 Alongside Order 37 or IBC",
       "Worked Cost & Timeline Comparison (₹25 Lakh vs ₹1.2 Crore)",
       "Pre-Litigation Notice & BSA 2023 Section 63 Readiness",
-      "Convert Your Selected Track Into an Advocate-Drafted Notice",
+      "Convert Your Selected Track Into a Fact-Verified Notice",
       "Frequently Asked Questions on B2B Forum Selection",
       "Primary Statutory Sources & Verified Precedents"
     ],
@@ -16109,7 +16109,7 @@
       "Email, WhatsApp & BSA 2023 s.63 Proof for Electronic Confirmations",
       "Worked Example: Resetting a ₹22.57 Lakh Ledger Before Expiry",
       "Mandatory Annexure & Signatory Verification Checklist",
-      "Get Advocate Review on 1 Case or Run Bulk AR Confirmations",
+      "Get Fact Verification on 1 Case or Run Bulk AR Confirmations",
       "Frequently Asked Questions: Section 18 & Section 25(3)",
       "Primary Statutory Sources & Related B2B Recovery Guides"
     ],

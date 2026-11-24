@@ -28,10 +28,10 @@ export default function BulkNoticeCTA({
                 Enterprise Credit Card Portfolio Recovery • Section 63 BSA 2023 Compliant
               </span>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-bold tracking-tight text-white mb-3">
-                Dispatch 10,000+ Advocate-Verified Credit Card Demand Notices with Automated Tracking
+                Dispatch 10,000+ Fact-Verified Credit Card Demand Notices with Automated Tracking
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6">
-                Equip your bank or NBFC recovery cell with industrial-scale legal dispatch. Every notice is vetted by Bar Council-enrolled advocates and transmitted concurrently via India Post Speed Post, encrypted WhatsApp Business API, and registered email with tamper-proof Section 63 BSA electronic admissibility certificates.
+                Equip your bank or NBFC recovery cell with industrial-scale legal dispatch. Every notice is prepared on verified facts and transmitted concurrently via India Post Speed Post, encrypted WhatsApp Business API, and registered email with tamper-proof Section 63 BSA electronic admissibility certificates.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button

@@ -25,10 +25,10 @@ export default function FieldSalesmanRecoveryCTA({
               Track 1 &bull; Single Salesman Default / Retailer Recovery Test
             </span>
             <p className="text-lg sm:text-xl font-extrabold text-white mb-2">
-              Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Advocate Drafted &middot; Email + WhatsApp + Speed Post RPAD)
+              Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Fact-Verified &middot; Email + WhatsApp + Speed Post RPAD)
             </p>
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-              Serve a defect-free, advocate-drafted Legal Demand Notice and Police Criminal Complaint under <strong>Bharatiya Nyaya Sanhita (BNS) 2023 Section 316(4)</strong> [Criminal Breach of Trust by Clerk/Servant] and Section 318(4) [Cheating]. Includes formal joint ledger reconciliation notices to retailers, BSA 2023 Section 63 electronic audit certificates for UPI/WhatsApp evidence, and immediate FIR documentation required for Fidelity Guarantee Insurance recovery.
+              Serve a defect-free, fact-verified Legal Demand Notice and Police Criminal Complaint under <strong>Bharatiya Nyaya Sanhita (BNS) 2023 Section 316(4)</strong> [Criminal Breach of Trust by Clerk/Servant] and Section 318(4) [Cheating]. Includes formal joint ledger reconciliation notices to retailers, BSA 2023 Section 63 electronic audit certificates for UPI/WhatsApp evidence, and immediate FIR documentation required for Fidelity Guarantee Insurance recovery.
             </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-3">

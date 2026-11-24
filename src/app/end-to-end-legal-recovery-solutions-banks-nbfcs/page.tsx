@@ -92,7 +92,7 @@ const CASE_CITATIONS = [
     facts:
       "A commercial bank employed muscle-men recovery agents to repossess a vehicle financed under a hire-purchase agreement. The recovery agents used force and intimidated the defaulting borrower, prompting criminal FIRs and constitutional writ petitions. The bank argued that default under the hypothecation deed gave them contractual repossession rights without seeking judicial process.",
     holding:
-      "The Supreme Court ruled that banks cannot employ strong-arm tactics, coercion, or unregistered collection goons to recover dues. Financial institutions are bound by the rule of law and RBI Fair Practice Directives. Recovery must proceed strictly through statutory advocate demand notices, arbitration, Lok Adalats, DRT applications, or civil execution decrees. Actions violating statutory due process expose lenders and their management to heavy civil damages and criminal liability.",
+      "The Supreme Court ruled that banks cannot employ strong-arm tactics, coercion, or unregistered collection goons to recover dues. Financial institutions are bound by the rule of law and RBI Fair Practice Directives. Recovery must proceed strictly through statutory legal demand notices, arbitration, Lok Adalats, DRT applications, or civil execution decrees. Actions violating statutory due process expose lenders and their management to heavy civil damages and criminal liability.",
     amount: "Exemplary Penal Damages + Ban on Coercive Third-Party Recovery Agents",
     takeaway:
       "Modern banks and NBFCs cannot rely on unregulated ground tele-calling or strong-arm recovery agencies. Institutional end-to-end legal infrastructure—grounded in statutory notice dispatch and formal judicial channels—is mandatory for RBI compliance and risk mitigation.",
@@ -103,7 +103,7 @@ const CASE_CITATIONS = [
     citation: "Civil Writ Petition No. 1845/2021, High Court of Judicature at Bombay",
     date: "Order Dated 14 July 2021",
     facts:
-      "SBI referred a chronic retail loan default to the National Lok Adalat. Following advocate-led conciliation, the borrower executed a mutually agreed One-Time Settlement (OTS) compromise agreement. Later, the borrower defaulted on the structured installment plan and attempted to challenge the Lok Adalat settlement by filing a fresh civil suit, alleging lack of jurisdiction.",
+      "SBI referred a chronic retail loan default to the National Lok Adalat. Following fact-verified conciliation, the borrower executed a mutually agreed One-Time Settlement (OTS) compromise agreement. Later, the borrower defaulted on the structured installment plan and attempted to challenge the Lok Adalat settlement by filing a fresh civil suit, alleging lack of jurisdiction.",
     holding:
       "The High Court dismissed the borrower's suit, affirming that under Section 21 of the Legal Services Authorities Act, 1987, an award passed by a Lok Adalat holds the status of a final civil court decree. No appeal lies against a Lok Adalat award under Section 96(2) of the Code of Civil Procedure (CPC). If a borrower reneges on a Lok Adalat settlement, the lender is entitled to immediate execution and attachment under Order 21 CPC without having to re-litigate the merits.",
     amount: "Immediate Civil Decree Execution under Order 21 CPC + 100% Court Fee Refund",
@@ -152,7 +152,7 @@ const FAQS = [
   {
     question: "What is the statutory limitation period for banks to recover defaulted loan amounts?",
     answer:
-      "Under Article 19, Article 21, and Article 113 of the Limitation Act, 1963, the statutory limitation period for filing a money recovery suit is 3 years from the date of default or from the date when the cause of action arose. However, under Section 18 and Section 19 of the Act, any written acknowledgment of debt, partial electronic ledger repayment, or CIBIL restructuring request resets the 3-year limitation clock. Timely issuance of advocate statutory demand notices freezes the cause of action and establishes an undeniable documentary trail.",
+      "Under Article 19, Article 21, and Article 113 of the Limitation Act, 1963, the statutory limitation period for filing a money recovery suit is 3 years from the date of default or from the date when the cause of action arose. However, under Section 18 and Section 19 of the Act, any written acknowledgment of debt, partial electronic ledger repayment, or CIBIL restructuring request resets the 3-year limitation clock. Timely issuance of statutory demand notices freezes the cause of action and establishes an undeniable documentary trail.",
   },
   {
     question: "Are digital legal notices sent via WhatsApp and Email legally enforceable under Indian law?",
@@ -162,7 +162,7 @@ const FAQS = [
   {
     question: "How does the platform handle Section 138 NI Act and Section 25 PSSA NACH bounce recovery?",
     answer:
-      "When automated NACH/e-mandates or cheques bounce due to insufficient funds, the lender must issue a statutory demand notice within 30 days of receiving the bank dishonour memo. Our end-to-end platform automates return memo ingestion, drafts advocate demand notices under Section 138(b) NI Act or Section 25 of the Payment and Settlement Systems Act (PSSA), delivers them via Speed Post and digital channels, and prepares formatted criminal complaints for filing before Jurisdictional Metropolitan Magistrates upon expiry of the 15-day cure window.",
+      "When automated NACH/e-mandates or cheques bounce due to insufficient funds, the lender must issue a statutory demand notice within 30 days of receiving the bank dishonour memo. Our end-to-end platform automates return memo ingestion, drafts legal demand notices under Section 138(b) NI Act or Section 25 of the Payment and Settlement Systems Act (PSSA), delivers them via Speed Post and digital channels, and prepares formatted criminal complaints for filing before Jurisdictional Metropolitan Magistrates upon expiry of the 15-day cure window.",
   },
   {
     question: "What legal remedies exist for recovering unsecured personal loans below the DRT ₹20 Lakh threshold?",
@@ -172,7 +172,7 @@ const FAQS = [
   {
     question: "How does our legal recovery infrastructure ensure 100% compliance with RBI recovery agent guidelines?",
     answer:
-      "Our entire operational workflow is lawyer-driven, ethical, and strictly anchored in Indian statutory frameworks. We do not engage tele-calling muscle agencies, unvetted field agents, or off-hours calling. Every communication is an official, advocate-signed statutory legal document or a formal judicial notice issued through courts, Lok Adalats, or tribunals. This eliminates consumer forum harassment litigation, protects institutional brand equity, and aligns 100% with RBI Master Directions on Fair Practices Code.",
+      "Our entire operational workflow is fact-verified, ethical, and strictly anchored in Indian statutory frameworks. We do not engage tele-calling muscle agencies, unvetted field agents, or off-hours calling. Every communication is an official, fact-verified statutory legal document or a formal judicial notice issued through courts, Lok Adalats, or tribunals. This eliminates consumer forum harassment litigation, protects institutional brand equity, and aligns 100% with RBI Master Directions on Fair Practices Code.",
   },
 ];
 
@@ -299,7 +299,7 @@ export default function EndToEndLegalRecoveryPage() {
                 Executive Overview (Statutory Banking &amp; NBFC Recovery Architecture)
               </p>
               <p>
-                Under Reserve Bank of India recovery directions and statutory civil frameworks, banks and NBFCs enforce delinquent debts through structured legal escalation. From automated advocate demand notices under Section 63 BSA to Lok Adalat pre-litigation settlements, Section 138 NI Act complaints, Order 37 summary suits, and DRT recovery, consolidating portfolio recovery into an end-to-end legal workflow eliminates vendor fragmentation and reduces credit loss.
+                Under Reserve Bank of India recovery directions and statutory civil frameworks, banks and NBFCs enforce delinquent debts through structured legal escalation. From automated legal demand notices under Section 63 BSA to Lok Adalat pre-litigation settlements, Section 138 NI Act complaints, Order 37 summary suits, and DRT recovery, consolidating portfolio recovery into an end-to-end legal workflow eliminates vendor fragmentation and reduces credit loss.
               </p>
             </div>
 
@@ -365,7 +365,7 @@ export default function EndToEndLegalRecoveryPage() {
                   This fragmented approach yields severe operational inefficiencies: inconsistent notice language, missed statutory limitation windows under the Limitation Act of 1963, uncoordinated court filings across disparate jurisdictions, and heightened regulatory exposure under the RBI Master Direction on Fair Practices Code for Lenders. When field agencies rely on harassment, institutions face severe reputational backlash, judicial penalties, and consumer forum lawsuits.
                 </p>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
-                  Our <strong>End-to-End Legal Recovery Infrastructure</strong> solves this challenge by consolidating the entire recovery lifecycle into a single institutional framework. From real-time portfolio ingestion and advocate notice dispatch with Section 63 BSA delivery certificates to National Lok Adalat conciliation, Order 37 summary suits, Section 138 NI Act prosecutions, and execution decree attachments, we deliver measurable recovery yields while ensuring 100% statutory compliance.
+                  Our <strong>End-to-End Legal Recovery Infrastructure</strong> solves this challenge by consolidating the entire recovery lifecycle into a single institutional framework. From real-time portfolio ingestion and legal notice dispatch with Section 63 BSA delivery certificates to National Lok Adalat conciliation, Order 37 summary suits, Section 138 NI Act prosecutions, and execution decree attachments, we deliver measurable recovery yields while ensuring 100% statutory compliance.
                 </p>
               </section>
 
@@ -481,7 +481,7 @@ export default function EndToEndLegalRecoveryPage() {
                         Section 63 BSA Certified Electronic Notice Delivery:
                       </strong>
                       <p className="text-xs sm:text-sm mt-0.5 leading-relaxed">
-                        Dispatching statutory advocate notices via registered email and WhatsApp accompanied by cryptographic server transmission certificates under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023 eliminates false debtor claims of non-receipt and shortens the pre-litigation cure cycle.
+                        Dispatching statutory legal notices via registered email and WhatsApp accompanied by cryptographic server transmission certificates under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023 eliminates false debtor claims of non-receipt and shortens the pre-litigation cure cycle.
                       </p>
                     </div>
                   </li>
@@ -575,7 +575,7 @@ export default function EndToEndLegalRecoveryPage() {
                     <span className="text-[10px] font-bold text-amber-800 uppercase tracking-wider block mb-1">
                       Stage 2
                     </span>
-                    <h3 className="font-bold text-sm">Omnichannel Advocate Demand Notice</h3>
+                    <h3 className="font-bold text-sm">Omnichannel Legal Demand Notice</h3>
                     <p className="text-xs text-amber-900 mt-1">
                       Speed Post, email, and WhatsApp delivery with Section 63 BSA audit certificate.
                     </p>
@@ -673,7 +673,7 @@ export default function EndToEndLegalRecoveryPage() {
                       STAGE 2
                     </text>
                     <text x="250" y="65" fill="#92400E" fontWeight="bold" textAnchor="middle">
-                      Advocate Notice
+                      Legal Notice
                     </text>
                     <text x="250" y="82" fill="#78350F" fontSize="10" textAnchor="middle">
                       Speed Post + WhatsApp
@@ -759,7 +759,7 @@ export default function EndToEndLegalRecoveryPage() {
                       STATUTORY LIFECYCLE MILESTONES &amp; TIMELINES FOR LENDERS:
                     </text>
                     <text x="25" y="192" fill="#475569" fontSize="10">
-                      • Advocate Notice Cure Window: Strict 15-day statutory repayment demand before legal filings
+                      • Legal Notice Cure Window: Strict 15-day statutory repayment demand before legal filings
                     </text>
                     <text x="25" y="208" fill="#475569" fontSize="10">
                       • Cheque / NACH Dishonour Limitation: Demand notice within 30 days of bank return memo
@@ -808,10 +808,10 @@ export default function EndToEndLegalRecoveryPage() {
                     </span>
                     <div className="space-y-1 sm:space-y-1.5">
                       <h3 className="text-sm sm:text-base md:text-lg font-bold text-slate-900">
-                        Automated Advocate Notice Dispatch with Section 63 BSA Certification
+                        Automated Legal Notice Dispatch with Section 63 BSA Certification
                       </h3>
                       <p className="text-xs sm:text-sm leading-relaxed">
-                        Generate individualized, advocate-signed statutory demand notices customized by loan type (unsecured personal, credit card, commercial, or cheque bounce). Notices are dispatched simultaneously via India Post Registered Speed Post and digital channels (Email and WhatsApp) with timestamped delivery certificates under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023.
+                        Generate individualized, fact-verified statutory demand notices customized by loan type (unsecured personal, credit card, commercial, or cheque bounce). Notices are dispatched simultaneously via India Post Registered Speed Post and digital channels (Email and WhatsApp) with timestamped delivery certificates under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023.
                       </p>
                       <p className="text-xs text-slate-500 font-medium">
                         Review detailed fee benchmarks on our{" "}
@@ -846,7 +846,7 @@ export default function EndToEndLegalRecoveryPage() {
                         Multi-Track Judicial Litigation (Order 37 CPC, DRT &amp; Section 138 NI Act)
                       </h3>
                       <p className="text-xs sm:text-sm leading-relaxed">
-                        For non-responsive or willful defaulters, our network of verified advocates initiates targeted judicial proceedings: Order 37 summary suits in Civil Courts for fast-track money recovery, Section 138 NI Act or Section 25 PSSA criminal complaints for bounced payments, or SARFAESI Section 13(2) and DRT Original Applications for secured debts over ₹20 Lakhs.
+                        For non-responsive or willful defaulters, we support targeted judicial proceedings: Order 37 summary suits in Civil Courts for fast-track money recovery, Section 138 NI Act or Section 25 PSSA criminal complaints for bounced payments, or SARFAESI Section 13(2) and DRT Original Applications for secured debts over ₹20 Lakhs.
                       </p>
                     </div>
                   </li>
@@ -860,7 +860,7 @@ export default function EndToEndLegalRecoveryPage() {
                         Execution Decree Attachment &amp; Final Asset Realization
                       </h3>
                       <p className="text-xs sm:text-sm leading-relaxed">
-                        Upon securing civil decrees or Lok Adalat awards, execute attachment proceedings under Order 21 of the Code of Civil Procedure, 1908. Our legal team secures court-ordered salary garnishments, bank account freezing warrants, and asset attachments, ensuring complete monetary realization directly into institutional settlement pools.
+                        Upon securing civil decrees or Lok Adalat awards, execute attachment proceedings under Order 21 of the Code of Civil Procedure, 1908. Our team secures court-ordered salary garnishments, bank account freezing warrants, and asset attachments, ensuring complete monetary realization directly into institutional settlement pools.
                       </p>
                     </div>
                   </li>
@@ -910,7 +910,7 @@ export default function EndToEndLegalRecoveryPage() {
                           scope="row"
                           className="py-3 px-3.5 sm:py-3.5 sm:px-4 font-semibold text-slate-900"
                         >
-                          Omnichannel Advocate Demand Notice
+                          Omnichannel Legal Demand Notice
                         </th>
                         <td className="py-3 px-3.5 sm:py-3.5 sm:px-4 text-emerald-700 font-bold">
                           All Portfolios / Any Amount
@@ -1090,7 +1090,7 @@ export default function EndToEndLegalRecoveryPage() {
                       <strong>The Deadlock:</strong> The NBFC had engaged three regional collection call centers and numerous local advocate retainers. The recovery rate hovered at under 11%, while borrower complaints regarding aggressive collection calls threatened to trigger RBI regulatory inquiries under Fair Practice Code circulars. Furthermore, over 2,200 accounts were approaching the 3-year statutory limitation deadline under Article 19 of the Limitation Act, 1963.
                     </p>
                     <p>
-                      <strong>The End-to-End Legal Action:</strong> The NBFC onboarded LegalRecovery.in to execute a unified legal recovery campaign. The portfolio was ingested in 48 hours via API. In Phase 1, our automated infrastructure dispatched advocate statutory demand notices concurrently via India Post Registered Speed Post and WhatsApp, generating Section 63 BSA electronic delivery audit certificates for each debtor. In Phase 2, 6,800 responsive borrowers were scheduled for conciliation before National Lok Adalat hybrid benches. In Phase 3, summary suits under Order 37 CPC and Section 25 PSSA NACH bounce complaints were filed against persistent non-settlers.
+                      <strong>The End-to-End Legal Action:</strong> The NBFC onboarded LegalRecovery.in to execute a unified legal recovery campaign. The portfolio was ingested in 48 hours via API. In Phase 1, our automated infrastructure dispatched statutory demand notices concurrently via India Post Registered Speed Post and WhatsApp, generating Section 63 BSA electronic delivery audit certificates for each debtor. In Phase 2, 6,800 responsive borrowers were scheduled for conciliation before National Lok Adalat hybrid benches. In Phase 3, summary suits under Order 37 CPC and Section 25 PSSA NACH bounce complaints were filed against persistent non-settlers.
                     </p>
                     <div className="p-3.5 sm:p-4 bg-emerald-950/70 border border-emerald-700/60 rounded-xl text-emerald-200">
                       <strong className="block text-emerald-400 font-bold mb-1">
@@ -1156,7 +1156,7 @@ export default function EndToEndLegalRecoveryPage() {
                         Section 63 BSA Electronic Delivery Certificate:
                       </strong>
                       <p className="text-xs text-slate-600 mt-0.5">
-                        Cryptographic server log and delivery timestamp report proving service of the statutory advocate demand notice via WhatsApp/Email.
+                        Cryptographic server log and delivery timestamp report proving service of the statutory legal demand notice via WhatsApp/Email.
                       </p>
                     </div>
                   </div>

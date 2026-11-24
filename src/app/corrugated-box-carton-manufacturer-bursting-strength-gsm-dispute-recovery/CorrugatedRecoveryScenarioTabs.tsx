@@ -38,7 +38,7 @@ const SCENARIOS: ScenarioTab[] = [
       {
         step: "Trigger Section 43B(h) + MSEFC 3x RBI Compound Interest Notice",
         detail:
-          "Serve an Advocate Statutory Demand Notice notifying the buyer's CFO and Statutory Auditor that withholding payment beyond 45 days triggers full expense disallowance under Section 43B(h) of the Income Tax Act plus monthly-compounded 3x RBI interest.",
+          "Serve a Fact-Verified Statutory Demand Notice notifying the buyer's CFO and Statutory Auditor that withholding payment beyond 45 days triggers full expense disallowance under Section 43B(h) of the Income Tax Act plus monthly-compounded 3x RBI interest.",
       },
     ],
     legalProvision: "Sale of Goods Act ss.41–42 | MSMED Act ss.15–18 | Income Tax Act s.43B(h) | IS 2771 / IS 1060",

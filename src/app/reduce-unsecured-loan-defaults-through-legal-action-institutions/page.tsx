@@ -95,7 +95,7 @@ const CASE_CITATIONS = [
     citation: "Commercial Summary Suit No. 118 of 2021, Commercial Court, Patiala House Courts, New Delhi",
     date: "Decree Dated 12 October 2023",
     facts:
-      "The borrower availed an unsecured personal loan of ₹15 Lakh disbursed directly into his salary account against an Aadhaar e-Signed agreement and Key Fact Statement. After paying 4 EMIs, the borrower defaulted entirely and failed to respond to tele-calling recovery agents. The NBFC issued an advocate legal demand notice followed by an expedited Summary Suit under Order XXXVII of the Code of Civil Procedure, 1908.",
+      "The borrower availed an unsecured personal loan of ₹15 Lakh disbursed directly into his salary account against an Aadhaar e-Signed agreement and Key Fact Statement. After paying 4 EMIs, the borrower defaulted entirely and failed to respond to tele-calling recovery agents. The NBFC issued a fact-verified legal demand notice followed by an expedited Summary Suit under Order XXXVII of the Code of Civil Procedure, 1908.",
     holding:
       "The Commercial Court held that digital loan agreements accompanied by e-Sign cryptographic certificates and bank account credit statements constitute a liquidated debt under Order XXXVII Rule 1(2). Since the defendant failed to show substantial triable issues on leave to defend within 10 days, the court decreed the suit summarily in favor of the financial institution for the full outstanding principal, contractual interest at 16% per annum, and court costs.",
     amount: "₹14,28,450 Decreed with 16% Contractual Interest + ₹45,000 Legal Costs",
@@ -164,7 +164,7 @@ const FAQS = [
   {
     question: "How can financial institutions handle high-volume unsecured defaults cost-effectively?",
     answer:
-      "By deploying API-driven bulk legal notice infrastructure like LegalRecovery.in. Instead of manual advocate drafting for isolated cases, institutions integrate core loan management systems to trigger bulk advocate-vetted statutory notices upon reaching specific DPD thresholds (31 DPD, 61 DPD). With automated delivery via Registered Speed Post and digital channels, per-case recovery costs drop below 1% of the recovered principal, transforming early legal recovery into a high-ROI risk mitigation function.",
+      "By deploying API-driven bulk legal notice infrastructure like LegalRecovery.in. Instead of manual notice drafting for isolated cases, institutions integrate core loan management systems to trigger bulk fact-verified statutory notices upon reaching specific DPD thresholds (31 DPD, 61 DPD). With automated delivery via Registered Speed Post and digital channels, per-case recovery costs drop below 1% of the recovered principal, transforming early legal recovery into a high-ROI risk mitigation function.",
   },
 ];
 
@@ -344,7 +344,7 @@ export default function ReduceUnsecuredLoanDefaultsPage() {
                   Traditional credit risk management models rely heavily on tele-calling agencies and automated SMS/WhatsApp alerts during early buckets (DPD 1 to 60). Yet empirical data reveals that by the time an unsecured borrower reaches 60 DPD (Special Mention Account-2), borrower willingness to repay declines exponentially. Borrowers face multiple creditor claims simultaneously and actively prioritize secured debts (home loan EMIs, vehicle repossessions) or creditors who demonstrate credible, imminent legal readiness. Relying exclusively on calling agents yields diminishing marginal returns and frequently exposes institutions to regulatory scrutiny under the Reserve Bank of India&apos;s Fair Practices Code.
                 </p>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
-                  By instituting an <strong>Early Statutory Intervention Protocol</strong> at the 31-day DPD stage, financial institutions transition delinquency management from informal customer service nudges into formal statutory enforcement. A Bar Council-verified advocate legal notice establishes enforceable pre-litigation documentation, invokes criminal and civil liabilities, and alters borrower prioritization without escalating operating expenditures.
+                  By instituting an <strong>Early Statutory Intervention Protocol</strong> at the 31-day DPD stage, financial institutions transition delinquency management from informal customer service nudges into formal statutory enforcement. A Bar Council-fact-verified legal notice establishes enforceable pre-litigation documentation, invokes criminal and civil liabilities, and alters borrower prioritization without escalating operating expenditures.
                 </p>
               </section>
 
@@ -647,7 +647,7 @@ export default function ReduceUnsecuredLoanDefaultsPage() {
                     </span>
                     <div className="space-y-1 sm:space-y-1.5">
                       <h3 className="text-sm sm:text-base md:text-lg font-bold text-slate-900">
-                        Dispatch Bar Council-Verified Advocate Demand Notices
+                        Dispatch Fact-Verified Demand Notices
                       </h3>
                       <p className="text-xs sm:text-sm leading-relaxed">
                         Through an institutional API rail, dispatch standardized advocate legal notices issued on registered advocate letterhead. Notices must specify total overdue amounts, break down penal interest, cite Section 25 PSS Act criminal liability, and establish a strict 15-day pre-litigation deadline.
@@ -664,7 +664,7 @@ export default function ReduceUnsecuredLoanDefaultsPage() {
                         Execute Dual Physical &amp; Digital Service Under BSA Section 63
                       </h3>
                       <p className="text-xs sm:text-sm leading-relaxed">
-                        Serve the advocate notice via Registered Speed Post alongside verified digital transmissions (registered email and authenticated WhatsApp). Preserve postal consignment tracking barcodes and cryptographic transmission logs to eliminate evasive &quot;notice not served&quot; defenses in court.
+                        Serve the fact-verified notice via Registered Speed Post alongside verified digital transmissions (registered email and authenticated WhatsApp). Preserve postal consignment tracking barcodes and cryptographic transmission logs to eliminate evasive &quot;notice not served&quot; defenses in court.
                       </p>
                     </div>
                   </li>
@@ -820,7 +820,7 @@ export default function ReduceUnsecuredLoanDefaultsPage() {
                       <strong>The Institutional Challenge:</strong> A mid-sized non-banking financial company specializing in digital personal loans (ticket sizes ₹50,000 to ₹3,00,000) was experiencing severe 90-day NPA slippage. Nearly 4.2% of its ₹450 Crore book slipped into terminal non-accrual annually. Internal collections relied exclusively on automated voice broadcasting, SMS sequences, and external tele-calling agencies. Defaulting borrowers routinely changed SIM cards, ignored tele-callers, and prioritized other personal obligations.
                     </p>
                     <p>
-                      <strong>The Legal Intervention Architecture:</strong> The NBFC&apos;s Risk Committee partnered with LegalRecovery.in to implement an automated Early Statutory Intervention Protocol. Accounts crossing 31 DPD with two consecutive e-NACH bounce memos automatically generated Bar Council-registered advocate legal notices. Dispatched simultaneously via Speed Post and Section 63 BSA-certified WhatsApp/email, the notices explicitly detailed Section 25 PSS Act liabilities, liquidated acceleration sums, and CIBIL willful-defaulter reporting timelines.
+                      <strong>The Legal Intervention Architecture:</strong> The NBFC&apos;s Risk Committee partnered with LegalRecovery.in to implement an automated Early Statutory Intervention Protocol. Accounts crossing 31 DPD with two consecutive e-NACH bounce memos automatically generated Bar Council-registered fact-verified legal notices. Dispatched simultaneously via Speed Post and Section 63 BSA-certified WhatsApp/email, the notices explicitly detailed Section 25 PSS Act liabilities, liquidated acceleration sums, and CIBIL willful-defaulter reporting timelines.
                     </p>
                     <p>
                       <strong>The Resolution Rail:</strong> Within 15 days of notice delivery, the specialized pre-litigation helpdesk captured inbound borrower contacts. Borrowers who had ignored months of tele-calling immediately requested restructuring terms, partial settlements, or immediate mandate reactivation to avoid formal judicial summons and permanent CIBIL degradation.
@@ -831,7 +831,7 @@ export default function ReduceUnsecuredLoanDefaultsPage() {
                         <li>• <strong>32.4% reduction</strong> in accounts migrating from SMA-1 (31-60 DPD) to terminal 90-day NPA status.</li>
                         <li>• <strong>₹11.8 Crore in direct recoveries</strong> achieved within the 15-day notice cure window.</li>
                         <li>• Total legal notice delivery cost amounted to <strong>less than 0.75%</strong> of the recovered capital.</li>
-                        <li>• Zero regulatory complaints under RBI Fair Practices Code due to 100% compliant statutory advocate drafting.</li>
+                        <li>• Zero regulatory complaints under RBI Fair Practices Code due to 100% compliant statutory notice drafting.</li>
                       </ul>
                     </div>
                   </div>

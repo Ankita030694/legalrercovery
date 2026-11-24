@@ -2,14 +2,14 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Our Legal Experts & Panel Advocates | Legal Recovery India',
-  description: 'Meet our legal experts and panel advocates led by Founder Anuj Anand Malik, specializing in debt recovery, consumer law, and civil litigation.',
+  title: 'Our Team & Panel Advocates | Legal Recovery India',
+  description: 'Meet our team and panel advocates led by Founder Anuj Anand Malik, specializing in debt recovery, consumer law, and civil litigation.',
   alternates: {
     canonical: 'https://www.legalrecovery.in/authors',
   },
   openGraph: {
-    title: 'Our Legal Experts & Panel Advocates | Legal Recovery India',
-    description: 'Meet our legal experts and panel advocates led by Founder Anuj Anand Malik, specializing in debt recovery, consumer law, and civil litigation.',
+    title: 'Our Team & Panel Advocates | Legal Recovery India',
+    description: 'Meet our team and panel advocates led by Founder Anuj Anand Malik, specializing in debt recovery, consumer law, and civil litigation.',
     url: 'https://www.legalrecovery.in/authors',
     type: 'website',
     siteName: 'LegalRecovery.in',
@@ -19,14 +19,14 @@ export const metadata: Metadata = {
         url: 'https://www.legalrecovery.in/blog_money_recovery.png',
         width: 1200,
         height: 630,
-        alt: 'Our Legal Experts & Panel Advocates | Legal Recovery India',
+        alt: 'Our Team & Panel Advocates | Legal Recovery India',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Our Legal Experts & Panel Advocates | Legal Recovery India',
-    description: 'Meet our legal experts and panel advocates led by Founder Anuj Anand Malik, specializing in debt recovery, consumer law, and civil litigation.',
+    title: 'Our Team & Panel Advocates | Legal Recovery India',
+    description: 'Meet our team and panel advocates led by Founder Anuj Anand Malik, specializing in debt recovery, consumer law, and civil litigation.',
     site: '@legalrecoveryin',
     creator: '@legalrecoveryin',
     images: ['https://www.legalrecovery.in/blog_money_recovery.png'],
@@ -72,7 +72,7 @@ export default function AuthorsIndexPage() {
       <div className="bg-gradient-to-br from-[#111827] via-[#0F172A] to-[#020617] text-white pt-32 pb-20 border-b border-slate-900">
         <div className="max-w-5xl mx-auto px-4 md:px-8 text-center">
           <span className="inline-block text-[#DC2626] text-xs md:text-sm font-black uppercase tracking-widest mb-4 bg-red-950/30 px-4 py-1.5 rounded-full border border-[#DC2626]/20">
-            OUR LEGAL TEAM
+            OUR TEAM
           </span>
           <h1 className="text-4xl md:text-6xl font-black mb-6">Expert Legal Minds</h1>
           <p className="text-slate-300 max-w-3xl mx-auto text-lg leading-relaxed">

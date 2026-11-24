@@ -14,7 +14,7 @@ interface RmcSteelChemicalNoticeCTAProps {
 export default function RmcSteelChemicalNoticeCTA({
   className = "",
   variant = "primary",
-  buttonText = "Send Advocate-Vetted Supply Notice",
+  buttonText = "Send Fact-Verified Supply Notice",
 }: RmcSteelChemicalNoticeCTAProps) {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const basePrice = DEFAULT_FUNNEL_SETTINGS.basePricePerOpposition;
@@ -46,7 +46,7 @@ export default function RmcSteelChemicalNoticeCTA({
                 Track 1 &bull; Single Defaulting Builder / Buyer Notice
               </span>
               <p className="text-lg sm:text-xl font-extrabold text-white mb-2">
-                Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Advocate Drafted &middot; Email + WhatsApp + Speed Post RPAD)
+                Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Fact-Verified &middot; Email + WhatsApp + Speed Post RPAD)
               </p>
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
                 Issue a litigation-ready demand notice backed by your 6-column E-Way Bill, Dharamkanta weighbridge, and MTC/Batch COA schedule. Locks statutory acceptance under Sale of Goods Act s.42, rejects belated cube-test or purity excuses, and establishes a Pre-Section 8 IBC &amp; Order XXXVII CPC record.
@@ -79,7 +79,7 @@ export default function RmcSteelChemicalNoticeCTA({
                 Have 10 to 10,000+ Defaulters? Upload CSV / Activate Dedicated Institutional Desk
               </p>
               <p className="text-xs sm:text-sm text-slate-600 leading-relaxed mb-5">
-                Built for multi-plant credit controllers managing overdue builder, EPC contractor, and downstream factory ledgers. Batch-ingest Tax Invoices, E-Way numbers, and weighbridge logs for automated Advocate-signed notices, MSMED Samadhaan filings, and Order XXXVII / IBC escalation tracking.
+                Built for multi-plant credit controllers managing overdue builder, EPC contractor, and downstream factory ledgers. Batch-ingest Tax Invoices, E-Way numbers, and weighbridge logs for automated Fact-verified notices, MSMED Samadhaan filings, and Order XXXVII / IBC escalation tracking.
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-3">

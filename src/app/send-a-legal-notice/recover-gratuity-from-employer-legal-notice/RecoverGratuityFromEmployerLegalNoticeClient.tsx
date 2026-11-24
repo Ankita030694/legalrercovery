@@ -12,7 +12,7 @@ const faqs = [
   {
     question: 'Can an employee send a legal notice to a company for unpaid gratuity in India?',
     answer:
-      'Yes, an employee who has completed five years of continuous service (or their legal heir in case of death or disablement) has an indefeasible statutory right under Section 4 and Section 7 of the Payment of Gratuity Act, 1972 to issue an advocate-vetted statutory legal notice demanding immediate disbursement of unpaid gratuity along with 10% statutory interest per annum. The statutory legal notice puts the employer on formal legal alert, holding company directors personally liable and setting a strict 15-day compliance deadline before the employee initiates quasi-judicial recovery proceedings under Form N before the Controlling Authority or invokes Section 8 revenue recovery through the District Collector.',
+      'Yes, an employee who has completed five years of continuous service (or their legal heir in case of death or disablement) has an indefeasible statutory right under Section 4 and Section 7 of the Payment of Gratuity Act, 1972 to issue a fact-verified statutory legal notice demanding immediate disbursement of unpaid gratuity along with 10% statutory interest per annum. The statutory legal notice puts the employer on formal legal alert, holding company directors personally liable and setting a strict 15-day compliance deadline before the employee initiates quasi-judicial recovery proceedings under Form N before the Controlling Authority or invokes Section 8 revenue recovery through the District Collector.',
   },
   {
     question: 'What is the statutory time limit for an employer to pay gratuity after employee resignation or retirement?',
@@ -53,7 +53,7 @@ const ogImage =
   'https://legalrecovery.in/images/og/recover-gratuity-from-employer-legal-notice.jpg';
 
 const reviewBodyText =
-  'After completing 7 continuous years as Senior Engineering Manager at a Pune IT firm, the management withheld my statutory gratuity of ₹6,75,000 following my resignation. They cited baseless project handover delays and withheld my settlement for 5 months without issuing Form L or Form M. Legal Recovery drafted a formidable statutory legal demand notice under Section 4 and Section 7(3A) of the Payment of Gratuity Act, 1972, invoking mandatory 10% statutory interest and directors\' personal liability. Within 11 days of receiving the advocate-vetted notice via Speed Post AD, the company\'s legal department cleared the entire gratuity amount of ₹6,75,000 along with accrued statutory interest into my account. Tremendous legal efficiency!';
+  'After completing 7 continuous years as Senior Engineering Manager at a Pune IT firm, the management withheld my statutory gratuity of ₹6,75,000 following my resignation. They cited baseless project handover delays and withheld my settlement for 5 months without issuing Form L or Form M. Legal Recovery drafted a formidable statutory legal demand notice under Section 4 and Section 7(3A) of the Payment of Gratuity Act, 1972, invoking mandatory 10% statutory interest and directors\' personal liability. Within 11 days of receiving the fact-verified notice via Speed Post AD, the company\'s legal department cleared the entire gratuity amount of ₹6,75,000 along with accrued statutory interest into my account. Tremendous legal efficiency!';
 
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -168,7 +168,7 @@ const jsonLd = {
         {
           '@type': 'ListItem',
           position: 3,
-          name: 'Serve an advocate-drafted statutory demand legal notice citing Section 4, Section 7(3A) mandatory 10% interest, and Section 9 penal liability',
+          name: 'Serve a fact-verified statutory demand legal notice citing Section 4, Section 7(3A) mandatory 10% interest, and Section 9 penal liability',
         },
         {
           '@type': 'ListItem',
@@ -188,7 +188,7 @@ const jsonLd = {
       '@type': 'Product',
       name: 'Legal Notice to Employer for Unpaid Gratuity & Retirement Dues',
       description:
-        'Advocate-drafted statutory legal demand notice service under Payment of Gratuity Act 1972 to recover withheld gratuity, full and final settlement arrears, and mandatory 10% statutory interest from employers across India.',
+        'Fact-verified statutory legal demand notice service under Payment of Gratuity Act 1972 to recover withheld gratuity, full and final settlement arrears, and mandatory 10% statutory interest from employers across India.',
       brand: {
         '@type': 'Organization',
         name: 'Legal Recovery',
@@ -244,7 +244,7 @@ export default function RecoverGratuityFromEmployerLegalNoticeClient() {
     { id: 'gratuity-calculation', title: '3. Statutory 15/26 Formula & Mandatory 10% Interest (§ 7(3A))' },
     { id: 'evidentiary-checklist', title: '4. Pre-Notice Evidentiary Checklist & Document Audit' },
     { id: 'recovery-protocol', title: '5. Step-by-Step Legal Recovery: Form I to Controlling Authority' },
-    { id: 'notice-clauses-checklist', title: '6. Key Clauses in an Advocate-Drafted Gratuity Legal Notice' },
+    { id: 'notice-clauses-checklist', title: '6. Key Clauses in a Fact-Verified Gratuity Legal Notice' },
     { id: 'controlling-authority-enforcement', title: '7. Enforcement: Recovery Certificate (Sec 8) & Landmark Rulings' },
     { id: 'faqs', title: '8. Frequently Asked Questions' },
   ];
@@ -451,7 +451,7 @@ export default function RecoverGratuityFromEmployerLegalNoticeClient() {
                     Quick Answer
                   </h2>
                   <p className="text-sm text-slate-700 font-medium leading-relaxed">
-                    Under Section 7(3) and Section 7(3A) of the Payment of Gratuity Act, 1972, an employer must calculate, determine, and disburse gratuity dues to an eligible employee within 30 days of separation, failing which mandatory simple interest at 10% per annum accrues automatically. If a company unlawfully withholds or delays gratuity payment, the employee can issue an advocate-drafted statutory legal notice demanding immediate settlement with statutory interest and threatening summary proceedings before the Controlling Authority under Form N and recovery certification under Section 8. Over 78% of defaulting employers settle outstanding gratuity claims within the 15-day notice period to avoid quasi-judicial prosecution, district revenue attachment, and penal sanctions.
+                    Under Section 7(3) and Section 7(3A) of the Payment of Gratuity Act, 1972, an employer must calculate, determine, and disburse gratuity dues to an eligible employee within 30 days of separation, failing which mandatory simple interest at 10% per annum accrues automatically. If a company unlawfully withholds or delays gratuity payment, the employee can issue a fact-verified statutory legal notice demanding immediate settlement with statutory interest and threatening summary proceedings before the Controlling Authority under Form N and recovery certification under Section 8. Over 78% of defaulting employers settle outstanding gratuity claims within the 15-day notice period to avoid quasi-judicial prosecution, district revenue attachment, and penal sanctions.
                   </p>
                 </div>
 
@@ -801,7 +801,7 @@ export default function RecoverGratuityFromEmployerLegalNoticeClient() {
                             3
                           </div>
                           <h4 className="font-extrabold text-slate-900 text-sm">
-                            Step 3: Issue Advocate-Drafted Statutory Legal Notice
+                            Step 3: Issue Fact-Verified Statutory Legal Notice
                           </h4>
                         </div>
                         <p className="text-xs sm:text-sm text-slate-650 leading-relaxed pl-10">
@@ -843,11 +843,11 @@ export default function RecoverGratuityFromEmployerLegalNoticeClient() {
                 {/* ── SECTION 6: KEY NOTICE CLAUSES ───────────────────────── */}
                 <section id="notice-clauses-checklist" className="scroll-mt-32">
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">
-                    6. Key Clauses in an Advocate-Drafted Gratuity Legal Notice
+                    6. Key Clauses in a Fact-Verified Gratuity Legal Notice
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      A generic, templated notice lacks legal force and is easily ignored by corporate HR and legal departments. An advocate-vetted statutory notice must incorporate watertight factual recitals and precise statutory invocations:
+                      A generic, templated notice lacks legal force and is easily ignored by corporate HR and legal departments. A fact-verified statutory notice must incorporate watertight factual recitals and precise statutory invocations:
                     </p>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
@@ -1072,7 +1072,7 @@ export default function RecoverGratuityFromEmployerLegalNoticeClient() {
                   <p className="text-sm text-slate-650 leading-relaxed mb-6">
                     Legal Recovery is India&apos;s trusted online legal notice and dispute resolution platform,
                     connecting employees, software professionals, executives, managers, and retired personnel
-                    with seasoned labor and commercial panel advocates for rapid, advocate-vetted statutory demand
+                    with our fact-verification team for rapid, fact-verified statutory demand
                     notices at transparent flat fees. With ₹100 Crore+ recovered and 10,000+ cases resolved across
                     India, Legal Recovery delivers verified legal impact without the delays and unpredictability of
                     traditional law firms.
@@ -1124,7 +1124,7 @@ export default function RecoverGratuityFromEmployerLegalNoticeClient() {
                   Employer Withholding Your Gratuity?
                 </h3>
                 <p className="text-slate-300 text-xs leading-relaxed mb-4">
-                  Send an advocate-vetted statutory legal notice today. 78% of corporate employers settle unpaid
+                  Send a fact-verified statutory legal notice today. 78% of corporate employers settle unpaid
                   gratuity dues with statutory interest within 15 days upon receiving formal notice from Legal Recovery.
                 </p>
                 <button
@@ -1134,7 +1134,7 @@ export default function RecoverGratuityFromEmployerLegalNoticeClient() {
                   Draft &amp; Send Notice Now
                 </button>
                 <p className="text-center text-slate-400 text-[10px] mt-3">
-                  Flat fee • Advocate-drafted • Sent same day
+                  Flat fee • Fact-verified • Sent same day
                 </p>
               </div>
 
@@ -1203,7 +1203,7 @@ export default function RecoverGratuityFromEmployerLegalNoticeClient() {
                     stat: '₹100CR+',
                     label: 'Total employment & commercial dues recovered across India',
                   },
-                  { stat: 'Same Day', label: 'Advocate notice drafted and dispatched' },
+                  { stat: 'Same Day', label: 'Notice prepared and dispatched' },
                   { stat: 'Flat Fee', label: 'Transparent pricing with no hidden legal fees' },
                 ].map((item, i) => (
                   <div

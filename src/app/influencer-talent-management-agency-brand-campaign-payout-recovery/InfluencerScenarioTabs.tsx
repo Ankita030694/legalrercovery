@@ -55,7 +55,7 @@ const SCENARIOS: Scenario[] = [
     keySteps: [
       "Aggregate all individual creator SOWs, live link proof, and agency upfront payment bank receipts.",
       "Calculate 3x RBI compound interest accrued since the 45th day of invoice delivery.",
-      "Issue an Advocate-Vetted Institutional Recovery Notice naming the corporate Directors and Media Planning Head.",
+      "Issue a Fact-Verified Institutional Recovery Notice naming the corporate Directors and Media Planning Head.",
       "Lodge a Samadhaan application or initiate Commercial Summary proceedings for unpaid liquidated sums."
     ],
     recoveryTimeline: "15 to 30 Days via Pre-Litigation Notice or 90 Days under MSEFC",

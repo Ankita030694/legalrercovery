@@ -672,14 +672,14 @@ export default function LegalNoticeRecoverySampleClient() {
                         <span className="text-[#DC2626] text-xs font-black uppercase tracking-wider">Case 1: Friendly Loan Default Resolved</span>
                         <h4 className="font-extrabold text-sm text-slate-900 mt-2 mb-3">Recovered ₹3 Lakhs from Friend</h4>
                         <p className="text-xs text-slate-650 leading-relaxed">
-                          A client in Hyderabad lent ₹3 Lakhs via UPI bank transfer to a childhood friend. After a year of evasion, the client downloaded our loan recovery template. Realizing the complexity of promissory notes and jurisdiction clauses, they hired our platform to customize and serve the notice. Our advocate digitally dispatched the notice to the debtor&apos;s email and WhatsApp. The friend contacted the client within 5 days of delivery, apologized, and cleared the debt.
+                          A client in Hyderabad lent ₹3 Lakhs via UPI bank transfer to a childhood friend. After a year of evasion, the client downloaded our loan recovery template. Realizing the complexity of promissory notes and jurisdiction clauses, they hired our platform to customize and serve the notice. Our team digitally dispatched the notice to the debtor&apos;s email and WhatsApp. The friend contacted the client within 5 days of delivery, apologized, and cleared the debt.
                         </p>
                       </div>
                       <div className="bg-slate-50 p-6 rounded-2xl border border-slate-100">
                         <span className="text-[#DC2626] text-xs font-black uppercase tracking-wider">Case 2: Freelance Agency Settlement</span>
                         <h4 className="font-extrabold text-sm text-slate-900 mt-2 mb-3">Recovered ₹1.5 Lakhs Unpaid retainer</h4>
                         <p className="text-xs text-slate-650 leading-relaxed">
-                          A boutique design agency in Mumbai delivered a brand identity kit to a client. The client stopped responding to emails and withheld the final ₹1.5 Lakhs retainer. Using our gig economy service contract template, our legal panel drafted a notice outlining the electronic contract validity and the doctrine of quantum meruit. The notice was served via email and WhatsApp. The client settled the dues in full to avoid a public commercial suit.
+                          A boutique design agency in Mumbai delivered a brand identity kit to a client. The client stopped responding to emails and withheld the final ₹1.5 Lakhs retainer. Using our gig economy service contract template, our team drafted a notice outlining the electronic contract validity and the doctrine of quantum meruit. The notice was served via email and WhatsApp. The client settled the dues in full to avoid a public commercial suit.
                         </p>
                       </div>
                     </div>
@@ -746,7 +746,7 @@ export default function LegalNoticeRecoverySampleClient() {
                 <div className="absolute top-0 right-0 w-24 h-24 bg-red-600/10 rounded-full blur-xl pointer-events-none" />
                 <h3 className="text-sm font-black mb-3">Need a Custom Notice?</h3>
                 <p className="text-gray-400 mb-5 text-[11px] leading-relaxed">
-                  Don&apos;t rely on generic templates. Discuss your case with legal experts. We draft and serve professionally vetted notices tailored to your transaction.
+                  Don&apos;t rely on generic templates. Discuss your case with our team. We draft and serve professionally vetted notices tailored to your transaction.
                 </p>
                 <button 
                   onClick={() => setIsPaymentModalOpen(true)}

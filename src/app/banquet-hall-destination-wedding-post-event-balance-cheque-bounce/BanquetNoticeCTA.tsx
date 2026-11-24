@@ -19,7 +19,7 @@ export default function BanquetNoticeCTA() {
         </h3>
 
         <p className="text-sm sm:text-base text-slate-300 leading-relaxed mb-8 max-w-3xl">
-          Under Section 138 of the Negotiable Instruments Act, you have strictly <strong>30 days</strong> from the Bank Return Memo to dispatch a statutory demand notice. Do not let a wedding host stall your cash flow with post-event excuses—serve an Advocate-vetted notice today.
+          Under Section 138 of the Negotiable Instruments Act, you have strictly <strong>30 days</strong> from the Bank Return Memo to dispatch a statutory demand notice. Do not let a wedding host stall your cash flow with post-event excuses—serve a Fact-verified notice today.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-4">
@@ -33,7 +33,7 @@ export default function BanquetNoticeCTA() {
                 <span className="text-xl font-black text-white">₹999</span>
               </div>
               <h4 className="text-base font-bold text-white mb-2">
-                Test 1 Live Overdue Case Now (Advocate-Drafted s.138 Notice)
+                Test 1 Live Overdue Case Now (Fact-Verified s.138 Notice)
               </h4>
               <p className="text-xs text-slate-300 leading-relaxed mb-4">
                 Serve an enforceable NI Act s.138 + Contract Act s.74 statutory demand notice citing signed BEOs, extra-pax slips, and bar tallies—dispatched via Email, WhatsApp &amp; Speed Post RPAD.

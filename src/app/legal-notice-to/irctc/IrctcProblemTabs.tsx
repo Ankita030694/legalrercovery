@@ -37,7 +37,7 @@ const PROBLEMS: ProblemTab[] = [
           "File an immediate grievance on railmadad.indianrailways.gov.in under 'Ticketing & Refunds' quoting the PNR and TDR ID. Explicitly state that you did not board and demand the certified extract of the TTE Chart.",
       },
       {
-        step: "Serve Advocate Statutory Legal Demand Notice",
+        step: "Serve Statutory Legal Demand Notice",
         description:
           "If RailMadad closes the ticket without refunding fare, serve a formal statutory legal notice to IRCTC Corporate Office (Barakhamba Road, New Delhi) and the Zonal General Manager demanding 100% fare plus interest within 15 days.",
       },
@@ -93,7 +93,7 @@ const PROBLEMS: ProblemTab[] = [
       {
         step: "Serve Legal Demand for Bank Reversal",
         description:
-          "If IRCTC claims the refund was 'settled' but your bank confirms zero inward credit, serve an advocate demand notice holding IRCTC strictly liable as the principal merchant.",
+          "If IRCTC claims the refund was 'settled' but your bank confirms zero inward credit, serve a legal demand notice holding IRCTC strictly liable as the principal merchant.",
       },
     ],
     statutoryRule: "Rule 7(3) Railway Passengers Refund Rules 2015",
@@ -120,7 +120,7 @@ const PROBLEMS: ProblemTab[] = [
       {
         step: "Legal Notice for Principal + Inconvenience Damages",
         description:
-          "When IRCTC or Zonal Railway withholds fare or deducts wrongful penalties, an advocate legal notice demands full fare reimbursement, travel disruption compensation, and legal costs.",
+          "When IRCTC or Zonal Railway withholds fare or deducts wrongful penalties, a legal notice demands full fare reimbursement, travel disruption compensation, and legal costs.",
       },
     ],
     statutoryRule: "Rules 6 & 8 Railway Passengers Refund Rules 2015 & NCDRC Precedents",
@@ -145,7 +145,7 @@ const PROBLEMS: ProblemTab[] = [
           "Log into IRCTC and file a TDR selecting 'AC Failure for Distance' or 'Passenger Travelled in Lower Class'. Upload a scan of the TTE certificate.",
       },
       {
-        step: "Serve Advocate Legal Notice for Breach of Contract",
+        step: "Serve Legal Notice for Breach of Contract",
         description:
           "If the difference of fare is denied or not remitted within 30 days, serve a statutory legal notice claiming fare difference, 18% interest, and consumer damages.",
       },
@@ -269,7 +269,7 @@ export default function IrctcProblemTabs() {
         {/* Quick Dispute Action Link */}
         <div className="p-3 bg-amber-50 border border-amber-200 rounded-xl flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs text-amber-950">
           <span>
-            <strong>Need advocate representation?</strong> We draft and dispatch a formal statutory notice directly to IRCTC and the Zonal Railway within 24 hours.
+            <strong>Need a formal legal notice?</strong> We verify the facts you submit, then prepare and dispatch a formal statutory notice directly to IRCTC and the Zonal Railway within 24 hours.
           </span>
           <Link
             href="/legal-notice-charges"

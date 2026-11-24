@@ -154,7 +154,7 @@ const FAQS = [
   {
     question: "When should I serve a formal legal notice to a stockbroker before SMART ODR?",
     answer:
-      "Serve a formal advocate legal notice as soon as the broker's support desk rejects your complaint. Sending a statutory demand to the broker's Compliance Officer and Managing Director creates a formal legal record. It often convinces the broker to settle out of court before regulatory escalation.",
+      "Serve a formal fact-verified legal notice as soon as the broker's support desk rejects your complaint. Sending a statutory demand to the broker's Compliance Officer and Managing Director creates a formal legal record. It often convinces the broker to settle out of court before regulatory escalation.",
   },
   {
     question: "Can SMART ODR help if I lost money to a fake Telegram trading scam or unregulated app?",
@@ -351,7 +351,7 @@ export default function SebiSmartOdrBrokerComplaintPage() {
                   </div>
                 </div>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
-                  Understanding when and how to deploy these platforms—and when to precede them with an advocate statutory demand notice—is the key to recovering withheld funds and reversing unlawful financial ledger debits. For victims facing broader internet fraud or unauthorized bank debits, consult our foundational guides on{" "}
+                  Understanding when and how to deploy these platforms—and when to precede them with a fact-verified statutory demand notice—is the key to recovering withheld funds and reversing unlawful financial ledger debits. For victims facing broader internet fraud or unauthorized bank debits, consult our foundational guides on{" "}
                   <Link href="/how-to-recover-money-stuck-in-online-cyber-fraud" className="text-[#DC2626] font-bold hover:underline">
                     recovering money stuck in online cyber fraud
                   </Link>{" "}
@@ -605,14 +605,14 @@ export default function SebiSmartOdrBrokerComplaintPage() {
                     </span>
                     <div className="space-y-1">
                       <h3 className="text-sm sm:text-base font-bold text-slate-900">
-                        Serve Advocate Statutory Demand Notice
+                        Serve Fact-Verified Statutory Demand Notice
                       </h3>
                       <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                        If the broker issues a standard automated rebuttal, have a verified advocate dispatch a formal demand notice via Registered Speed Post and corporate email under Section 63 of BSA 2023. Notice demands restitution within 15 days, citing specific SEBI code of conduct violations. See our transparent{" "}
+                        If the broker issues a standard automated rebuttal, dispatch a formal demand notice via Registered Speed Post and corporate email under Section 63 of BSA 2023. Notice demands restitution within 15 days, citing specific SEBI code of conduct violations. See our transparent{" "}
                         <Link href="/legal-notice-charges" className="text-[#DC2626] font-bold hover:underline">
                           legal notice charges
                         </Link>{" "}
-                        for fixed advocate drafting costs.
+                        for fixed notice drafting costs.
                       </p>
                     </div>
                   </li>
@@ -802,7 +802,7 @@ export default function SebiSmartOdrBrokerComplaintPage() {
                     </p>
                     <ol className="list-decimal pl-5 space-y-1 text-slate-800">
                       <li>The investor sent an immediate dispute email demanding the server RMS liquidation logs.</li>
-                      <li>Our team drafted and served a formal Advocate Legal Demand Notice citing NSE Circular 044/2020 on arbitrary margin liquidations.</li>
+                      <li>Our team drafted and served a formal Fact-Verified Legal Demand Notice citing NSE Circular 044/2020 on arbitrary margin liquidations.</li>
                       <li>Upon receiving an evasive reply, the dispute was filed on <strong>smartodr.in</strong>.</li>
                     </ol>
                     <p>

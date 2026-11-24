@@ -27,7 +27,7 @@ export default function SolarEnergyHubCTA({ className = "" }: SolarEnergyHubCTAP
                 Test 1 Live Overdue Case Now (&rupee;{basePrice})
               </h3>
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-                Advocate Drafted &bull; Email + WhatsApp + Speed Post RPAD. Serve one defaulting OPEX/RESCO PPA off-taker, one C&amp;I rooftop EPC retention account, one EV fleet-hub defaulter, or one BOS module/inverter dealer today.
+                Fact-Verified &bull; Email + WhatsApp + Speed Post RPAD. Serve one defaulting OPEX/RESCO PPA off-taker, one C&amp;I rooftop EPC retention account, one EV fleet-hub defaulter, or one BOS module/inverter dealer today.
               </p>
               <ul className="space-y-1.5 text-xs text-slate-200 mb-6">
                 <li>&check; PPA Termination Buyout &amp; Arbitration Act s.9 plant-repossession notice</li>

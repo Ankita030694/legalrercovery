@@ -50,7 +50,7 @@ const SCENARIOS: Scenario[] = [
       "Order XXXVII Code of Civil Procedure 1908 (Summary Suit) + BSA 2023 s.63 (Electronic Proof) + Specific Relief Act 1963 s.10",
     actionProtocol: [
       "Collate cryptographic hash prints of all approved Jira tickets, sprint burndown reports, and Slack sign-offs by the startup's Engineering Lead.",
-      "Serve a 15-Day Advocate Statutory Demand Notice by Speed Post RPAD, email to all board directors, and WhatsApp to the CEO and CFO.",
+      "Serve a 15-Day Fact-Verified Statutory Demand Notice by Speed Post RPAD, email to all board directors, and WhatsApp to the CEO and CFO.",
       "Issue a formal Notice of Copyright Reservation: inform the company that under Section 19(4) and Section 19(8) of the Copyright Act, intellectual property transfer remains inchoate until full payment.",
       "File an Order XXXVII Summary Suit in the competent Commercial District Court, forcing the startup to deposit the disputed funds to obtain leave to defend.",
     ],

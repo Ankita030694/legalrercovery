@@ -635,7 +635,7 @@ export default function ConstructionProlongationClaimRecoveryPage() {
                     The &apos;Without Financial Implications&apos; Duress Tactic
                   </p>
                   <p className="text-xs sm:text-sm text-slate-800 leading-relaxed">
-                    Government departments and private developers routinely coerce contractors into signing standard EOT formats containing pre-printed clauses: <em>&apos;Extension granted without financial implications.&apos;</em> If a contractor signs this document without a registered protest letter reserving its Section 55 rights, arbitral tribunals hold that the parties executed a bilateral accord and satisfaction. To overcome this, contractors must accompany every EOT application with an advocate-drafted <strong>Section 55 Statutory Reservation Notice</strong> delivered via registered post and corporate email.
+                    Government departments and private developers routinely coerce contractors into signing standard EOT formats containing pre-printed clauses: <em>&apos;Extension granted without financial implications.&apos;</em> If a contractor signs this document without a registered protest letter reserving its Section 55 rights, arbitral tribunals hold that the parties executed a bilateral accord and satisfaction. To overcome this, contractors must accompany every EOT application with a fact-verified <strong>Section 55 Statutory Reservation Notice</strong> delivered via registered post and corporate email.
                   </p>
                 </div>
               </section>

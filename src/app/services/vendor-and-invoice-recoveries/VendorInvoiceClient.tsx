@@ -168,7 +168,7 @@ export default function VendorInvoiceClient() {
       id: "rev-4",
       name: "Ramanathan Iyer (COO, Zenith Logistics Services)",
       rating: 5,
-      review: "Recovering commercial supply chain invoices can be a nightmare. LegalRecovery managed our B2B recovery campaign against an e-commerce client that owed us ₹12.8 Lakhs in freight credits. Their attorney-backed demand package left the debtor with no defense. We received our settlement through a structured payment plan. Highly professional legal tech service!"
+      review: "Recovering commercial supply chain invoices can be a nightmare. LegalRecovery managed our B2B recovery campaign against an e-commerce client that owed us ₹12.8 Lakhs in freight credits. Their fact-verified demand package left the debtor with no defense. We received our settlement through a structured payment plan. Highly professional legal tech service!"
     }
   ], []);
 
@@ -447,7 +447,7 @@ export default function VendorInvoiceClient() {
                   Healthy cash flow is vital for any business. When a corporate client defaults on tax invoices or delays payments, your business suffers. In India, some buyers delay payments on purpose. They assume small suppliers and agencies cannot afford the cost or delays of court litigation.
                 </p>
                 <p>
-                  LegalRecovery changes this dynamic. Our <strong className="font-extrabold text-[#111827]">B2B Invoice Recovery Service</strong> gives you strong legal leverage. We replace slow court trials with a structured, advocate-backed escalation notice process. We use effective statutory tools like the <strong className="font-extrabold text-[#111827]">MSMED Act, 2006 (MSME Samadhaan)</strong>, <strong className="font-extrabold text-[#111827]">Order 37 CPC Summary Suits</strong>, the <strong className="font-extrabold text-[#111827]">Commercial Courts Act</strong>, and <strong className="font-extrabold text-[#111827]">Section 138 of the NI Act</strong> to help you recover your money quickly.
+                  LegalRecovery changes this dynamic. Our <strong className="font-extrabold text-[#111827]">B2B Invoice Recovery Service</strong> gives you strong legal leverage. We replace slow court trials with a structured, fact-verified escalation notice process. We use effective statutory tools like the <strong className="font-extrabold text-[#111827]">MSMED Act, 2006 (MSME Samadhaan)</strong>, <strong className="font-extrabold text-[#111827]">Order 37 CPC Summary Suits</strong>, the <strong className="font-extrabold text-[#111827]">Commercial Courts Act</strong>, and <strong className="font-extrabold text-[#111827]">Section 138 of the NI Act</strong> to help you recover your money quickly.
                 </p>
                 <blockquote>
                   <strong>Our Service Promise:</strong> We handle your entire B2B recovery campaign for a single, flat fee. We take <strong>zero commission</strong> on your recovered money. Our legal notices go directly to the company directors, CFOs, and decision-makers.
@@ -459,7 +459,7 @@ export default function VendorInvoiceClient() {
                 {/* 2. B2B Case Scopes */}
                 <h2 id="coverage-details">2. Commercial B2B Scopes We Help You Recover</h2>
                 <p>
-                  B2B disputes involve detailed contracts, invoices, and purchase orders. Our legal team drafts targeted recovery notices tailored to your exact transaction to counter common buyer excuses.
+                  B2B disputes involve detailed contracts, invoices, and purchase orders. Our team drafts targeted recovery notices tailored to your exact transaction to counter common buyer excuses.
                 </p>
                 
                 <h3 id="wholesaler-supplier">A. Wholesaler, Trader & Manufacturer Supply Invoices</h3>
@@ -485,7 +485,7 @@ export default function VendorInvoiceClient() {
                 {/* 3. B2B Escalation Pipeline */}
                 <h2 id="notice-strategy">3. Our B2B Triple-Escalation Notice Pipeline: Engineered for Maximum Pressure</h2>
                 <p>
-                  Corporate buyers often ignore casual reminder emails. To overcome this, LegalRecovery uses a progressive <strong className="font-extrabold text-[#111827]">3-stage advocate notice campaign paired with a criminal complaint draft</strong>:
+                  Corporate buyers often ignore casual reminder emails. To overcome this, LegalRecovery uses a progressive <strong className="font-extrabold text-[#111827]">3-stage notice campaign paired with a criminal complaint draft</strong>:
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
                   <div className="bg-[#F9FAFB] p-5 rounded-2xl border border-[#E5E7EB]">
@@ -541,7 +541,7 @@ export default function VendorInvoiceClient() {
                   <li><strong>The MSMED Act, 2006 (Section 15 & 16):</strong> Buyers must clear invoices within 45 days. Delays attract <strong className="font-extrabold text-[#111827]">mandatory compound interest at three times the RBI bank rate</strong>. If the buyer appeals an MSEFC order, they must first deposit <strong className="font-extrabold text-[#111827]">75% of the award</strong> in court.</li>
                   <li><strong>Order 37 of the Code of Civil Procedure (Summary Suit):</strong> Enables fast-track recovery in civil and commercial courts. The debtor has no automatic right to defend. They must apply for leave to defend within 10 days. If rejected, the court enters judgment right away.</li>
                   <li><strong>The Commercial Courts Act, 2015:</strong> Mandatory mediation encourages quick settlements. Dedicated commercial benches fast-track business disputes, avoiding normal court backlogs.</li>
-                  <li><strong>Section 138 of the Negotiable Instruments Act, 1881:</strong> If a buyer&apos;s cheque bounces, they face criminal prosecution. Our advocates serve the mandatory 15-day notice. Continued non-payment exposes directors to <strong className="font-extrabold text-[#111827]">up to 2 years in prison</strong>.</li>
+                  <li><strong>Section 138 of the Negotiable Instruments Act, 1881:</strong> If a buyer&apos;s cheque bounces, they face criminal prosecution. Our team serves the mandatory 15-day notice. Continued non-payment exposes directors to <strong className="font-extrabold text-[#111827]">up to 2 years in prison</strong>.</li>
                   <li><strong>Insolvency & Bankruptcy Code, 2016 (IBC - Section 9):</strong> For corporate defaults over ₹1 crore, you can issue a Section 8 demand notice. If unpaid, you can petition the NCLT to initiate corporate insolvency proceedings.</li>
                 </ul>
 
@@ -551,12 +551,12 @@ export default function VendorInvoiceClient() {
                   Many business owners try using free templates found online. In B2B debt disputes, free templates rarely work:
                 </p>
                 <ul>
-                  <li><strong>No Lawyer Signature:</strong> Debtor legal teams recognize internet templates immediately. Without a licensed advocate&apos;s seal, debtors know there is no real legal risk.</li>
+                  <li><strong>No Fact Verification:</strong> Debtor legal teams recognize internet templates immediately. Without verified facts and tracked multi-channel dispatch, debtors know there is no real legal risk.</li>
                   <li><strong>Wrong Legal Sections:</strong> Free templates often cite obsolete laws. They miss state-specific MSME rules, territorial jurisdiction, and mandatory cheque bounce warnings.</li>
                   <li><strong>No Follow-Through:</strong> A single generic letter is easy to ignore. Without digital read receipts and direct board escalations, corporate debtors simply shelve your claim.</li>
                 </ul>
                 <p>
-                  LegalRecovery provides attorney-backed, custom B2B notices. We track digital delivery in real time, leaving debtors no excuse to deny receipt.
+                  LegalRecovery provides fact-verified, custom B2B notices. We track digital delivery in real time, leaving debtors no excuse to deny receipt.
                 </p>
 
                 {/* 6. Transparent Flat Pricing */}
@@ -581,7 +581,7 @@ export default function VendorInvoiceClient() {
                           </span>
                           <h3 className="text-2xl font-black text-[#111827] mb-4">Commercial B2B Recovery</h3>
                           <p className="text-[14px] text-[#4B5563] font-medium leading-[1.6] mb-8">
-                            Get full-suite recovery support from expert corporate attorneys. Standardized flat pricing with absolutely zero commission on your recovered invoices.
+                            Get full-suite recovery support from our team. Standardized flat pricing with absolutely zero commission on your recovered invoices.
                           </p>
                         </div>
                         
@@ -656,7 +656,7 @@ export default function VendorInvoiceClient() {
                 {/* 7. B2B Debt Evidentiary Checklist */}
                 <h2 id="documentation-needed">7. The B2B Debt Evidentiary Checklist</h2>
                 <p>
-                  To build a watertight recovery campaign on our platform, you will need to upload basic commercial records. Our advocate panel utilizes these documents to compile a legally bulletproof case against the defaulting buyer:
+                  To build a watertight recovery campaign on our platform, you will enter your case details in our form and should keep these basic commercial records ready. Our team verifies the facts you submit to prepare the notice against the defaulting buyer:
                 </p>
                 <ul>
                   <li><strong>Tax Invoices:</strong> Signed and stamped B2B tax invoices detailing the price, quantities, GST filings, and payment credit terms.</li>
@@ -831,7 +831,7 @@ export default function VendorInvoiceClient() {
               <div className="absolute top-0 right-0 w-24 h-24 bg-red-600/10 rounded-full blur-xl pointer-events-none" />
               <h3 className="text-base font-extrabold mb-3 tracking-tight">Stuck B2B Invoices?</h3>
               <p className="text-gray-400 mb-5 text-[11px] leading-relaxed">
-                Get an advocate-drafted 3-stage notice pipeline and a corporate cheating police draft for a flat fee of ₹999.
+                Get a fact-verified 3-stage notice pipeline and a corporate cheating police draft for a flat fee of ₹999.
               </p>
               <Link 
                 href="/contact" 

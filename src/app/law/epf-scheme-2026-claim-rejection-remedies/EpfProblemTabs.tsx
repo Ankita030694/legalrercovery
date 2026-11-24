@@ -64,7 +64,7 @@ const EPF_PROBLEMS: ProblemTab[] = [
           "If your employer marked 'Ceased/Dismissed' or entered an erroneous date that curtails your pension eligibility, serve a formal demand email citing your resignation acceptance and relieving letter.",
       },
       {
-        step: "Serve Advocate Legal Notice for Employer Default",
+        step: "Serve Legal Notice for Employer Default",
         description:
           "If the employer refuses to correct the exit date or submit clarification to the Regional PF Commissioner (RPFC), serve a 15-day statutory legal notice under Section 14B of the EPF Act and Section 316 of the Bharatiya Nyaya Sanhita (BNS) for criminal breach of trust.",
       },
@@ -118,9 +118,9 @@ const EPF_PROBLEMS: ProblemTab[] = [
           "Register a formal grievance under 'Non-deposit of PF by Employer'. Attach all relevant payslips. Demand immediate initiation of Section 7A / 14B penal proceedings against the establishment.",
       },
       {
-        step: "Dispatch Advocate Statutory Notice & Demand Section 7A Attachment",
+        step: "Dispatch Statutory Notice & Demand Section 7A Attachment",
         description:
-          "Serve an advocate demand notice to the Board of Directors and Regional PF Commissioner demanding remittance of withheld corpus with 12% annual compound interest under Section 7Q and damages under Section 14B.",
+          "Serve a legal demand notice to the Board of Directors and Regional PF Commissioner demanding remittance of withheld corpus with 12% annual compound interest under Section 7Q and damages under Section 14B.",
       },
     ],
     statutoryRule: "Section 7A, 7Q, 14B EPF & MP Act 1952 & Section 316/318 Bharatiya Nyaya Sanhita",

@@ -25,10 +25,10 @@ export default function MediaBuyingNoticeCTA({
               Track 1 &bull; Single Defaulted Campaign Recovery
             </span>
             <p className="text-lg sm:text-xl font-extrabold text-white mb-2">
-              Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Advocate Drafted &middot; Email + WhatsApp + Speed Post RPAD)
+              Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Fact-Verified &middot; Email + WhatsApp + Speed Post RPAD)
             </p>
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-              Serve a high-impact, advocate-drafted Legal Demand Notice invoking Contract Act Section 222 (statutory agent indemnity), signed Release Orders (ROs), INS/IBDF industry credit-embargo warnings, and Section 43B(h) income tax disallowance. Demolish client &ldquo;TDS reconciliation delay&rdquo; or &ldquo;low ROAS&rdquo; pretexts and demand full reimbursement of fronted Meta, Google, TV, print, or OOH ad spend within 7 to 15 days.
+              Serve a high-impact, fact-verified Legal Demand Notice invoking Contract Act Section 222 (statutory agent indemnity), signed Release Orders (ROs), INS/IBDF industry credit-embargo warnings, and Section 43B(h) income tax disallowance. Demolish client &ldquo;TDS reconciliation delay&rdquo; or &ldquo;low ROAS&rdquo; pretexts and demand full reimbursement of fronted Meta, Google, TV, print, or OOH ad spend within 7 to 15 days.
             </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-3">

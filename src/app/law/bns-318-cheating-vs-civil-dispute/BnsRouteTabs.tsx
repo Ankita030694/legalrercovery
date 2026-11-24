@@ -54,7 +54,7 @@ const SCENARIOS: DisputeScenario[] = [
       "Proof of expenses paid on their behalf (rent, credit card bills, flight tickets)",
       "Lack of reciprocal financial exchange or gifting intent"
     ],
-    actionPlan: "Serve an advocate demand notice establishing debt liability and repudiating the 'gift' defense. If ignored, initiate recovery litigation before the civil court.",
+    actionPlan: "Serve a fact-verified demand notice establishing debt liability and repudiating the 'gift' defense. If ignored, initiate recovery litigation before the civil court.",
     recommendedLink: {
       text: "Read guide: Recover Money from Ex-Boyfriend or Girlfriend Legally",
       href: "/recover-money-from-ex-boyfriend-girlfriend"

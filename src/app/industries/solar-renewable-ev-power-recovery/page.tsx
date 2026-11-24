@@ -233,7 +233,7 @@ const FAQS = [
   {
     question: "What can a RESCO solar developer do if a factory stops paying monthly PPA bills and locks the rooftop gate?",
     answer:
-      "Serve an advocate-drafted PPA Event-of-Default & Termination Buyout Cure Notice attaching BSA s.63 certified SCADA generation logs. Upon expiry of the cure window, enforce contractual inverter curtailment/zero-export controls (where permitted by the PPA) and file a Section 9 petition under the Arbitration and Conciliation Act, 1996 before the Commercial Court seeking an injunction against unauthorized solar consumption and appointment of a Receiver for plant repossession.",
+      "Serve a fact-verified PPA Event-of-Default & Termination Buyout Cure Notice attaching BSA s.63 certified SCADA generation logs. Upon expiry of the cure window, enforce contractual inverter curtailment/zero-export controls (where permitted by the PPA) and file a Section 9 petition under the Arbitration and Conciliation Act, 1996 before the Commercial Court seeking an injunction against unauthorized solar consumption and appointment of a Receiver for plant repossession.",
   },
   {
     question: "How can a C&I Solar EPC recover its final 15–20% balance when DISCOM net-metering is delayed by the client?",
@@ -477,7 +477,7 @@ export default function SolarRenewableEvPowerHubPage() {
                   Yet when a factory off-taker, fleet operator, real-estate developer, or regional installer defaults, clean-energy businesses encounter severe legal bottlenecks. An OPEX/RESCO off-taker stops paying monthly kWh invoices while locking the rooftop gate and consuming generated solar power for free. A factory enjoying zero-export daytime solar freezes the EPC&rsquo;s final 15–20% balance citing DISCOM net-metering delays caused by the factory&rsquo;s own pending utility arrears. An EV fleet hub defaults on postpaid OCPP charging cycles, or a host mall blocks a CPO from uninstalling ₹30L DC fast chargers.
                 </p>
                 <p>
-                  LegalRecovery.in provides an institutional, creditor-only recovery framework engineered for India&rsquo;s renewable and power sector. Our advocate-vetted notices pair <strong>BSA 2023 Section 63</strong> certified SCADA/OCPP logs with <strong>Arbitration Act Section 9</strong> asset-preservation injunctions, <strong>Contract Act Sections 53/54</strong> Deemed Commissioning, <strong>Electricity (LPS) Rules 2022</strong>, <strong>MSMED Act Sections 15–18</strong> (3x RBI compound interest), and <strong>BNS Section 316</strong> criminal breach of trust remedies for immobilized hardware.
+                  LegalRecovery.in provides an institutional, creditor-only recovery framework engineered for India&rsquo;s renewable and power sector. Our fact-verified notices pair <strong>BSA 2023 Section 63</strong> certified SCADA/OCPP logs with <strong>Arbitration Act Section 9</strong> asset-preservation injunctions, <strong>Contract Act Sections 53/54</strong> Deemed Commissioning, <strong>Electricity (LPS) Rules 2022</strong>, <strong>MSMED Act Sections 15–18</strong> (3x RBI compound interest), and <strong>BNS Section 316</strong> criminal breach of trust remedies for immobilized hardware.
                 </p>
               </div>
             </section>

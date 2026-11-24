@@ -180,7 +180,7 @@ export default function EduLoanScenarioTabs() {
             <strong className="text-slate-200">Verified Authority:</strong> {activeScenario.precedentRef}
           </span>
           <span className="text-emerald-400 font-semibold">
-            &bull; Ready for Tri-Channel Advocate Dispatch
+            &bull; Ready for Tri-Channel Dispatch
           </span>
         </div>
       </div>

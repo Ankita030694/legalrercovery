@@ -56,7 +56,7 @@ export default function CnfDepositRecoveryCTA({
                     Test 1 Live Overdue Case Now (₹{basePrice})
                   </p>
                   <p className="text-xs text-slate-300 leading-relaxed mb-4">
-                    Advocate-drafted 15-Day Statutory Demand Notice under Contract Act Sections 73, 217, 221, and 222 plus Supreme Court <em>Raman Iron Foundry</em> precedent. Served via Speed Post RPAD, WhatsApp &amp; Email with cryptographic BSA 2023 Section 63 ERP &amp; scheme proofs.
+                    Fact-verified 15-Day Statutory Demand Notice under Contract Act Sections 73, 217, 221, and 222 plus Supreme Court <em>Raman Iron Foundry</em> precedent. Served via Speed Post RPAD, WhatsApp &amp; Email with cryptographic BSA 2023 Section 63 ERP &amp; scheme proofs.
                   </p>
                 </div>
 
@@ -140,7 +140,7 @@ export default function CnfDepositRecoveryCTA({
                 Recover Unpaid C&amp;F Deposits &amp; Trade Claims Today
               </p>
               <p className="text-xs text-slate-300">
-                Serve a formal advocate notice under Contract Act s.73/222 for ₹{basePrice} or onboard bulk distributor ledgers.
+                Serve a formal fact-verified notice under Contract Act s.73/222 for ₹{basePrice} or onboard bulk distributor ledgers.
               </p>
             </div>
             <div className="flex items-center gap-2.5 shrink-0">

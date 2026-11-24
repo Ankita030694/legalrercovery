@@ -39,7 +39,7 @@ const MARKETING_RECOVERY_SCENARIOS: ScenarioTab[] = [
       {
         phase: "Phase 3: Dual-Barreled Statutory Demand & DMCA Notice",
         description:
-          "Serve an advocate-vetted Legal Demand Notice demanding payment of overdue retainers within 7 days, accompanied by a 48-hour Copyright Infringement Cease-and-Desist warning under Section 51 of the Copyright Act to file takedown strikes on Meta, YouTube, and Shopify CDN.",
+          "Serve a fact-verified Legal Demand Notice demanding payment of overdue retainers within 7 days, accompanied by a 48-hour Copyright Infringement Cease-and-Desist warning under Section 51 of the Copyright Act to file takedown strikes on Meta, YouTube, and Shopify CDN.",
       },
     ],
     statutoryHook: "Indian Contract Act s.70/73 + Copyright Act 1957 s.19, s.51 & s.55",
@@ -67,7 +67,7 @@ const MARKETING_RECOVERY_SCENARIOS: ScenarioTab[] = [
       {
         phase: "Phase 3: Commercial Breach Legal Demand",
         description:
-          "Dispatch an Advocate Legal Notice citing breach of Section 73 of the Contract Act and Section 15 of the MSMED Act, demanding full notice fees plus 3x RBI bank rate compound interest for registered MSMEs.",
+          "Dispatch a Fact-Verified Legal Notice citing breach of Section 73 of the Contract Act and Section 15 of the MSMED Act, demanding full notice fees plus 3x RBI bank rate compound interest for registered MSMEs.",
       },
     ],
     statutoryHook: "Indian Contract Act Section 73 (Notice Period Damages) & MSMED Act Section 15–16",
@@ -123,7 +123,7 @@ const MARKETING_RECOVERY_SCENARIOS: ScenarioTab[] = [
       {
         phase: "Phase 3: Demand for Remainder of Lock-in Tenure",
         description:
-          "Serve an Advocate Notice claiming the balance 3 months of the committed tenure under Contract Act Section 39 and Section 73, along with a formal revocation of copyright in all published articles and graphics until full settlement.",
+          "Serve a Fact-Verified Notice claiming the balance 3 months of the committed tenure under Contract Act Section 39 and Section 73, along with a formal revocation of copyright in all published articles and graphics until full settlement.",
       },
     ],
     statutoryHook: "Indian Contract Act s.39 (Repudiation), s.73 (Expectation Damages) & Copyright Act s.14",

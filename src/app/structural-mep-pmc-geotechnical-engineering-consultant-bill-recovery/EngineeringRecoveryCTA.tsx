@@ -26,7 +26,7 @@ export default function EngineeringRecoveryCTA({
                 Track 1 &middot; Single Developer / Project Fee Notice
               </span>
               <h3 className="text-lg sm:text-xl font-bold text-white mb-2">
-                Test 1 Live Overdue Case Now (&#8377;{basePrice} &middot; Advocate Drafted &middot; Email + WhatsApp + Speed Post RPAD)
+                Test 1 Live Overdue Case Now (&#8377;{basePrice} &middot; Fact-Verified &middot; Email + WhatsApp + Speed Post RPAD)
               </h3>
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
                 Upload your Consultancy Work Order, Structural/MEP/PMC milestone ledger, drawing transmittals, or man-month timesheets. Our external litigation counsel drafts a Contract Act s.51&ndash;52 Conditional Sign-Off, MSMED s.16 &amp; s.43B(h) Demand Notice within 24 hours.

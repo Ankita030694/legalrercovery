@@ -684,7 +684,7 @@ export default function LokAdalatMoneyRecoveryPage() {
                         Serve a Formal Pre-Litigation Legal Demand Notice
                       </h3>
                       <p className="text-xs sm:text-sm leading-relaxed">
-                        Before approaching the DLSA, have an advocate dispatch a formal demand notice to the defaulting debtor via Registered Speed Post and digital channels. The notice must specify the exact principal amount, statutory interest claimed, underlying contract or invoice dates, and explicitly state that failing payment within 15 days, the claim will be referred to the District Legal Services Authority for pre-litigation cognizance under Section 19(5) of the LSA Act.
+                        Before approaching the DLSA, dispatch a formal demand notice to the defaulting debtor via Registered Speed Post and digital channels. The notice must specify the exact principal amount, statutory interest claimed, underlying contract or invoice dates, and explicitly state that failing payment within 15 days, the claim will be referred to the District Legal Services Authority for pre-litigation cognizance under Section 19(5) of the LSA Act.
                       </p>
                       <p className="text-xs text-slate-500 font-medium">
                         You can easily draft and send this notice via our{" "}
@@ -871,7 +871,7 @@ export default function LokAdalatMoneyRecoveryPage() {
                       <strong>The Deadlock:</strong> Vardhan consulted local civil advocates who estimated that filing a regular commercial recovery suit would require paying over ₹55,000 in state court fees upfront, plus continuous trial expenses over an estimated 3-to-4-year court battle. Vardhan could not afford to lock up additional capital in litigation fees.
                     </p>
                     <p>
-                      <strong>The Statutory Action:</strong> Vardhan engaged LegalRecovery.in. An advocate drafted and dispatched a formal 15-day pre-litigation legal demand notice invoking Section 19(5) of the Legal Services Authorities Act, 1987. When the debtor failed to remit the full amount within 15 days, the advocate filed a zero-fee pre-litigation application before the Secretary, DLSA Bengaluru Urban at the City Civil Court complex.
+                      <strong>The Statutory Action:</strong> Vardhan engaged LegalRecovery.in. The team verified the facts and dispatched a formal 15-day pre-litigation legal demand notice invoking Section 19(5) of the Legal Services Authorities Act, 1987. When the debtor failed to remit the full amount within 15 days, the advocate filed a zero-fee pre-litigation application before the Secretary, DLSA Bengaluru Urban at the City Civil Court complex.
                     </p>
                     <div className="p-3.5 sm:p-4 bg-emerald-950/70 border border-emerald-700/60 rounded-xl text-emerald-200">
                       <strong className="block text-emerald-400 font-bold mb-1">The Outcome:</strong>

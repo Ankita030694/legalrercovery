@@ -52,7 +52,7 @@ const SCENARIOS: Scenario[] = [
       "Issue an immediate rebuttal rejecting the post-facto snag list as legally void, time-barred, and manufactured in bad faith after the expiry of the DLP.",
       "Demand certified copies of contemporaneous defect notices issued within the 365-day window, along with third-party tender documents and actual payment receipts for rectification.",
       "Place on record all joint inspection sign-offs, testing and commissioning certificates, and handover inspection sheets signed by PMC engineers.",
-      "Dispatch an Advocate Legal Demand Notice warning that unilateral debit notes constitute civil debt default and bad-faith breach of contract under Section 73.",
+      "Dispatch a Fact-Verified Legal Demand Notice warning that unilateral debit notes constitute civil debt default and bad-faith breach of contract under Section 73.",
     ],
   },
   {

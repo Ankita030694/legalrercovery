@@ -572,7 +572,7 @@ export default function RefuseNewCarDeliveryPdiPage() {
                       </text>
                       <text x="535" y="280" fill="#CBD5E1" fontSize="10">• DO NOT sign delivery challan / gate pass</text>
                       <text x="535" y="300" fill="#CBD5E1" fontSize="10">• Freeze auto loan disbursement with bank</text>
-                      <text x="535" y="320" fill="#CBD5E1" fontSize="10">• Serve Advocate Notice to Dealer + OEM</text>
+                      <text x="535" y="320" fill="#CBD5E1" fontSize="10">• Serve Fact-Verified Notice to Dealer + OEM</text>
                       <text x="535" y="340" fill="#CBD5E1" fontSize="10">• File e-Jagriti for replacement + RTO cost</text>
                       <rect x="535" y="352" width="190" height="18" rx="4" fill="#7F1D1D" />
                       <text x="630" y="365" textAnchor="middle" fill="#FECACA" fontSize="9" fontWeight="bold">
@@ -786,7 +786,7 @@ export default function RefuseNewCarDeliveryPdiPage() {
 
               {/* Mid-Content CTA Box */}
               <PdiDefectsNoticeCTA
-                buttonText="Draft Advocate Notice Against Car Dealer"
+                buttonText="Draft Fact-Verified Notice Against Car Dealer"
                 variant="primary"
               />
 
@@ -861,7 +861,7 @@ export default function RefuseNewCarDeliveryPdiPage() {
                           BNS §318 criminal cheating + CPA §2(47) unfair trade practice + punitive damages.
                         </td>
                         <td className="p-3 text-slate-600">
-                          Freeze bank loan disbursement. Serve advocate legal notice to Dealer + OEM. File e-Jagriti complaint.
+                          Freeze bank loan disbursement. Serve fact-verified legal notice to Dealer + OEM. File e-Jagriti complaint.
                         </td>
                       </tr>
                     </tbody>
@@ -1038,7 +1038,7 @@ export default function RefuseNewCarDeliveryPdiPage() {
                     </div>
                     <div>
                       <h3 className="text-sm sm:text-base font-bold text-slate-900">
-                        Serve Advocate Legal Notice &amp; File e-Jagriti Consumer Complaint
+                        Serve Fact-Verified Legal Notice &amp; File e-Jagriti Consumer Complaint
                       </h3>
                       <p className="text-xs sm:text-sm text-slate-600 mt-1 leading-relaxed">
                         If the dealership refuses to cooperate, retain an advocate through LegalRecovery to dispatch an unassailable statutory legal notice under the Consumer Protection Act and Sale of Goods Act. If the notice does not produce immediate compliance within 15 days, lodge an online consumer complaint via e-Jagriti before the District Consumer Disputes Redressal Commission (DCDRC) for full restitution, interest, and exemplary damages.
@@ -1168,7 +1168,7 @@ export default function RefuseNewCarDeliveryPdiPage() {
                   <div>
                     <h4 className="font-bold text-slate-900 mb-1">3. The Legal Counter-Offensive</h4>
                     <p className="text-slate-600">
-                      Vikram took high-resolution geotagged photographs of the paint meter readings, recorded a video of the odometer and VIN stamping, and immediately emailed the bank loan officer to freeze the ₹14 lakh sanctioned loan. He then retained LegalRecovery to serve an advocate statutory demand notice to both the Dealership Principal and the OEM Nodal Customer Directorate. The notice cited:
+                      Vikram took high-resolution geotagged photographs of the paint meter readings, recorded a video of the odometer and VIN stamping, and immediately emailed the bank loan officer to freeze the ₹14 lakh sanctioned loan. He then retained LegalRecovery to serve a fact-verified statutory demand notice to both the Dealership Principal and the OEM Nodal Customer Directorate. The notice cited:
                     </p>
                     <ul className="list-disc pl-5 mt-1 text-slate-600 space-y-1">
                       <li>Section 41 of the Sale of Goods Act, 1930 (statutory right of pre-acceptance rejection).</li>

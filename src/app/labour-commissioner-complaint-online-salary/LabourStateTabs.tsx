@@ -86,7 +86,7 @@ const STATE_PORTALS: StatePortal[] = [
       {
         step: "Submit Claim with Computation Sheet",
         detail:
-          "Upload breakdown of basic pay, unpaid leave encashment, delayed FnF dues, and advocate legal demand notice with speed post tracking.",
+          "Enter breakdown of basic pay, unpaid leave encashment, delayed FnF dues, and send a legal demand notice with speed post tracking.",
       },
     ],
     statutoryGround: "Section 21 Delhi Shops and Establishments Act, 1954 & Section 17 Code on Wages 2019",

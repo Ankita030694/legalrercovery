@@ -137,7 +137,7 @@ const reviewSchema = {
   "@type": "Product",
   "name": "MSME Dues Recovery Services",
   "image": "https://www.legalrecovery.in/og-msme-dues.png",
-  "description": "Advocate-backed legal assistance for recovering outstanding B2B MSME dues, delayed payments, and MSEFC filing support.",
+  "description": "Fact-verified legal assistance for recovering outstanding B2B MSME dues, delayed payments, and MSEFC filing support.",
   "brand": {
     "@type": "Brand",
     "name": "LegalRecovery"
@@ -226,7 +226,7 @@ const reviewSchema = {
         "@type": "Person",
         "name": "Sunil Bhatia"
       },
-      "reviewBody": "A buyer raised a fake quality dispute to withhold payment for plastic molds. LegalRecovery’s panel advocates successfully contested the quality claims in the arbitration phase by presenting our pre-dispatch inspection reports. The arbitrator ordered the buyer to clear all dues with penal interest. Incredible result!"
+      "reviewBody": "A buyer raised a fake quality dispute to withhold payment for plastic molds. The buyer’s quality claims were successfully contested in the arbitration phase using our pre-dispatch inspection reports. The arbitrator ordered the buyer to clear all dues with penal interest. Incredible result!"
     }
   ]
 };
@@ -349,7 +349,7 @@ export default function MSMEDuesClient() {
                       Moreover, corporate buyers frequently exploit their bargaining power to force small suppliers into accepting unfavorable payment terms or deep price cuts. They may raise retroactive quality disputes, claiming the supplied goods were defective or the service milestones were incomplete, only when the invoice becomes due. By geographical distance or threats of contract termination, buyers pressure small vendors into waiving interest or accepting partial settlements. Navigating these B2B payment defaults requires a structured approach that combines statutory protections, documented evidence of delivery, and strategic escalation.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      At LegalRecovery, our legal panel specializes in helping registered micro and small businesses recover outstanding payments from defaulting buyers. We analyze your commercial invoices, purchase orders, delivery challans, Udyam certificates, and buyer communications to build a strong evidence dossier. By serving structured statutory notices citing the MSMED Act, filing cases on the MSME Samadhaan portal, and representing you before the MSEFC, we help protect your business from cash-flow crises. We help you assert your rights, ensuring that corporate buyers respect their contractual and statutory obligations.
+                      At LegalRecovery, our team specializes in helping registered micro and small businesses recover outstanding payments from defaulting buyers. We analyze your commercial invoices, purchase orders, delivery challans, Udyam certificates, and buyer communications to build a strong evidence dossier. By serving structured statutory notices citing the MSMED Act, filing cases on the MSME Samadhaan portal, and representing you before the MSEFC, we help protect your business from cash-flow crises. We help you assert your rights, ensuring that corporate buyers respect their contractual and statutory obligations.
                     </p>
                     <div className="bg-red-50 p-6 rounded-2xl border-l-4 border-[#DC2626] italic text-xs sm:text-sm text-red-900 font-semibold leading-relaxed">
                       &quot;MSME dues are commercial debts protected by central legislation. Recovering these payments requires a combination of Udyam registration, contract enforcement, and MSEFC facilitation to protect your business.&quot;
@@ -377,7 +377,7 @@ export default function MSMEDuesClient() {
                       The distinction between &quot;actual acceptance&quot; and &quot;deemed acceptance&quot; under Section 2 of the Act is also critical. Actual acceptance is when the buyer acknowledges receipt of the goods or services. Deemed acceptance occurs if the buyer does not raise any written objection regarding the quality or quantity of the supplied items within <strong>15 days</strong> of delivery. If no objection is raised, the buyer is deemed to have accepted the goods, and they cannot later raise quality issues to withhold payment, making it easier for the supplier to establish their claim.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      Our legal team helps MSME suppliers verify their eligibility, audit their contracts and invoices, and calculate the statutory compound interest. We assist in preparing Udyam registration certificates and compiling the evidence required to enforce Section 15 and 16 rights, protecting your business from corporate defaults and helping to secure the payments.
+                      Our team helps MSME suppliers verify their eligibility, audit their contracts and invoices, and calculate the statutory compound interest. We assist in preparing Udyam registration certificates and compiling the evidence required to enforce Section 15 and 16 rights, protecting your business from corporate defaults and helping to secure the payments.
                     </p>
                   </div>
                 </section>
@@ -425,7 +425,7 @@ export default function MSMEDuesClient() {
                       For disputes containing an <strong>Arbitration Clause</strong> in the agreement, the supplier can initiate independent arbitration under the Arbitration and Conciliation Act, 1996. Arbitration provides a private, structured forum outside the civil courts, resulting in a binding arbitral award that can be executed as a court decree. The supplier can also file a civil recovery suit under the Commercial Courts Act, 2015 if the claim value exceeds ₹3 lakh, which provides a fast-track commercial trial path.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      Exporters can also check if the buyer has local assets, subsidiaries, or liaison offices in India that can be attached under Section 230 of the Contract Act. Our legal team evaluates your agreement and the buyer&apos;s financial profile to recommend the most effective recovery path, whether through MSEFC, civil courts, NCLT, or criminal action.
+                      Exporters can also check if the buyer has local assets, subsidiaries, or liaison offices in India that can be attached under Section 230 of the Contract Act. Our team evaluates your agreement and the buyer&apos;s financial profile to recommend the most effective recovery path, whether through MSEFC, civil courts, NCLT, or criminal action.
                     </p>
                   </div>
                 </section>
@@ -438,10 +438,10 @@ export default function MSMEDuesClient() {
                       The recovery of unpaid MSME dues begins with a structured pre-litigation escalation strategy. This involves building a clear documentary record of the debt. Suppliers should compile all relevant records, including the contract, commercial invoices, packing lists, delivery challans, Udyam certificates, and buyer correspondence. A final demand email should be sent to the buyer's finance team and senior management, attaching a detailed statement of accounts and requesting a resolution within a specific timeframe.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      If internal escalation is ignored, the next step is to serve a formal <strong>Advocate-Signed Legal Notice</strong> citing the MSMED Act. A legal notice is a structured legal document sent to the buyer, setting out the facts of the transaction, detailing the payment default, calculating the compound interest due under Section 16, and warning of the civil, regulatory, and arbitration actions that will follow if they fail to comply. Serving a legal notice is a critical step, as it establishes your cause of action and forms part of the regulatory record for the MSEFC or courts.
+                      If internal escalation is ignored, the next step is to serve a formal <strong>Fact-Verified Legal Notice</strong> citing the MSMED Act. A legal notice is a structured legal document sent to the buyer, setting out the facts of the transaction, detailing the payment default, calculating the compound interest due under Section 16, and warning of the civil, regulatory, and arbitration actions that will follow if they fail to comply. Serving a legal notice is a critical step, as it establishes your cause of action and forms part of the regulatory record for the MSEFC or courts.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      At LegalRecovery, our legal panel drafts custom notices tailored to the specific details of your MSME dispute. We do not use generic templates. Instead, we highlight the contract terms, the provisions of the MSMED Act, the 45-day payment limit, and the personal liability of the company's directors. We digitally dispatch the notice via verified email and WhatsApp to the company's registered corporate office, and send copies to the personal residential addresses of the directors. Piercing the corporate veil in this manner ensures that the directors are personally aware of the dispute, which often prompts the company's legal team to propose a settlement to protect their management from litigation.
+                      At LegalRecovery, our team drafts custom notices tailored to the specific details of your MSME dispute. We do not use generic templates. Instead, we highlight the contract terms, the provisions of the MSMED Act, the 45-day payment limit, and the personal liability of the company's directors. We digitally dispatch the notice via verified email and WhatsApp to the company's registered corporate office, and send copies to the personal residential addresses of the directors. Piercing the corporate veil in this manner ensures that the directors are personally aware of the dispute, which often prompts the company's legal team to propose a settlement to protect their management from litigation.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
                       The notice also demands interest under Section 16 of the Act. Citing the statutory compound interest (typically three times the RBI bank rate) raises the financial stakes for the buyer, encouraging them to prioritize the settlement. We also outline the potential tax consequences under Section 23 of the Act, which denies tax deductions on MSME interest, increasing their tax liability.

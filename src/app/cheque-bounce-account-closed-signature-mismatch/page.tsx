@@ -168,7 +168,7 @@ const FAQS = [
   {
     question: "Cheque bounce hone par account closed ya signature mismatch aaye toh notice kaise bheje?",
     answer:
-      "Agar cheque 'Account Closed' ya 'Signature Differs' ki wajah se bounce ho gaya hai, toh turant 30 din ke andar ek statutory Section 138 advocate legal notice bhejna zaroori hai. Supreme Court ke Laxmi Dyechem aur NEPC Micon faislon ke mutabiq, drawer aisi chalaki se bachta nahi hai. LegalRecovery.in par verified advocate Speed Post aur WhatsApp/Email se notice bhejte hain, jismein 15 din ka payment time diya jata hai.",
+      "Agar cheque 'Account Closed' ya 'Signature Differs' ki wajah se bounce ho gaya hai, toh turant 30 din ke andar ek statutory Section 138 fact-verified legal notice bhejna zaroori hai. Supreme Court ke Laxmi Dyechem aur NEPC Micon faislon ke mutabiq, drawer aisi chalaki se bachta nahi hai. LegalRecovery.in par hamari team facts verify karke Speed Post aur WhatsApp/Email se notice bhejti hai, jismein 15 din ka payment time diya jata hai.",
   },
 ];
 
@@ -932,11 +932,11 @@ export default function ChequeBounceReturnReasonsPage() {
                       <strong>The Dishonour &amp; Defense:</strong> When Amit presented the cheque, his bank returned it with a CTS Return Memo stating: <em>&quot;Account Closed&quot;</em> alongside a secondary note indicating <em>&quot;Drawer&apos;s Signature Differs&quot;</em>. When contacted, the debtor scoffed and stated that because the account was shut down 2 months earlier and the signature didn&apos;t match, no Section 138 case could touch him.
                     </p>
                     <p>
-                      <strong>The Statutory Action:</strong> Within 12 days of receiving the return memo, Amit engaged LegalRecovery.in. An advocate drafted and dispatched an exhaustive Section 138 demand notice citing the Supreme Court judgments in <em>NEPC Micon Ltd. (1999)</em> and <em>Laxmi Dyechem (2012)</em>. The notice called upon the debtor to discharge the ₹4,50,000 liability along with 18% statutory interest within 15 calendar days of receipt. Notice was served via Registered Speed Post and Section 63 BSA electronic delivery via WhatsApp.
+                      <strong>The Statutory Action:</strong> Within 12 days of receiving the return memo, Amit engaged LegalRecovery.in. The team verified the facts and dispatched an exhaustive Section 138 demand notice citing the Supreme Court judgments in <em>NEPC Micon Ltd. (1999)</em> and <em>Laxmi Dyechem (2012)</em>. The notice called upon the debtor to discharge the ₹4,50,000 liability along with 18% statutory interest within 15 calendar days of receipt. Notice was served via Registered Speed Post and Section 63 BSA electronic delivery via WhatsApp.
                     </p>
                     <div className="p-3.5 sm:p-4 bg-emerald-950/70 border border-emerald-700/60 rounded-xl text-emerald-200">
                       <strong className="block text-emerald-400 font-bold mb-1">The Outcome &amp; Recovery:</strong>
-                      Upon receiving the advocate legal notice detailing the 3-Judge Bench ruling in <em>Laxmi Dyechem</em> and facing imminent criminal prosecution under Section 138 with up to 2 years imprisonment and double cheque fine, the debtor&apos;s counsel initiated settlement discussions. On Day 14 of the statutory cure window, the debtor remitted the full principal amount of ₹4,50,000 via RTGS plus ₹25,000 toward drafting expenses and statutory interest, successfully avoiding a criminal complaint.
+                      Upon receiving the fact-verified legal notice detailing the 3-Judge Bench ruling in <em>Laxmi Dyechem</em> and facing imminent criminal prosecution under Section 138 with up to 2 years imprisonment and double cheque fine, the debtor&apos;s counsel initiated settlement discussions. On Day 14 of the statutory cure window, the debtor remitted the full principal amount of ₹4,50,000 via RTGS plus ₹25,000 toward drafting expenses and statutory interest, successfully avoiding a criminal complaint.
                     </div>
                   </div>
                 </div>

@@ -31,7 +31,7 @@ export default function DigitalArrestNoticeCTA({
                 Target Bank Negligence &amp; Recover Frozen Funds from Cyber Mule Accounts
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6">
-                Have a specialized advocate draft and serve an unassailable statutory legal notice directly to the remitting and beneficiary banks for systemic KYC failure, failure to trigger anti-money laundering (AML) red flags, and refusal to freeze mule accounts. We also prepare your Section 457 BNSS petition dossier to release lien amounts through the jurisdictional magistrate.
+                Serve an unassailable statutory legal notice directly to the remitting and beneficiary banks for systemic KYC failure, failure to trigger anti-money laundering (AML) red flags, and refusal to freeze mule accounts. We also prepare your Section 457 BNSS petition dossier to release lien amounts through the jurisdictional magistrate.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button
@@ -42,7 +42,7 @@ export default function DigitalArrestNoticeCTA({
                   {buttonText} — ₹{basePrice}
                 </button>
                 <div className="text-xs text-slate-300 flex flex-wrap sm:flex-nowrap items-center gap-2 sm:gap-3">
-                  <span>✓ 24h Advocate Drafting</span>
+                  <span>✓ 24h Notice Drafting</span>
                   <span>•</span>
                   <span>✓ Email + WhatsApp</span>
                   <span>•</span>

@@ -108,7 +108,7 @@ export default function RentalRecoveryClient() {
     {
       id: "faq-4",
       question: "What legal options do landlords have if a tenant refuses to pay rent and refuses to vacate?",
-      answer: "Landlords must follow legal steps. Cutting off water or electricity is illegal and invites police action. First, send an advocate-backed legal notice demanding payment and lease termination within 15 days. If the tenant still stays, file an eviction petition with the Rent Authority or Civil Court."
+      answer: "Landlords must follow legal steps. Cutting off water or electricity is illegal and invites police action. First, send a fact-verified legal notice demanding payment and lease termination within 15 days. If the tenant still stays, file an eviction petition with the Rent Authority or Civil Court."
     },
     {
       id: "faq-5",
@@ -148,7 +148,7 @@ export default function RentalRecoveryClient() {
       id: "rev-1",
       name: "Rohan & Shruti Sen (Tenants, Pune)",
       rating: 5,
-      review: "Our landlord withheld our security deposit of ₹75,000, claiming arbitrary painting charges of ₹45,000 and cleaning fees of ₹10,000 for normal wear and tear. We hired LegalRecovery. Their practicing advocate drafted a 3+1 notice pipeline citing the Model Tenancy Act guidelines. The landlord returned our entire deposit of ₹75,000 within 5 days of the first notice."
+      review: "Our landlord withheld our security deposit of ₹75,000, claiming arbitrary painting charges of ₹45,000 and cleaning fees of ₹10,000 for normal wear and tear. We hired LegalRecovery. Their team verified the facts and prepared a 3+1 notice pipeline citing the Model Tenancy Act guidelines. The landlord returned our entire deposit of ₹75,000 within 5 days of the first notice."
     },
     {
       id: "rev-2",
@@ -166,7 +166,7 @@ export default function RentalRecoveryClient() {
       id: "rev-4",
       name: "Vikram Malhotra (IT Professional, Gurgaon)",
       rating: 5,
-      review: "I paid a booking advance of ₹50,000 for a rented villa, but the deal fell through because the landlord could not clear structural repairs before move-in. The landlord went silent. LegalRecovery sent an advocate notice outlining the Indian Contract Act. The landlord refunded my ₹50,000 advance with interest within 48 hours. Phenomenal speed!"
+      review: "I paid a booking advance of ₹50,000 for a rented villa, but the deal fell through because the landlord could not clear structural repairs before move-in. The landlord went silent. LegalRecovery sent a legal notice outlining the Indian Contract Act. The landlord refunded my ₹50,000 advance with interest within 48 hours. Phenomenal speed!"
     }
   ], []);
 
@@ -186,7 +186,7 @@ export default function RentalRecoveryClient() {
           "@id": "https://www.legalrecovery.in/services/security-deposits-and-rental-recoveries"
         },
         "headline": "Recover Stuck Security Deposits & File Rental Recoveries Legally in India",
-        "description": "Exhaustive legal guide on recovering unreturned rent security deposits, unpaid rent arrears, commercial lease defaults, and property damage recoveries in India under the Model Tenancy Act, 2021. 3 progressive notices, 1 police complaint draft, attorney-verified.",
+        "description": "Exhaustive legal guide on recovering unreturned rent security deposits, unpaid rent arrears, commercial lease defaults, and property damage recoveries in India under the Model Tenancy Act, 2021. 3 progressive notices, 1 police complaint draft, fact-verified.",
         "image": "https://www.legalrecovery.in/blog_money_recovery.png",
         "datePublished": "2026-05-27T00:00:00Z",
         "dateModified": "2026-05-27T00:00:00Z",
@@ -245,7 +245,7 @@ export default function RentalRecoveryClient() {
         "@type": "Product",
         "@id": "https://www.legalrecovery.in/services/security-deposits-and-rental-recoveries#service",
         "name": "Security Deposit & Rental Recovery Service",
-        "description": "Professional money recovery for withheld security deposits, unpaid rent, commercial lease breaches, and property damage disputes using top-tier advocate-signed notice campaigns.",
+        "description": "Professional money recovery for withheld security deposits, unpaid rent, commercial lease breaches, and property damage disputes using top-tier fact-verified notice campaigns.",
         "brand": {
           "@type": "Organization",
           "name": "LegalRecovery",
@@ -309,7 +309,7 @@ export default function RentalRecoveryClient() {
               <span className="text-[#DC2626]">Recover It Legally.</span>
             </h1>
             <p className="text-[15px] md:text-[17px] text-[#4B5563] font-medium leading-[1.6] mb-6 max-w-xl select-text">
-              Reclaim stuck rent security deposits, recover outstanding commercial lease arrears, settle painting/cleaning deduction disputes, and penalize tenants who caused structural damages. We serve 3 advocate-signed notices and provide 1 formal police complaint draft.
+              Reclaim stuck rent security deposits, recover outstanding commercial lease arrears, settle painting/cleaning deduction disputes, and penalize tenants who caused structural damages. We serve 3 fact-verified notices and provide 1 formal police complaint draft.
             </p>
 
             {/* High-Trust Tagline Banner */}
@@ -448,7 +448,7 @@ export default function RentalRecoveryClient() {
                   For <strong className="font-extrabold text-[#111827]">tenants</strong>, disputes usually happen when moving out. Many landlords withhold security deposits unfairly. They claim fake painting charges or normal wear and tear that is legally the landlord&apos;s job. For <strong className="font-extrabold text-[#111827]">landlords</strong>, problems arise when tenants stop paying rent, leave utility bills unpaid, or refuse to vacate.
                 </p>
                 <p>
-                  LegalRecovery helps resolve these disputes quickly. Going to civil rent court can take years. We replace slow court litigation with a fast, advocate-signed escalation notice process. This compels the other party to settle quickly to avoid penalties and court action.
+                  LegalRecovery helps resolve these disputes quickly. Going to civil rent court can take years. We replace slow court litigation with a fast, fact-verified escalation notice process. This compels the other party to settle quickly to avoid penalties and court action.
                 </p>
                 <blockquote>
                   <strong>Our Service Promise:</strong> We provide full recovery support for a flat fee. We take <strong>zero commission</strong> on your recovered money. We draft, verify, and send legally binding notices directly to the opposite party.
@@ -460,7 +460,7 @@ export default function RentalRecoveryClient() {
                 {/* 2. What We Help You Recover */}
                 <h2 id="coverage-details">2. Security Deposits & Rental Dues We Help You Recover</h2>
                 <p>
-                  Rental disputes require clear evidence. Our advocate panel reviews your agreement and drafts tailored demands for your situation:
+                  Rental disputes require clear evidence. Our team reviews your agreement and drafts tailored demands for your situation:
                 </p>
                 
                 <h3 id="unreturned-security-deposits">A. Unreturned Security Deposits (For Tenants)</h3>
@@ -491,7 +491,7 @@ export default function RentalRecoveryClient() {
                 {/* 3. Our 3+1 Notice Strategy */}
                 <h2 id="notice-strategy">3. Our 3+1 Notice Strategy: Engineered for Maximum Pressure</h2>
                 <p>
-                  Landlord-tenant conflicts often get heated. Phone calls and casual chats are easy to ignore. LegalRecovery uses a structured <strong className="font-extrabold text-[#111827]">3-stage advocate notice pipeline with a criminal complaint draft</strong>:
+                  Landlord-tenant conflicts often get heated. Phone calls and casual chats are easy to ignore. LegalRecovery uses a structured <strong className="font-extrabold text-[#111827]">3-stage legal notice pipeline with a criminal complaint draft</strong>:
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
                   <div className="bg-[#F9FAFB] p-5 rounded-2xl border border-[#E5E7EB]">
@@ -598,12 +598,12 @@ export default function RentalRecoveryClient() {
                   Many tenants and landlords copy free templates from the web. In real rental disputes, generic templates rarely work:
                 </p>
                 <ul>
-                  <li><strong>No Lawyer Signature:</strong> Casual letters on plain paper carry no real legal threat. A notice on a practicing advocate&apos;s letterhead shows you are serious about taking court action.</li>
+                  <li><strong>No Fact Verification:</strong> Casual letters on plain paper carry no real legal threat. A notice on a practicing advocate&apos;s letterhead shows you are serious about taking court action.</li>
                   <li><strong>Missing State-Specific Rules:</strong> Rent laws vary by state. Standard templates miss vital local rules under the Maharashtra Rent Act, Delhi Rent Control Act, or Model Tenancy Act.</li>
                   <li><strong>No Compounding Pressure:</strong> A single generic letter is easily ignored. Without progressive escalations and criminal breach of trust drafts, the other party rarely acts.</li>
                 </ul>
                 <p>
-                  LegalRecovery provides attorney-verified, state-specific notice campaigns. We track delivery in real time so the opposite party cannot claim non-receipt.
+                  LegalRecovery provides fact-verified, state-specific notice campaigns. We track delivery in real time so the opposite party cannot claim non-receipt.
                 </p>
 
                 {/* 6. Transparent Flat Pricing */}
@@ -667,7 +667,7 @@ export default function RentalRecoveryClient() {
                               <Check className="w-4 h-4 sm:w-5 sm:h-5 text-[#10B981] stroke-[3.5] shrink-0 mt-0.5" />
                               <div className="flex flex-col">
                                 <span className="text-[11.5px] sm:text-[13.5px] font-bold text-[#111827] leading-snug">Attorney Validation</span>
-                                <span className="text-[9.5px] sm:text-[11.5px] text-[#6B7280] font-medium leading-tight">Verified by top legal experts</span>
+                                <span className="text-[9.5px] sm:text-[11.5px] text-[#6B7280] font-medium leading-tight">Facts verified by our team</span>
                               </div>
                             </div>
                             <div className="flex items-start gap-3">
@@ -703,7 +703,7 @@ export default function RentalRecoveryClient() {
                 {/* 7. Evidentiary Checklist */}
                 <h2 id="documentation-needed">7. The Evidentiary Checklist for Rental Recovery</h2>
                 <p>
-                  To initiate your case on our platform, you will need to gather simple, standard tenancy records to establish your claim. Our advocates will utilize these records to compile a flawless case profile:
+                  To initiate your case on our platform, you will need to gather simple, standard tenancy records to establish your claim. Our team will utilize these records to compile a flawless case profile:
                 </p>
                 <ul>
                   <li><strong>Rent Agreement (Lease Deed):</strong> Proves the identity of landlord/tenant, property details, security deposit amount, notice period, and monthly rent.</li>
@@ -878,7 +878,7 @@ export default function RentalRecoveryClient() {
               <div className="absolute top-0 right-0 w-24 h-24 bg-red-600/10 rounded-full blur-xl pointer-events-none" />
               <h3 className="text-base font-extrabold mb-3 tracking-tight">Need Urgent Rental Recovery?</h3>
               <p className="text-gray-400 mb-5 text-[11px] leading-relaxed">
-                Get an advocate-drafted 3-stage notice pipeline and a customized police complaint draft for a flat fee of ₹999.
+                Get a fact-verified 3-stage notice pipeline and a customized police complaint draft for a flat fee of ₹999.
               </p>
               <Link 
                 href="/contact" 

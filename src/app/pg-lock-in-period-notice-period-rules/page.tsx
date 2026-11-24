@@ -206,7 +206,7 @@ const FAQS = [
   {
     question: "PG owner deposit wapas nahi de raha ya lock-in period ka bahana bana raha hai toh legal notice kaise bheje?",
     answer:
-      "Agar PG malik, warden, ya co-living company (jaise Stanza Living ya Zolo) notice period dene ke baad bhi aapka security deposit rok le, ya kharab khana/paani hone par bhi lock-in period ke naam par pura paisa kaat le, toh aap Indian Contract Act ki Dhara 74 aur Consumer Protection Act 2019 ke tehat formal Advocate Legal Notice bhej sakte hain. LegalRecovery.in ke verified advocates Speed Post, Email aur WhatsApp (Section 63 BSA) se 15-din ka legal demand notice bhejte hain, jisse 80% se zyada PG disputes bina court gaye settle ho jate hain.",
+      "Agar PG malik, warden, ya co-living company (jaise Stanza Living ya Zolo) notice period dene ke baad bhi aapka security deposit rok le, ya kharab khana/paani hone par bhi lock-in period ke naam par pura paisa kaat le, toh aap Indian Contract Act ki Dhara 74 aur Consumer Protection Act 2019 ke tehat formal Fact-Verified Legal Notice bhej sakte hain. LegalRecovery.in ki team Speed Post, Email aur WhatsApp (Section 63 BSA) se 15-din ka legal demand notice bhejti hai, jisse 80% se zyada PG disputes bina court gaye settle ho jate hain.",
   },
 ];
 
@@ -896,12 +896,12 @@ export default function PgLockInNoticePeriodRulesPage() {
                     </span>
                     <div className="space-y-1 sm:space-y-1.5">
                       <h3 className="text-sm sm:text-base md:text-lg font-bold text-slate-900">
-                        Serve a Formal 15-Day Advocate Legal Notice (Speed Post + Email + WhatsApp)
+                        Serve a Formal 15-Day Fact-Verified Legal Notice (Speed Post + Email + WhatsApp)
                       </h3>
                       <p className="text-xs sm:text-sm leading-relaxed">
                         When a PG owner sees a formal statutory notice on an advocate&apos;s letterhead citing <strong>Section 74 of the Indian Contract Act</strong>, <strong>Section 2(11) &amp; 2(46) of the Consumer Protection Act, 2019</strong>, and municipal trade-licence/tax-reporting scrutiny for unregistered commercial PG operations, the calculus flips immediately. Fighting a consumer case costs the PG owner far more than returning a ₹15,000–₹40,000 deposit. Check our transparent{" "}
                         <Link href="/legal-notice-charges" className="text-blue-700 underline font-semibold">
-                          legal notice charges and advocate drafting fees
+                          legal notice charges and notice drafting fees
                         </Link>{" "}
                         or read our step-by-step guide on{" "}
                         <Link href="/legal-notice-to-pg-owner-for-security-deposit-refund" className="text-blue-700 underline font-semibold">
@@ -969,7 +969,7 @@ export default function PgLockInNoticePeriodRulesPage() {
                       <strong>The Dispute &amp; Unilateral Forfeiture:</strong> In late September (month 3), the PG&apos;s common RO water purifier broke down for 12 days, dinner catering was repeatedly cancelled, and Ritika was shifted to her company&apos;s Kharadi office. On 28 September, she sent a 30-day written vacating notice on WhatsApp for 28 October. When she vacated on 28 October and handed over the keys, the PG owner refused to return a single rupee of her ₹36,000 deposit—claiming (1) full forfeiture for leaving before the 6-month lock-in expired, and (2) ₹3,500 for room repainting and bed sanitization. Worse, another IT employee moved into Ritika&apos;s vacated bed on 1 November.
                     </p>
                     <p>
-                      <strong>The Statutory Legal Notice:</strong> Ritika initiated a notice through LegalRecovery.in. Our advocate served a 15-day statutory demand notice via Registered Speed Post, Email, and WhatsApp to the PG proprietor, citing: (1) <strong>Section 39 of the Indian Contract Act</strong> (repudiation due to the PG&apos;s failure to provide potable RO water and meals), (2) <strong>Section 74 of the Contract Act &amp; <em>Kailash Nath v. DDA</em></strong> (zero vacancy loss since the bed was re-occupied within 3 days on 1 November, making forfeiture an illegal penalty), and (3) <strong>Section 2(11) &amp; 2(47) of the Consumer Protection Act, 2019</strong> ahead of an e-Jagriti complaint.
+                      <strong>The Statutory Legal Notice:</strong> Ritika initiated a notice through LegalRecovery.in. Our team served a 15-day statutory demand notice via Registered Speed Post, Email, and WhatsApp to the PG proprietor, citing: (1) <strong>Section 39 of the Indian Contract Act</strong> (repudiation due to the PG&apos;s failure to provide potable RO water and meals), (2) <strong>Section 74 of the Contract Act &amp; <em>Kailash Nath v. DDA</em></strong> (zero vacancy loss since the bed was re-occupied within 3 days on 1 November, making forfeiture an illegal penalty), and (3) <strong>Section 2(11) &amp; 2(47) of the Consumer Protection Act, 2019</strong> ahead of an e-Jagriti complaint.
                     </p>
                     <div className="p-3.5 sm:p-4 bg-emerald-950/70 border border-emerald-700/60 rounded-xl text-emerald-200">
                       <strong className="block text-emerald-400 font-bold mb-1">The Settlement Outcome (Day 9):</strong>
@@ -1056,7 +1056,7 @@ export default function PgLockInNoticePeriodRulesPage() {
                       <span className="text-emerald-600">✓</span> What We Can Enforce for You
                     </h3>
                     <ul className="space-y-1.5 text-xs sm:text-sm text-emerald-900 leading-relaxed list-disc list-inside">
-                      <li>Draft and serve a formal 15-day statutory Advocate Legal Notice to the PG owner, hostel trust, or co-living company (Stanza Living, Zolo, Colive, Your-Space).</li>
+                      <li>Draft and serve a formal 15-day statutory Fact-Verified Legal Notice to the PG owner, hostel trust, or co-living company (Stanza Living, Zolo, Colive, Your-Space).</li>
                       <li>Challenge automatic lock-in deposit forfeitures under Section 74 &amp; Section 39 of the Indian Contract Act and Section 2(46) CPA 2019.</li>
                       <li>Contest arbitrary painting charges, move-out fees, &quot;1st-to-1st&quot; notice period traps, and unbilled electricity deductions.</li>
                       <li>Provide you with a court-ready Section 63 BSA-compliant notice dossier for zero-fee e-Jagriti consumer filing if the owner still refuses to pay.</li>

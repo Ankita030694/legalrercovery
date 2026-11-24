@@ -562,7 +562,7 @@ ${formData.advocateOffice}`;
               href="/user/new-recovery"
               className="block text-center w-full py-3 px-4 rounded-xl bg-[#DC2626] hover:bg-[#B91C1C] text-white text-xs font-bold shadow-md transition-all"
             >
-              Proceed with Advocate Vetting & Speed Post Service (₹999)
+              Proceed with Fact Verification & Speed Post Service (₹999)
             </Link>
           </div>
         </div>

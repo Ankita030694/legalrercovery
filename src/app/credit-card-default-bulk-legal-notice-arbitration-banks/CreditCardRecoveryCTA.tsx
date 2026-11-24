@@ -32,7 +32,7 @@ export default function CreditCardRecoveryCTA({
                 Scale 90–180+ DPD Card Recovery Without RBI Penalties
               </h3>
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
-                Dispatch advocate-drafted pre-arbitration &amp; CICRA-compliant
+                Dispatch fact-verified pre-arbitration &amp; CICRA-compliant
                 credit card notices across Email, WhatsApp, and Speed Post RPAD
                 with BSA Section 63 delivery certificates.
               </p>
@@ -88,7 +88,7 @@ export default function CreditCardRecoveryCTA({
             <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed">
               Test a single overdue credit card account in under 24 hours or
               onboard your entire 90–180+ DPD portfolio via CSV. Every notice is
-              advocate-vetted, compliant with RBI Penal Charges &amp; Credit
+              fact-verified, compliant with RBI Penal Charges &amp; Credit
               Card Directions, and backed by tri-channel dispatch proofs for
               neutral ODR arbitration or National Lok Adalat filing.
             </p>
@@ -111,7 +111,7 @@ export default function CreditCardRecoveryCTA({
                   Test 1 Live Overdue Case Now
                 </h4>
                 <p className="text-xs text-slate-300 leading-relaxed">
-                  Advocate-drafted credit card recall &amp; neutral Section 21
+                  Fact-verified credit card recall &amp; neutral Section 21
                   pre-arbitration notice. Dispatched simultaneously via Email,
                   WhatsApp, and India Post Speed Post RPAD with BSA s.63
                   delivery proof.

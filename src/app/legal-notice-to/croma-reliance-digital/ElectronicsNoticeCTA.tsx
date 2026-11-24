@@ -31,7 +31,7 @@ export default function ElectronicsNoticeCTA({
                 Stop the Service Center Ping-Pong. Hold the Retailer Accountable.
               </h3>
               <p className="text-slate-300 text-sm sm:text-base leading-relaxed mb-6">
-                When Croma or Reliance Digital denies replacement for a defective television, laptop, or appliance, serving a formal Advocate Legal Notice establishes privity of contract, cites Section 86 of the Consumer Protection Act, 2019, and triggers corporate legal desk intervention before you file on e-Jagriti.
+                When Croma or Reliance Digital denies replacement for a defective television, laptop, or appliance, serving a formal Fact-Verified Legal Notice establishes privity of contract, cites Section 86 of the Consumer Protection Act, 2019, and triggers corporate legal desk intervention before you file on e-Jagriti.
               </p>
               <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
                 <button
@@ -58,7 +58,7 @@ export default function ElectronicsNoticeCTA({
                       d="M5 13l4 4L19 7"
                     />
                   </svg>
-                  <span>Drafted by verified Consumer Protection Advocates within 24 hours</span>
+                  <span>Prepared and fact-verified by our team within 24 hours</span>
                 </div>
               </div>
             </div>
@@ -69,7 +69,7 @@ export default function ElectronicsNoticeCTA({
               Ready to Demand Your Replacement or Full Refund?
             </h4>
             <p className="text-slate-600 text-sm mb-4 max-w-xl mx-auto">
-              Serve an advocate-drafted statutory demand notice directly to Infiniti Retail Ltd or Reliance Retail Ltd corporate legal counsel for ₹{basePrice}.
+              Serve a fact-verified statutory demand notice directly to Infiniti Retail Ltd or Reliance Retail Ltd corporate legal counsel for ₹{basePrice}.
             </p>
             <button
               type="button"

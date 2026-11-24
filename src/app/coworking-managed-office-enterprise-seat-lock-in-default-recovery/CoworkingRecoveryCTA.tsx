@@ -25,7 +25,7 @@ export default function CoworkingRecoveryCTA({
               Track 1 &bull; Single Defaulted Enterprise Seat / Cabin
             </span>
             <p className="text-lg sm:text-xl font-extrabold text-white mb-2">
-              Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Advocate Drafted &middot; Email + WhatsApp + Speed Post RPAD)
+              Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Fact-Verified &middot; Email + WhatsApp + Speed Post RPAD)
             </p>
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
               Serve a rigorous, high-impact 7-to-15 day statutory license revocation and arrears demand notice on a defaulting enterprise client. Explicitly revokes Easements Act s.52 privileges, issues RFID and biometric turnstile deactivation notice, places abandoned laptops and server hardware under a Section 170 bailee&apos;s lien, and accelerates unexpired lock-in seat fees under Indian Contract Act Section 73/74.

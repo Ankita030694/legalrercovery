@@ -34,7 +34,7 @@ const PROBLEMS: ProblemTab[] = [
       {
         step: "Serve 30-Day Statutory Demand Notice",
         description:
-          "Issue a formal advocate demand notice under Section 25(1)(b) of the PSS Act within 30 days of receiving the return memo, demanding payment within 15 days of notice receipt.",
+          "Issue a formal fact-verified demand notice under Section 25(1)(b) of the PSS Act within 30 days of receiving the return memo, demanding payment within 15 days of notice receipt.",
       },
       {
         step: "File Section 25 Criminal Complaint Before Judicial Magistrate",

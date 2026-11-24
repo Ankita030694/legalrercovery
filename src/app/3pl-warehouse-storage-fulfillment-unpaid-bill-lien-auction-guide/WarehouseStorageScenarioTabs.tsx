@@ -53,7 +53,7 @@ const SCENARIOS: Scenario[] = [
     statutoryTrap:
       "WMS activity logs and Signed Proof of Delivery (POD) trails are often held in uncertified cloud databases. If the 3PL operator cannot produce legally admissible electronic audit trails under BSA 2023 Section 63, the court may view the billing dispute as a bona fide triable issue, defeating summary recovery.",
     lawfulPlaybook:
-      "1. Export complete WMS timestamp logs, CCTV dock footage, and carrier electronic manifests.\n2. Generate cryptographic BSA 2023 Section 63 electronic evidence certificates verifying that 99.4% SLA was met.\n3. Issue advocate legal notice invalidating unilateral debit notes under Indian Contract Act Section 73.\n4. Retain physical possession of sufficient inventory equal to 125% of disputed charges under statutory lien.\n5. Offer joint physical inventory audit at client expense while keeping dispatch freeze active.",
+      "1. Export complete WMS timestamp logs, CCTV dock footage, and carrier electronic manifests.\n2. Generate cryptographic BSA 2023 Section 63 electronic evidence certificates verifying that 99.4% SLA was met.\n3. Issue fact-verified legal notice invalidating unilateral debit notes under Indian Contract Act Section 73.\n4. Retain physical possession of sufficient inventory equal to 125% of disputed charges under statutory lien.\n5. Offer joint physical inventory audit at client expense while keeping dispatch freeze active.",
     remedyCode: "BSA 2023 s.63 + Section 170 Contract Act + Commercial Courts Act s.2(1)(c)(xviii)",
     financialRecovery: "Reversal of Unilateral Debit Notes + Full Settlement of Fulfillment Fees",
   },

@@ -24,10 +24,10 @@ export default function HorecaRecoveryCTA({ className = "" }: HorecaRecoveryCTAP
                 Track 1 · Single Restaurant, Pub or Cloud Kitchen
               </span>
               <h3 className="text-lg sm:text-xl font-bold text-white mb-2">
-                Test 1 Live Overdue Case Now (&#8377;{basePrice} &middot; Advocate Drafted &middot; Email + WhatsApp + Speed Post RPAD)
+                Test 1 Live Overdue Case Now (&#8377;{basePrice} &middot; Fact-Verified &middot; Email + WhatsApp + Speed Post RPAD)
               </h3>
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-                Upload your GST invoices, chef-stamped delivery challans, personal guarantee / vendor onboarding form, and bounced PDC memo. Our advocates dispatch a Day-35 statutory notice to the LLP/Company and every Designated Partner before the outlet shuts down.
+                Enter the details of your GST invoices, chef-stamped delivery challans, personal guarantee / vendor onboarding form, and bounced PDC memo. Our team verifies the facts and dispatches a Day-35 statutory notice to the LLP/Company and every Designated Partner before the outlet shuts down.
               </p>
             </div>
 

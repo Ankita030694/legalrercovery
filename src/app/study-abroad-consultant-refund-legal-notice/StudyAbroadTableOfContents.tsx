@@ -193,7 +193,7 @@ export default function StudyAbroadTableOfContents({
             Need Expert Action?
           </span>
           <p className="text-xs text-slate-300 mb-3 leading-relaxed">
-            Consultant refusing refund citing fine print? Send a verified legal notice drafted by an advocate.
+            Consultant refusing refund citing fine print? Send a verified legal notice prepared on verified facts.
           </p>
           <a
             href="#heading-escalation-flow"

@@ -237,7 +237,7 @@ export default function EcommerceMarketplaceSellerReservePage() {
       {
         "@type": "HowToStep",
         name: "Advocate Legal Demand Notice Under Contract Act Section 74",
-        text: "Serve a formal Advocate Notice to the platform's Grievance Officer and Legal Directorate challenging the 180-day hold as an unenforceable contractual penalty and demanding release within 7 days.",
+        text: "Serve a formal Fact-Verified Notice to the platform's Grievance Officer and Legal Directorate challenging the 180-day hold as an unenforceable contractual penalty and demanding release within 7 days.",
       },
       {
         "@type": "HowToStep",
@@ -611,7 +611,7 @@ export default function EcommerceMarketplaceSellerReservePage() {
                     <span className="text-[10px] bg-amber-950 px-2 py-0.5 rounded text-amber-300 font-mono">Step 03</span>
                   </div>
                   <p className="text-xs text-slate-300">
-                    Serve an advocate notice under Section 74 Contract Act directly to the marketplace legal and grievance cell demanding settlement in 7 days.
+                    Serve a fact-verified notice under Section 74 Contract Act directly to the marketplace legal and grievance cell demanding settlement in 7 days.
                   </p>
                 </div>
 
@@ -743,7 +743,7 @@ export default function EcommerceMarketplaceSellerReservePage() {
                     </p>
                   </div>
                   <p className="text-slate-200">
-                    Under the <em>Kailash Nath</em> doctrine, the marketplace is legally entitled to hold a maximum contingency reserve of ₹2,10,000 during the active 30-day window. The remaining <strong>₹66,40,000</strong> constitutes an illegal contractual penalty withheld without legal consideration. The advocate demand notice crystallizes the principal at ₹66,40,000 plus commercial interest at 18% per annum (or 3x RBI Bank Rate for MSMEs) accruing from Day 15 post-suspension.
+                    Under the <em>Kailash Nath</em> doctrine, the marketplace is legally entitled to hold a maximum contingency reserve of ₹2,10,000 during the active 30-day window. The remaining <strong>₹66,40,000</strong> constitutes an illegal contractual penalty withheld without legal consideration. The fact-verified demand notice crystallizes the principal at ₹66,40,000 plus commercial interest at 18% per annum (or 3x RBI Bank Rate for MSMEs) accruing from Day 15 post-suspension.
                   </p>
                 </div>
               </div>
@@ -861,7 +861,7 @@ export default function EcommerceMarketplaceSellerReservePage() {
                       1. Section 21 Invocation Notice: Halting the Clock &amp; Triggering Commercial Interest
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Under Section 21 of the Arbitration and Conciliation Act, 1996, arbitral proceedings commence on the exact date the respondent receives the invocation notice. A formal notice drafted by an advocate outlines the quantified claim, the illegal reserve hold under Contract Act Section 74, names proposed independent sole arbitrators, and explicitly demands commercial interest at 18% p.a. This immediately moves the dispute out of the customer support loop and lands it on the desk of senior in-house platform litigation counsel.
+                      Under Section 21 of the Arbitration and Conciliation Act, 1996, arbitral proceedings commence on the exact date the respondent receives the invocation notice. A formal notice prepared on verified facts outlines the quantified claim, the illegal reserve hold under Contract Act Section 74, names proposed independent sole arbitrators, and explicitly demands commercial interest at 18% p.a. This immediately moves the dispute out of the customer support loop and lands it on the desk of senior in-house platform litigation counsel.
                     </p>
                   </div>
 

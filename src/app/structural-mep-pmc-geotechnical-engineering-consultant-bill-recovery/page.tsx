@@ -127,7 +127,7 @@ const FAQS = [
   },
   {
     q: "How can a PMC firm recover 8 months of monthly man-month deployment bills on a stalled real estate or industrial project?",
-    a: "Under a monthly man-month deployment contract, your billing right accrues from verified site presence—not slab-casting velocity. Assemble signed mobilization letters, monthly attendance logs, Monthly Progress Reports (MPRs), site Minutes of Meetings (MOMs), and GST e-invoices backed by a BSA 2023 s.63 certificate. Serve a 15-day Advocate Notice under Contract Act ss.51–52 & 73 warning of lawful demobilization if arrears remain unpaid, and pursue parallel recovery via MSEFC Samadhaan (for Udyam Micro/Small PMCs) or an Order XXXVII CPC summary suit.",
+    a: "Under a monthly man-month deployment contract, your billing right accrues from verified site presence—not slab-casting velocity. Assemble signed mobilization letters, monthly attendance logs, Monthly Progress Reports (MPRs), site Minutes of Meetings (MOMs), and GST e-invoices backed by a BSA 2023 s.63 certificate. Serve a 15-day Fact-Verified Notice under Contract Act ss.51–52 & 73 warning of lawful demobilization if arrears remain unpaid, and pursue parallel recovery via MSEFC Samadhaan (for Udyam Micro/Small PMCs) or an Order XXXVII CPC summary suit.",
   },
   {
     q: "Do structural, MEP, PMC, EIA, and geotechnical soil-testing consultancies qualify for MSMED 45-day payment protection and Income Tax s.43B(h)?",
@@ -194,7 +194,7 @@ const HOWTO_SCHEMA = {
       position: 2,
       "@type": "HowToStep",
       name: "Serve Advocate Contract Act s.51–52 Conditional Performance & Fee Demand Notice",
-      text: "Dispatch a 15-day Advocate Statutory Notice via Email, WhatsApp, and Speed Post RPAD invoking reciprocal performance (Contract Act ss.51–52), confirming readiness to issue final OC/Stability/EIA/SBC sign-offs immediately upon settlement of overdue milestone invoices.",
+      text: "Dispatch a 15-day Fact-Verified Statutory Notice via Email, WhatsApp, and Speed Post RPAD invoking reciprocal performance (Contract Act ss.51–52), confirming readiness to issue final OC/Stability/EIA/SBC sign-offs immediately upon settlement of overdue milestone invoices.",
     },
     {
       position: 3,
@@ -791,7 +791,7 @@ export default function EngineeringConsultantRecoveryPage() {
                   {
                     step: "Step 2 (Day 4–7)",
                     title: "Serve s.51–52 Conditional Sign-Off Notice",
-                    body: "Dispatch an Advocate Notice via Email, WhatsApp & RPAD pausing OC/Stability/Fire/EIA sign-offs until overdue prior milestones are paid.",
+                    body: "Dispatch a Fact-Verified Notice via Email, WhatsApp & RPAD pausing OC/Stability/Fire/EIA sign-offs until overdue prior milestones are paid.",
                   },
                   {
                     step: "Step 3 (Day 8–15)",
@@ -1067,7 +1067,7 @@ export default function EngineeringConsultantRecoveryPage() {
               </div>
 
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed mb-6">
-                Stop funding a developer&apos;s construction cash flow out of your engineering payroll. Start with a single advocate-drafted Contract Act s.51&ndash;52 &amp; MSMED notice today, or onboard your entire aged project receivables ledger onto our institutional B2B desk:
+                Stop funding a developer&apos;s construction cash flow out of your engineering payroll. Start with a single fact-verified Contract Act s.51&ndash;52 &amp; MSMED notice today, or onboard your entire aged project receivables ledger onto our institutional B2B desk:
               </p>
 
               <EngineeringRecoveryCTA />

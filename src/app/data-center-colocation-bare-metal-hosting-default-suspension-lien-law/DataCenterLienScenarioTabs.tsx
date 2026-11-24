@@ -28,7 +28,7 @@ const SCENARIOS: ScenarioTab[] = [
       {
         step: "Issue Formal Gate-Pass Hold & Lien Crystallization Notice",
         description:
-          "Serve an Advocate-drafted Lien & Cure Notice citing the exact MSA Contractual Lien clause, itemized rack/power ledger, and formal refusal of physical asset exit pending payment.",
+          "Serve a Fact-verified Lien & Cure Notice citing the exact MSA Contractual Lien clause, itemized rack/power ledger, and formal refusal of physical asset exit pending payment.",
       },
       {
         step: "Decouple Data Access from Physical Possession",

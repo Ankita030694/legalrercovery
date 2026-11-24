@@ -206,7 +206,7 @@ export default function SmaCureTableOfContents({
               Need Day-62 Batch Dispatch?
             </p>
             <p className="text-[11px] text-slate-500 leading-relaxed mb-3">
-              Upload SMA-1/SMA-2 CSV cohorts for advocate-signed multi-channel cure notices.
+              Upload SMA-1/SMA-2 CSV cohorts for fact-verified multi-channel cure notices.
             </p>
             <a
               href="#cta-desk"

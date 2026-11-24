@@ -24,7 +24,7 @@ const COHORT_SCENARIOS: CohortScenario[] = [
     ticketRange: "₹5,000 – ₹15,000",
     title: "Checkout BNPL & Micro-Credit: Zero-Litigation Digital Wave",
     unitConstraint:
-      "At an average ₹9,500 principal, any physical Speed Post + advocate drafting fee above ₹1,500 destroys net recovery yield unless triggered only on high-propensity accounts. Civil court filing or standalone arbitration is economically negative.",
+      "At an average ₹9,500 principal, any physical Speed Post + notice drafting fee above ₹1,500 destroys net recovery yield unless triggered only on high-propensity accounts. Civil court filing or standalone arbitration is economically negative.",
     recommendedWave: "Wave-1 Digital Advocate Notice + 30-Day CICRA Pre-Adverse Alert",
     statutoryHooks:
       "Credit Information Companies (Regulation) Act, 2005 (CICRA) pre-reporting alert; BSA 2023 s.63 electronic service certificate; RBI Fair Practices Code.",
@@ -32,7 +32,7 @@ const COHORT_SCENARIOS: CohortScenario[] = [
       {
         step: "Day 15–30 DPD: Automated Advocate Email + WhatsApp Blue-Tick Notice",
         detail:
-          "Dispatch advocate-vetted demand notice carrying a borrower-specific QR/UPI settlement link and explicit 30-day Credit Bureau (CIBIL/Experian/CRIF/Equifax) DPD reporting schedule.",
+          "Dispatch fact-verified demand notice carrying a borrower-specific QR/UPI settlement link and explicit 30-day Credit Bureau (CIBIL/Experian/CRIF/Equifax) DPD reporting schedule.",
       },
       {
         step: "Day 31–45 DPD: CIC Pre-Adverse Escalation & Lok Adalat Screening",

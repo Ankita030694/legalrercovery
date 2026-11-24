@@ -69,7 +69,7 @@ const AGRI_KCC_SCENARIOS: AgriScenarioItem[] = [
       {
         step: "Bilingual Advocate Pre-Litigation Recall & Subvention-Loss Notice",
         detail:
-          "Serve an advocate-signed Hindi/regional + English notice via Speed Post RPAD and WhatsApp explaining withdrawal of 3% Prompt Repayment Incentive, CIC/CIBIL freeze on future agricultural credit, and absence of any notified statutory waiver.",
+          "Serve a fact-verified Hindi/regional + English notice via Speed Post RPAD and WhatsApp explaining withdrawal of 3% Prompt Repayment Incentive, CIC/CIBIL freeze on future agricultural credit, and absence of any notified statutory waiver.",
       },
       {
         step: "Harvest-Aligned Taluka / National Lok Adalat Bulk Docket",
@@ -103,7 +103,7 @@ const AGRI_KCC_SCENARIOS: AgriScenarioItem[] = [
       {
         step: "Strict 15-Day Advocate Loan Recall & Surrender Notice",
         detail:
-          "Dispatch an advocate-drafted recall notice demanding overdue installments or voluntary surrender of the hypothecated tractor/harvester, embedding a Section 25 PSS Act or Section 138 NI Act statutory notice if mandates/cheques dishonoured within 30 days.",
+          "Dispatch a fact-verified recall notice demanding overdue installments or voluntary surrender of the hypothecated tractor/harvester, embedding a Section 25 PSS Act or Section 138 NI Act statutory notice if mandates/cheques dishonoured within 30 days.",
       },
       {
         step: "RBI-Compliant Repossession, Police Intimation & Panchnama",

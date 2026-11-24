@@ -94,7 +94,7 @@ const FAQS = [
   {
     question: "What legal action can I take if relieving letter is not given after resignation?",
     answer:
-      "If HR ignores your reminder emails, take three steps: (1) Send a 15-day advocate legal notice to the Managing Director and HR Head; (2) File an online complaint on the Ministry of Labour's Samadhan portal; and (3) File a civil claim for compensation due to blocked job opportunities.",
+      "If HR ignores your reminder emails, take three steps: (1) Send a 15-day fact-verified legal notice to the Managing Director and HR Head; (2) File an online complaint on the Ministry of Labour's Samadhan portal; and (3) File a civil claim for compensation due to blocked job opportunities.",
   },
   {
     question: "Can an employer refuse to give an experience certificate for an employee who resigned during probation?",
@@ -109,7 +109,7 @@ const FAQS = [
   {
     question: "Agar company relieving letter ya experience certificate na de toh legal notice kaise bheje?",
     answer:
-      "Agar company resignation ke baad relieving letter na de, toh advocate legal notice bhejein. LegalRecovery.in par advocates Article 21 aur Section 27 ke tahat company ke Registered Office aur Directors ko Speed Post aur email se 15 din ka notice bhejte hain.",
+      "Agar company resignation ke baad relieving letter na de, toh fact-verified legal notice bhejein. LegalRecovery.in par advocates Article 21 aur Section 27 ke tahat company ke Registered Office aur Directors ko Speed Post aur email se 15 din ka notice bhejte hain.",
   },
 ];
 
@@ -585,7 +585,7 @@ export default function RelievingLetterTemplatePage() {
                     </span>
                     <div className="space-y-1 sm:space-y-1.5">
                       <h3 className="text-sm sm:text-base md:text-lg font-bold text-slate-900">
-                        Serve a Formal Statutory Advocate Legal Demand Notice
+                        Serve a Formal Statutory Fact-Verified Legal Demand Notice
                       </h3>
                       <p className="text-xs sm:text-sm leading-relaxed">
                         When administrative escalation fails, retain a labour advocate to draft and serve a formal 15-day statutory demand notice. Served on advocate legal letterhead via Registered Speed Post with Acknowledgement Due (AD) and Section 63 BSA electronic mail to the employer&apos;s corporate registered office, the notice invokes Model Standing Orders Rule 16, Article 21, and Section 27 of the Contract Act. For detailed transparent pricing, see our guide to <Link href="/legal-notice-charges" className="text-blue-700 underline font-semibold">legal notice charges</Link>.
@@ -702,7 +702,7 @@ export default function RelievingLetterTemplatePage() {
                       <strong>The Deadlock:</strong> Following his Last Working Day on 15 September, corporate HR reversed course. HR demanded a cash recovery of ₹1,45,000 for the 15-day notice shortfall and refused to release Rohan&apos;s Relieving Letter and Experience Certificate until he deposited the funds. Rohan had a confirmed offer from a tier-1 multinational firm with an onboarding cutoff of 15 October; without the service certificate, his new offer faced cancellation. Rohan sent three polite emails, but HR insisted on cash payment.
                     </p>
                     <p>
-                      <strong>The Statutory Action:</strong> Rohan consulted an advocate via LegalRecovery.in. The advocate served a statutory legal demand notice on the employer&apos;s Registered Office and Board of Directors. The notice established that: (1) The notice period waiver had been approved in writing by authorized management, (2) Withholding service records violated Article 21 and Section 27 of the Contract Act, and (3) Should the MNC offer be revoked, the employer would face a civil suit claiming ₹18,00,000 for lost annual compensation.
+                      <strong>The Statutory Action:</strong> Rohan used LegalRecovery.in to serve a statutory legal demand notice on the employer&apos;s Registered Office and Board of Directors. The notice established that: (1) The notice period waiver had been approved in writing by authorized management, (2) Withholding service records violated Article 21 and Section 27 of the Contract Act, and (3) Should the MNC offer be revoked, the employer would face a civil suit claiming ₹18,00,000 for lost annual compensation.
                     </p>
                     <div className="p-3.5 sm:p-4 bg-emerald-950/70 border border-emerald-700/60 rounded-xl text-emerald-200">
                       <strong className="block text-emerald-400 font-bold mb-1">The Outcome:</strong>
@@ -839,7 +839,7 @@ export default function RelievingLetterTemplatePage() {
               {/* Primary CTA */}
               <section id="heading-cta-block" aria-labelledby="heading-cta-block-title" className="w-full">
                 <h2 id="heading-cta-block-title" className="sr-only">
-                  Serve a Statutory Advocate Demand Notice to Employer
+                  Serve a Statutory Fact-Verified Demand Notice to Employer
                 </h2>
                 <RelievingLetterNoticeCTA variant="primary" />
               </section>

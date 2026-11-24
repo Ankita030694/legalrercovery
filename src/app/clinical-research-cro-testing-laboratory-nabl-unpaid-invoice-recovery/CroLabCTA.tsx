@@ -24,10 +24,10 @@ export default function CroLabCTA({ className = "" }: CroLabCTAProps) {
                 Track 1 &middot; Single Study / Unpaid Lab Batch Notice
               </span>
               <h3 className="text-lg sm:text-xl font-bold text-white mb-2">
-                Test 1 Live Overdue Case Now (&#8377;{basePrice} &middot; Advocate Drafted &middot; Email + WhatsApp + Speed Post RPAD)
+                Test 1 Live Overdue Case Now (&#8377;{basePrice} &middot; Fact-Verified &middot; Email + WhatsApp + Speed Post RPAD)
               </h3>
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-                Upload your Master Services Agreement (MSA), Study Protocol / Quotation, Certificate of Analysis (CoA) or draft PK/PD summary, and unpaid milestone GST invoices. Our external litigation counsel drafts an ISO 17025 &amp; GLP-compliant Scientific Neutrality Demand, Regulatory CSR Lien &amp; Order XXXVII Notice within 24 hours.
+                Enter the details of your Master Services Agreement (MSA), Study Protocol / Quotation, Certificate of Analysis (CoA) or draft PK/PD summary, and unpaid milestone GST invoices. Our team verifies the facts and prepares an ISO 17025 &amp; GLP-compliant Scientific Neutrality Demand, Regulatory CSR Lien &amp; Order XXXVII Notice within 24 hours.
               </p>
             </div>
 

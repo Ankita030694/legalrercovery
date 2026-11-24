@@ -25,10 +25,10 @@ export default function OverseasRecruitingNoticeCTA({
               Track 1 &bull; Single Foreign Employer Recovery Test
             </span>
             <p className="text-lg sm:text-xl font-extrabold text-white mb-2">
-              Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Advocate Drafted &middot; Cross-Border Email + WhatsApp + International RPAD)
+              Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Fact-Verified &middot; Cross-Border Email + WhatsApp + International RPAD)
             </p>
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-              Serve a high-impact, advocate-vetted statutory Legal Demand Notice to an overseas employer in UAE, Saudi Arabia, Qatar, Oman, or Europe. Invokes the attested eMigrate Demand Letter, Emigration Act 1983, Indian Contract Act Section 70 (Quantum Meruit), and CPC Section 44A bilateral enforcement, warning of imminent PGE blacklisting and host-country execution proceedings.
+              Serve a high-impact, fact-verified statutory Legal Demand Notice to an overseas employer in UAE, Saudi Arabia, Qatar, Oman, or Europe. Invokes the attested eMigrate Demand Letter, Emigration Act 1983, Indian Contract Act Section 70 (Quantum Meruit), and CPC Section 44A bilateral enforcement, warning of imminent PGE blacklisting and host-country execution proceedings.
             </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-3">

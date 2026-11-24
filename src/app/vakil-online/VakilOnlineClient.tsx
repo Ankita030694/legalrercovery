@@ -15,11 +15,11 @@ const faqs = [
   },
   {
     question: "Are communications with an online advocate protected by client privilege?",
-    answer: "Yes, attorney-client privilege applies fully to digital consultations. Under Section 126 of the Indian Evidence Act, 1872 (now Section 126 of the Bharatiya Sakshya Adhiniyam, 2023), an advocate is prohibited from disclosing any communications made to them by their client in the course and for the purpose of their professional employment. This privilege covers all documents uploaded to secure cloud vaults, emails, chat messages, and virtual consultation logs, ensuring complete confidentiality under Indian law."
+    answer: "Yes, attorney-client privilege applies fully to digital consultations. Under Section 126 of the Indian Evidence Act, 1872 (now Section 126 of the Bharatiya Sakshya Adhiniyam, 2023), an advocate is prohibited from disclosing any communications made to them by their client in the course and for the purpose of their professional employment. This privilege covers documents shared with your own advocate, emails, chat messages, and virtual consultation logs, ensuring complete confidentiality under Indian law."
   },
   {
     question: "How does the Bar Council of India (BCI) regulate legal tech portals and online advocates?",
-    answer: "The Bar Council of India (BCI) regulates the legal profession through the BCI Rules under the Advocates Act, 1961. BCI Rule 36 strictly prohibits advocates from advertising or soliciting work, either directly or indirectly. Consequently, legal tech portals like ours do not advertise or solicit cases for specific advocates. Instead, they act as technology aggregators and workflow automation tools, providing clients with document management, automated database lookups, and routing to independent panel advocates, ensuring full compliance with BCI guidelines."
+    answer: "The Bar Council of India (BCI) regulates the legal profession through the BCI Rules under the Advocates Act, 1961. BCI Rule 36 strictly prohibits advocates from advertising or soliciting work, either directly or indirectly. Consequently, legal tech portals like ours do not advertise or solicit cases for specific advocates. Instead, we act as a technology and workflow automation platform, providing clients with an online case form, automated database lookups, fact verification by our team, and notice dispatch."
   },
   {
     question: "What is a Vakalatnama and can it be executed and signed digitally?",
@@ -27,35 +27,35 @@ const faqs = [
   },
   {
     question: "How does the portal verify the credentials of advocates on its panel?",
-    answer: "Our portal enforces a strict verification process for all panel advocates. Every lawyer must submit their certificate of enrollment issued by their respective State Bar Council, their Bar Council of India (BCI) registration details, and proof of active practice. We cross-reference their enrollment numbers with state bar directories and monitor their performance to ensure clients receive high-quality, professional legal advice."
+    answer: "Our team verifies the facts you submit before any notice is prepared and sent. Notices are not drafted, reviewed, or signed by an advocate; they are generated from structured templates on your fact-verified case details. If you need an advocate for court representation, you should hire one separately."
   },
   {
     question: "Can an online notice lead to out-of-court settlement through ODR?",
-    answer: "Yes, a key advantage of online legal services is the integration of Online Dispute Resolution (ODR). When a panel advocate sends a legal notice through our portal, the document includes a secure digital link inviting the recipient to join an online negotiation room. In this private virtual space, the parties can discuss settlement options, propose payment schedules, and reach an agreement. If settled, the portal drafts a binding settlement deed that both parties e-sign, resolving the dispute without court visits."
+    answer: "Yes, a key advantage of online legal services is the integration of Online Dispute Resolution (ODR). When a legal notice is sent through our portal, the document includes a secure digital link inviting the recipient to join an online negotiation room. In this private virtual space, the parties can discuss settlement options, propose payment schedules, and reach an agreement. If settled, the portal drafts a binding settlement deed that both parties e-sign, resolving the dispute without court visits."
   },
   {
     question: "What happens if a debtor refuses to accept a legal notice sent by an online advocate?",
     answer: "If a recipient intentionally evades service, the court accepts this as constructive service. For electronic service (WhatsApp and email), delivery is proved by presenting read receipts and delivery logs accompanied by a certificate under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023, verifying the authenticity of the digital record."
   },
   {
-    question: "What supporting files do I need to upload for an online advocate to draft my notice?",
-    answer: "You should upload all files that document the transaction and the default. This includes signed contracts or agreements, invoices, ledger statements, bank receipts showing the transaction, and screenshots of emails or WhatsApp chats where the debtor acknowledged the liability or promised to pay. These files are saved in our secure document vault for the advocate&apos;s review."
+    question: "What supporting information do I need to prepare for my notice?",
+    answer: "You enter the key facts of the transaction and the default in our online form (parties, dates, amounts, and what happened), and our team verifies them. You do not upload files to us, but keep your signed contracts or agreements, invoices, ledger statements, bank receipts, and screenshots of emails or WhatsApp chats safely preserved for any later court or forum filing."
   },
   {
     question: "Is there a flat fee structure for online advocate services on LegalRecovery?",
-    answer: "Yes, LegalRecovery uses a flat-fee pricing model starting at ₹999 per opposing party. This rate covers advocate consultation, custom drafting on the advocate's official letterhead, client dashboard review, and electronic service via verified email and WhatsApp. Speed Post is optional at ₹450 per party. There are no hidden charges or hourly fees."
+    answer: "Yes, LegalRecovery uses a flat-fee pricing model starting at ₹999 per opposing party. This rate covers fact verification by our team, notice preparation, client dashboard tracking, and electronic service via verified email and WhatsApp. Speed Post is optional at ₹450 per party. There are no hidden charges or hourly fees."
   },
   {
     question: "What is the role of database queries (MCA and GSTIN) in online drafting?",
     answer: "To ensure your legal notice is valid and addressed to the correct legal party, our system integrates database API queries. If the debtor is a company or LLP, the system queries the Ministry of Corporate Affairs (MCA) database to verify the registered office address. For proprietary firms, the system queries the GSTIN registry to verify the proprietor's name and active business address, preventing naming errors that could weaken the notice."
   },
   {
-    question: "How long does it take for an online advocate to draft and dispatch a notice?",
-    answer: "Once you submit your case details and complete the flat-fee payment, the system routes the file to a specialized panel advocate. The advocate typically reviews your evidence, drafts the customized notice on their letterhead, and uploads it to your user dashboard for review within 24 to 48 hours. Once you approve, it is e-signed and dispatched immediately."
+    question: "How long does it take to prepare and dispatch a notice?",
+    answer: "Once you submit your case details and complete the flat-fee payment, our team verifies the facts you submitted. The notice is typically prepared and dispatched within 24 to 48 hours, and you can track it on your user dashboard."
   },
   {
     question: "Can an online advocate represent me in physical court if the notice is ignored?",
-    answer: "Yes. If the debtor ignores the notice and you decide to file a lawsuit, the portal organizes your files, delivery records, and Section 63 BSA certificates into a litigation-ready package. Our panel advocates, who are registered to practice across various jurisdictions in India, can represent you in physical court or manage e-filing through the e-Courts portal."
+    answer: "Yes. If the debtor ignores the notice and you decide to file a lawsuit, the portal organizes your files, delivery records, and Section 63 BSA certificates into a litigation-ready package. You can then instruct an advocate of your choice to represent you in physical court or manage e-filing through the e-Courts portal."
   }
 ];
 
@@ -125,7 +125,7 @@ const reviewSchema = {
   "@type": "Product",
   "name": "Online Advocate Consultation Portal",
   "image": "https://www.legalrecovery.in/og-vakil-online.png",
-  "description": "Vetted panel advocate consultation, custom notice drafting, and digital case management portal in India.",
+  "description": "Fact-verified legal notice preparation and digital case management portal in India.",
   "brand": {
     "@type": "Brand",
     "name": "LegalRecovery"
@@ -154,7 +154,7 @@ const reviewSchema = {
         "@type": "Person",
         "name": "Girish Deshmukh"
       },
-      "reviewBody": "Drafting a legal notice through this online advocate portal was incredibly smooth. I uploaded my unpaid invoices to the document vault, and a panel advocate prepared the draft on his official letterhead within 24 hours. The debtor responded and cleared the ₹3.5 Lakhs dues within 10 days of delivery. Exceptional legal tech service!"
+      "reviewBody": "Drafting a legal notice through this online advocate portal was incredibly smooth. I entered my unpaid invoice details online, and the notice was prepared within 24 hours. The debtor responded and cleared the ₹3.5 Lakhs dues within 10 days of delivery. Exceptional legal tech service!"
     },
     {
       "@type": "Review",
@@ -166,7 +166,7 @@ const reviewSchema = {
         "@type": "Person",
         "name": "Meenakshi Sundaram"
       },
-      "reviewBody": "The digital execution of the Vakalatnama was seamless. I signed it using Aadhaar e-Sign, and the advocate signed the notice using his DSC under the IT Act. The court accepted these digitally verified documents for our summary suit filing. Saved me multiple office visits."
+      "reviewBody": "The digital execution of the Vakalatnama was seamless. I signed it using Aadhaar e-Sign, and the team verified the facts and prepared the notice using his DSC under the IT Act. The court accepted these digitally verified documents for our summary suit filing. Saved me multiple office visits."
     },
     {
       "@type": "Review",
@@ -178,7 +178,7 @@ const reviewSchema = {
         "@type": "Person",
         "name": "Rajiv Talwar"
       },
-      "reviewBody": "Highly transparent pricing. The ₹999 flat rate covered the advocate's drafting fee and email/WhatsApp service. The real-time dashboard notifications kept me informed at every stage of the dispatch."
+      "reviewBody": "Highly transparent pricing. The ₹999 flat rate covered the notice preparation and email/WhatsApp service. The real-time dashboard notifications kept me informed at every stage of the dispatch."
     },
     {
       "@type": "Review",
@@ -190,7 +190,7 @@ const reviewSchema = {
         "@type": "Person",
         "name": "Anchal Aggarwal"
       },
-      "reviewBody": "Excellent attorney-client data security. The encrypted cloud vault gave me complete confidence when uploading sensitive financial agreements and communications. The legal team was highly professional and helpful."
+      "reviewBody": "Excellent attorney-client data security. The encrypted platform gave me complete confidence when entering sensitive financial details. The team was highly professional and helpful."
     },
     {
       "@type": "Review",
@@ -284,7 +284,7 @@ export default function VakilOnlineClient() {
               Vakil <span className="text-[#DC2626]">Online Portal</span>
             </h1>
             <p className="text-sm md:text-xl mb-8 md:mb-12 max-w-3xl mx-auto text-slate-300 leading-relaxed font-medium">
-              Consult verified advocates online, execute digital Vakalatnamas, and manage pre-litigation and e-filing workflows through our secure platform.
+              Send fact-verified legal notices online and manage pre-litigation workflows through our secure platform.
             </p>
             <button 
               onClick={() => setIsPaymentModalOpen(true)}
@@ -357,21 +357,21 @@ export default function VakilOnlineClient() {
                       <div className="bg-slate-50 p-6 rounded-2xl border border-slate-100">
                         <h4 className="font-extrabold text-sm sm:text-base text-slate-900 mb-2">A. Compliance with BCI Rule 36 on Advertising and Solicitation</h4>
                         <p className="text-xs sm:text-sm text-slate-650 leading-relaxed">
-                          Rule 36 of the Bar Council of India Rules strictly prohibits advocates from advertising their services or soliciting work, either directly or indirectly. Legal tech portals comply with this rule by acting as neutral technology platforms. We do not promote individual advocates or list them with promotional ratings. Instead, our platform provides document assembly tools, database KYC verification APIs, and secure case routing to independent panel advocates, ensuring BCI compliance.
+                          Rule 36 of the Bar Council of India Rules strictly prohibits advocates from advertising their services or soliciting work, either directly or indirectly. Legal tech portals comply with this rule by acting as neutral technology platforms. We do not promote individual advocates or list them with promotional ratings. Instead, our platform provides notice generation tools, database KYC verification APIs, and fact verification by our team.
                         </p>
                       </div>
 
                       <div className="bg-slate-50 p-6 rounded-2xl border border-slate-100">
                         <h4 className="font-extrabold text-sm sm:text-base text-slate-900 mb-2">B. Protection of Attorney-Client Privilege</h4>
                         <p className="text-xs sm:text-sm text-slate-650 leading-relaxed">
-                          Confidentiality is a cornerstone of the legal profession. Section 126 of the Bharatiya Sakshya Adhiniyam, 2023 (formerly Section 126 of the Indian Evidence Act, 1872) protects communications between a client and their advocate from unauthorized disclosure. Our portal ensures this privilege is maintained in the digital space. All documents, case files, and communications uploaded to our system are secured using enterprise-grade encryption, and access is restricted exclusively to the assigned advocate and the client.
+                          Confidentiality is a cornerstone of the legal profession. Section 126 of the Bharatiya Sakshya Adhiniyam, 2023 (formerly Section 126 of the Indian Evidence Act, 1872) protects communications between a client and their advocate from unauthorized disclosure. Our portal ensures this privilege is maintained in the digital space. All case details submitted to our system are secured using enterprise-grade encryption, and access is restricted exclusively to our team and the client.
                         </p>
                       </div>
 
                       <div className="bg-slate-50 p-6 rounded-2xl border border-slate-100">
                         <h4 className="font-extrabold text-sm sm:text-base text-slate-900 mb-2">C. Client Data Privacy and the IT Act, 2000</h4>
                         <p className="text-xs sm:text-sm text-slate-650 leading-relaxed">
-                          Under the Information Technology Act, 2000, platforms handling personal and financial data must maintain strict security standards. Our system uses SSL/TLS encryption for data in transit and AES-256 encryption for files at rest in our cloud vault. This ensures that client files, banking details, and identity documents remain protected against unauthorized access.
+                          Under the Information Technology Act, 2000, platforms handling personal and financial data must maintain strict security standards. Our system uses SSL/TLS encryption for data in transit and AES-256 encryption for data at rest. This ensures that client data, banking details, and identity documents remain protected against unauthorized access.
                         </p>
                       </div>
                     </div>
@@ -402,9 +402,9 @@ export default function VakilOnlineClient() {
                         </p>
                       </div>
                       <div className="bg-slate-50 p-6 rounded-2xl border border-slate-100">
-                        <h4 className="font-extrabold text-sm text-slate-900 mb-2">B. Advocate Digital Signature Certificates (DSC)</h4>
+                        <h4 className="font-extrabold text-sm text-slate-900 mb-2">B. Advocate Digital Signature Certificates (DSC) in Court Filings</h4>
                         <p className="text-xs text-slate-650 leading-relaxed">
-                          The panel advocate signs the legal notice and court pleadings using their Class 3 Digital Signature Certificate. This cryptographic signature verifies the advocate&apos;s identity and enrollment details, ensuring the documents meet court e-filing requirements.
+                          When you later instruct an advocate for court proceedings, the advocate signs court pleadings using their Class 3 Digital Signature Certificate. This cryptographic signature verifies the advocate&apos;s identity and enrollment details, ensuring the documents meet court e-filing requirements.
                         </p>
                       </div>
                     </div>
@@ -418,7 +418,7 @@ export default function VakilOnlineClient() {
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      Connecting with an advocate online through our platform is structured to ensure speed, security, and legal accuracy. The step-by-step pipeline is designed to collect necessary information and establish a clear legal strategy:
+                      Sending a notice online through our platform is structured to ensure speed, security, and accuracy. The step-by-step pipeline is designed to collect necessary information and establish a clear legal strategy:
                     </p>
                     
                     <div className="space-y-6">
@@ -427,9 +427,9 @@ export default function VakilOnlineClient() {
                           1
                         </div>
                         <div>
-                          <h4 className="font-extrabold text-sm sm:text-base text-slate-900 mb-1">Upload Documents to the Cloud Vault</h4>
+                          <h4 className="font-extrabold text-sm sm:text-base text-slate-900 mb-1">Keep Your Documents Ready</h4>
                           <p className="text-xs sm:text-sm text-slate-650 leading-relaxed">
-                            The client begins by uploading all supporting files—such as contracts, invoices, bank statements, ledger statements, and chat logs—to our secure cloud vault. The vault encrypts the files, preserving evidence integrity for the advocate&apos;s review.
+                            The client begins by gathering supporting files such as contracts, invoices, bank statements, ledger statements, and chat logs. These are not uploaded to us, but should be preserved safely for any later court or forum filing.
                           </p>
                         </div>
                       </div>
@@ -441,7 +441,7 @@ export default function VakilOnlineClient() {
                         <div>
                           <h4 className="font-extrabold text-sm sm:text-base text-slate-900 mb-1">Complete the Case Intake Form</h4>
                           <p className="text-xs sm:text-sm text-slate-650 leading-relaxed">
-                            The client completes a guided intake questionnaire. This form captures key details, including the identities of the parties, transaction dates, the exact default amount, and communications, allowing the system to route the case file to the right panel advocate.
+                            The client completes a guided intake questionnaire. This form captures key details, including the identities of the parties, transaction dates, the exact default amount, and communications, allowing our team to verify the facts.
                           </p>
                         </div>
                       </div>
@@ -451,9 +451,9 @@ export default function VakilOnlineClient() {
                           3
                         </div>
                         <div>
-                          <h4 className="font-extrabold text-sm sm:text-base text-slate-900 mb-1">Advocate Review &amp; Strategy Consultation</h4>
+                          <h4 className="font-extrabold text-sm sm:text-base text-slate-900 mb-1">Fact Verification &amp; Strategy Consultation</h4>
                           <p className="text-xs sm:text-sm text-slate-650 leading-relaxed">
-                            The assigned panel advocate reviews the case files in the vault. If needed, the advocate schedules a telephonic or video consultation with the client to discuss the legal strategy, clarify facts, and confirm the statutory provisions to be cited in the notice.
+                            Our team verifies the facts you submitted in the intake form, and the statutory provisions to be cited in the notice are applied from our structured templates.
                           </p>
                         </div>
                       </div>
@@ -463,9 +463,9 @@ export default function VakilOnlineClient() {
                           4
                         </div>
                         <div>
-                          <h4 className="font-extrabold text-sm sm:text-base text-slate-900 mb-1">Draft Vetting &amp; Client Dashboard Approval</h4>
+                          <h4 className="font-extrabold text-sm sm:text-base text-slate-900 mb-1">Notice Preparation &amp; Client Dashboard</h4>
                           <p className="text-xs sm:text-sm text-slate-650 leading-relaxed">
-                            The advocate drafts the customized legal notice on their official letterhead and uploads it to the client&apos;s dashboard. The client can review the draft, request modifications, and approve the notice when satisfied.
+                            We prepare the legal notice from the fact-verified details and make it available on the client&apos;s dashboard, then dispatch it and track delivery.
                           </p>
                         </div>
                       </div>
@@ -629,7 +629,7 @@ export default function VakilOnlineClient() {
                 <div className="absolute top-0 right-0 w-24 h-24 bg-red-600/10 rounded-full blur-xl pointer-events-none" />
                 <h3 className="text-sm font-black mb-3">Consult Vakil Online</h3>
                 <p className="text-gray-400 mb-5 text-[11px] leading-relaxed">
-                  Connect with a panel advocate, review your evidence, and execute digital Vakalatnamas for recovery notice dispatches.
+                  Submit your case facts online and send fact-verified recovery notices by email and WhatsApp.
                 </p>
                 <button 
                   onClick={() => setIsPaymentModalOpen(true)}

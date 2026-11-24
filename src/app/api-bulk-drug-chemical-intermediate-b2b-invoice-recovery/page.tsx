@@ -219,7 +219,7 @@ export default function ApiBulkDrugRecoveryPage() {
           {
             "@type": "HowToStep",
             position: 3,
-            name: "Serve Formal Advocate Statutory Demand Notice",
+            name: "Serve Formal Fact-Verified Statutory Demand Notice",
             text: "Issue a high-impact legal demand notice rebutting late assay rejections, invoking MSMED Act Section 16 3x RBI compound interest, and establishing conclusive buyer consumption.",
           },
           {
@@ -1054,7 +1054,7 @@ export default function ApiBulkDrugRecoveryPage() {
                 Deploy Bulk Drug Legal Recovery: Single Test Case or Bulk CSV Desk
               </h2>
               <p className="text-slate-600 text-xs sm:text-sm leading-relaxed mb-6">
-                Whether you need to recover a single high-ticket API default exceeding ₹1 Crore or reconcile an entire ledger of overdue formulation accounts across Baddi, Sikkim, and Hyderabad, LegalRecovery provides advocate-backed enforcement infrastructure.
+                Whether you need to recover a single high-ticket API default exceeding ₹1 Crore or reconcile an entire ledger of overdue formulation accounts across Baddi, Sikkim, and Hyderabad, LegalRecovery provides fact-verified enforcement infrastructure.
               </p>
 
               {/* Dual-Track CTA Component */}

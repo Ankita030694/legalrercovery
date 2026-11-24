@@ -159,7 +159,7 @@ const FAQS = [
     question:
       "Why do traditional law firms fail on ₹5,000 to ₹50,000 BNPL and digital personal loan defaults?",
     answer:
-      "Traditional law firms price per-case drafting, physical Speed Post, and court appearances between ₹5,000 and ₹25,000. On an ₹18,000 BNPL default or ₹30,000 app-based personal loan, spending ₹10,000–₹15,000 upfront produces negative recovery unit economics even before factoring in 20%–40% non-traceable borrower attrition. A digital-first Wave-1 advocate notice funnel keeps initial legal spend low enough to preserve positive net yield across the entire 30+ DPD cohort.",
+      "Traditional law firms price per-case drafting, physical Speed Post, and court appearances between ₹5,000 and ₹25,000. On an ₹18,000 BNPL default or ₹30,000 app-based personal loan, spending ₹10,000–₹15,000 upfront produces negative recovery unit economics even before factoring in 20%–40% non-traceable borrower attrition. A digital-first Wave-1 fact-verified notice funnel keeps initial legal spend low enough to preserve positive net yield across the entire 30+ DPD cohort.",
   },
   {
     question:
@@ -195,7 +195,7 @@ const FAQS = [
     question:
       "Can our fintech test LegalRecovery.in on one overdue BNPL account before uploading a 5,000-row CSV?",
     answer:
-      "Yes. Track 1 allows your collections or legal ops team to run a single live overdue account at ₹999 (advocate-drafted Email + WhatsApp + optional Speed Post RPAD) to inspect our BSA s.63 delivery audit trail and borrower reply triage before activating Track 2 CSV batch processing for 10 to 10,000+ cases.",
+      "Yes. Track 1 allows your collections or legal ops team to run a single live overdue account at ₹999 (fact-verified Email + WhatsApp + optional Speed Post RPAD) to inspect our BSA s.63 delivery audit trail and borrower reply triage before activating Track 2 CSV batch processing for 10 to 10,000+ cases.",
   },
 ];
 
@@ -325,7 +325,7 @@ export default function SmallTicketBnplRecoveryEconomicsPage() {
                 >
                   NBFC &amp; Fintech Loan Recovery Playbook
                 </Link>
-                , portfolios between ₹5,000 and ₹1,00,000 cannot absorb ₹15,000 traditional litigation fees. Creditors achieve positive net yield by staging Wave-1 BSA s.63 digital advocate notices with 30-day CICRA bureau pre-reporting alerts, reserving Speed Post RPAD for engaged cohorts, and routing ₹50K+ defaults into Section 29B batch ODR.
+                , portfolios between ₹5,000 and ₹1,00,000 cannot absorb ₹15,000 traditional litigation fees. Creditors achieve positive net yield by staging Wave-1 BSA s.63 digital fact-verified notices with 30-day CICRA bureau pre-reporting alerts, reserving Speed Post RPAD for engaged cohorts, and routing ₹50K+ defaults into Section 29B batch ODR.
               </p>
             </div>
 
@@ -732,7 +732,7 @@ export default function SmallTicketBnplRecoveryEconomicsPage() {
                     href="/templates/bank-loan-recall-cum-guarantee-invocation-notice"
                     className="text-[#DC2626] font-semibold underline"
                   >
-                    Advocate-Vetted Loan Recall Notice Template
+                    Ready-to-Use Loan Recall Notice Template
                   </Link>
                   .
                 </p>

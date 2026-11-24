@@ -19,7 +19,7 @@ export default function SchoolFeeNoticeCTA() {
         </h3>
 
         <p className="text-sm sm:text-base text-slate-300 leading-relaxed mb-8 max-w-3xl">
-          Do not let chronic defaulters exploit High Court TC protections to write off ₹1.5 Lakh–₹5 Lakh per student. Serve a dignified, strictly confidential <strong>Advocate Civil Recovery Notice</strong> addressed solely to the contracting parents&apos; residential and office addresses—100% compliant with RTE Act s.5(3), CBSE/ICSE Bye-Laws, and NCPCR norms.
+          Do not let chronic defaulters exploit High Court TC protections to write off ₹1.5 Lakh–₹5 Lakh per student. Serve a dignified, strictly confidential <strong>Fact-Verified Civil Recovery Notice</strong> addressed solely to the contracting parents&apos; residential and office addresses—100% compliant with RTE Act s.5(3), CBSE/ICSE Bye-Laws, and NCPCR norms.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-4">
@@ -33,10 +33,10 @@ export default function SchoolFeeNoticeCTA() {
                 <span className="text-xl font-black text-white">₹999</span>
               </div>
               <h4 className="text-base font-bold text-white mb-2">
-                Test 1 Live Overdue Case Now (₹999 · Advocate Drafted · Email + WhatsApp + Speed Post RPAD)
+                Test 1 Live Overdue Case Now (₹999 · Fact-Verified · Email + WhatsApp + Speed Post RPAD)
               </h4>
               <p className="text-xs text-slate-300 leading-relaxed mb-4">
-                Test our confidential Parent Civil Notice workflow on one high-value post-TC or Board pass-out defaulter. Our advocates annex your signed Admission Fee Undertaking and ERP ledger into a 15-day statutory demand.
+                Test our confidential Parent Civil Notice workflow on one high-value post-TC or Board pass-out defaulter. Our team annexes your signed Admission Fee Undertaking and ERP ledger into a 15-day statutory demand.
               </p>
               <ul className="space-y-1.5 text-xs text-slate-300 mb-6">
                 <li className="flex items-center gap-2">

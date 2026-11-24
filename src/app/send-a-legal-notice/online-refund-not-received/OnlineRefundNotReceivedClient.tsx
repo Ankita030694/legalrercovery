@@ -573,7 +573,7 @@ export default function OnlineRefundNotReceivedClient() {
                 <div className="absolute top-0 right-0 w-24 h-24 bg-red-600/10 rounded-full blur-xl pointer-events-none" />
                 <h3 className="text-sm font-black mb-3">Recover Your Money Now</h3>
                 <p className="text-gray-400 mb-5 text-[11px] leading-relaxed">
-                  We match you with a panel advocate, handle the custom drafting, physically post the notice, and track its delivery in real-time.
+                  We verify your facts, prepare the notice, physically post the notice, and track its delivery in real-time.
                 </p>
                 <button
                   onClick={() => setIsPaymentModalOpen(true)}
@@ -633,7 +633,7 @@ export default function OnlineRefundNotReceivedClient() {
                 <img src="/lrlogo.svg" alt="LegalRecovery" width={3236} height={601} className="h-8 sm:h-10 w-auto object-contain" />
               </div>
               <p className="text-sm md:text-base text-slate-600 leading-relaxed mb-10 max-w-3xl font-medium">
-                Legal Recovery is India's trusted tech-legal platform empowering consumers and businesses to resolve disputes, recover pending dues, and send legally vetted notices with speed and authority. Our network of seasoned advocates ensures your voice is heard and your rights are protected.
+                Legal Recovery is India's trusted tech-legal platform empowering consumers and businesses to resolve disputes, recover pending dues, and send fact-verified notices with speed and authority. Our team ensures your voice is heard and your rights are protected.
               </p>
 
               <div className="border-t border-slate-100 pt-10">

@@ -27,10 +27,10 @@ export default function ConstructionHubCTA({ className = "" }: ConstructionHubCT
                 Test 1 Live Overdue Case Now (&rupee;{basePrice})
               </h3>
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-                Start with one stuck RA bill, post-DLP retention tranche, or subcontract ledger. Our advocates draft and serve your statutory demand—supporting multi-invoice schedules, Section 55 prolongation reservations, and Section 63 BSA tri-channel proof (Email + WhatsApp + Speed Post RPAD).
+                Start with one stuck RA bill, post-DLP retention tranche, or subcontract ledger. Our team drafts and serves your statutory demand—supporting multi-invoice schedules, Section 55 prolongation reservations, and Section 63 BSA tri-channel proof (Email + WhatsApp + Speed Post RPAD).
               </p>
               <ul className="space-y-1.5 text-xs text-slate-200 mb-6">
-                <li>&check; Advocate-drafted RA Bill / Retention / Section 80 CPC notice</li>
+                <li>&check; Fact-verified RA Bill / Retention / Section 80 CPC notice</li>
                 <li>&check; Simultaneous Email + Business WhatsApp + Speed Post RPAD</li>
                 <li>&check; Seamless upgrade path to Section 9 BG stay &amp; Section 21 arbitration</li>
               </ul>

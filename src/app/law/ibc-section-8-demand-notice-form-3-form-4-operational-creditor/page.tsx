@@ -101,7 +101,7 @@ const COURT_PRECEDENTS = [
       "The corporate debtor challenged a Section 8 demand notice on two technical grounds: (1) it was signed and issued by an external advocate rather than an employee of the operational creditor, and (2) the foreign bank had not furnished a Section 9(3)(c) certificate from an Indian scheduled bank.",
     holding:
       "The Supreme Court held that a lawyer/advocate duly authorized by the operational creditor is fully competent to issue a Section 8 demand notice on the creditor's behalf. Further, Section 9(3)(c) (furnishing a bank certificate) is directory and not mandatory where non-payment is proved through alternate financial records.",
-    amount: "Advocate-Signed Form 3/Form 4 Validated — Must Attach Specific Authorization",
+    amount: "Fact-Verified Form 3/Form 4 Validated — Must Attach Specific Authorization",
     takeaway:
       "External recovery counsel can validly sign and serve your Section 8 notice, provided a Board Resolution or Power of Attorney specifically authorizing the advocate is annexed.",
   },
@@ -745,7 +745,7 @@ export default function IbcSection8DemandNoticePage() {
                     href="/templates/legal-notice-reply-format"
                     className="text-[#DC2626] font-semibold underline hover:text-red-700"
                   >
-                    Advocate-Vetted Legal Notice Format Workspace
+                    Ready-to-Use Legal Notice Format Workspace
                   </Link>{" "}
                   or explore{" "}
                   <Link

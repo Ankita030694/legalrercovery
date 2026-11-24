@@ -22,9 +22,9 @@ const LOAN_PORTFOLIOS: LoanPortfolioTab[] = [
     tabLabel: "Unsecured Personal Loans",
     title: "Delinquent Unsecured Personal Loans & Digital Credit (30 to 90+ DPD)",
     cause:
-      "Borrowers experience job transition, medical emergencies, or intentional delinquency, knowing personal loans lack physical collateral. Unassisted collection call centers suffer diminishing returns after 60 DPD. Without an authoritative advocate demand notice, accounts quickly drift into write-offs and mandate costly 100% provisioning on the bank's books.",
+      "Borrowers experience job transition, medical emergencies, or intentional delinquency, knowing personal loans lack physical collateral. Unassisted collection call centers suffer diminishing returns after 60 DPD. Without an authoritative legal demand notice, accounts quickly drift into write-offs and mandate costly 100% provisioning on the bank's books.",
     legalBasis:
-      "A formal Advocate Legal Demand Notice served under Bar Council standards establishes the formal cause of action for Summary Suits under Order 37 CPC, Section 25 of the Payment and Settlement Systems Act (for bounced e-NACH mandates), and referrals to National Lok Adalat or Sole Arbitration.",
+      "A formal Legal Demand Notice prepared on fact-verified details and served by our team establishes the formal cause of action for Summary Suits under Order 37 CPC, Section 25 of the Payment and Settlement Systems Act (for bounced e-NACH mandates), and referrals to National Lok Adalat or Sole Arbitration.",
     steps: [
       {
         step: "Core Banking System Batch Ingestion",
@@ -32,9 +32,9 @@ const LOAN_PORTFOLIOS: LoanPortfolioTab[] = [
           "Secure API or encrypted SFTP ingestion parses account statements, loan sanctions, outstanding principal, penal interest, and borrower contact coordinates.",
       },
       {
-        step: "Advocate Legal Demand Generation & Tri-Channel Dispatch",
+        step: "Legal Demand Generation & Tri-Channel Dispatch",
         description:
-          "Notices drafted by enrolled advocates are transmitted simultaneously via India Post Registered Speed Post API, WhatsApp Business API (with blue-tick delivery logs), and registered email.",
+          "Notices prepared on verified facts are transmitted simultaneously via India Post Registered Speed Post API, WhatsApp Business API (with blue-tick delivery logs), and registered email.",
       },
       {
         step: "15-Day Cure Period & Real-Time CIBIL Escalation Advisory",
@@ -110,7 +110,7 @@ const LOAN_PORTFOLIOS: LoanPortfolioTab[] = [
       {
         step: "High-Throughput 50,000/Month Batch Processing",
         description:
-          "Automated advocate variable population creates customized legal notices with accurate ledger interest calculations and unique postal barcodes within seconds.",
+          "Automated variable population creates customized legal notices with accurate ledger interest calculations and unique postal barcodes within seconds.",
       },
       {
         step: "Tri-Channel Delivery with Barcode Tracking Webhooks",

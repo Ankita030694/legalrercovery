@@ -152,12 +152,12 @@ const FAQS = [
   {
     question: "What should I do if the brand service centre marks my complaint as 'Resolved' without fixing it?",
     answer:
-      "Send an email immediately to the brand's grievance officer and service head with photos or video of the ongoing issue. File a complaint on the National Consumer Helpline (1915). If the brand does not replace or fix the unit within seven days, send an advocate legal notice.",
+      "Send an email immediately to the brand's grievance officer and service head with photos or video of the ongoing issue. File a complaint on the National Consumer Helpline (1915). If the brand does not replace or fix the unit within seven days, send a legal notice.",
   },
   {
     question: "Appliance warranty replacement reject kar diya toh legal notice kaise bheje?",
     answer:
-      "Agar brand warranty ke baad bhi appliance replace na kare ya physical damage ka jhootha bahana banaye, toh aap advocate notice bhej sakte hain. LegalRecovery.in par verified advocates Section 39 ke tehat brand aur dealer ko 15 din ka legal demand notice bhejte hain.",
+      "Agar brand warranty ke baad bhi appliance replace na kare ya physical damage ka jhootha bahana banaye, toh aap legal notice bhej sakte hain. LegalRecovery.in par aap case details form mein bharte hain, hamari team facts verify karti hai aur Section 39 ke tehat brand aur dealer ko 15 din ka legal demand notice hum bhejte hain.",
   },
 ];
 
@@ -288,7 +288,7 @@ export default function ApplianceWarrantyReplacementRefusedPage() {
                 className="bg-white border-l-4 border-[#DC2626] rounded-r-2xl p-5 sm:p-6 shadow-sm border-y border-r border-slate-200 mb-6"
               >
                 <p className="text-sm sm:text-base text-slate-800 leading-relaxed font-medium">
-                  Under <strong className="text-slate-950 font-bold">Section 39 and Section 84 of the Consumer Protection Act</strong>, appliance brands are liable for product defects. If a brand refuses replacement, falsely claims user damage, or fails to fix a defect after three attempts, send an advocate legal notice. If unrectified within 15 days, consumer courts order complete product replacement or a full refund with interest.
+                  Under <strong className="text-slate-950 font-bold">Section 39 and Section 84 of the Consumer Protection Act</strong>, appliance brands are liable for product defects. If a brand refuses replacement, falsely claims user damage, or fails to fix a defect after three attempts, send a legal notice. If unrectified within 15 days, consumer courts order complete product replacement or a full refund with interest.
                 </p>
               </div>
 
@@ -304,7 +304,7 @@ export default function ApplianceWarrantyReplacementRefusedPage() {
                 </div>
                 <div className="bg-white p-3 rounded-xl border border-slate-200 shadow-xs">
                   <span className="text-[10px] uppercase font-bold text-slate-500 block mb-0.5">Pre-Litigation Step</span>
-                  <span className="text-xs sm:text-sm font-extrabold text-[#DC2626]">Advocate Legal Notice</span>
+                  <span className="text-xs sm:text-sm font-extrabold text-[#DC2626]">Legal Notice</span>
                 </div>
                 <div className="bg-white p-3 rounded-xl border border-slate-200 shadow-xs">
                   <span className="text-[10px] uppercase font-bold text-slate-500 block mb-0.5">Dispute Forum</span>
@@ -362,7 +362,7 @@ export default function ApplianceWarrantyReplacementRefusedPage() {
 
               {/* Top CTA Banner */}
               <ApplianceWarrantyNoticeCTA
-                buttonText="Draft Advocate Legal Demand Notice Now"
+                buttonText="Draft Legal Demand Notice Now"
                 variant="primary"
               />
 
@@ -566,7 +566,7 @@ export default function ApplianceWarrantyReplacementRefusedPage() {
                       <rect width="180" height="240" rx="12" fill="#1E293B" stroke="#DC2626" strokeWidth="2" />
                       <rect width="180" height="36" rx="12" fill="#DC2626" />
                       <text x="90" y="24" textAnchor="middle" fill="#FFFFFF" fontSize="12" fontWeight="bold">STAGE 3: STATUTORY NOTICE</text>
-                      <text x="90" y="70" textAnchor="middle" fill="#FFFFFF" fontSize="13" fontWeight="bold">Advocate Legal Notice</text>
+                      <text x="90" y="70" textAnchor="middle" fill="#FFFFFF" fontSize="13" fontWeight="bold">Legal Notice</text>
                       <text x="20" y="105" fill="#94A3B8" fontSize="11">• Registered Speed Post</text>
                       <text x="20" y="130" fill="#94A3B8" fontSize="11">• BSA s.63 Email Dispatch</text>
                       <text x="20" y="155" fill="#94A3B8" fontSize="11">• 15-Day Replacement Demand</text>
@@ -652,7 +652,7 @@ export default function ApplianceWarrantyReplacementRefusedPage() {
                           File Grievance on National Consumer Helpline (NCH) &amp; Right to Repair Portal
                         </h3>
                         <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                          Register an online grievance on <span className="font-semibold text-slate-900">consumerhelpline.gov.in</span> or dial 1915. Upload the invoice, warranty card, and job sheets. NCH generates a government docket directly routed to the brand&apos;s corporate nodal team. If the brand fails to replace the appliance within 7 business days, proceed immediately to pre-litigation notice.
+                          Register an online grievance on <span className="font-semibold text-slate-900">consumerhelpline.gov.in</span> or dial 1915. Keep the invoice, warranty card, and job sheets ready to attach on the portal. NCH generates a government docket directly routed to the brand&apos;s corporate nodal team. If the brand fails to replace the appliance within 7 business days, proceed immediately to pre-litigation notice.
                         </p>
                       </div>
                     </div>
@@ -663,10 +663,10 @@ export default function ApplianceWarrantyReplacementRefusedPage() {
                       <span className="w-7 h-7 rounded-full bg-[#DC2626] text-white font-bold text-xs flex items-center justify-center shrink-0">4</span>
                       <div>
                         <h3 className="text-sm sm:text-base font-bold text-slate-900 mb-1">
-                          Serve a Statutory Advocate Legal Demand Notice (15-Day Ultimatum)
+                          Serve a Statutory Legal Demand Notice (15-Day Ultimatum)
                         </h3>
                         <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                          Have an experienced consumer lawyer draft and serve a formal advocate legal notice to the brand&apos;s Managing Director, Corporate Legal Team, and the selling dealer. Delivered via Registered Speed Post with postal acknowledgment and served electronically under Section 63 of Bharatiya Sakshya Adhiniyam, 2023. This establishes pre-litigation readiness and prompts senior legal teams to authorize replacement.
+                          Send a formal legal demand notice (fact-verified by our team and prepared and sent by us) to the brand&apos;s Managing Director, Corporate Legal Team, and the selling dealer. Delivered via Registered Speed Post with postal acknowledgment and served electronically under Section 63 of Bharatiya Sakshya Adhiniyam, 2023. This establishes pre-litigation readiness and prompts senior legal teams to authorize replacement.
                         </p>
                       </div>
                     </div>
@@ -747,7 +747,7 @@ export default function ApplianceWarrantyReplacementRefusedPage() {
                   Worked Example: TV Display Defect Replacement Dispute
                 </h2>
                 <p className="text-sm text-slate-700 leading-relaxed">
-                  The following case study illustrates how a consumer successfully countered a brand&apos;s warranty repudiation using statutory documentation and an advocate legal demand notice:
+                  The following case study illustrates how a consumer successfully countered a brand&apos;s warranty repudiation using statutory documentation and a legal demand notice:
                 </p>
 
                 <div className="bg-white border border-slate-200 rounded-2xl p-5 sm:p-7 shadow-xs space-y-4 text-xs sm:text-sm">
@@ -780,7 +780,7 @@ export default function ApplianceWarrantyReplacementRefusedPage() {
                       <strong>Initial Fact Pattern:</strong> A consumer in Bengaluru purchased a 55-inch 4K OLED Smart TV. In the 11th month of use, two prominent vertical magenta lines appeared down the centre of the screen. The brand&apos;s authorized technician inspected the TV, noted &quot;physical panel failure&quot;, and refused free warranty service, alleging that the defect arose from external pressure. The customer was quoted ₹32,000 for a replacement panel.
                     </p>
                     <p>
-                      <strong>Strategic Escalation:</strong> The consumer refused to sign the biased job card and recorded a 4K video showing the flawless physical exterior of the screen with zero impact marks. The customer submitted a formal objection to the brand&apos;s Grievance Redressal Officer demanding the technical laboratory report supporting the &quot;external pressure&quot; claim. When the company reiterated its refusal, the consumer engaged LegalRecovery.in to serve a formal Advocate Legal Demand Notice to the brand&apos;s India headquarters in Gurugram and the authorized electronics retailer.
+                      <strong>Strategic Escalation:</strong> The consumer refused to sign the biased job card and recorded a 4K video showing the flawless physical exterior of the screen with zero impact marks. The customer submitted a formal objection to the brand&apos;s Grievance Redressal Officer demanding the technical laboratory report supporting the &quot;external pressure&quot; claim. When the company reiterated its refusal, the consumer engaged LegalRecovery.in to serve a formal Legal Demand Notice to the brand&apos;s India headquarters in Gurugram and the authorized electronics retailer.
                     </p>
                     <p>
                       <strong>The Resolution:</strong> The statutory notice cited Section 2(10) and Section 84 of CPA 2019 along with the NCDRC precedent in <em>Samsung India v. Rajesh Sharma</em>, giving 15 days to deliver a brand-new TV or face an e-Jagriti complaint with claims for ₹50,000 mental agony damages. Within 9 days of receiving the Speed Post notice, the brand&apos;s Corporate Escalation Cell contacted the consumer, waived all charges, and delivered a brand-new sealed current-year replacement television valued at ₹72,000 along with an extended 2-year comprehensive warranty.
@@ -881,7 +881,7 @@ export default function ApplianceWarrantyReplacementRefusedPage() {
                   </div>
                   <div className="space-y-1">
                     <strong className="text-white block font-bold">4. Statutory Notice Precedes e-Jagriti:</strong>
-                    A formal advocate legal notice serves as the pivotal tipping point where 70%+ of manufacturers settle before court litigation.
+                    A formal legal notice serves as the pivotal tipping point where 70%+ of manufacturers settle before court litigation.
                   </div>
                 </div>
               </aside>
@@ -894,11 +894,11 @@ export default function ApplianceWarrantyReplacementRefusedPage() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs text-slate-700 leading-relaxed">
                   <div>
                     <strong className="text-emerald-700 font-bold block mb-1">What We Do:</strong>
-                    We assign a verified advocate to draft a watertight statutory legal notice under CPA 2019, cite relevant NCDRC precedents, dispatch it via Registered Speed Post with tracking proof, and serve electronic notice under BSA Section 63 directly to corporate heads.
+                    We draft a watertight statutory legal notice under CPA 2019, cite relevant NCDRC precedents, dispatch it via Registered Speed Post with tracking proof, and serve electronic notice under BSA Section 63 directly to corporate heads.
                   </div>
                   <div>
                     <strong className="text-rose-700 font-bold block mb-1">What We Do Not Do:</strong>
-                    We are not an appliance repair contractor or technical service provider. We do not dispatch repairmen or physically inspect electronics. Our scope is statutory legal recovery, consumer rights enforcement, and pre-litigation advocate notices.
+                    We are not an appliance repair contractor or technical service provider. We do not dispatch repairmen or physically inspect electronics. Our scope is statutory legal recovery, consumer rights enforcement, and pre-litigation legal notices.
                   </div>
                 </div>
               </section>
@@ -1008,7 +1008,7 @@ export default function ApplianceWarrantyReplacementRefusedPage() {
 
               {/* Bottom CTA */}
               <ApplianceWarrantyNoticeCTA
-                buttonText="Instruct Advocate to Draft Notice"
+                buttonText="Send Legal Notice Now"
                 variant="primary"
               />
             </article>

@@ -294,7 +294,7 @@ export default function SecurityChequePresentationNoticePage() {
         <div className="max-w-5xl mx-auto w-full">
           <div className="inline-flex flex-wrap items-center gap-1.5 sm:gap-2 px-3 sm:px-3.5 py-1.5 rounded-full text-[10px] sm:text-xs font-bold uppercase tracking-wider text-red-400 bg-red-950/60 border border-red-800/60 mb-4 sm:mb-5">
             <span className="w-2 h-2 rounded-full bg-red-400 animate-pulse" />
-            <span>Advocate-Vetted Commercial Notice Workspace &bull; Section 20 NI Act Protocol</span>
+            <span>Ready-to-Use Commercial Notice Workspace &bull; Section 20 NI Act Protocol</span>
           </div>
 
           <h1 className="text-2xl sm:text-3xl md:text-5xl font-black tracking-tight text-white leading-tight mb-4 sm:mb-6 break-words">
@@ -543,7 +543,7 @@ export default function SecurityChequePresentationNoticePage() {
                   </h2>
                 </div>
                 <span className="text-xs font-semibold text-slate-500 bg-slate-100 px-3 py-1.5 rounded-lg">
-                  Advocate-Vetted Drafts
+                  Fact-Verified Drafts
                 </span>
               </div>
               <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
@@ -896,7 +896,7 @@ export default function SecurityChequePresentationNoticePage() {
                 Statutory References, Bare Act Provisions &amp; Internal Resources
               </h2>
               <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                All templates and statutory arguments presented in this guide are authored and reviewed by Advocate Anuj Anand Malik, Founder of AMA Legal Solutions (Bar Council of Delhi). Direct legislative portals and bare acts are linked below:
+                All templates and statutory arguments presented in this guide are authored and prepared on verified facts Anuj Anand Malik, Founder of AMA Legal Solutions (Bar Council of Delhi). Direct legislative portals and bare acts are linked below:
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">

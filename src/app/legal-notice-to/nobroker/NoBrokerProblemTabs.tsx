@@ -37,7 +37,7 @@ const PROBLEMS: ClauseProblemTab[] = [
           "Email hello@nobroker.in and grievance@nobroker.in quoting your Plan Invoice ID, stating clearly that NoBroker breached its core service obligation to provide verified, available properties matching your criteria.",
       },
       {
-        step: "Issue Advocate Statutory Notice Challenging Unfair Terms",
+        step: "Issue Fact-Verified Statutory Notice Challenging Unfair Terms",
         description:
           "If support refuses to refund the plan amount or deducts arbitrary 'RM service charges', serve a 15-day advocate demand notice to NoBroker Technologies Solutions Pvt. Ltd. invoking Section 2(46) and Section 2(11) CPA 2019.",
       },
@@ -118,7 +118,7 @@ const PROBLEMS: ClauseProblemTab[] = [
           "Do not accept nominal goodwill credits in the app if they require signing a full-and-final waiver. Reply by email rejecting the token offer and attaching repair/replacement invoices.",
       },
       {
-        step: "Serve Advocate Notice for Full Booking Refund & Damages",
+        step: "Serve Fact-Verified Notice for Full Booking Refund & Damages",
         description:
           "Send a formal legal notice to NoBroker Technologies Solutions Pvt. Ltd. demanding 100% advance refund or actual item repair/replacement cost plus mental harassment compensation.",
       },
@@ -238,7 +238,7 @@ export default function NoBrokerProblemTabs() {
 
         <div className="p-3 bg-amber-50 border border-amber-200 rounded-xl flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs text-amber-950">
           <span>
-            <strong>Need advocate intervention?</strong> We draft and serve a formal statutory notice to NoBroker Technologies Solutions Pvt. Ltd. (and the landlord, if needed) within 24 hours.
+            <strong>Need legal intervention?</strong> We verify your facts, then prepare and serve a formal statutory notice to NoBroker Technologies Solutions Pvt. Ltd. (and the landlord, if needed) within 24 hours.
           </span>
           <Link
             href="/recover-security-deposit-from-landlord-india"

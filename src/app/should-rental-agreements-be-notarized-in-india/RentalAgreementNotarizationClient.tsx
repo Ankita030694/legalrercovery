@@ -59,7 +59,7 @@ const reviews = [
   {
     author: "Priya Nair (Marketing Specialist, Mumbai)",
     rating: "5",
-    text: "When I moved out of my rental apartment in Andheri, the landlord refused to return my security deposit of 80,000 Rupees, citing arbitrary maintenance costs. The rent agreement was notarized but not registered. I followed the process map outlined here, gathered my bank transfer records, and sent a lawyer-backed notice. The legal notice worked wonders because the landlord wanted to avoid going to the rent tribunal. He settled the dispute and returned my money within ten days."
+    text: "When I moved out of my rental apartment in Andheri, the landlord refused to return my security deposit of 80,000 Rupees, citing arbitrary maintenance costs. The rent agreement was notarized but not registered. I followed the process map outlined here, gathered my bank transfer records, and sent a fact-verified notice. The legal notice worked wonders because the landlord wanted to avoid going to the rent tribunal. He settled the dispute and returned my money within ten days."
   },
   {
     author: "Vikram Malhotra (Business Owner, Delhi)",
@@ -706,7 +706,7 @@ export default function RentalAgreementNotarizationClient() {
                 <div className="absolute top-0 right-0 w-24 h-24 bg-red-600/10 rounded-full blur-xl pointer-events-none" />
                 <h3 className="text-lg font-bold mb-3 text-white">Need Legal Advice?</h3>
                 <p className="text-gray-400 mb-5 text-[11px] leading-relaxed">
-                  Discuss your money recovery case with legal experts. We draft and serve legally compliant notices tailored to your transaction.
+                  Discuss your money recovery case with our team. We draft and serve legally compliant notices tailored to your transaction.
                 </p>
                 <button 
                   onClick={() => setIsPaymentModalOpen(true)}

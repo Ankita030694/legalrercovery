@@ -175,7 +175,7 @@ const HOWTO_SCHEMA = {
       "@type": "HowToStep",
       position: 3,
       name: "Serve Statutory Demand & Equipment Ownership Notice",
-      text: "Dispatch an advocate-vetted notice via Email, WhatsApp, and Speed Post RPAD demanding kWh arrears or 7-day peaceful charger demobilization.",
+      text: "Dispatch a fact-verified notice via Email, WhatsApp, and Speed Post RPAD demanding kWh arrears or 7-day peaceful charger demobilization.",
     },
     {
       "@type": "HowToStep",
@@ -914,7 +914,7 @@ export default function EvCpoRecoveryPage() {
                   {
                     href: "/templates/legal-notice-reply-format",
                     title: "Commercial Legal Notice Workspace",
-                    desc: "Draft and customize advocate-vetted statutory demand notices with annexure checklists.",
+                    desc: "Draft and customize fact-verified statutory demand notices with annexure checklists.",
                   },
                 ].map((linkItem) => (
                   <Link

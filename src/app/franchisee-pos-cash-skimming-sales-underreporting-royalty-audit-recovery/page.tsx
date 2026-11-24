@@ -202,7 +202,7 @@ export default function FranchiseePosCashSkimmingPage() {
         "@type": "HowToStep",
         position: 5,
         name: "Serve Dual-Track Penal Royalty & PSS s.25 Demand Notice",
-        text: "Dispatch an Advocate Legal Notice claiming unpaid royalty, Contract Act s.74 audit costs, and separate PSS Act s.25 notice within 30 days of e-NACH bounce.",
+        text: "Dispatch a Fact-Verified Legal Notice claiming unpaid royalty, Contract Act s.74 audit costs, and separate PSS Act s.25 notice within 30 days of e-NACH bounce.",
       },
     ],
   };
@@ -697,7 +697,7 @@ export default function FranchiseePosCashSkimmingPage() {
                   className="p-4 rounded-xl border border-slate-200 hover:border-[#DC2626] hover:bg-red-50/40 transition-colors"
                 >
                   <p className="font-bold text-slate-900">Section 25 PSS Act e-NACH Notice Template &rarr;</p>
-                  <p className="text-xs text-slate-600 mt-1">Advocate-vetted notice format with Suman Sethi dual-demand safeguard.</p>
+                  <p className="text-xs text-slate-600 mt-1">Ready-to-use notice format with Suman Sethi dual-demand safeguard.</p>
                 </Link>
                 <Link
                   href="/tools/msme-delayed-payment-interest-calculator"

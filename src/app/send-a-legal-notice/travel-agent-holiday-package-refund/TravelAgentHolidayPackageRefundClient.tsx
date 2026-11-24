@@ -13,7 +13,7 @@ const faqs = [
     question:
       'Can a tourist or traveler issue a statutory legal notice to a travel agent or tour operator for refusing a holiday package refund in India?',
     answer:
-      'Yes, any tourist, family traveler, or corporate group can serve an advocate-vetted statutory legal notice to a defaulting travel agent, online travel portal, or tour operator under Section 2(11) and Section 2(47) of the Consumer Protection Act, 2019, along with Section 73 of the Indian Contract Act, 1872. A legal demand notice formally puts the travel agency on 15 days peremptory warning to disburse the withheld refund amount, compensate for unrendered services, or face consumer litigation before the District Consumer Disputes Redressal Commission. Serving a formal notice creates admissible documentary evidence in court establishing that the agency was granted reasonable opportunity to cure the deficiency before legal proceedings commenced.',
+      'Yes, any tourist, family traveler, or corporate group can serve a fact-verified statutory legal notice to a defaulting travel agent, online travel portal, or tour operator under Section 2(11) and Section 2(47) of the Consumer Protection Act, 2019, along with Section 73 of the Indian Contract Act, 1872. A legal demand notice formally puts the travel agency on 15 days peremptory warning to disburse the withheld refund amount, compensate for unrendered services, or face consumer litigation before the District Consumer Disputes Redressal Commission. Serving a formal notice creates admissible documentary evidence in court establishing that the agency was granted reasonable opportunity to cure the deficiency before legal proceedings commenced.',
   },
   {
     question:
@@ -37,13 +37,13 @@ const faqs = [
     question:
       'What is the statutory limitation period for serving a legal notice and filing a consumer complaint against a defaulting travel agency in India?',
     answer:
-      'Under Section 69 of the Consumer Protection Act, 2019, the statutory limitation period for instituting a consumer complaint before the Consumer Disputes Redressal Commission is exactly two years from the date on which the cause of action arose. The cause of action typically crystallizes on the date the holiday was cancelled, the date the agency formally rejected the refund request, or the scheduled departure date when deficient services were rendered. Issuing an advocate-vetted legal notice promptly within this two-year window documents the dispute chronology and facilitates expedited settlement before formal court filing.',
+      'Under Section 69 of the Consumer Protection Act, 2019, the statutory limitation period for instituting a consumer complaint before the Consumer Disputes Redressal Commission is exactly two years from the date on which the cause of action arose. The cause of action typically crystallizes on the date the holiday was cancelled, the date the agency formally rejected the refund request, or the scheduled departure date when deficient services were rendered. Issuing a fact-verified legal notice promptly within this two-year window documents the dispute chronology and facilitates expedited settlement before formal court filing.',
   },
   {
     question:
       'What damages, financial compensation, and statutory interest can be claimed in a legal notice against a defaulting tour operator?',
     answer:
-      'An aggrieved traveler can legally demand: 1) 100% refund of the unutilized or cancelled package advance; 2) reimbursement of out-of-pocket expenses incurred on alternative accommodation, transport, and meals; 3) commercial interest on withheld funds at 12% to 18% per annum from the date of payment; and 4) substantial financial compensation for mental agony, physical hardship, and spoiled family vacations under Section 39(1) of the Consumer Protection Act, 2019. In addition, the consumer can demand reimbursement of advocate drafting fees and legal litigation expenses incurred due to the operator\'s wrongful refusal.',
+      'An aggrieved traveler can legally demand: 1) 100% refund of the unutilized or cancelled package advance; 2) reimbursement of out-of-pocket expenses incurred on alternative accommodation, transport, and meals; 3) commercial interest on withheld funds at 12% to 18% per annum from the date of payment; and 4) substantial financial compensation for mental agony, physical hardship, and spoiled family vacations under Section 39(1) of the Consumer Protection Act, 2019. In addition, the consumer can demand reimbursement of notice drafting fees and legal litigation expenses incurred due to the operator\'s wrongful refusal.',
   },
 ];
 
@@ -54,7 +54,7 @@ const ogImage =
   'https://legalrecovery.in/images/og/travel-agent-holiday-package-refund.jpg';
 
 const reviewBodyText =
-  'I booked an 8-day deluxe family holiday tour to Switzerland and France worth ₹5,80,000 for my family of four through a well-known online travel agency. Two weeks before our scheduled departure, the operator unilaterally cancelled our Jungfraujoch mountain excursion, replaced our 4-star boutique lakeside hotel with a subpar suburban transit motel without heating, and refused a ₹2,40,000 refund when we objected to the altered itinerary. Legal Recovery drafted and served an advocate-vetted statutory legal notice citing Sections 2(11) and 2(47) of the Consumer Protection Act, 2019, the doctrine of frustration under the Indian Contract Act, and landmark NCDRC rulings on holiday cancellations. Within 11 days of receiving the notice, the agency\'s management conceded the deficiency, processed our full refund of ₹2,40,000, and credited an additional ₹35,000 towards compensation for inconvenience. Truly unmatched legal efficacy and speed.';
+  'I booked an 8-day deluxe family holiday tour to Switzerland and France worth ₹5,80,000 for my family of four through a well-known online travel agency. Two weeks before our scheduled departure, the operator unilaterally cancelled our Jungfraujoch mountain excursion, replaced our 4-star boutique lakeside hotel with a subpar suburban transit motel without heating, and refused a ₹2,40,000 refund when we objected to the altered itinerary. Legal Recovery drafted and served a fact-verified statutory legal notice citing Sections 2(11) and 2(47) of the Consumer Protection Act, 2019, the doctrine of frustration under the Indian Contract Act, and landmark NCDRC rulings on holiday cancellations. Within 11 days of receiving the notice, the agency\'s management conceded the deficiency, processed our full refund of ₹2,40,000, and credited an additional ₹35,000 towards compensation for inconvenience. Truly unmatched legal efficacy and speed.';
 
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -174,7 +174,7 @@ const jsonLd = {
         {
           '@type': 'ListItem',
           position: 4,
-          name: 'Draft an advocate-vetted statutory legal notice citing Sections 2(11), 2(47) & 39 of CPA 2019, Section 73 Contract Act, and NCDRC precedents',
+          name: 'Draft a fact-verified statutory legal notice citing Sections 2(11), 2(47) & 39 of CPA 2019, Section 73 Contract Act, and NCDRC precedents',
         },
         {
           '@type': 'ListItem',
@@ -189,7 +189,7 @@ const jsonLd = {
       '@type': 'Product',
       name: 'Legal Notice to Travel Agent for Holiday Package Refund & Travel Dispute',
       description:
-        'Advocate-drafted statutory demand notice service for tourists, vacationers, and corporate travelers to recover tour package advance refunds, compensation for hotel downgrades, and unrendered travel services across India.',
+        'Fact-verified statutory demand notice service for tourists, vacationers, and corporate travelers to recover tour package advance refunds, compensation for hotel downgrades, and unrendered travel services across India.',
       brand: {
         '@type': 'Organization',
         name: 'Legal Recovery',
@@ -265,7 +265,7 @@ export default function TravelAgentHolidayPackageRefundClient() {
 
   const shareUrl = encodeURIComponent(pageUrl);
   const shareText = encodeURIComponent(
-    'Travel agent or tour operator refusing holiday package refund or cutting your vacation itinerary? Send an advocate-vetted statutory legal notice for rapid refund recovery in India! #HolidayRefund #LegalNotice #ConsumerProtection'
+    'Travel agent or tour operator refusing holiday package refund or cutting your vacation itinerary? Send a fact-verified statutory legal notice for rapid refund recovery in India! #HolidayRefund #LegalNotice #ConsumerProtection'
   );
 
   return (
@@ -458,7 +458,7 @@ export default function TravelAgentHolidayPackageRefundClient() {
                     Quick Answer
                   </h2>
                   <p className="text-sm text-slate-700 font-medium leading-relaxed">
-                    An aggrieved traveler or consumer can serve an advocate-drafted statutory legal notice to a travel agent or tour operator under <strong className="text-slate-900 font-semibold">Section 2(11) and Section 2(47) of the Consumer Protection Act, 2019</strong>, demanding full refund of advance package payments, unrendered hotel stays, and cancelled excursion fees within 15 days. If a travel agency unilaterally alters the agreed itinerary, downgrades accommodation standards, or withholds refunds after trip cancellations due to unforeseen events, the tour operator commits an actionable deficiency of service and unfair trade practice under <strong className="text-slate-900 font-semibold">Section 73 and Section 56 of the Indian Contract Act, 1872</strong>. Serving a formal legal notice establishes crucial pre-litigation proof before filing a digital complaint on the <strong className="text-slate-900 font-semibold">E-Daakhil portal</strong> or initiating recovery proceedings before the District Consumer Disputes Redressal Commission for principal refund, 12% to 18% annual interest, and substantial compensation for mental agony.
+                    An aggrieved traveler or consumer can serve a fact-verified statutory legal notice to a travel agent or tour operator under <strong className="text-slate-900 font-semibold">Section 2(11) and Section 2(47) of the Consumer Protection Act, 2019</strong>, demanding full refund of advance package payments, unrendered hotel stays, and cancelled excursion fees within 15 days. If a travel agency unilaterally alters the agreed itinerary, downgrades accommodation standards, or withholds refunds after trip cancellations due to unforeseen events, the tour operator commits an actionable deficiency of service and unfair trade practice under <strong className="text-slate-900 font-semibold">Section 73 and Section 56 of the Indian Contract Act, 1872</strong>. Serving a formal legal notice establishes crucial pre-litigation proof before filing a digital complaint on the <strong className="text-slate-900 font-semibold">E-Daakhil portal</strong> or initiating recovery proceedings before the District Consumer Disputes Redressal Commission for principal refund, 12% to 18% annual interest, and substantial compensation for mental agony.
                   </p>
                 </div>
 
@@ -789,7 +789,7 @@ export default function TravelAgentHolidayPackageRefundClient() {
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-600 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      An advocate-drafted statutory demand notice must be structured with precision, establishing the contractual terms, cataloging the specific breaches, and demanding strict financial restitution:
+                      A fact-verified statutory demand notice must be structured with precision, establishing the contractual terms, cataloging the specific breaches, and demanding strict financial restitution:
                     </p>
 
                     <div className="space-y-4">
@@ -848,7 +848,7 @@ export default function TravelAgentHolidayPackageRefundClient() {
                       {[
                         {
                           step: 'Stage 1',
-                          title: 'Advocate Vetting & Multi-Channel Verified Service',
+                          title: 'Fact Verification & Multi-Channel Verified Service',
                           desc: 'The notice is prepared on the advocate\'s official letterhead, digitally signed under Section 5 of the Information Technology Act, 2000, and served simultaneously via India Post Speed Post with A/D, registered corporate email, and WhatsApp delivery tracking.',
                         },
                         {
@@ -859,12 +859,12 @@ export default function TravelAgentHolidayPackageRefundClient() {
                         {
                           step: 'Stage 3',
                           title: 'E-Daakhil Consumer Complaint & District Commission Filing',
-                          desc: 'If the agency remains intransigent, our panel advocates file a formal consumer complaint on the national E-Daakhil portal under Section 35 of the CPA 2019, claiming full refund, 18% p.a. interest, and ₹1–5 Lakhs compensation for mental harassment.',
+                          desc: 'If the agency remains intransigent, our team files a formal consumer complaint on the national E-Daakhil portal under Section 35 of the CPA 2019, claiming full refund, 18% p.a. interest, and ₹1–5 Lakhs compensation for mental harassment.',
                         },
                         {
                           step: 'Stage 4',
                           title: 'Judicial Enforcement & Penalty Recovery under Section 71',
-                          desc: 'Upon receiving a final favorable order from the Consumer Commission, if the travel operator delays execution, our advocates file enforcement proceedings under Section 71 and Section 72 of CPA 2019, carrying civil attachment and imprisonment penalties for non-compliance.',
+                          desc: 'Upon receiving a final favorable order from the Consumer Commission, if the travel operator delays execution, our team files enforcement proceedings under Section 71 and Section 72 of CPA 2019, carrying civil attachment and imprisonment penalties for non-compliance.',
                         },
                       ].map((item, i) => (
                         <div key={i} className="flex gap-4 p-4 rounded-xl bg-slate-50 border border-slate-100 items-start">
@@ -1035,8 +1035,7 @@ export default function TravelAgentHolidayPackageRefundClient() {
                   </div>
                   <p className="text-sm text-slate-600 leading-relaxed mb-6">
                     Legal Recovery is India&apos;s trusted online legal notice and consumer dispute resolution
-                    platform, connecting travelers, vacationers, corporate clients, and consumers with seasoned
-                    panel advocates for rapid, advocate-vetted statutory demand notices at transparent flat fees.
+                    platform, connecting travelers, vacationers, corporate clients, and consumers with our team for rapid, fact-verified statutory demand notices at transparent flat fees.
                     With ₹100 Crore+ recovered and 10,000+ cases resolved across India, Legal Recovery delivers
                     verified legal impact without the delays and unpredictability of traditional law firms.
                   </p>
@@ -1076,7 +1075,7 @@ export default function TravelAgentHolidayPackageRefundClient() {
                   Travel Agent Refusing Package Refund?
                 </h3>
                 <p className="text-slate-300 text-xs leading-relaxed mb-4">
-                  Send an advocate-vetted statutory notice today. 78% of travel operators settle holiday refunds and compensation within 15 days upon receiving formal notice from Legal Recovery.
+                  Send a fact-verified statutory notice today. 78% of travel operators settle holiday refunds and compensation within 15 days upon receiving formal notice from Legal Recovery.
                 </p>
                 <button
                   onClick={() => setIsPaymentModalOpen(true)}
@@ -1085,7 +1084,7 @@ export default function TravelAgentHolidayPackageRefundClient() {
                   Draft &amp; Send Notice Now
                 </button>
                 <p className="text-center text-slate-400 text-[10px] mt-3">
-                  Flat fee • Advocate-drafted • Sent same day
+                  Flat fee • Fact-verified • Sent same day
                 </p>
               </div>
 
@@ -1140,7 +1139,7 @@ export default function TravelAgentHolidayPackageRefundClient() {
                 {[
                   { stat: '78%', label: 'Travel agencies settle prior to Consumer Court trial' },
                   { stat: '₹100CR+', label: 'Total amount recovered for clients across India' },
-                  { stat: 'Same Day', label: 'Advocate notice drafted and dispatched' },
+                  { stat: 'Same Day', label: 'Notice prepared and dispatched' },
                   { stat: 'Flat Fee', label: 'Transparent pricing with no hidden charges' },
                 ].map((item, i) => (
                   <div key={i} className="flex items-center justify-between py-2 border-b border-slate-50 last:border-0">

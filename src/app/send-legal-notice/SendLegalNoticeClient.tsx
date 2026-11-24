@@ -47,15 +47,15 @@ const faqs = [
   },
   {
     question: "What is the flat fee structure for sending a notice on LegalRecovery?",
-    answer: "LegalRecovery offers flat-fee pricing starting at ₹999 per opposing party. This transparent rate covers advocate consultation, customized drafting on the advocate's official letterhead, client dashboard review, and electronic delivery via verified email and WhatsApp. Speed Post is optional at ₹450 per party. There are no hourly consultation fees."
+    answer: "LegalRecovery offers flat-fee pricing starting at ₹999 per opposing party. This transparent rate covers fact verification by our team, notice preparation, client dashboard tracking, and electronic delivery via verified email and WhatsApp. Speed Post is optional at ₹450 per party. There are no hourly consultation fees."
   },
   {
     question: "What should I do if the recipient replies to my notice with false counterclaims?",
-    answer: "If the recipient replies to your legal notice with false allegations or counterclaims, do not panic. Your assigned advocate will review their reply, verify the facts, and draft a formal rejoinder (response) to refute their claims. If the reply does not lead to an amicable settlement, the notice and response form the pre-litigation record, allowing your advocate to file a recovery suit or summary suit (Order 37 CPC) in the appropriate court."
+    answer: "If the recipient replies to your legal notice with false allegations or counterclaims, do not panic. Our team can verify the facts in their reply, and you can send a further notice through us to refute their claims. If the reply does not lead to an amicable settlement, the notice and response form the pre-litigation record, allowing you to instruct an advocate to file a recovery suit or summary suit (Order 37 CPC) in the appropriate court."
   },
   {
     question: "How secure is my personal and case data on the LegalRecovery portal?",
-    answer: "LegalRecovery prioritizes data security and confidentiality. All documents uploaded to our encrypted cloud vault are secured using enterprise-grade SSL/TLS protocols in transit and AES-256 encryption at rest. Access is restricted exclusively to the assigned panel advocate and the client. The information is protected under advocate-client privilege guidelines, ensuring complete privacy."
+    answer: "LegalRecovery prioritizes data security and confidentiality. All case details you submit are secured using enterprise-grade SSL/TLS protocols in transit and AES-256 encryption at rest. Access is restricted exclusively to our team and the client."
   }
 ];
 
@@ -154,7 +154,7 @@ const reviewSchema = {
         "@type": "Person",
         "name": "Divya Teja"
       },
-      "reviewBody": "Using this online portal was a game changer for my freelance agency. A client had defaulted on invoices totaling ₹4.2 Lakhs. The platform verified the client's corporate office registry via MCA, matched me with an advocate, and sent a notice via verified email and WhatsApp. The client settled through the ODR mediator within two weeks. Outstanding legal tech platform!"
+      "reviewBody": "Using this online portal was a game changer for my freelance agency. A client had defaulted on invoices totaling ₹4.2 Lakhs. The platform verified the client's corporate office registry via MCA, verified the facts, and sent a notice via verified email and WhatsApp. The client settled through the ODR mediator within two weeks. Outstanding legal tech platform!"
     },
     {
       "@type": "Review",
@@ -166,7 +166,7 @@ const reviewSchema = {
         "@type": "Person",
         "name": "Karan Malhotra"
       },
-      "reviewBody": "Extremely fast service. I uploaded my bounced cheque details to the document vault. The advocate prepared the statutory notice under Section 138 of the NI Act within 24 hours. The real-time Speed Post tracking showed delivery, and the debtor processed the payment to avoid criminal prosecution."
+      "reviewBody": "Extremely fast service. I entered my bounced cheque details online. The team prepared the statutory notice under Section 138 of the NI Act within 24 hours. The real-time Speed Post tracking showed delivery, and the debtor processed the payment to avoid criminal prosecution."
     },
     {
       "@type": "Review",
@@ -502,9 +502,9 @@ export default function SendLegalNoticeClient() {
                       </div>
 
                       <div className="bg-slate-50 p-6 rounded-2xl border border-slate-100">
-                        <h4 className="font-extrabold text-sm sm:text-base text-slate-900 mb-2">C. Section 5 IT Act, 2000 Electronic Signing</h4>
+                        <h4 className="font-extrabold text-sm sm:text-base text-slate-900 mb-2">C. Fully Online Dispatch</h4>
                         <p className="text-xs sm:text-sm text-slate-650 leading-relaxed">
-                          Once the draft notice is approved, the advocate digitally signs the PDF notice using their registered digital signature certificate. Under Section 5 of the Information Technology Act, 2000, digital signatures carry the same legal validity as physical signatures, eliminating the need to physically mail documents back and forth.
+                          Once the client confirms the details, the notice is ready for dispatch, eliminating the need to physically mail documents back and forth.
                         </p>
                       </div>
 
@@ -622,7 +622,7 @@ export default function SendLegalNoticeClient() {
                 <div className="absolute top-0 right-0 w-24 h-24 bg-red-600/10 rounded-full blur-xl pointer-events-none" />
                 <h3 className="text-sm font-black mb-3">Send Legal Notice</h3>
                 <p className="text-gray-400 mb-5 text-[11px] leading-relaxed">
-                  We handle the entire recovery notice process for you, from database entity audit and advocate drafting to dispatching and tracking.
+                  We handle the entire recovery notice process for you, from database entity audit and notice drafting to dispatching and tracking.
                 </p>
                 <button 
                   onClick={() => setIsPaymentModalOpen(true)}

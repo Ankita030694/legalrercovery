@@ -23,7 +23,7 @@ export default function EcgcClaimCTA({ className = "" }: EcgcClaimCTAProps) {
               Track 1 &bull; Self-Serve Single Export Default
             </span>
             <h3 className="text-lg sm:text-xl font-bold text-white mb-2.5">
-              Test 1 Live Overdue Case Now (&#8377;{basePrice} &middot; Advocate Drafted)
+              Test 1 Live Overdue Case Now (&#8377;{basePrice} &middot; Fact-Verified)
             </h3>
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
               Serve an ECGC-audit-ready International Legal Demand Notice via Email + WhatsApp + Speed Post RPAD / International Courier, complete with BSA 2023 s.63 delivery proof for your ECGC claim &amp; AD Bank EDPMS file.

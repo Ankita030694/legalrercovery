@@ -3,7 +3,7 @@ import OnlineShoppingDisputeClient from './OnlineShoppingDisputeClient';
 
 export const metadata: Metadata = {
   title: 'Legal Notice for Online Shopping Dispute | Send Notice',
-  description: 'Facing an online shopping dispute? Send an advocate-vetted legal notice to get a refund or compensation under the Consumer Protection Act.',
+  description: 'Facing an online shopping dispute? Send a fact-verified legal notice to get a refund or compensation under the Consumer Protection Act.',
   alternates: {
     canonical: 'https://www.legalrecovery.in/send-a-legal-notice/online-shopping-dispute',
   },

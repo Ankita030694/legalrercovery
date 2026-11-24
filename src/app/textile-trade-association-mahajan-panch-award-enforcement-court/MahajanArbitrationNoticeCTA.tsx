@@ -34,10 +34,10 @@ export default function MahajanArbitrationNoticeCTA() {
                 </span>
               </div>
               <h4 className="text-base font-bold text-white mb-2">
-                Issue Advocate-Drafted Statutory Recovery Notice
+                Issue Fact-Verified Statutory Recovery Notice
               </h4>
               <p className="text-xs text-slate-300 leading-relaxed mb-4">
-                Instant advocate-vetted demand notice combining Section 21 Arbitration Act, MSMED Act Section 17/18, and Section 43B(h) tax disallowance triggers. Delivered via Speed Post RPAD with BSA Section 63 electronic tracking.
+                Instant fact-verified demand notice combining Section 21 Arbitration Act, MSMED Act Section 17/18, and Section 43B(h) tax disallowance triggers. Delivered via Speed Post RPAD with BSA Section 63 electronic tracking.
               </p>
             </div>
             <Link

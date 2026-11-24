@@ -24,10 +24,10 @@ export default function SolarOmCTA({ className = "" }: SolarOmCTAProps) {
                 Track 1 · Single IPP / Solar Park O&amp;M Contract
               </span>
               <h3 className="text-lg sm:text-xl font-bold text-white mb-2">
-                Test 1 Live Overdue Case Now (&#8377;{basePrice} &middot; Advocate Drafted &middot; Email + WhatsApp + Speed Post RPAD)
+                Test 1 Live Overdue Case Now (&#8377;{basePrice} &middot; Fact-Verified &middot; Email + WhatsApp + Speed Post RPAD)
               </h3>
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-                Upload your O&amp;M / Module-Cleaning Service Order, monthly Plant Availability SLA logs, SLDC grid-curtailment records, and Udyam Certificate. Our advocates draft an SLA-Normalized Arrears &amp; MSMED s.43B(h) Demand Notice.
+                Enter your O&amp;M / Module-Cleaning service order, monthly plant availability, SLDC grid-curtailment, and Udyam details in the online form. Our team verifies the facts and prepares an SLA-Normalized Arrears &amp; MSMED s.43B(h) Demand Notice.
               </p>
             </div>
 

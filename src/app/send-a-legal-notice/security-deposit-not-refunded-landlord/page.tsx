@@ -3,7 +3,7 @@ import SecurityDepositNotRefundedLandlordClient from './SecurityDepositNotRefund
 
 const slug = 'send-a-legal-notice/security-deposit-not-refunded-landlord';
 const title = 'Legal Notice to Landlord for Security Deposit Refund';
-const description = 'Landlord withholding your security deposit? Send an advocate-drafted legal notice under the Tenancy Act to recover your deposit with interest.';
+const description = 'Landlord withholding your security deposit? Send a fact-verified legal notice under the Tenancy Act to recover your deposit with interest.';
 const url = `https://www.legalrecovery.in/${slug}`;
 
 export const metadata: Metadata = {

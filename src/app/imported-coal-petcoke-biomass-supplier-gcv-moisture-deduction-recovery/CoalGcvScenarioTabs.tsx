@@ -28,7 +28,7 @@ const COAL_SCENARIOS: ScenarioTab[] = [
       {
         step: "Serve Section 42 Consumption Estoppel & GSTR-2B Notice",
         detail:
-          "Issue an Advocate Demand Notice attaching the buyer's signed Gate Weighbridge Slips, E-Way Bills, and GSTR-2B ITC acceptance proving unconditional appropriation and consumption of the full 2,000 MT.",
+          "Issue a Fact-Verified Demand Notice attaching the buyer's signed Gate Weighbridge Slips, E-Way Bills, and GSTR-2B ITC acceptance proving unconditional appropriation and consumption of the full 2,000 MT.",
       },
       {
         step: "Reject Unilateral Debit Note as Non-Liquidated Fabrication",

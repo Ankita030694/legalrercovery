@@ -808,7 +808,7 @@ export default function SarfaesiDrtBankRecoveryCalculatorPage() {
                       title: "Legal Notice for Banks to Recover Unpaid Dues",
                       href: "/send-a-legal-notice/for-banks-to-recover-their-unpaid-dues",
                       tag: "Bank Notice Desk",
-                      desc: "Advocate-drafted loan recall, guarantor invocation & security cheque notice process.",
+                      desc: "Fact-verified loan recall, guarantor invocation & security cheque notice process.",
                     },
                     {
                       title: "Bulk Recovery Cases: CSV Batch Institutional Desk",

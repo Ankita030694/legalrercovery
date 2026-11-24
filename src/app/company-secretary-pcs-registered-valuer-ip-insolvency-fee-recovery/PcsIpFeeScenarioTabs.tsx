@@ -26,7 +26,7 @@ const SCENARIOS: ScenarioItem[] = [
     creditorMove: [
       "Separate your claim into two airtight heads: (a) Statutory Out-of-Pocket Reimbursement (pure agent indemnification under Sections 69, 70 & 222 of the Indian Contract Act, 1872—zero GST dispute possible) proven via MCA V3 SRN Challan + Firm Bank Debit Statement, and (b) Liquidated Professional Fee invoice with ICSI UDIN.",
       "Hand over any client-owned physical registers or DSC tokens under a signed Handover Receipt to keep your ICSI Certificate of Practice (COP) 100% insulated.",
-      "Instruct independent litigation counsel to serve a 15-day External Advocate Notice under Order XXXVII CPC (Summary Suit for liquidated reimbursement + written instruction) alongside CGST s.16(2) 180-day ITC reversal warning on the professional fee component and Commercial Court s.12A pre-institution mediation notice if total dues reach ₹3 Lakh+.",
+      "Instruct independent litigation counsel to serve a 15-day External Fact-Verified Notice under Order XXXVII CPC (Summary Suit for liquidated reimbursement + written instruction) alongside CGST s.16(2) 180-day ITC reversal warning on the professional fee component and Commercial Court s.12A pre-institution mediation notice if total dues reach ₹3 Lakh+.",
     ],
     outcomeMetric:
       "MCA V3 SRN Challans tied to your firm's bank debit and the company's CIN leave zero factual defense—triggering swift reimbursement before the Board faces Summary Suit summons or auditor disclosures.",

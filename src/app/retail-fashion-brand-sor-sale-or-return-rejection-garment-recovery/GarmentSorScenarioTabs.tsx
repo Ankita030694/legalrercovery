@@ -38,7 +38,7 @@ const GARMENT_SCENARIOS: ScenarioTab[] = [
       {
         phase: "Statutory MSMED Demand Notice (Day 8-15)",
         action:
-          "Serve advocate legal notice citing SGA s.24, Section 15 of MSMED Act (45-day statutory payment cap), and notify Section 43B(h) income tax disallowance if not settled by fiscal year-end.",
+          "Serve fact-verified legal notice citing SGA s.24, Section 15 of MSMED Act (45-day statutory payment cap), and notify Section 43B(h) income tax disallowance if not settled by fiscal year-end.",
       },
       {
         phase: "MSEFC / Commercial Suit Filing (Day 30+)",

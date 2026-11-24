@@ -323,7 +323,7 @@ export default function WrongfulLiquidatedDamagesRemedyPage() {
         "@type": "HowToStep",
         position: 1,
         name: "Serve Section 74 Actual-Loss Rebuttal Notice",
-        text: "Issue a formal advocate notice demanding strict proof of actual financial loss and legal injury under Supreme Court Kailash Nath Associates v. DDA.",
+        text: "Issue a formal fact-verified notice demanding strict proof of actual financial loss and legal injury under Supreme Court Kailash Nath Associates v. DDA.",
       },
       {
         "@type": "HowToStep",
@@ -578,7 +578,7 @@ export default function WrongfulLiquidatedDamagesRemedyPage() {
                 </div>
 
                 <p>
-                  When armed with this statutory standard, a contractor facing a 10% LD deduction does not have to beg for mercy. Through an advocate-vetted demand notice, the contractor formally puts the developer to strict proof: <em>Produce your audited balance sheets, rent rolls, and banking interest ledgers proving exact rupee-for-rupee damage caused solely by the alleged delay.</em> In 95% of cases, developers cannot furnish such proof because none exists.
+                  When armed with this statutory standard, a contractor facing a 10% LD deduction does not have to beg for mercy. Through a fact-verified demand notice, the contractor formally puts the developer to strict proof: <em>Produce your audited balance sheets, rent rolls, and banking interest ledgers proving exact rupee-for-rupee damage caused solely by the alleged delay.</em> In 95% of cases, developers cannot furnish such proof because none exists.
                 </p>
               </div>
             </section>

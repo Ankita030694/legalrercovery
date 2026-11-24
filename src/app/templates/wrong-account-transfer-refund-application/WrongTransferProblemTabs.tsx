@@ -86,9 +86,9 @@ const PROBLEMS: ProblemTab[] = [
           "Obtain an official written communication or email from your bank or the destination branch confirming that the beneficiary was notified of the mistake but refused consent.",
       },
       {
-        step: "Serve Advocate Legal Demand Notice",
+        step: "Serve Fact-Verified Legal Demand Notice",
         description:
-          "Have an advocate dispatch a formal 15-day statutory legal notice via Registered Speed Post and WhatsApp, putting the recipient on notice for civil summary suit and criminal prosecution under BNS 314/316.",
+          "Dispatch a formal 15-day statutory legal notice via Registered Speed Post and WhatsApp, putting the recipient on notice for civil summary suit and criminal prosecution under BNS 314/316.",
       },
       {
         step: "Initiate Summary Suit & Police Complaint",

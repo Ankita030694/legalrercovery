@@ -26,7 +26,7 @@ export default function GoldLoanAuctionCTA({ className = "" }: GoldLoanAuctionCT
               Test 1 Live Overdue Case Now
             </h3>
             <p className="text-slate-300 text-xs sm:text-sm leading-relaxed mb-5">
-              &#8377;{basePrice} &middot; Advocate Drafted &middot; Email + WhatsApp + Speed Post RPAD. Issue an audit-proof Section 176 pre-auction notice or post-auction deficit recovery demand with BSA 2023 s.63 delivery logs.
+              &#8377;{basePrice} &middot; Fact-Verified &middot; Email + WhatsApp + Speed Post RPAD. Issue an audit-proof Section 176 pre-auction notice or post-auction deficit recovery demand with BSA 2023 s.63 delivery logs.
             </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-3">

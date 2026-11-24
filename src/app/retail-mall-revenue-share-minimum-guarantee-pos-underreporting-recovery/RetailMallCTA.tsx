@@ -40,7 +40,7 @@ export default function RetailMallCTA({
                   Recover Underreported Revenue Share &amp; Unpaid MMG Arrears
                 </h3>
                 <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
-                  Serve advocate-drafted statutory demand notices on defaulting retail tenants, kiosk brands, and F&amp;B outlets diverting UPI sales off-POS. Enforce 48-hour POS audit compliance, utility shut-off protocols, and commercial summary decrees with high-court backed legal speed.
+                  Serve fact-verified statutory demand notices on defaulting retail tenants, kiosk brands, and F&amp;B outlets diverting UPI sales off-POS. Enforce 48-hour POS audit compliance, utility shut-off protocols, and commercial summary decrees with high-court backed legal speed.
                 </p>
                 <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-2 text-xs text-slate-300">
                   <div className="flex items-center gap-2">
@@ -81,7 +81,7 @@ export default function RetailMallCTA({
                     <span className="text-base font-black text-emerald-400">₹{basePrice}</span>
                   </div>
                   <p className="text-[11px] text-slate-400">
-                    Advocate-vetted Section 106 / Easements Act demand notice with registered post delivery &amp; tracking.
+                    Fact-verified Section 106 / Easements Act demand notice with registered post delivery &amp; tracking.
                   </p>
                   <div className="flex gap-2">
                     <button
@@ -142,7 +142,7 @@ export default function RetailMallCTA({
             <div>
               <p className="text-sm font-bold text-white">Defaulting Mall or Food-Court Tenant?</p>
               <p className="text-xs text-slate-400 mt-0.5">
-                Issue advocate-drafted MMG cure &amp; POS audit notices with statutory evidence preservation.
+                Issue fact-verified MMG cure &amp; POS audit notices with statutory evidence preservation.
               </p>
             </div>
             <div className="flex items-center gap-2.5 shrink-0 w-full sm:w-auto">

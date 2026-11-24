@@ -291,7 +291,7 @@ export default function TextileJointDemandNoticePage() {
                 </h2>
               </div>
               <p className="text-sm sm:text-base text-slate-600 leading-relaxed">
-                Select your textile trade scenario below—Surat/Bhiwandi fabric supply, Tirupur/Noida garment rejection bar, or dyeing process-house lien—and customize the Bijak, Transport LR, E-Way Bill, and Co-Noticee Broker details. Download the formatted Word (<code>.doc</code>) draft or copy it directly for advocate review.
+                Select your textile trade scenario below—Surat/Bhiwandi fabric supply, Tirupur/Noida garment rejection bar, or dyeing process-house lien—and customize the Bijak, Transport LR, E-Way Bill, and Co-Noticee Broker details. Download the formatted Word (<code>.doc</code>) draft or copy it directly for fact verification.
               </p>
 
               <TextileNoticeWorkspace />

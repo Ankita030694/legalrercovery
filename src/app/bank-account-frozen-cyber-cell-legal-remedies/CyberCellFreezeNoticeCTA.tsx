@@ -31,7 +31,7 @@ export default function CyberCellFreezeNoticeCTA({
                 Unfreeze Your Bank Account &amp; Convert Full Debit Freeze to Disputed Lien
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6">
-                Have an advocate draft a formal legal representation to the Cyber Cell Investigating Officer (IO) and a statutory demand notice to your Bank Branch Manager &amp; Nodal Officer. Compel immediate restriction to a lien-only hold on disputed funds under High Court precedents, protecting your remaining operational balance.
+                Send a formal legal representation to the Cyber Cell Investigating Officer (IO) and a statutory demand notice to your Bank Branch Manager &amp; Nodal Officer. Compel immediate restriction to a lien-only hold on disputed funds under High Court precedents, protecting your remaining operational balance.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button
@@ -42,7 +42,7 @@ export default function CyberCellFreezeNoticeCTA({
                   {buttonText} — ₹{basePrice}
                 </button>
                 <div className="text-xs text-slate-300 flex flex-wrap sm:flex-nowrap items-center gap-2 sm:gap-3">
-                  <span>✓ 24h Advocate Drafting</span>
+                  <span>✓ 24h Notice Drafting</span>
                   <span>•</span>
                   <span>✓ IO Representation + Bank Legal Notice</span>
                   <span>•</span>

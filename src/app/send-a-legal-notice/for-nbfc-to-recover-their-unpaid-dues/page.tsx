@@ -3,7 +3,7 @@ import ForNbfcToRecoverTheirUnpaidDuesClient from './ForNbfcToRecoverTheirUnpaid
 
 const slug = 'send-a-legal-notice/for-nbfc-to-recover-their-unpaid-dues';
 const title = 'Legal Notice for NBFCs to Recover Unpaid Dues India';
-const description = 'Defaulted loans or bounced EMIs? Send an advocate-drafted legal notice for NBFC debt recovery under SARFAESI Act and Section 138 NI Act.';
+const description = 'Defaulted loans or bounced EMIs? Send a fact-verified legal notice for NBFC debt recovery under SARFAESI Act and Section 138 NI Act.';
 const url = `https://www.legalrecovery.in/${slug}`;
 
 export const metadata: Metadata = {

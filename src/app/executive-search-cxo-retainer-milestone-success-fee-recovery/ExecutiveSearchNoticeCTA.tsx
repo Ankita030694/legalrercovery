@@ -25,10 +25,10 @@ export default function ExecutiveSearchNoticeCTA({
               Track 1 &bull; Single CXO Mandate Milestone Recovery
             </span>
             <p className="text-lg sm:text-xl font-extrabold text-white mb-2">
-              Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Advocate Drafted &middot; Email + WhatsApp + Speed Post RPAD)
+              Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Fact-Verified &middot; Email + WhatsApp + Speed Post RPAD)
             </p>
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-              Serve a bespoke, advocate-drafted Legal Demand Notice under Order XXXVII CPC, Section 70/73 of the Indian Contract Act, and Section 15 of the MSMED Act. Demolish client &ldquo;search on hold&rdquo; or &ldquo;budget frozen&rdquo; excuses, enforce contractually earned Tranche-2 shortlist milestones or cancelled-search Kill Fees, and demand audit reconciliation of hidden sign-on bonuses and pre-IPO ESOP packages.
+              Serve a bespoke, fact-verified Legal Demand Notice under Order XXXVII CPC, Section 70/73 of the Indian Contract Act, and Section 15 of the MSMED Act. Demolish client &ldquo;search on hold&rdquo; or &ldquo;budget frozen&rdquo; excuses, enforce contractually earned Tranche-2 shortlist milestones or cancelled-search Kill Fees, and demand audit reconciliation of hidden sign-on bonuses and pre-IPO ESOP packages.
             </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-3">

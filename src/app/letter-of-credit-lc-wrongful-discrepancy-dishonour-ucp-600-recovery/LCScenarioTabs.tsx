@@ -35,7 +35,7 @@ const SCENARIOS: FailureModeScenario[] = [
       {
         step: "Serve Formal Legal Notice of Cross-Border Bad Faith",
         action:
-          "Issue a formal advocate demand notice to the issuing bank's Chief Executive Officer and Head of Trade Operations, warning of an immediate ICC DOCDEX filing and listing on the international trade finance defaulter register.",
+          "Issue a formal fact-verified demand notice to the issuing bank's Chief Executive Officer and Head of Trade Operations, warning of an immediate ICC DOCDEX filing and listing on the international trade finance defaulter register.",
       },
       {
         step: "Escalate to Central Bank / Foreign Exchange Regulator",
@@ -96,7 +96,7 @@ const SCENARIOS: FailureModeScenario[] = [
           "Invoke Article 16(f): because the notice of refusal was not given in accordance with Article 16, the issuing bank has lost the legal right to claim non-compliance, even if the underlying commercial documents had errors.",
       },
       {
-        step: "Issue Advocate Legal Notice for Wrongful Conversion",
+        step: "Issue Fact-Verified Legal Notice for Wrongful Conversion",
         action:
           "If the issuing bank neither paid nor returned the original documents and allowed the buyer to take delivery of the cargo at port, issue an immediate notice for tortious conversion and commercial fraud.",
       },

@@ -29,7 +29,7 @@ export default function BuildersHubCTA() {
       <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-6 max-w-3xl">
         Whether you are a developer CRM head chasing 250 overdue RERA milestones, a mall or IT-park
         asset manager recovering CAM/HVAC arrears, or a co-working CFO enforcing enterprise seat
-        lock-ins, start with one live advocate notice or upload your multi-tower SPV ledger.
+        lock-ins, start with one live fact-verified notice or upload your multi-tower SPV ledger.
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
@@ -45,11 +45,11 @@ export default function BuildersHubCTA() {
               </span>
             </div>
             <p className="text-base font-bold text-white mb-2">
-              Test 1 Live Overdue Case Now (Advocate Drafted)
+              Test 1 Live Overdue Case Now (Fact-Verified)
             </p>
             <p className="text-xs text-slate-300 leading-relaxed mb-4">
               Submit one defaulting allottee, commercial lessee, or enterprise flex client. Receive
-              advocate-vetted RERA s.19(6) / TPA s.106 / 194-I TDS drafting and simultaneous Email +
+              fact-verified RERA s.19(6) / TPA s.106 / 194-I TDS drafting and simultaneous Email +
               WhatsApp + Speed Post RPAD tracking.
             </p>
           </div>

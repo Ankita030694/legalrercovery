@@ -208,7 +208,7 @@ const FAQ_SCHEMA = {
       name: "How does LegalRecovery help facility management companies and commercial associations handle bulk CAM defaults?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "LegalRecovery provides an automated institutional platform where facility managers and condominium boards can upload accounting ledgers for 10 to 10,000+ units. The system generates advocate-drafted statutory demand notices with BSA Section 63 compliant electronic audit trails and executes simultaneous delivery via Speed Post RPAD, WhatsApp Business API, and registered email.",
+        text: "LegalRecovery provides an automated institutional platform where facility managers and condominium boards can upload accounting ledgers for 10 to 10,000+ units. The system generates fact-verified statutory demand notices with BSA Section 63 compliant electronic audit trails and executes simultaneous delivery via Speed Post RPAD, WhatsApp Business API, and registered email.",
       },
     },
   ],

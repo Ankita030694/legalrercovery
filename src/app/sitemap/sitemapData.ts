@@ -4991,7 +4991,7 @@ export const ALL_SITEMAP_PAGES: SitemapItem[] = [
     timestamp: 1783411100000,
   },
   {
-    title: "Privacy Policy & Document Vault Security",
+    title: "Privacy Policy & Data Security",
     href: "/privacy-policy",
     category: "Company",
     date: "06 Jul 2026",

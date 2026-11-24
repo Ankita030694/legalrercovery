@@ -168,7 +168,7 @@ const FAQS = [
   {
     question: "Main contractor ya builder subcontractor ka RA bill aur retention paisa rok le toh legal notice kaise bheje?",
     answer:
-      "Agar main contractor aapka kaam pura hone ke baad bhi 'client se payment nahi aaya' (back-to-back clause) bolkar RA bill ya retention money rok raha hai, toh aap Indian Contract Act ki Dhara 70 aur 73, tatha MSMED Act ki Dhara 15–18 ke tehat ek formal Advocate Legal Notice bhej sakte hain. LegalRecovery.in par verified commercial advocates 24 ghante mein main contractor ke Directors ko Speed Post aur email se 15-din ka demand notice jari karte hain.",
+      "Agar main contractor aapka kaam pura hone ke baad bhi 'client se payment nahi aaya' (back-to-back clause) bolkar RA bill ya retention money rok raha hai, toh aap Indian Contract Act ki Dhara 70 aur 73, tatha MSMED Act ki Dhara 15–18 ke tehat ek formal Fact-Verified Legal Notice bhej sakte hain. LegalRecovery.in par verified commercial advocates 24 ghante mein main contractor ke Directors ko Speed Post aur email se 15-din ka demand notice jari karte hain.",
   },
 ];
 
@@ -390,7 +390,7 @@ export default function SubcontractorPaymentRecoveryPage() {
                       MANDATORY FIRST STEP FOR ALL SUBCONTRACTORS (DAY 1–15)
                     </text>
                     <text x="440" y="54" fill="#FFFFFF" fontWeight="bold" fontSize="12" textAnchor="middle">
-                      Serve 15-Day Advocate Demand Notice + Sec 194C / 43B(h) Audit Put-On-Notice
+                      Serve 15-Day Fact-Verified Demand Notice + Sec 194C / 43B(h) Audit Put-On-Notice
                     </text>
 
                     {/* Branch Lines from Root */}
@@ -775,7 +775,7 @@ export default function SubcontractorPaymentRecoveryPage() {
                     <strong className="text-slate-900 font-bold block mb-1">
                       1. Mandatory 45-Day Cap &amp; 3× RBI Bank Rate Compound Interest (Sections 15 &amp; 16):
                     </strong>
-                    Under Section 15, a Main Contractor cannot stipulate a credit period exceeding 45 days from the day of acceptance (or deemed acceptance after 15 days without written objection). From Day 46, Section 16 mandates compound interest with monthly rests at 3× the RBI Bank Rate (currently 3 × 6.75% = <strong>20.25% p.a. compounded monthly</strong>). Read our full comparison of <Link href="/msme-delayed-payment-recovery-samadhan-vs-legal-notice" className="text-blue-700 underline font-semibold">MSME Samadhaan / ODR vs Advocate Legal Notice</Link>.
+                    Under Section 15, a Main Contractor cannot stipulate a credit period exceeding 45 days from the day of acceptance (or deemed acceptance after 15 days without written objection). From Day 46, Section 16 mandates compound interest with monthly rests at 3× the RBI Bank Rate (currently 3 × 6.75% = <strong>20.25% p.a. compounded monthly</strong>). Read our full comparison of <Link href="/msme-delayed-payment-recovery-samadhan-vs-legal-notice" className="text-blue-700 underline font-semibold">MSME Samadhaan / ODR vs Fact-Verified Legal Notice</Link>.
                   </li>
                   <li className="p-4 bg-white rounded-xl border border-slate-200 shadow-xs">
                     <strong className="text-slate-900 font-bold block mb-1">
@@ -923,10 +923,10 @@ export default function SubcontractorPaymentRecoveryPage() {
                     </span>
                     <div className="space-y-1 sm:space-y-1.5">
                       <h3 className="text-sm sm:text-base md:text-lg font-bold text-slate-900">
-                        Dispatch a Formal 15-Day Statutory Advocate Demand Notice (With Employer / Auditor Copy)
+                        Dispatch a Formal 15-Day Statutory Fact-Verified Demand Notice (With Employer / Auditor Copy)
                       </h3>
                       <p className="text-xs sm:text-sm leading-relaxed">
-                        Have an advocate serve a formal statutory demand notice on the Main Contractor&apos;s Registered Office and Directors. The notice rebuts &quot;pay-when-paid&quot; excuses under <em>Ircon International (2015) 13 SCC 680</em>, quantifies Section 16 compound interest (or 18% commercial interest under Section 73 Contract Act), warns of Section 43B(h) tax disallowance, and—where strategically appropriate—marks a copy to the Principal Employer&apos;s Project Director.Explore our dedicated <Link href="/recovery/contractor-payment" className="text-blue-700 underline font-semibold">contractor payment recovery service</Link> for rapid dispatch.
+                        Serve a formal statutory demand notice on the Main Contractor&apos;s Registered Office and Directors. The notice rebuts &quot;pay-when-paid&quot; excuses under <em>Ircon International (2015) 13 SCC 680</em>, quantifies Section 16 compound interest (or 18% commercial interest under Section 73 Contract Act), warns of Section 43B(h) tax disallowance, and—where strategically appropriate—marks a copy to the Principal Employer&apos;s Project Director.Explore our dedicated <Link href="/recovery/contractor-payment" className="text-blue-700 underline font-semibold">contractor payment recovery service</Link> for rapid dispatch.
                       </p>
                     </div>
                   </li>
@@ -985,7 +985,7 @@ export default function SubcontractorPaymentRecoveryPage() {
                       <strong>The &quot;Back-to-Back&quot; Excuse:</strong> For 5 months, the Main Contractor&apos;s billing team refused to release the ₹28,50,000, pointing to Clause 14 of the Work Order (<em>&quot;Subcontractor bills shall be released on a back-to-back basis after final reconciliation with the Developer&quot;</em>). However, Apex&apos;s CA verified from Form 26AS that the Main Contractor had already deducted 2% TDS under Section 194C on RA Bill No. 7 and claimed ₹3,27,600 in GST Input Tax Credit, and the Developer had already inaugurated the IT park.
                     </p>
                     <p>
-                      <strong>The Statutory Action:</strong> Apex engaged LegalRecovery.in. An advocate drafted and dispatched a consolidated statutory legal demand notice to the Main Contractor&apos;s Managing Director and CFO, with a formal information copy to the Developer&apos;s VP-Projects. The notice cited: (1) <em>Ircon International v. Vinay Heavy Equipments, (2015) 13 SCC 680</em> invalidating indefinite back-to-back withholding; (2) Section 194C TDS and GSTR-2B estoppel; (3) accrued Section 16 MSMED compound interest of <strong>₹2,18,400</strong> at 20.25% p.a.; and (4) imminent filing of a Section 9 Arbitration petition to attach the Main Contractor&apos;s final milestone payout from the Developer alongside Section 43B(h) tax audit reporting.
+                      <strong>The Statutory Action:</strong> Apex engaged LegalRecovery.in. The team verified the facts and dispatched a consolidated statutory legal demand notice to the Main Contractor&apos;s Managing Director and CFO, with a formal information copy to the Developer&apos;s VP-Projects. The notice cited: (1) <em>Ircon International v. Vinay Heavy Equipments, (2015) 13 SCC 680</em> invalidating indefinite back-to-back withholding; (2) Section 194C TDS and GSTR-2B estoppel; (3) accrued Section 16 MSMED compound interest of <strong>₹2,18,400</strong> at 20.25% p.a.; and (4) imminent filing of a Section 9 Arbitration petition to attach the Main Contractor&apos;s final milestone payout from the Developer alongside Section 43B(h) tax audit reporting.
                     </p>
                     <div className="p-3.5 sm:p-4 bg-emerald-950/70 border border-emerald-700/60 rounded-xl text-emerald-200">
                       <strong className="block text-emerald-400 font-bold mb-1">The Resolution (Day 14):</strong>
@@ -1072,7 +1072,7 @@ export default function SubcontractorPaymentRecoveryPage() {
                       <span>✓</span> What LegalRecovery Delivers
                     </h3>
                     <ul className="space-y-1.5 text-xs sm:text-sm text-emerald-900 list-disc pl-4 leading-relaxed">
-                      <li>Drafting and serving an advocate-verified statutory demand notice (Section 70/73 Contract Act, Section 16/18 MSMED Act, Section 43B(h) tax leverage, or Section 21 Arbitration trigger).</li>
+                      <li>Drafting and serving a fact-verified statutory demand notice (Section 70/73 Contract Act, Section 16/18 MSMED Act, Section 43B(h) tax leverage, or Section 21 Arbitration trigger).</li>
                       <li>Multi-channel legal service via Registered Speed Post (RPAD), official email, and WhatsApp to the Main Contractor&apos;s Directors and CFO.</li>
                       <li>Strategic information copy to the Principal Employer / Developer where contractually permissible to prevent diversion of milestone funds.</li>
                       <li>Structured documentation preparation for MSME ODR Portal references, Section 12A pre-institution mediation, or Order 37 summary suits.</li>

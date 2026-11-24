@@ -12,7 +12,7 @@ const faqs = [
   {
     question: 'Can a sales agent, employee, or freelance partner send a legal notice to a company for unpaid commission in India?',
     answer:
-      'Yes, any sales agent, employee, channel partner, broker, or freelance consultant can issue an advocate-vetted statutory legal notice to a defaulting corporate entity under Section 73 and Section 219 of the Indian Contract Act, 1872, demanding release of earned commissions within a 15-day compliance window. Unpaid commission constitutes an actionable liquidated debt when supported by written agency contracts, employment offer letters, commission schedules, sales achievement logs, purchase orders, or verifiable email trails confirming deal closures. Serving a formal statutory notice puts company directors on formal legal warning before the claimant initiates summary debt recovery under Order 37 CPC, commercial court litigation, or labor authority filings.',
+      'Yes, any sales agent, employee, channel partner, broker, or freelance consultant can issue a fact-verified statutory legal notice to a defaulting corporate entity under Section 73 and Section 219 of the Indian Contract Act, 1872, demanding release of earned commissions within a 15-day compliance window. Unpaid commission constitutes an actionable liquidated debt when supported by written agency contracts, employment offer letters, commission schedules, sales achievement logs, purchase orders, or verifiable email trails confirming deal closures. Serving a formal statutory notice puts company directors on formal legal warning before the claimant initiates summary debt recovery under Order 37 CPC, commercial court litigation, or labor authority filings.',
   },
   {
     question: 'What is the limitation period for sending a legal notice and filing a court case to recover unpaid commission in India?',
@@ -48,7 +48,7 @@ const ogImage =
   'https://legalrecovery.in/images/og/commission-not-paid-by-company.jpg';
 
 const reviewBodyText =
-  'As a senior enterprise sales channel partner, I was owed ₹14.8 Lakhs in milestone-based commissions after closing a major B2B SaaS deal. The company abruptly terminated our partner agreement and withheld my payouts under vague clawback clauses. Legal Recovery drafted and served a formidable statutory legal notice citing Sections 73 and 219 of the Indian Contract Act, 1872, the Commercial Courts Act, and criminal breach of trust provisions. Within 12 days of receiving the advocate-vetted notice, the company\'s legal department reached out, waived their arbitrary deductions, and released my entire pending commission with agreed interest. Outstanding legal expertise for commercial recovery.';
+  'As a senior enterprise sales channel partner, I was owed ₹14.8 Lakhs in milestone-based commissions after closing a major B2B SaaS deal. The company abruptly terminated our partner agreement and withheld my payouts under vague clawback clauses. Legal Recovery drafted and served a formidable statutory legal notice citing Sections 73 and 219 of the Indian Contract Act, 1872, the Commercial Courts Act, and criminal breach of trust provisions. Within 12 days of receiving the fact-verified notice, the company\'s legal department reached out, waived their arbitrary deductions, and released my entire pending commission with agreed interest. Outstanding legal expertise for commercial recovery.';
 
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -168,7 +168,7 @@ const jsonLd = {
         {
           '@type': 'ListItem',
           position: 4,
-          name: 'Draft an advocate-vetted statutory demand notice citing Sections 73, 219 & 221 of the Indian Contract Act 1872, Order 37 CPC, and Commercial Courts Act',
+          name: 'Draft a fact-verified statutory demand notice citing Sections 73, 219 & 221 of the Indian Contract Act 1872, Order 37 CPC, and Commercial Courts Act',
         },
         {
           '@type': 'ListItem',
@@ -183,7 +183,7 @@ const jsonLd = {
       '@type': 'Product',
       name: 'Legal Notice to Company for Unpaid Commission & Sales Incentives',
       description:
-        'Advocate-drafted statutory demand notice service for sales professionals, channel partners, brokers, and freelance consultants to recover unpaid commissions, retention overrides, and performance incentives from companies across India.',
+        'Fact-verified statutory demand notice service for sales professionals, channel partners, brokers, and freelance consultants to recover unpaid commissions, retention overrides, and performance incentives from companies across India.',
       brand: {
         '@type': 'Organization',
         name: 'Legal Recovery',
@@ -259,7 +259,7 @@ export default function CommissionNotPaidByCompanyClient() {
 
   const shareUrl = encodeURIComponent(pageUrl);
   const shareText = encodeURIComponent(
-    'Company refusing to pay your earned sales commission or incentives? Send an advocate-vetted statutory legal notice for rapid recovery in India! #LegalNotice #UnpaidCommission #DebtRecovery'
+    'Company refusing to pay your earned sales commission or incentives? Send a fact-verified statutory legal notice for rapid recovery in India! #LegalNotice #UnpaidCommission #DebtRecovery'
   );
 
   return (
@@ -434,7 +434,7 @@ export default function CommissionNotPaidByCompanyClient() {
                     Quick Answer
                   </h2>
                   <p className="text-sm text-slate-700 font-medium leading-relaxed">
-                    A commercial agent, freelance consultant, broker, or sales professional can serve an advocate-drafted statutory legal notice to a company for unpaid commission under{' '}
+                    A commercial agent, freelance consultant, broker, or sales professional can serve a fact-verified statutory legal notice to a company for unpaid commission under{' '}
                     <span className="font-semibold text-slate-800">
                       Section 73 and Section 219 of the Indian Contract Act, 1872
                     </span>
@@ -706,7 +706,7 @@ export default function CommissionNotPaidByCompanyClient() {
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      An advocate-drafted statutory demand notice must be structured with clinical precision, articulating factual chronology and statutory recitals to withstand judicial scrutiny:
+                      A fact-verified statutory demand notice must be structured with clinical precision, articulating factual chronology and statutory recitals to withstand judicial scrutiny:
                     </p>
 
                     <div className="space-y-4">
@@ -765,8 +765,8 @@ export default function CommissionNotPaidByCompanyClient() {
                       {[
                         {
                           step: 'Stage 1',
-                          title: 'Advocate-Vetted Statutory Notice Served via Hybrid Channels',
-                          desc: 'The notice is prepared on the advocate\'s official letterhead, digitally signed under Section 5 of the Information Technology Act, 2000, and served simultaneously via India Post Speed Post with AD, verified company email, and WhatsApp with delivery tracking.',
+                          title: 'Fact-Verified Statutory Notice Served via Hybrid Channels',
+                          desc: 'The notice is prepared by our team after fact verification and served simultaneously via India Post Speed Post with AD, verified company email, and WhatsApp with delivery tracking.',
                         },
                         {
                           step: 'Stage 2',
@@ -776,7 +776,7 @@ export default function CommissionNotPaidByCompanyClient() {
                         {
                           step: 'Stage 3',
                           title: 'Fast-Track Summary Suit (Order 37 CPC) or Commercial Court Filing',
-                          desc: 'In the event of default, our panel advocates file an Order 37 summary recovery petition in civil court or initiate mandatory Section 12A DLSA mediation followed by commercial suit filing.',
+                          desc: 'In the event of default, our team files an Order 37 summary recovery petition in civil court or initiate mandatory Section 12A DLSA mediation followed by commercial suit filing.',
                         },
                         {
                           step: 'Stage 4',
@@ -945,7 +945,7 @@ export default function CommissionNotPaidByCompanyClient() {
                   <p className="text-sm text-slate-650 leading-relaxed mb-6">
                     Legal Recovery is India&apos;s trusted online legal notice and dispute resolution
                     platform, connecting sales executives, channel partners, brokers, businesses,
-                    and professionals with seasoned panel advocates for rapid, advocate-vetted statutory
+                    and professionals with our fact-verifying team for rapid, fact-verified statutory
                     demand notices at transparent flat fees. With ₹100 Crore+ recovered and 10,000+
                     cases resolved across India, Legal Recovery delivers verified legal impact
                     without the delays and unpredictability of traditional law firms.
@@ -986,7 +986,7 @@ export default function CommissionNotPaidByCompanyClient() {
                   Company Withholding Your Commission?
                 </h3>
                 <p className="text-slate-300 text-xs leading-relaxed mb-4">
-                  Send an advocate-vetted statutory notice today. 74% of companies settle unpaid commission
+                  Send a fact-verified statutory notice today. 74% of companies settle unpaid commission
                   and partner dues within 15 days upon receiving formal notice from Legal Recovery.
                 </p>
                 <button
@@ -996,7 +996,7 @@ export default function CommissionNotPaidByCompanyClient() {
                   Draft &amp; Send Notice Now
                 </button>
                 <p className="text-center text-slate-400 text-[10px] mt-3">
-                  Flat fee • Advocate-drafted • Sent same day
+                  Flat fee • Fact-verified • Sent same day
                 </p>
               </div>
 
@@ -1051,7 +1051,7 @@ export default function CommissionNotPaidByCompanyClient() {
                 {[
                   { stat: '74%', label: 'Companies settle prior to commercial court litigation' },
                   { stat: '₹100CR+', label: 'Total amount recovered for clients across India' },
-                  { stat: 'Same Day', label: 'Advocate notice drafted and dispatched' },
+                  { stat: 'Same Day', label: 'Notice prepared and dispatched' },
                   { stat: 'Flat Fee', label: 'Transparent pricing with no hidden charges' },
                 ].map((item, i) => (
                   <div key={i} className="flex items-center justify-between py-2 border-b border-slate-50 last:border-0">

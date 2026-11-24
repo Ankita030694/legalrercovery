@@ -315,8 +315,8 @@ export default function ErpMilestoneRecoveryPage() {
           {
             "@type": "HowToStep",
             position: 4,
-            name: "Issue 15-Day Advocate Demand Notice & Section 43B(h) Tax Intimation",
-            text: "Deliver an advocate-drafted statutory demand notice invoking MSMED Act 3x RBI compound interest and notifying the debtor's Chief Financial Officer of impending corporate income tax expense disallowance under Section 43B(h).",
+            name: "Issue 15-Day Fact-Verified Demand Notice & Section 43B(h) Tax Intimation",
+            text: "Deliver a fact-verified statutory demand notice invoking MSMED Act 3x RBI compound interest and notifying the debtor's Chief Financial Officer of impending corporate income tax expense disallowance under Section 43B(h).",
           },
           {
             "@type": "HowToStep",

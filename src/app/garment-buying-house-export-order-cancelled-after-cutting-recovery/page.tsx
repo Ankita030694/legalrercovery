@@ -154,7 +154,7 @@ export default function GarmentBuyingHouseRecoveryPage() {
         "@type": "HowToStep",
         position: 4,
         name: "Serve Joint Statutory Demand Notice Under Section 230",
-        text: "Issue an advocate demand notice to the Indian liaison buying house entity and overseas principal under Section 230 Indian Contract Act and Section 15 of MSMED Act.",
+        text: "Issue a fact-verified demand notice to the Indian liaison buying house entity and overseas principal under Section 230 Indian Contract Act and Section 15 of MSMED Act.",
       },
       {
         "@type": "HowToStep",

@@ -56,7 +56,7 @@ export default function ReeferFreightRecoveryCTA({
                     Test 1 Live Overdue Case Now (₹{basePrice})
                   </p>
                   <p className="text-xs text-slate-300 leading-relaxed mb-4">
-                    Advocate-drafted 15-Day Statutory Freight Demand Notice under Carriage by Road Act Section 10/12 exceptions and Supreme Court Raman Iron Foundry precedent. Served via Speed Post RPAD, WhatsApp &amp; Email with cryptographic BSA 2023 Section 63 telemetry proofs.
+                    Fact-verified 15-Day Statutory Freight Demand Notice under Carriage by Road Act Section 10/12 exceptions and Supreme Court Raman Iron Foundry precedent. Served via Speed Post RPAD, WhatsApp &amp; Email with cryptographic BSA 2023 Section 63 telemetry proofs.
                   </p>
                 </div>
 

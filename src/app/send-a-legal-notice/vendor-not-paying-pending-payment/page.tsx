@@ -4,7 +4,7 @@ import VendorNotPayingPendingPaymentClient from './VendorNotPayingPendingPayment
 const slug = 'send-a-legal-notice/vendor-not-paying-pending-payment';
 const title = 'Legal Notice for Vendor Not Paying Pending Dues India';
 const description =
-  'Client not paying pending vendor dues? Send an advocate-drafted legal notice under the MSMED Act to recover unpaid commercial invoices.';
+  'Client not paying pending vendor dues? Send a fact-verified legal notice under the MSMED Act to recover unpaid commercial invoices.';
 const url = `https://www.legalrecovery.in/${slug}`;
 const ogImage = `/images/og/vendor-not-paying-pending-payment.jpg`;
 

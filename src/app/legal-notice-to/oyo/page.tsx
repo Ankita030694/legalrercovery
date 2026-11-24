@@ -155,12 +155,12 @@ const FAQS = [
   {
     question: "Can I take OYO (Oravel Stays Ltd) to Consumer Court (e-Jagriti)?",
     answer:
-      "Yes. Under Section 35 of the Consumer Protection Act, 2019, any consumer can file an online consumer complaint on the government's e-Jagriti portal against Oravel Stays Limited for service deficiency or unfair trade practice. District consumer commissions routinely award 100% refund of the booking amount, reimbursement of emergency hotel expenses, 9% to 12% interest, and damages of ₹15,000 to ₹35,000 for mental harassment. Serving a 15-day advocate legal notice beforehand is the established pre-litigation step.",
+      "Yes. Under Section 35 of the Consumer Protection Act, 2019, any consumer can file an online consumer complaint on the government's e-Jagriti portal against Oravel Stays Limited for service deficiency or unfair trade practice. District consumer commissions routinely award 100% refund of the booking amount, reimbursement of emergency hotel expenses, 9% to 12% interest, and damages of ₹15,000 to ₹35,000 for mental harassment. Serving a 15-day fact-verified legal notice beforehand is the established pre-litigation step.",
   },
   {
     question: "OYO se refund nahi mila ya room check-in nahi mila toh legal notice kaise bheje?",
     answer:
-      "Agar OYO cancellation ke baad refund bank account mein na bheje, wallet coins force kare, ya hotel par check-in deny kar de, toh aap Oravel Stays Limited ke Corporate Office par ek formal statutory advocate legal notice bhej sakte hain. LegalRecovery.in par verified advocates Consumer Protection Act 2019 aur E-Commerce Rules 2020 ke tehat Registered Speed Post aur official email se notice draft aur serve karte hain, jismein 15 din ka strict payment demand diya jata hai.",
+      "Agar OYO cancellation ke baad refund bank account mein na bheje, wallet coins force kare, ya hotel par check-in deny kar de, toh aap Oravel Stays Limited ke Corporate Office par ek formal statutory fact-verified legal notice bhej sakte hain. LegalRecovery.in par hamari team Consumer Protection Act 2019 aur E-Commerce Rules 2020 ke tehat Registered Speed Post aur official email se fact-verified notice tayyar karke bhejti hai, jismein 15 din ka strict payment demand diya jata hai.",
   },
 ];
 
@@ -680,13 +680,13 @@ export default function OyoLegalNoticePage() {
                     </span>
                     <div className="space-y-1 sm:space-y-1.5">
                       <h3 className="text-sm sm:text-base md:text-lg font-bold text-slate-900">
-                        Serve a Formal Statutory Advocate Legal Demand Notice
+                        Serve a Formal Statutory Fact-Verified Legal Demand Notice
                       </h3>
                       <p className="text-xs sm:text-sm leading-relaxed">
-                        When administrative follow-ups fail, have an advocate issue an official statutory legal demand notice to Oravel Stays Limited (Registered Office: New Delhi / Gurugram). Dispatched via Registered Speed Post with postal tracking and served via Section 63 BSA electronic mail, the notice invokes Section 2(11) and Section 2(47) of the CPA 2019, demanding full booking refund, emergency hotel cost reimbursement, 18% penal interest, and compensation within a mandatory 15-day window.
+                        When administrative follow-ups fail, issue an official statutory legal demand notice to Oravel Stays Limited (Registered Office: New Delhi / Gurugram). Dispatched via Registered Speed Post with postal tracking and served via Section 63 BSA electronic mail, the notice invokes Section 2(11) and Section 2(47) of the CPA 2019, demanding full booking refund, emergency hotel cost reimbursement, 18% penal interest, and compensation within a mandatory 15-day window.
                       </p>
                       <p className="text-xs text-slate-500 font-medium">
-                        View transparent advocate drafting fees on our <Link href="/legal-notice-charges" className="text-blue-700 underline">legal notice charges</Link> page.
+                        View transparent notice drafting fees on our <Link href="/legal-notice-charges" className="text-blue-700 underline">legal notice charges</Link> page.
                       </p>
                     </div>
                   </li>
@@ -828,11 +828,11 @@ export default function OyoLegalNoticePage() {
                       <strong>The Deadlock:</strong> Vikramaditya arrived at the hotel property at 11:15 PM following a delayed flight. The hotel desk manager refused to check him in, asserting that the property had cut ties with OYO two weeks earlier over unpaid commission dues, and that all available rooms had been booked out to walk-in corporate guests. When Vikramaditya called OYO customer care, the support executive kept him on hold for 45 minutes before suggesting an alternate property in Whitefield—over 22 kilometres away. Left stranded near midnight, Vikramaditya was forced to check into a nearby business hotel for ₹11,200 out of pocket. OYO subsequently refused his refund request, claiming the booking was marked &quot;Guest No-Show&quot;.
                     </p>
                     <p>
-                      <strong>The Statutory Action:</strong> Vikramaditya engaged LegalRecovery.in. An advocate drafted and dispatched a formal statutory legal demand notice to Oravel Stays Limited (Registered Office: Worldmark 1, Aerocity, New Delhi &amp; Gurugram). The notice detailed the check-in refusal, attached CCTV and reception desk audio recordings, submitted the ₹11,200 emergency hotel tax invoice, and invoked Section 2(11) and Section 2(47) of the Consumer Protection Act, 2019 along with Rule 5 of the E-Commerce Rules, 2020.
+                      <strong>The Statutory Action:</strong> Vikramaditya engaged LegalRecovery.in. The team verified the facts and dispatched a formal statutory legal demand notice to Oravel Stays Limited (Registered Office: Worldmark 1, Aerocity, New Delhi &amp; Gurugram). The notice detailed the check-in refusal, attached CCTV and reception desk audio recordings, submitted the ₹11,200 emergency hotel tax invoice, and invoked Section 2(11) and Section 2(47) of the Consumer Protection Act, 2019 along with Rule 5 of the E-Commerce Rules, 2020.
                     </p>
                     <div className="p-3.5 sm:p-4 bg-emerald-950/70 border border-emerald-700/60 rounded-xl text-emerald-200">
                       <strong className="block text-emerald-400 font-bold mb-1">The Outcome:</strong>
-                      On Day 9 following delivery of the advocate legal notice via Registered Speed Post and official legal email, OYO&apos;s Legal and Consumer Grievance Cell contacted Vikramaditya. To avert punitive proceedings before the Bengaluru District Consumer Forum, Oravel Stays Ltd executed a full electronic bank reversal of the ₹6,800 booking fee, reimbursed the ₹11,200 emergency replacement hotel invoice in full, and paid ₹20,000 as agreed compensation for nocturnal harassment and travel distress.
+                      On Day 9 following delivery of the fact-verified legal notice via Registered Speed Post and official legal email, OYO&apos;s Legal and Consumer Grievance Cell contacted Vikramaditya. To avert punitive proceedings before the Bengaluru District Consumer Forum, Oravel Stays Ltd executed a full electronic bank reversal of the ₹6,800 booking fee, reimbursed the ₹11,200 emergency replacement hotel invoice in full, and paid ₹20,000 as agreed compensation for nocturnal harassment and travel distress.
                     </div>
                   </div>
                 </div>

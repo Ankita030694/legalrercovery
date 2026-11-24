@@ -89,7 +89,7 @@ const STATUTORY_MATRIX = [
     remedy: "ECGC Policy Default Intimation & Clause C.24 Mandatory Legal Notice",
     statute: "ECGC Single Buyer / Multi-Buyer Export Credit Insurance Policy Terms",
     timing: "Mandatory default declaration within 30–60 days of due date (or non-acceptance of bill of exchange)",
-    mechanism: "Serve formal advocate legal notice on overseas defaulting buyer; file declaration of default with ECGC to preserve 80%–90% commercial risk indemnity cover",
+    mechanism: "Serve formal fact-verified legal notice on overseas defaulting buyer; file declaration of default with ECGC to preserve 80%–90% commercial risk indemnity cover",
     relief: "Validates claim settlement for unaccepted shipments (subject to contract frustration terms) and indemnifies exporter against resale losses",
     suitability: "Exporters holding valid ECGC Comprehensive Export Credit policies where buyer refuses to retire sight or usance collection documents",
     tone: "slate",
@@ -191,7 +191,7 @@ export default function ForeignBuyerCadDpAbandonedContainerPage() {
           },
           {
             "@type": "HowToStep",
-            name: "Hour 24–48: Serve Formal Advocate Legal Notice for Default & Demurrage Indemnity",
+            name: "Hour 24–48: Serve Formal Fact-Verified Legal Notice for Default & Demurrage Indemnity",
             text: "Serve statutory legal demand on foreign buyer detailing container demurrage liabilities, carrier indemnity, and giving 48 hours to retire documents before title is transferred.",
           },
           {

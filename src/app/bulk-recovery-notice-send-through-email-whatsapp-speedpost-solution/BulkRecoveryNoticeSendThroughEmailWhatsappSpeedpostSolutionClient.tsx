@@ -22,11 +22,11 @@ const faqs = [
   },
   {
     question: "What is the legal limitation period to initiate recovery of unpaid dues for business in India?",
-    answer: "The statutory limitation period for recovering commercial invoice debts in India is three years from the date the invoice becomes overdue or the delivery of goods is completed, as prescribed under Article 14 and Article 15 of the Limitation Act, 1963. Any written acknowledgment of debt, balance confirmation, or partial bank transfer by the debtor restarts the limitation clock for an additional three-year period under Section 18 and Section 19 of the Act. Dispatching an advocate-drafted legal notice before the three-year window closes crystallizes the creditor's claims and halts defenses based on limitation."
+    answer: "The statutory limitation period for recovering commercial invoice debts in India is three years from the date the invoice becomes overdue or the delivery of goods is completed, as prescribed under Article 14 and Article 15 of the Limitation Act, 1963. Any written acknowledgment of debt, balance confirmation, or partial bank transfer by the debtor restarts the limitation clock for an additional three-year period under Section 18 and Section 19 of the Act. Dispatching a fact-verified legal notice before the three-year window closes crystallizes the creditor's claims and halts defenses based on limitation."
   },
   {
     question: "How does a business handle bulk recovery across dozens of defaulting commercial clients without excessive legal fees?",
-    answer: "Businesses handle bulk recovery cost-effectively by utilizing automated legal tech platforms that standardize advocate-drafted demand notices and consolidate postal dispatches. Batching multiple delinquent corporate accounts into a single synchronized workflow reduces per-notice legal expenditure by up to 80% compared to traditional law firm retainers. This unified process enables enterprises to economically pursue smaller delinquent invoices that would otherwise be written off as unviable bad debts."
+    answer: "Businesses handle bulk recovery cost-effectively by utilizing automated legal tech platforms that standardize fact-verified demand notices and consolidate postal dispatches. Batching multiple delinquent corporate accounts into a single synchronized workflow reduces per-notice legal expenditure by up to 80% compared to traditional law firm retainers. This unified process enables enterprises to economically pursue smaller delinquent invoices that would otherwise be written off as unviable bad debts."
   },
   {
     question: "What immediate legal escalation steps follow if a commercial debtor ignores the multi-channel legal notice?",
@@ -132,7 +132,7 @@ const jsonLd = {
         {
           "@type": "ListItem",
           "position": 2,
-          "name": "Draft Advocate-Vetted Demand Notices with Statutory Interest"
+          "name": "Draft Fact-Verified Demand Notices with Statutory Interest"
         },
         {
           "@type": "ListItem",
@@ -255,7 +255,7 @@ export default function BulkRecoveryNoticeSendThroughEmailWhatsappSpeedpostSolut
               Bulk Recovery Notice via Email, WhatsApp &amp; Speed Post <span className="text-[#DC2626]">for Business</span>
             </h1>
             <p className="text-sm md:text-xl mb-8 md:mb-12 max-w-3xl mx-auto text-slate-300 leading-relaxed font-medium">
-              Overcome debtor evasion and recover overdue commercial receivables fast. Deploy advocate-drafted statutory demand notices simultaneously across Email, WhatsApp, and India Post Speed Post.
+              Overcome debtor evasion and recover overdue commercial receivables fast. Deploy fact-verified statutory demand notices simultaneously across Email, WhatsApp, and India Post Speed Post.
             </p>
             <button
               onClick={() => setIsPaymentModalOpen(true)}
@@ -363,7 +363,7 @@ export default function BulkRecoveryNoticeSendThroughEmailWhatsappSpeedpostSolut
                 <div id="quick-answer" className="bg-slate-50 border-l-4 border-[#DC2626] p-6 rounded-r-2xl">
                   <h2 className="text-sm font-extrabold text-slate-900 mb-2 uppercase tracking-wide">Quick Answer</h2>
                   <p className="text-sm text-slate-700 font-medium leading-relaxed">
-                    Recovery of unpaid dues for business requires commercial creditors to initiate formal statutory action by serving an advocate-drafted demand notice concurrently across Email, WhatsApp, and India Post Speed Post. This multi-channel notice gives the corporate debtor a strict 15-day ultimatum to clear the outstanding principal plus accrued interest before legal escalation commences. If the defaulting enterprise refuses settlement, the business can immediately initiate summary proceedings under Order 37 of the Code of Civil Procedure, file for conciliation under Section 18 of the MSMED Act, or lodge a complaint under Section 138 of the Negotiable Instruments Act for bounced cheques.
+                    Recovery of unpaid dues for business requires commercial creditors to initiate formal statutory action by serving a fact-verified demand notice concurrently across Email, WhatsApp, and India Post Speed Post. This multi-channel notice gives the corporate debtor a strict 15-day ultimatum to clear the outstanding principal plus accrued interest before legal escalation commences. If the defaulting enterprise refuses settlement, the business can immediately initiate summary proceedings under Order 37 of the Code of Civil Procedure, file for conciliation under Section 18 of the MSMED Act, or lodge a complaint under Section 138 of the Negotiable Instruments Act for bounced cheques.
                   </p>
                 </div>
 
@@ -380,7 +380,7 @@ export default function BulkRecoveryNoticeSendThroughEmailWhatsappSpeedpostSolut
                       Relying on informal communication channels produces diminishing returns against seasoned commercial defaulters. In the corporate ecosystem, delinquent buyers deliberately exploit administrative delays, turnover in accounts payable departments, and jurisdictional distances to avoid settling legitimate business obligations. A critical flaw in conventional debt recovery is the reliance on isolated, single-channel communication. Sending only an informal email allows the debtor to claim the message was relegated to junk folders; sending only an isolated postal envelope allows company directors to instruct security staff to refuse service; and sending only an uncertified WhatsApp message invites procedural challenges regarding device ownership and message tampering.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      Under Indian commercial jurisprudence, establishing undisputed service of a formal legal notice is the prerequisite foundation for all subsequent judicial remedies. When businesses suffer defaults across dozens of counterparties simultaneously, standard law firm retainers prove cost-prohibitive, often demanding ₹15,000 to ₹35,000 per notice. The solution demands an industrial-scale, legally compliant multi-channel workflow: delivering advocate-vetted demand notices across Email, WhatsApp, and India Post Speed Post concurrently to enforce the recovery of unpaid dues for business.
+                      Under Indian commercial jurisprudence, establishing undisputed service of a formal legal notice is the prerequisite foundation for all subsequent judicial remedies. When businesses suffer defaults across dozens of counterparties simultaneously, standard law firm retainers prove cost-prohibitive, often demanding ₹15,000 to ₹35,000 per notice. The solution demands an industrial-scale, legally compliant multi-channel workflow: delivering fact-verified demand notices across Email, WhatsApp, and India Post Speed Post concurrently to enforce the recovery of unpaid dues for business.
                     </p>
                   </div>
                 </section>
@@ -424,7 +424,7 @@ export default function BulkRecoveryNoticeSendThroughEmailWhatsappSpeedpostSolut
                       </div>
                     </div>
                     <p className="text-sm md:text-base leading-relaxed">
-                      This tri-channel pressure fundamentally alters the debtor&apos;s risk calculation. When an executive receives an advocate-drafted statutory demand across their personal phone, corporate email, and corporate reception desk in the same 24-hour cycle, the default transitions from an overlooked accounting line item into an urgent corporate liability demanding executive intervention. Data from over 10,000 corporate cases indicates that tri-channel legal notice delivery resolves over 78% of commercial invoice defaults within the initial 15-day ultimatum without requiring court appearances.
+                      This tri-channel pressure fundamentally alters the debtor&apos;s risk calculation. When an executive receives a fact-verified statutory demand across their personal phone, corporate email, and corporate reception desk in the same 24-hour cycle, the default transitions from an overlooked accounting line item into an urgent corporate liability demanding executive intervention. Data from over 10,000 corporate cases indicates that tri-channel legal notice delivery resolves over 78% of commercial invoice defaults within the initial 15-day ultimatum without requiring court appearances.
                     </p>
                   </div>
                 </section>
@@ -596,7 +596,7 @@ export default function BulkRecoveryNoticeSendThroughEmailWhatsappSpeedpostSolut
                       <div className="flex items-start space-x-4">
                         <div className="bg-[#DC2626] text-white rounded-full w-8 h-8 flex items-center justify-center shrink-0 font-black text-sm">2</div>
                         <div>
-                          <h4 className="font-extrabold text-sm sm:text-base text-slate-900 mb-1">Draft Advocate-Vetted Demand Notices with Statutory Interest</h4>
+                          <h4 className="font-extrabold text-sm sm:text-base text-slate-900 mb-1">Draft Fact-Verified Demand Notices with Statutory Interest</h4>
                           <p className="text-xs sm:text-sm text-slate-650 leading-relaxed">
                             Draft individualized legal notices on an advocate&apos;s official letterhead, incorporating exact invoice breakdowns, interest computations under Section 16 MSMED Act or commercial contractual terms, and explicit pre-litigation warnings.
                           </p>
@@ -657,7 +657,7 @@ export default function BulkRecoveryNoticeSendThroughEmailWhatsappSpeedpostSolut
 
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      For a bulk commercial demand notice to carry decisive legal weight and preclude technical defenses in court, the drafting advocate must incorporate several non-negotiable structural elements:
+                      For a bulk commercial demand notice to carry decisive legal weight and preclude technical defenses in court, the notice must incorporate several non-negotiable structural elements:
                     </p>
                     <ul className="list-disc list-inside text-sm md:text-base text-slate-650 space-y-2">
                       <li><strong>Advocate Letterhead &amp; Enrolment Details:</strong> Issued on official advocate stationery with verified Bar Council enrollment credentials.</li>
@@ -691,7 +691,7 @@ export default function BulkRecoveryNoticeSendThroughEmailWhatsappSpeedpostSolut
                         <strong>Day 1 to 15 (Notice Window):</strong> Notice delivered across Email, WhatsApp, and Speed Post. Debtor reviews legal exposure and assesses potential damage to business credit scores and corporate reputation.
                       </p>
                       <p className="text-xs md:text-sm text-slate-700">
-                        <strong>Day 16 to 30 (Settlement or Filing):</strong> If amicable conciliation fails, advocate prepares Section 65B / Section 63 evidentiary affidavits and prepares formal plaint under Order 37 CPC or MSEFC conciliation petition.
+                        <strong>Day 16 to 30 (Settlement or Filing):</strong> If amicable conciliation fails, the next step is Section 65B / Section 63 evidentiary affidavits and a formal plaint under Order 37 CPC or MSEFC conciliation petition.
                       </p>
                       <p className="text-xs md:text-sm text-slate-700">
                         <strong>Day 31 onwards (Judicial Action):</strong> Summary summons served upon the debtor. In summary proceedings, debtor must deposit security or demonstrate a genuine dispute before being allowed to defend the action.
@@ -772,7 +772,7 @@ export default function BulkRecoveryNoticeSendThroughEmailWhatsappSpeedpostSolut
                 <span className="text-[10px] font-black uppercase tracking-widest text-[#DC2626] mb-2 block">Enterprise Solution</span>
                 <h3 className="text-base font-black mb-3">Send Bulk Recovery Notice</h3>
                 <p className="text-gray-400 mb-5 text-[11px] leading-relaxed">
-                  Fast-track business dues recovery. Upload delinquent invoices, get advocate-vetted drafting, and dispatch simultaneous notices via Email, WhatsApp, and India Post Speed Post.
+                  Fast-track business dues recovery. Submit delinquent invoice details, get fact-verified notices, and dispatch simultaneous notices via Email, WhatsApp, and India Post Speed Post.
                 </p>
                 <button
                   onClick={() => setIsPaymentModalOpen(true)}
@@ -780,7 +780,7 @@ export default function BulkRecoveryNoticeSendThroughEmailWhatsappSpeedpostSolut
                 >
                   Start Notice Intake
                 </button>
-                <p className="text-[10px] text-gray-500 text-center">Fast turnaround • High Court panel advocates</p>
+                <p className="text-[10px] text-gray-500 text-center">Fast turnaround • Fact-verified notices</p>
               </div>
 
               {/* Client Reviews UI Block (Exact 100% match with Schema JSON-LD) */}
@@ -821,7 +821,7 @@ export default function BulkRecoveryNoticeSendThroughEmailWhatsappSpeedpostSolut
               </Link>
               <Link href="/send-a-legal-notice" className="group block p-6 rounded-2xl bg-white border border-slate-200 hover:border-[#DC2626] hover:shadow-md transition-all">
                 <h3 className="text-sm font-bold text-slate-900 group-hover:text-[#DC2626] mb-2">All Legal Notice Solutions</h3>
-                <p className="text-xs text-slate-500 line-clamp-2">Explore our full suite of advocate-drafted statutory notices for recovery, employment, cheque bounce, and contract disputes.</p>
+                <p className="text-xs text-slate-500 line-clamp-2">Explore our full suite of fact-verified statutory notices for recovery, employment, cheque bounce, and contract disputes.</p>
               </Link>
               <Link href="/how-to-file-consumer-complaint-india" className="group block p-6 rounded-2xl bg-white border border-slate-200 hover:border-[#DC2626] hover:shadow-md transition-all">
                 <h3 className="text-sm font-bold text-slate-900 group-hover:text-[#DC2626] mb-2">Consumer Forum Complaint Filing</h3>
@@ -845,7 +845,7 @@ export default function BulkRecoveryNoticeSendThroughEmailWhatsappSpeedpostSolut
                 <img src="/lrlogo.svg" alt="Legal Recovery" width={3236} height={601} className="h-8 sm:h-10 w-auto object-contain" />
               </div>
               <p className="text-sm md:text-base text-slate-600 leading-relaxed mb-10 max-w-3xl font-medium">
-                Legal Recovery is India&apos;s trusted legal-tech platform for commercial debt recovery, consumer dispute resolution, and statutory legal notices. Founded in 2022 and headquartered in New Delhi, Legal Recovery has counselled over 15,000+ businesses and individuals, recovering more than ₹100 Crores in delinquent dues. We combine automated legal workflows with vetted high-court panel advocates to resolve commercial disputes swiftly without expensive, drawn-out litigation.
+                Legal Recovery is India&apos;s trusted legal-tech platform for commercial debt recovery, consumer dispute resolution, and statutory legal notices. Founded in 2022 and headquartered in New Delhi, Legal Recovery has counselled over 15,000+ businesses and individuals, recovering more than ₹100 Crores in delinquent dues. We combine automated legal workflows with fact verification by our team to resolve commercial disputes swiftly without expensive, drawn-out litigation.
               </p>
 
               <div className="border-t border-slate-100 pt-10">

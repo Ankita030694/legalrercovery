@@ -12,7 +12,7 @@ const faqs = [
   {
     question: 'Can a landlord send a legal notice to recover money from a tenant who damaged commercial or residential property in India?',
     answer:
-      'Yes, a commercial or residential property owner can issue an advocate-drafted statutory legal notice under Section 108(m) and Section 108(o) of the Transfer of Property Act, 1882, read with Section 73 of the Indian Contract Act, 1872, demanding full reimbursement for structural damages, defaced fixtures, and restoration costs exceeding the security deposit. The statutory notice formally itemizes the dilapidations, attaches independent civil engineering survey reports or repair invoices, and grants the defaulting tenant a 15-day peremptory window to disburse the outstanding funds. Serving this formal demand establishes an indispensable evidentiary baseline before instituting a commercial recovery suit or summary debt recovery proceeding under Order 37 of the Code of Civil Procedure, 1908.',
+      'Yes, a commercial or residential property owner can issue a fact-verified statutory legal notice under Section 108(m) and Section 108(o) of the Transfer of Property Act, 1882, read with Section 73 of the Indian Contract Act, 1872, demanding full reimbursement for structural damages, defaced fixtures, and restoration costs exceeding the security deposit. The statutory notice formally itemizes the dilapidations, attaches independent civil engineering survey reports or repair invoices, and grants the defaulting tenant a 15-day peremptory window to disburse the outstanding funds. Serving this formal demand establishes an indispensable evidentiary baseline before instituting a commercial recovery suit or summary debt recovery proceeding under Order 37 of the Code of Civil Procedure, 1908.',
   },
   {
     question: 'What is the legal difference between "reasonable wear and tear" and actionable tenant property damage?',
@@ -27,7 +27,7 @@ const faqs = [
   {
     question: 'What is the statutory limitation period for filing a property damage recovery suit against an ex-tenant in India?',
     answer:
-      'Under Article 55 and Article 113 of the Limitation Act, 1963, the statutory limitation period to serve a legal notice and institute a civil suit for damages arising from breach of a lease contract or property destruction is exactly three years from the date the damage occurred or when the tenancy was terminated and possession handed over. Property owners must issue a formal advocate demand notice promptly following the joint exit inspection to avoid procedural delays or evidentiary dissipation. Serving a statutory notice with an itemized valuer schedule also provides conclusive documentary proof of the date of demand and formal crystallization of actionable debt.',
+      'Under Article 55 and Article 113 of the Limitation Act, 1963, the statutory limitation period to serve a legal notice and institute a civil suit for damages arising from breach of a lease contract or property destruction is exactly three years from the date the damage occurred or when the tenancy was terminated and possession handed over. Property owners must issue a formal legal demand notice promptly following the joint exit inspection to avoid procedural delays or evidentiary dissipation. Serving a statutory notice with an itemized valuer schedule also provides conclusive documentary proof of the date of demand and formal crystallization of actionable debt.',
   },
   {
     question: 'Can commercial landlords file a fast-track suit under the Commercial Courts Act, 2015 for tenant property dilapidations?',
@@ -163,7 +163,7 @@ const jsonLd = {
         {
           '@type': 'ListItem',
           position: 3,
-          name: 'Draft an advocate-vetted statutory legal notice citing Section 108(m)/(o) of the Transfer of Property Act 1882, Section 73 of the Contract Act, and BNS provisions',
+          name: 'Draft a fact-verified statutory legal notice citing Section 108(m)/(o) of the Transfer of Property Act 1882, Section 73 of the Contract Act, and BNS provisions',
         },
         {
           '@type': 'ListItem',
@@ -183,7 +183,7 @@ const jsonLd = {
       '@type': 'Product',
       name: 'Legal Notice to Tenant for Property Damage & Dilapidations Recovery',
       description:
-        'Advocate-drafted statutory demand notice service for commercial and residential landlords to recover property damage, unauthorized alterations, restoration expenses, and consequential rental loss from defaulting tenants across India.',
+        'Fact-verified statutory demand notice service for commercial and residential landlords to recover property damage, unauthorized alterations, restoration expenses, and consequential rental loss from defaulting tenants across India.',
       brand: {
         '@type': 'Organization',
         name: 'Legal Recovery',
@@ -259,7 +259,7 @@ export default function RecoverMoneyFromTenantWhoDamagedPropertyClient() {
 
   const shareUrl = encodeURIComponent(pageUrl);
   const shareText = encodeURIComponent(
-    'Tenant damaged your commercial or residential property? Send an advocate-vetted statutory legal notice to recover repair costs & lost rent in India! #PropertyDamage #LegalNotice #LandlordRights'
+    'Tenant damaged your commercial or residential property? Send a fact-verified statutory legal notice to recover repair costs & lost rent in India! #PropertyDamage #LegalNotice #LandlordRights'
   );
 
   return (
@@ -452,7 +452,7 @@ export default function RecoverMoneyFromTenantWhoDamagedPropertyClient() {
                     Quick Answer
                   </h2>
                   <p className="text-sm text-slate-700 font-medium leading-relaxed">
-                    A commercial or residential landlord can serve an advocate-vetted statutory legal notice to a defaulting tenant for property damage under{' '}
+                    A commercial or residential landlord can serve a fact-verified statutory legal notice to a defaulting tenant for property damage under{' '}
                     <strong className="text-slate-900 font-semibold">
                       Section 108(m) and Section 108(o) of the Transfer of Property Act, 1882
                     </strong>{' '}
@@ -1043,8 +1043,8 @@ export default function RecoverMoneyFromTenantWhoDamagedPropertyClient() {
                   </div>
                   <p className="text-sm text-slate-650 leading-relaxed mb-6">
                     Legal Recovery is India&apos;s trusted online legal notice and dispute resolution
-                    platform, connecting commercial landlords, property managers, individual lessors,
-                    and businesses with seasoned panel advocates for rapid, advocate-vetted statutory
+                    platform, helping commercial landlords, property managers, individual lessors,
+                    and businesses get rapid, fact-verified statutory
                     demand notices at transparent flat fees. With ₹100 Crore+ recovered and 10,000+
                     cases resolved across India, Legal Recovery delivers verified legal impact
                     without the delays and unpredictability of traditional law firms.
@@ -1085,7 +1085,7 @@ export default function RecoverMoneyFromTenantWhoDamagedPropertyClient() {
                   Tenant Damaged Your Property?
                 </h3>
                 <p className="text-slate-300 text-xs leading-relaxed mb-4">
-                  Send an advocate-vetted statutory notice today. Over 74% of defaulting tenants settle repair costs and rental deficits within 15 days upon receiving formal notice from Legal Recovery.
+                  Send a fact-verified statutory notice today. Over 74% of defaulting tenants settle repair costs and rental deficits within 15 days upon receiving formal notice from Legal Recovery.
                 </p>
                 <button
                   onClick={() => setIsPaymentModalOpen(true)}
@@ -1094,7 +1094,7 @@ export default function RecoverMoneyFromTenantWhoDamagedPropertyClient() {
                   Draft &amp; Send Notice Now
                 </button>
                 <p className="text-center text-slate-400 text-[10px] mt-3">
-                  Flat fee • Advocate-drafted • Sent same day
+                  Flat fee • Fact-verified • Sent same day
                 </p>
               </div>
 
@@ -1149,7 +1149,7 @@ export default function RecoverMoneyFromTenantWhoDamagedPropertyClient() {
                 {[
                   { stat: '74%', label: 'Defaulting tenants settle prior to civil litigation' },
                   { stat: '₹100CR+', label: 'Total amount recovered for property owners across India' },
-                  { stat: 'Same Day', label: 'Advocate notice drafted and dispatched' },
+                  { stat: 'Same Day', label: 'Legal notice drafted and dispatched' },
                   { stat: 'Flat Fee', label: 'Transparent pricing with no hidden charges' },
                 ].map((item, i) => (
                   <div key={i} className="flex items-center justify-between py-2 border-b border-slate-50 last:border-0">

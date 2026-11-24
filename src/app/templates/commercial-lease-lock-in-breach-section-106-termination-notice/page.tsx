@@ -162,7 +162,7 @@ export default function CommercialLeaseTerminationPage() {
           "@id": `${SITE_URL}/templates/commercial-lease-lock-in-breach-section-106-termination-notice`,
         },
         headline:
-          "Advocate-Drafted Commercial Lease Termination (Section 106 TPA), Lock-In Rent, CAM & Unpaid 194-I TDS Recovery Notice Format",
+          "Fact-Verified Commercial Lease Termination (Section 106 TPA), Lock-In Rent, CAM & Unpaid 194-I TDS Recovery Notice Format",
         description:
           "Downloadable commercial landlord legal notice template covering rent arrears, CAM/DG bills, missing Form 26AS TDS, lock-in CapEx clawback & penal holdover mesne profits.",
         url: `${SITE_URL}/templates/commercial-lease-lock-in-breach-section-106-termination-notice`,
@@ -193,7 +193,7 @@ export default function CommercialLeaseTerminationPage() {
         "@type": "CreativeWork",
         "@id": `${SITE_URL}/templates/commercial-lease-lock-in-breach-section-106-termination-notice#creativework`,
         name: "Commercial Lease Section 106 Termination & Lock-In Rent Recovery Notice Template",
-        headline: "Advocate-Vetted Commercial Tenancy Legal Notice Formats (Word / PDF / Copy)",
+        headline: "Ready-to-Use Commercial Tenancy Legal Notice Formats (Word / PDF / Copy)",
         author: {
           "@type": "Person",
           name: "Anuj Anand Malik",
@@ -262,7 +262,7 @@ export default function CommercialLeaseTerminationPage() {
 
           {/* Exact Verbatim H1 (Matches ARTICLE_SCHEMA.headline verbatim) */}
           <h1 className="text-2xl sm:text-3xl md:text-5xl font-black tracking-tight text-white leading-tight mb-4 sm:mb-6 break-words">
-            Advocate-Drafted Commercial Lease Termination (Section 106 TPA), Lock-In Rent, CAM &amp; Unpaid 194-I TDS Recovery Notice Format
+            Fact-Verified Commercial Lease Termination (Section 106 TPA), Lock-In Rent, CAM &amp; Unpaid 194-I TDS Recovery Notice Format
           </h1>
 
           {/* Executive Statutory Summary Box (Includes parent Hub link in first 250 words) */}
@@ -277,7 +277,7 @@ export default function CommercialLeaseTerminationPage() {
             >
               Builders, Commercial Landlords &amp; Co-Working Institutional Recovery Hub
             </Link>
-            , consumer eviction notices fail because they omit 18% GST on commercial rent (SAC 997212), Section 194-I TDS reconciliation under Section 205 IT Act, unamortized fit-out CapEx clawbacks under Contract Act Section 74, double-rent mesne profits under CPC Section 2(12), and Order XV-A summary defense-striking petitions. Use our advocate-vetted workspace below to generate complete, court-ready notice drafts.
+            , consumer eviction notices fail because they omit 18% GST on commercial rent (SAC 997212), Section 194-I TDS reconciliation under Section 205 IT Act, unamortized fit-out CapEx clawbacks under Contract Act Section 74, double-rent mesne profits under CPC Section 2(12), and Order XV-A summary defense-striking petitions. Use our ready-to-use workspace below to generate complete, court-ready notice drafts.
           </div>
 
           {/* Hero 4-Card Key Metrics Strip */}

@@ -40,7 +40,7 @@ const SPECIALTY_SCENARIOS: SpecialtyScenario[] = [
           "Immediately record electronic audit trail of follicular monitoring, egg pick-up (OPU) embryology records, and embryo grading sheets under BSA 2023 s.63. Notify patient in writing that lab storage continues under statutory custody while milestone dues remain payable.",
       },
       {
-        step: "Day 7 Post-Default: Dispatch Tri-Channel Advocate Notice (Email + WhatsApp + RPAD)",
+        step: "Day 7 Post-Default: Dispatch Tri-Channel Fact-Verified Notice (Email + WhatsApp + RPAD)",
         detail:
           "Serve a 15-day statutory demand citing ART Act non-guarantee disclosures and Section 73 Contract Act, warning of Section 25 PSS Act / Section 138 NI Act prosecution against both spouses.",
       },
@@ -69,7 +69,7 @@ const SPECIALTY_SCENARIOS: SpecialtyScenario[] = [
           "Under the terms of the signed agreement, failure to pay any single installment accelerates the entire remaining treatment balance. Send formal clinical notification that remote orthodontic monitoring is paused until dues are cleared.",
       },
       {
-        step: "15-Day Advocate Notice & CIBIL/Legal Notice Dispatch",
+        step: "15-Day Fact-Verified Notice & CIBIL/Legal Notice Dispatch",
         detail:
           "Issue a formal legal notice demanding the full accelerated balance plus 18% p.a. commercial interest, noting that the clinic has fully performed its upfront manufacturing obligations.",
       },
@@ -93,7 +93,7 @@ const SPECIALTY_SCENARIOS: SpecialtyScenario[] = [
           "Secure original cheque return memo with reason 'Payment Stopped by Drawer' or 'Insufficient Funds.' Note exact return date to preserve the non-negotiable 30-day statutory notice limitation.",
       },
       {
-        step: "Within 30 Days: Serve Advocate Demand Notice Under Section 138(b)",
+        step: "Within 30 Days: Serve Fact-Verified Demand Notice Under Section 138(b)",
         detail:
           "Dispatch statutory demand notice via Registered Speed Post RPAD and email/WhatsApp. Clearly separate the exact cheque amount from ancillary clinical charges to comply with the Suman Sethi doctrine.",
       },

@@ -27,7 +27,7 @@ export default function CoachingFranchiseCTA({ className = "" }: CoachingFranchi
                 Test 1 Live Overdue Case Now
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm leading-relaxed mb-5">
-                &rupee;{basePrice} &middot; Advocate Drafted (Franchise Royalty, Section 21 Arbitration, IP Cease-and-Desist, or MoE 2024 Pro-Rata Fee Notice) &middot; Dispatched via Email + WhatsApp + Speed Post RPAD.
+                &rupee;{basePrice} &middot; Fact-Verified (Franchise Royalty, Section 21 Arbitration, IP Cease-and-Desist, or MoE 2024 Pro-Rata Fee Notice) &middot; Dispatched via Email + WhatsApp + Speed Post RPAD.
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-3">

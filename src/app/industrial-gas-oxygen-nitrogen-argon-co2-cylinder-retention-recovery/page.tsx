@@ -221,7 +221,7 @@ const HOWTO_SCHEMA = {
       "@type": "HowToStep",
       position: 2,
       name: "Serve Dual PESO + BNS s.316 Recall Notice",
-      text: "Dispatch a tri-channel Advocate Notice (RPAD, Email, WhatsApp) demanding 7-day cylinder return, daily rent, and unpaid gas bills—copying any suspected rogue refiller.",
+      text: "Dispatch a tri-channel Fact-Verified Notice (RPAD, Email, WhatsApp) demanding 7-day cylinder return, daily rent, and unpaid gas bills—copying any suspected rogue refiller.",
     },
     {
       "@type": "HowToStep",
@@ -828,7 +828,7 @@ export default function IndustrialGasCylinderRecoveryPage() {
                     Notice Workspace (P1)
                   </p>
                   <p className="text-sm font-bold text-slate-900">
-                    Advocate-Vetted Commercial Notice &amp; Reply Template
+                    Ready-to-Use Commercial Notice &amp; Reply Template
                   </p>
                 </Link>
                 <Link

@@ -172,7 +172,7 @@ const HOWTO_SCHEMA = {
       "@type": "HowToStep",
       position: 2,
       name: "Stage 2: Contract Act s.213 Accounting Demand",
-      text: "Serve a 15-day advocate notice demanding student-wise foreign university remittance dates, FX credit advices, and specific clawback debit notes.",
+      text: "Serve a 15-day fact-verified notice demanding student-wise foreign university remittance dates, FX credit advices, and specific clawback debit notes.",
     },
     {
       "@type": "HowToStep",

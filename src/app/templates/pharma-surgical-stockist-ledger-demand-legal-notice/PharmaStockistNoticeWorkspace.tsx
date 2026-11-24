@@ -301,7 +301,7 @@ A copy of this Legal Notice is retained in my office along with the postal recei
 Dated: ${formData.noticeDate}
 Place: ${formData.advocateOffice.split(",").slice(-2)[0]?.trim() || "New Delhi"}
 
-[ADVOCATE SIGNATURE & SEAL]
+[FACT VERIFICATION & SEAL]
 ${formData.advocateName}, Advocate
 Counsel for the Creditor`;
   }, [formData]);

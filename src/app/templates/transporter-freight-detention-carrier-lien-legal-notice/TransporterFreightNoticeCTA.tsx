@@ -46,7 +46,7 @@ export default function TransporterFreightNoticeCTA({
                 Track 1 &bull; Single Consignment / Bilty Freight Notice
               </span>
               <p className="text-lg sm:text-xl font-extrabold text-white mb-2">
-                Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Advocate Drafted &middot; Email + WhatsApp + Speed Post RPAD)
+                Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Fact-Verified &middot; Email + WhatsApp + Speed Post RPAD)
               </p>
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
                 Issue a battle-tested statutory legal notice against defaulting consignors, consignees, or 3PL aggregators. Quantifies base freight under GR/Bilty, telematics-verified GPS vehicle detention charges, rejects unilateral transit damage debit notes under *Raman Iron Foundry*, and intimates lawful possessory lien under Section 171 Contract Act.

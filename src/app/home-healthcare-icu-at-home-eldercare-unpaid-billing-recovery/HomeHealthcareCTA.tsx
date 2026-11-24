@@ -23,10 +23,10 @@ export default function HomeHealthcareCTA({ className = "" }: HomeHealthcareCTAP
               Track 1 &bull; Single Home-ICU / Eldercare Claim Test
             </span>
             <p className="text-lg sm:text-xl font-extrabold text-white mb-2">
-              Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Advocate Drafted &middot; Email + WhatsApp + Speed Post RPAD)
+              Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Fact-Verified &middot; Email + WhatsApp + Speed Post RPAD)
             </p>
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-              Serve an advocate-vetted, high-impact 15-day statutory demand notice on a defaulting family, overseas NRI sponsor, or unreturned medical equipment custodian. Itemizes unpaid shift nursing rosters, biometric clinical logs, ventilator rental demurrage, and statutory interest under Contract Act s.73 and BNS s.316.
+              Serve a fact-verified, high-impact 15-day statutory demand notice on a defaulting family, overseas NRI sponsor, or unreturned medical equipment custodian. Itemizes unpaid shift nursing rosters, biometric clinical logs, ventilator rental demurrage, and statutory interest under Contract Act s.73 and BNS s.316.
             </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-3">

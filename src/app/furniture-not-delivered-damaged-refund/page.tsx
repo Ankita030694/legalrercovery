@@ -121,7 +121,7 @@ const SCENARIOS = [
     statutoryOdds: "92% Recovery Success Rate",
     badgeColor: "bg-emerald-100 text-emerald-800 border-emerald-200",
     legalGround: "Section 2(11) CPA 2019 (Deficiency in Service) & Rule 5(3)(b) CPA E-Commerce Rules 2020",
-    solution: "Send a formal time-revocation notice. If delivery is not completed within 48 hours, cancel the contract and demand an immediate 100% bank refund. Escalate via advocate legal notice.",
+    solution: "Send a formal time-revocation notice. If delivery is not completed within 48 hours, cancel the contract and demand an immediate 100% bank refund. Escalate via fact-verified legal notice.",
   },
   {
     id: "scenario-damaged",
@@ -194,7 +194,7 @@ const FAQS = [
   {
     question: "How do I file a damaged furniture delivery complaint against Pepperfry, Urban Ladder, or a local showroom?",
     answer:
-      "First, document the defect immediately: shoot a continuous unboxing video and high-resolution photos highlighting all cracks, dents, and misalignment. Second, file a formal complaint with the merchant's nodal grievance officer via email within 24 to 48 hours, referencing your order ID. If the brand fails to replace the item or process a refund within 7 days, register a dispute on the National Consumer Helpline (NCH 1915) and have an advocate serve a formal statutory legal demand notice.",
+      "First, document the defect immediately: shoot a continuous unboxing video and high-resolution photos highlighting all cracks, dents, and misalignment. Second, file a formal complaint with the merchant's nodal grievance officer via email within 24 to 48 hours, referencing your order ID. If the brand fails to replace the item or process a refund within 7 days, register a dispute on the National Consumer Helpline (NCH 1915) and serve a formal statutory legal demand notice.",
   },
   {
     question: "What legal recourse do I have if a modular kitchen contractor takes an advance and leaves work incomplete?",
@@ -214,7 +214,7 @@ const FAQS = [
   {
     question: "How does an advocate legal notice accelerate furniture store refunds before going to court?",
     answer:
-      "Over 85% of retail furniture and modular kitchen disputes resolve at the legal notice stage. A formal statutory notice drafted by a licensed advocate and dispatched via Registered Speed Post signals that the consumer is prepared to initiate prosecution under CPA 2019 and e-Jagriti. It exposes company directors to legal costs, punitive interest, and public consumer forum judgments, prompting corporate legal desks to authorise immediate bank refunds.",
+      "Over 85% of retail furniture and modular kitchen disputes resolve at the legal notice stage. A formal statutory notice prepared on verified facts and dispatched via Registered Speed Post signals that the consumer is prepared to initiate prosecution under CPA 2019 and e-Jagriti. It exposes company directors to legal costs, punitive interest, and public consumer forum judgments, prompting corporate legal desks to authorise immediate bank refunds.",
   },
 ];
 
@@ -556,7 +556,7 @@ export default function FurnitureRefundPage() {
 
               {/* Mid-Page Call to Action */}
               <div className="py-2">
-                <FurnitureNoticeCTA buttonText="Draft Advocate Notice for Furniture Refund" />
+                <FurnitureNoticeCTA buttonText="Draft Fact-Verified Notice for Furniture Refund" />
               </div>
 
               {/* Section 5: Step-by-Step Resolution Rail */}
@@ -628,10 +628,10 @@ export default function FurnitureRefundPage() {
                     </span>
                     <div className="space-y-1 text-xs sm:text-sm">
                       <h3 className="font-bold text-slate-900 text-sm sm:text-base">
-                        Serve a Statutory Advocate Demand Notice (Physical Speed Post + Digital BSA 63)
+                        Serve a Statutory Fact-Verified Demand Notice (Physical Speed Post + Digital BSA 63)
                       </h3>
                       <p className="text-slate-600 leading-relaxed">
-                        If the brand refuses a refund or ignores NCH within 7 days, have an advocate issue a formal legal demand notice. Dispatched via India Post Registered Speed Post to the registered corporate office and digitally transmitted via email and WhatsApp with delivery confirmation certificates. If the vendor is an aggregator or home-service company, compare with our{" "}
+                        If the brand refuses a refund or ignores NCH within 7 days, issue a formal legal demand notice. Dispatched via India Post Registered Speed Post to the registered corporate office and digitally transmitted via email and WhatsApp with delivery confirmation certificates. If the vendor is an aggregator or home-service company, compare with our{" "}
                         <Link
                           href="/legal-notice-to/urban-company"
                           className="font-bold text-red-600 hover:text-red-700 hover:underline"
@@ -839,7 +839,7 @@ export default function FurnitureRefundPage() {
                   </p>
 
                   <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
-                    <strong>Action Taken: </strong>Arvind engaged LegalRecovery.in. An advocate drafted a formal statutory demand notice citing Section 2(11) of the Consumer Protection Act, 2019, Section 73 of the Contract Act, and Section 41 of the Sale of Goods Act. The notice itemised the unboxing video evidence, site photographs, and WhatsApp chat transcripts with delivery managers. The notice demanded immediate cancellation, carting away of dumped materials, and a full refund of ₹1,30,000 plus ₹25,000 food-ordering displacement compensation within 15 days.
+                    <strong>Action Taken: </strong>Arvind engaged LegalRecovery.in. The team verified the facts and prepared a formal statutory demand notice citing Section 2(11) of the Consumer Protection Act, 2019, Section 73 of the Contract Act, and Section 41 of the Sale of Goods Act. The notice itemised the unboxing video evidence, site photographs, and WhatsApp chat transcripts with delivery managers. The notice demanded immediate cancellation, carting away of dumped materials, and a full refund of ₹1,30,000 plus ₹25,000 food-ordering displacement compensation within 15 days.
                   </p>
 
                   <div className="p-4 bg-emerald-50 border border-emerald-200 rounded-xl space-y-1">
@@ -943,7 +943,7 @@ export default function FurnitureRefundPage() {
                 </div>
 
                 <div className="p-4 bg-slate-100 rounded-xl text-xs text-slate-600 leading-relaxed">
-                  <strong>Platform Scope &amp; Honest Limitations: </strong>LegalRecovery provides advocate drafting, digital BSA 63 transmission by email and WhatsApp, optional Speed Post, and consumer forum documentation. We do not provide physical carpenter repairs or pursue unverified cash-only transactions devoid of tax receipts. For disputes involving property utility damage during fit-out, review our{" "}
+                  <strong>Platform Scope &amp; Honest Limitations: </strong>LegalRecovery provides notice drafting, digital BSA 63 transmission by email and WhatsApp, optional Speed Post, and consumer forum documentation. We do not provide physical carpenter repairs or pursue unverified cash-only transactions devoid of tax receipts. For disputes involving property utility damage during fit-out, review our{" "}
                   <Link
                     href="/templates/wrong-electricity-bill-complaint-application"
                     className="font-bold text-red-600 hover:underline"

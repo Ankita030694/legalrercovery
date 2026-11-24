@@ -60,7 +60,7 @@ const articleJsonLd = {
   "@type": "Article",
   "headline": "Taking Flipkart to Task: Refund, Return-Pickup and Wrong-Item Remedies",
   "description":
-    "Flipkart refund missing, pickup delayed or return rejected? Escalation ladder, e-commerce rule deadlines and a lawyer-drafted notice to Flipkart.",
+    "Flipkart refund missing, pickup delayed or return rejected? Escalation ladder, e-commerce rule deadlines and a fact-verified notice to Flipkart.",
   "inLanguage": "en-IN",
   "mainEntityOfPage": `${SITE_URL}/flipkart-return-refund-complaint`,
   "datePublished": "2026-11-02T10:00:00+05:30",
@@ -205,7 +205,7 @@ export default function FlipkartRefundComplaintPage() {
                 Taking Flipkart to Task: Refund, Return-Pickup and Wrong-Item Remedies
               </h1>
               <p className="text-slate-300 text-sm sm:text-base md:text-lg leading-relaxed mb-6 font-normal">
-                Flipkart refund missing, pickup delayed or return rejected? Escalation ladder, e-commerce rule deadlines and a lawyer-drafted notice to Flipkart.
+                Flipkart refund missing, pickup delayed or return rejected? Escalation ladder, e-commerce rule deadlines and a fact-verified notice to Flipkart.
               </p>
               <div className="flex flex-wrap items-center gap-4 text-xs sm:text-sm text-slate-400 pt-2 border-t border-slate-800">
                 <span>
@@ -1009,7 +1009,7 @@ export default function FlipkartRefundComplaintPage() {
                       What LegalRecovery Can Do
                     </h3>
                     <ul className="space-y-2 text-xs sm:text-sm text-emerald-900/90 leading-relaxed">
-                      <li>• Draft an advocate notice establishing Rule 5(3) fallback liability against Flipkart and the merchant.</li>
+                      <li>• Draft a fact-verified notice establishing Rule 5(3) fallback liability against Flipkart and the merchant.</li>
                       <li>• Dispatch the notice to Flipkart&apos;s Bengaluru headquarters via Registered Speed Post with tracking.</li>
                       <li>• Provide official delivery tracking proof and Section 63 BSA electronic service compliance.</li>
                       <li>• Structure the legal grounds and documentary dossier required to file on e-Jagriti.</li>
@@ -1155,7 +1155,7 @@ export default function FlipkartRefundComplaintPage() {
                   href="/send-legal-notice-online-india"
                   className="text-[#DC2626] hover:underline font-medium"
                 >
-                  Serving a lawyer-drafted online legal notice
+                  Serving a fact-verified online legal notice
                 </Link>
               </div>
 

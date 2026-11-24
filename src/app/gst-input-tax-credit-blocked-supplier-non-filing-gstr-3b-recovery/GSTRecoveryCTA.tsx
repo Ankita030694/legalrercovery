@@ -37,7 +37,7 @@ export default function GSTRecoveryCTA({
               Vendor Pocketed 18% GST &amp; Skipped GSTR-3B? Trigger Immediate Tax Deposit or Cash Refund
             </h3>
             <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6 max-w-3xl">
-              Do not let defaulting suppliers destroy your working capital and trigger DRC-01 audit demands. Serve an Advocate Demand Notice warning of CGST Section 76 statutory deposit, Section 122 penalties, Section 132 criminal prosecution, and contractual indemnity recovery under Section 124 of the Indian Contract Act.
+              Do not let defaulting suppliers destroy your working capital and trigger DRC-01 audit demands. Serve a Fact-Verified Demand Notice warning of CGST Section 76 statutory deposit, Section 122 penalties, Section 132 criminal prosecution, and contractual indemnity recovery under Section 124 of the Indian Contract Act.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
@@ -56,7 +56,7 @@ export default function GSTRecoveryCTA({
                     Test 1 Defaulting Vendor Notice (₹{basePrice})
                   </p>
                   <p className="text-xs text-slate-300 leading-relaxed mb-4">
-                    High Court advocate-drafted demand notice citing CGST Act Section 76, Section 16(2)(c), Section 122, and Contract Act Section 124 indemnity. Simultaneous service via Email, WhatsApp &amp; Speed Post RPAD with BSA Section 63 electronic delivery certificate.
+                    High Court fact-verified demand notice citing CGST Act Section 76, Section 16(2)(c), Section 122, and Contract Act Section 124 indemnity. Simultaneous service via Email, WhatsApp &amp; Speed Post RPAD with BSA Section 63 electronic delivery certificate.
                   </p>
                 </div>
 
@@ -122,7 +122,7 @@ export default function GSTRecoveryCTA({
                 <span className="w-2 h-2 rounded-full bg-[#DC2626]" />
                 Bharatiya Sakshya Adhiniyam (BSA 2023) §63 Electronic Admissibility Certificate
               </span>
-              <span>Fast 24-48h Advocate Dispatch</span>
+              <span>Fast 24-48h Dispatch</span>
             </div>
           </div>
         ) : (
@@ -132,7 +132,7 @@ export default function GSTRecoveryCTA({
                 Facing GSTR-2B Mismatches or DRC-01 SCN for Vendor Default?
               </p>
               <p className="text-xs text-slate-300">
-                Serve a formal High Court advocate legal notice citing CGST Section 76 &amp; Contract Act indemnity.
+                Serve a formal High Court fact-verified legal notice citing CGST Section 76 &amp; Contract Act indemnity.
               </p>
             </div>
             <div className="flex flex-wrap items-center gap-2.5 shrink-0">

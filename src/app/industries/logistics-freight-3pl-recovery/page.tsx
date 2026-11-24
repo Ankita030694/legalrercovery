@@ -257,7 +257,7 @@ const STATUTORY_MANDATES = [
     holding:
       "Statutory carrier/bailee Particular Lien under Section 170 protects withholding cargo strictly for freight due on that exact consignment. Detaining a fresh ₹50 Lakh shipment to recover older ledger arrears without an explicit General Lien clause printed on the Goods Receipt (Bilty) and Forwarding Note risks criminal breach of trust or wrongful restraint allegations.",
     impact:
-      "Always pair GR General Lien wording with a formal 48-hour advocate Lien Intimation Notice.",
+      "Always pair GR General Lien wording with a formal 48-hour Lien Intimation Notice.",
   },
   {
     title: "No Unilateral Set-Off of Unliquidated Damage Against Admitted Freight",
@@ -370,7 +370,7 @@ const FAQS = [
   {
     question: "Can a transport company or courier aggregator test LegalRecovery with one overdue Bilty before bulk CSV upload?",
     answer:
-      "Yes. Track 1 lets any fleet owner, CHA, or 3PL finance lead pilot a single live overdue invoice, detention claim, or Carrier Lien notice for ₹999 via Email, WhatsApp, and Speed Post RPAD. Once you verify the advocate drafting and BSA s.63 delivery trail, Track 2 lets you onboard 10 to 10,000+ overdue seller wallets or Bilty ledgers via CSV in the Representees workspace.",
+      "Yes. Track 1 lets any fleet owner, CHA, or 3PL finance lead pilot a single live overdue invoice, detention claim, or Carrier Lien notice for ₹999 via Email, WhatsApp, and Speed Post RPAD. Once you verify the notice drafting and BSA s.63 delivery trail, Track 2 lets you onboard 10 to 10,000+ overdue seller wallets or Bilty ledgers via CSV in the Representees workspace.",
   },
 ];
 
@@ -920,7 +920,7 @@ export default function LogisticsFreight3plRecoveryHubPage() {
                     },
                     {
                       num: "03",
-                      title: "24–48 Hour Tri-Channel Advocate Dispatch",
+                      title: "24–48 Hour Tri-Channel Dispatch",
                       desc: "Serve Lien Intimation, Section 222 CHA Indemnity, or Section 43B(h) MSME demand via Email, WhatsApp, and Speed Post RPAD.",
                     },
                     {

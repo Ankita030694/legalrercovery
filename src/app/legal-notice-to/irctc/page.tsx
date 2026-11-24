@@ -155,12 +155,12 @@ const FAQS = [
   {
     question: "Can I take IRCTC to Consumer Court (e-Jagriti) for withholding a ticket refund?",
     answer:
-      "Yes. Under Section 35 of the Consumer Protection Act, 2019, any passenger can file an online consumer complaint on the government's e-Jagriti portal against IRCTC and Indian Railways for deficiency of service. Consumer commissions routinely award 100% refund of the ticket fare, 9% to 12% annual interest, mental harassment damages (₹10,000 to ₹25,000), and litigation costs. Serving a 15-day advocate legal notice beforehand is the established pre-litigation step that often resolves the matter without a hearing.",
+      "Yes. Under Section 35 of the Consumer Protection Act, 2019, any passenger can file an online consumer complaint on the government's e-Jagriti portal against IRCTC and Indian Railways for deficiency of service. Consumer commissions routinely award 100% refund of the ticket fare, 9% to 12% annual interest, mental harassment damages (₹10,000 to ₹25,000), and litigation costs. Serving a 15-day fact-verified legal notice beforehand is the established pre-litigation step that often resolves the matter without a hearing.",
   },
   {
     question: "IRCTC refund bank account mein nahi aaya ya TDR reject ho gaya toh legal notice kaise bheje?",
     answer:
-      "Agar IRCTC cancellation ke baad ya failed transaction par aapka refund bank account mein na bheje, ya Zonal Railway bina thos saboot TDR reject kar de, toh aap ek formal statutory legal notice bhej sakte hain. LegalRecovery.in par verified advocate Railway Refund Rules 2015 aur Consumer Protection Act 2019 ke tehat IRCTC Corporate Office (New Delhi) aur Zonal Railway General Manager par Registered Speed Post aur email se notice bhejte hain, jismein 15 din ka payment demand diya jata hai.",
+      "Agar IRCTC cancellation ke baad ya failed transaction par aapka refund bank account mein na bheje, ya Zonal Railway bina thos saboot TDR reject kar de, toh aap ek formal statutory legal notice bhej sakte hain. LegalRecovery.in par hamari team Railway Refund Rules 2015 aur Consumer Protection Act 2019 ke tehat IRCTC Corporate Office (New Delhi) aur Zonal Railway General Manager par Registered Speed Post aur email se fact-verified notice bhejti hai, jismein 15 din ka payment demand diya jata hai.",
   },
 ];
 
@@ -680,7 +680,7 @@ export default function IrctcLegalNoticePage() {
                     </span>
                     <div className="space-y-1 sm:space-y-1.5">
                       <h3 className="text-sm sm:text-base md:text-lg font-bold text-slate-900">
-                        Serve a Formal Statutory Advocate Legal Demand Notice
+                        Serve a Formal Statutory Fact-Verified Legal Demand Notice
                       </h3>
                       <p className="text-xs sm:text-sm leading-relaxed">
                         When administrative escalation yields no reversal within 30 days, engage an advocate to issue a statutory demand notice to IRCTC Corporate Office (Statesman House, Barakhamba Road, New Delhi) and the General Manager of the concerned Zonal Railway. Dispatched via Registered Speed Post and Section 63 BSA electronic mail, the notice demands 100% fare reimbursement, 18% penal interest, and compensation within a strict 15-day window.
@@ -828,11 +828,11 @@ export default function IrctcLegalNoticePage() {
                       <strong>The Deadlock:</strong> 40 minutes before the rescheduled departure, Rajeshwar logged into the IRCTC portal and filed an online TDR citing: <em>&quot;Train Late More Than 3 Hours and Passenger Not Travelled&quot;</em>. 85 days later, IRCTC repudiated his TDR with the one-line remark: <em>&quot;Rejected: Chart verified, passenger assumed travelled as per Zonal Railway remarks.&quot;</em> Repeated follow-ups via care@irctc.co.in were met with automated deflection.
                     </p>
                     <p>
-                      <strong>The Statutory Action:</strong> Rajeshwar engaged LegalRecovery.in. An advocate drafted and dispatched an official statutory demand notice to the Group General Manager, IRCTC (Barakhamba Road, New Delhi) and the General Manager, Northern Railway (Baroda House, New Delhi). The notice invoked Rule 8 of Railway Passengers Refund Rules, 2015, and Section 2(11) of the Consumer Protection Act, 2019, giving a strict 15-day demand for refund plus interest.
+                      <strong>The Statutory Action:</strong> Rajeshwar engaged LegalRecovery.in. The team verified the facts and dispatched an official statutory demand notice to the Group General Manager, IRCTC (Barakhamba Road, New Delhi) and the General Manager, Northern Railway (Baroda House, New Delhi). The notice invoked Rule 8 of Railway Passengers Refund Rules, 2015, and Section 2(11) of the Consumer Protection Act, 2019, giving a strict 15-day demand for refund plus interest.
                     </p>
                     <div className="p-3.5 sm:p-4 bg-emerald-950/70 border border-emerald-700/60 rounded-xl text-emerald-200">
                       <strong className="block text-emerald-400 font-bold mb-1">The Outcome:</strong>
-                      On Day 11 following delivery of the advocate legal notice, the Commercial Department of Northern Railway reopened the TDR docket, verified the TTE electronic chart confirming berths were vacant, and instructed IRCTC to release the funds. The full fare of ₹8,460 was credited directly to Rajeshwar&apos;s SBI account, along with an official letter of regret from IRCTC Corporate Office.
+                      On Day 11 following delivery of the fact-verified legal notice, the Commercial Department of Northern Railway reopened the TDR docket, verified the TTE electronic chart confirming berths were vacant, and instructed IRCTC to release the funds. The full fare of ₹8,460 was credited directly to Rajeshwar&apos;s SBI account, along with an official letter of regret from IRCTC Corporate Office.
                     </div>
                   </div>
                 </div>

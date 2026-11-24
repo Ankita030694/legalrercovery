@@ -61,7 +61,7 @@ const PROBLEMS: ProblemTab[] = [
       {
         step: "Notice of Breach & Final Opportunity for Restructuring",
         description:
-          "Serve advocate notices outlining statutory liability, prospective salary attachment risk under Order 21 Rule 48 CPC, and offering structured One-Time Settlement (OTS) options within 15 days.",
+          "Serve fact-verified notices outlining statutory liability, prospective salary attachment risk under Order 21 Rule 48 CPC, and offering structured One-Time Settlement (OTS) options within 15 days.",
       },
       {
         step: "Summary Suit or Institutional Arbitration",

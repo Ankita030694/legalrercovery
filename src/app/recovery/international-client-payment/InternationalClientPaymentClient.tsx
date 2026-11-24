@@ -11,7 +11,7 @@ import { PaymentModal } from "@/components/PaymentModal";
 const faqs = [
   {
     question: "What should I do if an international client refuses to pay my invoices?",
-    answer: "Review your contract for governing law and jurisdiction clauses. Send a formal demand letter by email. If ignored, escalate with an advocate-signed international legal notice. You can then pursue international arbitration, commercial mediation, or court litigation."
+    answer: "Review your contract for governing law and jurisdiction clauses. Send a formal demand letter by email. If ignored, escalate with a fact-verified international legal notice. You can then pursue international arbitration, commercial mediation, or court litigation."
   },
   {
     question: "Does Indian law apply to contracts signed with foreign companies?",
@@ -51,7 +51,7 @@ const faqs = [
   },
   {
     question: "How do I serve a legal notice to a company registered outside India?",
-    answer: "An advocate drafts the notice and serves it via verified email and registered international post. Verify the debtor's corporate status through official state registries like Delaware Division of Corporations or UK Companies House."
+    answer: "We draft the notice and serves it via verified email and registered international post. Verify the debtor's corporate status through official state registries like Delaware Division of Corporations or UK Companies House."
   },
   {
     question: "Can I initiate insolvency proceedings under the IBC against a foreign company's Indian subsidiary?",
@@ -125,7 +125,7 @@ const reviewSchema = {
   "@type": "Product",
   "name": "International Client Payment Recovery Services",
   "image": "https://www.legalrecovery.in/og-international-client-payment.png",
-  "description": "Advocate-backed legal assistance for recovering outstanding international client payments, foreign B2B invoices, and cross-border commercial disputes in India.",
+  "description": "Fact-verified legal assistance for recovering outstanding international client payments, foreign B2B invoices, and cross-border commercial disputes in India.",
   "brand": {
     "@type": "Brand",
     "name": "LegalRecovery"
@@ -166,7 +166,7 @@ const reviewSchema = {
         "@type": "Person",
         "name": "Aishwarya Sen"
       },
-      "reviewBody": "A UK client stopped paying our monthly digital marketing retainer, delaying over £8,500. We faced RBI warning letters on our EDPMS tracker. LegalRecovery helped us draft a structured response to our AD bank showing our recovery efforts and served an advocate notice to the UK firm. The UK directors cleared all our outstanding dues immediately."
+      "reviewBody": "A UK client stopped paying our monthly digital marketing retainer, delaying over £8,500. We faced RBI warning letters on our EDPMS tracker. LegalRecovery helped us draft a structured response to our AD bank showing our recovery efforts and served a fact-verified notice to the UK firm. The UK directors cleared all our outstanding dues immediately."
     },
     {
       "@type": "Review",
@@ -202,7 +202,7 @@ const reviewSchema = {
         "@type": "Person",
         "name": "Karthik Gopal"
       },
-      "reviewBody": "A US client bounced their payment transfers and stopped responding to our emails. LegalRecovery helped us locate their registered Delaware corporate address and served an advocate-signed notice. Their legal team responded immediately, setting up a structured payout plan. Highly effective!"
+      "reviewBody": "A US client bounced their payment transfers and stopped responding to our emails. LegalRecovery helped us locate their registered Delaware corporate address and served a fact-verified notice. Their legal team responded immediately, setting up a structured payout plan. Highly effective!"
     },
     {
       "@type": "Review",
@@ -381,7 +381,7 @@ export default function InternationalClientPaymentClient() {
                       When you obtain an arbitral award in India against a foreign company, you can enforce it overseas. Foreign courts in the debtor&apos;s home country will freeze local bank accounts and garnish assets. This global enforceability makes international arbitration a potent remedy.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      Our legal panel manages enforcement petitions in commercial courts and coordinates with overseas advocates. We handle Section 48 challenges and international execution to recover your funds.
+                      Our team manages enforcement petitions in commercial courts and coordinates with overseas advocates. We handle Section 48 challenges and international execution to recover your funds.
                     </p>
                   </div>
                 </section>
@@ -418,7 +418,7 @@ export default function InternationalClientPaymentClient() {
                       Cross-border payment recovery begins with structured pre-litigation escalation. Collect your service contracts, statements of work, timesheets, invoices, and delivery receipts. Send a formal final demand email with full account statements requesting prompt settlement.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      If informal notices are ignored, serve an <strong>Advocate-Signed International Legal Notice</strong>. The notice states contractual facts, details invoice defaults, and calculates interest under the Interest Act 1978. It formally warns of impending international arbitration and civil litigation. Serving this notice also provides necessary evidence for your AD bank.
+                      If informal notices are ignored, serve an <strong>Fact-Verified International Legal Notice</strong>. The notice states contractual facts, details invoice defaults, and calculates interest under the Interest Act 1978. It formally warns of impending international arbitration and civil litigation. Serving this notice also provides necessary evidence for your AD bank.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
                       LegalRecovery drafts customized cross-border notices citing applicable governing laws and international treaties. We serve notices digitally to registered corporate emails and send copies directly to company directors.

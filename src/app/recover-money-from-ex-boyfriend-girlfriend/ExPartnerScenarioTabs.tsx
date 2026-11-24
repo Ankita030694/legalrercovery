@@ -37,7 +37,7 @@ const SCENARIOS: ScenarioTab[] = [
           "Send a calm, single written message on WhatsApp and email outlining the exact principal ledger: dates of transfers, total amount lent, and a 7-day window to confirm repayment schedule before legal escalation.",
       },
       {
-        step: "Dispatch Advocate Statutory Demand Notice",
+        step: "Dispatch Fact-Verified Statutory Demand Notice",
         description:
           "Engage an advocate to issue a formal 15-day statutory legal notice via Registered Speed Post and email under Indian Contract Act and Section 63 BSA, pre-empting frivolous gift claims.",
       },
@@ -66,7 +66,7 @@ const SCENARIOS: ScenarioTab[] = [
       {
         step: "Serve Notice Demanding Strict Proof of Gift",
         description:
-          "Serve a formal advocate notice calling upon the borrower to repay within 15 days, explicitly rejecting the sham 'gift' contention and putting them on notice of summary recovery under Order XXXVII CPC.",
+          "Serve a formal fact-verified notice calling upon the borrower to repay within 15 days, explicitly rejecting the sham 'gift' contention and putting them on notice of summary recovery under Order XXXVII CPC.",
       },
     ],
     statutoryRule: "Section 25 & 70 Contract Act • Section 101/102 Bharatiya Sakshya Adhiniyam, 2023",
@@ -93,7 +93,7 @@ const SCENARIOS: ScenarioTab[] = [
       {
         step: "Demand Asset Surrender or Debt Settlement",
         description:
-          "Serve an advocate notice demanding either the immediate clearance of the outstanding principal balance with bank interest or the physical return of the financed asset within 15 days.",
+          "Serve a fact-verified notice demanding either the immediate clearance of the outstanding principal balance with bank interest or the physical return of the financed asset within 15 days.",
       },
     ],
     statutoryRule: "Sections 70 & 72 Indian Contract Act, 1872 • Section 318 Bharatiya Nyaya Sanhita, 2023",
@@ -147,7 +147,7 @@ const SCENARIOS: ScenarioTab[] = [
       {
         step: "Legal Notice Asserting Oral Agreement & Corroboration",
         description:
-          "Issue a formal advocate notice detailing the cash transaction chronology, withdrawal records, and subsequent text admissions to establish the civil debt.",
+          "Issue a formal fact-verified notice detailing the cash transaction chronology, withdrawal records, and subsequent text admissions to establish the civil debt.",
       },
     ],
     statutoryRule: "Section 10 Contract Act • Section 62 & 63 Bharatiya Sakshya Adhiniyam, 2023",

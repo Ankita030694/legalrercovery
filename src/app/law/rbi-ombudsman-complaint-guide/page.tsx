@@ -1061,7 +1061,7 @@ export default function RbiOmbudsmanComplaintGuidePage() {
                     ))}
                   </ul>
                   <div className="mt-4 pt-3 border-t border-slate-100 text-[11px] text-slate-400">
-                    Last updated: 4 November 2026 • Curated under the Reserve Bank - Integrated Ombudsman Scheme, 2021 (RB-IOS). Note: While LegalRecovery.in assists consumers in serving statutory advocate notices and structuring CMS complaints, complaints before the RBI Ombudsman can be filed directly by consumers free of charge.
+                    Last updated: 4 November 2026 • Curated under the Reserve Bank - Integrated Ombudsman Scheme, 2021 (RB-IOS). Note: While LegalRecovery.in assists consumers in serving statutory fact-verified notices and structuring CMS complaints, complaints before the RBI Ombudsman can be filed directly by consumers free of charge.
                   </div>
                 </div>
               </section>

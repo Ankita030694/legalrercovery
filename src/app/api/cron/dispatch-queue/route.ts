@@ -104,7 +104,7 @@ ${caseDoc.policeStationAddress}
 
 Respected Sir/Madam,
 
-On behalf of our client (Complainant), namely ${clientDisplayName}, we are formally submitting the advocate-backed Criminal Police Complaint against the accused/borrower, ${caseDoc.defaulterName}, for offences of Cheating, Criminal Breach of Trust, and Dishonest Non-Payment under the Bharatiya Nyaya Sanhita (BNS).
+On behalf of our client (Complainant), namely ${clientDisplayName}, we are formally submitting the fact-verified Criminal Police Complaint against the accused/borrower, ${caseDoc.defaulterName}, for offences of Cheating, Criminal Breach of Trust, and Dishonest Non-Payment under the Bharatiya Nyaya Sanhita (BNS).
 
 Respective details of the Complainant & the Accused:
 - Complainant (Client) Name: ${clientDisplayName}
@@ -248,7 +248,7 @@ ${caseDoc.policeStationAddress}
 
 Respected Sir/Madam,
 
-On behalf of our client (Complainant), namely ${clientDisplayName}, we are formally submitting the advocate-backed Criminal Police Complaint against the accused, ${caseDoc.defaulterName}, for offences of Cheating, Criminal Breach of Trust, and Dishonest Non-Payment under the Bharatiya Nyaya Sanhita (BNS).
+On behalf of our client (Complainant), namely ${clientDisplayName}, we are formally submitting the fact-verified Criminal Police Complaint against the accused, ${caseDoc.defaulterName}, for offences of Cheating, Criminal Breach of Trust, and Dishonest Non-Payment under the Bharatiya Nyaya Sanhita (BNS).
 
 Respective details of the Complainant & the Accused:
 - Complainant (Client) Name: ${clientDisplayName}

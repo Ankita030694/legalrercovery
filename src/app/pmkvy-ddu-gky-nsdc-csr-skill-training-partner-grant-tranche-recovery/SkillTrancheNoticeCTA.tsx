@@ -27,7 +27,7 @@ export default function SkillTrancheNoticeCTA({ className = "" }: SkillTrancheNo
                 Test 1 Live Overdue Case Now
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm leading-relaxed mb-5">
-                &rupee;{basePrice} &middot; Advocate Drafted Section 80 CPC / MOU Arbitration / CSR Demand Notice &middot; Dispatched via Email + WhatsApp + Speed Post RPAD with BSA s.63 audit trail.
+                &rupee;{basePrice} &middot; Fact-Verified Section 80 CPC / MOU Arbitration / CSR Demand Notice &middot; Dispatched via Email + WhatsApp + Speed Post RPAD with BSA s.63 audit trail.
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-3">

@@ -31,7 +31,7 @@ export default function EffectiveLegalStrategiesCTA({
                 Recover Defaulted Bank Loans with High-Velocity Legal Notice Deployment
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6">
-                Equip your bank or NBFC with institutional advocate legal notices, Pre-Litigation Lok Adalat docketing, and multi-track enforcement across Section 138 NI Act, Section 25 PSS Act, and SARFAESI Section 13. High-volume ingestion, bar-enrolled drafting, registered India Post dispatches with electronic tracking, and court-admissible BSA 2023 Section 63 delivery certificates.
+                Equip your bank or NBFC with institutional fact-verified legal notices, Pre-Litigation Lok Adalat docketing, and multi-track enforcement across Section 138 NI Act, Section 25 PSS Act, and SARFAESI Section 13. High-volume ingestion, bar-enrolled drafting, registered India Post dispatches with electronic tracking, and court-admissible BSA 2023 Section 63 delivery certificates.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button

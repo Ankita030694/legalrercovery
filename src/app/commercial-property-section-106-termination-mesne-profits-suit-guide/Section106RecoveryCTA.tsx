@@ -25,7 +25,7 @@ export default function Section106RecoveryCTA({
               Track 1 &bull; Single Commercial Tenant Default Test
             </span>
             <p className="text-lg sm:text-xl font-extrabold text-white mb-2">
-              Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Advocate Drafted &middot; Email + WhatsApp + Speed Post RPAD)
+              Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Fact-Verified &middot; Email + WhatsApp + Speed Post RPAD)
             </p>
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
               Serve a rigorous, high-impact 15-day Section 106 TPA termination notice on a defaulting commercial tenant. Incorporates forfeiture under Section 111(g)/(h), demands immediate payment of rent arrears and CAM charges, enforces penal double market rent mesne profits for holding over, and serves notice of Commercial Court / fast-track arbitration under <em>Vidya Drolia</em>.

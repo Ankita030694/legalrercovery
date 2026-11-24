@@ -652,7 +652,7 @@ const ArticleDetail = memo(function ArticleDetail({ blog, faqs, reviews, related
                     <img src="/lrlogo.svg" alt="LegalRecovery" width={3236} height={601} className="h-8 sm:h-10 w-auto object-contain" />
                   </div>
                   <p className="text-sm md:text-base text-slate-600 leading-relaxed mb-8 max-w-3xl font-medium">
-                    Legal Recovery is India&apos;s trusted consumer protection and legal tech platform. We specialize in holding corporations accountable for unfair trade practices, deceptive marketing, and commercial fraud. With over 15,000 customers counselled, our mission is to provide fast, out-of-court resolutions by connecting you with top-tier panel advocates for immediate legal action.
+                    Legal Recovery is India&apos;s trusted consumer protection and legal tech platform. We specialize in holding corporations accountable for unfair trade practices, deceptive marketing, and commercial fraud. With over 15,000 customers counselled, our mission is to provide fast, out-of-court resolutions by preparing and dispatching fact-verified legal notices for immediate action.
                   </p>
 
                   {/* Achievements / Key Metrics Grid */}

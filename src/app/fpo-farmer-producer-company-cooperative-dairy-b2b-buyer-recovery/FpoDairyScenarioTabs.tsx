@@ -28,7 +28,7 @@ const SCENARIOS: ScenarioTab[] = [
       {
         step: "Issue 15-Day Statutory Demand + s.43B(h) Tax Warning",
         detail:
-          "Serve an Advocate Legal Notice to the corporate buyer's Managing Director and CFO highlighting MSMED 3x RBI compound interest and Section 43B(h) tax disallowance.",
+          "Serve a Fact-Verified Legal Notice to the corporate buyer's Managing Director and CFO highlighting MSMED 3x RBI compound interest and Section 43B(h) tax disallowance.",
       },
       {
         step: "Invoke Order XXXVII CPC Summary Suit",

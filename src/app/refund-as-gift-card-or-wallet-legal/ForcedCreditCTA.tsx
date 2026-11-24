@@ -31,7 +31,7 @@ export default function ForcedCreditCTA({
                 Compel the Platform to Remit Trapped Wallet Credits to Your Bank
               </h3>
               <p className="mt-3 text-sm leading-relaxed text-slate-300 sm:text-base">
-                Under the Consumer Protection Act 2019 and RBI PPI Master Directions, e-commerce platforms cannot lock your money inside closed wallets or non-transferable gift cards without affirmative consent. An advocate legal notice establishes unfair trade practice under Section 2(47) and mandates immediate outward bank remittance.
+                Under the Consumer Protection Act 2019 and RBI PPI Master Directions, e-commerce platforms cannot lock your money inside closed wallets or non-transferable gift cards without affirmative consent. A fact-verified legal notice establishes unfair trade practice under Section 2(47) and mandates immediate outward bank remittance.
               </p>
 
               <div className="mt-6 flex flex-wrap items-baseline gap-3">
@@ -39,14 +39,14 @@ export default function ForcedCreditCTA({
                   ₹{basePrice}
                 </span>
                 <span className="text-xs text-slate-400">
-                  fixed fee · advocate drafted · delivered via email &amp; WhatsApp · speed post optional
+                  fixed fee · fact-verified · delivered via email &amp; WhatsApp · speed post optional
                 </span>
               </div>
 
               <div className="mt-4 grid grid-cols-1 gap-2.5 sm:grid-cols-3 text-xs text-slate-300">
                 <div className="flex items-center gap-2">
                   <span className="text-emerald-400">✓</span>
-                  <span>Drafted by experienced consumer lawyers</span>
+                  <span>Fact-verified by our team</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <span className="text-emerald-400">✓</span>
@@ -81,7 +81,7 @@ export default function ForcedCreditCTA({
               Trap-Free Refund: Insist on Your Original Payment Source
             </h4>
             <p className="mt-1 text-xs text-slate-600">
-              Send a lawyer-drafted statutory demand to release wallet credits directly to your bank account for ₹{basePrice}.
+              Send a fact-verified statutory demand to release wallet credits directly to your bank account for ₹{basePrice}.
             </p>
             <div className="mt-4">
               <button

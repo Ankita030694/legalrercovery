@@ -985,7 +985,7 @@ export default function WillfulDefaulterRecoveryPage() {
               {/* Primary CTA Block */}
               <section id="heading-cta-block" aria-labelledby="heading-cta-block-title" className="w-full">
                 <h2 id="heading-cta-block-title" className="sr-only">
-                  Empanel Banking Advocates for Willful Defaulter Recovery
+                  Start Willful Defaulter Recovery
                 </h2>
                 <WillfulDefaulterRecoveryCTA variant="primary" />
               </section>

@@ -158,7 +158,7 @@ const reviewSchema = {
         "@type": "Person",
         "name": "Ruchika Gupta"
       },
-      "reviewBody": "A client gave me a post-dated cheque for ₹3.5 Lakhs that bounced. LegalRecovery's advocate drafted and sent the statutory notice within 10 days of the bounce. The client paid immediately with interest. Highly recommend."
+      "reviewBody": "A client gave me a post-dated cheque for ₹3.5 Lakhs that bounced. LegalRecovery's team verified the facts and sent the statutory notice within 10 days of the bounce. The client paid immediately with interest. Highly recommend."
     },
     {
       "@type": "Review",
@@ -334,7 +334,7 @@ export default function ChequeBounceAmountClient() {
                       The Supreme Court of India has consistently ruled that the objective of Section 138 is to provide a fast recovery mechanism and penalize dishonest transactions. In landmark rulings such as <strong>Dalmia Cement (Bharat) Ltd. v. Galaxy Traders &amp; Agencies Ltd. (2001)</strong>, the apex court clarified that the legislative intent was to enhance the credibility of negotiable instruments and promote efficiency in business activities.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      At LegalRecovery, our legal panel specializes in guiding clients through the complex procedural steps of cheque bounce recoveries. We ensure that your evidence, starting with the Cheque Return Memo, is correctly compiled and that all legal notices are served within the strict timelines mandated by law, maximizing your chances of recovery.
+                      At LegalRecovery, our team specializes in guiding clients through the complex procedural steps of cheque bounce recoveries. We ensure that your evidence, starting with the Cheque Return Memo, is correctly compiled and that all legal notices are served within the strict timelines mandated by law, maximizing your chances of recovery.
                     </p>
                     <div className="bg-red-50 p-6 rounded-2xl border-l-4 border-[#DC2626] italic text-xs sm:text-sm text-red-900 font-semibold leading-relaxed">
                       &quot;A bounced cheque is a criminal offense under Section 138. The law provides strict timelines to initiate legal actions, which, if followed correctly, yield fast-track recovery decrees and compensation.&quot;
@@ -393,7 +393,7 @@ export default function ChequeBounceAmountClient() {
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      A statutory legal notice under Section 138 is a formal, advocate-signed document that serves as the mandatory prelude to criminal litigation. The notice must be drafted carefully to include all essential legal details, as any technical flaw can cause the court to reject your subsequent complaint.
+                      A statutory legal notice under Section 138 is a formal, fact-verified document that serves as the mandatory prelude to criminal litigation. The notice must be drafted carefully to include all essential legal details, as any technical flaw can cause the court to reject your subsequent complaint.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
                       The legal notice must specify:
@@ -532,7 +532,7 @@ export default function ChequeBounceAmountClient() {
                       LegalRecovery is India&apos;s leading tech-enabled legal assistance platform. We combine the expertise of veteran recovery advocates with advanced tracking systems to provide a stress-free, transparent, and highly effective recovery experience.
                     </p>
                     <ul className="list-disc pl-6 space-y-3 text-sm text-slate-650">
-                      <li><strong>Custom Legal Notice:</strong> We do not send generic letters. Our legal panel carefully reviews your UPI transactions, bank records, and chat logs to draft a notice that cites precise legal provisions tailored to your case.</li>
+                      <li><strong>Custom Legal Notice:</strong> We do not send generic letters. Our team carefully reviews your UPI transactions, bank records, and chat logs to draft a notice that cites precise legal provisions tailored to your case.</li>
                       <li><strong>Digital Evidence Certification:</strong> We handle the complex drafting of electronic certificates (under BSA Section 63) to ensure your WhatsApp messages and emails are ready for court.</li>
                       <li><strong>Director & Personal Trackers:</strong> If you lent to a business or if the borrower has a corporate standing, we dispatch notices digitally via email and WhatsApp to their homes and registered offices, maximizing reach and pressure.</li>
                       <li><strong>End-to-End Legal Support:</strong> From sending the first legal notice to representing you in Summary Suits, cheque bounce cases, and filing criminal complaints, our panel of labor and civil advocates handles it all.</li>

@@ -365,7 +365,7 @@ export default function PgHostelRefundClient() {
                     <div>
                       <h4 className="font-bold text-slate-900 mb-1">Serve a Formal Legal Notice</h4>
                       <p className="text-xs md:text-sm text-slate-600 leading-relaxed">
-                        Serve a formal legal notice prepared by an advocate. Demand the refund of the deposit within 15 days of receiving the notice, warning of consumer forum filings.
+                        Serve a formal legal notice prepared on verified facts. Demand the refund of the deposit within 15 days of receiving the notice, warning of consumer forum filings.
                       </p>
                     </div>
                   </div>
@@ -532,7 +532,7 @@ export default function PgHostelRefundClient() {
                   <div className="bg-slate-50 p-6 rounded-2xl border border-slate-200 my-6 shadow-sm">
                     <h4 className="font-bold text-slate-900 text-base mb-2">The Noida PG Notice Case</h4>
                     <p className="text-sm text-slate-600 leading-relaxed">
-                      A software engineer in Noida vacated her PG room after giving a 1-month notice. The owner withheld her ₹20,000 deposit, claiming paint charges. She served a legal notice prepared by an advocate, challenging the deduction and citing Section 73 of the Contract Act. The PG owner, recognizing the legal weight of the formal notice, refunded the entire security deposit amount within 4 days of receiving the notice, choosing to settle the dispute out of court.
+                      A software engineer in Noida vacated her PG room after giving a 1-month notice. The owner withheld her ₹20,000 deposit, claiming paint charges. She served a legal notice prepared on verified facts, challenging the deduction and citing Section 73 of the Contract Act. The PG owner, recognizing the legal weight of the formal notice, refunded the entire security deposit amount within 4 days of receiving the notice, choosing to settle the dispute out of court.
                     </p>
                   </div>
 
@@ -546,7 +546,7 @@ export default function PgHostelRefundClient() {
                   <div className="bg-slate-50 p-6 rounded-2xl border border-slate-200 my-6 shadow-sm">
                     <h4 className="font-bold text-slate-900 text-base mb-2">The Bengaluru IT Corridor PG Recovery Case</h4>
                     <p className="text-sm text-slate-600 leading-relaxed">
-                      A young IT professional residing in a premium PG in Whitefield, Bengaluru, vacated his double-sharing room after completing his 11-month stay. The PG management withheld his ₹30,000 security deposit, claiming that he had violated the exit terms by not submitting a physical letter, despite having sent a WhatsApp message. The professional served a formal legal notice prepared by an advocate, citing the Indian Contract Act and highlighting the digital confirmation. The PG operator, fearing negative reviews online and potential trade license audits, refunded the entire deposit within 48 hours of receiving the notice.
+                      A young IT professional residing in a premium PG in Whitefield, Bengaluru, vacated his double-sharing room after completing his 11-month stay. The PG management withheld his ₹30,000 security deposit, claiming that he had violated the exit terms by not submitting a physical letter, despite having sent a WhatsApp message. The professional served a formal legal notice prepared on verified facts, citing the Indian Contract Act and highlighting the digital confirmation. The PG operator, fearing negative reviews online and potential trade license audits, refunded the entire deposit within 48 hours of receiving the notice.
                     </p>
                   </div>
                 </div>
@@ -595,7 +595,7 @@ export default function PgHostelRefundClient() {
                 <div className="absolute top-0 right-0 w-24 h-24 bg-red-600/10 rounded-full blur-xl pointer-events-none" />
                 <h3 className="text-sm font-black mb-3">Need Legal Advice?</h3>
                 <p className="text-gray-400 mb-5 text-[11px] leading-relaxed">
-                  Discuss your money recovery case with legal experts. We draft and serve legally compliant notices tailored to your transaction.
+                  Discuss your money recovery case with our team. We draft and serve legally compliant notices tailored to your transaction.
                 </p>
                 <button 
                   onClick={() => setIsPaymentModalOpen(true)}

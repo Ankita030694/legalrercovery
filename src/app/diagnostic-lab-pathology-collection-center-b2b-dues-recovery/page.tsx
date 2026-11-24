@@ -878,7 +878,7 @@ export default function DiagnosticLabRecoveryPage() {
                   </div>
                   <div className="flex justify-between py-2 border-b border-slate-800">
                     <span className="text-slate-400">
-                      5. Legal Notice, Advocate Drafting &amp; Speed Post RPAD Dispatch:
+                      5. Legal Notice, Notice Drafting &amp; Speed Post RPAD Dispatch:
                     </span>
                     <span className="font-mono font-bold text-slate-100">&rupee;24,500</span>
                   </div>
@@ -966,7 +966,7 @@ export default function DiagnosticLabRecoveryPage() {
                 Deploy B2B Diagnostic Lab Recovery: ₹999 Test or Multi-Center CSV
               </h2>
               <p className="text-slate-600 text-xs sm:text-sm mb-6 leading-relaxed">
-                Whether you need to enforce a legal notice on a single defaulting collection center or onboard 50+ aged nursing home outsource accounts, LegalRecovery provides advocate-drafted, tri-channel legal enforcement:
+                Whether you need to enforce a legal notice on a single defaulting collection center or onboard 50+ aged nursing home outsource accounts, LegalRecovery provides fact-verified, tri-channel legal enforcement:
               </p>
 
               <DiagnosticLabRecoveryCTA />
@@ -1043,7 +1043,7 @@ export default function DiagnosticLabRecoveryPage() {
 
               <div className="mt-6 pt-5 border-t border-slate-200 flex flex-wrap items-center justify-between gap-3 text-xs text-slate-500">
                 <span>
-                  Authoritative Guidance &bull; Advocate Reviewed by {LEGAL_REVIEWER.name} ({LEGAL_REVIEWER.role})
+                  Authoritative Guidance &bull; Fact-Verified by {LEGAL_REVIEWER.name} ({LEGAL_REVIEWER.role})
                 </span>
                 <span>Updated for 2026 Commercial Courts &amp; BSA Practice</span>
               </div>

@@ -29,7 +29,7 @@ export default function StudyAbroadCommissionCTA({
                   Track 1 &bull; Single Aggregator Test
                 </span>
                 <h3 className="text-lg sm:text-xl font-black text-white leading-snug mb-2">
-                  Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Advocate Drafted)
+                  Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Fact-Verified)
                 </h3>
                 <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
                   Serve a Contract Act s.213 accounting &amp; Order XXXVII pre-suit demand notice on your defaulting master aggregator via Email + WhatsApp + Speed Post RPAD.

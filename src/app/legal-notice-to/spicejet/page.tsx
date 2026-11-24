@@ -11,7 +11,7 @@ export const revalidate = 86400;
 export const metadata: Metadata = {
   title: "SpiceJet Refund Not Received? Legal Notice & Consumer Case",
   description:
-    "SpiceJet refund overdue or flight cancelled without refund? DGCA rules, consumer-court precedents and a lawyer-drafted notice.",
+    "SpiceJet refund overdue or flight cancelled without refund? DGCA rules, consumer-court precedents and a fact-verified notice.",
   alternates: {
     canonical: `${SITE_URL}/legal-notice-to/spicejet`,
   },
@@ -172,7 +172,7 @@ const FAQS = [
   {
     question: "SpiceJet flight cancel hone par refund na mile toh legal notice kaise bheje aur consumer court me claim kaise kare?",
     answer:
-      "Agar SpiceJet flight cancel hone ke baad aapka refund 7 working days me bank account me na bheje ya unconsented voucher pakda de, toh aap verified advocate ke zariye statutory legal notice dispatch karwa sakte hain. LegalRecovery.in par advocate DGCA CAR aur Supreme Court rules ke tehat SpiceJet Limited ke Gurugram corporate office aur Delhi registered office par Registered Speed Post aur official email se notice dispatch karte hain, jismein 15 din ka strict payment demand diya jata hai. Iske baad e-Jagriti consumer commission me case file kiya ja sakta hai.",
+      "Agar SpiceJet flight cancel hone ke baad aapka refund 7 working days me bank account me na bheje ya unconsented voucher pakda de, toh aap statutory legal notice dispatch karwa sakte hain. LegalRecovery.in par hamari team aapke facts verify karke DGCA CAR aur Supreme Court rules ke tehat SpiceJet Limited ke Gurugram corporate office aur Delhi registered office par official email, WhatsApp (aur optional Speed Post) se notice dispatch karti hai, jismein 15 din ka strict payment demand diya jata hai. Iske baad e-Jagriti consumer commission me case file kiya ja sakta hai.",
   },
 ];
 
@@ -181,7 +181,7 @@ const ARTICLE_SCHEMA = {
   "@type": "Article",
   headline: "SpiceJet Refund Overdue: Escalation From AirSewa to Consumer Court",
   description:
-    "SpiceJet refund overdue or flight cancelled without refund? DGCA rules, consumer-court precedents and a lawyer-drafted notice.",
+    "SpiceJet refund overdue or flight cancelled without refund? DGCA rules, consumer-court precedents and a fact-verified notice.",
   datePublished: "2026-11-03T13:30:00+05:30",
   dateModified: "2026-11-03T13:30:00+05:30",
   mainEntityOfPage: `${SITE_URL}/legal-notice-to/spicejet`,
@@ -688,7 +688,7 @@ export default function SpicejetLegalNoticePage() {
                     </span>
                     <div className="space-y-1 sm:space-y-1.5">
                       <h3 className="text-sm sm:text-base md:text-lg font-bold text-slate-900">
-                        Serve a Formal Statutory Advocate Legal Demand Notice
+                        Serve a Formal Statutory Fact-Verified Legal Demand Notice
                       </h3>
                       <p className="text-xs sm:text-sm leading-relaxed">
                         When 7 working days lapse without payment and administrative escalation stalls, engage an advocate to dispatch a formal legal notice to SpiceJet Limited at its registered office (Terminal 1D, IGI Airport, New Delhi) and corporate headquarters (Udyog Vihar, Gurugram). The notice demands the principal fare, 18% penal interest, and compensation for deficiency in service within a 15-day compliance window.
@@ -848,11 +848,11 @@ export default function SpicejetLegalNoticePage() {
                       <strong>The Deadlock:</strong> Rituja repeatedly emailed customer relations insisting on a cash refund to her debit card. Support representatives claimed that &quot;as per operational policy, cancellations under these conditions are processed as vouchers only.&quot; After 5 weeks of unfulfilled promises and an ignored AirSewa grievance ticket, Rituja contacted LegalRecovery.in.
                     </p>
                     <p>
-                      <strong>The Statutory Action:</strong> An advocate drafted and dispatched a formal statutory demand notice to SpiceJet Limited&apos;s Registered Office at IGI Airport Terminal 1D, New Delhi, and its Corporate Office in Udyog Vihar, Gurugram. The notice cited DGCA CAR Section 3 Series M Part II (Clause 3.3.1) and the Supreme Court mandate in <em>Pravasi Legal Cell</em>, granting 15 days to remit ₹26,400 plus 18% interest before an e-Jagriti consumer complaint was filed.
+                      <strong>The Statutory Action:</strong> The team verified the facts and dispatched a formal statutory demand notice to SpiceJet Limited&apos;s Registered Office at IGI Airport Terminal 1D, New Delhi, and its Corporate Office in Udyog Vihar, Gurugram. The notice cited DGCA CAR Section 3 Series M Part II (Clause 3.3.1) and the Supreme Court mandate in <em>Pravasi Legal Cell</em>, granting 15 days to remit ₹26,400 plus 18% interest before an e-Jagriti consumer complaint was filed.
                     </p>
                     <div className="p-3.5 sm:p-4 bg-emerald-950/70 border border-emerald-700/60 rounded-xl text-emerald-200">
                       <strong className="block text-emerald-400 font-bold mb-1">The Outcome:</strong>
-                      On Day 11 following delivery of the advocate legal notice, SpiceJet&apos;s legal nodal team contacted Rituja with an official bank UTR reference number. The full sum of ₹26,400 was credited directly to her ICICI bank account without requiring court litigation.
+                      On Day 11 following delivery of the fact-verified legal notice, SpiceJet&apos;s legal nodal team contacted Rituja with an official bank UTR reference number. The full sum of ₹26,400 was credited directly to her ICICI bank account without requiring court litigation.
                     </div>
                   </div>
                 </div>

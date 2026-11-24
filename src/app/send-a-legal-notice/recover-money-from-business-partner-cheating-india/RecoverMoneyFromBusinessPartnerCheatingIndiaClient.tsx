@@ -12,7 +12,7 @@ const faqs = [
   {
     question: 'Can I send a legal notice to my business partner for recovery of siphoned money or unpaid profit share in India?',
     answer:
-      'Yes, an aggrieved co-founder, partner, or shareholder can serve an advocate-vetted statutory legal notice to a defaulting or fraudulent business partner under Section 9, Section 10, and Section 13 of the Indian Partnership Act, 1932, or the Limited Liability Partnership Act, 2008, demanding the restitution of misappropriated capital, unpaid profit shares, or diverted corporate revenue within a strict 15-day compliance window. A statutory notice establishes a binding legal record of the partner\'s fiduciary breach, quantifies the exact financial liability with contractual interest, and serves as an indispensable prerequisite before initiating summary recovery suits under Order 37 CPC, commercial court litigation, or criminal prosecution under the Bharatiya Nyaya Sanhita, 2023.',
+      'Yes, an aggrieved co-founder, partner, or shareholder can serve a fact-verified statutory legal notice to a defaulting or fraudulent business partner under Section 9, Section 10, and Section 13 of the Indian Partnership Act, 1932, or the Limited Liability Partnership Act, 2008, demanding the restitution of misappropriated capital, unpaid profit shares, or diverted corporate revenue within a strict 15-day compliance window. A statutory notice establishes a binding legal record of the partner\'s fiduciary breach, quantifies the exact financial liability with contractual interest, and serves as an indispensable prerequisite before initiating summary recovery suits under Order 37 CPC, commercial court litigation, or criminal prosecution under the Bharatiya Nyaya Sanhita, 2023.',
   },
   {
     question: 'What is the limitation period for recovering money and filing a suit against a cheating business partner in India?',
@@ -48,7 +48,7 @@ const ogImage =
   'https://legalrecovery.in/images/og/recover-money-from-business-partner-cheating-india.jpg';
 
 const reviewBodyText =
-  'My business partner in our Pune-based engineering logistics enterprise secretly diverted ₹36.8 Lakhs of corporate receivables into an undeclared proprietary firm and falsified internal ledger accounts over an eight-month period. Legal Recovery drafted and served a formidable advocate-vetted statutory legal notice detailing the forensic audit trail, citing Sections 9, 10, and 13 of the Indian Partnership Act, 1932, Section 73 of the Contract Act, and criminal breach of trust under Bharatiya Nyaya Sanhita. Within 14 days of receiving the legal notice, my partner engaged legal counsel, signed a forensic financial settlement, and remitted the full ₹36.8 Lakhs with 18% interest to prevent commercial court litigation and asset attachment. Flawless legal precision.';
+  'My business partner in our Pune-based engineering logistics enterprise secretly diverted ₹36.8 Lakhs of corporate receivables into an undeclared proprietary firm and falsified internal ledger accounts over an eight-month period. Legal Recovery drafted and served a formidable fact-verified statutory legal notice detailing the forensic audit trail, citing Sections 9, 10, and 13 of the Indian Partnership Act, 1932, Section 73 of the Contract Act, and criminal breach of trust under Bharatiya Nyaya Sanhita. Within 14 days of receiving the legal notice, my partner engaged legal counsel, signed a forensic financial settlement, and remitted the full ₹36.8 Lakhs with 18% interest to prevent commercial court litigation and asset attachment. Flawless legal precision.';
 
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -163,7 +163,7 @@ const jsonLd = {
         {
           '@type': 'ListItem',
           position: 3,
-          name: 'Draft an Advocate-Vetted Statutory Demand Notice Citing Partnership Act, Contract Act & BNS 2023',
+          name: 'Draft a Fact-Verified Statutory Demand Notice Citing Partnership Act, Contract Act & BNS 2023',
         },
         {
           '@type': 'ListItem',
@@ -183,7 +183,7 @@ const jsonLd = {
       '@type': 'Product',
       name: 'Legal Notice to Business Partner for Recovery of Money & Fraud Recovery',
       description:
-        'Advocate-drafted statutory demand notice service for business partners, startup co-founders, LLP partners, and corporate directors to recover siphoned capital, unpaid profit shares, and misappropriated business funds across India.',
+        'Fact-verified statutory demand notice service for business partners, startup co-founders, LLP partners, and corporate directors to recover siphoned capital, unpaid profit shares, and misappropriated business funds across India.',
       brand: {
         '@type': 'Organization',
         name: 'Legal Recovery',
@@ -259,7 +259,7 @@ export default function RecoverMoneyFromBusinessPartnerCheatingIndiaClient() {
 
   const shareUrl = encodeURIComponent(pageUrl);
   const shareText = encodeURIComponent(
-    'Business partner siphoned capital or cheated on partnership dues? Send an advocate-vetted statutory legal notice for rapid recovery in India! #LegalNotice #BusinessFraud #DebtRecovery'
+    'Business partner siphoned capital or cheated on partnership dues? Send a fact-verified statutory legal notice for rapid recovery in India! #LegalNotice #BusinessFraud #DebtRecovery'
   );
 
   return (
@@ -434,7 +434,7 @@ export default function RecoverMoneyFromBusinessPartnerCheatingIndiaClient() {
                     Quick Answer
                   </h2>
                   <p className="text-sm text-slate-700 font-medium leading-relaxed">
-                    An aggrieved co-founder, partner, or commercial shareholder can serve an advocate-vetted statutory legal demand notice to a fraudulent business partner under{' '}
+                    An aggrieved co-founder, partner, or commercial shareholder can serve a fact-verified statutory legal demand notice to a fraudulent business partner under{' '}
                     <span className="font-semibold text-slate-800">
                       Sections 9, 10, and 13 of the Indian Partnership Act, 1932
                     </span>{' '}
@@ -528,7 +528,7 @@ export default function RecoverMoneyFromBusinessPartnerCheatingIndiaClient() {
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      Serving an advocate-vetted legal notice requires precise legal framing of the defaulting partner&apos;s actionable violations. Indian commercial courts and arbitral tribunals consistently recognize specific commercial misconduct as actionable grounds for summary debt recovery, mandatory injunctions, and criminal prosecution:
+                      Serving a fact-verified legal notice requires precise legal framing of the defaulting partner&apos;s actionable violations. Indian commercial courts and arbitral tribunals consistently recognize specific commercial misconduct as actionable grounds for summary debt recovery, mandatory injunctions, and criminal prosecution:
                     </p>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
@@ -686,7 +686,7 @@ export default function RecoverMoneyFromBusinessPartnerCheatingIndiaClient() {
 
                     <div className="bg-red-50 border-l-4 border-[#DC2626] p-4 rounded-r-xl">
                       <p className="text-xs sm:text-sm text-red-950 font-medium leading-relaxed">
-                        <strong>Strategic Synergy:</strong> Serving an advocate-vetted statutory legal notice detailing both the civil liquidated debt liability (with 18-24% contractual interest) and the criminal penal consequences creates immense legal pressure. In practice, over 76% of defaulting partners opt for mutual settlement and fund restitution during the 15-day notice window to avoid public criminal prosecution and commercial freezing orders.
+                        <strong>Strategic Synergy:</strong> Serving a fact-verified statutory legal notice detailing both the civil liquidated debt liability (with 18-24% contractual interest) and the criminal penal consequences creates immense legal pressure. In practice, over 76% of defaulting partners opt for mutual settlement and fund restitution during the 15-day notice window to avoid public criminal prosecution and commercial freezing orders.
                       </p>
                     </div>
                   </div>
@@ -746,7 +746,7 @@ export default function RecoverMoneyFromBusinessPartnerCheatingIndiaClient() {
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      A boilerplate notice easily gets ignored by seasoned commercial defaulters. To ensure immediate compliance and withstand judicial scrutiny in subsequent summary suits, an advocate-drafted notice must incorporate these essential statutory clauses:
+                      A boilerplate notice easily gets ignored by seasoned commercial defaulters. To ensure immediate compliance and withstand judicial scrutiny in subsequent summary suits, a fact-verified notice must incorporate these essential statutory clauses:
                     </p>
 
                     <div className="space-y-4 my-6">
@@ -807,7 +807,7 @@ export default function RecoverMoneyFromBusinessPartnerCheatingIndiaClient() {
                           Stage 1: Evidence Consolidation &amp; Forensic Financial Reconciliation (Day 1 – 2)
                         </h3>
                         <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                          Our senior commercial advocates review the partnership deed, bank statements, GST invoices, and communication logs to isolate the exact quantum of misappropriated funds and establish joint/several personal liability.
+                          Our team verifies the partnership, bank, GST invoice, and communication details you submit to isolate the exact quantum of misappropriated funds and establish joint/several personal liability.
                         </p>
                       </div>
 
@@ -816,7 +816,7 @@ export default function RecoverMoneyFromBusinessPartnerCheatingIndiaClient() {
                           2
                         </span>
                         <h3 className="font-bold text-slate-900 text-sm sm:text-base mb-1">
-                          Stage 2: Advocate Drafting &amp; Multi-Channel Statutory Dispatch (Day 2 – 3)
+                          Stage 2: Notice Drafting &amp; Multi-Channel Statutory Dispatch (Day 2 – 3)
                         </h3>
                         <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                           A high-impact legal notice is drafted on senior advocate letterhead, citing relevant High Court &amp; Supreme Court precedents. Dispatched simultaneously via India Post Registered AD, Speed Post, and tracked digital channels (registered business email and WhatsApp).
@@ -1000,7 +1000,7 @@ export default function RecoverMoneyFromBusinessPartnerCheatingIndiaClient() {
                   <p className="text-sm text-slate-650 leading-relaxed mb-6">
                     Legal Recovery is India&apos;s trusted online legal notice and dispute resolution
                     platform, connecting business partners, startup founders, commercial enterprises,
-                    and corporate directors with seasoned panel advocates for rapid, advocate-vetted statutory
+                    and corporate directors with our fact-verifying team for rapid, fact-verified statutory
                     demand notices at transparent flat fees. With ₹100 Crore+ recovered and 10,000+
                     cases resolved across India, Legal Recovery delivers verified legal impact
                     without the delays and unpredictability of traditional law firms.
@@ -1041,7 +1041,7 @@ export default function RecoverMoneyFromBusinessPartnerCheatingIndiaClient() {
                   Partner Cheated or Siphoned Capital?
                 </h3>
                 <p className="text-slate-300 text-xs leading-relaxed mb-4">
-                  Send an advocate-vetted statutory notice today. Over 76% of defaulting partners settle financial claims within 15 days of receiving formal notice from Legal Recovery.
+                  Send a fact-verified statutory notice today. Over 76% of defaulting partners settle financial claims within 15 days of receiving formal notice from Legal Recovery.
                 </p>
                 <button
                   onClick={() => setIsPaymentModalOpen(true)}
@@ -1050,7 +1050,7 @@ export default function RecoverMoneyFromBusinessPartnerCheatingIndiaClient() {
                   Draft &amp; Send Notice Now
                 </button>
                 <p className="text-center text-slate-400 text-[10px] mt-3">
-                  Flat fee • Advocate-drafted • Sent same day
+                  Flat fee • Fact-verified • Sent same day
                 </p>
               </div>
 
@@ -1105,7 +1105,7 @@ export default function RecoverMoneyFromBusinessPartnerCheatingIndiaClient() {
                 {[
                   { stat: '76%', label: 'Partners settle prior to commercial court litigation' },
                   { stat: '₹100CR+', label: 'Total amount recovered for clients across India' },
-                  { stat: 'Same Day', label: 'Advocate notice drafted and dispatched' },
+                  { stat: 'Same Day', label: 'Notice prepared and dispatched' },
                   { stat: 'Flat Fee', label: 'Transparent pricing with no hidden charges' },
                 ].map((item, i) => (
                   <div key={i} className="flex items-center justify-between py-2 border-b border-slate-50 last:border-0">

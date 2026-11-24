@@ -28,10 +28,10 @@ export default function InstitutionalDefaultsCTA({
                 Institutional Recovery Framework • RBI Fair Practices Compliant
               </span>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-bold tracking-tight text-white mb-3">
-                Deter Chronic Defaulters Early with Advocate Notices at 31-Day DPD
+                Deter Chronic Defaulters Early with Legal Notices at 31-Day DPD
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6">
-                Equip your risk and collections committee with automated, statutory advocate demand notices dispatched at the earliest delinquency threshold. Fully compliant with RBI Digital Lending Directives, Section 25 of the Payment and Settlement Systems Act, and Section 63 BSA electronic admissibility. Reduce terminal unsecured loan write-offs by 25% to 35%.
+                Equip your risk and collections committee with automated, statutory legal demand notices dispatched at the earliest delinquency threshold. Fully compliant with RBI Digital Lending Directives, Section 25 of the Payment and Settlement Systems Act, and Section 63 BSA electronic admissibility. Reduce terminal unsecured loan write-offs by 25% to 35%.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button
@@ -46,7 +46,7 @@ export default function InstitutionalDefaultsCTA({
                   <span>•</span>
                   <span>✓ High-Volume Dispatch</span>
                   <span>•</span>
-                  <span>✓ 100% Bar-Council Verified Advocates</span>
+                  <span>✓ 100% Fact-Verified Notices</span>
                 </div>
               </div>
             </div>

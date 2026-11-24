@@ -34,7 +34,7 @@ const PROBLEMS: ProblemTab[] = [
       {
         step: "Issue Formal Statutory Section 18 Demand Notice",
         description:
-          "Serve a formal advocate legal notice invoking Section 18(1) proviso, Section 89 of RERA, and Pioneer Urban, demanding recalibration of delay compensation to the statutory SBI MCLR + 2% benchmark.",
+          "Serve a formal fact-verified legal notice invoking Section 18(1) proviso, Section 89 of RERA, and Pioneer Urban, demanding recalibration of delay compensation to the statutory SBI MCLR + 2% benchmark.",
       },
       {
         step: "File Section 31 Complaint with State RERA Authority",

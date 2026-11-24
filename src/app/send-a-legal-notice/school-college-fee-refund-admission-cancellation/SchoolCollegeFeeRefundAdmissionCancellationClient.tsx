@@ -27,7 +27,7 @@ const faqs = [
   {
     question: 'What legal action can parents take if a private school or coaching institute refuses to refund advance annual fees?',
     answer:
-      'Parents can serve an advocate-vetted statutory legal notice demanding a full refund of unavailed annual tuition, bus charges, and activity fees within a strict 15-day compliance window. If the private school or coaching institute fails to comply, parents can file a consumer complaint before the District Consumer Disputes Redressal Commission (DCDRC) under Section 35 of the Consumer Protection Act, 2019 for deficiency in service, unfair trade practices, and mental agony. In cases involving private coaching institutes charging multi-year advance fees, the National Consumer Disputes Redressal Commission (NCDRC) routinely orders immediate pro-rata refunds alongside punitive damages and litigation costs.',
+      'Parents can serve a fact-verified statutory legal notice demanding a full refund of unavailed annual tuition, bus charges, and activity fees within a strict 15-day compliance window. If the private school or coaching institute fails to comply, parents can file a consumer complaint before the District Consumer Disputes Redressal Commission (DCDRC) under Section 35 of the Consumer Protection Act, 2019 for deficiency in service, unfair trade practices, and mental agony. In cases involving private coaching institutes charging multi-year advance fees, the National Consumer Disputes Redressal Commission (NCDRC) routinely orders immediate pro-rata refunds alongside punitive damages and litigation costs.',
   },
   {
     question: 'What is the limitation period for serving a legal notice and filing a consumer complaint for school or college fee refund?',
@@ -48,7 +48,7 @@ const ogImage =
   'https://legalrecovery.in/images/og/school-college-fee-refund-admission-cancellation.jpg';
 
 const reviewBodyText =
-  'My son cancelled his B.Tech admission at a prominent private engineering college in Pune three weeks before classes started after securing a seat in an NIT. The college administration flatly refused to refund the ₹3.25 Lakhs advance tuition and hostel fee, pointing to a "no refund under any circumstance" clause in their admission prospectus. Legal Recovery drafted and dispatched a high-impact advocate legal notice citing UGC Fee Refund Regulations, AICTE norms, and Section 2(47) of the Consumer Protection Act 2019. Within 10 days of notice delivery, the college registrar reached out, processed the 100% refund deducting only ₹1,000 processing fee, and returned his original migration certificate. Highly effective legal service for students and parents.';
+  'My son cancelled his B.Tech admission at a prominent private engineering college in Pune three weeks before classes started after securing a seat in an NIT. The college administration flatly refused to refund the ₹3.25 Lakhs advance tuition and hostel fee, pointing to a "no refund under any circumstance" clause in their admission prospectus. Legal Recovery prepared and dispatched a high-impact legal notice citing UGC Fee Refund Regulations, AICTE norms, and Section 2(47) of the Consumer Protection Act 2019. Within 10 days of notice delivery, the college registrar reached out, processed the 100% refund deducting only ₹1,000 processing fee, and returned his original migration certificate. Highly effective legal service for students and parents.';
 
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -168,7 +168,7 @@ const jsonLd = {
         {
           '@type': 'ListItem',
           position: 4,
-          name: 'Draft an advocate-vetted statutory demand notice citing UGC Refund Guidelines, AICTE Handbooks, Consumer Protection Act 2019, and Supreme Court rulings',
+          name: 'Draft a fact-verified statutory demand notice citing UGC Refund Guidelines, AICTE Handbooks, Consumer Protection Act 2019, and Supreme Court rulings',
         },
         {
           '@type': 'ListItem',
@@ -183,7 +183,7 @@ const jsonLd = {
       '@type': 'Product',
       name: 'Legal Notice to School or College for Fee Refund on Admission Cancellation',
       description:
-        'Advocate-drafted statutory demand notice service for students and parents to recover unrefunded tuition fees, capitation deposits, and hostel charges from private schools, universities, and colleges across India.',
+        'Fact-verified statutory demand notice service for students and parents to recover unrefunded tuition fees, capitation deposits, and hostel charges from private schools, universities, and colleges across India.',
       brand: {
         '@type': 'Organization',
         name: 'Legal Recovery',
@@ -259,7 +259,7 @@ export default function SchoolCollegeFeeRefundAdmissionCancellationClient() {
 
   const shareUrl = encodeURIComponent(pageUrl);
   const shareText = encodeURIComponent(
-    'School or college refusing to refund fees after admission cancellation? Send an advocate-drafted statutory legal notice under UGC Guidelines & Consumer Protection Act! #FeeRefund #LegalNotice #StudentRights'
+    'School or college refusing to refund fees after admission cancellation? Send a fact-verified statutory legal notice under UGC Guidelines & Consumer Protection Act! #FeeRefund #LegalNotice #StudentRights'
   );
 
   return (
@@ -452,7 +452,7 @@ export default function SchoolCollegeFeeRefundAdmissionCancellationClient() {
                     Quick Answer
                   </h2>
                   <p className="text-sm text-slate-700 font-medium leading-relaxed">
-                    A parent or student can serve an advocate-vetted statutory legal notice to any school, college, or private university demanding a full refund of tuition, capitation, admission, hostel, or caution fees upon admission cancellation under <strong className="text-slate-900 font-semibold">University Grants Commission (UGC) Fee Refund Norms</strong>, <strong className="text-slate-900 font-semibold">AICTE Approval Process Handbook</strong>, and <strong className="text-slate-900 font-semibold">Section 2(47) of the Consumer Protection Act, 2019</strong>. Educational institutions in India are legally prohibited from enforcing non-refundable clauses or retaining unearned fees for unavailed academic semesters when a seat is surrendered before or near the commencement cutoff. If the institution fails to disburse the refund within 15 days of receiving the legal notice, the claimant can initiate summary recovery before the District Consumer Disputes Redressal Commission (DCDRC), claim 18% per annum statutory interest, and report the management to regulatory bodies for de-recognition and punitive penalties.
+                    A parent or student can serve a fact-verified statutory legal notice to any school, college, or private university demanding a full refund of tuition, capitation, admission, hostel, or caution fees upon admission cancellation under <strong className="text-slate-900 font-semibold">University Grants Commission (UGC) Fee Refund Norms</strong>, <strong className="text-slate-900 font-semibold">AICTE Approval Process Handbook</strong>, and <strong className="text-slate-900 font-semibold">Section 2(47) of the Consumer Protection Act, 2019</strong>. Educational institutions in India are legally prohibited from enforcing non-refundable clauses or retaining unearned fees for unavailed academic semesters when a seat is surrendered before or near the commencement cutoff. If the institution fails to disburse the refund within 15 days of receiving the legal notice, the claimant can initiate summary recovery before the District Consumer Disputes Redressal Commission (DCDRC), claim 18% per annum statutory interest, and report the management to regulatory bodies for de-recognition and punitive penalties.
                   </p>
                 </div>
 
@@ -526,7 +526,7 @@ export default function SchoolCollegeFeeRefundAdmissionCancellationClient() {
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      An advocate-drafted statutory demand notice must clearly articulate the specific statutory violations and administrative malpractices committed by the school, college, or coaching institute. Common actionable grounds recognized by consumer courts include:
+                      A fact-verified statutory demand notice must clearly articulate the specific statutory violations and administrative malpractices committed by the school, college, or coaching institute. Common actionable grounds recognized by consumer courts include:
                     </p>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
                       {[
@@ -716,7 +716,7 @@ export default function SchoolCollegeFeeRefundAdmissionCancellationClient() {
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      A formidable, advocate-vetted statutory demand notice must be structured with precision, setting out chronological facts, statutory provisions, and non-negotiable legal consequences:
+                      A formidable, fact-verified statutory demand notice must be structured with precision, setting out chronological facts, statutory provisions, and non-negotiable legal consequences:
                     </p>
 
                     <div className="space-y-4">
@@ -781,7 +781,7 @@ export default function SchoolCollegeFeeRefundAdmissionCancellationClient() {
                         {
                           step: 'Stage 1',
                           title: 'Advocate Statutory Demand Notice Served on Official Letterhead',
-                          desc: 'The notice is prepared by specialized education consumer advocates, signed under Section 5 of the IT Act 2000, and served simultaneously via India Post Registered Post AD, Speed Post, and tracked official email to the Principal and Trust Board.',
+                          desc: 'The notice is prepared by our team from your fact-verified details, signed under Section 5 of the IT Act 2000, and served simultaneously via India Post Registered Post AD, Speed Post, and tracked official email to the Principal and Trust Board.',
                         },
                         {
                           step: 'Stage 2',
@@ -964,8 +964,7 @@ export default function SchoolCollegeFeeRefundAdmissionCancellationClient() {
                   </div>
                   <p className="text-sm text-slate-650 leading-relaxed mb-6">
                     Legal Recovery is India&apos;s trusted online legal notice and dispute resolution
-                    platform, connecting students, parents, consumers, and professionals with seasoned
-                    panel advocates for rapid, advocate-vetted statutory demand notices at transparent flat
+                    platform, connecting students, parents, consumers, and professionals with our team for rapid, fact-verified statutory demand notices at transparent flat
                     fees. With ₹100 Crore+ recovered and 10,000+ cases resolved across India, Legal
                     Recovery delivers verified legal impact without the delays and unpredictability of
                     traditional law firms.
@@ -1006,7 +1005,7 @@ export default function SchoolCollegeFeeRefundAdmissionCancellationClient() {
                   School or College Withholding Your Fee?
                 </h3>
                 <p className="text-slate-300 text-xs leading-relaxed mb-4">
-                  Send an advocate-vetted statutory notice today. 78% of educational institutions refund fees
+                  Send a fact-verified statutory notice today. 78% of educational institutions refund fees
                   and return original documents within 15 days of receiving formal notice from Legal Recovery.
                 </p>
                 <button
@@ -1016,7 +1015,7 @@ export default function SchoolCollegeFeeRefundAdmissionCancellationClient() {
                   Draft &amp; Send Notice Now
                 </button>
                 <p className="text-center text-slate-400 text-[10px] mt-3">
-                  Flat fee • Advocate-drafted • Sent same day
+                  Flat fee • Fact-verified • Sent same day
                 </p>
               </div>
 
@@ -1071,7 +1070,7 @@ export default function SchoolCollegeFeeRefundAdmissionCancellationClient() {
                 {[
                   { stat: '78%', label: 'Institutions settle and refund fees before consumer court filing' },
                   { stat: '₹100CR+', label: 'Total amount recovered for clients across India' },
-                  { stat: 'Same Day', label: 'Advocate notice drafted and dispatched' },
+                  { stat: 'Same Day', label: 'Notice prepared and dispatched' },
                   { stat: 'Flat Fee', label: 'Transparent pricing with no hidden charges' },
                 ].map((item, i) => (
                   <div key={i} className="flex items-center justify-between py-2 border-b border-slate-50 last:border-0">

@@ -31,7 +31,7 @@ export default function CashlessClaimNoticeCTA({
                 Cashless Denied or Delayed at Hospital? Hold Your Insurer Legally Accountable
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6">
-                Have an experienced consumer advocate draft and serve an unassailable statutory legal notice directly to your health insurer and TPA. We cite the mandatory 1-hour pre-authorisation and 3-hour discharge mandates under the IRDAI 2024 Master Circular, demand immediate reimbursement with penal interest, and establish irrefutable evidence for Insurance Ombudsman or Consumer Commission claims.
+                Serve an unassailable statutory legal notice directly to your health insurer and TPA. We cite the mandatory 1-hour pre-authorisation and 3-hour discharge mandates under the IRDAI 2024 Master Circular, demand immediate reimbursement with penal interest, and establish irrefutable evidence for Insurance Ombudsman or Consumer Commission claims.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button
@@ -42,7 +42,7 @@ export default function CashlessClaimNoticeCTA({
                   {buttonText} — ₹{basePrice}
                 </button>
                 <div className="text-xs text-slate-300 flex flex-wrap sm:flex-nowrap items-center gap-2 sm:gap-3">
-                  <span>✓ 24h Advocate Drafting</span>
+                  <span>✓ 24h Notice Drafting</span>
                   <span>•</span>
                   <span>✓ Email + WhatsApp</span>
                   <span>•</span>

@@ -33,7 +33,7 @@ const SCENARIOS: ScenarioTab[] = [
       {
         step: "Serve Section 74 + Order XXXVII Demand Notice",
         description:
-          "Issue an advocate-drafted notice quantifying unamortized CapEx on a pro-rata basis (e.g., 20/24ths remaining), overdue MRC invoices, and applicable GST.",
+          "Issue a fact-verified notice quantifying unamortized CapEx on a pro-rata basis (e.g., 20/24ths remaining), overdue MRC invoices, and applicable GST.",
       },
       {
         step: "File Summary Suit / Commercial Suit",

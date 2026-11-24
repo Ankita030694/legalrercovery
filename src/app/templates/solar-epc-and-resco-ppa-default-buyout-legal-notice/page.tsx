@@ -18,7 +18,7 @@ const EXACT_H1 =
 const EXACT_TITLE = "Solar EPC & RESCO PPA Default / Buyout Legal Notice Format";
 
 const EXACT_DESCRIPTION =
-  "Advocate-drafted Solar EPC & RESCO PPA notice templates covering Deemed Generation, Inverter Curtailment, s.74 Termination Buyout & Roof Access.";
+  "Fact-verified Solar EPC & RESCO PPA notice templates covering Deemed Generation, Inverter Curtailment, s.74 Termination Buyout & Roof Access.";
 
 export const metadata: Metadata = {
   title: EXACT_TITLE,

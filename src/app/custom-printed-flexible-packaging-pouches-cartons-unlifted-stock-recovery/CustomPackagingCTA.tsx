@@ -24,10 +24,10 @@ export default function CustomPackagingCTA({ className = "" }: CustomPackagingCT
                 Track 1 &middot; Single Stuck Brand / Unlifted MOQ Order
               </span>
               <h3 className="text-lg sm:text-xl font-bold text-white mb-2">
-                Test 1 Live Overdue Case Now (&#8377;{basePrice} &middot; Advocate Drafted &middot; Email + WhatsApp + Speed Post RPAD)
+                Test 1 Live Overdue Case Now (&#8377;{basePrice} &middot; Fact-Verified &middot; Email + WhatsApp + Speed Post RPAD)
               </h3>
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-                Upload your PO, signed artwork/shade proof, FG stock weight sheet, cylinder invoice, and Udyam certificate. Our advocates draft a combined Sale of Goods Act s.55/44 + Cylinder Lien + Section 43B(h) Legal Notice dispatched across Email, WhatsApp, and Speed Post RPAD.
+                Enter your PO, artwork/shade approval, FG stock weight, cylinder invoice, and Udyam details in our online form. Our team verifies the facts and prepares a combined Sale of Goods Act s.55/44 + Cylinder Lien + Section 43B(h) Legal Notice dispatched across Email, WhatsApp, and Speed Post RPAD.
               </p>
             </div>
 

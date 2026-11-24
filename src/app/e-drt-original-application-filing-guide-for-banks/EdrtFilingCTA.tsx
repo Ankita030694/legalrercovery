@@ -27,10 +27,10 @@ export default function EdrtFilingCTA({ className = "" }: EdrtFilingCTAProps) {
                 Test 1 Live Overdue Case Now (&#8377;{basePrice})
               </h3>
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-                Before filing a Section 19 OA on e-DRT, eliminate technical dismissal risks with an RBI Penal-Charge-compliant Loan Recall &amp; Explicit Guarantee Invocation Notice drafted by AMA Legal Solutions&apos; banking panel—dispatched simultaneously via Email, WhatsApp &amp; Speed Post RPAD.
+                Before filing a Section 19 OA on e-DRT, eliminate technical dismissal risks with an RBI Penal-Charge-compliant Loan Recall &amp; Explicit Guarantee Invocation Notice prepared on fact-verified details by LegalRecovery—dispatched simultaneously via Email, WhatsApp &amp; Speed Post RPAD.
               </p>
               <ul className="space-y-1.5 text-xs text-slate-200 mb-6">
-                <li>&#10003; Advocate Drafted &bull; Email + WhatsApp + Speed Post RPAD</li>
+                <li>&#10003; Fact-Verified &bull; Email + WhatsApp + Speed Post RPAD</li>
                 <li>&#10003; Separate Principal, Contractual Interest &amp; Non-Capitalized Penal Charges</li>
                 <li>&#10003; BSA 2023 s.63 SHA-256 Delivery Proof Ready for e-DRT Annexures</li>
               </ul>
@@ -68,7 +68,7 @@ export default function EdrtFilingCTA({ className = "" }: EdrtFilingCTAProps) {
               <ul className="space-y-1.5 text-xs text-slate-700 mb-6">
                 <li>&#10003; Multi-branch Representee profiles with authorized signatory mapping</li>
                 <li>&#10003; Bulk CSV upload with 4-step escalation &amp; RPAD barcode manifests</li>
-                <li>&#10003; Direct handover to panel advocates for e-DRT OA &amp; s.19(12) attachment</li>
+                <li>&#10003; Support for e-DRT OA &amp; s.19(12) attachment</li>
               </ul>
             </div>
 

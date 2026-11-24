@@ -19,7 +19,7 @@ export default function HotelBtcNoticeCTA() {
         </h3>
 
         <p className="text-sm sm:text-base text-slate-300 leading-relaxed mb-8 max-w-3xl">
-          Corporate finance teams routinely push hotel City-Ledger invoices to the bottom of their AP queue because front-office teams only send polite follow-up emails. An Advocate-signed Statutory Demand Notice citing <strong>Order XXXVII CPC</strong>, <strong>GSTR-2B ITC Estoppel</strong>, and <strong>Section 43B(h) / MSMED Act 3x RBI Interest</strong> moves your hotel folio to immediate priority clearance.
+          Corporate finance teams routinely push hotel City-Ledger invoices to the bottom of their AP queue because front-office teams only send polite follow-up emails. A Fact-verified Statutory Demand Notice citing <strong>Order XXXVII CPC</strong>, <strong>GSTR-2B ITC Estoppel</strong>, and <strong>Section 43B(h) / MSMED Act 3x RBI Interest</strong> moves your hotel folio to immediate priority clearance.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
@@ -33,7 +33,7 @@ export default function HotelBtcNoticeCTA() {
                 <span className="text-xl font-black text-white">₹999</span>
               </div>
               <h4 className="text-base font-bold text-white mb-2">
-                Test 1 Live Overdue Case Now (₹999 · Advocate Drafted · Email + WhatsApp + Speed Post RPAD)
+                Test 1 Live Overdue Case Now (₹999 · Fact-Verified · Email + WhatsApp + Speed Post RPAD)
               </h4>
               <p className="text-xs text-slate-300 leading-relaxed mb-4">
                 Upload one overdue corporate BTC account (single group booking or multi-folio running account). Our hospitality litigation advocates annex your BTC approval email, PMS folio schedule, and GSTR-2B reflection into a 15-day statutory notice.

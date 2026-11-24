@@ -201,7 +201,7 @@ const HOWTO_SCHEMA = {
       "@type": "HowToStep",
       position: 4,
       name: "Serve Composite Advocate Demand & BSA s.63 Dossier",
-      text: "Dispatch an advocate-vetted notice via Email, WhatsApp, and Speed Post RPAD invoking s.140 subrogation, s.42 acceptance, MSMED s.16 / s.43B(h), and IBC s.8 Form 3 (for >= ₹1 Cr).",
+      text: "Dispatch a fact-verified notice via Email, WhatsApp, and Speed Post RPAD invoking s.140 subrogation, s.42 acceptance, MSMED s.16 / s.43B(h), and IBC s.8 Form 3 (for >= ₹1 Cr).",
     },
     {
       "@type": "HowToStep",
@@ -733,7 +733,7 @@ export default function PolymerGranulesRecoveryPage() {
                   href="/templates/legal-notice-reply-format"
                   className="font-bold underline text-emerald-800 hover:text-emerald-950"
                 >
-                  Advocate-Vetted Commercial Notice Workspace
+                  Ready-to-Use Commercial Notice Workspace
                 </Link>
                 .
               </div>

@@ -37,7 +37,7 @@ const PROBLEMS: ProblemTab[] = [
           "Formally challenge estimated lump-sum quotations. Under Indian contract law, a landlord cannot dock damages without demonstrating actual out-of-pocket expenditure with verified GST invoices.",
       },
       {
-        step: "Issue Advocate Demand Notice Refuting Dilapidation",
+        step: "Issue Fact-Verified Demand Notice Refuting Dilapidation",
         description:
           "Serve a 15-day statutory demand notice invoking Section 108(m) TPA, putting the landlord on notice for interest at 18% p.a. for wrongful withholding of liquidated funds.",
       },

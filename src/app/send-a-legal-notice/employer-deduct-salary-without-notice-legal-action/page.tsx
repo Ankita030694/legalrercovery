@@ -5,7 +5,7 @@ const slug = 'send-a-legal-notice/employer-deduct-salary-without-notice-legal-ac
 const title =
   'Legal Notice for Salary Deducted Without Prior Notice';
 const description =
-  'Employer deducted salary without notice? Send an advocate-vetted legal notice under the Payment of Wages Act to recover unpaid wages.';
+  'Employer deducted salary without notice? Send a fact-verified legal notice under the Payment of Wages Act to recover unpaid wages.';
 const url = `https://www.legalrecovery.in/${slug}`;
 const ogImage = `/images/og/employer-deduct-salary-without-notice-legal-action.jpg`;
 

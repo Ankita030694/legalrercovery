@@ -106,7 +106,7 @@ const SCENARIO_CARDS = [
     situation:
       "The distributor signed or stamped your annual/quarterly balance confirmation statement, reconciled the running ledger on email/WhatsApp, or issued a written repayment schedule admitting the outstanding balance.",
     route:
-      "Serve a 15-day Advocate Demand Notice invoking the written admission of debt. If unpaid, file a Summary Suit under Order XXXVII CPC where the dealer has no automatic right to defend without court leave and deposit of security.",
+      "Serve a 15-day Legal Demand Notice invoking the written admission of debt. If unpaid, file a Summary Suit under Order XXXVII CPC where the dealer has no automatic right to defend without court leave and deposit of security.",
     statutoryHook: "Order XXXVII Rule 1(2) CPC + Section 18 Limitation Act 1963",
     jumpHref: "#heading-legal-basis",
     jumpLabel: "See Written Admission Law →",
@@ -142,7 +142,7 @@ const SCENARIO_CARDS = [
     situation:
       "Months after receiving the consignment and selling most of it, the dealer refuses to clear the balance—demanding that your sales team take back slow-moving stock or deducting unapproved 'target schemes' allegedly promised by an ex-salesman.",
     route:
-      "Rebut the excuse immediately through an Advocate Legal Notice citing Section 42 of the Sale of Goods Act (deemed acceptance after reasonable inspection window) and Section 92 BSA 2023 (barring oral modifications to written invoice terms).",
+      "Rebut the excuse immediately through a Legal Notice citing Section 42 of the Sale of Goods Act (deemed acceptance after reasonable inspection window) and Section 92 BSA 2023 (barring oral modifications to written invoice terms).",
     statutoryHook: "Section 42 Sale of Goods Act 1930 + Sections 91–92 BSA 2023",
     jumpHref: "#heading-dealer-defences",
     jumpLabel: "Open Dealer Excuse Counter-Matrix →",
@@ -220,7 +220,7 @@ const FAQS = [
   {
     question: "How can a manufacturer or wholesaler legally recover outstanding dues from a defaulting distributor or dealer?",
     answer:
-      "A manufacturer or wholesaler has four primary statutory routes to recover dealer dues in India: (1) Serving a 15-day Advocate Legal Demand Notice backed by a reconciled ledger, GST E-Way bills, and transport LRs; (2) Presenting the dealer's security cheque or PDC and initiating criminal prosecution under Section 138 of the Negotiable Instruments Act within 30 days of dishonour; (3) Filing an online delayed-payment reference on the MSME ODR Portal (if the supplier is a registered Micro or Small Enterprise) to claim principal plus 3× RBI Bank Rate monthly compound interest under Section 16; or (4) Filing a fast-track Summary Suit under Order XXXVII CPC or a Commercial Court claim based on signed balance confirmations.",
+      "A manufacturer or wholesaler has four primary statutory routes to recover dealer dues in India: (1) Serving a 15-day Legal Demand Notice backed by a reconciled ledger, GST E-Way bills, and transport LRs; (2) Presenting the dealer's security cheque or PDC and initiating criminal prosecution under Section 138 of the Negotiable Instruments Act within 30 days of dishonour; (3) Filing an online delayed-payment reference on the MSME ODR Portal (if the supplier is a registered Micro or Small Enterprise) to claim principal plus 3× RBI Bank Rate monthly compound interest under Section 16; or (4) Filing a fast-track Summary Suit under Order XXXVII CPC or a Commercial Court claim based on signed balance confirmations.",
   },
   {
     question: "Can we file a Section 138 cheque bounce case using a blank security cheque given by the dealer at appointment?",
@@ -250,7 +250,7 @@ const FAQS = [
   {
     question: "Dealer ya distributor udhar maal ka paisa nahi de raha toh legal notice kaise bheje?",
     answer:
-      "Agar aapka distributor, stockist ya dealer maal lene ke baad payment rok kar baitha hai, toh sabse pehle uska running ledger, GST invoices, E-Way bills aur transport bilty (LR) ek jagah jama karein. Agar aapke paas dealer ka security cheque hai toh 3 din ka written intimation dekar cheque bank mein lagayein, ya seedhe LegalRecovery.in ke madhyam se Advocate Legal Demand Notice (Registered Speed Post, Email aur WhatsApp par) bhejein jismein 15 din ke andar principal amount aur 18% commercial interest (ya MSME 3× compound interest) ki mang ki jati hai.",
+      "Agar aapka distributor, stockist ya dealer maal lene ke baad payment rok kar baitha hai, toh sabse pehle uska running ledger, GST invoices, E-Way bills aur transport bilty (LR) ek jagah jama karein. Agar aapke paas dealer ka security cheque hai toh 3 din ka written intimation dekar cheque bank mein lagayein, ya seedhe LegalRecovery.in ke madhyam se Legal Demand Notice (Registered Speed Post, Email aur WhatsApp par) bhejein jismein 15 din ke andar principal amount aur 18% commercial interest (ya MSME 3× compound interest) ki mang ki jati hai.",
   },
 ];
 
@@ -389,7 +389,7 @@ export default function DistributorDealerDuesRecoveryPage() {
                 Statutory Quick Answer (Manufacturer &amp; Wholesaler Recovery Rights)
               </p>
               <p>
-                Manufacturers and wholesalers can recover unpaid distributor or dealer dues through four statutory tracks: presenting onboarding security cheques under Section 138 of the NI Act, filing an MSME ODR claim for 3× RBI Bank Rate compound interest (Section 16 MSMED Act) with Section 43B(h) tax disallowance leverage, or instituting an Order XXXVII CPC summary suit within 3 years of the last ledger acknowledgment—starting with a 15-day Advocate Demand Notice.
+                Manufacturers and wholesalers can recover unpaid distributor or dealer dues through four statutory tracks: presenting onboarding security cheques under Section 138 of the NI Act, filing an MSME ODR claim for 3× RBI Bank Rate compound interest (Section 16 MSMED Act) with Section 43B(h) tax disallowance leverage, or instituting an Order XXXVII CPC summary suit within 3 years of the last ledger acknowledgment—starting with a 15-day Legal Demand Notice.
               </p>
             </div>
 
@@ -552,7 +552,7 @@ export default function DistributorDealerDuesRecoveryPage() {
                     <tbody className="divide-y divide-slate-200">
                       <tr className="hover:bg-slate-50/80">
                         <th scope="row" className="py-3 px-3.5 sm:py-3.5 sm:px-4 font-semibold text-slate-900">
-                          Pre-Litigation Advocate Demand Notice
+                          Pre-Litigation Legal Demand Notice
                         </th>
                         <td className="py-3 px-3.5 sm:py-3.5 sm:px-4 text-xs">Sec 55 &amp; 61 Sale of Goods Act + Sec 43B(h) IT Act</td>
                         <td className="py-3 px-3.5 sm:py-3.5 sm:px-4 text-xs">Reconciled ledger, GST invoices, E-Way bills, LRs</td>
@@ -661,10 +661,10 @@ export default function DistributorDealerDuesRecoveryPage() {
                     </span>
                     <div className="space-y-1 sm:space-y-1.5">
                       <h3 className="text-sm sm:text-base md:text-lg font-bold text-slate-900">
-                        Serve a Statutory Advocate Legal Demand Notice (With Sec 138 / Sec 16 / Sec 43B(h) Leverage)
+                        Serve a Statutory Legal Demand Notice (With Sec 138 / Sec 16 / Sec 43B(h) Leverage)
                       </h3>
                       <p className="text-xs sm:text-sm leading-relaxed">
-                        Have an advocate dispatch a formal Legal Demand Notice via Registered Speed Post (RPAD) as well as email and WhatsApp (under Section 63 BSA 2023) to the dealership firm, its proprietor, or all partners/directors at both their business and residential addresses. If a cheque bounced, the notice must be served within 30 days of the return memo demanding payment within 15 days under Section 138 NI Act. If you are an Udyam-registered MSE, attach the <Link href="/tools/msme-delayed-payment-interest-calculator" className="text-blue-700 underline font-semibold">3× RBI Bank Rate compound interest sheet</Link> and put the dealer on notice of <Link href="/law/section-43bh-msme-payment-rule" className="text-blue-700 underline font-semibold">Section 43B(h) income-tax disallowance</Link>.
+                        Dispatch a formal Legal Demand Notice via Registered Speed Post (RPAD) as well as email and WhatsApp (under Section 63 BSA 2023) to the dealership firm, its proprietor, or all partners/directors at both their business and residential addresses. If a cheque bounced, the notice must be served within 30 days of the return memo demanding payment within 15 days under Section 138 NI Act. If you are an Udyam-registered MSE, attach the <Link href="/tools/msme-delayed-payment-interest-calculator" className="text-blue-700 underline font-semibold">3× RBI Bank Rate compound interest sheet</Link> and put the dealer on notice of <Link href="/law/section-43bh-msme-payment-rule" className="text-blue-700 underline font-semibold">Section 43B(h) income-tax disallowance</Link>.
                       </p>
                     </div>
                   </li>
@@ -810,7 +810,7 @@ export default function DistributorDealerDuesRecoveryPage() {
                   </div>
                   <div className="bg-red-50 text-red-950 p-4 rounded-xl border border-red-200">
                     <span className="text-[10px] font-bold text-red-700 uppercase tracking-wider block mb-1">Stage 3</span>
-                    <h3 className="font-bold text-sm">15-Day Advocate Legal Notice</h3>
+                    <h3 className="font-bold text-sm">15-Day Legal Notice</h3>
                     <p className="text-xs text-red-900 mt-1">Serve Sec 138 NI Act + Sec 16 MSMED (3× RBI) + Sec 43B(h) tax audit warning.</p>
                   </div>
                   <div className="bg-slate-100 text-slate-900 p-4 rounded-xl border border-slate-300">
@@ -875,7 +875,7 @@ export default function DistributorDealerDuesRecoveryPage() {
                     {/* Stage 3 */}
                     <rect x="354" y="20" width="150" height="95" rx="10" fill="url(#distAlert)" />
                     <text x="429" y="44" fill="#FCA5A5" fontWeight="bold" textAnchor="middle">STAGE 3</text>
-                    <text x="429" y="64" fill="#FFFFFF" fontWeight="bold" textAnchor="middle">Advocate Notice</text>
+                    <text x="429" y="64" fill="#FFFFFF" fontWeight="bold" textAnchor="middle">Legal Notice</text>
                     <text x="429" y="82" fill="#FEE2E2" fontSize="10" textAnchor="middle">15-Day Statutory Demand</text>
                     <text x="429" y="98" fill="#FECACA" fontSize="9" textAnchor="middle">Sec 138 + 43B(h) + MSMED</text>
 
@@ -1026,7 +1026,7 @@ export default function DistributorDealerDuesRecoveryPage() {
                       <strong>The Default &amp; Excuse:</strong> Between April and July 2026, VoltEdge supplied 6 consignments of MCBs and distribution boards totaling ₹21,40,000 via GST e-Invoices and E-Way bills. Awadh Electricals paid ₹5,00,000 on-account in August 2026, leaving a net reconciled debit balance of <strong>₹16,40,000</strong>. In September 2026, the distributor onboarded a competing brand and stopped clearing dues, claiming on phone calls that ₹6,00,000 worth of stock was &ldquo;slow-moving&rdquo; and that the former Area Sales Manager had verbally promised an extra 4% turnover rebate.
                     </p>
                     <p>
-                      <strong>The Statutory Action:</strong> VoltEdge froze further dispatches and engaged LegalRecovery.in. First, a 72-hour written intimation was sent by email and WhatsApp notifying both partners of Awadh Electricals that Security Cheque No. 448912 was being filled and presented for the exact reconciled ledger balance of ₹16,40,000. When the cheque returned dishonoured with the memo <em>&ldquo;Payment Stopped by Drawer&rdquo;</em>, an advocate dispatched a combined <strong>Section 138 NI Act + Section 16 MSMED Act + Section 43B(h) Legal Notice</strong> to the firm and both partners at their shop and residential addresses. The notice demanded ₹16,40,000 principal plus ₹2,41,800 accrued 3× RBI compound interest within 15 days, and copied the firm&apos;s tax audit notice regarding Section 43B(h) disallowance.
+                      <strong>The Statutory Action:</strong> VoltEdge froze further dispatches and engaged LegalRecovery.in. First, a 72-hour written intimation was sent by email and WhatsApp notifying both partners of Awadh Electricals that Security Cheque No. 448912 was being filled and presented for the exact reconciled ledger balance of ₹16,40,000. When the cheque returned dishonoured with the memo <em>&ldquo;Payment Stopped by Drawer&rdquo;</em>, our team dispatched a combined <strong>Section 138 NI Act + Section 16 MSMED Act + Section 43B(h) Legal Notice</strong> to the firm and both partners at their shop and residential addresses. The notice demanded ₹16,40,000 principal plus ₹2,41,800 accrued 3× RBI compound interest within 15 days, and copied the firm&apos;s tax audit notice regarding Section 43B(h) disallowance.
                     </p>
                     <div className="p-3.5 sm:p-4 bg-emerald-950/70 border border-emerald-700/60 rounded-xl text-emerald-200">
                       <strong className="block text-emerald-400 font-bold mb-1">The Resolution (Day 19):</strong>
@@ -1114,7 +1114,7 @@ export default function DistributorDealerDuesRecoveryPage() {
                     </span>
                     <ul className="space-y-2 text-xs sm:text-sm text-slate-700 leading-relaxed list-disc list-inside">
                       <li>Audit your dealer ledger, invoices, E-Way bills, and security cheque status to choose the highest-leverage statutory route.</li>
-                      <li>Draft and serve formal Advocate Legal Demand Notices (under Sec 138 NI Act, Sec 15–16 MSMED Act, Sec 43B(h) IT Act, and Order 37 CPC) via Registered Speed Post, Email, and WhatsApp.</li>
+                      <li>Draft and serve formal Legal Demand Notices (under Sec 138 NI Act, Sec 15–16 MSMED Act, Sec 43B(h) IT Act, and Order 37 CPC) via Registered Speed Post, Email, and WhatsApp.</li>
                       <li>Execute multi-dealer bulk legal notice campaigns for brands and super-stockists cleaning up overdue receivables across multiple states.</li>
                       <li>Prepare MSME ODR Portal reference filings, Section 12A pre-institution mediation applications, and Order 37 / Section 138 pleadings.</li>
                     </ul>

@@ -10,7 +10,7 @@ import { PaymentModal } from "@/components/PaymentModal";
 const faqs = [
   {
     question: "Can an NBFC send a legal notice to recover unpaid loan dues and bounced EMIs?",
-    answer: "Yes, Non-Banking Financial Companies (NBFCs) and digital lending institutions can issue an advocate-vetted statutory legal notice to recover overdue loans, unpaid EMIs, and defaulted credit facilities under the Indian Contract Act, 1872 and the Negotiable Instruments Act, 1881. The formal legal demand notice gives the defaulting borrower and co-guarantor a strict 15-day pre-litigation deadline to clear the outstanding principal, penal interest, and incidental recovery charges. If the borrower fails to comply within the stipulated notice period, the NBFC can proceed with asset attachment under the SARFAESI Act, 2002, file an Original Application before the Debt Recovery Tribunal (DRT), or initiate criminal prosecution for cheque and NACH mandate dishonor."
+    answer: "Yes, Non-Banking Financial Companies (NBFCs) and digital lending institutions can issue a fact-verified statutory legal notice to recover overdue loans, unpaid EMIs, and defaulted credit facilities under the Indian Contract Act, 1872 and the Negotiable Instruments Act, 1881. The formal legal demand notice gives the defaulting borrower and co-guarantor a strict 15-day pre-litigation deadline to clear the outstanding principal, penal interest, and incidental recovery charges. If the borrower fails to comply within the stipulated notice period, the NBFC can proceed with asset attachment under the SARFAESI Act, 2002, file an Original Application before the Debt Recovery Tribunal (DRT), or initiate criminal prosecution for cheque and NACH mandate dishonor."
   },
   {
     question: "What is the mandatory notice period under Section 13(2) of the SARFAESI Act for NBFC loan recovery?",
@@ -22,7 +22,7 @@ const faqs = [
   },
   {
     question: "What legal actions can an NBFC take if an unsecured business loan or personal loan is defaulted?",
-    answer: "For unsecured loans where physical collateral is not mortgaged, the NBFC can issue an advocate-drafted demand notice and initiate fast-track arbitration under the Arbitration and Conciliation Act, 1996 if the loan agreement contains an arbitration clause. The NBFC can concurrently institute a Summary Suit under Order XXXVII of the Code of Civil Procedure, 1908 in the competent Commercial Court to obtain an expedited decree without protracted trial delays. For corporate borrowers with defaulted credit facilities exceeding one crore rupees, the NBFC can also file an insolvency application under Section 7 of the Insolvency and Bankruptcy Code, 2016 before the National Company Law Tribunal (NCLT)."
+    answer: "For unsecured loans where physical collateral is not mortgaged, the NBFC can issue a fact-verified demand notice and initiate fast-track arbitration under the Arbitration and Conciliation Act, 1996 if the loan agreement contains an arbitration clause. The NBFC can concurrently institute a Summary Suit under Order XXXVII of the Code of Civil Procedure, 1908 in the competent Commercial Court to obtain an expedited decree without protracted trial delays. For corporate borrowers with defaulted credit facilities exceeding one crore rupees, the NBFC can also file an insolvency application under Section 7 of the Insolvency and Bankruptcy Code, 2016 before the National Company Law Tribunal (NCLT)."
   }
 ];
 
@@ -129,7 +129,7 @@ const jsonLd = {
         {
           "@type": "ListItem",
           "position": 3,
-          "name": "Draft an advocate-vetted statutory legal notice under SARFAESI, NI Act, or RDB Act"
+          "name": "Draft a fact-verified statutory legal notice under SARFAESI, NI Act, or RDB Act"
         },
         {
           "@type": "ListItem",
@@ -177,7 +177,7 @@ const jsonLd = {
             "@type": "Person",
             "name": "Siddharth Mathur"
           },
-          "reviewBody": "As an NBFC portfolio recovery manager handling unsecured MSME business loan defaults across North India, serving legally airtight demand notices was a major operational bottleneck. Legal Recovery streamlined our pre-litigation process with advocate-signed demand notices citing Section 25 PSSA and SARFAESI provisions. Over 68% of our chronic 90+ DPD defaulting borrowers approached us for restructuring and one-time settlement within 14 days of notice delivery. Outstanding turnaround time and institutional compliance."
+          "reviewBody": "As an NBFC portfolio recovery manager handling unsecured MSME business loan defaults across North India, serving legally airtight demand notices was a major operational bottleneck. Legal Recovery streamlined our pre-litigation process with fact-verified demand notices citing Section 25 PSSA and SARFAESI provisions. Over 68% of our chronic 90+ DPD defaulting borrowers approached us for restructuring and one-time settlement within 14 days of notice delivery. Outstanding turnaround time and institutional compliance."
         }
       ]
     }
@@ -241,7 +241,7 @@ export default function ForNbfcToRecoverTheirUnpaidDuesClient() {
               Legal Notice for NBFC to <span className="text-[#DC2626]">Recover Unpaid Dues</span>
             </h1>
             <p className="text-sm md:text-xl mb-8 md:mb-12 max-w-3xl mx-auto text-slate-300 leading-relaxed font-medium">
-              Recover defaulted commercial loans, unsecured business debt, LAP, and bounced EMIs with an advocate-drafted statutory legal notice backed by SARFAESI, DRT, and Section 138 NI Act provisions.
+              Recover defaulted commercial loans, unsecured business debt, LAP, and bounced EMIs with a fact-verified statutory legal notice backed by SARFAESI, DRT, and Section 138 NI Act provisions.
             </p>
             <button
               onClick={() => setIsPaymentModalOpen(true)}
@@ -345,7 +345,7 @@ export default function ForNbfcToRecoverTheirUnpaidDuesClient() {
                 <div id="quick-answer" className="bg-slate-50 border-l-4 border-[#DC2626] p-6 rounded-r-2xl">
                   <h2 className="text-sm font-extrabold text-slate-900 mb-2 uppercase tracking-wide">Quick Answer</h2>
                   <p className="text-sm text-slate-700 font-medium leading-relaxed">
-                    Non-Banking Financial Companies (NBFCs) and institutional lenders can issue an advocate-drafted statutory legal notice to recover defaulted loans, outstanding credit facilities, and bounced EMIs from defaulting borrowers and co-guarantors. The legal notice serves as an enforceable pre-litigation demand granting the debtor a mandatory 15-day cure window (or 60 days under SARFAESI Section 13(2)) to settle the outstanding principal, contractual interest, and penal charges. Failure to discharge the debt empowers the NBFC to initiate attachment of mortgaged assets without court intervention, lodge criminal complaints under Section 138 of the Negotiable Instruments Act or Section 25 of the Payment and Settlement Systems Act, and institute recovery proceedings before the Debt Recovery Tribunal.
+                    Non-Banking Financial Companies (NBFCs) and institutional lenders can issue a fact-verified statutory legal notice to recover defaulted loans, outstanding credit facilities, and bounced EMIs from defaulting borrowers and co-guarantors. The legal notice serves as an enforceable pre-litigation demand granting the debtor a mandatory 15-day cure window (or 60 days under SARFAESI Section 13(2)) to settle the outstanding principal, contractual interest, and penal charges. Failure to discharge the debt empowers the NBFC to initiate attachment of mortgaged assets without court intervention, lodge criminal complaints under Section 138 of the Negotiable Instruments Act or Section 25 of the Payment and Settlement Systems Act, and institute recovery proceedings before the Debt Recovery Tribunal.
                   </p>
                 </div>
 
@@ -364,7 +364,7 @@ export default function ForNbfcToRecoverTheirUnpaidDuesClient() {
                       For unsecured business loans, consumer credit lines, and bounced repayment installments, NBFCs possess dual civil and criminal remedies. Under Section 138 of the <span className="font-semibold text-slate-800">Negotiable Instruments Act, 1881</span>, the dishonor of repayment cheques triggers criminal liability. Similarly, Section 25 of the <span className="font-semibold text-slate-800">Payment and Settlement Systems Act, 2007 (PSSA)</span> accords identical criminal status to dishonored electronic NACH (National Automated Clearing House) mandates and automated debit instructions.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      Furthermore, where outstanding dues exceed ₹20 Lakhs, notified NBFCs can institute recovery proceedings before the <span className="font-semibold text-slate-800">Debt Recovery Tribunal (DRT)</span> under the Recovery of Debts and Bankruptcy Act, 1993 (RDB Act). For corporate debtors with default quantum exceeding ₹1 Crore, Section 7 of the <span className="font-semibold text-slate-800">Insolvency and Bankruptcy Code, 2016 (IBC)</span> permits NBFCs as financial creditors to initiate Corporate Insolvency Resolution Processes (CIRP). Serving a formal advocate-drafted demand notice is the mandatory pre-litigation cornerstone establishing an uncontroverted record of default.
+                      Furthermore, where outstanding dues exceed ₹20 Lakhs, notified NBFCs can institute recovery proceedings before the <span className="font-semibold text-slate-800">Debt Recovery Tribunal (DRT)</span> under the Recovery of Debts and Bankruptcy Act, 1993 (RDB Act). For corporate debtors with default quantum exceeding ₹1 Crore, Section 7 of the <span className="font-semibold text-slate-800">Insolvency and Bankruptcy Code, 2016 (IBC)</span> permits NBFCs as financial creditors to initiate Corporate Insolvency Resolution Processes (CIRP). Serving a formal fact-verified demand notice is the mandatory pre-litigation cornerstone establishing an uncontroverted record of default.
                     </p>
                   </div>
                 </section>
@@ -582,7 +582,7 @@ export default function ForNbfcToRecoverTheirUnpaidDuesClient() {
                       <div className="flex items-start space-x-4">
                         <div className="bg-[#DC2626] text-white rounded-full w-8 h-8 flex items-center justify-center shrink-0 font-black text-sm">3</div>
                         <div>
-                          <h4 className="font-extrabold text-sm sm:text-base text-slate-900 mb-1">Advocate Drafting on Formal Letterhead</h4>
+                          <h4 className="font-extrabold text-sm sm:text-base text-slate-900 mb-1">Notice Drafting on Formal Letterhead</h4>
                           <p className="text-xs sm:text-sm text-slate-650 leading-relaxed">
                             Engage an advocate to draft the statutory notice on official letterhead, reciting the credit sanction history, specific loan agreement clauses breached, NACH/cheque return particulars, and explicit statutory enforcement provisions under SARFAESI, DRT, and NI Act.
                           </p>
@@ -643,7 +643,7 @@ export default function ForNbfcToRecoverTheirUnpaidDuesClient() {
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      Upon receipt of a formal advocate notice, delinquent borrowers typically enter into structured settlement negotiations within 10 to 14 days to prevent public asset auctions, criminal summons, or corporate insolvency filings. Over 65% of NBFC defaults are resolved through one-time settlements (OTS) or loan restructuring during this pre-litigation window.
+                      Upon receipt of a formal legal notice, delinquent borrowers typically enter into structured settlement negotiations within 10 to 14 days to prevent public asset auctions, criminal summons, or corporate insolvency filings. Over 65% of NBFC defaults are resolved through one-time settlements (OTS) or loan restructuring during this pre-litigation window.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
                       If the borrower ignores the demand notice or sends a frivolous denial upon expiry of the statutory cure period, the NBFC possesses conclusive proof of pre-litigation service and can execute the following multi-pronged judicial measures:
@@ -712,7 +712,7 @@ export default function ForNbfcToRecoverTheirUnpaidDuesClient() {
                 <div className="absolute top-0 right-0 w-24 h-24 bg-red-600/10 rounded-full blur-xl pointer-events-none" />
                 <h3 className="text-sm font-black mb-3">Recover NBFC &amp; Fintech Dues</h3>
                 <p className="text-gray-400 mb-5 text-[11px] leading-relaxed">
-                  Partner with senior debt recovery advocates. We draft institutional demand notices, calculate compound &amp; penal interest, execute verified multi-channel dispatch, and handle SARFAESI/DRT escalations.
+                  Our team verifies the facts you submit. We prepare institutional demand notices, calculate compound &amp; penal interest, execute verified multi-channel dispatch, and handle SARFAESI/DRT escalations.
                 </p>
                 <button
                   onClick={() => setIsPaymentModalOpen(true)}
@@ -738,7 +738,7 @@ export default function ForNbfcToRecoverTheirUnpaidDuesClient() {
                     <span className="text-xs font-bold text-slate-800">Siddharth Mathur</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed italic">
-                    &quot;As an NBFC portfolio recovery manager handling unsecured MSME business loan defaults across North India, serving legally airtight demand notices was a major operational bottleneck. Legal Recovery streamlined our pre-litigation process with advocate-signed demand notices citing Section 25 PSSA and SARFAESI provisions. Over 68% of our chronic 90+ DPD defaulting borrowers approached us for restructuring and one-time settlement within 14 days of notice delivery. Outstanding turnaround time and institutional compliance.&quot;
+                    &quot;As an NBFC portfolio recovery manager handling unsecured MSME business loan defaults across North India, serving legally airtight demand notices was a major operational bottleneck. Legal Recovery streamlined our pre-litigation process with fact-verified demand notices citing Section 25 PSSA and SARFAESI provisions. Over 68% of our chronic 90+ DPD defaulting borrowers approached us for restructuring and one-time settlement within 14 days of notice delivery. Outstanding turnaround time and institutional compliance.&quot;
                   </p>
                 </div>
               </div>
@@ -772,7 +772,7 @@ export default function ForNbfcToRecoverTheirUnpaidDuesClient() {
                 <img src="/lrlogo.svg" alt="LegalRecovery" width={3236} height={601} className="h-8 sm:h-10 w-auto object-contain" />
               </div>
               <p className="text-sm md:text-base text-slate-600 leading-relaxed mb-10 max-w-3xl font-medium">
-                Legal Recovery is India&apos;s trusted consumer protection and commercial debt resolution platform. Founded in 2022 and headquartered in New Delhi, Legal Recovery has counselled 15,000+ businesses, financial institutions, and consumers on debt recovery, commercial contract breaches, and loan defaults. Legal Recovery accelerates out-of-court settlements and connects you with top verified panel advocates.
+                Legal Recovery is India&apos;s trusted consumer protection and commercial debt resolution platform. Founded in 2022 and headquartered in New Delhi, Legal Recovery has counselled 15,000+ businesses, financial institutions, and consumers on debt recovery, commercial contract breaches, and loan defaults. Legal Recovery accelerates out-of-court settlements and gets your fact-verified notice out quickly.
               </p>
 
               <div className="border-t border-slate-100 pt-10">

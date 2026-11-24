@@ -24,10 +24,10 @@ export default function CylinderLienCTA({ className = "" }: CylinderLienCTAProps
                 Track 1 &middot; Single Converter / Engraver Claim
               </span>
               <h3 className="text-lg sm:text-xl font-bold text-white mb-2">
-                Test 1 Live Overdue Case Now (&#8377;{basePrice} &middot; Advocate Drafted &middot; Email + WhatsApp + Speed Post RPAD)
+                Test 1 Live Overdue Case Now (&#8377;{basePrice} &middot; Fact-Verified &middot; Email + WhatsApp + Speed Post RPAD)
               </h3>
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
-                Upload your HSN 8442 cylinder invoices, quotation general-lien terms, overdue laminate/carton GST ledger, and brand handover emails. Our advocates draft and dispatch a Contract Act s.170/s.171 + Sale of Goods s.19/s.44 + MSMED s.15&ndash;18 &amp; Section 43B(h) statutory demand notice within 24 hours.
+                Upload your HSN 8442 cylinder invoices, quotation general-lien terms, overdue laminate/carton GST ledger, and brand handover emails. Our team drafts and dispatches a Contract Act s.170/s.171 + Sale of Goods s.19/s.44 + MSMED s.15&ndash;18 &amp; Section 43B(h) statutory demand notice within 24 hours.
               </p>
             </div>
 

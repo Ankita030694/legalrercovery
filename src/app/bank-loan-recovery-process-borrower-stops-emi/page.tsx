@@ -139,7 +139,7 @@ const FAQS = [
   {
     question: "How do RBI SMA-0, SMA-1, and SMA-2 classifications dictate bank recovery strategy?",
     answer:
-      "Under RBI Prudential Norms on Income Recognition, Asset Classification (IRAC) and Provisioning, loan accounts with overdue EMIs are categorized by Days Past Due (DPD): SMA-0 (1 to 30 days overdue), SMA-1 (31 to 60 days overdue), and SMA-2 (61 to 90 days overdue). Once an account crosses 90 DPD, it is mandatorily classified as a Non-Performing Asset (NPA), requiring banks to set aside 15% to 40% in statutory capital provisions. Serving an advocate-drafted statutory notice at 30 DPD (SMA-1) creates critical legal pressure that forces borrower cure or restructuring before NPA slippage.",
+      "Under RBI Prudential Norms on Income Recognition, Asset Classification (IRAC) and Provisioning, loan accounts with overdue EMIs are categorized by Days Past Due (DPD): SMA-0 (1 to 30 days overdue), SMA-1 (31 to 60 days overdue), and SMA-2 (61 to 90 days overdue). Once an account crosses 90 DPD, it is mandatorily classified as a Non-Performing Asset (NPA), requiring banks to set aside 15% to 40% in statutory capital provisions. Serving a fact-verified statutory notice at 30 DPD (SMA-1) creates critical legal pressure that forces borrower cure or restructuring before NPA slippage.",
   },
   {
     question: "Can a bank initiate criminal action under Section 25 of the PSS Act for bounced NACH auto-debits?",
@@ -501,7 +501,7 @@ export default function BorrowerStopsEmiRecoveryPage() {
                         Automated 15-Day Statutory Cure Notice Dispatched at 30 DPD:
                       </strong>
                       <p className="text-xs sm:text-sm mt-0.5 leading-relaxed">
-                        Rather than relying on informal recovery agents or call center warnings, successful banks issue an advocate-drafted statutory demand notice under Section 25 of the PSS Act the moment the second EMI defaults. Formal legal notices establish solemnity, warning of personal criminal liability and immediate CIBIL score destruction.
+                        Rather than relying on informal recovery agents or call center warnings, successful banks issue a fact-verified statutory demand notice under Section 25 of the PSS Act the moment the second EMI defaults. Formal legal notices establish solemnity, warning of personal criminal liability and immediate CIBIL score destruction.
                       </p>
                     </div>
                   </li>
@@ -1077,7 +1077,7 @@ export default function BorrowerStopsEmiRecoveryPage() {
                       <strong>The Delinquency Bottleneck:</strong> The borrower stopped answering calls from the branch relationship manager and sent an informal email claiming business distress, requesting a 6-month moratorium without submitting audited financial statements. The account was rapidly heading toward the critical 90 DPD mark, where the bank would have to set aside ₹18 Lakh in statutory capital provisions.
                     </p>
                     <p>
-                      <strong>The Statutory Action:</strong> The bank&apos;s Remedial Management Unit engaged LegalRecovery.in. An advocate drafted and dispatched an immediate statutory notice under Section 25 of the Payment and Settlement Systems Act, 2007 along with a conditional Loan Recall Warning to both the borrower and the two personal guarantors (managing director and spouse). The notice itemized the two bounced NACH clearing memos, invoked Section 128 ICA co-extensive guarantor liability, and gave a strict 15-day window to cure arrears or face criminal prosecution and SARFAESI repossession.
+                      <strong>The Statutory Action:</strong> The bank&apos;s Remedial Management Unit engaged LegalRecovery.in. The team verified the facts and dispatched an immediate statutory notice under Section 25 of the Payment and Settlement Systems Act, 2007 along with a conditional Loan Recall Warning to both the borrower and the two personal guarantors (managing director and spouse). The notice itemized the two bounced NACH clearing memos, invoked Section 128 ICA co-extensive guarantor liability, and gave a strict 15-day window to cure arrears or face criminal prosecution and SARFAESI repossession.
                     </p>
                     <div className="p-3.5 sm:p-4 bg-emerald-950/70 border border-emerald-700/60 rounded-xl text-emerald-200">
                       <strong className="block text-emerald-400 font-bold mb-1">The Resolution:</strong>

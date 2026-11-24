@@ -10,7 +10,7 @@ import { PaymentModal } from "@/components/PaymentModal";
 const faqs = [
   {
     question: "Can a tenant send a legal notice to a landlord for not refunding a commercial or residential security deposit?",
-    answer: "Yes, both commercial and residential tenants can issue an advocate-drafted statutory legal notice demanding the immediate refund of an unreturned security deposit under the Transfer of Property Act, 1882 and the Indian Contract Act, 1872. The legal demand notice grants the landlord a mandatory 15-day pre-litigation deadline to return the principal deposit along with accrued interest, failing which the tenant can initiate legal proceedings. If the landlord fails to refund the funds within this statutory window, the tenant can institute a Commercial Summary Suit under Order XXXVII of the Code of Civil Procedure or file an action before the designated Rent Authority."
+    answer: "Yes, both commercial and residential tenants can issue a fact-verified statutory legal notice demanding the immediate refund of an unreturned security deposit under the Transfer of Property Act, 1882 and the Indian Contract Act, 1872. The legal demand notice grants the landlord a mandatory 15-day pre-litigation deadline to return the principal deposit along with accrued interest, failing which the tenant can initiate legal proceedings. If the landlord fails to refund the funds within this statutory window, the tenant can institute a Commercial Summary Suit under Order XXXVII of the Code of Civil Procedure or file an action before the designated Rent Authority."
   },
   {
     question: "Can a commercial landlord forfeit the entire security deposit for premature exit during a lock-in period?",
@@ -129,7 +129,7 @@ const jsonLd = {
         {
           "@type": "ListItem",
           "position": 3,
-          "name": "Draft an advocate-vetted statutory legal notice under Transfer of Property Act and Indian Contract Act"
+          "name": "Draft a fact-verified statutory legal notice under Transfer of Property Act and Indian Contract Act"
         },
         {
           "@type": "ListItem",
@@ -146,7 +146,7 @@ const jsonLd = {
     {
       "@type": "Product",
       "name": "Legal Notice for Security Deposit Recovery",
-      "description": "Advocate-drafted statutory demand notice and legal recovery service for commercial office tenants, retail businesses, and residential renters to recover withheld security deposits from refusing landlords.",
+      "description": "Fact-verified statutory demand notice and legal recovery service for commercial office tenants, retail businesses, and residential renters to recover withheld security deposits from refusing landlords.",
       "brand": {
         "@type": "Organization",
         "name": "Legal Recovery"
@@ -177,7 +177,7 @@ const jsonLd = {
             "@type": "Person",
             "name": "Rajiv Singhania"
           },
-          "reviewBody": "When our commercial landlord in Gurgaon withheld our ₹18.5 Lakh security deposit citing baseless fit-out repainting and lock-in deductions after we vacated our retail showroom, Legal Recovery drafted and served a comprehensive advocate notice under the Transfer of Property Act and Commercial Courts Act. The landlord's counsel contacted us within 11 days of receiving the notice and released 100% of our deposit with interest to avoid commercial summary suit proceedings. Exceptional speed, legal precision, and corporate client support."
+          "reviewBody": "When our commercial landlord in Gurgaon withheld our ₹18.5 Lakh security deposit citing baseless fit-out repainting and lock-in deductions after we vacated our retail showroom, Legal Recovery drafted and served a comprehensive legal notice under the Transfer of Property Act and Commercial Courts Act. The landlord's counsel contacted us within 11 days of receiving the notice and released 100% of our deposit with interest to avoid commercial summary suit proceedings. Exceptional speed, legal precision, and corporate client support."
         }
       ]
     }
@@ -364,7 +364,7 @@ export default function SecurityDepositNotRefundedLandlordClient() {
                 <div id="quick-answer" className="bg-slate-50 border-l-4 border-[#DC2626] p-6 rounded-r-2xl">
                   <h2 className="text-sm font-extrabold text-slate-900 mb-2 uppercase tracking-wide">Quick Answer</h2>
                   <p className="text-sm text-slate-700 font-medium leading-relaxed">
-                    A legal notice to a landlord for not giving back the security deposit is a formal statutory demand drafted by an advocate that requires the landlord to refund the full unreturned deposit with interest within 15 days of receipt. Under Section 108 of the Transfer of Property Act, 1882, the Indian Contract Act, 1872, and the Model Tenancy Act, landlords cannot arbitrarily forfeit rental deposits or make unreasonable deductions for normal wear and tear once the tenant vacates and hands over vacant possession. Serving a verified legal notice establishes essential pre-litigation proof, entitling the commercial or residential tenant to claim 12% to 18% annual penal interest and initiate a Summary Suit under Order XXXVII of the Code of Civil Procedure or institute proceedings before the competent Rent Authority or Commercial Court.
+                    A legal notice to a landlord for not giving back the security deposit is a formal statutory demand prepared on verified facts that requires the landlord to refund the full unreturned deposit with interest within 15 days of receipt. Under Section 108 of the Transfer of Property Act, 1882, the Indian Contract Act, 1872, and the Model Tenancy Act, landlords cannot arbitrarily forfeit rental deposits or make unreasonable deductions for normal wear and tear once the tenant vacates and hands over vacant possession. Serving a verified legal notice establishes essential pre-litigation proof, entitling the commercial or residential tenant to claim 12% to 18% annual penal interest and initiate a Summary Suit under Order XXXVII of the Code of Civil Procedure or institute proceedings before the competent Rent Authority or Commercial Court.
                   </p>
                 </div>
 
@@ -383,7 +383,7 @@ export default function SecurityDepositNotRefundedLandlordClient() {
                       Contractual rights and breach remedies are anchored in the <a href="https://www.indiacode.nic.in/handle/123456789/2187" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-800 hover:underline">Indian Contract Act, 1872</a>. When a landlord refuses to return a security deposit upon valid lease determination, it constitutes an actionable breach of contract under Section 73 (compensation for loss or damage caused by breach of contract) and Section 74 (liquidated damages and penalties). Furthermore, the <a href="https://mohua.gov.in/upload/uploadfiles/files/Model_Tenancy_Act_English.pdf" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-800 hover:underline">Model Tenancy Act, 2021 (MTA)</a> formulated by the Ministry of Housing and Urban Affairs provides a clear regulatory ceiling, capping security deposits (maximum 2 months for residential and maximum 6 months for commercial properties) and requiring mandatory refund within one month of vacating after agreed deductions.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      For corporate entities, retail chains, and MSME enterprises occupying commercial real estate, high-quantum security deposits (often ranging from ₹10 Lakhs to several Crores) fall under the ambit of commercial disputes governed by the <a href="https://www.indiacode.nic.in/handle/123456789/2157" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-800 hover:underline">Commercial Courts Act, 2015</a>. Serving a formal advocate-drafted demand notice is the indispensable statutory prerequisite to trigger mandatory Pre-Institution Mediation under Section 12A or institute fast-track recovery proceedings.
+                      For corporate entities, retail chains, and MSME enterprises occupying commercial real estate, high-quantum security deposits (often ranging from ₹10 Lakhs to several Crores) fall under the ambit of commercial disputes governed by the <a href="https://www.indiacode.nic.in/handle/123456789/2157" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-800 hover:underline">Commercial Courts Act, 2015</a>. Serving a formal fact-verified demand notice is the indispensable statutory prerequisite to trigger mandatory Pre-Institution Mediation under Section 12A or institute fast-track recovery proceedings.
                     </p>
                   </div>
                 </section>
@@ -487,7 +487,7 @@ export default function SecurityDepositNotRefundedLandlordClient() {
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      Prior to issuing an advocate legal demand notice, assembling a comprehensive documentary dossier is vital to establish uncontroverted proof of compliance, vacant handover, and financial disbursement.
+                      Prior to issuing a legal demand notice, assembling a comprehensive documentary dossier is vital to establish uncontroverted proof of compliance, vacant handover, and financial disbursement.
                     </p>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
@@ -552,7 +552,7 @@ export default function SecurityDepositNotRefundedLandlordClient() {
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      Serving an advocate-vetted legal demand notice requires strict adherence to procedural protocols to ensure unassailable evidentiary admissibility in civil, commercial, or consumer courts.
+                      Serving a fact-verified legal demand notice requires strict adherence to procedural protocols to ensure unassailable evidentiary admissibility in civil, commercial, or consumer courts.
                     </p>
 
                     <div className="space-y-6 my-6">
@@ -569,7 +569,7 @@ export default function SecurityDepositNotRefundedLandlordClient() {
                       <div className="flex items-start space-x-4">
                         <div className="bg-[#DC2626] text-white rounded-full w-8 h-8 flex items-center justify-center shrink-0 font-black text-sm">2</div>
                         <div>
-                          <h4 className="font-extrabold text-sm sm:text-base text-slate-900 mb-1">Advocate Drafting on Formal Letterhead</h4>
+                          <h4 className="font-extrabold text-sm sm:text-base text-slate-900 mb-1">Notice Drafting on Formal Letterhead</h4>
                           <p className="text-xs sm:text-sm text-slate-650 leading-relaxed">
                             Engage a legal counsel to draft the formal statutory notice on advocate letterhead. The notice articulates the tenancy history, proves complete compliance by the tenant, demonstrates surrender of vacant peaceful possession, refutes frivolous deduction pretexts, and asserts the legal liability of the landlord.
                           </p>
@@ -581,7 +581,7 @@ export default function SecurityDepositNotRefundedLandlordClient() {
                         <div>
                           <h4 className="font-extrabold text-sm sm:text-base text-slate-900 mb-1">Inclusion of Penal Interest &amp; Damages Claims</h4>
                           <p className="text-xs sm:text-sm text-slate-650 leading-relaxed">
-                            Claim statutory commercial penal interest at 12% to 18% per annum from the date of physical property handover until actual realization, alongside compensation for illegal financial retention, corporate working capital disruption, and advocate legal notice expenses.
+                            Claim statutory commercial penal interest at 12% to 18% per annum from the date of physical property handover until actual realization, alongside compensation for illegal financial retention, corporate working capital disruption, and legal notice expenses.
                           </p>
                         </div>
                       </div>
@@ -744,7 +744,7 @@ export default function SecurityDepositNotRefundedLandlordClient() {
                 <div className="absolute top-0 right-0 w-24 h-24 bg-red-600/10 rounded-full blur-xl pointer-events-none" />
                 <h3 className="text-sm font-black mb-3">Recover Landlord Security Deposit</h3>
                 <p className="text-gray-400 mb-5 text-[11px] leading-relaxed">
-                  Partner with senior property and commercial recovery advocates. We draft statutory demand notices, challenge illegal deductions, compute 18% penal interest, execute verifiable email &amp; WhatsApp dispatch (Speed Post optional), and handle court recovery.
+                  Our team verifies the facts you submit. We prepare statutory demand notices, challenge illegal deductions, compute 18% penal interest, and execute verifiable email &amp; WhatsApp dispatch (Speed Post optional).
                 </p>
                 <button
                   onClick={() => setIsPaymentModalOpen(true)}
@@ -770,7 +770,7 @@ export default function SecurityDepositNotRefundedLandlordClient() {
                     <span className="text-xs font-bold text-slate-800">Rajiv Singhania</span>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed italic">
-                    &quot;When our commercial landlord in Gurgaon withheld our ₹18.5 Lakh security deposit citing baseless fit-out repainting and lock-in deductions after we vacated our retail showroom, Legal Recovery drafted and served a comprehensive advocate notice under the Transfer of Property Act and Commercial Courts Act. The landlord&apos;s counsel contacted us within 11 days of receiving the notice and released 100% of our deposit with interest to avoid commercial summary suit proceedings. Exceptional speed, legal precision, and corporate client support.&quot;
+                    &quot;When our commercial landlord in Gurgaon withheld our ₹18.5 Lakh security deposit citing baseless fit-out repainting and lock-in deductions after we vacated our retail showroom, Legal Recovery drafted and served a comprehensive legal notice under the Transfer of Property Act and Commercial Courts Act. The landlord&apos;s counsel contacted us within 11 days of receiving the notice and released 100% of our deposit with interest to avoid commercial summary suit proceedings. Exceptional speed, legal precision, and corporate client support.&quot;
                   </p>
                 </div>
               </div>
@@ -804,7 +804,7 @@ export default function SecurityDepositNotRefundedLandlordClient() {
                 <img src="/lrlogo.svg" alt="LegalRecovery" width={3236} height={601} className="h-8 sm:h-10 w-auto object-contain" />
               </div>
               <p className="text-sm md:text-base text-slate-600 leading-relaxed mb-10 max-w-3xl font-medium">
-                Legal Recovery is India&apos;s trusted consumer protection and commercial debt resolution platform. Founded in 2022 and headquartered in New Delhi, Legal Recovery has counselled 15,000+ businesses, financial institutions, and consumers on debt recovery, commercial contract breaches, and loan defaults. Legal Recovery accelerates out-of-court settlements and connects you with top verified panel advocates.
+                Legal Recovery is India&apos;s trusted consumer protection and commercial debt resolution platform. Founded in 2022 and headquartered in New Delhi, Legal Recovery has counselled 15,000+ businesses, financial institutions, and consumers on debt recovery, commercial contract breaches, and loan defaults. Legal Recovery accelerates out-of-court settlements and gets your fact-verified notice out quickly.
               </p>
 
               <div className="border-t border-slate-100 pt-10">

@@ -861,7 +861,7 @@ export default function Sub20LakhRecoveryOptionsPage() {
               <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-4 text-xs sm:text-sm text-emerald-900 space-y-1">
                 <span className="font-bold block">Strategic Institutional Insight:</span>
                 <p>
-                  Deploying Institutional Arbitration or Commercial Court Section 12A proceedings converts a 100% provisioning loss into an <strong>87% to 92% net recovery yield</strong> within 180 days. Even after accounting for advocate drafting and institutional fees, the bank saves lakhs in provisioning capital and avoids write-offs.
+                  Deploying Institutional Arbitration or Commercial Court Section 12A proceedings converts a 100% provisioning loss into an <strong>87% to 92% net recovery yield</strong> within 180 days. Even after accounting for notice drafting and institutional fees, the bank saves lakhs in provisioning capital and avoids write-offs.
                 </p>
               </div>
             </section>

@@ -25,7 +25,7 @@ export default function PbgInvocationCTA({
               Track 1 &bull; Single PBG Dispute / Urgent Stay &amp; Notice
             </span>
             <p className="text-lg sm:text-xl font-extrabold text-white mb-2">
-              Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Advocate Drafted &middot; Email + WhatsApp + Speed Post RPAD)
+              Test 1 Live Overdue Case Now (&rupee;{basePrice} &middot; Fact-Verified &middot; Email + WhatsApp + Speed Post RPAD)
             </p>
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
               Serve a high-impact Advocate Statutory Protest &amp; Demand Notice to the buyer and issuing bank branch. Challenge defective invocation notices under *Hindustan Construction* and *U.P. State Sugar Corp*, assert egregious fraud and special equities, demand immediate revocation of invocation, and preserve grounds for emergency Section 9 Arbitration Act stay relief or post-encashment Section 144 restitution with 18% penal interest.

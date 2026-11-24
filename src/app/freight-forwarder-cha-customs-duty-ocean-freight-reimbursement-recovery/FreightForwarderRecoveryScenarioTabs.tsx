@@ -89,7 +89,7 @@ const SCENARIOS: Scenario[] = [
     statutorySolution:
       "Air Waybills (AWB) issued under the Carriage by Air Act, 1972 constitute conclusive contracts of carriage. The exporter's written booking confirmation and signed Shipper's Letter of Instruction (SLI) establish an unequivocal unconditional obligation to reimburse freight. Forwarders can initiate emergent legal proceedings under the Commercial Courts Act, 2015, seeking an ex-parte ad-interim freezing of the exporter's export bank accounts and GST refunds under CPC Order XXXVIII Rule 5, alongside Section 138 NI Act action if advance security cheques were dishonored.",
     actionableSteps: [
-      "Issue a 48-hour emergency pre-litigation advocate notice via email and WhatsApp citing IATA CASS statutory timelines and impending civil fraud liability.",
+      "Issue a 48-hour emergency pre-litigation fact-verified notice via email and WhatsApp citing IATA CASS statutory timelines and impending civil fraud liability.",
       "File an urgent Commercial Suit under Section 9 of the Commercial Courts Act with an application for attachment before judgment of the debtor's pending duty drawback and RoDTEP export incentives.",
       "Present any undated security cheques or NACH mandates collected during client onboarding; initiate Section 138 NI Act or Section 25 PSS Act proceedings upon dishonor.",
       "Notify the Export Promotion Council (EEPC/Pharmexcil) and Director General of Foreign Trade (DGFT) of the exporter's cross-border payment default.",

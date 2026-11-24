@@ -31,7 +31,7 @@ export default function DarkPatternsNoticeCTA({
                 Recover Unlawful Drip Fees, Sneaked Add-Ons & Trapped Subscriptions Legally
               </h3>
               <p className="text-slate-300 text-sm sm:text-base leading-relaxed mb-6">
-                When an e-commerce marketplace or subscription portal uses deceptive UI tricks to deduct unauthorized charges or refuses to process your refund, serve an advocate legal demand notice under the CCPA Dark Patterns Guidelines 2023 and Consumer Protection Act 2019. Establish statutory non-compliance before escalating to e-Jagriti.
+                When an e-commerce marketplace or subscription portal uses deceptive UI tricks to deduct unauthorized charges or refuses to process your refund, serve a fact-verified legal demand notice under the CCPA Dark Patterns Guidelines 2023 and Consumer Protection Act 2019. Establish statutory non-compliance before escalating to e-Jagriti.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button
@@ -42,7 +42,7 @@ export default function DarkPatternsNoticeCTA({
                   {buttonText} — ₹{basePrice}
                 </button>
                 <div className="text-xs text-slate-400 flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-3">
-                  <span>✓ Advocate-Drafted Notice</span>
+                  <span>✓ Fact-Verified Notice</span>
                   <span className="hidden sm:inline">•</span>
                   <span>✓ Email + WhatsApp</span>
                   <span className="hidden sm:inline">•</span>

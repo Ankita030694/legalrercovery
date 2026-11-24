@@ -23,7 +23,7 @@ export default function AbandonedPatientCTA({ className = "" }: AbandonedPatient
               Track 1 &bull; Single Abandoned Patient Legal Escalation
             </span>
             <h3 className="text-lg sm:text-xl font-extrabold text-white mb-2">
-              Test 1 Overdue Kin Case Now (&rupee;{basePrice} &middot; Advocate Drafted &middot; Speed Post + Police/DM Copy)
+              Test 1 Overdue Kin Case Now (&rupee;{basePrice} &middot; Fact-Verified &middot; Speed Post + Police/DM Copy)
             </h3>
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
               Serve a high-leverage statutory notice on absconding relatives and admission guarantors under Section 128 of the Indian Contract Act and Section 24 of the Senior Citizens Act, accompanied by formal Police/DM intimation copies to unblock beds.

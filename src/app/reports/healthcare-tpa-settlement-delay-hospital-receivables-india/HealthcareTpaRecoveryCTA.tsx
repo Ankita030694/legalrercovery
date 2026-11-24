@@ -22,7 +22,7 @@ export default function HealthcareTpaRecoveryCTA() {
               Test 1 Live Overdue Case Now (₹{basePrice})
             </p>
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
-              Advocate-drafted statutory demand notice for delayed TPA cashless settlement, wrongful consumable cuts, or defaulting post-discharge patient. Dispatched via Email + WhatsApp under BSA 2023 s.63 with optional ₹450 Speed Post RPAD.
+              Fact-verified statutory demand notice for delayed TPA cashless settlement, wrongful consumable cuts, or defaulting post-discharge patient. Dispatched via Email + WhatsApp under BSA 2023 s.63 with optional ₹450 Speed Post RPAD.
             </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-3 pt-2">

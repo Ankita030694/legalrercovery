@@ -23,7 +23,7 @@ export default function AmbulanceRecoveryCTA({ className = "" }: AmbulanceRecove
               Track 1 &bull; Single Flight / Sortie Test
             </span>
             <h3 className="text-lg sm:text-xl font-extrabold text-white mb-2">
-              Test 1 Overdue Air Charter or Medevac Default (&rupee;{basePrice} &middot; Advocate Drafted &middot; Email + WhatsApp + Speed Post RPAD)
+              Test 1 Overdue Air Charter or Medevac Default (&rupee;{basePrice} &middot; Fact-Verified &middot; Email + WhatsApp + Speed Post RPAD)
             </h3>
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
               Issue a high-leverage statutory recovery demand for an unpaid rotary/fixed-wing sortie or defaulted family charter. Validates digital emergency authorizations under BSA 2023 s.63, combines CPC Order XXXVII liquidated debt enforcement, and alerts insurers/TPAs of IRDAI escalation.

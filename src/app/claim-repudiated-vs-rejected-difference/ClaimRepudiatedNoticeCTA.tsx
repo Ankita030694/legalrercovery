@@ -31,7 +31,7 @@ export default function ClaimRepudiatedNoticeCTA({
                 Was Your Insurance Claim Repudiated or Rejected? Recover Your Settlement
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6">
-                Have an insurance advocate draft and serve an unassailable statutory legal notice directly to the insurance company&apos;s Grievance Redressal Officer (GRO) and legal department. We cite Section 45 of the Insurance Act, the IRDAI 2024 Master Circular, and binding Supreme Court precedents to compel immediate claim reconsideration or establish an airtight foundation for the Insurance Ombudsman and Consumer Court.
+                Serve an unassailable statutory legal notice directly to the insurance company&apos;s Grievance Redressal Officer (GRO) and legal department. We cite Section 45 of the Insurance Act, the IRDAI 2024 Master Circular, and binding Supreme Court precedents to compel immediate claim reconsideration or establish an airtight foundation for the Insurance Ombudsman and Consumer Court.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button
@@ -42,7 +42,7 @@ export default function ClaimRepudiatedNoticeCTA({
                   {buttonText} — ₹{basePrice}
                 </button>
                 <div className="text-xs text-slate-300 flex flex-wrap sm:flex-nowrap items-center gap-2 sm:gap-3">
-                  <span>✓ 24h Advocate Drafting</span>
+                  <span>✓ 24h Notice Drafting</span>
                   <span>•</span>
                   <span>✓ Email + WhatsApp</span>
                   <span>•</span>

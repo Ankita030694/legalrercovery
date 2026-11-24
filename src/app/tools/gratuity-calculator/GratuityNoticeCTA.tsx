@@ -31,7 +31,7 @@ export default function GratuityNoticeCTA({
                 Employer Withholding Your Gratuity Beyond 30 Days?
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6">
-                Under Section 7(3A) of the Payment of Gratuity Act, 1972, employers who fail to pay gratuity within 30 days are legally required to pay compound penal interest (currently 10% p.a.). Have an experienced employment advocate serve a binding statutory demand notice before petitioning the Controlling Authority under Form N.
+                Under Section 7(3A) of the Payment of Gratuity Act, 1972, employers who fail to pay gratuity within 30 days are legally required to pay compound penal interest (currently 10% p.a.). Serve a binding statutory demand notice before petitioning the Controlling Authority under Form N.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button
@@ -42,7 +42,7 @@ export default function GratuityNoticeCTA({
                   {buttonText} — ₹{basePrice}
                 </button>
                 <div className="text-xs text-slate-300 flex flex-wrap sm:flex-nowrap items-center gap-2 sm:gap-3">
-                  <span>✓ 24h Advocate Drafting</span>
+                  <span>✓ 24h Notice Drafting</span>
                   <span>•</span>
                   <span>✓ Email + WhatsApp</span>
                   <span>•</span>

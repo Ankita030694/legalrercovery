@@ -151,7 +151,7 @@ const FAQS = [
   {
     question: "Company ne salary se PF kaat liya lekin EPFO mein jama nahi kiya toh legal notice kaise bheje?",
     answer:
-      "Agar aapki company ne salary slip par PF deduction dikhaya hai lekin UAN passbook mein deposit nahi hua hai, toh yeh Bharatiya Nyaya Sanhita (BNS) Section 316 ke tehat Criminal Breach of Trust aur EPF Act Section 14 ka ghanghor ullanghan hai. Aap LegalRecovery.in par verified labour advocate ke dwara company ke Managing Director aur HR Head ko 15 din ka statutory demand notice Registered Speed Post aur email se bhej sakte hain. Notice mein s.7Q 12% interest, s.14B damages aur police FIR ki statutory warning di jaati hai.",
+      "Agar aapki company ne salary slip par PF deduction dikhaya hai lekin UAN passbook mein deposit nahi hua hai, toh yeh Bharatiya Nyaya Sanhita (BNS) Section 316 ke tehat Criminal Breach of Trust aur EPF Act Section 14 ka ghanghor ullanghan hai. Aap LegalRecovery.in par hamari team ke dwara company ke Managing Director aur HR Head ko 15 din ka statutory demand notice Registered Speed Post aur email se bhej sakte hain. Notice mein s.7Q 12% interest, s.14B damages aur police FIR ki statutory warning di jaati hai.",
   },
 ];
 
@@ -834,7 +834,7 @@ export default function PfNotDepositedComplaintPage() {
                     <text x="420" y="45" fill="#404447" fontWeight="bold" textAnchor="middle">STEP 3</text>
                     <text x="420" y="65" fill="#0F172A" fontWeight="bold" textAnchor="middle">EPFiGMS Complaint</text>
                     <text x="420" y="82" fill="#334155" fontSize="10" textAnchor="middle">Portal Grievance</text>
-                    <text x="420" y="98" fill="#475569" fontSize="9" textAnchor="middle">Upload Pay Slips</text>
+                    <text x="420" y="98" fill="#475569" fontSize="9" textAnchor="middle">Keep Pay Slips Ready</text>
 
                     {/* Arrow 3 */}
                     <path d="M 490 65 L 520 65" stroke="#64748B" strokeWidth="2" />
@@ -927,7 +927,7 @@ export default function PfNotDepositedComplaintPage() {
                     </span>
                     <div className="space-y-1 sm:space-y-1.5">
                       <h3 className="text-sm sm:text-base md:text-lg font-bold text-slate-900">
-                        Serve a Formal Advocate Statutory Demand Notice
+                        Serve a Formal Fact-Verified Statutory Demand Notice
                       </h3>
                       <p className="text-xs sm:text-sm leading-relaxed">
                         When administrative follow-ups fail, engage an advocate to issue a formal 15-day statutory demand notice directly to the company&apos;s registered office and individual directors via Registered Speed Post and BSA Section 63 compliant electronic mail. The notice demands full arrears deposit, 12% statutory interest under Section 7Q, and reserves rights to file a criminal FIR for Criminal Breach of Trust. Check our transparent <Link href="/legal-notice-charges" className="text-blue-700 underline">legal notice charges</Link> schedule.

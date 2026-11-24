@@ -31,7 +31,7 @@ export default function TempToPermCTA({
                 Test 1 Defaulted C2H Conversion or Poached Case
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm leading-relaxed mb-5">
-                Issue an advocate-drafted statutory demand notice invoking Contract Act Sections 73/74, Section 70 Quantum Meruit, and MSMED Act Section 16 (3x RBI compound interest). Delivered via Speed Post RPAD, email, and tracking WhatsApp with full BSA Section 63 evidentiary certificate.
+                Issue a fact-verified statutory demand notice invoking Contract Act Sections 73/74, Section 70 Quantum Meruit, and MSMED Act Section 16 (3x RBI compound interest). Delivered via Speed Post RPAD, email, and tracking WhatsApp with full BSA Section 63 evidentiary certificate.
               </p>
             </div>
 
@@ -52,7 +52,7 @@ export default function TempToPermCTA({
                 </Link>
               </div>
               <div className="flex flex-wrap items-center gap-2 text-[11px] text-slate-400">
-                <span>&#10003; Advocate Drafted</span>
+                <span>&#10003; Fact-Verified</span>
                 <span>&bull;</span>
                 <span>&#10003; Speed Post Tracking</span>
                 <span>&bull;</span>

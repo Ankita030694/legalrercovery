@@ -11,7 +11,7 @@ import { PaymentModal } from "@/components/PaymentModal";
 const faqs = [
   {
     question: "Is a legal notice sent through an online platform legally valid in Indian courts?",
-    answer: "Yes, an online legal notice is fully valid in Indian courts. It must clearly state the facts, specify your legal claims, and cite relevant statutory sections. Licensed advocates draft and sign the notice on their official letterhead. The notice is delivered via verified email and WhatsApp. Digital delivery receipts provide admissible proof of service in court."
+    answer: "Yes, an online legal notice is fully valid in Indian courts. It must clearly state the facts, specify your legal claims, and cite relevant statutory sections. The notice is prepared from the facts you submit and delivered via verified email and WhatsApp. Digital delivery receipts provide admissible proof of service in court."
   },
   {
     question: "What is the difference between a flat-fee online service and hiring a traditional lawyer?",
@@ -19,7 +19,7 @@ const faqs = [
   },
   {
     question: "How long does it take for an online platform to draft and send a legal notice?",
-    answer: "Most platforms prepare and send your notice within 24 to 48 hours. After you submit your case details, a panel advocate reviews your evidence. You receive a first draft within 24 hours. Once you review and approve the draft, the advocate signs it. It is then dispatched immediately via verified email and WhatsApp."
+    answer: "Most platforms prepare and send your notice within 24 to 48 hours. After you submit your case details, our team verifies the facts. You receive a first draft within 24 hours. Once you review and approve the draft, it is dispatched immediately via verified email and WhatsApp."
   },
   {
     question: "Do online services send notices by physical post or only digitally?",
@@ -31,15 +31,15 @@ const faqs = [
   },
   {
     question: "Can I review and modify the legal notice draft before it is dispatched?",
-    answer: "Yes. You always get to review and approve the draft before it is sent. The advocate prepares the initial draft based on your information. You can check all names, dates, and amounts. If any detail needs correction, you can request revisions. The notice is only dispatched after your clear written approval."
+    answer: "Yes. You always get to review and approve the draft before it is sent. We prepare the initial draft based on your information. You can check all names, dates, and amounts. If any detail needs correction, you can request revisions. The notice is only dispatched after your clear written approval."
   },
   {
     question: "What happens if the recipient responds directly to the online service instead of me?",
-    answer: "Because the notice is issued on an advocate's letterhead, the recipient often replies to the advocate. Once received, the platform immediately shares the reply with you. The advocate reviews the counter-claims and explains your legal options. You can then choose to send a rejoinder or explore a settlement."
+    answer: "If the recipient replies to the notice, share the reply with our team. You can then choose to send a rejoinder or explore a settlement, and you can consult an advocate separately about the counter-claims."
   },
   {
     question: "Do online notice platforms assist with filing a court case if the notice is ignored?",
-    answer: "Many platforms help you take the next legal step. If the recipient ignores the demand, platforms like LegalRecovery connect you with litigation advocates. These advocates can represent you in Civil Courts, Consumer Forums, or Labour Courts under a clear fee structure."
+    answer: "Many platforms help you take the next legal step. If the recipient ignores the demand, you can hire a litigation advocate separately to represent you in Civil Courts, Consumer Forums, or Labour Courts."
   },
   {
     question: "Are there any extra charges for sending a notice to multiple addresses or directors?",
@@ -111,7 +111,7 @@ const reviewSchema = {
   "@type": "Product",
   "name": "Online Legal Notice Dispatch Services",
   "image": "https://www.legalrecovery.in/og-online-platforms.png",
-  "description": "Tech-enabled online legal notice drafting and dispatch services. Includes attorney review, digital dispatch via email and WhatsApp, and digital tracking dashboards.",
+  "description": "Tech-enabled online legal notice drafting and dispatch services. Includes fact verification, digital dispatch via email and WhatsApp, and digital tracking dashboards.",
   "brand": {
     "@type": "Brand",
     "name": "LegalRecovery"
@@ -164,7 +164,7 @@ const reviewSchema = {
         "@type": "Person",
         "name": "Aditya Verma"
       },
-      "reviewBody": "As a freelance designer, I was tired of chasing clients for unpaid invoices. This service allowed me to submit details online and connect with an advocate instantly. Digital copy sent via WhatsApp worked wonders!"
+      "reviewBody": "As a freelance designer, I was tired of chasing clients for unpaid invoices. This service allowed me to submit details online and get my notice sent quickly. Digital copy sent via WhatsApp worked wonders!"
     },
     {
       "@type": "Review",
@@ -224,7 +224,7 @@ export default function OnlinePlatformsClient() {
     { id: "e-drafter-and-nolegalpaisa", title: "5. Specialized Portals" },
     { id: "legal-validity-digital-notices", title: "6. Digital Notice Validity" },
     { id: "comparison-criteria-decision-matrix", title: "7. Comparison Matrix" },
-    { id: "diy-drafting-vs-expert-drafting", title: "8. DIY vs Attorney Review" },
+    { id: "diy-drafting-vs-expert-drafting", title: "8. DIY vs Fact Verification" },
     { id: "faqs", title: "FAQs" }
   ];
 
@@ -325,7 +325,7 @@ export default function OnlinePlatformsClient() {
                       One major breakthrough is the digitization of the <strong>legal notice</strong>. A legal notice follows a structured legal format. It outlines facts, timelines, and statutory violations. Because of this structured nature, it works well with digital tools. Modern platforms let you complete a simple online form, get an expert draft quickly, and track delivery online—all without leaving your home.
                     </p>
                     <p>
-                      Under Indian law, a legal notice is a formal demand letter signed by an advocate. The sender delivers it to the defaulting party before filing a court case. It details the dispute, cites statutory violations, and gives a set cure period (usually 15 to 30 days) to resolve the matter.
+                      Under Indian law, a legal notice is a formal demand letter prepared on verified facts. The sender delivers it to the defaulting party before filing a court case. It details the dispute, cites statutory violations, and gives a set cure period (usually 15 to 30 days) to resolve the matter.
                     </p>
                     <p>
                       In many cases, a legal notice is a mandatory legal step. For example, Section 80 of the Code of Civil Procedure (CPC), 1908 requires a 60-day notice before suing the government. Under Section 138 of the Negotiable Instruments Act, 1881, you must serve a 15-day demand notice for a bounced cheque. Online legal platforms ensure strict compliance with these rules, protecting your case from technical dismissals.
@@ -349,7 +349,7 @@ export default function OnlinePlatformsClient() {
                       <strong>LegalRecovery</strong> is a specialized platform built specifically for recovering unpaid money. Unlike general documentation portals, we focus exclusively on debt and money claims. We handle unpaid salaries, FNF settlements, security deposits, freelance invoices, builder refunds, and unpaid sales commissions.
                     </p>
                     <p>
-                      Our recovery system is fast, transparent, and legally sound. You start with a simple online form. Our system helps you organize your evidence and calculate interest under the Interest Act, 1978. A dedicated panel advocate reviews your case and drafts a custom notice. The notice is signed on the advocate&apos;s official letterhead and sent via verified email and WhatsApp.
+                      Our recovery system is fast, transparent, and legally sound. You start with a simple online form. Our system helps you organize your case details and calculate interest under the Interest Act, 1978. We prepare a custom notice from the facts you submit and send it via verified email and WhatsApp.
                     </p>
                     <p>
                       We also perform <strong>Corporate Due Diligence</strong>. When dealing with companies, we do not rely only on contact addresses. We search the official ROC/MCA database to find the registered office and active directors. We serve the notice to the company and directly to each director. This establishes personal liability for unpaid corporate dues.
@@ -374,7 +374,7 @@ export default function OnlinePlatformsClient() {
                       </ul>
                     </div>
                     <p>
-                      Our process helps you resolve disputes quickly during the 15-day notice window. By holding directors accountable and providing verifiable proof of service, we resolve most cases without going to court. If the debtor still refuses to pay, we provide a complete court-ready evidence package for your advocate.
+                      Our process helps you resolve disputes quickly during the 15-day notice window. By holding directors accountable and providing verifiable proof of service, we resolve most cases without going to court. If the debtor still refuses to pay, you can take your fact-verified case record and your own evidence to an advocate for court.
                     </p>
                   </div>
                 </section>
@@ -537,7 +537,7 @@ export default function OnlinePlatformsClient() {
                 {/* Section 8 */}
                 <section id="diy-drafting-vs-expert-drafting" className="scroll-mt-32">
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">
-                    8. The Risks of AI/DIY Tools vs. Attorney-Drafted Online Solutions
+                    8. The Risks of AI/DIY Tools vs. Fact-Verified Online Solutions
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6 text-sm md:text-base leading-relaxed">
                     <p>
@@ -553,7 +553,7 @@ export default function OnlinePlatformsClient() {
                       &quot;An advocate&apos;s formal notice carries real authority. Defaulting parties often ignore casual emails, but a notice from an advocate shows you are ready to take legal action.&quot;
                     </div>
                     <p>
-                      A hybrid approach offers the best outcome. Platforms like <strong>LegalRecovery</strong> pair easy digital intake with expert advocate review. You enter your information online, and a qualified lawyer drafts an accurate, enforceable notice. This gives you both digital convenience and strong legal protection.
+                      A hybrid approach offers the best outcome. Platforms like <strong>LegalRecovery</strong> pair easy digital intake with fact verification. You enter your information online, our team verifies the facts, and a structured notice is prepared and sent. This gives you both digital convenience and strong legal protection.
                     </p>
                   </div>
                 </section>
@@ -578,7 +578,7 @@ export default function OnlinePlatformsClient() {
                     </div>
                     <div className="p-6 bg-slate-50 rounded-2xl border border-slate-100">
                       <p className="text-sm text-slate-700 italic mb-4">
-                        &quot;As a freelance designer, I was tired of chasing clients for unpaid invoices. This service allowed me to submit details online and connect with an advocate instantly. Digital copy sent via WhatsApp worked wonders!&quot;
+                        &quot;As a freelance designer, I was tired of chasing clients for unpaid invoices. This service allowed me to submit details online and get my notice sent quickly. Digital copy sent via WhatsApp worked wonders!&quot;
                       </p>
                       <h4 className="font-extrabold text-xs text-slate-900">— Aditya Verma (Pune)</h4>
                     </div>
@@ -648,7 +648,7 @@ export default function OnlinePlatformsClient() {
                 <div className="absolute top-0 right-0 w-24 h-24 bg-red-600/10 rounded-full blur-xl pointer-events-none" />
                 <h3 className="text-sm font-black mb-3">Draft Online Notice</h3>
                 <p className="text-gray-400 mb-5 text-[11px] leading-relaxed">
-                  Generate and send an enforceable legal notice online through expert advocates. 100% digital process.
+                  Generate and send an enforceable legal notice online through our fact-verified process. 100% digital.
                 </p>
                 <button 
                   onClick={() => setIsPaymentModalOpen(true)}

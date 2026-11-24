@@ -3,7 +3,7 @@ import BulkRecoveryCasesClient from './BulkRecoveryCasesClient';
 
 export const metadata: Metadata = {
   title: 'Bulk Recovery Cases: All-in-One Business Dues Solutions',
-  description: 'Streamline recovery of unpaid business dues across debtors. Advocate-drafted bulk legal notices, MSME Samadhaan, and commercial debt settlement.',
+  description: 'Streamline recovery of unpaid business dues across debtors. Fact-verified bulk legal notices, MSME Samadhaan, and commercial debt settlement.',
   alternates: {
     canonical: 'https://www.legalrecovery.in/bulk-recovery-cases-all-in-one-affordable-solutions',
   },

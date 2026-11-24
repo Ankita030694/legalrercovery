@@ -266,7 +266,7 @@ const FAQ_SCHEMA = {
   })),
 };
 
-// TODO(reviewer): Advocate verification metadata pending src/data/reviewers.ts creation per Section 7 guidelines.
+// TODO(reviewer): Fact verification metadata pending src/data/reviewers.ts creation per Section 7 guidelines.
 
 export default function MoneyRecoveryTimePage() {
   const breadcrumbItems = [

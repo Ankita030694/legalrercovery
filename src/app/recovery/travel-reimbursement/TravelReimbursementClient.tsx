@@ -214,7 +214,7 @@ const reviewSchema = {
         "@type": "Person",
         "name": "Divya Reddy"
       },
-      "reviewBody": "Recovered travel conveyance arrears and delayed per diems within 10 days of serving the LegalRecovery advocate notice. The team was highly responsive, professional, and audited my documents meticulously."
+      "reviewBody": "Recovered travel conveyance arrears and delayed per diems within 10 days of serving the LegalRecovery fact-verified notice. The team was highly responsive, professional, and audited my documents meticulously."
     }
   ]
 };
@@ -299,7 +299,7 @@ export default function TravelReimbursementClient() {
               Recover Unpaid <span className="text-[#DC2626]">Travel Reimbursements</span>
             </h1>
             <p className="text-sm md:text-xl mb-8 md:mb-12 max-w-3xl mx-auto text-slate-300 leading-relaxed font-medium">
-              Did your employer fail to reimburse official flights, hotels, cabs, per diems, or conveyance bills? Get advocate-backed legal notice campaigns to recover your business travel dues.
+              Did your employer fail to reimburse official flights, hotels, cabs, per diems, or conveyance bills? Get fact-verified legal notice campaigns to recover your business travel dues.
             </p>
             <button 
               onClick={() => setIsPaymentModalOpen(true)}
@@ -553,10 +553,10 @@ export default function TravelReimbursementClient() {
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">Serving an Advocate Notice</h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      When informal follow-ups and escalation emails fail to yield results, serving a formal <strong>Legal Notice</strong> is the next logical step. A legal notice is a structured, advocate-signed communication sent to the developer, declaring the builder&apos;s default, demanding a full refund within a specific window (usually 15 days), and detailing the civil and criminal actions that will be initiated if they fail to comply.
+                      When informal follow-ups and escalation emails fail to yield results, serving a formal <strong>Legal Notice</strong> is the next logical step. A legal notice is a structured, fact-verified communication sent to the developer, declaring the builder&apos;s default, demanding a full refund within a specific window (usually 15 days), and detailing the civil and criminal actions that will be initiated if they fail to comply.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      At LegalRecovery, our legal panel drafts custom notices tailored to the facts of your case. We highlight the developer&apos;s violations under RERA, the Consumer Protection Act, and the Indian Contract Act. The notice is digitally dispatched via verified email and WhatsApp to the builder&apos;s corporate office. Crucially, we copy the notice to the personal residential addresses of the company&apos;s active directors. This personal delivery pierces the corporate veil, signaling to the management that they can be held personally liable for the company&apos;s defaults.
+                      At LegalRecovery, our team drafts custom notices tailored to the facts of your case. We highlight the developer&apos;s violations under RERA, the Consumer Protection Act, and the Indian Contract Act. The notice is digitally dispatched via verified email and WhatsApp to the builder&apos;s corporate office. Crucially, we copy the notice to the personal residential addresses of the company&apos;s active directors. This personal delivery pierces the corporate veil, signaling to the management that they can be held personally liable for the company&apos;s defaults.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
                       Serving a legal notice is highly effective. Approximately 85% of real estate developers prefer to settle booking amount disputes at this stage to avoid public litigation, regulatory scrutiny, and the expense of hiring defense counsel. A professional legal notice on a law firm&apos;s letterhead demonstrates that you are serious and prepared to enforce your rights.
