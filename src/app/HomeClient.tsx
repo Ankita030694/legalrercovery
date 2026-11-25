@@ -5,6 +5,7 @@ import Link from "next/link";
 import { PaymentModal } from "@/components/PaymentModal";
 import { IntroVideo } from "@/components/IntroVideo";
 import FAQSection, { FAQItem } from "@/components/FAQSection";
+import HomeGuideSearch from "@/components/HomeGuideSearch";
 import {
   Wallet,
   Timer,
@@ -498,6 +499,9 @@ export default function HomeClient({ latestPosts }: { latestPosts?: React.ReactN
 
           </div>
         </div>
+
+        {/* ================= GUIDE SEARCH ================= */}
+        <HomeGuideSearch />
 
         {/* ================= HIGH FIDELITY SERVICES GRID SECTION ================= */}
         <ServicesSection />
