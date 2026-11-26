@@ -207,7 +207,7 @@ Buttons: [Yes, send my link] [Start again]
 > Almost done! 🎉
 >
 > Tap the link below and we'll send your secure payment link right here on WhatsApp:
-> https://legalrecovery.in/wa/link?n={{phone}}
+> https://www.legalrecovery.in/wa/link?n={{phone}}
 >
 > For your security, the payment link is only ever sent to this WhatsApp number.
 

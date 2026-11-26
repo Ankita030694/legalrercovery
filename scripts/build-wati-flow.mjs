@@ -20,7 +20,7 @@ import { writeFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 
 const TENANT_ID = "10169824";
-const CLAIM_URL = "https://legalrecovery.in/wa/link?n={{phone}}";
+const CLAIM_URL = "https://www.legalrecovery.in/wa/link?n={{phone}}";
 const OUTPUT = fileURLToPath(new URL("../docs/wati-chatbot-flow.json", import.meta.url));
 const STEPS_OUTPUT = fileURLToPath(new URL("../src/lib/wati-bot-steps.json", import.meta.url));
 

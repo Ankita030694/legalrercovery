@@ -542,7 +542,7 @@
       "flowReplies": [
         {
           "flowReplyType": "Text",
-          "data": "<p>Almost done! 🎉<br>\n<br>\nTap the link below and we'll send your secure payment link right here on WhatsApp:<br>\nhttps://legalrecovery.in/wa/link?n={{phone}}<br>\n<br>\nFor your security, the payment link is only ever sent to this WhatsApp number.</p>",
+          "data": "<p>Almost done! 🎉<br>\n<br>\nTap the link below and we'll send your secure payment link right here on WhatsApp:<br>\nhttps://www.legalrecovery.in/wa/link?n={{phone}}<br>\n<br>\nFor your security, the payment link is only ever sent to this WhatsApp number.</p>",
           "caption": "",
           "mimeType": ""
         }
@@ -748,7 +748,7 @@
       "targetNodeId": "main_buttons-mQVJt"
     }
   ],
-  "lastUpdated": "2026-11-26T06:50:05.332Z",
+  "lastUpdated": "2026-11-26T07:08:00.559Z",
   "isDeleted": false,
   "transform": {
     "posX": "60",
