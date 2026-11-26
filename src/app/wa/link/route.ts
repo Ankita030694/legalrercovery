@@ -7,9 +7,9 @@
  * link to that WhatsApp number. A link preview fetching this URL runs no script and sends nothing.
  */
 
-export const dynamic = "force-dynamic";
+import { WHATSAPP_CHAT_URL } from "@/lib/whatsapp-chat";
 
-const WHATSAPP_CHAT_URL = "https://wa.me/919818683380";
+export const dynamic = "force-dynamic";
 
 const html = `<!doctype html>
 <html lang="en">

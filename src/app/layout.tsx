@@ -11,6 +11,7 @@ import MetaPixel from "@/components/MetaPixel";
 import MicrosoftClarity from "@/components/MicrosoftClarity";
 import AttributionCapture from "@/components/AttributionCapture";
 import HtmlLangUpdater from "@/components/HtmlLangUpdater";
+import WhatsAppChatButton from "@/components/WhatsAppChatButton";
 
 declare const __non_webpack_require__: typeof require | undefined;
 
@@ -194,6 +195,7 @@ export default function RootLayout({
         <RelatedRecoveryGuides />
         <Footer />
         <TimedPopupModal />
+        <WhatsAppChatButton />
         <Analytics />
         <MetaPixel />
         <MicrosoftClarity />

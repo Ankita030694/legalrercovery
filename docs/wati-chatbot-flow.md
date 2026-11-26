@@ -28,9 +28,19 @@ paid WATI steps, so it runs on the Growth plan.
 
 ## START
 
-Trigger: keywords `hi`, `hello`, `start`, `menu`, `recover`, plus the account's Default Action set
-to start this chatbot, so that any message sent while no chatbot is running opens WELCOME.
-Website buttons can open the chat with a pre-filled message such as "Hi, I want to recover my money".
+Trigger: an Automations > Rules rule on "New WhatsApp message is received" with the filter
+**Incoming message · Exactly matches** (case doesn't matter) and these keywords:
+
+- `Hi LegalRecovery, I want to recover my money`: the message pre-typed by the website's
+  "Chat on WhatsApp" button (`WHATSAPP_START_MESSAGE` in `src/lib/whatsapp-chat.ts`; keep the two
+  identical)
+- `menu`: the restart word the bot's messages mention
+- `lrtest`: private test word (optional)
+
+Action: **Start chatbot** with the current imported copy of LegalRecovery Chatbot.
+
+The website button appears on the pages listed in `WHATSAPP_BUTTON_PATHS`
+(`src/lib/whatsapp-chat.ts`), currently the 20 pages with the most Google clicks.
 
 ## WELCOME (buttons)
 
