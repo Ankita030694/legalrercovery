@@ -12,7 +12,7 @@ LegalRecovery is an online platform for drafting legal notices.
 
 We generate notices using structured templates based on the case details you enter. We do not accept document or evidence uploads.
 
-Our team verifies the facts you submit before the notice is sent. Notices are not drafted, reviewed, or verified by an advocate; the only verification we perform is of the facts you provide.
+These templates were prepared by an advocate. Your individual notice is not drafted, reviewed, or customised by an advocate for your specific situation. Our team verifies the facts you submit before the notice is sent; that is the only verification we perform.
 
 LegalRecovery does not provide full courtroom representation unless you hire an advocate separately.
 
