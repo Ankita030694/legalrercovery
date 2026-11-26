@@ -1,0 +1,138 @@
+[
+  {
+    "key": "WELCOME",
+    "label": "Welcome message",
+    "stage": "browse",
+    "order": 0,
+    "nodeId": "main_buttons-cPZbg",
+    "fingerprint": "hiwelcometolegalrecoverywehelpyourecover"
+  },
+  {
+    "key": "MENU",
+    "label": "Topics menu",
+    "stage": "browse",
+    "order": 1,
+    "nodeId": "main_list-jbTLy",
+    "fingerprint": "pickatopicandillexplain"
+  },
+  {
+    "key": "A1",
+    "label": "Read: How it works",
+    "stage": "browse",
+    "order": 2,
+    "nodeId": "main_buttons-llLpq",
+    "fingerprint": "hereishowitworks1youpayaflatfeeandentery"
+  },
+  {
+    "key": "A2",
+    "label": "Read: Pricing",
+    "stage": "browse",
+    "order": 3,
+    "nodeId": "main_buttons-soEki",
+    "fingerprint": "ourfeeisaflat999peroppositepartyupto3fac"
+  },
+  {
+    "key": "A3",
+    "label": "Read: Cases we handle",
+    "stage": "browse",
+    "order": 4,
+    "nodeId": "main_buttons-OLQCu",
+    "fingerprint": "wehandlestraightforwardmoneydisputesfori"
+  },
+  {
+    "key": "A4",
+    "label": "Read: How long it takes",
+    "stage": "browse",
+    "order": 5,
+    "nodeId": "main_buttons-lkwIC",
+    "fingerprint": "thefirstnoticeusuallygoesoutwithin24hour"
+  },
+  {
+    "key": "A5",
+    "label": "Read: Documents needed",
+    "stage": "browse",
+    "order": 6,
+    "nodeId": "main_buttons-urlpM",
+    "fingerprint": "youdonotneedtouploadanydocumentsyousimpl"
+  },
+  {
+    "key": "A6",
+    "label": "Read: If they ignore it",
+    "stage": "browse",
+    "order": 7,
+    "nodeId": "main_buttons-kWRES",
+    "fingerprint": "iftheotherpartydoesnotrespondtothefirstn"
+  },
+  {
+    "key": "A7",
+    "label": "Read: Is a lawyer involved?",
+    "stage": "browse",
+    "order": 8,
+    "nodeId": "main_buttons-CeMGb",
+    "fingerprint": "yesourlegalnoticeformatshavebeenprepared"
+  },
+  {
+    "key": "A8",
+    "label": "Read: Refunds & guarantee",
+    "stage": "browse",
+    "order": 9,
+    "nodeId": "main_buttons-RVAvU",
+    "fingerprint": "wecannotguaranteethatthemoneywillberecov"
+  },
+  {
+    "key": "S1",
+    "label": "Asked for name",
+    "stage": "signup",
+    "order": 10,
+    "nodeId": "main_question-SZLuy",
+    "fingerprint": "greatletssetupyouraccountittakesaboutami"
+  },
+  {
+    "key": "S2",
+    "label": "Asked for email",
+    "stage": "signup",
+    "order": 11,
+    "nodeId": "main_question-EVWKH",
+    "fingerprint": "whatisyouremailaddresswesendyourreceipta"
+  },
+  {
+    "key": "S3",
+    "label": "Asked for state",
+    "stage": "signup",
+    "order": 12,
+    "nodeId": "main_question-jNrPv",
+    "fingerprint": "whichstatedoyoulivein"
+  },
+  {
+    "key": "S4",
+    "label": "Asked number of parties",
+    "stage": "signup",
+    "order": 13,
+    "nodeId": "main_buttons-mQVJt",
+    "fingerprint": "howmanypeopleorbusinessesdoyouwanttoreco"
+  },
+  {
+    "key": "S5",
+    "label": "Asked about Speed Post",
+    "stage": "signup",
+    "order": 14,
+    "nodeId": "main_buttons-cCETL",
+    "fingerprint": "doyoualsowantthenoticessentphysicallybys"
+  },
+  {
+    "key": "S6",
+    "label": "Confirming details",
+    "stage": "signup",
+    "order": 15,
+    "nodeId": "main_buttons-bcUGF",
+    "fingerprint": "pleasecheckyourdetailsname"
+  },
+  {
+    "key": "LINK",
+    "label": "Link sent in chat",
+    "stage": "done",
+    "order": 16,
+    "nodeId": "main_message-UTDOB",
+    "fingerprint": "almostdonetapthelinkbelowandwellsendyour"
+  }
+]

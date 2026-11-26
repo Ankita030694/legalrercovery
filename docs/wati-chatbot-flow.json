@@ -1,0 +1,776 @@
+{
+  "id": null,
+  "tenantId": "10169824",
+  "name": "LegalRecovery Chatbot",
+  "created": null,
+  "flowNodes": [
+    {
+      "interactiveButtonsHeader": {
+        "type": "Text",
+        "text": "",
+        "media": null
+      },
+      "interactiveButtonsBody": "<p>Hi 👋 Welcome to LegalRecovery.<br>\n<br>\nWe help you recover unpaid money by sending fact-verified legal notices to the person or business that owes you. Everything is done online.<br>\n<br>\nWhat would you like to know?</p>",
+      "interactiveButtonsFooter": "",
+      "interactiveButtonsItems": [
+        {
+          "id": "LeqfaFu",
+          "buttonText": "How it works",
+          "nodeResultId": "main_buttons-llLpq"
+        },
+        {
+          "id": "RSvFLVm",
+          "buttonText": "Pricing",
+          "nodeResultId": "main_buttons-soEki"
+        },
+        {
+          "id": "BahsKMQ",
+          "buttonText": "More questions",
+          "nodeResultId": "main_list-jbTLy"
+        }
+      ],
+      "interactiveButtonsUserInputVariable": "",
+      "interactiveButtonsDefaultNodeResultId": "",
+      "id": "main_buttons-cPZbg",
+      "flowNodeType": "InteractiveButtons",
+      "flowNodePosition": {
+        "posX": "0",
+        "posY": "0"
+      },
+      "isStartNode": true
+    },
+    {
+      "interactiveListHeader": {
+        "type": "Text",
+        "text": ""
+      },
+      "interactiveListBody": "<p>Pick a topic and I'll explain.</p>",
+      "interactiveListFooter": "",
+      "interactiveListButtonText": "See topics",
+      "interactiveListSections": [
+        {
+          "id": "lWdzfxn",
+          "title": "",
+          "rows": [
+            {
+              "id": "opiUHUN",
+              "title": "How it works",
+              "description": "The steps from sign-up to notice",
+              "nodeResultId": "main_buttons-llLpq"
+            },
+            {
+              "id": "WkJgzwA",
+              "title": "Pricing",
+              "description": "The flat fee and what it includes",
+              "nodeResultId": "main_buttons-soEki"
+            },
+            {
+              "id": "JAyIkjS",
+              "title": "Cases we handle",
+              "description": "Salary, invoices, loans, deposits, refunds and more",
+              "nodeResultId": "main_buttons-OLQCu"
+            },
+            {
+              "id": "KhixBit",
+              "title": "How long it takes",
+              "description": "When notices go out",
+              "nodeResultId": "main_buttons-lkwIC"
+            },
+            {
+              "id": "UbvWzoe",
+              "title": "Documents needed",
+              "description": "What you need to get started",
+              "nodeResultId": "main_buttons-urlpM"
+            },
+            {
+              "id": "UgqSGfq",
+              "title": "If they ignore it",
+              "description": "What happens after the notices",
+              "nodeResultId": "main_buttons-kWRES"
+            },
+            {
+              "id": "dQPGbPH",
+              "title": "Is a lawyer involved?",
+              "description": "Who prepares the notice",
+              "nodeResultId": "main_buttons-CeMGb"
+            },
+            {
+              "id": "VbQhHZD",
+              "title": "Refunds & guarantee",
+              "description": "Our refund policy and what we can promise",
+              "nodeResultId": "main_buttons-RVAvU"
+            },
+            {
+              "id": "nqfPAqF",
+              "title": "Get started",
+              "description": "Create your account and pay",
+              "nodeResultId": "main_question-SZLuy"
+            }
+          ]
+        }
+      ],
+      "interactiveListUserInputVariable": "",
+      "interactiveListDefaultNodeResultId": "",
+      "id": "main_list-jbTLy",
+      "flowNodeType": "InteractiveList",
+      "flowNodePosition": {
+        "posX": "480",
+        "posY": "0"
+      },
+      "isStartNode": false
+    },
+    {
+      "interactiveButtonsHeader": {
+        "type": "Text",
+        "text": "",
+        "media": null
+      },
+      "interactiveButtonsBody": "<p>Here is how it works:<br>\n<br>\n1️⃣ You pay a flat fee and enter your case details online: the amount, the key dates and who owes you. No document uploads.<br>\n2️⃣ Our team verifies the facts you submitted.<br>\n3️⃣ A fact-verified legal notice is sent to the other party by Email and WhatsApp, and by Speed Post if you choose it. Most notices go out within 24 hours.<br>\n4️⃣ If they do not respond, up to 2 more escalating notices follow in Week 2 and Week 3.<br>\n5️⃣ You track delivery and replies from your dashboard.</p>",
+      "interactiveButtonsFooter": "",
+      "interactiveButtonsItems": [
+        {
+          "id": "WVvTtsN",
+          "buttonText": "Get started",
+          "nodeResultId": "main_question-SZLuy"
+        },
+        {
+          "id": "pbKhIFL",
+          "buttonText": "More questions",
+          "nodeResultId": "main_list-jbTLy"
+        }
+      ],
+      "interactiveButtonsUserInputVariable": "",
+      "interactiveButtonsDefaultNodeResultId": "",
+      "id": "main_buttons-llLpq",
+      "flowNodeType": "InteractiveButtons",
+      "flowNodePosition": {
+        "posX": "1000",
+        "posY": "0"
+      },
+      "isStartNode": false
+    },
+    {
+      "interactiveButtonsHeader": {
+        "type": "Text",
+        "text": "",
+        "media": null
+      },
+      "interactiveButtonsBody": "<p>Our fee is a flat ₹999 per opposite party.<br>\n<br>\n✅ Up to 3 fact-verified legal notices by Email and WhatsApp<br>\n✅ Delivery tracking<br>\n✅ Multi-stage escalation<br>\n<br>\nOptional: Speed Post for all 3 notices at ₹450 per party, charged at cost.<br>\n<br>\nNo retainer, no hourly billing and no commission on the money you recover.</p>",
+      "interactiveButtonsFooter": "",
+      "interactiveButtonsItems": [
+        {
+          "id": "LmidXxf",
+          "buttonText": "Get started",
+          "nodeResultId": "main_question-SZLuy"
+        },
+        {
+          "id": "AAwbjrF",
+          "buttonText": "More questions",
+          "nodeResultId": "main_list-jbTLy"
+        }
+      ],
+      "interactiveButtonsUserInputVariable": "",
+      "interactiveButtonsDefaultNodeResultId": "",
+      "id": "main_buttons-soEki",
+      "flowNodeType": "InteractiveButtons",
+      "flowNodePosition": {
+        "posX": "1000",
+        "posY": "520"
+      },
+      "isStartNode": false
+    },
+    {
+      "interactiveButtonsHeader": {
+        "type": "Text",
+        "text": "",
+        "media": null
+      },
+      "interactiveButtonsBody": "<p>We handle straightforward money disputes for individuals and businesses, anywhere in India:<br>\n<br>\n• Unpaid salary and employment dues<br>\n• Business dues and unpaid invoices<br>\n• Freelancer and client payments<br>\n• Money lent to a friend or relative<br>\n• Cheque bounce (Section 138)<br>\n• Security deposit and rent<br>\n• Property and builder refunds<br>\n• Consumer refunds for a product or service<br>\n• School, college and coaching fee refunds<br>\n• Flight, travel and hotel refunds<br>\n• Insurance claims<br>\n• Cyber fraud and bank disputes</p>",
+      "interactiveButtonsFooter": "",
+      "interactiveButtonsItems": [
+        {
+          "id": "pfKXIsa",
+          "buttonText": "Get started",
+          "nodeResultId": "main_question-SZLuy"
+        },
+        {
+          "id": "CfUYsEp",
+          "buttonText": "More questions",
+          "nodeResultId": "main_list-jbTLy"
+        }
+      ],
+      "interactiveButtonsUserInputVariable": "",
+      "interactiveButtonsDefaultNodeResultId": "",
+      "id": "main_buttons-OLQCu",
+      "flowNodeType": "InteractiveButtons",
+      "flowNodePosition": {
+        "posX": "1000",
+        "posY": "1040"
+      },
+      "isStartNode": false
+    },
+    {
+      "interactiveButtonsHeader": {
+        "type": "Text",
+        "text": "",
+        "media": null
+      },
+      "interactiveButtonsBody": "<p>The first notice usually goes out within 24 hours of you submitting your case. Follow-up notices go out in Week 2 and Week 3 if there is no response.<br>\n<br>\nHow quickly the matter resolves depends on how the other party responds.</p>",
+      "interactiveButtonsFooter": "",
+      "interactiveButtonsItems": [
+        {
+          "id": "fTAwUKD",
+          "buttonText": "Get started",
+          "nodeResultId": "main_question-SZLuy"
+        },
+        {
+          "id": "ZdKMaCY",
+          "buttonText": "More questions",
+          "nodeResultId": "main_list-jbTLy"
+        }
+      ],
+      "interactiveButtonsUserInputVariable": "",
+      "interactiveButtonsDefaultNodeResultId": "",
+      "id": "main_buttons-lkwIC",
+      "flowNodeType": "InteractiveButtons",
+      "flowNodePosition": {
+        "posX": "1000",
+        "posY": "1560"
+      },
+      "isStartNode": false
+    },
+    {
+      "interactiveButtonsHeader": {
+        "type": "Text",
+        "text": "",
+        "media": null
+      },
+      "interactiveButtonsBody": "<p>You do not need to upload any documents.<br>\n<br>\nYou simply type in the key facts: the amount owed, the important dates, what was agreed and the other party's contact details. Our team verifies these facts before the notice is sent.<br>\n<br>\nKeep your agreements, invoices, payment receipts and chats safe with you, as you may need them later.</p>",
+      "interactiveButtonsFooter": "",
+      "interactiveButtonsItems": [
+        {
+          "id": "tsjxvsT",
+          "buttonText": "Get started",
+          "nodeResultId": "main_question-SZLuy"
+        },
+        {
+          "id": "EReqQhg",
+          "buttonText": "More questions",
+          "nodeResultId": "main_list-jbTLy"
+        }
+      ],
+      "interactiveButtonsUserInputVariable": "",
+      "interactiveButtonsDefaultNodeResultId": "",
+      "id": "main_buttons-urlpM",
+      "flowNodeType": "InteractiveButtons",
+      "flowNodePosition": {
+        "posX": "1000",
+        "posY": "2080"
+      },
+      "isStartNode": false
+    },
+    {
+      "interactiveButtonsHeader": {
+        "type": "Text",
+        "text": "",
+        "media": null
+      },
+      "interactiveButtonsBody": "<p>If the other party does not respond to the first notice, we send follow-up notices in Week 2 and Week 3, each more urgent than the last.<br>\n<br>\nIf all notices are ignored, we guide you on the next step. Depending on the dispute, that may be a consumer complaint, the labour commissioner, a civil suit or a cheque bounce case under Section 138.</p>",
+      "interactiveButtonsFooter": "",
+      "interactiveButtonsItems": [
+        {
+          "id": "MfqtPqI",
+          "buttonText": "Get started",
+          "nodeResultId": "main_question-SZLuy"
+        },
+        {
+          "id": "dJHVRrZ",
+          "buttonText": "More questions",
+          "nodeResultId": "main_list-jbTLy"
+        }
+      ],
+      "interactiveButtonsUserInputVariable": "",
+      "interactiveButtonsDefaultNodeResultId": "",
+      "id": "main_buttons-kWRES",
+      "flowNodeType": "InteractiveButtons",
+      "flowNodePosition": {
+        "posX": "1000",
+        "posY": "2600"
+      },
+      "isStartNode": false
+    },
+    {
+      "interactiveButtonsHeader": {
+        "type": "Text",
+        "text": "",
+        "media": null
+      },
+      "interactiveButtonsBody": "<p>Yes. Our legal notice formats have been prepared by a lawyer.<br>\n<br>\nYour notice is built on those formats using the facts you submit, which our team verifies before sending. It is not individually customised by a lawyer for your specific situation.<br>\n<br>\nFor personal legal advice or court representation, you would need to hire an advocate separately.</p>",
+      "interactiveButtonsFooter": "",
+      "interactiveButtonsItems": [
+        {
+          "id": "NupOjej",
+          "buttonText": "Get started",
+          "nodeResultId": "main_question-SZLuy"
+        },
+        {
+          "id": "FpMiPSP",
+          "buttonText": "More questions",
+          "nodeResultId": "main_list-jbTLy"
+        }
+      ],
+      "interactiveButtonsUserInputVariable": "",
+      "interactiveButtonsDefaultNodeResultId": "",
+      "id": "main_buttons-CeMGb",
+      "flowNodeType": "InteractiveButtons",
+      "flowNodePosition": {
+        "posX": "1000",
+        "posY": "3120"
+      },
+      "isStartNode": false
+    },
+    {
+      "interactiveButtonsHeader": {
+        "type": "Text",
+        "text": "",
+        "media": null
+      },
+      "interactiveButtonsBody": "<p>We cannot guarantee that the money will be recovered. A legal notice is a formal demand, and the outcome depends on the other party.<br>\n<br>\nRefunds are not available once fact verification begins, for incorrect recipient details, or after a notice has been issued.</p>",
+      "interactiveButtonsFooter": "",
+      "interactiveButtonsItems": [
+        {
+          "id": "NOqYJDn",
+          "buttonText": "Get started",
+          "nodeResultId": "main_question-SZLuy"
+        },
+        {
+          "id": "jQHWpRh",
+          "buttonText": "More questions",
+          "nodeResultId": "main_list-jbTLy"
+        }
+      ],
+      "interactiveButtonsUserInputVariable": "",
+      "interactiveButtonsDefaultNodeResultId": "",
+      "id": "main_buttons-RVAvU",
+      "flowNodeType": "InteractiveButtons",
+      "flowNodePosition": {
+        "posX": "1000",
+        "posY": "3640"
+      },
+      "isStartNode": false
+    },
+    {
+      "flowReplies": [
+        {
+          "flowReplyType": "Text",
+          "data": "<p>Great, let's set up your account. It takes about a minute.<br>\n<br>\nWhat is your full name?</p>",
+          "caption": "",
+          "mimeType": ""
+        }
+      ],
+      "userInputVariable": "lr_name",
+      "answerValidation": {
+        "type": "Regex",
+        "minValue": "",
+        "maxValue": "",
+        "regex": "^(?!\\d+$).{2,60}$",
+        "fallback": "Please type your full name, for example Rahul Sharma.",
+        "failsCount": "3"
+      },
+      "isMediaAccepted": false,
+      "expectedAnswers": null,
+      "id": "main_question-SZLuy",
+      "flowNodeType": "Question",
+      "flowNodePosition": {
+        "posX": "1560",
+        "posY": "0"
+      },
+      "isStartNode": false
+    },
+    {
+      "flowReplies": [
+        {
+          "flowReplyType": "Text",
+          "data": "<p>Thanks @lr_name. What is your email address? We send your receipt and case updates there.</p>",
+          "caption": "",
+          "mimeType": ""
+        }
+      ],
+      "userInputVariable": "lr_email",
+      "answerValidation": {
+        "type": "Regex",
+        "minValue": "",
+        "maxValue": "",
+        "regex": "^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$",
+        "fallback": "That does not look like an email address. Please type it again.",
+        "failsCount": "3"
+      },
+      "isMediaAccepted": false,
+      "expectedAnswers": null,
+      "id": "main_question-EVWKH",
+      "flowNodeType": "Question",
+      "flowNodePosition": {
+        "posX": "1560",
+        "posY": "340"
+      },
+      "isStartNode": false
+    },
+    {
+      "flowReplies": [
+        {
+          "flowReplyType": "Text",
+          "data": "<p>Which state do you live in?</p>",
+          "caption": "",
+          "mimeType": ""
+        }
+      ],
+      "userInputVariable": "lr_state",
+      "answerValidation": {
+        "type": "Regex",
+        "minValue": "",
+        "maxValue": "",
+        "regex": "^.{2,40}$",
+        "fallback": "Please type the name of your state, for example Delhi or Maharashtra.",
+        "failsCount": "3"
+      },
+      "isMediaAccepted": false,
+      "expectedAnswers": null,
+      "id": "main_question-jNrPv",
+      "flowNodeType": "Question",
+      "flowNodePosition": {
+        "posX": "1560",
+        "posY": "680"
+      },
+      "isStartNode": false
+    },
+    {
+      "interactiveButtonsHeader": {
+        "type": "Text",
+        "text": "",
+        "media": null
+      },
+      "interactiveButtonsBody": "<p>How many people or businesses do you want to recover money from?<br>\n<br>\nThe fee is ₹999 for each one. If you have more than 3, pick 3 parties and change it on the payment page.</p>",
+      "interactiveButtonsFooter": "",
+      "interactiveButtonsItems": [
+        {
+          "id": "TQWicUv",
+          "buttonText": "1 party",
+          "nodeResultId": "main_buttons-cCETL"
+        },
+        {
+          "id": "qfVGmFk",
+          "buttonText": "2 parties",
+          "nodeResultId": "main_buttons-cCETL"
+        },
+        {
+          "id": "ehopHLW",
+          "buttonText": "3 parties",
+          "nodeResultId": "main_buttons-cCETL"
+        }
+      ],
+      "interactiveButtonsUserInputVariable": "lr_parties",
+      "interactiveButtonsDefaultNodeResultId": "",
+      "id": "main_buttons-mQVJt",
+      "flowNodeType": "InteractiveButtons",
+      "flowNodePosition": {
+        "posX": "1560",
+        "posY": "1020"
+      },
+      "isStartNode": false
+    },
+    {
+      "interactiveButtonsHeader": {
+        "type": "Text",
+        "text": "",
+        "media": null
+      },
+      "interactiveButtonsBody": "<p>Do you also want the notices sent physically by Speed Post?<br>\n<br>\nEmail and WhatsApp delivery are already included. Speed Post adds ₹450 per party for all 3 notices.</p>",
+      "interactiveButtonsFooter": "",
+      "interactiveButtonsItems": [
+        {
+          "id": "ZKLuovz",
+          "buttonText": "Yes, add Speed Post",
+          "nodeResultId": "main_buttons-bcUGF"
+        },
+        {
+          "id": "mgRFXBs",
+          "buttonText": "No, skip it",
+          "nodeResultId": "main_buttons-bcUGF"
+        }
+      ],
+      "interactiveButtonsUserInputVariable": "lr_speed_post",
+      "interactiveButtonsDefaultNodeResultId": "",
+      "id": "main_buttons-cCETL",
+      "flowNodeType": "InteractiveButtons",
+      "flowNodePosition": {
+        "posX": "1560",
+        "posY": "1500"
+      },
+      "isStartNode": false
+    },
+    {
+      "interactiveButtonsHeader": {
+        "type": "Text",
+        "text": "",
+        "media": null
+      },
+      "interactiveButtonsBody": "<p>Please check your details:<br>\n<br>\nName: @lr_name<br>\nEmail: @lr_email<br>\nState: @lr_state<br>\nOpposite parties: @lr_parties<br>\nSpeed Post: @lr_speed_post<br>\n<br>\nIs everything correct?</p>",
+      "interactiveButtonsFooter": "",
+      "interactiveButtonsItems": [
+        {
+          "id": "nmtuLeM",
+          "buttonText": "Yes, send my link",
+          "nodeResultId": "main_message-UTDOB"
+        },
+        {
+          "id": "nRctQvl",
+          "buttonText": "Start again",
+          "nodeResultId": "main_question-SZLuy"
+        }
+      ],
+      "interactiveButtonsUserInputVariable": "",
+      "interactiveButtonsDefaultNodeResultId": "",
+      "id": "main_buttons-bcUGF",
+      "flowNodeType": "InteractiveButtons",
+      "flowNodePosition": {
+        "posX": "1560",
+        "posY": "1940"
+      },
+      "isStartNode": false
+    },
+    {
+      "flowReplies": [
+        {
+          "flowReplyType": "Text",
+          "data": "<p>Almost done! 🎉<br>\n<br>\nTap the link below and we'll send your secure payment link right here on WhatsApp:<br>\nhttps://legalrecovery.in/wa/link?n={{phone}}<br>\n<br>\nFor your security, the payment link is only ever sent to this WhatsApp number.</p>",
+          "caption": "",
+          "mimeType": ""
+        }
+      ],
+      "id": "main_message-UTDOB",
+      "flowNodeType": "Message",
+      "flowNodePosition": {
+        "posX": "2100",
+        "posY": "1940"
+      },
+      "isStartNode": false
+    }
+  ],
+  "flowEdges": [
+    {
+      "id": "reactflow__edge-main_buttons-cPZbgLeqfaFu-main_buttons-llLpq",
+      "sourceNodeId": "main_buttons-cPZbg__LeqfaFu",
+      "targetNodeId": "main_buttons-llLpq"
+    },
+    {
+      "id": "reactflow__edge-main_buttons-cPZbgRSvFLVm-main_buttons-soEki",
+      "sourceNodeId": "main_buttons-cPZbg__RSvFLVm",
+      "targetNodeId": "main_buttons-soEki"
+    },
+    {
+      "id": "reactflow__edge-main_buttons-cPZbgBahsKMQ-main_list-jbTLy",
+      "sourceNodeId": "main_buttons-cPZbg__BahsKMQ",
+      "targetNodeId": "main_list-jbTLy"
+    },
+    {
+      "id": "reactflow__edge-main_list-jbTLyopiUHUN-main_buttons-llLpq",
+      "sourceNodeId": "main_list-jbTLy__opiUHUN",
+      "targetNodeId": "main_buttons-llLpq"
+    },
+    {
+      "id": "reactflow__edge-main_list-jbTLyWkJgzwA-main_buttons-soEki",
+      "sourceNodeId": "main_list-jbTLy__WkJgzwA",
+      "targetNodeId": "main_buttons-soEki"
+    },
+    {
+      "id": "reactflow__edge-main_list-jbTLyJAyIkjS-main_buttons-OLQCu",
+      "sourceNodeId": "main_list-jbTLy__JAyIkjS",
+      "targetNodeId": "main_buttons-OLQCu"
+    },
+    {
+      "id": "reactflow__edge-main_list-jbTLyKhixBit-main_buttons-lkwIC",
+      "sourceNodeId": "main_list-jbTLy__KhixBit",
+      "targetNodeId": "main_buttons-lkwIC"
+    },
+    {
+      "id": "reactflow__edge-main_list-jbTLyUbvWzoe-main_buttons-urlpM",
+      "sourceNodeId": "main_list-jbTLy__UbvWzoe",
+      "targetNodeId": "main_buttons-urlpM"
+    },
+    {
+      "id": "reactflow__edge-main_list-jbTLyUgqSGfq-main_buttons-kWRES",
+      "sourceNodeId": "main_list-jbTLy__UgqSGfq",
+      "targetNodeId": "main_buttons-kWRES"
+    },
+    {
+      "id": "reactflow__edge-main_list-jbTLydQPGbPH-main_buttons-CeMGb",
+      "sourceNodeId": "main_list-jbTLy__dQPGbPH",
+      "targetNodeId": "main_buttons-CeMGb"
+    },
+    {
+      "id": "reactflow__edge-main_list-jbTLyVbQhHZD-main_buttons-RVAvU",
+      "sourceNodeId": "main_list-jbTLy__VbQhHZD",
+      "targetNodeId": "main_buttons-RVAvU"
+    },
+    {
+      "id": "reactflow__edge-main_list-jbTLynqfPAqF-main_question-SZLuy",
+      "sourceNodeId": "main_list-jbTLy__nqfPAqF",
+      "targetNodeId": "main_question-SZLuy"
+    },
+    {
+      "id": "reactflow__edge-main_buttons-llLpqWVvTtsN-main_question-SZLuy",
+      "sourceNodeId": "main_buttons-llLpq__WVvTtsN",
+      "targetNodeId": "main_question-SZLuy"
+    },
+    {
+      "id": "reactflow__edge-main_buttons-llLpqpbKhIFL-main_list-jbTLy",
+      "sourceNodeId": "main_buttons-llLpq__pbKhIFL",
+      "targetNodeId": "main_list-jbTLy"
+    },
+    {
+      "id": "reactflow__edge-main_buttons-soEkiLmidXxf-main_question-SZLuy",
+      "sourceNodeId": "main_buttons-soEki__LmidXxf",
+      "targetNodeId": "main_question-SZLuy"
+    },
+    {
+      "id": "reactflow__edge-main_buttons-soEkiAAwbjrF-main_list-jbTLy",
+      "sourceNodeId": "main_buttons-soEki__AAwbjrF",
+      "targetNodeId": "main_list-jbTLy"
+    },
+    {
+      "id": "reactflow__edge-main_buttons-OLQCupfKXIsa-main_question-SZLuy",
+      "sourceNodeId": "main_buttons-OLQCu__pfKXIsa",
+      "targetNodeId": "main_question-SZLuy"
+    },
+    {
+      "id": "reactflow__edge-main_buttons-OLQCuCfUYsEp-main_list-jbTLy",
+      "sourceNodeId": "main_buttons-OLQCu__CfUYsEp",
+      "targetNodeId": "main_list-jbTLy"
+    },
+    {
+      "id": "reactflow__edge-main_buttons-lkwICfTAwUKD-main_question-SZLuy",
+      "sourceNodeId": "main_buttons-lkwIC__fTAwUKD",
+      "targetNodeId": "main_question-SZLuy"
+    },
+    {
+      "id": "reactflow__edge-main_buttons-lkwICZdKMaCY-main_list-jbTLy",
+      "sourceNodeId": "main_buttons-lkwIC__ZdKMaCY",
+      "targetNodeId": "main_list-jbTLy"
+    },
+    {
+      "id": "reactflow__edge-main_buttons-urlpMtsjxvsT-main_question-SZLuy",
+      "sourceNodeId": "main_buttons-urlpM__tsjxvsT",
+      "targetNodeId": "main_question-SZLuy"
+    },
+    {
+      "id": "reactflow__edge-main_buttons-urlpMEReqQhg-main_list-jbTLy",
+      "sourceNodeId": "main_buttons-urlpM__EReqQhg",
+      "targetNodeId": "main_list-jbTLy"
+    },
+    {
+      "id": "reactflow__edge-main_buttons-kWRESMfqtPqI-main_question-SZLuy",
+      "sourceNodeId": "main_buttons-kWRES__MfqtPqI",
+      "targetNodeId": "main_question-SZLuy"
+    },
+    {
+      "id": "reactflow__edge-main_buttons-kWRESdJHVRrZ-main_list-jbTLy",
+      "sourceNodeId": "main_buttons-kWRES__dJHVRrZ",
+      "targetNodeId": "main_list-jbTLy"
+    },
+    {
+      "id": "reactflow__edge-main_buttons-CeMGbNupOjej-main_question-SZLuy",
+      "sourceNodeId": "main_buttons-CeMGb__NupOjej",
+      "targetNodeId": "main_question-SZLuy"
+    },
+    {
+      "id": "reactflow__edge-main_buttons-CeMGbFpMiPSP-main_list-jbTLy",
+      "sourceNodeId": "main_buttons-CeMGb__FpMiPSP",
+      "targetNodeId": "main_list-jbTLy"
+    },
+    {
+      "id": "reactflow__edge-main_buttons-RVAvUNOqYJDn-main_question-SZLuy",
+      "sourceNodeId": "main_buttons-RVAvU__NOqYJDn",
+      "targetNodeId": "main_question-SZLuy"
+    },
+    {
+      "id": "reactflow__edge-main_buttons-RVAvUjQHWpRh-main_list-jbTLy",
+      "sourceNodeId": "main_buttons-RVAvU__jQHWpRh",
+      "targetNodeId": "main_list-jbTLy"
+    },
+    {
+      "id": "reactflow__edge-main_buttons-mQVJtTQWicUv-main_buttons-cCETL",
+      "sourceNodeId": "main_buttons-mQVJt__TQWicUv",
+      "targetNodeId": "main_buttons-cCETL"
+    },
+    {
+      "id": "reactflow__edge-main_buttons-mQVJtqfVGmFk-main_buttons-cCETL",
+      "sourceNodeId": "main_buttons-mQVJt__qfVGmFk",
+      "targetNodeId": "main_buttons-cCETL"
+    },
+    {
+      "id": "reactflow__edge-main_buttons-mQVJtehopHLW-main_buttons-cCETL",
+      "sourceNodeId": "main_buttons-mQVJt__ehopHLW",
+      "targetNodeId": "main_buttons-cCETL"
+    },
+    {
+      "id": "reactflow__edge-main_buttons-cCETLZKLuovz-main_buttons-bcUGF",
+      "sourceNodeId": "main_buttons-cCETL__ZKLuovz",
+      "targetNodeId": "main_buttons-bcUGF"
+    },
+    {
+      "id": "reactflow__edge-main_buttons-cCETLmgRFXBs-main_buttons-bcUGF",
+      "sourceNodeId": "main_buttons-cCETL__mgRFXBs",
+      "targetNodeId": "main_buttons-bcUGF"
+    },
+    {
+      "id": "reactflow__edge-main_buttons-bcUGFnmtuLeM-main_message-UTDOB",
+      "sourceNodeId": "main_buttons-bcUGF__nmtuLeM",
+      "targetNodeId": "main_message-UTDOB"
+    },
+    {
+      "id": "reactflow__edge-main_buttons-bcUGFnRctQvl-main_question-SZLuy",
+      "sourceNodeId": "main_buttons-bcUGF__nRctQvl",
+      "targetNodeId": "main_question-SZLuy"
+    },
+    {
+      "id": "reactflow__edge-main_question-SZLuy-main_question-EVWKH",
+      "sourceNodeId": "main_question-SZLuy",
+      "targetNodeId": "main_question-EVWKH"
+    },
+    {
+      "id": "reactflow__edge-main_question-EVWKH-main_question-jNrPv",
+      "sourceNodeId": "main_question-EVWKH",
+      "targetNodeId": "main_question-jNrPv"
+    },
+    {
+      "id": "reactflow__edge-main_question-jNrPv-main_buttons-mQVJt",
+      "sourceNodeId": "main_question-jNrPv",
+      "targetNodeId": "main_buttons-mQVJt"
+    }
+  ],
+  "lastUpdated": "2026-11-26T06:50:05.332Z",
+  "isDeleted": false,
+  "transform": {
+    "posX": "60",
+    "posY": "60",
+    "zoom": "0.35"
+  },
+  "isPro": true,
+  "flowVersion": 1,
+  "fallback": {
+    "message": {
+      "isEnabled": true,
+      "message": "I can only record your answer when you tap a button. Please tap one of the options in my last message 👆 To start again, type *menu*.",
+      "retryLimit": 3
+    },
+    "smartEscalation": {
+      "isEnabled": false,
+      "teamId": null,
+      "assignToContactOwner": true
+    }
+  },
+  "channelTypes": [
+    "WA"
+  ],
+  "hasUpdateAttribute": false
+}

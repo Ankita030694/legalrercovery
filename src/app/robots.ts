@@ -12,6 +12,7 @@ export default function robots(): MetadataRoute.Robots {
           "/nullify/",
           "/user/",
           "/payu/",
+          "/wa/",
         ],
       },
       {
@@ -31,6 +32,7 @@ export default function robots(): MetadataRoute.Robots {
           "/nullify/",
           "/user/",
           "/payu/",
+          "/wa/",
         ],
       }
     ],

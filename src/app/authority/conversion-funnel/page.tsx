@@ -32,6 +32,7 @@ import {
   Mail,
 } from "lucide-react";
 import { ATTRIBUTION_CHANNELS, LeadAttribution } from "@/lib/attribution";
+import WhatsAppBotPanel from "./WhatsAppBotPanel";
 
 const channelLabel = (channel: string) =>
   ATTRIBUTION_CHANNELS.find((c) => c.value === channel)?.label || channel;
@@ -770,6 +771,9 @@ export default function ConversionFunnel() {
         )}
       </AnimatePresence>
 
+      {/* ── WhatsApp chatbot progress ── */}
+      <WhatsAppBotPanel />
+
       {/* ── 6-Stage KPI Pipeline Bar (Click Any Stage to Filter) ── */}
       <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3.5 mb-8">
         <button
@@ -1168,6 +1172,8 @@ export default function ConversionFunnel() {
                                     Step 2: Payment Pending
                                     {item.verifiedVia === "magic_link"
                                       ? " (Auto-Verified)"
+                                      : item.verifiedVia === "whatsapp"
+                                      ? " (WhatsApp)"
                                       : ""}
                                   </span>
                                 ) : (
@@ -1447,6 +1453,8 @@ export default function ConversionFunnel() {
                                             ? "Awaiting OTP / Link Click"
                                             : item.verifiedVia === "magic_link"
                                             ? "Verified via Magic Link"
+                                            : item.verifiedVia === "whatsapp"
+                                            ? "Verified via WhatsApp Chat"
                                             : "Verified via OTP"}
                                         </p>
                                         <p className="text-[10px] text-slate-500 font-semibold mt-1">
