@@ -66,7 +66,6 @@ export default function LawyerByCity() {
 
         <CityDirectoryExplorer
           items={locationData}
-          basePath="/legal-recovery-by-city"
           searchPlaceholder="Search city, district or area (e.g. Gurugram, Mumbai, Pune, Kolkata)..."
           badgeLabel="Pan-India Debt Recovery Network"
         />

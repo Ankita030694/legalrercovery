@@ -1,6 +1,5 @@
 import type { MetadataRoute } from "next";
-import { SITE_URL, INDEX_LOCATION_PAGES } from "@/lib/site";
-import { locationData } from "./legal-recovery-by-city/locationData";
+import { SITE_URL } from "@/lib/site";
 
 export const revalidate = 3600;
 
@@ -1562,24 +1561,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   const blogEntries = await getBlogEntries();
 
-  const cityEntries: MetadataRoute.Sitemap = locationData.map((loc) => ({
-    url: `${SITE_URL}/legal-recovery-by-city/${loc.slug}`,
-    lastModified: new Date(),
-    changeFrequency: "monthly" as const,
-    priority: 0.5,
-  }));
-
-  const noticeCityEntries: MetadataRoute.Sitemap = locationData.map((loc) => ({
-    url: `${SITE_URL}/legal-notice-services/${loc.slug}`,
-    lastModified: new Date(),
-    changeFrequency: "monthly" as const,
-    priority: 0.55,
-  }));
-
-  if (!INDEX_LOCATION_PAGES) {
-    return [...staticEntries, ...blogEntries];
-  }
-
-  return [...staticEntries, ...blogEntries, ...cityEntries, ...noticeCityEntries];
+  return [...staticEntries, ...blogEntries];
 }
 

@@ -12,7 +12,6 @@ export interface CityDirectoryItem {
 
 interface CityDirectoryExplorerProps {
   items: CityDirectoryItem[];
-  basePath: string;
   searchPlaceholder?: string;
   badgeLabel?: string;
 }
@@ -87,7 +86,6 @@ const LOAD_MORE_STEP = 36;
 
 export default function CityDirectoryExplorer({
   items,
-  basePath,
   searchPlaceholder = "Search your city, district or locality (e.g. Pune, Noida, Jaipur)...",
   badgeLabel = "1,500+ Indian Cities Covered",
 }: CityDirectoryExplorerProps) {
@@ -194,7 +192,7 @@ export default function CityDirectoryExplorer({
               {badgeLabel}
             </span>
             <p className="text-sm text-slate-500 mt-1">
-              Find advocate services in your city or district across India
+              Search to check that we cover your city or district. The service works online from every place listed.
             </p>
           </div>
 
@@ -266,34 +264,42 @@ export default function CityDirectoryExplorer({
         </div>
       </div>
 
-      {/* Grid of City Links */}
+      {/* One call to action for every city: the service is the same online process everywhere */}
+      <div className="bg-white rounded-3xl p-5 md:p-6 shadow-sm border border-slate-100 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <p className="text-sm md:text-base text-slate-700">
+          You do not need a local office or a court visit. Start your notice online from any city below.
+        </p>
+        <Link
+          href="/send-legal-notice-online-india"
+          className="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-[#DC2626] text-white text-sm font-semibold hover:bg-[#b91c1c] transition-colors whitespace-nowrap"
+        >
+          Send a legal notice online <span aria-hidden="true">→</span>
+        </Link>
+      </div>
+
+      {/* Grid of covered cities. These are not links: the per-city pages were removed. */}
       {displayedItems.length > 0 ? (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {displayedItems.map((loc) => (
-            <Link
+            <div
               key={loc.slug}
-              href={`${basePath}/${loc.slug}`}
-              className="bg-white/80 backdrop-blur-sm border border-slate-200/70 hover:border-[#DC2626]/40 p-6 rounded-2xl transition-all duration-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.06)] group hover:-translate-y-1 block relative overflow-hidden"
+              className="bg-white/80 backdrop-blur-sm border border-slate-200/70 p-6 rounded-2xl block relative overflow-hidden"
             >
-              <div className="absolute top-0 left-0 w-1.5 h-full bg-[#DC2626] opacity-0 group-hover:opacity-100 transition-opacity"></div>
               <div className="flex items-start justify-between gap-3">
-                <span className="text-base md:text-lg font-semibold text-[#111827] group-hover:text-[#DC2626] transition-colors leading-snug block">
+                <span className="text-base md:text-lg font-semibold text-[#111827] leading-snug block">
                   {loc.title}
                 </span>
-                <span className="text-slate-300 group-hover:text-[#DC2626] transition-colors pt-0.5 shrink-0">
+                <span className="text-slate-300 pt-0.5 shrink-0">
                   <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                   </svg>
                 </span>
               </div>
-              <div className="mt-4 flex items-center text-sm text-[#DC2626] font-medium opacity-100 transition-all duration-300">
-                View Details{" "}
-                <span className="ml-1 group-hover:translate-x-1 transition-transform">
-                  →
-                </span>
+              <div className="mt-4 flex items-center text-sm text-slate-500 font-medium">
+                Covered online
               </div>
-            </Link>
+            </div>
           ))}
         </div>
       ) : (

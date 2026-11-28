@@ -9,13 +9,6 @@ export const SITE_URL = (
 ).replace(/\/$/, "");
 
 /**
- * Templated location pages (/legal-recovery-by-city/[slug], /legal-notice-services/[slug]).
- * They are near-identical apart from the place name, so they are kept out of the sitemap and
- * served with noindex,follow. Flip to true only once pages carry genuinely local content.
- */
-export const INDEX_LOCATION_PAGES = false;
-
-/**
  * Normalizes and shortens image alt text to comply with SEO best practices
  * and prevent Screaming Frog "Alt Text Over 100 Characters" flags.
  * Truncates cleanly at word boundaries and strips dangling punctuation/stop-words.

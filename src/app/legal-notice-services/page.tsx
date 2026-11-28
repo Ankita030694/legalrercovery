@@ -65,7 +65,6 @@ export default function LegalNoticeServicesByCity() {
 
         <CityDirectoryExplorer
           items={noticeLocationData}
-          basePath="/legal-notice-services"
           searchPlaceholder="Search city, district or area (e.g. Bengaluru, Delhi, Mumbai, Hyderabad)..."
           badgeLabel="Pan-India Legal Notice Coverage"
         />
