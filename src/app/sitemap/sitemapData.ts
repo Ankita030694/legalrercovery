@@ -8,6 +8,41 @@ export interface SitemapItem {
 
 export const ALL_SITEMAP_PAGES: SitemapItem[] = [
   {
+    title: "Free Legal Recovery Calculators and Tools (India)",
+    href: "/tools",
+    category: "Guides",
+    date: "2026-11-28",
+    timestamp: 1795824000000,
+  },
+  {
+    title: "Indian Money Recovery Laws Explained: Acts, Rules and Rulings",
+    href: "/law",
+    category: "Guides",
+    date: "2026-11-28",
+    timestamp: 1795824000000,
+  },
+  {
+    title: "Legal Notice to a Company in India: Refund Guides by Brand",
+    href: "/legal-notice-to",
+    category: "Guides",
+    date: "2026-11-28",
+    timestamp: 1795824000000,
+  },
+  {
+    title: "Legal Recovery Reports and Data Studies (India)",
+    href: "/reports",
+    category: "Guides",
+    date: "2026-11-28",
+    timestamp: 1795824000000,
+  },
+  {
+    title: "हिंदी में कानूनी वसूली गाइड: लीगल नोटिस, उधार और चेक बाउंस",
+    href: "/hi",
+    category: "Guides",
+    date: "2026-11-28",
+    timestamp: 1795824000000,
+  },
+  {
     title: "Business Debt Recovery by Industry in India: 25 Sectors",
     href: "/industries",
     category: "B2B & Institutional Recovery",

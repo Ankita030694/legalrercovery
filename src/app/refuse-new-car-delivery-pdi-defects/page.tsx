@@ -1381,13 +1381,6 @@ export default function RefuseNewCarDeliveryPdiPage() {
                       <span>&rarr;</span>
                     </Link>
                     <Link
-                      href="/dealer-forced-accessories-insurance-handling-charges"
-                      className="p-2.5 rounded-lg bg-white border border-slate-200 hover:border-red-300 hover:text-red-600 font-semibold text-slate-800 transition-colors flex items-center justify-between"
-                    >
-                      <span>Recover Illegal Dealer Handling Charges &amp; Forced Accessories</span>
-                      <span>&rarr;</span>
-                    </Link>
-                    <Link
                       href="/used-car-platform-refund-dispute"
                       className="p-2.5 rounded-lg bg-white border border-slate-200 hover:border-red-300 hover:text-red-600 font-semibold text-slate-800 transition-colors flex items-center justify-between"
                     >

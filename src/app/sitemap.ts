@@ -1187,6 +1187,11 @@ const STATIC_ROUTES: {
   { path: "/scam-money-recovery-what-is-possible", changeFrequency: "weekly", priority: 0.9, lastModified: new Date("2026-11-04") },
   { path: "/templates", changeFrequency: "weekly", priority: 0.85, lastModified: new Date("2026-11-21") },
   { path: "/industries", changeFrequency: "weekly", priority: 0.85, lastModified: new Date("2026-11-21") },
+  { path: "/tools", changeFrequency: "weekly", priority: 0.85, lastModified: new Date("2026-11-28") },
+  { path: "/law", changeFrequency: "weekly", priority: 0.85, lastModified: new Date("2026-11-28") },
+  { path: "/legal-notice-to", changeFrequency: "weekly", priority: 0.85, lastModified: new Date("2026-11-28") },
+  { path: "/reports", changeFrequency: "weekly", priority: 0.85, lastModified: new Date("2026-11-28") },
+  { path: "/hi", changeFrequency: "weekly", priority: 0.85, lastModified: new Date("2026-11-28") },
   { path: "/templates/insurance-ombudsman-complaint-format", changeFrequency: "weekly", priority: 0.9, lastModified: new Date("2026-11-06") },
   { path: "/law/coaching-centre-refund-guidelines-2024", changeFrequency: "weekly", priority: 0.9, lastModified: new Date("2026-11-06") },
   { path: "/law/ugc-fee-refund-policy", changeFrequency: "weekly", priority: 0.9, lastModified: new Date("2026-11-06") },
@@ -1490,6 +1495,16 @@ const STATIC_ROUTES: {
   { path: "/tools/b2b-debt-recovery-legal-forum-selector", changeFrequency: "weekly", priority: 0.9, lastModified: new Date("2026-11-20") },
 ];
 
+// Blog posts that next.config.ts permanently redirects to another page. A sitemap should list
+// only final URLs, so these are left out. Keep in step with redirects() in next.config.ts.
+const REDIRECTED_BLOG_SLUGS = new Set([
+  "recover-money-from-transaction-mistake",
+  "money-recovery-blinkit-wrongful-delivery",
+  "money-recovery-zepto-wrongful-delivery",
+  "money-recovery-instamart-wrongful-product-delivery",
+  "understanding-charges-for-legal-notice",
+]);
+
 async function getBlogEntries(): Promise<MetadataRoute.Sitemap> {
   if (!process.env.MONGODB_URI) {
     return [];
@@ -1508,7 +1523,7 @@ async function getBlogEntries(): Promise<MetadataRoute.Sitemap> {
       .sort({ publishedAt: -1 })
       .toArray();
 
-    return blogs.map((blog) => {
+    return blogs.filter((blog) => !REDIRECTED_BLOG_SLUGS.has(blog.slug)).map((blog) => {
       const lastModified = new Date(
         blog.updatedAt || blog.publishedAt || blog.createdAt || Date.now()
       );
@@ -1537,7 +1552,9 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     seen.add(path);
     staticEntries.push({
       url: `${SITE_URL}${path}`,
-      lastModified: route.lastModified || new Date(),
+      // Only report a date we actually know. Falling back to "now" told Google that every
+      // undated page changed on each rebuild, which teaches it to ignore lastmod site-wide.
+      ...(route.lastModified ? { lastModified: route.lastModified } : {}),
       changeFrequency: route.changeFrequency,
       priority: route.priority,
     });

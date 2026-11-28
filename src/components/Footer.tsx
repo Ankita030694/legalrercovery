@@ -19,8 +19,6 @@ const navLinks = [
   { label: "About Us", href: "/about" },
   { label: "Services", href: "/services" },
   { label: "Recovery Directory", href: "/recovery" },
-  { label: "Recovery by Industry", href: "/industries" },
-  { label: "Free Templates", href: "/templates" },
   { label: "Recovery by City", href: "/legal-recovery-by-city" },
   { label: "Legal Notice Services", href: "/legal-notice-services" },
   { label: "How It Works", href: "/how-it-works" },
@@ -29,6 +27,18 @@ const navLinks = [
   { label: "Sitemap", href: "/sitemap" }
 ];
 
+
+// Section hubs. Linking them from every page keeps each section's pages within two clicks of
+// anywhere on the site, which is how search engines find newly published ones.
+const resourceLinks = [
+  { label: "Free Templates", href: "/templates" },
+  { label: "Free Calculators & Tools", href: "/tools" },
+  { label: "Recovery Laws Explained", href: "/law" },
+  { label: "Refund Guides by Company", href: "/legal-notice-to" },
+  { label: "Recovery by Industry", href: "/industries" },
+  { label: "Reports & Data", href: "/reports" },
+  { label: "हिंदी गाइड", href: "/hi" },
+];
 
 const legalLinks = [
   { label: "Privacy Policy", href: "/privacy-policy" },
@@ -270,6 +280,17 @@ export default function Footer() {
             <p className="text-white font-extrabold text-[13px] uppercase tracking-wider mb-5">Legal</p>
             <ul className="flex flex-col gap-3.5">
               {legalLinks.map((link, idx) => (
+                <li key={idx}>
+                  <a href={link.href} className="text-[12.5px] font-bold text-gray-400 hover:text-white hover:translate-x-0.5 transition-all inline-block cursor-pointer">
+                    {link.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+
+            <p className="text-white font-extrabold text-[13px] uppercase tracking-wider mt-10 mb-5">Resources</p>
+            <ul className="flex flex-col gap-3.5">
+              {resourceLinks.map((link, idx) => (
                 <li key={idx}>
                   <a href={link.href} className="text-[12.5px] font-bold text-gray-400 hover:text-white hover:translate-x-0.5 transition-all inline-block cursor-pointer">
                     {link.label}

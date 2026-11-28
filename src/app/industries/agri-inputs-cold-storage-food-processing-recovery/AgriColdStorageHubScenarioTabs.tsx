@@ -100,10 +100,6 @@ const AGRI_COLD_STORAGE_SCENARIOS: AgriColdStorageScenario[] = [
         href: "/cold-storage-unpaid-rent-commodity-lien-lawful-auction-notice-india",
       },
       {
-        label: "Cold Storage Pre-Auction Template",
-        href: "/templates/cold-storage-auction-notice-and-agro-dealer-recovery-format",
-      },
-      {
         label: "Hindi Cold Storage & Mandi Guide",
         href: "/hi/khad-beej-pesticide-cold-storage-mandi-udhar-recovery-notice",
       },

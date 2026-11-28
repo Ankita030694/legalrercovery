@@ -1010,7 +1010,7 @@ export default function RetentionMoneyRecoveryPage() {
                   </Link>
                   , or access our pre-vetted legal format at{" "}
                   <Link
-                    href="/templates/legal-notice-format-recovery-of-dues"
+                    href="/legal-notice-format-india"
                     className="text-[#DC2626] hover:underline font-bold"
                   >
                     Legal Notice Format for Recovery of Dues

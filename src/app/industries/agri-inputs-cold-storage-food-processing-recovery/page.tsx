@@ -159,17 +159,6 @@ const IND_21_SPOKES: IndustrySpoke[] = [
     summary:
       "UP, MP, राजस्थान, बिहार, हरियाणा और पंजाब के खाद-बीज डिस्ट्रीब्यूटर, राइस/दाल मिलर और कोल्ड स्टोरेज मालिकों के लिए सरल हिंदी कानूनी वसूली गाइड।",
   },
-  {
-    id: "B2B-250",
-    archetype: "P1",
-    archetypeLabel: "P1 Notice Workspace",
-    track: "hindi-templates",
-    title: "Agri & Cold-Chain Legal Template Pack: Pre-Auction & Agro-Dealer Notice",
-    url: "/templates/cold-storage-auction-notice-and-agro-dealer-recovery-format",
-    statute: "Contract Act s.170/176 + State Cold Storage Acts + NI Act s.20/138",
-    summary:
-      "Interactive notice builder generating (1) Consumer-Court-proof Cold Storage Registered Pre-Auction Notices and (2) Agro-Input / Feed Dealer Ledger Demands.",
-  },
 ];
 
 const SPOKE_TRACKS = [
@@ -185,7 +174,7 @@ const SPOKE_TRACKS = [
   },
   {
     key: "hindi-templates" as const,
-    heading: "Track C: Hindi Mandi/Vyapari Guide & Pre-Auction Notice Template Pack",
+    heading: "Track C: Hindi Mandi/Vyapari Guide",
     badgeClass: "bg-amber-50 text-amber-800 border-amber-200",
   },
 ];
@@ -873,7 +862,7 @@ export default function AgriColdStorageFoodProcessingHubPage() {
                   8
                 </span>
                 <h2 className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight">
-                  Complete IND-21 Directory: All 9 Spokes &amp; Notice Pack
+                  Complete IND-21 Directory: All {IND_21_SPOKES.length} Guides
                 </h2>
               </div>
 

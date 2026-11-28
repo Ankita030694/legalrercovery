@@ -570,12 +570,7 @@ export default function SolarLegalNoticeTemplatePage() {
               </h2>
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed mb-4">
                 Always dispatch the signed notice via <strong className="text-slate-900">India Post Speed Post / Registered Post AD (RPAD)</strong> to both the debtor&apos;s MCA-registered office and the factory/plant address, alongside <strong className="text-slate-900">official email and WhatsApp</strong>. Retain India Post tracking printouts and SCADA/OCPP telemetry exports with a BSA 2023 s.63 certificate for immediate{" "}
-                <Link
-                  href="/law/arbitration-section-9-interim-relief"
-                  className="text-[#DC2626] font-semibold hover:underline"
-                >
-                  Section 9 Arbitration interim relief
-                </Link>{" "}
+                <strong className="text-slate-900">Section 9 Arbitration interim relief</strong>{" "}
                 or MSEFC filing.
               </p>
 

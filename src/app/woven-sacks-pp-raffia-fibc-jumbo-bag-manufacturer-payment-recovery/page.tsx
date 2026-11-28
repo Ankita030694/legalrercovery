@@ -1358,7 +1358,7 @@ export default function WovenSacksFibcRecoveryPage() {
                   </p>
                 </div>
                 <Link
-                  href="/about-us"
+                  href="/about"
                   className="text-xs font-bold text-[#DC2626] hover:underline shrink-0"
                 >
                   Editorial Standards &rarr;

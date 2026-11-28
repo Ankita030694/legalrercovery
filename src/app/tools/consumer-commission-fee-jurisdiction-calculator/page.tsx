@@ -509,10 +509,10 @@ export default function ConsumerCommissionCalculatorPage() {
                 <p className="text-[11px] text-slate-500 italic">
                   Note: Unlike civil court suits where ad-valorem court fees range from 4% to 10% of the suit valuation (see our{" "}
                   <Link
-                    href="/tools/money-suit-court-fee-calculator"
+                    href="/tools/commercial-court-specified-value-fee-interest-calculator"
                     className="text-red-600 font-bold hover:underline"
                   >
-                    Money Suit Court Fee Calculator
+                    Commercial Court Fee Calculator
                   </Link>
                   ), consumer commission fees are strictly capped flat charges designed to ensure accessible justice for citizens.
                 </p>

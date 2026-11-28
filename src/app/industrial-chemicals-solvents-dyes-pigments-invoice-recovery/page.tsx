@@ -691,7 +691,7 @@ export default function IndustrialChemicalsRecoveryPage() {
                   </div>
                   <div className="flex flex-wrap gap-2 pt-2">
                     <Link
-                      href="/templates/section-43bh-msme-tax-disallowance-notice"
+                      href="/templates/section-43bh-msme-tax-disallowance-intimation-cum-demand-notice"
                       className="text-xs font-bold text-[#DC2626] underline hover:text-[#B91C1C]"
                     >
                       Use 43B(h) Tax Notice Template &rarr;

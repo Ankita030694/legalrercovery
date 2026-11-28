@@ -254,7 +254,7 @@ export default function SoftexFemaExportRealizationDeadlineCalculatorPage() {
                 </Link>{" "}
                 and{" "}
                 <Link
-                  href="/industries/export-import-trade-credit-recovery"
+                  href="/industries/exporters-cross-border-trade-recovery"
                   className="text-red-300 underline hover:text-white font-bold"
                 >
                   IND-15 Export-Import Trade Credit Recovery Hub

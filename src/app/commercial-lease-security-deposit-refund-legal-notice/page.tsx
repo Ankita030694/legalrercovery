@@ -712,7 +712,7 @@ export default function CommercialLeaseDepositRecoveryPage() {
                   Route 4: Section 12A Commercial Mediation
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
-                  Under the Commercial Courts Act, 2015, any commercial dispute exceeding the specified value (currently ₹3,00,000) mandates Pre-Institution Mediation through the District Legal Services Authority (DLSA) under <Link href="/pre-institution-mediation-section-12a" className="text-red-700 hover:text-red-800 font-bold underline">Section 12A of the Commercial Courts Act</Link> prior to filing a suit, unless urgent interim relief is claimed.
+                  Under the Commercial Courts Act, 2015, any commercial dispute exceeding the specified value (currently ₹3,00,000) mandates Pre-Institution Mediation through the District Legal Services Authority (DLSA) under <Link href="/law/section-12a-commercial-courts-act-pre-institution-mediation-guide" className="text-red-700 hover:text-red-800 font-bold underline">Section 12A of the Commercial Courts Act</Link> prior to filing a suit, unless urgent interim relief is claimed.
                 </p>
 
                 <div className="space-y-4">
